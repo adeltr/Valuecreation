@@ -64,7 +64,6 @@ export const AIRLINE_LEVER_CATEGORIES = [
 
 // Qualitative only, never formulas (invariant 1)
 export const AIRLINE_CAUSE_CATEGORIES = [
-  'REGULATORY', // #7 traffic rights, #30 emissions, #32 safety
   'FUEL_PRICE', // #10, #33, #36 — exogenous, never a lever
   'LABOR',      // #12, #17
 ] as const;

@@ -123,3 +123,11 @@ describe('ontology registry – no duplicate codes', () => {
     expect(new Set(codes).size).toBe(codes.length);
   });
 });
+
+describe('ontology registry – REGULATORY is a base cause', () => {
+  it.each(SECTOR_ARCHETYPES)('%s has REGULATORY once', (a) => {
+    const causes = getActiveVocabulary(a).causeCategories;
+    expect(causes.filter((c) => c === 'REGULATORY')).toHaveLength(1);
+    expect(new Set(causes).size).toBe(causes.length);
+  });
+});

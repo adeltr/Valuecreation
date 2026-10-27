@@ -51,6 +51,5 @@ export const AERO_LEVER_CATEGORIES = [
 // Risk categories — qualitative only, never formulas (doc 05 + invariant 1)
 export const AERO_CAUSE_CATEGORIES = [
   'GEOPOLITICAL', // analyses #2, #8 — export controls, alliances
-  'REGULATORY',   // analyses #8, #15 — ITAR/EAR/FAR/DFARS
   'PROGRAM',      // execution drift on long-cycle programmes
 ] as const;

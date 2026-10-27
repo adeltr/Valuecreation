@@ -17,6 +17,7 @@ export const BASE_LEVER_CATEGORIES = [
 
 export const BASE_CAUSE_CATEGORIES = [
   'COMMERCIAL', 'OPERATIONAL', 'FINANCIAL', 'ORGANIZATIONAL', 'MARKET',
+  'REGULATORY', // compliance, licences, export control — shared by every company type
 ] as const;
 
 // Two-point bridge (layer L1 of the driver tree)
