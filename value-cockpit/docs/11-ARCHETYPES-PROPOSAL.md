@@ -51,7 +51,23 @@ Par archétype : je pré-remplis TOUS les frontmatters d'un coup avec la
 section source citée pour chaque mapping, dans `_curation.md`. Tu valides en
 une revue (tableau). Les lots de 5–6 restent pour A&D, déjà engagé.
 
+## Inventaire des archétypes (d'après les liens des 32 fichiers KPI)
+
+27 types d'entreprise : A&D, Agriculture, Airline, Auto Insurance,
+Biotechnology, Chemical, Commercial Bank, CPG, Cosmetics, Electricity
+Generation, Health Payor, Healthcare Provider, Hospitality, Life Insurance,
+Manufacturing, Media & Entertainment, Medical Device, Metals & Mining,
+Pharmaceutical, P&C Insurance, Retail Bank, Retail, SaaS, Telecommunications,
+Third Party Logistics, Waste Management, Wine Beer & Spirits.
+Les fichiers KPI (`data/kpi-library/`) sont des glossaires : nom +
+description, sans formule ni benchmark. Une formule de template reste donc
+TOUJOURS un arbitrage d'analyste.
+
 ## Airline — brouillon d'extension (candidats à arbitrer, docs/09 §pré-requis)
+
+> Table de revue détaillée, rapprochée du vault : `data/analysis-library/airline/_curation.md`.
+> Écart avec le brouillon ci-dessous : ANCILLARY, CAPACITY_GROWTH, CASK_EX_FUEL
+> et FLEET_UTILIZATION n'existent pas dans le KPI vault ; seul `CASK` existe.
 
 **Drivers opérationnels candidats (≤ 8)** : `ASK` (capacité), `LOAD_FACTOR`,
 `YIELD` (revenu passage / RPK), `ANCILLARY_PER_PAX`, `CASK_EX_FUEL`,
@@ -84,7 +100,7 @@ documenter.)
 
 ## Fichiers du vault dont j'ai besoin pour Airline
 1. `02 - Analyser une entreprise/Airline Company - Analyses/` — les 40 `.md`.
-2. `KPI — Travel & Logistics` (le fichier KPI lié à Airline).
+2. ~~`KPI — Travel & Logistics`~~ reçu (`data/kpi-library/`).
 3. `04 - KPI par fonction` (pour décider ce qui monte dans la base).
 4. Optionnel : `01 - Comprendre un secteur/Travel & Hospitality.md` + son
    dossier `Sous-secteurs` (contexte copilote, benchmarks de marges).

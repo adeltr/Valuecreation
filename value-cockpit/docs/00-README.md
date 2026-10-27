@@ -21,7 +21,8 @@ docs/
   11-ARCHETYPES-PROPOSAL.md         ← PROPOSITION (à valider) : archétypes = types d'entreprise, Airline
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
-data/analysis-library/<secteur>/    ← fichiers sources des frameworks sectoriels (.md)
+data/analysis-library/<secteur>/    ← fichiers sources des frameworks sectoriels (.md) + _curation.md
+data/kpi-library/                   ← 32 glossaires KPI Umbrex (type 2), copiés tels quels
 .claude/skills/value-cockpit/SKILL.md     ← invariants chargés sur CHAQUE tâche
 ```
 
