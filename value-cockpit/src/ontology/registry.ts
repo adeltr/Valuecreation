@@ -12,7 +12,15 @@ import {
   AIRLINE_LEVER_CATEGORIES, AIRLINE_CAUSE_CATEGORIES,
 } from './sectors/airline';
 
-export const SECTOR_ARCHETYPES = ['generic', 'saas', 'aero', 'airline'] as const;
+// Level 2 — sector extension + dedicated template.
+export const EXTENDED_ARCHETYPES = ['saas', 'aero', 'airline'] as const;
+// Level 1 — EBITDA-family company types on the base vocabulary + generic template (docs/11).
+export const BASE_ARCHETYPES = [
+  'agriculture', 'chemical', 'cosmetics', 'cpg', 'electricity-generation', 'healthcare-provider',
+  'hospitality', 'manufacturing', 'media', 'medical-device', 'metals-mining', 'pharma', 'retail',
+  'third-party-logistics', 'waste-management', 'wine-spirits',
+] as const;
+export const SECTOR_ARCHETYPES = ['generic', ...EXTENDED_ARCHETYPES, ...BASE_ARCHETYPES] as const;
 export type SectorArchetype = (typeof SECTOR_ARCHETYPES)[number];
 
 export interface ActiveVocabulary {

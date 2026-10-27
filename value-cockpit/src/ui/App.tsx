@@ -33,7 +33,13 @@ export function App() {
           Type d'entreprise{' '}
           <select value={state.archetype}
             onChange={(e) => dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype })}>
-            {Object.entries(TEMPLATES).map(([a, t]) => <option key={a} value={a}>{t!.label}</option>)}
+            {([2, 1] as const).map((level) => (
+              <optgroup key={level} label={level === 2 ? 'Modèle sectoriel complet' : 'Modèle EBITDA générique'}>
+                {Object.entries(TEMPLATES).filter(([, t]) => t!.level === level)
+                  .sort(([, a], [, b]) => a!.label.localeCompare(b!.label))
+                  .map(([a, t]) => <option key={a} value={a}>{t!.label}</option>)}
+              </optgroup>
+            ))}
           </select>
         </label>
       </header>

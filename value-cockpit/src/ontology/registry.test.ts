@@ -75,8 +75,13 @@ describe('ontology registry – lever targets', () => {
 });
 
 describe('ontology registry – archetypes', () => {
-  it('lists only real archetypes (stubs removed, airline added)', () => {
-    expect([...SECTOR_ARCHETYPES]).toEqual(['generic', 'saas', 'aero', 'airline']);
+  it('lists generic, the extended archetypes, then the 16 level-1 company types', () => {
+    expect(SECTOR_ARCHETYPES.slice(0, 4)).toEqual(['generic', 'saas', 'aero', 'airline']);
+    expect(SECTOR_ARCHETYPES).toHaveLength(20);
+    expect(SECTOR_ARCHETYPES).toContain('cpg');
+  });
+  it('a level-1 archetype has exactly the base vocabulary', () => {
+    expect(getActiveVocabulary('cpg').metricCodes).toEqual(getActiveVocabulary('generic').metricCodes);
   });
 });
 

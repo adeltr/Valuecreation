@@ -70,6 +70,14 @@ describe('App', () => {
     expect(within(company).getByLabelText('BOOK_TO_BILL')).toBeTruthy();
   });
 
+  it('a level-1 company type uses the generic EBITDA template', () => {
+    render(<App />);
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    expect(within(company).getByLabelText('REVENUE_GROWTH')).toBeTruthy();
+    expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);
+  });
+
   it('exploration: clicking a driver lists the analyses to run', () => {
     render(<App />);
     const graph = screen.getByRole('region', { name: 'Arbre de valeur' });
