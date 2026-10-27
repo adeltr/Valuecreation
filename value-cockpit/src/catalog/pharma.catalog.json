@@ -15,7 +15,24 @@
       "COST_OPS",
       "PIPELINE_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/pharma/01 - Drug Pipeline Analysis.md"
+    "sourcePath": "data/analysis-library/pharma/01 - Drug Pipeline Analysis.md",
+    "goal": "The goal of Drug Pipeline Analysis is to assess the strength, potential, and risk of a pharmaceutical company’s drug development pipeline.",
+    "dataRequired": [
+      "**A list of all drugs in the pipeline, categorized by development phase:** ○ Preclinical, Phase I, Phase II, Phase III, NDA/BLA filing, Approved.",
+      "Therapeutic area and target indication for each drug.",
+      "Clinical trial data, including enrollment, progress, and key results.",
+      "Regulatory designations (e.g., Fast Track, Orphan Drug status).",
+      "Market potential data (target population, pricing estimates, competition).",
+      "Historical success rates and benchmarks for drugs advancing from one phase to the next."
+    ],
+    "improve": [
+      "Invest in Early-Stage Discovery",
+      "Use Accelerated Development Programs",
+      "Improve R&D Efficiency",
+      "Expand Partnerships",
+      "Focus on Niche or High-Growth Areas",
+      ""
+    ]
   },
   {
     "id": "pharma-02",
@@ -35,7 +52,24 @@
       "VOLUME",
       "PIPELINE_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/pharma/02 - Clinical Trial Success Rates.md"
+    "sourcePath": "data/analysis-library/pharma/02 - Clinical Trial Success Rates.md",
+    "goal": "The goal of analyzing Clinical Trial Success Rates is to evaluate the likelihood that a pharmaceutical company’s drug candidates will successfully advance through each phase of clinical development (Phase I, Phase II, Phase III) and ultimately receive regulatory approval.",
+    "dataRequired": [
+      "Number of drug candidates entering each clinical trial phase (Phase I, II, III).",
+      "Number of drug candidates successfully advancing from one phase to the next.",
+      "Number of drug candidates receiving regulatory approval (e.g., FDA, EMA).",
+      "Historical industry benchmark success rates for comparison.",
+      "Therapeutic area or indication for each drug (to assess whether success rates vary by area).",
+      "Clinical trial endpoints and results data, including safety and efficacy outcomes."
+    ],
+    "improve": [
+      "Improve Preclinical Validation",
+      "Optimize Clinical Trial Design",
+      "Increase Patient Recruitment and Retention Efforts",
+      "Use Companion Diagnostics",
+      "Leverage Regulatory Incentives",
+      ""
+    ]
   },
   {
     "id": "pharma-03",
@@ -54,7 +88,24 @@
       "PIPELINE_PRODUCTIVITY",
       "RD_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/pharma/03 - Preclinical Research Productivity.md"
+    "sourcePath": "data/analysis-library/pharma/03 - Preclinical Research Productivity.md",
+    "goal": "The goal of Preclinical Research Productivity analysis is to evaluate how efficiently a pharmaceutical company’s research teams are identifying, optimizing, and advancing potential drug candidates from discovery into clinical trials.",
+    "dataRequired": [
+      "Number of drug candidates identified in a given time period (e.g., annually).",
+      "Number of drug candidates advancing from discovery into preclinical studies.",
+      "Number of preclinical candidates advancing into Phase I clinical trials.",
+      "Preclinical research spending, including both direct costs (laboratories, trials) and indirect costs (infrastructure, overhead).",
+      "Time duration from target identification to entry into preclinical testing.",
+      "Scientific publications, patents filed, or technology licensing deals related to preclinical discoveries."
+    ],
+    "improve": [
+      "Invest in Automation and AI-driven Discovery Tools",
+      "Strengthen Collaboration with External Partners",
+      "Focus on Predictive Biomarkers",
+      "Optimize Resource Allocation",
+      "Enhance Scientific Talent and Expertise",
+      ""
+    ]
   },
   {
     "id": "pharma-04",
@@ -67,7 +118,26 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/04 - Pharmacokinetics and Pharmacodynamics (PK-PD) Profile.md"
+    "sourcePath": "data/analysis-library/pharma/04 - Pharmacokinetics and Pharmacodynamics (PK-PD) Profile.md",
+    "goal": "The goal of PK/PD Profile Analysis is to evaluate the relationship between the concentration of a drug in the body (pharmacokinetics, PK) and the drug's biological effects (pharmacodynamics, PD).",
+    "dataRequired": [
+      "Drug absorption, distribution, metabolism, and excretion (ADME) data.",
+      "Time-concentration curves from preclinical and clinical studies.",
+      "Dose-response relationship data from animal models and human trials.",
+      "Maximum concentration (Cmax), time to maximum concentration (Tmax), and area under the curve (AUC) for pharmacokinetics.",
+      "Data on receptor binding, biochemical effects, and clinical outcomes for pharmacodynamics.",
+      "Therapeutic window (range between the minimum effective concentration and the maximum safe concentration).",
+      "Comparative PK/PD profiles for similar drugs or competitors.",
+      "Safety and toxicity data, particularly from early-stage clinical trials."
+    ],
+    "improve": [
+      "Reformulate the Drug",
+      "Develop Companion Diagnostics",
+      "Optimize Dosing Regimen",
+      "Reduce Toxicity Through Drug Modifications",
+      "Monitor Special Populations",
+      ""
+    ]
   },
   {
     "id": "pharma-05",
@@ -85,7 +155,26 @@
     "relatedLeverCategories": [
       "PIPELINE_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/pharma/05 - Pipeline Attrition Rate and Risk Mitigation.md"
+    "sourcePath": "data/analysis-library/pharma/05 - Pipeline Attrition Rate and Risk Mitigation.md",
+    "goal": "The goal of Pipeline Attrition Rate and Risk Mitigation analysis is to assess the rate at which drug candidates fail during the various phases of the development pipeline (Preclinical, Phase I, Phase II, Phase III).",
+    "dataRequired": [
+      "Number of drug candidates entering each phase (Preclinical, Phase I, Phase II, Phase III).",
+      "Number of drug candidates failing to advance to the next phase.",
+      "Reasons for failure (e.g., safety issues, lack of efficacy, regulatory hurdles).",
+      "Industry benchmark attrition rates for each phase.",
+      "Historical attrition rates for the company’s pipeline.",
+      "Resource allocation per phase (time, personnel, and budget).",
+      "Risk mitigation strategies already in place (e.g., adaptive trial designs, biomarker use, external partnerships)."
+    ],
+    "improve": [
+      "Strengthen Preclinical Validation",
+      "Incorporate Adaptive Trial Designs",
+      "Use Biomarkers for Patient Selection",
+      "Increase Collaboration with External Partners",
+      "Reallocate Resources to High-Potential Candidates",
+      "Diversify the Pipeline",
+      ""
+    ]
   },
   {
     "id": "pharma-06",
@@ -101,7 +190,26 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/06 - Accelerated Approval Pathway Utilization.md"
+    "sourcePath": "data/analysis-library/pharma/06 - Accelerated Approval Pathway Utilization.md",
+    "goal": "The goal of analyzing Accelerated Approval Pathway Utilization is to assess how effectively a pharmaceutical company is leveraging expedited regulatory programs (e.g., Fast Track, Breakthrough Therapy, Accelerated Approval, and Priority Review) to bring drugs to market faster.",
+    "dataRequired": [
+      "List of drugs that have applied for or received Accelerated Approval designations (Fast Track, Breakthrough Therapy, Priority Review, Accelerated Approval).",
+      "Development timelines (time from Preclinical to NDA/BLA submission).",
+      "Clinical trial endpoints used in accelerated programs (e.g., surrogate endpoints).",
+      "Approval dates compared to non-accelerated peers or industry averages.",
+      "Post-marketing study requirements for drugs approved via Accelerated Approval.",
+      "Success rates of drugs utilizing these pathways.",
+      "Competitive landscape (which competitors are also using these pathways).",
+      "Impact on revenue forecasts due to faster time-to-market."
+    ],
+    "improve": [
+      "Target Unmet Medical Needs",
+      "Engage Early with Regulators",
+      "Invest in Biomarker and Surrogate Endpoint Development",
+      "Strengthen Post-Marketing Study Capabilities",
+      "Monitor Competitive Landscape",
+      ""
+    ]
   },
   {
     "id": "pharma-07",
@@ -114,7 +222,26 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/07 - Companion Diagnostics Integration.md"
+    "sourcePath": "data/analysis-library/pharma/07 - Companion Diagnostics Integration.md",
+    "goal": "The goal of Companion Diagnostics Integration analysis is to assess how effectively a pharmaceutical company is incorporating companion diagnostics (CDx) into its drug development process.",
+    "dataRequired": [
+      "List of drugs in the pipeline that are using or plan to use companion diagnostics.",
+      "Details of the associated diagnostic tests (biomarkers, genetic markers, etc.).",
+      "Regulatory approvals for both the drug and the companion diagnostic (e.g., FDA approval for a drug-CDx pair).",
+      "Data on the effectiveness of the companion diagnostic in clinical trials (e.g., percentage of patients identified as responders).",
+      "Clinical trial outcomes stratified by diagnostic test results.",
+      "Partnerships with diagnostic companies or development of in-house diagnostic capabilities.",
+      "Regulatory hurdles specific to companion diagnostics (e.g., separate approval processes for drugs and diagnostics).",
+      "Impact on market access, patient outcomes, and cost-effectiveness of the therapeutic product."
+    ],
+    "improve": [
+      "Invest in Biomarker Discovery",
+      "Form Strategic Partnerships with Diagnostic Companies",
+      "Optimize Clinical Trial Design",
+      "Engage Early with Regulatory Agencies",
+      "Demonstrate Economic Value to Payers",
+      ""
+    ]
   },
   {
     "id": "pharma-08",
@@ -133,7 +260,27 @@
       "PIPELINE_PRODUCTIVITY",
       "RD_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/pharma/08 - Adaptive Clinical Trial Design Strategy.md"
+    "sourcePath": "data/analysis-library/pharma/08 - Adaptive Clinical Trial Design Strategy.md",
+    "goal": "The goal of analyzing Adaptive Clinical Trial Design Strategy is to assess how effectively a pharmaceutical company uses adaptive clinical trials to improve the efficiency, speed, and success rates of drug development.",
+    "dataRequired": [
+      "Overview of trials where adaptive designs were used (Phase I, II, or III).",
+      "Types of adaptations made (e.g., dose-finding, sample size re-estimation, treatment arm modification, early stopping for efficacy/futility).",
+      "Clinical trial protocols and interim analysis plans.",
+      "Comparison data on traditional trials vs. adaptive trials (costs, timelines, success rates).",
+      "Regulatory interactions related to adaptive designs (e.g., FDA guidance, statistical considerations).",
+      "Outcomes of trials using adaptive designs (success rates, time to completion).",
+      "Impact on patient recruitment and engagement.",
+      "Risk mitigation strategies for adaptive design uncertainties."
+    ],
+    "improve": [
+      "Expand Use of Adaptive Designs Across Trials",
+      "Invest in Statistical Expertise",
+      "Engage with Regulators Early",
+      "Use Real-World Data (RWD) to Inform Adaptations",
+      "Enhance Data Monitoring and Decision-Making Frameworks",
+      "Increase Patient-Centric Approaches",
+      ""
+    ]
   },
   {
     "id": "pharma-09",
@@ -149,7 +296,27 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/09 - Breakthrough Therapy Designation Utilization.md"
+    "sourcePath": "data/analysis-library/pharma/09 - Breakthrough Therapy Designation Utilization.md",
+    "goal": "The goal of Breakthrough Therapy Designation (BTD) Utilization analysis is to assess how effectively a pharmaceutical company is leveraging the FDA’s Breakthrough Therapy Designation to expedite the development and review of drugs that treat serious conditions and demonstrate substantial improvement over existing therapies.",
+    "dataRequired": [
+      "List of drugs in the pipeline that have received Breakthrough Therapy Designation.",
+      "Development timelines (from Preclinical through regulatory submission).",
+      "Clinical trial outcomes, particularly those that led to BTD approval (e.g., significant efficacy over standard of care).",
+      "Regulatory interactions (frequency of FDA meetings, feedback, and guidance).",
+      "Comparison data between BTD drugs and non-BTD drugs (costs, time to approval, success rates).",
+      "Market and financial impact of faster approval, including revenue acceleration due to early market entry.",
+      "Post-market performance and follow-up studies for drugs with BTD."
+    ],
+    "improve": [
+      "Identify High-Potential Candidates for BTD",
+      "Engage Early with the FDA",
+      "Leverage Clinical Trial Data Early",
+      "Optimize Use of FDA Guidance",
+      "Prepare for Post-Market Commitments",
+      "",
+      "Maximize First-Mover Advantage",
+      "B. Regulatory & Compliance"
+    ]
   },
   {
     "id": "pharma-10",
@@ -163,7 +330,26 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/10 - Regulatory Pathway Complexity.md"
+    "sourcePath": "data/analysis-library/pharma/10 - Regulatory Pathway Complexity.md",
+    "goal": "The goal of analyzing Regulatory Pathway Complexity is to assess the various regulatory submission pathways available for drug approval and their associated challenges, timelines, and risks.",
+    "dataRequired": [
+      "List of drug candidates, including whether they are new chemical entities (NCEs), biologics, or generics.",
+      "Relevant regulatory submission pathways for each drug (e.g., 505(b)(1), 505(b)(2), ANDA, BLA).",
+      "Data on development timelines, including preclinical and clinical trial durations.",
+      "Information on any reference listed drugs (RLD) for 505(b)(2) applications or bioequivalence studies for ANDAs.",
+      "Regulatory requirements for each pathway (e.g., clinical trial requirements, bioequivalence data, bridging studies).",
+      "Past experience with each regulatory pathway, including approval timelines and success rates.",
+      "Post-marketing requirements specific to each regulatory pathway (e.g., pharmacovigilance studies).",
+      "Competitive landscape, including the status of competitors using the same regulatory pathway."
+    ],
+    "improve": [
+      "Engage Early with Regulatory Agencies",
+      "Optimize Clinical Trial Design for 505(b)(2) Applications",
+      "Strengthen Bioequivalence Studies for ANDAs",
+      "Improve Biologic Manufacturing Processes",
+      "Monitor Competitive Pathways",
+      ""
+    ]
   },
   {
     "id": "pharma-11",
@@ -179,7 +365,26 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/11 - Regulatory Risk for Off-Label Drug Use.md"
+    "sourcePath": "data/analysis-library/pharma/11 - Regulatory Risk for Off-Label Drug Use.md",
+    "goal": "The goal of analyzing Regulatory Risk for Off-Label Drug Use is to evaluate the legal, financial, and operational risks associated with the unintended or unapproved use of a drug for conditions, dosages, or patient populations not explicitly approved by regulatory agencies (e.g., FDA, EMA).",
+    "dataRequired": [
+      "List of drugs approved by regulatory agencies and their approved indications, dosages, and patient populations.",
+      "Data on known or suspected off-label use of the drug (e.g., healthcare provider surveys, claims data, or prescribing patterns).",
+      "Regulatory guidelines and enforcement policies related to off-label promotion or usage (e.g., FDA and EMA guidelines).",
+      "Legal precedents involving fines, sanctions, or litigations related to off-label promotion.",
+      "Internal policies and procedures regarding promotion, marketing, and physician engagement.",
+      "Potential financial impact from fines, legal settlements, or market disruptions due to off-label use investigations.",
+      "Historical actions taken by regulatory agencies in response to off-label use for similar drugs in the market."
+    ],
+    "improve": [
+      "Enhance Compliance Training and Monitoring",
+      "Strengthen Internal Audits",
+      "Increase Collaboration with Regulatory Authorities",
+      "Implement Robust Pharmacovigilance for Off-Label Use",
+      "Adjust Marketing Strategies",
+      "Develop New Indications",
+      ""
+    ]
   },
   {
     "id": "pharma-12",
@@ -198,7 +403,28 @@
       "COST_PROCUREMENT",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/pharma/12 - Compliance with Good Manufacturing Practices (GMP).md"
+    "sourcePath": "data/analysis-library/pharma/12 - Compliance with Good Manufacturing Practices (GMP).md",
+    "goal": "The goal of analyzing Compliance with Good Manufacturing Practices (GMP) is to assess how well a pharmaceutical company adheres to the regulatory standards that ensure the consistent quality, safety, and efficacy of its drugs throughout the manufacturing process.",
+    "dataRequired": [
+      "Current GMP audit reports (internal and external audits).",
+      "Regulatory inspection reports (e.g., from FDA or EMA).",
+      "Manufacturing Standard Operating Procedures (SOPs) and batch records.",
+      "Quality control and assurance protocols.",
+      "Data on manufacturing deviations, out-of-specification (OOS) results, and corrective actions taken.",
+      "Supplier qualification and material traceability records.",
+      "Documentation of employee GMP training programs.",
+      "Records of product recalls, market withdrawals, or warning letters related to GMP violations.",
+      "Data on validation and qualification of manufacturing equipment, processes, and facilities."
+    ],
+    "improve": [
+      "Strengthen Internal Audits and Corrective Actions",
+      "Enhance Documentation and Traceability",
+      "Upgrade Facility and Equipment Maintenance",
+      "Improve Supplier Qualification Processes",
+      "Increase GMP Training and Education",
+      "Engage with Regulatory Agencies",
+      ""
+    ]
   },
   {
     "id": "pharma-13",
@@ -215,7 +441,27 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/13 - International Regulatory Harmonization and Compliance.md"
+    "sourcePath": "data/analysis-library/pharma/13 - International Regulatory Harmonization and Compliance.md",
+    "goal": "The goal of analyzing International Regulatory Harmonization and Compliance Strategy is to assess how effectively a pharmaceutical company aligns its drug development, manufacturing, and marketing processes with the varying regulatory requirements of different countries or regions.",
+    "dataRequired": [
+      "A list of countries or regions where the company seeks or holds marketing authorization for its drugs.",
+      "Regulatory requirements for each region, including approval pathways, clinical trial standards, and post-marketing surveillance obligations.",
+      "International guidelines, such as ICH guidelines on quality, safety, efficacy, and multi-regional clinical trials (MRCTs).",
+      "Data on past regulatory approvals, rejections, or delays in different regions and the reasons behind these outcomes.",
+      "Regulatory submissions (e.g., common technical documents (CTDs)) and reports from successful applications.",
+      "Documentation on regulatory inspections and audit outcomes across different regions.",
+      "Communication history with regulatory bodies (FDA, EMA, PMDA, WHO, etc.).",
+      "Current product labeling, packaging, and market-specific modifications required for different regulatory agencies."
+    ],
+    "improve": [
+      "Enhance Multi-Regional Clinical Trial Capabilities",
+      "Align with ICH Guidelines",
+      "Use Harmonized Submission Formats",
+      "Engage Early with Regulatory Authorities",
+      "Strengthen Global Pharmacovigilance Systems",
+      "Invest in Global Regulatory Teams",
+      ""
+    ]
   },
   {
     "id": "pharma-14",
@@ -234,7 +480,28 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pharma/14 - Drug Price Transparency and Regulatory Compliance.md"
+    "sourcePath": "data/analysis-library/pharma/14 - Drug Price Transparency and Regulatory Compliance.md",
+    "goal": "The goal of analyzing Drug Price Transparency and Regulatory Compliance is to assess how well a pharmaceutical company adheres to regulatory requirements related to the disclosure of drug pricing information.",
+    "dataRequired": [
+      "Current drug pricing information across markets (wholesale price, list price, rebates, and discounts).",
+      "Country-specific pricing regulations, including transparency laws (e.g., U.S. state-level requirements, EU price-setting rules, and price disclosure mandates in countries like Japan and Australia).",
+      "Reporting obligations to regulatory authorities (e.g., Centers for Medicare & Medicaid Services (CMS) in the U.S., national health services in Europe, etc.).",
+      "Historical data on price changes and justifications for price adjustments.",
+      "Agreements with payers (e.g., insurers, government health programs) on rebates, discounts, or value-based pricing models.",
+      "Public disclosures, including required reports for government agencies and pricing submissions for tenders.",
+      "Records of any investigations, fines, or legal challenges related to drug pricing or price transparency.",
+      "Competitive analysis of pricing strategies used by rivals in similar therapeutic areas."
+    ],
+    "improve": [
+      "Implement Centralized Price Monitoring Systems",
+      "Strengthen Justification for Price Changes",
+      "Enhance Regulatory Reporting Capabilities",
+      "Increase Transparency in Public Communications",
+      "Adopt Value-Based Pricing Models",
+      "Benchmark Against Competitors",
+      "Proactively Engage with Regulators",
+      ""
+    ]
   },
   {
     "id": "pharma-15",
@@ -251,7 +518,27 @@
     "relatedLeverCategories": [
       "LIFECYCLE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/pharma/15 - Pediatric Exclusivity and Extensions.md"
+    "sourcePath": "data/analysis-library/pharma/15 - Pediatric Exclusivity and Extensions.md",
+    "goal": "The goal of analyzing Pediatric Exclusivity and Extensions is to evaluate how a pharmaceutical company can leverage pediatric exclusivity programs to extend market protection for its drugs.",
+    "dataRequired": [
+      "List of drugs eligible for pediatric exclusivity.",
+      "Current patent and exclusivity expiration dates for each drug.",
+      "FDA or EMA requests for pediatric studies (Written Request or Paediatric Investigation Plan).",
+      "Ongoing or completed pediatric clinical trials, including study designs and outcomes.",
+      "Historical pediatric exclusivity extensions granted to the company.",
+      "Estimated financial impact of exclusivity extension, including projected revenue during the extended exclusivity period.",
+      "Competitive landscape, including other companies seeking pediatric exclusivity for similar drugs.",
+      "Regulatory guidelines on pediatric exclusivity in key markets (e.g., U.S., EU)."
+    ],
+    "improve": [
+      "Ensure Timely Completion of Pediatric Studies",
+      "Engage with Regulatory Authorities Early",
+      "Monitor Competitors and Market Trends",
+      "Leverage Financial Impact of Exclusivity Extensions",
+      "Optimize Pediatric Study Design",
+      "Explore Other Exclusivity Extensions",
+      "C. Operations & Supply Chain"
+    ]
   },
   {
     "id": "pharma-16",
@@ -271,7 +558,27 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/pharma/16 - Supply Chain and Cold Chain Logistics Evaluation.md"
+    "sourcePath": "data/analysis-library/pharma/16 - Supply Chain and Cold Chain Logistics Evaluation.md",
+    "goal": "The goal of Supply Chain and Cold Chain Logistics Evaluation is to assess the efficiency, reliability, and compliance of a pharmaceutical company’s supply chain, particularly for products that require cold chain logistics.",
+    "dataRequired": [
+      "List of temperature-sensitive products (e.g., biologics, vaccines) requiring cold chain logistics.",
+      "Supply chain map, including manufacturing sites, distribution centers, transportation modes, and final delivery points.",
+      "Temperature monitoring data and protocols for cold chain products.",
+      "Regulatory guidelines for cold chain management (e.g., FDA, EMA, WHO Good Distribution Practices).",
+      "Supply chain performance metrics (e.g., delivery times, cost efficiency, and product losses due to temperature deviations).",
+      "Supplier and logistics partner performance data.",
+      "Risk assessment and contingency plans for supply chain disruptions (e.g., natural disasters, transportation delays, equipment failures).",
+      "Historical data on cold chain breaches or supply chain failures and associated financial losses."
+    ],
+    "improve": [
+      "Enhance Temperature Monitoring Systems",
+      "Strengthen Supplier and Logistics Partner Oversight",
+      "Develop Comprehensive Contingency Plans",
+      "Invest in Cold Chain Innovations",
+      "Optimize Cold Chain Costs",
+      "Improve Regulatory Compliance",
+      ""
+    ]
   },
   {
     "id": "pharma-17",
@@ -295,7 +602,29 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pharma/17 - Biosimilars Threat Assessment.md"
+    "sourcePath": "data/analysis-library/pharma/17 - Biosimilars Threat Assessment.md",
+    "goal": "The goal of Biosimilars Threat Assessment is to evaluate the potential competitive threat that biosimilar products pose to a pharmaceutical company’s biologic drugs.",
+    "dataRequired": [
+      "List of biologic drugs nearing patent or exclusivity expiration.",
+      "Information on biosimilar competitors in the pipeline, including their stage of development (preclinical, clinical, or approved).",
+      "Regulatory approvals for biosimilars in key markets (e.g., U.S., Europe, Japan).",
+      "Price differentials between biologics and biosimilars.",
+      "Sales and market share data for the company’s biologics.",
+      "Historical data on market erosion rates for biologics after biosimilar entry.",
+      "Analysis of payer and healthcare provider preferences for biosimilars versus branded biologics.",
+      "Company’s ability to defend patents or extend exclusivity (e.g., patent litigation, secondary patents, reformulations, or combination therapies).",
+      "Regulatory strategies in place to maintain market exclusivity (e.g., pediatric extensions, orphan drug exclusivity)."
+    ],
+    "improve": [
+      "Strengthen Patent Protection and Defense",
+      "Implement Competitive Pricing Strategies",
+      "Offering discounts, rebates, or pricing agreements with payers can help retain market share.",
+      "Enhance Brand Loyalty Through Patient and Provider Education",
+      "Expand Patient Support Programs",
+      "Develop New Indications or Reformulations",
+      "Monitor Biosimilar Market Entry and Adjust Strategy",
+      ""
+    ]
   },
   {
     "id": "pharma-18",
@@ -314,7 +643,27 @@
       "VOLUME",
       "LIFECYCLE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/pharma/18 - Specialty Drug Delivery Systems and Technologies.md"
+    "sourcePath": "data/analysis-library/pharma/18 - Specialty Drug Delivery Systems and Technologies.md",
+    "goal": "The goal of analyzing Specialty Drug Delivery Systems and Technologies is to evaluate the advanced methods and technologies used to improve the efficacy, safety, patient compliance, and convenience of administering specialty drugs, which are often complex, high-cost medications.",
+    "dataRequired": [
+      "List of specialty drugs in the company’s portfolio and pipeline, with details on current delivery methods (e.g., injection, infusion, oral, transdermal).",
+      "Clinical data on the performance and patient adherence rates of current delivery systems.",
+      "Data on adverse events or safety concerns related to drug delivery (e.g., injection site reactions, infusion-related reactions).",
+      "Regulatory approvals for novel drug delivery systems and technologies.",
+      "Research and development (R&D) investments in new drug delivery technologies (e.g., nanotechnology, sustained-release systems, smart delivery systems).",
+      "Competitive landscape, including competing delivery technologies for similar specialty drugs.",
+      "Patient feedback and surveys on ease of use, convenience, and satisfaction with current delivery methods.",
+      "Cost and logistical data related to current delivery systems (e.g., manufacturing, storage, shipping, administration)."
+    ],
+    "improve": [
+      "Invest in Patient-Centered Drug Delivery Technologies",
+      "Expand Research into Novel Delivery Methods",
+      "Optimize Safety and Comfort of Current Systems",
+      "Enhance Regulatory and Compliance Readiness",
+      "Improve Patient Education and Support",
+      "Consider Strategic Partnerships",
+      ""
+    ]
   },
   {
     "id": "pharma-19",
@@ -332,7 +681,28 @@
     "relatedLeverCategories": [
       "WC_DSO"
     ],
-    "sourcePath": "data/analysis-library/pharma/19 - Expanded Access Program Impact.md"
+    "sourcePath": "data/analysis-library/pharma/19 - Expanded Access Program Impact.md",
+    "goal": "The goal of analyzing Expanded Access Program (EAP) Impact is to evaluate the effects of offering investigational drugs to patients outside of clinical trials through Expanded Access Programs.",
+    "dataRequired": [
+      "List of investigational drugs currently or previously available through an EAP.",
+      "Number of patients enrolled in each EAP and their clinical outcomes.",
+      "Regulatory guidelines for Expanded Access Programs in key markets (e.g., FDA’s Expanded Access Program, EMA’s Compassionate Use Program).",
+      "Costs associated with providing drugs through EAPs (e.g., manufacturing, distribution, administrative costs).",
+      "Clinical data gathered from EAP patients, including safety and efficacy results.",
+      "Impact of EAP participation on the drug’s clinical development timeline.",
+      "Insights from healthcare providers and patient advocacy groups regarding the EAP’s role in addressing unmet medical needs.",
+      "Market perception, including media coverage, patient and healthcare provider feedback, and the company’s reputation.",
+      "Comparison of outcomes for EAP participants versus patients in clinical trials."
+    ],
+    "improve": [
+      "Optimize Data Collection from EAPs",
+      "Streamline Operational Logistics",
+      "Enhance Patient and Provider Communication",
+      "Align EAPs with Regulatory Strategies",
+      "Monitor Risks and Adjust as Needed",
+      "Leverage EAPs for Market Differentiation",
+      ""
+    ]
   },
   {
     "id": "pharma-20",
@@ -349,7 +719,28 @@
       "VOLUME",
       "WC_DSO"
     ],
-    "sourcePath": "data/analysis-library/pharma/20 - Compassionate Use Program Strategy.md"
+    "sourcePath": "data/analysis-library/pharma/20 - Compassionate Use Program Strategy.md",
+    "goal": "The goal of developing a Compassionate Use Program Strategy is to establish a clear framework for providing investigational drugs to patients who have no other treatment options and do not qualify for clinical trials.",
+    "dataRequired": [
+      "List of investigational drugs eligible for compassionate use and their current development stages.",
+      "Regulatory guidelines governing compassionate use in key markets (e.g., FDA’s Compassionate Use Program, EMA’s Compassionate Use Program).",
+      "Criteria for patient eligibility (e.g., life-threatening conditions, no alternative treatments, non-eligibility for clinical trials).",
+      "Infrastructure for drug manufacturing, distribution, and administration.",
+      "Legal, financial, and ethical considerations for providing drugs outside of clinical trials.",
+      "Historical data on the number of compassionate use requests, approvals, and patient outcomes.",
+      "Clinical data from compassionate use patients (safety, efficacy, adverse events).",
+      "Impact on clinical development timelines and regulatory submissions.",
+      "Stakeholder perspectives, including patient advocacy groups, healthcare providers, and regulators."
+    ],
+    "improve": [
+      "Streamline the Compassionate Use Request Process",
+      "Optimize Drug Supply and Distribution",
+      "Enhance Data Collection and Monitoring",
+      "Engage with Regulators and Healthcare Providers",
+      "Communicate Clearly with Patients and Advocacy Groups",
+      "Monitor Program Costs and Adjust as Needed",
+      "D. Marketing & Market Access"
+    ]
   },
   {
     "id": "pharma-21",
@@ -373,7 +764,28 @@
       "PRICING",
       "MARKET_ACCESS"
     ],
-    "sourcePath": "data/analysis-library/pharma/21 - Pricing Power and Reimbursement Environment.md"
+    "sourcePath": "data/analysis-library/pharma/21 - Pricing Power and Reimbursement Environment.md",
+    "goal": "The goal of analyzing Pricing Power and Reimbursement Environment is to assess a pharmaceutical company’s ability to set and maintain pricing for its drugs in the face of various market dynamics, regulatory frameworks, and payer requirements.",
+    "dataRequired": [
+      "Current and historical prices of the company’s drugs across different markets (U.S., EU, Asia, etc.).",
+      "Clinical efficacy and safety data to support pricing, including health economics and outcomes research (HEOR) data, such as cost-effectiveness analyses.",
+      "Reimbursement policies from key markets (e.g., Medicare, Medicaid, private insurers in the U.S., National Health Service (NHS) in the UK, statutory health insurance in Germany).",
+      "Payer and insurance coverage agreements, including formulary placement and negotiated discounts or rebates.",
+      "Competitive pricing data for similar or alternative drugs.",
+      "National and regional pricing regulations, including price caps, reference pricing, and government negotiations.",
+      "Trends in payer preferences for branded drugs versus generics, biosimilars, or lower-cost alternatives.",
+      "Data on price sensitivity among healthcare providers, patients, and governments, including patient access and affordability metrics.",
+      "Government policies regarding drug price transparency, regulation, and reimbursement (e.g., price-setting laws in Europe, Medicaid Drug Rebate Program in the U.S.)."
+    ],
+    "improve": [
+      "Leverage Health Economics Data",
+      "Negotiate Value-Based Pricing Agreements",
+      "Adapt Pricing Strategy to Local Markets",
+      "Monitor Competitor Pricing and Market Trends",
+      "Engage with Payers Early",
+      "Prepare for Regulatory Changes",
+      ""
+    ]
   },
   {
     "id": "pharma-22",
@@ -390,7 +802,28 @@
       "PRICING",
       "MARKET_ACCESS"
     ],
-    "sourcePath": "data/analysis-library/pharma/22 - Pharmaceutical Market Access and Health Technology.md"
+    "sourcePath": "data/analysis-library/pharma/22 - Pharmaceutical Market Access and Health Technology.md",
+    "goal": "The goal of analyzing Pharmaceutical Market Access and Health Technology Assessment (HTA) Outcomes is to evaluate how a pharmaceutical company’s drugs gain approval and reimbursement from national healthcare systems and private payers, especially in markets where HTA bodies play a critical role in determining coverage.",
+    "dataRequired": [
+      "List of drugs currently under review or recently evaluated by HTA agencies (e.g., NICE in the UK, IQffiG in Germany, HAS in France).",
+      "Clinical trial data, real-world evidence (RWE), and health economics outcomes research (HEOR) used in HTA submissions.",
+      "Cost-effectiveness data (e.g., incremental cost-effectiveness ratio (ICER), quality-adjusted life years (QALY), and net health benefits).",
+      "Results of HTA evaluations, including recommendations on pricing, reimbursement, and coverage restrictions.",
+      "HTA methodology for each key market, including factors considered in the assessment (e.g., therapeutic benefit, cost-effectiveness, budget impact).",
+      "Market access timelines, including delays in market entry due to HTA negotiations or rejections.",
+      "Competitor HTA outcomes for similar drugs in the same therapeutic class.",
+      "National pricing and reimbursement policies that align with or differ from HTA recommendations.",
+      "Stakeholder feedback, including input from patient advocacy groups, healthcare providers, and payers."
+    ],
+    "improve": [
+      "Engage with HTA Agencies Early",
+      "Strengthen Clinical and Economic Data",
+      "Prepare Alternative Pricing Models",
+      "Enhance Stakeholder Engagement",
+      "Respond to HTA Feedback and Re-Evaluate Data",
+      "Monitor Competitor HTA Outcomes",
+      ""
+    ]
   },
   {
     "id": "pharma-23",
@@ -409,7 +842,28 @@
       "VOLUME",
       "RD_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/pharma/23 - Real-World Evidence (RWE) Integration for Drug.md"
+    "sourcePath": "data/analysis-library/pharma/23 - Real-World Evidence (RWE) Integration for Drug.md",
+    "goal": "The goal of analyzing Real-World Evidence (RWE) Integration for Drug Development is to assess how data collected outside of traditional clinical trials—such as data from electronic health records (EHRs), insurance claims, patient registries, and wearable devices—can be used to improve decision-making during the drug development process.",
+    "dataRequired": [
+      "Real-world data (RWD) sources, including electronic health records (EHRs), insurance claims data, patient registries, wearable device data, and patient-reported outcomes (PROs).",
+      "Clinical trial data to compare real-world outcomes with trial-based results.",
+      "Regulatory guidelines on the use of RWE for drug development and approval (e.g., FDA’s framework for RWE use, EMA’s guidelines on RWD).",
+      "Case studies of RWE use in successful regulatory submissions and approvals.",
+      "Data from observational studies, retrospective analyses, and ongoing post-marketing surveillance.",
+      "Metrics on drug safety, efficacy, and patient outcomes from RWE sources.",
+      "Patient adherence and treatment patterns in real-world settings.",
+      "Cost-effectiveness and health economics data from RWE.",
+      "**Competitive landscape:** how other companies are using RWE in drug development and regulatory submissions."
+    ],
+    "improve": [
+      "Expand RWD Sources",
+      "Enhance RWE Analytics",
+      "Integrate RWE into Early Development",
+      "Collaborate with Regulatory Agencies",
+      "Develop RWE-Based Value Propositions",
+      "Leverage RWE for Post-Marketing Strategies",
+      ""
+    ]
   },
   {
     "id": "pharma-24",
@@ -426,7 +880,29 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pharma/24 - Therapeutic Area Specialization and Competitive Position.md"
+    "sourcePath": "data/analysis-library/pharma/24 - Therapeutic Area Specialization and Competitive Position.md",
+    "goal": "The goal of analyzing Therapeutic Area Specialization and Competitive Position is to assess how a pharmaceutical company’s focus on specific therapeutic areas—such as oncology, cardiology, or neurology—affects its market position, competitive advantages, and long-term growth potential.",
+    "dataRequired": [
+      "List of the company’s key therapeutic areas and associated drug portfolios.",
+      "Market share data for each therapeutic area, including sales, revenue, and volume.",
+      "Competitive landscape in each therapeutic area, including the major players, their market share, and their leading products.",
+      "Data on R&D investments by therapeutic area, including pipeline assets and clinical trial activity.",
+      "Innovation metrics, such as the number of new drugs launched, patents granted, or regulatory approvals in each therapeutic area.",
+      "Regulatory milestones and exclusivity periods (e.g., patent expiry, orphan drug designation) for key products.",
+      "SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis of the company’s position in each therapeutic area.",
+      "Insights from healthcare providers, key opinion leaders (KOLs), and patient advocacy groups regarding the company’s reputation and product performance in each therapeutic area.",
+      "Industry trends and advancements in specific therapeutic areas (e.g., emerging therapies, precision medicine, new treatment modalities)."
+    ],
+    "improve": [
+      "Invest in Pipeline Expansion",
+      "Enhance Innovation and Differentiation",
+      "Strengthen Competitive Intelligence",
+      "",
+      "Expand Partnerships and Collaborations",
+      "Maximize Market Exclusivity",
+      "Leverage KOL and Stakeholder Engagement",
+      ""
+    ]
   },
   {
     "id": "pharma-25",
@@ -447,7 +923,29 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pharma/25 - Global Drug Launch Strategy and Sequencing.md"
+    "sourcePath": "data/analysis-library/pharma/25 - Global Drug Launch Strategy and Sequencing.md",
+    "goal": "The goal of analyzing Global Drug Launch Strategy and Sequencing is to develop an effective plan for introducing a new drug across different markets while maximizing market access, regulatory success, revenue potential, and competitive positioning.",
+    "dataRequired": [
+      "Regulatory requirements and timelines in key markets (e.g., FDA in the U.S., EMA in Europe, PMDA in Japan).",
+      "Market access timelines, including HTA (Health Technology Assessment) approval processes and reimbursement pathways in each market.",
+      "Competitive landscape for each market, including local competitors, timing of rival product launches, and pricing strategies.",
+      "Market demand forecasts for the drug in various regions.",
+      "Manufacturing and supply chain capacity for global distribution, including cold chain logistics for temperature-sensitive drugs.",
+      "Intellectual property (IP) and patent protection data for each region, including patent expiration dates and exclusivity periods.",
+      "Pricing and reimbursement strategies for key markets, including regulatory constraints, payer expectations, and healthcare system dynamics.",
+      "Local healthcare provider and patient preferences, as well as cultural or economic factors that influence drug uptake.",
+      "Historic performance of previous drug launches in similar markets or therapeutic areas."
+    ],
+    "improve": [
+      "Engage Regulators Early",
+      "Optimize Market Sequencing",
+      "Prepare for HTA and Reimbursement Early",
+      "Scale Manufacturing and Supply Chain",
+      "Adjust Pricing Strategies by Market",
+      "Monitor global reference pricing to ensure early launch prices do not negatively impact later markets.",
+      "Leverage Early Market Data for Subsequent Launches",
+      ""
+    ]
   },
   {
     "id": "pharma-26",
@@ -467,7 +965,29 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pharma/26 - Rare Disease Market Penetration.md"
+    "sourcePath": "data/analysis-library/pharma/26 - Rare Disease Market Penetration.md",
+    "goal": "The goal of analyzing Rare Disease Market Penetration is to assess a pharmaceutical company’s ability to effectively enter and establish a foothold in the rare disease space.",
+    "dataRequired": [
+      "List of orphan drug designations and approvals in key markets (e.g., FDA Orphan Drug Designation, EMA Orphan Medicinal Product Designation).",
+      "Market share and sales data for existing rare disease drugs.",
+      "Pricing data, including reimbursement agreements and payers’ policies for rare disease treatments.",
+      "Clinical trial data and post-marketing safety data, especially for drugs targeting rare diseases.",
+      "Key opinion leader (KOL) and healthcare provider perspectives on the unmet needs in specific rare disease markets.",
+      "Competitive landscape, including competitors with approved drugs or those developing therapies for the same rare diseases.",
+      "Regulatory incentives for rare disease drug development (e.g., orphan drug exclusivity, tax credits, fast-track approvals).",
+      "Patient advocacy group involvement and patient access programs.",
+      "Historical market penetration strategies for rare disease treatments, including patient engagement, healthcare provider education, and access challenges."
+    ],
+    "improve": [
+      "Strengthen Orphan Drug Designation and Regulatory Strategy",
+      "Enhance Pricing and Reimbursement Negotiations",
+      "Expand Patient Engagement and Advocacy",
+      "",
+      "Leverage Real-World Evidence (RWE)",
+      "Monitor Competitive Threats",
+      "Address Market Access Barriers",
+      ""
+    ]
   },
   {
     "id": "pharma-27",
@@ -486,7 +1006,26 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pharma/27 - Drug Pricing Regulation Across Emerging Markets.md"
+    "sourcePath": "data/analysis-library/pharma/27 - Drug Pricing Regulation Across Emerging Markets.md",
+    "goal": "The goal of analyzing Drug Pricing Regulation Across Emerging Markets is to assess the regulatory frameworks that govern drug pricing in developing regions such as Latin America, Asia, Africa, and parts of Eastern Europe.",
+    "dataRequired": [
+      "Country-specific regulations on drug pricing, including laws related to price caps, reference pricing, and government-negotiated prices.",
+      "Health expenditure data and payer structures in emerging markets (e.g., government-funded healthcare systems, private insurance coverage, out-of-pocket spending).",
+      "Recent government policies or reforms affecting drug pricing in key emerging markets (e.g., China, Brazil, India, South Africa, Mexico).",
+      "Market access and reimbursement processes in each region, including timelines and hurdles for securing coverage.",
+      "Competitive pricing data from local generic or biosimilar products, as well as multinational companies operating in these markets.",
+      "Economic data, including GDP per capita, purchasing power parity (PPP), and healthcare spending as a percentage of GDP, to inform differential pricing strategies.",
+      "Intellectual property protections and patent laws in each market, particularly related to generic competition or compulsory licensing.",
+      "Case studies of successful drug launches in emerging markets and how pricing strategies were adjusted for local regulatory and economic environments."
+    ],
+    "improve": [
+      "Tailor Pricing Strategies to Local Regulations",
+      "Leverage Value-Based Pricing and RWE",
+      "Collaborate with Local Governments and NGOs",
+      "Monitor Policy Changes and Adjust Pricing",
+      "Expand Patient Support and Access Programs",
+      ""
+    ]
   },
   {
     "id": "pharma-28",
@@ -504,7 +1043,28 @@
     "relatedLeverCategories": [
       "SALES_FORCE_EFFECTIVENESS"
     ],
-    "sourcePath": "data/analysis-library/pharma/28 - Healthcare Provider (HCP) Engagement and Influence.md"
+    "sourcePath": "data/analysis-library/pharma/28 - Healthcare Provider (HCP) Engagement and Influence.md",
+    "goal": "The goal of the Healthcare Provider (HCP) Engagement and Influence Strategy is to develop a comprehensive approach to building strong relationships with physicians, specialists, and other healthcare providers to drive product adoption, improve patient outcomes, and establish the pharmaceutical company as a trusted partner in healthcare.",
+    "dataRequired": [
+      "List of key opinion leaders (KOLs), influential healthcare providers, and specialists within target therapeutic areas.",
+      "Prescription data and market share for the company’s drugs, segmented by HCP specialty and geographic region.",
+      "Insights from HCP surveys or interviews regarding their needs, preferences, and challenges in treating specific conditions.",
+      "Competitive analysis of how other pharmaceutical companies engage with and influence HCPs.",
+      "Data on clinical trial participation and collaboration between HCPs and the company.",
+      "Continuing medical education (CME) programs, webinars, and other educational tools available to HCPs for the company’s products.",
+      "Historical engagement data, such as sales force interactions, digital marketing efforts, and conference participation.",
+      "Data on the effectiveness of current HCP engagement tactics, including metrics like prescription growth, HCP feedback, and attendance at educational events.",
+      "Regulatory guidelines and compliance requirements regarding HCP engagement (e.g., Sunshine Act in the U.S., EFPIA rules in Europe)."
+    ],
+    "improve": [
+      "Deepen Relationships with KOLs and Influencers",
+      "Invest in Digital Engagement Tools",
+      "Customize HCP Education Programs",
+      "Enhance Patient Support Programs",
+      "Monitor Engagement and Adjust Strategies",
+      "Maintain Regulatory Compliance",
+      "E. Licensing & Partnerships"
+    ]
   },
   {
     "id": "pharma-29",
@@ -523,7 +1083,26 @@
     "relatedLeverCategories": [
       "LICENSING_BD"
     ],
-    "sourcePath": "data/analysis-library/pharma/29 - Licensing and Partnership Agreements.md"
+    "sourcePath": "data/analysis-library/pharma/29 - Licensing and Partnership Agreements.md",
+    "goal": "The goal of analyzing Licensing and Partnership Agreements is to evaluate how pharmaceutical companies can leverage partnerships and licensing opportunities to expand their product portfolios, access new markets, enhance R&D capabilities, and reduce risk.",
+    "dataRequired": [
+      "Current and past licensing and partnership agreements, including the structure of each deal, financial terms (upfront payments, milestones, royalties), and product rights (e.g., commercialization, co-marketing, co-development).",
+      "Pipeline data showing how licensed assets or partnered products fit within the company’s overall development and commercialization strategy.",
+      "Financial data on licensing revenues, costs shared in partnerships, and the profitability of partnered products.",
+      "Intellectual property (IP) data, including patents, trademarks, and exclusivity periods for products involved in licensing and partnership deals.",
+      "Market and competitive landscape for potential partner companies, including the scientific and commercial strengths of each partner.",
+      "Regulatory implications for co-developed or co-commercialized products in various markets.",
+      "Case studies of successful (and unsuccessful) licensing or partnership agreements within the pharmaceutical industry.",
+      "Risk-sharing frameworks and contingency plans included in existing partnerships to address uncertainties in drug development and market launch."
+    ],
+    "improve": [
+      "Diversify Licensing and Partnership Opportunities",
+      "Strengthen IP Protections and Risk Management",
+      "Align Agreements with Strategic Goals",
+      "Leverage KOLs and R&D Expertise",
+      "Monitor and Adjust as Needed",
+      ""
+    ]
   },
   {
     "id": "pharma-30",
@@ -541,7 +1120,27 @@
       "VOLUME",
       "LICENSING_BD"
     ],
-    "sourcePath": "data/analysis-library/pharma/30 - Early-Stage Compound Licensing Opportunities.md"
+    "sourcePath": "data/analysis-library/pharma/30 - Early-Stage Compound Licensing Opportunities.md",
+    "goal": "The goal of analyzing Early-Stage Compound Licensing Opportunities is to identify promising drug compounds in the early stages of development—such as preclinical or Phase I/II trials—that can be licensed to enhance a pharmaceutical company’s pipeline, diversify its product portfolio, or enter new therapeutic areas.",
+    "dataRequired": [
+      "Pipeline data of early-stage compounds available for licensing, including preclinical and Phase I/II candidates.",
+      "Information on the therapeutic areas, mechanisms of action, and indications targeted by the compounds.",
+      "Preclinical and early-stage clinical trial data, including efficacy, safety, and pharmacokinetics (PK) or pharmacodynamics (PD) data.",
+      "Competitive landscape, including other companies developing similar compounds or working in the same therapeutic area.",
+      "Intellectual property (IP) status of the compounds, including patents, freedom-to-operate analysis, and regulatory exclusivity potential (e.g., orphan drug designation).",
+      "Financial terms from comparable licensing deals for early-stage compounds, including upfront payments, milestones, and royalties.",
+      "Risk factors associated with early-stage compounds, such as clinical failure rates, regulatory uncertainties, and market access challenges.",
+      "Key scientific innovations and trends within target therapeutic areas, including breakthroughs in precision medicine, gene therapy, or immunotherapy.",
+      "Strategic objectives of the company, such as filling pipeline gaps, entering new therapeutic areas, or building partnerships with academic or biotech institutions."
+    ],
+    "improve": [
+      "Expand Scouting Efforts",
+      "Enhance Due Diligence Processes",
+      "Leverage Risk-Sharing Models",
+      "Strengthen IP Protections",
+      "Monitor Competitive Landscape",
+      ""
+    ]
   },
   {
     "id": "pharma-31",
@@ -564,7 +1163,28 @@
       "MIX",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/pharma/31 - Generics Portfolio Strength and Market Share.md"
+    "sourcePath": "data/analysis-library/pharma/31 - Generics Portfolio Strength and Market Share.md",
+    "goal": "The goal of analyzing Generics Portfolio Strength and Market Share is to assess the competitive positioning and performance of a pharmaceutical company’s generic drug offerings.",
+    "dataRequired": [
+      "List of all generic products in the company’s portfolio, including key therapeutic areas and indications.",
+      "Market share data for each generic product by region or country.",
+      "Sales revenue and profitability for generics, including recent trends and growth rates.",
+      "Competitive landscape, including major players in the generics market and their market shares.",
+      "Information on upcoming patent expirations of branded drugs that could create opportunities for generic versions.",
+      "Manufacturing capabilities, including production capacity, cost efficiency, and supply chain reliability for generics.",
+      "Regulatory approval status and timelines for key generics in different markets.",
+      "Pricing data and competitive pricing strategies, including price differentials between the company’s generics and branded equivalents or other competitors’ generics.",
+      "Regulatory and compliance considerations, including bioequivalence data and patent litigation status.",
+      "R&D investment in developing new generics or improving the formulations of existing generic products."
+    ],
+    "improve": [
+      "Expand the Generics Portfolio",
+      "Improve Manufacturing Efficiency",
+      "Enhance Regulatory Capabilities",
+      "Leverage Cost Competitiveness",
+      "Explore Emerging Market Opportunities",
+      "F. Sales & Commercialization"
+    ]
   },
   {
     "id": "pharma-32",
@@ -584,7 +1204,28 @@
     "relatedLeverCategories": [
       "SALES_FORCE_EFFECTIVENESS"
     ],
-    "sourcePath": "data/analysis-library/pharma/32 - Pharmaceutical Sales Force Effectiveness.md"
+    "sourcePath": "data/analysis-library/pharma/32 - Pharmaceutical Sales Force Effectiveness.md",
+    "goal": "The goal of analyzing Pharmaceutical Sales Force Effectiveness is to assess how efficiently and successfully a pharmaceutical company’s sales team is promoting products to healthcare providers (HCPs), driving prescription volume, and supporting overall revenue growth.",
+    "dataRequired": [
+      "Sales force performance metrics, including call volume, frequency of HCP visits, product promotion, and prescription conversion rates.",
+      "Sales revenue data segmented by product, region, and sales representative.",
+      "Prescription data showing trends in physician prescribing behavior before and after sales interactions.",
+      "Information on the company’s product portfolio, including key therapeutic areas and product lifecycle stages (e.g., launch, growth, maturity).",
+      "Competitive analysis of how rival pharmaceutical companies deploy and manage their sales teams.",
+      "Training programs and educational tools available to the sales force.",
+      "CRM (Customer Relationship Management) data tracking sales calls, meetings, HCP feedback, and follow-up actions.",
+      "Insights from HCP surveys and feedback on the quality of interactions with sales representatives.",
+      "Compensation and incentive structures for the sales team (e.g., commission, bonuses, and performance-based rewards).",
+      "Regulatory compliance data, including guidelines for appropriate HCP interactions and ethical sales practices."
+    ],
+    "improve": [
+      "Enhance Sales Training Programs",
+      "Leverage Data and Analytics",
+      "Align Sales and Marketing",
+      "Improve Compensation and Incentives",
+      "Focus on Digital Engagement",
+      ""
+    ]
   },
   {
     "id": "pharma-33",
@@ -604,7 +1245,27 @@
       "COST_OPS",
       "SALES_FORCE_EFFECTIVENESS"
     ],
-    "sourcePath": "data/analysis-library/pharma/33 - Specialty Pharmacy Channel Strategy.md"
+    "sourcePath": "data/analysis-library/pharma/33 - Specialty Pharmacy Channel Strategy.md",
+    "goal": "The goal of analyzing the Specialty Pharmacy Channel Strategy is to develop an effective approach for distributing and managing high-cost, high-complexity medications—commonly referred to as specialty drugs—through specialty pharmacies.",
+    "dataRequired": [
+      "List of the company’s specialty drugs, including indications, therapeutic areas, and distribution needs (e.g., cold chain logistics, administration support).",
+      "Information on the current specialty pharmacy partners and their geographic coverage.",
+      "Sales data and market share for specialty drugs distributed through the specialty pharmacy channel.",
+      "Patient support services offered by specialty pharmacies, such as adherence programs, counseling, and financial assistance.",
+      "Data on payer and reimbursement dynamics for specialty drugs, including coverage policies, copayment structures, and formulary placement.",
+      "Competitive analysis of how other pharmaceutical companies manage their specialty pharmacy channels.",
+      "Regulatory guidelines and compliance requirements for specialty drug distribution and pharmacy interactions.",
+      "Patient and healthcare provider (HCP) feedback on specialty drug access, adherence challenges, and overall satisfaction with specialty pharmacy services.",
+      "Key performance indicators (KPIs) tracking the performance of specialty pharmacies, including time to therapy initiation, refill rates, and patient adherence."
+    ],
+    "improve": [
+      "Expand Specialty Pharmacy Network",
+      "Enhance Patient Support Services",
+      "Improve Payer Engagement",
+      "Leverage Data for Better Patient Outcomes",
+      "Ensure Compliance and Efficiency",
+      "G. Financial Analysis"
+    ]
   },
   {
     "id": "pharma-34",
@@ -623,7 +1284,28 @@
       "MIX",
       "LIFECYCLE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/pharma/34 - Intellectual Property (IP) Portfolio and Patent Expiry Risk.md"
+    "sourcePath": "data/analysis-library/pharma/34 - Intellectual Property (IP) Portfolio and Patent Expiry Risk.md",
+    "goal": "The goal of analyzing a pharmaceutical company’s Intellectual Property (IP) Portfolio and Patent Expiry Risk is to assess the strength, breadth, and duration of the company’s IP assets, including patents protecting its key products.",
+    "dataRequired": [
+      "List of the company’s patents covering key products, including drug compounds, formulations, manufacturing processes, and delivery systems.",
+      "Expiration dates of patents and regulatory exclusivities (e.g., patent expiration, data exclusivity, orphan drug exclusivity, pediatric extensions).",
+      "Sales and revenue data for products approaching patent expiration.",
+      "Market share and revenue contribution of branded products protected by patents.",
+      "Details of any patent extensions or exclusivity protections, such as pediatric extensions, Hatch-Waxman Act extensions (U.S.), or Supplementary Protection Certificates (SPCs) (EU).",
+      "Competitive landscape analysis for generic and biosimilar entrants expected to launch after patent expirations.",
+      "Historical data on market share loss for products after patent cliffs, both for the company and its competitors.",
+      "Litigation status, including patent infringement lawsuits or challenges (e.g., Paragraph IV challenges in the U.S.).",
+      "R&D pipeline data showing replacement therapies, next-generation products, or new indications for existing drugs that could offset revenue loss from patent expiries."
+    ],
+    "improve": [
+      "Maximize Patent Extensions and Regulatory Exclusivity",
+      "where applicable to delay generic competition and extend market exclusivity.",
+      "Defend Against Patent Challenges",
+      "Develop Next-Generation Products",
+      "Pursue Lifecycle Management",
+      "Diversify the Product Portfolio",
+      ""
+    ]
   },
   {
     "id": "pharma-35",
@@ -643,7 +1325,27 @@
       "MIX",
       "LIFECYCLE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/pharma/35 - Market Exclusivity Periods for Key Drugs.md"
+    "sourcePath": "data/analysis-library/pharma/35 - Market Exclusivity Periods for Key Drugs.md",
+    "goal": "The goal of analyzing Market Exclusivity Periods for Key Drugs is to evaluate how long a pharmaceutical company’s key products can remain protected from generic and biosimilar competition, ensuring sustained revenue and market dominance.",
+    "dataRequired": [
+      "List of the company’s key drugs, including their market exclusivity periods and patent expiration dates.",
+      "Breakdown of the types of market exclusivity, including patent protection, regulatory exclusivity, orphan drug status, and data exclusivity.",
+      "Current sales and revenue contribution from drugs with exclusivity protections.",
+      "Regulatory exclusivity periods by region (e.g., FDA exclusivities in the U.S., EMA in the EU, PMDA in Japan).",
+      "Details on any patent extensions or exclusivity extensions, such as pediatric exclusivity or Supplementary Protection Certificates (SPCs) in Europe.",
+      "Competitive landscape data, including potential generic or biosimilar entrants targeting the company’s key drugs.",
+      "Market share loss projections for drugs nearing the end of exclusivity.",
+      "Information on ongoing patent litigation or disputes with generic manufacturers.",
+      "Data on replacement products or next-generation therapies in the pipeline that could offset revenue loss post-exclusivity."
+    ],
+    "improve": [
+      "Extend Market Exclusivity",
+      "Invest in Next-Generation Therapies",
+      "Diversify the Product Portfolio",
+      "Explore Lifecycle Management Strategies",
+      "Collaborate with Payers and Regulators",
+      ""
+    ]
   },
   {
     "id": "pharma-36",
@@ -663,7 +1365,27 @@
       "PRICING",
       "MARKET_ACCESS"
     ],
-    "sourcePath": "data/analysis-library/pharma/36 - Pharmacoeconomic Impact Studies.md"
+    "sourcePath": "data/analysis-library/pharma/36 - Pharmacoeconomic Impact Studies.md",
+    "goal": "The goal of Pharmacoeconomic Impact Studies is to assess the economic value of a pharmaceutical product by comparing its costs and health outcomes to those of alternative therapies.",
+    "dataRequired": [
+      "Clinical trial data, including efficacy, safety, and long-term outcomes for the drug in question.",
+      "Cost data for the drug, including manufacturing costs, distribution, administration, and patient monitoring.",
+      "Comparator data for alternative therapies, including their clinical efficacy, safety profiles, and associated healthcare costs.",
+      "Healthcare system costs, such as hospitalizations, treatments for adverse events, and long-term care costs.",
+      "Patient quality of life (QoL) data, often measured through health-related quality of life (HRQoL) instruments or surveys.",
+      "Data on patient adherence rates and therapy persistence for both the drug and its alternatives.",
+      "Regional or country-specific healthcare cost data, including differences in payer models, reimbursement systems, and pricing policies.",
+      "Real-world evidence (RWE) and observational studies, which provide additional insight into the drug’s impact outside of clinical trial settings.",
+      "Competitive landscape analysis, including pharmacoeconomic data on competing drugs in the same therapeutic area."
+    ],
+    "improve": [
+      "Optimize Pricing Strategies",
+      "Strengthen Clinical Outcomes",
+      "Leverage Value-Based Pricing Models",
+      "Target Appropriate Patient Populations",
+      "Engage Early with Payers",
+      ""
+    ]
   },
   {
     "id": "pharma-37",
@@ -677,6 +1399,24 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pharma/37 - Drug-Drug Interaction (DDI) Risk Management.md"
+    "sourcePath": "data/analysis-library/pharma/37 - Drug-Drug Interaction (DDI) Risk Management.md",
+    "goal": "The goal of Drug-Drug Interaction (DDI) Risk Management is to identify, assess, and mitigate the risks of adverse interactions between a company’s pharmaceutical products and other commonly prescribed drugs.",
+    "dataRequired": [
+      "Clinical and preclinical data on the drug’s mechanism of action (MOA), pharmacokinetics (PK), and pharmacodynamics (PD).",
+      "Information on the drug’s metabolism, including whether it is a substrate, inhibitor, or inducer of key enzymes such as cytochrome P450 (CYP) enzymes.",
+      "Data on other drugs commonly co-prescribed with the target drug, including those used in similar therapeutic areas or populations.",
+      "Information on any observed or theoretical DDIs from preclinical or clinical studies, including safety and efficacy impacts.",
+      "Real-world evidence (RWE) or post-marketing surveillance data that track reported interactions and their clinical consequences.",
+      "Regulatory guidelines from authorities such as the FDA, EMA, or MHRA regarding DDI risk assessment and labeling requirements.",
+      "Drug interaction databases, which compile known or predicted interactions based on the drug’s metabolic pathways and transporter activity (e.g., P-glycoprotein interactions)."
+    ],
+    "improve": [
+      "Incorporate Predictive Modeling Early",
+      "Design Clinical Studies to Address Key DDI Concerns",
+      "Engage with Regulatory Authorities Early",
+      "Educate Healthcare Providers",
+      "Monitor Post-Market Interactions",
+      ""
+    ]
   }
 ]

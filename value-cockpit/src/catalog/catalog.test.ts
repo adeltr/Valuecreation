@@ -41,6 +41,13 @@ describe.each(CATALOGS)('%s catalog – referential integrity', (archetype) => {
     }
   });
 
+  it('every analysis carries its goal and the data it requires', () => {
+    for (const e of entries) {
+      expect(e.goal.length, `${e.id} goal`).toBeGreaterThan(20);
+      expect(e.dataRequired.length, `${e.id} data required`).toBeGreaterThan(0);
+    }
+  });
+
   it('every sourcePath points to an existing file', () => {
     for (const e of entries) expect(existsSync(e.sourcePath), `${e.id}: ${e.sourcePath}`).toBe(true);
   });

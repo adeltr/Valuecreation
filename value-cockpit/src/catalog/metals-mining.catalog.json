@@ -16,7 +16,26 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/01 - Ore Reserve and Resource Assessment.md"
+    "sourcePath": "data/analysis-library/metals-mining/01 - Ore Reserve and Resource Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the quantity, quality, and economic viability of a mining company’s ore reserves and resources.",
+    "dataRequired": [
+      "Geological survey reports and maps.",
+      "Drilling and sampling data (e.g., grade, tonnage).",
+      "Reserve and resource classification (Measured, Indicated, Inferred).",
+      "Metallurgical recovery rates.",
+      "Commodity price forecasts.",
+      "Operational cost estimates (mining, processing, logistics).",
+      "Regulatory and environmental compliance data."
+    ],
+    "improve": [
+      "Conduct additional drilling and sampling programs to increase reserve confidence levels.",
+      "Invest in advanced geological modeling tools to improve resource estimation accuracy.",
+      "Reassess cut-off grades to optimize economic extraction under varying market conditions.",
+      "",
+      "Collaborate with metallurgical experts to enhance recovery rates through improved processing techniques.",
+      "Regularly update resource and reserve models to reflect changes in commodity prices and operational costs.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-02",
@@ -33,7 +52,26 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/02 - Reserve Replacement Rate and Resource Conversion Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/02 - Reserve Replacement Rate and Resource Conversion Analysis.md",
+    "goal": "The goal of this analysis is to assess a mining company’s ability to replace depleted reserves through exploration, development, or acquisitions and to evaluate the effectiveness of converting resources into economically viable reserves.",
+    "dataRequired": [
+      "Annual production data (ore quantity and grade extracted).",
+      "Reserve additions (through exploration, development, or acquisitions).",
+      "Resource-to-reserve conversion data (historical and projected).",
+      "Exploration expenditures and results.",
+      "Resource classification data (Measured, Indicated, Inferred).",
+      "Reserve and resource reporting standards (e.g., JORC, NI 43-101)."
+    ],
+    "improve": [
+      "Prioritize high-potential exploration targets using advanced geophysical and geochemical techniques.",
+      "Increase investment in brownfield projects near existing operations for lower-risk reserve additions.",
+      "",
+      "Strengthen resource modeling and mine planning to improve resource-to-reserve conversion rates.",
+      "Form strategic partnerships or acquisitions to access additional reserves.",
+      "Enhance exploration efficiency by adopting innovative drilling and sampling technologies.",
+      "Regularly update exploration and development strategies based on market conditions and geological insights.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-03",
@@ -48,7 +86,27 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/03 - Exploration and Development Pipeline Review.md"
+    "sourcePath": "data/analysis-library/metals-mining/03 - Exploration and Development Pipeline Review.md",
+    "goal": "The goal of this analysis is to evaluate the status, potential, and risks associated with a mining company’s exploration and development projects.",
+    "dataRequired": [
+      "Inventory of current exploration and development projects, including locations and stages (e.g., early-stage exploration, feasibility studies, development).",
+      "Exploration results (e.g., drilling data, sampling reports).",
+      "Development timelines and milestones.",
+      "Capital expenditure (CapEx) allocations for exploration and development.",
+      "Historical success rates for exploration projects.",
+      "Regulatory and environmental compliance statuses.",
+      "Market demand forecasts for the target commodities."
+    ],
+    "improve": [
+      "Regularly review and update the exploration and development pipeline to prioritize high-potential projects.",
+      "",
+      "Increase collaboration between geologists, engineers, and financial teams to optimize resource allocation.",
+      "Strengthen stakeholder engagement to address community or regulatory challenges early in the project lifecycle.",
+      "Adopt advanced exploration technologies (e.g., AI for geospatial analysis) to improve success rates.",
+      "Develop contingency plans for high-risk projects to minimize potential disruptions.",
+      "Monitor competitor pipelines to identify gaps or opportunities in the company’s strategy.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-04",
@@ -61,7 +119,24 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/04 - Exploration Success Rate and Discovery Cost Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/04 - Exploration Success Rate and Discovery Cost Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the effectiveness and efficiency of a mining company’s exploration activities by measuring the rate of successful discoveries and the cost per unit of discovered resources.",
+    "dataRequired": [
+      "Total number of exploration projects undertaken in the analysis period.",
+      "Number of projects that resulted in economically viable discoveries.",
+      "Exploration expenditures (e.g., drilling, sampling, surveying).",
+      "Total quantity of resources discovered (e.g., in tons, ounces, or carats).",
+      "Classification of discoveries (Measured, Indicated, Inferred)."
+    ],
+    "improve": [
+      "Use advanced geophysical and geochemical techniques to improve targeting accuracy.",
+      "Prioritize exploration in regions with high potential based on historical success rates.",
+      "Optimize drilling and sampling processes to reduce costs without compromising quality.",
+      "Increase collaboration with external geological experts or consultants for better project design.",
+      "Leverage data analytics and AI to identify trends and improve exploration decision-making.",
+      "Continuously monitor and adjust exploration strategies based on outcomes and market conditions.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-05",
@@ -80,7 +155,25 @@
       "COST_OPS",
       "MINING_COST_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/05 - Stripping Ratio and Waste-to-Ore Ratio Evaluation.md"
+    "sourcePath": "data/analysis-library/metals-mining/05 - Stripping Ratio and Waste-to-Ore Ratio Evaluation.md",
+    "goal": "The goal of this analysis is to assess the ratio of waste material to ore extracted in mining operations.",
+    "dataRequired": [
+      "Total volume or weight of waste material removed (e.g., in cubic meters or tons).",
+      "Total volume or weight of ore extracted (e.g., in tons).",
+      "Historical stripping ratios and waste-to-ore ratios for benchmarking.",
+      "Cost data for waste removal and ore extraction.",
+      "Geotechnical and mine design data for assessing overburden thickness and ore body geometry."
+    ],
+    "improve": [
+      "Optimize mine design and pit geometry to reduce waste removal.",
+      "",
+      "Use selective mining techniques to minimize waste extraction while maximizing ore recovery.",
+      "Invest in advanced geotechnical analysis to identify efficient access points for ore bodies.",
+      "Reevaluate cut-off grades to focus on higher-grade ore, reducing waste-to-ore ratios.",
+      "Explore technological solutions like in-pit crushing and conveying (IPCC) to reduce waste handling costs.",
+      "Develop waste management plans to minimize environmental impact and enhance land reclamation efforts.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-06",
@@ -99,7 +192,24 @@
       "WC_DIO",
       "GRADE_CONTROL"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/06 - Mineral Inventory Reconciliation and Variance Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/06 - Mineral Inventory Reconciliation and Variance Analysis.md",
+    "goal": "The goal of this analysis is to compare planned or estimated mineral inventory with actual production and stockpile measurements.",
+    "dataRequired": [
+      "Mine production plans and forecasts (planned grades and tonnages).",
+      "Actual production data (grades and tonnages extracted).",
+      "Stockpile measurements (pre- and post-mining).",
+      "Processing plant data (recovered metal or mineral quantities).",
+      "Geology and grade control data (assay results, resource models)."
+    ],
+    "improve": [
+      "Enhance geological modeling accuracy using updated drilling data and advanced modeling software.",
+      "Implement stricter grade control practices during mining operations to reduce dilution and ore loss.",
+      "Regularly calibrate stockpile measurement equipment to ensure accurate inventory tracking.",
+      "Improve communication and coordination between geology, mining, and processing teams.",
+      "Conduct periodic audits of reconciliation processes to identify and address gaps.",
+      "Train staff in variance analysis and problem-solving methodologies to reduce future discrepancies.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-07",
@@ -112,7 +222,27 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/07 - Ore Body Shape, Depth, and Accessibility Evaluation.md"
+    "sourcePath": "data/analysis-library/metals-mining/07 - Ore Body Shape, Depth, and Accessibility Evaluation.md",
+    "goal": "The goal of this analysis is to assess the geometric characteristics of the ore body, its depth below the surface, and the feasibility of accessing it for mining operations.",
+    "dataRequired": [
+      "Geological and geophysical survey data (e.g., drilling results, seismic studies).",
+      "Ore body shape and dimensions (e.g., tabular, massive, vein-like).",
+      "Depth of ore body from the surface.",
+      "Surrounding rock type and geotechnical properties.",
+      "Current mining methods and infrastructure.",
+      "Capital and operational cost estimates for various mining methods.",
+      "Regulatory and environmental constraints."
+    ],
+    "improve": [
+      "Use advanced geophysical tools (e.g., ground-penetrating radar) to enhance ore body mapping.",
+      "Invest in 3D modeling software for precise visualization and planning.",
+      "",
+      "Conduct detailed geotechnical studies to mitigate risks related to rock stability and water inflows.",
+      "Explore innovative mining methods, such as block caving or in-situ leaching, for challenging ore bodies.",
+      "Enhance infrastructure planning to improve accessibility, including roads and utilities.",
+      "Engage with regulatory bodies and local communities early to address potential constraints proactively.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-08",
@@ -133,7 +263,27 @@
       "COST_OPS",
       "RECOVERY_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/08 - Grade Quality and Metallurgical Recovery Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/08 - Grade Quality and Metallurgical Recovery Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the quality of the ore grade and the efficiency of metallurgical recovery processes.",
+    "dataRequired": [
+      "Assay results showing average ore grade (e.g., grams per ton for gold, percent concentration for other minerals).",
+      "Mineralogical composition of the ore (e.g., sulfides, oxides).",
+      "Metallurgical test results indicating recovery rates for various processing methods.",
+      "Historical production data (grades and recoveries achieved).",
+      "Processing plant performance metrics.",
+      "Commodity price forecasts."
+    ],
+    "improve": [
+      "",
+      "Conduct regular metallurgical testing to refine processing parameters.",
+      "Upgrade processing equipment or adopt innovative technologies to improve recovery rates.",
+      "Implement selective mining practices to focus on higher-grade ore zones.",
+      "Optimize reagent use in processing circuits to improve mineral separation efficiency.",
+      "Train plant operators in advanced recovery techniques to minimize losses.",
+      "Evaluate alternative processing methods for challenging ore types, such as refractory ores or fine-grained materials.",
+      "Collaborate with research institutions or industry experts to explore cutting-edge recovery solutions.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-09",
@@ -154,7 +304,27 @@
       "VOLUME",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/09 - Mine Life and Production Capacity Evaluation.md"
+    "sourcePath": "data/analysis-library/metals-mining/09 - Mine Life and Production Capacity Evaluation.md",
+    "goal": "The goal of this analysis is to estimate the remaining lifespan of a mine and its production capacity.",
+    "dataRequired": [
+      "Proven and probable reserves data (quantity and grade).",
+      "Historical production data (annual ore extraction rates and recovery).",
+      "Mine production plans and forecasts.",
+      "Processing plant throughput capacity.",
+      "Planned operational changes (e.g., expansion, new technologies).",
+      "Commodity price assumptions for economic modeling."
+    ],
+    "improve": [
+      "Increase exploration efforts to identify new reserves or expand existing deposits.",
+      "Optimize production rates by addressing bottlenecks in mining or processing operations.",
+      "Reassess cut-off grades to process lower-grade ores if economically viable.",
+      "Upgrade processing plant capacity to accommodate higher throughput.",
+      "Evaluate innovative mining methods (e.g., in-situ recovery) to access otherwise uneconomic resources.",
+      "",
+      "Plan for phased mine expansions or new development projects to ensure continuous production.",
+      "Collaborate with stakeholders and regulatory bodies to fast-track approvals for expansion projects.",
+      "B. Operational Efficiency and Cost Management"
+    ]
   },
   {
     "id": "metals-mining-10",
@@ -176,7 +346,27 @@
       "COST_OPS",
       "MINING_COST_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/10 - Cost Structure and Cash Cost Positioning.md"
+    "sourcePath": "data/analysis-library/metals-mining/10 - Cost Structure and Cash Cost Positioning.md",
+    "goal": "The goal of this analysis is to break down the cost components of mining operations and evaluate the company’s cash cost positioning relative to competitors.",
+    "dataRequired": [
+      "Operating costs (e.g., mining, processing, transportation, overhead).",
+      "Capital costs (e.g., equipment, infrastructure development).",
+      "By-product credits (value of secondary products reducing overall costs).",
+      "Annual production volumes and grades.",
+      "Commodity prices for the primary and secondary products.",
+      "Industry benchmark data for cash cost comparison."
+    ],
+    "improve": [
+      "Optimize energy consumption through efficiency programs or renewable energy integration.",
+      "",
+      "Implement predictive maintenance strategies to reduce equipment downtime and repair costs.",
+      "Negotiate better terms with suppliers for key inputs, such as fuel or chemicals.",
+      "Invest in automation and digital tools to reduce labor and operational costs.",
+      "Enhance mining and processing efficiencies through improved grade control and metallurgical recovery.",
+      "Reassess the feasibility of by-product recovery to offset operating costs.",
+      "Regularly benchmark costs against peers and adopt best practices from industry leaders.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-11",
@@ -197,7 +387,28 @@
       "COST_OPS",
       "THROUGHPUT_DEBOTTLENECKING"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/11 - Operational Efficiency and Throughput Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/11 - Operational Efficiency and Throughput Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the efficiency of mining operations and the throughput capacity of processing plants.",
+    "dataRequired": [
+      "Daily, monthly, and annual production data (ore processed and metal/mineral produced).",
+      "Equipment utilization rates and downtime records.",
+      "Processing plant throughput capacity (tons per hour or day).",
+      "Labor productivity metrics (output per worker).",
+      "Energy and material consumption rates.",
+      "Maintenance schedules and costs.",
+      "Benchmark data for similar operations or industry averages."
+    ],
+    "improve": [
+      "",
+      "Implement predictive maintenance systems to minimize unplanned equipment downtime.",
+      "Optimize workflows by addressing bottlenecks in hauling, crushing, or processing operations.",
+      "Upgrade or debottleneck processing equipment to increase throughput capacity.",
+      "Introduce advanced process control systems to stabilize and optimize plant performance.",
+      "Train staff in lean operational techniques to improve labor productivity.",
+      "Monitor and reduce energy and material consumption through efficiency programs.",
+      "Regularly benchmark performance against peers and adopt best practices from industry leaders.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-12",
@@ -217,7 +428,26 @@
       "COST_OPS",
       "THROUGHPUT_DEBOTTLENECKING"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/12 - Mining Equipment and Maintenance Efficiency Review.md"
+    "sourcePath": "data/analysis-library/metals-mining/12 - Mining Equipment and Maintenance Efficiency Review.md",
+    "goal": "The goal of this analysis is to evaluate the performance and maintenance efficiency of mining equipment to minimize downtime, reduce operating costs, and improve productivity.",
+    "dataRequired": [
+      "Equipment inventory and specifications (make, model, capacity, age).",
+      "Equipment utilization data (operating hours, idle hours, and downtime).",
+      "**Maintenance records (frequency, cost, and type of maintenance:** preventive, corrective, predictive).",
+      "Operational performance metrics (e.g., tons moved, processed, or hauled per hour).",
+      "Fuel and energy consumption rates.",
+      "Benchmark data for similar equipment in comparable operations."
+    ],
+    "improve": [
+      "Transition to predictive maintenance systems using IoT and AI to anticipate failures and reduce unplanned downtime.",
+      "Implement operator training programs to minimize equipment misuse or overloading.",
+      "Optimize maintenance schedules to balance preventive care and equipment availability.",
+      "Upgrade or replace aging equipment with newer, more efficient models.",
+      "Monitor and analyze fuel and energy consumption trends to identify and address inefficiencies.",
+      "Establish a performance dashboard to track key metrics like utilization, MTBF, and MTTR in real time.",
+      "Benchmark performance regularly and adopt best practices from industry leaders for equipment and maintenance optimization.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-13",
@@ -237,7 +467,28 @@
       "COST_OPS",
       "MINING_COST_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/13 - Mine Site Labor Productivity and Workforce Optimization.md"
+    "sourcePath": "data/analysis-library/metals-mining/13 - Mine Site Labor Productivity and Workforce Optimization.md",
+    "goal": "The goal of this analysis is to evaluate the productivity of the workforce at a mine site and identify opportunities for optimizing labor efficiency.",
+    "dataRequired": [
+      "Total workforce size and breakdown by role (e.g., operators, maintenance, administration).",
+      "Total production data (e.g., tons mined, processed, or hauled).",
+      "Labor hours worked (regular and overtime).",
+      "Labor costs (wages, benefits, training expenses).",
+      "Equipment utilization rates and downtime records.",
+      "Historical labor productivity data for benchmarking.",
+      "Shift schedules and absenteeism rates."
+    ],
+    "improve": [
+      "Implement cross-training programs to enable workforce flexibility and reduce idle time.",
+      "",
+      "Optimize shift schedules to align workforce availability with peak operational needs.",
+      "Adopt real-time monitoring tools to track productivity and address inefficiencies promptly.",
+      "Minimize equipment downtime through predictive maintenance, ensuring consistent workforce activity.",
+      "Invest in automation for repetitive or labor-intensive tasks to enhance overall productivity.",
+      "Regularly review staffing levels to prevent overstaffing or underutilization.",
+      "Conduct regular workforce performance reviews and provide training to improve skills and efficiency.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-14",
@@ -257,7 +508,28 @@
       "COST_OPS",
       "MINING_COST_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/14 - Drilling and Blasting Efficiency Assessment.md"
+    "sourcePath": "data/analysis-library/metals-mining/14 - Drilling and Blasting Efficiency Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the effectiveness of drilling and blasting operations, focusing on optimizing fragmentation, reducing costs, and minimizing environmental impacts.",
+    "dataRequired": [
+      "Drilling specifications (hole depth, diameter, spacing, and pattern).",
+      "Explosive usage (type, quantity, and cost).",
+      "Fragmentation size distribution data (post-blast).",
+      "Blast-induced vibration and environmental impact records.",
+      "Cost data for drilling and blasting operations.",
+      "Downtime and delays caused by suboptimal blasting.",
+      "Benchmarks for similar operations (cost per ton, energy efficiency)."
+    ],
+    "improve": [
+      "Use digital blast design tools to optimize drill hole patterns and explosive distribution.",
+      "Train operators on best practices for drilling precision and blast execution.",
+      "Implement real-time monitoring systems to measure fragmentation and adjust parameters for future blasts.",
+      "",
+      "Transition to energy-efficient explosives or alternative blasting methods to reduce costs and environmental impact.",
+      "Collaborate with geotechnical experts to tailor blast designs to site-specific conditions.",
+      "Regularly review and update blasting protocols based on feedback and performance metrics.",
+      "Benchmark against industry standards to identify and adopt best practices.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-15",
@@ -276,7 +548,27 @@
     "relatedLeverCategories": [
       "GRADE_CONTROL"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/15 - Grade Control and Dilution Management Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/15 - Grade Control and Dilution Management Analysis.md",
+    "goal": "The goal of this analysis is to evaluate and optimize grade control practices to minimize ore dilution and maximize ore recovery.",
+    "dataRequired": [
+      "Geological models and block models of the ore deposit.",
+      "Ore and waste boundaries (planned vs. actual).",
+      "Sampling and assay data from drill holes and blast holes.",
+      "Production data (ore tonnage, waste tonnage, grade delivered to the plant).",
+      "Processing plant feed grade and recovery data.",
+      "Cost data for mining, processing, and waste handling."
+    ],
+    "improve": [
+      "Enhance grade control accuracy by increasing the frequency and quality of blast hole sampling.",
+      "Improve blasting precision through optimized blast designs and modern explosives.",
+      "Train operators in grade control techniques to reduce ore misclassification.",
+      "",
+      "Leverage real-time monitoring tools (e.g., GPS-enabled equipment) to improve ore and waste boundary adherence.",
+      "Recalibrate geological and block models regularly based on new sampling data.",
+      "Implement selective mining techniques to focus on high-grade zones while minimizing dilution.",
+      "Collaborate across geology, mining, and processing teams to align operational goals and ensure grade consistency.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-16",
@@ -295,7 +587,28 @@
       "COST_OPS",
       "CAPEX_DISCIPLINE"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/16 - Lifecycle Cost Analysis for New Project Viability.md"
+    "sourcePath": "data/analysis-library/metals-mining/16 - Lifecycle Cost Analysis for New Project Viability.md",
+    "goal": "The goal of this analysis is to estimate the total costs associated with a mining project over its lifecycle, from initial exploration to mine closure and reclamation.",
+    "dataRequired": [
+      "Exploration and development costs.",
+      "Capital expenditure (CapEx) for infrastructure, equipment, and facilities.",
+      "Operating expenditure (OpEx) for mining, processing, transportation, and overhead.",
+      "Closure and reclamation costs.",
+      "Revenue estimates based on ore grades, production rates, and commodity prices.",
+      "Project timeline and mine life projections.",
+      "Discount rate for Net Present Value (NPV) calculations."
+    ],
+    "improve": [
+      "",
+      "Optimize mine design and production planning to minimize CapEx and OpEx.",
+      "Negotiate better terms with suppliers and contractors to reduce initial and recurring costs.",
+      "Leverage advanced technology to enhance operational efficiency and recovery rates.",
+      "Explore renewable energy sources or energy efficiency programs to reduce operating costs.",
+      "Identify opportunities for by-product recovery to increase revenues.",
+      "Perform phased project implementation to manage financial risks and optimize cash flows.",
+      "Regularly review and update cost and revenue projections to reflect market and operational changes.",
+      "C. Environmental Sustainability and Compliance"
+    ]
   },
   {
     "id": "metals-mining-17",
@@ -310,7 +623,25 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/17 - Environmental, Social, and Governance (ESG) Impact.md"
+    "sourcePath": "data/analysis-library/metals-mining/17 - Environmental, Social, and Governance (ESG) Impact.md",
+    "goal": "The goal of this analysis is to evaluate a mining company’s performance in addressing environmental, social, and governance (ESG) factors.",
+    "dataRequired": [
+      "**Environmental data:** greenhouse gas (GHG) emissions, water usage, energy consumption, waste management practices, and biodiversity impact.",
+      "**Social metrics:** community engagement programs, workforce diversity, labor practices, and health and safety statistics.",
+      "**Governance information:** board structure, diversity, executive compensation, transparency in reporting, and anti-corruption policies.",
+      "ESG regulatory requirements and frameworks (e.g., Global Reporting Initiative (GRI), Task Force on Climate-related Financial Disclosures (TCFD)).",
+      "Peer and industry ESG performance benchmarks."
+    ],
+    "improve": [
+      "Develop and implement a comprehensive ESG strategy aligned with global frameworks like GRI or SDGs.",
+      "Invest in renewable energy and energy efficiency programs to reduce emissions and environmental impact.",
+      "Enhance community engagement through transparent communication and meaningful social investment.",
+      "Improve workforce diversity and safety practices by adopting best practices in hiring and health programs.",
+      "Strengthen governance structures by ensuring board independence, transparency, and accountability.",
+      "Regularly audit ESG performance and disclose progress in line with industry standards.",
+      "Leverage technology for real-time monitoring and reporting of ESG metrics.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-18",
@@ -329,7 +660,29 @@
       "COST_PROCUREMENT",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/18 - Greenhouse Gas Emissions and Carbon Footprint Reduction.md"
+    "sourcePath": "data/analysis-library/metals-mining/18 - Greenhouse Gas Emissions and Carbon Footprint Reduction.md",
+    "goal": "The goal of this analysis is to measure greenhouse gas (GHG) emissions across all operational activities, evaluate the carbon footprint, and develop actionable strategies to reduce emissions while ensuring compliance with environmental regulations and stakeholder expectations.",
+    "dataRequired": [
+      "**Scope 1 emissions:** Direct emissions from owned or controlled sources (e.g., fuel combustion, on-site vehicles).",
+      "**Scope 2 emissions:** Indirect emissions from purchased electricity, steam, heating, and cooling.",
+      "**Scope 3 emissions:** Indirect emissions from upstream and downstream activities (e.g., transportation, supply chain).",
+      "Energy consumption data (fuel, electricity, renewable sources).",
+      "Production data (output and throughput volumes).",
+      "Emission factors for fuels and electricity.",
+      "Regulatory standards and emission reduction targets (e.g., carbon pricing policies, national/international goals).",
+      "Benchmark data from industry peers."
+    ],
+    "improve": [
+      "",
+      "Transition to renewable energy sources, such as solar, wind, or hydroelectric power, for operations.",
+      "Optimize fuel consumption through energy-efficient equipment and fleet management.",
+      "Collaborate with suppliers to reduce Scope 3 emissions in the supply chain.",
+      "Adopt advanced technologies, such as carbon capture and storage (CCS) or electrification of mining equipment.",
+      "Invest in reforestation or other carbon offset projects to neutralize remaining emissions.",
+      "Regularly monitor and report emissions to ensure transparency and accountability.",
+      "Educate employees and stakeholders about sustainable practices to promote a culture of environmental responsibility.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-19",
@@ -343,7 +696,28 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/19 - Waste Management and Tailings Storage Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/19 - Waste Management and Tailings Storage Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the effectiveness and safety of waste management and tailings storage practices.",
+    "dataRequired": [
+      "Types and quantities of waste generated (e.g., overburden, waste rock, tailings).",
+      "Current waste disposal and storage methods.",
+      "Tailings storage facility (TSF) data, including capacity, design specifications, and monitoring reports.",
+      "Environmental monitoring data (e.g., water quality, dust levels).",
+      "Regulatory requirements and industry best practices for waste and tailings management.",
+      "Historical data on incidents (e.g., leaks, breaches, spills).",
+      "Waste and tailings treatment costs."
+    ],
+    "improve": [
+      "Transition to more sustainable waste disposal methods, such as backfilling or waste recycling.",
+      "",
+      "Implement advanced monitoring systems for tailings storage to detect and address issues early.",
+      "Optimize tailings dewatering and treatment processes to reduce volumes and environmental risks.",
+      "Upgrade TSF designs to align with the latest industry standards and enhance structural integrity.",
+      "Conduct regular audits of waste management practices to identify and address compliance gaps.",
+      "Educate workers and stakeholders on sustainable waste practices and risk mitigation.",
+      "Collaborate with environmental experts to explore innovative solutions, such as repurposing tailings for construction materials.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-20",
@@ -363,7 +737,28 @@
       "COST_OPS",
       "PROCESSING_ENERGY_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/20 - Water and Energy Usage Efficiency Review.md"
+    "sourcePath": "data/analysis-library/metals-mining/20 - Water and Energy Usage Efficiency Review.md",
+    "goal": "The goal of this analysis is to assess the efficiency of water and energy usage in mining operations.",
+    "dataRequired": [
+      "Water usage data (e.g., extraction, recycling, and discharge volumes).",
+      "Energy consumption data (electricity, fuel, renewable sources).",
+      "Production output data (ore processed, metal/mineral recovered).",
+      "Costs of water and energy (e.g., per cubic meter or per kilowatt-hour).",
+      "Benchmark data for water and energy usage efficiency in similar operations.",
+      "Regulatory standards for water and energy use.",
+      "Historical data on water and energy efficiency improvements."
+    ],
+    "improve": [
+      "Install advanced monitoring systems to track real-time water and energy usage and identify inefficiencies.",
+      "Upgrade equipment to more energy-efficient models (e.g., high-efficiency motors, variable frequency drives).",
+      "",
+      "Optimize water usage by increasing recycling rates through improved filtration and treatment systems.",
+      "Transition to renewable energy sources, such as solar or wind, to reduce reliance on fossil fuels.",
+      "Implement process optimization techniques, such as optimizing grinding circuits or dewatering processes, to reduce energy and water consumption.",
+      "Educate the workforce on sustainable practices and the importance of efficient resource use.",
+      "Collaborate with external consultants or researchers to explore innovative solutions, such as using dry processing techniques.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-21",
@@ -378,7 +773,27 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/21 - Mine Closure and Rehabilitation Liability Evaluation.md"
+    "sourcePath": "data/analysis-library/metals-mining/21 - Mine Closure and Rehabilitation Liability Evaluation.md",
+    "goal": "The goal of this analysis is to estimate the financial, environmental, and social liabilities associated with mine closure and rehabilitation.",
+    "dataRequired": [
+      "Current site conditions (e.g., disturbed land, tailings storage, infrastructure).",
+      "Regulatory requirements for mine closure and rehabilitation.",
+      "Historical costs for similar mine closures in the region or industry.",
+      "Estimated costs for decommissioning, reclamation, and post-closure monitoring.",
+      "Environmental impact assessments (e.g., water contamination, land restoration).",
+      "Community engagement and resettlement plans, if applicable.",
+      "Mine life projections and operational plans."
+    ],
+    "improve": [
+      "Develop a detailed closure and rehabilitation plan early in the mine’s lifecycle to guide operations and reduce costs.",
+      "Conduct periodic reviews of liability estimates to reflect changes in site conditions or regulatory requirements.",
+      "Increase the use of progressive reclamation techniques to reduce closure liabilities over time.",
+      "Set aside adequate financial provisions, such as closure bonds or trust funds, to ensure funding availability.",
+      "Engage with communities and stakeholders to align closure plans with local needs and expectations.",
+      "Invest in research and innovation for cost-effective and environmentally friendly reclamation methods.",
+      "Collaborate with environmental experts to address complex rehabilitation challenges, such as water contamination or biodiversity restoration.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-22",
@@ -391,7 +806,27 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/22 - Mine Waste Acid Rock Drainage (ARD) Potential Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/22 - Mine Waste Acid Rock Drainage (ARD) Potential Analysis.md",
+    "goal": "The goal of this analysis is to assess the potential for mine waste, such as waste rock and tailings, to generate acid rock drainage (ARD).",
+    "dataRequired": [
+      "Mineralogical composition of waste rock and tailings (e.g., sulfide content, buffering minerals).",
+      "Acid-base accounting (ABA) test results (e.g., Net Acid Generation (NAG), Net Neutralization Potential (NNP)).",
+      "Kinetic test data for long-term ARD prediction.",
+      "Water quality data from mine site monitoring.",
+      "Historical ARD occurrences at the site or in similar geological settings.",
+      "Regulatory requirements for ARD management."
+    ],
+    "improve": [
+      "Implement selective handling and encapsulation of potentially acid-generating materials to prevent exposure to oxygen and water.",
+      "",
+      "Design and maintain engineered covers or liners for tailings and waste rock to minimize ARD formation.",
+      "Establish water treatment systems, such as lime neutralization or passive wetlands, to manage ARD-affected water.",
+      "Monitor waste rock and tailings sites regularly for pH, sulfates, and metals to detect early signs of ARD.",
+      "Invest in research to develop innovative ARD mitigation technologies, such as bactericide treatments for sulfide oxidation.",
+      "Engage with regulators and environmental experts to align ARD management strategies with best practices and standards.",
+      "Regularly review and update waste management plans based on site-specific data and evolving regulatory requirements.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-23",
@@ -407,7 +842,29 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/23 - Dust and Particulate Emission Control Assessment.md"
+    "sourcePath": "data/analysis-library/metals-mining/23 - Dust and Particulate Emission Control Assessment.md",
+    "goal": "The goal of this analysis is to evaluate dust and particulate emissions from mining operations, identify high-emission sources, and develop strategies to mitigate environmental and health impacts.",
+    "dataRequired": [
+      "**Emission inventory data (e.g., dust and particulate sources:** drilling, blasting, hauling, crushing).",
+      "Ambient air quality data (e.g., particulate matter (PM10, PM2.5) levels).",
+      "Meteorological data (e.g., wind speed, direction, humidity).",
+      "Dust suppression methods in use (e.g., water sprays, dust suppressants).",
+      "Equipment specifications for dust control systems.",
+      "Regulatory limits for particulate emissions.",
+      "Historical data on dust-related incidents or complaints."
+    ],
+    "improve": [
+      "",
+      "Upgrade or optimize dust suppression systems, such as high-efficiency water sprays or chemical dust suppressants.",
+      "Enclose dust-generating equipment, such as crushers and conveyors, to minimize emissions.",
+      "Install windbreaks or barriers in high-dust areas to reduce dispersion.",
+      "Develop and implement a real-time dust monitoring system to track particulate levels and guide mitigation efforts.",
+      "Increase haul road maintenance, including wetting or paving, to reduce dust generation from vehicle traffic.",
+      "Train workers on best practices for dust control during high-risk activities like blasting or drilling.",
+      "Collaborate with environmental agencies and communities to ensure transparency and proactive engagement on dust mitigation efforts.",
+      "Regularly review and update dust management plans to incorporate new technologies and evolving standards.",
+      "D. Strategic Planning and Investment Feasibility"
+    ]
   },
   {
     "id": "metals-mining-24",
@@ -428,7 +885,27 @@
       "MIX",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/24 - Commodity Diversification and Portfolio Resilience Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/24 - Commodity Diversification and Portfolio Resilience Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the company’s commodity portfolio to assess diversification, resilience to market volatility, and alignment with long-term industry trends.",
+    "dataRequired": [
+      "Current commodity portfolio and revenue breakdown by commodity.",
+      "Historical commodity price data and volatility metrics.",
+      "Market demand and supply forecasts for each commodity.",
+      "Costs and margins for each commodity segment.",
+      "Industry trends (e.g., demand for critical minerals, renewable energy transition).",
+      "Peer and industry benchmarks for portfolio diversification."
+    ],
+    "improve": [
+      "Expand into high-growth commodities, such as critical minerals for renewable energy and technology applications.",
+      "Diversify the portfolio by exploring joint ventures, acquisitions, or partnerships in complementary markets.",
+      "",
+      "Conduct regular market analysis to adapt the portfolio to evolving demand and supply dynamics.",
+      "Improve operational efficiency in highly volatile segments to protect margins during price fluctuations.",
+      "Align the portfolio with global sustainability trends to enhance long-term resilience and investor appeal.",
+      "Increase investment in exploration for underrepresented or high-potential commodities.",
+      "Develop scenario planning models to test the impact of external shocks on portfolio performance and adjust strategies proactively.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-25",
@@ -448,7 +925,27 @@
       "COST_OPS",
       "CAPEX_DISCIPLINE"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/25 - Capital Expenditure (CapEx) and Sustaining Investment.md"
+    "sourcePath": "data/analysis-library/metals-mining/25 - Capital Expenditure (CapEx) and Sustaining Investment.md",
+    "goal": "The goal of this analysis is to assess the capital expenditure (CapEx) and sustaining investment requirements necessary for new projects, ongoing operations, and long-term asset maintenance.",
+    "dataRequired": [
+      "Historical CapEx data (e.g., project development, equipment purchases).",
+      "Sustaining investment data (e.g., maintenance, upgrades, replacements).",
+      "Operational plans and forecasts (e.g., production targets, expansion projects).",
+      "Equipment lifecycle and replacement schedules.",
+      "Benchmark CapEx data for comparable projects or operations.",
+      "Commodity price forecasts and market trends."
+    ],
+    "improve": [
+      "Optimize equipment lifecycle management to reduce sustaining CapEx through predictive maintenance.",
+      "Prioritize high-return growth projects that align with long-term market trends.",
+      "Conduct detailed feasibility studies to minimize risks of cost overruns and delays in CapEx projects.",
+      "",
+      "Benchmark CapEx practices against industry leaders and adopt best practices for project execution.",
+      "Leverage advanced analytics to improve forecasting and planning for CapEx and sustaining investments.",
+      "Explore opportunities for automation and energy efficiency upgrades to reduce sustaining CapEx.",
+      "Reassess underperforming assets or projects to allocate resources more effectively toward growth initiatives.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-26",
@@ -465,7 +962,27 @@
       "COST_OPS",
       "CAPEX_DISCIPLINE"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/26 - Downstream Processing Integration and Feasibility Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/26 - Downstream Processing Integration and Feasibility Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the potential benefits, challenges, and economic viability of integrating downstream processing activities, such as refining or value-added production, into mining operations.",
+    "dataRequired": [
+      "Current production and sales data for raw materials.",
+      "Market demand and price data for processed or value-added products.",
+      "Cost estimates for setting up and operating downstream processing facilities.",
+      "Technological requirements for processing (e.g., smelting, refining, alloy production).",
+      "Regulatory requirements for downstream activities.",
+      "Benchmark data on downstream processing in similar operations or industries.",
+      "Environmental impact assessments for processing activities."
+    ],
+    "improve": [
+      "Partner with experienced processing companies or technology providers to reduce setup and operational risks.",
+      "Invest in energy-efficient and sustainable technologies to minimize environmental impacts and regulatory hurdles.",
+      "Conduct phased implementation to test feasibility before full-scale investment.",
+      "Explore government incentives or grants for processing infrastructure to reduce capital investment costs.",
+      "Train or hire skilled personnel to manage the technical complexities of downstream operations.",
+      "Monitor market trends and adjust processing capacity to align with demand fluctuations.",
+      "Regularly review downstream performance metrics and refine operations to enhance efficiency and profitability.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-27",
@@ -482,7 +999,28 @@
       "COST_OPS",
       "OFFTAKE_ROYALTY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/27 - Royalty and Offtake Agreement Viability Assessment.md"
+    "sourcePath": "data/analysis-library/metals-mining/27 - Royalty and Offtake Agreement Viability Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the economic and strategic viability of royalty and offtake agreements.",
+    "dataRequired": [
+      "Current royalty and offtake agreements (terms, pricing mechanisms, duration).",
+      "Commodity production data (volumes, grades, recovery rates).",
+      "Historical and forecasted commodity prices.",
+      "Payment structures for royalties (e.g., fixed, sliding scale, percentage of revenue).",
+      "Benchmark agreements in the industry or region.",
+      "Cost and margin data for production.",
+      "Regulatory or tax requirements affecting royalties and offtake deals."
+    ],
+    "improve": [
+      "",
+      "Negotiate flexible pricing mechanisms in offtake agreements to reduce exposure to price volatility.",
+      "Benchmark royalty percentages and offtake terms against similar deals in the industry to ensure competitive agreements.",
+      "Diversify offtake partners to reduce dependency on a single buyer.",
+      "Include clauses for renegotiation or termination in agreements to adapt to changing market conditions.",
+      "Engage legal and financial advisors to review agreements and identify potential risks or improvements.",
+      "Invest in production efficiency improvements to mitigate the impact of high royalty or offtake costs.",
+      "Explore alternative funding or revenue mechanisms to reduce reliance on high-commitment agreements.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-28",
@@ -499,7 +1037,27 @@
       "COST_OPS",
       "PROCESSING_ENERGY_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/28 - Energy Source Diversification and Renewable Integration.md"
+    "sourcePath": "data/analysis-library/metals-mining/28 - Energy Source Diversification and Renewable Integration.md",
+    "goal": "The goal of this analysis is to assess the energy sources used in mining operations, evaluate the feasibility of diversifying energy supply, and integrate renewable energy to reduce costs, enhance sustainability, and mitigate risks associated with energy dependence.",
+    "dataRequired": [
+      "Current energy consumption data (e.g., electricity, diesel, natural gas, renewable sources).",
+      "Energy cost data for each source (e.g., cost per kffh or per liter of fuel).",
+      "Infrastructure capabilities for renewable energy integration (e.g., grid access, available land).",
+      "Operational energy requirements and peak demand profiles.",
+      "Regulatory frameworks and incentives for renewable energy adoption.",
+      "Regional renewable energy potential (e.g., solar, wind, hydro).",
+      "Benchmark energy diversification metrics in similar mining operations."
+    ],
+    "improve": [
+      "Conduct pilot projects for renewable energy solutions, such as solar installations or wind turbines, to test feasibility.",
+      "Collaborate with energy providers or third-party developers to share the cost and risks of renewable integration.",
+      "Invest in energy storage solutions, such as batteries, to stabilize renewable energy supply and meet peak demand.",
+      "Optimize energy efficiency in existing operations to reduce overall consumption and enhance cost-effectiveness of diversification.",
+      "Leverage government incentives or carbon credit programs to offset renewable integration costs.",
+      "Regularly review and update energy strategies based on technological advancements and market trends.",
+      "Monitor performance metrics post-integration to identify further opportunities for improvement and scaling.",
+      "E. Market and Commodity Risk Management"
+    ]
   },
   {
     "id": "metals-mining-29",
@@ -521,7 +1079,27 @@
       "VOLUME",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/29 - Commodity Price Risk Management and Sensitivity Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/29 - Commodity Price Risk Management and Sensitivity Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the company’s exposure to commodity price fluctuations and assess the potential financial impacts of price changes.",
+    "dataRequired": [
+      "Historical commodity price data (e.g., monthly, quarterly, annual).",
+      "Forecasted commodity price trends.",
+      "Production volumes and cost data (fixed and variable costs).",
+      "Revenue breakdown by commodity.",
+      "Financial instruments in use for risk management (e.g., hedging, options, futures).",
+      "Peer and industry benchmarks for commodity price exposure."
+    ],
+    "improve": [
+      "",
+      "Diversify the commodity portfolio to reduce dependency on highly volatile or low-margin products.",
+      "Expand hedging programs to stabilize revenue and protect against downside risks.",
+      "Optimize production costs to lower breakeven prices and enhance profitability in fluctuating markets.",
+      "Develop flexible operational plans that allow scaling production in response to price changes.",
+      "Monitor market trends and adjust pricing strategies proactively to align with demand-supply dynamics.",
+      "Engage with financial experts to design customized risk management tools suited to the company’s needs.",
+      "Enhance transparency and communication with stakeholders to build confidence in risk mitigation strategies.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-30",
@@ -542,7 +1120,28 @@
       "PRICING",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/30 - Market Demand and Supply Analysis for Key Commodities.md"
+    "sourcePath": "data/analysis-library/metals-mining/30 - Market Demand and Supply Analysis for Key Commodities.md",
+    "goal": "The goal of this analysis is to evaluate current and future market demand and supply dynamics for key commodities.",
+    "dataRequired": [
+      "Historical and current market data for key commodities (prices, production, and consumption).",
+      "Global and regional production and consumption data.",
+      "Trade flow data (exports, imports, and inventory levels).",
+      "Forecasts of demand and supply (short-term and long-term).",
+      "Macroeconomic indicators (e.g., GDP growth, industrial activity, population trends).",
+      "Key industry drivers (e.g., technology adoption, renewable energy transition, construction activity).",
+      "Peer and industry benchmarks for production and market share."
+    ],
+    "improve": [
+      "Align production plans with forecasted demand to maximize revenue and minimize excess inventory.",
+      "Diversify market exposure to reduce dependency on mature or oversaturated regions.",
+      "",
+      "Invest in commodities tied to high-growth sectors, such as critical minerals for renewable technologies.",
+      "Monitor trade flow data to identify and capitalize on regional supply-demand imbalances.",
+      "Develop flexible pricing strategies that account for potential shifts in market dynamics.",
+      "Strengthen relationships with key customers and trade partners to secure long-term demand.",
+      "Regularly update forecasts and market analyses to adapt to changing economic and industry conditions.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-31",
@@ -560,7 +1159,29 @@
       "COST_PROCUREMENT",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/31 - Global Supply Chain Disruption Risk Assessment for Raw.md"
+    "sourcePath": "data/analysis-library/metals-mining/31 - Global Supply Chain Disruption Risk Assessment for Raw.md",
+    "goal": "The goal of this analysis is to evaluate the risks associated with disruptions in the global supply chain for raw materials.",
+    "dataRequired": [
+      "Current raw material supply chain data (sources, volumes, and transportation modes).",
+      "Supplier dependency metrics (e.g., single-source vs. multi-source).",
+      "Historical data on supply chain disruptions (e.g., delays, shortages).",
+      "Geopolitical and regulatory risk indicators for supplier regions.",
+      "Transportation and logistics data (e.g., routes, costs, lead times).",
+      "Inventory levels and storage capacity at key locations.",
+      "Commodity market trends and price volatility data.",
+      "Peer and industry benchmarks for supply chain resilience."
+    ],
+    "improve": [
+      "",
+      "Diversify supplier base to reduce dependency on single suppliers or high-risk regions.",
+      "Increase inventory buffers or establish just-in-case inventory systems for critical raw materials.",
+      "Develop alternative transportation routes and logistics options to bypass potential bottlenecks.",
+      "Invest in supply chain visibility tools to monitor real-time risks and improve decision-making.",
+      "Strengthen supplier relationships through long-term contracts and collaborative risk-sharing agreements.",
+      "Collaborate with industry peers to pool resources or share supply chain insights during disruptions.",
+      "Regularly update risk assessments and scenario analyses to reflect evolving geopolitical and market conditions.",
+      "F. Infrastructure and Logistics"
+    ]
   },
   {
     "id": "metals-mining-32",
@@ -576,7 +1197,28 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/32 - Transportation and Export Infrastructure Capacity Assessment.md"
+    "sourcePath": "data/analysis-library/metals-mining/32 - Transportation and Export Infrastructure Capacity Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the capacity and efficiency of transportation and export infrastructure supporting mining operations.",
+    "dataRequired": [
+      "Current production and export volumes.",
+      "Transportation modes and routes used (e.g., rail, road, port, shipping).",
+      "Infrastructure capacity data (e.g., tonnage limits, port throughput).",
+      "Logistics costs (e.g., transportation and handling costs per ton).",
+      "Historical data on delays, congestion, or equipment failures.",
+      "Future production and export forecasts.",
+      "Industry benchmarks for transportation and export efficiency."
+    ],
+    "improve": [
+      "Invest in infrastructure upgrades, such as additional railcars, expanded port facilities, or improved road networks.",
+      "",
+      "Develop alternative transportation routes or modes to reduce dependency on congested hubs.",
+      "Implement real-time tracking systems to monitor shipments and identify delays early.",
+      "Negotiate better terms with logistics providers to lower costs and improve service reliability.",
+      "Collaborate with government and industry stakeholders to advocate for regional infrastructure improvements.",
+      "Optimize production scheduling to align with transportation and export capacity, reducing peak congestion.",
+      "Regularly review and update transportation and export plans based on production forecasts and market conditions.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-33",
@@ -593,7 +1235,29 @@
       "COST_PROCUREMENT",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/33 - Supply Chain and Logistics Reliability Assessment.md"
+    "sourcePath": "data/analysis-library/metals-mining/33 - Supply Chain and Logistics Reliability Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the reliability and efficiency of the supply chain and logistics network supporting mining operations.",
+    "dataRequired": [
+      "Supply chain data for raw materials, equipment, and spare parts.",
+      "Logistics performance metrics (e.g., delivery lead times, on-time delivery rates, transit times).",
+      "Transportation modes and routes (e.g., road, rail, port, air).",
+      "Supplier performance data (e.g., order fulfillment rates, quality of goods).",
+      "Historical disruption data (e.g., delays, shortages, or route closures).",
+      "Inventory levels and turnover rates.",
+      "Costs associated with logistics and supply chain management.",
+      "Industry benchmarks for supply chain and logistics performance."
+    ],
+    "improve": [
+      "Diversify suppliers to reduce dependency on single sources and mitigate disruption risks.",
+      "Optimize transportation routes and modes to balance cost and reliability.",
+      "",
+      "Implement advanced tracking and visibility tools to monitor shipments in real-time and address delays proactively.",
+      "Increase inventory buffers for critical materials and parts to ensure operational continuity.",
+      "Collaborate with suppliers to improve order accuracy, lead times, and quality.",
+      "Develop contingency plans for alternative suppliers, routes, and logistics providers to respond to emergencies.",
+      "Regularly review and benchmark supply chain and logistics performance to identify and adopt best practices.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-34",
@@ -607,7 +1271,28 @@
       "GEOTECHNICAL_RISK"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/34 - Slope Stability and Mine Wall Integrity Monitoring.md"
+    "sourcePath": "data/analysis-library/metals-mining/34 - Slope Stability and Mine Wall Integrity Monitoring.md",
+    "goal": "The goal of this analysis is to assess the stability of slopes and mine walls in open-pit or underground mining operations.",
+    "dataRequired": [
+      "Geological and geotechnical data (e.g., rock type, structure, and weathering).",
+      "Slope and mine wall geometry (height, angle, and bench design).",
+      "Monitoring data (e.g., displacement, stress measurements, and seismic activity).",
+      "Historical slope stability incidents and failure data.",
+      "Weather data (e.g., rainfall, temperature fluctuations).",
+      "Equipment specifications for monitoring tools (e.g., inclinometers, extensometers).",
+      "Regulatory guidelines for slope stability and safety standards."
+    ],
+    "improve": [
+      "",
+      "Enhance slope design by optimizing bench dimensions, angles, and drainage systems.",
+      "Install advanced monitoring systems for real-time detection of slope movement and water pressure.",
+      "Reinforce unstable areas using rock bolting, shotcrete, or retaining walls.",
+      "Implement dewatering systems to reduce pore water pressure and enhance stability.",
+      "Schedule blasting activities to minimize vibrations near critical slopes.",
+      "Conduct regular inspections and audits to ensure proactive identification of risks.",
+      "Train personnel in slope monitoring techniques and emergency response protocols for slope failures.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-35",
@@ -623,7 +1308,28 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/35 - Seismic and Geotechnical Stability Assessment of Mine Sites.md"
+    "sourcePath": "data/analysis-library/metals-mining/35 - Seismic and Geotechnical Stability Assessment of Mine Sites.md",
+    "goal": "The goal of this analysis is to evaluate the seismic and geotechnical stability of mine sites, ensuring structural safety, minimizing risks of ground failure, and supporting the sustainable operation of mining activities.",
+    "dataRequired": [
+      "Geological and geotechnical data (e.g., rock types, fault lines, joint orientation, soil characteristics).",
+      "Seismic activity data (historical earthquakes, seismic hazard maps).",
+      "Monitoring data from geotechnical instruments (e.g., inclinometers, seismometers).",
+      "Groundwater data (e.g., water table levels, pore water pressure).",
+      "Mine site layout and excavation plans.",
+      "Regulatory standards and safety guidelines for seismic and geotechnical stability.",
+      "Historical data on ground failures or instability at the site or in similar conditions."
+    ],
+    "improve": [
+      "",
+      "Reinforce unstable areas using techniques like grouting, rock bolting, or shotcrete application.",
+      "Develop a robust dewatering system to reduce groundwater pressure and improve stability.",
+      "Enhance real-time monitoring systems to detect early signs of instability or seismic activity.",
+      "Adjust excavation designs to minimize stress concentrations and maintain stable ground conditions.",
+      "Collaborate with geotechnical and seismic experts to refine risk assessments and mitigation plans.",
+      "Train staff in seismic safety protocols and emergency response procedures for ground failure events.",
+      "Conduct regular audits and inspections to ensure ongoing stability and compliance with safety standards.",
+      "G. Safety, Community, and Stakeholder Engagement"
+    ]
   },
   {
     "id": "metals-mining-36",
@@ -642,7 +1348,28 @@
       "VOLUME",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/36 - Mine Safety and Compliance Assessment.md"
+    "sourcePath": "data/analysis-library/metals-mining/36 - Mine Safety and Compliance Assessment.md",
+    "goal": "The goal of this analysis is to evaluate mine safety practices and ensure compliance with regulatory and industry standards.",
+    "dataRequired": [
+      "Historical safety incident data (e.g., injuries, fatalities, near misses).",
+      "Safety performance metrics (e.g., Lost Time Injury Frequency Rate (LTIFR), Total Recordable Injury Frequency Rate (TRIFR)).",
+      "Current safety protocols and procedures.",
+      "Employee training records and certifications.",
+      "Inspection and audit reports from regulators and internal teams.",
+      "Equipment maintenance and safety check records.",
+      "Emergency response plans and incident reports.",
+      "Regulatory requirements for mine safety."
+    ],
+    "improve": [
+      "Update and enhance safety training programs tailored to specific roles and activities.",
+      "Strengthen risk management practices by implementing advanced monitoring and predictive safety tools.",
+      "Regularly audit safety procedures to ensure continuous alignment with evolving regulations and standards.",
+      "Increase the frequency of equipment inspections and maintenance to reduce operational risks.",
+      "Improve communication channels for reporting near misses and potential hazards.",
+      "Implement a rewards program to encourage a culture of safety and proactive risk management.",
+      "Collaborate with industry bodies and regulators to stay updated on best practices and new safety requirements.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-37",
@@ -653,7 +1380,27 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/37 - Community Relations and Stakeholder Engagement.md"
+    "sourcePath": "data/analysis-library/metals-mining/37 - Community Relations and Stakeholder Engagement.md",
+    "goal": "The goal of this analysis is to evaluate the effectiveness of a mining company’s community relations and stakeholder engagement strategies.",
+    "dataRequired": [
+      "Stakeholder mapping and engagement plans.",
+      "Records of community investment initiatives (e.g., infrastructure projects, education programs).",
+      "Feedback and grievances from community members and stakeholders.",
+      "Social impact assessment reports.",
+      "Regulatory and permitting requirements related to community engagement.",
+      "Historical data on disputes, protests, or conflicts.",
+      "Industry benchmarks for community relations performance."
+    ],
+    "improve": [
+      "Increase the frequency and depth of engagement with key stakeholders to build stronger relationships and trust.",
+      "Invest in targeted community development programs aligned with local needs and priorities.",
+      "Establish clear and transparent grievance mechanisms to address issues promptly and effectively.",
+      "Collaborate with local governments and NGOs to co-develop initiatives that maximize community impact.",
+      "Regularly monitor and evaluate the effectiveness of engagement activities and community programs.",
+      "Train employees and leadership on cultural awareness and communication to enhance stakeholder interactions.",
+      "Publish annual community relations reports to improve transparency and accountability.",
+      "H. Technology and Innovation"
+    ]
   },
   {
     "id": "metals-mining-38",
@@ -672,7 +1419,29 @@
       "COST_OPS",
       "GRADE_CONTROL"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/38 - Ore Sorting and Pre-Concentration Efficiency Review.md"
+    "sourcePath": "data/analysis-library/metals-mining/38 - Ore Sorting and Pre-Concentration Efficiency Review.md",
+    "goal": "The goal of this analysis is to evaluate the efficiency of ore sorting and pre-concentration processes.",
+    "dataRequired": [
+      "Feed grade data (ore grade before sorting).",
+      "Product grade and recovery data (sorted ore grade and yield).",
+      "Waste removal efficiency (percentage of waste removed).",
+      "Throughput capacity of sorting equipment.",
+      "Energy and operational costs for ore sorting.",
+      "Historical data on pre-concentration performance.",
+      "Ore characteristics influencing sorting (e.g., size, density, mineral composition).",
+      "Industry benchmarks for ore sorting and pre-concentration efficiency."
+    ],
+    "improve": [
+      "Calibrate sorting equipment to optimize feed size, sensor accuracy, and detection thresholds.",
+      "",
+      "Train operators to manage sorting systems effectively and troubleshoot inefficiencies.",
+      "Integrate advanced technologies, such as AI or machine learning, for real-time sorting optimization.",
+      "Conduct regular maintenance and upgrades on sorting equipment to maintain peak performance.",
+      "Test alternative sorting methods (e.g., optical, X-ray, or density-based) to determine the most efficient approach for specific ore types.",
+      "Collaborate with technology providers to customize sorting solutions for unique operational needs.",
+      "Implement a continuous monitoring system to track sorting performance and identify improvement opportunities promptly.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-39",
@@ -688,7 +1457,28 @@
       "COST_OPS",
       "THROUGHPUT_DEBOTTLENECKING"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/39 - Mine Automation and Digital Technology Adoption Evaluation.md"
+    "sourcePath": "data/analysis-library/metals-mining/39 - Mine Automation and Digital Technology Adoption Evaluation.md",
+    "goal": "The goal of this analysis is to assess the level of automation and digital technology adoption in mining operations, evaluate its impact on productivity and efficiency, and identify opportunities for further digital transformation.",
+    "dataRequired": [
+      "Current technologies in use (e.g., automated vehicles, robotics, digital twins, IoT sensors).",
+      "Productivity metrics (e.g., tons per hour, cycle times, equipment utilization).",
+      "Cost data (e.g., technology implementation, operational costs, maintenance).",
+      "Employee training and adaptation metrics.",
+      "Safety incident data before and after automation implementation.",
+      "Benchmark data for automation levels and benefits in similar mining operations.",
+      "Industry trends and emerging technologies in mining automation."
+    ],
+    "improve": [
+      "",
+      "Conduct pilot programs to test emerging technologies, such as autonomous haulage systems or advanced analytics tools.",
+      "Invest in employee training and change management to facilitate the transition to automated operations.",
+      "Collaborate with technology providers to customize solutions for specific operational challenges.",
+      "Implement IoT sensors and real-time monitoring systems to enhance decision-making and predictive maintenance.",
+      "Upgrade infrastructure, such as communication networks, to support advanced digital technologies.",
+      "Regularly review and update technology strategies to align with industry trends and operational goals.",
+      "Establish key performance indicators (KPIs) to monitor the effectiveness and ROI of automation initiatives.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-40",
@@ -709,7 +1499,28 @@
       "COST_OPS",
       "RECOVERY_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/40 - Metals Recovery Rate Optimization and Byproduct.md"
+    "sourcePath": "data/analysis-library/metals-mining/40 - Metals Recovery Rate Optimization and Byproduct.md",
+    "goal": "The goal of this analysis is to enhance the efficiency of metals recovery processes and manage byproducts effectively.",
+    "dataRequired": [
+      "Current recovery rates for primary metals and byproducts.",
+      "Ore composition and grade data.",
+      "Processing method details (e.g., flotation, smelting, leaching).",
+      "Byproduct generation and utilization data (e.g., slag, tailings).",
+      "Operational cost data for recovery and byproduct processing.",
+      "Market data for byproducts (e.g., demand, pricing).",
+      "Benchmark recovery rates and byproduct management practices in the industry."
+    ],
+    "improve": [
+      "",
+      "Upgrade processing technology, such as advanced flotation or leaching systems, to enhance recovery rates.",
+      "Optimize reagent usage and chemical processes to improve metal separation efficiency.",
+      "Invest in R&D to explore innovative methods for byproduct recovery and utilization.",
+      "Establish partnerships with industries that can use byproducts as raw materials (e.g., construction or manufacturing).",
+      "Regularly monitor and analyze recovery rates to identify and address inefficiencies promptly.",
+      "Implement real-time monitoring systems to ensure consistent process performance and recovery optimization.",
+      "Train personnel on advanced recovery techniques and byproduct management practices.",
+      "I. Legal, Regulatory, and Geopolitical Risk"
+    ]
   },
   {
     "id": "metals-mining-41",
@@ -724,7 +1535,27 @@
       "GEOPOLITICAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/41 - Geopolitical and Regulatory Risk Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/41 - Geopolitical and Regulatory Risk Analysis.md",
+    "goal": "The goal of this analysis is to identify and evaluate geopolitical and regulatory risks impacting mining operations.",
+    "dataRequired": [
+      "Location-specific geopolitical risk indicators (e.g., political stability, corruption index, conflict zones).",
+      "Local, national, and international regulatory requirements for mining operations.",
+      "Taxation, royalty, and export regulation data.",
+      "Historical data on government interventions, sanctions, or policy changes affecting mining operations.",
+      "Stakeholder dynamics, including community and labor relations.",
+      "Industry-specific benchmarks for geopolitical and regulatory risk exposure."
+    ],
+    "improve": [
+      "Diversify operations geographically to reduce dependence on high-risk regions.",
+      "Strengthen relationships with local governments and communities through consistent engagement and transparent communication.",
+      "",
+      "Develop contingency plans for potential disruptions, including alternative supply chains or operational adjustments.",
+      "Invest in legal and regulatory expertise to ensure compliance with evolving laws and standards.",
+      "Monitor geopolitical developments regularly and update risk assessments accordingly.",
+      "Collaborate with industry groups to advocate for fair and consistent regulatory policies.",
+      "Leverage technology for real-time monitoring of geopolitical and regulatory risks, enhancing responsiveness to emerging challenges.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-42",
@@ -740,7 +1571,27 @@
       "GEOPOLITICAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/metals-mining/42 - Mineral Rights and Land Tenure Security Review.md"
+    "sourcePath": "data/analysis-library/metals-mining/42 - Mineral Rights and Land Tenure Security Review.md",
+    "goal": "The goal of this analysis is to evaluate the security and legality of mineral rights and land tenure for mining operations.",
+    "dataRequired": [
+      "Mineral rights documentation (e.g., leases, permits, concessions).",
+      "Land tenure agreements (e.g., deeds, easements, community agreements).",
+      "Regulatory frameworks governing land use and mineral rights in operating regions.",
+      "Historical disputes or legal challenges related to mineral rights or land tenure.",
+      "Stakeholder agreements with local communities, governments, or landowners.",
+      "Benchmark data on land tenure stability and mineral rights security in similar operations."
+    ],
+    "improve": [
+      "Conduct regular audits of mineral rights and land tenure documentation to ensure accuracy and compliance.",
+      "Strengthen stakeholder relationships through transparent communication and fair agreements with local communities and governments.",
+      "",
+      "Resolve overlapping claims or disputes proactively through negotiation or legal action.",
+      "Establish clear reporting and governance structures to manage mineral rights and land tenure issues.",
+      "Monitor changes in regulations or legal precedents affecting land use and mineral ownership.",
+      "Collaborate with legal and land management experts to refine agreements and mitigate risks.",
+      "Build long-term partnerships with local communities to enhance trust and align on land use expectations.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-43",
@@ -761,7 +1612,28 @@
       "COST_OPS",
       "OFFTAKE_ROYALTY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/43 - Royalties, Taxation, and Government Revenue Sharing.md"
+    "sourcePath": "data/analysis-library/metals-mining/43 - Royalties, Taxation, and Government Revenue Sharing.md",
+    "goal": "The goal of this analysis is to evaluate the financial and operational impacts of royalties, taxation, and government revenue-sharing obligations on mining projects.",
+    "dataRequired": [
+      "Current royalty rates and tax structures applicable to mining operations.",
+      "Government revenue-sharing agreements (e.g., production-sharing, equity stakes).",
+      "Historical and projected production data.",
+      "Commodity price trends and forecasts.",
+      "Operational costs, including production, processing, and logistics.",
+      "Financial statements (e.g., revenue, profit margins, tax payments).",
+      "Peer and industry benchmarks for fiscal terms."
+    ],
+    "improve": [
+      "",
+      "Negotiate favorable fiscal terms with governments, emphasizing the economic and social benefits of the project.",
+      "Optimize production efficiency to offset high royalty or tax burdens.",
+      "Leverage available tax incentives, deductions, or credits to reduce liabilities.",
+      "Establish transparent reporting and governance practices to ensure compliance and build trust with government stakeholders.",
+      "Monitor changes in fiscal policies and adapt financial planning accordingly.",
+      "Collaborate with industry associations to advocate for stable and competitive fiscal regimes.",
+      "Conduct periodic reviews of fiscal obligations to identify opportunities for cost savings or renegotiations.",
+      "J. Processing and Value Addition"
+    ]
   },
   {
     "id": "metals-mining-44",
@@ -782,7 +1654,29 @@
       "COST_OPS",
       "PROCESSING_ENERGY_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/44 - Smelting and Refining Capacity and Efficiency Evaluation.md"
+    "sourcePath": "data/analysis-library/metals-mining/44 - Smelting and Refining Capacity and Efficiency Evaluation.md",
+    "goal": "The goal of this analysis is to assess the capacity, efficiency, and cost-effectiveness of smelting and refining processes.",
+    "dataRequired": [
+      "Current smelting and refining capacity (tons per day or year).",
+      "Throughput data (actual vs. designed capacity utilization).",
+      "Recovery rates for metals during smelting and refining.",
+      "Energy consumption and associated costs.",
+      "Material inputs and outputs (ore, concentrates, slags, refined metals).",
+      "Operational and maintenance costs.",
+      "Quality specifications for refined metals.",
+      "Benchmark data on smelting and refining performance in similar facilities."
+    ],
+    "improve": [
+      "",
+      "Upgrade smelting and refining equipment to enhance throughput, recovery rates, and energy efficiency.",
+      "Optimize feed material preparation to ensure consistent quality and maximize recovery rates.",
+      "Implement advanced monitoring and control systems to improve process accuracy and reduce variability.",
+      "Reduce energy consumption by adopting energy-efficient technologies and renewable energy sources.",
+      "Schedule regular maintenance and process audits to minimize unplanned downtime.",
+      "Collaborate with industry experts or technology providers to explore innovations in smelting and refining.",
+      "Benchmark against top-performing facilities and adopt best practices to improve competitiveness.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-45",
@@ -801,7 +1695,27 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/45 - Downstream Value-Addition Opportunities Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/45 - Downstream Value-Addition Opportunities Analysis.md",
+    "goal": "The goal of this analysis is to identify and evaluate opportunities for downstream value addition in mining operations.",
+    "dataRequired": [
+      "Current production data for raw materials and semi-processed outputs.",
+      "Market demand, pricing, and trends for potential value-added products.",
+      "Cost estimates for downstream processing facilities and operations.",
+      "Technological and infrastructure requirements for value addition.",
+      "Regulatory requirements and incentives for downstream processing.",
+      "Peer and industry benchmarks for value-added product portfolios.",
+      "Historical and forecasted financial performance data."
+    ],
+    "improve": [
+      "Invest in research and development to identify innovative methods for processing and creating value-added products.",
+      "Collaborate with customers or industry partners to ensure downstream products meet market needs.",
+      "Develop pilot projects to test the feasibility of producing value-added products on a small scale before scaling operations.",
+      "Secure government incentives or grants to offset the costs of infrastructure and technology investments.",
+      "Train employees on advanced processing techniques and downstream product development.",
+      "Monitor market trends to align product offerings with high-demand sectors, such as renewable energy or technology.",
+      "Regularly update feasibility studies and business cases to adapt to changing market conditions or regulatory environments.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-46",
@@ -822,7 +1736,30 @@
     "relatedLeverCategories": [
       "RECOVERY_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/46 - Processing and Product Specification and Purity Analysis.md"
+    "sourcePath": "data/analysis-library/metals-mining/46 - Processing and Product Specification and Purity Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the processing efficiency and the quality of finished products, focusing on meeting market specifications and achieving optimal purity.",
+    "dataRequired": [
+      "Input material composition and grade.",
+      "Product specifications and purity requirements for target markets.",
+      "Recovery rates and yields from processing stages.",
+      "Operational data from processing facilities (e.g., throughput, energy consumption).",
+      "Quality assurance/quality control (QA/QC) data from finished product testing.",
+      "Cost data for processing stages.",
+      "Benchmark purity levels and product specifications in the industry.",
+      "Customer feedback on product quality and consistency."
+    ],
+    "improve": [
+      "",
+      "Invest in advanced processing technologies, such as enhanced separation or purification methods, to achieve higher purity levels.",
+      "Optimize reagent usage and other processing parameters to improve recovery rates and reduce costs.",
+      "Implement real-time monitoring systems to ensure consistent quality and identify deviations early.",
+      "Conduct regular QA/QC audits to address recurring quality issues and refine standards.",
+      "Collaborate with customers to align products with evolving market specifications and preferences.",
+      "Benchmark processing techniques against top-performing facilities to adopt best practices.",
+      "Train personnel on the latest processing and quality assurance methods to maintain high standards.",
+      "Regularly review input material quality and adjust processing strategies to account for variations.",
+      ""
+    ]
   },
   {
     "id": "metals-mining-47",
@@ -842,6 +1779,28 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/metals-mining/47 - Supply Chain Traceability and Ethical Sourcing Compliance.md"
+    "sourcePath": "data/analysis-library/metals-mining/47 - Supply Chain Traceability and Ethical Sourcing Compliance.md",
+    "goal": "The goal of this analysis is to evaluate the transparency and accountability of the supply chain, ensuring that raw materials are sourced ethically and comply with regulatory and industry standards.",
+    "dataRequired": [
+      "Supplier data, including origin of raw materials and processing facilities.",
+      "Traceability system data (e.g., blockchain records, material tracking systems).",
+      "Certification or audit reports from suppliers (e.g., ISO standards, Responsible Mining Assurance).",
+      "Regulations and standards for ethical sourcing (e.g., OECD Due Diligence Guidance, Dodd-Frank Act).",
+      "Historical data on supply chain breaches or non-compliance incidents.",
+      "Cost and resource allocation for traceability systems and ethical compliance programs.",
+      "Customer and stakeholder requirements for supply chain transparency."
+    ],
+    "improve": [
+      "Invest in advanced traceability technologies, such as blockchain, to ensure transparency across the supply chain.",
+      "Collaborate with suppliers to improve compliance with ethical sourcing certifications and standards.",
+      "",
+      "Conduct regular audits of suppliers and high-risk regions to identify and address potential breaches.",
+      "Engage third-party organizations to validate ethical sourcing claims and enhance credibility.",
+      "Diversify sourcing to reduce dependency on high-risk suppliers or regions.",
+      "Establish clear policies and training programs for ethical sourcing across all supply chain tiers.",
+      "Monitor and adapt to evolving regulations and customer requirements for ethical sourcing compliance.",
+      "Publish transparent reports on supply chain practices to enhance stakeholder trust and accountability.",
+      ""
+    ]
   }
 ]

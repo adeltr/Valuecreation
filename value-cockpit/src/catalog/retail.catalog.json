@@ -16,7 +16,22 @@
       "PRICING",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/retail/01 - Comparable Store Sales Analysis.md"
+    "sourcePath": "data/analysis-library/retail/01 - Comparable Store Sales Analysis.md",
+    "goal": "The goal of Comparable Store Sales (Same-Store Sales) Analysis is to evaluate the performance of retail locations that have been open for at least one year.",
+    "dataRequired": [
+      "Sales data for each store, segmented by time period (daily, weekly, monthly, or quarterly).",
+      "List of stores that have been open for at least one year.",
+      "Historical sales data for the same stores during the same period in the previous year.",
+      "External factors that might a9ect sales, such as promotions, seasonal events, or macroeconomic trends."
+    ],
+    "improve": [
+      "Enhance customer engagement",
+      "Optimize inventory management",
+      "Reﬁne promotional strategies",
+      "Implement omnichannel strategies",
+      "Improve store layout",
+      "Training staM"
+    ]
   },
   {
     "id": "retail-02",
@@ -36,7 +51,23 @@
       "MIX",
       "CUSTOMER_LOYALTY"
     ],
-    "sourcePath": "data/analysis-library/retail/02 - Foot Traffic and Conversion Rate Analysis.md"
+    "sourcePath": "data/analysis-library/retail/02 - Foot Traffic and Conversion Rate Analysis.md",
+    "goal": "The goal of Foot Tra9ic and Conversion Rate Analysis is to assess how e9ectively a retail company is converting store visitors into paying customers.",
+    "dataRequired": [
+      "Total number of visitors (foot tra9ic) during a speciﬁc period.",
+      "Total number of transactions or purchases made during the same period.",
+      "Sales revenue data (optional for deeper insights).",
+      "Customer demographic data (optional for segmentation analysis)."
+    ],
+    "improve": [
+      "Enhance in-store experience",
+      "Improve customer engagement",
+      "Run targeted promotions",
+      "Optimize product assortment",
+      "Leverage data to target key demographics",
+      "Review store location and marketing",
+      "Improve signage and wayﬁnding"
+    ]
   },
   {
     "id": "retail-03",
@@ -52,7 +83,24 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/retail/03 - Customer Return Rate Analysis.md"
+    "sourcePath": "data/analysis-library/retail/03 - Customer Return Rate Analysis.md",
+    "goal": "The goal of Customer Return Rate Analysis is to assess the percentage of products that customers return after purchase.",
+    "dataRequired": [
+      "Total number of items sold during the period.",
+      "Total number of items returned during the same period.",
+      "Reason codes for returns (optional but useful for deeper insights).",
+      "Product category or SKU data (optional for category-level analysis).",
+      "Sales and revenue data for the same period (optional for ﬁnancial impact assessment)."
+    ],
+    "improve": [
+      "Improve product quality",
+      "Enhance product descriptions and sizing guides",
+      "Optimize packaging",
+      "Provide better customer support",
+      "Analyze customer feedback",
+      "Implement proactive communication",
+      "Review return policy"
+    ]
   },
   {
     "id": "retail-04",
@@ -73,7 +121,26 @@
       "MIX",
       "STORE_PORTFOLIO"
     ],
-    "sourcePath": "data/analysis-library/retail/04 - Location-Based Performance Analysis.md"
+    "sourcePath": "data/analysis-library/retail/04 - Location-Based Performance Analysis.md",
+    "goal": "The goal of Location-Based Performance Analysis is to evaluate the ﬁnancial and operational performance of retail stores based on their geographic locations.",
+    "dataRequired": [
+      "Total sales per store location for the analysis period.",
+      "Store-speciﬁc operational costs (e.g., rent, wages, utilities).",
+      "Number of transactions per store.",
+      "Foot tra9ic per store (optional but useful for deeper insights).",
+      "Local demographic data (optional for understanding customer proﬁles).",
+      "Competition data for each location (optional).",
+      "Customer satisfaction or feedback per location (optional)."
+    ],
+    "improve": [
+      "Optimize product assortment by location",
+      "Reevaluate store layout and design",
+      "Increase marketing eMorts in underperforming locations",
+      "Enhance customer engagement",
+      "Review store locations for closures or relocations",
+      "Leverage local partnerships",
+      "Monitor local economic and competitive factors"
+    ]
   },
   {
     "id": "retail-05",
@@ -95,7 +162,24 @@
       "MIX",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/retail/05 - Seasonality Impact and Sales Mix Analysis.md"
+    "sourcePath": "data/analysis-library/retail/05 - Seasonality Impact and Sales Mix Analysis.md",
+    "goal": "The goal of the Seasonality Impact and Sales Mix Analysis is to understand how seasonal changes (e.g., holidays, weather, or cultural events) inﬂuence sales patterns and product mix in a retail company.",
+    "dataRequired": [
+      "Historical sales data segmented by time period (daily, weekly, monthly) and product category.",
+      "Inventory data for each period, showing stock levels before and after peak seasons.",
+      "Promotional data for each period, including any special o9ers or discounts.",
+      "Customer demand or demographic data (optional for deeper insights).",
+      "External factors such as weather data or cultural events (optional but useful for explaining anomalies)."
+    ],
+    "improve": [
+      "Optimize inventory levels",
+      "Tailor marketing eMorts",
+      "Run seasonal promotions",
+      "Adjust product assortment",
+      "Improve demand forecasting",
+      "Align staMing with seasonality",
+      "Incorporate external factors"
+    ]
   },
   {
     "id": "retail-06",
@@ -117,7 +201,26 @@
       "WC_DIO",
       "OMNICHANNEL"
     ],
-    "sourcePath": "data/analysis-library/retail/06 - Omnichannel Strategy Effectiveness, including Online vs. In-.md"
+    "sourcePath": "data/analysis-library/retail/06 - Omnichannel Strategy Effectiveness, including Online vs. In-.md",
+    "goal": "The goal of Omnichannel Strategy E9ectiveness Analysis is to assess how well a retail company integrates multiple sales channels (online, in-store, mobile, etc.) to provide a seamless customer experience and drive sales.",
+    "dataRequired": [
+      "Sales data for online and in-store channels (units sold, revenue).",
+      "Customer behavior data (e.g., cross-channel shopping, cart abandonment rates, online vs. in-store preferences).",
+      "Customer tra9ic data (website visits, store foot tra9ic).",
+      "Marketing spend by channel (optional for evaluating channel-speciﬁc ROI).",
+      "Inventory data, including stock availability by channel (optional for fulﬁllment analysis).",
+      "Customer satisfaction or feedback data (optional for qualitative insights).",
+      "Return rates for online vs. in-store purchases (optional)."
+    ],
+    "improve": [
+      "Improve channel integration",
+      "Enhance inventory management",
+      "Tailor marketing strategies by channel",
+      "Improve online product presentation",
+      "Monitor customer feedback across channels",
+      "Optimize fulﬁllment for online orders",
+      "Track channel-speciﬁc proﬁtability"
+    ]
   },
   {
     "id": "retail-07",
@@ -133,7 +236,23 @@
       "COST_PROCUREMENT",
       "CUSTOMER_LOYALTY"
     ],
-    "sourcePath": "data/analysis-library/retail/07 - Customer Lifetime Value (CLV) in Retail Context.md"
+    "sourcePath": "data/analysis-library/retail/07 - Customer Lifetime Value (CLV) in Retail Context.md",
+    "goal": "The goal of Customer Lifetime Value (CLV) Analysis is to estimate the total revenue a retail company can expect to earn from a customer over the entire duration of their relationship.",
+    "dataRequired": [
+      "Average purchase value per customer (APV).",
+      "Average purchase frequency per customer (PF).",
+      "Average customer lifespan (L), which is the average length of time a customer remains active.",
+      "Customer acquisition cost (CAC) (optional for proﬁtability assessment).",
+      "Gross proﬁt margin (optional for a more reﬁned CLV calculation)."
+    ],
+    "improve": [
+      "Increase purchase frequency",
+      "Improve average purchase value",
+      "Extend customer lifespan",
+      "Optimize acquisition costs",
+      "Segment customers for targeted marketing",
+      "Enhance customer satisfaction"
+    ]
   },
   {
     "id": "retail-08",
@@ -152,7 +271,25 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/retail/08 - Cross-Selling and Up-Selling Effectiveness in Retail.md"
+    "sourcePath": "data/analysis-library/retail/08 - Cross-Selling and Up-Selling Effectiveness in Retail.md",
+    "goal": "The goal of Cross-Selling and Up-Selling E9ectiveness Analysis is to evaluate how well a retail company is driving additional sales by encouraging customers to purchase complementary products (cross-selling) or higher-priced alternatives (up-selling).",
+    "dataRequired": [
+      "Sales data, including individual transaction details.",
+      "Average order value (AOV) before and after cross-selling or up-selling e9orts.",
+      "Percentage of transactions with cross-sell or up-sell items.",
+      "Gross proﬁt margin per product (optional for proﬁtability analysis).",
+      "Customer purchase history (optional for analyzing e9ectiveness by customer segment).",
+      "Marketing or promotion data related to cross-selling and up-selling (optional)."
+    ],
+    "improve": [
+      "Enhance product relevance",
+      "Train staM on eMective cross-selling and up-selling",
+      "Monitor proﬁt margins",
+      "Personalize oMers",
+      "Use promotions to boost cross-sell and up-sell",
+      "Test diMerent strategies",
+      "Incorporate customer feedback"
+    ]
   },
   {
     "id": "retail-09",
@@ -167,7 +304,28 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/retail/09 - Store Atmosphere and Experience Impact on Sales, including.md"
+    "sourcePath": "data/analysis-library/retail/09 - Store Atmosphere and Experience Impact on Sales, including.md",
+    "goal": "The goal of this analysis is to assess how the physical atmosphere and overall customer experience within a retail store impact sales.",
+    "dataRequired": [
+      "Sales data by store and time period (before and after atmosphere changes).",
+      "Customer dwell time (measured through in-store sensors, video analytics, or customer surveys).",
+      "Customer foot tra9ic data (number of visitors per day or week).",
+      "Store layout and visual merchandising data (optional for understanding speciﬁc areas).",
+      "Customer satisfaction surveys or feedback regarding store atmosphere (optional).",
+      "Employee-customer interaction data (optional, such as customer service frequency or quality).",
+      "Promotional and event data (optional to track speciﬁc campaigns a9ecting atmosphere).",
+      "Regional or competitive sales data for benchmarking (optional)."
+    ],
+    "improve": [
+      "Enhance store layout and navigation",
+      "Optimize music, lighting, and scent",
+      "Train employees to enhance customer service",
+      "Monitor dwell time and adjust strategy",
+      "Run in-store events or promotions",
+      "Solicit customer feedback regularly",
+      "Test and iterate atmosphere changes",
+      "B. Operations"
+    ]
   },
   {
     "id": "retail-10",
@@ -182,7 +340,22 @@
     "relatedLeverCategories": [
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/retail/10 - Inventory Turnover and Management Analysis.md"
+    "sourcePath": "data/analysis-library/retail/10 - Inventory Turnover and Management Analysis.md",
+    "goal": "The goal of the Inventory Turnover and Management Analysis is to evaluate how e9iciently a retail company is managing its inventory.",
+    "dataRequired": [
+      "Cost of Goods Sold (COGS) for the period being analyzed.",
+      "Average inventory level during the same period.",
+      "Sales data (optional for further insights).",
+      "Inventory records broken down by product category (optional for more granular analysis)."
+    ],
+    "improve": [
+      "Optimize inventory levels",
+      "Improve demand forecasting",
+      "Enhance inventory management systems",
+      "Liquidate slow-moving inventory",
+      "Focus on supply chain eMiciency",
+      "Improve category management"
+    ]
   },
   {
     "id": "retail-11",
@@ -204,7 +377,24 @@
       "COST_PROCUREMENT",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/retail/11 - In-Stock Rate and Out-of-Stock Analysis.md"
+    "sourcePath": "data/analysis-library/retail/11 - In-Stock Rate and Out-of-Stock Analysis.md",
+    "goal": "The goal of the In-Stock Rate and Out-of-Stock Analysis is to measure how e9ectively a retail company is managing its inventory to meet customer demand.",
+    "dataRequired": [
+      "Total number of SKUs (Stock Keeping Units) or product categories o9ered.",
+      "Number of SKUs that are in-stock during a speciﬁc time period.",
+      "Number of SKUs that are out-of-stock during the same period.",
+      "Sales data for each SKU or category (optional for further insights).",
+      "Historical demand or sales forecasts (optional for better demand matching)."
+    ],
+    "improve": [
+      "Improve demand forecasting",
+      "Optimize inventory replenishment",
+      "Enhance supplier relationships",
+      "Segment stock allocation by store",
+      "Leverage safety stock",
+      "Implement inventory tracking technology",
+      "Run promotions cautiously"
+    ]
   },
   {
     "id": "retail-12",
@@ -224,7 +414,27 @@
       "WC_DIO",
       "OMNICHANNEL"
     ],
-    "sourcePath": "data/analysis-library/retail/12 - E-commerce Fulfillment Efficiency and Cost Analysis.md"
+    "sourcePath": "data/analysis-library/retail/12 - E-commerce Fulfillment Efficiency and Cost Analysis.md",
+    "goal": "The goal of E-commerce Fulﬁllment E9iciency and Cost Analysis is to evaluate how e9ectively a retail company processes, picks, packs, and ships online orders.",
+    "dataRequired": [
+      "Number of online orders processed.",
+      "Fulﬁllment time (order-to-shipment time).",
+      "Shipping costs (by order or per unit).",
+      "Labor costs related to picking, packing, and shipping.",
+      "Order accuracy rate (percentage of correctly fulﬁlled orders).",
+      "Inventory levels and stockouts (optional for inventory-related delays).",
+      "Return rates due to fulﬁllment errors (optional for accuracy analysis).",
+      "Customer satisfaction or feedback (optional for customer experience analysis)."
+    ],
+    "improve": [
+      "Streamline order processing",
+      "Optimize labor eMiciency",
+      "Negotiate better shipping rates",
+      "Improve inventory management",
+      "Enhance order accuracy",
+      "Reduce packaging costs",
+      "Monitor customer satisfaction"
+    ]
   },
   {
     "id": "retail-13",
@@ -247,7 +457,25 @@
       "PRICING",
       "MERCHANDISING_ASSORTMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/13 - Shelf Space Allocation and Optimization.md"
+    "sourcePath": "data/analysis-library/retail/13 - Shelf Space Allocation and Optimization.md",
+    "goal": "The goal of Shelf Space Allocation and Optimization is to determine the most e9ective way to allocate shelf space in a retail store to maximize sales, product visibility, and proﬁtability.",
+    "dataRequired": [
+      "Sales data by product and category (units sold, revenue).",
+      "Gross proﬁt margin per product.",
+      "Inventory turnover rate by product.",
+      "Shelf space measurements (linear feet or square feet per category/product).",
+      "Foot tra9ic data (optional for high-tra9ic zones).",
+      "Planogram data (optional for current product placement)."
+    ],
+    "improve": [
+      "Reallocate shelf space regularly",
+      "Optimize placement in high-traMic areas",
+      "Balance high-margin and high-turnover products",
+      "Reduce space for underperforming products",
+      "Address stockout issues",
+      "Use data-driven planogram adjustments",
+      "Consider promotional areas"
+    ]
   },
   {
     "id": "retail-14",
@@ -268,7 +496,28 @@
       "WC_DIO",
       "OMNICHANNEL"
     ],
-    "sourcePath": "data/analysis-library/retail/14 - Click-and-Collect-Buy Online, Pickup In-Store (BOPIS).md"
+    "sourcePath": "data/analysis-library/retail/14 - Click-and-Collect-Buy Online, Pickup In-Store (BOPIS).md",
+    "goal": "The goal of Click-and-Collect/BOPIS E9ectiveness Analysis is to assess how well the BOPIS strategy drives sales, enhances customer convenience, and optimizes operational e9iciency in retail.",
+    "dataRequired": [
+      "Number of BOPIS orders placed.",
+      "BOPIS order completion rate (orders successfully picked up).",
+      "Average BOPIS order value.",
+      "Incremental in-store purchases made by BOPIS customers.",
+      "Time to fulﬁll BOPIS orders (order-to-pickup time).",
+      "In-store foot tra9ic data for BOPIS vs. non-BOPIS customers (optional).",
+      "Customer satisfaction or feedback related to the BOPIS process.",
+      "Fulﬁllment costs for BOPIS orders (e.g., labor, inventory management).",
+      "Rate of BOPIS order cancellations or returns (optional)."
+    ],
+    "improve": [
+      "Optimize inventory management",
+      "Enhance fulﬁllment processes",
+      "Improve customer communication",
+      "Leverage in-store opportunities",
+      "Expand pickup options",
+      "Monitor customer feedback",
+      "Integrate with loyalty programs"
+    ]
   },
   {
     "id": "retail-15",
@@ -288,7 +537,25 @@
       "WC_DIO",
       "STORE_PORTFOLIO"
     ],
-    "sourcePath": "data/analysis-library/retail/15 - Store Lease and Real Estate Cost Efficiency Analysis.md"
+    "sourcePath": "data/analysis-library/retail/15 - Store Lease and Real Estate Cost Efficiency Analysis.md",
+    "goal": "The goal of the Store Lease and Real Estate Cost E9iciency Analysis is to evaluate how e9iciently a retail company is managing its real estate and lease costs in relation to the revenue generated by each store.",
+    "dataRequired": [
+      "Total rent or lease cost per store.",
+      "Total sales revenue per store.",
+      "Store size in square feet.",
+      "Additional occupancy costs (e.g., utilities, maintenance).",
+      "Sales per square foot for each store (optional for comparison).",
+      "Lease duration and terms for each store (optional for future planning)."
+    ],
+    "improve": [
+      "Negotiate better lease terms",
+      "Optimize store size",
+      "Close or relocate underperforming stores",
+      "Improve store productivity",
+      "Monitor real estate market trends",
+      "Consolidate operations",
+      "Leverage technology for remote inventory management"
+    ]
   },
   {
     "id": "retail-16",
@@ -307,7 +574,25 @@
       "COST_OPS",
       "LABOR_SCHEDULING"
     ],
-    "sourcePath": "data/analysis-library/retail/16 - Store Labor Productivity Analysis.md"
+    "sourcePath": "data/analysis-library/retail/16 - Store Labor Productivity Analysis.md",
+    "goal": "The goal of Store Labor Productivity Analysis is to assess how e9iciently a retail company utilizes its labor force relative to the revenue generated.",
+    "dataRequired": [
+      "Total labor hours worked per store (by time period: daily, weekly, monthly).",
+      "Total labor costs per store (wages, beneﬁts, etc.).",
+      "Total sales revenue per store.",
+      "Number of transactions per store (optional for deeper insights).",
+      "Foot tra9ic data (optional for understanding labor demand based on customer visits).",
+      "Historical data on sales and labor costs (optional for trend analysis)."
+    ],
+    "improve": [
+      "Optimize staM scheduling",
+      "Improve employee training",
+      "Use part-time or seasonal workers",
+      "Automate low-value tasks",
+      "Monitor labor costs regularly",
+      "Set performance benchmarks",
+      "Align incentives with productivity"
+    ]
   },
   {
     "id": "retail-17",
@@ -325,7 +610,28 @@
     "relatedLeverCategories": [
       "STORE_PORTFOLIO"
     ],
-    "sourcePath": "data/analysis-library/retail/17 - Store Closure and Rationalization Analysis.md"
+    "sourcePath": "data/analysis-library/retail/17 - Store Closure and Rationalization Analysis.md",
+    "goal": "The goal of Store Closure and Rationalization Analysis is to assess which retail locations should be closed or consolidated to improve overall company proﬁtability and operational e9iciency.",
+    "dataRequired": [
+      "Sales data per store (revenue, units sold).",
+      "Operating costs per store (rent, utilities, wages, etc.).",
+      "Proﬁt margin per store.",
+      "Store foot tra9ic and conversion rates.",
+      "Geographic data (store locations and customer distribution).",
+      "Competitor presence in the area (optional).",
+      "Online sales data (to evaluate omnichannel impact).",
+      "Lease terms for each store (optional for contract obligations).",
+      "Customer satisfaction and feedback per location (optional)."
+    ],
+    "improve": [
+      "Reinvest in underperforming stores",
+      "Optimize store locations",
+      "Negotiate lease terms",
+      "Integrate online and in-store strategies",
+      "Monitor market trends",
+      "Communicate with customers",
+      "Use closure as an opportunity"
+    ]
   },
   {
     "id": "retail-18",
@@ -344,7 +650,27 @@
       "VOLUME",
       "STORE_PORTFOLIO"
     ],
-    "sourcePath": "data/analysis-library/retail/18 - Store Expansion and Cannibalization Risk Analysis.md"
+    "sourcePath": "data/analysis-library/retail/18 - Store Expansion and Cannibalization Risk Analysis.md",
+    "goal": "The goal of Retail Store Expansion and Cannibalization Risk Analysis is to evaluate the potential impact of opening new retail locations on the company’s overall sales performance.",
+    "dataRequired": [
+      "Historical sales data for existing stores.",
+      "Geographic data (store locations and customer distribution).",
+      "Population and demographic data for new locations.",
+      "Foot tra9ic data for existing and proposed store locations (if available).",
+      "Competitor store locations and market share in the new areas.",
+      "Marketing spend and promotions linked to new store openings.",
+      "Real estate and lease costs for new and existing stores.",
+      "Customer loyalty or behavior data (optional for deeper insights)."
+    ],
+    "improve": [
+      "Carefully select expansion locations",
+      "Improve store diMerentiation",
+      "Conduct pilot tests",
+      "Monitor cannibalization post-opening",
+      "Enhance customer retention at existing stores",
+      "Factor in long-term growth",
+      "Review competitor landscape"
+    ]
   },
   {
     "id": "retail-19",
@@ -359,7 +685,29 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/19 - Sustainability and Ethical Sourcing in Retail.md"
+    "sourcePath": "data/analysis-library/retail/19 - Sustainability and Ethical Sourcing in Retail.md",
+    "goal": "The goal of Sustainability and Ethical Sourcing Analysis is to assess how well a retail company incorporates sustainable practices and ethically sourced products into its operations.",
+    "dataRequired": [
+      "Percentage of products sourced from sustainable or certiﬁed suppliers (e.g., Fair Trade, organic, recycled materials).",
+      "Supplier audit reports (compliance with labor standards, environmental regulations).",
+      "Carbon footprint data related to sourcing, production, and logistics.",
+      "Waste and recycling rates within the supply chain.",
+      "Water and energy usage data for production.",
+      "Packaging sustainability (e.g., recyclable, biodegradable materials).",
+      "Supplier diversity metrics (optional).",
+      "Consumer feedback on sustainability initiatives (optional).",
+      "Competitive benchmarking on sustainability practices (optional)."
+    ],
+    "improve": [
+      "Increase sustainable sourcing",
+      "Reduce carbon footprint",
+      "Promote sustainable packaging",
+      "Conduct regular supplier audits",
+      "Educate consumers on sustainability",
+      "Benchmark and set sustainability goals",
+      "Improve transparency in the supply chain",
+      "C. Marketing"
+    ]
   },
   {
     "id": "retail-20",
@@ -380,7 +728,26 @@
       "PRICING",
       "MARKDOWN_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/retail/20 - Retail Pricing and Discount Strategy Analysis.md"
+    "sourcePath": "data/analysis-library/retail/20 - Retail Pricing and Discount Strategy Analysis.md",
+    "goal": "The goal of the Retail Pricing and Discount Strategy Analysis is to evaluate how e9ectively a retail company sets prices and o9ers discounts to maximize revenue, maintain proﬁtability, and attract customers.",
+    "dataRequired": [
+      "Historical pricing data for products (regular price and discounted price).",
+      "Sales data, segmented by product, category, and time period.",
+      "Competitor pricing data (optional for benchmarking).",
+      "Customer demand elasticity or response to price changes.",
+      "Discount data (frequency, duration, and amount of discounts applied).",
+      "Proﬁt margins for each product and category.",
+      "Inventory data (to assess the impact of pricing on stock levels)."
+    ],
+    "improve": [
+      "Optimize discount timing",
+      "Use dynamic pricing models",
+      "Tailor discounts to customer segments",
+      "Experiment with smaller price reductions",
+      "Implement data-driven pricing strategies",
+      "Monitor competitor pricing more frequently",
+      "Reduce dependency on blanket discounts"
+    ]
   },
   {
     "id": "retail-21",
@@ -400,7 +767,25 @@
       "VOLUME",
       "MARKDOWN_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/retail/21 - Promotional Campaign Effectiveness Analysis.md"
+    "sourcePath": "data/analysis-library/retail/21 - Promotional Campaign Effectiveness Analysis.md",
+    "goal": "The goal of Promotional Campaign E9ectiveness Analysis is to evaluate how well a retail company’s marketing campaigns drive sales, customer engagement, and overall proﬁtability.",
+    "dataRequired": [
+      "Sales data before, during, and after the promotion period.",
+      "Promotional costs (e.g., discounts, marketing expenses).",
+      "Customer tra9ic and conversion rates during the promotion.",
+      "Units sold per product (for promoted and non-promoted products).",
+      "Customer acquisition or retention data (if applicable).",
+      "Revenue and proﬁt margins during the promotion."
+    ],
+    "improve": [
+      "Target promotions to the right customers",
+      "Optimize promotional timing",
+      "Reﬁne product selection",
+      "Test diMerent promotional formats",
+      "Monitor customer behavior post-promotion",
+      "Control promotional frequency",
+      "Improve cross-selling"
+    ]
   },
   {
     "id": "retail-22",
@@ -419,7 +804,26 @@
       "VOLUME",
       "CUSTOMER_LOYALTY"
     ],
-    "sourcePath": "data/analysis-library/retail/22 - Loyalty Program Engagement and ROI.md"
+    "sourcePath": "data/analysis-library/retail/22 - Loyalty Program Engagement and ROI.md",
+    "goal": "The goal of the Loyalty Program Engagement and ROI analysis is to evaluate how e9ectively a retail company’s loyalty program engages customers and generates a return on investment.",
+    "dataRequired": [
+      "Number of loyalty program members.",
+      "Purchase frequency and transaction value of loyalty members vs. non-members.",
+      "Cost of the loyalty program (e.g., rewards, discounts, marketing, and technology).",
+      "Incremental revenue generated by loyalty program members.",
+      "Redemption rates for loyalty points or rewards.",
+      "Customer acquisition and retention data (optional for deeper insights).",
+      "Customer lifetime value (CLV) for loyalty members (optional)."
+    ],
+    "improve": [
+      "Enhance reward structures",
+      "Optimize program costs",
+      "Target high-value customers",
+      "Improve reward redemption options",
+      "Use personalized marketing",
+      "Monitor program performance regularly",
+      "Segment loyalty members"
+    ]
   },
   {
     "id": "retail-23",
@@ -437,7 +841,26 @@
       "MIX",
       "CUSTOMER_LOYALTY"
     ],
-    "sourcePath": "data/analysis-library/retail/23 - Customer Demographics and Segmentation in Retail.md"
+    "sourcePath": "data/analysis-library/retail/23 - Customer Demographics and Segmentation in Retail.md",
+    "goal": "The goal of Customer Demographics and Segmentation Analysis is to group retail customers into meaningful segments based on demographic and behavioral characteristics.",
+    "dataRequired": [
+      "Customer demographic data (age, gender, income, location, education level, etc.).",
+      "Purchase history data (frequency, transaction size, product preferences).",
+      "Customer loyalty program membership (optional).",
+      "Customer behavior data (online vs. in-store shopping preferences, browsing history).",
+      "Survey or feedback data (optional for more qualitative insights).",
+      "Geographic location data (optional for location-based segmentation).",
+      "Customer lifetime value (CLV) or average spend per customer (optional for proﬁtability segmentation)."
+    ],
+    "improve": [
+      "Develop targeted marketing campaigns",
+      "Adjust product assortment",
+      "Personalize customer experiences",
+      "Focus on high-value segments",
+      "Monitor segment performance regularly",
+      "Test new segments or strategies",
+      "Incorporate feedback for segment-speciﬁc improvements"
+    ]
   },
   {
     "id": "retail-24",
@@ -452,7 +875,27 @@
     "relatedLeverCategories": [
       "CUSTOMER_LOYALTY"
     ],
-    "sourcePath": "data/analysis-library/retail/24 - Consumer Sentiment and Brand Perception in Retail.md"
+    "sourcePath": "data/analysis-library/retail/24 - Consumer Sentiment and Brand Perception in Retail.md",
+    "goal": "The goal of Consumer Sentiment and Brand Perception Analysis is to evaluate how customers feel about a retail brand, their overall satisfaction, and how positively or negatively they perceive the brand.",
+    "dataRequired": [
+      "Customer surveys or feedback on brand perception.",
+      "Social media sentiment data (positive, neutral, negative mentions).",
+      "Net Promoter Score (NPS) or customer satisfaction (CSAT) score.",
+      "Online reviews and ratings from platforms like Google, Yelp, or e-commerce sites.",
+      "Brand-related keyword analysis (how often and in what context customers mention the brand).",
+      "Customer complaint or support data (optional for understanding negative sentiment).",
+      "Competitor sentiment and brand perception data (optional for benchmarking).",
+      "Brand awareness metrics from marketing campaigns (optional for measuring reach)."
+    ],
+    "improve": [
+      "Enhance customer service",
+      "Monitor and respond to online feedback",
+      "Optimize product or service oMerings",
+      "Increase positive brand engagement",
+      "Regularly conduct customer surveys",
+      "Proactively address recurring issues",
+      "Benchmark against competitors"
+    ]
   },
   {
     "id": "retail-25",
@@ -469,7 +912,29 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/retail/25 - Pop-Up Store and Event-Based Retail Performance.md"
+    "sourcePath": "data/analysis-library/retail/25 - Pop-Up Store and Event-Based Retail Performance.md",
+    "goal": "The goal of Pop-Up Store and Event-Based Retail Performance Analysis is to evaluate the e9ectiveness of temporary retail spaces (pop-up stores) and event-driven retail strategies in generating sales, enhancing brand awareness, and driving customer engagement.",
+    "dataRequired": [
+      "Total sales generated from the pop-up store or event.",
+      "Foot tra9ic data (number of visitors during the event or pop-up).",
+      "Conversion rate (percentage of visitors who made a purchase).",
+      "Average order value (AOV) for pop-up/event customers.",
+      "Customer acquisition metrics (number of new customers gained).",
+      "Event or store setup costs (rental, sta9ing, marketing, etc.).",
+      "Customer feedback and satisfaction data (optional for qualitative insights).",
+      "Sales comparisons from nearby or online stores during the same period (optional for benchmarking).",
+      "Social media and marketing engagement data (optional for brand impact)."
+    ],
+    "improve": [
+      "Optimize event location and timing",
+      "Enhance customer engagement",
+      "Reduce setup and operational costs",
+      "Leverage omnichannel marketing",
+      "Analyze customer behavior",
+      "Gather post-event data",
+      "Test and iterate",
+      "D. Merchandising"
+    ]
   },
   {
     "id": "retail-26",
@@ -493,7 +958,22 @@
       "WC_DIO",
       "MERCHANDISING_ASSORTMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/26 - Product Category Margin Analysis.md"
+    "sourcePath": "data/analysis-library/retail/26 - Product Category Margin Analysis.md",
+    "goal": "The goal of Product Category Margin Analysis is to assess the proﬁtability of di9erent product categories within a retail business.",
+    "dataRequired": [
+      "Sales revenue by product category.",
+      "Cost of Goods Sold (COGS) by product category.",
+      "Discounts or promotional expenses (optional for more granular analysis).",
+      "Overhead or operational costs allocated to each category (optional for a more detailed view of true proﬁtability)."
+    ],
+    "improve": [
+      "Negotiate better vendor terms",
+      "Optimize pricing strategy",
+      "Reduce promotional dependency",
+      "Improve inventory management",
+      "Reevaluate product assortment",
+      "Focus on upselling and cross-selling"
+    ]
   },
   {
     "id": "retail-27",
@@ -510,7 +990,24 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/27 - Private Label vs. Branded Product Performance and Supplier.md"
+    "sourcePath": "data/analysis-library/retail/27 - Private Label vs. Branded Product Performance and Supplier.md",
+    "goal": "The goal of the Private Label vs.",
+    "dataRequired": [
+      "Sales data for both private label and branded products, segmented by category.",
+      "Cost of Goods Sold (COGS) for private label and branded products.",
+      "Proﬁt margins for each product type (private label and branded).",
+      "Supplier information, including the percentage of inventory sourced from each supplier.",
+      "Supplier terms and agreements (e.g., pricing, lead times).",
+      "Customer feedback or reviews for private label and branded products (optional for deeper insights)."
+    ],
+    "improve": [
+      "Optimize private label oMerings",
+      "Diversify supplier base",
+      "Negotiate better terms with suppliers",
+      "Improve customer perception of private labels",
+      "Segment product oMerings",
+      "Tailor marketing strategies"
+    ]
   },
   {
     "id": "retail-28",
@@ -528,7 +1025,25 @@
     "relatedLeverCategories": [
       "MERCHANDISING_ASSORTMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/28 - Planogram Compliance and Store Layout Efficiency,.md"
+    "sourcePath": "data/analysis-library/retail/28 - Planogram Compliance and Store Layout Efficiency,.md",
+    "goal": "The goal of Planogram Compliance and Store Layout E9iciency Analysis is to ensure that the store’s layout and product placements follow the predetermined planogram (the visual representation of product arrangements) to maximize sales, enhance customer experience, and boost endcap performance.",
+    "dataRequired": [
+      "Planogram for each store or department.",
+      "Actual store layout and product placement information.",
+      "Sales data by product, shelf location, and endcap location.",
+      "Customer foot tra9ic data (optional but useful for evaluating layout e9iciency).",
+      "Compliance audit data (e.g., frequency of audits, discrepancies in planogram compliance).",
+      "Labor or operational costs associated with implementing and maintaining the planogram."
+    ],
+    "improve": [
+      "Improve audit frequency and accuracy",
+      "Optimize endcap displays",
+      "Reﬁne store layout based on customer ﬂow",
+      "Enhance employee training",
+      "Test new layouts",
+      "Align layout with seasonal trends",
+      "Use data-driven decisions"
+    ]
   },
   {
     "id": "retail-29",
@@ -551,7 +1066,26 @@
       "WC_DIO",
       "MERCHANDISING_ASSORTMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/29 - Stock Keeping Unit (SKU) Rationalization and Retail Product.md"
+    "sourcePath": "data/analysis-library/retail/29 - Stock Keeping Unit (SKU) Rationalization and Retail Product.md",
+    "goal": "The goal of SKU Rationalization and Retail Product Assortment Optimization is to evaluate the performance of individual SKUs to optimize the product assortment, reduce inventory costs, and ensure that the most proﬁtable and high-demand products are prioritized.",
+    "dataRequired": [
+      "Sales data per SKU (units sold, revenue generated).",
+      "Proﬁt margin per SKU.",
+      "Inventory levels and turnover rates per SKU.",
+      "SKU-related costs (storage, handling, marketing, etc.).",
+      "Product return rates (optional for quality assessment).",
+      "Customer feedback and preferences (optional for deeper insights).",
+      "Product lead times and replenishment frequency (optional for supply chain analysis)."
+    ],
+    "improve": [
+      "Streamline product oMerings",
+      "Use customer feedback for assortment decisions",
+      "Monitor SKU performance regularly",
+      "Leverage data analytics",
+      "Test new SKUs strategically",
+      "Improve inventory management",
+      "Work with suppliers"
+    ]
   },
   {
     "id": "retail-30",
@@ -574,7 +1108,26 @@
       "WC_DIO",
       "MARKDOWN_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/retail/30 - Markdown Strategy and Effectiveness.md"
+    "sourcePath": "data/analysis-library/retail/30 - Markdown Strategy and Effectiveness.md",
+    "goal": "The goal of Markdown Strategy and E9ectiveness Analysis is to evaluate how well a retail company’s markdown strategy drives sales while minimizing proﬁt loss.",
+    "dataRequired": [
+      "Sales data for products before, during, and after markdown periods.",
+      "Original price and markdown price for each product.",
+      "Gross proﬁt margin per product.",
+      "Inventory levels before and after markdown.",
+      "Sell-through rate (percentage of inventory sold during the markdown).",
+      "Customer foot tra9ic and conversion rates during markdown periods (optional).",
+      "Historical data on markdown e9ectiveness (optional for trend analysis)."
+    ],
+    "improve": [
+      "Optimize markdown timing",
+      "Reﬁne discount depth",
+      "Segment markdown strategies",
+      "Monitor inventory closely",
+      "Integrate markdowns with promotions",
+      "Test and iterate",
+      "Monitor customer behavior"
+    ]
   },
   {
     "id": "retail-31",
@@ -596,7 +1149,25 @@
       "WC_DIO",
       "MERCHANDISING_ASSORTMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/31 - Merchandising Strategy Effectiveness Analysis.md"
+    "sourcePath": "data/analysis-library/retail/31 - Merchandising Strategy Effectiveness Analysis.md",
+    "goal": "The goal of Merchandising Strategy E9ectiveness Analysis is to evaluate how well a retail company’s merchandising strategy is driving sales, enhancing customer satisfaction, and optimizing product placement.",
+    "dataRequired": [
+      "Sales data by product, category, and time period.",
+      "Inventory data, including stock levels and turnover rates.",
+      "Gross proﬁt margins for each product or category.",
+      "Promotional data (e.g., discounts, o9ers, and sales events).",
+      "Customer feedback or satisfaction data (optional for deeper insights).",
+      "Foot tra9ic and customer conversion rates (optional for understanding the e9ectiveness of product placement).",
+      "Visual merchandising display data (optional, for tracking display performance)."
+    ],
+    "improve": [
+      "Reﬁne product placement",
+      "Optimize inventory levels",
+      "Enhance promotional strategies",
+      "Tailor merchandising to customer preferences",
+      "Improve data collection and monitoring",
+      "Test new merchandising tactics"
+    ]
   },
   {
     "id": "retail-32",
@@ -611,7 +1182,27 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/retail/32 - Visual Merchandising Performance.md"
+    "sourcePath": "data/analysis-library/retail/32 - Visual Merchandising Performance.md",
+    "goal": "The goal of Visual Merchandising Performance Analysis is to evaluate how e9ectively a retail company’s visual displays and product arrangements impact customer engagement and sales.",
+    "dataRequired": [
+      "Sales data by product and category (before and after merchandising changes).",
+      "Foot tra9ic data (number of visitors per day or week).",
+      "Conversion rate (percentage of visitors who make purchases).",
+      "Customer dwell time data in high-visibility areas (optional).",
+      "Promotional or display-related event data (optional for tracking speciﬁc campaigns).",
+      "Customer feedback on store displays (optional).",
+      "Stock or inventory movement data (optional for tracking how quickly displayed products sell)."
+    ],
+    "improve": [
+      "Enhance visual appeal",
+      "Place high-margin or high-demand products in prominent locations",
+      "Update displays regularly",
+      "Use data-driven insights",
+      "Incorporate storytelling in displays",
+      "Leverage digital displays",
+      "Train staM on visual merchandising principles",
+      "E. Finance"
+    ]
   },
   {
     "id": "retail-33",
@@ -632,7 +1223,23 @@
       "COST_PROCUREMENT",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/retail/33 - Retailer Gross Margin Return on Investment (GMROI).md"
+    "sourcePath": "data/analysis-library/retail/33 - Retailer Gross Margin Return on Investment (GMROI).md",
+    "goal": "The goal of the Gross Margin Return on Investment (GMROI) analysis is to evaluate how e9iciently a retail company is converting its inventory into proﬁt.",
+    "dataRequired": [
+      "Gross proﬁt margin for each product or category.",
+      "Average inventory cost or value over a speciﬁc period.",
+      "Sales data (revenue) for each product or category over the same period.",
+      "Inventory turnover rate (optional for more detailed insights)."
+    ],
+    "improve": [
+      "Increase inventory turnover",
+      "Optimize pricing strategy",
+      "Reduce inventory levels",
+      "Improve product selection",
+      "Leverage sales data for smarter forecasting",
+      "Analyze supplier terms",
+      "Use dynamic inventory management systems"
+    ]
   },
   {
     "id": "retail-34",
@@ -653,7 +1260,23 @@
       "WC_DIO",
       "LOSS_PREVENTION"
     ],
-    "sourcePath": "data/analysis-library/retail/34 - Shrinkage (Theft and Loss) Rate Analysis.md"
+    "sourcePath": "data/analysis-library/retail/34 - Shrinkage (Theft and Loss) Rate Analysis.md",
+    "goal": "The goal of Shrinkage (Theft and Loss) Rate Analysis is to quantify the amount of inventory loss due to theft, administrative errors, vendor fraud, or other reasons that lead to a reduction in inventory without corresponding sales.",
+    "dataRequired": [
+      "Beginning inventory value for the period.",
+      "Ending inventory value for the period.",
+      "Total sales during the period.",
+      "Purchases made during the period.",
+      "Documented losses from theft, damage, or other reasons (if available)."
+    ],
+    "improve": [
+      "Enhance loss prevention strategies",
+      "Implement employee training",
+      "Conduct regular inventory audits",
+      "Use technology to track inventory",
+      "Improve vendor management",
+      "Create accountability"
+    ]
   },
   {
     "id": "retail-35",
@@ -670,6 +1293,25 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/retail/35 - Vendor Compliance and Supplier Performance in Retail.md"
+    "sourcePath": "data/analysis-library/retail/35 - Vendor Compliance and Supplier Performance in Retail.md",
+    "goal": "The goal of the Vendor Compliance and Supplier Performance Analysis is to evaluate how well vendors and suppliers adhere to contractual agreements and performance metrics.",
+    "dataRequired": [
+      "Delivery timelines (agreed vs. actual delivery times).",
+      "Order accuracy rates (correct items, quantities, and speciﬁcations).",
+      "Product quality data (returns, defects, or customer complaints related to supplier products).",
+      "Vendor ﬁll rates (percentage of orders fulﬁlled completely).",
+      "Contractual terms with each supplier (e.g., pricing, delivery schedules, penalties for non- compliance).",
+      "Supplier lead times.",
+      "Supplier performance history (e.g., past compliance issues or trends)."
+    ],
+    "improve": [
+      "Establish clear performance benchmarks",
+      "Incentivize high performance",
+      "Implement penalties for non-compliance",
+      "Improve supplier communication",
+      "Diversify supplier base",
+      "Conduct regular performance reviews",
+      "Collaborate on process improvements"
+    ]
   }
 ]

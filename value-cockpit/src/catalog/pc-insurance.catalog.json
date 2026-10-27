@@ -16,7 +16,19 @@
       "MIX",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/01 - Loss Ratio Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/01 - Loss Ratio Analysis.md",
+    "goal": "The goal of Loss Ratio Analysis is to evaluate the profitability of underwriting activities by examining the relationship between claims paid and premiums earned.",
+    "dataRequired": [
+      "Total claims paid during the period",
+      "Total earned premiums during the period"
+    ],
+    "improve": [
+      "Enhance Underwriting Standards Refine underwriting guidelines to select risks that align with the company’s risk appetite.",
+      "Adjust Pricing Strategies Review pricing models to ensure premiums adequately reflect risk, especially in high-loss segments.",
+      "Focus on Claims Management Implement more efficient claims handling procedures to reduce claims leakage and improve expense control.",
+      "Consider Reinsurance Options Utilize reinsurance more effectively to spread risk and reduce exposure to large losses.",
+      "Conduct Periodic Loss Ratio Reviews Regularly assess the loss ratio by product line or region to identify and address areas with consistently high loss ratios."
+    ]
   },
   {
     "id": "pc-insurance-02",
@@ -36,7 +48,19 @@
       "COST_OPS",
       "DISTRIBUTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/02 - Expense Ratio Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/02 - Expense Ratio Analysis.md",
+    "goal": "The goal of Expense Ratio Analysis is to evaluate the efficiency of a company’s operations by assessing the portion of earned premiums spent on underwriting expenses.",
+    "dataRequired": [
+      "Total underwriting expenses during the period (including commissions, administrative expenses, marketing, and any other relevant costs)",
+      "Total earned premiums during the period"
+    ],
+    "improve": [
+      "Optimize Operational Processes Streamline administrative processes, improve technology infrastructure, and automate routine tasks to lower expenses.",
+      "Manage Distribution Costs Evaluate and optimize distribution channels (e.g., direct sales, agents, brokers) to control acquisition costs.",
+      "Improve Expense Management Implement stricter expense controls and monitor spending on marketing, underwriting, and administrative functions to ensure alignment with budgeted goals.",
+      "Enhance Economies of Scale Pursue growth strategies that allow fixed costs to be spread across a larger base of premiums, reducing the expense ratio.",
+      "Conduct Regular Expense Reviews Periodically review each cost component within underwriting expenses to identify and address areas where expenses are high relative to earned premiums."
+    ]
   },
   {
     "id": "pc-insurance-03",
@@ -56,7 +80,21 @@
       "PRICING",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/03 - Underwriting Profitability and Combined Ratio Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/03 - Underwriting Profitability and Combined Ratio Analysis.md",
+    "goal": "The goal of this analysis is to assess the profitability of underwriting activities by combining the loss ratio and expense ratio.",
+    "dataRequired": [
+      "Total claims paid during the period",
+      "Total underwriting expenses during the period",
+      "Total earned premiums during the period"
+    ],
+    "improve": [
+      "Enhance Pricing Accuracy Review pricing models to ensure they accurately reflect risk levels and market conditions, which can help increase earned premiums without overly impacting sales.",
+      "Refine Underwriting Standards Strengthen underwriting guidelines to improve risk selection, reducing the loss ratio over time.",
+      "Control Operational Expenses Implement expense management strategies to reduce underwriting expenses, which can directly improve the expense ratio component of the Combined Ratio.",
+      "Optimize Claims Management Streamline claims processing to control costs and reduce claims leakage, improving the Loss Ratio.",
+      "Leverage Reinsurance Use reinsurance effectively to manage large losses and smooth out the impact of high-loss events, which can stabilize the Combined Ratio.",
+      "Conduct Regular Combined Ratio Reviews by Segment Periodically assess Combined Ratios by product line, customer segment, or region to identify areas with high ratios and apply targeted improvements."
+    ]
   },
   {
     "id": "pc-insurance-04",
@@ -73,7 +111,22 @@
       "PRICING",
       "UNDERWRITING_DISCIPLINE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/04 - Pricing Adequacy Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/04 - Pricing Adequacy Analysis.md",
+    "goal": "The goal of Pricing Adequacy Analysis is to determine whether current premium rates adequately cover the expected costs of claims, expenses, and a target profit margin.",
+    "dataRequired": [
+      "Historical claims data, including frequency and severity by policy type",
+      "Underwriting expenses, including fixed and variable costs",
+      "Target profit margin (as a percentage of premiums)",
+      "Premiums earned from each policy or product line"
+    ],
+    "improve": [
+      "Refine Pricing Models Use updated actuarial models and more granular data to improve pricing accuracy, adjusting for risk factors more precisely.",
+      "Implement Regular Pricing Reviews Periodically assess pricing adequacy, especially in segments with fluctuating loss frequency or severity trends.",
+      "Segment Pricing by Risk Level Consider adjusting premiums for high-risk and low-risk customers within each segment to better match costs with expected claims.",
+      "Adjust Target Profit Margins by Segment Set realistic profit targets that align with each segment’s risk profile, allowing for competitive yet adequate pricing.",
+      "Enhance Data Quality Use high-quality claims data and advanced analytics (e.g., machine learning) to improve predictions of expected claims costs.",
+      "Incorporate Reinsurance Costs Factor in reinsurance costs, especially for segments with high volatility, to better capture the total expected cost per policy."
+    ]
   },
   {
     "id": "pc-insurance-05",
@@ -89,7 +142,20 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/05 - Segmented Loss Frequency and Severity Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/05 - Segmented Loss Frequency and Severity Analysis.md",
+    "goal": "The goal of Segmented Loss Frequency and Severity Analysis is to evaluate the frequency and severity of claims within specific segments, such as product lines, customer demographics, or geographic regions.",
+    "dataRequired": [
+      "**Claims data, including:** ○ Date of loss ○ Claim amount ○ Segment identifiers (e.g., product line, region, customer demographics)",
+      "Total number of policies written or insured units within each segment"
+    ],
+    "improve": [
+      "Adjust Underwriting Standards by Segment Tighten underwriting guidelines in high-frequency or high-severity segments to reduce risk exposure.",
+      "Refine Pricing Strategy Increase premiums or introduce surcharges in high-frequency or high-severity segments to ensure adequate pricing.",
+      "Implement Targeted Risk Mitigation Programs For segments with frequent or severe claims, introduce risk management services or loss prevention programs to reduce claims.",
+      "Enhance Claim Prevention Measures For high-severity segments, consider offering additional services or incentives that encourage customers to take preventive measures (e.g., home security systems for homeowners).",
+      "Regularly Reassess Segment Performance Conduct this analysis periodically to monitor changes and adapt underwriting or pricing strategies in response to emerging trends.",
+      "Leverage Advanced Analytics Use machine learning to identify subtle patterns or emerging risk factors within segments, helping to refine pricing and underwriting strategies further."
+    ]
   },
   {
     "id": "pc-insurance-06",
@@ -109,7 +175,21 @@
       "VOLUME",
       "RETENTION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/06 - Policy Retention Rate Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/06 - Policy Retention Rate Analysis.md",
+    "goal": "The goal of Policy Retention Rate Analysis is to measure the percentage of policies renewed within a given period, indicating customer loyalty, satisfaction, and product value.",
+    "dataRequired": [
+      "Number of policies at the beginning of the period",
+      "Number of policies renewed during the period",
+      "Segment data, if analyzing retention by product line, customer type, or region"
+    ],
+    "improve": [
+      "Enhance Customer Engagement Implement proactive customer service and engagement strategies, such as reaching out before renewal, to improve customer loyalty.",
+      "Review Pricing and Competitiveness Regularly assess pricing strategies to ensure premiums remain competitive without sacrificing profitability.",
+      "Offer Loyalty Programs or Discounts Consider offering loyalty incentives, such as discounts for long-term customers, to encourage renewals.",
+      "Analyze Reasons for Non-Renewal Survey customers who do not renew to identify common reasons and adjust service or product offerings accordingly.",
+      "Segment-Specific Retention Initiatives In segments with lower retention rates, tailor specific retention strategies that address unique needs, such as personalized communications or segment-specific incentives.",
+      "Use Data Analytics to Predict Churn Use predictive modeling to identify customers at risk of non-renewal and implement targeted retention efforts."
+    ]
   },
   {
     "id": "pc-insurance-07",
@@ -131,7 +211,21 @@
       "COST_OPS",
       "RETENTION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/07 - New Business Growth Rate Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/07 - New Business Growth Rate Analysis.md",
+    "goal": "The goal of New Business Growth Rate Analysis is to measure the growth in new policy sales over a specified period, helping assess the company’s success in attracting new customers or expanding its market share.",
+    "dataRequired": [
+      "Number of new policies sold during the period",
+      "Number of policies sold in the previous period for comparison",
+      "Segment data, if analyzing growth by product line, customer type, or region"
+    ],
+    "improve": [
+      "Enhance Marketing Strategies Invest in targeted marketing campaigns that appeal to high-potential customer segments or regions to boost new business.",
+      "Improve Sales Processes Streamline and enhance the sales process, ensuring sales teams have the tools and training they need to convert leads effectively.",
+      "Develop New or Enhanced Products Introduce new product offerings or make existing products more attractive to potential customers, such as adding popular coverage options or bundling services.",
+      "Expand Distribution Channels Explore new distribution channels (e.g., online sales, partnerships with brokers) to increase customer reach and accessibility.",
+      "Strengthen Brand Positioning Focus on brand-building activities to differentiate the company from competitors and attract new customers.",
+      "Analyze Customer Acquisition Costs Evaluate customer acquisition costs to ensure resources are being used efficiently and focus on the most profitable acquisition channels."
+    ]
   },
   {
     "id": "pc-insurance-08",
@@ -147,7 +241,21 @@
       "VOLUME",
       "PORTFOLIO_STEERING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/08 - Geographic Risk Concentration Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/08 - Geographic Risk Concentration Analysis.md",
+    "goal": "The goal of Geographic Risk Concentration Analysis is to evaluate the distribution of policies and associated risks across different geographic regions.",
+    "dataRequired": [
+      "Number of policies by geographic region (e.g., state, county, or city)",
+      "Total insured value or policy exposure in each region",
+      "Claims data by geographic region (optional, for a deeper risk assessment)"
+    ],
+    "improve": [
+      "Increase Geographic Diversification Focus on expanding business in underrepresented or lower-risk regions to distribute exposure more evenly.",
+      "Utilize Reinsurance Consider reinsurance options to mitigate risks in high-concentration areas, particularly those prone to natural disasters.",
+      "Adjust Underwriting Standards by Region Strengthen underwriting criteria in high-risk areas or set higher premiums to account for region-specific risks.",
+      "Implement Regional Risk Mitigation Programs Work with policyholders in high-concentration regions to implement risk reduction strategies, such as flood protection or fire prevention measures.",
+      "Review Geographic Risk Concentration Periodically Regularly conduct this analysis to monitor changes in geographic exposure and adjust strategies as needed.",
+      "Incorporate Climate and Environmental Data Use external data on climate risk, economic stability, or regulatory trends to enhance understanding of regional risks."
+    ]
   },
   {
     "id": "pc-insurance-09",
@@ -166,7 +274,22 @@
       "COST_OPS",
       "PORTFOLIO_STEERING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/09 - Product Line Profitability Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/09 - Product Line Profitability Analysis.md",
+    "goal": "The goal of Product Line Profitability Analysis is to assess the financial performance of each product line, allowing the company to determine which products contribute most to profitability and which may require adjustments.",
+    "dataRequired": [
+      "Earned premiums by product line",
+      "Claims paid by product line",
+      "Underwriting expenses by product line (e.g., administrative costs, commissions, marketing expenses)",
+      "Allocation of investment income (optional, for a more comprehensive view of profitability)"
+    ],
+    "improve": [
+      "Reevaluate Pricing Strategies For low-margin product lines, adjust pricing to better reflect risk and cost. This may involve raising premiums to achieve a sustainable profit margin.",
+      "Enhance Claims Management Efficiency For product lines with high claims costs, improve claims handling processes to reduce expenses and claims leakage.",
+      "Reduce Operational Expenses Identify and cut unnecessary expenses in high-cost product lines to improve net profitability.",
+      "Consider Product Diversification or Withdrawal If a product line consistently underperforms, consider either diversifying to reduce dependency on that line or phasing it out if it no longer aligns with profitability goals.",
+      "Optimize Marketing and Sales Efforts Focus marketing and sales resources on high-margin product lines to drive more profitable growth.",
+      "Periodically Reassess Product Line Profitability Conduct this analysis regularly to monitor shifts in profitability and respond to market or operational changes promptly."
+    ]
   },
   {
     "id": "pc-insurance-10",
@@ -183,7 +306,22 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/10 - Underwriting Cycle Position Assessment.md"
+    "sourcePath": "data/analysis-library/pc-insurance/10 - Underwriting Cycle Position Assessment.md",
+    "goal": "The goal of the Underwriting Cycle Position Assessment is to determine the current phase of the underwriting cycle (soft, hard, or neutral market) and understand its impact on profitability, pricing strategies, and underwriting practices.",
+    "dataRequired": [
+      "Historical combined ratios over several years (industry-wide and/or company-specific)",
+      "Premium growth rates over time",
+      "Claim frequency and severity trends over time",
+      "Market conditions (e.g., economic factors, reinsurance availability, regulatory changes)"
+    ],
+    "improve": [
+      "Adjust Pricing Based on Market Position In a hard market, capitalize on higher premiums. In a soft market, focus on maintaining pricing discipline to avoid underpricing.",
+      "Refine Underwriting Standards Tighten underwriting guidelines during a soft market to avoid taking on excessive risk. Relax standards cautiously in a hard market, if profitable opportunities arise.",
+      "Monitor Market Conditions Regularly Continuously track combined ratios, premium growth, and claims trends to detect shifts early and adapt pricing or underwriting strategies accordingly.",
+      "Leverage Reinsurance Strategically During a soft market, consider higher levels of reinsurance to mitigate risk. In a hard market, review reinsurance needs to balance cost and risk transfer.",
+      "Optimize Capital Allocation Allocate capital toward high-performing segments or regions, especially in a hard market, to maximize returns.",
+      "Plan for Future Cycle Shifts Develop strategies to prepare for the next cycle phase. For instance, build reserves during a hard market to manage potential losses during a future soft market."
+    ]
   },
   {
     "id": "pc-insurance-11",
@@ -202,7 +340,22 @@
       "PRICING",
       "UNDERWRITING_DISCIPLINE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/11 - Underwriting Risk Selection Accuracy Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/11 - Underwriting Risk Selection Accuracy Analysis.md",
+    "goal": "The goal of Underwriting Risk Selection Accuracy Analysis is to evaluate how accurately the underwriting process identifies and selects risks, ensuring that the portfolio maintains profitable risk levels.",
+    "dataRequired": [
+      "Loss ratio by policy or risk category (e.g., low, medium, high risk)",
+      "Claims frequency and severity by risk category",
+      "Underwriting adjustments or rejections (if applicable)",
+      "Policy lapse or renewal rates for different risk categories (optional)"
+    ],
+    "improve": [
+      "Refine Risk Assessment Models Enhance risk assessment models using historical claims data and predictive analytics to improve the accuracy of risk categorization.",
+      "Implement Continuous Underwriting Reviews Regularly review underwriting decisions and performance by risk category, refining guidelines as needed to better align risk selection with actual loss experience.",
+      "Strengthen Underwriting Training Provide ongoing training to underwriters to ensure they accurately apply risk selection criteria and adjust for new or emerging risk factors.",
+      "Optimize Risk-Based Pricing Adjust premium pricing to ensure that each risk category reflects its expected claims cost, especially in categories with unexpected loss ratios.",
+      "Enhance Screening for High-Risk Profiles Develop stricter screening criteria or risk mitigation requirements for high-risk categories to reduce claims exposure.",
+      "Use Predictive Analytics Implement predictive models that assess a policyholder’s likelihood of filing a claim based on historical data, improving underwriting precision."
+    ]
   },
   {
     "id": "pc-insurance-12",
@@ -218,7 +371,24 @@
       "PRICING",
       "UNDERWRITING_DISCIPLINE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/12 - Risk Appetite Alignment and Underwriting Discipline Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/12 - Risk Appetite Alignment and Underwriting Discipline Analysis.md",
+    "goal": "The goal of Risk Appetite Alignment and Underwriting Discipline Analysis is to assess whether the underwriting practices align with the company's defined risk appetite and to evaluate the consistency of underwriting discipline in selecting and managing risks.",
+    "dataRequired": [
+      "Defined risk appetite statement, including acceptable loss ratios, target risk levels, and maximum exposure limits by segment",
+      "Underwriting decisions and risk categorization data (e.g., low, medium, high risk)",
+      "Loss ratios by product line or segment",
+      "Policy rejection or adjustment rates",
+      "Policy limits and deductibles applied (to assess underwriting discipline)",
+      "Deviation or exception approvals in underwriting (optional, if tracking exceptions to standard guidelines)"
+    ],
+    "improve": [
+      "Reinforce Underwriting Guidelines Provide clear, detailed guidelines for underwriters to support adherence to the company’s risk appetite. Regularly update these guidelines to reflect changes in risk appetite or market conditions.",
+      "Implement an Exception Review Process Establish a review process for underwriting exceptions to ensure that any deviations from guidelines are necessary and justified.",
+      "Conduct Regular Underwriting Audits Periodically audit underwriting decisions to identify any patterns of inconsistency and provide feedback or retraining as needed.",
+      "Use Risk-Based Pricing Adjustments Adjust pricing to reflect risk accurately in each segment, ensuring that even higher-risk policies contribute positively to profitability.",
+      "Enhance Underwriting Controls and Monitoring Implement real-time monitoring of key metrics (e.g., loss ratios, rejection rates) to quickly identify and correct any areas of misalignment.",
+      "Provide Underwriter Training on Risk Appetite Offer regular training sessions on the company’s risk appetite and how it translates to daily underwriting decisions, ensuring that all underwriters understand and apply these principles consistently."
+    ]
   },
   {
     "id": "pc-insurance-13",
@@ -239,7 +409,21 @@
       "MIX",
       "RETENTION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/13 - Renewal Rate Analysis by Product Line.md"
+    "sourcePath": "data/analysis-library/pc-insurance/13 - Renewal Rate Analysis by Product Line.md",
+    "goal": "The goal of Renewal Rate Analysis by Product Line is to assess customer retention across different insurance product lines, allowing the company to understand which products maintain strong customer loyalty and which may face retention challenges.",
+    "dataRequired": [
+      "Total number of policies eligible for renewal in each product line",
+      "Number of policies renewed in each product line",
+      "Segment data for additional insights (e.g., customer demographics, policy age)"
+    ],
+    "improve": [
+      "Enhance Customer Engagement Programs Develop targeted renewal campaigns and proactive communication strategies to encourage renewals, especially before the policy expiry date.",
+      "Review Pricing Competitiveness Analyze pricing strategies to ensure that premium rates remain competitive in the market, particularly for products with low renewal rates.",
+      "Offer Loyalty Incentives Introduce loyalty programs, discounts, or other incentives for long-term customers to boost renewal rates.",
+      "Address Common Reasons for Non-Renewal Conduct customer surveys or analyze customer feedback to understand why policies are not renewed. Adjust services, products, or pricing based on insights.",
+      "Segment-Specific Renewal Initiatives Focus on tailored renewal strategies within customer segments facing the greatest retention challenges, offering personalized communications or discounts.",
+      "Regularly Monitor Renewal Trends Continuously track renewal rates by product line to detect any shifts early and adapt strategies promptly to maintain high retention."
+    ]
   },
   {
     "id": "pc-insurance-14",
@@ -255,7 +439,23 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/14 - Policy Limits and Deductibles Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/14 - Policy Limits and Deductibles Analysis.md",
+    "goal": "The goal of Policy Limits and Deductibles Analysis is to evaluate the distribution of policy limits and deductibles across the company’s portfolio.",
+    "dataRequired": [
+      "Policy limits by product line or segment",
+      "Deductible amounts chosen by policyholders",
+      "Claims data, especially high-cost claims in relation to policy limits",
+      "Customer demographics or segments (optional, for deeper insights)"
+    ],
+    "improve": [
+      "Optimize Limit and Deductible Options Adjust available policy limits and deductible options based on customer preferences and claims patterns to better align coverage with risk exposure.",
+      "Encourage Higher Deductibles for Low-Risk Customers Offer incentives or discounts for low-risk customers who select higher deductibles, reducing small claims and encouraging more responsible risk-taking.",
+      "Introduce Tiered Deductible Options Create a wider range of deductible tiers, allowing customers to select a deductible that matches their financial tolerance and reduces unnecessary claims.",
+      "Educate Customers on Deductible Impacts Provide clear information to customers on how deductible choices impact premiums and claim costs, helping them make informed decisions.",
+      "Monitor Claims Reaching Policy Limits Regularly review claims data to monitor if certain limits are frequently reached, signaling the need to reassess policy limits for adequacy and risk exposure.",
+      "Conduct Periodic Analysis Perform this analysis regularly to adapt to shifting customer preferences and market conditions, ensuring that limits and deductibles stay relevant.",
+      "B. Claims Management"
+    ]
   },
   {
     "id": "pc-insurance-15",
@@ -272,7 +472,22 @@
       "RESERVE_RISK"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pc-insurance/15 - Claims Reserve Development Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/15 - Claims Reserve Development Analysis.md",
+    "goal": "The goal of Claims Reserve Development Analysis is to evaluate the accuracy of the company’s claims reserves over time by comparing initial reserve estimates to the actual amount required to settle claims.",
+    "dataRequired": [
+      "Initial claims reserve amounts set aside at the time claims are reported",
+      "Adjusted reserve amounts for each subsequent period until claim settlement",
+      "Final settled claims amounts",
+      "Claims development history by claim category (e.g., product line, region)"
+    ],
+    "improve": [
+      "Refine Reserve-Setting Methodologies Use historical claims data and predictive analytics to set more accurate initial reserves based on patterns in claim frequency and severity.",
+      "Regularly Review Reserve Assumptions Conduct periodic reviews of reserve assumptions, adjusting for new trends in claim costs, economic factors, and legal developments.",
+      "Implement a Feedback Loop for Underwriters and Actuaries Share reserve development insights with underwriters and actuaries to improve assumptions used in reserve-setting and adjust practices accordingly.",
+      "Segment Claims Reserves by Risk Level Establish differentiated reserve strategies based on risk segments, allowing more accurate reserve estimates for higher-risk claim types.",
+      "Utilize Advanced Analytics Apply machine learning models to analyze historical reserve development data and make more precise reserve predictions.",
+      "Monitor Large Claims and Long-Tail Claims Closely Long-tail claims, which develop over an extended period, may require more frequent reserve reassessments to ensure accuracy."
+    ]
   },
   {
     "id": "pc-insurance-16",
@@ -292,7 +507,22 @@
       "COST_OPS",
       "CLAIMS_EXCELLENCE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/16 - Claims Settlement Speed and Efficiency Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/16 - Claims Settlement Speed and Efficiency Analysis.md",
+    "goal": "The goal of Claims Settlement Speed and Efficiency Analysis is to assess how quickly and efficiently claims are processed and settled.",
+    "dataRequired": [
+      "Claim filing date and claim settlement date",
+      "Claims process duration by stage (e.g., filing, review, approval, payment)",
+      "Claim type or category (e.g., product line, claim severity level)",
+      "Settlement costs and administrative expenses (optional, for efficiency insights)"
+    ],
+    "improve": [
+      "Automate Claims Processing Steps Use automation tools for routine steps in the claims process (e.g., document verification, initial assessments) to reduce settlement time.",
+      "Implement Real-Time Claims Tracking Provide customers and claims handlers with real-time tracking and status updates, enabling quicker issue resolution and improved transparency.",
+      "Streamline Workflow and Reduce Bottlenecks Identify stages with the longest delays and implement process improvements, such as reallocating resources or redesigning workflows, to address bottlenecks.",
+      "Establish Clear Service Level Agreements (SLAs) Set SLAs for each stage of the claims process to ensure timely processing and accountability across teams.",
+      "Use Predictive Analytics for Early Assessment Apply predictive models to assess claim severity and complexity early on, allowing more straightforward claims to be processed quickly while more complex ones receive necessary attention.",
+      "Train Claims Handlers on Best Practices Provide ongoing training to claims handlers on efficient claims processing techniques, customer communication, and the importance of timely resolution."
+    ]
   },
   {
     "id": "pc-insurance-17",
@@ -308,7 +538,22 @@
     "relatedLeverCategories": [
       "CLAIMS_EXCELLENCE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/17 - Claims Fraud Detection and Prevention Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/17 - Claims Fraud Detection and Prevention Analysis.md",
+    "goal": "The goal of Claims Fraud Detection and Prevention Analysis is to identify potential fraudulent claims early in the process to reduce financial losses, deter fraud attempts, and maintain the integrity of the claims process.",
+    "dataRequired": [
+      "Claims data, including claim type, claim amount, policyholder information, and claim history",
+      "Historical data on confirmed fraudulent claims",
+      "External data sources (optional, for cross-verification), such as third-party databases or law enforcement records",
+      "Risk indicators or fraud red flags (e.g., claim frequency, exaggerated losses, timing anomalies)"
+    ],
+    "improve": [
+      "Implement Advanced Analytics Leverage machine learning and artificial intelligence to enhance fraud detection models, uncovering subtle patterns indicative of fraudulent behavior.",
+      "Regularly Update Fraud Indicators Refine fraud indicators and detection criteria based on the latest fraud trends, new fraud techniques, and results from past investigations.",
+      "Invest in Claims Handling Training Train claims adjusters on recognizing common fraud indicators and suspicious patterns, ensuring that frontline employees can identify potential fraud early.",
+      "Collaborate with Industry Networks Join industry networks or fraud detection consortiums to share data and insights on emerging fraud schemes, enabling cross-industry fraud prevention.",
+      "Integrate Real-Time Fraud Scoring Implement real-time fraud scoring in the claims intake process to quickly identify high-risk claims for additional verification, reducing the chances of fraudulent claims being processed.",
+      "Utilize Third-Party Verification Work with external data sources for background checks, income verification, and other data points that help validate claims authenticity."
+    ]
   },
   {
     "id": "pc-insurance-18",
@@ -326,7 +571,21 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/18 - Severity Trend Analysis by Line of Business.md"
+    "sourcePath": "data/analysis-library/pc-insurance/18 - Severity Trend Analysis by Line of Business.md",
+    "goal": "The goal of Severity Trend Analysis by Line of Business is to track and assess changes in the average cost per claim across different lines of business over time.",
+    "dataRequired": [
+      "Claims data by line of business (e.g., auto, home, liability)",
+      "Claim amounts over multiple periods (e.g., quarterly, annually)",
+      "Claim type or category (optional, for more granular analysis)"
+    ],
+    "improve": [
+      "Implement Cost-Control Measures Use data insights to identify cost reduction opportunities, such as negotiating with service providers or streamlining claims processing.",
+      "Adjust Pricing and Underwriting Incorporate severity trends into pricing and underwriting decisions to ensure that premiums adequately reflect the increasing or decreasing cost of claims.",
+      "Enhance Risk Mitigation Programs Develop or strengthen risk prevention programs to reduce claim severity in areas experiencing cost increases (e.g., theft prevention, disaster preparedness).",
+      "Monitor Economic and Environmental Factors Regularly assess how external factors, like inflation or natural disasters, impact claim severity to make proactive adjustments.",
+      "Use Predictive Analytics for Severity Forecasting Employ predictive models to anticipate future severity trends based on historical patterns, supporting proactive decision-making in underwriting and pricing.",
+      "Segment High-Severity Claims for Targeted Analysis Perform additional analysis on high-severity claims within each line of business to identify specific cost drivers and target mitigation efforts accordingly."
+    ]
   },
   {
     "id": "pc-insurance-19",
@@ -344,7 +603,22 @@
       "COST_OPS",
       "CLAIMS_EXCELLENCE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/19 - Claims Litigation Frequency and Cost Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/19 - Claims Litigation Frequency and Cost Analysis.md",
+    "goal": "The goal of Claims Litigation Frequency and Cost Analysis is to evaluate the rate and financial impact of claims that proceed to litigation.",
+    "dataRequired": [
+      "Total number of claims filed",
+      "Number of claims that resulted in litigation",
+      "Litigation costs per claim",
+      "Claim type or line of business (optional, for segmentation)"
+    ],
+    "improve": [
+      "Strengthen Claims Handling Processes Improve communication and negotiation practices to resolve claims efficiently before they escalate to litigation.",
+      "Implement Early Dispute Resolution Programs Offer mediation or arbitration options as alternatives to litigation to reduce costs and expedite claim resolution.",
+      "Train Claims Handlers on Litigation Avoidance Provide training focused on handling complex claims and identifying warning signs of potential litigation to mitigate risks.",
+      "Adjust Underwriting Standards for High-Litigation Segments Tighten underwriting criteria in segments with high litigation frequency to reduce exposure to potentially contentious claims.",
+      "Monitor and Control Legal Expenses Track legal costs closely and work with legal partners to establish cost-control measures for litigated claims.",
+      "Analyze Root Causes of Litigation Conduct detailed reviews of litigated claims to identify common causes or patterns, allowing targeted interventions to prevent future litigation."
+    ]
   },
   {
     "id": "pc-insurance-20",
@@ -358,7 +632,22 @@
       "RESERVE_RISK"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pc-insurance/20 - Claims Settlement Reserve Variability Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/20 - Claims Settlement Reserve Variability Analysis.md",
+    "goal": "The goal of Claims Settlement Reserve Variability Analysis is to assess fluctuations in the reserve amounts set aside to settle claims and evaluate the consistency and accuracy of these reserves over time.",
+    "dataRequired": [
+      "Initial reserve amounts at claim inception",
+      "Adjusted reserve amounts over time until claim settlement",
+      "Final settlement amounts",
+      "Claim type or product line (optional, for segmentation)"
+    ],
+    "improve": [
+      "Refine Reserve-Setting Methodologies Use historical claims data to improve predictive accuracy for initial reserve estimates, tailoring methodologies for specific claim types.",
+      "Implement Regular Reserve Reviews Establish regular intervals for reviewing and adjusting reserves, ensuring reserves stay aligned with claim developments.",
+      "Incorporate Advanced Analytics for Reserve Prediction Use predictive models and machine learning algorithms to analyze claims and predict necessary reserves more accurately.",
+      "Enhance Communication Between Claims Handlers and Actuaries Facilitate collaboration between claims teams and actuaries to improve reserve-setting guidelines based on real-time claims developments.",
+      "Focus on High-Variability Segments Identify segments with high variability and develop targeted improvements in reserve accuracy, such as additional training or updated guidelines.",
+      "Conduct Post-Settlement Reserve Analysis After claims are settled, conduct a review of reserve adequacy to identify common patterns in over- or under-reserving, using these insights to adjust future reserves."
+    ]
   },
   {
     "id": "pc-insurance-21",
@@ -376,7 +665,21 @@
       "VOLUME",
       "DISTRIBUTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/21 - Claims Ratio by Broker vs. Direct Channel Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/21 - Claims Ratio by Broker vs. Direct Channel Analysis.md",
+    "goal": "The goal of Claims Ratio by Broker vs.",
+    "dataRequired": [
+      "Total claims paid for policies acquired through brokers and direct channels",
+      "Total earned premiums for each channel",
+      "Policy count or segment information by channel (optional, for deeper analysis)"
+    ],
+    "improve": [
+      "Refine Underwriting Standards by Channel Adjust underwriting criteria for policies acquired through channels with higher claims ratios to better align risk with premiums.",
+      "Implement Targeted Pricing Adjustments Review and adjust pricing strategies to ensure that premiums adequately reflect claims risk within each channel, especially in high-claims-ratio segments.",
+      "Enhance Risk Assessment for Broker-Acquired Policies If broker-acquired policies show higher claims ratios, collaborate with brokers to improve customer risk profiling and selection.",
+      "Provide Claims Education and Prevention Programs Implement customer education or risk mitigation programs tailored to customers from each channel, focusing on reducing claims frequency and severity.",
+      "Optimize Channel Strategy Allocate resources and prioritize growth in channels with lower claims ratios to maximize profitability and improve overall risk quality.",
+      "Monitor Trends Regularly Conduct this analysis periodically to detect changes in claims performance by channel, enabling timely adjustments to underwriting, pricing, or channel strategy."
+    ]
   },
   {
     "id": "pc-insurance-22",
@@ -395,7 +698,22 @@
       "PRICING",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/22 - Large Loss Impact on Profitability Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/22 - Large Loss Impact on Profitability Analysis.md",
+    "goal": "The goal of Large Loss Impact on Profitability Analysis is to assess the effect of significant losses on overall profitability, helping the company understand its exposure to high-cost claims and the adequacy of risk mitigation strategies.",
+    "dataRequired": [
+      "Claims data, identifying large losses (typically claims exceeding a certain threshold, e.g., top 5% by cost)",
+      "Total claims paid, segmented by large losses vs. other claims",
+      "Total earned premiums for the analysis period",
+      "Large loss thresholds for defining high-severity claims"
+    ],
+    "improve": [
+      "Enhance Reinsurance Coverage Consider increasing reinsurance coverage specifically for large losses to reduce the direct financial impact on the company.",
+      "Refine Underwriting Guidelines for High-Severity Risks Strengthen underwriting standards for segments with a high frequency of large losses to better manage risk exposure.",
+      "Adjust Pricing to Reflect Large Loss Risk Incorporate large loss trends into pricing models to ensure premiums adequately cover potential high-cost claims.",
+      "Implement Targeted Risk Mitigation Programs Work with policyholders in high-risk segments to implement preventative measures that reduce the likelihood of large losses.",
+      "Monitor Large Loss Claims by Segment Regularly track large loss claims by product line or customer segment to identify any areas requiring additional attention or adjusted risk limits.",
+      "Use Predictive Modeling to Identify Potential Large Losses Apply predictive analytics to detect claims with a high likelihood of developing into large losses, enabling early intervention and management."
+    ]
   },
   {
     "id": "pc-insurance-23",
@@ -412,7 +730,23 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/23 - Claims Frequency Benchmarking by Region.md"
+    "sourcePath": "data/analysis-library/pc-insurance/23 - Claims Frequency Benchmarking by Region.md",
+    "goal": "The goal of Claims Frequency Benchmarking by Region is to compare the rate of claims occurrence across different geographic regions and benchmark these rates against industry averages or internal targets.",
+    "dataRequired": [
+      "Number of claims filed in each region",
+      "Number of policies in force in each region",
+      "Industry claims frequency benchmarks for each region (if available)",
+      "Historical claims frequency data (optional, for trend analysis)"
+    ],
+    "improve": [
+      "Adjust Pricing by Region Implement region-specific pricing adjustments for areas with high claims frequency to reflect the increased risk more accurately.",
+      "Enhance Underwriting Criteria for High-Risk Regions Refine underwriting guidelines in regions with above-benchmark claims frequency, focusing on risk selection and stricter underwriting for specific policy types.",
+      "Develop Targeted Risk Mitigation Programs Implement prevention programs in high-frequency regions, such as educating policyholders on safety measures or providing incentives for risk-reducing behaviors.",
+      "Monitor External Factors Affecting Regional Claims Regularly track external factors, such as economic changes or environmental risks, that could influence claims frequency in specific regions.",
+      "Explore Expansion in Low-Frequency Regions Consider expanding marketing and distribution efforts in regions with below-benchmark claims frequency to capitalize on the lower-risk environment.",
+      "Use Predictive Analytics for Early Detection Apply predictive models to identify regions at risk of rising claims frequency, allowing proactive adjustments in pricing, underwriting, and risk mitigation strategies.",
+      "C. Risk Management"
+    ]
   },
   {
     "id": "pc-insurance-24",
@@ -431,7 +765,23 @@
     "relatedLeverCategories": [
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/24 - Catastrophe Exposure Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/24 - Catastrophe Exposure Analysis.md",
+    "goal": "The goal of Catastrophe Exposure Analysis is to assess the company’s exposure to catastrophic events (e.g., hurricanes, earthquakes, floods) across its portfolio.",
+    "dataRequired": [
+      "Geographic location of policies, including address or ZIP code",
+      "Total insured value (TIV) for each policy",
+      "Historical data on catastrophic events in each region (e.g., frequency, severity)",
+      "Industry catastrophe models or external hazard maps (optional, for risk scoring)",
+      "Reinsurance coverage details (if applicable)"
+    ],
+    "improve": [
+      "Increase Reinsurance Coverage for High-Risk Areas Review and adjust reinsurance programs to ensure adequate coverage in high-exposure regions, mitigating the impact of catastrophic losses.",
+      "Implement Geographic Diversification Develop strategies to reduce exposure concentration in catastrophe-prone areas, such as focusing growth in lower-risk regions.",
+      "Enhance Underwriting Standards in High-Risk Regions Tighten underwriting criteria for policies in high-exposure areas to manage risk and improve portfolio quality.",
+      "Use Catastrophe Models for Dynamic Risk Assessment Regularly employ catastrophe models to simulate potential loss scenarios, adapting risk management and reinsurance strategies to evolving risk landscapes.",
+      "Educate Policyholders on Risk Mitigation Offer resources or incentives for policyholders in high-risk areas to adopt risk mitigation measures, such as hurricane-resistant home modifications.",
+      "Monitor Environmental and Climate Trends Stay updated on environmental and climate change trends that may increase the likelihood of catastrophic events, allowing for proactive adjustments to exposure management strategies."
+    ]
   },
   {
     "id": "pc-insurance-25",
@@ -450,7 +800,23 @@
       "COST_OPS",
       "REINSURANCE_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/25 - Integrated Reinsurance Strategy and Cost Efficiency.md"
+    "sourcePath": "data/analysis-library/pc-insurance/25 - Integrated Reinsurance Strategy and Cost Efficiency.md",
+    "goal": "The goal of Integrated Reinsurance Strategy and Cost Efficiency Assessment is to evaluate the effectiveness of the company’s reinsurance program in managing risk exposure and controlling costs.",
+    "dataRequired": [
+      "Total reinsurance premiums paid",
+      "Reinsurance recoveries (amounts reclaimed from reinsurers after claims)",
+      "Retention limits and reinsurance coverage details (e.g., per occurrence, aggregate)",
+      "Total insured values and exposure levels by segment",
+      "Cost-benefit analysis of reinsurance programs (optional, for advanced insights)"
+    ],
+    "improve": [
+      "Optimize Retention Levels Adjust retention levels to ensure the company retains an appropriate amount of risk without overburdening finances, potentially reducing unnecessary reinsurance costs.",
+      "Diversify Reinsurance Coverage Explore multi-layered reinsurance options, such as catastrophe-specific coverage, aggregate reinsurance, or quota-share arrangements to tailor risk transfer to the company’s exposure profile.",
+      "Negotiate Reinsurance Terms Work closely with reinsurers to negotiate more favorable terms, especially in areas where the company’s risk profile has improved, potentially lowering reinsurance premiums.",
+      "Conduct Regular Reinsurance Cost-Benefit Reviews Perform periodic assessments to compare reinsurance costs with recoveries, allowing adjustments to ensure maximum cost efficiency.",
+      "Leverage Catastrophe Models to Refine Coverage Use catastrophe models to identify and secure coverage for high-risk areas, optimizing reinsurance allocation for regions or products with significant exposure.",
+      "Benchmark with Peer Companies Continuously benchmark reinsurance strategies against industry peers to remain competitive and adopt best practices in reinsurance structuring and cost management."
+    ]
   },
   {
     "id": "pc-insurance-26",
@@ -468,7 +834,24 @@
       "VOLUME",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/26 - Environmental and Climate Risk Exposure Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/26 - Environmental and Climate Risk Exposure Analysis.md",
+    "goal": "The goal of Environmental and Climate Risk Exposure Analysis is to assess the company’s exposure to environmental and climate-related risks, such as floods, wildfires, hurricanes, and rising sea levels.",
+    "dataRequired": [
+      "Geographic location of policies, including address or ZIP code",
+      "Total insured value (TIV) for each policy",
+      "Climate and environmental hazard data for each region (e.g., flood zones, wildfire risk maps)",
+      "Historical claims data related to climate events",
+      "Environmental risk forecasts or climate change projections (optional, for long-term planning)"
+    ],
+    "improve": [
+      "Enhance Geographic Diversification Reduce concentration in high-risk areas by expanding coverage in regions with lower climate risk exposure, balancing the portfolio.",
+      "Implement Climate Risk-Based Pricing Adjustments Adjust premiums for policies in high-risk areas to better reflect the potential for climate-related losses, ensuring sustainability of risk-prone segments.",
+      "Strengthen Underwriting Standards in High-Risk Regions Refine underwriting guidelines to limit exposure in regions with significant climate risk or to require additional mitigation measures.",
+      "Promote Risk Mitigation Programs for Policyholders Encourage or incentivize policyholders in high-risk areas to adopt preventive measures (e.g., flood-proofing, fire-resistant materials) to reduce claims frequency and severity.",
+      "Integrate Catastrophe Models with Climate Change Scenarios Use climate-adjusted catastrophe models that incorporate future climate change projections, allowing for more accurate risk assessments and strategic planning.",
+      "Adjust Reinsurance Programs for Climate Exposure Align reinsurance coverage with the company’s climate risk profile, ensuring adequate protection for areas susceptible to severe climate events.",
+      "Monitor Climate and Environmental Trends Regularly Keep updated on climate science developments and adjust exposure management strategies based on new insights or changes in environmental risk patterns."
+    ]
   },
   {
     "id": "pc-insurance-27",
@@ -485,7 +868,23 @@
       "COST_OPS",
       "UNDERWRITING_DISCIPLINE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/27 - Exposure-Based Pricing Sensitivity Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/27 - Exposure-Based Pricing Sensitivity Analysis.md",
+    "goal": "The goal of Exposure-Based Pricing Sensitivity Analysis is to assess how sensitive the company’s pricing is to changes in exposure factors, such as geographic location, insured values, policy limits, or specific risk characteristics.",
+    "dataRequired": [
+      "Policy premiums and insured values by product line and exposure factor (e.g., location, policy limits)",
+      "Claims data linked to exposure factors",
+      "Historical pricing adjustments by exposure factor (optional, for trend analysis)",
+      "External risk data (e.g., catastrophe models, regional risk scores)"
+    ],
+    "improve": [
+      "Refine Exposure-Based Pricing Models Update pricing models to reflect the sensitivity insights gained from the analysis, particularly for exposure factors with high claims-to-premium ratios.",
+      "Regularly Adjust Pricing Based on Exposure Shifts Implement a process for adjusting premiums as exposure factors change over time (e.g., increased policy limits or shifting risk zones).",
+      "Implement Dynamic Pricing for High-Sensitivity Segments For exposure factors with high sensitivity impacts, consider using dynamic pricing models that automatically adjust based on real-time changes in exposure levels.",
+      "Enhance Underwriting Standards for High-Exposure Segments Improve underwriting practices to mitigate risks in segments with high exposure, ensuring that pricing remains aligned with claims costs.",
+      "Benchmark Sensitivity Against Competitors Regularly compare the sensitivity of pricing models to competitors or industry norms to remain competitive and aligned with best practices.",
+      "Incorporate Predictive Analytics for Future Exposure Changes Use predictive analytics to model future changes in exposure factors and their impact on pricing, enabling proactive pricing adjustments.",
+      "Monitor Economic and Environmental Trends Track trends in economic and environmental factors that influence exposure (e.g., inflation affecting policy limits, climate risk shifts) to inform pricing adjustments."
+    ]
   },
   {
     "id": "pc-insurance-28",
@@ -504,7 +903,25 @@
     "relatedLeverCategories": [
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/28 - Comprehensive Capital Adequacy and Solvency Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/28 - Comprehensive Capital Adequacy and Solvency Analysis.md",
+    "goal": "The goal of Comprehensive Capital Adequacy and Solvency Analysis is to evaluate the company’s ability to meet its long-term financial obligations, maintain operational stability, and withstand adverse events.",
+    "dataRequired": [
+      "Total capital reserves, including shareholder equity and retained earnings",
+      "Risk-weighted assets (RWA) or total liabilities",
+      "Solvency ratio requirements (e.g., minimum regulatory requirements)",
+      "Claims data, particularly potential catastrophic losses",
+      "Cash flow projections and investment portfolio details",
+      "Stress-testing results (optional, for extreme scenarios)"
+    ],
+    "improve": [
+      "Increase Capital Reserves Strengthen capital reserves through retained earnings, equity issuance, or other means to ensure adequate coverage against liabilities.",
+      "Optimize Risk-Weighted Asset Composition Adjust the composition of risk-weighted assets to reduce exposure to high-risk categories, improving the capital adequacy ratio.",
+      "Enhance Catastrophe Reserves Increase reserves dedicated to catastrophic events, especially if simulations show insufficient coverage for extreme scenarios.",
+      "Improve Liquidity Position Increase the proportion of liquid assets in the portfolio to ensure coverage for short-term liabilities, enhancing the company’s ability to meet immediate financial obligations.",
+      "Regularly Conduct Stress Tests Perform periodic stress tests to identify potential weaknesses and proactively adjust capital or reserves based on test outcomes.",
+      "Diversify Investment Portfolio Reduce concentration in high-risk or illiquid assets, maintaining an investment strategy that balances risk and return while supporting capital adequacy.",
+      "Monitor Regulatory Changes Stay informed of any changes in regulatory solvency or capital adequacy requirements to maintain compliance and adapt capital strategies accordingly."
+    ]
   },
   {
     "id": "pc-insurance-29",
@@ -518,7 +935,23 @@
       "VOLUME",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/29 - Exposure Management and Aggregation Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/29 - Exposure Management and Aggregation Analysis.md",
+    "goal": "The goal of Exposure Management and Aggregation Analysis is to evaluate the concentration of risk across the company’s portfolio and ensure that individual exposures do not accumulate to create an unacceptable level of risk.",
+    "dataRequired": [
+      "Total insured values (TIV) segmented by geographic location, product line, or policy type",
+      "Policy count and exposure metrics (e.g., number of policies, insured value per segment)",
+      "Catastrophe model data (optional, for advanced aggregation analysis)",
+      "Reinsurance coverage details (optional, to assess aggregation limits with reinsurance)"
+    ],
+    "improve": [
+      "Enhance Geographic and Risk-Based Diversification Focus on balancing the portfolio by expanding business in low-risk regions or segments, reducing dependency on high-risk areas.",
+      "Adjust Reinsurance Strategy for High-Exposure Segments Increase reinsurance coverage in segments with high concentration ratios, ensuring adequate protection against large aggregated losses.",
+      "Implement Risk-Based Underwriting Adjustments Refine underwriting guidelines in high-risk regions or segments to limit exposure, particularly in areas prone to natural disasters.",
+      "Use Predictive Modeling for Real-Time Exposure Monitoring Leverage predictive models and real-time data to track exposure growth across segments and detect emerging aggregation risks promptly.",
+      "Establish Aggregation Limits per Segment Set and enforce internal aggregation limits for each high-risk segment to maintain exposure within acceptable levels and align with the company’s risk appetite.",
+      "Conduct Regular Scenario and Stress Testing Regularly perform scenario analyses and stress tests for regions or segments with significant exposure to simulate potential losses and adjust risk management strategies as needed.",
+      "Monitor Market and Environmental Changes Track environmental and market trends that could affect exposure levels, such as urban development in high-risk zones, allowing proactive management of exposure growth."
+    ]
   },
   {
     "id": "pc-insurance-30",
@@ -537,7 +970,24 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/30 - Catastrophic Claims Load Sensitivity Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/30 - Catastrophic Claims Load Sensitivity Analysis.md",
+    "goal": "The goal of Catastrophic Claims Load Sensitivity Analysis is to evaluate the impact of catastrophic events on the company’s financial position and to determine how sensitive profitability, reserves, and capital are to sudden spikes in claims due to catastrophic events.",
+    "dataRequired": [
+      "Historical claims data from past catastrophic events",
+      "Projected insured values exposed to catastrophic risks",
+      "Reinsurance coverage details, including limits and retention levels",
+      "Capital reserves and solvency metrics",
+      "Catastrophe model data for potential loss scenarios (optional)"
+    ],
+    "improve": [
+      "Increase Catastrophe Reinsurance Coverage Consider expanding reinsurance coverage for high-impact events, especially for scenarios where net claims loads threaten solvency or profitability.",
+      "Strengthen Capital Reserves for Extreme Scenarios Enhance capital reserves to buffer against the financial impact of catastrophic events, improving resilience to high claims loads.",
+      "Implement Dynamic Risk-Based Pricing Adjust premiums in high-exposure areas to reflect the increased cost of catastrophic risk, ensuring pricing aligns with potential claims loads.",
+      "Conduct Regular Sensitivity and Stress Tests Periodically update sensitivity analyses and stress tests based on changing risk factors, ensuring alignment with current risk exposure.",
+      "Refine Underwriting Standards in Catastrophe-Prone Areas Implement stricter underwriting criteria in regions highly susceptible to catastrophic events, limiting exposure to high-severity risks.",
+      "Enhance Catastrophe Modeling and Scenario Planning Use advanced catastrophe models to simulate more detailed loss scenarios, improving the accuracy of claims load projections and enabling proactive risk management.",
+      "Monitor Environmental and Market Trends Affecting Catastrophe Risk Stay updated on climate change and economic trends that could impact the frequency and severity of catastrophic events, adjusting strategies as necessary."
+    ]
   },
   {
     "id": "pc-insurance-31",
@@ -559,7 +1009,24 @@
       "COST_OPS",
       "CLAIMS_EXCELLENCE"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/31 - Social Inflation Impact Analysis on Claims.md"
+    "sourcePath": "data/analysis-library/pc-insurance/31 - Social Inflation Impact Analysis on Claims.md",
+    "goal": "The goal of Social Inflation Impact Analysis on Claims is to evaluate how social inflation — rising costs due to factors such as increased litigation, larger jury awards, and broader definitions of liability — affects the company’s claims costs.",
+    "dataRequired": [
+      "Historical claims costs segmented by type (e.g., liability, personal injury)",
+      "Claims severity and frequency over time",
+      "Litigation frequency and legal expenses associated with claims",
+      "Industry benchmarks on social inflation impacts (if available)",
+      "External data on legal trends, such as jury awards and settlements in relevant jurisdictions"
+    ],
+    "improve": [
+      "Adjust Pricing to Reflect Increased Claims Costs Increase premiums in product lines most affected by social inflation to ensure that pricing aligns with rising claims costs.",
+      "Strengthen Underwriting Standards Refine underwriting criteria for high-risk segments, particularly those prone to litigation and large settlements, to limit exposure to social inflation impacts.",
+      "Invest in Claims Management and Fraud Detection Improve claims management practices and use fraud detection technology to mitigate unnecessary costs, focusing on efficiency in processing high-severity claims.",
+      "Promote Alternative Dispute Resolution Encourage mediation or arbitration as alternatives to litigation to reduce legal expenses and potentially lower settlements.",
+      "Monitor Legal Trends and Update Liability Limits Stay informed on changes in tort law, jury award trends, and regional legal practices that drive social inflation. Adjust liability limits or exclusions based on these trends.",
+      "Engage in Industry Advocacy on Tort Reform Work with industry associations to support legislative changes that limit runaway awards and reduce the impact of social inflation on claims costs.",
+      "Use Predictive Analytics to Identify High-Risk Claims Early Apply predictive models to detect claims likely to be affected by social inflation, allowing for early intervention, efficient handling, and potentially limiting litigation exposure."
+    ]
   },
   {
     "id": "pc-insurance-32",
@@ -579,7 +1046,25 @@
       "COST_OPS",
       "REINSURANCE_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/32 - Layered Reinsurance Utilization Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/32 - Layered Reinsurance Utilization Analysis.md",
+    "goal": "The goal of Layered Reinsurance Utilization Analysis is to assess the effectiveness of the company’s layered reinsurance structure in managing different levels of risk exposure.",
+    "dataRequired": [
+      "Reinsurance structure details, including layers, limits, and retention levels",
+      "Claims data segmented by layers, showing how often each layer is utilized",
+      "Reinsurance premiums paid for each layer",
+      "Reinsurance recoveries by layer",
+      "Exposure data by product line or region (optional, for refined insights)"
+    ],
+    "improve": [
+      "Adjust Retention Levels to Optimize Layer Efficiency Increase or decrease retention levels based on claims frequency for each layer to enhance cost-efficiency and ensure layers align with actual risk exposure.",
+      "Consider Adding or Removing Layers If gaps or redundancies are identified, explore the feasibility of adding new layers (e.g., an additional catastrophe layer) or removing underutilized ones to improve alignment.",
+      "Refine Product Line or Regional Reinsurance Allocations Tailor reinsurance allocations for high-risk regions or product lines with unique risk characteristics to maximize the effectiveness of each layer.",
+      "Negotiate Reinsurance Terms for Cost Efficiency Work with reinsurers to negotiate terms, especially for layers with low recovery ratios, to optimize premium costs relative to anticipated recoveries.",
+      "Regularly Review and Adjust Reinsurance Structure Conduct periodic reviews of the layered structure and claims data to ensure reinsurance remains aligned with evolving risk profiles and market conditions.",
+      "Monitor Emerging Risks to Update Layer Requirements Stay informed on new risk trends (e.g., climate risk) that could affect claims patterns, allowing for proactive adjustments to layer limits and reinsurance strategies.",
+      "Use Catastrophe Models for Improved Layer Planning Integrate catastrophe models to simulate potential large-loss events and adjust reinsurance layering to manage catastrophic risks more effectively.",
+      "D. Finance"
+    ]
   },
   {
     "id": "pc-insurance-33",
@@ -599,7 +1084,24 @@
     "relatedLeverCategories": [
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/33 - Reserve Adequacy Assessment.md"
+    "sourcePath": "data/analysis-library/pc-insurance/33 - Reserve Adequacy Assessment.md",
+    "goal": "The goal of Reserve Adequacy Assessment is to evaluate whether the company’s reserves are sufficient to cover future claim obligations.",
+    "dataRequired": [
+      "Historical claims data, including claim amounts and development patterns",
+      "Current reserve levels for each line of business",
+      "Claims frequency and severity trends over time",
+      "Actuarial projections or reserve estimates based on loss development factors",
+      "Industry benchmarks for reserve adequacy (optional, for comparison)"
+    ],
+    "improve": [
+      "Increase Reserves for Underfunded Lines For lines with reserve adequacy ratios below 100%, consider increasing reserves to ensure coverage of projected ultimate claims.",
+      "Refine Loss Development Factors Regularly Update LDFs periodically to capture any shifts in claims development patterns, especially if the business mix or claims environment changes.",
+      "Incorporate Trend and Inflation Adjustments Adjust reserves based on current claims trends and inflation rates, particularly for long-tail lines, to maintain reserve adequacy.",
+      "Use Predictive Analytics for More Accurate Projections Leverage predictive models that consider a broader range of variables (e.g., economic factors, claims trends) for more accurate reserve estimates.",
+      "Benchmark Against Industry Data Compare reserve adequacy with industry benchmarks to ensure the company’s reserves align with typical standards and avoid significant shortfalls.",
+      "Conduct Regular Reserve Adequacy Reviews Perform reserve adequacy assessments regularly, adjusting reserves as needed to account for any changes in claims frequency, severity, or other risk factors.",
+      "Engage Actuarial Expertise for Complex Lines For complex or high-risk lines, consult with actuaries to ensure reserve estimates are reliable, incorporating expert insights into reserve-setting practices."
+    ]
   },
   {
     "id": "pc-insurance-34",
@@ -617,7 +1119,24 @@
       "MIX",
       "INVESTMENT_ALLOCATION"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/34 - Investment Portfolio Risk and Return Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/34 - Investment Portfolio Risk and Return Analysis.md",
+    "goal": "The goal of Investment Portfolio Risk and Return Analysis is to evaluate the balance between the potential returns and associated risks within the company’s investment portfolio.",
+    "dataRequired": [
+      "Portfolio holdings, including asset classes (e.g., equities, bonds, real estate) and individual investments",
+      "Historical returns for each investment or asset class",
+      "Volatility or risk metrics for each asset (e.g., standard deviation, beta, Value at Risk (VaR))",
+      "Investment income and capital gains",
+      "Benchmark data for comparison (e.g., market indices)"
+    ],
+    "improve": [
+      "Increase Diversification to Reduce Volatility Add low-correlation assets to the portfolio to reduce overall volatility without sacrificing return potential.",
+      "Adjust Asset Allocation for Optimal Risk-Return Balance Rebalance the portfolio periodically to align with the company’s risk tolerance, reducing exposure to highly volatile assets if necessary.",
+      "Implement a Dynamic Hedging Strategy Use derivatives or other hedging techniques to manage downside risk, particularly for volatile asset classes.",
+      "Prioritize Investments with High Return-to-Risk Ratios Focus on assets that offer favorable returns relative to their volatility, especially in core asset classes.",
+      "Monitor Market Trends and Economic Indicators Regularly assess how macroeconomic trends (e.g., interest rates, inflation) impact the portfolio’s risk and return, adjusting allocations accordingly.",
+      "Use Scenario Analysis for Stress Testing Perform scenario analysis to assess portfolio performance under adverse market conditions, ensuring resilience to potential economic shifts.",
+      "Benchmark and Reassess Regularly Compare performance to benchmarks periodically and re-evaluate risk-return metrics to ensure the portfolio aligns with the company’s strategic goals and market conditions."
+    ]
   },
   {
     "id": "pc-insurance-35",
@@ -634,7 +1153,23 @@
       "MIX",
       "INVESTMENT_ALLOCATION"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/35 - Portfolio Diversification and Correlation Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/35 - Portfolio Diversification and Correlation Analysis.md",
+    "goal": "The goal of Portfolio Diversification and Correlation Analysis is to assess the degree of diversification within the company’s investment portfolio and examine how different assets correlate with one another.",
+    "dataRequired": [
+      "Portfolio holdings, segmented by asset classes (e.g., equities, bonds, real estate) and individual investments",
+      "Historical returns for each asset or asset class",
+      "Correlation coefficients between assets or asset classes",
+      "Industry benchmarks for diversification (optional)"
+    ],
+    "improve": [
+      "Increase Allocation to Low-Correlation Assets Add assets with low or negative correlations to core holdings, such as commodities or alternative investments, to reduce portfolio-wide correlation.",
+      "Reduce Concentration in Highly Correlated Assets Diversify by reducing allocation to highly correlated assets, particularly within volatile asset classes, to improve portfolio stability.",
+      "Consider Geographic and Sector Diversification Spread investments across different geographic regions or industry sectors to reduce exposure to single-country or industry risks.",
+      "Rebalance the Portfolio Regularly Periodically adjust asset allocations to maintain diversification targets as market conditions change, ensuring alignment with the company’s risk tolerance.",
+      "Use Hedging Strategies for High-Correlation Assets Implement hedging strategies for asset classes or investments with high positive correlations to offset potential downturns.",
+      "Monitor Economic and Market Trends Stay informed on economic shifts or market cycles that could impact correlations between asset classes, enabling proactive adjustments in the portfolio.",
+      "Incorporate Diversification Ratios into Investment Strategy Set diversification goals based on a targeted diversification ratio, aligning investment selections to achieve and maintain these targets over time."
+    ]
   },
   {
     "id": "pc-insurance-36",
@@ -652,7 +1187,24 @@
     "relatedLeverCategories": [
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/36 - Reserve Runoff Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/36 - Reserve Runoff Analysis.md",
+    "goal": "The goal of Reserve Runoff Analysis is to assess how accurately the company’s reserves for outstanding claims are managed over time.",
+    "dataRequired": [
+      "Initial reserves set at the time claims are reported",
+      "Adjusted reserves over time for each claim",
+      "Final settled amounts for each claim",
+      "Claim type or product line (optional, for segment analysis)",
+      "Historical reserve data over multiple periods"
+    ],
+    "improve": [
+      "Refine Reserve-Setting Practices Adjust reserve-setting methodologies to better align initial estimates with expected claim costs, based on past reserve runoff trends.",
+      "Monitor and Adjust for Claims Severity Trends Regularly review trends in claims severity to inform reserve estimates, especially in high-variance segments.",
+      "Implement Actuarial Models for Accurate Projections Use actuarial models that incorporate historical claims data and loss development factors to improve reserve accuracy.",
+      "Conduct Regular Reserve Reviews Perform periodic reserve adequacy reviews to identify any necessary adjustments in reserve-setting assumptions and practices.",
+      "Segment Analysis for Targeted Improvements Focus on specific claim types or product lines with consistent reserve runoff issues, refining reserve-setting guidelines accordingly.",
+      "Incorporate Economic and Environmental Factors Adjust reserves for external factors, like inflation or natural disasters, that may affect claims costs, ensuring adequate coverage for changing risk levels.",
+      "Benchmark Reserve Runoff Performance Compare the company’s reserve runoff ratios to industry averages, using these insights to enhance reserve-setting practices and improve accuracy over time."
+    ]
   },
   {
     "id": "pc-insurance-37",
@@ -674,7 +1226,25 @@
       "COST_OPS",
       "PORTFOLIO_STEERING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/37 - Long-Tail vs. Short-Tail Business Profitability Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/37 - Long-Tail vs. Short-Tail Business Profitability Analysis.md",
+    "goal": "The goal of Long-Tail vs.",
+    "dataRequired": [
+      "Segmentation of policies and claims into long-tail and short-tail categories (e.g., liability for long-tail, property for short-tail)",
+      "Premiums earned for each category",
+      "Claims paid and claims reserves for each category",
+      "Claims development patterns (how claims costs evolve over time)",
+      "Operating expenses for each line of business (optional, for detailed profitability)"
+    ],
+    "improve": [
+      "Refine Pricing Strategies Based on Tail Length Adjust premium rates for long-tail lines to account for increased uncertainty in claims development and reserves.",
+      "Optimize Reserve Management in Long-Tail Lines Monitor reserves closely and use loss development factors to ensure adequacy, given the variability in long-tail claims.",
+      "Increase Efficiency in Short-Tail Operations Focus on reducing expenses in short-tail lines through streamlined claims processing, as these lines benefit less from long-term investment income.",
+      "Leverage Investment Income for Long-Tail Reserves Enhance investment strategies for long-tail reserves to maximize income while waiting for claims to settle, balancing liquidity needs with return objectives.",
+      "Benchmark Performance Regularly Compare profitability metrics to industry benchmarks for long-tail and short-tail lines, adjusting pricing or operational practices as needed.",
+      "Analyze Claims Patterns and Adjust Underwriting Monitor trends in claims frequency and severity by line to adjust underwriting guidelines, reducing exposure to high-risk areas within both long-tail and short-tail categories.",
+      "Use Predictive Modeling for Improved Reserving Apply predictive models to forecast claims development more accurately, especially for long-tail lines, improving reserve adequacy and profitability.",
+      "E. Operations"
+    ]
   },
   {
     "id": "pc-insurance-38",
@@ -696,7 +1266,25 @@
       "COST_OPS",
       "DISTRIBUTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/38 - Distribution Channel Performance Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/38 - Distribution Channel Performance Analysis.md",
+    "goal": "The goal of Distribution Channel Performance Analysis is to evaluate the effectiveness and profitability of each distribution channel (e.g., brokers, direct sales, online platforms) used to acquire policies.",
+    "dataRequired": [
+      "Policies sold by each distribution channel",
+      "Premiums earned by channel",
+      "Acquisition costs for each channel (e.g., commissions, advertising expenses)",
+      "Claims data segmented by channel",
+      "Policy retention rates by channel",
+      "Customer demographics by channel (optional, for deeper insights)"
+    ],
+    "improve": [
+      "Allocate Resources to High-Performing Channels Focus marketing and sales efforts on channels with low combined ratios and high retention rates, maximizing return on investment.",
+      "Optimize Acquisition Costs in High-Cost Channels Review commission structures, marketing expenses, or operational processes to reduce acquisition costs in channels with high acquisition cost ratios.",
+      "Enhance Retention Strategies for Low-Retention Channels Implement targeted retention efforts, such as personalized customer outreach or loyalty programs, in channels with lower retention rates.",
+      "Adjust Underwriting Standards for High-Loss Channels Tighten underwriting criteria or pricing in channels with high loss ratios to better align premiums with risk.",
+      "Utilize Data to Personalize Channel Marketing Use customer demographic data to tailor marketing strategies for each channel, improving customer targeting and acquisition efficiency.",
+      "Encourage Digital Transformation for Cost Efficiency Invest in digital or online channels, which often have lower acquisition costs and appeal to younger, tech-savvy customers.",
+      "Benchmark Channel Performance Regularly Conduct regular performance analyses to adapt strategies as market dynamics and customer preferences change, ensuring the distribution strategy remains efficient and effective."
+    ]
   },
   {
     "id": "pc-insurance-39",
@@ -711,7 +1299,23 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/39 - Policy Inception-to-Claim Timing Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/39 - Policy Inception-to-Claim Timing Analysis.md",
+    "goal": "The goal of Policy Inception-to-Claim Timing Analysis is to evaluate the time elapsed between when a policy is initiated and when the first claim is filed.",
+    "dataRequired": [
+      "Policy inception dates",
+      "Claim dates for the first claim on each policy",
+      "Policy and claim types (optional, for segmentation)",
+      "Policyholder demographics (optional, for deeper insights)"
+    ],
+    "improve": [
+      "Enhance Underwriting Criteria for High-Risk Policy Types Use timing data to adjust underwriting standards, especially for policy types or customer segments that frequently file early claims.",
+      "Implement Fraud Detection for Short-Timing Claims Flag policies with very short inception-to-claim timing for additional review to detect potential fraud or adverse selection.",
+      "Adjust Pricing for Policies with Short Inception-to-Claim Patterns Consider higher premiums or stricter terms for policies or segments where early claims are common, ensuring pricing reflects the associated risk.",
+      "Develop Targeted Customer Education Programs Educate customers on policy use and encourage responsible behavior, reducing the likelihood of claims immediately after policy inception.",
+      "Monitor Shifts in Inception-to-Claim Timing Over Time Regularly track timing patterns to identify any emerging risks or behavioral changes among policyholders, allowing timely adjustments to underwriting or pricing.",
+      "Use Timing Data in Risk Scoring Models Incorporate inception-to-claim timing as a variable in risk scoring models, improving risk assessment accuracy.",
+      "Benchmark Timing Patterns with Competitors Compare timing data with industry peers to ensure that the company’s underwriting practices are in line with industry standards and not disproportionately exposed to early claims."
+    ]
   },
   {
     "id": "pc-insurance-40",
@@ -726,7 +1330,25 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/40 - Premium Leakage Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/40 - Premium Leakage Analysis.md",
+    "goal": "The goal of Premium Leakage Analysis is to identify areas where potential revenue is lost due to undercharging, mispricing, or other inefficiencies in premium collection.",
+    "dataRequired": [
+      "Policy premiums and risk factors (e.g., coverage limits, location, insured value)",
+      "Claims history and severity per policy type",
+      "Underwriting and rating guidelines",
+      "Premium adjustments, discounts, and endorsements",
+      "Historical audit data on premium collection (optional)"
+    ],
+    "improve": [
+      "Enhance Underwriting Accuracy Implement more rigorous underwriting practices to ensure premiums reflect the actual risk profile, reducing the chance of mispricing.",
+      "Optimize Rating and Pricing Models Refine pricing models to better incorporate risk factors, ensuring that expected premiums accurately reflect exposure.",
+      "Audit Discounts and Adjustments Regularly Review discount policies and premium adjustments periodically to prevent overuse or misapplication, aligning discounts more closely with risk factors.",
+      "Conduct Regular Premium Audits Perform periodic audits of policy premiums to identify discrepancies and address leakage proactively.",
+      "Use Predictive Analytics for Pricing Optimization Leverage predictive analytics to model and adjust premiums based on claims data and emerging trends, minimizing leakage due to outdated pricing models.",
+      "Train Underwriters on Premium Leakage Risks Provide training for underwriters to recognize and prevent common causes of premium leakage, fostering a focus on accuracy.",
+      "Set Leakage Reduction Targets and Monitor Progress Establish targets for reducing premium leakage and monitor results over time, adjusting strategies as necessary to meet revenue goals.",
+      "F. Sales & Marketing"
+    ]
   },
   {
     "id": "pc-insurance-41",
@@ -743,7 +1365,24 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/41 - Policyholder Behavior Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/41 - Policyholder Behavior Analysis.md",
+    "goal": "The goal of Policyholder Behavior Analysis is to understand patterns in policyholder actions, such as renewals, lapses, claims filing, and engagement with policy terms.",
+    "dataRequired": [
+      "Policy renewal rates",
+      "Lapse rates (policies not renewed or canceled)",
+      "Claims frequency and severity by policy type",
+      "Demographic data on policyholders (age, location, policy type)",
+      "Policy adjustments (e.g., endorsements, changes in coverage limits)"
+    ],
+    "improve": [
+      "Develop Targeted Retention Strategies Use renewal and lapse data to implement retention campaigns for segments with lower renewal rates, such as offering incentives for renewal or improved customer service.",
+      "Adjust Premiums for High-Claims Segments Reassess pricing for segments with high claims frequency or severity to ensure that premiums reflect the associated risk.",
+      "Offer Customized Product Enhancements Use insights from policy adjustments to introduce product enhancements, such as flexible coverage options or added endorsements that match policyholder preferences.",
+      "Educate Policyholders on Coverage Benefits Provide clear information on policy benefits and coverage options to enhance customer understanding and satisfaction, reducing lapses.",
+      "Tailor Marketing and Engagement by Demographic Segment Use demographic insights to create personalized marketing campaigns, targeting segments more likely to renew or less likely to lapse.",
+      "Implement Proactive Claims Management For policyholders with high claims frequency, consider proactive claims management, such as loss prevention education or claims tracking tools to improve their experience.",
+      "Benchmark Policyholder Behavior Against Industry Data Compare renewal, lapse, and claims trends with industry standards to identify areas for improvement and ensure competitive positioning."
+    ]
   },
   {
     "id": "pc-insurance-42",
@@ -761,7 +1400,24 @@
       "VOLUME",
       "RETENTION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/42 - Retention vs. Lapse Rate Analysis by Customer Segment.md"
+    "sourcePath": "data/analysis-library/pc-insurance/42 - Retention vs. Lapse Rate Analysis by Customer Segment.md",
+    "goal": "The goal of Retention vs.",
+    "dataRequired": [
+      "Policy renewal and lapse data segmented by customer demographics (e.g., age, region, income level, policy type)",
+      "Total policies up for renewal in each segment",
+      "Renewal and lapse rates for each segment over time",
+      "Historical data on customer engagement (optional)"
+    ],
+    "improve": [
+      "Develop Targeted Retention Campaigns for High-Lapse Segments Implement retention efforts such as special renewal offers, personalized communications, or loyalty rewards in segments with low retention and high lapse rates.",
+      "Enhance Engagement and Communication for Low-Retention Segments Increase engagement efforts with segments exhibiting high lapse rates, providing educational content on policy benefits or regular check-ins to build loyalty.",
+      "Offer Flexible Payment and Coverage Options Address affordability concerns in high-lapse segments by introducing flexible payment plans or tailored coverage options that meet the specific needs of these customers.",
+      "Implement Customer Feedback Mechanisms Use surveys or feedback loops to understand why certain segments are not renewing, incorporating insights into product and service improvements.",
+      "Refine Product Offerings for High-Risk Demographics Tailor products and services to better match the preferences and needs of segments with high lapse rates, potentially improving retention by aligning with customer expectations.",
+      "Use Data Analytics to Predict Lapse Risks Leverage predictive analytics to identify customers at risk of lapsing, allowing for proactive retention actions targeted at high-risk individuals.",
+      "Benchmark Retention and Lapse Performance Against Competitors Compare retention and lapse rates with industry benchmarks to identify competitive gaps, enabling strategies to align with or surpass market standards.",
+      "G. Regulatory & Compliance"
+    ]
   },
   {
     "id": "pc-insurance-43",
@@ -775,7 +1431,24 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/pc-insurance/43 - Regulatory and Compliance Risk Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/43 - Regulatory and Compliance Risk Analysis.md",
+    "goal": "The goal of Regulatory and Compliance Risk Analysis is to assess the company’s exposure to risks stemming from changes in regulations, non-compliance with existing laws, or failure to adhere to industry standards.",
+    "dataRequired": [
+      "Current regulations impacting the insurance industry, including federal, state, and international laws",
+      "Company policies, procedures, and compliance records",
+      "Historical data on compliance violations or fines",
+      "Risk assessments for each regulatory area (e.g., data privacy, anti-money laundering)",
+      "Industry benchmarks on regulatory compliance"
+    ],
+    "improve": [
+      "Implement Comprehensive Compliance Training Programs Ensure all employees, especially those in high-risk areas, receive regular training on regulatory requirements to reduce violations.",
+      "Strengthen Internal Audits and Compliance Checks Increase the frequency of internal audits and compliance reviews, particularly in high-risk areas, to identify and address non-compliance proactively.",
+      "Enhance Monitoring of Regulatory Changes Set up a regulatory monitoring system or designate a team to stay informed of regulatory updates, ensuring timely adjustments to company policies and practices.",
+      "Invest in Compliance Management Software Use compliance software to track, document, and report on compliance status across the organization, making it easier to identify and mitigate risks.",
+      "Establish a Cross-Functional Compliance Team Form a team with representatives from different departments to address regulatory requirements and share responsibility for maintaining compliance.",
+      "Benchmark Compliance Performance Regularly Compare the company’s compliance performance against industry peers periodically to gauge progress and adopt best practices in regulatory risk management.",
+      "Develop Contingency Plans for High-Risk Areas Create response plans for high-risk regulatory areas with significant financial impact, ensuring the company can respond quickly in the event of a compliance issue."
+    ]
   },
   {
     "id": "pc-insurance-44",
@@ -793,7 +1466,24 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/44 - Impact of Regulatory Changes on Pricing and Coverage.md"
+    "sourcePath": "data/analysis-library/pc-insurance/44 - Impact of Regulatory Changes on Pricing and Coverage.md",
+    "goal": "The goal of Impact of Regulatory Changes on Pricing and Coverage Analysis is to evaluate how new or changing regulations affect the company’s pricing models, product offerings, and coverage terms.",
+    "dataRequired": [
+      "New or upcoming regulatory changes impacting insurance pricing and coverage (e.g., mandated coverage limits, pricing restrictions)",
+      "Current pricing models and rating factors",
+      "Coverage terms and product details for each line of business",
+      "Historical data on regulatory changes and their impact on pricing or coverage",
+      "Competitor pricing and coverage changes (optional, for benchmarking)"
+    ],
+    "improve": [
+      "Develop Flexible Pricing Models Implement adaptable pricing models that allow for rapid adjustments to meet new regulatory requirements without disrupting profitability.",
+      "Adjust Underwriting Guidelines to Manage Increased Coverage Refine underwriting standards to align with expanded coverage requirements, reducing the potential for adverse selection or increased claims exposure.",
+      "Enhance Communication with Policyholders Educate policyholders about changes in pricing and coverage due to regulations, managing expectations and building trust.",
+      "Benchmark Regularly Against Competitors Track competitor responses to regulatory changes to stay competitive and adapt strategies based on market standards.",
+      "Monitor Regulatory Changes Continuously Establish a system for tracking regulatory developments to anticipate impacts on pricing and coverage proactively, enabling timely adjustments.",
+      "Use Predictive Modeling to Anticipate Financial Impact Apply predictive analytics to model the financial impact of regulatory changes, allowing the company to evaluate different pricing and coverage scenarios.",
+      "Engage with Regulators on Policy Changes Participate in industry groups or discussions with regulators to understand potential regulatory changes and advocate for policies that support sustainable pricing and coverage structures."
+    ]
   },
   {
     "id": "pc-insurance-45",
@@ -813,6 +1503,23 @@
       "MIX",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/pc-insurance/45 - Risk-Based Capital (RBC) Requirement Analysis.md"
+    "sourcePath": "data/analysis-library/pc-insurance/45 - Risk-Based Capital (RBC) Requirement Analysis.md",
+    "goal": "The goal of Risk-Based Capital (RBC) Requirement Analysis is to determine if the company’s capital levels are sufficient to cover the risks it assumes.",
+    "dataRequired": [
+      "Current RBC requirements as defined by regulatory authorities (e.g., NAIC for the U.S.)",
+      "Company’s asset composition and risk profile (e.g., asset risk, underwriting risk, credit risk)",
+      "Historical claims data to assess loss risk",
+      "RBC formula components for each risk category",
+      "Current capital reserves and total assets"
+    ],
+    "improve": [
+      "Increase Capital Reserves Strengthen capital reserves to improve the RBC ratio, especially in areas with high RBC requirements.",
+      "Optimize Asset Allocation Rebalance the investment portfolio to reduce exposure to high-risk assets, lowering the RBC required for asset risk.",
+      "Refine Underwriting Practices Adjust underwriting standards and pricing to align with risk levels, improving the RBC profile for underwriting risk.",
+      "Enhance Credit Risk Management Improve receivables collection and ensure reliable reinsurance partners to reduce RBC associated with credit risk.",
+      "Implement Operational Risk Mitigation Reduce business risk by enhancing operational efficiency, investing in technology, and streamlining internal processes.",
+      "Conduct Regular Stress Testing and Scenario Analysis Perform stress tests periodically to anticipate how economic and market changes could impact the RBC ratio, allowing for proactive risk management.",
+      "Monitor Regulatory Changes and Industry Trends Stay informed of changes in RBC requirements and industry trends, enabling timely adjustments to capital and risk strategies to maintain compliance and competitiveness."
+    ]
   }
 ]

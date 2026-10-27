@@ -1,4 +1,5 @@
 import type { ActiveVocabulary } from '../ontology/registry';
+import { section, improveTitles } from './markdown';
 
 /**
  * Keyword pre-fill of curation tables (docs/11 D4). It only PROPOSES mappings onto the
@@ -61,22 +62,11 @@ const CAUSE_RULES: Rule[] = [
 const REGULATORY = /\b(regulat\w*|compliance|fda|epa|licens\w*|permits?|certification\w*)\b/i;
 CAUSE_RULES.push(['REGULATORY', REGULATORY]);
 
-function section(content: string, heading: string): string[] {
-  const lines = content.split('\n');
-  const start = lines.findIndex((l) => l.startsWith(`## ${heading}`));
-  if (start < 0) return [];
-  const end = lines.findIndex((l, i) => i > start && l.startsWith('## '));
-  return lines.slice(start + 1, end < 0 ? undefined : end).filter((l) => l.trim());
-}
-
 export function parseAnalysis(content: string): ParsedAnalysis {
   const h1 = content.match(/^#\s+(\d+)\s*·\s*(.+)$/m);
   const part = content.match(/\*\*Part:\*\* \[\[([A-Z]) - (.+?)\]\]/);
   if (!h1 || !part) throw new Error('Not an analysis file (missing title or Part line)');
-  const improve = section(content, '🚀').map((l) => {
-    const bold = l.match(/\*\*(.+?):?\*\*/);
-    return (bold ? bold[1] : l.replace(/^[-\d.\s]+/, '').split(':')[0]).replace(/:$/, '').trim();
-  });
+  const improve = improveTitles(content);
   return {
     num: h1[1].padStart(2, '0'), title: h1[2].trim(), part: part[1], partLabel: part[2],
     goal: section(content, '🎯').join(' ').trim(), improve,

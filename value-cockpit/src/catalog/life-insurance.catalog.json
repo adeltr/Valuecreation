@@ -14,7 +14,23 @@
       "VOLUME",
       "PERSISTENCY_PROGRAM"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/01 - Policyholder Behavior and Lapse Rate Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/01 - Policyholder Behavior and Lapse Rate Analysis.md",
+    "goal": "The primary objective of this analysis is to understand policyholder behavior patterns, specifically focusing on lapse rates, to identify factors leading to lapses, assess their impact on business performance, and develop strategies to improve policyholder retention.",
+    "dataRequired": [
+      "Policy-level data, including policy start and end dates, policy type (e.g., term, whole life, universal life), premium payment frequency (monthly, quarterly, annual), and policyholder demographics (e.g., age, gender, location).",
+      "Lapse records, including date of lapse and reason for lapse (if available).",
+      "Financial data, including premium amounts and surrender values (if applicable).",
+      "Historical data on renewal and retention rates."
+    ],
+    "improve": [
+      "Conduct surveys or focus groups with lapsed policyholders to understand reasons for lapses.",
+      "Develop flexible premium payment plans to address affordability challenges.",
+      "Enhance customer engagement through personalized communication, reminders, and educational materials.",
+      "Improve the value proposition of policies by introducing additional benefits or features.",
+      "Leverage predictive modeling to identify at-risk policyholders early and offer retention strategies, such as discounts or loyalty rewards.",
+      "Strengthen training for agents and distributors to ensure proper alignment of products with customer needs.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-02",
@@ -34,7 +50,24 @@
       "COST_OPS",
       "PERSISTENCY_PROGRAM"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/02 - Policy Renewal and Persistency Rate Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/02 - Policy Renewal and Persistency Rate Analysis.md",
+    "goal": "To assess the rate at which policyholders renew their policies and maintain their premiums over time.",
+    "dataRequired": [
+      "Policyholder data, including demographics, policy type, premium amount, and payment frequency.",
+      "Policy renewal data, including renewal dates and rates across policy types and segments.",
+      "Historical persistency data segmented by time periods (e.g., 13-month, 25-month, 37-month persistency rates).",
+      "Distribution channel data to link persistency with sales methods or intermediaries.",
+      "Industry benchmark persistency rates for comparison."
+    ],
+    "improve": [
+      "Simplify the renewal process through automation and reminders for policyholders.",
+      "Offer incentives, such as loyalty discounts, for long-term renewals.",
+      "Analyze customer feedback to identify barriers to renewals and address these concerns.",
+      "Enhance training for agents to improve communication and ensure policyholders understand product benefits.",
+      "Develop targeted retention campaigns focused on high-risk segments identified in the analysis.",
+      "Use predictive modeling to proactively identify customers at risk of non-renewal and offer tailored retention solutions.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-03",
@@ -53,7 +86,24 @@
       "VOLUME",
       "PERSISTENCY_PROGRAM"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/03 - Customer Lifetime Value (CLV) and Retention Strategy.md"
+    "sourcePath": "data/analysis-library/life-insurance/03 - Customer Lifetime Value (CLV) and Retention Strategy.md",
+    "goal": "To calculate the lifetime value of a policyholder and evaluate the effectiveness of retention strategies in maximizing CLV.",
+    "dataRequired": [
+      "Policyholder data, including demographics, policy type, premium payment frequency, and average policy tenure.",
+      "Historical revenue data, including premiums collected, renewal rates, and additional revenue from riders or upsells.",
+      "Retention cost data, including costs of retention campaigns, loyalty programs, and customer service.",
+      "Churn and lapse rate data for different segments of policyholders.",
+      "Industry benchmarks for CLV and retention strategies."
+    ],
+    "improve": [
+      "Use predictive analytics to identify at-risk high-value customers and implement proactive retention strategies.",
+      "Enhance loyalty programs or offer value-added services to increase customer engagement and renewals.",
+      "Personalize customer communication based on preferences and behaviors to strengthen relationships.",
+      "Optimize acquisition efforts to focus on customer segments with high potential CLV.",
+      "Evaluate and refine retention campaigns to ensure a positive ROI and alignment with high-value segments.",
+      "Conduct regular feedback surveys to identify areas of dissatisfaction and improve customer experience.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-04",
@@ -72,7 +122,25 @@
       "VOLUME",
       "PERSISTENCY_PROGRAM"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/04 - Policy Surrender Trends and Impact on Liquidity Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/04 - Policy Surrender Trends and Impact on Liquidity Analysis.md",
+    "goal": "To analyze trends in policy surrenders, identify drivers contributing to surrender rates, and assess the impact of these surrenders on the company’s liquidity.",
+    "dataRequired": [
+      "**Historical policy surrender data, including:** ○ Policy type (e.g., term, whole life, universal life). ○ Surrender dates and reasons (if available).",
+      "**Financial data, including:** ○ Surrender values paid out per policy. ○ Total reserves and liquidity buffers available.",
+      "Policyholder demographics and premium payment records.",
+      "Economic and market data, including interest rates and macroeconomic indicators.",
+      "Industry benchmarks for surrender rates and liquidity reserves."
+    ],
+    "improve": [
+      "Conduct surveys or interviews with surrendering policyholders to understand reasons for surrender and address key pain points.",
+      "Design flexible policy features, such as loan provisions or partial withdrawals, to provide policyholders with alternatives to full surrender.",
+      "Improve customer engagement and education to ensure policyholders fully understand product benefits and long-term value.",
+      "Build a robust liquidity management framework, including stress testing for sudden spikes in surrender rates.",
+      "",
+      "Strengthen retention strategies for high-risk segments identified through the analysis, such as offering targeted incentives to retain policies.",
+      "Monitor macroeconomic indicators regularly and adjust liquidity reserves proactively to mitigate risk during economic downturns.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-05",
@@ -89,7 +157,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/05 - Premium Persistency Analysis by Distribution Channel.md"
+    "sourcePath": "data/analysis-library/life-insurance/05 - Premium Persistency Analysis by Distribution Channel.md",
+    "goal": "To evaluate how effectively different distribution channels (e.g., agents, brokers, bancassurance, direct sales) retain policyholders and maintain premium payments over time.",
+    "dataRequired": [
+      "Policyholder data segmented by distribution channel (e.g., agents, brokers, bancassurance, direct-to-consumer).",
+      "Premium payment history, including frequency (monthly, quarterly, annually), amount, and lapses.",
+      "Distribution channel operational data, such as commission structures and sales practices.",
+      "Historical persistency data, segmented by policy type and channel.",
+      "Industry benchmarks for persistency rates by distribution channel."
+    ],
+    "improve": [
+      "Provide targeted training for underperforming agents or brokers to improve customer communication and product alignment.",
+      "Revise commission structures to incentivize long-term policy retention rather than short-term sales.",
+      "Strengthen post-sale engagement strategies, such as personalized communication, to improve customer experience.",
+      "Introduce technology solutions, like CRM systems, to help distributors track and engage with policyholders more effectively.",
+      "Collaborate with bancassurance partners to develop tailored retention strategies, such as cross-selling or bundled products.",
+      "Monitor persistency rates regularly by channel and implement retention-focused initiatives where necessary.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-06",
@@ -105,7 +190,25 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/06 - Policyholder Behavioral Elasticity in Premium Adjustments.md"
+    "sourcePath": "data/analysis-library/life-insurance/06 - Policyholder Behavioral Elasticity in Premium Adjustments.md",
+    "goal": "To evaluate how changes in premium amounts influence policyholder behavior, such as retention, lapse rates, and renewal decisions.",
+    "dataRequired": [
+      "**Historical policy data, including:** ○ Policyholder demographics (age, income, gender, location). ○ Policy types and coverage details (e.g., term, whole life, universal life).",
+      "**Premium adjustment history, including:** ○ Records of premium increases or decreases. ○ Timing and magnitude of premium adjustments.",
+      "**Policyholder behavior data post-adjustment, such as:** ○ Retention rates. ○ Lapse rates. ○ Renewal rates.",
+      "Macroeconomic data (e.g., inflation, interest rates) for contextual insights.",
+      "Industry benchmarks for price elasticity of demand in insurance."
+    ],
+    "improve": [
+      "Design flexible premium structures, such as tiered pricing or loyalty discounts, to retain high-sensitivity policyholders.",
+      "Target high-elasticity segments with communication campaigns explaining the value of policies to mitigate the impact of premium increases.",
+      "Use predictive analytics to forecast policyholder reactions to future premium adjustments.",
+      "Conduct A/B testing with small premium adjustments to measure behavioral responses before implementing broader changes.",
+      "",
+      "Introduce product options with adjustable coverage levels, allowing policyholders to maintain affordability during premium increases.",
+      "Regularly monitor market conditions and competitor pricing to remain competitive in high-elasticity segments.",
+      "B. Actuarial and Reserve Management"
+    ]
   },
   {
     "id": "life-insurance-07",
@@ -121,7 +224,23 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/07 - Actuarial Reserve Adequacy and Valuation Study.md"
+    "sourcePath": "data/analysis-library/life-insurance/07 - Actuarial Reserve Adequacy and Valuation Study.md",
+    "goal": "To evaluate the adequacy and accuracy of actuarial reserves for life insurance policies, ensuring that liabilities are fully covered and aligned with regulatory requirements.",
+    "dataRequired": [
+      "**Policy-level data, including:** ○ Policy type (e.g., term, whole life, universal life). ○ Coverage amounts and premium payment details.",
+      "**Actuarial assumptions, such as:** ○ Mortality and morbidity rates. ○ Lapse rates and policy renewal rates. ○ Discount rates and investment returns.",
+      "**Reserve valuation data, including:** ○ Current reserves by policy and overall portfolio. ○ Reserve calculation methodology (e.g., gross premium reserves, net premium reserves).",
+      "**Financial and regulatory data:** ○ Solvency standards and guidelines. ○ Benchmark reserve levels for similar companies or policies."
+    ],
+    "improve": [
+      "Update actuarial assumptions regularly based on recent experience studies and market trends.",
+      "Enhance scenario analysis capabilities to identify potential reserve inadequacies under extreme conditions.",
+      "Improve alignment of reserve methodologies with regulatory requirements and best practices (e.g., implementing IFRS 17 standards).",
+      "Use predictive modeling to refine assumptions for lapse rates, mortality, and morbidity.",
+      "Increase capital reserves or adjust reinsurance strategies to mitigate risks from underfunded liabilities.",
+      "Conduct regular audits of reserve calculations to ensure accuracy and transparency.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-08",
@@ -142,7 +261,25 @@
       "PRICING",
       "MORTALITY_UNDERWRITING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/08 - Mortality and Longevity Risk Trend Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/08 - Mortality and Longevity Risk Trend Analysis.md",
+    "goal": "To evaluate trends in mortality and longevity risks to ensure the company’s pricing, reserves, and risk management strategies align with emerging demographic patterns.",
+    "dataRequired": [
+      "**Historical mortality and longevity data:** ○ Policyholder mortality data segmented by demographics (e.g., age, gender, location). ○ Mortality tables (industry-standard and internal).",
+      "Policy-level data, including coverage type, term duration, and payout amounts.",
+      "**Economic and healthcare data:** ○ Life expectancy trends (e.g., from government or industry reports). ○ Trends in healthcare advancements and disease prevalence.",
+      "Actuarial assumptions related to mortality and longevity.",
+      "Benchmark mortality and longevity trends from industry peers."
+    ],
+    "improve": [
+      "Update mortality and longevity assumptions regularly to reflect emerging trends and ensure pricing accuracy.",
+      "Enhance underwriting practices to account for changing mortality risks in high-risk segments.",
+      "",
+      "Refine reinsurance strategies to mitigate exposure to mortality and longevity risks.",
+      "Use predictive modeling and data analytics to improve accuracy in forecasting mortality and longevity trends.",
+      "Diversify product offerings to balance exposure to mortality and longevity risks (e.g., combining term policies with annuities).",
+      "Monitor external factors, such as advancements in healthcare or demographic changes, to proactively adjust risk models.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-09",
@@ -157,7 +294,26 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/09 - Guaranteed Benefits and Embedded Guarantees Risk Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/09 - Guaranteed Benefits and Embedded Guarantees Risk Analysis.md",
+    "goal": "To assess the financial and actuarial risks associated with guaranteed benefits and embedded guarantees within life insurance policies.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Types of guaranteed benefits (e.g., minimum death benefit, guaranteed cash value, maturity guarantees). ○ Policyholder demographics (e.g., age, gender, location). ○ Policy terms, coverage amounts, and premium structures.",
+      "**Financial data:** ○ Current reserves allocated for guarantees. ○ Historical claims related to guarantees.",
+      "**Actuarial assumptions:** ○ Discount rates, mortality rates, lapse rates, and investment returns.",
+      "**Stress testing parameters:** ○ Adverse scenarios such as low-interest-rate environments, higher-than-expected mortality rates, or significant policy lapses.",
+      "Industry benchmarks for guarantees and risk management practices."
+    ],
+    "improve": [
+      "Adjust pricing for new products to better account for the cost of guarantees, ensuring sustainable profitability.",
+      "",
+      "Strengthen reserve allocations for products with significant guarantee liabilities to reduce financial vulnerability.",
+      "Implement hedging strategies to offset market risks, such as low interest rates or volatile asset returns.",
+      "Optimize reinsurance agreements to transfer a portion of guarantee-related risks to third-party insurers.",
+      "Enhance customer engagement to reduce lapses, particularly among policies with high embedded guarantees.",
+      "Regularly review and update actuarial assumptions, including mortality rates and investment returns, to ensure accurate liability valuation.",
+      "Develop predictive models to monitor emerging risks in real-time and adjust reserve strategies proactively.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-10",
@@ -172,7 +328,25 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/10 - Embedded Derivatives Valuation and Sensitivity Testing.md"
+    "sourcePath": "data/analysis-library/life-insurance/10 - Embedded Derivatives Valuation and Sensitivity Testing.md",
+    "goal": "To evaluate the fair value of embedded derivatives within life insurance products (e.g., guaranteed minimum benefits, interest rate guarantees) and assess their sensitivity to changes in market variables.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Policies containing embedded derivatives (e.g., variable annuities, universal life policies). ○ Details of the embedded derivative terms (e.g., guaranteed minimum withdrawal, guaranteed returns).",
+      "**Financial data:** ○ Discount rates, risk-free rates, and market volatility assumptions. ○ Historical claims or redemptions linked to embedded derivatives.",
+      "**Actuarial assumptions:** ○ Mortality and lapse rates. ○ Expected policyholder behavior.",
+      "**Market data:** ○ Yield curves, interest rate trends, and equity market performance. ○ Economic scenarios for stress testing.",
+      "Industry benchmarks for valuation and risk practices."
+    ],
+    "improve": [
+      "Implement robust valuation models that account for the complexities of embedded derivatives, such as stochastic simulations for path-dependent guarantees.",
+      "Regularly update market and actuarial assumptions to reflect current trends in interest rates, equity markets, and policyholder behavior.",
+      "Strengthen hedging strategies to offset risks associated with high-sensitivity variables (e.g., interest rate swaps, equity options).",
+      "Enhance reinsurance agreements to transfer risk associated with embedded guarantees to third parties.",
+      "Conduct frequent scenario and stress testing to ensure adequate reserves and financial preparedness for extreme market conditions.",
+      "Ensure compliance with financial reporting standards (e.g., IFRS 9, IFRS 17) by aligning valuation practices with regulatory requirements.",
+      "Monitor competitor practices and benchmarks to identify gaps in current risk and valuation strategies.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-11",
@@ -190,7 +364,25 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/11 - Deferred Profitability and Surplus Analysis for Long-Duration.md"
+    "sourcePath": "data/analysis-library/life-insurance/11 - Deferred Profitability and Surplus Analysis for Long-Duration.md",
+    "goal": "To evaluate the deferred profitability and surplus for long-duration life insurance contracts, ensuring that future profits are appropriately recognized, reserves are adequate, and the company meets regulatory requirements.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Policy type (e.g., whole life, universal life, annuities). ○ Premium payment schedules and amounts. ○ Coverage amounts and guarantees.",
+      "**Actuarial assumptions:** ○ Mortality, lapse, and morbidity rates. ○ Discount rates and expected investment returns.",
+      "**Financial data:** ○ Deferred acquisition costs (DAC). ○ Present value of future premiums and claims. ○ Historical surplus levels by product type.",
+      "Regulatory guidelines for surplus management and profitability reporting (e.g., IFRS 17 or GAAP).",
+      "Industry benchmarks for surplus and profitability metrics."
+    ],
+    "improve": [
+      "Regularly review and update actuarial assumptions, such as lapse, mortality, and investment rates, to reflect current trends.",
+      "Enhance reserve management by reallocating capital to segments with identified shortfalls.",
+      "Optimize product pricing and benefit structures to improve long-term profitability.",
+      "Implement stress testing frameworks to anticipate and prepare for adverse conditions affecting surplus and profitability.",
+      "Monitor regulatory changes and align reserve and surplus management practices with new standards (e.g., IFRS 17).",
+      "Use predictive modeling to improve accuracy in forecasting future cash flows and profitability.",
+      "Identify and phase out or adjust products with consistently negative deferred profitability.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-12",
@@ -207,7 +399,24 @@
     "relatedLeverCategories": [
       "MORTALITY_UNDERWRITING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/12 - Survival Curve Modeling and Mortality Table Calibration.md"
+    "sourcePath": "data/analysis-library/life-insurance/12 - Survival Curve Modeling and Mortality Table Calibration.md",
+    "goal": "To construct survival curves and calibrate mortality tables for life insurance policyholders.",
+    "dataRequired": [
+      "**Policyholder data:** date of birth, policy start date, status (active, deceased, lapsed), and demographics (age, gender, location).",
+      "**Mortality experience data:** number of deaths, exposure periods.",
+      "**Actuarial assumptions:** lapse rates, mortality tables, discount rates.",
+      "Standard mortality tables (e.g., SOA, AM92, country-specific).",
+      "Population-level survival and life expectancy data."
+    ],
+    "improve": [
+      "Update mortality assumptions regularly based on recent experience and emerging trends.",
+      "Enhance underwriting practices to improve risk selection and align mortality experience with assumptions.",
+      "Incorporate longevity improvements to account for advancements in healthcare and changing demographics.",
+      "Implement predictive analytics to model survival probabilities more accurately across cohorts.",
+      "Use reinsurance to transfer excess mortality or longevity risk for specific high-risk segments.",
+      "Monitor population trends and external shocks (e.g., pandemics) to adjust assumptions proactively.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-13",
@@ -226,7 +435,24 @@
       "VOLUME",
       "MORTALITY_UNDERWRITING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/13 - Mortality Margin and Experience Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/13 - Mortality Margin and Experience Analysis.md",
+    "goal": "To evaluate the difference between expected and actual mortality experience, ensuring that mortality margins are sufficient to cover risks.",
+    "dataRequired": [
+      "**Policyholder-level data:** age, gender, policy type, policy start date, and status (active, deceased, or lapsed).",
+      "**Expected mortality data:** mortality rates from the actuarial model or standard mortality tables.",
+      "**Actual mortality data:** observed deaths over a defined period.",
+      "**Policy exposure data:** total number of lives or exposure periods in the portfolio.",
+      "**Financial data:** premium and reserve allocations for mortality margins."
+    ],
+    "improve": [
+      "Update mortality assumptions regularly based on actual experience data to ensure alignment with current trends.",
+      "Improve underwriting practices to better screen for mortality risks at the point of sale.",
+      "Enhance risk selection processes for high-risk demographics or product types.",
+      "Develop targeted programs to improve retention and behavior in high-risk cohorts (e.g., wellness initiatives).",
+      "Use predictive analytics to monitor and project mortality trends, identifying early deviations.",
+      "Explore reinsurance strategies to mitigate exposure to segments with consistently adverse mortality experience.",
+      "C. Profitability and Product Performance"
+    ]
   },
   {
     "id": "life-insurance-14",
@@ -246,7 +472,24 @@
       "VOLUME",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/14 - Embedded Value (EV) and Value of New Business (VNB).md"
+    "sourcePath": "data/analysis-library/life-insurance/14 - Embedded Value (EV) and Value of New Business (VNB).md",
+    "goal": "To measure the current value of a life insurance company’s in-force business (Embedded Value) and assess the profitability of new business written during a period (Value of New Business).",
+    "dataRequired": [
+      "**Policy-level data:** policy type, premiums, expected claims, and expenses.",
+      "**Actuarial assumptions:** discount rates, mortality rates, lapse rates, expense inflation, and investment returns.",
+      "**Financial data:** ○ Reserves and net asset values for in-force policies. ○ Actual profits and cash flows for the reporting period.",
+      "**New business data:** policies written during the reporting period, including premiums and expected margins.",
+      "**Economic data:** risk-free interest rates, yield curves, and macroeconomic indicators."
+    ],
+    "improve": [
+      "Optimize product pricing to ensure new business generates positive VNB.",
+      "Reduce acquisition costs by improving distribution efficiency and targeting profitable segments.",
+      "Enhance underwriting practices to minimize risks and improve future profitability.",
+      "Regularly review and update actuarial assumptions to reflect actual experience and economic conditions.",
+      "Improve investment strategies to increase returns on assets backing future liabilities.",
+      "Use predictive analytics to identify high-value policyholders and enhance cross-selling opportunities.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-15",
@@ -265,7 +508,25 @@
       "COST_OPS",
       "PRODUCT_MIX_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/15 - Product Mix Profitability and Market Positioning Evaluation.md"
+    "sourcePath": "data/analysis-library/life-insurance/15 - Product Mix Profitability and Market Positioning Evaluation.md",
+    "goal": "To evaluate the profitability of a life insurance company’s product mix and assess its positioning in the market relative to competitors.",
+    "dataRequired": [
+      "**Product-level financial data:** ○ Premium revenue ○ Claims paid ○ Acquisition costs (e.g., commissions, marketing) ○ Maintenance expenses (e.g., administrative costs) ○ Profit margins (actual and expected)",
+      "**Policy-level data:** ○ Product type (e.g., term life, whole life, annuities) ○ Policy duration and size ○ Lapse rates and persistency rates",
+      "**Customer segmentation data:** demographics (age, income, location)",
+      "**Market data:** competitor product offerings, pricing strategies, and positioning.",
+      "**Economic data:** interest rates, inflation, and investment returns affecting product profitability."
+    ],
+    "improve": [
+      "Optimize or phase out underperforming products while enhancing profitable ones.",
+      "Adjust product pricing to ensure alignment with risk, claims experience, and acquisition costs.",
+      "Develop innovative products tailored to high-growth customer segments and unmet market needs.",
+      "Strengthen cost management strategies to reduce acquisition and maintenance expenses for low-margin products.",
+      "Improve distribution efficiency by aligning high-performing products with effective channels (e.g., agents, bancassurance, direct sales).",
+      "Enhance marketing efforts for competitive products to capture market share and boost profitability.",
+      "Monitor competitor offerings and pricing regularly to adjust positioning and remain competitive.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-16",
@@ -280,7 +541,25 @@
     "relatedLeverCategories": [
       "PRODUCT_MIX_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/16 - Unit-Linked Product Performance and Fee Income.md"
+    "sourcePath": "data/analysis-library/life-insurance/16 - Unit-Linked Product Performance and Fee Income.md",
+    "goal": "To evaluate the financial performance of unit-linked insurance products (ULIPs) and assess fee income generated from these products.",
+    "dataRequired": [
+      "**Product-level data:** ○ Premiums collected (single and regular). ○ Fee income (e.g., policy charges, fund management fees, surrender charges). ○ Claims and maturity payouts.",
+      "**Investment data:** ○ Fund performance (NAV growth, returns vs. benchmarks). ○ Asset allocation (equities, bonds, cash).",
+      "**Policyholder data:** ○ Policy type, premium frequency, and policyholder demographics (age, gender, location). ○ Persistency rates and lapse rates.",
+      "**Expense data:** ○ Acquisition costs (commissions and distribution costs). ○ Maintenance expenses.",
+      "**Market data:** ○ Benchmark fund performance for comparison. ○ Competitor ULIP fee structures."
+    ],
+    "improve": [
+      "Improve fund performance by optimizing asset allocation and active investment strategies.",
+      "Review and align fee structures to ensure competitiveness while maintaining profitability.",
+      "Enhance transparency in ULIP charges and fund performance to build trust with policyholders.",
+      "Implement targeted engagement strategies to retain customers with higher lapse risks.",
+      "Identify high-value segments and customize product offerings to meet their needs.",
+      "Regularly benchmark fund returns and fee structures against competitors to remain competitive.",
+      "Use data analytics to identify patterns in lapse behavior and address underlying issues proactively.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-17",
@@ -298,7 +577,24 @@
       "VOLUME",
       "PRODUCT_MIX_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/17 - Guaranteed Universal Life (GUL) and Indexed Universal Life.md"
+    "sourcePath": "data/analysis-library/life-insurance/17 - Guaranteed Universal Life (GUL) and Indexed Universal Life.md",
+    "goal": "To evaluate the financial performance and profitability of Guaranteed Universal Life (GUL) and Indexed Universal Life (IUL) products.",
+    "dataRequired": [
+      "**Product-level data:** ○ Premiums (planned and flexible) collected by policy type (GUL vs. IUL). ○ Death benefit payouts, surrender values, and lapse rates. ○ Expense data (acquisition, administration, and claims expenses).",
+      "**Policyholder data:** ○ Demographics (age, income, gender, location). ○ Policy duration, payment frequency, and persistency rates.",
+      "**Interest crediting and investment data:** ○ IUL crediting rates tied to market indices (e.g., S&P 500). ○ Minimum guarantees for both GUL and IUL products.",
+      "**Actuarial assumptions:** ○ Mortality rates, lapse rates, and interest rate assumptions.",
+      "**Benchmark data:** ○ Competitive GUL and IUL product performance metrics (pricing, crediting rates, fees)."
+    ],
+    "improve": [
+      "Improve communication and education for policyholders to clarify product benefits, particularly for guarantees in GUL and crediting rates in IUL.",
+      "Optimize investment strategies for IUL portfolios to ensure competitive and stable crediting rates while managing downside risks.",
+      "Adjust pricing and premium structures to improve alignment with policyholder behavior and financial assumptions.",
+      "Implement targeted retention strategies for high-risk lapse segments through loyalty programs, personalized communication, or payment flexibility.",
+      "Monitor competitor products regularly to refine guarantees, features, and pricing to maintain market competitiveness.",
+      "Conduct regular experience studies to validate actuarial assumptions for mortality, lapse rates, and expense trends.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-18",
@@ -318,7 +614,24 @@
       "VOLUME",
       "PRODUCT_MIX_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/18 - Critical Illness and Riders Profitability Assessment.md"
+    "sourcePath": "data/analysis-library/life-insurance/18 - Critical Illness and Riders Profitability Assessment.md",
+    "goal": "To evaluate the profitability of critical illness benefits and policy riders (e.g., accidental death, waiver of premium, and disability income).",
+    "dataRequired": [
+      "**Policy-level data:** ○ Types of riders attached to policies (e.g., critical illness, accidental death). ○ Premium revenue collected for riders. ○ Rider claims paid and frequency of claims.",
+      "**Actuarial assumptions:** ○ Morbidity rates for critical illness benefits. ○ Incidence rates for specific riders (e.g., accident and disability). ○ Lapse rates and persistency trends for riders.",
+      "**Expense data:** ○ Acquisition costs (commissions and marketing). ○ Maintenance expenses for managing rider claims and policies.",
+      "**Benchmark data:** ○ Competitive pricing for similar riders. ○ Industry claim incidence rates for critical illness and other common riders."
+    ],
+    "improve": [
+      "Reprice underperforming riders to better align premiums with claims experience and expenses.",
+      "Conduct experience studies regularly to update morbidity and incidence rate assumptions for critical illness and other riders.",
+      "Improve underwriting processes for critical illness riders to manage risk and reduce adverse selection.",
+      "Enhance customer education to improve the perceived value of riders, thereby improving persistency.",
+      "Introduce innovative features or flexible rider options to attract new policyholders and retain existing ones.",
+      "Monitor competitor pricing and claims experience to ensure market competitiveness while maintaining profitability.",
+      "Optimize distribution strategies to emphasize high-performing riders with strong margins.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-19",
@@ -335,7 +648,25 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/19 - Living Benefits Utilization and Impact on Profitability Study.md"
+    "sourcePath": "data/analysis-library/life-insurance/19 - Living Benefits Utilization and Impact on Profitability Study.md",
+    "goal": "To evaluate the utilization of living benefits (e.g., accelerated death benefits, chronic illness coverage, and long-term care riders) and assess their impact on the profitability of life insurance products.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Policies with living benefits (e.g., critical illness, long-term care, accelerated death benefit). ○ Policyholder demographics (age, gender, location, health status). ○ Premium amounts and policy duration.",
+      "**Claims data:** ○ Number of claims filed for living benefits. ○ Claims paid, claim severity, and average time to claim.",
+      "**Actuarial assumptions:** ○ Utilization rates (expected usage of living benefits). ○ Mortality and morbidity rates. ○ Discount rates for present value calculations.",
+      "**Expense data:** ○ Acquisition and maintenance costs associated with living benefits. ○ Administrative costs for processing claims.",
+      "**Benchmark data:** ○ Industry utilization rates for living benefits. ○ Competitor product offerings and pricing."
+    ],
+    "improve": [
+      "Update actuarial assumptions for living benefits based on recent utilization trends and claims experience.",
+      "Improve customer education and communication to increase awareness of living benefits, ensuring policyholders use them effectively.",
+      "Optimize underwriting practices to manage risks associated with living benefit claims, particularly for chronic illness or long-term care riders.",
+      "Adjust pricing for products with higher-than-expected living benefit utilization to maintain profitability.",
+      "Streamline claims processes to reduce administrative costs and enhance policyholder satisfaction.",
+      "Conduct regular experience studies to monitor deviations from assumptions and recalibrate reserve requirements.",
+      "Benchmark against competitor products to identify opportunities for innovation, such as flexible living benefit options or bundled riders.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-20",
@@ -353,7 +684,25 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/20 - Group Life Insurance Portfolio Profitability and Risk.md"
+    "sourcePath": "data/analysis-library/life-insurance/20 - Group Life Insurance Portfolio Profitability and Risk.md",
+    "goal": "To evaluate the financial performance and risk exposure of a group life insurance portfolio.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Group size, policy type (e.g., term life, AD&D), premium rates, and coverage amounts ○ Policy duration and renewal rates",
+      "**Claims data:** ○ Number of claims filed, claim amounts paid, and claim frequency per group",
+      "**Financial data:** ○ Premium revenue collected, acquisition costs (e.g., broker commissions), and administrative expenses ○ Reserve levels for group life policies",
+      "**Demographic data:** ○ Age, gender, location, and industry profile of insured groups",
+      "**Benchmark data:** ○ Industry average claims experience, expense ratios, and risk factors for group life insurance"
+    ],
+    "improve": [
+      "Reprice high-risk segments or industries with consistently poor claims experience to ensure sustainability.",
+      "Strengthen underwriting practices, particularly for small groups prone to adverse selection.",
+      "Implement targeted risk mitigation strategies, such as introducing wellness programs for specific industries.",
+      "Improve claims management processes to detect and address fraud or inaccuracies.",
+      "Enhance renewal strategies through better customer engagement and competitive pricing for stable groups.",
+      "Conduct regular experience studies to refine assumptions for claims incidence and expense ratios.",
+      "Monitor competitor benchmarks to identify pricing or feature gaps and improve product positioning.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-21",
@@ -372,7 +721,25 @@
       "VOLUME",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/21 - Policy Conversion Profitability Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/21 - Policy Conversion Profitability Analysis.md",
+    "goal": "To evaluate the financial performance of policy conversions, such as term-to-permanent conversions, and assess their impact on profitability.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Policies converted (e.g., term-to-whole life, term-to-universal life). ○ Premiums before and after conversion. ○ Policyholder demographics (age, gender, location).",
+      "**Financial data:** ○ Acquisition costs associated with conversion. ○ Claims data post-conversion (mortality and morbidity). ○ Reserves and cash values for converted policies.",
+      "**Actuarial assumptions:** ○ Mortality rates, lapse rates, and discount rates. ○ Expected claims and expenses over the converted policy duration.",
+      "**Persistency data:** ○ Retention rates for converted policies compared to non-converted policies.",
+      "**Benchmark data:** ○ Conversion trends, profitability, and persistency rates from industry peers."
+    ],
+    "improve": [
+      "Offer incentives to policyholders for early conversions to optimize retention and improve margins.",
+      "Refine underwriting practices for conversions to align mortality assumptions with actual experience.",
+      "Improve communication strategies to educate policyholders on the long-term benefits of conversions, reducing lapse risk.",
+      "Streamline administrative processes to lower conversion-related costs and improve efficiency.",
+      "Monitor claims experience regularly to adjust pricing and reserve assumptions for converted policies.",
+      "Benchmark conversion strategies against industry best practices to identify pricing, product, or process improvements.",
+      "Develop targeted campaigns to identify high-value policyholders likely to benefit from conversions, ensuring alignment with profitability goals.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-22",
@@ -395,7 +762,26 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/22 - Premium Growth and New Business Volume Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/22 - Premium Growth and New Business Volume Analysis.md",
+    "goal": "To evaluate premium growth trends and measure the performance of new business acquisition.",
+    "dataRequired": [
+      "**Policy-level data:** premium amounts for existing and new policies, policy type, policyholder demographics, and start dates for identifying new business",
+      "**Financial data:** total premium revenue by period, commissions, and acquisition costs",
+      "**New business data:** number of new policies written and premium amounts during the reporting period",
+      "**Distribution channel data:** agents, brokers, bancassurance, direct sales",
+      "Historical premium revenue trends over multiple years",
+      "**Benchmark data:** industry growth rates and competitor performance"
+    ],
+    "improve": [
+      "Strengthen marketing campaigns and outreach efforts to increase acquisition of new business.",
+      "Improve training and support for underperforming distribution channels to boost effectiveness.",
+      "Introduce innovative products or features tailored to customer needs to attract new business.",
+      "Enhance retention efforts to ensure sustainable premium growth through renewal premiums.",
+      "Expand partnerships (e.g., bancassurance, digital platforms) to diversify distribution and capture new markets.",
+      "Analyze geographic and demographic segments to focus on areas with high growth potential.",
+      "Regularly benchmark performance against competitors and adjust pricing or sales strategies to align with market opportunities.",
+      "D. Capital and Solvency Management"
+    ]
   },
   {
     "id": "life-insurance-23",
@@ -414,7 +800,26 @@
       "PRICING",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/23 - Risk-Based Capital (RBC) and Solvency Ratio Assessment.md"
+    "sourcePath": "data/analysis-library/life-insurance/23 - Risk-Based Capital (RBC) and Solvency Ratio Assessment.md",
+    "goal": "To evaluate the adequacy of a life insurance company’s capital relative to its risk exposure and assess its solvency position.",
+    "dataRequired": [
+      "**Financial data:** total assets, liabilities, reserves, and available capital",
+      "**Risk exposure data:** credit risk, market risk, insurance risk, and operational risk",
+      "**Capital structure details:** available capital levels and required capital under RBC frameworks",
+      "Historical solvency and RBC ratios for trend analysis",
+      "Regulatory benchmarks for solvency margins and RBC thresholds"
+    ],
+    "improve": [
+      "Increase capital reserves through retained earnings or external capital raising.",
+      "",
+      "Diversify investments to reduce exposure to credit and market risk concentrations.",
+      "Transfer underwriting risks using reinsurance arrangements to improve capital efficiency.",
+      "Improve pricing and underwriting practices to mitigate insurance risks, particularly in high-risk segments.",
+      "Strengthen risk management frameworks to monitor and control exposure to emerging risks.",
+      "Conduct regular stress testing to ensure preparedness for adverse scenarios and capital shocks.",
+      "Align capital allocation strategies with low-risk, high-performing segments to optimize profitability and solvency.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-24",
@@ -432,7 +837,27 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/24 - Solvency II and Local Regulatory Stress Testing Compliance.md"
+    "sourcePath": "data/analysis-library/life-insurance/24 - Solvency II and Local Regulatory Stress Testing Compliance.md",
+    "goal": "To assess compliance with Solvency II and local regulatory stress testing requirements.",
+    "dataRequired": [
+      "**Financial data:** total assets, liabilities, capital reserves, and solvency ratios",
+      "**Risk exposure data:** credit risk, market risk, insurance risk, and operational risk",
+      "**Capital structure details:** available capital levels and required capital under Solvency II frameworks",
+      "**Economic scenarios:** interest rate shocks, market downturns, mortality/longevity shocks, and lapse risks",
+      "Historical stress testing results and solvency performance",
+      "Local regulatory benchmarks for capital and stress testing"
+    ],
+    "improve": [
+      "Increase capital reserves to strengthen solvency ratios and comply with SCR and MCR requirements.",
+      "Diversify investment portfolios to minimize exposure to market and credit risks.",
+      "",
+      "Enhance reinsurance arrangements to transfer underwriting risks and improve capital efficiency.",
+      "Improve risk management frameworks to monitor emerging risks and ensure alignment with regulatory standards.",
+      "Conduct frequent stress testing to proactively identify capital weaknesses and address them.",
+      "Streamline governance processes to meet Pillar 2 requirements and strengthen internal controls.",
+      "Regularly benchmark capital performance and stress testing outcomes against peers and industry best practices.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-25",
@@ -449,7 +874,27 @@
       "INTEREST_RATES"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/25 - Macroeconomic and Regulatory Scenario Stress Testing.md"
+    "sourcePath": "data/analysis-library/life-insurance/25 - Macroeconomic and Regulatory Scenario Stress Testing.md",
+    "goal": "To evaluate the financial resilience of a life insurance company under adverse macroeconomic and regulatory conditions.",
+    "dataRequired": [
+      "**Financial data:** balance sheet details, available capital, reserves, assets, and liabilities",
+      "**Risk exposure data:** market risk, credit risk, insurance risk, and operational risk",
+      "**Policy-level data:** premium revenue, claims, lapse rates, and persistency trends",
+      "**Actuarial assumptions:** mortality rates, morbidity rates, lapse rates, and discount rates",
+      "**Macroeconomic inputs:** interest rate shocks, equity market declines, inflation, and GDP changes",
+      "**Regulatory scenarios:** capital requirement changes, solvency thresholds, and stress testing guidelines"
+    ],
+    "improve": [
+      "Increase capital reserves to build buffers against adverse macroeconomic conditions.",
+      "Diversify investments to reduce exposure to interest rate volatility and market downturns.",
+      "Optimize reinsurance strategies to transfer risks, such as mortality, morbidity, or longevity.",
+      "",
+      "Improve asset-liability management (ALM) to align investment strategies with liability durations.",
+      "Strengthen cost controls to mitigate the impact of inflation on expenses and claims reserves.",
+      "Conduct regular internal stress testing to anticipate capital shortfalls and take preemptive corrective actions.",
+      "Monitor regulatory changes to ensure compliance and proactively adjust capital allocation strategies.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-26",
@@ -466,7 +911,26 @@
       "MIX",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/26 - Capital Allocation Efficiency Across Product Lines.md"
+    "sourcePath": "data/analysis-library/life-insurance/26 - Capital Allocation Efficiency Across Product Lines.md",
+    "goal": "To evaluate how effectively capital is allocated across different product lines.",
+    "dataRequired": [
+      "**Product-level financial data:** premium revenue, claims paid, acquisition costs, maintenance costs, and reserves",
+      "**Capital allocation data:** current capital allocated to each product line",
+      "**Risk exposure data:** segmented by market risk, insurance risk, credit risk, and operational risk for each product line",
+      "**Profitability data:** product margins, return on equity (ROE), and return on allocated capital (ROAC)",
+      "**Benchmark data:** capital allocation efficiency metrics and risk-adjusted returns for similar product types in the market"
+    ],
+    "improve": [
+      "Reallocate capital from underperforming products to high-performing, high-return segments.",
+      "",
+      "Improve underwriting practices and pricing strategies to enhance profitability for low-return product lines.",
+      "Reduce operational and acquisition costs to improve returns on capital across all products.",
+      "Strengthen risk management to lower required capital for products with high risk exposure.",
+      "Introduce innovative products in undercapitalized segments with strong growth potential.",
+      "Regularly monitor and optimize capital allocation strategies to align with market conditions and profitability targets.",
+      "Benchmark product performance and capital efficiency against competitors to identify strategic gaps.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-27",
@@ -480,7 +944,26 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/27 - Reserve Financing and Captive Insurance Strategy Evaluation.md"
+    "sourcePath": "data/analysis-library/life-insurance/27 - Reserve Financing and Captive Insurance Strategy Evaluation.md",
+    "goal": "To evaluate the use of reserve financing and captive insurance structures to optimize capital efficiency, reduce costs, and enhance liquidity.",
+    "dataRequired": [
+      "**Reserve data:** statutory reserves, economic reserves, and actuarial reserves",
+      "**Financial data:** capital levels, cash flow projections, and financing costs",
+      "**Captive insurance data:** captive structure, premiums ceded, claims paid, and retained risk",
+      "**Reinsurance agreements:** terms, costs, counterparty risk, and coverage limits",
+      "**Regulatory guidelines:** reserve financing requirements, captive insurance rules, and reporting standards",
+      "**Benchmark data:** industry practices for reserve financing and captive usage"
+    ],
+    "improve": [
+      "Optimize reserve financing by selecting cost-effective mechanisms such as reinsurance or surplus notes.",
+      "Strengthen captive insurance structures to ensure optimal reserve transfer while retaining manageable levels of risk.",
+      "Monitor counterparty risks to mitigate exposure to default or credit risk from financing providers.",
+      "Ensure compliance with regulatory reserve requirements and maintain transparent reporting processes.",
+      "Regularly benchmark reserve financing strategies against industry best practices to identify cost-saving opportunities.",
+      "Conduct stress testing to ensure financing and captive strategies can withstand adverse conditions without jeopardizing capital adequacy.",
+      "Use analytics to project reserve needs accurately, minimizing over-reliance on external financing.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-28",
@@ -497,7 +980,26 @@
     "relatedLeverCategories": [
       "REINSURANCE_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/28 - Longevity Risk Transfer and Reinsurance Optimization.md"
+    "sourcePath": "data/analysis-library/life-insurance/28 - Longevity Risk Transfer and Reinsurance Optimization.md",
+    "goal": "To evaluate strategies for managing and mitigating longevity risk through reinsurance and other risk transfer mechanisms.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Mortality rates, policyholder demographics (age, gender, location), and coverage duration ○ Claims paid, reserves, and expected future payouts for annuities or long-duration policies",
+      "**Actuarial assumptions:** projected mortality improvements and discount rates",
+      "**Financial data:** capital reserves, reinsurance costs, surplus levels, and solvency ratios",
+      "**Existing reinsurance contracts:** treaty details, cession terms, costs, and counterparty limits",
+      "**Longevity risk exposure:** present value of future liabilities under base and stress scenarios",
+      "**Industry benchmarks:** longevity risk transfer practices and reinsurance terms"
+    ],
+    "improve": [
+      "Negotiate more favorable reinsurance terms to balance costs and reserve relief.",
+      "Explore longevity swaps or capital market solutions to diversify risk transfer options and achieve long-term capital savings.",
+      "Improve mortality data analysis and forecasting to identify emerging longevity trends and adjust reserves proactively.",
+      "Optimize the use of quota share or excess-of-loss reinsurance structures to address longevity risk for specific high-exposure cohorts.",
+      "Strengthen relationships with reinsurers and capital markets to enhance access to cost-effective risk transfer solutions.",
+      "Conduct regular stress testing to validate the effectiveness of longevity risk transfer mechanisms under adverse scenarios.",
+      "Benchmark longevity risk management strategies against leading competitors to identify opportunities for improvement.",
+      "E. Investment and Asset-Liability Management (ALM)"
+    ]
   },
   {
     "id": "life-insurance-29",
@@ -517,7 +1019,24 @@
       "MIX",
       "ALM_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/29 - Investment Portfolio Performance and Asset-Liability Matching.md"
+    "sourcePath": "data/analysis-library/life-insurance/29 - Investment Portfolio Performance and Asset-Liability Matching.md",
+    "goal": "To assess the performance of the life insurance company’s investment portfolio and evaluate the effectiveness of asset-liability matching (ALM).",
+    "dataRequired": [
+      "**Investment portfolio data:** ○ Asset types (e.g., bonds, equities, real estate, alternative assets) ○ Yields, maturities, risk ratings, and market values ○ Investment returns over time (historical and current)",
+      "**Liability data:** ○ Policy-level reserves, future cash flow obligations, and durations ○ Liability types (e.g., annuities, whole life, term life)",
+      "**ALM metrics:** asset duration, liability duration, and gap analysis",
+      "**Benchmark data:** ○ Industry-standard returns for similar asset classes ○ Macroeconomic indicators, including interest rates, inflation, and yield curves"
+    ],
+    "improve": [
+      "Adjust the asset mix to reduce duration gaps and ensure better alignment between assets and liabilities.",
+      "Increase allocation to long-duration assets, such as high-quality bonds, to match long-term liabilities.",
+      "Diversify the investment portfolio across asset classes and geographies to optimize returns while mitigating risks.",
+      "Improve risk management frameworks to monitor portfolio volatility and exposure to market risks.",
+      "Conduct regular stress testing and scenario analysis to validate the resilience of the ALM strategy.",
+      "Explore alternative investment strategies, such as infrastructure or real estate, for enhanced yield while maintaining ALM discipline.",
+      "Benchmark asset performance and ALM metrics against industry peers to identify best practices for optimization.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-30",
@@ -535,7 +1054,25 @@
       "VOLUME",
       "ALM_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/30 - Shadow Accounting and Market-Linked Liability Management.md"
+    "sourcePath": "data/analysis-library/life-insurance/30 - Shadow Accounting and Market-Linked Liability Management.md",
+    "goal": "To assess the performance of shadow accounting mechanisms and evaluate how market-linked liabilities, such as unit-linked products, are managed.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Market-linked product details (e.g., unit-linked, indexed products) ○ Premiums, reserves, cash values, and claims",
+      "**Investment portfolio data:** ○ Asset values, returns, and fund performance tied to market-linked liabilities",
+      "**Actuarial assumptions:** ○ Mortality rates, lapse rates, and discount rates for market-linked products",
+      "**Shadow accounting data:** ○ Unrealized gains and losses on assets backing market-linked liabilities ○ Book value and fair value of assets and liabilities",
+      "**Benchmark data:** ○ Industry practices for shadow accounting and market-linked liability management ○ Relevant accounting standards (e.g., IFRS 17, local GAAP)"
+    ],
+    "improve": [
+      "Enhance asset-liability management (ALM) strategies to improve alignment between market-linked liabilities and backing assets.",
+      "Strengthen investment strategies to minimize unrealized losses and enhance fund performance for market-linked products.",
+      "Refine shadow accounting frameworks to ensure compliance with accounting standards while mitigating financial reporting volatility.",
+      "Implement hedging strategies to reduce exposure to market movements and protect liability valuations.",
+      "Conduct regular stress testing to anticipate the impact of adverse market conditions and take proactive corrective actions.",
+      "Benchmark fund performance and accounting practices against peers to identify areas for improvement.",
+      "Improve communication with policyholders to manage expectations for market-linked product performance, reducing lapse risks.",
+      "F. Distribution and Channel Performance"
+    ]
   },
   {
     "id": "life-insurance-31",
@@ -555,7 +1092,25 @@
       "COST_OPS",
       "DISTRIBUTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/31 - Distribution Channel Effectiveness and Cost Efficiency.md"
+    "sourcePath": "data/analysis-library/life-insurance/31 - Distribution Channel Effectiveness and Cost Efficiency.md",
+    "goal": "To evaluate the performance and cost efficiency of different distribution channels (e.g., agents, brokers, bancassurance, digital platforms) in acquiring and servicing policies.",
+    "dataRequired": [
+      "**Channel-level data:** ○ Policies sold, premium revenue, and persistency rates by channel ○ Acquisition costs (commissions, marketing expenses) and servicing costs per channel",
+      "**Financial data:** ○ Profit margins, expense ratios, and channel-level return on investment (ROI)",
+      "**Policyholder data:** ○ Customer demographics, policy types, and premium sizes per channel",
+      "**Operational data:** ○ Conversion rates, average sales cycle duration, and channel-specific productivity",
+      "**Benchmark data:** ○ Industry averages for acquisition costs, persistency rates, and profitability by channel"
+    ],
+    "improve": [
+      "Optimize underperforming channels by improving training, incentives, and lead quality for agents and brokers.",
+      "Expand investment in high-performing, low-cost channels, such as digital platforms, to scale acquisition efficiently.",
+      "Streamline processes to reduce acquisition and servicing costs while improving conversion rates.",
+      "Align products and marketing strategies with channels that attract high-value, high-persistency customers.",
+      "Leverage analytics to identify customer preferences and enhance channel targeting and resource allocation.",
+      "Introduce performance-based incentives for agents and brokers to improve productivity and reduce acquisition costs.",
+      "Regularly benchmark and monitor channel metrics to ensure cost efficiency and alignment with industry best practices.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-32",
@@ -575,7 +1130,25 @@
       "COST_OPS",
       "DISTRIBUTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/32 - Bancassurance Channel Integration and Performance Review.md"
+    "sourcePath": "data/analysis-library/life-insurance/32 - Bancassurance Channel Integration and Performance Review.md",
+    "goal": "To evaluate the performance and integration of the bancassurance channel in distributing life insurance products.",
+    "dataRequired": [
+      "**Financial data:** ○ Premium revenue generated through bancassurance partnerships ○ Acquisition costs (commissions, marketing expenses) and servicing costs ○ Profit margins and return on investment (ROI) for the bancassurance channel",
+      "**Operational data:** ○ Policies sold, conversion rates, and average policy size ○ Product mix sold through bancassurance (e.g., term life, savings plans, unit-linked policies)",
+      "**Policyholder data:** ○ Demographics of customers acquired through bancassurance (age, income, region) ○ Persistency and lapse rates for bancassurance-originated policies",
+      "**Bank partner data:** ○ Number of partner banks, bank branches, and active sales staff ○ Bank staff training effectiveness and sales performance metrics",
+      "**Benchmark data:** ○ Industry performance standards for bancassurance (e.g., cost ratios, persistency rates, and profitability)"
+    ],
+    "improve": [
+      "Strengthen training programs for bank staff to improve sales productivity and conversion rates.",
+      "Enhance digital tools to streamline the sales and policy issuance processes for bancassurance.",
+      "Align product offerings with customer needs and preferences, focusing on profitable and high-persistency products.",
+      "Introduce performance-based incentives for bank staff to boost engagement and sales.",
+      "Develop targeted marketing campaigns to improve lead generation and cross-selling opportunities.",
+      "Monitor persistency rates closely and engage policyholders early to reduce lapse risk.",
+      "Benchmark bancassurance performance regularly to identify gaps and align with industry best practices.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-33",
@@ -595,7 +1168,24 @@
       "VOLUME",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/33 - Conversion Rate Optimization for Term-to-Permanent Policy.md"
+    "sourcePath": "data/analysis-library/life-insurance/33 - Conversion Rate Optimization for Term-to-Permanent Policy.md",
+    "goal": "To evaluate and improve the conversion rate of term life insurance policies to permanent life insurance policies (e.g., whole life or universal life).",
+    "dataRequired": [
+      "**Policy-level data:** ○ Number of term policies eligible for conversion ○ Number of term policies converted to permanent policies ○ Policyholder demographics (age, income, location, and policy duration) ○ Premiums before and after conversion",
+      "**Financial data:** ○ Profit margins, persistency rates, and lifetime value (LTV) of converted policies ○ Acquisition costs and servicing costs for conversions",
+      "**Behavioral data:** ○ Policyholder communication history, reasons for conversion, and objections raised",
+      "**Sales and operational data:** ○ Channel performance in driving conversions (e.g., agents, brokers, digital) ○ Conversion offers, incentives, and communication campaigns"
+    ],
+    "improve": [
+      "Identify high-potential segments (e.g., younger policyholders nearing term expiration) and target them with tailored conversion offers.",
+      "Educate policyholders through proactive communication about the benefits of term-to-permanent conversion, such as lifelong coverage and cash value accumulation.",
+      "Simplify the conversion process by offering minimal underwriting requirements and clear instructions.",
+      "Introduce incentives, such as premium discounts or enhanced benefits, to encourage policyholders to convert.",
+      "Train distribution channels (e.g., agents, brokers) to effectively communicate the value of permanent policies and address objections.",
+      "Monitor conversion trends regularly and adjust campaigns or incentives based on performance data.",
+      "Leverage digital tools to automate policyholder outreach, track responses, and streamline the conversion process.",
+      "G. Risk Management and Hedging"
+    ]
   },
   {
     "id": "life-insurance-34",
@@ -612,7 +1202,26 @@
       "VOLUME",
       "REINSURANCE_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/34 - Reinsurance Strategy Effectiveness and Cost Optimization.md"
+    "sourcePath": "data/analysis-library/life-insurance/34 - Reinsurance Strategy Effectiveness and Cost Optimization.md",
+    "goal": "To evaluate the effectiveness of the company’s reinsurance strategies in managing risk exposure, capital efficiency, and overall cost optimization.",
+    "dataRequired": [
+      "**Reinsurance agreements:** treaty details, ceded premiums, reinsurance recoveries, retention limits, and treaty structures (quota share, excess of loss, stop-loss)",
+      "**Financial data:** ○ Net premium revenue, ceded premium, and net claims paid ○ Costs of reinsurance (e.g., fees, commissions, and administrative expenses)",
+      "**Policy-level data:** claims experience, policy types, and risk exposure metrics",
+      "**Risk exposure data:** mortality risk, morbidity risk, catastrophic risk, and lapse risk",
+      "**Regulatory data:** solvency requirements and capital relief under reinsurance arrangements",
+      "**Benchmark data:** industry averages for reinsurance costs, retention thresholds, and risk management effectiveness"
+    ],
+    "improve": [
+      "Renegotiate treaty terms to reduce ceded premiums, optimize retention limits, and improve recoveries.",
+      "Diversify reinsurance partners to reduce counterparty risk and improve negotiation leverage.",
+      "Align treaty structures (e.g., excess of loss, stop-loss) with the company’s risk profile and claims experience.",
+      "Use reinsurance strategically to target high-risk or high-capital-intensity products for risk transfer.",
+      "Conduct regular stress testing to ensure reinsurance structures are adequate to withstand catastrophic or adverse claims scenarios.",
+      "Benchmark reinsurance costs and treaty structures against industry best practices to identify areas for optimization.",
+      "Enhance risk modeling and data analytics to improve pricing accuracy, risk segmentation, and treaty design.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-35",
@@ -626,7 +1235,25 @@
       "LONGEVITY_RISK"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/35 - Annuity Book Performance and Longevity Hedging Strategy.md"
+    "sourcePath": "data/analysis-library/life-insurance/35 - Annuity Book Performance and Longevity Hedging Strategy.md",
+    "goal": "To evaluate the financial performance of the annuity book, measure longevity risk exposure, and assess the effectiveness of longevity hedging strategies.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Annuity type (e.g., immediate, deferred), premium amounts, payout schedules, and durations ○ Policyholder demographics (age, gender, location) ○ Actual vs. expected mortality rates",
+      "**Financial data:** ○ Reserves, payout obligations, and investment returns on assets backing annuity liabilities ○ Profit margins, expenses, and return on capital for the annuity portfolio",
+      "**Longevity risk data:** ○ Actuarial mortality tables, mortality improvement assumptions, and longevity exposure trends",
+      "**Hedging strategy data:** ○ Existing hedges (e.g., longevity swaps, reinsurance, derivatives) ○ Cost of hedging strategies and impact on reserves and solvency",
+      "**Benchmark data:** ○ Industry annuity performance metrics, longevity risk hedging costs, and best practices"
+    ],
+    "improve": [
+      "Implement or optimize longevity hedges (e.g., longevity swaps or reinsurance) to transfer risk and stabilize future payouts.",
+      "Align investment strategies with long-term payout obligations to minimize duration gaps and reinvestment risks.",
+      "Improve mortality assumptions through regular experience studies and updated longevity projections.",
+      "Diversify the annuity book with innovative products that balance risk exposure and customer demand.",
+      "Monitor emerging longevity trends and stress test financial resilience under adverse mortality scenarios.",
+      "Benchmark hedging costs and effectiveness against industry practices to identify cost-saving opportunities.",
+      "Enhance risk management frameworks to monitor and address longevity risk proactively.",
+      "H. Regulatory Compliance and Financial Reporting"
+    ]
   },
   {
     "id": "life-insurance-36",
@@ -640,7 +1267,25 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/36 - Regulatory Compliance and IFRS 17 Implementation.md"
+    "sourcePath": "data/analysis-library/life-insurance/36 - Regulatory Compliance and IFRS 17 Implementation.md",
+    "goal": "To assess the company's readiness for IFRS 17 implementation and overall regulatory compliance.",
+    "dataRequired": [
+      "**Financial data:** ○ Current reserves, profit margins, cash flows, and liabilities under existing accounting standards ○ Impact assessments of IFRS 17 transition on profit recognition and balance sheet",
+      "**Actuarial data:** ○ Discount rates, risk adjustment calculations, and contractual service margins (CSM) ○ Expected and actual cash flow data for life insurance contracts",
+      "**Systems and process data:** ○ Accounting systems, data management frameworks, and reporting tools ○ Status of IFRS 17 implementation projects",
+      "**Compliance documentation:** ○ Regulatory guidelines on IFRS 17 ○ Current internal policies for financial reporting",
+      "**Benchmark data:** ○ Industry readiness benchmarks for IFRS 17 adoption"
+    ],
+    "improve": [
+      "Upgrade accounting and data management systems to handle IFRS 17 calculations and reporting requirements.",
+      "Conduct regular mock runs of IFRS 17-compliant financial statements to identify and resolve gaps.",
+      "Strengthen governance frameworks to integrate actuarial, finance, and IT teams for smooth implementation.",
+      "Train internal teams on IFRS 17 requirements to build expertise and improve reporting accuracy.",
+      "Engage external consultants to validate readiness and provide guidance on bridging compliance gaps.",
+      "Monitor regulatory updates and industry best practices to ensure ongoing alignment with IFRS 17 standards.",
+      "Establish a robust internal audit process to validate data accuracy, calculations, and compliance readiness.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-37",
@@ -654,7 +1299,24 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/37 - Deferred Acquisition Cost (DAC) Amortization Strategy.md"
+    "sourcePath": "data/analysis-library/life-insurance/37 - Deferred Acquisition Cost (DAC) Amortization Strategy.md",
+    "goal": "To evaluate the company's deferred acquisition cost (DAC) amortization practices to ensure alignment with profitability, regulatory requirements, and financial reporting standards.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Acquisition costs (e.g., commissions, underwriting costs, marketing expenses) incurred at policy inception ○ Premiums collected, policy duration, and projected cash flows",
+      "**Financial data:** ○ Current DAC balance, amortization schedules, and remaining unamortized DAC ○ Revenue and expense recognition under existing amortization practices",
+      "**Actuarial assumptions:** ○ Policy lapse rates, mortality rates, persistency rates, and discount rates",
+      "**Benchmark data:** ○ Industry DAC amortization rates and methods (e.g., straight-line, revenue-based, or present value of expected profits) ○ Regulatory requirements for DAC treatment (e.g., IFRS 17, GAAP)"
+    ],
+    "improve": [
+      "Align DAC amortization schedules with expected premium revenue or profit emergence to improve financial accuracy.",
+      "Regularly review and update key assumptions (e.g., lapse rates, persistency) to reflect actual experience and avoid surprises.",
+      "Adopt more dynamic amortization methods, such as PVEP, to align with future cash flows and profits.",
+      "Monitor policies with high DAC balances and proactively manage lapses or persistency to minimize write-offs.",
+      "Benchmark amortization practices against regulatory guidelines (e.g., IFRS 17) and industry standards to ensure compliance.",
+      "Conduct sensitivity testing regularly to measure the financial impact of changes in assumptions and adjust strategies accordingly.",
+      "Improve expense management to reduce acquisition costs and limit DAC exposure over time.",
+      "I. Customer Experience and Digital Transformation"
+    ]
   },
   {
     "id": "life-insurance-38",
@@ -673,7 +1335,26 @@
       "COST_OPS",
       "ADMIN_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/38 - Digital Transformation and InsurTech Adoption Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/38 - Digital Transformation and InsurTech Adoption Analysis.md",
+    "goal": "To evaluate the company’s progress in digital transformation and adoption of InsurTech solutions.",
+    "dataRequired": [
+      "**Technology adoption data:** ○ Current digital platforms (e.g., underwriting tools, claims automation, customer portals) ○ InsurTech solutions implemented (e.g., AI, big data, chatbots, RPA, blockchain)",
+      "**Operational data:** ○ Processing times for underwriting, claims, and policy servicing pre- and post-digital transformation ○ Customer engagement metrics (e.g., portal logins, digital transactions, chatbot usage)",
+      "**Financial data:** ○ Investment in technology and InsurTech solutions ○ Cost savings and ROI from digital adoption (e.g., reduced manual labor, lower error rates)",
+      "**Customer data:** ○ Policyholder satisfaction scores ○ Retention and persistency rates post-digital transformation",
+      "**Benchmark data:** ○ Industry adoption rates for InsurTech solutions ○ Metrics for digital transformation performance (e.g., processing times, cost efficiency)"
+    ],
+    "improve": [
+      "Invest in AI-driven tools for underwriting, claims automation, and predictive analytics to enhance efficiency and accuracy.",
+      "Improve customer experience by enhancing mobile apps, self-service portals, and virtual assistants for policyholders.",
+      "Modernize legacy systems and integrate digital platforms to ensure seamless workflows and data consistency.",
+      "Adopt IoT devices and telematics for health and risk monitoring to create innovative, customer-centric products.",
+      "Benchmark digital adoption against peers and align investments with emerging technologies to stay competitive.",
+      "Strengthen cybersecurity frameworks to protect digital assets and ensure regulatory compliance.",
+      "",
+      "Measure digital transformation performance regularly and refine strategies based on customer feedback and operational results.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-39",
@@ -691,7 +1372,25 @@
       "COST_OPS",
       "PERSISTENCY_PROGRAM"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/39 - Impact Assessment of Behavioral Economics on Policy.md"
+    "sourcePath": "data/analysis-library/life-insurance/39 - Impact Assessment of Behavioral Economics on Policy.md",
+    "goal": "To evaluate how behavioral economics principles influence policyholder decisions regarding policy uptake and retention.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Policy uptake rates, lapse rates, and persistency trends ○ Premium amounts, policy types, and customer demographics",
+      "**Customer behavior data:** ○ Response rates to pricing, incentives, and communication campaigns ○ Feedback from surveys or focus groups on purchasing decisions and reasons for lapses",
+      "**Communication data:** ○ Types, frequency, and content of communication with policyholders",
+      "**Financial data:** ○ Acquisition costs, retention costs, and lifetime value (LTV) per policyholder",
+      "**Benchmark data:** ○ Behavioral economics applications in the insurance industry"
+    ],
+    "improve": [
+      "Implement default renewal options to reduce policy lapses caused by decision inertia.",
+      "Use framing techniques to emphasize the benefits of retention and the costs of policy lapses.",
+      "Introduce incentives, such as premium discounts or loyalty rewards, for early renewals or policy conversions.",
+      "Simplify product explanations, communication, and processes to improve customer understanding and decision-making.",
+      "Personalize messages and offers based on customer segments to address specific biases or preferences.",
+      "Conduct continuous A/B testing to refine behavioral strategies and measure their impact.",
+      "Leverage behavioral insights to enhance digital tools, such as self-service portals and reminder systems, for improved customer engagement.",
+      "J. Operational Efficiency and Cost Management"
+    ]
   },
   {
     "id": "life-insurance-40",
@@ -709,7 +1408,27 @@
       "COST_OPS",
       "ADMIN_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/40 - Claims Management Efficiency and Fraud Detection Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/40 - Claims Management Efficiency and Fraud Detection Analysis.md",
+    "goal": "To evaluate the efficiency of the claims management process and identify the effectiveness of fraud detection mechanisms.",
+    "dataRequired": [
+      "**Claims data:** ○ Total claims received, approved, denied, and pending ○ Average processing time for claims (end-to-end) ○ Claims cost breakdown (e.g., administrative costs, payouts, investigations)",
+      "**Fraud detection data:** ○ Number of suspicious claims flagged and investigated ○ Percentage of claims confirmed as fraudulent ○ Cost of fraud-related investigations and savings from fraud detection",
+      "**Operational data:** ○ Claims team productivity: claims processed per adjuster or per day ○ Digital claims adoption: percentage of claims processed via automation or self-service tools",
+      "**Financial data:** ○ Claims ratios:",
+      "`Claims Ratio (%) = (Total Claims Paid / Total Premium Collected) x 100`",
+      "Cost per claim processed",
+      "**Customer experience data:** ○ Policyholder satisfaction scores related to claims settlement ○ Complaint resolution rates and turnaround times"
+    ],
+    "improve": [
+      "Implement automated claims processing tools to reduce manual interventions and processing times.",
+      "Strengthen fraud detection systems by adopting AI-based analytics and machine learning to identify suspicious patterns.",
+      "Streamline workflows by eliminating redundant steps and improving communication between claims teams.",
+      "Introduce self-service digital platforms for policyholders to submit claims and track progress.",
+      "Enhance claims training programs to improve adjuster productivity and accuracy.",
+      "Regularly analyze fraud detection performance and refine algorithms to reduce false positives and improve accuracy.",
+      "Benchmark claims ratios and fraud metrics against peers to identify areas requiring cost optimization.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-41",
@@ -726,7 +1445,26 @@
       "COST_OPS",
       "MORTALITY_UNDERWRITING"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/41 - Underwriting Process Efficiency and Risk Selection Quality.md"
+    "sourcePath": "data/analysis-library/life-insurance/41 - Underwriting Process Efficiency and Risk Selection Quality.md",
+    "goal": "To evaluate the efficiency of the underwriting process and assess the quality of risk selection.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Applications received, approved, declined, or referred for manual underwriting ○ Risk classifications (e.g., preferred, standard, substandard) and corresponding premium levels ○ Mortality, morbidity, and lapse experience for underwritten policies",
+      "**Operational data:** ○ Underwriting turnaround times (automated vs. manual processes) ○ Underwriting costs: total costs per policy issued ○ Approval, referral, and decline rates",
+      "**Claims data:** ○ Claims frequency, severity, and payouts segmented by risk class ○ Loss ratios by underwriting segment",
+      "**Financial data:** ○ Underwriting expenses, acquisition costs, and underwriting profit margins",
+      "**Benchmark data:** ○ Industry averages for underwriting turnaround times, decline rates, and loss ratios"
+    ],
+    "improve": [
+      "Implement AI and automated underwriting tools to reduce manual effort and improve turnaround times.",
+      "Refine underwriting guidelines and risk classification criteria to improve accuracy and reduce loss ratios.",
+      "Integrate external data sources (e.g., electronic health records, telematics) to enhance risk assessment and streamline decision-making.",
+      "Analyze high-referral cases to identify opportunities for automation and process simplification.",
+      "Conduct regular experience studies to align expected claims with actual outcomes and adjust underwriting models accordingly.",
+      "Monitor underwriting expenses and explore opportunities to reduce costs while maintaining quality decisions.",
+      "",
+      "Benchmark underwriting performance against competitors to identify and adopt best practices.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-42",
@@ -749,7 +1487,24 @@
       "COST_OPS",
       "DISTRIBUTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/42 - Expense Ratio and Cost Efficiency Benchmarking.md"
+    "sourcePath": "data/analysis-library/life-insurance/42 - Expense Ratio and Cost Efficiency Benchmarking.md",
+    "goal": "To evaluate the company’s operating cost structure by analyzing expense ratios and benchmarking cost efficiency against industry peers.",
+    "dataRequired": [
+      "**Financial data:** ○ Total operating expenses, broken down into acquisition costs, maintenance costs, and administrative costs ○ Premium revenue: gross written premium (GWP) and net premium",
+      "**Policy-level data:** ○ Policy count, premium size, and policy duration",
+      "**Operational data:** ○ Expenses by function (e.g., underwriting, claims management, IT, sales, and customer service) ○ Productivity metrics (e.g., cost per policy issued or serviced)",
+      "**Benchmark data:** ○ Industry expense ratios and cost-efficiency metrics for comparable insurers"
+    ],
+    "improve": [
+      "Streamline operational workflows by eliminating redundant processes and reducing manual interventions.",
+      "Invest in automation and digital tools to improve productivity in claims processing, underwriting, and customer service.",
+      "Optimize acquisition costs by improving channel efficiency, renegotiating commission structures, or expanding low-cost digital distribution.",
+      "Monitor and control IT and infrastructure spending to ensure alignment with business needs and value creation.",
+      "Conduct regular cost audits to identify opportunities for expense reduction across functions.",
+      "Improve staff productivity by setting performance targets and providing tools for better resource allocation.",
+      "Benchmark expense performance against peers regularly to align with best-in-class practices.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-43",
@@ -765,7 +1520,25 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/43 - Closed Block Performance and Runoff Strategy Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/43 - Closed Block Performance and Runoff Strategy Analysis.md",
+    "goal": "To evaluate the financial performance and operational sustainability of a closed block of policies, ensuring effective management of in-force business while optimizing runoff strategies to reduce risks and maximize returns.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Total number of policies in the closed block, policy types, premium schedules, and claim patterns ○ Lapse rates, mortality experience, and persistency trends",
+      "**Financial data:** ○ Reserves, premium revenue, claims paid, and administrative costs associated with the closed block ○ Investment income from assets backing the closed block ○ Projected cash flows over the remaining policy term",
+      "**Actuarial data:** ○ Assumptions for mortality, lapse rates, discount rates, and expense inflation",
+      "**Operational data:** ○ Cost of servicing closed block policies, including administrative and claims handling expenses",
+      "**Benchmark data:** ○ Industry performance metrics for closed block management ○ Runoff strategies implemented by peer insurers"
+    ],
+    "improve": [
+      "Optimize administrative and claims processing costs to improve the closed block’s expense ratio.",
+      "Enhance investment strategies to generate consistent, low-risk returns that align with liability durations.",
+      "Conduct regular experience studies to validate assumptions for mortality, lapse rates, and expenses.",
+      "Implement reinsurance solutions to transfer residual risks associated with the closed block.",
+      "Explore opportunities to sell the closed block to specialized third-party insurers for efficient runoff management.",
+      "Streamline operations with digital tools to reduce manual interventions and long-term servicing costs.",
+      "Monitor and stress test reserves regularly to ensure adequacy under both baseline and adverse scenarios.",
+      "K. Market Strategy and Competitive Positioning"
+    ]
   },
   {
     "id": "life-insurance-44",
@@ -778,7 +1551,26 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/44 - Competitive Landscape and Product Innovation Assessment.md"
+    "sourcePath": "data/analysis-library/life-insurance/44 - Competitive Landscape and Product Innovation Assessment.md",
+    "goal": "To evaluate the company’s competitive position within the life insurance market and assess the effectiveness of its product innovation strategies.",
+    "dataRequired": [
+      "**Competitor data:** ○ Product offerings, features, pricing, and target segments ○ Market share and premium revenue of key competitors ○ Innovation initiatives (e.g., digital products, wellness incentives, customized solutions)",
+      "**Internal product data:** ○ Company’s product portfolio (e.g., term life, whole life, annuities, riders, unit-linked products) ○ Premium revenue, sales trends, and persistency rates by product ○ Product development pipeline and innovation timelines",
+      "**Customer data:** ○ Policyholder demographics, preferences, and feedback ○ Uptake rates for new products",
+      "**Financial data:** ○ Profit margins, expense ratios, and claims experience per product ○ Acquisition and servicing costs for innovative products",
+      "**Industry data:** ○ Emerging product trends, regulatory changes, and technology-driven innovations ○ Competitor benchmarks (pricing, features, and customer engagement strategies)"
+    ],
+    "improve": [
+      "Launch innovative products tailored to emerging trends, such as wellness-linked or flexible premium life insurance plans.",
+      "Enhance customer value through technology integration (e.g., AI underwriting, digital tools, or reward programs).",
+      "Improve product differentiation by offering personalized policies, add-on riders, and bundled solutions.",
+      "Reposition or phase out underperforming products to focus resources on high-demand, profitable offerings.",
+      "",
+      "Conduct continuous competitor benchmarking to identify and respond to industry trends proactively.",
+      "Use customer analytics to identify unmet needs and inform product development strategies.",
+      "Collaborate with InsurTech firms to accelerate product innovation and enhance customer experiences.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-45",
@@ -796,7 +1588,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/life-insurance/45 - Market Penetration and Demographic Segmentation Study.md"
+    "sourcePath": "data/analysis-library/life-insurance/45 - Market Penetration and Demographic Segmentation Study.md",
+    "goal": "To assess the company’s market penetration and identify opportunities for growth through detailed demographic segmentation.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Number of policies sold, premium volumes, and coverage types by customer demographics (e.g., age, gender, income level, location) ○ New vs. existing customers, policy persistency rates, and lapse rates",
+      "**Market data:** ○ Total addressable market (TAM) and market share for life insurance products ○ Industry growth rates by region, product type, and demographic group",
+      "**Financial data:** ○ Premium revenue, profitability, and acquisition costs by demographic segments",
+      "**Customer data:** ○ Customer preferences, behavior, and feedback by segment ○ Uptake rates for specific products across different customer profiles"
+    ],
+    "improve": [
+      "Develop targeted marketing campaigns to address underserved demographic segments, such as younger, high-income, or rural customers.",
+      "Launch demographic-specific products, such as flexible term life policies for millennials or annuities for retirees.",
+      "Improve customer engagement through personalized offerings and communication strategies tailored to different life stages.",
+      "Invest in digital tools and distribution channels to attract younger, tech-savvy customers in urban markets.",
+      "Strengthen partnerships with employers, banks, and digital platforms to penetrate middle- and high-income segments.",
+      "Conduct regular market surveys to understand customer needs and align product offerings with evolving preferences.",
+      "Benchmark market share regularly to identify emerging opportunities and refine competitive strategies.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-46",
@@ -810,7 +1619,24 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/46 - Participating Policies Dividend Payout Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/46 - Participating Policies Dividend Payout Analysis.md",
+    "goal": "To evaluate the performance and payout strategies of participating (par) policies, ensuring that dividends align with profitability, policyholder expectations, and regulatory requirements.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Total number of participating policies in force ○ Policyholder premium contributions and reserve levels ○ Historical dividend payouts (actual and projected)",
+      "**Financial data:** ○ Profit margins, investment income, and surplus from the participating portfolio ○ Expense and claims experience for par policies",
+      "**Actuarial data:** ○ Assumptions for mortality, lapse rates, and investment returns ○ Actual vs. expected experience on key actuarial assumptions",
+      "**Benchmark data:** ○ Industry standards for dividend payout rates and surplus distribution ○ Competitor practices for dividend strategies"
+    ],
+    "improve": [
+      "Optimize surplus allocation between dividends and reserves to ensure long-term payout sustainability.",
+      "Implement a consistent and transparent dividend strategy that aligns payouts with policyholder contributions and actual performance.",
+      "Enhance investment strategies to generate stable and competitive returns that support surplus growth.",
+      "Refine actuarial assumptions and regularly monitor actual experience to avoid significant deviations.",
+      "Benchmark payout rates and practices against competitors to identify opportunities for competitive differentiation.",
+      "Communicate dividend strategies clearly to policyholders to manage expectations and build trust.",
+      "Conduct scenario modeling regularly to stress test surplus levels and future dividend sustainability under adverse conditions.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-47",
@@ -824,7 +1650,24 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/47 - Policyholder Dividend Strategy Optimization Analysis.md"
+    "sourcePath": "data/analysis-library/life-insurance/47 - Policyholder Dividend Strategy Optimization Analysis.md",
+    "goal": "To optimize the company’s dividend strategy for participating policies by balancing policyholder fairness, long-term financial sustainability, and competitive positioning.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Number of participating policies in force ○ Premium contributions, reserve levels, and historical dividend payouts",
+      "**Financial data:** ○ Surplus generated from participating policies (investment income, underwriting gains, expense savings) ○ Dividend payouts (historical and projected) ○ Allocation of retained surplus vs. distributed surplus",
+      "**Actuarial data:** ○ Mortality, lapse, and investment return assumptions ○ Actual vs. expected experience on key assumptions",
+      "**Competitor and benchmark data:** ○ Industry dividend payout ratios, surplus retention practices, and policyholder satisfaction trends"
+    ],
+    "improve": [
+      "Optimize the dividend payout ratio by balancing immediate policyholder rewards with long-term surplus growth.",
+      "Align dividend payouts with actual experience (e.g., mortality, lapse, investment returns) to ensure fairness and sustainability.",
+      "Introduce tiered dividend strategies to reward long-tenured and high-contributing policyholders proportionately.",
+      "Enhance investment strategies to generate stable, high-quality returns that support dividend growth.",
+      "Benchmark regularly against industry payout practices to maintain competitive positioning.",
+      "Improve communication with policyholders to explain dividend strategies, surplus performance, and future expectations clearly.",
+      "Stress test surplus reserves and dividend sustainability regularly to mitigate the impact of adverse financial conditions.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-48",
@@ -839,7 +1682,24 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/48 - Deferred Annuities Conversion and Payout Strategy.md"
+    "sourcePath": "data/analysis-library/life-insurance/48 - Deferred Annuities Conversion and Payout Strategy.md",
+    "goal": "To evaluate the performance and effectiveness of the company's deferred annuities conversion process and payout strategies.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Number of deferred annuities eligible for conversion ○ Number of annuities converted to payout phase (immediate annuities or lump sum withdrawals) ○ Policyholder demographics (age, gender, income, geographic location) ○ Selected payout options (e.g., life-only, period certain, lump sum)",
+      "**Financial data:** ○ Premiums collected during accumulation phase ○ Reserves and liabilities for deferred annuities ○ Payout amounts, cash flow projections, and profit margins post-conversion ○ Administrative costs and underwriting expenses for conversion",
+      "**Actuarial data:** ○ Mortality assumptions and actual mortality experience ○ Lapse rates and conversion probabilities ○ Discount rates used for reserve calculations and cash flow projections",
+      "**Benchmark data:** ○ Industry benchmarks for annuity conversion rates, payout strategies, and customer preferences"
+    ],
+    "improve": [
+      "Enhance communication strategies by engaging eligible policyholders with timely reminders and simplified explanations of payout options.",
+      "Introduce financial incentives or better payout rates to encourage conversions into life annuities over lump sum withdrawals.",
+      "Optimize underwriting and actuarial assumptions to reflect recent mortality and lapse trends, ensuring accurate reserves.",
+      "Offer flexible payout structures (e.g., staggered annuities, inflation-adjusted payouts) to meet diverse customer needs.",
+      "Benchmark payout rates and options against competitors to improve market competitiveness and attract conversions.",
+      "Use predictive analytics to identify policyholders most likely to convert and proactively engage them with tailored offers.",
+      "Monitor economic conditions influencing payout decisions and adapt strategies to align with policyholder behaviors.",
+      ""
+    ]
   },
   {
     "id": "life-insurance-49",
@@ -852,6 +1712,23 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/life-insurance/49 - Policyholder Fund Withdrawal and Loan Utilization Behavior.md"
+    "sourcePath": "data/analysis-library/life-insurance/49 - Policyholder Fund Withdrawal and Loan Utilization Behavior.md",
+    "goal": "To evaluate policyholder behavior related to fund withdrawals and policy loans, including patterns, financial impact, and underlying drivers.",
+    "dataRequired": [
+      "**Policy-level data:** ○ Number of policies with withdrawals or loans, loan amounts, and withdrawal frequency ○ Policy types (e.g., whole life, universal life, cash value policies) ○ Policyholder demographics (age, income, gender, location)",
+      "**Financial data:** ○ Total loan balance, withdrawal amounts, and interest income from loans ○ Surrender charges, loan repayment patterns, and default rates ○ Impact of withdrawals on reserves, persistency, and profitability",
+      "**Actuarial data:** ○ Mortality and lapse rates for policies with loans or withdrawals vs. those without ○ Cash value accumulation and loan utilization trends",
+      "**Benchmark data:** ○ Industry benchmarks for loan utilization, withdrawal behavior, and repayment trends"
+    ],
+    "improve": [
+      "Educate policyholders on the long-term impact of fund withdrawals and loans on cash value growth and policy sustainability.",
+      "Introduce structured loan repayment plans to reduce defaults and enhance repayment rates.",
+      "Offer incentives for partial loan prepayments or early repayments to minimize financial risks.",
+      "Refine product designs to limit excessive withdrawals while maintaining flexibility to meet policyholder needs.",
+      "Implement predictive analytics to identify at-risk segments likely to withdraw or default and proactively engage with them.",
+      "Strengthen communication strategies to promote alternative solutions, such as rider benefits or payment extensions, during financial hardship.",
+      "Regularly review and recalibrate actuarial assumptions related to withdrawal and loan behavior to improve reserve accuracy and risk management.",
+      ""
+    ]
   }
 ]

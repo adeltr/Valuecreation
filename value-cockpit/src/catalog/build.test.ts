@@ -27,7 +27,22 @@ describe('buildCatalog', () => {
       relatedCauseCategories: ['MARKET'],
       relatedLeverCategories: ['NETWORK_OPTIMIZATION', 'REVENUE_MANAGEMENT'],
       sourcePath: 'data/analysis-library/airline/13 - x.md',
+      goal: '', dataRequired: [], improve: [],
     }]);
+  });
+
+  it('keeps the analysis text an analyst needs: goal, data required, steps to improve (never values)', () => {
+    const body = [
+      '## 🎯 Goal', 'The goal is to compare fuel burn per aircraft type. It supports fleet decisions.', '',
+      '## 📊 Data required', '- Fuel consumption per aircraft type', '- RPK and ASK per type', '',
+      '## 🪜 Step-by-step', '1. **Gather data:** collect it.', '',
+      '## 🚀 Steps to improve', '1. **Optimize Fleet Allocation by Route:** assign efficient aircraft.', '2. **Invest in Fuel-Efficient Aircraft:** renew.',
+    ].join('\n');
+    const f = file('13 - x.md', good);
+    const { entries } = buildCatalog('airline', [{ ...f, content: f.content.replace('body', body) }]);
+    expect(entries[0].goal).toBe('The goal is to compare fuel burn per aircraft type.');
+    expect(entries[0].dataRequired).toEqual(['Fuel consumption per aircraft type', 'RPK and ASK per type']);
+    expect(entries[0].improve).toEqual(['Optimize Fleet Allocation by Route', 'Invest in Fuel-Efficient Aircraft']);
   });
 
   it('skips files without kind: analysis (not curated yet) and curation tables', () => {

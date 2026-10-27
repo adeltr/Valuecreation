@@ -10,4 +10,7 @@ export interface AnalysisRef {
   relatedCauseCategories: string[];
   relatedLeverCategories: string[];
   sourcePath: string;              // relative to project root, e.g. data/analysis-library/airline/13 - …md
+  goal: string;                    // first sentence of 🎯 Goal — text only, never a value
+  dataRequired: string[];          // 📊 Data required
+  improve: string[];               // 🚀 Steps to improve (titles)
 }

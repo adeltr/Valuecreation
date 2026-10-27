@@ -19,7 +19,23 @@
       "VOLUME",
       "NETWORK_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/01 - Network Footprint & Capacity Utilization Analysis.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/01 - Network Footprint & Capacity Utilization Analysis.md",
+    "goal": "Evaluate the geographic spread of the 3PL’s logistics network and determine how effectively the available capacity (warehouses, trucks, trailers, and other assets) is being utilized to serve customer demand.",
+    "dataRequired": [
+      "List of all facilities (warehouses, cross-docks, distribution centers) and their locations",
+      "Transportation asset details (number of trucks, trailers, and their capacities)",
+      "Historical shipment data (origin-destination pairs, shipment volumes, load factors)",
+      "Facility throughput data (inbound/outbound volumes)",
+      "Forecasted demand by region or major route"
+    ],
+    "improve": [
+      "Balance the Network",
+      "Optimize Capacity",
+      "Employ Network Modeling",
+      "Expand or Consolidate Strategically",
+      "Establish Collaborative Partnerships",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-02",
@@ -38,7 +54,24 @@
     "relatedLeverCategories": [
       "CARRIER_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/02 - Carrier Selection & Performance Benchmarking.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/02 - Carrier Selection & Performance Benchmarking.md",
+    "goal": "Assess the effectiveness of carrier selection criteria, measure ongoing performance, and benchmark carriers against industry standards and peers to ensure cost-efficiency, reliability, and high service quality.",
+    "dataRequired": [
+      "List of carriers used, including contractual rates",
+      "Key performance indicators (KPIs) for each carrier (on-time delivery, claims ratio, etc.)",
+      "Historical shipment data (origin-destination pairs, volumes, frequencies) by carrier",
+      "Benchmark rates or industry standards for comparison",
+      "Freight spend by carrier, lane, and service level"
+    ],
+    "improve": [
+      "Refine Carrier Selection Processes",
+      "Regular Performance Reviews",
+      "Negotiate Favorable Contracts",
+      "",
+      "Diversify Carrier Base",
+      "Invest in Technology",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-03",
@@ -57,7 +90,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/03 - Last-Mile Delivery & Final Mile Service Capabilities Analysis.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/03 - Last-Mile Delivery & Final Mile Service Capabilities Analysis.md",
+    "goal": "Evaluate the 3PL’s final mile delivery operations, including service coverage, on-time performance, delivery accuracy, and overall customer experience, to ensure competitive last-mile capabilities.",
+    "dataRequired": [
+      "Historical last-mile delivery data (delivery times, success rates, returns)",
+      "Geographic coverage details (urban, suburban, rural areas)",
+      "Delivery fleet details (vehicle types, capacity, route assignments)",
+      "Customer feedback or Net Promoter Scores (NPS) specific to final mile performance",
+      "Cost and profitability metrics for last-mile operations",
+      "Any value-added services (installation, assembly, reverse logistics)"
+    ],
+    "improve": [
+      "Optimize Routing & Scheduling",
+      "Enhance Fleet Utilization",
+      "Improve Transparency & Communication",
+      "Invest in Driver Training",
+      "Expand Value-Added Services",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-04",
@@ -75,7 +125,23 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/04 - Drop Trailer & Trailer Pool Management Assessment.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/04 - Drop Trailer & Trailer Pool Management Assessment.md",
+    "goal": "Assess the efficiency and cost-effectiveness of drop trailer arrangements and trailer pool operations, including equipment utilization, dwell time management, and workflow improvements.",
+    "dataRequired": [
+      "Inventory of active trailers (capacity, age, maintenance status)",
+      "Historical usage data (dwell times, fill rates, detention costs, accessorial charges)",
+      "Drop trailer schedules (origins, destinations, cycles, pool counts)",
+      "Freight volumes, shipping patterns, and facility/customer-level data",
+      "Costs associated with trailer leasing, maintenance, repositioning, demurrage, and detention"
+    ],
+    "improve": [
+      "Optimize Scheduling",
+      "Right-Size the Fleet",
+      "Enhance Visibility",
+      "Strengthen Customer Collaboration",
+      "Implement Preventive Maintenance",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-05",
@@ -89,7 +155,24 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/third-party-logistics/05 - Intermodal Drayage & Rail Partnership Effectiveness.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/05 - Intermodal Drayage & Rail Partnership Effectiveness.md",
+    "goal": "Evaluate the performance and cost-efficiency of intermodal drayage operations and rail partnerships, focusing on transit times, service reliability, and overall network synergy.",
+    "dataRequired": [
+      "List of rail carriers and drayage service providers",
+      "Contract terms, rate structures, and service-level agreements",
+      "Shipment data (origin, destination, volumes, transit times, on-time performance)",
+      "Drayage costs, fuel surcharges, and handling fees",
+      "Container usage (turn times, free time vs. demurrage)",
+      "Rail transit schedules and ramp locations"
+    ],
+    "improve": [
+      "Optimize Scheduling",
+      "Enhance Communication",
+      "Negotiate Better Contracts",
+      "Streamline Container Management",
+      "Leverage Multiple Providers",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-06",
@@ -105,7 +188,24 @@
     "relatedLeverCategories": [
       "NETWORK_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/06 - Line-Haul Network Planning & Optimization.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/06 - Line-Haul Network Planning & Optimization.md",
+    "goal": "Identify opportunities for cost savings, improved transit times, and enhanced capacity utilization across the line-haul network, ensuring efficient movement of freight between major hubs or distribution centers.",
+    "dataRequired": [
+      "Historical freight volumes by lane or corridor",
+      "Lane-level transit times and distances",
+      "Fleet capacity, utilization rates, and operating costs (fuel, maintenance, labor)",
+      "Service-level agreements (delivery speed, reliability)",
+      "Forecasted demand or seasonal volume fluctuations",
+      "External market data (fuel prices, infrastructure constraints)"
+    ],
+    "improve": [
+      "Consolidate Loads",
+      "Implement Route Optimization Tools",
+      "Strategically Position Hubs",
+      "Refine Scheduling & Dispatch",
+      "Continuous Network Review",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-07",
@@ -120,7 +220,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/07 - Freight Forwarding & 4PL Service Capability Gap Analysis.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/07 - Freight Forwarding & 4PL Service Capability Gap Analysis.md",
+    "goal": "Determine whether the 3PL has sufficient freight forwarding and 4PL capabilities to meet client needs, and identify any gaps in global reach, customs handling, supply chain orchestration, or value-added services.",
+    "dataRequired": [
+      "Current freight forwarding service offerings (air, ocean, multi-modal)",
+      "4PL solutions portfolio (end-to-end supply chain management, control tower functions)",
+      "Customer requirements and service-level agreements (SLAs)",
+      "Geographic coverage, partner networks, and carrier relationships",
+      "Operational performance metrics (on-time performance, cost benchmarks)",
+      "Technology platforms and integrations (visibility systems, EDI, TMS)"
+    ],
+    "improve": [
+      "Expand Modal & Geographic Reach",
+      "Develop Technology Platforms",
+      "Strengthen Carrier & Partner Relationships",
+      "Enhance 4PL Solutions",
+      "Upskill Workforce",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-08",
@@ -135,7 +252,24 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/third-party-logistics/08 - In-Transit Merge & Consolidation Programs Efficiency Analysis.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/08 - In-Transit Merge & Consolidation Programs Efficiency Analysis.md",
+    "goal": "Evaluate the effectiveness of in-transit merge and load consolidation initiatives that combine multiple shipments into fewer final deliveries, thereby reducing transportation costs and enhancing service levels.",
+    "dataRequired": [
+      "Historical shipping data (volumes, lanes, frequency)",
+      "Cost information for in-transit merge programs (handling, storage, technology)",
+      "Service-level agreements (transit times, on-time performance)",
+      "Carrier rates and contracts",
+      "Forecasted demand or peak season projections",
+      "Customer distribution requirements and special handling instructions"
+    ],
+    "improve": [
+      "Establish Clear Consolidation Strategy",
+      "Invest in Collaborative Tools",
+      "Enhance Partner Relationships",
+      "Implement Dynamic Merge & Deconsolidation Points",
+      "Analyze Trade-Offs",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-09",
@@ -155,7 +289,24 @@
       "MIX",
       "CARRIER_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/09 - Ocean Freight & NVOCC Partnerships Performance Review.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/09 - Ocean Freight & NVOCC Partnerships Performance Review.md",
+    "goal": "Assess the effectiveness, cost competitiveness, service reliability, and strategic value of partnerships with ocean carriers and Non-Vessel Owning Common Carriers (NVOCCs).",
+    "dataRequired": [
+      "List of current ocean carriers and NVOCC partners, including contractual terms",
+      "Historical shipment data (origin-destination ports, transit times, volumes)",
+      "Freight rates, fuel surcharges, and other fees (port charges, documentation costs)",
+      "Capacity commitments and space allocation records",
+      "On-time performance metrics (sailing schedules, actual arrival times)",
+      "Customer service or claim data specific to ocean shipments"
+    ],
+    "improve": [
+      "Renegotiate Contracts",
+      "Diversify Carrier Portfolio",
+      "Strengthen Collaboration",
+      "Implement End-to-End Visibility",
+      "Monitor Market Trends",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-10",
@@ -173,7 +324,23 @@
       "VOLUME",
       "BACKHAUL_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/10 - Backhaul Collaboration & Cross-Industry Cargo Matching.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/10 - Backhaul Collaboration & Cross-Industry Cargo Matching.md",
+    "goal": "Determine opportunities for reducing empty miles and enhancing asset utilization by collaborating with other industries or shippers to match cargo flows on backhaul lanes.",
+    "dataRequired": [
+      "Current outbound and inbound shipment data (lanes, volumes, frequencies)",
+      "Vehicle and trailer capacity information",
+      "Market or industry data on potential partners with compatible or overlapping routes",
+      "Historical empty miles and associated costs",
+      "Contractual arrangements, rate structures, or service-level agreements with existing collaborators or marketplaces"
+    ],
+    "improve": [
+      "Expand Collaborative Networks",
+      "Invest in Data & Analytics",
+      "Negotiate Flexible Contracts",
+      "Promote Internal Buy-In",
+      "Continuously Monitor & Refine",
+      "B. Warehousing & Fulfillment"
+    ]
   },
   {
     "id": "third-party-logistics-11",
@@ -191,7 +358,24 @@
       "COST_OPS",
       "WAREHOUSE_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/11 - Live Loading-Unloading & Appointment Scheduling Efficiency.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/11 - Live Loading-Unloading & Appointment Scheduling Efficiency.md",
+    "goal": "Evaluate the effectiveness of live loading/unloading operations and the efficiency of appointment scheduling processes to minimize wait times, optimize dock utilization, and improve overall turnaround times.",
+    "dataRequired": [
+      "Daily appointment schedules and booked time slots",
+      "Actual loading/unloading start and completion times",
+      "Historical wait times at the dock",
+      "Dock door or bay availability and usage rates",
+      "Labor scheduling data (forklift drivers, warehouse staff)",
+      "Accessorial fees associated with delays (detention, demurrage)"
+    ],
+    "improve": [
+      "Implement Real-Time Scheduling Tools",
+      "Optimize Labor Allocation",
+      "Enforce Appointment Compliance",
+      "Stagger Arrival Times",
+      "Conduct Regular Audits",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-12",
@@ -212,7 +396,23 @@
       "COST_OPS",
       "WAREHOUSE_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/12 - Slotting & Warehouse Layout Optimization for 3PL Operations.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/12 - Slotting & Warehouse Layout Optimization for 3PL Operations.md",
+    "goal": "Improve warehouse efficiency, reduce travel time for picking activities, and ensure optimal placement of items based on demand frequency, size, and handling requirements.",
+    "dataRequired": [
+      "Current warehouse layout or floor plan",
+      "SKU data (dimensions, weights, handling requirements)",
+      "Historical order data (pick frequency, demand peaks)",
+      "Pick path metrics and average travel times",
+      "Storage system details (racking, shelving, bin capacities)"
+    ],
+    "improve": [
+      "Leverage Slotting Tools",
+      "Implement Regular Reviews",
+      "Refine Zoning Strategies",
+      "Train Warehouse Staff",
+      "Incorporate Automation",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-13",
@@ -232,7 +432,24 @@
       "COST_OPS",
       "WAREHOUSE_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/13 - Cross-Docking & Flow-Through Operations Efficiency Review.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/13 - Cross-Docking & Flow-Through Operations Efficiency Review.md",
+    "goal": "Reduce handling, storage, and lead times by seamlessly transferring goods from inbound to outbound shipments, optimizing warehouse throughput and minimizing inventory holding.",
+    "dataRequired": [
+      "Inbound and outbound shipment schedules",
+      "Facility layout, dock locations, and material flow paths",
+      "Product characteristics (dimensions, handling requirements)",
+      "Labor schedules and staffing levels",
+      "Key performance metrics (dwell times, throughput rates, dock utilization)",
+      "Historical cost data (handling costs, labor, equipment usage)"
+    ],
+    "improve": [
+      "Align Scheduling & Capacity",
+      "Implement Real-Time Visibility Tools",
+      "Optimize Labor Deployment",
+      "Automate Material Handling",
+      "Prioritize Fast-Moving SKUs",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-14",
@@ -252,7 +469,24 @@
       "COST_OPS",
       "WAREHOUSE_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/14 - Co-Packing, Labeling & Kitting Operations Efficiency.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/14 - Co-Packing, Labeling & Kitting Operations Efficiency.md",
+    "goal": "Evaluate and optimize the processes involved in co-packing, labeling, and kitting to reduce handling time, control costs, and improve overall throughput and accuracy.",
+    "dataRequired": [
+      "Process flow documentation for co-packing, labeling, and kitting",
+      "Labor hours and staffing records for each operation",
+      "Bills of materials (BOM) or component lists for kitted products",
+      "Cost data (materials, equipment, labor) per co-packing or kitting project",
+      "Historical volumes, turnaround times, and error rates",
+      "Quality control or customer feedback on final packed/finished goods"
+    ],
+    "improve": [
+      "Optimize Workflow Layout",
+      "Introduce Automation where Feasible",
+      "Implement Standard Operating Procedures (SOPs)",
+      "Enhance Training & Cross-Training",
+      "Leverage Data & Continuous Improvement",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-15",
@@ -268,7 +502,24 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/15 - Pallet & Container Pooling Strategies.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/15 - Pallet & Container Pooling Strategies.md",
+    "goal": "Evaluate and optimize the use of pooled pallets and containers to reduce overall supply chain costs, streamline handling, and improve asset availability and utilization.",
+    "dataRequired": [
+      "Current inventory of pallets and containers (owned vs. rented)",
+      "Usage and circulation records (turnaround time, cycle count)",
+      "Costs associated with procurement, rental, maintenance, and loss/damage",
+      "Shipping and handling data (inbound, outbound, interfacility transfers)",
+      "Service-level agreements or contracts with pooling providers",
+      "Historical volume and forecasted demand for pallet/container usage"
+    ],
+    "improve": [
+      "Enhance Tracking & Visibility",
+      "Review Pooling Contracts & SLAs",
+      "Streamline Asset Return Processes",
+      "Educate & Train Personnel",
+      "Conduct Regular Audits",
+      "C. Technology & Systems"
+    ]
   },
   {
     "id": "third-party-logistics-16",
@@ -283,7 +534,25 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/16 - Advanced Systems Integration & EDI Capabilities.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/16 - Advanced Systems Integration & EDI Capabilities.md",
+    "goal": "Evaluate the depth and robustness of current system integrations and Electronic Data Interchange (EDI) capabilities to ensure seamless data flow, enhance collaboration with partners, and improve overall supply chain efficiency.",
+    "dataRequired": [
+      "List of all software systems in use (ERP, WMS, TMS, CRM) and their integration methods",
+      "Existing EDI transaction sets and formats (ANSI X12, EDIFACT)",
+      "Details on trading partners’ EDI requirements (retailers, suppliers, carriers)",
+      "Current integration architecture documentation (API endpoints, middleware solutions)",
+      "Transaction error rates, reprocessing data, and associated costs",
+      "IT staffing levels and skill sets (EDI specialists, developers)"
+    ],
+    "improve": [
+      "Standardize EDI & Integration Protocols",
+      "Implement Middleware or iPaaS Solutions",
+      "Improve Error Handling & Visibility",
+      "Cross-Train IT & Operations Staff",
+      "",
+      "Plan for Scalability & Future Needs",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-17",
@@ -302,7 +571,24 @@
       "WC_DSO",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/17 - Real-Time Tracking & Visibility Tools Analysis.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/17 - Real-Time Tracking & Visibility Tools Analysis.md",
+    "goal": "Assess the 3PL’s ability to provide real-time tracking of shipments and inventory throughout the supply chain, evaluating data integration, customer-facing visibility, and the timeliness of status updates.",
+    "dataRequired": [
+      "Current tracking platforms or systems (TMS, WMS, GPS-enabled devices)",
+      "Data feeds from carriers, IoT devices, or telematics solutions",
+      "Historical tracking accuracy and latency reports",
+      "Customer feedback regarding shipment visibility and communication",
+      "Service-level agreements specifying tracking updates or exceptions handling",
+      "Integration architecture details (APIs, EDI, middleware)"
+    ],
+    "improve": [
+      "Enhance Data Collection & Integration",
+      "Improve Exception Management",
+      "Upgrade Customer Interfaces",
+      "Leverage Analytics & Predictive Tools",
+      "Conduct Ongoing Audits",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-18",
@@ -317,7 +603,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/18 - Supply Chain Analytics & Reporting Maturity Assessment.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/18 - Supply Chain Analytics & Reporting Maturity Assessment.md",
+    "goal": "Determine the 3PL’s analytics capabilities and reporting sophistication across various supply chain functions, identifying gaps in data quality, tool adoption, and decision-making processes.",
+    "dataRequired": [
+      "Current reporting systems (BI tools, dashboards, custom spreadsheets)",
+      "Data sources (ERP, WMS, TMS, CRM) and integration methods",
+      "Key performance indicators (KPIs) currently tracked (on-time delivery, cost per shipment, fill rate, etc.)",
+      "Frequency and format of reports (daily, weekly, monthly)",
+      "User access and adoption rates (who uses the reports, how often)",
+      "Data governance policies and procedures"
+    ],
+    "improve": [
+      "Consolidate Data Sources",
+      "Enhance BI Tools & Dashboards",
+      "Implement Data Governance Policies",
+      "Expand Advanced Analytics Use Cases",
+      "Promote a Data-Driven Culture",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-19",
@@ -334,7 +637,25 @@
       "VOLUME",
       "CARRIER_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/19 - Digital Freight Matching & Marketplace Integration.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/19 - Digital Freight Matching & Marketplace Integration.md",
+    "goal": "Determine how effectively the 3PL leverages digital freight matching platforms and marketplace integrations to connect shippers and carriers in real time, reducing empty miles, improving load planning, and achieving competitive freight rates.",
+    "dataRequired": [
+      "List of digital freight matching (DFM) platforms currently in use (Load boards, apps, online marketplaces)",
+      "Volume of loads posted and matched via digital platforms",
+      "Adoption rate among carriers and shippers (number of active participants, frequency of use)",
+      "Historical load matching times, fill rates, and cost comparisons vs. traditional brokerage methods",
+      "Current integrations with transportation management systems (TMS) or other third-party platforms",
+      "Feedback from carriers and customers about ease of use and effectiveness of digital tools"
+    ],
+    "improve": [
+      "Increase Platform Integration",
+      "Drive User Engagement",
+      "Expand Platform Partnerships",
+      "Enhance Data Analytics & Reporting",
+      "",
+      "Implement Continuous Improvement Processes",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-20",
@@ -349,7 +670,24 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/20 - Transportation Management System (TMS) Implementation &.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/20 - Transportation Management System (TMS) Implementation &.md",
+    "goal": "Evaluate the feasibility, benefits, and cost-effectiveness of deploying or upgrading a TMS, measuring both quantitative and qualitative returns on investment.",
+    "dataRequired": [
+      "Current transportation processes and workflows",
+      "Freight spend data (line-haul, fuel, accessorial charges)",
+      "Shipment volumes and frequency across lanes",
+      "IT infrastructure details (existing systems, integration needs)",
+      "Implementation costs (software licensing, hardware, training)",
+      "Performance metrics (on-time delivery, cost per shipment) before TMS implementation"
+    ],
+    "improve": [
+      "Refine TMS Requirements",
+      "Enhance User Training & Adoption",
+      "Integrate TMS with Other Systems",
+      "Regularly Review KPIs & Adjust Processes",
+      "Leverage Advanced Analytics",
+      "D. Commercial & Contractual Structures"
+    ]
   },
   {
     "id": "third-party-logistics-21",
@@ -369,7 +707,24 @@
       "PRICING",
       "ACCESSORIAL_PRICING"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/21 - Contract & Pricing Structures Review.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/21 - Contract & Pricing Structures Review.md",
+    "goal": "Evaluate existing contractual agreements and pricing models to ensure alignment with service-level expectations, market conditions, and cost-efficiency goals.",
+    "dataRequired": [
+      "Current contracts with customers, carriers, and suppliers",
+      "Pricing models or rate sheets (fixed, variable, cost-plus, etc.)",
+      "Historical billing and invoice data",
+      "Service-level agreements and performance metrics",
+      "Market rate benchmarks and competitor pricing information",
+      "Any volume incentives, accessorial charges, or surcharge details"
+    ],
+    "improve": [
+      "Renegotiate Contracts Strategically",
+      "Implement Tiered Pricing Models",
+      "Streamline Accessorial Charges",
+      "Regularly Benchmark & Update Rates",
+      "Leverage Data Analytics",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-22",
@@ -384,7 +739,25 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/third-party-logistics/22 - Dedicated vs. Shared Logistics Solutions Comparison.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/22 - Dedicated vs. Shared Logistics Solutions Comparison.md",
+    "goal": "Compare the benefits, trade-offs, and cost implications of operating dedicated logistics solutions (exclusive assets and facilities for one customer) versus shared (multi-client) logistics solutions.",
+    "dataRequired": [
+      "Historical shipment volumes and variability per customer",
+      "Current capacity usage and asset utilization rates",
+      "Detailed cost breakdowns for dedicated vs. shared scenarios (labor, overhead, capital)",
+      "Service-level requirements (delivery windows, handling specifications)",
+      "Forecasted growth and demand patterns",
+      "Pricing models for both dedicated and shared operations"
+    ],
+    "improve": [
+      "Conduct Volume Forecasting & Sensitivity Analyses",
+      "Negotiate Flexible Shared Space or Capacity",
+      "",
+      "Evaluate Hybrid Approaches",
+      "Implement Rigorous Performance Tracking",
+      "Review Periodically",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-23",
@@ -403,7 +776,25 @@
     "relatedLeverCategories": [
       "ACCESSORIAL_PRICING"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/23 - Performance Incentive & Gainsharing Mechanisms Review.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/23 - Performance Incentive & Gainsharing Mechanisms Review.md",
+    "goal": "Evaluate existing incentive structures and gainsharing mechanisms between the 3PL, its customers, and supply chain partners to ensure that cost savings, service improvements, and operational efficiencies are fairly shared and consistently encouraged.",
+    "dataRequired": [
+      "Current contracts outlining incentive or gainsharing clauses",
+      "Historical performance metrics linked to incentives (on-time delivery, cost reductions, throughput)",
+      "Financial records showing cost savings or efficiency gains achieved over a defined period",
+      "Agreed-upon KPIs, thresholds, and bonus/penalty structures",
+      "Benchmarking data for industry-standard incentive models",
+      "Stakeholder feedback on effectiveness and fairness of current mechanisms"
+    ],
+    "improve": [
+      "Set Clear, Realistic KPIs",
+      "Use Tiered or Progressive Structures",
+      "Promote Transparency & Communication",
+      "",
+      "Review & Update Periodically",
+      "Balance Risks & Rewards",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-24",
@@ -419,7 +810,25 @@
     "relatedLeverCategories": [
       "CARRIER_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/24 - Outsourced vs. In-House Brokerage Operations Synergy.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/24 - Outsourced vs. In-House Brokerage Operations Synergy.md",
+    "goal": "Determine the cost-effectiveness, service performance, and strategic alignment of handling brokerage operations internally versus outsourcing to an external freight brokerage provider, identifying the optimal approach to meet business objectives.",
+    "dataRequired": [
+      "Historical shipment volumes and complexity (lanes, modes)",
+      "Current brokerage costs (internal overhead vs. outsourced fees)",
+      "Service-level agreements and performance metrics (on-time pickup/delivery, load acceptance rates)",
+      "Labor availability and expertise in-house",
+      "Market rate data for brokerage services",
+      "Technology infrastructure for rate quoting, load tendering, and carrier compliance"
+    ],
+    "improve": [
+      "Conduct Regular Cost-Benefit Analyses",
+      "",
+      "Strengthen Carrier Relationships",
+      "Invest in Technology",
+      "Implement Clear SLAs",
+      "Cross-Train Internal Teams",
+      "E. Value-Added & Specialized Services"
+    ]
   },
   {
     "id": "third-party-logistics-25",
@@ -440,7 +849,25 @@
       "COST_OPS",
       "VALUE_ADDED_SERVICES"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/25 - Value-Added Services & Reverse Logistics Capabilities.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/25 - Value-Added Services & Reverse Logistics Capabilities.md",
+    "goal": "Evaluate the scope, efficiency, and quality of a 3PL’s value-added services (such as kitting, assembly, returns management) and assess the effectiveness of its reverse logistics operations to enhance customer satisfaction, reduce waste, and capture additional revenue streams.",
+    "dataRequired": [
+      "List of current value-added services offered (assembly, customization, returns processing, refurbishment)",
+      "Operational process flows and SOPs for each value-added service",
+      "Reverse logistics data (return volumes, reasons for returns, turnaround times)",
+      "Cost and revenue breakdown for each value-added service",
+      "Service-level agreements and performance metrics (returns processing time, accuracy, customer satisfaction)",
+      "Historical and forecasted volumes for reverse logistics activities"
+    ],
+    "improve": [
+      "Streamline Reverse Logistics Processes",
+      "",
+      "Invest in Specialized Training & Automation",
+      "Develop Clear Pricing Models",
+      "Leverage Data & Analytics",
+      "Expand Service Offerings Strategically",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-26",
@@ -458,7 +885,25 @@
     "relatedLeverCategories": [
       "VALUE_ADDED_SERVICES"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/26 - Omni-Channel Fulfillment & E-Commerce Readiness Review.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/26 - Omni-Channel Fulfillment & E-Commerce Readiness Review.md",
+    "goal": "Determine the 3PL’s capability to efficiently handle orders from multiple channels (retail, wholesale, online, marketplace) while providing seamless customer experiences, fast fulfillment, and real-time inventory visibility.",
+    "dataRequired": [
+      "Current fulfillment processes by channel (e.g., store replenishment, direct-to-consumer, marketplace orders)",
+      "Order volumes, average order sizes, and seasonality trends",
+      "Inventory management practices and system integrations (ERP, WMS, OMS)",
+      "Shipping and carrier strategies (last-mile, expedited, multi-carrier)",
+      "Customer experience metrics (delivery times, order accuracy, return rates)",
+      "Technology capabilities for e-commerce platforms, marketplaces, and real-time inventory tracking"
+    ],
+    "improve": [
+      "Enhance System Integration",
+      "Adopt an Advanced OMS",
+      "",
+      "Optimize Picking & Packing Processes",
+      "Plan for Seasonal Peaks",
+      "Refine Returns Management",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-27",
@@ -478,7 +923,24 @@
       "COST_OPS",
       "NETWORK_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/27 - Multi-Client Facility Synergies & Consolidation Strategy.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/27 - Multi-Client Facility Synergies & Consolidation Strategy.md",
+    "goal": "Identify opportunities to leverage shared resources, streamline operations, and reduce overall costs by consolidating multiple client operations within a single facility or network of facilities.",
+    "dataRequired": [
+      "List of clients using each facility and their respective volumes",
+      "Facility capacity, layout, and throughput data",
+      "Historical inbound and outbound shipment patterns for each client",
+      "Labor requirements and staffing levels for various clients",
+      "Inventory profiles and storage requirements (temperature control, hazardous materials)",
+      "Current cost structures (lease, utilities, labor, equipment)"
+    ],
+    "improve": [
+      "Perform Regular Volume & Capacity Reviews",
+      "Standardize Processes & Layouts",
+      "Adopt Flexible Labor Models",
+      "Implement Common Technology Platforms",
+      "Engage Clients on Collaboration",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-28",
@@ -497,7 +959,25 @@
       "WC_DIO",
       "VALUE_ADDED_SERVICES"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/28 - Inbound-to-Manufacturing (I2M) & JIT Delivery Capability.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/28 - Inbound-to-Manufacturing (I2M) & JIT Delivery Capability.md",
+    "goal": "Determine how effectively the 3PL supports inbound logistics to manufacturing plants, focusing on Just-in-Time (JIT) delivery performance, inventory reduction, and alignment with production schedules.",
+    "dataRequired": [
+      "Inbound shipment data (origin, volume, frequency) and associated lead times",
+      "Production schedules and forecast data from manufacturing clients",
+      "Inventory levels at manufacturing sites (raw materials, components)",
+      "Transportation resources and carrier partnerships for inbound flows",
+      "Performance metrics (on-time delivery to plant, line stoppages, expedited shipments)",
+      "Demand variability and seasonality patterns"
+    ],
+    "improve": [
+      "Enhance Supply Chain Collaboration",
+      "Implement Advanced Routing & Scheduling Tools",
+      "",
+      "Adopt Real-Time Tracking & Alerts",
+      "Refine Inventory Policies",
+      "Regularly Audit Performance & Root Causes",
+      "F. Trade & Regulatory Compliance"
+    ]
   },
   {
     "id": "third-party-logistics-29",
@@ -513,7 +993,25 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/29 - Customs & Trade Compliance Framework Evaluation.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/29 - Customs & Trade Compliance Framework Evaluation.md",
+    "goal": "Assess the 3PL’s customs and trade compliance processes to ensure adherence to international regulations, minimize delays or penalties, and maintain a secure, efficient flow of cross-border shipments.",
+    "dataRequired": [
+      "Current customs documentation processes and standard operating procedures",
+      "Records of past customs filings, duties paid, and any penalties or delays",
+      "Trade compliance policies (classification, valuation, country of origin)",
+      "Authorized Economic Operator (AEO) or C-TPAT certification statuses",
+      "Regulatory changes or updates impacting key trade lanes",
+      "Employee training records related to customs regulations"
+    ],
+    "improve": [
+      "Implement Regular Internal Audits",
+      "Upgrade Classification Tools & Resources",
+      "Enhance Staff Training & Certification",
+      "Leverage Trusted Trader Programs",
+      "",
+      "Collaborate with Compliance Experts",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-30",
@@ -529,7 +1027,25 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/30 - Temperature-Controlled & Specialized Handling Compliance.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/30 - Temperature-Controlled & Specialized Handling Compliance.md",
+    "goal": "Assess the 3PL’s ability to maintain the proper environment and handling protocols for temperature-sensitive goods and other specialized cargo, ensuring compliance with regulatory requirements and customer specifications.",
+    "dataRequired": [
+      "Inventory of temperature-controlled or specialized cargo handled (e.g., pharmaceuticals, perishables, hazardous materials)",
+      "Warehouse and transportation equipment details (refrigeration units, insulated containers, temperature-monitoring devices)",
+      "SOPs for temperature monitoring, calibration checks, and handling procedures",
+      "Historical temperature logs and any non-compliance or excursion reports",
+      "Regulatory guidelines or certification requirements (e.g., FDA, GDP, HACCP)",
+      "Customer SLAs and specific handling instructions"
+    ],
+    "improve": [
+      "Upgrade Monitoring & Alert Systems",
+      "Strengthen Preventive Maintenance Programs",
+      "Enhance Staff Training",
+      "",
+      "Improve Documentation & Audits",
+      "Pursue Relevant Certifications",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-31",
@@ -542,7 +1058,25 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/third-party-logistics/31 - Hazardous Materials & Regulatory Shipment Handling.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/31 - Hazardous Materials & Regulatory Shipment Handling.md",
+    "goal": "Evaluate the 3PL’s procedures and capabilities for handling and transporting hazardous materials (hazmat) or other regulated shipments in compliance with applicable laws and safety standards, minimizing risk of accidents, fines, or service disruptions.",
+    "dataRequired": [
+      "Inventory of hazardous materials or regulated shipments handled (classifications, volumes, frequency)",
+      "Regulatory guidelines or standards (DOT, IATA, IMDG, ADR) specific to the materials shipped",
+      "Documentation procedures (shipping papers, material safety data sheets, labels, placards)",
+      "Current SOPs for hazmat handling, storage, and emergency response",
+      "Historical compliance records (violations, fines, incident reports)",
+      "Staff training logs and certifications related to hazmat handling"
+    ],
+    "improve": [
+      "Strengthen Training & Certification Programs",
+      "Enhance SOPs & Checklists",
+      "",
+      "Implement Rigorous Internal Audits",
+      "Invest in Protective Equipment & Infrastructure",
+      "Establish Quick-Escalation Protocols",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-32",
@@ -556,7 +1090,25 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/third-party-logistics/32 - C-TPAT, AEO & Supply Chain Security Protocols Compliance.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/32 - C-TPAT, AEO & Supply Chain Security Protocols Compliance.md",
+    "goal": "Assess the 3PL’s adherence to global supply chain security programs (C-TPAT in the U.S., AEO in the EU, or equivalent) to ensure robust security measures, faster customs processing, and lower risk profiles for cross-border operations.",
+    "dataRequired": [
+      "Current C-TPAT or AEO certification status and scope",
+      "Supply chain security policies, procedures, and training materials",
+      "Records of past validations or audits by customs/security agencies",
+      "Facility security measures (access control, surveillance, perimeter checks)",
+      "Business partner screening protocols and records",
+      "Incident reports related to security breaches, theft, or unauthorized access"
+    ],
+    "improve": [
+      "Perform Regular Self-Audits",
+      "Enhance Physical Security & Monitoring",
+      "Strengthen Partner Validation",
+      "Implement Ongoing Training & Drills",
+      "",
+      "Maintain Accurate & Updated Documentation",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-33",
@@ -574,7 +1126,25 @@
       "COST_OPS",
       "ACCESSORIAL_PRICING"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/33 - Freight Classification (NMFC) & Reclassification Opportunities.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/33 - Freight Classification (NMFC) & Reclassification Opportunities.md",
+    "goal": "Determine whether current National Motor Freight Classification (NMFC) assignments for various products are accurate, and identify opportunities to reclassify items or optimize packaging to reduce transportation costs without compromising service levels.",
+    "dataRequired": [
+      "Current NMFC codes and descriptions for each SKU or product category",
+      "Historical shipment data (weights, dimensions, densities)",
+      "Freight invoices and cost breakdowns by commodity class",
+      "Product handling requirements (fragility, hazardous materials, special packaging)",
+      "Carrier contracts or rate agreements linked to specific classifications",
+      "Any documented accessorial charges or classification-based surcharges"
+    ],
+    "improve": [
+      "Conduct Regular Classification Audits",
+      "Optimize Packaging",
+      "Train Staff on NMFC Guidelines",
+      "",
+      "Leverage Technology Tools",
+      "Collaborate with Carriers & NMFC Experts",
+      "G. Strategic Growth & Resilience"
+    ]
   },
   {
     "id": "third-party-logistics-34",
@@ -590,7 +1160,25 @@
       "MIX",
       "NETWORK_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/34 - Network Resilience & Geographic Diversification Strategy.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/34 - Network Resilience & Geographic Diversification Strategy.md",
+    "goal": "Determine the 3PL’s ability to withstand regional disruptions (natural disasters, labor strikes, capacity shortages) by examining the geographic spread of facilities, transport lanes, and partner networks.",
+    "dataRequired": [
+      "Current facility locations (warehouses, cross-docks, distribution centers) and associated capacity",
+      "Transportation lane data (high-volume routes, modal dependencies)",
+      "Historical disruption records (weather events, infrastructure closures, geopolitical risks)",
+      "Partner and carrier coverage across different regions",
+      "Cost and service-level metrics by region (transit times, labor costs, real estate costs)",
+      "Projected demand growth or shifts in key markets"
+    ],
+    "improve": [
+      "Establish Regional Hubs",
+      "Strengthen Carrier Portfolio",
+      "",
+      "Leverage Data for Predictive Analytics",
+      "Conduct Regular Network Audits",
+      "Create Comprehensive Contingency Plans",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-35",
@@ -610,7 +1198,25 @@
       "VOLUME",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/35 - Cross-Border & Multi-Regional Capabilities Examination.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/35 - Cross-Border & Multi-Regional Capabilities Examination.md",
+    "goal": "Evaluate the 3PL’s ability to manage international or multi-regional logistics operations, ensuring efficient customs clearance, adherence to local regulations, and seamless coordination across diverse geographic markets.",
+    "dataRequired": [
+      "List of regions/countries where the 3PL operates or intends to operate",
+      "Cross-border shipment data (volumes, frequencies, transit times)",
+      "Customs documentation requirements and trade regulations for each region",
+      "Existing carrier partnerships or agent networks in different geographies",
+      "Historical delays, compliance issues, or fines in cross-border shipments",
+      "Service-level agreements outlining multi-regional delivery expectations"
+    ],
+    "improve": [
+      "Strengthen Local Partnerships",
+      "Invest in Customs & Trade Compliance Tools",
+      "Localize Warehouse & Distribution Points",
+      "",
+      "Enhance IT Integrations & Visibility",
+      "Ongoing Regulatory Monitoring & Training",
+      "H. Cost Optimization & Efficiency"
+    ]
   },
   {
     "id": "third-party-logistics-36",
@@ -627,7 +1233,25 @@
       "FREIGHT_RATES"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/third-party-logistics/36 - Modal Mix & Transportation Cost Optimization Analysis.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/36 - Modal Mix & Transportation Cost Optimization Analysis.md",
+    "goal": "Determine the most effective combination of transportation modes (truckload, LTL, intermodal, air, ocean) to balance cost savings, service levels, and operational constraints, thereby optimizing the overall transportation spend.",
+    "dataRequired": [
+      "Historical shipment data by mode (volumes, lanes, costs, transit times)",
+      "Carrier contracts and rate structures (per mode)",
+      "Service-level requirements (delivery windows, sensitivity to transit time)",
+      "Forecasted demand or seasonal fluctuations",
+      "Any accessorial or surcharge data (fuel, hazmat, oversized loads)",
+      "Constraints related to handling, regulatory compliance, or specialized equipment"
+    ],
+    "improve": [
+      "Consolidate Shipments Where Possible",
+      "Negotiate & Revisit Carrier Contracts",
+      "",
+      "Leverage Intermodal & Rail for Long Hauls",
+      "Use Technology for Optimized Mode Selection",
+      "Engage in Ongoing Training & Collaboration",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-37",
@@ -644,7 +1268,24 @@
       "COST_OPS",
       "ACCESSORIAL_PRICING"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/37 - Freight Audit & Payment Process Evaluation.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/37 - Freight Audit & Payment Process Evaluation.md",
+    "goal": "Assess the 3PL’s methods for auditing freight invoices and managing carrier payments to ensure accuracy, prevent overbilling, and streamline financial reconciliation.",
+    "dataRequired": [
+      "Freight invoices from carriers (historical and current)",
+      "Contractual rate agreements and accessorial fee structures",
+      "Records of freight disputes or discrepancies",
+      "Internal ledger/payment records",
+      "Existing audit procedures and workflow documentation",
+      "Carrier performance and payment terms"
+    ],
+    "improve": [
+      "Automate Invoice Matching",
+      "Enhance Carrier Collaboration",
+      "Strengthen Internal Controls & SOPs",
+      "Implement Root Cause Analysis for Recurrent Errors",
+      "Regularly Benchmark & Negotiate Rates",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-38",
@@ -662,7 +1303,24 @@
     "relatedLeverCategories": [
       "ACCESSORIAL_PRICING"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/38 - Accessorial & Ancillary Fee Optimization Analysis.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/38 - Accessorial & Ancillary Fee Optimization Analysis.md",
+    "goal": "Identify and reduce or eliminate unnecessary additional charges (detention, demurrage, storage, wait times) across the 3PL’s network, improving overall transportation cost efficiency and customer satisfaction.",
+    "dataRequired": [
+      "Historical freight invoices detailing accessorial charges",
+      "Contracts or agreements outlining fee structures and free time allowances",
+      "Shipment data (pickup/delivery times, dwell times, appointment schedules)",
+      "Carrier and customer SLAs specifying service-level requirements",
+      "Operational logs documenting causes of delays or additional services",
+      "Dispute or waiver records related to accessorial fees"
+    ],
+    "improve": [
+      "Implement Appointment & Dock Scheduling Systems",
+      "Negotiate Clear Contract Terms",
+      "Enhance Communication & Collaboration",
+      "Track & Analyze Accessorials Continuously",
+      "Train Operations & Warehouse Teams",
+      ""
+    ]
   },
   {
     "id": "third-party-logistics-39",
@@ -680,7 +1338,25 @@
       "COST_OPS",
       "BACKHAUL_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/third-party-logistics/39 - Continuous Move & Round-Trip Optimization Strategies.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/39 - Continuous Move & Round-Trip Optimization Strategies.md",
+    "goal": "Maximize asset utilization and reduce empty miles by planning continuous moves or round-trip routes for trucks and trailers, thereby lowering transportation costs and improving driver productivity.",
+    "dataRequired": [
+      "Historical load data (origin, destination, frequency, capacity utilization)",
+      "Current driver schedules, shift lengths, and hours-of-service rules",
+      "Fuel costs, tolls, and other operational expenses",
+      "Network or lane overlaps (inbound, outbound, and potential backhauls)",
+      "Seasonal volume fluctuations or demand surges",
+      "Real-time visibility of available loads or digital freight matching options"
+    ],
+    "improve": [
+      "Leverage TMS & Data Analytics",
+      "Engage in Collaborative Networks",
+      "Optimize Driver Schedules",
+      "",
+      "Promote Driver & Dispatcher Communication",
+      "Regularly Review & Refine Routes",
+      "I. Workforce & Labor Management"
+    ]
   },
   {
     "id": "third-party-logistics-40",
@@ -695,6 +1371,24 @@
       "LABOR"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/third-party-logistics/40 - Driver Retention & Owner-Operator Engagement Approaches.md"
+    "sourcePath": "data/analysis-library/third-party-logistics/40 - Driver Retention & Owner-Operator Engagement Approaches.md",
+    "goal": "Evaluate the 3PL’s strategies for retaining company drivers and engaging owner-operators, aiming to reduce turnover, improve service consistency, and enhance overall driver satisfaction and loyalty.",
+    "dataRequired": [
+      "Historical driver turnover rates (monthly, quarterly, annual)",
+      "Owner-operator contracts or agreements (rates, payment terms)",
+      "Feedback or survey data on driver satisfaction",
+      "Compensation and benefits packages (pay scales, bonuses, health insurance)",
+      "Driver performance metrics (on-time rates, safety records, customer feedback)",
+      "Career development or training programs for drivers"
+    ],
+    "improve": [
+      "Enhance Compensation & Benefits",
+      "Optimize Schedules & Routes",
+      "Improve Communication & Dispatch Practices",
+      "",
+      "Offer Career Growth & Recognition",
+      "Refine Owner-Operator Contracts",
+      ""
+    ]
   }
 ]

@@ -15,7 +15,21 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/health-payor/01 - Medical Loss Ratio Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/01 - Medical Loss Ratio Analysis.md",
+    "goal": "To assess the percentage of premium income spent on healthcare claims and quality improvement activities versus administrative costs and profits.",
+    "dataRequired": [
+      "Total healthcare claims expenses",
+      "Quality improvement expenses",
+      "Total premium revenue"
+    ],
+    "improve": [
+      "Optimize Administrative Costs",
+      "Enhance Quality Improvement Initiatives",
+      "Improve Claims Efficiency",
+      "Regular Monitoring",
+      "Negotiate with Providers",
+      ""
+    ]
   },
   {
     "id": "health-payor-02",
@@ -36,7 +50,25 @@
     "relatedLeverCategories": [
       "RATE_ADEQUACY"
     ],
-    "sourcePath": "data/analysis-library/health-payor/02 - Premium Pricing Competitiveness and Rate Setting Review.md"
+    "sourcePath": "data/analysis-library/health-payor/02 - Premium Pricing Competitiveness and Rate Setting Review.md",
+    "goal": "To assess the competitiveness of a health payor's premium pricing relative to market standards and ensure that rates are set in a way that balances affordability, profitability, and market positioning.",
+    "dataRequired": [
+      "Historical premium pricing data by product line and region",
+      "Competitor premium rates for similar plans in the market",
+      "Member demographics and claims history",
+      "Regulatory rate filing requirements and constraints",
+      "Economic indicators influencing healthcare costs (e.g., inflation, labor rates)",
+      "Projected healthcare utilization and cost trends"
+    ],
+    "improve": [
+      "Optimize Underwriting and Actuarial Accuracy",
+      "Implement Cost Management Initiatives",
+      "Enhance Product Differentiation",
+      "Monitor Market Trends",
+      "",
+      "Engage with Regulators",
+      ""
+    ]
   },
   {
     "id": "health-payor-03",
@@ -54,7 +86,23 @@
     "relatedLeverCategories": [
       "CARE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/03 - Cost-of-Care Reduction Initiatives Assessment.md"
+    "sourcePath": "data/analysis-library/health-payor/03 - Cost-of-Care Reduction Initiatives Assessment.md",
+    "goal": "To evaluate the effectiveness of cost-of-care reduction initiatives in lowering overall healthcare expenses while maintaining or improving health outcomes for members.",
+    "dataRequired": [
+      "Historical healthcare claims data segmented by cost category (inpatient, outpatient, pharmacy, etc.)",
+      "Costs associated with specific cost-reduction initiatives (e.g., care management, preventive services)",
+      "Member health outcome metrics (e.g., hospitalization rates, readmission rates)",
+      "Utilization data for high-cost services and procedures",
+      "Benchmarks for cost categories and health outcomes"
+    ],
+    "improve": [
+      "Enhance Data-Driven Decision-Making",
+      "Integrate Value-Based Care",
+      "Optimize Care Coordination",
+      "Increase Member Engagement",
+      "Regularly Monitor and Adjust",
+      ""
+    ]
   },
   {
     "id": "health-payor-04",
@@ -67,7 +115,23 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/04 - Health Outcomes and Impact on Cost Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/04 - Health Outcomes and Impact on Cost Analysis.md",
+    "goal": "To evaluate the relationship between health outcomes and healthcare costs, with the objective of understanding how improved health outcomes may reduce long-term costs.",
+    "dataRequired": [
+      "Member health outcomes data (e.g., hospitalization rates, chronic disease prevalence, readmission rates)",
+      "Claims data segmented by treatment type, condition, and cost",
+      "Utilization data for preventive and primary care services",
+      "Demographic data (e.g., age, socioeconomic status)",
+      "Benchmarks for health outcomes and costs by condition and demographic"
+    ],
+    "improve": [
+      "Invest in Preventive Care",
+      "Strengthen Chronic Disease Management",
+      "Promote Member Engagement",
+      "Adopt Data-Driven Personalization",
+      "Enhance Care Coordination",
+      ""
+    ]
   },
   {
     "id": "health-payor-05",
@@ -81,7 +145,24 @@
       "RISK_POOL_SELECTION"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/05 - Risk Pool and Reinsurance Structure Evaluation.md"
+    "sourcePath": "data/analysis-library/health-payor/05 - Risk Pool and Reinsurance Structure Evaluation.md",
+    "goal": "To assess the effectiveness of a health payor’s risk pool and reinsurance structure in managing financial exposure, especially for high-cost claimants.",
+    "dataRequired": [
+      "Member demographic data (e.g., age, health conditions, geographic location)",
+      "Claims data, segmented by cost level (e.g., low-cost, high-cost claimants)",
+      "Reinsurance policy details (e.g., coverage limits, attachment points, premiums)",
+      "Historical claims frequency and severity for high-cost events",
+      "Risk pool composition metrics (e.g., risk scores, member distribution across health statuses)",
+      "Industry benchmarks for reinsurance cost and structure"
+    ],
+    "improve": [
+      "Adjust Reinsurance Structure",
+      "Improve Risk Pool Balance",
+      "Invest in Preventive Programs for High-Risk Members",
+      "Monitor and Update Reinsurance Needs Annually",
+      "",
+      "Negotiate Reinsurance Terms"
+    ]
   },
   {
     "id": "health-payor-06",
@@ -96,7 +177,23 @@
     "relatedLeverCategories": [
       "PHARMACY_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/06 - Pharmacy Benefit Management Performance and Cost.md"
+    "sourcePath": "data/analysis-library/health-payor/06 - Pharmacy Benefit Management Performance and Cost.md",
+    "goal": "To assess the effectiveness of the Pharmacy Benefit Management (PBM) program in controlling pharmacy costs while ensuring member access to necessary medications.",
+    "dataRequired": [
+      "Pharmacy claims data, including cost per claim, member copayments, and drug utilization rates",
+      "PBM contract terms, including administrative fees, rebates, and discounts",
+      "Member satisfaction data related to pharmacy benefits (e.g., access, affordability)",
+      "Utilization and cost data for specialty drugs and high-cost medications",
+      "Benchmark data for pharmacy costs, rebates, and utilization by drug category"
+    ],
+    "improve": [
+      "Renegotiate PBM Contract Terms",
+      "Enhance Utilization Management",
+      "Increase Generic and Preferred Drug Utilization",
+      "",
+      "Address Specialty Drug Costs",
+      "Monitor Member Satisfaction"
+    ]
   },
   {
     "id": "health-payor-07",
@@ -112,7 +209,23 @@
     "relatedLeverCategories": [
       "PHARMACY_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/07 - Specialty Drug Spend and Management Effectiveness Review.md"
+    "sourcePath": "data/analysis-library/health-payor/07 - Specialty Drug Spend and Management Effectiveness Review.md",
+    "goal": "To evaluate specialty drug spending and the effectiveness of cost-control measures in place, ensuring that high-cost specialty medications are managed efficiently while maintaining member access and satisfaction.",
+    "dataRequired": [
+      "Specialty drug claims data, including total costs, member contributions, and specific drug utilization",
+      "PBM or specialty pharmacy contract terms (rebates, discounts, negotiated pricing)",
+      "Data on high-utilization members and conditions requiring specialty drugs",
+      "Utilization management policies (e.g., prior authorization, step therapy)",
+      "Benchmark data on specialty drug costs and utilization rates"
+    ],
+    "improve": [
+      "",
+      "Renegotiate PBM Contract Terms",
+      "Strengthen Utilization Management",
+      "Promote Biosimilars and Alternatives",
+      "Partner with Specialty Pharmacies",
+      "Monitor Member Satisfaction and Access"
+    ]
   },
   {
     "id": "health-payor-08",
@@ -126,7 +239,23 @@
       "MEDICAL_COST_TREND"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/08 - High-Cost Claimant and Catastrophic Coverage Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/08 - High-Cost Claimant and Catastrophic Coverage Analysis.md",
+    "goal": "To evaluate the financial impact of high-cost claimants and the effectiveness of catastrophic coverage in managing these expenses.",
+    "dataRequired": [
+      "Claims data segmented by cost, identifying high-cost claimants (e.g., those whose annual costs exceed a defined threshold)",
+      "Member demographic and clinical data (age, chronic conditions, treatment history)",
+      "Reinsurance or catastrophic coverage terms, including attachment points, limits, and premiums",
+      "Trends in claims costs for high-cost claimants over multiple years",
+      "Benchmark data on catastrophic coverage standards and high-cost claimant spending"
+    ],
+    "improve": [
+      "Adjust Catastrophic Coverage Terms",
+      "Implement Enhanced Care Management Programs",
+      "Negotiate Reinsurance Terms",
+      "Develop Predictive Models for Early Intervention",
+      "Monitor Cost Trends and Adjust Annually",
+      ""
+    ]
   },
   {
     "id": "health-payor-09",
@@ -142,7 +271,24 @@
     "relatedLeverCategories": [
       "VALUE_BASED_CONTRACTING"
     ],
-    "sourcePath": "data/analysis-library/health-payor/09 - Episode-Based Bundled Payments Performance Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/09 - Episode-Based Bundled Payments Performance Analysis.md",
+    "goal": "To assess the effectiveness of episode-based bundled payments in controlling costs and improving care quality for specific treatments or procedures.",
+    "dataRequired": [
+      "Claims data for bundled payment episodes, including pre- and post-procedure costs",
+      "Patient outcomes data for bundled episodes (e.g., complication rates, readmissions)",
+      "Provider performance data within bundled payment episodes",
+      "Comparison data for similar episodes paid through fee-for-service models",
+      "Benchmarks on average costs and outcomes for each type of episode"
+    ],
+    "improve": [
+      "Refine Episode Definitions and Inclusions",
+      "Standardize Best Practices for Providers",
+      "Enhance Provider Collaboration and Communication",
+      "Implement Outcome-Based Incentives",
+      "",
+      "Regularly Monitor and Adjust Bundled Payments",
+      ""
+    ]
   },
   {
     "id": "health-payor-10",
@@ -156,7 +302,24 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/10 - End-of-Life Care Quality and Cost Management Evaluation.md"
+    "sourcePath": "data/analysis-library/health-payor/10 - End-of-Life Care Quality and Cost Management Evaluation.md",
+    "goal": "To assess the quality and cost-effectiveness of end-of-life care, focusing on providing compassionate, appropriate care while managing healthcare expenditures.",
+    "dataRequired": [
+      "Claims data for end-of-life care services, including hospital, hospice, and palliative care costs",
+      "Member demographics and clinical profiles (e.g., age, primary health conditions)",
+      "Patient outcomes data, including metrics such as hospital readmissions, ICU stays, and length of hospice care",
+      "Quality of care metrics, such as patient satisfaction, family feedback, and adherence to palliative care protocols",
+      "Benchmarks for end-of-life care costs and quality measures (e.g., average cost per patient, utilization rates for hospice vs. hospital care)"
+    ],
+    "improve": [
+      "Promote Early Transition to Hospice and Palliative Care",
+      "",
+      "Enhance Palliative Care Access",
+      "Implement Patient and Family Education Programs",
+      "Integrate Care Coordination for End-of-Life Services",
+      "Regularly Monitor and Adjust End-of-Life Care Protocols",
+      "B. Member Experience and Engagement"
+    ]
   },
   {
     "id": "health-payor-11",
@@ -174,7 +337,24 @@
       "VOLUME",
       "MEMBER_ENGAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/11 - Member Onboarding, Engagement, and Retention Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/11 - Member Onboarding, Engagement, and Retention Analysis.md",
+    "goal": "To assess the effectiveness of onboarding, engagement, and retention strategies in improving member satisfaction, increasing engagement with health plan resources, and reducing churn.",
+    "dataRequired": [
+      "New member onboarding data (e.g., completion of welcome calls, orientation sessions, usage of online portal)",
+      "Engagement metrics (e.g., frequency of portal logins, program participation, utilization of preventive care services)",
+      "Retention rates and churn data segmented by demographics and engagement levels",
+      "Member feedback and satisfaction scores from surveys or feedback forms",
+      "Benchmark data for industry standards in onboarding completion, engagement, and retention"
+    ],
+    "improve": [
+      "Enhance Onboarding Programs",
+      "Promote Key Engagement Touchpoints",
+      "Implement Personalization in Communication",
+      "Monitor and Address Member Feedback",
+      "",
+      "Develop Targeted Retention Strategies",
+      ""
+    ]
   },
   {
     "id": "health-payor-12",
@@ -189,7 +369,23 @@
     "relatedLeverCategories": [
       "MEMBER_ENGAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/12 - Member Satisfaction and Net Promoter Score Evaluation.md"
+    "sourcePath": "data/analysis-library/health-payor/12 - Member Satisfaction and Net Promoter Score Evaluation.md",
+    "goal": "To evaluate member satisfaction and loyalty using Net Promoter Score (NPS) alongside satisfaction survey results, identifying strengths and areas for improvement.",
+    "dataRequired": [
+      "Net Promoter Score (NPS) data, segmented by demographics (e.g., age, region) and service type (e.g., claims, customer service)",
+      "Member satisfaction survey responses on key aspects such as customer service, claims processing, digital experience, and care coordination",
+      "Qualitative feedback from open-ended survey questions, complaints, or focus groups",
+      "Retention and churn data, correlated with satisfaction and NPS",
+      "Benchmark data for NPS and satisfaction in the health insurance industry"
+    ],
+    "improve": [
+      "Enhance Customer Service",
+      "Improve Claims Experience",
+      "Personalize Communications",
+      "Enhance Digital Access and Usability",
+      "Act on Member Feedback",
+      ""
+    ]
   },
   {
     "id": "health-payor-13",
@@ -203,7 +399,24 @@
       "VOLUME",
       "MEMBER_ENGAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/13 - Digital Engagement and Member Portal Utilization Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/13 - Digital Engagement and Member Portal Utilization Analysis.md",
+    "goal": "To evaluate member engagement with digital tools, particularly the member portal, assessing its effectiveness in providing accessible information and services.",
+    "dataRequired": [
+      "Portal login data (frequency, duration, and unique users)",
+      "Member activity data within the portal (e.g., claims review, benefit inquiries, appointment scheduling)",
+      "Engagement metrics for other digital tools (e.g., mobile app usage, email engagement, SMS notifications)",
+      "Member demographics to analyze utilization trends across segments",
+      "Member feedback on digital tools gathered from surveys or support requests"
+    ],
+    "improve": [
+      "Enhance User Experience (UX)",
+      "Promote Key Features",
+      "Expand Mobile Access",
+      "Personalize Digital Interactions",
+      "",
+      "Gather Regular Feedback and Iterate",
+      ""
+    ]
   },
   {
     "id": "health-payor-14",
@@ -216,7 +429,23 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/14 - Wellness Program Engagement and Health Improvement.md"
+    "sourcePath": "data/analysis-library/health-payor/14 - Wellness Program Engagement and Health Improvement.md",
+    "goal": "To assess member engagement with wellness programs and measure the impact on health outcomes.",
+    "dataRequired": [
+      "Enrollment and participation data for each wellness program (e.g., fitness challenges, smoking cessation, weight management)",
+      "Member demographics and health profiles (age, chronic conditions, health risks)",
+      "Health outcome metrics (e.g., BMI changes, blood pressure, smoking cessation rates, preventive care utilization)",
+      "Claims data pre- and post-participation to evaluate cost impact",
+      "Member feedback on wellness program satisfaction and usability"
+    ],
+    "improve": [
+      "Increase Program Awareness and Accessibility",
+      "Incentivize Participation",
+      "Personalize Program Offerings",
+      "Enhance Program Usability and Satisfaction",
+      "",
+      "Regularly Monitor Health Outcomes"
+    ]
   },
   {
     "id": "health-payor-15",
@@ -232,7 +461,24 @@
       "VOLUME",
       "WC_DSO"
     ],
-    "sourcePath": "data/analysis-library/health-payor/15 - Social Determinants of Health Integration and Impact.md"
+    "sourcePath": "data/analysis-library/health-payor/15 - Social Determinants of Health Integration and Impact.md",
+    "goal": "To evaluate how well Social Determinants of Health (SDOH) are integrated into member care and assess the impact of addressing these factors on health outcomes and healthcare costs.",
+    "dataRequired": [
+      "Member demographics, including age, socioeconomic status, race, and geographic location",
+      "SDOH data, such as access to housing, food security, education level, employment status, and neighborhood safety",
+      "Claims data and health outcomes for members with identified SDOH needs",
+      "Utilization data for SDOH-related services, such as transportation, nutrition assistance, and community health programs",
+      "Benchmark data on SDOH integration outcomes from similar health plans"
+    ],
+    "improve": [
+      "Enhance SDOH Data Collection",
+      "",
+      "Expand Access to SDOH Services",
+      "Tailor Interventions by Segment",
+      "Increase Provider Education on SDOH",
+      "Regularly Monitor and Adjust Programs",
+      "C. Care and Disease Management Programs"
+    ]
   },
   {
     "id": "health-payor-16",
@@ -249,7 +495,24 @@
     "relatedLeverCategories": [
       "CARE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/16 - Care Management Effectiveness and ROI Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/16 - Care Management Effectiveness and ROI Analysis.md",
+    "goal": "To assess the effectiveness of care management programs in improving member health outcomes and reducing healthcare costs, thereby determining the return on investment (ROI) for these programs.",
+    "dataRequired": [
+      "Member demographics and health conditions, including chronic disease status and risk stratification",
+      "Participation and engagement data for care management programs (e.g., enrollment, completion rates)",
+      "Health outcomes metrics pre- and post-care management (e.g., hospitalization rates, ER visits, chronic disease markers)",
+      "Claims data segmented into pre- and post-program participation to measure cost impact",
+      "Industry benchmarks for care management effectiveness and ROI"
+    ],
+    "improve": [
+      "Focus on High-Risk, High-Cost Members",
+      "Enhance Member Engagement",
+      "Incorporate Digital Tools for Remote Monitoring",
+      "Continuously Monitor Program Outcomes",
+      "",
+      "Educate Providers to Support Referrals",
+      ""
+    ]
   },
   {
     "id": "health-payor-17",
@@ -264,7 +527,24 @@
     "relatedLeverCategories": [
       "CARE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/17 - Chronic Disease Management Program Effectiveness.md"
+    "sourcePath": "data/analysis-library/health-payor/17 - Chronic Disease Management Program Effectiveness.md",
+    "goal": "To evaluate the impact of chronic disease management programs on improving health outcomes and reducing healthcare costs for members with chronic conditions.",
+    "dataRequired": [
+      "Member data with chronic disease diagnoses (e.g., diabetes, hypertension, COPD)",
+      "Enrollment and participation data for the disease management program, including engagement and completion rates",
+      "Health outcomes metrics for participants, such as blood pressure, A1C levels, or medication adherence rates, pre- and post-program participation",
+      "Claims data to measure healthcare utilization and costs, segmented into pre- and post-program participation periods",
+      "Benchmark data on outcomes and costs for chronic disease management programs in similar health plans"
+    ],
+    "improve": [
+      "Focus on High-Impact Interventions",
+      "Personalize Program Components",
+      "Increase Member Engagement",
+      "Integrate Digital Health Tools",
+      "",
+      "Monitor and Adjust Program Regularly",
+      ""
+    ]
   },
   {
     "id": "health-payor-18",
@@ -279,7 +559,25 @@
     "relatedLeverCategories": [
       "CARE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/18 - Chronic Care Incentive Program Effectiveness Review.md"
+    "sourcePath": "data/analysis-library/health-payor/18 - Chronic Care Incentive Program Effectiveness Review.md",
+    "goal": "To evaluate the effectiveness of incentive programs designed to encourage members with chronic conditions to engage in healthy behaviors, adhere to treatment plans, and achieve health goals.",
+    "dataRequired": [
+      "Member demographics and chronic condition profiles (e.g., diabetes, hypertension)",
+      "Program participation data, including enrollment, activity completion, and incentive usage rates",
+      "Health outcome metrics (e.g., blood pressure, HbA1c, medication adherence) pre- and post-incentive participation",
+      "Claims data segmented into pre- and post-program participation to assess changes in healthcare utilization and costs",
+      "Member feedback on program experience and satisfaction",
+      "Industry benchmarks for incentive program participation rates, health improvements, and cost savings"
+    ],
+    "improve": [
+      "Refine Incentives Based on Impact",
+      "Enhance Communication and Education",
+      "",
+      "Personalize Incentives for Different Conditions",
+      "Increase Digital Access to Incentives",
+      "Collect Continuous Feedback for Iterative Improvement",
+      ""
+    ]
   },
   {
     "id": "health-payor-19",
@@ -292,7 +590,25 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/19 - Preventive Care Utilization and Effectiveness Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/19 - Preventive Care Utilization and Effectiveness Analysis.md",
+    "goal": "To assess the utilization and impact of preventive care services in reducing future healthcare costs and improving member health outcomes.",
+    "dataRequired": [
+      "Member demographics and health profiles, including age, gender, and risk factors",
+      "Utilization data for preventive services (e.g., screenings, immunizations, wellness visits) by service type",
+      "Health outcomes data related to preventive services (e.g., detection of early-stage diseases, reduced incidence of complications)",
+      "Claims data segmented by preventive care users and non-users to measure cost differences",
+      "Member feedback on accessibility and satisfaction with preventive services",
+      "Benchmark data for preventive care utilization and outcomes in similar populations"
+    ],
+    "improve": [
+      "Increase Preventive Care Outreach",
+      "Address Barriers to Access",
+      "Personalize Preventive Care Recommendations",
+      "",
+      "Incentivize Preventive Care Participation",
+      "Regularly Monitor and Adjust Strategies",
+      ""
+    ]
   },
   {
     "id": "health-payor-20",
@@ -305,7 +621,25 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/20 - Patient-Centered Medical Home Model Performance Review.md"
+    "sourcePath": "data/analysis-library/health-payor/20 - Patient-Centered Medical Home Model Performance Review.md",
+    "goal": "To assess the effectiveness of the Patient-Centered Medical Home (PCMH) model in improving care coordination, enhancing member satisfaction, and reducing healthcare costs.",
+    "dataRequired": [
+      "Member demographics and health profiles, especially for those enrolled in PCMH practices",
+      "PCMH-specific health outcome metrics, such as hospital admission rates, ER visits, and chronic disease management indicators",
+      "Claims data pre- and post-enrollment in PCMH to assess cost impact",
+      "Member satisfaction scores and feedback specific to PCMH care",
+      "Provider performance data within PCMH practices, including care coordination measures and adherence to best practices",
+      "Benchmark data for PCMH model outcomes in similar populations or health systems"
+    ],
+    "improve": [
+      "Strengthen Care Coordination Protocols",
+      "Increase Use of Technology and Data Integration",
+      "Provide Targeted Support for Chronic Conditions",
+      "",
+      "Encourage Preventive Care and Early Interventions",
+      "Gather Continuous Member Feedback",
+      ""
+    ]
   },
   {
     "id": "health-payor-21",
@@ -320,7 +654,25 @@
     "relatedLeverCategories": [
       "CARE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/21 - Preventable Hospital Admissions and Readmissions Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/21 - Preventable Hospital Admissions and Readmissions Analysis.md",
+    "goal": "To assess the rate of preventable hospital admissions and readmissions, identify underlying causes, and evaluate the effectiveness of interventions aimed at reducing unnecessary hospitalizations.",
+    "dataRequired": [
+      "Member demographics, including age, chronic conditions, and risk factors",
+      "Hospital admission and readmission data, segmented by cause, condition, and time since previous discharge",
+      "Utilization data for preventive and primary care services, such as routine check-ups, disease management program participation, and medication adherence",
+      "Claims data to quantify costs associated with preventable admissions and readmissions",
+      "Member feedback or survey data on barriers to accessing preventive care or follow-up services",
+      "Benchmark data for preventable admissions and readmissions rates in similar populations"
+    ],
+    "improve": [
+      "Enhance Access to Preventive Care and Follow-Up",
+      "",
+      "Implement Disease Management Programs",
+      "Strengthen Discharge Planning and Follow-Up Care",
+      "Increase Member Education on Health Management",
+      "Utilize Predictive Analytics for Early Intervention",
+      ""
+    ]
   },
   {
     "id": "health-payor-22",
@@ -335,7 +687,24 @@
     "relatedLeverCategories": [
       "CARE_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/22 - Ambulatory Care Sensitive Conditions Management Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/22 - Ambulatory Care Sensitive Conditions Management Analysis.md",
+    "goal": "To assess the effectiveness of managing Ambulatory Care Sensitive Conditions (ACSC) in reducing unnecessary hospitalizations and improving health outcomes.",
+    "dataRequired": [
+      "Member demographics and health profiles, including age, chronic conditions, and risk factors related to ACSCs (e.g., diabetes, asthma, hypertension)",
+      "Hospital admission data for ACSCs, segmented by condition, demographics, and geographic location",
+      "Utilization data for outpatient and primary care services relevant to ACSC management (e.g., primary care visits, medication adherence, disease management participation)",
+      "Claims data segmented by ACSC-related hospitalizations to assess associated costs",
+      "Member feedback or survey data on accessibility and satisfaction with outpatient care services",
+      "Benchmark data for ACSC admission rates and costs in similar populations"
+    ],
+    "improve": [
+      "Enhance Access to Primary and Outpatient Care",
+      "Implement Disease Management Programs for High-Risk Members",
+      "Increase Member Education and Engagement",
+      "Use Predictive Analytics for Early Identification",
+      "Improve Care Coordination",
+      "D. Provider Network and Contracting"
+    ]
   },
   {
     "id": "health-payor-23",
@@ -352,7 +721,25 @@
       "VOLUME",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/health-payor/23 - Network Adequacy and Optimization Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/23 - Network Adequacy and Optimization Analysis.md",
+    "goal": "To evaluate the adequacy and optimization of a health payor’s provider network, ensuring that members have timely access to a sufficient number and variety of healthcare providers.",
+    "dataRequired": [
+      "Member demographics and geographic distribution",
+      "Provider network data, including provider types (e.g., primary care, specialists), locations, and availability",
+      "Appointment accessibility metrics, such as average wait times and provider availability by specialty and location",
+      "Member satisfaction data related to network adequacy and accessibility",
+      "Claims data segmented by in-network and out-of-network utilization, including associated costs",
+      "Benchmark data for network adequacy standards and optimization practices in similar markets"
+    ],
+    "improve": [
+      "Expand Provider Network in Underserved Areas",
+      "Optimize Provider Mix",
+      "",
+      "Implement Telehealth Options",
+      "Enhance Provider Search Tools",
+      "Monitor and Adjust Network Adequacy Regularly",
+      ""
+    ]
   },
   {
     "id": "health-payor-24",
@@ -369,7 +756,25 @@
       "VOLUME",
       "VALUE_BASED_CONTRACTING"
     ],
-    "sourcePath": "data/analysis-library/health-payor/24 - Provider Network Performance, Reimbursement, and Referral.md"
+    "sourcePath": "data/analysis-library/health-payor/24 - Provider Network Performance, Reimbursement, and Referral.md",
+    "goal": "To evaluate the performance, reimbursement structures, and referral patterns within the provider network.",
+    "dataRequired": [
+      "Provider performance metrics, including patient outcomes, readmission rates, and patient satisfaction scores",
+      "Reimbursement data segmented by provider type, service type, and reimbursement model (e.g., fee-for-service, capitation, value-based payments)",
+      "Referral patterns data, including frequency of referrals between primary care providers and specialists, as well as in-network vs. out-of-network referrals",
+      "Member demographics and health profiles to understand referral needs",
+      "Claims data to measure costs associated with different providers, services, and referral pathways",
+      "Benchmark data on provider performance, reimbursement rates, and referral standards in similar networks"
+    ],
+    "improve": [
+      "Expand In-Network Referral Options",
+      "Align Reimbursement with Performance",
+      "",
+      "Standardize Referral Guidelines",
+      "Monitor Provider Performance Regularly",
+      "Enhance Provider Communication and Coordination",
+      ""
+    ]
   },
   {
     "id": "health-payor-25",
@@ -388,7 +793,24 @@
       "VOLUME",
       "VALUE_BASED_CONTRACTING"
     ],
-    "sourcePath": "data/analysis-library/health-payor/25 - Value-Based Care Contracting and Outcomes Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/25 - Value-Based Care Contracting and Outcomes Analysis.md",
+    "goal": "To evaluate the effectiveness of value-based care (VBC) contracts in improving patient outcomes and managing healthcare costs.",
+    "dataRequired": [
+      "Contract details for value-based care arrangements, including performance metrics, shared savings models, and risk-sharing levels",
+      "Provider performance data under VBC contracts, including quality outcomes, readmission rates, preventive care adherence, and patient satisfaction scores",
+      "Claims data for services under VBC contracts, segmented by cost, service type, and provider",
+      "Health outcome metrics for members receiving care through VBC contracts (e.g., chronic disease management, hospitalization rates, ER visits)",
+      "Benchmark data on VBC contract performance, cost savings, and quality outcomes"
+    ],
+    "improve": [
+      "Expand High-Performing VBC Models",
+      "Refine Underperforming Contracts",
+      "Incentivize Preventive Care and Chronic Disease Management",
+      "",
+      "Enhance Provider Support and Training",
+      "Regularly Monitor and Adjust VBC Outcomes",
+      ""
+    ]
   },
   {
     "id": "health-payor-26",
@@ -405,7 +827,25 @@
       "VOLUME",
       "VALUE_BASED_CONTRACTING"
     ],
-    "sourcePath": "data/analysis-library/health-payor/26 - High-Value Provider Utilization and Outcomes Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/26 - High-Value Provider Utilization and Outcomes Analysis.md",
+    "goal": "To assess the utilization and effectiveness of high-value providers in delivering quality care and achieving cost savings.",
+    "dataRequired": [
+      "Identification of high-value providers within the network based on criteria like patient outcomes, cost efficiency, and member satisfaction scores",
+      "Member demographics and geographic data to analyze access to high-value providers",
+      "Claims data segmented by provider type (high-value vs. other) to assess utilization patterns, costs, and outcomes",
+      "Health outcomes metrics for members treated by high-value providers (e.g., readmission rates, complication rates, preventive care adherence)",
+      "Member feedback and satisfaction data specific to high-value providers",
+      "Benchmark data for outcomes and costs achieved by high-value providers in similar networks"
+    ],
+    "improve": [
+      "Enhance Member Awareness of High-Value Providers",
+      "Encourage Provider Referrals to High-Value Providers",
+      "",
+      "Expand Access to High-Value Providers",
+      "Incentivize Utilization of High-Value Providers",
+      "Regularly Monitor Provider Performance and Outcomes",
+      "E. Risk Assessment and Population Health"
+    ]
   },
   {
     "id": "health-payor-27",
@@ -421,7 +861,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/health-payor/27 - Population Segmentation, Risk Scoring, and Predictive.md"
+    "sourcePath": "data/analysis-library/health-payor/27 - Population Segmentation, Risk Scoring, and Predictive.md",
+    "goal": "To categorize the member population into meaningful segments based on health risk factors, assign risk scores, and leverage predictive modeling to forecast healthcare needs and costs.",
+    "dataRequired": [
+      "Member demographics and health profiles, including age, chronic conditions, and utilization patterns",
+      "Claims data, including historical costs and healthcare utilization (e.g., hospital admissions, ER visits)",
+      "Health outcomes metrics, such as readmission rates, medication adherence, and preventive care utilization",
+      "Lifestyle and socioeconomic factors, if available, such as income, education, and access to healthcare resources",
+      "Benchmark data for risk scores and predictive modeling accuracy in similar populations"
+    ],
+    "improve": [
+      "",
+      "Incorporate Social Determinants of Health",
+      "Refine Predictive Models Regularly",
+      "Implement Targeted Care Management Programs",
+      "Expand Data Sources for Comprehensive Scoring",
+      "Evaluate Intervention Impact and Re-Score Regularly",
+      ""
+    ]
   },
   {
     "id": "health-payor-28",
@@ -436,7 +893,24 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/28 - Disease-Specific Episode Cost and Outcome Benchmarking.md"
+    "sourcePath": "data/analysis-library/health-payor/28 - Disease-Specific Episode Cost and Outcome Benchmarking.md",
+    "goal": "To evaluate the costs and outcomes associated with specific disease episodes, comparing them to industry benchmarks.",
+    "dataRequired": [
+      "Claims data segmented by disease-specific episodes (e.g., diabetes, heart failure, COPD) with costs for each stage of care, including pre-treatment, treatment, and follow-up",
+      "Patient outcome metrics, such as recovery times, readmission rates, complication rates, and mortality rates specific to each disease episode",
+      "Demographic and clinical profiles of patients in each episode type to control for differences in risk and complexity",
+      "Utilization data for services within each episode (e.g., specialist visits, hospitalizations, medication adherence)",
+      "Benchmark data on costs, utilization, and outcomes for each disease-specific episode in comparable populations"
+    ],
+    "improve": [
+      "Optimize Care Pathways",
+      "Enhance Disease Management Programs",
+      "Implement Value-Based Reimbursement Models",
+      "",
+      "Improve Post-Discharge Follow-Up",
+      "Regularly Benchmark and Adjust Programs",
+      ""
+    ]
   },
   {
     "id": "health-payor-29",
@@ -453,7 +927,25 @@
       "VOLUME",
       "WC_DSO"
     ],
-    "sourcePath": "data/analysis-library/health-payor/29 - Health Equity and Disparities in Care Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/29 - Health Equity and Disparities in Care Analysis.md",
+    "goal": "To evaluate health equity within the member population by identifying disparities in healthcare access, outcomes, and costs across different demographic and socioeconomic groups.",
+    "dataRequired": [
+      "Member demographics, including age, gender, race/ethnicity, income level, geographic location, and language preference",
+      "Utilization data for healthcare services, including preventive care, primary care, specialist visits, and emergency care",
+      "Health outcome metrics, such as chronic disease management (e.g., diabetes control), readmission rates, and preventive care adherence",
+      "Claims data segmented by demographics to measure healthcare costs across different groups",
+      "Social Determinants of Health (SDOH) data, if available, including housing stability, education level, employment, and access to transportation",
+      "Benchmark data on health equity and care disparities within similar populations or regions"
+    ],
+    "improve": [
+      "Expand Access to Preventive and Primary Care",
+      "Tailor Interventions Based on Demographics and SDOH",
+      "",
+      "Partner with Community Organizations",
+      "Enhance Data Collection and Monitoring",
+      "Educate Providers on Health Equity",
+      "F. Claims Management and Compliance"
+    ]
   },
   {
     "id": "health-payor-30",
@@ -472,7 +964,25 @@
       "COST_OPS",
       "ADMIN_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/health-payor/30 - Claims Processing Efficiency Evaluation.md"
+    "sourcePath": "data/analysis-library/health-payor/30 - Claims Processing Efficiency Evaluation.md",
+    "goal": "To assess the efficiency and accuracy of claims processing, aiming to reduce processing time, minimize errors, and improve member and provider satisfaction.",
+    "dataRequired": [
+      "Claims processing metrics, including average processing time, error rate, and rework rate",
+      "Data on claim volumes segmented by type (e.g., inpatient, outpatient, pharmacy) and complexity",
+      "Claims approval and denial rates, including reasons for denials and appeals data",
+      "Cost data related to claims processing, including administrative costs and costs associated with rework and appeals",
+      "Member and provider feedback on claims processing speed, accuracy, and satisfaction",
+      "Benchmark data on claims processing efficiency and accuracy within similar organizations or industry standards"
+    ],
+    "improve": [
+      "Implement Automation in Claims Processing",
+      "Enhance Training for Claims Processors",
+      "Streamline Claims Denial and Appeal Processes",
+      "",
+      "Optimize Data Entry and Validation",
+      "Monitor and Adjust Processes Regularly",
+      ""
+    ]
   },
   {
     "id": "health-payor-31",
@@ -490,7 +1000,24 @@
     "relatedLeverCategories": [
       "PAYMENT_INTEGRITY"
     ],
-    "sourcePath": "data/analysis-library/health-payor/31 - Claims Denial and Appeals Rate Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/31 - Claims Denial and Appeals Rate Analysis.md",
+    "goal": "To evaluate claims denial and appeals rates, understand the root causes of denials, and assess the effectiveness of the appeals process.",
+    "dataRequired": [
+      "Claims denial rates segmented by claim type (e.g., inpatient, outpatient, pharmacy) and denial reason",
+      "Appeals rates, including the number of appeals, outcomes (upheld or overturned), and appeal resolution times",
+      "Claims data by provider and member demographics to identify patterns in denials",
+      "Administrative costs related to denial management and appeals handling",
+      "Feedback from providers and members on the denial and appeals process",
+      "Benchmark data for denial rates, appeals rates, and resolution times in similar health plans"
+    ],
+    "improve": [
+      "Enhance Documentation Requirements",
+      "Implement Pre-Claim Validation Checks",
+      "Streamline the Appeals Process",
+      "",
+      "Improve Training for Claims Processors",
+      "Regularly Review and Adjust Denial Criteria"
+    ]
   },
   {
     "id": "health-payor-32",
@@ -507,7 +1034,25 @@
       "COST_OPS",
       "PAYMENT_INTEGRITY"
     ],
-    "sourcePath": "data/analysis-library/health-payor/32 - Fraud, Waste, and Abuse Detection Effectiveness.md"
+    "sourcePath": "data/analysis-library/health-payor/32 - Fraud, Waste, and Abuse Detection Effectiveness.md",
+    "goal": "To evaluate the effectiveness of fraud, waste, and abuse (FWA) detection in identifying and mitigating fraudulent claims, overutilization, and inappropriate billing.",
+    "dataRequired": [
+      "Claims data flagged for potential FWA, including types of claims (e.g., inpatient, outpatient, pharmacy) and flagged reasons",
+      "Historical FWA investigation outcomes, including claims confirmed as fraudulent, wasteful, or abusive, and claims dismissed after investigation",
+      "Financial data on costs recovered or saved through FWA interventions and penalties imposed",
+      "Administrative costs associated with FWA detection and investigation processes",
+      "Feedback from investigators and stakeholders on FWA processes and pain points",
+      "Benchmark data for FWA detection rates, false positive rates, and cost savings in similar health plans"
+    ],
+    "improve": [
+      "",
+      "Refine Detection Algorithms",
+      "Increase Use of Predictive Analytics and Machine Learning",
+      "Optimize Investigator Training and Resources",
+      "Automate Flagging for Common FWA Scenarios",
+      "Enhance Reporting and Feedback Mechanisms",
+      ""
+    ]
   },
   {
     "id": "health-payor-33",
@@ -524,7 +1069,25 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/health-payor/33 - Quality Metrics and Accreditation Compliance Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/33 - Quality Metrics and Accreditation Compliance Analysis.md",
+    "goal": "To assess adherence to quality standards and accreditation requirements, ensuring that the health plan meets or exceeds industry benchmarks and regulatory expectations.",
+    "dataRequired": [
+      "Quality metrics required for accreditation (e.g., HEDIS, NCQA, CMS Star Ratings), including clinical quality measures, preventive care adherence, and member satisfaction scores",
+      "Current accreditation status and any areas flagged for improvement or corrective action in past audits",
+      "Claims and utilization data segmented by quality metrics (e.g., preventive screenings, chronic disease management)",
+      "Member demographics to identify potential disparities in quality metric adherence across different groups",
+      "Feedback from internal audits and compliance teams regarding quality and compliance performance",
+      "Benchmark data for quality metrics and accreditation standards from similar health plans or industry averages"
+    ],
+    "improve": [
+      "Implement Targeted Quality Improvement Initiatives",
+      "Enhance Provider Education on Quality Standards",
+      "",
+      "Address Disparities Through Tailored Outreach",
+      "Strengthen Internal Compliance Audits",
+      "Use Data Analytics to Monitor and Improve Compliance",
+      ""
+    ]
   },
   {
     "id": "health-payor-34",
@@ -539,7 +1102,25 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/health-payor/34 - Behavioral Health Parity Compliance Evaluation.md"
+    "sourcePath": "data/analysis-library/health-payor/34 - Behavioral Health Parity Compliance Evaluation.md",
+    "goal": "To assess compliance with behavioral health parity requirements, ensuring that mental health and substance use disorder (MH/SUD) services are covered equally to medical and surgical services.",
+    "dataRequired": [
+      "Coverage policies and benefit designs for MH/SUD services compared to medical/surgical services (e.g., copays, visit limits, prior authorization requirements)",
+      "Claims data for MH/SUD and medical/surgical services to analyze usage patterns, denials, and out-of-pocket costs",
+      "Network adequacy data for MH/SUD providers versus medical providers, including geographic access and wait times",
+      "Member feedback on accessibility and affordability of MH/SUD services",
+      "Benchmark data on parity compliance from similar health plans or industry averages",
+      "Internal audit reports or past compliance assessments regarding parity requirements"
+    ],
+    "improve": [
+      "Align Cost-Sharing and Benefit Limits",
+      "",
+      "Standardize Utilization Management Practices",
+      "Expand Network Adequacy for MH/SUD Providers",
+      "Regularly Monitor Parity Compliance",
+      "Enhance Member Communication on MH/SUD Benefits",
+      "G. Access to Care and Integration"
+    ]
   },
   {
     "id": "health-payor-35",
@@ -556,7 +1137,25 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/health-payor/35 - Telehealth Adoption and Utilization Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/35 - Telehealth Adoption and Utilization Analysis.md",
+    "goal": "To evaluate the adoption and utilization of telehealth services, identifying trends, barriers, and opportunities to enhance access to virtual care.",
+    "dataRequired": [
+      "Telehealth utilization data, including volume of telehealth visits by service type (e.g., primary care, mental health, specialty care)",
+      "Member demographics, including age, geographic location, and health conditions, to analyze telehealth adoption trends across different groups",
+      "Claims data comparing costs and outcomes of telehealth versus in-person visits",
+      "Member feedback on telehealth experience, including satisfaction with access, quality, and convenience",
+      "Provider data on telehealth adoption, including availability and frequency of telehealth services by provider type and specialty",
+      "Benchmark data on telehealth adoption rates, utilization, and outcomes within similar health plans or industry standards"
+    ],
+    "improve": [
+      "Promote Telehealth for High-Demand Services",
+      "Expand Telehealth Provider Network",
+      "",
+      "Improve Member Education on Telehealth Benefits",
+      "Enhance Telehealth Experience",
+      "Monitor and Optimize Cost and Quality Metrics",
+      ""
+    ]
   },
   {
     "id": "health-payor-36",
@@ -572,7 +1171,25 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/health-payor/36 - Integrated Behavioral and Physical Health Access and.md"
+    "sourcePath": "data/analysis-library/health-payor/36 - Integrated Behavioral and Physical Health Access and.md",
+    "goal": "To evaluate the effectiveness of integrating behavioral and physical health services in improving member access to comprehensive care, enhancing health outcomes, and reducing healthcare costs.",
+    "dataRequired": [
+      "Claims data for both behavioral and physical health services, including types of services used, costs, and utilization rates",
+      "Member demographics and health profiles, including age, gender, chronic conditions, and behavioral health diagnoses",
+      "Health outcomes metrics, such as hospitalization rates, emergency room visits, readmission rates, and chronic disease management success for members using integrated services",
+      "Data on referral patterns and coordination between physical and behavioral health providers",
+      "Member feedback on access to integrated care, including satisfaction with availability, convenience, and quality of integrated services",
+      "Benchmark data on integrated care access, outcomes, and cost-effectiveness in similar health plans"
+    ],
+    "improve": [
+      "",
+      "Strengthen Coordination Between Providers",
+      "Expand Access to Integrated Care Providers",
+      "Promote Member and Provider Awareness",
+      "Implement Care Management Programs",
+      "Monitor Quality and Cost Metrics Regularly",
+      ""
+    ]
   },
   {
     "id": "health-payor-37",
@@ -590,7 +1207,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/health-payor/37 - In-Network vs. Out-of-Network Utilization Rate Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/37 - In-Network vs. Out-of-Network Utilization Rate Analysis.md",
+    "goal": "To evaluate the utilization rates of in-network versus out-of-network providers, identifying trends and factors that lead members to seek out-of-network care.",
+    "dataRequired": [
+      "Claims data segmented by in-network and out-of-network utilization, including service type (e.g., primary care, specialty, emergency) and associated costs",
+      "Member demographics, including age, geographic location, and insurance plan type, to analyze utilization patterns across different groups",
+      "Network adequacy data, including provider availability and wait times for in-network services by specialty and region",
+      "Member feedback on reasons for out-of-network utilization, such as limited access, provider preference, or emergency situations",
+      "Benchmark data on in-network vs. out-of-network utilization rates within similar health plans"
+    ],
+    "improve": [
+      "Expand Provider Network in High-Utilization Areas",
+      "Enhance Member Education on In-Network Options",
+      "Implement Cost-Sharing Incentives",
+      "",
+      "Regularly Monitor Network Adequacy",
+      "Streamline Referral and Authorization Processes",
+      ""
+    ]
   },
   {
     "id": "health-payor-38",
@@ -605,7 +1239,25 @@
     "relatedLeverCategories": [
       "ADMIN_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/health-payor/38 - Health Information Exchange Participation and Data Quality.md"
+    "sourcePath": "data/analysis-library/health-payor/38 - Health Information Exchange Participation and Data Quality.md",
+    "goal": "To assess the health plan’s participation in Health Information Exchanges (HIEs) and evaluate the quality, completeness, and accuracy of data exchanged.",
+    "dataRequired": [
+      "Participation data for HIEs, including list of participating providers and facilities",
+      "Data quality metrics, such as completeness, accuracy, timeliness, and consistency of shared health records",
+      "Utilization data showing how frequently providers access and use HIE data for patient care, segmented by service type and provider specialty",
+      "Health outcome metrics related to HIE usage, such as reduction in redundant tests, improvement in care coordination, and readmission rates",
+      "Member feedback or provider feedback on the ease of accessing and using HIE data",
+      "Benchmark data on HIE participation rates and data quality standards from similar health plans or regions"
+    ],
+    "improve": [
+      "Increase Provider Engagement and Training",
+      "Implement Data Quality Monitoring",
+      "",
+      "Optimize HIE Data Accessibility",
+      "Address Technological and Interoperability Barriers",
+      "Monitor and Promote Health Outcome Benefits",
+      ""
+    ]
   },
   {
     "id": "health-payor-39",
@@ -620,7 +1272,25 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/health-payor/39 - Integrated Care Coordination and Referral Efficiency Analysis.md"
+    "sourcePath": "data/analysis-library/health-payor/39 - Integrated Care Coordination and Referral Efficiency Analysis.md",
+    "goal": "To evaluate the effectiveness of integrated care coordination and referral processes, focusing on how well providers communicate and collaborate to ensure seamless member transitions across different levels of care.",
+    "dataRequired": [
+      "Referral data, including the volume and type of referrals (e.g., primary to specialist, specialist to specialist) and time taken from referral initiation to completion",
+      "Provider communication and care coordination metrics, such as response time, follow-up rates, and referral status updates",
+      "Claims and utilization data, including the frequency of missed referrals or delays in receiving referred services",
+      "Health outcomes metrics tied to referral timeliness and care continuity (e.g., readmission rates, follow-up compliance, health improvement rates)",
+      "Member feedback on care coordination experiences, especially ease of accessing referred providers and perceived quality of transitions in care",
+      "Benchmark data for referral efficiency, response times, and coordination effectiveness within similar health networks"
+    ],
+    "improve": [
+      "Streamline Referral Processes with Standardized Protocols",
+      "Enhance Provider Communication and Follow-Up",
+      "",
+      "Increase Provider Availability in High-Demand Areas",
+      "Educate Members on the Referral Process",
+      "Continuously Monitor and Adjust Referral Efficiency Metrics",
+      "H. Government Programs and Regulatory Performance"
+    ]
   },
   {
     "id": "health-payor-40",
@@ -641,7 +1311,25 @@
     "relatedLeverCategories": [
       "MEMBER_ENGAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/health-payor/40 - Medicare Advantage and Medicaid Plan Performance Review.md"
+    "sourcePath": "data/analysis-library/health-payor/40 - Medicare Advantage and Medicaid Plan Performance Review.md",
+    "goal": "To evaluate the performance of Medicare Advantage and Medicaid plans in delivering quality care, managing costs, and meeting member needs.",
+    "dataRequired": [
+      "Claims and utilization data segmented by service type (e.g., primary care, specialty care, hospitalizations) for Medicare Advantage and Medicaid members",
+      "Quality metrics (e.g., HEDIS, CMS Star Ratings) and health outcomes specific to each program, including preventive care adherence, chronic disease management, and hospital readmission rates",
+      "Member demographics and health profiles, including age, socioeconomic factors, and chronic conditions",
+      "Financial performance data, such as cost per member per month (PMPM) and utilization rates for high-cost services",
+      "Member satisfaction and CAHPS (Consumer Assessment of Healthcare Providers and Systems) survey data on access, quality, and overall satisfaction with Medicare Advantage and Medicaid plans",
+      "Compliance and regulatory data, including adherence to CMS and state Medicaid standards, and any identified compliance issues",
+      "Benchmark data on Medicare Advantage and Medicaid performance metrics within similar populations or regions"
+    ],
+    "improve": [
+      "Enhance Preventive and Chronic Disease Management Programs",
+      "Optimize Provider Networks for Access and Quality",
+      "Address High-Cost Utilization Trends",
+      "Improve Member Education and Engagement",
+      "Regularly Monitor Compliance and Quality Metrics",
+      ""
+    ]
   },
   {
     "id": "health-payor-41",
@@ -661,6 +1349,24 @@
       "COST_OPS",
       "ADMIN_AUTOMATION"
     ],
-    "sourcePath": "data/analysis-library/health-payor/41 - Enrollment and Eligibility Process Efficiency Review.md"
+    "sourcePath": "data/analysis-library/health-payor/41 - Enrollment and Eligibility Process Efficiency Review.md",
+    "goal": "To evaluate the efficiency of the enrollment and eligibility processes, focusing on timeliness, accuracy, and member satisfaction.",
+    "dataRequired": [
+      "Enrollment processing metrics, such as average processing time from application submission to completion",
+      "Eligibility determination metrics, including accuracy rates, rework rates (e.g., corrections due to errors), and time taken for eligibility approvals or denials",
+      "Volume of applications and eligibility requests processed per period, segmented by plan type (e.g., Medicare Advantage, Medicaid)",
+      "Administrative costs associated with enrollment and eligibility processing, including rework and manual interventions",
+      "Member feedback on enrollment and eligibility processes, focusing on ease of application, clarity of requirements, and satisfaction with timelines",
+      "Benchmark data for enrollment and eligibility processing times, accuracy, and costs from similar health plans or industry standards"
+    ],
+    "improve": [
+      "Automate Enrollment and Eligibility Processes",
+      "Enhance Staff Training on Eligibility Requirements",
+      "",
+      "Simplify Member Communication and Instructions",
+      "Implement Real-Time Status Tracking for Members",
+      "Monitor and Adjust Based on Volume Trends",
+      ""
+    ]
   }
 ]

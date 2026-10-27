@@ -19,7 +19,24 @@
       "MIX",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/01 - Product Portfolio Performance Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/01 - Product Portfolio Performance Analysis.md",
+    "goal": "The goal of the Product Portfolio Performance Analysis is to evaluate the effectiveness and market performance of a cosmetics company's product range.",
+    "dataRequired": [
+      "Sales data by product (revenue, units sold, profit margin).",
+      "Product launch dates and lifecycle stages.",
+      "Market share by product category (if available).",
+      "Customer feedback and ratings.",
+      "Marketing spend per product.",
+      "Inventory turnover rates by product."
+    ],
+    "improve": [
+      "Refine the product mix",
+      "Increase R&D investment in growth areas",
+      "Optimize pricing and marketing",
+      "Reduce costs for low-margin products",
+      "Introduce new products to fill gaps",
+      ""
+    ]
   },
   {
     "id": "cosmetics-02",
@@ -41,7 +58,28 @@
       "COST_OPS",
       "RD_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/02 - Innovation Pipeline and R&D Efficiency Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/02 - Innovation Pipeline and R&D Efficiency Analysis.md",
+    "goal": "The goal of the Innovation Pipeline and R&D Efficiency Analysis is to assess how well a cosmetics company is managing its research and development efforts in terms of product innovation.",
+    "dataRequired": [
+      "R&D budget and expenditures.",
+      "Number of new product ideas, prototypes, and launches per year.",
+      "Average time from concept to product launch.",
+      "R&D team size and structure (number of projects per researcher).",
+      "Success rates of new products (revenue generated, market share gained).",
+      "Patent filings and intellectual property generated from R&D.",
+      "Product performance post-launch (sales, customer reviews, returns).",
+      "Collaboration with external innovation partners (e.g., universities, labs)."
+    ],
+    "improve": [
+      "Streamline the R&D process",
+      "Improve idea screening",
+      "Increase cross-functional collaboration",
+      "Invest in technology and automation",
+      "Leverage external partnerships",
+      "Enhance post-launch feedback loops",
+      "Reallocate R&D resources",
+      ""
+    ]
   },
   {
     "id": "cosmetics-03",
@@ -62,7 +100,28 @@
       "COST_OPS",
       "FORMULATION_COST"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/03 - Formulation Cost Efficiency Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/03 - Formulation Cost Efficiency Analysis.md",
+    "goal": "The goal of the Formulation Cost Efficiency Analysis is to evaluate the cost-effectiveness of the ingredients and processes used in the formulation of cosmetics products.",
+    "dataRequired": [
+      "Bill of materials (BOM) for each product, including ingredient costs.",
+      "Manufacturing costs (labor, equipment usage, etc.).",
+      "Packaging costs (primary and secondary packaging).",
+      "Product volume or batch size per formulation.",
+      "Sales and profit margins for each product.",
+      "Supplier contracts and pricing agreements for raw materials.",
+      "Comparative costs of alternative ingredients (if applicable).",
+      "Industry benchmarks for formulation costs."
+    ],
+    "improve": [
+      "Negotiate better supplier contracts",
+      "Optimize ingredient usage",
+      "Improve manufacturing efficiency",
+      "Reevaluate packaging",
+      "Focus on high-margin products",
+      "Leverage economies of scale",
+      "Monitor formulation cost trends",
+      ""
+    ]
   },
   {
     "id": "cosmetics-04",
@@ -77,7 +136,28 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/04 - Skin Tone and Shade Range Inclusivity Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/04 - Skin Tone and Shade Range Inclusivity Analysis.md",
+    "goal": "The goal of the Skin Tone and Shade Range Inclusivity Analysis is to assess the diversity and inclusivity of a cosmetics company's product offerings, particularly in foundation, concealers, and other skin-tone-related products.",
+    "dataRequired": [
+      "Product shade range for each category (e.g., foundation, concealer, powder).",
+      "Sales data by shade (units sold, revenue).",
+      "Consumer demographics (age, ethnicity, geographical data).",
+      "Customer feedback and reviews on shade offerings.",
+      "Competitor shade range data (if available).",
+      "Market data on skin tone demographics (e.g., population data by skin tone).",
+      "Marketing and advertising material highlighting product inclusivity.",
+      "Return rates by shade (to identify potential dissatisfaction with shade matches)."
+    ],
+    "improve": [
+      "Expand the shade range",
+      "Incorporate customer feedback into product development",
+      "Collaborate with diverse influencers and makeup artists",
+      "Improve shade matching tools",
+      "Focus marketing efforts on inclusivity",
+      "Monitor return rates and sales by shade",
+      "Benchmark against competitors regularly",
+      ""
+    ]
   },
   {
     "id": "cosmetics-05",
@@ -93,7 +173,28 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/05 - Dermatological Testing and Clinical Trials Assessment.md"
+    "sourcePath": "data/analysis-library/cosmetics/05 - Dermatological Testing and Clinical Trials Assessment.md",
+    "goal": "The goal of the Dermatological Testing and Clinical Trials Assessment is to evaluate the effectiveness and safety of a cosmetics company’s products through rigorous testing.",
+    "dataRequired": [
+      "Results from dermatological testing (patch tests, irritation tests, allergy tests, etc.).",
+      "Clinical trial reports (test population data, methods, results, and conclusions).",
+      "Product claims (e.g., \"dermatologically tested,\" \"clinically proven\").",
+      "Participant demographics from clinical trials (age, gender, ethnicity, skin type).",
+      "Adverse reaction rates reported during testing.",
+      "Regulatory standards and safety guidelines (e.g., FDA, EU regulations).",
+      "Independent certification (e.g., dermatologist approval, allergy certifications).",
+      "Comparison of clinical trial outcomes against industry benchmarks."
+    ],
+    "improve": [
+      "Expand testing to include diverse skin types and demographics",
+      "Conduct more rigorous or larger-scale clinical trials",
+      "Address adverse reactions in product formulations",
+      "Seek third-party certification",
+      "Stay updated with regulatory standards",
+      "Use consumer feedback for post-launch testing",
+      "Publicize clinical testing results",
+      ""
+    ]
   },
   {
     "id": "cosmetics-06",
@@ -108,7 +209,27 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/06 - Makeup Removal and Longevity Testing.md"
+    "sourcePath": "data/analysis-library/cosmetics/06 - Makeup Removal and Longevity Testing.md",
+    "goal": "The goal of the Makeup Removal and Longevity Testing analysis is to assess two key performance aspects of cosmetics products: how long the products stay intact on the skin (longevity) and how easily they can be removed at the end of the day (removability).",
+    "dataRequired": [
+      "Product formulation details (especially for long-wear or waterproof products).",
+      "Consumer feedback and reviews related to longevity and removal.",
+      "Results from controlled makeup longevity tests (e.g., wear-time data).",
+      "Results from makeup removal tests (e.g., time, number of wipes required).",
+      "Industry benchmarks for makeup longevity (average wear times for similar products).",
+      "Information on makeup removers and cleansing methods tested with the products.",
+      "Data on skin reactions or irritation post-removal, if available."
+    ],
+    "improve": [
+      "Refine product formulation for longevity",
+      "Enhance ease of removal",
+      "Adjust marketing claims",
+      "Develop product-specific removers",
+      "Expand consumer testing",
+      "Monitor product feedback closely post-launch",
+      "Educate consumers on removal techniques",
+      ""
+    ]
   },
   {
     "id": "cosmetics-07",
@@ -122,7 +243,30 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/07 - Color Stability and Pigment Quality Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/07 - Color Stability and Pigment Quality Analysis.md",
+    "goal": "The goal of the Color Stability and Pigment Quality Analysis is to evaluate the durability and consistency of color in cosmetics products over time.",
+    "dataRequired": [
+      "Product formulation details, especially related to pigments and colorants.",
+      "Results from stability testing (temperature, humidity, and light exposure).",
+      "Consumer feedback on color fading or changes over time.",
+      "Sales performance data, particularly for color-intensive products (lipsticks, eyeshadows, etc.).",
+      "Product shelf-life data and expiration testing results.",
+      "Competitor benchmarks for color stability and pigment quality.",
+      "Lab test results on pigment quality (e.g., particle size, color consistency, purity).",
+      "Regulatory compliance data for pigments used (e.g., FDA or EU regulations on colorants).",
+      "Environmental exposure test results (e.g., water, oil, sweat resistance)."
+    ],
+    "improve": [
+      "Use high-quality, treated pigments",
+      "Optimize the formulation for pigment stability",
+      "Improve packaging to protect pigments",
+      "Enhance pigment testing procedures",
+      "Reformulate for long-wear conditions",
+      "Educate consumers on proper storage",
+      "Monitor customer feedback post-launch",
+      "Ensure regulatory compliance",
+      ""
+    ]
   },
   {
     "id": "cosmetics-08",
@@ -135,7 +279,29 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/08 - Sun Protection Factor (SPF) Validation and Compliance.md"
+    "sourcePath": "data/analysis-library/cosmetics/08 - Sun Protection Factor (SPF) Validation and Compliance.md",
+    "goal": "The goal of the Sun Protection Factor (SPF) Validation and Compliance analysis is to ensure that cosmetics and skincare products claiming sun protection properties meet regulatory standards and accurately reflect their SPF ratings.",
+    "dataRequired": [
+      "Product formulation details, including active UV filters.",
+      "In vitro and in vivo SPF test results from accredited labs.",
+      "Results from UVA protection tests (e.g., Persistent Pigment Darkening (PPD) method or Critical Wavelength Test).",
+      "Regulatory guidelines for SPF claims (FDA, EU, etc.).",
+      "SPF claim on the product label.",
+      "Stability testing data under various conditions (temperature, humidity, light).",
+      "Third-party certifications (if applicable, such as from the Skin Cancer Foundation).",
+      "Consumer feedback related to sun protection efficacy."
+    ],
+    "improve": [
+      "Reformulate to match SPF claims",
+      "Enhance UVA protection",
+      "",
+      "Improve product stability",
+      "Ensure water and sweat resistance",
+      "Revalidate SPF through third-party certifications",
+      "Improve consumer education",
+      "Stay compliant with emerging regulations",
+      ""
+    ]
   },
   {
     "id": "cosmetics-09",
@@ -148,7 +314,28 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/09 - Microbiome-Friendly Product Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/09 - Microbiome-Friendly Product Analysis.md",
+    "goal": "The goal of the Microbiome-Friendly Product Analysis is to evaluate how well a cosmetics or skin care product supports or preserves the skin’s microbiome.",
+    "dataRequired": [
+      "Product formulation details, including preservatives, surfactants, and active ingredients.",
+      "In vitro and in vivo microbiome studies (if available) testing the product's impact on skin microorganisms.",
+      "Clinical trial results assessing the skin’s microbiome after prolonged product use.",
+      "Comparative studies of similar products on the market (e.g., microbiome-friendly competitors).",
+      "Microbiome diversity data (e.g., types and levels of bacteria pre- and post-product use).",
+      "Consumer feedback, especially from individuals with sensitive skin, acne-prone skin, or skin conditions like eczema.",
+      "Industry benchmarks or certifications for microbiome-friendly products.",
+      "Regulatory guidelines on claims regarding microbiome health (if applicable)."
+    ],
+    "improve": [
+      "Reformulate to remove disruptive ingredients",
+      "Incorporate microbiome-friendly ingredients",
+      "Expand testing to diverse skin types",
+      "Increase transparency on product claims",
+      "Obtain third-party certifications",
+      "Educate consumers on microbiome health",
+      "Monitor and update formulations",
+      ""
+    ]
   },
   {
     "id": "cosmetics-10",
@@ -159,7 +346,31 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/10 - Hair Care Efficacy and Damage Control Testing.md"
+    "sourcePath": "data/analysis-library/cosmetics/10 - Hair Care Efficacy and Damage Control Testing.md",
+    "goal": "The goal of the Hair Care Efficacy and Damage Control Testing analysis is to assess the performance of hair care products in improving hair health, preventing damage, and addressing specific concerns such as breakage, split ends, frizz, and overall hair strength.",
+    "dataRequired": [
+      "Product formulation details, including active ingredients (e.g., keratin, oils, proteins).",
+      "Controlled laboratory test results (e.g., tensile strength, elasticity, moisture retention).",
+      "Results from in vivo testing on various hair types (e.g., straight, wavy, curly, coily).",
+      "Consumer feedback and survey results related to hair improvement and damage reduction.",
+      "Comparative data from similar products on the market.",
+      "Measurements of hair breakage, split ends, and overall hair texture post-use.",
+      "Test results from heat protection, chemical treatment resistance, and UV protection claims (if applicable).",
+      "Industry standards for hair care efficacy and damage control.",
+      "Hair moisture level data (before and after product application).",
+      "Long-term hair health data for continued product use over time."
+    ],
+    "improve": [
+      "Reformulate to enhance efficacy",
+      "Improve heat protection formulation",
+      "",
+      "Target specific hair types",
+      "Enhance consumer education",
+      "Monitor long-term usage results",
+      "Benchmark and improve based on competitor analysis",
+      "Obtain third-party validation",
+      ""
+    ]
   },
   {
     "id": "cosmetics-11",
@@ -175,7 +386,30 @@
     "relatedLeverCategories": [
       "RD_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/11 - Waterless Beauty Product Innovation Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/11 - Waterless Beauty Product Innovation Analysis.md",
+    "goal": "The goal of the Waterless Beauty Product Innovation Analysis is to evaluate the development and performance of waterless beauty products, which are formulated without water to reduce environmental impact, extend product shelf life, and offer concentrated, travel-friendly options.",
+    "dataRequired": [
+      "Product formulation details (ingredients, concentrations, and manufacturing process).",
+      "Performance data compared to traditional water-based formulations (e.g., efficacy, texture, absorption).",
+      "Consumer feedback regarding product experience (e.g., ease of use, results, texture).",
+      "Competitor benchmarks for waterless products (e.g., performance, market positioning).",
+      "Environmental impact data (e.g., carbon footprint, water savings).",
+      "Cost of production compared to traditional formulations.",
+      "Market trends and consumer demand data for waterless beauty products.",
+      "Regulatory guidelines for product formulation and sustainability claims.",
+      "Stability and shelf-life testing results.",
+      "Packaging innovation data (e.g., minimal, recyclable, or reusable packaging)."
+    ],
+    "improve": [
+      "Refine formulations for efficacy",
+      "Improve packaging sustainability",
+      "Enhance consumer education",
+      "Increase focus on eco-friendly ingredients",
+      "Extend shelf life",
+      "Benchmark regularly against competitors",
+      "Leverage third-party certifications",
+      ""
+    ]
   },
   {
     "id": "cosmetics-12",
@@ -188,7 +422,29 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/12 - Product Texture Change Over Time (Stability Testing).md"
+    "sourcePath": "data/analysis-library/cosmetics/12 - Product Texture Change Over Time (Stability Testing).md",
+    "goal": "The goal of the Product Texture Change Over Time (Stability Testing) analysis is to evaluate how a cosmetic product's texture holds up under various storage conditions and over its intended shelf life.",
+    "dataRequired": [
+      "Product formulation details (e.g., emulsifiers, thickeners, preservatives).",
+      "Initial product texture data (viscosity, spreadability, smoothness).",
+      "Stability test results under various conditions (temperature, humidity, light).",
+      "Results from accelerated aging tests (e.g., freeze-thaw cycles).",
+      "Consumer feedback on texture experience during product use.",
+      "Packaging information (e.g., air-tightness, material compatibility with the formulation).",
+      "Shelf-life data (expiration testing, degradation trends).",
+      "Industry benchmarks for texture stability.",
+      "Microbiological testing results (e.g., microbial growth under different storage conditions)."
+    ],
+    "improve": [
+      "Reformulate to improve stability",
+      "Use advanced packaging",
+      "Enhance preservative systems",
+      "Improve temperature stability",
+      "Monitor consumer feedback",
+      "Increase shelf-life testing",
+      "Benchmark regularly against competitors",
+      ""
+    ]
   },
   {
     "id": "cosmetics-13",
@@ -203,7 +459,31 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/13 - Beauty Device Integration and Usage Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/13 - Beauty Device Integration and Usage Analysis.md",
+    "goal": "The goal of the Beauty Device Integration and Usage Analysis is to evaluate how effectively a cosmetic product integrates with beauty devices, such as cleansing brushes, LED therapy tools, microcurrent devices, and facial massagers.",
+    "dataRequired": [
+      "Product formulation details, particularly texture, absorption rate, and compatibility with devices.",
+      "Performance data from device usage (e.g., product spreadability, absorption, and effectiveness when used with devices).",
+      "Consumer feedback on product and device integration (e.g., ease of use, comfort, results).",
+      "Beauty device specifications and modes of operation (e.g., cleansing, exfoliation, microcurrent, LED).",
+      "Comparative data from competitors with similar product-device combinations.",
+      "Results from device-enhanced product efficacy testing (e.g., increased absorption, better results with device usage).",
+      "Safety data regarding device use with specific formulations.",
+      "Market trends and consumer demand for beauty devices and related products.",
+      "Usage frequency data (how often consumers use products with devices).",
+      "Long-term product performance data when used with beauty devices (e.g., skin improvement over time)."
+    ],
+    "improve": [
+      "Reformulate for better device compatibility",
+      "Optimize for specific devices",
+      "Improve consumer education",
+      "Enhance product packaging",
+      "Expand product testing",
+      "",
+      "Leverage partnerships with beauty device brands",
+      "Highlight product-device synergy in marketing",
+      ""
+    ]
   },
   {
     "id": "cosmetics-14",
@@ -222,7 +502,31 @@
       "VOLUME",
       "RD_PRODUCTIVITY"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/14 - Multifunctional Product Trend Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/14 - Multifunctional Product Trend Analysis.md",
+    "goal": "The goal of the Multifunctional Product Trend Analysis is to examine the growing trend of multifunctional cosmetics and skincare products that offer multiple benefits in a single formulation.",
+    "dataRequired": [
+      "Product categories and features of existing multifunctional products (e.g., SPF, anti-aging, hydration).",
+      "Sales data and growth trends for multifunctional products compared to single-function products.",
+      "Consumer behavior and preference data (e.g., surveys, reviews, focus groups).",
+      "Competitor offerings in the multifunctional product space.",
+      "Market demand trends and search volume data for multifunctional products.",
+      "Ingredient and formulation information (e.g., how active ingredients work in combination to deliver multiple benefits).",
+      "Consumer feedback on performance and value of multifunctional products.",
+      "Regulatory compliance data for multifunctional products (e.g., SPF claims, FDA guidelines).",
+      "Packaging innovations specific to multifunctional products.",
+      "Marketing strategies used by companies to position multifunctional products."
+    ],
+    "improve": [
+      "Develop more innovative multifunctional products",
+      "Improve formulations for multitasking",
+      "Enhance marketing strategies",
+      "",
+      "Ensure full regulatory compliance",
+      "Leverage consumer feedback for product improvements",
+      "Explore sustainable and eco-friendly multifunctional products",
+      "Expand into emerging sub-trends",
+      ""
+    ]
   },
   {
     "id": "cosmetics-15",
@@ -235,7 +539,30 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/15 - Regeneration and Anti-Aging Efficacy Studies.md"
+    "sourcePath": "data/analysis-library/cosmetics/15 - Regeneration and Anti-Aging Efficacy Studies.md",
+    "goal": "The goal of Regeneration and Anti-Aging Efficacy Studies is to assess the effectiveness of skincare products in promoting skin regeneration and reducing visible signs of aging, such as wrinkles, fine lines, sagging, and loss of elasticity.",
+    "dataRequired": [
+      "Product formulation details, especially active ingredients (e.g., retinol, peptides, hyaluronic acid, antioxidants).",
+      "Results from in vitro studies on cell regeneration and collagen production.",
+      "Results from in vivo clinical trials (e.g., wrinkle reduction, improved skin elasticity, hydration levels).",
+      "Consumer feedback and self-assessment data on visible anti-aging results.",
+      "Competitor product benchmarks for anti-aging efficacy.",
+      "Long-term product performance data (e.g., effectiveness after consistent use over 4-12 weeks).",
+      "Skin imaging and analysis tools (e.g., VISIA skin analysis system for wrinkles, elasticity, and pigmentation).",
+      "Dermatologist or independent expert reviews on product efficacy.",
+      "Regulatory guidelines for anti-aging claims (e.g., FDA, EU regulations).",
+      "Safety data, particularly regarding sensitivity to active ingredients (e.g., retinol, alpha hydroxy acids)."
+    ],
+    "improve": [
+      "Refine the formulation",
+      "Enhance consumer education",
+      "Extend clinical trials for better insights",
+      "Improve product packaging",
+      "Benchmark product more frequently",
+      "Obtain expert endorsements",
+      "Target specific consumer concerns",
+      ""
+    ]
   },
   {
     "id": "cosmetics-16",
@@ -249,7 +576,31 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/16 - Product Efficacy and Claims Substantiation Review.md"
+    "sourcePath": "data/analysis-library/cosmetics/16 - Product Efficacy and Claims Substantiation Review.md",
+    "goal": "The goal of the Product Efficacy and Claims Substantiation Review is to evaluate whether a cosmetic product's performance aligns with its marketing claims.",
+    "dataRequired": [
+      "Product formulation details, including active ingredients and their concentrations.",
+      "Results from clinical trials and consumer perception studies related to the product’s performance.",
+      "Regulatory guidelines and standards for cosmetic claims (e.g., FDA, EU regulations).",
+      "In vitro and in vivo testing results for specific claims (e.g., hydration, anti-aging, brightening).",
+      "Competitor benchmarks for similar claims and product categories.",
+      "Third-party or independent lab test reports.",
+      "Consumer feedback and reviews regarding product performance.",
+      "Legal requirements for specific product categories and claims (e.g., SPF, hypoallergenic, vegan).",
+      "Visual and sensory data from product testing (e.g., before-and-after photos, skin analysis).",
+      "Certifications and endorsements from industry or regulatory bodies (e.g., dermatologist-tested, cruelty-free)."
+    ],
+    "improve": [
+      "Conduct additional clinical trials or consumer studies",
+      "Refine product claims",
+      "Ensure regulatory compliance",
+      "Improve product formulation",
+      "Use visual evidence in marketing",
+      "Leverage third-party endorsements",
+      "Benchmark claims regularly",
+      "Strengthen consumer education",
+      ""
+    ]
   },
   {
     "id": "cosmetics-17",
@@ -262,7 +613,29 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/17 - Product Texture and Sensory Evaluation.md"
+    "sourcePath": "data/analysis-library/cosmetics/17 - Product Texture and Sensory Evaluation.md",
+    "goal": "The goal of the Product Texture and Sensory Evaluation is to assess the sensory characteristics of a cosmetic product, including its texture, feel during application, absorption, and overall user experience.",
+    "dataRequired": [
+      "Product formulation details, particularly ingredients affecting texture (e.g., emulsifiers, thickeners, oils).",
+      "Initial texture analysis data (e.g., viscosity, smoothness, spreadability).",
+      "Consumer feedback and sensory perception studies.",
+      "Competitor product benchmarks for texture and sensory characteristics.",
+      "Temperature and humidity stability data (e.g., how texture holds up under different conditions).",
+      "Rheology data (e.g., flow properties, consistency).",
+      "Absorption rate testing results.",
+      "Skin type-specific sensory feedback (e.g., oily, dry, sensitive skin).",
+      "Long-term texture stability data (e.g., does the texture change over time or after repeated use?).",
+      "Fragrance and overall sensory appeal (if applicable)."
+    ],
+    "improve": [
+      "Reformulate for better texture and absorption",
+      "Enhance packaging to preserve texture",
+      "Adjust fragrance to enhance sensory appeal",
+      "Improve skin type-specific performance",
+      "Benchmark and refine based on competitors",
+      "Educate consumers on proper use",
+      "B. Marketing and Consumer Insights"
+    ]
   },
   {
     "id": "cosmetics-18",
@@ -281,7 +654,32 @@
     "relatedLeverCategories": [
       "INFLUENCER_DIGITAL"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/18 - Brand Perception and Consumer Sentiment Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/18 - Brand Perception and Consumer Sentiment Analysis.md",
+    "goal": "The goal of the Brand Perception and Consumer Sentiment Analysis is to evaluate how consumers perceive a cosmetic brand in terms of reputation, trustworthiness, product quality, and overall emotional connection.",
+    "dataRequired": [
+      "Consumer feedback from surveys, focus groups, and interviews.",
+      "Social media mentions, comments, and sentiment analysis (positive, neutral, negative).",
+      "Customer reviews on e-commerce platforms and beauty review websites.",
+      "Brand performance data relative to competitors (e.g., brand loyalty, advocacy, market share).",
+      "Net Promoter Score (NPS) and customer satisfaction (CSAT) scores.",
+      "Media coverage and influencer partnerships analysis (e.g., tone, reach, engagement).",
+      "Historical data on brand perception shifts over time.",
+      "Consumer demographic data (e.g., age, gender, location) for segmentation analysis.",
+      "Brand awareness metrics (e.g., aided and unaided recall).",
+      "Key brand attributes being evaluated (e.g., luxury, clean beauty, eco-friendly, innovative)."
+    ],
+    "improve": [
+      "Address negative sentiment directly",
+      "Enhance brand strengths",
+      "Engage with consumers on social media",
+      "Leverage influencer partnerships",
+      "",
+      "Adjust messaging for specific demographics",
+      "Monitor brand perception regularly",
+      "Refine product development",
+      "Invest in brand advocacy",
+      ""
+    ]
   },
   {
     "id": "cosmetics-19",
@@ -299,7 +697,31 @@
     "relatedLeverCategories": [
       "INFLUENCER_DIGITAL"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/19 - Influencer and Social Media Impact Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/19 - Influencer and Social Media Impact Analysis.md",
+    "goal": "The goal of the Influencer and Social Media Impact Analysis is to assess the effectiveness of influencer partnerships and social media campaigns in promoting a cosmetic brand.",
+    "dataRequired": [
+      "Social media engagement metrics (e.g., likes, comments, shares, views).",
+      "Influencer performance data (e.g., follower growth, engagement rate, reach).",
+      "Website traffic and conversions from social media platforms.",
+      "Sales data linked to influencer campaigns and social media promotions.",
+      "Brand mentions and sentiment analysis on social media (positive, neutral, negative).",
+      "Hashtag performance data (e.g., campaign-specific hashtags, brand hashtags).",
+      "Competitor analysis of influencer partnerships and social media activity.",
+      "Influencer demographic data (e.g., follower age, location, interests).",
+      "Consumer feedback from social media interactions and influencer content (e.g., product reviews, and comments).",
+      "Influencer contracts and collaboration agreements (for cost and ROI analysis)."
+    ],
+    "improve": [
+      "Refine influencer selection process",
+      "Enhance content quality and relevance",
+      "Use micro-influencers for niche engagement",
+      "Optimize social media call-to-actions",
+      "Increase post-campaign analysis",
+      "Diversify social media platforms",
+      "Improve consumer engagement",
+      "Leverage user-generated content (UGC)",
+      ""
+    ]
   },
   {
     "id": "cosmetics-20",
@@ -320,7 +742,31 @@
       "VOLUME",
       "LOYALTY_SUBSCRIPTION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/20 - Customer Loyalty and Retention Program Effectiveness.md"
+    "sourcePath": "data/analysis-library/cosmetics/20 - Customer Loyalty and Retention Program Effectiveness.md",
+    "goal": "The goal of the Customer Loyalty and Retention Program Effectiveness analysis is to assess how well a brand’s loyalty and retention programs are working to increase repeat purchases, build long-term customer relationships, and reduce churn.",
+    "dataRequired": [
+      "Enrollment rates in the loyalty program.",
+      "Retention rates and churn data (e.g., repeat purchase rates, time between purchases).",
+      "Purchase frequency and average order value (AOV) for loyalty program members vs. non-members.",
+      "Customer lifetime value (CLV) for loyalty program members vs. non-members.",
+      "Program engagement metrics (e.g., rewards earned, points redeemed, active vs. inactive members).",
+      "Customer satisfaction scores and feedback related to the loyalty program.",
+      "Redemption rates for rewards and offers.",
+      "Marketing and promotion costs for running the loyalty program.",
+      "Sales data linked to loyalty program promotions (e.g., points-based sales, exclusive member offers).",
+      "Competitor benchmarks for loyalty and retention program performance."
+    ],
+    "improve": [
+      "Enhance rewards structure",
+      "Personalize loyalty offers",
+      "Simplify program communication",
+      "Introduce exclusive benefits",
+      "Increase program accessibility",
+      "Leverage digital tools",
+      "Regularly assess and optimize",
+      "Promote program benefits",
+      ""
+    ]
   },
   {
     "id": "cosmetics-21",
@@ -340,7 +786,31 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/21 - Trends in Natural, Organic, and Clean Beauty Products Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/21 - Trends in Natural, Organic, and Clean Beauty Products Analysis.md",
+    "goal": "The goal of the Trends in Natural, Organic, and Clean Beauty Products Analysis is to evaluate the growing consumer demand for beauty products that prioritize natural, organic, and clean ingredients.",
+    "dataRequired": [
+      "Sales data for natural, organic, and clean beauty products compared to conventional products.",
+      "Consumer behavior and preference data (e.g., surveys, focus groups, reviews).",
+      "Competitor analysis of natural, organic, and clean beauty product lines.",
+      "Ingredient sourcing and certification data (e.g., USDA Organic, ECOCERT, COSMOS).",
+      "Regulatory guidelines for labeling and claims (e.g., FDA, EU regulations on clean beauty).",
+      "Consumer sentiment analysis from social media and beauty forums.",
+      "Product formulation details, including the use of natural and organic ingredients.",
+      "Packaging sustainability data (e.g., biodegradable, recyclable, refillable packaging).",
+      "Market trends and growth forecasts for natural, organic, and clean beauty segments.",
+      "Environmental and ethical impact data (e.g., cruelty-free, vegan, sustainable sourcing)."
+    ],
+    "improve": [
+      "Expand product offerings in the clean beauty category",
+      "Enhance ingredient transparency",
+      "Adopt sustainable packaging innovations",
+      "Improve third-party certifications",
+      "Focus on clean beauty messaging",
+      "Leverage social media influencers",
+      "",
+      "Monitor and adapt to emerging trends",
+      ""
+    ]
   },
   {
     "id": "cosmetics-22",
@@ -359,7 +829,31 @@
       "COST_PROCUREMENT",
       "CHANNEL_EXPANSION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/22 - Global vs. Local Market Adaptation Strategy.md"
+    "sourcePath": "data/analysis-library/cosmetics/22 - Global vs. Local Market Adaptation Strategy.md",
+    "goal": "The goal of the Global vs.",
+    "dataRequired": [
+      "Sales data from different global and local markets.",
+      "Market research data on consumer preferences in key regions.",
+      "Competitive analysis of global and local competitors.",
+      "Product adaptation data (e.g., localized formulations, packaging, pricing).",
+      "Marketing campaign performance data across different regions (e.g., engagement, reach, ROI).",
+      "Regulatory requirements and compliance data for each market (e.g., ingredient regulations, labeling, advertising standards).",
+      "Brand perception and consumer feedback from global and local audiences.",
+      "Cultural insights and consumer behavior patterns in different markets.",
+      "Supply chain and distribution efficiency data for global vs. local operations.",
+      "Case studies or historical data on previous global/local market campaigns."
+    ],
+    "improve": [
+      "Increase product localization",
+      "Tailor marketing campaigns",
+      "Leverage local sourcing or manufacturing",
+      "Refine regulatory compliance strategies",
+      "Collaborate with local partners",
+      "Monitor global trends and local nuances",
+      "Regularly evaluate global vs. local performance",
+      "Develop region-specific product lines",
+      ""
+    ]
   },
   {
     "id": "cosmetics-23",
@@ -372,7 +866,30 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/23 - Fragrance and Sensory Appeal Testing.md"
+    "sourcePath": "data/analysis-library/cosmetics/23 - Fragrance and Sensory Appeal Testing.md",
+    "goal": "The goal of Fragrance and Sensory Appeal Testing is to evaluate the overall sensory experience of a cosmetic product, with a particular focus on its fragrance and how it enhances or detracts from the consumer’s perception.",
+    "dataRequired": [
+      "Product formulation details, including fragrance ingredients.",
+      "Consumer feedback and sensory testing data (e.g., focus groups, surveys).",
+      "Benchmarking data from competitor products in similar categories.",
+      "Fragrance longevity and intensity data (e.g., how long the fragrance lasts on the skin).",
+      "Sensory appeal metrics (e.g., texture, absorption, after-feel).",
+      "Skin type-specific sensory feedback (e.g., fragrance on oily, dry, sensitive skin).",
+      "Cultural and demographic insights into fragrance preferences in different regions.",
+      "Regulatory compliance data for fragrance ingredients (e.g., IFRA standards).",
+      "Environmental factors affecting fragrance perception (e.g., temperature, humidity).",
+      "Long-term stability data (e.g., how fragrance changes over time in the product’s shelf life)."
+    ],
+    "improve": [
+      "Refine the fragrance profile",
+      "Balance fragrance strength and longevity",
+      "Offer fragrance variations",
+      "Enhance sensory appeal through texture and fragrance synergy",
+      "Tailor products for different markets",
+      "Ensure long-term fragrance stability",
+      "Leverage sensory appeal in marketing",
+      ""
+    ]
   },
   {
     "id": "cosmetics-24",
@@ -391,7 +908,32 @@
       "VOLUME",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/24 - Cross-Cultural Beauty Standards and Preferences Study.md"
+    "sourcePath": "data/analysis-library/cosmetics/24 - Cross-Cultural Beauty Standards and Preferences Study.md",
+    "goal": "The goal of the Cross-Cultural Beauty Standards and Preferences Study is to analyze how beauty ideals, skin care routines, and product preferences vary across different cultural and regional markets.",
+    "dataRequired": [
+      "Market research data on regional beauty standards and cultural preferences (e.g., skin tone preferences, makeup styles, skincare routines).",
+      "Sales data from different regions for specific product categories (e.g., whitening products in Asia, anti-aging products in Western markets).",
+      "Consumer feedback and focus group insights from different cultural backgrounds.",
+      "Competitor analysis in key markets (e.g., local vs. global brands, product lines targeting specific cultural beauty ideals).",
+      "Social media and influencer analysis in different regions (e.g., trending beauty content, local influencers).",
+      "Product adaptation data (e.g., region-specific product formulations, packaging, and branding).",
+      "Cultural attitudes toward beauty (e.g., minimalism in Scandinavian beauty vs. multi-step routines in South Korea).",
+      "Regulatory guidelines and product ingredient preferences specific to different regions.",
+      "Language and visual communication preferences in marketing and packaging.",
+      "Consumer segmentation by age, gender, ethnicity, and geographic region."
+    ],
+    "improve": [
+      "Develop region-specific product lines",
+      "Tailor marketing and communication strategies",
+      "",
+      "Leverage local influencers and social media trends",
+      "Enhance product formulations for specific climates and skin types",
+      "Increase focus on regulatory compliance",
+      "Explore regional packaging preferences",
+      "Monitor and respond to shifting cultural trends",
+      "Expand cross-cultural market research",
+      ""
+    ]
   },
   {
     "id": "cosmetics-25",
@@ -407,7 +949,31 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/25 - Consumer Perception of Ingredient Transparency and Clean.md"
+    "sourcePath": "data/analysis-library/cosmetics/25 - Consumer Perception of Ingredient Transparency and Clean.md",
+    "goal": "The goal of the Consumer Perception of Ingredient Transparency and Clean Labeling analysis is to understand how consumers perceive the transparency of ingredient lists and clean labeling in cosmetic products.",
+    "dataRequired": [
+      "Consumer feedback on ingredient transparency and clean labeling (e.g., surveys, focus groups, reviews).",
+      "Competitor analysis on how other brands handle ingredient transparency and clean labeling.",
+      "Sales data for products marketed as “clean,” “natural,” or “transparent” vs. conventional products.",
+      "Regulatory guidelines and standards for labeling (e.g., FDA, EU cosmetics regulations).",
+      "Ingredient list format and readability data (e.g., scientific names vs. common names).",
+      "Consumer behavior data related to clean beauty and ingredient awareness (e.g., search trends, social media mentions).",
+      "Third-party certifications related to clean beauty (e.g., ECOCERT, COSMOS, EWG Verified).",
+      "Product ingredient sourcing data (e.g., sustainably sourced, ethically produced).",
+      "Cultural and regional differences in clean beauty preferences and ingredient transparency expectations.",
+      "Industry reports on emerging trends in ingredient transparency and clean labeling."
+    ],
+    "improve": [
+      "Simplify ingredient lists",
+      "Obtain third-party certifications",
+      "Enhance consumer education",
+      "Highlight sustainability and sourcing",
+      "Regularly review and update claims",
+      "Tailor messaging by region",
+      "Improve label design",
+      "Monitor and respond to consumer concerns",
+      ""
+    ]
   },
   {
     "id": "cosmetics-26",
@@ -422,7 +988,31 @@
     "relatedLeverCategories": [
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/26 - Packaging Innovation and Consumer Appeal Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/26 - Packaging Innovation and Consumer Appeal Analysis.md",
+    "goal": "The goal of the Packaging Innovation and Consumer Appeal Analysis is to evaluate how a cosmetic product’s packaging influences consumer purchasing decisions, satisfaction, and brand perception.",
+    "dataRequired": [
+      "Consumer feedback on packaging (e.g., surveys, focus groups, reviews).",
+      "Competitor analysis of packaging innovation in the cosmetics industry.",
+      "Sales data linked to packaging changes or innovations.",
+      "Packaging sustainability data (e.g., use of recycled materials, refillable packaging).",
+      "Packaging usability data (e.g., ease of use, durability, portability).",
+      "Packaging aesthetics and branding alignment (e.g., color, design, logo placement).",
+      "Regulatory guidelines related to packaging materials, labeling, and environmental standards.",
+      "Environmental impact data related to the brand’s packaging (e.g., carbon footprint, waste reduction).",
+      "Cultural and regional differences in packaging preferences and functionality.",
+      "Packaging cost and manufacturing feasibility data."
+    ],
+    "improve": [
+      "Invest in sustainable packaging solutions",
+      "Improve packaging functionality",
+      "Enhance packaging aesthetics",
+      "Tailor packaging to regional preferences",
+      "Leverage packaging innovations in marketing",
+      "",
+      "Monitor regulatory compliance",
+      "Regularly test packaging prototypes",
+      ""
+    ]
   },
   {
     "id": "cosmetics-27",
@@ -441,7 +1031,32 @@
       "VOLUME",
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/27 - Seasonal and Limited Edition Product Performance Evaluation.md"
+    "sourcePath": "data/analysis-library/cosmetics/27 - Seasonal and Limited Edition Product Performance Evaluation.md",
+    "goal": "The goal of the Seasonal and Limited Edition Product Performance Evaluation is to assess the success of a brand’s seasonal and limited edition product launches.",
+    "dataRequired": [
+      "Sales data for seasonal and limited edition products (compared to regular products).",
+      "Consumer feedback and reviews specific to seasonal/limited edition offerings.",
+      "Marketing campaign performance data related to product launches (e.g., social media engagement, email open rates, click-through rates).",
+      "Production and inventory data (e.g., sell-through rates, overstock, stockouts).",
+      "Competitor analysis of seasonal and limited edition product strategies.",
+      "Historical sales trends for seasonal products across multiple years or cycles.",
+      "Demographic data of consumers purchasing seasonal/limited edition products.",
+      "Social media mentions, hashtags, and influencer marketing related to product launches.",
+      "Product design, packaging, and theming specific to the season or occasion.",
+      "Consumer behavior data related to scarcity marketing and FOMO (fear of missing out) effects."
+    ],
+    "improve": [
+      "Refine demand forecasting",
+      "Enhance product theming and design",
+      "",
+      "Increase the use of scarcity marketing",
+      "Expand influencer marketing efforts",
+      "Segment product offerings by consumer group",
+      "Extend the product lifecycle",
+      "Optimize marketing channels",
+      "Monitor competitor strategies",
+      ""
+    ]
   },
   {
     "id": "cosmetics-28",
@@ -462,7 +1077,31 @@
       "MIX",
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/28 - Luxury vs. Mass-Market Positioning Assessment.md"
+    "sourcePath": "data/analysis-library/cosmetics/28 - Luxury vs. Mass-Market Positioning Assessment.md",
+    "goal": "The goal of the Luxury vs.",
+    "dataRequired": [
+      "Consumer perception data on luxury vs. mass-market brands (e.g., surveys, focus groups, reviews).",
+      "Sales data comparing luxury-tier and mass-market products.",
+      "Competitor positioning data, including pricing, branding, and product offerings in both segments.",
+      "Marketing campaign performance data across different positioning strategies.",
+      "Product feature comparison (e.g., ingredients, packaging, exclusivity) between luxury and mass-market offerings.",
+      "Pricing strategy data and consumer price sensitivity analysis.",
+      "Distribution channel data (e.g., luxury department stores, online mass retailers).",
+      "Social media and influencer sentiment analysis regarding brand positioning.",
+      "Consumer demographic data (e.g., age, income, location) segmented by luxury and mass-market preferences.",
+      "Historical sales trends and brand positioning shifts over time."
+    ],
+    "improve": [
+      "Refine product offerings",
+      "Reassess pricing strategy",
+      "",
+      "Enhance marketing campaigns",
+      "Optimize distribution channels",
+      "Leverage influencer marketing",
+      "Monitor social media sentiment",
+      "Segment product lines",
+      "C. Sales and Distribution"
+    ]
   },
   {
     "id": "cosmetics-29",
@@ -481,7 +1120,32 @@
       "VOLUME",
       "CHANNEL_EXPANSION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/29 - Distribution Channel Performance and Reach Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/29 - Distribution Channel Performance and Reach Analysis.md",
+    "goal": "The goal of the Distribution Channel Performance and Reach Analysis is to evaluate how effectively the brand’s products are distributed across various channels, such as brick-and-mortar retail stores, e-commerce platforms, and direct-to-consumer (DTC) initiatives.",
+    "dataRequired": [
+      "Sales data segmented by distribution channel (e.g., retail, e-commerce, DTC).",
+      "Geographic reach and coverage data for each channel (e.g., regions or countries where products are available).",
+      "Customer acquisition and retention data by channel.",
+      "Channel-specific marketing and promotional spend (e.g., retailer promotions, online ads).",
+      "Inventory turnover and stock availability data for each channel.",
+      "Channel profitability and cost-to-serve data (e.g., distribution costs, margin comparisons).",
+      "Consumer behavior data by channel (e.g., purchasing patterns, preferences, average order value).",
+      "Competitor analysis on channel strategies (e.g., exclusive retail partnerships, omnichannel approaches).",
+      "Consumer feedback related to purchasing experience across different channels (e.g., delivery speed, availability, convenience).",
+      "Channel-specific return rates and customer service performance data."
+    ],
+    "improve": [
+      "Optimize high-performing channels",
+      "Address underperforming channels",
+      "Expand geographic reach",
+      "",
+      "Improve channel profitability",
+      "Tailor marketing strategies to each channel",
+      "Leverage consumer feedback",
+      "Adopt an omnichannel strategy",
+      "Monitor competitor performance",
+      ""
+    ]
   },
   {
     "id": "cosmetics-30",
@@ -504,7 +1168,31 @@
       "WC_DIO",
       "CHANNEL_EXPANSION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/30 - Retailer and Distributor Relationships Assessment.md"
+    "sourcePath": "data/analysis-library/cosmetics/30 - Retailer and Distributor Relationships Assessment.md",
+    "goal": "The goal of the Retailer and Distributor Relationships Assessment is to evaluate the strength, efficiency, and profitability of the brand’s partnerships with retailers and distributors.",
+    "dataRequired": [
+      "Sales data by retailer and distributor (e.g., revenue, growth trends).",
+      "Contractual terms with retailers and distributors (e.g., margins, exclusivity agreements, promotional obligations).",
+      "Marketing and promotional collaboration efforts with retailers and distributors (e.g., in-store promotions, online campaigns).",
+      "Retailer and distributor feedback on product performance, communication, and support.",
+      "Performance data on stock availability and distribution efficiency (e.g., lead times, stockouts).",
+      "Consumer purchasing behavior through different retail and distributor channels.",
+      "Inventory and replenishment cycle data for each retailer and distributor.",
+      "Competitor analysis regarding retailer and distributor partnerships.",
+      "Relationship management data (e.g., frequency of communication, level of support provided to partners).",
+      "Long-term partnership history and renewal rates for contracts."
+    ],
+    "improve": [
+      "Strengthen top-performing partnerships",
+      "Improve underperforming relationships",
+      "",
+      "Enhance marketing collaboration",
+      "Optimize inventory management and distribution",
+      "Increase communication and support",
+      "Monitor competitor strategies",
+      "Tailor contracts to partner needs",
+      ""
+    ]
   },
   {
     "id": "cosmetics-31",
@@ -523,7 +1211,31 @@
       "VOLUME",
       "CHANNEL_EXPANSION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/31 - Shelf Space and In-Store Visibility Study.md"
+    "sourcePath": "data/analysis-library/cosmetics/31 - Shelf Space and In-Store Visibility Study.md",
+    "goal": "The goal of the Shelf Space and In-Store Visibility Study is to assess how effectively the brand’s products are displayed and positioned within retail stores to maximize visibility, consumer engagement, and sales.",
+    "dataRequired": [
+      "Store layout and planogram data, showing the brand’s product placement and shelf positioning.",
+      "Shelf space allocation data, comparing the brand’s share of shelf space relative to competitors.",
+      "Consumer traffic patterns and hot spot data within stores (e.g., high-traffic areas, checkout zones).",
+      "Sales data segmented by store and product category (linked to shelf space and visibility).",
+      "Retailer agreements and negotiations for shelf space and promotional displays.",
+      "In-store promotional data (e.g., endcaps, signage, special displays).",
+      "Store-level product placement audits (e.g., photos or reports of shelf conditions and compliance with planograms).",
+      "Competitor shelf space and visibility data.",
+      "Consumer behavior data regarding in-store product discovery and impulse buying.",
+      "Retailer feedback on the brand’s in-store performance and opportunities for better visibility."
+    ],
+    "improve": [
+      "Negotiate for prime shelf space",
+      "Expand shelf space allocation",
+      "",
+      "Invest in in-store promotions",
+      "Ensure planogram compliance",
+      "Monitor competitor strategies",
+      "Leverage consumer behavior insights",
+      "Strengthen retailer partnerships",
+      ""
+    ]
   },
   {
     "id": "cosmetics-32",
@@ -544,7 +1256,30 @@
       "VOLUME",
       "INFLUENCER_DIGITAL"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/32 - E-commerce and Digital Marketing Performance.md"
+    "sourcePath": "data/analysis-library/cosmetics/32 - E-commerce and Digital Marketing Performance.md",
+    "goal": "The goal of the E-commerce and Digital Marketing Performance analysis is to assess the effectiveness of the brand’s online sales channels and digital marketing strategies in driving traffic, engagement, conversions, and revenue.",
+    "dataRequired": [
+      "Website traffic and conversion data (e.g., sessions, bounce rate, conversion rate, average order value).",
+      "E-commerce sales data segmented by product category, region, and customer demographic.",
+      "Digital marketing campaign performance metrics (e.g., click-through rate (CTR), cost-per-click (CPC), return on ad spend (ROAS)).",
+      "Social media engagement data (e.g., likes, shares, comments, follower growth).",
+      "Email marketing performance (e.g., open rates, click-through rates, conversions).",
+      "Paid search and display advertising performance data (e.g., impressions, clicks, conversions).",
+      "Customer acquisition cost (CAC) and lifetime value (CLV) metrics.",
+      "E-commerce platform performance (e.g., website speed, mobile optimization, cart abandonment rates).",
+      "Competitor analysis on digital marketing strategies and e-commerce presence.",
+      "Customer feedback on online shopping experience (e.g., website usability, checkout process, delivery options)."
+    ],
+    "improve": [
+      "Optimize the e-commerce user experience",
+      "Refine digital marketing strategies",
+      "Reduce cart abandonment",
+      "Leverage social media for engagement and traffic",
+      "Enhance email marketing efforts",
+      "Improve customer acquisition and retention",
+      "Monitor competitor performance",
+      ""
+    ]
   },
   {
     "id": "cosmetics-33",
@@ -566,7 +1301,31 @@
       "VOLUME",
       "LOYALTY_SUBSCRIPTION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/33 - Beauty Subscription Model Feasibility and Growth Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/33 - Beauty Subscription Model Feasibility and Growth Analysis.md",
+    "goal": "The goal of the Beauty Subscription Model Feasibility and Growth Analysis is to assess the potential for launching or scaling a beauty subscription service.",
+    "dataRequired": [
+      "Consumer interest and demand data for beauty subscription services (e.g., surveys, focus groups).",
+      "Sales data for existing products and categories that could be included in a subscription model.",
+      "Competitor analysis of beauty subscription models (e.g., pricing, product offerings, customer base).",
+      "Operational and logistical feasibility data (e.g., product sourcing, fulfillment, shipping costs).",
+      "Pricing strategy and profit margin analysis for subscription offerings.",
+      "Customer acquisition cost (CAC) and customer lifetime value (CLV) metrics.",
+      "Subscription churn rate benchmarks from similar services.",
+      "Digital marketing and customer retention strategies (e.g., email marketing, social media campaigns).",
+      "Regional or demographic data on potential subscription customers.",
+      "Case studies or historical performance data from similar subscription models in the beauty industry."
+    ],
+    "improve": [
+      "Develop a unique value proposition",
+      "Focus on retention",
+      "",
+      "Test subscription pricing",
+      "Leverage digital marketing",
+      "Optimize fulfillment and shipping",
+      "Monitor competitor performance",
+      "Tailor subscriptions to different segments",
+      ""
+    ]
   },
   {
     "id": "cosmetics-34",
@@ -586,7 +1345,30 @@
       "VOLUME",
       "LOYALTY_SUBSCRIPTION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/34 - Customer Sampling Program Effectiveness.md"
+    "sourcePath": "data/analysis-library/cosmetics/34 - Customer Sampling Program Effectiveness.md",
+    "goal": "The goal of the Customer Sampling Program Effectiveness analysis is to evaluate how successful the brand’s product sampling initiatives are in generating customer interest, driving product trials, and converting prospects into paying customers.",
+    "dataRequired": [
+      "Sampling distribution data (e.g., number of samples distributed, channels used).",
+      "Sales conversion rates from sampling (e.g., how many sample recipients make a purchase).",
+      "Customer feedback and satisfaction data from sample recipients.",
+      "Product return rates or repeat purchase data from customers who initially received a sample.",
+      "Marketing and promotional costs associated with the sampling program.",
+      "Customer demographic and behavioral data (e.g., age, location, purchase history).",
+      "Competitor analysis of sampling initiatives.",
+      "Brand awareness and customer engagement metrics before and after sampling campaigns.",
+      "Digital and social media engagement data (e.g., reviews, social media mentions, shares).",
+      "Post-sampling follow-up data (e.g., email open rates, promotional code usage, click-through rates)."
+    ],
+    "improve": [
+      "Target the right audience",
+      "Optimize follow-up marketing",
+      "Leverage influencers and social media",
+      "Test different distribution channels",
+      "Improve ROI by focusing on high-margin products",
+      "Track digital engagement",
+      "Monitor competitor sampling efforts",
+      "D. Operations and Supply Chain"
+    ]
   },
   {
     "id": "cosmetics-35",
@@ -608,7 +1390,32 @@
       "WC_DIO",
       "FORMULATION_COST"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/35 - Ingredient Sourcing and Supply Chain Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/35 - Ingredient Sourcing and Supply Chain Analysis.md",
+    "goal": "The goal of the Ingredient Sourcing and Supply Chain Analysis is to assess the efficiency, sustainability, and cost-effectiveness of the brand’s ingredient sourcing and supply chain processes.",
+    "dataRequired": [
+      "Supplier data, including locations, pricing, and contract terms for key ingredients.",
+      "Ingredient quality and consistency data (e.g., product testing results, rejection rates).",
+      "Lead times for ingredient sourcing and overall supply chain timelines.",
+      "Cost of sourcing each ingredient, including transportation, tariffs, and customs fees.",
+      "Sustainability certifications or eco-friendly sourcing practices of suppliers (e.g., Fair Trade, organic, cruelty-free).",
+      "Risk assessment data (e.g., geopolitical risks, climate risks, regulatory changes affecting suppliers).",
+      "Inventory turnover and stock levels of key ingredients.",
+      "Regulatory compliance data for ingredient sourcing (e.g., REACH, FDA, EU cosmetics regulations).",
+      "Competitor analysis of ingredient sourcing practices and supplier relationships.",
+      "Environmental and social impact data related to the ingredient supply chain (e.g., carbon footprint, ethical labor practices)."
+    ],
+    "improve": [
+      "Strengthen supplier relationships",
+      "",
+      "Optimize ingredient sourcing costs",
+      "Improve supply chain resilience",
+      "Enhance sustainability efforts",
+      "Monitor inventory management",
+      "Ensure regulatory compliance",
+      "Leverage competitor insights",
+      "Reduce environmental impact",
+      ""
+    ]
   },
   {
     "id": "cosmetics-36",
@@ -629,7 +1436,30 @@
       "COST_PROCUREMENT",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/36 - Product Shelf Life and Inventory Turnover Analysis.md"
+    "sourcePath": "data/analysis-library/cosmetics/36 - Product Shelf Life and Inventory Turnover Analysis.md",
+    "goal": "The goal of the Product Shelf Life and Inventory Turnover Analysis is to evaluate the efficiency of the brand’s inventory management in relation to product shelf life.",
+    "dataRequired": [
+      "Shelf life data for each product (e.g., expiration dates, best-before dates).",
+      "Sales velocity data (e.g., how quickly each product is sold, by category and region).",
+      "Inventory turnover rates by product category and SKU.",
+      "Inventory holding costs (e.g., storage costs, handling, insurance).",
+      "Inventory aging reports (e.g., how long products have been stored before being sold or discarded).",
+      "Product return or disposal rates due to expired products.",
+      "Supplier lead times for product restocking.",
+      "Inventory forecast accuracy (e.g., differences between forecasted and actual demand).",
+      "Competitor benchmarks for inventory turnover and shelf life management.",
+      "Customer demand patterns and seasonality data."
+    ],
+    "improve": [
+      "Optimize inventory levels",
+      "Improve demand forecasting",
+      "Enhance supplier relationships",
+      "Run promotions for slow-moving inventory",
+      "Reduce inventory holding costs",
+      "Monitor and reduce product disposal rates",
+      "Benchmark and implement best practices",
+      ""
+    ]
   },
   {
     "id": "cosmetics-37",
@@ -643,7 +1473,30 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/37 - Innovation in Applicators and Delivery Systems Study.md"
+    "sourcePath": "data/analysis-library/cosmetics/37 - Innovation in Applicators and Delivery Systems Study.md",
+    "goal": "The goal of the Innovation in Applicators and Delivery Systems Study is to evaluate the latest trends, technologies, and consumer preferences related to cosmetic product applicators and delivery systems.",
+    "dataRequired": [
+      "Product performance data related to different applicator types and delivery systems (e.g., brushes, sponges, airless pumps, droppers).",
+      "Consumer feedback on the usability and satisfaction of current applicators and delivery systems.",
+      "Competitor analysis of applicators and delivery systems used in similar products.",
+      "Manufacturing and cost data for various applicators and delivery systems.",
+      "Sustainability and eco-friendliness data related to applicators (e.g., recyclable materials, reusable components).",
+      "Patent and intellectual property data on innovative delivery systems in the beauty industry.",
+      "R&D insights on emerging technologies (e.g., airless technology, smart devices, precision applicators).",
+      "Market trends and consumer demand for innovative, convenient, or eco-friendly applicators.",
+      "Regulatory compliance data for applicators and packaging materials (e.g., FDA, EU regulations).",
+      "Historical product performance data related to applicator innovations (e.g., sales growth or consumer engagement after introducing new applicators)."
+    ],
+    "improve": [
+      "Invest in innovative applicator technologies",
+      "Focus on sustainability",
+      "Optimize manufacturing costs",
+      "Leverage consumer feedback",
+      "Enhance marketing strategies for applicator innovations",
+      "Monitor regulatory compliance",
+      "Explore patent opportunities",
+      ""
+    ]
   },
   {
     "id": "cosmetics-38",
@@ -664,7 +1517,31 @@
       "COST_PROCUREMENT",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/38 - Sustainability and Environmental Impact Evaluation.md"
+    "sourcePath": "data/analysis-library/cosmetics/38 - Sustainability and Environmental Impact Evaluation.md",
+    "goal": "The goal of the Sustainability and Environmental Impact Evaluation is to assess the environmental footprint of the brand’s operations, products, packaging, and supply chain.",
+    "dataRequired": [
+      "Carbon emissions data for production, transportation, and product lifecycle (e.g., scope 1, 2, and 3 emissions).",
+      "Energy consumption data for manufacturing facilities, offices, and warehouses.",
+      "Water usage and waste management data in production and packaging processes.",
+      "Sourcing data related to raw materials (e.g., renewable vs. nonrenewable resources, sustainable certifications).",
+      "Packaging materials data (e.g., plastic, glass, recyclable, biodegradable, compostable).",
+      "Recycling and waste disposal data for both production facilities and end consumers.",
+      "Supplier sustainability performance and certifications (e.g., Fair Trade, organic, cruelty-free).",
+      "Product life cycle analysis (LCA) data, tracking environmental impact from raw materials to end-of-life disposal.",
+      "Competitor benchmarking data on sustainability practices.",
+      "Compliance data with environmental regulations (e.g., REACH, EU Eco-Label, EPA standards)."
+    ],
+    "improve": [
+      "Reduce carbon emissions",
+      "Switch to renewable energy",
+      "Implement water conservation and waste reduction strategies",
+      "Sustainable sourcing and ethical practices",
+      "Optimize packaging sustainability",
+      "Encourage recycling and consumer responsibility",
+      "Partner with sustainable suppliers",
+      "Stay compliant with environmental regulations",
+      ""
+    ]
   },
   {
     "id": "cosmetics-39",
@@ -682,7 +1559,30 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/39 - Product Refill and Reusability Program Feasibility.md"
+    "sourcePath": "data/analysis-library/cosmetics/39 - Product Refill and Reusability Program Feasibility.md",
+    "goal": "The goal of the Product Refill and Reusability Program Feasibility analysis is to assess whether implementing a refill and reusability program is viable for the brand.",
+    "dataRequired": [
+      "Consumer demand and interest data for refillable and reusable products (e.g., surveys, focus groups).",
+      "Cost data for designing, manufacturing, and distributing refillable containers and refills.",
+      "Operational and supply chain adjustments needed to support a refill and reusability program.",
+      "Environmental impact data comparing single-use packaging with refillable/reusable options (e.g., carbon emissions, waste reduction).",
+      "Competitor analysis of existing refill and reusability programs in the beauty industry.",
+      "Packaging materials data (e.g., materials suitable for reuse, durability, recyclability).",
+      "Regulatory compliance data related to packaging reuse and refills (e.g., FDA, EU packaging regulations).",
+      "Consumer behavior data on refill adoption (e.g., likelihood to purchase, barriers to refill adoption).",
+      "Sales performance data of refillable products (if applicable) or benchmark data from similar industries.",
+      "Marketing strategies and campaigns promoting sustainability and refill programs."
+    ],
+    "improve": [
+      "Launch a pilot refill program",
+      "Optimize packaging for reuse",
+      "Incentivize participation",
+      "Promote environmental benefits",
+      "Collaborate with eco-friendly partners",
+      "Streamline supply chain processes",
+      "Monitor consumer behavior",
+      "E. Compliance and Regulatory"
+    ]
   },
   {
     "id": "cosmetics-40",
@@ -700,7 +1600,30 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/40 - Regulatory Compliance and Safety Standards Assessment.md"
+    "sourcePath": "data/analysis-library/cosmetics/40 - Regulatory Compliance and Safety Standards Assessment.md",
+    "goal": "The goal of the Regulatory Compliance and Safety Standards Assessment is to ensure that all of the brand’s products, ingredients, packaging, and processes comply with local, national, and international regulations.",
+    "dataRequired": [
+      "Regulatory requirements for cosmetics and beauty products in different markets (e.g., FDA in the U.S., EU Cosmetics Regulation, Health Canada).",
+      "Safety testing and clinical trial data for each product and ingredient.",
+      "Product labeling and packaging regulations (e.g., ingredient transparency, allergen labeling, claims substantiation).",
+      "Environmental regulations for packaging materials (e.g., recyclability, plastic usage, hazardous materials restrictions).",
+      "Good Manufacturing Practices (GMP) and quality control data.",
+      "Documentation of certifications (e.g., cruelty-free, organic, vegan).",
+      "Supplier compliance data (e.g., raw materials sourcing, sustainability certifications, environmental practices).",
+      "Data on product recalls, adverse events, or consumer complaints.",
+      "Competitor benchmarking for regulatory compliance and safety certifications.",
+      "Compliance with emerging regulations (e.g., microplastics, endocrine disruptors, allergens)."
+    ],
+    "improve": [
+      "Revise product labeling and claims",
+      "Enhance safety testing and clinical trials",
+      "Adopt sustainable packaging solutions",
+      "Strengthen supplier partnerships",
+      "Improve manufacturing processes",
+      "Monitor emerging regulations",
+      "Pursue additional certifications",
+      ""
+    ]
   },
   {
     "id": "cosmetics-41",
@@ -714,7 +1637,29 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/41 - Allergen, Sensitivity, and Hypoallergenic Claims Validation.md"
+    "sourcePath": "data/analysis-library/cosmetics/41 - Allergen, Sensitivity, and Hypoallergenic Claims Validation.md",
+    "goal": "The goal of the Allergen, Sensitivity, and Hypoallergenic Claims Validation analysis is to ensure that the brand’s products are safe for consumers with allergies or sensitive skin and that any “hypoallergenic” claims are substantiated.",
+    "dataRequired": [
+      "Ingredient lists for all products, with potential allergens highlighted (e.g., fragrance, preservatives, essential oils).",
+      "Allergen testing data for each product (e.g., patch tests, clinical trials, dermatological assessments).",
+      "Sensitivity testing data (e.g., skin irritation, toxicology reports).",
+      "Regulatory requirements for allergen labeling and “hypoallergenic” claims in different markets (e.g., FDA, EU Cosmetics Regulation).",
+      "Consumer feedback and complaint data related to allergies or sensitivity reactions.",
+      "Competitor analysis of hypoallergenic claims and allergen-free product lines.",
+      "Certification data (e.g., dermatologist-tested, hypoallergenic certification).",
+      "Supplier documentation on the allergenic potential of raw materials and ingredients.",
+      "Data on common allergens and sensitizing agents in cosmetics (e.g., known allergens from regulatory agencies like the FDA or SCCS).",
+      "Emerging trends and research on allergenic ingredients in the beauty industry."
+    ],
+    "improve": [
+      "Reformulate products with high-risk allergens",
+      "Enhance allergen transparency in labeling",
+      "Substantiate hypoallergenic claims",
+      "Monitor and address consumer complaints",
+      "Partner with dermatologists or allergists",
+      "Stay informed about allergen research",
+      ""
+    ]
   },
   {
     "id": "cosmetics-42",
@@ -732,7 +1677,30 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/cosmetics/42 - Vegan and Cruelty-Free Certification Process Evaluation.md"
+    "sourcePath": "data/analysis-library/cosmetics/42 - Vegan and Cruelty-Free Certification Process Evaluation.md",
+    "goal": "The goal of the Vegan and Cruelty-Free Certification Process Evaluation is to assess the feasibility and requirements for obtaining vegan and cruelty-free certifications for the brand’s products.",
+    "dataRequired": [
+      "Ingredient sourcing data, including documentation from suppliers on whether ingredients are animal-derived or contain animal by-products.",
+      "Supplier certification data confirming that no animal testing is conducted at any stage of production.",
+      "Regulatory definitions of “vegan” and “cruelty-free” across different markets (e.g., EU, US, Australia).",
+      "Certification requirements for vegan and cruelty-free claims from recognized organizations (e.g., Leaping Bunny, PETA, The Vegan Society).",
+      "Manufacturing process data ensuring no cross-contamination with non-vegan ingredients or animal testing practices.",
+      "Consumer demand data for vegan and cruelty-free products in the beauty industry.",
+      "Competitor analysis on vegan and cruelty-free certifications and product positioning.",
+      "Packaging and labeling guidelines for certified products.",
+      "Historical sales data for existing vegan or cruelty-free products (if applicable).",
+      "Certification costs, including application fees, audits, and ongoing compliance costs."
+    ],
+    "improve": [
+      "Reformulate products to meet vegan standards",
+      "Ensure cruelty-free compliance across the supply chain",
+      "",
+      "Obtain vegan and cruelty-free certifications",
+      "Promote certifications in marketing",
+      "Monitor emerging trends in ethical beauty",
+      "Implement transparent labeling practices",
+      ""
+    ]
   },
   {
     "id": "cosmetics-43",
@@ -749,7 +1717,30 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/43 - Cosmetics Formulation Compliance with Emerging Regulations.md"
+    "sourcePath": "data/analysis-library/cosmetics/43 - Cosmetics Formulation Compliance with Emerging Regulations.md",
+    "goal": "The goal of the Cosmetics Formulation Compliance with Emerging Regulations analysis is to ensure that the brand’s product formulations align with current and upcoming regulatory requirements.",
+    "dataRequired": [
+      "Current and emerging regulatory data for cosmetics in key markets (e.g., FDA in the U.S., EU Cosmetics Regulation, Health Canada).",
+      "Ingredient lists for all products, with a focus on ingredients subject to current or upcoming restrictions (e.g., microplastics, parabens, phthalates).",
+      "Supplier data confirming compliance with regulatory standards for raw materials.",
+      "Product safety testing and clinical trial data.",
+      "Environmental regulations related to cosmetic packaging and ingredients (e.g., biodegradable packaging, banned substances like microplastics).",
+      "Consumer complaint and product recall data.",
+      "Competitor benchmarking on regulatory compliance and proactive adjustments for emerging laws.",
+      "Regulatory compliance documentation for certifications (e.g., REACH, FDA, EU Cosmetics Regulation).",
+      "Industry trends and regulatory alerts on cosmetics safety, ingredient bans, and environmental impact.",
+      "Legal and compliance costs associated with reformulating products and updating labeling."
+    ],
+    "improve": [
+      "",
+      "Proactively reformulate products",
+      "Enhance supplier relationships",
+      "Adopt eco-friendly packaging",
+      "Stay informed on regulatory changes",
+      "Ensure accurate labeling",
+      "Benchmark against industry leaders",
+      "F. Finance and Intellectual Property"
+    ]
   },
   {
     "id": "cosmetics-44",
@@ -770,7 +1761,30 @@
       "PRICING",
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/44 - Pricing and Promotional Strategy Benchmarking.md"
+    "sourcePath": "data/analysis-library/cosmetics/44 - Pricing and Promotional Strategy Benchmarking.md",
+    "goal": "The goal of the Pricing and Promotional Strategy Benchmarking analysis is to assess the brand’s pricing and promotional tactics against those of key competitors.",
+    "dataRequired": [
+      "Current product pricing data across all product lines and regions.",
+      "Competitor pricing data for similar products in the same categories (e.g., premium, mass-market).",
+      "Promotional strategy data (e.g., discounts, sales, limited-time offers, loyalty programs).",
+      "Sales data linked to promotional periods, including the impact of promotions on revenue, volume, and margins.",
+      "Customer demographic data, including price sensitivity and purchasing behavior.",
+      "Competitor promotional strategy analysis, including frequency, types, and effectiveness of promotions.",
+      "Marketing and advertising spend data for promotional campaigns.",
+      "Industry benchmarks for pricing and promotional strategies in the beauty and cosmetics sector.",
+      "Historical pricing and sales data, including any price changes and their impact on sales volume and profitability.",
+      "Consumer feedback on pricing and promotions (e.g., reviews, surveys, focus groups)."
+    ],
+    "improve": [
+      "Adjust pricing to reflect market positioning",
+      "",
+      "Optimize promotional strategies",
+      "Target promotions to specific customer segments",
+      "Monitor competitor promotions closely",
+      "Improve promotional campaign marketing",
+      "Track and adjust pricing based on consumer feedback",
+      ""
+    ]
   },
   {
     "id": "cosmetics-45",
@@ -791,6 +1805,29 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/cosmetics/45 - Patent Portfolio and Intellectual Property Valuation.md"
+    "sourcePath": "data/analysis-library/cosmetics/45 - Patent Portfolio and Intellectual Property Valuation.md",
+    "goal": "The goal of the Patent Portfolio and Intellectual Property Valuation analysis is to assess the value of the brand’s patents and intellectual property (IP) assets.",
+    "dataRequired": [
+      "List of existing patents held by the brand (e.g., product formulations, packaging innovations, delivery systems).",
+      "Patent application data, including pending patents and international filings.",
+      "Competitor patent analysis (e.g., key patents held by competitors, patent disputes, overlaps).",
+      "Licensing agreements and royalty data for any patents licensed to third parties.",
+      "Patent expiration dates and renewal timelines.",
+      "Research and development (R&D) investment data linked to patented innovations.",
+      "Sales performance data for patented products (e.g., the contribution of patented products to revenue and market share).",
+      "Industry benchmarks for IP valuation in the beauty and cosmetics sector.",
+      "Legal documentation on IP disputes or litigation (if applicable).",
+      "Market trends and innovation pipelines related to cosmetics patents."
+    ],
+    "improve": [
+      "Strengthen patent protection for key innovations",
+      "Expand patent licensing opportunities",
+      "",
+      "Monitor competitor IP activity",
+      "Proactively manage patent expirations",
+      "Increase R&D investment in patentable innovations",
+      "Mitigate IP risks",
+      ""
+    ]
   }
 ]

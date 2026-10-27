@@ -16,7 +16,22 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/01 - Net Interest Margin and Spread Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/01 - Net Interest Margin and Spread Analysis.md",
+    "goal": "Assess the profitability of the bank’s core lending and deposit-taking operations by examining how effectively it manages the difference between interest income and interest expense, relative to its interest-earning assets.",
+    "dataRequired": [
+      "Interest income (for a specific period)",
+      "Interest expense (for the same period)",
+      "Average interest-earning assets (e.g., loans, investments)",
+      "Average interest-bearing liabilities (e.g., deposits, borrowed funds)",
+      "Breakdown of yields on different asset classes and cost of different liability classes (optional but helpful)"
+    ],
+    "improve": [
+      "Rebalance the deposit base to reduce reliance on high-cost liabilities.",
+      "Optimize asset pricing strategies to ensure loan yields reflect current market conditions and risk levels.",
+      "Explore interest rate hedging strategies to manage rate volatility.",
+      "Diversify asset portfolios to achieve a stable yield across different economic cycles.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-02",
@@ -35,7 +50,22 @@
       "VOLUME",
       "FEE_BUSINESS_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/02 - Non-Interest Income Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/02 - Non-Interest Income Analysis.md",
+    "goal": "Evaluate the significance of fees, commissions, and other non-interest revenue streams in a commercial bank’s overall income mix and profitability.",
+    "dataRequired": [
+      "Total non-interest income (e.g., fees, commissions, service charges)",
+      "Breakdown of major non-interest income categories (e.g., transaction fees, FX fees, wealth management fees)",
+      "Total operating income (interest income + non-interest income)",
+      "Historical data for trend analysis (e.g., quarterly or annually)",
+      "Peer or industry benchmarks for comparison"
+    ],
+    "improve": [
+      "Expand fee-based product offerings (e.g., treasury management, FX services, wealth management).",
+      "Enhance cross-selling initiatives to existing clients to increase adoption of additional services.",
+      "Improve pricing strategies for key services based on value delivered and market benchmarks.",
+      "Explore partnerships or acquisitions in high-margin fee areas (e.g., payments, merchant acquiring) to diversify revenue sources.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-03",
@@ -55,7 +85,23 @@
       "COST_OPS",
       "COST_TRANSFORMATION"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/03 - Efficiency Ratio and Cost Transformation.md"
+    "sourcePath": "data/analysis-library/commercial-bank/03 - Efficiency Ratio and Cost Transformation.md",
+    "goal": "Evaluate the bank’s operating efficiency by analyzing the relationship between expenses and revenue, identifying cost drivers, and developing strategies to optimize costs without compromising service quality.",
+    "dataRequired": [
+      "Total operating expenses (OPEX)",
+      "Total operating income (interest income + non-interest income, or total net revenue)",
+      "Efficiency Ratio for prior periods",
+      "Peer bank or industry benchmark data",
+      "Detailed breakdown of cost structure (e.g., salaries, overhead, technology expenses)"
+    ],
+    "improve": [
+      "Streamline operational processes through automation and digital tools to minimize manual workloads.",
+      "Optimize workforce allocation and consider rationalizing the branch network where feasible.",
+      "Negotiate favorable vendor contracts and explore outsourcing or shared services for non-core activities.",
+      "Consolidate overlapping systems and reduce redundancies across business units.",
+      "Establish clear cost-management frameworks, accountability measures, and regular performance reviews.",
+      "B. Lending and Credit Management"
+    ]
   },
   {
     "id": "commercial-bank-04",
@@ -78,7 +124,24 @@
       "MIX",
       "CREDIT_RISK_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/04 - Loan Portfolio Quality and Concentration Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/04 - Loan Portfolio Quality and Concentration Analysis.md",
+    "goal": "Assess the overall health of the loan portfolio by evaluating credit quality indicators and identifying potential concentration risks that could impact the bank’s financial stability and performance.",
+    "dataRequired": [
+      "Total loan balances by segment (e.g., SME, corporate, commercial real estate)",
+      "Loan classifications (e.g., performing, past due, non-performing)",
+      "Delinquency rates and Non-Performing Loans (NPLs)",
+      "Loan loss reserves/provisions data",
+      "Industry/sector exposures and associated limits",
+      "Collateral details (optional but helpful for deeper risk assessment)"
+    ],
+    "improve": [
+      "Strengthen credit underwriting policies for high-risk or overexposed segments.",
+      "Diversify the loan portfolio to reduce dependence on any single industry or geography.",
+      "Implement rigorous portfolio monitoring and early warning systems to identify emerging credit risks.",
+      "Revisit loan pricing strategies to ensure adequate returns for higher-risk segments.",
+      "Review and adjust loan loss provisioning practices to remain aligned with evolving credit risk profiles.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-05",
@@ -97,7 +160,24 @@
       "COST_OPS",
       "CREDIT_RISK_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/05 - Loan Origination and Underwriting Standards Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/05 - Loan Origination and Underwriting Standards Review.md",
+    "goal": "Evaluate the effectiveness of the bank’s loan origination processes and underwriting policies to ensure prudent credit risk-taking, adherence to regulatory requirements, and alignment with the bank’s overall risk appetite.",
+    "dataRequired": [
+      "Current underwriting policies and guidelines",
+      "Detailed workflow for loan origination, including documentation requirements and approval processes",
+      "Loan application records (including time to decision and approval rates)",
+      "Credit scoring models or internal rating systems (if applicable)",
+      "Portfolio performance data segmented by underwriting vintage (e.g., default rates for loans originated in specific months or quarters)",
+      "Peer benchmarks or industry best practices for underwriting standards"
+    ],
+    "improve": [
+      "Update and refine underwriting policies to align with current market conditions and risk appetite.",
+      "Invest in data analytics and credit scoring tools to improve risk assessment accuracy.",
+      "Streamline the loan origination process through process automation and clear decision-making authorities.",
+      "Implement ongoing training programs to ensure underwriters are well-versed in updated policies and risk assessment techniques.",
+      "Conduct regular back-testing of credit scoring models and adjust as necessary to enhance predictive power.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-06",
@@ -110,7 +190,24 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/06 - Collateral Management and LTV Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/06 - Collateral Management and LTV Review.md",
+    "goal": "Assess how effectively the bank manages collateral securing its loans to maintain acceptable risk levels through the monitoring of LTV ratios.",
+    "dataRequired": [
+      "Collateral registers, including type, value, and location of collateral",
+      "Independent valuation reports or appraisals",
+      "Outstanding loan balances and corresponding LTV values",
+      "Collateral revaluation frequency data",
+      "Historical data on collateral calls, margin calls, or shortfalls",
+      "Collateral coverage ratios (if available)"
+    ],
+    "improve": [
+      "Implement regular collateral reappraisal schedules to maintain accurate and current valuations.",
+      "Establish clear LTV thresholds and automatically flag loans exceeding those limits for proactive follow-up.",
+      "Enhance collateral tracking systems to ensure documentation is complete, enforceable, and easily accessible.",
+      "Train lending and risk staff on collateral valuation principles and the importance of timely revaluations.",
+      "Develop contingency plans for rapidly calling additional collateral or restructuring loans when LTV ratios exceed acceptable risk limits.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-07",
@@ -125,7 +222,23 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/commercial-bank/07 - Industry Exposure and Concentration Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/07 - Industry Exposure and Concentration Analysis.md",
+    "goal": "Determine the distribution of the loan portfolio across various industries to detect potential concentration risks and vulnerabilities.",
+    "dataRequired": [
+      "Loan portfolio data segmented by industry or sector",
+      "Exposure limits or internal risk appetite parameters for each industry",
+      "Historical loss data by industry (if available)",
+      "Economic and market outlook reports for key sectors",
+      "Peer or industry benchmarks for exposure levels"
+    ],
+    "improve": [
+      "Adjust underwriting criteria or set stricter limits for industries showing heightened risk.",
+      "Diversify the loan book by targeting industries with stable or counter-cyclical growth patterns.",
+      "Implement stress testing scenarios focusing on high-exposure sectors.",
+      "Regularly monitor macroeconomic indicators and industry trends to stay proactive in managing concentration risks.",
+      "Develop specialized expertise or industry-focused teams for better risk assessment and client selection.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-08",
@@ -141,7 +254,23 @@
     "relatedLeverCategories": [
       "CREDIT_RISK_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/08 - Non-Performing Loan Management and Recovery.md"
+    "sourcePath": "data/analysis-library/commercial-bank/08 - Non-Performing Loan Management and Recovery.md",
+    "goal": "Evaluate strategies for addressing and reducing non-performing loans to minimize credit losses and protect the bank’s balance sheet.",
+    "dataRequired": [
+      "Current non-performing loans (NPL) list with borrower details and outstanding amounts",
+      "Historical NPL trends and recovery rates",
+      "Loan documentation, collateral information, and restructuring agreements (if any)",
+      "Write-off data and provisions already taken",
+      "Regulatory guidelines on NPL recognition and management"
+    ],
+    "improve": [
+      "Establish specialized workout teams to handle NPL cases and expedite recoveries.",
+      "Strengthen early warning systems to detect delinquency risks before loans become non-performing.",
+      "Increase collaboration with legal, appraisal, and debt collection experts for effective collateral realization.",
+      "Implement clear policies for loan restructuring, settlement, or write-offs when recovery potential is limited.",
+      "Enhance ongoing monitoring and reporting on NPL trends to guide proactive risk management decisions.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-09",
@@ -159,7 +288,24 @@
       "COST_OPS",
       "ORIGINATION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/09 - Syndicated Loan and Distribution Capabilities Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/09 - Syndicated Loan and Distribution Capabilities Analysis.md",
+    "goal": "Assess the bank’s ability to underwrite and distribute large or complex loans to a group of lenders while managing credit exposure and maximizing fee income.",
+    "dataRequired": [
+      "Record of syndicated loans arranged or participated in (deal size, structure, industries)",
+      "Underwriting commitments, hold levels, and sell-down outcomes",
+      "Syndication fees, distribution fees, and related fee income data",
+      "Investor or lender base details (e.g., institutional investors, other banks)",
+      "Time-to-close or deal turnaround metrics",
+      "Market benchmarks and league table standings (if applicable)"
+    ],
+    "improve": [
+      "Expand the syndication network by cultivating relationships with diverse investor groups and financial institutions.",
+      "Enhance credit structuring expertise to create loan packages that are attractive to potential participants.",
+      "Leverage market intelligence and deal analytics to set pricing and structure terms competitively.",
+      "Develop dedicated syndication and distribution teams, emphasizing speed and efficiency in the transaction process.",
+      "Continuously benchmark performance and refine strategies based on market trends, investor appetite, and peer practices.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-10",
@@ -179,7 +325,24 @@
       "PRICING",
       "LOAN_PRICING"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/10 - Loan Pricing and Risk-Based Pricing Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/10 - Loan Pricing and Risk-Based Pricing Analysis.md",
+    "goal": "Assess how effectively the bank aligns loan pricing with underlying credit risk and market conditions to optimize profitability while maintaining competitiveness.",
+    "dataRequired": [
+      "Target or actual returns for various risk segments",
+      "Cost of funds and overhead costs",
+      "Historical default data or expected loss rates",
+      "Market or competitor pricing benchmarks",
+      "Risk-based credit scoring models or internal ratings",
+      "Regulatory guidelines (if relevant)"
+    ],
+    "improve": [
+      "Enhance credit risk modeling by incorporating updated default and recovery data.",
+      "Regularly review and adjust cost of funds assumptions to reflect real-time market changes.",
+      "Provide training and clear guidelines to relationship managers on how to apply risk-based pricing.",
+      "Benchmark competitor pricing strategies to ensure the bank remains competitive and profitable.",
+      "Implement dynamic pricing tools that integrate real-time market and risk information to promptly adjust loan rates.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-11",
@@ -195,7 +358,23 @@
       "COST_OPS",
       "ORIGINATION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/11 - Cash Flow and Collateral-Based Lending Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/11 - Cash Flow and Collateral-Based Lending Review.md",
+    "goal": "Evaluate the extent to which a borrower’s cash flow and collateral assets support the repayment of loans under various conditions.",
+    "dataRequired": [
+      "Borrower financial statements (income statements, balance sheets, cash flow statements)",
+      "Collateral registers detailing types, valuations, and lien positions",
+      "Loan agreements outlining repayment terms and covenants",
+      "Historical cash flow trends and forecasts (if available)",
+      "Industry benchmarks for cash flow coverage ratios"
+    ],
+    "improve": [
+      "Work with borrowers to strengthen cash flow forecasting and management practices.",
+      "Reassess collateral valuation frequency and ensure consistent application of updated market data.",
+      "Refine lending terms, such as adjusting covenant structures or repayment schedules, to align with the borrower’s actual cash flow patterns.",
+      "Implement enhanced due diligence or additional covenants for borrowers operating in highly cyclical or volatile industries.",
+      "Provide internal training to improve staff competencies in analyzing borrower financials and collateral data.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-12",
@@ -215,7 +394,24 @@
       "COST_OPS",
       "ORIGINATION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/12 - Supply Chain Financing and Receivables Purchase.md"
+    "sourcePath": "data/analysis-library/commercial-bank/12 - Supply Chain Financing and Receivables Purchase.md",
+    "goal": "Examine how effectively the bank provides supply chain financing solutions and manages purchased receivables to support clients’ working capital needs while mitigating credit risk.",
+    "dataRequired": [
+      "Volume and value of invoices or receivables financed",
+      "Client segments and industries utilizing supply chain financing",
+      "Default rates or delinquency data on financed receivables",
+      "Credit terms and discount rates offered to suppliers or buyers",
+      "Operational processes for onboarding clients and monitoring receivables",
+      "Peer or industry benchmarks on supply chain finance program performance"
+    ],
+    "improve": [
+      "Enhance due diligence on buyers and suppliers through robust credit assessments and real-time monitoring of payment behaviors.",
+      "Invest in digital platforms or automation to streamline invoice verification, payment processing, and reporting.",
+      "Explore partnerships with fintechs or industry platforms to expand market reach and deliver faster, more user-friendly services.",
+      "Conduct periodic reviews of pricing and terms to ensure they reflect changes in market conditions and credit risk.",
+      "Gather and act on client feedback to continuously refine the supply chain financing offering and deepen customer relationships.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-13",
@@ -229,7 +425,23 @@
       "PRICING",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/13 - Green Banking and ESG Lending Assessment.md"
+    "sourcePath": "data/analysis-library/commercial-bank/13 - Green Banking and ESG Lending Assessment.md",
+    "goal": "Determine how effectively the bank integrates environmental, social, and governance (ESG) considerations into its lending portfolio and practices.",
+    "dataRequired": [
+      "Existing ESG policies, guidelines, and frameworks",
+      "Loan portfolio data segmented by ESG attributes or “green” classification",
+      "ESG scores or ratings from external agencies (if available)",
+      "Regulatory and industry benchmarks for ESG lending",
+      "Key metrics, such as the volume of green loans or sustainability-linked loans"
+    ],
+    "improve": [
+      "Develop or refine ESG lending policies to ensure clarity in criteria, classification, and due diligence processes.",
+      "Establish dedicated teams or committees to oversee ESG lending initiatives and maintain consistent application of standards.",
+      "Offer incentives for projects or businesses that promote sustainability, such as preferential pricing for renewable energy ventures.",
+      "Engage with external ESG rating agencies to validate the bank’s approach and gain insights for continuous improvement.",
+      "Enhance reporting and disclosure practices to increase transparency with stakeholders, including investors, customers, and regulators.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-14",
@@ -250,7 +462,23 @@
       "PRICING",
       "ORIGINATION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/14 - Specialized Lending Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/14 - Specialized Lending Analysis.md",
+    "goal": "Assess the bank’s capacity to structure and underwrite customized financing solutions tailored to niche markets and complex credit requirements.",
+    "dataRequired": [
+      "Portfolio data segmented by specialized lending category (e.g., project finance, leveraged finance, asset-backed lending)",
+      "Historical performance metrics such as default rates, recovery rates, and returns for specialized loans",
+      "Underwriting policies and risk tolerance frameworks specific to each specialty segment",
+      "Market and industry data relevant to specialized niches (e.g., sector growth trends, regulatory considerations)",
+      "Peer benchmarks or industry best practices in specialized lending"
+    ],
+    "improve": [
+      "Invest in specialized industry expertise or hire subject-matter experts to strengthen underwriting and risk assessment.",
+      "Enhance credit policies with clearly defined criteria and covenants tailored to each specialized lending segment.",
+      "Adopt more robust due diligence, including stress testing and scenario analyses that simulate adverse market or operational conditions.",
+      "Diversify across multiple specialized segments to mitigate concentration risk and capture a broader range of revenue opportunities.",
+      "Regularly review and update pricing models to reflect current market conditions, risk appetite, and observed credit performance.",
+      "C. Risk Management and Compliance"
+    ]
   },
   {
     "id": "commercial-bank-15",
@@ -267,7 +495,24 @@
     "relatedLeverCategories": [
       "CREDIT_RISK_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/15 - Credit Risk Assessment and Provisioning Levels.md"
+    "sourcePath": "data/analysis-library/commercial-bank/15 - Credit Risk Assessment and Provisioning Levels.md",
+    "goal": "Evaluate how effectively the bank identifies, measures, and provisions for potential credit losses across its loan portfolio.",
+    "dataRequired": [
+      "Loan portfolio data segmented by risk rating, industry, or asset class",
+      "Historical default and loss data",
+      "Credit models, internal ratings, and probability of default (PD) or loss given default (LGD) parameters",
+      "Provisioning methodology and calculation details (e.g., IFRS 9, CECL)",
+      "Regulatory requirements or guidelines on provisioning",
+      "Peer or industry benchmarks for provisioning practices"
+    ],
+    "improve": [
+      "Regularly update credit risk models with recent macroeconomic and borrower- level data.",
+      "Strengthen governance and oversight of the provisioning process, ensuring senior management and board engagement.",
+      "Incorporate robust back-testing and stress testing to validate model assumptions and adjust provisioning strategies.",
+      "Refine borrower risk ratings to better capture emerging risks and improve accuracy of PD and LGD estimates.",
+      "Maintain transparent disclosures and ongoing dialogue with regulators to align provisioning practices with evolving guidelines.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-16",
@@ -282,7 +527,23 @@
       "CREDIT_CYCLE"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/commercial-bank/16 - Stress Testing and Scenario Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/16 - Stress Testing and Scenario Analysis.md",
+    "goal": "Determine how the bank’s balance sheet and capital position would withstand adverse economic or financial conditions to ensure adequate risk mitigation strategies.",
+    "dataRequired": [
+      "Current balance sheet data (loans, deposits, investments)",
+      "Historical performance metrics (e.g., default rates, loss rates)",
+      "Macroeconomic variables and forecasts (GDP growth, interest rates, unemployment rates)",
+      "Internal risk models and assumptions (probability of default, loss given default)",
+      "Regulatory guidelines or stress testing frameworks (e.g., Basel requirements)"
+    ],
+    "improve": [
+      "Refine scenario designs to capture emerging risks, including geopolitical events or climate-related factors.",
+      "Enhance model calibration by incorporating more granular loan-level data and updated macroeconomic assumptions.",
+      "Integrate stress testing into strategic planning, aligning potential outcomes with business decisions (e.g., credit growth targets).",
+      "Conduct regular back-testing and model validation to confirm the reliability of stress test projections.",
+      "Strengthen governance around stress testing by establishing clear accountability and documentation for methodology, assumptions, and results.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-17",
@@ -298,7 +559,24 @@
     "relatedLeverCategories": [
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/17 - Securities Portfolio and Market Risk Assessment.md"
+    "sourcePath": "data/analysis-library/commercial-bank/17 - Securities Portfolio and Market Risk Assessment.md",
+    "goal": "Determine how effectively the bank manages and monitors its securities investments to minimize market risk and ensure alignment with liquidity and capital objectives.",
+    "dataRequired": [
+      "Securities holdings detailed by type (e.g., government bonds, corporate bonds, equities, structured products)",
+      "Market pricing data, yield curves, and relevant benchmarks",
+      "Portfolio duration, convexity, and other interest rate sensitivity measures",
+      "Credit ratings and default risk assessments for individual securities",
+      "Risk metrics such as Value-at-Risk (VaR), stress testing outputs, or other market risk indicators",
+      "Regulatory requirements or internal guidelines for securities investments"
+    ],
+    "improve": [
+      "Diversify the securities portfolio across different asset classes, maturities, and credit ratings to spread risk.",
+      "Regularly update market risk models and assumptions to capture changing market conditions.",
+      "Implement stricter internal limits or early-warning indicators to flag potential breaches before they occur.",
+      "Engage in hedging strategies (e.g., interest rate swaps) to reduce exposure to market volatility.",
+      "Conduct ongoing scenario analysis and stress testing to refine portfolio management strategies over time.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-18",
@@ -313,7 +591,24 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/18 - Regulatory, Governance, and Compliance Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/18 - Regulatory, Governance, and Compliance Review.md",
+    "goal": "Determine the effectiveness of the bank’s frameworks, policies, and controls in meeting regulatory requirements and upholding strong governance standards.",
+    "dataRequired": [
+      "Regulatory guidelines and frameworks applicable to the bank (e.g., local banking laws, Basel standards)",
+      "Internal policies and procedures related to governance, risk, and compliance",
+      "Audit and examination reports (internal, external, and regulatory)",
+      "Board and management committee charters, meeting minutes, and governance structures",
+      "Records of compliance breaches, fines, or enforcement actions",
+      "Training records and compliance program documentation"
+    ],
+    "improve": [
+      "Regularly update and harmonize policies with evolving regulations, industry standards, and best practices.",
+      "Strengthen board and senior management oversight through clear delegation of responsibilities and more frequent compliance reporting.",
+      "Invest in compliance technology and analytics to automate monitoring, reporting, and issue tracking.",
+      "Enhance staff training programs to foster a compliance-oriented culture across all levels of the organization.",
+      "Conduct periodic, independent reviews or assessments to validate the effectiveness of governance and compliance controls.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-19",
@@ -324,7 +619,23 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/commercial-bank/19 - Off-Balance Sheet Exposure Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/19 - Off-Balance Sheet Exposure Review.md",
+    "goal": "Assess the extent and nature of the bank’s off-balance sheet exposures—such as guarantees, commitments, and derivatives—to ensure that these contingencies and potential liabilities are well-managed and transparently reported.",
+    "dataRequired": [
+      "Detailed records of all off-balance sheet items (e.g., letters of credit, guarantees, undrawn credit lines, derivatives)",
+      "Current notional amounts and market values for derivative positions (if applicable)",
+      "Contractual terms, counterparty information, and maturity profiles",
+      "Historical data on utilization rates and credit losses related to commitments",
+      "Regulatory guidelines on capital treatment and disclosure requirements for off- balance sheet exposures"
+    ],
+    "improve": [
+      "Enhance internal monitoring and reporting systems to provide real-time visibility into off-balance sheet exposures.",
+      "Implement stricter counterparty limits and diversify exposure to reduce the impact of a single default event.",
+      "Strengthen contractual frameworks, collateral requirements, and netting agreements to mitigate counterparty credit risk.",
+      "Integrate off-balance sheet exposures into the bank’s overall stress testing and scenario analysis.",
+      "Regularly review and update policies to align with evolving regulatory guidance and market conditions.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-20",
@@ -338,7 +649,24 @@
       "CYBER"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/commercial-bank/20 - Operational Risk, Cybersecurity, and KRI Assessment.md"
+    "sourcePath": "data/analysis-library/commercial-bank/20 - Operational Risk, Cybersecurity, and KRI Assessment.md",
+    "goal": "Evaluate the bank’s processes for identifying, monitoring, and mitigating operational risks, including cybersecurity threats, by tracking key risk indicators (KRIs).",
+    "dataRequired": [
+      "Operational incident logs and loss event data",
+      "Cybersecurity event tracking reports (e.g., intrusion attempts, phishing incidents)",
+      "Inventory of critical systems and processes",
+      "Key risk indicators (KRIs) for operational and cybersecurity risks",
+      "Regulatory requirements and industry best practices for operational risk management",
+      "Internal policies and procedures related to business continuity and incident response"
+    ],
+    "improve": [
+      "Enhance incident monitoring and escalation procedures to detect and address operational or cybersecurity issues promptly.",
+      "Update cybersecurity protocols (e.g., multi-factor authentication, intrusion detection systems) in line with evolving threats and standards.",
+      "Implement regular risk assessments and penetration testing to validate the effectiveness of existing controls.",
+      "Provide continuous training to employees on operational risk awareness, cybersecurity hygiene, and incident reporting.",
+      "Integrate operational and cybersecurity KRIs into strategic decision-making, ensuring that the board and senior management monitor risk trends consistently.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-21",
@@ -354,7 +682,23 @@
       "COST_OPS",
       "CREDIT_RISK_MANAGEMENT"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/21 - Credit Covenant Tracking and Compliance Monitoring.md"
+    "sourcePath": "data/analysis-library/commercial-bank/21 - Credit Covenant Tracking and Compliance Monitoring.md",
+    "goal": "Ensure the bank effectively monitors borrower compliance with loan covenants, mitigating credit risk and protecting its interests.",
+    "dataRequired": [
+      "Loan agreements outlining financial and non-financial covenants",
+      "Borrower financial statements, compliance certificates, or performance reports",
+      "Internal credit monitoring system or database records",
+      "Relevant ratios or metrics tied to covenants (e.g., leverage, coverage ratios)",
+      "Historical data on covenant breaches or waivers granted"
+    ],
+    "improve": [
+      "Implement automated covenant tracking tools that generate alerts when borrowers are at risk of breaching thresholds.",
+      "Standardize covenant definitions and reporting processes to reduce confusion and ensure consistent measurement.",
+      "Provide relationship managers with training to interpret borrower financials and detect early warning signs.",
+      "Establish clear escalation procedures for unresolved breaches, including tighter oversight or possible workout strategies.",
+      "Periodically review and update covenant structures to align with evolving business conditions and risk appetite.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-22",
@@ -369,7 +713,23 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/commercial-bank/22 - Basel Counterparty Credit Risk Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/22 - Basel Counterparty Credit Risk Review.md",
+    "goal": "Ensure the bank’s counterparty credit risk management adheres to Basel requirements, accurately measures exposures, and maintains adequate capital buffers.",
+    "dataRequired": [
+      "Inventory of derivatives, repurchase agreements, and securities financing transactions",
+      "Counterparty credit ratings and internal risk metrics (e.g., Probability of Default, Loss Given Default)",
+      "Details of netting agreements, collateral postings, and margin arrangements",
+      "Regulatory guidelines (Basel accords) and the bank’s internal frameworks for counterparty credit risk",
+      "Computed metrics for Exposure at Default (EAD), Credit Valuation Adjustment (CVA), and Risk-Weighted Assets (RWA)"
+    ],
+    "improve": [
+      "Strengthen netting arrangements and collateral management to reduce uncovered exposures.",
+      "Refine or validate internal models used for EAD and CVA calculations to ensure alignment with market reality.",
+      "Diversify counterparty exposures to prevent excessive concentration risks in specific institutions or sectors.",
+      "Implement real-time exposure monitoring tools to track potential spikes or changes in market conditions.",
+      "Regularly update policies and procedures to align with evolving Basel regulations and industry best practices.",
+      "D. Capital, Liquidity, and Funding"
+    ]
   },
   {
     "id": "commercial-bank-23",
@@ -392,7 +752,24 @@
       "COST_OPS",
       "DEPOSIT_FRANCHISE"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/23 - Deposit Base Structure and Cost of Funds Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/23 - Deposit Base Structure and Cost of Funds Review.md",
+    "goal": "Evaluate the composition of the bank’s deposit base and the associated funding costs to ensure efficient liquidity management and competitive pricing.",
+    "dataRequired": [
+      "Breakdowns of deposit types (e.g., demand deposits, savings, time deposits)",
+      "Historical and current interest rates paid on each deposit category",
+      "Deposit volumes and balances over time",
+      "Cost of funds data and peer or industry benchmarks",
+      "Customer segmentation and deposit concentration details",
+      "Regulatory requirements or guidelines related to liquidity and funding"
+    ],
+    "improve": [
+      "Diversify the deposit base by targeting different customer segments and products that encourage stable balances.",
+      "Adjust pricing strategies to attract more low-cost deposits, considering market conditions and competitor rates.",
+      "Implement strong retention programs and relationship-building initiatives to reduce the likelihood of large outflows.",
+      "Use data analytics to identify deposit trends and potential for cross-selling or bundling deposit products.",
+      "Continuously monitor interest rate movements and revisit deposit pricing strategies to maintain cost efficiency while meeting liquidity needs.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-24",
@@ -413,7 +790,26 @@
       "VOLUME",
       "DEPOSIT_FRANCHISE"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/24 - Liquidity and Funding Management Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/24 - Liquidity and Funding Management Review.md",
+    "goal": "Evaluate both the strategic and day-to-day liquidity positions of the bank to ensure it can meet obligations under various market conditions, optimize funding costs, and comply with regulatory liquidity requirements.",
+    "dataRequired": [
+      "Balance sheet composition (loans, deposits, investments, wholesale funding)",
+      "Breakdown of funding sources by type, maturity, and cost (e.g., retail deposits, interbank borrowings, repurchase agreements)",
+      "Maturity schedules and repricing dates for major assets and liabilities",
+      "Key liquidity ratios (e.g., Liquidity Coverage Ratio (LCR), Net Stable Funding Ratio (NSFR))",
+      "Daily or weekly cash flow forecasts and usage patterns",
+      "Contingent funding sources (e.g., central bank lines, committed facilities)",
+      "Regulatory guidelines and internal policy limits"
+    ],
+    "improve": [
+      "Diversify funding sources by tapping multiple markets, maturities, and investor segments to reduce reliance on any single channel.",
+      "Strengthen contingency funding plans that outline clear actions and back-up facilities if wholesale markets tighten or outflows spike.",
+      "Align asset maturities with funding tenors through robust asset-liability management, reducing the risk of sudden shortfalls.",
+      "",
+      "Optimize daily liquidity forecasts and internal controls for real-time visibility into cash positions and near-term obligations.",
+      "Engage in ongoing stress testing under various scenarios to validate the adequacy of liquidity buffers and refine action plans as market conditions change.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-25",
@@ -432,7 +828,24 @@
     "relatedLeverCategories": [
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/25 - Capital Adequacy Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/25 - Capital Adequacy Review.md",
+    "goal": "Determine whether the bank’s capital base is sufficient to absorb unexpected losses and maintain regulatory compliance under normal and stressed conditions.",
+    "dataRequired": [
+      "Current capital structure (e.g., Common Equity Tier 1, Tier 2 capital)",
+      "Risk-Weighted Assets (RWA) calculations by asset class",
+      "Regulatory capital ratios and minimum requirements (e.g., Basel III, local regulations)",
+      "Internal capital adequacy assessment documents (ICAAP)",
+      "Stress testing scenarios and results",
+      "Peer or industry benchmark data"
+    ],
+    "improve": [
+      "Rebalance the capital structure through equity raises or debt refinancing to meet desired capital ratios.",
+      "Reduce Risk-Weighted Assets by optimizing the loan portfolio and divesting high- risk exposures.",
+      "Strengthen internal capital generation via improved profitability and dividend policy adjustments.",
+      "Conduct more frequent or enhanced stress testing to anticipate emerging risks and calibrate capital buffers.",
+      "Maintain ongoing dialogue with regulators to confirm alignment with evolving capital standards and guidelines.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-26",
@@ -453,7 +866,24 @@
       "MIX",
       "DEPOSIT_FRANCHISE"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/26 - Asset and Liability Management.md"
+    "sourcePath": "data/analysis-library/commercial-bank/26 - Asset and Liability Management.md",
+    "goal": "Manage the bank’s balance sheet structure to optimize liquidity, interest rate risk, and profitability while meeting regulatory and strategic objectives.",
+    "dataRequired": [
+      "Balance sheet composition (loans, deposits, investments, wholesale funding)",
+      "Maturity profiles and repricing schedules for assets and liabilities",
+      "Interest rates on both sides of the balance sheet",
+      "Forecasted cash flows, including loan repayments and deposit withdrawals",
+      "Market data (interest rate curves, economic indicators)",
+      "Regulatory requirements or internal limits related to interest rate risk, liquidity, and capital"
+    ],
+    "improve": [
+      "Use hedging instruments (e.g., interest rate swaps) to reduce exposure to adverse rate movements.",
+      "Diversify funding sources to include a balanced mix of retail deposits, wholesale funding, and long-term debt.",
+      "Implement dynamic pricing strategies for loans and deposits based on current and projected interest rates.",
+      "Regularly update and stress test ALM models to capture emerging risks in market conditions or regulatory environments.",
+      "Integrate ALM considerations into strategic planning, ensuring that product growth initiatives align with the desired balance sheet structure.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-27",
@@ -472,7 +902,24 @@
       "MIX",
       "LOAN_PRICING"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/27 - Funds Transfer Pricing Methodology Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/27 - Funds Transfer Pricing Methodology Review.md",
+    "goal": "Ensure the bank’s funds transfer pricing (FTP) framework accurately allocates funding costs and benefits across business units to optimize profitability and risk management.",
+    "dataRequired": [
+      "Current FTP policies and procedures",
+      "Breakdown of asset and liability balances (e.g., loan portfolios, deposits, wholesale funding)",
+      "Interest rates, spreads, and cost of funds data",
+      "Historical market rates and yield curves for reference",
+      "FTP results by product line or business unit",
+      "Peer or industry benchmarks (if available)"
+    ],
+    "improve": [
+      "Review and update FTP policies regularly to ensure alignment with current market rates, liquidity premiums, and the bank’s funding mix.",
+      "Enhance governance over FTP processes by establishing independent oversight, regular validation, and transparent communication with business units.",
+      "Integrate scenario analysis and stress testing into the FTP framework to capture potential fluctuations in interest rates and liquidity conditions.",
+      "Adopt a more granular or matched-maturity approach for products with distinct liquidity profiles, such as long-term loans or seasonal deposits.",
+      "Benchmark against industry peers or best practices to stay competitive and ensure fairness in internal cost and profit allocation.",
+      "E. Operations and Process Improvement"
+    ]
   },
   {
     "id": "commercial-bank-28",
@@ -490,7 +937,24 @@
     "relatedLeverCategories": [
       "COST_TRANSFORMATION"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/28 - Branch Network Optimization.md"
+    "sourcePath": "data/analysis-library/commercial-bank/28 - Branch Network Optimization.md",
+    "goal": "Evaluate how effectively the bank’s physical branch network serves target markets while controlling costs and maximizing reach.",
+    "dataRequired": [
+      "Current branch locations and their operating costs",
+      "Foot traffic data and transaction volumes (e.g., deposits, withdrawals, account openings) per branch",
+      "Demographic and geographic market data for existing and potential locations",
+      "Customer feedback or satisfaction levels tied to in-branch experiences",
+      "Competitor branch presence and regional market share information",
+      "Revenue contribution and profitability metrics for each branch"
+    ],
+    "improve": [
+      "Consolidate or close underperforming branches and reinvest savings into promising markets or branch upgrades.",
+      "Redesign branch layouts or introduce specialized services (e.g., business banking support) to increase customer traffic and revenue.",
+      "Conduct location-specific marketing campaigns or community outreach to boost awareness and engagement in targeted regions.",
+      "Evaluate property costs and renegotiate leases where possible to reduce overhead expenses.",
+      "Implement ongoing performance monitoring and periodic market assessments to adapt the branch network strategy as local conditions evolve.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-29",
@@ -506,7 +970,24 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/29 - Customer Churn and Retention Metrics.md"
+    "sourcePath": "data/analysis-library/commercial-bank/29 - Customer Churn and Retention Metrics.md",
+    "goal": "Determine the rate at which commercial banking customers discontinue their relationships and identify drivers of churn to improve retention strategies.",
+    "dataRequired": [
+      "Customer account tenure and closure data (e.g., the date each account was opened and closed)",
+      "Transaction volumes and usage patterns (e.g., deposit activity, loan activity, treasury services)",
+      "Customer profitability metrics (e.g., net revenue, cross-sell ratios)",
+      "Demographic or firmographic details (e.g., company size, industry sector)",
+      "Customer feedback or satisfaction scores (if available)",
+      "Historical data on marketing campaigns, fee changes, or service enhancements"
+    ],
+    "improve": [
+      "Develop targeted retention programs for high-value or at-risk customer segments based on churn analysis findings.",
+      "Enhance customer onboarding and engagement processes (e.g., frequent relationship check-ins, usage tutorials).",
+      "Conduct exit interviews or surveys to gather direct feedback from departing customers, using insights to address root causes.",
+      "Use analytics and early-warning systems (e.g., sudden drop in transaction volume) to proactively intervene before customers exit.",
+      "Align product and pricing strategies more closely with the evolving needs of commercial clients, leveraging ongoing market research and competitor insights.",
+      "F. Digital and Technology Transformation"
+    ]
   },
   {
     "id": "commercial-bank-30",
@@ -523,7 +1004,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/30 - Digital Banking, Online Lending, and Analytics.md"
+    "sourcePath": "data/analysis-library/commercial-bank/30 - Digital Banking, Online Lending, and Analytics.md",
+    "goal": "Assess the performance, adoption, and profitability of the bank’s digital channels and online lending services, leveraging analytics to enhance customer experience and operational efficiency.",
+    "dataRequired": [
+      "Digital platform usage statistics (e.g., mobile app logins, online transactions)",
+      "Online loan application data (application volumes, approval rates, funding times)",
+      "Customer journey analytics (drop-off points, conversion rates, user feedback)",
+      "Operational metrics (cost to serve, turnaround times)",
+      "Comparative data on branch-based vs. digital-based transaction volumes",
+      "Industry benchmarks and competitor insights"
+    ],
+    "improve": [
+      "Enhance user experience by refining digital interfaces, improving navigation, and offering personalized features or recommendations.",
+      "Integrate advanced analytics and machine learning to streamline credit decisioning processes, reducing turnaround times for online lending.",
+      "Implement continuous testing and optimization (A/B testing, customer journey mapping) to identify small changes that can significantly boost digital conversion rates.",
+      "Offer targeted digital onboarding and training for segments less familiar with online banking, ensuring broader adoption.",
+      "Expand partnerships with fintechs or technology providers to access cutting-edge digital capabilities and maintain a competitive edge in the marketplace.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-31",
@@ -542,7 +1040,24 @@
       "COST_OPS",
       "COST_TRANSFORMATION"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/31 - Core Banking Systems and Technology Transformation.md"
+    "sourcePath": "data/analysis-library/commercial-bank/31 - Core Banking Systems and Technology Transformation.md",
+    "goal": "Determine whether the bank’s core systems and technology infrastructure sufficiently meet current operational demands, allow for scalable growth, and enable future innovation opportunities.",
+    "dataRequired": [
+      "Inventory of current core banking systems and modules",
+      "System performance metrics (e.g., uptime, transaction processing speeds)",
+      "Existing technology architecture diagrams and integration points",
+      "IT budget, including maintenance vs. new project allocations",
+      "User feedback from internal stakeholders (operations, front-line, IT)",
+      "Peer or industry benchmarks for technology adoption and system capabilities"
+    ],
+    "improve": [
+      "Develop a strategic technology roadmap with clear timelines for upgrading or replacing legacy systems.",
+      "Prioritize projects that enhance system integration and data consistency across business units.",
+      "Allocate IT resources more effectively, balancing maintenance spend with investments in scalable, future-ready platforms.",
+      "Implement robust testing and monitoring tools to proactively identify and address performance bottlenecks.",
+      "Foster cross-functional collaboration to ensure system improvements align with front-line and customer needs.",
+      "G. Payment Services and Transaction Banking"
+    ]
   },
   {
     "id": "commercial-bank-32",
@@ -562,7 +1077,24 @@
       "COST_OPS",
       "FEE_BUSINESS_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/32 - Payment and Cash Management Evaluation.md"
+    "sourcePath": "data/analysis-library/commercial-bank/32 - Payment and Cash Management Evaluation.md",
+    "goal": "Examine the bank’s payment and cash management offerings to ensure they efficiently support business clients’ transactional needs and drive fee-based revenues.",
+    "dataRequired": [
+      "Volume and value of payments processed (e.g., ACH, wire transfers, real-time payments)",
+      "Treasury management product usage statistics (e.g., lockbox services, sweep accounts)",
+      "Operational metrics (e.g., processing times, error rates, system uptime)",
+      "Pricing schedules and fee income data",
+      "Customer feedback or satisfaction scores related to payment services",
+      "Competitor and industry benchmark data on payment offerings and trends"
+    ],
+    "improve": [
+      "Streamline processes and reduce manual intervention by implementing greater automation or straight-through processing.",
+      "Enhance digital interfaces and integration options (e.g., APIs, treasury platforms) to improve client convenience and adoption.",
+      "Adjust pricing strategies based on competitive analysis and value-add features, ensuring fees reflect market norms and service quality.",
+      "Introduce targeted training for relationship managers to cross-sell or educate clients about underutilized payment and cash management services.",
+      "Regularly review performance data, customer feedback, and emerging industry trends to refine product offerings and maintain a competitive edge.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-33",
@@ -581,7 +1113,24 @@
       "PRICING",
       "FEE_BUSINESS_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/33 - Commercial Card Services Profitability Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/33 - Commercial Card Services Profitability Analysis.md",
+    "goal": "Examine the profitability and usage patterns of the bank’s commercial card programs to ensure fees, interchange revenues, and customer utilization are optimized.",
+    "dataRequired": [
+      "Transaction volumes and values for commercial card usage",
+      "Fee income from annual fees, late fees, interchange, and other charges",
+      "Interest income (if applicable) and rebate/discount structures",
+      "Operational costs (including rewards programs, servicing, and fraud management)",
+      "Historical data on customer adoption, spending patterns, and delinquency rates",
+      "Market benchmarks or competitor data on card program performance"
+    ],
+    "improve": [
+      "Optimize pricing and fee structures to encourage greater card usage while maintaining competitive but profitable fee levels.",
+      "Review and refine rewards or rebate programs to ensure they attract high- volume users without disproportionately increasing costs.",
+      "Enhance risk assessment and fraud detection tools to safeguard profitability and protect customer accounts.",
+      "Conduct targeted marketing or sales campaigns aimed at underpenetrated segments (e.g., SMEs or specific industries).",
+      "Improve customer support and technology integration (e.g., expense management tools) to drive higher adoption and usage rates.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-34",
@@ -597,7 +1146,24 @@
       "PRICING",
       "FEE_BUSINESS_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/34 - Merchant Acquiring and Payment Gateway Analysis.md"
+    "sourcePath": "data/analysis-library/commercial-bank/34 - Merchant Acquiring and Payment Gateway Analysis.md",
+    "goal": "Assess how effectively the bank’s merchant acquiring and payment gateway services are facilitating payment acceptance for businesses while capturing fee income and managing associated risks.",
+    "dataRequired": [
+      "Merchant portfolio data (e.g., number of merchants, average transaction size, industries served)",
+      "Transaction volumes and values processed through acquiring and gateway channels",
+      "Fee income breakdown (e.g., interchange, gateway fees, settlement fees)",
+      "Operational costs (e.g., technology platform costs, chargeback handling)",
+      "Risk metrics (chargeback rates, fraud incidents, merchant defaults)",
+      "Competitor or industry benchmarks on merchant acquiring and gateway solutions"
+    ],
+    "improve": [
+      "Refine underwriting criteria and increase merchant monitoring to reduce chargeback and fraud rates.",
+      "Optimize fee structures by balancing competitive pricing with sustainable margins.",
+      "Invest in advanced fraud detection tools and real-time monitoring to mitigate risks and lower operational costs.",
+      "Enhance the payment gateway user experience, ensuring seamless integrations and fast transaction processing for merchants.",
+      "Explore strategic partnerships or technology upgrades to broaden acceptance methods (e.g., mobile wallets, contactless) and capture additional revenue streams.",
+      "H. Specialized and Industry-Specific Solutions"
+    ]
   },
   {
     "id": "commercial-bank-35",
@@ -617,7 +1183,24 @@
       "COST_OPS",
       "ORIGINATION_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/35 - Lease Financing and Equipment Finance Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/35 - Lease Financing and Equipment Finance Review.md",
+    "goal": "Determine how effectively the bank manages and expands its lease and equipment finance portfolio to generate profitable returns while controlling associated credit and operational risks.",
+    "dataRequired": [
+      "Portfolio breakdown by asset type (e.g., vehicles, machinery, technology equipment)",
+      "Lease structures (operating vs. finance leases), rates, and terms",
+      "Credit risk metrics (default rates, loss given default, delinquencies)",
+      "Residual value assumptions and realized values",
+      "Operational costs (e.g., servicing, asset recovery, insurance)",
+      "Industry and economic trends affecting the value of leased assets"
+    ],
+    "improve": [
+      "Update residual value models and pricing assumptions regularly to reflect the latest market data and technological shifts.",
+      "Enhance credit underwriting criteria and monitoring practices for higher-risk asset segments or industries.",
+      "Streamline servicing and asset recovery processes through automation or vendor partnerships to reduce operational costs.",
+      "Build specialized teams or hire industry experts for specific equipment categories, improving asset valuation and portfolio management.",
+      "Diversify lease offerings (e.g., flexible lease terms, buyback guarantees) to stay competitive and address a broader range of customer needs.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-36",
@@ -630,7 +1213,24 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/commercial-bank/36 - Correspondent Banking Relationships and Services.md"
+    "sourcePath": "data/analysis-library/commercial-bank/36 - Correspondent Banking Relationships and Services.md",
+    "goal": "Determine the effectiveness of the bank’s partnerships with other financial institutions (correspondent banks) in facilitating cross-border transactions, specialized services, and revenue generation.",
+    "dataRequired": [
+      "List of active correspondent banking relationships, including services offered (e.g., wire transfers, clearing, trade finance)",
+      "Transaction volumes, values, and fee income derived from each correspondent relationship",
+      "Cost structures associated with maintaining these partnerships (e.g., SWIFT fees, account maintenance)",
+      "Risk assessment data (e.g., AML/KYC compliance, counterparty credit risk)",
+      "Service-level agreements (SLAs) and performance metrics (e.g., turnaround times, error rates)",
+      "Regulatory requirements and guidance on correspondent banking"
+    ],
+    "improve": [
+      "Realign or consolidate underperforming correspondent relationships to optimize cost-to-income ratios.",
+      "Strengthen due diligence and ongoing monitoring processes to ensure compliance with AML/KYC requirements and minimize reputational risk.",
+      "Negotiate improved SLAs to address service quality gaps, such as longer processing times or high error rates.",
+      "Explore technology enhancements, like API-based connectivity or real-time settlement networks, to streamline cross-border transactions.",
+      "Periodically review market conditions and counterparties’ financial health, adjusting the correspondent banking network to capture emerging opportunities.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-37",
@@ -648,7 +1248,25 @@
       "COST_OPS",
       "FEE_BUSINESS_GROWTH"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/37 - Trade Finance Instrument Profitability.md"
+    "sourcePath": "data/analysis-library/commercial-bank/37 - Trade Finance Instrument Profitability.md",
+    "goal": "Analyze how profitably the bank manages its trade finance instruments, such as letters of credit and documentary collections, while balancing fees, margins, and risk exposures.",
+    "dataRequired": [
+      "Portfolio of trade finance instruments (e.g., letters of credit, documentary collections, standby letters, guarantees)",
+      "Volume and value of transactions processed per instrument type",
+      "Fee structures and commission rates",
+      "Operational costs (e.g., processing costs, risk mitigation expenses)",
+      "Default or claim rates and related loss data",
+      "Customer segment or industry breakdowns",
+      "Peer or market benchmarks for trade finance fees and margins"
+    ],
+    "improve": [
+      "Adjust pricing or commission structures to better reflect transaction complexity and risk profiles.",
+      "Invest in process automation and streamlined workflows to lower operational costs and expedite turnaround times.",
+      "Enhance risk assessment tools (e.g., credit scoring, country risk analysis) to reduce default exposures.",
+      "Cross-sell trade finance instruments alongside other commercial banking products to deepen relationships and boost overall profitability.",
+      "Periodically review and update product offerings in response to changing market conditions, trade regulations, or client needs.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-38",
@@ -663,7 +1281,24 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/38 - Export and Import Credit Agency Utilization Review.md"
+    "sourcePath": "data/analysis-library/commercial-bank/38 - Export and Import Credit Agency Utilization Review.md",
+    "goal": "Determine how effectively the bank leverages export and import credit agency programs to provide trade finance solutions, mitigate credit risks, and support client transactions.",
+    "dataRequired": [
+      "Portfolio of loans or guarantees supported by export credit agencies (ECAs) or import credit agencies",
+      "Transaction details (e.g., industry, country, product type) showing how ECA coverage was applied",
+      "ECA program terms, eligibility criteria, and fee structures",
+      "Operational and administrative costs associated with ECA application and compliance processes",
+      "Historical performance data (e.g., defaults, claims paid, recovery rates) on ECA- backed transactions",
+      "Peer or industry benchmarks on ECA usage rates and success stories"
+    ],
+    "improve": [
+      "Streamline internal processes for ECA-backed deals by centralizing documentation and standardizing due diligence procedures.",
+      "Train relationship managers and credit officers on the scope and eligibility requirements of various ECA programs.",
+      "Negotiate or collaborate with ECAs to speed up approval cycles or reduce administrative overhead.",
+      "Develop targeted marketing or outreach to clients in sectors or countries that could benefit most from ECA coverage.",
+      "Continuously monitor regulatory changes or new ECA initiatives to expand product offerings and stay competitive.",
+      ""
+    ]
   },
   {
     "id": "commercial-bank-39",
@@ -681,7 +1316,25 @@
       "PRICING",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/commercial-bank/39 - Commodity Finance Structure and Risk Assessment.md"
+    "sourcePath": "data/analysis-library/commercial-bank/39 - Commodity Finance Structure and Risk Assessment.md",
+    "goal": "Analyze the bank’s commodity finance operations to ensure well-structured deals, adequate risk controls, and alignment with market conditions.",
+    "dataRequired": [
+      "Breakdown of commodity finance exposures by commodity type (e.g., energy, metals, agriculture)",
+      "Transaction structures and financing instruments (e.g., pre-export finance, warehouse receipt financing, repo agreements)",
+      "Pricing and hedging strategies (e.g., futures, swaps)",
+      "Credit risk metrics (e.g., borrower rating, collateral valuation, default rates)",
+      "Operational processes for collateral management and logistics tracking",
+      "Market data (commodity price indices, volatility trends)",
+      "Regulatory or internal guidelines for commodity finance"
+    ],
+    "improve": [
+      "Refine hedging strategies and adopt real-time price monitoring to better manage commodity price fluctuations.",
+      "Strengthen collateral management practices through more frequent inspections, third-party verification, or updated valuation models.",
+      "Diversify the commodity finance portfolio to reduce concentration risk, exploring a broader range of commodity classes and geographies.",
+      "Review credit policies to ensure borrower and transaction eligibility criteria match the bank’s current risk appetite and market dynamics.",
+      "Enhance analytics and reporting tools that provide ongoing visibility into commodity exposures, hedging effectiveness, and policy compliance.",
+      "I. Mergers and Acquisitions"
+    ]
   },
   {
     "id": "commercial-bank-40",
@@ -694,6 +1347,23 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/commercial-bank/40 - Banking Mergers and Acquisitions Evaluation.md"
+    "sourcePath": "data/analysis-library/commercial-bank/40 - Banking Mergers and Acquisitions Evaluation.md",
+    "goal": "Determine the strategic and financial viability of potential banking M&A transactions, focusing on synergy realization, risk profile, and overall alignment with the bank’s long- term objectives.",
+    "dataRequired": [
+      "Financial statements (balance sheets, income statements, cash flow statements) for both the acquiring and target institutions",
+      "Valuation metrics (price-to-book ratios, price-to-earnings ratios, comparable transactions)",
+      "Due diligence materials (loan portfolios, credit quality, regulatory compliance status)",
+      "Synergy estimates (cost savings, revenue enhancements)",
+      "Cultural, operational, and technological compatibility assessments",
+      "Regulatory requirements and approval constraints"
+    ],
+    "improve": [
+      "Strengthen internal M&A capabilities with cross-functional expertise (finance, operations, risk, legal) to conduct thorough analyses.",
+      "Develop a clear integration plan that addresses IT infrastructure, branding, cultural alignment, and organizational structure well in advance.",
+      "Establish robust communication strategies with stakeholders—employees, customers, regulators, and investors—to facilitate smoother transitions.",
+      "Negotiate earn-out provisions or performance-linked deal structures to mitigate valuation risks.",
+      "Engage external advisors or consult peers who have recently undergone similar mergers for best practices and lessons learned.",
+      ""
+    ]
   }
 ]

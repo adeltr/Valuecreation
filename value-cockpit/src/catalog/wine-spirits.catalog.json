@@ -13,7 +13,27 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/01 - Consumer Preferences and Market Segmentation Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/01 - Consumer Preferences and Market Segmentation Analysis.md",
+    "goal": "To identify distinct consumer segments within the market and understand their preferences, behaviors, and purchasing motivations, enabling targeted marketing strategies and tailored product offerings.",
+    "dataRequired": [
+      "Sales data by product category, geography, and channel.",
+      "Demographic data (age, gender, income, education level).",
+      "Psychographic data (lifestyle, values, attitudes).",
+      "Behavioral data (frequency of purchase, average spend, brand loyalty).",
+      "Survey or focus group insights on taste preferences and brand perception.",
+      "Competitor analysis data for market comparison.",
+      "Digital analytics data (website traffic, e-commerce behavior, social media engagement)."
+    ],
+    "improve": [
+      "Develop Targeted Campaigns",
+      "Optimize Product Offerings",
+      "Refine Pricing Strategies",
+      "Enhance Consumer Feedback Mechanisms",
+      "",
+      "Leverage Technology for Personalization",
+      "Focus on Emerging Markets",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-02",
@@ -32,7 +52,27 @@
     "relatedLeverCategories": [
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/02 - Consumer Demographic Shifts and Emerging Market Potential.md"
+    "sourcePath": "data/analysis-library/wine-spirits/02 - Consumer Demographic Shifts and Emerging Market Potential.md",
+    "goal": "To identify shifts in consumer demographics and assess their impact on market demand, while uncovering opportunities in emerging markets to guide future growth strategies.",
+    "dataRequired": [
+      "National and regional census data on demographics (age, gender, income, education).",
+      "Population growth trends and forecasts.",
+      "Consumer spending data by demographic group.",
+      "Market share and sales data segmented by geography and consumer demographic.",
+      "Insights from consumer surveys on changing behaviors or preferences.",
+      "Global economic reports highlighting emerging market growth rates.",
+      "Competitor presence and activity in emerging markets."
+    ],
+    "improve": [
+      "Adapt Product Offerings",
+      "Targeted Marketing",
+      "",
+      "Invest in Emerging Markets",
+      "Diversify Distribution Channels",
+      "Monitor Changes Continuously",
+      "Build Local Partnerships",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-03",
@@ -46,7 +86,25 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/03 - Regional and Geographic Flavor Profile Adaptation Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/03 - Regional and Geographic Flavor Profile Adaptation Analysis.md",
+    "goal": "To evaluate how flavor preferences vary by region and geography, enabling the adaptation of products to meet local tastes and maximize consumer appeal in different markets.",
+    "dataRequired": [
+      "Regional sales data broken down by product category and flavor profiles.",
+      "Consumer preference surveys or focus group insights by geography.",
+      "Competitor product offerings and their regional adaptations.",
+      "Historical product performance data in specific markets.",
+      "Feedback from distributors and retailers on local consumer preferences.",
+      "Cultural and dietary insights related to taste and consumption habits."
+    ],
+    "improve": [
+      "Adapt Product Offerings",
+      "Localized Branding and Marketing",
+      "Collaborate with Regional Experts",
+      "Invest in R&D for Regional Tastes",
+      "Test and Iterate",
+      "Leverage Cultural Themes",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-04",
@@ -62,7 +120,27 @@
       "VOLUME",
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/04 - Evolution of Customer Tasting Preferences and Product Line.md"
+    "sourcePath": "data/analysis-library/wine-spirits/04 - Evolution of Customer Tasting Preferences and Product Line.md",
+    "goal": "To track changes in customer tasting preferences over time and evaluate their impact on product line strategy, including product development, discontinuation, and innovation.",
+    "dataRequired": [
+      "Historical sales data by product and flavor profile.",
+      "Customer surveys or focus group data on tasting preferences.",
+      "Social media and digital feedback on product flavors and trends.",
+      "Competitor product line adjustments and performance.",
+      "Industry reports on changing consumer preferences and market trends.",
+      "Data on seasonal or event-driven product performance.",
+      "Marketing and promotional campaign data linked to product lines."
+    ],
+    "improve": [
+      "Refine Product Development",
+      "Launch Targeted Marketing Campaigns",
+      "Monitor Competitor Innovations",
+      "",
+      "Enhance Customer Feedback Channels",
+      "Diversify Portfolio",
+      "Invest in Predictive Analytics",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-05",
@@ -81,7 +159,26 @@
       "VOLUME",
       "ROUTE_TO_MARKET"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/05 - Channel-Specific Sales Performance.md"
+    "sourcePath": "data/analysis-library/wine-spirits/05 - Channel-Specific Sales Performance.md",
+    "goal": "To evaluate sales performance across different distribution channels (e.g., on-premise vs.",
+    "dataRequired": [
+      "Sales data segmented by channel (on-premise, off-premise, e-commerce, direct-to-consumer, etc.).",
+      "Regional and geographic sales breakdown by channel.",
+      "Profit margin data for each channel.",
+      "Marketing spend allocation per channel.",
+      "Consumer purchase behavior data, including channel preferences.",
+      "Distributor or retailer performance reports.",
+      "Industry benchmarks for channel performance."
+    ],
+    "improve": [
+      "Optimize Channel Strategy",
+      "Enhance E-commerce Capabilities",
+      "Strengthen Distributor Relationships",
+      "Target Regional Opportunities",
+      "Improve Marketing ROI",
+      "Monitor Trends Regularly",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-06",
@@ -102,7 +199,26 @@
       "PRICING",
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/06 - Seasonal and Event-Driven Demand Forecasting.md"
+    "sourcePath": "data/analysis-library/wine-spirits/06 - Seasonal and Event-Driven Demand Forecasting.md",
+    "goal": "To predict variations in product demand due to seasonality and events (e.g., holidays, festivals, sporting events), enabling optimized inventory management, marketing campaigns, and production planning.",
+    "dataRequired": [
+      "Historical sales data segmented by season and event.",
+      "Calendar data of relevant events (e.g., national holidays, wine festivals, sporting events).",
+      "Regional weather data to correlate with seasonal demand fluctuations.",
+      "Marketing and promotional campaign data aligned with past events.",
+      "Competitor sales and marketing data during key events (if available).",
+      "Consumer behavioral data indicating purchasing patterns around specific events.",
+      "Supply chain lead times and inventory levels during high-demand periods."
+    ],
+    "improve": [
+      "Leverage Predictive Analytics",
+      "Enhance Inventory Management",
+      "Target Event-Specific Promotions",
+      "Collaborate with Distributors and Retailers",
+      "Monitor External Factors Continuously",
+      "Optimize Supply Chain Flexibility",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-07",
@@ -122,7 +238,27 @@
       "VOLUME",
       "DTC_EXPANSION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/07 - Digital and E-commerce Penetration and Growth Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/07 - Digital and E-commerce Penetration and Growth Analysis.md",
+    "goal": "To assess the role of digital and e-commerce channels in driving sales and brand growth, identifying opportunities for optimization and expansion in the online marketplace.",
+    "dataRequired": [
+      "Online sales data segmented by platform (e.g., brand website, third-party marketplaces).",
+      "Traffic and conversion rates for digital channels.",
+      "Customer acquisition and retention metrics for e-commerce.",
+      "Marketing spend and ROI for digital campaigns.",
+      "Competitor e-commerce performance and digital presence.",
+      "Regional and demographic segmentation of online shoppers.",
+      "Consumer feedback on online shopping experience."
+    ],
+    "improve": [
+      "Optimize Digital Platforms",
+      "Invest in Digital Marketing",
+      "Expand E-commerce Offerings",
+      "",
+      "Strengthen Mobile Commerce",
+      "Leverage Data Insights",
+      "Build Partnerships",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-08",
@@ -139,7 +275,26 @@
       "COST_OPS",
       "DTC_EXPANSION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/08 - Customer Experience Metrics in Tasting Rooms or Tours.md"
+    "sourcePath": "data/analysis-library/wine-spirits/08 - Customer Experience Metrics in Tasting Rooms or Tours.md",
+    "goal": "To evaluate the quality of the customer experience in tasting rooms or tours, identifying strengths and areas for improvement to enhance satisfaction, engagement, and brand loyalty.",
+    "dataRequired": [
+      "Customer satisfaction survey results (e.g., Net Promoter Score, CSAT).",
+      "Feedback from online reviews or social media mentions.",
+      "Visitor demographics and preferences.",
+      "Sales data from tasting room purchases.",
+      "Tour attendance data and conversion rates to purchases.",
+      "Employee feedback on interactions with visitors.",
+      "Operational metrics (e.g., average wait times, tour durations)."
+    ],
+    "improve": [
+      "Enhance Visitor Interactions",
+      "Improve Operational Efficiency",
+      "Leverage Digital Tools",
+      "Develop Unique Offerings",
+      "Monitor Online Reputation",
+      "Refine Marketing Strategies",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-09",
@@ -155,7 +310,26 @@
       "PRICING",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/09 - Customer Experience and Engagement at Trade Shows and.md"
+    "sourcePath": "data/analysis-library/wine-spirits/09 - Customer Experience and Engagement at Trade Shows and.md",
+    "goal": "To assess customer engagement and satisfaction at trade shows and festivals, identifying strategies to maximize brand impact, generate leads, and enhance customer relationships in event settings.",
+    "dataRequired": [
+      "Event attendance data (total visitors, booth traffic, or session participation).",
+      "Lead generation metrics (contact information collected, follow-ups initiated).",
+      "Customer feedback through post-event surveys.",
+      "Social media activity during and after the event.",
+      "Sales data from event-related transactions or promotions.",
+      "Employee feedback on event interactions.",
+      "Competitor performance metrics (if available)."
+    ],
+    "improve": [
+      "Enhance Booth Experience",
+      "Train Event Staff",
+      "Leverage Social Media",
+      "Tailor Promotions",
+      "Follow Up Strategically",
+      "Refine Audience Targeting",
+      "B. Brand Positioning and Marketing Strategy"
+    ]
   },
   {
     "id": "wine-spirits-10",
@@ -173,7 +347,27 @@
     "relatedLeverCategories": [
       "MIX"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/10 - Product Portfolio and Brand Equity Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/10 - Product Portfolio and Brand Equity Analysis.md",
+    "goal": "To assess the strengths, weaknesses, and market positioning of a company’s product portfolio while evaluating the overall brand equity to identify opportunities for growth, differentiation, and optimization.",
+    "dataRequired": [
+      "Sales performance data by product category and SKU.",
+      "Profit margin data for each product.",
+      "Customer feedback and satisfaction ratings for individual products.",
+      "Brand awareness and perception data (e.g., surveys, social media sentiment).",
+      "Competitor product offerings and market share comparisons.",
+      "Historical data on product launches, discontinuations, and rebranding efforts.",
+      "Marketing spend allocation by product and ROI metrics."
+    ],
+    "improve": [
+      "Optimize Portfolio Balance",
+      "Enhance Brand Positioning",
+      "",
+      "Focus on Differentiation",
+      "Invest in Premiumization",
+      "Leverage Customer Feedback",
+      "Monitor Market Trends",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-11",
@@ -189,7 +383,27 @@
       "PRICING",
       "VOLUME"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/11 - Competitive Landscape and Market Positioning Evaluation.md"
+    "sourcePath": "data/analysis-library/wine-spirits/11 - Competitive Landscape and Market Positioning Evaluation.md",
+    "goal": "To assess the company’s position within the competitive landscape, evaluate strengths and weaknesses relative to competitors, and identify opportunities to enhance market positioning and differentiation.",
+    "dataRequired": [
+      "Competitor product offerings and pricing data.",
+      "Market share data for key players in the industry.",
+      "Customer feedback comparing your brand to competitors.",
+      "Marketing strategies and campaign insights from competitors.",
+      "SWOT analysis data for your company and competitors.",
+      "Regional and demographic segmentation of competitor sales.",
+      "Industry trend reports and emerging market data."
+    ],
+    "improve": [
+      "Enhance Unique Selling Propositions",
+      "Refine Pricing Strategies",
+      "Invest in Marketing",
+      "Expand Product Offerings",
+      "",
+      "Leverage Data Analytics",
+      "Monitor Competitors Regularly",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-12",
@@ -206,7 +420,27 @@
     "relatedLeverCategories": [
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/12 - Premiumization and Upselling Opportunities Assessment.md"
+    "sourcePath": "data/analysis-library/wine-spirits/12 - Premiumization and Upselling Opportunities Assessment.md",
+    "goal": "To identify opportunities for wine, beer, and spirits companies to enhance revenues by introducing premium product lines, optimizing pricing strategies, and leveraging upselling tactics to elevate the customer experience.",
+    "dataRequired": [
+      "Sales data segmented by product tier (e.g., standard, premium, ultra-premium).",
+      "Consumer purchasing behavior data, including average spend and product preferences.",
+      "Pricing data for similar products across competitors and categories.",
+      "Feedback from tastings, tours, and customer surveys on willingness to pay for premium offerings.",
+      "Industry reports on premiumization trends in wine, beer, and spirits.",
+      "Marketing campaign performance metrics tied to premium products.",
+      "Distributor and retailer feedback on consumer demand for premium products."
+    ],
+    "improve": [
+      "Introduce Exclusive Offerings",
+      "",
+      "Enhance Packaging and Presentation",
+      "Leverage Tasting Experiences",
+      "Strengthen Upselling Techniques",
+      "Explore Trend-Driven Products",
+      "Personalize Marketing",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-13",
@@ -223,7 +457,27 @@
     "relatedLeverCategories": [
       "MARKETING_EFFECTIVENESS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/13 - Influencer and Peer-Driven Marketing Impact Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/13 - Influencer and Peer-Driven Marketing Impact Analysis.md",
+    "goal": "To evaluate the effectiveness of influencer and peer-driven marketing efforts for wine, beer, and spirits brands, determining their impact on brand awareness, customer engagement, and sales performance.",
+    "dataRequired": [
+      "Social media engagement metrics (likes, shares, comments, mentions).",
+      "Influencer campaign performance data (reach, impressions, and conversion rates).",
+      "Peer-driven marketing activity metrics, such as customer referrals or word-of-mouth tracking.",
+      "Sales data during and after influencer-led campaigns.",
+      "Audience demographic and geographic data for influencers’ followers.",
+      "Competitor influencer activity and its impact on their market positioning.",
+      "Customer feedback on the perceived authenticity of influencer endorsements."
+    ],
+    "improve": [
+      "Select Aligned Influencers",
+      "Focus on Micro-Influencers",
+      "",
+      "Leverage User-Generated Content",
+      "Develop Referral Programs",
+      "Monitor Campaign Authenticity",
+      "Enhance Tracking Tools",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-14",
@@ -241,7 +495,28 @@
       "PRICING",
       "MARKETING_EFFECTIVENESS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/14 - Celebrity Endorsement and High-Profile Partnership Impact.md"
+    "sourcePath": "data/analysis-library/wine-spirits/14 - Celebrity Endorsement and High-Profile Partnership Impact.md",
+    "goal": "To evaluate the effectiveness of celebrity endorsements and high-profile partnerships in enhancing brand visibility, driving customer engagement, and increasing sales for wine, beer, and spirits companies.",
+    "dataRequired": [
+      "Campaign performance data (reach, impressions, engagement metrics).",
+      "Sales data before, during, and after celebrity-endorsed campaigns.",
+      "Audience demographic and geographic data for the celebrity's fan base.",
+      "Social media activity tied to the endorsement or partnership (mentions, shares, hashtag usage).",
+      "Media coverage and PR outcomes from the campaign.",
+      "ROI calculations for partnerships, including costs and generated revenue.",
+      "Customer feedback or sentiment analysis related to the endorsement.",
+      "Competitor partnerships and their impact on market positioning."
+    ],
+    "improve": [
+      "",
+      "Select Relevant Celebrities",
+      "Optimize Campaign Messaging",
+      "Leverage Cross-Promotion",
+      "Focus on Events and Experiences",
+      "Evaluate Cost-Effectiveness",
+      "Monitor Risks and Reactions",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-15",
@@ -260,7 +535,27 @@
       "WC_DIO",
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/15 - Limited-Edition and Seasonal Product Performance.md"
+    "sourcePath": "data/analysis-library/wine-spirits/15 - Limited-Edition and Seasonal Product Performance.md",
+    "goal": "To assess the performance of limited-edition and seasonal wine, beer, and spirits offerings, determining their impact on sales, brand perception, and customer loyalty, while identifying opportunities to optimize future releases.",
+    "dataRequired": [
+      "Sales data for limited-edition and seasonal products, segmented by region and channel.",
+      "Inventory turnover rates for these products.",
+      "Customer feedback from tastings, reviews, and surveys.",
+      "Marketing campaign metrics tied to these releases (reach, impressions, engagement).",
+      "Competitive benchmarking data on limited-edition and seasonal offerings.",
+      "Production cost data specific to these product lines.",
+      "Social media activity, including hashtags and mentions tied to product launches."
+    ],
+    "improve": [
+      "Refine Product Timing",
+      "",
+      "Leverage Exclusive Packaging",
+      "Incorporate Consumer Feedback",
+      "Collaborate for Impact",
+      "Optimize Marketing Channels",
+      "Monitor Inventory Closely",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-16",
@@ -280,7 +575,27 @@
       "VOLUME",
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/16 - Craft vs. Mass-Produced Product Positioning Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/16 - Craft vs. Mass-Produced Product Positioning Analysis.md",
+    "goal": "To evaluate how wine, beer, and spirits brands position craft products versus mass-produced offerings, identifying strengths, weaknesses, and opportunities to align with consumer preferences and market trends.",
+    "dataRequired": [
+      "Sales data segmented by craft and mass-produced product categories.",
+      "Pricing and profit margin data for craft and mass-produced products.",
+      "Consumer survey results on perceptions of craft versus mass-produced offerings.",
+      "Social media sentiment and online reviews related to craft and mass-produced products.",
+      "Competitor analysis of craft and mass-produced product lines.",
+      "Marketing spend and ROI data for campaigns promoting craft or mass-produced products.",
+      "Distribution channel performance for each product category."
+    ],
+    "improve": [
+      "Strengthen Craft Positioning",
+      "Enhance Mass-Produced Branding",
+      "",
+      "Leverage Storytelling",
+      "Tailor Distribution Strategies",
+      "Monitor Pricing Trends",
+      "Engage Key Influencers",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-17",
@@ -293,7 +608,27 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/17 - Cocktail Recipe Inclusion and Cross-Product Pairing Potential.md"
+    "sourcePath": "data/analysis-library/wine-spirits/17 - Cocktail Recipe Inclusion and Cross-Product Pairing Potential.md",
+    "goal": "To explore opportunities for wine, beer, and spirits brands to boost consumer engagement and sales by incorporating cocktail recipes and cross-product pairings, driving product usage versatility and customer loyalty.",
+    "dataRequired": [
+      "Sales data segmented by product type and usage context (e.g., straight consumption, cocktail usage).",
+      "Customer surveys on preferences for cocktail recipes and pairing suggestions.",
+      "Competitor analysis of cocktail and pairing strategies, including recipe marketing.",
+      "Social media engagement metrics for cocktail recipe content.",
+      "Event and tasting room data on cocktail-based promotions or food pairings.",
+      "Seasonal or regional trends in cocktail consumption and food pairing preferences.",
+      "Collaboration insights with mixologists, chefs, or influencers."
+    ],
+    "improve": [
+      "Create Signature Recipes",
+      "Promote Pairings",
+      "",
+      "Engage Influencers",
+      "Host Pairing Events",
+      "Leverage Seasonal Trends",
+      "Enhance Accessibility",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-18",
@@ -311,7 +646,27 @@
     "relatedLeverCategories": [
       "MARKETING_EFFECTIVENESS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/18 - Local and Global Competitions and Awards Impact on Brand.md"
+    "sourcePath": "data/analysis-library/wine-spirits/18 - Local and Global Competitions and Awards Impact on Brand.md",
+    "goal": "To evaluate the influence of awards and competition recognition on brand perception, consumer trust, and sales for wine, beer, and spirits companies, while identifying strategies to leverage accolades effectively in marketing and positioning.",
+    "dataRequired": [
+      "Historical data on awards and recognitions won by products.",
+      "Sales data before and after receiving awards.",
+      "Consumer survey data on perceptions of awards and their influence on purchasing decisions.",
+      "Competitor accolades and their marketing strategies.",
+      "Marketing campaign data tied to award promotion, including engagement and ROI.",
+      "Social media and press coverage metrics related to awards.",
+      "Regional and demographic data on consumer responsiveness to awards."
+    ],
+    "improve": [
+      "Target Prestigious Awards",
+      "",
+      "Leverage Award Announcements",
+      "Incorporate Awards in Branding",
+      "Educate Consumers",
+      "Host Celebratory Events",
+      "Track Consumer Sentiment",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-19",
@@ -324,7 +679,27 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/19 - Retail Shelf Placement and Visibility Optimization.md"
+    "sourcePath": "data/analysis-library/wine-spirits/19 - Retail Shelf Placement and Visibility Optimization.md",
+    "goal": "To evaluate the effectiveness of retail shelf placement and visibility strategies for wine, beer, and spirits brands, identifying opportunities to enhance in-store presence and drive sales through strategic placement and promotional displays.",
+    "dataRequired": [
+      "Sales data segmented by store, shelf position, and product category.",
+      "Planogram data (store layouts and product placement).",
+      "Consumer behavior insights, including eye-tracking and purchase path data.",
+      "Retailer-specific promotional and endcap display performance data.",
+      "Competitor shelf placement strategies and visibility tactics.",
+      "Regional sales data to assess the impact of placement by market.",
+      "Costs associated with premium shelf space and in-store promotions."
+    ],
+    "improve": [
+      "Negotiate Premium Placement",
+      "Invest in Branded Displays",
+      "Leverage Data-Driven Insights",
+      "Conduct In-Store Tastings",
+      "",
+      "Collaborate with Retailers",
+      "Optimize Seasonal Displays",
+      "C. Product Innovation and Development"
+    ]
   },
   {
     "id": "wine-spirits-20",
@@ -339,7 +714,27 @@
     "relatedLeverCategories": [
       "INNOVATION_NPD"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/20 - Innovation Pipeline and Product Development Cycle Review.md"
+    "sourcePath": "data/analysis-library/wine-spirits/20 - Innovation Pipeline and Product Development Cycle Review.md",
+    "goal": "To evaluate the efficiency and effectiveness of the innovation pipeline and product development cycle for wine, beer, and spirits companies, identifying bottlenecks, opportunities for improvement, and strategies to accelerate time-to-market for new products.",
+    "dataRequired": [
+      "Historical data on product launches, including timelines and outcomes.",
+      "R&D investment data and resource allocation details.",
+      "Consumer feedback and market research insights on past and current innovations.",
+      "Competitor innovation trends and benchmarks.",
+      "Sales performance of recently launched products.",
+      "Internal process data for each stage of product development (e.g., concept creation, testing, production).",
+      "Regulatory compliance timelines for new products."
+    ],
+    "improve": [
+      "Streamline R&D Processes",
+      "Invest in Market Research",
+      "",
+      "Enhance Collaboration",
+      "Leverage Emerging Technologies",
+      "Strengthen Regulatory Expertise",
+      "Benchmark Competitors Regularly",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-21",
@@ -355,7 +750,27 @@
     "relatedLeverCategories": [
       "INNOVATION_NPD"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/21 - Flavor Innovation and Experimentation Impact Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/21 - Flavor Innovation and Experimentation Impact Analysis.md",
+    "goal": "To evaluate the impact of flavor innovation and experimentation on consumer engagement, market differentiation, and sales for wine, beer, and spirits brands, identifying successful trends and opportunities for further product innovation.",
+    "dataRequired": [
+      "Sales data segmented by product flavor profiles, including new and experimental flavors.",
+      "Customer feedback from surveys, focus groups, and tastings.",
+      "Competitor flavor innovation data, including seasonal or limited-edition products.",
+      "Marketing campaign performance tied to flavor launches.",
+      "Production cost and R&D data for experimental flavors.",
+      "Social media and online review sentiment related to new flavors.",
+      "Regional and demographic trends in flavor preferences."
+    ],
+    "improve": [
+      "Focus on Consumer Trends",
+      "",
+      "Test with Limited Releases",
+      "Collaborate with Experts",
+      "Enhance Marketing Campaigns",
+      "Leverage Social Media",
+      "Monitor and Iterate",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-22",
@@ -374,7 +789,27 @@
       "VOLUME",
       "INNOVATION_NPD"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/22 - Emerging Alcohol-Free and Low-ABV Product Trend Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/22 - Emerging Alcohol-Free and Low-ABV Product Trend Analysis.md",
+    "goal": "To assess the growth and market potential of alcohol-free and low-ABV (alcohol by volume) products in the wine, beer, and spirits industry, identifying consumer preferences, opportunities for innovation, and strategies for market entry or expansion.",
+    "dataRequired": [
+      "Sales data for alcohol-free and low-ABV product categories.",
+      "Consumer survey insights on alcohol-free and low-ABV preferences and motivations.",
+      "Competitor product offerings and market share in the alcohol-free and low-ABV space.",
+      "Regional and demographic trends in consumption of these products.",
+      "Industry trend reports on alcohol moderation and health-conscious consumption.",
+      "Marketing and promotional campaign data for alcohol-free and low-ABV launches.",
+      "Distribution channel performance data specific to these product types."
+    ],
+    "improve": [
+      "",
+      "Expand Product Offerings",
+      "Focus on Health Messaging",
+      "Leverage Partnerships",
+      "Enhance Distribution Channels",
+      "Innovate with Ingredients",
+      "Monitor Trends and Feedback",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-23",
@@ -393,7 +828,27 @@
     "relatedLeverCategories": [
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/23 - Barrel Aging Process Optimization and Impact Assessment.md"
+    "sourcePath": "data/analysis-library/wine-spirits/23 - Barrel Aging Process Optimization and Impact Assessment.md",
+    "goal": "To evaluate the efficiency and outcomes of the barrel aging process for wine, beer, and spirits, identifying areas for optimization to enhance flavor profiles, reduce costs, and increase product consistency while maintaining quality and brand integrity.",
+    "dataRequired": [
+      "Barrel inventory data, including age, type (e.g., oak, charred, toasted), and origin.",
+      "Aging timelines and production schedules for different products.",
+      "Sensory analysis data and tasting panel feedback for aged products.",
+      "Yield data, including evaporation loss (angel’s share) and product volume post-aging.",
+      "Cost data for barrel sourcing, maintenance, and storage.",
+      "Environmental data (e.g., temperature, humidity) from storage facilities.",
+      "Competitor aging practices and their impact on flavor differentiation."
+    ],
+    "improve": [
+      "Optimize Storage Conditions",
+      "",
+      "Experiment with Barrel Types",
+      "Shorten Aging Times Strategically",
+      "Enhance Sustainability",
+      "Refine Sensory Analysis",
+      "Monitor Yield Metrics",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-24",
@@ -409,7 +864,27 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/24 - Vintage Variation Impact on Brand and Pricing Strategy.md"
+    "sourcePath": "data/analysis-library/wine-spirits/24 - Vintage Variation Impact on Brand and Pricing Strategy.md",
+    "goal": "To assess how vintage variation impacts the quality, perception, and pricing strategy of wine, beer, and spirits products, enabling brands to capitalize on strong vintages and mitigate challenges associated with weaker ones.",
+    "dataRequired": [
+      "Historical sales and pricing data segmented by vintage.",
+      "Consumer feedback and ratings for different vintages.",
+      "Climate and environmental data for production years (e.g., rainfall, temperature, harvest conditions).",
+      "Competitor vintage performance and pricing trends.",
+      "Industry reviews, awards, and ratings for each vintage.",
+      "Production yield and quality data for each vintage.",
+      "Marketing campaign performance metrics tied to specific vintages."
+    ],
+    "improve": [
+      "Capitalize on Strong Vintages",
+      "Mitigate Weak Vintages",
+      "",
+      "Leverage Storytelling",
+      "Implement Flexible Pricing",
+      "Monitor Climate Trends",
+      "Educate Consumers",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-25",
@@ -429,7 +904,26 @@
       "COST_PROCUREMENT",
       "PRODUCTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/25 - In-House vs. Outsourced Production Feasibility Study.md"
+    "sourcePath": "data/analysis-library/wine-spirits/25 - In-House vs. Outsourced Production Feasibility Study.md",
+    "goal": "To evaluate the cost-effectiveness, scalability, quality control, and strategic benefits of in-house production versus outsourcing for wine, beer, and spirits companies, enabling informed decisions to optimize operations and maintain brand consistency.",
+    "dataRequired": [
+      "Production costs for in-house facilities, including fixed and variable expenses (labor, equipment, utilities).",
+      "Costs associated with outsourced production, including contractor fees and transportation.",
+      "Production capacity and scalability data for in-house facilities and outsourced partners.",
+      "Quality control metrics from both in-house and outsourced production.",
+      "Lead times and flexibility data for in-house and outsourced processes.",
+      "Regulatory compliance costs and requirements for in-house and outsourced production.",
+      "Feedback from distributors, retailers, and customers on product consistency and quality."
+    ],
+    "improve": [
+      "Optimize In-House Operations",
+      "Evaluate Hybrid Models",
+      "Strengthen Vendor Relationships",
+      "Focus on Core Competencies",
+      "Enhance Scalability",
+      "Regularly Reassess",
+      "D. Supply Chain and Sourcing Stability"
+    ]
   },
   {
     "id": "wine-spirits-26",
@@ -447,7 +941,27 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/26 - Supply Chain and Raw Material Sourcing Stability Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/26 - Supply Chain and Raw Material Sourcing Stability Analysis.md",
+    "goal": "To assess the stability and resilience of the supply chain and raw material sourcing for wine, beer, and spirits companies, identifying potential risks, inefficiencies, and opportunities to improve reliability and cost-effectiveness.",
+    "dataRequired": [
+      "Supplier data, including locations, delivery timelines, and historical reliability.",
+      "Cost data for raw materials (e.g., grapes, hops, barley, yeast, barrels).",
+      "Inventory levels and turnover rates for raw materials.",
+      "Historical disruptions or delays in the supply chain and their impact on production.",
+      "Supplier contracts and agreements, including exclusivity or volume requirements.",
+      "Regional and global market trends affecting raw material availability.",
+      "Environmental and climate data influencing agricultural yield and quality.",
+      "Transportation and logistics costs and efficiency metrics."
+    ],
+    "improve": [
+      "Diversify Supplier Base",
+      "Strengthen Supplier Relationships",
+      "Invest in Forecasting Tools",
+      "Explore Sustainable Sourcing",
+      "Develop Contingency Plans",
+      "Monitor Market Trends",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-27",
@@ -467,7 +981,28 @@
       "VOLUME",
       "ROUTE_TO_MARKET"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/27 - Distributor Relationship Health and Dependency Risk.md"
+    "sourcePath": "data/analysis-library/wine-spirits/27 - Distributor Relationship Health and Dependency Risk.md",
+    "goal": "To evaluate the strength of distributor relationships and assess dependency risks for wine, beer, and spirits companies, ensuring reliable market access while identifying opportunities to diversify and strengthen distribution networks.",
+    "dataRequired": [
+      "Distributor performance metrics, including sales volume, revenue contribution, and market coverage.",
+      "Contract terms and exclusivity agreements with distributors.",
+      "Historical data on distributor reliability, including delivery timelines and payment consistency.",
+      "Market share and regional influence of each distributor.",
+      "Costs associated with each distributor, including commissions and logistics expenses.",
+      "Competitor reliance on shared distributors.",
+      "Feedback from distributors regarding collaboration and support.",
+      "Industry reports on distributor trends and consolidation risks."
+    ],
+    "improve": [
+      "Diversify Distribution Networks",
+      "",
+      "Strengthen Key Relationships",
+      "Negotiate Favorable Terms",
+      "Monitor Distributor Health",
+      "Leverage Technology",
+      "Develop Contingency Plans",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-28",
@@ -485,7 +1020,28 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/28 - Oak Barrel Sourcing and Quality Impact Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/28 - Oak Barrel Sourcing and Quality Impact Analysis.md",
+    "goal": "To evaluate the sourcing and quality of oak barrels used in the production of wine, beer, and spirits, assessing their impact on flavor profiles, product consistency, and production costs while identifying opportunities for optimization.",
+    "dataRequired": [
+      "Supplier data, including barrel type, origin, and production methods (e.g., American, French, or Hungarian oak).",
+      "Cost data for barrel sourcing, maintenance, and replacement.",
+      "Historical flavor profile data correlated with barrel characteristics.",
+      "Aging timelines and yield data for products aged in different barrel types.",
+      "Quality control metrics, including defects and barrel lifespan.",
+      "Feedback from tasting panels on products aged in specific barrels.",
+      "Competitor sourcing strategies and barrel usage trends.",
+      "Sustainability certifications and environmental impact data for suppliers."
+    ],
+    "improve": [
+      "Prioritize High-Quality Suppliers",
+      "",
+      "Experiment with Barrel Types",
+      "Optimize Costs",
+      "Monitor Yield Metrics",
+      "Enhance Sustainability",
+      "Train Sensory Panels",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-29",
@@ -507,7 +1063,27 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/29 - Harvest Yield Forecasting and Its Impact on Production.md"
+    "sourcePath": "data/analysis-library/wine-spirits/29 - Harvest Yield Forecasting and Its Impact on Production.md",
+    "goal": "To predict harvest yields for grapes, hops, barley, and other critical raw materials in the wine, beer, and spirits industry, evaluating their impact on production planning, inventory management, and cost optimization.",
+    "dataRequired": [
+      "Historical yield data for key crops (e.g., tons of grapes per hectare, hop yield per acre).",
+      "Climate and weather data, including rainfall, temperature, frost, and drought conditions.",
+      "Soil quality and vineyard or farm health data.",
+      "Regional agricultural reports and forecasts.",
+      "Production schedules and demand forecasts for finished products.",
+      "Supplier and grower performance metrics.",
+      "Pest and disease impact data on crop quality and yield."
+    ],
+    "improve": [
+      "",
+      "Leverage Predictive Analytics",
+      "Diversify Sourcing Regions",
+      "Strengthen Supplier Relationships",
+      "Invest in Crop Resilience",
+      "Adjust Production Flexibly",
+      "Monitor Market Trends",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-30",
@@ -521,7 +1097,27 @@
       "WEATHER_CLIMATE"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/30 - Microclimate Effects on Crop Quality and Product Consistency.md"
+    "sourcePath": "data/analysis-library/wine-spirits/30 - Microclimate Effects on Crop Quality and Product Consistency.md",
+    "goal": "To evaluate how microclimate variations impact the quality and consistency of crops like grapes, hops, and barley, and their downstream effects on product flavor, aroma, and overall quality in wine, beer, and spirits production.",
+    "dataRequired": [
+      "Microclimate data for key growing regions, including temperature, rainfall, humidity, and wind patterns.",
+      "Historical crop quality data segmented by region and season.",
+      "Soil quality and irrigation data specific to each microclimate.",
+      "Crop yield data and its correlation with environmental factors.",
+      "Sensory analysis and tasting panel results for products linked to specific crop batches.",
+      "Competitor microclimate management practices (if available).",
+      "Weather forecasts and seasonal variability reports."
+    ],
+    "improve": [
+      "Diversify Growing Regions",
+      "",
+      "Invest in Climate Resilience",
+      "Enhance Blending Practices",
+      "Use Microclimate-Specific Branding",
+      "Leverage Predictive Analytics",
+      "Collaborate with Growers",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-31",
@@ -538,7 +1134,27 @@
       "WEATHER_CLIMATE"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/31 - Climate Change Impact on Vineyard-Yield Stability.md"
+    "sourcePath": "data/analysis-library/wine-spirits/31 - Climate Change Impact on Vineyard-Yield Stability.md",
+    "goal": "To assess how climate change affects vineyard yield stability and crop quality in the wine, beer, and spirits industry, identifying risks and opportunities to adapt production and sourcing strategies for long-term sustainability.",
+    "dataRequired": [
+      "Historical yield data for vineyards and other crop sources, segmented by region.",
+      "Climate change projections for key growing regions (temperature, rainfall, extreme weather events).",
+      "Crop quality metrics, such as sugar levels, acidity, or ripeness in grapes.",
+      "Soil health and irrigation data.",
+      "Financial impact data of past climate-related events (e.g., frost damage, drought-related losses).",
+      "Sustainability practices and adaptive measures implemented by growers.",
+      "Competitor adaptation strategies and trends."
+    ],
+    "improve": [
+      "Diversify Growing Regions",
+      "Invest in Resilient Varietals",
+      "",
+      "Enhance Water Management",
+      "Collaborate on Sustainability",
+      "Monitor Climate Data",
+      "Explore Emerging Regions",
+      "E. Production and Quality Control"
+    ]
   },
   {
     "id": "wine-spirits-32",
@@ -560,7 +1176,27 @@
       "COST_OPS",
       "PRODUCTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/32 - Production Facility Efficiency and Scalability Assessment.md"
+    "sourcePath": "data/analysis-library/wine-spirits/32 - Production Facility Efficiency and Scalability Assessment.md",
+    "goal": "To evaluate the operational efficiency and scalability of production facilities for wine, beer, and spirits companies, identifying areas for cost savings, productivity improvements, and capacity expansion to meet future demand.",
+    "dataRequired": [
+      "Facility production data, including throughput rates, capacity utilization, and downtime.",
+      "Cost data for labor, utilities, maintenance, and raw material processing.",
+      "Energy and water usage data for sustainability benchmarking.",
+      "Equipment performance and maintenance schedules.",
+      "Historical data on production bottlenecks and delays.",
+      "Demand forecasts and projected production requirements.",
+      "Benchmarking data on industry standards for efficiency and scalability."
+    ],
+    "improve": [
+      "Invest in Automation",
+      "Enhance Predictive Maintenance",
+      "",
+      "Expand Facility Capacity",
+      "Adopt Sustainable Practices",
+      "Optimize Resource Allocation",
+      "Leverage Demand Forecasting",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-33",
@@ -581,7 +1217,28 @@
       "COST_OPS",
       "PRODUCTION_EFFICIENCY"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/33 - Bottling Process Efficiency and Contamination Risk.md"
+    "sourcePath": "data/analysis-library/wine-spirits/33 - Bottling Process Efficiency and Contamination Risk.md",
+    "goal": "To evaluate the efficiency of the bottling process and identify contamination risks in wine, beer, and spirits production, ensuring product quality, cost optimization, and regulatory compliance.",
+    "dataRequired": [
+      "Bottling line throughput and cycle time data.",
+      "Downtime and maintenance logs for bottling equipment.",
+      "Contamination incident reports and associated costs.",
+      "Quality control metrics, including defect rates (e.g., bottle leaks, label misalignment).",
+      "Cleaning and sterilization procedures for bottling lines.",
+      "Material cost data, including bottles, caps, and labels.",
+      "Regulatory compliance documentation and inspection records.",
+      "Competitor benchmarks for bottling efficiency and contamination rates."
+    ],
+    "improve": [
+      "",
+      "Upgrade Equipment",
+      "Enhance Cleaning Protocols",
+      "Adopt Real-Time Monitoring",
+      "Optimize Material Sourcing",
+      "Implement Preventive Maintenance",
+      "Train Staff",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-34",
@@ -600,7 +1257,28 @@
     "relatedLeverCategories": [
       "WC_DIO"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/34 - Aging and Storage Cost Analysis for Premium Inventory.md"
+    "sourcePath": "data/analysis-library/wine-spirits/34 - Aging and Storage Cost Analysis for Premium Inventory.md",
+    "goal": "To evaluate the costs associated with aging and storing premium wine, beer, and spirits inventory, identifying opportunities to optimize expenses while maintaining product quality and consistency.",
+    "dataRequired": [
+      "Inventory data, including volume, type, and aging duration of premium products.",
+      "Storage facility costs, including rent, utilities, and maintenance.",
+      "Barrel or container cost data, including sourcing and reuse practices.",
+      "Labor costs for inventory management and monitoring.",
+      "Evaporation and spoilage rates (e.g., angel’s share for spirits).",
+      "Quality control data, including defect rates and customer feedback on aged products.",
+      "Competitor storage practices and associated costs.",
+      "Energy and environmental impact data for climate-controlled storage facilities."
+    ],
+    "improve": [
+      "Optimize Storage Conditions",
+      "Explore Alternative Containers",
+      "Implement Real-Time Monitoring",
+      "",
+      "Reduce Evaporation Losses",
+      "Streamline Inventory Management",
+      "Scale Storage Strategically",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-35",
@@ -613,7 +1291,27 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/35 - Tasting Panel and Sensory Quality Consistency Evaluation.md"
+    "sourcePath": "data/analysis-library/wine-spirits/35 - Tasting Panel and Sensory Quality Consistency Evaluation.md",
+    "goal": "To ensure consistent sensory quality across wine, beer, and spirits products by evaluating the performance of tasting panels, identifying variations in flavor profiles, and refining processes to maintain product standards.",
+    "dataRequired": [
+      "Historical sensory evaluation data, including flavor, aroma, texture, and appearance ratings.",
+      "Tasting panel participant profiles, including experience levels and sensory training records.",
+      "Product batch data, including production dates and processes.",
+      "Consumer feedback and reviews related to flavor and quality.",
+      "Benchmark flavor profiles for flagship and premium products.",
+      "Competitor sensory evaluation practices and outcomes.",
+      "Training and calibration records for tasting panels."
+    ],
+    "improve": [
+      "Standardize Training",
+      "",
+      "Use Objective Tools",
+      "Enhance Panel Diversity",
+      "Refine Benchmark Profiles",
+      "Incorporate Feedback Loops",
+      "Monitor Production Factors",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-36",
@@ -631,7 +1329,27 @@
       "COST_PROCUREMENT",
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/36 - Product Recall and Quality Assurance Risk Assessment.md"
+    "sourcePath": "data/analysis-library/wine-spirits/36 - Product Recall and Quality Assurance Risk Assessment.md",
+    "goal": "To evaluate the risk of product recalls in the wine, beer, and spirits industry by assessing quality assurance processes, identifying vulnerabilities, and developing strategies to mitigate recall risks and maintain brand reputation.",
+    "dataRequired": [
+      "Historical recall data, including root causes, affected products, and financial impacts.",
+      "Quality assurance process documentation and testing protocols.",
+      "Defect rates and quality control metrics, such as contamination rates or packaging failures.",
+      "Supplier performance and material quality data.",
+      "Consumer complaints and product issue reports.",
+      "Regulatory compliance records and audit findings.",
+      "Competitor recall data and their response strategies."
+    ],
+    "improve": [
+      "Enhance Quality Control",
+      "Strengthen Supplier Oversight",
+      "",
+      "Invest in Automation",
+      "Develop Recall Response Plans",
+      "Monitor Consumer Feedback",
+      "Regularly Audit Processes",
+      "F. Regulatory and Compliance"
+    ]
   },
   {
     "id": "wine-spirits-37",
@@ -649,7 +1367,27 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/37 - Regulatory Compliance and Impact Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/37 - Regulatory Compliance and Impact Analysis.md",
+    "goal": "To evaluate compliance with regulatory requirements in the wine, beer, and spirits industry, assess the financial and operational impact of regulations, and identify areas for risk mitigation and process improvement.",
+    "dataRequired": [
+      "Regulatory requirements applicable to production, labeling, distribution, and marketing in target regions.",
+      "Compliance records, including audit reports and incident histories.",
+      "Costs associated with compliance activities, such as certification fees, testing, and reporting.",
+      "Penalty and recall data due to non-compliance incidents.",
+      "Supplier compliance records and documentation.",
+      "Operational data on production and distribution affected by regulatory requirements.",
+      "Competitor compliance strategies and best practices."
+    ],
+    "improve": [
+      "Strengthen Compliance Monitoring",
+      "Train Staff",
+      "",
+      "Streamline Documentation",
+      "Partner with Legal Experts",
+      "Audit Supply Chains",
+      "Prepare for Emerging Regulations",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-38",
@@ -665,7 +1403,27 @@
     "relatedLeverCategories": [
       "COST_OPS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/38 - Alcohol Content Regulation and Compliance Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/38 - Alcohol Content Regulation and Compliance Analysis.md",
+    "goal": "To evaluate compliance with alcohol content regulations in the wine, beer, and spirits industry, ensuring accurate labeling, adherence to regional requirements, and minimizing risks of penalties, recalls, or reputational damage.",
+    "dataRequired": [
+      "Alcohol content testing data for all products.",
+      "Regional and international alcohol content regulations, including tolerances for variance.",
+      "Labeling requirements for alcohol content in target markets.",
+      "Historical non-compliance incidents and their financial or operational impacts.",
+      "Quality assurance and testing protocols for alcohol content verification.",
+      "Competitor practices for alcohol content compliance.",
+      "Regulatory audit and inspection records."
+    ],
+    "improve": [
+      "Upgrade Testing Equipment",
+      "Standardize QA Protocols",
+      "",
+      "Enhance Staff Training",
+      "Automate Labeling Verification",
+      "Monitor Regulatory Changes",
+      "Engage Third-Party Auditors",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-39",
@@ -680,7 +1438,27 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/39 - Brand and Label Compliance with Regional and International.md"
+    "sourcePath": "data/analysis-library/wine-spirits/39 - Brand and Label Compliance with Regional and International.md",
+    "goal": "To ensure that product branding and labeling for wine, beer, and spirits comply with regional and international regulations, avoiding penalties, recalls, or distribution delays while maintaining brand integrity and market competitiveness.",
+    "dataRequired": [
+      "Regional and international labeling requirements, including alcohol content, ingredients, health warnings, and certifications.",
+      "Product label designs for all SKUs.",
+      "Historical compliance data, including violations, penalties, or recall incidents.",
+      "Consumer feedback related to label clarity and accuracy.",
+      "Competitor branding and labeling practices in target markets.",
+      "Legal and regulatory audit records.",
+      "Distribution and export documentation requirements."
+    ],
+    "improve": [
+      "Standardize Label Review Processes",
+      "Use Regulatory Management Software",
+      "",
+      "Enhance Label Design Clarity",
+      "Invest in Multilingual Packaging",
+      "Collaborate with Legal Experts",
+      "Proactively Address Feedback",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-40",
@@ -704,7 +1482,27 @@
       "COST_OPS",
       "TAX_TARIFF_OPTIMIZATION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/40 - Taxation, Tariffs, and Excise Duty Impacts on Cost and Pricing.md"
+    "sourcePath": "data/analysis-library/wine-spirits/40 - Taxation, Tariffs, and Excise Duty Impacts on Cost and Pricing.md",
+    "goal": "To evaluate the impact of taxation, tariffs, and excise duties on production costs and pricing strategies for wine, beer, and spirits, identifying opportunities to optimize pricing, maintain profitability, and ensure compliance with regional and international tax regulations.",
+    "dataRequired": [
+      "Taxation rates, tariffs, and excise duties applicable to products in domestic and export markets.",
+      "Sales data segmented by product, region, and channel.",
+      "Historical data on tax and duty changes and their financial impacts.",
+      "Cost breakdown for production, distribution, and import/export operations.",
+      "Pricing strategies and competitor pricing data in key markets.",
+      "Consumer price sensitivity data and demand elasticity insights.",
+      "Regulatory documentation related to tax compliance and exemptions."
+    ],
+    "improve": [
+      "Optimize Market Focus",
+      "",
+      "Leverage Tax Exemptions",
+      "Refine Pricing Strategies",
+      "Monitor Policy Changes",
+      "Enhance Cost Efficiency",
+      "Advocate for Policy Reforms",
+      "G. Financial and Revenue Optimization"
+    ]
   },
   {
     "id": "wine-spirits-41",
@@ -725,7 +1523,27 @@
     "relatedLeverCategories": [
       "PRICING"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/41 - Pricing and Margin Optimization by Product and Geography.md"
+    "sourcePath": "data/analysis-library/wine-spirits/41 - Pricing and Margin Optimization by Product and Geography.md",
+    "goal": "To optimize pricing and maximize profit margins for wine, beer, and spirits products across different regions by analyzing cost structures, competitive dynamics, and consumer price sensitivities.",
+    "dataRequired": [
+      "Product-level cost data, including production, distribution, and marketing expenses.",
+      "Current pricing data for each product by region and channel.",
+      "Profit margin data segmented by product and geography.",
+      "Competitor pricing data for similar products in each target market.",
+      "Consumer demand elasticity and price sensitivity insights.",
+      "Regional tax rates, tariffs, and excise duties.",
+      "Sales data by product, region, and channel."
+    ],
+    "improve": [
+      "",
+      "Tailor Pricing by Region",
+      "Optimize Premium Products",
+      "Reduce Cost Inefficiencies",
+      "Monitor Competitor Trends",
+      "Test Dynamic Pricing Models",
+      "Leverage Regional Insights",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-42",
@@ -744,7 +1562,28 @@
       "VOLUME",
       "DTC_EXPANSION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/42 - Direct-to-Consumer Sales Strategy and Winery-Tasting Room.md"
+    "sourcePath": "data/analysis-library/wine-spirits/42 - Direct-to-Consumer Sales Strategy and Winery-Tasting Room.md",
+    "goal": "To evaluate the effectiveness of direct-to-consumer (DTC) sales channels, including wineries and tasting rooms, identifying opportunities to enhance customer experience, maximize revenue, and build long-term customer loyalty.",
+    "dataRequired": [
+      "Revenue and sales data from DTC channels, segmented by winery/tasting room and online sales.",
+      "Customer demographic and purchase behavior data.",
+      "Foot traffic data for wineries and tasting rooms.",
+      "Conversion rates from visits to purchases.",
+      "Operating costs for wineries and tasting rooms, including staff, utilities, and maintenance.",
+      "Competitor strategies for DTC channels, including pricing and promotions.",
+      "Customer feedback and satisfaction metrics from winery/tasting room visits.",
+      "Marketing campaign performance data targeting DTC customers."
+    ],
+    "improve": [
+      "Enhance Tasting Room Experiences",
+      "",
+      "Leverage Exclusive Products",
+      "Expand Membership Programs",
+      "Invest in Digital DTC Channels",
+      "Focus on Regional Promotions",
+      "Monitor and Adapt",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-43",
@@ -763,7 +1602,27 @@
       "VOLUME",
       "MARKETING_EFFECTIVENESS"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/43 - Marketing Spend Efficiency and Return on Investment.md"
+    "sourcePath": "data/analysis-library/wine-spirits/43 - Marketing Spend Efficiency and Return on Investment.md",
+    "goal": "To assess the effectiveness of marketing spend in driving revenue, brand visibility, and customer engagement for wine, beer, and spirits companies, optimizing allocation and maximizing ROI.",
+    "dataRequired": [
+      "Marketing budget allocation by channel (e.g., digital ads, print, events).",
+      "Campaign performance metrics (e.g., impressions, clicks, conversions).",
+      "Revenue generated by each marketing channel or campaign.",
+      "Customer acquisition cost (CAC) and lifetime value (LTV) data.",
+      "Competitor marketing strategies and benchmarks.",
+      "Consumer engagement metrics, such as website traffic, social media interactions, and email open rates.",
+      "Sales data correlated with marketing efforts by region and product."
+    ],
+    "improve": [
+      "Focus on High-ROI Channels",
+      "",
+      "Enhance Targeting",
+      "Optimize Underperforming Campaigns",
+      "Leverage Analytics Tools",
+      "Experiment with New Strategies",
+      "Align Marketing with Sales Goals",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-44",
@@ -784,7 +1643,27 @@
       "VOLUME",
       "ROUTE_TO_MARKET"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/44 - Route-to-Market and Distribution Channel Effectiveness.md"
+    "sourcePath": "data/analysis-library/wine-spirits/44 - Route-to-Market and Distribution Channel Effectiveness.md",
+    "goal": "To evaluate the effectiveness of distribution channels and routes-to-market for wine, beer, and spirits, identifying inefficiencies, opportunities to enhance market reach, and strategies to optimize revenue and profitability.",
+    "dataRequired": [
+      "Sales data segmented by distribution channel (e.g., direct-to-consumer, retail, on-premise, e-commerce).",
+      "Costs associated with each channel, including logistics, commissions, and marketing support.",
+      "Performance metrics for distributors, including volume, reliability, and market coverage.",
+      "Regional market demand data and consumer preferences.",
+      "Competitor distribution strategies and benchmarks.",
+      "Inventory turnover rates and channel-specific stock levels.",
+      "Consumer feedback and satisfaction with channel availability."
+    ],
+    "improve": [
+      "Optimize Channel Costs",
+      "",
+      "Diversify Distribution Channels",
+      "Focus on High-Value Channels",
+      "Invest in Analytics",
+      "Enhance Distributor Relationships",
+      "Align with Consumer Preferences",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-45",
@@ -800,7 +1679,25 @@
     "relatedLeverCategories": [
       "PREMIUMIZATION"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/45 - Specialty Packaging and Bottle Design Impact on Sales.md"
+    "sourcePath": "data/analysis-library/wine-spirits/45 - Specialty Packaging and Bottle Design Impact on Sales.md",
+    "goal": "To evaluate how specialty packaging and bottle design influence sales, brand perception, and customer engagement for wine, beer, and spirits products, identifying design elements that drive consumer preference and market differentiation.",
+    "dataRequired": [
+      "Sales data segmented by product and packaging type (e.g., limited-edition designs, premium bottles).",
+      "Consumer feedback and survey data on packaging appeal and perceived value.",
+      "Competitor packaging strategies and design innovations.",
+      "Cost data for specialty packaging materials and production.",
+      "Marketing campaign performance tied to packaging-focused promotions.",
+      "Retail placement data, including visibility and shelf positioning of specialty designs.",
+      "Seasonal or event-driven packaging trends and sales impact."
+    ],
+    "improve": [
+      "Invest in Unique Designs",
+      "Leverage Seasonal Themes",
+      "Optimize Costs",
+      "Enhance Retail Placement",
+      "",
+      "Test Consumer Response"
+    ]
   },
   {
     "id": "wine-spirits-46",
@@ -818,7 +1715,28 @@
       "VOLUME",
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/46 - Customer Loyalty and Retention Metrics Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/46 - Customer Loyalty and Retention Metrics Analysis.md",
+    "goal": "To measure customer loyalty and retention for wine, beer, and spirits brands, identify factors driving repeat purchases, and develop strategies to enhance customer lifetime value and reduce churn.",
+    "dataRequired": [
+      "Purchase frequency and repeat purchase rates for each customer segment.",
+      "Customer lifetime value (CLV) metrics.",
+      "Churn rate data:",
+      "`Churn Rate = (Number of Customers Lost in a Period / Total Customers at the Start of the Period) x 100.`",
+      "Customer feedback on satisfaction and brand loyalty.",
+      "Loyalty program enrollment and engagement data.",
+      "Sales data segmented by channel (e.g., DTC, retail, on-premise).",
+      "Competitor benchmarks for customer retention metrics."
+    ],
+    "improve": [
+      "Enhance Loyalty Programs",
+      "",
+      "Address Churn Drivers",
+      "Focus on Personalization",
+      "Monitor Post-Purchase Engagement",
+      "Expand Referral Incentives",
+      "Invest in Data Analytics",
+      "H. Sustainability and Environmental Impact"
+    ]
   },
   {
     "id": "wine-spirits-47",
@@ -835,7 +1753,28 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
     ],
-    "sourcePath": "data/analysis-library/wine-spirits/47 - Sustainability Practices and Environmental Impact Analysis.md"
+    "sourcePath": "data/analysis-library/wine-spirits/47 - Sustainability Practices and Environmental Impact Analysis.md",
+    "goal": "To evaluate the effectiveness of sustainability initiatives and assess the environmental impact of wine, beer, and spirits production, identifying opportunities to enhance sustainable practices, reduce carbon footprints, and align with consumer and regulatory expectations.",
+    "dataRequired": [
+      "Energy and water usage data segmented by production stage (e.g., fermentation, bottling).",
+      "Waste generation and disposal records, including recycling rates.",
+      "Carbon footprint metrics for production, distribution, and packaging.",
+      "Supplier sustainability certifications and practices.",
+      "Raw material sourcing data, including agricultural impacts.",
+      "Benchmarking data on industry sustainability standards and competitor initiatives.",
+      "Consumer perceptions and feedback on sustainability practices.",
+      "Costs associated with implementing and maintaining sustainability programs."
+    ],
+    "improve": [
+      "",
+      "Optimize Resource Use",
+      "Enhance Waste Management",
+      "Adopt Sustainable Sourcing",
+      "Reduce Carbon Emissions",
+      "Communicate Sustainability",
+      "Monitor and Adapt",
+      ""
+    ]
   },
   {
     "id": "wine-spirits-48",
@@ -849,6 +1788,26 @@
       "MARKET"
     ],
     "relatedLeverCategories": [],
-    "sourcePath": "data/analysis-library/wine-spirits/48 - Terroir and Regional Origin Impact on Brand Perception.md"
+    "sourcePath": "data/analysis-library/wine-spirits/48 - Terroir and Regional Origin Impact on Brand Perception.md",
+    "goal": "To evaluate how terroir (environmental factors like soil, climate, and geography) and regional origin influence the perception of wine, beer, and spirits brands, identifying opportunities to leverage these attributes for market differentiation and premium positioning.",
+    "dataRequired": [
+      "Consumer feedback and surveys on brand perception related to terroir and regional origin.",
+      "Sales data segmented by product origin and consumer demographics.",
+      "Awards, certifications, or designations of origin (e.g., appellation systems, GI marks).",
+      "Marketing materials highlighting terroir and regional attributes.",
+      "Competitor brand positioning strategies based on terroir or regional origin.",
+      "Cost data for sourcing and marketing region-specific products.",
+      "Cultural and historical significance of specific regions associated with products."
+    ],
+    "improve": [
+      "Enhance Storytelling",
+      "Secure Certifications",
+      "",
+      "Focus on Premium Positioning",
+      "Leverage Local Partnerships",
+      "Monitor Consumer Trends",
+      "Refine Marketing Efforts",
+      ""
+    ]
   }
 ]

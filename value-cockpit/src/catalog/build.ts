@@ -1,4 +1,5 @@
 import type { AnalysisRef } from './types';
+import { dataRequired, goalSentence, improveTitles } from './markdown';
 import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
 
 export interface SourceFile { path: string; content: string }
@@ -52,6 +53,7 @@ export function buildCatalog(archetype: SectorArchetype, files: SourceFile[]): {
       relatedCauseCategories: list(fm.causes),
       relatedLeverCategories: list(fm.levers),
       sourcePath: path,
+      goal: goalSentence(content), dataRequired: dataRequired(content), improve: improveTitles(content),
     };
 
     if (!new RegExp(`^${archetype}-\\d{2}$`).test(id)) errors.push(`${path}: id "${id}" is not ${archetype}-NN`);
