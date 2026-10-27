@@ -8,6 +8,7 @@ import {
   AERO_LEVER_CATEGORIES, AERO_CAUSE_CATEGORIES,
 } from './sectors/aero';
 import { SPECS } from '../sectors';
+import { FAMILY_VOCAB, type BridgeFamily } from './families';
 import {
   CPG_METRIC_CODES, CPG_METRIC_META, CPG_LEVER_CATEGORIES, CPG_CAUSE_CATEGORIES,
 } from './sectors/cpg';
@@ -58,21 +59,40 @@ const EXTENSIONS: Partial<Record<SectorArchetype, {
   airline: { codes: AIRLINE_METRIC_CODES, meta: AIRLINE_METRIC_META, levers: AIRLINE_LEVER_CATEGORIES, causes: AIRLINE_CAUSE_CATEGORIES },
 };
 
+type Extension = NonNullable<(typeof EXTENSIONS)[SectorArchetype]>;
+
+const FAMILY_OF: Partial<Record<SectorArchetype, BridgeFamily>> = Object.fromEntries(
+  Object.values(SPECS).map((spec) => [spec.archetype, spec.family ?? 'ebitda']),
+);
+
+/** The bridge family of an archetype (docs/16); hand-written extensions are all EBITDA-valued. */
+export function getBridgeFamily(archetype: SectorArchetype): BridgeFamily {
+  return FAMILY_OF[archetype] ?? 'ebitda';
+}
+
+/** Base vocabulary adapted to a bridge family, plus an optional sector extension. */
+export function composeVocabulary(family: BridgeFamily, ext?: Extension): ActiveVocabulary {
+  const fam = FAMILY_VOCAB[family];
+  const metricCodes = [
+    ...BASE_METRIC_CODES.filter((c) => !fam.excludedBaseMetrics.includes(c)),
+    ...fam.codes, ...(ext?.codes ?? []),
+  ];
+  const metricMeta = { ...BASE_METRIC_META, ...fam.meta, ...(ext?.meta ?? {}) };
+  const leverCategories = [...BASE_LEVER_CATEGORIES.filter((c) => !fam.excludedBaseLevers.includes(c)), ...(ext?.levers ?? [])];
+  const causeCategories: string[] = [...BASE_CAUSE_CATEGORIES, ...(ext?.causes ?? [])];
+  const nonLever: readonly string[] = [...NON_LEVER_CODES, ...fam.nonLever];
+  return {
+    metricCodes, metricMeta, leverCategories, causeCategories, nodeTypes: [...NODE_TYPES],
+    isMetricCode: (v) => metricCodes.includes(v as string),
+    isLeverTarget: (v) => metricCodes.includes(v as string) && !nonLever.includes(v as string),
+    isLeverCategory: (v) => leverCategories.includes(v as string),
+    isCauseCategory: (v) => causeCategories.includes(v as string),
+  };
+}
+
 export function getActiveVocabulary(archetype: SectorArchetype): ActiveVocabulary {
   if (!(SECTOR_ARCHETYPES as readonly string[]).includes(archetype)) {
     throw new Error(`Unknown archetype: ${archetype}`);
   }
-  const ext = EXTENSIONS[archetype];
-  const metricCodes = [...BASE_METRIC_CODES, ...(ext?.codes ?? [])];
-  const metricMeta = { ...BASE_METRIC_META, ...(ext?.meta ?? {}) };
-  const leverCategories = [...BASE_LEVER_CATEGORIES, ...(ext?.levers ?? [])];
-  const causeCategories: string[] = [...BASE_CAUSE_CATEGORIES, ...(ext?.causes ?? [])];
-  return {
-    metricCodes, metricMeta, leverCategories, causeCategories, nodeTypes: [...NODE_TYPES],
-    isMetricCode: (v) => metricCodes.includes(v as string),
-    isLeverTarget: (v) => metricCodes.includes(v as string)
-      && !(NON_LEVER_CODES as readonly string[]).includes(v as string),
-    isLeverCategory: (v) => leverCategories.includes(v as string),
-    isCauseCategory: (v) => causeCategories.includes(v as string),
-  };
+  return composeVocabulary(getBridgeFamily(archetype), EXTENSIONS[archetype]);
 }

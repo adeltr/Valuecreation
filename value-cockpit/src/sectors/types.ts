@@ -1,4 +1,5 @@
 import type { Unit } from '../ontology/base';
+import type { BridgeFamily } from '../ontology/families';
 
 export interface SpecTerm { code: string; unit: Unit; sources: string }
 
@@ -9,6 +10,8 @@ export interface SpecTerm { code: string; unit: Unit; sources: string }
  */
 export interface SectorSpec {
   archetype: string;
+  /** How equity is valued (docs/16); default 'ebitda'. */
+  family?: BridgeFamily;
   label: string;
   umbrexType: string;
   kpiFile: string;
