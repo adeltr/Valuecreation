@@ -7,8 +7,12 @@ import {
   AERO_METRIC_CODES, AERO_METRIC_META,
   AERO_LEVER_CATEGORIES, AERO_CAUSE_CATEGORIES,
 } from './sectors/aero';
+import {
+  AIRLINE_METRIC_CODES, AIRLINE_METRIC_META,
+  AIRLINE_LEVER_CATEGORIES, AIRLINE_CAUSE_CATEGORIES,
+} from './sectors/airline';
 
-export const SECTOR_ARCHETYPES = ['generic', 'saas', 'aero', 'industrials', 'retail', 'services'] as const;
+export const SECTOR_ARCHETYPES = ['generic', 'saas', 'aero', 'airline'] as const;
 export type SectorArchetype = (typeof SECTOR_ARCHETYPES)[number];
 
 export interface ActiveVocabulary {
@@ -23,7 +27,7 @@ export interface ActiveVocabulary {
   isCauseCategory(v: unknown): boolean;
 }
 
-// industrials/retail/services: stubs for now — extend like saas/aero in phase 3.
+// One archetype per Umbrex company type (docs/11). Add one via docs/09.
 const EXTENSIONS: Partial<Record<SectorArchetype, {
   codes: readonly string[];
   meta: Record<string, MetricMeta>;
@@ -32,6 +36,7 @@ const EXTENSIONS: Partial<Record<SectorArchetype, {
 }>> = {
   saas: { codes: SAAS_METRIC_CODES, meta: SAAS_METRIC_META, levers: SAAS_LEVER_CATEGORIES },
   aero: { codes: AERO_METRIC_CODES, meta: AERO_METRIC_META, levers: AERO_LEVER_CATEGORIES, causes: AERO_CAUSE_CATEGORIES },
+  airline: { codes: AIRLINE_METRIC_CODES, meta: AIRLINE_METRIC_META, levers: AIRLINE_LEVER_CATEGORIES, causes: AIRLINE_CAUSE_CATEGORIES },
 };
 
 export function getActiveVocabulary(archetype: SectorArchetype): ActiveVocabulary {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getActiveVocabulary, type SectorArchetype } from './registry';
+import { getActiveVocabulary, SECTOR_ARCHETYPES, type SectorArchetype } from './registry';
 
 describe('ontology registry', () => {
   const saas = getActiveVocabulary('saas');
@@ -71,5 +71,43 @@ describe('ontology registry – lever targets', () => {
   it('accepts operational inputs as lever targets', () => {
     expect(v.isLeverTarget('COST_OVERRUN_RATE')).toBe(true);
     expect(v.isLeverTarget('NOT_A_CODE')).toBe(false);
+  });
+});
+
+describe('ontology registry – archetypes', () => {
+  it('lists only real archetypes (stubs removed, airline added)', () => {
+    expect([...SECTOR_ARCHETYPES]).toEqual(['generic', 'saas', 'aero', 'airline']);
+  });
+});
+
+describe('ontology registry – airline extension', () => {
+  const airline = getActiveVocabulary('airline');
+
+  it('airline vocabulary = base ∪ airline extension', () => {
+    expect(airline.metricCodes).toContain('EBITDA_EXIT');
+    for (const code of ['ASK', 'LOAD_FACTOR', 'YIELD', 'ANCILLARY_PER_PAX', 'CASK_EX_FUEL',
+                        'FUEL_CASK', 'CAPACITY_GROWTH', 'AVG_TRIP_KM']) {
+      expect(airline.metricCodes, code).toContain(code);
+    }
+    expect(airline.leverCategories).toContain('PRICING');
+    for (const cat of ['NETWORK_OPTIMIZATION', 'REVENUE_MANAGEMENT', 'ANCILLARY', 'FLEET_PRODUCTIVITY',
+                       'FUEL_EFFICIENCY', 'CREW_PRODUCTIVITY', 'AIRPORT_GROUND_COST', 'FLEET_FINANCING', 'ALLIANCES']) {
+      expect(airline.leverCategories, cat).toContain(cat);
+    }
+  });
+
+  it('airline causes extend base with REGULATORY, FUEL_PRICE, LABOR', () => {
+    expect(airline.causeCategories).toContain('MARKET');
+    for (const c of ['REGULATORY', 'FUEL_PRICE', 'LABOR']) expect(airline.isCauseCategory(c), c).toBe(true);
+  });
+
+  it('cargo is out of scope v1 and aero terms do not leak', () => {
+    expect(airline.isMetricCode('CARGO_LOAD_FACTOR')).toBe(false);
+    expect(airline.isMetricCode('BOOK_TO_BILL')).toBe(false);
+    expect(getActiveVocabulary('aero').isMetricCode('LOAD_FACTOR')).toBe(false);
+  });
+
+  it('every airline metric code has meta with a unit', () => {
+    for (const code of airline.metricCodes) expect(airline.metricMeta[code]?.unit, code).toBeTypeOf('string');
   });
 });
