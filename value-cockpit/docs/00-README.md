@@ -22,6 +22,7 @@ docs/
   12-SECTOR-AIRLINE.md              ← extension Airline + catalogue des 40 analyses
   13-SECTOR-CPG.md                  ← extension CPG (volume × prix-mix, gross-to-net)
   14-SECTORS-LEVEL2.md              ← 15 secteurs de niveau 2 dérivés des fiches src/sectors/
+  15-DOSSIERS.md                    ← dossiers d'entreprise : enregistrer, ouvrir, exporter, importer
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
     2026-10-27-value-cockpit-ui-phase2.md ← plan phase 2 (UI React, 3+1 panneaux)
@@ -52,6 +53,7 @@ scripts/import-analyses.ts          ← import d'analyses brutes du vault → fo
 | Secteur issu d'une fiche (manufacturing, retail…) | 14, `data/analysis-library/<archetype>/_level2.md` |
 | Nouvel archétype | 14 (fiche), 09, 11 |
 | UI (phase 2) | plan phase 2, 02 (invariants) |
+| Dossiers (persistance) | 15, 02 |
 
 Règle : ne JAMAIS charger 01 (vision) pendant l'implémentation — c'est du
 contexte de cadrage, pas de spec exécutable. Le relire seulement si une

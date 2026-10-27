@@ -29,7 +29,7 @@ export interface DossierFile {
 
 export function toDossier(state: CockpitState, savedAt: string): DossierFile {
   const name = state.name.trim();
-  if (!name) throw new Error('Donne un nom au dossier avant de l\'enregistrer');
+  if (!name) throw new Error('Donne un nom au dossier avant de l\'enregistrer ou de l\'exporter');
   return {
     format: DOSSIER_FORMAT, version: DOSSIER_VERSION, name, savedAt,
     archetype: state.archetype,

@@ -181,6 +181,8 @@ describe('App – dossiers', () => {
     URL.revokeObjectURL = vi.fn();
     vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => {});
     render(<App />);
+    fireEvent.click(bar().getByRole('button', { name: 'Exporter' }));
+    expect(screen.getByRole('alert').textContent).toMatch(/nom/i);
     fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
     fireEvent.click(bar().getByRole('button', { name: 'Exporter' }));
     const text = await new Promise<string>((resolve) => {
@@ -188,6 +190,7 @@ describe('App – dossiers', () => {
     });
     const file = JSON.parse(text);
     expect(file).toMatchObject({ format: 'value-cockpit-dossier', name: 'Air X', archetype: 'airline' });
+    expect(screen.queryByRole('alert')).toBeNull();
     vi.restoreAllMocks();
   });
 

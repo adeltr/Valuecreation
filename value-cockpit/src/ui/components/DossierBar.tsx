@@ -40,6 +40,7 @@ export function DossierBar({ state, dispatch, storage, mayReplace, markClean }: 
       markClean(fingerprint({ ...state, name: file.name }));
       setSaved(list());
       setStatus(`Enregistré : ${file.name}, ${when(file.savedAt)}`);
+      dispatch({ type: 'clearError' });
     } catch (e) { fail(e); }
   };
 
@@ -70,6 +71,7 @@ export function DossierBar({ state, dispatch, storage, mayReplace, markClean }: 
       a.href = url; a.download = `${file.name}.json`;
       a.click();
       URL.revokeObjectURL(url);
+      dispatch({ type: 'clearError' });
     } catch (e) { fail(e); }
   };
 
