@@ -102,6 +102,15 @@
     "ALLIANCES": "vcc:lever/Alliances",
     "FUEL_PRICE": "vcc:cause/FuelPrice",
     "LABOR": "vcc:cause/Labor",
-    "REVENUE_GROWTH": "vcc:RevenueGrowthRate"
+    "REVENUE_GROWTH": "vcc:RevenueGrowthRate",
+    "DEFENSE_REVENUE_SHARE": "vcc:DefenseRevenueShare",
+    "CLASSIFIED_REVENUE_SHARE": "vcc:ClassifiedRevenueShare",
+    "RD_INTENSITY": "vcc:RAndDIntensity",
+    "OPERATIONAL_AVAILABILITY": "vcc:OperationalAvailability",
+    "SPARE_PARTS_AVAILABILITY": "vcc:SparePartsAvailability",
+    "SUSTAINMENT_COST": "vcc:SustainmentCost",
+    "WORKFORCE_TURNOVER": "vcc:WorkforceTurnover",
+    "RD_PORTFOLIO": "vcc:lever/RdPortfolio",
+    "CYBER": "vcc:cause/Cyber"
   }
 }

@@ -131,3 +131,15 @@ describe('ontology registry – REGULATORY is a base cause', () => {
     expect(new Set(causes).size).toBe(causes.length);
   });
 });
+
+describe('ontology registry – aero candidates validated (aero/_curation.md §C)', () => {
+  const aero = getActiveVocabulary('aero');
+  it('adds the 7 benchmarked diagnostics, RD_PORTFOLIO and CYBER', () => {
+    for (const c of ['DEFENSE_REVENUE_SHARE', 'CLASSIFIED_REVENUE_SHARE', 'RD_INTENSITY', 'OPERATIONAL_AVAILABILITY',
+                     'SPARE_PARTS_AVAILABILITY', 'SUSTAINMENT_COST', 'WORKFORCE_TURNOVER']) {
+      expect(aero.isMetricCode(c), c).toBe(true);
+    }
+    expect(aero.isLeverCategory('RD_PORTFOLIO')).toBe(true);
+    expect(aero.isCauseCategory('CYBER')).toBe(true);
+  });
+});
