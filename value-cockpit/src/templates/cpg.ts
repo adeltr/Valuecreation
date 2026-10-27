@@ -1,5 +1,5 @@
 import type { Metric } from '../domain/types';
-import { getActiveVocabulary } from '../ontology/registry';
+import { makeTemplate, BRIDGE_FORMULAS } from './build';
 
 export type CpgInputs = {
   REVENUE: number;
@@ -27,24 +27,11 @@ const FORMULAS: Record<string, string> = {
   REVENUE_EXIT: 'REVENUE * ((1 + VOLUME_GROWTH) * (1 + PRICE_MIX_GROWTH)) ^ HOLD_YEARS',
   EBITDA_MARGIN_EXIT: 'GROSS_MARGIN - TRADE_SPEND_RATE - AP_RATE - OVERHEAD_RATE',
   EBITDA_EXIT: 'REVENUE_EXIT * EBITDA_MARGIN_EXIT',
-  EQUITY_ENTRY: 'EBITDA_ENTRY * ENTRY_MULTIPLE - NET_DEBT_ENTRY',
-  NET_DEBT_EXIT: 'NET_DEBT_ENTRY - FCF_ANNUAL * HOLD_YEARS',
-  EQUITY_EXIT: 'EBITDA_EXIT * EXIT_MULTIPLE - NET_DEBT_EXIT',
-  MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
+  ...BRIDGE_FORMULAS,
 };
 
+const build = makeTemplate('cpg', FORMULAS);
+
 export function instantiateCpgTemplate(companyId: string, inputs: CpgInputs): Metric[] {
-  const vocab = getActiveVocabulary('cpg');
-  const make = (code: string, value: number | null, formula: string | null): Metric => {
-    if (!vocab.isMetricCode(code)) throw new Error(`Template emits unknown code: ${code}`);
-    return {
-      id: `${companyId}:${code}`, companyId, code, label: code,
-      unit: vocab.metricMeta[code].unit, isCalculated: formula !== null, formula,
-      currentValue: value, benchmarkValue: null, benchmarkSource: null,
-    };
-  };
-  return [
-    ...Object.entries(inputs).map(([code, value]) => make(code, value, null)),
-    ...Object.entries(FORMULAS).map(([code, formula]) => make(code, null, formula)),
-  ];
+  return build(companyId, inputs);
 }

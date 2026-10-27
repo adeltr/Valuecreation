@@ -1,5 +1,6 @@
 import type { Metric } from '../domain/types';
-import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
+import type { SectorArchetype } from '../ontology/registry';
+import { makeTemplate, BRIDGE_FORMULAS } from './build';
 
 export type EbitdaInputs = {
   REVENUE: number;
@@ -20,24 +21,9 @@ export type EbitdaInputs = {
 const FORMULAS: Record<string, string> = {
   REVENUE_EXIT: 'REVENUE * (1 + REVENUE_GROWTH) ^ HOLD_YEARS',
   EBITDA_EXIT: 'REVENUE_EXIT * EBITDA_MARGIN',
-  EQUITY_ENTRY: 'EBITDA_ENTRY * ENTRY_MULTIPLE - NET_DEBT_ENTRY',
-  NET_DEBT_EXIT: 'NET_DEBT_ENTRY - FCF_ANNUAL * HOLD_YEARS',
-  EQUITY_EXIT: 'EBITDA_EXIT * EXIT_MULTIPLE - NET_DEBT_EXIT',
-  MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
+  ...BRIDGE_FORMULAS,
 };
 
 export function instantiateEbitdaTemplate(companyId: string, inputs: EbitdaInputs, archetype: SectorArchetype): Metric[] {
-  const vocab = getActiveVocabulary(archetype);
-  const make = (code: string, value: number | null, formula: string | null): Metric => {
-    if (!vocab.isMetricCode(code)) throw new Error(`Template emits unknown code: ${code}`);
-    return {
-      id: `${companyId}:${code}`, companyId, code, label: code,
-      unit: vocab.metricMeta[code].unit, isCalculated: formula !== null, formula,
-      currentValue: value, benchmarkValue: null, benchmarkSource: null,
-    };
-  };
-  return [
-    ...Object.entries(inputs).map(([code, value]) => make(code, value, null)),
-    ...Object.entries(FORMULAS).map(([code, formula]) => make(code, null, formula)),
-  ];
+  return makeTemplate(archetype, FORMULAS)(companyId, inputs);
 }
