@@ -70,7 +70,7 @@ export async function renderPlanSlide(m: SlideModel, output: 'nodebuffer' | 'dow
   s.addText(m.subtitle, { x: 0.4, y: 0.95, w: 12.5, h: 0.3, fontSize: 11, color: C.muted, fontFace: font });
 
   // Timeline
-  const labelX = 0.4, labelW = 2.4, trackX = 2.9, trackW = 5.0, top = 1.45, rowH = 0.3;
+  const labelX = 0.4, labelW = 2.4, trackX = 2.9, trackW = 4.6, top = 1.45, rowH = 0.3; // leaves room for « → J+n » before the table
   const x = (day: number) => trackX + (Math.min(day, 100) / 100) * trackW;
   for (const [name, from, to] of PHASES) {
     s.addShape(pptx.ShapeType.rect, { x: x(from), y: top, w: x(to) - x(from) - 0.03, h: 0.3, fill: { color: C.soft }, line: { color: C.soft } });
