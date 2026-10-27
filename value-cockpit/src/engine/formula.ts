@@ -19,8 +19,9 @@ export function evaluateFormula(formula: string, scope: Record<string, number>):
 export function extractDependencies(formula: string): string[] {
   const deps = new Set<string>();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (math as any).parse(formula).traverse((node: any) => {
-    if (node.isSymbolNode) deps.add(node.name);
+  (math as any).parse(formula).traverse((node: any, _path: string, parent: any) => {
+    // The function name of a call (min, max…) is a SymbolNode too: it is not a metric.
+    if (node.isSymbolNode && !(parent?.isFunctionNode && parent.fn === node)) deps.add(node.name);
   });
   return [...deps];
 }

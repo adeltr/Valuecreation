@@ -14,4 +14,8 @@ describe('formula', () => {
   it('throws on a non-finite result', () => {
     expect(() => evaluateFormula('A / B', { A: 1, B: 0 })).toThrow(/finite/i);
   });
+  it('treats function names (min, max) as functions, not metric dependencies', () => {
+    expect(extractDependencies('min(A ^ N, 1 / B)').sort()).toEqual(['A', 'B', 'N']);
+    expect(evaluateFormula('min(A ^ N, 1 / B)', { A: 1.1, N: 2, B: 0.8 })).toBeCloseTo(1.21, 10);
+  });
 });
