@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-43
 part: E
 partLabel: Finance
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, GROSS_MARGIN, TRADE_SPEND_RATE, PROMO_ROI, DIO]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING, WC_DIO]
+levers: [PRICING, WC_DIO, TRADE_SPEND_OPTIMIZATION]
 ---
 # 43 · Product Line Profitability by Retailer Analysis
 

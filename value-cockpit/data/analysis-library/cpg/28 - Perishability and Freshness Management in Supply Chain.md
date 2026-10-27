@@ -8,7 +8,7 @@ part: C
 partLabel: Operations
 quant: [DIO]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
-levers: [COST_PROCUREMENT, WC_DIO]
+levers: [COST_PROCUREMENT, WC_DIO, COST_OPS]
 ---
 # 28 · Perishability and Freshness Management in Supply Chain
 

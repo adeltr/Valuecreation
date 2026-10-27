@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-01
 part: A
 partLabel: Marketing
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, AP_RATE]
 causes: [COMMERCIAL, MARKET]
-levers: [VOLUME, MIX]
+levers: [VOLUME, MIX, MARKETING_EFFECTIVENESS]
 ---
 # 1 · Brand Portfolio Analysis
 

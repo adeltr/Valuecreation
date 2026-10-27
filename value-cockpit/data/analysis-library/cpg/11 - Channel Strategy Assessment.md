@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-11
 part: B
 partLabel: Sales
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, GROSS_MARGIN, MARKET_SHARE]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, ROUTE_TO_MARKET]
 ---
 # 11 · Channel Strategy Assessment
 

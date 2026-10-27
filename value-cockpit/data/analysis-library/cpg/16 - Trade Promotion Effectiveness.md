@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-16
 part: B
 partLabel: Sales
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, TRADE_SPEND_RATE, PROMO_ROI]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, TRADE_SPEND_OPTIMIZATION]
 ---
 # 16 · Trade Promotion Effectiveness
 

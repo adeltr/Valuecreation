@@ -8,7 +8,7 @@ part: C
 partLabel: Operations
 quant: []
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
-levers: [COST_OPS]
+levers: [COST_OPS, COST_PROCUREMENT]
 ---
 # 25 · Co-packing and Contract Manufacturing Evaluation
 

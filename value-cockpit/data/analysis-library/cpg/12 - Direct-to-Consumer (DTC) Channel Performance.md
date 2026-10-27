@@ -8,7 +8,7 @@ part: B
 partLabel: Sales
 quant: [EBITDA_MARGIN, REVENUE_GROWTH]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, ROUTE_TO_MARKET]
 ---
 # 12 · Direct-to-Consumer (DTC) Channel Performance
 

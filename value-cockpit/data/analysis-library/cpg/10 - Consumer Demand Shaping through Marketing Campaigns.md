@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-10
 part: A
 partLabel: Marketing
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, VOLUME_GROWTH, AP_RATE, MARKET_SHARE]
 causes: [COMMERCIAL, MARKET]
-levers: [VOLUME, COST_PROCUREMENT]
+levers: [VOLUME, COST_PROCUREMENT, MARKETING_EFFECTIVENESS]
 ---
 # 10 · Consumer Demand Shaping through Marketing Campaigns
 

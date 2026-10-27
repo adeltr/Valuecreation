@@ -54,10 +54,10 @@ une revue (tableau). Les lots de 5–6 restent pour A&D, déjà engagé.
 
 ## Niveaux (validé)
 
-- **Niveau 2** — extension sectorielle + template dédié : `saas`, `aero`, `airline`.
-- **Niveau 1** — 16 types EBITDA sur le vocabulaire de base + template EBITDA générique
+- **Niveau 2** — extension sectorielle + template dédié : `saas`, `aero`, `airline`, `cpg` (docs/13).
+- **Niveau 1** — 15 types EBITDA (cpg passé au niveau 2) sur le vocabulaire de base + template EBITDA générique
   (`src/templates/ebitda.ts` : REVENUE × (1+REVENUE_GROWTH)^n × EBITDA_MARGIN) :
-  agriculture, chemical, cosmetics, cpg, electricity-generation, healthcare-provider,
+  agriculture, chemical, cosmetics, electricity-generation, healthcare-provider,
   hospitality, manufacturing, media, medical-device, metals-mining, pharma, retail,
   third-party-logistics, waste-management, wine-spirits. Tables de curation pré-remplies
   par mots-clés (`scripts/prefill-curation.ts`), appliquées telles quelles (décision

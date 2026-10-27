@@ -8,7 +8,7 @@ part: D
 partLabel: Research & Development
 quant: []
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, INNOVATION_NPD]
 ---
 # 35 · Product Cannibalization and Cross-Selling Impact
 

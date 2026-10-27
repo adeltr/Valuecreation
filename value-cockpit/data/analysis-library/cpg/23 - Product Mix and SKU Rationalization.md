@@ -6,7 +6,7 @@ kind: analysis
 id: cpg-23
 part: C
 partLabel: Operations
-quant: [EBITDA_MARGIN, REVENUE_GROWTH, DIO]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, DIO, PRICE_MIX_GROWTH, GROSS_MARGIN]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
 levers: [MIX, WC_DIO]
 ---

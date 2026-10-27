@@ -8,7 +8,7 @@ part: B
 partLabel: Sales
 quant: []
 causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY]
-levers: [COST_OPS]
+levers: [COST_OPS, IN_STORE_EXECUTION]
 ---
 # 18 · In-store Execution and Merchandising Compliance Analysis
 

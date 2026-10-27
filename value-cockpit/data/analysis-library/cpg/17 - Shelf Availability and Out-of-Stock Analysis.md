@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-17
 part: B
 partLabel: Sales
-quant: [DIO]
+quant: [DIO, OUT_OF_STOCK_RATE]
 causes: [COMMERCIAL, OPERATIONAL, MARKET]
-levers: [WC_DIO]
+levers: [WC_DIO, IN_STORE_EXECUTION]
 ---
 # 17 · Shelf Availability and Out-of-Stock Analysis
 

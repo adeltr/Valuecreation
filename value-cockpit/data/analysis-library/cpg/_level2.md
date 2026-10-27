@@ -1,6 +1,7 @@
 # CPG — niveau 2 : candidats d'extension (à arbitrer)
 
-> Statut : **proposition**. Rien n'est dans l'ontologie ni dans un template tant que tu
+> Statut : **appliqué** avec les choix par défaut (ventes brutes, toutes les propositions) —
+> voir docs/13. Historique de la proposition : Rien n'est dans l'ontologie ni dans un template tant que tu
 > n'as pas tranché (docs/09 §pré-requis). Sources : `data/kpi-library/Consumer Packaged
 > Goods.md` (50 KPI, glossaire sans formule) et les formules des 43 analyses CPG (#n).
 > Règle docs/09 : ≤ 10 codes opérationnels, une formule seulement si elle est sourcée ou

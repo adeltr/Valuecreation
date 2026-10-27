@@ -6,7 +6,7 @@ kind: analysis
 id: cpg-21
 part: B
 partLabel: Sales
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, PRICE_MIX_GROWTH, GROSS_MARGIN]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
 levers: [PRICING, VOLUME]
 ---

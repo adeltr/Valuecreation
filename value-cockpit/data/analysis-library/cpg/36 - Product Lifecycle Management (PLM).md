@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-36
 part: D
 partLabel: Research & Development
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, VOLUME_GROWTH]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: []
+levers: [INNOVATION_NPD]
 ---
 # 36 · Product Lifecycle Management (PLM)
 

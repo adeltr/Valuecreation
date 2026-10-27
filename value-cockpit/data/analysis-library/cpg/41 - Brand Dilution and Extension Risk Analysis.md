@@ -8,7 +8,7 @@ part: D
 partLabel: Research & Development
 quant: [REVENUE_GROWTH]
 causes: [COMMERCIAL, MARKET]
-levers: []
+levers: [MIX]
 ---
 # 41 · Brand Dilution and Extension Risk Analysis
 

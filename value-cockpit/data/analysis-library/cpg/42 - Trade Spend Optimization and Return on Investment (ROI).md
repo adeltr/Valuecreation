@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-42
 part: E
 partLabel: Finance
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, GROSS_MARGIN, TRADE_SPEND_RATE, PROMO_ROI]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING, MIX]
+levers: [PRICING, MIX, TRADE_SPEND_OPTIMIZATION]
 ---
 # 42 · Trade Spend Optimization and Return on Investment (ROI)
 

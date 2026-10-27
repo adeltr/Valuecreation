@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-20
 part: B
 partLabel: Sales
-quant: []
+quant: [PROMO_ROI]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING]
+levers: [PRICING, MARKETING_EFFECTIVENESS, IN_STORE_EXECUTION]
 ---
 # 20 · In-store Sampling and Shopper Activation Effectiveness
 

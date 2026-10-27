@@ -6,7 +6,8 @@
     "part": "A",
     "partLabel": "Marketing",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "AP_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -14,7 +15,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "MIX"
+      "MIX",
+      "MARKETING_EFFECTIVENESS"
     ],
     "sourcePath": "data/analysis-library/cpg/01 - Brand Portfolio Analysis.md"
   },
@@ -60,7 +62,9 @@
     "title": "Marketing Mix Effectiveness (4Ps)",
     "part": "A",
     "partLabel": "Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AP_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET"
@@ -68,7 +72,8 @@
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "MIX"
+      "MIX",
+      "MARKETING_EFFECTIVENESS"
     ],
     "sourcePath": "data/analysis-library/cpg/04 - Marketing Mix Effectiveness (4Ps).md"
   },
@@ -98,7 +103,8 @@
     "part": "A",
     "partLabel": "Marketing",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -109,7 +115,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "COST_OPS"
+      "COST_OPS",
+      "COST_PROCUREMENT"
     ],
     "sourcePath": "data/analysis-library/cpg/06 - Product Reformulation and Ingredient Cost Trade-off Analysis.md"
   },
@@ -167,7 +174,10 @@
     "part": "A",
     "partLabel": "Marketing",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH",
+      "AP_RATE",
+      "MARKET_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -175,7 +185,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "MARKETING_EFFECTIVENESS"
     ],
     "sourcePath": "data/analysis-library/cpg/10 - Consumer Demand Shaping through Marketing Campaigns.md"
   },
@@ -186,7 +197,9 @@
     "part": "B",
     "partLabel": "Sales",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "GROSS_MARGIN",
+      "MARKET_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -194,7 +207,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/cpg/11 - Channel Strategy Assessment.md"
   },
@@ -214,7 +228,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/cpg/12 - Direct-to-Consumer (DTC) Channel Performance.md"
   },
@@ -226,7 +241,9 @@
     "partLabel": "Sales",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "PRICE_MIX_GROWTH",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -245,16 +262,19 @@
     "part": "B",
     "partLabel": "Sales",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "RETAILER_CONCENTRATION"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "RETAILER_POWER"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "TRADE_SPEND_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/cpg/14 - Retailer Relationship and Negotiation Power Assessment.md"
   },
@@ -266,7 +286,8 @@
     "partLabel": "Sales",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "AP_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -274,7 +295,9 @@
       "FINANCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "MARKETING_EFFECTIVENESS"
+    ],
     "sourcePath": "data/analysis-library/cpg/15 - Retailer-Specific Marketing and Joint Business Planning (JBP).md"
   },
   {
@@ -285,7 +308,9 @@
     "partLabel": "Sales",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "TRADE_SPEND_RATE",
+      "PROMO_ROI"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -294,7 +319,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "TRADE_SPEND_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/cpg/16 - Trade Promotion Effectiveness.md"
   },
@@ -305,7 +331,8 @@
     "part": "B",
     "partLabel": "Sales",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "OUT_OF_STOCK_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -313,7 +340,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "WC_DIO"
+      "WC_DIO",
+      "IN_STORE_EXECUTION"
     ],
     "sourcePath": "data/analysis-library/cpg/17 - Shelf Availability and Out-of-Stock Analysis.md"
   },
@@ -331,7 +359,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "IN_STORE_EXECUTION"
     ],
     "sourcePath": "data/analysis-library/cpg/18 - In-store Execution and Merchandising Compliance Analysis.md"
   },
@@ -343,7 +372,9 @@
     "partLabel": "Sales",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "GROSS_MARGIN",
+      "MARKET_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -351,7 +382,9 @@
       "ORGANIZATIONAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "IN_STORE_EXECUTION"
+    ],
     "sourcePath": "data/analysis-library/cpg/19 - Category Management and Shelf Space Optimization.md"
   },
   {
@@ -360,14 +393,18 @@
     "title": "In-store Sampling and Shopper Activation Effectiveness",
     "part": "B",
     "partLabel": "Sales",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PROMO_ROI"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKETING_EFFECTIVENESS",
+      "IN_STORE_EXECUTION"
     ],
     "sourcePath": "data/analysis-library/cpg/20 - In-store Sampling and Shopper Activation Effectiveness.md"
   },
@@ -378,7 +415,9 @@
     "part": "B",
     "partLabel": "Sales",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "PRICE_MIX_GROWTH",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -399,12 +438,15 @@
     "partLabel": "Sales",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "MARKET_SHARE",
+      "PRIVATE_LABEL_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "RETAILER_POWER"
     ],
     "relatedLeverCategories": [
       "PRICING"
@@ -420,7 +462,9 @@
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "PRICE_MIX_GROWTH",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -471,7 +515,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "COST_PROCUREMENT"
     ],
     "sourcePath": "data/analysis-library/cpg/25 - Co-packing and Contract Manufacturing Evaluation.md"
   },
@@ -489,7 +534,8 @@
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
@@ -504,7 +550,9 @@
     "part": "C",
     "partLabel": "Operations",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH",
+      "MARKET_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -512,7 +560,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/cpg/27 - Regional and Local Market Penetration Analysis.md"
   },
@@ -534,7 +583,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "WC_DIO"
+      "WC_DIO",
+      "COST_OPS"
     ],
     "sourcePath": "data/analysis-library/cpg/28 - Perishability and Freshness Management in Supply Chain.md"
   },
@@ -587,7 +637,9 @@
     "partLabel": "Operations",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH",
+      "DIO"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -597,7 +649,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "WC_DIO"
+      "WC_DIO",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/cpg/31 - Distributor and Wholesaler Performance Analysis.md"
   },
@@ -617,7 +670,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/cpg/32 - Distributor Margin and Channel Conflict Assessment.md"
   },
@@ -647,14 +701,17 @@
     "part": "D",
     "partLabel": "Research & Development",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "NEW_PRODUCT_SUCCESS_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "INNOVATION_NPD"
+    ],
     "sourcePath": "data/analysis-library/cpg/34 - Innovation Pipeline and New Product Development (NPD).md"
   },
   {
@@ -670,7 +727,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "INNOVATION_NPD"
     ],
     "sourcePath": "data/analysis-library/cpg/35 - Product Cannibalization and Cross-Selling Impact.md"
   },
@@ -682,14 +740,17 @@
     "partLabel": "Research & Development",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "INNOVATION_NPD"
+    ],
     "sourcePath": "data/analysis-library/cpg/36 - Product Lifecycle Management (PLM).md"
   },
   {
@@ -734,7 +795,8 @@
     "part": "D",
     "partLabel": "Research & Development",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -742,7 +804,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "MIX"
+      "MIX",
+      "INNOVATION_NPD"
     ],
     "sourcePath": "data/analysis-library/cpg/39 - Health and Wellness Trends Impact on Product Portfolio.md"
   },
@@ -757,7 +820,8 @@
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -778,7 +842,9 @@
       "COMMERCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
     "sourcePath": "data/analysis-library/cpg/41 - Brand Dilution and Extension Risk Analysis.md"
   },
   {
@@ -789,7 +855,10 @@
     "partLabel": "Finance",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "GROSS_MARGIN",
+      "TRADE_SPEND_RATE",
+      "PROMO_ROI"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -798,7 +867,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "MIX"
+      "MIX",
+      "TRADE_SPEND_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/cpg/42 - Trade Spend Optimization and Return on Investment (ROI).md"
   },
@@ -809,7 +879,11 @@
     "part": "E",
     "partLabel": "Finance",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "GROSS_MARGIN",
+      "TRADE_SPEND_RATE",
+      "PROMO_ROI",
+      "DIO"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -818,7 +892,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "WC_DIO"
+      "WC_DIO",
+      "TRADE_SPEND_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/cpg/43 - Product Line Profitability by Retailer Analysis.md"
   }

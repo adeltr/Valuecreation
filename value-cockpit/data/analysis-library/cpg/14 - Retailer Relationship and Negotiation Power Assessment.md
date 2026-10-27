@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-14
 part: B
 partLabel: Sales
-quant: [EBITDA_MARGIN]
-causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING, VOLUME]
+quant: [EBITDA_MARGIN, RETAILER_CONCENTRATION]
+causes: [COMMERCIAL, FINANCIAL, MARKET, RETAILER_POWER]
+levers: [PRICING, VOLUME, TRADE_SPEND_OPTIMIZATION]
 ---
 # 14 · Retailer Relationship and Negotiation Power Assessment
 

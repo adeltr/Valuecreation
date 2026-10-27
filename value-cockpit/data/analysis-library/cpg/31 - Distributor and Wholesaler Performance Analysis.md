@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-31
 part: C
 partLabel: Operations
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, VOLUME_GROWTH, DIO]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
-levers: [PRICING, WC_DIO]
+levers: [PRICING, WC_DIO, ROUTE_TO_MARKET]
 ---
 # 31 · Distributor and Wholesaler Performance Analysis
 

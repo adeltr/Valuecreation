@@ -6,9 +6,9 @@ kind: analysis
 id: cpg-04
 part: A
 partLabel: Marketing
-quant: []
+quant: [AP_RATE]
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING, VOLUME, MIX]
+levers: [PRICING, VOLUME, MIX, MARKETING_EFFECTIVENESS]
 ---
 # 4 · Marketing Mix Effectiveness (4Ps)
 

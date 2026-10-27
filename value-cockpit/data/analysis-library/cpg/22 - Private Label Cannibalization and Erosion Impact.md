@@ -6,8 +6,8 @@ kind: analysis
 id: cpg-22
 part: B
 partLabel: Sales
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
-causes: [COMMERCIAL, FINANCIAL, MARKET]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, MARKET_SHARE, PRIVATE_LABEL_SHARE]
+causes: [COMMERCIAL, FINANCIAL, MARKET, RETAILER_POWER]
 levers: [PRICING]
 ---
 # 22 · Private Label Cannibalization and Erosion Impact
