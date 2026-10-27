@@ -55,6 +55,12 @@ const withoutLever = (s: CockpitState['scenario'], id: string): CockpitState['sc
 const setStatus = (levers: Lever[], id: string, status: Lever['status']) =>
   levers.map((l) => (l.id === id ? { ...l, status } : l));
 
+/** A validation error as `path: message; …` rather than the raw issue list. */
+function readable(e: unknown): string {
+  const issues = (e as { issues?: { path: (string | number)[]; message: string }[] }).issues;
+  return issues ? issues.map((i) => `${i.path.join('.')} : ${i.message}`).join(' ; ') : (e as Error).message;
+}
+
 /** Pure reducer. Every gate of docs/02 that the UI can reach is enforced here. */
 export function reducer(state: CockpitState, action: Action): CockpitState {
   switch (action.type) {
@@ -84,7 +90,7 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
         const { levers, rootCauses } = ingestProposal(clean, () => `h${n++}`, () => action.today);
         return { ...state, levers: [...state.levers, ...levers], rootCauses: [...state.rootCauses, ...rootCauses], nextId: n, error: null };
       } catch (e) {
-        return { ...state, error: `Proposition rejetée : ${(e as Error).message}` };
+        return { ...state, error: `Proposition rejetée : ${readable(e)}` };
       }
     }
 

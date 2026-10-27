@@ -136,5 +136,12 @@ describe('cockpit store', () => {
     expect(s.plan).toEqual({ 'f-kpi': { owner: 'CFO', status: 'done' } });
     expect(reducer(s, { type: 'selectArchetype', archetype: 'cpg' }).plan).toEqual({});
   });
+
+  it('a malformed proposal is refused with a readable message (field path, no raw JSON)', () => {
+    const { nodeId: _n, ...noNode } = proposal.levers[0];
+    const after = ingest(airline(), { levers: [noNode] });
+    expect(after.error).toMatch(/levers\.0\.nodeId/);
+    expect(after.error).not.toMatch(/\[\s*\{/);
+  });
 });
 
