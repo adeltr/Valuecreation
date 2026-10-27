@@ -1,0 +1,57 @@
+export const NODE_TYPES = ['kpi', 'driver', 'sub_driver'] as const;
+export type NodeType = (typeof NODE_TYPES)[number];
+
+export const UNITS = ['currency', 'days', 'percent', 'ratio', 'count', 'years'] as const;
+export type Unit = (typeof UNITS)[number];
+
+export const DELTA_KINDS = ['absolute', 'percent'] as const;
+export type DeltaKind = (typeof DELTA_KINDS)[number];
+
+// Exit multiple is a scenario ASSUMPTION, not a lever — hence no MULTIPLE_EXPANSION here.
+export const BASE_LEVER_CATEGORIES = [
+  'PRICING', 'VOLUME', 'MIX',
+  'COST_PROCUREMENT', 'COST_OPS',
+  'WC_DSO', 'WC_DIO', 'WC_DPO',
+  'CAPEX_DISCIPLINE',
+] as const;
+
+export const BASE_CAUSE_CATEGORIES = [
+  'COMMERCIAL', 'OPERATIONAL', 'FINANCIAL', 'ORGANIZATIONAL', 'MARKET',
+] as const;
+
+export const BASE_METRIC_CODES = [
+  // P&L (entry-period)
+  'REVENUE', 'COGS', 'GROSS_PROFIT', 'OPEX', 'EBITDA_ENTRY', 'EBITDA_MARGIN',
+  // Working capital & cash
+  'DSO', 'DIO', 'DPO', 'WORKING_CAPITAL', 'CAPEX', 'FCF_ANNUAL',
+  // Two-point bridge
+  'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS',
+  'NET_DEBT_ENTRY', 'NET_DEBT_EXIT',
+  'EBITDA_EXIT', 'EQUITY_ENTRY', 'EQUITY_EXIT', 'MOIC',
+] as const;
+
+export interface MetricMeta { unit: Unit; fiboRef?: string }
+
+export const BASE_METRIC_META: Record<(typeof BASE_METRIC_CODES)[number], MetricMeta> = {
+  REVENUE: { unit: 'currency', fiboRef: 'fibo-fnd-acc-cur:Revenue' },
+  COGS: { unit: 'currency' },
+  GROSS_PROFIT: { unit: 'currency' },
+  OPEX: { unit: 'currency' },
+  EBITDA_ENTRY: { unit: 'currency', fiboRef: 'fibo-fnd-acc-aeq:EBITDA' },
+  EBITDA_MARGIN: { unit: 'percent' },
+  DSO: { unit: 'days' },
+  DIO: { unit: 'days' },
+  DPO: { unit: 'days' },
+  WORKING_CAPITAL: { unit: 'currency', fiboRef: 'fibo-fnd-acc-cur:WorkingCapital' },
+  CAPEX: { unit: 'currency' },
+  FCF_ANNUAL: { unit: 'currency' },
+  ENTRY_MULTIPLE: { unit: 'ratio' },
+  EXIT_MULTIPLE: { unit: 'ratio' },
+  HOLD_YEARS: { unit: 'years' },
+  NET_DEBT_ENTRY: { unit: 'currency', fiboRef: 'fibo-fnd-acc-cur:NetDebt' },
+  NET_DEBT_EXIT: { unit: 'currency' },
+  EBITDA_EXIT: { unit: 'currency' },
+  EQUITY_ENTRY: { unit: 'currency' },
+  EQUITY_EXIT: { unit: 'currency' },
+  MOIC: { unit: 'ratio' },
+};
