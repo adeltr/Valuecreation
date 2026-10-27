@@ -142,5 +142,5 @@ export function selectScenario(state: CockpitState): ScenarioResult[] {
   }));
   const assumptions = Object.entries(state.scenario.assumptions)
     .map(([metricCode, value]) => ({ scenarioId: 'ui', metricCode, value: value! }));
-  return runScenario('ui', selectMetrics(state), state.levers, scenarioLevers, assumptions);
+  return runScenario('ui', selectMetrics(state), state.levers, scenarioLevers, assumptions, template(state.archetype).interactions);
 }

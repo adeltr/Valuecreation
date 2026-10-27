@@ -6,7 +6,7 @@ export const thirdPartyLogistics: SectorSpec = {
   label: 'Third Party Logistics',
   umbrexType: 'Third Party Logistics Company',
   kpiFile: 'Travel & Logistics.md',
-  baseInputs: ['REVENUE'],
+  baseInputs: ['REVENUE', 'PRICE_ELASTICITY'],
   inputs: [
     { code: 'VOLUME_GROWTH', unit: 'percent', sources: '#25, #26 omni-channel, #28 I2M, #35 cross-border' },
     { code: 'PRICE_GROWTH', unit: 'percent', sources: '#21 contract & pricing structures, #23 gainsharing' },
@@ -52,7 +52,11 @@ export const thirdPartyLogistics: SectorSpec = {
     ON_TIME_DELIVERY: [3, 9], TRAILER_UTILIZATION: [4], UNITS_PER_LABOR_HOUR: [14], CONSOLIDATION_RATE: [8],
     DRIVER_TURNOVER_RATE: [40], FACILITY_UTILIZATION: [1, 27],
   },
+  interactions: [
+    { source: 'PRICE_GROWTH', target: 'VOLUME_GROWTH', coefficient: 'PRICE_ELASTICITY', sources: "choix d'analyste — à calibrer sur #21 (structures tarifaires)" },
+  ],
   demoInputs: {
+    PRICE_ELASTICITY: -0.5,
     REVENUE: 900, VOLUME_GROWTH: 0.04, PRICE_GROWTH: 0.01, ACCESSORIAL_REVENUE_RATIO: 0.03, PURCHASED_TRANSPORT_RATE: 0.55,
     EMPTY_MILES_RATE: 0.15, WAREHOUSE_LABOR_RATE: 0.12, FACILITY_COST_RATE: 0.06, SGA_RATE: 0.06, EBITDA_ENTRY: 128,
     ENTRY_MULTIPLE: 9, EXIT_MULTIPLE: 9, HOLD_YEARS: 5, NET_DEBT_ENTRY: 500, FCF_ANNUAL: 50,

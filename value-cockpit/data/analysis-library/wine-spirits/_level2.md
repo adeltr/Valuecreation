@@ -18,6 +18,10 @@ Puis bridge deux points (EQUITY_ENTRY, NET_DEBT_EXIT, EQUITY_EXIT, MOIC).
 - Le vieillissement des stocks pèse sur le BFR (DIO, AGING_INVENTORY_YEARS), pas sur la marge.
 - OVERHEAD_RATE est un choix d'analyste.
 
+## Interactions (moteur, scénarios)
+
+- `PRICE_MIX_GROWTH` → `VOLUME_GROWTH` : Δ cible = `PRICE_ELASTICITY` (démo -0.8) × Δ source — choix d'analyste — #12 premiumisation (price elasticity) pour calibrer
+
 ## Inputs liés par formule
 
 | Code | Unité | Sources |

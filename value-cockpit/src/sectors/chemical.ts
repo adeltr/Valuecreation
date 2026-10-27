@@ -6,7 +6,7 @@ export const chemical: SectorSpec = {
   label: 'Chemical',
   umbrexType: 'Chemical Company',
   kpiFile: 'Chemicals.md',
-  baseInputs: ['REVENUE'],
+  baseInputs: ['REVENUE', 'PRICE_ELASTICITY'],
   inputs: [
     { code: 'VOLUME_GROWTH', unit: 'percent', sources: '#25 end-market demand, #27 expansion ; KPI Production Volume' },
     { code: 'PRICE_GROWTH', unit: 'percent', sources: '#13 pricing by segment, #26 specialty vs commodity' },
@@ -56,7 +56,11 @@ export const chemical: SectorSpec = {
     CATALYST_EFFICIENCY: [4, 10], PROCESS_SAFETY_INCIDENTS: [18], CARBON_INTENSITY: [16], INNOVATION_RATE: [35],
     DIO: [11], DSO: [11], DPO: [11], CAPEX: [12],
   },
+  interactions: [
+    { source: 'PRICE_GROWTH', target: 'VOLUME_GROWTH', coefficient: 'PRICE_ELASTICITY', sources: "choix d'analyste (B2B, contrats indexés) — à calibrer sur #13, #26" },
+  ],
   demoInputs: {
+    PRICE_ELASTICITY: -0.5,
     REVENUE: 600, VOLUME_GROWTH: 0.05, PRICE_GROWTH: 0.01, PLANT_UTILIZATION: 0.88, FEEDSTOCK_COST_RATE: 0.45,
     PRODUCT_YIELD: 0.92, ENERGY_COST_RATE: 0.08, MAINTENANCE_COST_RATE: 0.04, SGA_RATE: 0.10,
     EBITDA_ENTRY: 175, ENTRY_MULTIPLE: 9, EXIT_MULTIPLE: 9, HOLD_YEARS: 5, NET_DEBT_ENTRY: 500, FCF_ANNUAL: 50,

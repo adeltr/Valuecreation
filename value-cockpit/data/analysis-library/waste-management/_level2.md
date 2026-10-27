@@ -19,6 +19,10 @@ Puis bridge deux points (EQUITY_ENTRY, NET_DEBT_EXIT, EQUITY_EXIT, MOIC).
 - Le recyclage évite l'élimination et rapporte le prix matière ; la volatilité de ce prix est une cause exogène.
 - Pas de modélisation de la durée de vie des décharges ni des provisions de fermeture (diagnostics #1, #36).
 
+## Interactions (moteur, scénarios)
+
+- `PRICE_GROWTH` → `VOLUME_GROWTH` : Δ cible = `PRICE_ELASTICITY` (démo -0.3) × Δ source — choix d'analyste (contrats municipaux, indexation #42, #45)
+
 ## Inputs liés par formule
 
 | Code | Unité | Sources |

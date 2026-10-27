@@ -19,6 +19,10 @@ Puis bridge deux points (EQUITY_ENTRY, NET_DEBT_EXIT, EQUITY_EXIT, MOIC).
 - La capacité plafonne le volume (#1) ; coûts en % du chiffre d'affaires.
 - SGA_RATE est un choix d'analyste.
 
+## Interactions (moteur, scénarios)
+
+- `PRICE_GROWTH` → `VOLUME_GROWTH` : Δ cible = `PRICE_ELASTICITY` (démo -0.5) × Δ source — choix d'analyste (B2B, contrats indexés) — à calibrer sur #13, #26
+
 ## Inputs liés par formule
 
 | Code | Unité | Sources |

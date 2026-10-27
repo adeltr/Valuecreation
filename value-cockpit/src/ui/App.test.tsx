@@ -50,7 +50,8 @@ describe('App', () => {
     fireEvent.click(box);
     expect(moic()).not.toBe(before);
     expect(within(sim).getByText(/calculés par le moteur/)).toBeTruthy();
-    expect(within(sim).getByText(/additifs/)).toBeTruthy();
+    expect(within(sim).getByText(/se composent/)).toBeTruthy();
+    expect(within(sim).queryByText(/Interactions/)).toBeNull(); // airline has no interaction rule
 
     const plan = screen.getByRole('region', { name: 'Plan 100 jours' });
     expect(within(plan).getByText(/Renouvellement de flotte/)).toBeTruthy();
@@ -81,6 +82,15 @@ describe('App', () => {
     const company = screen.getByRole('region', { name: 'Entreprise' });
     expect(within(company).getByLabelText('EXCISE_TAX_RATE')).toBeTruthy();
     expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);
+  });
+
+  it('the simulation lists the interaction rules of the template', () => {
+    render(<App />);
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
+    const sim = screen.getByRole('region', { name: 'Simulation' });
+    expect(within(sim).getByText(/Interactions/)).toBeTruthy();
+    expect(within(sim).getByText(/PRICE_MIX_GROWTH → VOLUME_GROWTH/)).toBeTruthy();
+    expect(within(sim).getByText(/PRICE_ELASTICITY = -0,8/)).toBeTruthy();
   });
 
   it('cpg uses its level-2 template (volume × price-mix, gross-to-net margin)', () => {

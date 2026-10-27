@@ -6,7 +6,7 @@ export const wineSpirits: SectorSpec = {
   label: 'Wine, Beer & Spirits',
   umbrexType: 'Wine, Beer & Spirits Company',
   kpiFile: 'Wine, Beer, and Spirits.md',
-  baseInputs: ['REVENUE'],
+  baseInputs: ['REVENUE', 'PRICE_ELASTICITY'],
   inputs: [
     { code: 'VOLUME_GROWTH', unit: 'percent', sources: '#2 emerging markets, #5 channels, #7 e-commerce' },
     { code: 'PRICE_MIX_GROWTH', unit: 'percent', sources: '#12 premiumization (price elasticity), #15, #16, #41' },
@@ -53,7 +53,11 @@ export const wineSpirits: SectorSpec = {
     AP_RATE: [13, 14, 18, 43], DISTRIBUTION_COST_RATE: [27, 44], ONLINE_SALES_SHARE: [7, 42], DISTRIBUTOR_DEPENDENCY: [27],
     AGING_INVENTORY_YEARS: [23, 34], HARVEST_YIELD_VARIANCE: [29, 31], CUSTOMER_RETENTION_RATE: [46], DIO: [34],
   },
+  interactions: [
+    { source: 'PRICE_MIX_GROWTH', target: 'VOLUME_GROWTH', coefficient: 'PRICE_ELASTICITY', sources: "choix d'analyste — #12 premiumisation (price elasticity) pour calibrer" },
+  ],
   demoInputs: {
+    PRICE_ELASTICITY: -0.8,
     REVENUE: 500, VOLUME_GROWTH: 0.03, PRICE_MIX_GROWTH: 0.03, GROSS_MARGIN: 0.58, EXCISE_TAX_RATE: 0.10, AP_RATE: 0.12,
     DISTRIBUTION_COST_RATE: 0.08, OVERHEAD_RATE: 0.10, EBITDA_ENTRY: 90, ENTRY_MULTIPLE: 13, EXIT_MULTIPLE: 13,
     HOLD_YEARS: 5, NET_DEBT_ENTRY: 400, FCF_ANNUAL: 35,

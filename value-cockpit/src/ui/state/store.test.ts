@@ -114,4 +114,20 @@ describe('cockpit store', () => {
     expect(after.levers).toEqual(before.levers);
     expect(after.error).toMatch(/Dossier refusé/);
   });
+
+  it('the scenario applies the template interaction rules (cpg: price-mix lever lowers volume)', () => {
+    const premium = {
+      levers: [{
+        nodeId: 'PRICE_MIX_GROWTH', causeId: null, label: 'Premiumisation', mechanism: 'mix vers le haut de gamme',
+        category: 'PRICING', impactMetricCode: 'PRICE_MIX_GROWTH', expectedDelta: 0.01, deltaKind: 'absolute',
+        timeToImpactDays: 90, effort: 'medium', confidence: 0.5, confidenceBasis: 'cf. cpg-21',
+      }],
+    };
+    let s = reducer(initialState('cpg'), { type: 'ingestProposal', raw: premium, today: '2026-10-27' });
+    const id = s.levers[0].id;
+    s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
+    const volume = selectScenario(s).find((r) => r.metricCode === 'VOLUME_GROWTH')!.value;
+    expect(volume).toBeCloseTo(s.inputs.VOLUME_GROWTH + s.inputs.PRICE_ELASTICITY * 0.01, 12);
+  });
 });
+

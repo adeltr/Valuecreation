@@ -19,6 +19,10 @@ Puis bridge deux points (EQUITY_ENTRY, NET_DEBT_EXIT, EQUITY_EXIT, MOIC).
 - La capacité plafonne le volume ; l'investissement qui la lève passe par PLANT_UTILIZATION (levier) et CAPEX (diagnostic).
 - PRICE_GROWTH et SGA_RATE sont des choix d'analyste (aucune analyse Umbrex dédiée).
 
+## Interactions (moteur, scénarios)
+
+- `PRICE_GROWTH` → `VOLUME_GROWTH` : Δ cible = `PRICE_ELASTICITY` (démo -0.5) × Δ source — choix d'analyste (B2B) — aucune analyse de prix
+
 ## Inputs liés par formule
 
 | Code | Unité | Sources |

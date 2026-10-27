@@ -18,6 +18,10 @@ Puis bridge deux points (EQUITY_ENTRY, NET_DEBT_EXIT, EQUITY_EXIT, MOIC).
 - Les 17 analyses produit/R&D (efficacité, tests, stabilité) restent qualitatives : catalogue et diagnostics.
 - OVERHEAD_RATE est un choix d'analyste.
 
+## Interactions (moteur, scénarios)
+
+- `PRICE_MIX_GROWTH` → `VOLUME_GROWTH` : Δ cible = `PRICE_ELASTICITY` (démo -0.8) × Δ source — choix d'analyste — à calibrer sur #44 (pricing)
+
 ## Inputs liés par formule
 
 | Code | Unité | Sources |

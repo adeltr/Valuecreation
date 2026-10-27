@@ -383,6 +383,7 @@
     "DTC_EXPANSION": "vcc:lever/DtcExpansion",
     "PRODUCTION_EFFICIENCY": "vcc:lever/ProductionEfficiency",
     "TAX_TARIFF_OPTIMIZATION": "vcc:lever/TaxTariffOptimization",
-    "DISTRIBUTOR_POWER": "vcc:cause/DistributorPower"
+    "DISTRIBUTOR_POWER": "vcc:cause/DistributorPower",
+    "PRICE_ELASTICITY": "vcc:PriceElasticity"
   }
 }

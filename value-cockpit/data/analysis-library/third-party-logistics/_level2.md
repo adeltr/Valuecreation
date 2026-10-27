@@ -19,6 +19,10 @@ Puis bridge deux points (EQUITY_ENTRY, NET_DEBT_EXIT, EQUITY_EXIT, MOIC).
 - Kilomètres à vide appliqués à tout le transport acheté (approximation des contrats au kilomètre).
 - SGA_RATE est un choix d'analyste.
 
+## Interactions (moteur, scénarios)
+
+- `PRICE_GROWTH` → `VOLUME_GROWTH` : Δ cible = `PRICE_ELASTICITY` (démo -0.5) × Δ source — choix d'analyste — à calibrer sur #21 (structures tarifaires)
+
 ## Inputs liés par formule
 
 | Code | Unité | Sources |

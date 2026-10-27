@@ -6,7 +6,7 @@ export const manufacturing: SectorSpec = {
   label: 'Manufacturing',
   umbrexType: 'Manufacturing Company',
   kpiFile: 'Manufacturing.md',
-  baseInputs: ['REVENUE'],
+  baseInputs: ['REVENUE', 'PRICE_ELASTICITY'],
   inputs: [
     { code: 'VOLUME_GROWTH', unit: 'percent', sources: '#8, #12, #17 (capacity vs demand)' },
     { code: 'PRICE_GROWTH', unit: 'percent', sources: 'choix d\'analyste — aucune analyse de prix' },
@@ -56,7 +56,11 @@ export const manufacturing: SectorSpec = {
     FIRST_PASS_YIELD: [7, 20, 39], SUPPLIER_ON_TIME_DELIVERY: [19, 20, 21], MANUFACTURING_LEAD_TIME: [4, 29, 37],
     MACHINE_DOWNTIME_RATE: [9, 27], DIO: [6, 14, 16, 35], CAPEX: [31, 33, 34],
   },
+  interactions: [
+    { source: 'PRICE_GROWTH', target: 'VOLUME_GROWTH', coefficient: 'PRICE_ELASTICITY', sources: "choix d'analyste (B2B) — aucune analyse de prix" },
+  ],
   demoInputs: {
+    PRICE_ELASTICITY: -0.5,
     REVENUE: 500, VOLUME_GROWTH: 0.05, PRICE_GROWTH: 0.02, PLANT_UTILIZATION: 0.85,
     MATERIAL_COST_RATE: 0.40, SCRAP_RATE: 0.04, CONVERSION_COST_RATE: 0.22, MAINTENANCE_COST_RATE: 0.04, SGA_RATE: 0.12,
     EBITDA_ENTRY: 100, ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 5, NET_DEBT_ENTRY: 350, FCF_ANNUAL: 30,

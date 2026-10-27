@@ -14,6 +14,16 @@ describe('templates registry', () => {
     const v = resolveMetrics(t.instantiate('demo', t.demoInputs));
     expect(Number.isFinite(v.get('MOIC'))).toBe(true);
   });
+  it('price → volume elasticity on every template that grows volume and price separately', () => {
+    const withRule = Object.entries(TEMPLATES).filter(([, t]) => t.interactions.length > 0).map(([a]) => a).sort();
+    expect(withRule).toEqual(['chemical', 'cosmetics', 'cpg', 'manufacturing', 'third-party-logistics', 'waste-management', 'wine-spirits']);
+    for (const a of withRule) {
+      const t = TEMPLATES[a as keyof typeof TEMPLATES]!;
+      expect(t.interactions[0].targetCode, a).toBe('VOLUME_GROWTH');
+      expect(t.interactions[0].coefficientCode, a).toBe('PRICE_ELASTICITY');
+      expect(t.demoInputs.PRICE_ELASTICITY, a).toBeLessThan(0);
+    }
+  });
   it('scenario assumptions are deal-structure codes, never lever targets', () => {
     expect([...SCENARIO_ASSUMPTION_CODES]).toEqual(['EXIT_MULTIPLE', 'HOLD_YEARS']);
     for (const c of SCENARIO_ASSUMPTION_CODES) expect(NON_LEVER_CODES).toContain(c);

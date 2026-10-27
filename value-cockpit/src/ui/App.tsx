@@ -76,7 +76,8 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} />
         <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} />
-        <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch} />
+        <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
+          interactions={TEMPLATES[state.archetype]!.interactions} />
         <HundredDayPlan levers={state.levers} catalog={catalog} />
       </main>
     </div>

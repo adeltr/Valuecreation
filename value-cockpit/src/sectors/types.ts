@@ -21,6 +21,8 @@ export interface SectorSpec {
   baseLevers: { category: string; analyses: number[] }[];
   causes: { category: string; sources: string; analyses: number[]; exogenous?: boolean }[];
   catalogMetrics: Record<string, number[]>;    // metric code (extension or base) → analyses
+  /** Price → volume coupling applied by the engine in scenarios (docs/06); coefficient ∈ baseInputs. */
+  interactions?: { source: string; target: string; coefficient: string; sources: string }[];
   demoInputs: Record<string, number>;
   reference: { EBITDA_EXIT: number };          // computed by hand from demoInputs, not by the engine
   approximations: string[];

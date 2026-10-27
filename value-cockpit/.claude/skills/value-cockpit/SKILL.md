@@ -45,5 +45,8 @@ if all tests pass.
 - Deltas: `deltaKind='absolute'` in the target metric's unit;
   `'percent'` is relative to the current value.
 - Money unrounded mid-calc; round only at the display boundary.
-- Documented limitation: lever deltas on the same metric are additive (no
-  interactions — phase 3). Any synthesis must mention it.
+- Stacked deltas on one metric compose order-independently:
+  (base + Σ absolute) × Π(1 + percent). Interactions between drivers exist
+  ONLY as template-declared rules (`InteractionRule`, coefficient set by the
+  analyst, e.g. PRICE_ELASTICITY — never a lever target). Any synthesis must
+  say which rules applied and that other interactions are not modelled.

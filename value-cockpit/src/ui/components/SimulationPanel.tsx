@@ -1,5 +1,5 @@
 import type { Dispatch } from 'react';
-import type { Lever, Metric, ScenarioResult } from '../../domain/types';
+import type { InteractionRule, Lever, Metric, ScenarioResult } from '../../domain/types';
 import type { Action, CockpitState } from '../state/store';
 import { formatValue } from '../model/format';
 import { Panel } from './Panel';
@@ -9,9 +9,10 @@ const BRIDGE_ROWS = ['EBITDA_ENTRY', 'EQUITY_ENTRY', 'EBITDA_EXIT', 'NET_DEBT_EX
 interface Props {
   state: CockpitState; metrics: Metric[]; baseline: Map<string, number>;
   scenario: ScenarioResult[] | null; scenarioError: string | null; dispatch: Dispatch<Action>;
+  interactions: InteractionRule[];
 }
 
-export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch }: Props) {
+export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions }: Props) {
   const unit = (code: string) => metrics.find((m) => m.code === code)?.unit ?? 'currency';
   const scen = new Map(scenario?.map((r) => [r.metricCode, r.value]));
   const selectable = (l: Lever) => l.status === 'validated';
@@ -57,9 +58,22 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
         </tbody>
       </table>
       {scenarioError && <p role="alert" className="error">{scenarioError}</p>}
+      {interactions.length > 0 && (
+        <>
+          <h3>Interactions appliquées par le moteur</h3>
+          <ul className="list">
+            {interactions.map((r) => (
+              <li key={`${r.sourceCode}-${r.targetCode}`}>
+                {`${r.sourceCode} → ${r.targetCode} : Δ cible = ${r.coefficientCode} × Δ source `}
+                <span className="muted">{`(${r.coefficientCode} = ${(state.inputs[r.coefficientCode] ?? 0).toLocaleString('fr-FR')}, modifiable dans Entreprise)`}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
       <p className="footnote">
-        Chiffres calculés par le moteur (computedBy = engine), jamais par le copilote. Limite : les deltas de
-        leviers sur une même métrique sont additifs, sans interactions (phase 3).
+        Chiffres calculés par le moteur (computedBy = engine), jamais par le copilote. Plusieurs leviers sur une
+        même métrique se composent : (valeur + Σ deltas absolus) × Π(1 + deltas relatifs).
       </p>
     </Panel>
   );

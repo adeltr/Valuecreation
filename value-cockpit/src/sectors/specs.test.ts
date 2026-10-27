@@ -35,6 +35,18 @@ describe.each(Object.values(SPECS))('$archetype sector spec', (spec) => {
     expect(Object.keys(spec.demoInputs).sort()).toEqual([...spec.baseInputs, ...spec.inputs.map((t) => t.code), ...BRIDGE_INPUTS].sort());
   });
 
+  it('interaction rules link two formula inputs through a base coefficient the analyst sets', () => {
+    for (const r of spec.interactions ?? []) {
+      expect(spec.inputs.map((t) => t.code)).toContain(r.source);
+      expect(spec.inputs.map((t) => t.code)).toContain(r.target);
+      expect(spec.baseInputs).toContain(r.coefficient);
+      expect(vocab.isLeverTarget(r.coefficient), `${r.coefficient} must never be a lever target`).toBe(false);
+    }
+    expect(TEMPLATES[a]!.interactions).toEqual((spec.interactions ?? []).map((r) => ({
+      sourceCode: r.source, targetCode: r.target, coefficientCode: r.coefficient,
+    })));
+  });
+
   it('every formula input feeds a formula; diagnostics never do', () => {
     const used = new Set(Object.values(spec.formulas).flatMap(extractDependencies));
     for (const t of spec.inputs) expect(used.has(t.code), `${t.code} unused`).toBe(true);

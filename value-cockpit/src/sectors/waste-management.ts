@@ -6,7 +6,7 @@ export const wasteManagement: SectorSpec = {
   label: 'Waste Management',
   umbrexType: 'Waste Management Company',
   kpiFile: 'Waste Management.md',
-  baseInputs: [],
+  baseInputs: ['PRICE_ELASTICITY'],
   inputs: [
     { code: 'TONS_COLLECTED_MT', unit: 'count', sources: '#4 MSW growth, #25, #29 (Mt par an)' },
     { code: 'VOLUME_GROWTH', unit: 'percent', sources: '#4 (Annual Growth Rate), #44 acquisitions' },
@@ -52,7 +52,11 @@ export const wasteManagement: SectorSpec = {
     DISPOSAL_COST_PER_TON: [3, 20, 21], REMAINING_LANDFILL_LIFE: [1], ROUTE_DENSITY: [25], DIVERSION_RATE: [13, 17, 28],
     MRF_RECOVERY_RATE: [8], LANDFILL_CLOSURE_LIABILITY: [1, 36], CAPEX: [5, 12, 50],
   },
+  interactions: [
+    { source: 'PRICE_GROWTH', target: 'VOLUME_GROWTH', coefficient: 'PRICE_ELASTICITY', sources: "choix d'analyste (contrats municipaux, indexation #42, #45)" },
+  ],
   demoInputs: {
+    PRICE_ELASTICITY: -0.3,
     TONS_COLLECTED_MT: 5, VOLUME_GROWTH: 0.02, PRICE_PER_TON: 110, PRICE_GROWTH: 0.02, RECYCLING_RATE: 0.20,
     COMMODITY_PRICE_PER_TON: 60, COLLECTION_COST_PER_TON: 45, DISPOSAL_COST_PER_TON: 35, EBITDA_ENTRY: 245,
     ENTRY_MULTIPLE: 11, EXIT_MULTIPLE: 11, HOLD_YEARS: 5, NET_DEBT_ENTRY: 1500, FCF_ANNUAL: 120,

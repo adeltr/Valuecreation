@@ -28,6 +28,8 @@ function doc(s: SectorSpec): string {
     ...Object.entries(s.formulas).map(([k, f]) => `${k.padEnd(22)} = ${f}`),
     '```', 'Puis bridge deux points (EQUITY_ENTRY, NET_DEBT_EXIT, EQUITY_EXIT, MOIC).', '',
     '**Approximations :**', ...s.approximations.map((a) => `- ${a}`), '',
+    ...(s.interactions?.length ? ['## Interactions (moteur, scénarios)', '',
+      ...s.interactions.map((r) => `- \`${r.source}\` → \`${r.target}\` : Δ cible = \`${r.coefficient}\` (démo ${s.demoInputs[r.coefficient]}) × Δ source — ${r.sources}`), ''] : []),
     '## Inputs liés par formule', '', '| Code | Unité | Sources |', '|---|---|---|', ...s.inputs.map(term), '',
     '## Diagnostics benchmarkés', '', '| Code | Unité | Sources |', '|---|---|---|', ...s.diagnostics.map(term), '',
     '## Leviers', '', '| Catégorie | Cible | Test (delta absolu) | Analyses |', '|---|---|---|---|',

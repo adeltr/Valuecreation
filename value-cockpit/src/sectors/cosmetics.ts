@@ -6,7 +6,7 @@ export const cosmetics: SectorSpec = {
   label: 'Cosmetics',
   umbrexType: 'Cosmetics Company',
   kpiFile: 'Cosmetics & Personal Care.md',
-  baseInputs: ['REVENUE'],
+  baseInputs: ['REVENUE', 'PRICE_ELASTICITY'],
   inputs: [
     { code: 'VOLUME_GROWTH', unit: 'percent', sources: '#20 loyalty, #29 channels, #32 e-commerce' },
     { code: 'PRICE_MIX_GROWTH', unit: 'percent', sources: '#27 limited editions, #28 luxury vs mass, #44 pricing' },
@@ -50,7 +50,11 @@ export const cosmetics: SectorSpec = {
     RD_RATE: [2, 45], NEW_PRODUCT_SUCCESS_RATE: [2], CUSTOMER_RETENTION_RATE: [20, 33], ONLINE_SALES_SHARE: [32],
     TIME_TO_MARKET: [2], DIO: [1, 36],
   },
+  interactions: [
+    { source: 'PRICE_MIX_GROWTH', target: 'VOLUME_GROWTH', coefficient: 'PRICE_ELASTICITY', sources: "choix d'analyste — à calibrer sur #44 (pricing)" },
+  ],
   demoInputs: {
+    PRICE_ELASTICITY: -0.8,
     REVENUE: 400, VOLUME_GROWTH: 0.04, PRICE_MIX_GROWTH: 0.03, GROSS_MARGIN: 0.70, AP_RATE: 0.25, RD_RATE: 0.03,
     OVERHEAD_RATE: 0.22, EBITDA_ENTRY: 80, ENTRY_MULTIPLE: 12, EXIT_MULTIPLE: 12, HOLD_YEARS: 5, NET_DEBT_ENTRY: 300, FCF_ANNUAL: 30,
   },
