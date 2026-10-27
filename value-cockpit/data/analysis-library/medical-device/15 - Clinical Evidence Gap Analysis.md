@@ -6,7 +6,7 @@ kind: analysis
 id: medical-device-15
 part: B
 partLabel: Clinical & Post-Market
-quant: []
+quant: [CLINICAL_TRIAL_SUCCESS_RATE]
 causes: [MARKET, REGULATORY]
 levers: []
 ---

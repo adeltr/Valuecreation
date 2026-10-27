@@ -6,9 +6,9 @@ kind: analysis
 id: media-03
 part: A
 partLabel: Content Strategy & Portfolio
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, CONTENT_LIBRARY_SIZE, FRANCHISE_REVENUE_SHARE]
 causes: [REGULATORY]
-levers: [VOLUME, MIX]
+levers: [VOLUME, MIX, FRANCHISE_MERCH]
 ---
 # 3 · IP Library Valuation & Franchise Development Potential
 

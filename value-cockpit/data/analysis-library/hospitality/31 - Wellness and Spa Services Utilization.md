@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-31
 part: G
 partLabel: Events & Alternative Offerings
-quant: []
+quant: [ANCILLARY_REVENUE_RATIO]
 causes: [COMMERCIAL]
-levers: [PRICING, VOLUME, COST_OPS]
+levers: [PRICING, VOLUME, COST_OPS, ANCILLARY_UPSELL]
 ---
 # 31 · Wellness and Spa Services Utilization
 

@@ -6,9 +6,9 @@ kind: analysis
 id: media-25
 part: E
 partLabel: Technology & Innovation
-quant: []
+quant: [LICENSING_ANCILLARY_RATIO, CONTENT_LIBRARY_SIZE]
 causes: []
-levers: [PRICING]
+levers: [PRICING, IP_LICENSING]
 ---
 # 25 · Archive Digitization & Remaster Monetization Strategy
 

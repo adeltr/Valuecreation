@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-03
 part: A
 partLabel: Revenue & Pricing Management
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, UNDISTRIBUTED_COST_RATE, DIRECT_BOOKING_SHARE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME, MIX]
+levers: [VOLUME, MIX, CHANNEL_MIX]
 ---
 # 3 · Distribution Channel Mix and Booking Source Analysis
 

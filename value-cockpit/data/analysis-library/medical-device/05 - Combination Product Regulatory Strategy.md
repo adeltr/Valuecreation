@@ -8,7 +8,7 @@ part: A
 partLabel: Regulatory & Compliance
 quant: []
 causes: [REGULATORY]
-levers: []
+levers: [REGULATORY_STRATEGY]
 ---
 # 5 · Combination Product Regulatory Strategy
 

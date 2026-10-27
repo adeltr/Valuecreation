@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-07
 part: A
 partLabel: Regulatory & Compliance
-quant: []
+quant: [QUALITY_REGULATORY_COST_RATE]
 causes: [OPERATIONAL, REGULATORY]
-levers: [COST_OPS]
+levers: [COST_OPS, REGULATORY_STRATEGY]
 ---
 # 7 · MDSAP (Medical Device Single Audit Program) Readiness and Gap Analysis
 

@@ -6,9 +6,9 @@ kind: analysis
 id: media-01
 part: A
 partLabel: Content Strategy & Portfolio
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, CONTENT_INVESTMENT, CONTENT_INVESTMENT_GROWTH, REVENUE_PER_CONTENT_DOLLAR, HIT_RATE]
 causes: [FINANCIAL]
-levers: []
+levers: [SLATE_DISCIPLINE]
 ---
 # 1 · Content Portfolio & ROI Analysis
 

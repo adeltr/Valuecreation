@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-17
 part: D
 partLabel: Operations & Hospitality Services
-quant: []
+quant: [DEPARTMENTAL_COST_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, DEPARTMENTAL_EFFICIENCY]
 ---
 # 17 · Housekeeping Efficiency and Turnaround Analysis
 

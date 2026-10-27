@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-22
 part: C
 partLabel: Reimbursement & Market Access
-quant: []
+quant: [PROCEDURE_VOLUME_GROWTH]
 causes: [COMMERCIAL, MARKET, REGULATORY]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, COMMERCIAL_EFFICIENCY]
 ---
 # 22 · Global Market Entry and Distribution Strategy
 

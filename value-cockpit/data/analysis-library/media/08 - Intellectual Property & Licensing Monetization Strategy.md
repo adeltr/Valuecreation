@@ -6,9 +6,9 @@ kind: analysis
 id: media-08
 part: B
 partLabel: Rights, Licensing & Distribution
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, LICENSING_ANCILLARY_RATIO]
 causes: [COMMERCIAL, FINANCIAL, REGULATORY]
-levers: [VOLUME]
+levers: [VOLUME, IP_LICENSING]
 ---
 # 8 · Intellectual Property & Licensing Monetization Strategy
 

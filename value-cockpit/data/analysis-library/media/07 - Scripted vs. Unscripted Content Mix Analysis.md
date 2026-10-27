@@ -6,9 +6,9 @@ kind: analysis
 id: media-07
 part: A
 partLabel: Content Strategy & Portfolio
-quant: []
+quant: [CONTENT_INVESTMENT_GROWTH]
 causes: []
-levers: [VOLUME, MIX]
+levers: [VOLUME, MIX, SLATE_DISCIPLINE]
 ---
 # 7 · Scripted vs. Unscripted Content Mix Analysis
 

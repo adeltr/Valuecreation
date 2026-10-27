@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-12
 part: A
 partLabel: Revenue & Pricing Management
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, ANCILLARY_REVENUE_RATIO]
 causes: [FINANCIAL]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, ANCILLARY_UPSELL]
 ---
 # 12 · Vacation Package and Bundled Rate Plan Efficacy
 

@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-22
 part: D
 partLabel: Operations & Hospitality Services
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, ANCILLARY_REVENUE_RATIO]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [PRICING, VOLUME, COST_OPS]
+levers: [PRICING, VOLUME, COST_OPS, ANCILLARY_UPSELL]
 ---
 # 22 · In‐Room Dining Profitability and Utilization
 

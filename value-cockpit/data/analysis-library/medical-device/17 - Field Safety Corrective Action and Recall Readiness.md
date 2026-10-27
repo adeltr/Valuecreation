@@ -6,8 +6,8 @@ kind: analysis
 id: medical-device-17
 part: B
 partLabel: Clinical & Post-Market
-quant: []
-causes: [OPERATIONAL, REGULATORY]
+quant: [QUALITY_REGULATORY_COST_RATE, RECALL_RATE]
+causes: [OPERATIONAL, REGULATORY, PRODUCT_QUALITY_RISK]
 levers: [COST_OPS]
 ---
 # 17 · Field Safety Corrective Action and Recall Readiness Evaluation

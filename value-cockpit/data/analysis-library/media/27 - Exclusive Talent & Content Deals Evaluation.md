@@ -6,8 +6,8 @@ kind: analysis
 id: media-27
 part: F
 partLabel: Financing & Partnerships
-quant: []
-causes: [FINANCIAL, ORGANIZATIONAL]
+quant: [CONTENT_INVESTMENT]
+causes: [FINANCIAL, ORGANIZATIONAL, TALENT_COSTS]
 levers: []
 ---
 # 27 · Exclusive Talent & Content Deals Evaluation

@@ -6,12 +6,18 @@
     "part": "A",
     "partLabel": "Content Strategy & Portfolio",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "CONTENT_INVESTMENT",
+      "CONTENT_INVESTMENT_GROWTH",
+      "REVENUE_PER_CONTENT_DOLLAR",
+      "HIT_RATE"
     ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "SLATE_DISCIPLINE"
+    ],
     "sourcePath": "data/analysis-library/media/01 - Content Portfolio & ROI Analysis.md"
   },
   {
@@ -20,12 +26,15 @@
     "title": "Windowing Strategy & Release Calendar Optimization",
     "part": "A",
     "partLabel": "Content Strategy & Portfolio",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REVENUE_PER_CONTENT_DOLLAR"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "WINDOWING_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/media/02 - Windowing Strategy & Release Calendar Optimization.md"
   },
@@ -36,14 +45,17 @@
     "part": "A",
     "partLabel": "Content Strategy & Portfolio",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "CONTENT_LIBRARY_SIZE",
+      "FRANCHISE_REVENUE_SHARE"
     ],
     "relatedCauseCategories": [
       "REGULATORY"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "MIX"
+      "MIX",
+      "FRANCHISE_MERCH"
     ],
     "sourcePath": "data/analysis-library/media/03 - IP Library Valuation & Franchise Development Potential.md"
   },
@@ -53,12 +65,15 @@
     "title": "Cross-Franchise Synergy & Universe-Building Analysis",
     "part": "A",
     "partLabel": "Content Strategy & Portfolio",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "FRANCHISE_REVENUE_SHARE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "FRANCHISE_MERCH"
     ],
     "sourcePath": "data/analysis-library/media/04 - Cross-Franchise Synergy & Universe-Building Analysis.md"
   },
@@ -68,13 +83,16 @@
     "title": "Award Campaign Strategy & Prestige Project ROI",
     "part": "A",
     "partLabel": "Content Strategy & Portfolio",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DISTRIBUTION_MARKETING_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "SLATE_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/media/05 - Award Campaign Strategy & Prestige Project ROI.md"
   },
@@ -85,13 +103,16 @@
     "part": "A",
     "partLabel": "Content Strategy & Portfolio",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "FRANCHISE_REVENUE_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "FRANCHISE_MERCH"
+    ],
     "sourcePath": "data/analysis-library/media/06 - Franchise Refresh & Reboot Potential.md"
   },
   {
@@ -100,11 +121,14 @@
     "title": "Scripted vs. Unscripted Content Mix Analysis",
     "part": "A",
     "partLabel": "Content Strategy & Portfolio",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONTENT_INVESTMENT_GROWTH"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "VOLUME",
-      "MIX"
+      "MIX",
+      "SLATE_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/media/07 - Scripted vs. Unscripted Content Mix Analysis.md"
   },
@@ -115,7 +139,8 @@
     "part": "B",
     "partLabel": "Rights, Licensing & Distribution",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "LICENSING_ANCILLARY_RATIO"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -123,7 +148,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "IP_LICENSING"
     ],
     "sourcePath": "data/analysis-library/media/08 - Intellectual Property & Licensing Monetization Strategy.md"
   },
@@ -137,7 +163,8 @@
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "IP_LICENSING"
     ],
     "sourcePath": "data/analysis-library/media/09 - Digital Rights & Royalties Management.md"
   },
@@ -147,13 +174,16 @@
     "title": "Rights Acquisition & Window Negotiation Strategy",
     "part": "B",
     "partLabel": "Rights, Licensing & Distribution",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REVENUE_PER_CONTENT_DOLLAR"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "WINDOWING_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/media/10 - Rights Acquisition & Window Negotiation Strategy.md"
   },
@@ -163,13 +193,17 @@
     "title": "Global Format Licensing & Adaptation Strategy",
     "part": "B",
     "partLabel": "Rights, Licensing & Distribution",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "IP_LICENSING"
+    ],
     "sourcePath": "data/analysis-library/media/11 - Global Format Licensing & Adaptation Strategy.md"
   },
   {
@@ -178,9 +212,12 @@
     "title": "Piracy Risk & Content Protection Strategies",
     "part": "B",
     "partLabel": "Rights, Licensing & Distribution",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PIRACY_LOSS_RATE"
+    ],
     "relatedCauseCategories": [
-      "FINANCIAL"
+      "FINANCIAL",
+      "PIRACY"
     ],
     "relatedLeverCategories": [
       "VOLUME"
@@ -194,14 +231,17 @@
     "part": "B",
     "partLabel": "Rights, Licensing & Distribution",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "LICENSING_ANCILLARY_RATIO"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "IP_LICENSING"
+    ],
     "sourcePath": "data/analysis-library/media/13 - Syndication & Re-run Monetization Potential.md"
   },
   {
@@ -210,10 +250,13 @@
     "title": "Music Streaming Partnerships & Catalog Management",
     "part": "B",
     "partLabel": "Rights, Licensing & Distribution",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "IP_LICENSING"
     ],
     "sourcePath": "data/analysis-library/media/14 - Music Streaming Partnerships & Catalog Management.md"
   },
@@ -263,7 +306,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "CONTENT_SCALE"
     ],
     "sourcePath": "data/analysis-library/media/17 - FAST (Free Ad-Supported Streaming TV) Channel Strategy &.md"
   },
@@ -281,7 +325,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "CONTENT_SCALE"
     ],
     "sourcePath": "data/analysis-library/media/18 - Live Events, Concerts & Experiential Marketing Evaluation.md"
   },
@@ -291,11 +336,14 @@
     "title": "Alternative Theatrical Content & Premium Exhibition Strategy",
     "part": "C",
     "partLabel": "Live & Experiential Entertainment",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REVENUE_PER_CONTENT_DOLLAR"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "PRICING",
-      "MIX"
+      "MIX",
+      "WINDOWING_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/media/19 - Alternative Theatrical Content & Premium Exhibition Strategy.md"
   },
@@ -329,7 +377,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "CONTENT_SCALE"
     ],
     "sourcePath": "data/analysis-library/media/21 - Gaming & eSports Integration & Monetization Strategy.md"
   },
@@ -347,7 +396,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "CONTENT_SCALE"
     ],
     "sourcePath": "data/analysis-library/media/22 - Sports Broadcasting Rights & League Partnership Strategy.md"
   },
@@ -386,10 +436,14 @@
     "title": "Archive Digitization & Remaster Monetization Strategy",
     "part": "E",
     "partLabel": "Technology & Innovation",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO",
+      "CONTENT_LIBRARY_SIZE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "IP_LICENSING"
     ],
     "sourcePath": "data/analysis-library/media/25 - Archive Digitization & Remaster Monetization Strategy.md"
   },
@@ -414,10 +468,13 @@
     "title": "Exclusive Talent & Content Deals Evaluation",
     "part": "F",
     "partLabel": "Financing & Partnerships",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONTENT_INVESTMENT"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
-      "ORGANIZATIONAL"
+      "ORGANIZATIONAL",
+      "TALENT_COSTS"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/media/27 - Exclusive Talent & Content Deals Evaluation.md"
@@ -428,7 +485,9 @@
     "title": "Co-production & Financing Partnerships Analysis",
     "part": "F",
     "partLabel": "Financing & Partnerships",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONTENT_INVESTMENT"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -466,7 +525,8 @@
     "relatedCauseCategories": [
       "OPERATIONAL",
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "TALENT_COSTS"
     ],
     "relatedLeverCategories": [
       "VOLUME",
@@ -498,14 +558,17 @@
     "title": "Merchandising & Ancillary Revenue Stream Strategy",
     "part": "H",
     "partLabel": "Merchandising & Ancillary Revenue",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "WC_DIO"
+      "WC_DIO",
+      "FRANCHISE_MERCH"
     ],
     "sourcePath": "data/analysis-library/media/32 - Merchandising & Ancillary Revenue Stream Strategy.md"
   },
@@ -524,7 +587,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "AUDIENCE_TARGETING"
     ],
     "sourcePath": "data/analysis-library/media/33 - Pay-Per-View & Direct-to-Fan Engagement Models.md"
   },
@@ -534,12 +598,15 @@
     "title": "In-Show Brand Integration & Sponsorship Effectiveness Analysis",
     "part": "I",
     "partLabel": "Audience Engagement & Monetization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DISTRIBUTION_MARKETING_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "AUDIENCE_TARGETING"
     ],
     "sourcePath": "data/analysis-library/media/34 - In-Show Brand Integration & Sponsorship Effectiveness.md"
   },
@@ -549,12 +616,15 @@
     "title": "Audience Analytics & Personalization Strategy",
     "part": "I",
     "partLabel": "Audience Engagement & Monetization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DISTRIBUTION_MARKETING_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "AUDIENCE_TARGETING"
     ],
     "sourcePath": "data/analysis-library/media/35 - Audience Analytics & Personalization Strategy.md"
   }

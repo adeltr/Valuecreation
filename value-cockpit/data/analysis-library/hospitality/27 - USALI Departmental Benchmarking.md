@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-27
 part: F
 partLabel: Ownership & Financial Structures
-quant: []
+quant: [DEPARTMENTAL_COST_RATE, UNDISTRIBUTED_COST_RATE]
 causes: [FINANCIAL, MARKET]
-levers: [PRICING, COST_PROCUREMENT, COST_OPS, WC_DIO]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS, WC_DIO, DEPARTMENTAL_EFFICIENCY]
 ---
 # 27 · USALI Departmental Benchmarking
 

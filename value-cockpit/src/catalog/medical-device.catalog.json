@@ -5,13 +5,18 @@
     "title": "Regulatory Pathway Analysis",
     "part": "A",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE",
+      "TIME_TO_MARKET"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
     "sourcePath": "data/analysis-library/medical-device/01 - Regulatory Pathway Analysis.md"
   },
   {
@@ -20,7 +25,9 @@
     "title": "Regulatory Compliance and Quality Management Systems Review",
     "part": "A",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "REGULATORY"
@@ -50,12 +57,16 @@
     "title": "Device Classification and Product Code Analysis",
     "part": "A",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "TIME_TO_MARKET"
+    ],
     "relatedCauseCategories": [
       "MARKET",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
     "sourcePath": "data/analysis-library/medical-device/04 - Device Classification and Product Code Analysis.md"
   },
   {
@@ -68,7 +79,9 @@
     "relatedCauseCategories": [
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
     "sourcePath": "data/analysis-library/medical-device/05 - Combination Product Regulatory Strategy.md"
   },
   {
@@ -77,12 +90,15 @@
     "title": "EU MDR-IVDR Compliance Gap Analysis",
     "part": "A",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "REGULATORY_STRATEGY"
     ],
     "sourcePath": "data/analysis-library/medical-device/06 - EU MDR-IVDR Compliance Gap Analysis.md"
   },
@@ -92,13 +108,16 @@
     "title": "MDSAP (Medical Device Single Audit Program) Readiness and Gap Analysis",
     "part": "A",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "REGULATORY_STRATEGY"
     ],
     "sourcePath": "data/analysis-library/medical-device/07 - MDSAP (Medical Device Single Audit Program) Readiness and.md"
   },
@@ -150,7 +169,9 @@
     "title": "Clinical Evidence Review",
     "part": "B",
     "partLabel": "Clinical & Post-Market",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CLINICAL_TRIAL_SUCCESS_RATE"
+    ],
     "relatedCauseCategories": [
       "REGULATORY"
     ],
@@ -163,11 +184,15 @@
     "title": "Post-Market Surveillance and Vigilance",
     "part": "B",
     "partLabel": "Clinical & Post-Market",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE",
+      "RECALL_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "PRODUCT_QUALITY_RISK"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -180,7 +205,9 @@
     "title": "CRO and Clinical Site Management Efficiency Analysis",
     "part": "B",
     "partLabel": "Clinical & Post-Market",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CLINICAL_TRIAL_SUCCESS_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -213,7 +240,9 @@
     "title": "Clinical Evidence Gap Analysis",
     "part": "B",
     "partLabel": "Clinical & Post-Market",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CLINICAL_TRIAL_SUCCESS_RATE"
+    ],
     "relatedCauseCategories": [
       "MARKET",
       "REGULATORY"
@@ -242,10 +271,14 @@
     "title": "Field Safety Corrective Action and Recall Readiness Evaluation",
     "part": "B",
     "partLabel": "Clinical & Post-Market",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE",
+      "RECALL_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "REGULATORY"
+      "REGULATORY",
+      "PRODUCT_QUALITY_RISK"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -273,12 +306,17 @@
     "title": "Reimbursement and Coding Assessment",
     "part": "C",
     "partLabel": "Reimbursement & Market Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ASP_GROWTH",
+      "REIMBURSEMENT_COVERAGE"
+    ],
     "relatedCauseCategories": [
-      "MARKET"
+      "MARKET",
+      "REIMBURSEMENT_PRESSURE"
     ],
     "relatedLeverCategories": [
-      "WC_DSO"
+      "WC_DSO",
+      "MARKET_ACCESS"
     ],
     "sourcePath": "data/analysis-library/medical-device/19 - Reimbursement and Coding Assessment.md"
   },
@@ -288,14 +326,17 @@
     "title": "Health Economics and Outcomes Research",
     "part": "C",
     "partLabel": "Reimbursement & Market Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ASP_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKET_ACCESS"
     ],
     "sourcePath": "data/analysis-library/medical-device/20 - Health Economics and Outcomes Research.md"
   },
@@ -305,7 +346,9 @@
     "title": "Hospital Purchasing and Procurement Process Evaluation",
     "part": "C",
     "partLabel": "Reimbursement & Market Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SALES_MARKETING_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
@@ -313,7 +356,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "COMMERCIAL_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/medical-device/21 - Hospital Purchasing and Procurement Process Evaluation.md"
   },
@@ -323,7 +367,9 @@
     "title": "Global Market Entry and Distribution Strategy",
     "part": "C",
     "partLabel": "Reimbursement & Market Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PROCEDURE_VOLUME_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET",
@@ -331,7 +377,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "COMMERCIAL_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/medical-device/22 - Global Market Entry and Distribution Strategy.md"
   },
@@ -341,14 +388,18 @@
     "title": "Bundled Payment and Value-Based Care Program Impact Analysis",
     "part": "C",
     "partLabel": "Reimbursement & Market Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ASP_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "REIMBURSEMENT_PRESSURE"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKET_ACCESS"
     ],
     "sourcePath": "data/analysis-library/medical-device/23 - Bundled Payment and Value-Based Care Program Impact.md"
   },
@@ -358,12 +409,15 @@
     "title": "Health Technology Assessment (HTA) Dossier Development",
     "part": "C",
     "partLabel": "Reimbursement & Market Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REIMBURSEMENT_COVERAGE"
+    ],
     "relatedCauseCategories": [
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "WC_DSO"
+      "WC_DSO",
+      "MARKET_ACCESS"
     ],
     "sourcePath": "data/analysis-library/medical-device/24 - Health Technology Assessment (HTA) Dossier Development.md"
   },
@@ -373,14 +427,19 @@
     "title": "Product Pipeline and R&D Portfolio Assessment",
     "part": "D",
     "partLabel": "Product Development & Lifecycle",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RD_RATE",
+      "TIME_TO_MARKET",
+      "NEW_PRODUCT_REVENUE_SHARE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "MIX"
+      "MIX",
+      "PORTFOLIO_LIFECYCLE"
     ],
     "sourcePath": "data/analysis-library/medical-device/25 - Product Pipeline and R&D Portfolio Assessment.md"
   },
@@ -392,7 +451,8 @@
     "partLabel": "Product Development & Lifecycle",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "NEW_PRODUCT_REVENUE_SHARE"
     ],
     "relatedCauseCategories": [
       "FINANCIAL",
@@ -400,7 +460,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "MIX"
+      "MIX",
+      "PORTFOLIO_LIFECYCLE"
     ],
     "sourcePath": "data/analysis-library/medical-device/26 - Lifecycle Management for Legacy Devices.md"
   },
@@ -421,14 +482,17 @@
     "title": "Evaluation of 3D Printing and Additive Manufacturing Feasibility",
     "part": "D",
     "partLabel": "Product Development & Lifecycle",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "CAPEX_DISCIPLINE"
+      "CAPEX_DISCIPLINE",
+      "MANUFACTURING_SCALE"
     ],
     "sourcePath": "data/analysis-library/medical-device/28 - Evaluation of 3D Printing and Additive Manufacturing.md"
   },
@@ -443,7 +507,9 @@
       "MARKET",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PORTFOLIO_LIFECYCLE"
+    ],
     "sourcePath": "data/analysis-library/medical-device/29 - Co-Development Analysis for Companion Diagnostics.md"
   },
   {
@@ -452,14 +518,17 @@
     "title": "Manufacturing Scalability and Technology Transfer Analysis",
     "part": "E",
     "partLabel": "Operations & Supply Chain",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "MANUFACTURING_SCALE"
     ],
     "sourcePath": "data/analysis-library/medical-device/30 - Manufacturing Scalability and Technology Transfer Analysis.md"
   },
@@ -507,7 +576,8 @@
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "MANUFACTURING_SCALE"
     ],
     "sourcePath": "data/analysis-library/medical-device/33 - Instrument Set Standardization and Workflow Efficiency.md"
   },
@@ -520,7 +590,8 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "ORGANIZATIONAL"
+      "ORGANIZATIONAL",
+      "PRODUCT_QUALITY_RISK"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/medical-device/34 - Failure Mode and Effects Analysis (FMEA).md"
@@ -551,7 +622,9 @@
     "relatedCauseCategories": [
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PORTFOLIO_LIFECYCLE"
+    ],
     "sourcePath": "data/analysis-library/medical-device/36 - Risk-Benefit Assessment for Label Expansion.md"
   },
   {
@@ -565,7 +638,8 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "MANUFACTURING_SCALE"
     ],
     "sourcePath": "data/analysis-library/medical-device/37 - Quality-by-Design (QbD) Implementation.md"
   },
@@ -575,11 +649,16 @@
     "title": "Healthcare Provider Adoption Analysis",
     "part": "G",
     "partLabel": "Commercial Strategy & Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PROCEDURE_VOLUME_GROWTH",
+      "SALES_MARKETING_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
     "sourcePath": "data/analysis-library/medical-device/38 - Healthcare Provider Adoption Analysis.md"
   },
   {
@@ -588,11 +667,15 @@
     "title": "Key Opinion Leader Engagement Strategy",
     "part": "G",
     "partLabel": "Commercial Strategy & Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SALES_MARKETING_RATE"
+    ],
     "relatedCauseCategories": [
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
     "sourcePath": "data/analysis-library/medical-device/39 - Key Opinion Leader Engagement Strategy.md"
   },
   {
@@ -601,11 +684,15 @@
     "title": "Physician Training and Education Program Evaluation",
     "part": "G",
     "partLabel": "Commercial Strategy & Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SALES_MARKETING_RATE"
+    ],
     "relatedCauseCategories": [
       "ORGANIZATIONAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
     "sourcePath": "data/analysis-library/medical-device/40 - Physician Training and Education Program Evaluation.md"
   },
   {
@@ -648,7 +735,9 @@
     "partLabel": "Technology & Innovation",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
     "sourcePath": "data/analysis-library/medical-device/43 - Human Factors Engineering and Usability Evaluation.md"
   },
   {

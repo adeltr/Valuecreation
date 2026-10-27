@@ -6,7 +6,7 @@ kind: analysis
 id: hospitality-29
 part: G
 partLabel: Events & Alternative Offerings
-quant: []
+quant: [ANCILLARY_REVENUE_RATIO, MEETING_SPACE_UTILIZATION]
 causes: [COMMERCIAL]
 levers: [PRICING, COST_OPS]
 ---

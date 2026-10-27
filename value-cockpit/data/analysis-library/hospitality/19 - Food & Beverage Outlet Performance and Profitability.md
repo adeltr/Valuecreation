@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-19
 part: D
 partLabel: Operations & Hospitality Services
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, ANCILLARY_REVENUE_RATIO]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS, WC_DIO]
+levers: [COST_PROCUREMENT, COST_OPS, WC_DIO, ANCILLARY_UPSELL]
 ---
 # 19 · Food & Beverage Outlet Performance and Profitability Assessment
 

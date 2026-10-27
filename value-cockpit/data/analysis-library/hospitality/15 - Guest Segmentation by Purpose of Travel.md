@@ -8,7 +8,7 @@ part: B
 partLabel: Guest Experience
 quant: []
 causes: [COMMERCIAL]
-levers: [VOLUME]
+levers: [VOLUME, OCCUPANCY_DRIVE]
 ---
 # 15 · Guest Segmentation by Purpose of Travel
 

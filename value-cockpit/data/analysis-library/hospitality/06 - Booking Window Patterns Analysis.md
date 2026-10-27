@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-06
 part: A
 partLabel: Revenue & Pricing Management
-quant: [DIO]
+quant: [DIO, OCCUPANCY_RATE]
 causes: [COMMERCIAL]
-levers: [PRICING]
+levers: [PRICING, REVENUE_MANAGEMENT]
 ---
 # 6 · Booking Window Patterns Analysis
 

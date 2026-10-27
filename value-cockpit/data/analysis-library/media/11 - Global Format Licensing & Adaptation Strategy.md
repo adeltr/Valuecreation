@@ -6,9 +6,9 @@ kind: analysis
 id: media-11
 part: B
 partLabel: Rights, Licensing & Distribution
-quant: []
+quant: [LICENSING_ANCILLARY_RATIO]
 causes: [COMMERCIAL, MARKET, REGULATORY]
-levers: []
+levers: [IP_LICENSING]
 ---
 # 11 · Global Format Licensing & Adaptation Strategy
 

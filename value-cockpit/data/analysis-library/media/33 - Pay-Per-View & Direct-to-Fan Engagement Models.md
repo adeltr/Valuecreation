@@ -8,7 +8,7 @@ part: I
 partLabel: Audience Engagement & Monetization
 quant: [EBITDA_MARGIN]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, AUDIENCE_TARGETING]
 ---
 # 33 · Pay-Per-View & Direct-to-Fan Engagement Models
 

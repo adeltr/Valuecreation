@@ -6,9 +6,9 @@ kind: analysis
 id: media-13
 part: B
 partLabel: Rights, Licensing & Distribution
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, LICENSING_ANCILLARY_RATIO]
 causes: [COMMERCIAL, FINANCIAL, REGULATORY]
-levers: []
+levers: [IP_LICENSING]
 ---
 # 13 · Syndication & Re-run Monetization Potential
 

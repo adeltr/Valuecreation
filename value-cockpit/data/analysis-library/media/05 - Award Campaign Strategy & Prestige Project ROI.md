@@ -6,9 +6,9 @@ kind: analysis
 id: media-05
 part: A
 partLabel: Content Strategy & Portfolio
-quant: []
+quant: [DISTRIBUTION_MARKETING_RATE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME]
+levers: [VOLUME, SLATE_DISCIPLINE]
 ---
 # 5 · Award Campaign Strategy & Prestige Project ROI
 

@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-19
 part: C
 partLabel: Reimbursement & Market Access
-quant: []
-causes: [MARKET]
-levers: [WC_DSO]
+quant: [ASP_GROWTH, REIMBURSEMENT_COVERAGE]
+causes: [MARKET, REIMBURSEMENT_PRESSURE]
+levers: [WC_DSO, MARKET_ACCESS]
 ---
 # 19 · Reimbursement and Coding Assessment
 

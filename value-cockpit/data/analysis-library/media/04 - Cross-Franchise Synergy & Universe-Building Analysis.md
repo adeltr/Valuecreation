@@ -6,9 +6,9 @@ kind: analysis
 id: media-04
 part: A
 partLabel: Content Strategy & Portfolio
-quant: []
+quant: [FRANCHISE_REVENUE_SHARE]
 causes: [COMMERCIAL]
-levers: [VOLUME]
+levers: [VOLUME, FRANCHISE_MERCH]
 ---
 # 4 · Cross-Franchise Synergy & Universe-Building Analysis
 

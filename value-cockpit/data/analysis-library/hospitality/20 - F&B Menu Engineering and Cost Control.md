@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-20
 part: D
 partLabel: Operations & Hospitality Services
-quant: []
+quant: [DEPARTMENTAL_COST_RATE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, DEPARTMENTAL_EFFICIENCY]
 ---
 # 20 · F&B Menu Engineering and Cost Control
 

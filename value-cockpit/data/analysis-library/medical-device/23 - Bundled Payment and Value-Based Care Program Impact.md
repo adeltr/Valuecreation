@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-23
 part: C
 partLabel: Reimbursement & Market Access
-quant: []
-causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [PRICING]
+quant: [ASP_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET, REIMBURSEMENT_PRESSURE]
+levers: [PRICING, MARKET_ACCESS]
 ---
 # 23 · Bundled Payment and Value-Based Care Program Impact Analysis
 

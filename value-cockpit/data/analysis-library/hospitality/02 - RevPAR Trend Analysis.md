@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-02
 part: A
 partLabel: Revenue & Pricing Management
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, OCCUPANCY_RATE, ADR]
 causes: [MARKET]
-levers: [PRICING]
+levers: [PRICING, REVENUE_MANAGEMENT]
 ---
 # 2 · RevPAR Trend Analysis
 

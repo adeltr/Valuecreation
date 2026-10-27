@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-26
 part: D
 partLabel: Product Development & Lifecycle
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, NEW_PRODUCT_REVENUE_SHARE]
 causes: [FINANCIAL, MARKET, REGULATORY]
-levers: [MIX]
+levers: [MIX, PORTFOLIO_LIFECYCLE]
 ---
 # 26 · Lifecycle Management for Legacy Devices
 

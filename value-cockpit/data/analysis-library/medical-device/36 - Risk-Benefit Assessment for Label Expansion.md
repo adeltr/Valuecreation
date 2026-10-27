@@ -8,7 +8,7 @@ part: F
 partLabel: Risk Management & Quality
 quant: [REVENUE_GROWTH]
 causes: [REGULATORY]
-levers: []
+levers: [PORTFOLIO_LIFECYCLE]
 ---
 # 36 · Risk-Benefit Assessment for Label Expansion
 

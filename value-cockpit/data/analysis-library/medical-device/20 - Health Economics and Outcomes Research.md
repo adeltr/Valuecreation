@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-20
 part: C
 partLabel: Reimbursement & Market Access
-quant: []
+quant: [ASP_GROWTH]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [PRICING]
+levers: [PRICING, MARKET_ACCESS]
 ---
 # 20 · Health Economics and Outcomes Research
 

@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-30
 part: E
 partLabel: Operations & Supply Chain
-quant: []
+quant: [GROSS_MARGIN]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, MANUFACTURING_SCALE]
 ---
 # 30 · Manufacturing Scalability and Technology Transfer Analysis
 

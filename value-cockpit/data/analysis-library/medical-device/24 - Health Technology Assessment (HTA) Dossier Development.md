@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-24
 part: C
 partLabel: Reimbursement & Market Access
-quant: []
+quant: [REIMBURSEMENT_COVERAGE]
 causes: [MARKET]
-levers: [WC_DSO]
+levers: [WC_DSO, MARKET_ACCESS]
 ---
 # 24 · Health Technology Assessment (HTA) Dossier Development
 

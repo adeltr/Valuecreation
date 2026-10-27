@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-38
 part: G
 partLabel: Commercial Strategy & Marketing
-quant: []
+quant: [PROCEDURE_VOLUME_GROWTH, SALES_MARKETING_RATE]
 causes: [OPERATIONAL]
-levers: []
+levers: [PHYSICIAN_ADOPTION]
 ---
 # 38 · Healthcare Provider Adoption Analysis
 

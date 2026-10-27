@@ -6,9 +6,9 @@ kind: analysis
 id: media-19
 part: C
 partLabel: Live & Experiential Entertainment
-quant: []
+quant: [REVENUE_PER_CONTENT_DOLLAR]
 causes: []
-levers: [PRICING, MIX]
+levers: [PRICING, MIX, WINDOWING_OPTIMIZATION]
 ---
 # 19 · Alternative Theatrical Content & Premium Exhibition Strategy
 

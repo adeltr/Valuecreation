@@ -6,9 +6,9 @@ kind: analysis
 id: media-10
 part: B
 partLabel: Rights, Licensing & Distribution
-quant: []
+quant: [REVENUE_PER_CONTENT_DOLLAR]
 causes: [OPERATIONAL]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, WINDOWING_OPTIMIZATION]
 ---
 # 10 · Rights Acquisition & Window Negotiation Strategy
 

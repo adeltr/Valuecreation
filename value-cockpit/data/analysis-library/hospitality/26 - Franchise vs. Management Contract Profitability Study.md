@@ -8,7 +8,7 @@ part: F
 partLabel: Ownership & Financial Structures
 quant: [EBITDA_MARGIN]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [VOLUME]
+levers: [VOLUME, PORTFOLIO_GROWTH]
 ---
 # 26 · Franchise vs. Management Contract Profitability Study
 

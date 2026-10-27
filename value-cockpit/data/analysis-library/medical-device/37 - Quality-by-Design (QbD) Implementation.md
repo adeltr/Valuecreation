@@ -8,7 +8,7 @@ part: F
 partLabel: Risk Management & Quality
 quant: []
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, MANUFACTURING_SCALE]
 ---
 # 37 · Quality-by-Design (QbD) Implementation
 

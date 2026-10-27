@@ -8,7 +8,7 @@ part: G
 partLabel: Events & Alternative Offerings
 quant: [EBITDA_MARGIN]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [PRICING]
+levers: [PRICING, DEPARTMENTAL_EFFICIENCY]
 ---
 # 32 · Spa and Wellness Outsourcing vs. In‐House Management Assessment
 

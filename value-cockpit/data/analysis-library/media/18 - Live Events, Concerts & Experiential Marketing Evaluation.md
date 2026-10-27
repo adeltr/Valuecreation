@@ -8,7 +8,7 @@ part: C
 partLabel: Live & Experiential Entertainment
 quant: [EBITDA_MARGIN]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [PRICING]
+levers: [PRICING, CONTENT_SCALE]
 ---
 # 18 · Live Events, Concerts & Experiential Marketing Evaluation
 

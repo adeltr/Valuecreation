@@ -6,7 +6,7 @@ kind: analysis
 id: medical-device-13
 part: B
 partLabel: Clinical & Post-Market
-quant: []
+quant: [CLINICAL_TRIAL_SUCCESS_RATE]
 causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL]
 levers: [VOLUME, COST_OPS]
 ---

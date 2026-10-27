@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-04
 part: A
 partLabel: Revenue & Pricing Management
-quant: []
+quant: [OCCUPANCY_RATE, GROUP_MIX_SHARE]
 causes: []
-levers: [PRICING, MIX]
+levers: [PRICING, MIX, OCCUPANCY_DRIVE]
 ---
 # 4 · Group vs. Transient Business Mix Evaluation
 

@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-04
 part: A
 partLabel: Regulatory & Compliance
-quant: []
+quant: [TIME_TO_MARKET]
 causes: [MARKET, REGULATORY]
-levers: []
+levers: [REGULATORY_STRATEGY]
 ---
 # 4 · Device Classification and Product Code Analysis
 

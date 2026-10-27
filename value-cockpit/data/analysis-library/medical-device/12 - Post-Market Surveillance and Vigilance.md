@@ -6,8 +6,8 @@ kind: analysis
 id: medical-device-12
 part: B
 partLabel: Clinical & Post-Market
-quant: []
-causes: [OPERATIONAL, MARKET, REGULATORY]
+quant: [QUALITY_REGULATORY_COST_RATE, RECALL_RATE]
+causes: [OPERATIONAL, MARKET, REGULATORY, PRODUCT_QUALITY_RISK]
 levers: [COST_OPS]
 ---
 # 12 · Post-Market Surveillance and Vigilance

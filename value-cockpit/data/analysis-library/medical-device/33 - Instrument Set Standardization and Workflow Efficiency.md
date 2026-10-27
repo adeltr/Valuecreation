@@ -8,7 +8,7 @@ part: E
 partLabel: Operations & Supply Chain
 quant: []
 causes: []
-levers: [COST_OPS, WC_DIO]
+levers: [COST_OPS, WC_DIO, MANUFACTURING_SCALE]
 ---
 # 33 · Instrument Set Standardization and Workflow Efficiency Analysis
 

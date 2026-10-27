@@ -6,7 +6,7 @@ kind: analysis
 id: hospitality-30
 part: G
 partLabel: Events & Alternative Offerings
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, ANCILLARY_REVENUE_RATIO, GROUP_MIX_SHARE]
 causes: [FINANCIAL, MARKET]
 levers: [PRICING, COST_PROCUREMENT, COST_OPS]
 ---

@@ -8,7 +8,7 @@ part: E
 partLabel: Marketing & Competitive Positioning
 quant: []
 causes: [COMMERCIAL]
-levers: [PRICING]
+levers: [PRICING, OCCUPANCY_DRIVE]
 ---
 # 24 · Destination Marketing and Local Partnership Effectiveness
 

@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-05
 part: A
 partLabel: Revenue & Pricing Management
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, ADR, AVERAGE_LENGTH_OF_STAY]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [PRICING]
+levers: [PRICING, REVENUE_MANAGEMENT]
 ---
 # 5 · Length‐of‐Stay Patterns and Rate Optimization Review
 

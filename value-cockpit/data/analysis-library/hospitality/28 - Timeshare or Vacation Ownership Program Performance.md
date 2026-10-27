@@ -8,7 +8,7 @@ part: F
 partLabel: Ownership & Financial Structures
 quant: [EBITDA_MARGIN]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [PRICING]
+levers: [PRICING, PORTFOLIO_GROWTH]
 ---
 # 28 · Timeshare or Vacation Ownership Program Performance Analysis
 

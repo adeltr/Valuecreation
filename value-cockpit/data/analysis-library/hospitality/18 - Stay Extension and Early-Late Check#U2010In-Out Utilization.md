@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-18
 part: D
 partLabel: Operations & Hospitality Services
-quant: []
+quant: [AVERAGE_LENGTH_OF_STAY]
 causes: []
-levers: [PRICING, COST_OPS]
+levers: [PRICING, COST_OPS, ANCILLARY_UPSELL]
 ---
 # 18 · Stay Extension and Early-Late Check‐In-Out Utilization
 

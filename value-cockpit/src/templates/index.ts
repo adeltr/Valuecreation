@@ -17,9 +17,7 @@ export interface TemplateEntry {
   demoInputs: Record<string, number>;
 }
 
-const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = {
-  hospitality: 'Hospitality', media: 'Media & Entertainment',
-  'medical-device': 'Medical Device', 'metals-mining': 'Metals & Mining', pharma: 'Pharmaceutical', 'third-party-logistics': 'Third Party Logistics', 'waste-management': 'Waste Management',
+const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = { 'metals-mining': 'Metals & Mining', pharma: 'Pharmaceutical', 'third-party-logistics': 'Third Party Logistics', 'waste-management': 'Waste Management',
   'wine-spirits': 'Wine, Beer & Spirits',
 };
 

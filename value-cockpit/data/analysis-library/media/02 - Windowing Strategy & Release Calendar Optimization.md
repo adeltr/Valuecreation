@@ -6,9 +6,9 @@ kind: analysis
 id: media-02
 part: A
 partLabel: Content Strategy & Portfolio
-quant: []
+quant: [REVENUE_PER_CONTENT_DOLLAR]
 causes: [COMMERCIAL]
-levers: [VOLUME]
+levers: [VOLUME, WINDOWING_OPTIMIZATION]
 ---
 # 2 · Windowing Strategy & Release Calendar Optimization
 

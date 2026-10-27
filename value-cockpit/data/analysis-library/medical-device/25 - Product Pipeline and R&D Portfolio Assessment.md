@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-25
 part: D
 partLabel: Product Development & Lifecycle
-quant: []
+quant: [RD_RATE, TIME_TO_MARKET, NEW_PRODUCT_REVENUE_SHARE]
 causes: [FINANCIAL, MARKET]
-levers: [VOLUME, MIX]
+levers: [VOLUME, MIX, PORTFOLIO_LIFECYCLE]
 ---
 # 25 · Product Pipeline and R&D Portfolio Assessment
 

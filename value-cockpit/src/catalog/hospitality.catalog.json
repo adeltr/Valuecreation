@@ -6,7 +6,10 @@
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "ROOMS",
+      "OCCUPANCY_RATE",
+      "ADR"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -25,13 +28,16 @@
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "OCCUPANCY_RATE",
+      "ADR"
     ],
     "relatedCauseCategories": [
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "REVENUE_MANAGEMENT"
     ],
     "sourcePath": "data/analysis-library/hospitality/02 - RevPAR Trend Analysis.md"
   },
@@ -42,7 +48,9 @@
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "UNDISTRIBUTED_COST_RATE",
+      "DIRECT_BOOKING_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -50,7 +58,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "MIX"
+      "MIX",
+      "CHANNEL_MIX"
     ],
     "sourcePath": "data/analysis-library/hospitality/03 - Distribution Channel Mix and Booking Source Analysis.md"
   },
@@ -60,11 +69,15 @@
     "title": "Group vs. Transient Business Mix Evaluation",
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "OCCUPANCY_RATE",
+      "GROUP_MIX_SHARE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "PRICING",
-      "MIX"
+      "MIX",
+      "OCCUPANCY_DRIVE"
     ],
     "sourcePath": "data/analysis-library/hospitality/04 - Group vs. Transient Business Mix Evaluation.md"
   },
@@ -75,14 +88,17 @@
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "ADR",
+      "AVERAGE_LENGTH_OF_STAY"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "REVENUE_MANAGEMENT"
     ],
     "sourcePath": "data/analysis-library/hospitality/05 - Length#U2010of#U2010Stay Patterns and Rate Optimization Review.md"
   },
@@ -93,13 +109,15 @@
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "OCCUPANCY_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "REVENUE_MANAGEMENT"
     ],
     "sourcePath": "data/analysis-library/hospitality/06 - Booking Window Patterns Analysis.md"
   },
@@ -109,12 +127,15 @@
     "title": "Look‐to‐Book Ratios and Online Booking Abandonment Analysis",
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DIRECT_BOOKING_SHARE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "CHANNEL_MIX"
     ],
     "sourcePath": "data/analysis-library/hospitality/07 - Look#U2010to#U2010Book Ratios and Online Booking Abandonment.md"
   },
@@ -124,11 +145,14 @@
     "title": "Concierge and Activity Booking Revenue Analysis",
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ANCILLARY_REVENUE_RATIO"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "MIX",
-      "COST_OPS"
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
     ],
     "sourcePath": "data/analysis-library/hospitality/08 - Concierge and Activity Booking Revenue Analysis.md"
   },
@@ -172,13 +196,16 @@
     "title": "Extended Stay Packaging and Rate Strategies",
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AVERAGE_LENGTH_OF_STAY"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "OCCUPANCY_DRIVE"
     ],
     "sourcePath": "data/analysis-library/hospitality/11 - Extended Stay Packaging and Rate Strategies.md"
   },
@@ -189,14 +216,16 @@
     "part": "A",
     "partLabel": "Revenue & Pricing Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "ANCILLARY_REVENUE_RATIO"
     ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "ANCILLARY_UPSELL"
     ],
     "sourcePath": "data/analysis-library/hospitality/12 - Vacation Package and Bundled Rate Plan Efficacy.md"
   },
@@ -208,13 +237,17 @@
     "partLabel": "Revenue & Pricing Management",
     "relatedMetricCodes": [
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "ADR"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
-      "MARKET"
+      "MARKET",
+      "SEASONALITY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT"
+    ],
     "sourcePath": "data/analysis-library/hospitality/13 - Revenue Management Integration with Local-Seasonal Event.md"
   },
   {
@@ -223,7 +256,9 @@
     "title": "Guest Satisfaction and Online Reputation Management Review",
     "part": "B",
     "partLabel": "Guest Experience",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GUEST_SATISFACTION_SCORE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
@@ -244,7 +279,8 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "OCCUPANCY_DRIVE"
     ],
     "sourcePath": "data/analysis-library/hospitality/15 - Guest Segmentation by Purpose of Travel.md"
   },
@@ -268,13 +304,16 @@
     "title": "Housekeeping Efficiency and Turnaround Analysis",
     "part": "D",
     "partLabel": "Operations & Hospitality Services",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "DEPARTMENTAL_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/hospitality/17 - Housekeeping Efficiency and Turnaround Analysis.md"
   },
@@ -284,11 +323,14 @@
     "title": "Stay Extension and Early-Late Check‐In-Out Utilization",
     "part": "D",
     "partLabel": "Operations & Hospitality Services",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AVERAGE_LENGTH_OF_STAY"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "PRICING",
-      "COST_OPS"
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
     ],
     "sourcePath": "data/analysis-library/hospitality/18 - Stay Extension and Early-Late Check#U2010In-Out Utilization.md"
   },
@@ -299,7 +341,8 @@
     "part": "D",
     "partLabel": "Operations & Hospitality Services",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "ANCILLARY_REVENUE_RATIO"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -308,7 +351,8 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "ANCILLARY_UPSELL"
     ],
     "sourcePath": "data/analysis-library/hospitality/19 - Food & Beverage Outlet Performance and Profitability.md"
   },
@@ -318,14 +362,17 @@
     "title": "F&B Menu Engineering and Cost Control",
     "part": "D",
     "partLabel": "Operations & Hospitality Services",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "DEPARTMENTAL_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/hospitality/20 - F&B Menu Engineering and Cost Control.md"
   },
@@ -357,7 +404,8 @@
     "part": "D",
     "partLabel": "Operations & Hospitality Services",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "ANCILLARY_REVENUE_RATIO"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -366,7 +414,8 @@
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
     ],
     "sourcePath": "data/analysis-library/hospitality/22 - In#U2010Room Dining Profitability and Utilization.md"
   },
@@ -376,7 +425,9 @@
     "title": "Signature Restaurant or Specialty Dining Concept Evaluation",
     "part": "D",
     "partLabel": "Operations & Hospitality Services",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
@@ -384,7 +435,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "COST_OPS"
+      "COST_OPS",
+      "DEPARTMENTAL_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/hospitality/23 - Signature Restaurant or Specialty Dining Concept Evaluation.md"
   },
@@ -399,7 +451,8 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "OCCUPANCY_DRIVE"
     ],
     "sourcePath": "data/analysis-library/hospitality/24 - Destination Marketing and Local Partnership Effectiveness.md"
   },
@@ -414,7 +467,8 @@
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
-      "MARKET"
+      "MARKET",
+      "ALTERNATIVE_ACCOMMODATION"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -437,7 +491,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "PORTFOLIO_GROWTH"
     ],
     "sourcePath": "data/analysis-library/hospitality/26 - Franchise vs. Management Contract Profitability Study.md"
   },
@@ -447,7 +502,10 @@
     "title": "USALI Departmental Benchmarking",
     "part": "F",
     "partLabel": "Ownership & Financial Structures",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE",
+      "UNDISTRIBUTED_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "MARKET"
@@ -456,7 +514,8 @@
       "PRICING",
       "COST_PROCUREMENT",
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "DEPARTMENTAL_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/hospitality/27 - USALI Departmental Benchmarking.md"
   },
@@ -474,7 +533,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "PORTFOLIO_GROWTH"
     ],
     "sourcePath": "data/analysis-library/hospitality/28 - Timeshare or Vacation Ownership Program Performance.md"
   },
@@ -484,7 +544,10 @@
     "title": "Meeting and Event Space Utilization",
     "part": "G",
     "partLabel": "Events & Alternative Offerings",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ANCILLARY_REVENUE_RATIO",
+      "MEETING_SPACE_UTILIZATION"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
@@ -502,7 +565,9 @@
     "partLabel": "Events & Alternative Offerings",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "ANCILLARY_REVENUE_RATIO",
+      "GROUP_MIX_SHARE"
     ],
     "relatedCauseCategories": [
       "FINANCIAL",
@@ -521,14 +586,17 @@
     "title": "Wellness and Spa Services Utilization",
     "part": "G",
     "partLabel": "Events & Alternative Offerings",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ANCILLARY_REVENUE_RATIO"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
     ],
     "sourcePath": "data/analysis-library/hospitality/31 - Wellness and Spa Services Utilization.md"
   },
@@ -546,7 +614,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "DEPARTMENTAL_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/hospitality/32 - Spa and Wellness Outsourcing vs. In#U2010House Management.md"
   },

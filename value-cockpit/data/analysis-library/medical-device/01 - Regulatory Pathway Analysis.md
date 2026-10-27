@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-01
 part: A
 partLabel: Regulatory & Compliance
-quant: []
+quant: [QUALITY_REGULATORY_COST_RATE, TIME_TO_MARKET]
 causes: [COMMERCIAL, MARKET, REGULATORY]
-levers: []
+levers: [REGULATORY_STRATEGY]
 ---
 # 1 · Regulatory Pathway Analysis
 

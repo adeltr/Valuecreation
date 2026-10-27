@@ -8,7 +8,7 @@ part: D
 partLabel: Sports & Gaming
 quant: []
 causes: [COMMERCIAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, CONTENT_SCALE]
 ---
 # 21 · Gaming & eSports Integration & Monetization Strategy
 

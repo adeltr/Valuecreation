@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-40
 part: G
 partLabel: Commercial Strategy & Marketing
-quant: []
+quant: [SALES_MARKETING_RATE]
 causes: [ORGANIZATIONAL]
-levers: []
+levers: [PHYSICIAN_ADOPTION]
 ---
 # 40 · Physician Training and Education Program Evaluation
 

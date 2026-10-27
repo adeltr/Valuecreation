@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-23
 part: D
 partLabel: Operations & Hospitality Services
-quant: []
+quant: [DEPARTMENTAL_COST_RATE]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING, COST_OPS]
+levers: [PRICING, COST_OPS, DEPARTMENTAL_EFFICIENCY]
 ---
 # 23 · Signature Restaurant or Specialty Dining Concept Evaluation
 

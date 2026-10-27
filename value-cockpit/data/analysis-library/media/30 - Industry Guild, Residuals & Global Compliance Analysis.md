@@ -7,7 +7,7 @@ id: media-30
 part: G
 partLabel: Regulatory, Compliance & Guilds
 quant: []
-causes: [OPERATIONAL, MARKET, REGULATORY]
+causes: [OPERATIONAL, MARKET, REGULATORY, TALENT_COSTS]
 levers: [VOLUME, COST_OPS]
 ---
 # 30 · Industry Guild, Residuals & Global Compliance Analysis

@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-11
 part: A
 partLabel: Revenue & Pricing Management
-quant: []
+quant: [AVERAGE_LENGTH_OF_STAY]
 causes: [COMMERCIAL]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, OCCUPANCY_DRIVE]
 ---
 # 11 · Extended Stay Packaging and Rate Strategies
 

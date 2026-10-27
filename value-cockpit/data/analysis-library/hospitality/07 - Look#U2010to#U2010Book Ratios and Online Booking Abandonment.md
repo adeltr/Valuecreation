@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-07
 part: A
 partLabel: Revenue & Pricing Management
-quant: []
+quant: [DIRECT_BOOKING_SHARE]
 causes: [OPERATIONAL]
-levers: [PRICING]
+levers: [PRICING, CHANNEL_MIX]
 ---
 # 7 · Look‐to‐Book Ratios and Online Booking Abandonment Analysis
 

@@ -6,9 +6,9 @@ kind: analysis
 id: media-35
 part: I
 partLabel: Audience Engagement & Monetization
-quant: []
+quant: [DISTRIBUTION_MARKETING_RATE]
 causes: [COMMERCIAL]
-levers: [VOLUME]
+levers: [VOLUME, AUDIENCE_TARGETING]
 ---
 # 35 · Audience Analytics & Personalization Strategy
 

@@ -6,7 +6,7 @@ kind: analysis
 id: medical-device-02
 part: A
 partLabel: Regulatory & Compliance
-quant: []
+quant: [QUALITY_REGULATORY_COST_RATE]
 causes: [OPERATIONAL, REGULATORY]
 levers: [COST_OPS]
 ---

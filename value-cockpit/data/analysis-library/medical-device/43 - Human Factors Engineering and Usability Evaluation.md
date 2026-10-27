@@ -8,7 +8,7 @@ part: H
 partLabel: Technology & Innovation
 quant: []
 causes: []
-levers: []
+levers: [PHYSICIAN_ADOPTION]
 ---
 # 43 · Human Factors Engineering and Usability Evaluation
 

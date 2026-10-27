@@ -7,7 +7,7 @@ id: hospitality-25
 part: E
 partLabel: Marketing & Competitive Positioning
 quant: [REVENUE_GROWTH]
-causes: [COMMERCIAL, MARKET]
+causes: [COMMERCIAL, MARKET, ALTERNATIVE_ACCOMMODATION]
 levers: [PRICING, VOLUME, WC_DIO]
 ---
 # 25 · Impact of Alternative Accommodation Competitors

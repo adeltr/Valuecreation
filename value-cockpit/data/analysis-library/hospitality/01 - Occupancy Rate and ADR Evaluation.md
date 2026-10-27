@@ -6,7 +6,7 @@ kind: analysis
 id: hospitality-01
 part: A
 partLabel: Revenue & Pricing Management
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, ROOMS, OCCUPANCY_RATE, ADR]
 causes: [COMMERCIAL, MARKET]
 levers: [PRICING, VOLUME]
 ---

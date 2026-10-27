@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-21
 part: C
 partLabel: Reimbursement & Market Access
-quant: []
+quant: [SALES_MARKETING_RATE]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
-levers: [PRICING, COST_PROCUREMENT]
+levers: [PRICING, COST_PROCUREMENT, COMMERCIAL_EFFICIENCY]
 ---
 # 21 · Hospital Purchasing and Procurement Process Evaluation
 

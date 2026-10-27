@@ -7,7 +7,7 @@ id: medical-device-34
 part: F
 partLabel: Risk Management & Quality
 quant: []
-causes: [OPERATIONAL, ORGANIZATIONAL]
+causes: [OPERATIONAL, ORGANIZATIONAL, PRODUCT_QUALITY_RISK]
 levers: []
 ---
 # 34 · Failure Mode and Effects Analysis (FMEA)

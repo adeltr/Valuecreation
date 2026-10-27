@@ -8,7 +8,7 @@ part: D
 partLabel: Sports & Gaming
 quant: [EBITDA_MARGIN]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME]
+levers: [VOLUME, CONTENT_SCALE]
 ---
 # 22 · Sports Broadcasting Rights & League Partnership Strategy
 

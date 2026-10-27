@@ -6,7 +6,7 @@ kind: analysis
 id: hospitality-14
 part: B
 partLabel: Guest Experience
-quant: []
+quant: [GUEST_SATISFACTION_SCORE]
 causes: [COMMERCIAL]
 levers: [VOLUME, COST_OPS]
 ---

@@ -8,7 +8,7 @@ part: B
 partLabel: Rights, Licensing & Distribution
 quant: []
 causes: []
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, IP_LICENSING]
 ---
 # 9 · Digital Rights & Royalties Management
 

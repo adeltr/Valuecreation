@@ -6,9 +6,9 @@ kind: analysis
 id: medical-device-39
 part: G
 partLabel: Commercial Strategy & Marketing
-quant: []
+quant: [SALES_MARKETING_RATE]
 causes: [MARKET]
-levers: []
+levers: [PHYSICIAN_ADOPTION]
 ---
 # 39 · Key Opinion Leader Engagement Strategy
 

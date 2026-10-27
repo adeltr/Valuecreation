@@ -6,9 +6,9 @@ kind: analysis
 id: hospitality-08
 part: A
 partLabel: Revenue & Pricing Management
-quant: []
+quant: [ANCILLARY_REVENUE_RATIO]
 causes: []
-levers: [MIX, COST_OPS]
+levers: [MIX, COST_OPS, ANCILLARY_UPSELL]
 ---
 # 8 · Concierge and Activity Booking Revenue Analysis
 

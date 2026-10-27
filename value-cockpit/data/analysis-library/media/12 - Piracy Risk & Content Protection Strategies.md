@@ -6,8 +6,8 @@ kind: analysis
 id: media-12
 part: B
 partLabel: Rights, Licensing & Distribution
-quant: []
-causes: [FINANCIAL]
+quant: [PIRACY_LOSS_RATE]
+causes: [FINANCIAL, PIRACY]
 levers: [VOLUME]
 ---
 # 12 · Piracy Risk & Content Protection Strategies

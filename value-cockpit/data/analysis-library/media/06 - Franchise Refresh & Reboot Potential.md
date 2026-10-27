@@ -6,9 +6,9 @@ kind: analysis
 id: media-06
 part: A
 partLabel: Content Strategy & Portfolio
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, FRANCHISE_REVENUE_SHARE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: []
+levers: [FRANCHISE_MERCH]
 ---
 # 6 · Franchise Refresh & Reboot Potential
 

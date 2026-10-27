@@ -8,7 +8,7 @@ part: D
 partLabel: Product Development & Lifecycle
 quant: []
 causes: [MARKET, REGULATORY]
-levers: []
+levers: [PORTFOLIO_LIFECYCLE]
 ---
 # 29 · Co-Development Analysis for Companion Diagnostics
 

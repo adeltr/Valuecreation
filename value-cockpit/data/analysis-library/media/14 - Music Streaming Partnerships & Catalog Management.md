@@ -6,9 +6,9 @@ kind: analysis
 id: media-14
 part: B
 partLabel: Rights, Licensing & Distribution
-quant: []
+quant: [LICENSING_ANCILLARY_RATIO]
 causes: []
-levers: [PRICING]
+levers: [PRICING, IP_LICENSING]
 ---
 # 14 · Music Streaming Partnerships & Catalog Management
 

@@ -8,7 +8,7 @@ part: B
 partLabel: Rights, Licensing & Distribution
 quant: []
 causes: [COMMERCIAL]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, CONTENT_SCALE]
 ---
 # 17 · FAST (Free Ad-Supported Streaming TV) Channel Strategy & Monetization
 

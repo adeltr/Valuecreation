@@ -6,7 +6,7 @@ kind: analysis
 id: media-28
 part: F
 partLabel: Financing & Partnerships
-quant: []
+quant: [CONTENT_INVESTMENT]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
 levers: [VOLUME]
 ---
