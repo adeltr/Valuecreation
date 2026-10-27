@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/D
+kind: analysis
+id: airline-23
+part: D
+partLabel: Revenue and Yield Maximization
+quant: [ANCILLARY_PER_PAX]
+causes: [COMMERCIAL]
+levers: [ANCILLARY]
 ---
 # 23 · Ancillary Revenue and Additional Services Yield Management
 

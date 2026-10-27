@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-18
+part: C
+partLabel: Operational Efficiency
+quant: []
+causes: [COMMERCIAL]
+levers: [FLEET_PRODUCTIVITY, REVENUE_MANAGEMENT]
 ---
 # 18 · Cabin Configuration and Seat Density Optimization
 

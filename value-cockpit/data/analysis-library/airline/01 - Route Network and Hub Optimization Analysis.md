@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/A
+kind: analysis
+id: airline-01
+part: A
+partLabel: Network and Route Management
+quant: [LOAD_FACTOR]
+causes: [MARKET]
+levers: [NETWORK_OPTIMIZATION, ALLIANCES]
 ---
 # 1 · Route Network and Hub Optimization Analysis
 

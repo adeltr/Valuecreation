@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/I
+kind: analysis
+id: airline-40
+part: I
+partLabel: Technology and Digital Transformation
+quant: []
+causes: [ORGANIZATIONAL]
+levers: [COST_OPS]
 ---
 # 40 · IT and Digital Transformation Capability Assessment
 

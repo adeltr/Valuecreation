@@ -1,1 +1,662 @@
-[]
+[
+  {
+    "id": "airline-01",
+    "archetype": "airline",
+    "title": "Route Network and Hub Optimization Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "ALLIANCES"
+    ],
+    "sourcePath": "data/analysis-library/airline/01 - Route Network and Hub Optimization Analysis.md"
+  },
+  {
+    "id": "airline-02",
+    "archetype": "airline",
+    "title": "Hub Connectivity and Spoke Development Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/02 - Hub Connectivity and Spoke Development Analysis.md"
+  },
+  {
+    "id": "airline-03",
+    "archetype": "airline",
+    "title": "Route Profitability and Market Share Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "YIELD",
+      "MARKET_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/03 - Route Profitability and Market Share Analysis.md"
+  },
+  {
+    "id": "airline-04",
+    "archetype": "airline",
+    "title": "Seasonal Demand and Network Flexibility Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/04 - Seasonal Demand and Network Flexibility Analysis.md"
+  },
+  {
+    "id": "airline-05",
+    "archetype": "airline",
+    "title": "Market Entry and Route Launch Feasibility Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/05 - Market Entry and Route Launch Feasibility Analysis.md"
+  },
+  {
+    "id": "airline-06",
+    "archetype": "airline",
+    "title": "Competitor Route Overlap and Market Penetration Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "YIELD",
+      "MARKET_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT",
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/06 - Competitor Route Overlap and Market Penetration Analysis.md"
+  },
+  {
+    "id": "airline-07",
+    "archetype": "airline",
+    "title": "Regulatory Route Rights and Open Skies Impact Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/07 - Regulatory Route Rights and Open Skies Impact Analysis.md"
+  },
+  {
+    "id": "airline-08",
+    "archetype": "airline",
+    "title": "Fleet Utilization and Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [
+      "FLEET_UTILIZATION",
+      "AIRCRAFT_DOWNTIME",
+      "CASK_EX_FUEL"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY",
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/08 - Fleet Utilization and Efficiency Analysis.md"
+  },
+  {
+    "id": "airline-09",
+    "archetype": "airline",
+    "title": "Aircraft Leasing Strategy and Buy vs. Lease Evaluation",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_FINANCING"
+    ],
+    "sourcePath": "data/analysis-library/airline/09 - Aircraft Leasing Strategy and Buy vs. Lease Evaluation.md"
+  },
+  {
+    "id": "airline-10",
+    "archetype": "airline",
+    "title": "Fuel Efficiency per Aircraft Type Analysis",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/10 - Fuel Efficiency per Aircraft Type Analysis.md"
+  },
+  {
+    "id": "airline-11",
+    "archetype": "airline",
+    "title": "Aircraft Maintenance Planning and Downtime Reduction",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [
+      "AIRCRAFT_DOWNTIME"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/11 - Aircraft Maintenance Planning and Downtime Reduction.md"
+  },
+  {
+    "id": "airline-12",
+    "archetype": "airline",
+    "title": "Pilot Training and Simulator Utilization Analysis",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "LABOR"
+    ],
+    "relatedLeverCategories": [
+      "CREW_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/12 - Pilot Training and Simulator Utilization Analysis.md"
+  },
+  {
+    "id": "airline-13",
+    "archetype": "airline",
+    "title": "Load Factor and Capacity Management Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "ASK"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/13 - Load Factor and Capacity Management Analysis.md"
+  },
+  {
+    "id": "airline-14",
+    "archetype": "airline",
+    "title": "Maintenance, Repair, and Overhaul (MRO) Cost Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "AIRCRAFT_DOWNTIME"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/14 - Maintenance, Repair, and Overhaul (MRO) Cost Analysis.md"
+  },
+  {
+    "id": "airline-15",
+    "archetype": "airline",
+    "title": "On-Time Performance and Operational Reliability Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "ON_TIME_PERFORMANCE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST",
+      "CREW_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/15 - On-Time Performance and Operational Reliability Analysis.md"
+  },
+  {
+    "id": "airline-16",
+    "archetype": "airline",
+    "title": "Airport Resource Optimization and Cost Management",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/16 - Airport Resource Optimization and Cost Management.md"
+  },
+  {
+    "id": "airline-17",
+    "archetype": "airline",
+    "title": "Crew Scheduling and Labor Cost Optimization",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "LABOR_COST_PER_FLIGHT"
+    ],
+    "relatedCauseCategories": [
+      "LABOR"
+    ],
+    "relatedLeverCategories": [
+      "CREW_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/17 - Crew Scheduling and Labor Cost Optimization.md"
+  },
+  {
+    "id": "airline-18",
+    "archetype": "airline",
+    "title": "Cabin Configuration and Seat Density Optimization",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/18 - Cabin Configuration and Seat Density Optimization.md"
+  },
+  {
+    "id": "airline-19",
+    "archetype": "airline",
+    "title": "Ground Operations Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "TURNAROUND_MINUTES"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/19 - Ground Operations Efficiency Analysis.md"
+  },
+  {
+    "id": "airline-20",
+    "archetype": "airline",
+    "title": "Airport and Ground Handling Cost Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/20 - Airport and Ground Handling Cost Efficiency Analysis.md"
+  },
+  {
+    "id": "airline-21",
+    "archetype": "airline",
+    "title": "Passenger Flow and Boarding Process Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/21 - Passenger Flow and Boarding Process Efficiency Analysis.md"
+  },
+  {
+    "id": "airline-22",
+    "archetype": "airline",
+    "title": "Core Services Revenue and Dynamic Pricing Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "YIELD"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/22 - Core Services Revenue and Dynamic Pricing Analysis.md"
+  },
+  {
+    "id": "airline-23",
+    "archetype": "airline",
+    "title": "Ancillary Revenue and Additional Services Yield Management",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "ANCILLARY_PER_PAX"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/23 - Ancillary Revenue and Additional Services Yield Management.md"
+  },
+  {
+    "id": "airline-24",
+    "archetype": "airline",
+    "title": "Cargo Revenue and Capacity Utilization Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/airline/24 - Cargo Revenue and Capacity Utilization Analysis.md"
+  },
+  {
+    "id": "airline-25",
+    "archetype": "airline",
+    "title": "Passenger Yield and Demographic Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "YIELD"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/25 - Passenger Yield and Demographic Analysis.md"
+  },
+  {
+    "id": "airline-26",
+    "archetype": "airline",
+    "title": "In-Flight Service and Product Differentiation Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "ANCILLARY_PER_PAX"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/26 - In-Flight Service and Product Differentiation Analysis.md"
+  },
+  {
+    "id": "airline-27",
+    "archetype": "airline",
+    "title": "Loyalty Program Redemption Cost and Breakage Rate",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "LOYALTY_BREAKAGE_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/27 - Loyalty Program Redemption Cost and Breakage Rate.md"
+  },
+  {
+    "id": "airline-28",
+    "archetype": "airline",
+    "title": "Passenger Experience and Service Differentiation Analysis",
+    "part": "E",
+    "partLabel": "Customer Experience and Loyalty",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/28 - Passenger Experience and Service Differentiation Analysis.md"
+  },
+  {
+    "id": "airline-29",
+    "archetype": "airline",
+    "title": "Customer Satisfaction Analysis of Airline Loyalty Programs",
+    "part": "E",
+    "partLabel": "Customer Experience and Loyalty",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/29 - Customer Satisfaction Analysis of Airline Loyalty Programs.md"
+  },
+  {
+    "id": "airline-30",
+    "archetype": "airline",
+    "title": "Environmental Compliance and Sustainability Strategy",
+    "part": "F",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/30 - Environmental Compliance and Sustainability Strategy.md"
+  },
+  {
+    "id": "airline-31",
+    "archetype": "airline",
+    "title": "De-icing and Weather Contingency Cost Analysis",
+    "part": "F",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/31 - De-icing and Weather Contingency Cost Analysis.md"
+  },
+  {
+    "id": "airline-32",
+    "archetype": "airline",
+    "title": "Safety and Incident Reporting Compliance Analysis",
+    "part": "F",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/airline/32 - Safety and Incident Reporting Compliance Analysis.md"
+  },
+  {
+    "id": "airline-33",
+    "archetype": "airline",
+    "title": "Fuel Cost and Hedging Strategy Analysis",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/33 - Fuel Cost and Hedging Strategy Analysis.md"
+  },
+  {
+    "id": "airline-34",
+    "archetype": "airline",
+    "title": "Debt Structure and Lease Obligations Review",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_FINANCING"
+    ],
+    "sourcePath": "data/analysis-library/airline/34 - Debt Structure and Lease Obligations Review.md"
+  },
+  {
+    "id": "airline-35",
+    "archetype": "airline",
+    "title": "Airport and Route-Level Cost Structure Analysis",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [
+      "CASK_EX_FUEL"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST",
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/35 - Airport and Route-Level Cost Structure Analysis.md"
+  },
+  {
+    "id": "airline-36",
+    "archetype": "airline",
+    "title": "Fuel Tankering Strategy and Cost-Benefit Analysis",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/36 - Fuel Tankering Strategy and Cost-Benefit Analysis.md"
+  },
+  {
+    "id": "airline-37",
+    "archetype": "airline",
+    "title": "Revenue Protection and Fraud Detection in Ticketing",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/airline/37 - Revenue Protection and Fraud Detection in Ticketing.md"
+  },
+  {
+    "id": "airline-38",
+    "archetype": "airline",
+    "title": "Alliance and Codeshare Partnership Evaluation",
+    "part": "H",
+    "partLabel": "Alliance and Partnership Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ALLIANCES"
+    ],
+    "sourcePath": "data/analysis-library/airline/38 - Alliance and Codeshare Partnership Evaluation.md"
+  },
+  {
+    "id": "airline-39",
+    "archetype": "airline",
+    "title": "Alliance Contribution and Revenue Synergy Analysis",
+    "part": "H",
+    "partLabel": "Alliance and Partnership Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ALLIANCES"
+    ],
+    "sourcePath": "data/analysis-library/airline/39 - Alliance Contribution and Revenue Synergy Analysis.md"
+  },
+  {
+    "id": "airline-40",
+    "archetype": "airline",
+    "title": "IT and Digital Transformation Capability Assessment",
+    "part": "I",
+    "partLabel": "Technology and Digital Transformation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/airline/40 - IT and Digital Transformation Capability Assessment.md"
+  }
+]

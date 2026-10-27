@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/F
+kind: analysis
+id: airline-30
+part: F
+partLabel: Regulatory and Environmental Compliance
+quant: [FUEL_CASK]
+causes: [REGULATORY]
+levers: [FUEL_EFFICIENCY]
 ---
 # 30 · Environmental Compliance and Sustainability Strategy
 

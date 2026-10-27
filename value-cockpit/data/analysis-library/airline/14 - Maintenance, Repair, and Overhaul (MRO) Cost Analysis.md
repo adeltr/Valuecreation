@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-14
+part: C
+partLabel: Operational Efficiency
+quant: [AIRCRAFT_DOWNTIME]
+causes: [OPERATIONAL]
+levers: [FLEET_PRODUCTIVITY, COST_PROCUREMENT]
 ---
 # 14 · Maintenance, Repair, and Overhaul (MRO) Cost Analysis
 

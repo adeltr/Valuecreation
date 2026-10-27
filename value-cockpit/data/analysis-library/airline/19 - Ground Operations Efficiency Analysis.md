@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-19
+part: C
+partLabel: Operational Efficiency
+quant: [TURNAROUND_MINUTES]
+causes: [OPERATIONAL]
+levers: [AIRPORT_GROUND_COST]
 ---
 # 19 · Ground Operations Efficiency Analysis
 

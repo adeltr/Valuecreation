@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/G
+kind: analysis
+id: airline-33
+part: G
+partLabel: Cost Management and Financial Strategy
+quant: [FUEL_CASK]
+causes: [FUEL_PRICE]
+levers: [FUEL_EFFICIENCY]
 ---
 # 33 · Fuel Cost and Hedging Strategy Analysis
 

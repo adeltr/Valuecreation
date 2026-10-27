@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/G
+kind: analysis
+id: airline-36
+part: G
+partLabel: Cost Management and Financial Strategy
+quant: [FUEL_CASK]
+causes: [FUEL_PRICE]
+levers: [FUEL_EFFICIENCY]
 ---
 # 36 · Fuel Tankering Strategy and Cost-Benefit Analysis
 

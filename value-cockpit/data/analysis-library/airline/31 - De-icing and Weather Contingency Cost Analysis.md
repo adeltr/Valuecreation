@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/F
+kind: analysis
+id: airline-31
+part: F
+partLabel: Regulatory and Environmental Compliance
+quant: []
+causes: [OPERATIONAL]
+levers: [AIRPORT_GROUND_COST]
 ---
 # 31 · De-icing and Weather Contingency Cost Analysis
 

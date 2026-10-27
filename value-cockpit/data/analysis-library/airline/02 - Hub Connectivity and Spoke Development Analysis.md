@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/A
+kind: analysis
+id: airline-02
+part: A
+partLabel: Network and Route Management
+quant: [LOAD_FACTOR]
+causes: [OPERATIONAL]
+levers: [NETWORK_OPTIMIZATION]
 ---
 # 2 · Hub Connectivity and Spoke Development Analysis
 

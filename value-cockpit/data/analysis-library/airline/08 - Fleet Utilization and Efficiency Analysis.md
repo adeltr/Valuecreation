@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/B
+kind: analysis
+id: airline-08
+part: B
+partLabel: Fleet and Asset Optimization
+quant: [FLEET_UTILIZATION, AIRCRAFT_DOWNTIME, CASK_EX_FUEL]
+causes: [OPERATIONAL]
+levers: [FLEET_PRODUCTIVITY, FUEL_EFFICIENCY]
 ---
 # 8 · Fleet Utilization and Efficiency Analysis
 

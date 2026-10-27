@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/D
+kind: analysis
+id: airline-26
+part: D
+partLabel: Revenue and Yield Maximization
+quant: [ANCILLARY_PER_PAX]
+causes: [COMMERCIAL]
+levers: [ANCILLARY]
 ---
 # 26 · In-Flight Service and Product Differentiation Analysis
 

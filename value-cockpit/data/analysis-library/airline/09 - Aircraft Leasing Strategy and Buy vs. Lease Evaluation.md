@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/B
+kind: analysis
+id: airline-09
+part: B
+partLabel: Fleet and Asset Optimization
+quant: []
+causes: [FINANCIAL]
+levers: [FLEET_FINANCING]
 ---
 # 9 · Aircraft Leasing Strategy and Buy vs. Lease Evaluation
 

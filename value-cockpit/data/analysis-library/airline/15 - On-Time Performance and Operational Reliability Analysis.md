@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-15
+part: C
+partLabel: Operational Efficiency
+quant: [ON_TIME_PERFORMANCE]
+causes: [OPERATIONAL]
+levers: [AIRPORT_GROUND_COST, CREW_PRODUCTIVITY]
 ---
 # 15 · On-Time Performance and Operational Reliability Analysis
 

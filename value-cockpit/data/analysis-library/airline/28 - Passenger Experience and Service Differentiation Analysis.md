@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/E
+kind: analysis
+id: airline-28
+part: E
+partLabel: Customer Experience and Loyalty
+quant: []
+causes: [COMMERCIAL]
+levers: [ANCILLARY]
 ---
 # 28 · Passenger Experience and Service Differentiation Analysis
 

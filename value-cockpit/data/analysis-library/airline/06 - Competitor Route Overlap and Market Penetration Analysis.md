@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/A
+kind: analysis
+id: airline-06
+part: A
+partLabel: Network and Route Management
+quant: [LOAD_FACTOR, YIELD, MARKET_SHARE]
+causes: [MARKET]
+levers: [REVENUE_MANAGEMENT, NETWORK_OPTIMIZATION]
 ---
 # 6 · Competitor Route Overlap and Market Penetration Analysis
 

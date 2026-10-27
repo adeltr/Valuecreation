@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/G
+kind: analysis
+id: airline-35
+part: G
+partLabel: Cost Management and Financial Strategy
+quant: [CASK_EX_FUEL]
+causes: [OPERATIONAL]
+levers: [AIRPORT_GROUND_COST, NETWORK_OPTIMIZATION]
 ---
 # 35 · Airport and Route-Level Cost Structure Analysis
 

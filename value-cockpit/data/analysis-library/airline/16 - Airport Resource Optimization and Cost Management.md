@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-16
+part: C
+partLabel: Operational Efficiency
+quant: []
+causes: [OPERATIONAL]
+levers: [AIRPORT_GROUND_COST]
 ---
 # 16 · Airport Resource Optimization and Cost Management
 

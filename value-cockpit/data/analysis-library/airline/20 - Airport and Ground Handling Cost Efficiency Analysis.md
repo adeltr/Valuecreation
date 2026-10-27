@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-20
+part: C
+partLabel: Operational Efficiency
+quant: []
+causes: [OPERATIONAL]
+levers: [AIRPORT_GROUND_COST, COST_PROCUREMENT]
 ---
 # 20 · Airport and Ground Handling Cost Efficiency Analysis
 

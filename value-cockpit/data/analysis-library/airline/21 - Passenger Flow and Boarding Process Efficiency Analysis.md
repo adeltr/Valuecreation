@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-21
+part: C
+partLabel: Operational Efficiency
+quant: []
+causes: [OPERATIONAL]
+levers: [AIRPORT_GROUND_COST]
 ---
 # 21 · Passenger Flow and Boarding Process Efficiency Analysis
 

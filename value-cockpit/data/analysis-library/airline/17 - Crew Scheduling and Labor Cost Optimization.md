@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-17
+part: C
+partLabel: Operational Efficiency
+quant: [LABOR_COST_PER_FLIGHT]
+causes: [LABOR]
+levers: [CREW_PRODUCTIVITY]
 ---
 # 17 · Crew Scheduling and Labor Cost Optimization
 

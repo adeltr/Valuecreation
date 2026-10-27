@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/B
+kind: analysis
+id: airline-12
+part: B
+partLabel: Fleet and Asset Optimization
+quant: []
+causes: [LABOR]
+levers: [CREW_PRODUCTIVITY]
 ---
 # 12 · Pilot Training and Simulator Utilization Analysis
 

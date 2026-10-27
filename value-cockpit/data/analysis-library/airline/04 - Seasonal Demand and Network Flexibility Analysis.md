@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/A
+kind: analysis
+id: airline-04
+part: A
+partLabel: Network and Route Management
+quant: [LOAD_FACTOR]
+causes: [MARKET]
+levers: [NETWORK_OPTIMIZATION, REVENUE_MANAGEMENT]
 ---
 # 4 · Seasonal Demand and Network Flexibility Analysis
 

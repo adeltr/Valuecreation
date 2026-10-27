@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/D
+kind: analysis
+id: airline-22
+part: D
+partLabel: Revenue and Yield Maximization
+quant: [LOAD_FACTOR, YIELD]
+causes: [COMMERCIAL]
+levers: [REVENUE_MANAGEMENT]
 ---
 # 22 · Core Services Revenue and Dynamic Pricing Analysis
 

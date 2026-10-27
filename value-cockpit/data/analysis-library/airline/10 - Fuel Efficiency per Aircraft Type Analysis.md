@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/B
+kind: analysis
+id: airline-10
+part: B
+partLabel: Fleet and Asset Optimization
+quant: [LOAD_FACTOR, FUEL_CASK]
+causes: [FUEL_PRICE]
+levers: [FUEL_EFFICIENCY]
 ---
 # 10 · Fuel Efficiency per Aircraft Type Analysis
 

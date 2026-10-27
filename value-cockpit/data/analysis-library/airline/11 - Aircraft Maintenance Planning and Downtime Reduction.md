@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/B
+kind: analysis
+id: airline-11
+part: B
+partLabel: Fleet and Asset Optimization
+quant: [AIRCRAFT_DOWNTIME]
+causes: [OPERATIONAL]
+levers: [FLEET_PRODUCTIVITY]
 ---
 # 11 · Aircraft Maintenance Planning and Downtime Reduction
 

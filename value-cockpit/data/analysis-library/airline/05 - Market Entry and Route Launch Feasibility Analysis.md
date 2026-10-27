@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/A
+kind: analysis
+id: airline-05
+part: A
+partLabel: Network and Route Management
+quant: []
+causes: [MARKET, REGULATORY]
+levers: [NETWORK_OPTIMIZATION, AIRPORT_GROUND_COST]
 ---
 # 5 · Market Entry and Route Launch Feasibility Analysis
 

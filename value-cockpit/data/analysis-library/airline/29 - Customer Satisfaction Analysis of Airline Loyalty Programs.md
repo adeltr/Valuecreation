@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/E
+kind: analysis
+id: airline-29
+part: E
+partLabel: Customer Experience and Loyalty
+quant: []
+causes: [COMMERCIAL]
+levers: [ANCILLARY]
 ---
 # 29 · Customer Satisfaction Analysis of Airline Loyalty Programs
 

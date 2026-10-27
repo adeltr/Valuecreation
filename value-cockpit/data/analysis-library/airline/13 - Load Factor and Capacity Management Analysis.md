@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/C
+kind: analysis
+id: airline-13
+part: C
+partLabel: Operational Efficiency
+quant: [LOAD_FACTOR, ASK]
+causes: [MARKET]
+levers: [NETWORK_OPTIMIZATION, REVENUE_MANAGEMENT]
 ---
 # 13 · Load Factor and Capacity Management Analysis
 

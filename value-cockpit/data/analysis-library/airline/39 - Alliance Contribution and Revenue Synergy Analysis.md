@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/H
+kind: analysis
+id: airline-39
+part: H
+partLabel: Alliance and Partnership Strategy
+quant: []
+causes: [COMMERCIAL]
+levers: [ALLIANCES]
 ---
 # 39 · Alliance Contribution and Revenue Synergy Analysis
 

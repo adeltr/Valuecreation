@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/G
+kind: analysis
+id: airline-34
+part: G
+partLabel: Cost Management and Financial Strategy
+quant: []
+causes: [FINANCIAL]
+levers: [FLEET_FINANCING]
 ---
 # 34 · Debt Structure and Lease Obligations Review
 

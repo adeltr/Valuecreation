@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/D
+kind: analysis
+id: airline-25
+part: D
+partLabel: Revenue and Yield Maximization
+quant: [YIELD]
+causes: [COMMERCIAL]
+levers: [REVENUE_MANAGEMENT]
 ---
 # 25 · Passenger Yield and Demographic Analysis
 

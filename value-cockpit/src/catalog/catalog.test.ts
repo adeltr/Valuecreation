@@ -5,6 +5,8 @@ import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry'
 
 // Every archetype with a source library must ship a catalog that passes integrity.
 const CATALOGS: SectorArchetype[] = ['aero', 'airline'];
+// Fully curated libraries: every source analysis must be in the catalog.
+const EXPECTED_SIZE: Partial<Record<SectorArchetype, number>> = { airline: 40 };
 
 describe.each(CATALOGS)('%s catalog – referential integrity', (archetype) => {
   const path = `src/catalog/${archetype}.catalog.json`;
@@ -12,6 +14,10 @@ describe.each(CATALOGS)('%s catalog – referential integrity', (archetype) => {
   const vocab = getActiveVocabulary(archetype);
 
   it('exists', () => expect(existsSync(path), path).toBe(true));
+
+  it.runIf(EXPECTED_SIZE[archetype] !== undefined)('covers every curated analysis', () => {
+    expect(entries.length).toBe(EXPECTED_SIZE[archetype]);
+  });
 
   it('all ids are unique and prefixed by the archetype', () => {
     const ids = entries.map((e) => e.id);

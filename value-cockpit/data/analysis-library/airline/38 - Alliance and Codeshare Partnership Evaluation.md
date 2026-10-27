@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/H
+kind: analysis
+id: airline-38
+part: H
+partLabel: Alliance and Partnership Strategy
+quant: []
+causes: [COMMERCIAL]
+levers: [ALLIANCES]
 ---
 # 38 · Alliance and Codeshare Partnership Evaluation
 

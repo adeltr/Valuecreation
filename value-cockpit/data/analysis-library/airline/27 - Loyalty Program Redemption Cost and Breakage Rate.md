@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/D
+kind: analysis
+id: airline-27
+part: D
+partLabel: Revenue and Yield Maximization
+quant: [LOYALTY_BREAKAGE_RATE]
+causes: [FINANCIAL]
+levers: [ANCILLARY]
 ---
 # 27 · Loyalty Program Redemption Cost and Breakage Rate
 

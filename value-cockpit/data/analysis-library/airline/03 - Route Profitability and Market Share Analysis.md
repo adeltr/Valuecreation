@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/A
+kind: analysis
+id: airline-03
+part: A
+partLabel: Network and Route Management
+quant: [LOAD_FACTOR, YIELD, MARKET_SHARE]
+causes: [MARKET]
+levers: [NETWORK_OPTIMIZATION, REVENUE_MANAGEMENT]
 ---
 # 3 · Route Profitability and Market Share Analysis
 

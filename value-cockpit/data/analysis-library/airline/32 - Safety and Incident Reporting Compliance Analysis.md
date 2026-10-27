@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/F
+kind: analysis
+id: airline-32
+part: F
+partLabel: Regulatory and Environmental Compliance
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 32 · Safety and Incident Reporting Compliance Analysis
 

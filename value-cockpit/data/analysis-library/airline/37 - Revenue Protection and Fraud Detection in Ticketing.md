@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/G
+kind: analysis
+id: airline-37
+part: G
+partLabel: Cost Management and Financial Strategy
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 37 · Revenue Protection and Fraud Detection in Ticketing
 

@@ -1,7 +1,8 @@
 # Curation Airline — table de revue (KPI + 40 analyses)
 
-> Statut : **à arbitrer**. Rien ici n'est dans l'ontologie, et aucune analyse n'a
-> encore de frontmatter `kind: analysis`. Sources :
+> Statut : **validé par l'analyste** (tous les choix proposés retenus). Appliqué dans
+> `src/ontology/sectors/airline.ts`, `src/templates/airline.ts`, les frontmatters des
+> 40 analyses et `src/catalog/airline.catalog.json`. Sources :
 > `data/kpi-library/Travel & Logistics.md` (KPI vault) et les 40 analyses de ce
 > dossier (formules citées avec leur numéro). Piles (docs/08) : **1** = input
 > relié par formule · **2** = diagnostic benchmarké · **3** = hors périmètre v1.
@@ -128,11 +129,12 @@ E Customer Experience and Loyalty · F Regulatory and Environmental Compliance �
 G Cost Management and Financial Strategy · H Alliance and Partnership Strategy ·
 I Technology and Digital Transformation.
 
-## Tes arbitrages attendus
+## Arbitrages retenus
 
-1. **Pile 1** : valider `CASK_EX_FUEL` + `FUEL_CASK` (séparation du CASK) et `ANCILLARY_PER_PAX`.
-2. **`CAPACITY_GROWTH`** : aucune source ne le fournit. On l'ajoute comme choix d'analyste, ou on fixe `ASK_EXIT` comme input ?
-3. **EBITDA ou EBITDAR**, et des CASK hors D&A ?
-4. **Cargo (#24)** : dans la v1 ou hors périmètre ?
-5. **`REVENUE_MANAGEMENT`** : catégorie propre à Airline, ou réutiliser `PRICING` de la base ?
-6. **Mapping du catalogue (§4)** : corrige les lignes qui ne te conviennent pas. Le reste sera appliqué tel quel.
+1. Pile 1 validée : CASK séparé en `CASK_EX_FUEL` + `FUEL_CASK`, `ANCILLARY_PER_PAX`
+   retenu ; les passagers sont dérivés de `RPK / AVG_TRIP_KM` (KPI Average Length of Haul).
+2. `CAPACITY_GROWTH` : choix d'analyste (aucune source Umbrex).
+3. Bridge EBITDA (pas EBITDAR), CASK hors D&A ; `EBITDA_ENTRY` = donnée historique.
+4. Cargo hors périmètre v1 : `CARGO_LOAD_FACTOR` non ajouté, #24 sans quant ni levier.
+5. `REVENUE_MANAGEMENT` : catégorie propre à Airline.
+6. Mapping §4 appliqué tel quel.

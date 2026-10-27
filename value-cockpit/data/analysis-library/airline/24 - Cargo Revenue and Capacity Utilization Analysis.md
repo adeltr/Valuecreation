@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/D
+kind: analysis
+id: airline-24
+part: D
+partLabel: Revenue and Yield Maximization
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 24 · Cargo Revenue and Capacity Utilization Analysis
 

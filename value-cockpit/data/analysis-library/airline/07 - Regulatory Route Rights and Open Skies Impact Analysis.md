@@ -2,6 +2,13 @@
 tags:
   - airline
   - part/A
+kind: analysis
+id: airline-07
+part: A
+partLabel: Network and Route Management
+quant: []
+causes: [REGULATORY]
+levers: [NETWORK_OPTIMIZATION]
 ---
 # 7 · Regulatory Route Rights and Open Skies Impact Analysis
 
