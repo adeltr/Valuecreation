@@ -10,7 +10,7 @@ quant: [LOYALTY_BREAKAGE_RATE]
 causes: [FINANCIAL]
 levers: [ANCILLARY]
 ---
-# 27 · Loyalty Program Redemption Cost and Breakage Rate
+# 27 · Loyalty Program Redemption Cost and Breakage Rate Analysis
 
 > **Part:** [[D - Revenue and Yield Maximization]]  ·  **Index:** [[How to Analyze an Airline Company]]
 

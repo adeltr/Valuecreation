@@ -267,7 +267,7 @@
   {
     "id": "airline-16",
     "archetype": "airline",
-    "title": "Airport Resource Optimization and Cost Management",
+    "title": "Airport Resource Optimization and Cost Management Analysis",
     "part": "C",
     "partLabel": "Operational Efficiency",
     "relatedMetricCodes": [],
@@ -445,7 +445,7 @@
   {
     "id": "airline-27",
     "archetype": "airline",
-    "title": "Loyalty Program Redemption Cost and Breakage Rate",
+    "title": "Loyalty Program Redemption Cost and Breakage Rate Analysis",
     "part": "D",
     "partLabel": "Revenue and Yield Maximization",
     "relatedMetricCodes": [

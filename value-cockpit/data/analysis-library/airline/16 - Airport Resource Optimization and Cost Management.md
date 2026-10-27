@@ -10,7 +10,7 @@ quant: []
 causes: [OPERATIONAL]
 levers: [AIRPORT_GROUND_COST]
 ---
-# 16 · Airport Resource Optimization and Cost Management
+# 16 · Airport Resource Optimization and Cost Management Analysis
 
 > **Part:** [[C - Operational Efficiency]]  ·  **Index:** [[How to Analyze an Airline Company]]
 

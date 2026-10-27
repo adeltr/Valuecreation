@@ -30,6 +30,8 @@ const SECTIONS: [RegExp, string][] = [
   [/^steps a company can take/i, '## 🚀 Steps to improve'],
 ];
 
+const STEP_HEADING = /^\s*Detailed step[-‐ ]by[-‐ ]step instructions?( on how to conduct the analysis)?:?\s*$/i;
+
 const isNoise = (line: string) =>
   /Find an independent consultant at www\.umbrex\.com/.test(line)
   || line.trim() === indexTitle
@@ -39,7 +41,7 @@ const isFormula = (line: string) => /^\s{10,}\S/.test(line) && line.includes('='
 const endsSentence = (s: string) => /[.:;?!)]$/.test(s.trim());
 
 /** Joins hard-wrapped lines into items; keeps bullets, numbered items and formulas apart. */
-function reflow(lines: string[]): string[] {
+function reflow(lines: string[], boldStepTitles: boolean): string[] {
   const out: string[] = [];
   let cur = '';
   let titleOnly = false; // cur is a bare "N. Step title" line awaiting its paragraph
@@ -70,7 +72,7 @@ function reflow(lines: string[]): string[] {
     }
     if (/^●/.test(t) || /^\d+\.\s/.test(t)) {
       flush(); cur = t;
-      titleOnly = /^\d+\.\s/.test(t) && !t.includes(':') && !endsSentence(t);
+      titleOnly = boldStepTitles && /^\d+\.\s/.test(t) && !t.includes(':') && !endsSentence(t);
       continue;
     }
     titleOnly = false;
@@ -100,20 +102,35 @@ for (const file of files) {
   const body = text.slice(fm![0].length).split('\n');
 
   const h1 = body.find((l) => l.startsWith('# '))!;
-  const [, num, title] = h1.match(/^#\s+(\d+)\.\s+(.+)$/)!;
+  const [, num, h1Title] = h1.match(/^#\s+(\d+)\.\s+(.+)$/)!;
+  let title = h1Title;
 
   const sections: { heading: string; lines: string[] }[] = [];
+  const preamble: string[] = [];
+  // Some guides omit the "Goal" heading: text between the title and the first section is the goal.
+  const open = (heading: string) => {
+    const text = preamble.map((l) => l.trim()).filter(Boolean);
+    if (sections.length === 0 && text.length) {
+      // Before a "Goal" heading the preamble is the wrapped end of the title ("… Analysis");
+      // without one, it is the goal paragraph itself.
+      if (heading === SECTIONS[0][1]) title = `${title} ${text.join(' ')}`;
+      else sections.push({ heading: SECTIONS[0][1], lines: preamble });
+    }
+    sections.push({ heading, lines: [] });
+  };
   for (const line of body.slice(body.indexOf(h1) + 1)) {
     if (isNoise(line)) continue;
+    // Most guides put the step-by-step heading on a plain line, not a ### heading.
+    if (STEP_HEADING.test(line)) { open('## 🪜 Step-by-step'); continue; }
     const h = line.match(/^###\s+(.+)$/);
     if (h && /^[A-Z]/.test(h[1])) {
       const mapped = SECTIONS.find(([re]) => re.test(h[1]));
       if (!mapped) throw new Error(`${file}: unknown section "${h[1]}"`);
-      sections.push({ heading: mapped[1], lines: [] });
+      open(mapped[1]);
       continue;
     }
     // A lowercase "### …" is a wrapped sentence the extractor mistook for a heading.
-    sections.at(-1)?.lines.push(h ? h[1] : line);
+    (sections.at(-1)?.lines ?? preamble).push(h ? h[1] : line);
   }
   if (sections.length !== SECTIONS.length) throw new Error(`${file}: expected 6 sections, got ${sections.length}`);
 
@@ -121,7 +138,7 @@ for (const file of files) {
     '---', 'tags:', `  - ${tag}`, `  - part/${partLetter}`, '---',
     `# ${Number(num)} · ${title}`, '',
     `> **Part:** [[${partLetter} - ${partLabel}]]  ·  **Index:** [[${indexTitle}]]`, '',
-    ...sections.flatMap((s) => [s.heading, ...reflow(s.lines), '', '']),
+    ...sections.flatMap((s) => [s.heading, ...reflow(s.lines, s.heading.includes('Step-by-step')), '', '']),
   ].join('\n').replace(/\n{3,}$/, '\n');
   writeFileSync(join(OUT_DIR, file), out);
 }

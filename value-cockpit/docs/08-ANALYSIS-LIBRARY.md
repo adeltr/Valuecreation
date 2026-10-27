@@ -84,7 +84,13 @@ hors périmètre v1. Seule la première pile touche `templates/aero.ts`.
 - Tables de curation : `data/analysis-library/<archetype>/_curation.md`
   (ignoré par le build), jamais dans les fichiers sources.
 - Import d'analyses brutes du vault : `tsx scripts/import-analyses.ts <src>
-  <archetype> <tag> "<Index title>"` (reflow sans réécriture).
+  <archetype> <tag> "<Index title>"` (reflow sans réécriture). Gère les variantes
+  des guides : titre « Detailed step-by-step instruction… » en ligne simple, Goal
+  sans titre, fin de titre coupée par l'extraction. Contrôle : comparaison mot à
+  mot source ↔ import (0 écart sur les 26 types importés).
+- Bibliothèque : 26 types d'entreprise, 1 105 analyses (Telecommunications manquant).
+  Correction de source : health-payor #08 contenait aussi l'analyse #9 (« Episode-Based
+  Bundled Payments Performance Analysis »), absente de l'index du vault — séparée.
 - Génération : `npm run catalog:build -- <archetype>` ; logique testée dans
   `src/catalog/build.ts`.
 - Curation à l'échelle (D4) : un archétype entier pré-rempli dans
