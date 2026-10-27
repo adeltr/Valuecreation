@@ -34,6 +34,9 @@ export const BASE_METRIC_CODES = [
 // never the target of a lever — multiple expansion is largely exogenous.
 export const NON_LEVER_CODES = ['ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY'] as const;
 
+// The only inputs an analyst may override as a scenario assumption (docs/06).
+export const SCENARIO_ASSUMPTION_CODES = ['EXIT_MULTIPLE', 'HOLD_YEARS'] as const;
+
 export interface MetricMeta { unit: Unit; fiboRef?: string }
 
 export const BASE_METRIC_META: Record<(typeof BASE_METRIC_CODES)[number], MetricMeta> = {
