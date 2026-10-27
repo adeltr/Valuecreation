@@ -31,7 +31,8 @@ runScenario(scenarioId, metrics, levers, scenarioLevers, assumptions):
   3. leviers : pour chaque scenarioLever
      a. lever.status ≠ 'validated' ⇒ ERREUR (invariant 4, gate analyste)
      b. cible calculée ⇒ erreur (on ne perturbe que des inputs)
-     c. application selon deltaKind :
+     c. scenarioLever.deltaKind ≠ lever.deltaKind ⇒ erreur
+     d. application selon deltaKind :
         absolute : valeur + delta        (DSO −20 jours, churn −2 pts)
         percent  : valeur × (1 + delta)  (churn −50 % relatif)
   4. resolveMetrics(perturbé)

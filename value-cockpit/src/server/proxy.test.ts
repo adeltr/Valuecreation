@@ -25,3 +25,10 @@ describe('proxy – lever targets in prompt', () => {
     expect(line).not.toMatch(/EXIT_MULTIPLE|ENTRY_MULTIPLE|HOLD_YEARS|NET_DEBT_ENTRY/);
   });
 });
+
+describe('proxy – archetype guard', () => {
+  it('handleProposal rejects an unknown archetype instead of falling back to generic', async () => {
+    const fakeCall = async () => '{}';
+    await expect(handleProposal('aviation' as never, 'x', fakeCall)).rejects.toThrow(/unknown archetype/i);
+  });
+});

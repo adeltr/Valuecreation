@@ -27,6 +27,9 @@ export function runScenario(
     if (lever.status !== 'validated') {
       throw new Error(`Lever "${lever.label}" is not validated by an analyst — refused in simulation`);
     }
+    if (sl.deltaKind !== lever.deltaKind) {
+      throw new Error(`deltaKind mismatch on "${lever.label}": scenario ${sl.deltaKind}, lever ${lever.deltaKind}`);
+    }
     const t = byCode.get(lever.impactMetricCode);
     if (!t) throw new Error(`Lever targets missing metric: ${lever.impactMetricCode}`);
     if (t.isCalculated) throw new Error(`Cannot perturb a calculated metric: ${t.code}`);

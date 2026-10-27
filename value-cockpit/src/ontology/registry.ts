@@ -35,6 +35,9 @@ const EXTENSIONS: Partial<Record<SectorArchetype, {
 };
 
 export function getActiveVocabulary(archetype: SectorArchetype): ActiveVocabulary {
+  if (!(SECTOR_ARCHETYPES as readonly string[]).includes(archetype)) {
+    throw new Error(`Unknown archetype: ${archetype}`);
+  }
   const ext = EXTENSIONS[archetype];
   const metricCodes = [...BASE_METRIC_CODES, ...(ext?.codes ?? [])];
   const metricMeta = { ...BASE_METRIC_META, ...(ext?.meta ?? {}) };
