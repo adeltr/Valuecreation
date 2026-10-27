@@ -24,14 +24,17 @@ To assess the bank's ability to detect, prevent, and mitigate fraudulent activit
 ## 🪜 Step-by-step
 1. Compile Fraud Incidents ○ Gather data on all reported fraud cases over a defined period. ○ Categorize fraud types (e.g., phishing, identity theft, unauthorized transactions).
 2. Measure Fraud Detection Rates ○ Calculate detection rate:
-`Fraud Detection Rate = (Number of Detected Fraudulent Transactions / Total Fraudulent Transactions) x 100 ○ Analyze how many fraudulent attempts were detected before losses occurred.`
+`Fraud Detection Rate = (Number of Detected Fraudulent Transactions / Total Fraudulent Transactions) x 100`
+○ Analyze how many fraudulent attempts were detected before losses occurred.
 3. Evaluate False Positive Rates ○ Calculate false positive rate:
-`False Positive Rate = (Number of Legitimate Transactions Flagged as Fraud / Total Flagged Transactions) x 100 ○ Assess the operational and customer satisfaction impacts of false positives.`
+`False Positive Rate = (Number of Legitimate Transactions Flagged as Fraud / Total Flagged Transactions) x 100`
+○ Assess the operational and customer satisfaction impacts of false positives.
 4. Analyze Resolution Times ○ Measure the average time to resolve a fraud case:
 `Average Resolution Time = (Sum of Resolution Times for All Cases / Total Number of Cases)`
 64 ○ Identify factors causing delays in fraud resolution.
 5. Assess Fraud Prevention Success ○ Calculate fraud prevention rate:
-`Fraud Prevention Rate = (Value of Prevented Fraud / Total Value of Attempted Fraud) x 100 ○ Compare fraud prevention performance across channels (e.g., online banking, ATMs, mobile apps).`
+`Fraud Prevention Rate = (Value of Prevented Fraud / Total Value of Attempted Fraud) x 100`
+○ Compare fraud prevention performance across channels (e.g., online banking, ATMs, mobile apps).
 6. Identify High-Risk Areas ○ Analyze transaction data to identify patterns or segments (e.g., regions, demographics) with higher fraud incidents. ○ Highlight vulnerabilities in specific products or services.
 7. Benchmark Against Industry Standards ○ Compare fraud rates, detection effectiveness, and resolution times with peer institutions. ○ Identify best practices in fraud prevention.
 8. Perform System Testing ○ Test the fraud detection system’s performance using simulated fraud scenarios. ○ Evaluate the accuracy and speed of detection.

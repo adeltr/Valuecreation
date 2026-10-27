@@ -20,7 +20,8 @@ To evaluate the performance and payout strategies of participating (par) policie
 
 ## 🪜 Step-by-step
 1. Calculate Dividend Payout Ratios a. Measure the total dividends paid relative to surplus and premium contributions:
-`Dividend Payout Ratio (%) = (Total Dividends Paid / Total Surplus Generated) x 100 b. Compare actual payouts with actuarial expectations to assess alignment with profitability.`
+`Dividend Payout Ratio (%) = (Total Dividends Paid / Total Surplus Generated) x 100`
+b. Compare actual payouts with actuarial expectations to assess alignment with profitability.
 2. Analyze Policyholder Profit Contribution a. Segment dividends by key policyholder groups based on: ■ Policy duration (e.g., new vs. long-standing policies) ■ Premium size and contribution to reserves ■ Claim experience and persistency trends b. Evaluate if dividends are equitably distributed across policyholder segments.
 137
 3. Assess Surplus Distribution a. Analyze the company’s surplus generated from participating policies, including: ■ Investment income (e.g., bonds, equities) ■ Underwriting gains (claims experience vs. assumptions) ■ Expense savings (actual vs. expected costs) b. Evaluate how much surplus is allocated to dividends versus retained for company reserves.

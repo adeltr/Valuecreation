@@ -29,9 +29,11 @@ To evaluate the overall performance and efficiency of power plants by examining 
 
 ## 🪜 Step-by-step
 1. **Calculate Thermal Efficiency:** ○ Use the formula:
-`Thermal Efficiency (%) = (Net Electricity Output (Mffh) x 3.6) / (Fuel Input in GJ) x 100 ○ Perform this calculation for each power plant to determine how effectively fuel energy is converted into electricity.`
+`Thermal Efficiency (%) = (Net Electricity Output (Mffh) x 3.6) / (Fuel Input in GJ) x 100`
+○ Perform this calculation for each power plant to determine how effectively fuel energy is converted into electricity.
 2. **Evaluate Heat Rate:** ○ Use the formula:
-`Heat Rate (kJ/kffh) = Fuel Input (GJ) / Net Electricity Output (Mffh) ○ Lower heat rates indicate better plant efficiency.`
+`Heat Rate (kJ/kffh) = Fuel Input (GJ) / Net Electricity Output (Mffh)`
+○ Lower heat rates indicate better plant efficiency.
 3. **Assess Capacity Factor:** ○ Calculate the capacity factor as described in the previous analysis to assess the plant's utilization alongside performance.
 4. **Analyze Downtime and Outages:** ○ Quantify downtime due to scheduled maintenance, forced outages, or operational inefficiencies. ○ Identify patterns in downtime and correlate with performance dips.
 5. **Benchmark Against Industry Standards:** ○ Compare calculated efficiency metrics (thermal efficiency, heat rate, capacity factor) with industry benchmarks for the same plant type and age.

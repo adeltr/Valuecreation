@@ -22,7 +22,8 @@ To measure the efficiency and effectiveness of customer support services by anal
 
 ## 🪜 Step-by-step
 1. Track Time-to-Resolution Metrics ○ Calculate average resolution time for all cases:
-`Average Resolution Time = (Sum of Time to Resolve All Cases / Total Number of Cases) ○ Segment resolution times by issue type and support channel (e.g., technical queries, account issues).`
+`Average Resolution Time = (Sum of Time to Resolve All Cases / Total Number of Cases)`
+○ Segment resolution times by issue type and support channel (e.g., technical queries, account issues).
 2. Measure First Contact Resolution (FCR) Rate ○ FCR Rate = (Number of Issues Resolved on First Contact / Total Number of Issues) x 100 ○ Analyze FCR rates across different support channels and issue types.
 3. Evaluate Support Volume and Workload Distribution ○ Identify trends in support volume over time (e.g., peak times or seasonal spikes). ○ Assess workload distribution among staff to ensure efficient case handling.
 4. Analyze Customer Satisfaction Post-Interaction ○ Link CSAT or NPS scores to resolution times and issue types. ○ Identify correlations between faster resolution and higher satisfaction.

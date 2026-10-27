@@ -33,7 +33,8 @@ To calculate and compare the Levelized Cost of Electricity (LCOE) for different 
 2. **Calculate Total Lifecycle Costs:** ○ Use the formula:
 `Total Lifecycle Costs = CapEx + (Annual OpEx x Plant Lifespan) + Decommissioning Costs`
 3. **Calculate Total Electricity Generation:** ○ Estimate total electricity generation over the plant's lifespan:
-`Total Generation (Mffh) = Annual Electricity Generation (Mffh) x Plant Lifespan`
+`Total Generation (Mffh) = Annual Electricity Generation (Mffh) x Plant`
+Lifespan
 4. **Calculate LCOE:** ○ Use the formula:
 `LCOE ($/Mffh) = Total Lifecycle Costs / Total Generation (Mffh)`
 5. **Incorporate Discount Rate:** ○ Adjust costs and generation values to present value terms if the analysis requires accounting for the time value of money:

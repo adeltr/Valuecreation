@@ -22,11 +22,15 @@ To evaluate the financial performance and risk exposure of a group life insuranc
 ## 🪜 Step-by-step
 1. Segment the Group Life Portfolio ○ Categorize policies by group size (small, medium, large), policy type, and demographic factors (e.g., age bands, industry). ○ Segment policies by claim frequency (high, moderate, low) to identify risk concentration.
 2. Calculate Profitability Metrics ○ Use the formula to calculate profitability:
-`Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses) ○ Determine profit margin as: Profit Margin (%) = (Profitability / Premium Revenue) x 100`
+`Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)`
+○ Determine profit margin as:
+`Profit Margin (%) = (Profitability / Premium Revenue) x 100`
 3. **Analyze Claims Experience:** 57 ○ Calculate the Loss Ratio to assess claims performance:
-`Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100 ○ Compare claims experience across segments to identify high-risk groups or industries.`
+`Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100`
+○ Compare claims experience across segments to identify high-risk groups or industries.
 4. Evaluate Renewal and Persistency Rates ○ Measure renewal rates for group policies to assess long-term portfolio stability:
-`Renewal Rate (%) = (Number of Policies Renewed / Number of Policies Eligible for Renewal) x 100 ○ Analyze persistency trends by group size and policy type.`
+`Renewal Rate (%) = (Number of Policies Renewed / Number of Policies Eligible for Renewal) x 100`
+○ Analyze persistency trends by group size and policy type.
 5. Assess Risk Exposure ○ Analyze claim trends to identify risk drivers (e.g., industry-specific mortality rates, adverse selection in small groups). ○ Perform stress testing to model the financial impact of adverse scenarios, such as a sudden increase in claims frequency.
 6. Benchmark Against Industry Data ○ Compare loss ratios, expense ratios, and profitability margins with industry benchmarks to identify underperformance.
 7. Visualize Results ○ Use tables to summarize profitability, loss ratios, and renewal rates by group size and policy type. ○ Generate charts showing trends in claims frequency, profit margins, and risk concentration.

@@ -22,12 +22,14 @@ To evaluate the bank’s success in reaching underserved and unbanked population
 
 ## 🪜 Step-by-step
 1. Analyze Current Market Penetration ○ Calculate the percentage of the target population using the bank’s services:
-`Market Penetration Rate = (Number of Customers in Target Segment / Total Population in Segment) x 100 ○ Segment penetration rates by geography, income level, and demographic group.`
+`Market Penetration Rate = (Number of Customers in Target Segment / Total Population in Segment) x 100`
+○ Segment penetration rates by geography, income level, and demographic group.
 2. Identify Underserved Segments ○ Use demographic and economic data to identify regions or groups with low financial service access. ○ Highlight disparities in account ownership or product usage rates.
 3. Evaluate Financial Inclusion Metrics ○ Measure the percentage of customers from underserved groups (e.g., unbanked or low-income households).
 103 ○ Assess the adoption of basic financial services (e.g., savings accounts, microloans) in these segments.
 4. Assess Product Penetration ○ Calculate product usage rates in underserved regions or groups:
-`Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100 ○ Identify which products (e.g., digital wallets, microloans) have the highest adoption.`
+`Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100`
+○ Identify which products (e.g., digital wallets, microloans) have the highest adoption.
 5. Benchmark Against Competitors ○ Compare the bank’s market penetration and inclusion metrics with industry peers. ○ Highlight areas where the bank lags behind or excels.
 6. Monitor Trends Over Time ○ Track changes in financial inclusion and market penetration metrics over time to evaluate the impact of strategic initiatives.
 7. Conduct Gap Analysis ○ Identify gaps in service offerings or geographic coverage that limit the bank’s reach. ○ Highlight barriers to access, such as lack of infrastructure, financial literacy, or affordability.

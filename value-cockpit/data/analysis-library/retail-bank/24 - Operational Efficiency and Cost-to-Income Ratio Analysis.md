@@ -22,7 +22,8 @@ To assess the operational efficiency of the bank by analyzing its cost-to-income
 
 ## 🪜 Step-by-step
 1. Calculate the Cost-to-Income Ratio ○ Use the formula:
-`Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100 ○ Segment the ratio by functional area or revenue stream for deeper insights.`
+`Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100`
+○ Segment the ratio by functional area or revenue stream for deeper insights.
 2. **Analyze Expense Distribution:** Break down operating expenses into categories such as:
 - Personnel costs.
 - IT and technology expenses.

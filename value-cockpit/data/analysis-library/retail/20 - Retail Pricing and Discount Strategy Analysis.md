@@ -31,9 +31,11 @@ The goal of the Retail Pricing and Discount Strategy Analysis is to evaluate how
 ## 🪜 Step-by-step
 1. **Collect historical pricing and sales data:** Start by gathering data on the original price, discounted price (if applicable), and units sold for each product or category during a speciﬁc period. Ensure the data is aligned by time frame (e.g., daily, weekly, monthly).
 2. **Analyze sales performance based on pricing:** Compare sales volumes before and after discounts are applied. Use the following equation to calculate the price elasticity of demand:
-`Price Elasticity of Demand = (Percentage Change in Quantity Sold / Percentage Change in Price) This will help assess how sensitive customer demand is to price changes.`
+`Price Elasticity of Demand = (Percentage Change in Quantity Sold / Percentage Change in Price)`
+This will help assess how sensitive customer demand is to price changes.
 3. **Calculate proﬁt margins:** For each product or category, calculate the gross proﬁt margin at both regular price and discounted price:
-`Gross Proﬁt Margin (%) = ((Sales Price - Cost of Goods Sold) / Sales Price) x 100 Analyze how discounts impact overall proﬁtability.`
+`Gross Proﬁt Margin (%) = ((Sales Price - Cost of Goods Sold) / Sales Price) x 100`
+Analyze how discounts impact overall proﬁtability.
 4. **Evaluate discount eMectiveness:** Assess how often and for how long discounts are applied and how they a9ect total revenue and proﬁt. This can be done by segmenting sales data by product category or promotion period. For example:
 `Discount Impact on Revenue (%) = ((Revenue During Discount - Revenue Without Discount) / Revenue Without Discount) x 100`
 5. **Benchmark against competitors (optional):** If competitor pricing data is available, compare the company’s pricing and discounting strategies to industry peers. This helps identify whether the company is priced too high or low relative to competitors and whether discounts are competitive.

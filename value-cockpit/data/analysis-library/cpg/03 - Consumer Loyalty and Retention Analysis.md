@@ -33,16 +33,22 @@ The goal of a Consumer Loyalty and Retention Analysis in the consumer packaged g
 ## 🪜 Step-by-step
 1. **Determine the time period for analysis:** Select a time frame (e.g., quarterly or annually) to assess customer loyalty and retention. This helps track trends over time and provides insights into long-term customer behavior.
 2. **Calculate customer retention rate:** Retention rate is a critical metric in this analysis. It measures the percentage of customers who continue to make purchases over a given period. Use the following formula:
-`Retention Rate = ((Number of Customers at End of Period - New Customers Acquired During Period) / Number of Customers at Start of Period) x 100 For example, if you started with 10,000 customers, acquired 2,000 new customers, and ended with 9,000 customers, the retention rate would be: Retention Rate = ((9,000 - 2,000) / 10,000) x 100 = 70%`
+`Retention Rate = ((Number of Customers at End of Period - New Customers Acquired During Period) / Number of Customers at Start of Period) x 100`
+For example, if you started with 10,000 customers, acquired 2,000 new customers, and ended with 9,000 customers, the retention rate would be:
+`Retention Rate = ((9,000 - 2,000) / 10,000) x 100 = 70%`
 3. **Calculate customer churn rate:** The churn rate measures the percentage of customers lost over the given period. The formula for churn rate is:
-`Churn Rate = (Number of Customers Lost During Period / Number of Customers at Start of Period) x 100 Using the same example as above, if you lost 3,000 customers during the period, the churn rate would be: Churn Rate = (3,000 / 10,000) x 100 = 30%`
+`Churn Rate = (Number of Customers Lost During Period / Number of Customers at Start of Period) x 100`
+Using the same example as above, if you lost 3,000 customers during the period, the churn rate would be:
+`Churn Rate = (3,000 / 10,000) x 100 = 30%`
 4. **Analyze repeat purchase behavior:** Evaluate the frequency and timing of repeat purchases by customers. This can provide insights into how often customers return and what factors influence their repeat buying decisions. Metrics such as Average Order Frequency (number of purchases per customer per time period) can be useful here.
 5. **Calculate customer lifetime value (CLV):** CLV measures the total revenue a company can expect from a customer over their entire relationship with the brand. The formula for CLV is:
-`CLV = (Average Purchase Value) x (Purchase Frequency) x (Customer Lifespan) For example, if the average purchase value is $50, the purchase frequency is 4`
-16 times per year, and the average customer lifespan is 3 years, then:
+`CLV = (Average Purchase Value) x (Purchase Frequency) x (Customer Lifespan)`
+For example, if the average purchase value is $50, the purchase frequency is 4 16 times per year, and the average customer lifespan is 3 years, then:
 `CLV = $50 x 4 x 3 = $600`
 6. **Assess Net Promoter Score (NPS):** NPS is a commonly used measure of customer loyalty and likelihood of recommendation. Conduct customer surveys asking how likely they are to recommend the brand to others, using a scale from 0 to 10. Calculate NPS as:
-`NPS = % of Promoters (score 9-10) - % of Detractors (score 0-6) For example, if 50% of respondents are Promoters and 20% are Detractors: NPS = 50% - 20% = 30`
+`NPS = % of Promoters (score 9-10) - % of Detractors (score 0-6)`
+For example, if 50% of respondents are Promoters and 20% are Detractors:
+`NPS = 50% - 20% = 30`
 7. **Analyze loyalty program participation:** If the company has a loyalty program, analyze the percentage of repeat customers participating, their purchase behavior, and how loyalty rewards influence retention. Look at metrics such as: ○ Loyalty Program Retention Rate: The retention rate of loyalty program members. ○ Average Spend per Loyalty Program Member: How much more loyalty program members spend compared to non-members.
 8. **Segment customers by loyalty tiers:** Group customers into segments based on their loyalty and retention characteristics. Examples include: ○ High-value loyal customers: Frequent repeat buyers with high lifetime value. ○ At-risk customers: Customers whose purchase frequency has declined and are at risk of churning. ○ One-time buyers: Customers who made one purchase but did not return.
 9. Evaluate what drives behavior in each segment and tailor marketing strategies accordingly.

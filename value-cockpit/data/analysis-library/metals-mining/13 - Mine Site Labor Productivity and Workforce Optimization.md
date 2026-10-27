@@ -31,9 +31,11 @@ The goal of this analysis is to evaluate the productivity of the workforce at a 
 ## 🪜 Step-by-step
 1. **Collect Workforce Data:** ○ Compile a detailed workforce roster, including roles, shifts, and operational responsibilities.
 2. **Analyze Labor Productivity:** ○ Calculate productivity using the formula:
-`Labor Productivity = (Total Output / Total Labor Hours Worked) ○ Compare labor productivity across shifts, departments, or roles.`
+`Labor Productivity = (Total Output / Total Labor Hours Worked)`
+○ Compare labor productivity across shifts, departments, or roles.
 3. **Evaluate Labor Cost Efficiency:** ○ Calculate labor cost per unit of output using the formula:
-`Labor Cost per Unit = Total Labor Costs / Total Output ○ Identify cost variations between roles, shifts, or departments.`
+`Labor Cost per Unit = Total Labor Costs / Total Output`
+○ Identify cost variations between roles, shifts, or departments.
 4. **Assess Workforce Allocation:** ○ Evaluate whether the workforce is optimally distributed across operational tasks. ○ Identify underutilized or overstaffed roles.
 5. **Analyze Downtime and Idle Time:** ○ Track and categorize idle time (e.g., due to equipment downtime or process bottlenecks).
 40 ○ Assess how downtime affects workforce productivity.

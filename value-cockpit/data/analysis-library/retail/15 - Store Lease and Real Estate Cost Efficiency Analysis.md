@@ -30,11 +30,14 @@ The goal of the Store Lease and Real Estate Cost E9iciency Analysis is to evalua
 ## 🪜 Step-by-step
 1. **Collect rent and sales data:** Gather the total rent or lease cost for each store along with the corresponding sales revenue for a speciﬁc period (e.g., monthly, quarterly).
 2. **Calculate rent-to-sales ratio:** For each store, calculate the rent-to-sales ratio using the following formula:
-`Rent-to-Sales Ratio (%) = (Store Rent / Store Sales) x 100 This ratio indicates the percentage of sales consumed by rent and is a key measure of cost e9iciency.`
+`Rent-to-Sales Ratio (%) = (Store Rent / Store Sales) x 100`
+This ratio indicates the percentage of sales consumed by rent and is a key measure of cost e9iciency.
 3. **Calculate occupancy cost per square foot:** Use this formula to calculate the occupancy cost per square foot, which includes rent and any other associated real estate costs (e.g., utilities, maintenance):
-`Occupancy Cost per Square Foot = (Total Occupancy Costs / Store Size in Square Feet) This helps compare the cost e9iciency of stores of di9erent sizes.`
+`Occupancy Cost per Square Foot = (Total Occupancy Costs / Store Size in Square Feet)`
+This helps compare the cost e9iciency of stores of di9erent sizes.
 4. **Compare sales per square foot:** Calculate sales per square foot for each store using this equation:
-`Sales per Square Foot = Store Sales / Store Size in Square Feet This metric evaluates how e9ectively each store is using its available space to generate revenue.`
+`Sales per Square Foot = Store Sales / Store Size in Square Feet`
+This metric evaluates how e9ectively each store is using its available space to generate revenue.
 5. **Benchmark against industry averages:** If available, compare the store’s rent-to-sales ratio and occupancy cost per square foot against industry benchmarks. This provides insight into whether the store’s real estate costs are competitive.
 6. **Segment by location type:** Analyze the data by store type (e.g., mall locations, standalone stores, urban vs. suburban) to identify any patterns in cost e9iciency across di9erent types of real estate.
 Potential complications that can arise with this analysis •   Lease term variability: Di9erent lease lengths and conditions can complicate direct comparisons between stores, particularly if some leases include rent escalations or percentage-based rent.

@@ -31,11 +31,14 @@ The goal of Visual Merchandising Performance Analysis is to evaluate how e9ectiv
 ## 🪜 Step-by-step
 1. **Collect baseline sales and foot traMic data:** Begin by gathering sales data for products and categories before making any changes to visual merchandising. Combine this with foot tra9ic data to establish how many customers are visiting the store or speciﬁc display areas.
 2. **Monitor product movement in display areas:** Identify key products featured in prominent visual displays (e.g., window displays, endcaps, or promotional tables) and track their sales performance. Calculate the rate at which these products sell using the following formula:
-`Sales Rate = Total Units Sold / Days in Display This will provide insight into how quickly products in visual displays are moving compared to non-displayed products.`
+`Sales Rate = Total Units Sold / Days in Display`
+This will provide insight into how quickly products in visual displays are moving compared to non-displayed products.
 3. **Measure foot traMic and conversion rates in key areas:** Use in-store sensors or tra9ic counters to measure foot tra9ic in areas where visual merchandising is prominent. Calculate the conversion rate to assess how e9ectively displays are driving purchases:
-`Conversion Rate (%) = (Number of Transactions / Number of Visitors) x 100 This will help determine whether visually appealing displays lead to actual purchases.`
+`Conversion Rate (%) = (Number of Transactions / Number of Visitors) x 100`
+This will help determine whether visually appealing displays lead to actual purchases.
 4. **Calculate the impact on sales:** Compare sales data before and after the visual merchandising changes to determine whether there was an increase in sales:
-`Sales Lift (%) = ((Sales After Merchandising Change - Sales Before Merchandising Change) / Sales Before Merchandising Change) x 100 This provides a clear measure of whether the visual merchandising improvements positively impacted revenue.`
+`Sales Lift (%) = ((Sales After Merchandising Change - Sales Before Merchandising Change) / Sales Before Merchandising Change) x 100`
+This provides a clear measure of whether the visual merchandising improvements positively impacted revenue.
 5. **Analyze customer dwell time in display areas (optional):** If possible, track how long customers spend in front of key visual displays using in-store sensors or cameras. Longer dwell times may indicate that customers are engaging more deeply with the products or displays.
 6. **Gather customer feedback (optional):** Use customer surveys or feedback tools to gather insights on how customers perceive the visual displays. Ask questions related to visual appeal, product visibility, and whether the displays inﬂuenced their decision to purchase.
 7. **Track inventory turnover for displayed products (optional)**:** For products prominently featured in visual merchandising, track inventory turnover rates to see how quickly stock is selling. Inventory Turnover = Cost of Goods Sold / Average Inventory A higher turnover rate for displayed products may indicate that visual merchandising is e9ectively driving sales.

@@ -33,11 +33,14 @@ The goal of Store Closure and Rationalization Analysis is to assess which retail
 ## 🪜 Step-by-step
 1. **Collect ﬁnancial data for each store:** Gather sales, operating costs, and proﬁt margins for each store location. This data will form the foundation for assessing store performance.
 2. **Calculate the proﬁtability of each store:** Determine the proﬁtability of each store by calculating the net proﬁt margin:
-`Proﬁt Margin (%) = ((Revenue - Operating Costs) / Revenue) x 100 Stores with low or negative proﬁt margins may be candidates for closure or consolidation.`
+`Proﬁt Margin (%) = ((Revenue - Operating Costs) / Revenue) x 100`
+Stores with low or negative proﬁt margins may be candidates for closure or consolidation.
 3. **Evaluate store contribution to overall revenue:** Assess the percentage of total company revenue each store contributes:
-`Store Contribution (%) = (Store Revenue / Total Company Revenue) x 100 This metric helps identify stores that are underperforming relative to their peers.`
+`Store Contribution (%) = (Store Revenue / Total Company Revenue) x 100`
+This metric helps identify stores that are underperforming relative to their peers.
 4. **Analyze store foot traMic and conversion rates:** If foot tra9ic data is available, measure how e9ectively each store converts foot tra9ic into sales:
-`Conversion Rate (%) = (Number of Transactions / Total Foot Tra9ic) x 100 Low conversion rates may indicate that the store is not e9ectively attracting or engaging customers.`
+`Conversion Rate (%) = (Number of Transactions / Total Foot Tra9ic) x 100`
+Low conversion rates may indicate that the store is not e9ectively attracting or engaging customers.
 5. **Compare geographic distribution and competitor presence:** Examine the geographic proximity of each store to other company locations or competitors. Stores that are too close to other locations may cannibalize sales, while those in heavily competitive areas may struggle to gain market share.
 6. **Analyze lease terms and contract obligations (optional):** If applicable, review the lease terms for each store to determine whether long-term commitments or high rent costs make certain locations more costly to close. Calculate the cost of closing the store early if lease penalties apply.
 7. **Assess omnichannel impact:** If the company has an online presence, analyze the impact of online sales in each store's region. If online sales are high and store sales are declining, this may indicate that the store is less critical to the company's overall strategy.

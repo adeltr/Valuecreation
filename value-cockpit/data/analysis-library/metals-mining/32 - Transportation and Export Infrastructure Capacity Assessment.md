@@ -32,7 +32,8 @@ The goal of this analysis is to evaluate the capacity and efficiency of transpor
 1. **Map Transportation and Export Routes:** ○ Document all routes used to transport raw materials and finished products to export hubs. ○ Identify key nodes, such as rail terminals, ports, and warehouses.
 2. **Evaluate Infrastructure Capacity:** ○ Assess the capacity of critical infrastructure (e.g., railcar availability, port throughput). ○ Compare current usage with maximum capacity to identify bottlenecks.
 3. **Analyze Transportation Efficiency:** ○ Calculate transportation costs per ton using the formula:
-`Transportation Cost per Ton = Total Transportation Costs / Total Tons Transported ○ Evaluate lead times and on-time delivery rates.`
+`Transportation Cost per Ton = Total Transportation Costs / Total Tons`
+Transported ○ Evaluate lead times and on-time delivery rates.
 4. **Assess Export Hub Performance:** ○ Review port or terminal throughput, including average loading/unloading times and storage capacity. ○ Identify congestion patterns and their causes (e.g., seasonal peaks, infrastructure limitations).
 97
 5. **Review Historical Performance Data:** ○ Analyze data on delays, equipment failures, and missed delivery targets. ○ Identify trends or recurring issues impacting efficiency.

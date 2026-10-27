@@ -31,7 +31,9 @@ To assess operational risks and evaluate the safety performance of power generat
 ## 🪜 Step-by-step
 1. **Collect Incident Data:** ○ Compile reports on workplace injuries, near misses, equipment failures, and environmental hazards. ○ Categorize incidents by type, location, and severity.
 2. **Calculate Key Safety Metrics:** ○ Lost Time Injury Frequency Rate (LTIFR):
-`LTIFR = (Number of Lost Time Injuries / Total Hours Worked) x 1,000,000 ○ Total Recordable Incident Rate (TRIR): TRIR = (Number of Recordable Incidents / Total Hours Worked) x 200,000`
+`LTIFR = (Number of Lost Time Injuries / Total Hours Worked) x 1,000,000`
+○ Total Recordable Incident Rate (TRIR):
+`TRIR = (Number of Recordable Incidents / Total Hours Worked) x 200,000`
 3. **Evaluate Operational Risks:** ○ Analyze maintenance and downtime records to identify high-risk equipment or processes. ○ Assess the effectiveness of risk mitigation plans and identify gaps.
 4. **Review Safety Compliance:** ○ Compare current practices and incident rates to regulatory safety standards and internal safety policies. ○ Identify non-compliance issues or areas needing improvement.
 84

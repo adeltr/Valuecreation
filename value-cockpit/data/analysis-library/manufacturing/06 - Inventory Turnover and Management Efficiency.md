@@ -27,10 +27,14 @@ The goal of the Inventory Turnover and Management Efficiency analysis is to asse
 
 
 ## 🪜 Step-by-step
-1. Calculate Inventory Turnover:
-`○ The basic formula to calculate inventory turnover is: Inventory Turnover = COGS / Average Inventory For example, if a company’s COGS for the period is $500,000 and its average inventory is $100,000: Inventory Turnover = $500,000 / $100,000 =5 This means the company sold and replaced its inventory five times during the period.`
+1. **Calculate Inventory Turnover:** ○ The basic formula to calculate inventory turnover is: Inventory Turnover = COGS / Average Inventory For example, if a company’s COGS for the period is $500,000 and its
+`average inventory is $100,000: Inventory Turnover = $500,000 / $100,000`
+`=5`
+This means the company sold and replaced its inventory five times during the period.
 2. **Calculate Days Inventory Outstanding (DIO):** ○ DIO measures the average number of days it takes to sell inventory and is
-`calculated as: Days Inventory Outstanding (DIO) = (Average Inventory / COGS) x Number of Days in the Period Using the earlier example and assuming a 365-day year: DIO = ($100,000 / $500,000) x 365 = 73 days This means, on average, it takes 73 days to sell the company’s inventory.`
+`calculated as: Days Inventory Outstanding (DIO) = (Average Inventory / COGS) x Number of Days in the Period`
+`Using the earlier example and assuming a 365-day year: DIO = ($100,000 / $500,000) x 365 = 73 days`
+This means, on average, it takes 73 days to sell the company’s inventory.
 3. Segment Inventory by Category:
 21 ○ Perform separate inventory turnover calculations for raw materials, WIP, and finished goods to identify inefficiencies in different inventory stages. For example, raw materials may have a high turnover, but finished goods may have a lower turnover, indicating issues in sales or distribution.
 4. **Analyze Inventory Trends Over Time:** ○ Track inventory turnover rates and DIO over several periods (monthly, quarterly, or annually) to identify trends. Decreasing turnover rates could indicate slowing sales or overstocking.

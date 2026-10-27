@@ -30,7 +30,8 @@ The goal of this analysis is to compare planned or estimated mineral inventory w
 1. **Collect Planned Inventory Data:** ○ Extract planned grades and tonnages from the mine’s short-term and long-term production plans.
 2. **Gather Actual Production Data:** ○ Record actual grades and tonnages extracted during the analysis period. ○ Include data from stockpile movements and processing outputs.
 3. **Calculate Variances for Key Metrics:** ○ Use the formula for variance:
-`Variance (%) = [(Actual - Planned) / Planned] x 100 ○ Perform variance calculations for tonnage, grade, and metal content.`
+`Variance (%) = [(Actual - Planned) / Planned] x 100`
+○ Perform variance calculations for tonnage, grade, and metal content.
 4. **Reconcile Stockpile Data:** ○ Compare physical stockpile measurements with calculated values based on material movement records.
 5. **Analyze Processing Performance:** ○ Assess the amount of metal or mineral recovered at the processing plant relative to planned recoveries.
 6. **Identify Discrepancies:** ○ Pinpoint areas where significant variances occur (e.g., geological modeling, mining methods, processing losses).

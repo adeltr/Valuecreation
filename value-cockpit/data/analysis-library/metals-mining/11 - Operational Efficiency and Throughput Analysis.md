@@ -31,11 +31,13 @@ The goal of this analysis is to evaluate the efficiency of mining operations and
 ## 🪜 Step-by-step
 1. **Collect Production Data:** ○ Gather data on the total amount of ore processed and the corresponding production of metals or minerals. ○ Record throughput rates for the processing plant and any variations over time.
 2. **Measure Equipment Utilization and Downtime:** ○ Calculate equipment utilization rates using the formula:
-`Equipment Utilization (%) = (Operating Hours / Total Available Hours) x 100 ○ Identify causes of downtime (e.g., maintenance, breakdowns, or delays).`
+`Equipment Utilization (%) = (Operating Hours / Total Available Hours) x 100`
+○ Identify causes of downtime (e.g., maintenance, breakdowns, or delays).
 3. **Analyze Processing Throughput:** ○ Compare actual throughput rates with the plant’s design capacity to identify underperformance. ○ Use the formula:
 `Throughput Efficiency (%) = (Actual Throughput / Design Throughput) x 100`
 4. **Evaluate Labor Productivity:** ○ Calculate output per worker using the formula:
-`Labor Productivity = Total Output / Number of Workers ○ Identify areas where labor productivity lags behind industry benchmarks.`
+`Labor Productivity = Total Output / Number of Workers`
+○ Identify areas where labor productivity lags behind industry benchmarks.
 34
 5. **Assess Energy and Material Consumption:** ○ Track energy usage (kffh per ton of ore processed) and material consumption rates (e.g., reagents, water). ○ Compare consumption rates with industry standards to identify inefficiencies.
 6. **Identify Bottlenecks:** ○ Pinpoint stages in the mining or processing workflow where delays or inefficiencies occur (e.g., hauling, crushing, grinding).

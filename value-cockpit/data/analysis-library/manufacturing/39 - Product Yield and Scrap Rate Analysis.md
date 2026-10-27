@@ -33,10 +33,8 @@ The goal of a Product Yield and Scrap Rate Analysis is to assess the efficiency 
 ## 🪜 Step-by-step
 1. **Collect Production and Scrap Data:** ○ Gather data on the number of finished products produced and the amount of raw material used during the production process. Also, collect detailed scrap data, including reasons for scrap (e.g., defects, damage, incorrect specifications, or overproduction).
 168
-2. **Calculate Product Yield:** ○ Calculate the yield as a percentage of the total raw materials or components that are successfully converted into finished products. A high yield indicates that most of the raw material is being efficiently used to produce salable products.
-`○ Product Yield (%) = (Number of Good Units Produced / Total Units Started) x 100`
-3. **Calculate Scrap Rate:** ○ Determine the scrap rate as a percentage of the total materials or products discarded during production. This includes materials that cannot be reused or reworked and directly impacts production costs.
-`○ Scrap Rate (%) = (Amount of Scrap / Total Raw Materials Used) x 100`
+2. **Calculate Product Yield:** ○ Calculate the yield as a percentage of the total raw materials or components that are successfully converted into finished products. A high yield indicates that most of the raw material is being efficiently used to produce salable products. ○ Product Yield (%) = (Number of Good Units Produced / Total Units Started) x 100
+3. **Calculate Scrap Rate:** ○ Determine the scrap rate as a percentage of the total materials or products discarded during production. This includes materials that cannot be reused or reworked and directly impacts production costs. ○ Scrap Rate (%) = (Amount of Scrap / Total Raw Materials Used) x 100
 4. **Analyze the Causes of Scrap:** ○ Review the scrap data to identify the main causes of waste. These may include defects, process errors, material handling issues, or machine malfunctions. Categorize the causes and prioritize areas for improvement.
 5. **Assess the Financial Impact of Scrap:** ○ Calculate the financial impact of the scrap on the production process by determining the cost of discarded materials. Include labor costs for handling and disposing of scrap, as well as any costs related to rework or quality control.
 6. **Examine Process and Equipment Performance:** ○ Analyze the performance of production equipment and processes that may contribute to yield variations or scrap generation. Equipment settings, machine calibration, and process variability can impact product quality and waste levels.

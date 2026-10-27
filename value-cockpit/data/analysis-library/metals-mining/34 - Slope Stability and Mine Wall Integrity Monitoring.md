@@ -31,7 +31,8 @@ The goal of this analysis is to assess the stability of slopes and mine walls in
 ## 🪜 Step-by-step
 1. **Collect Geological and Geotechnical Data:** ○ Analyze the rock mass characteristics, including strength, fractures, and joint orientation. ○ Identify weak zones, such as clay layers or highly weathered rock.
 2. **Assess Slope and Mine Wall Geometry:** ○ Document slope angles, bench dimensions, and overall pit design. ○ Calculate the Factor of Safety (FoS) for slopes using geotechnical models:
-`FoS = Resisting Forces / Driving Forces ○ Ensure FoS meets or exceeds industry standards for stability.`
+`FoS = Resisting Forces / Driving Forces`
+○ Ensure FoS meets or exceeds industry standards for stability.
 3. **Implement Monitoring Systems:** ○ Install and monitor instruments like inclinometers, extensometers, and piezometers to track slope movement and water pressure. ○ Use radar or LiDAR scanning for real-time deformation monitoring.
 4. **Analyze Displacement Data:** ○ Plot displacement over time to detect trends indicating potential instability. ○ Calculate rates of movement and correlate them with external factors like rainfall or blasting.
 5. **Evaluate Environmental and Operational Impacts:** ○ Assess how rainfall, groundwater, and temperature fluctuations affect slope stability.

@@ -23,7 +23,8 @@ To evaluate trends in mortality and longevity risks to ensure the company’s pr
 1. Aggregate Mortality Data ○ Collect historical policyholder mortality data. ○ Segment data by demographics (e.g., age, gender) and policy type to identify variations in mortality trends.
 2. Analyze Longevity Trends ○ Compare historical life expectancy trends for policyholders against broader population data (e.g., national life expectancy reports). ○ Assess changes in longevity assumptions over time, factoring in medical advancements or lifestyle changes.
 3. Compare Actual vs. Expected Mortality ○ Calculate the ratio of actual deaths to expected deaths using the formula:
-`Mortality Ratio = (Actual Deaths / Expected Deaths) x 100 ○ Identify deviations across policy cohorts or demographic groups.`
+`Mortality Ratio = (Actual Deaths / Expected Deaths) x 100`
+○ Identify deviations across policy cohorts or demographic groups.
 4. Evaluate Mortality and Longevity Risk Factors ○ Assess the impact of external factors (e.g., pandemics, aging populations, medical innovations) on mortality and longevity trends.
 5. **Review Actuarial Assumptions:** 23 ○ Compare current mortality and longevity assumptions to recent experience data. ○ Update mortality tables if trends indicate significant changes in risk exposure.
 6. Conduct Scenario Analysis ○ Develop stress scenarios to test the financial impact of extreme changes in mortality (e.g., unexpected pandemics) or longevity (e.g., further life expectancy increases).

@@ -23,8 +23,7 @@ The goal of Severity Trend Analysis by Line of Business is to track and assess c
 `Average Claim Severity = Total Claim Amount / Number of Claims`
 3. **Track Changes in Severity Over Time:** Repeat the average claim severity calculation for multiple periods to track changes and identify any trends over time.
 4. **Calculate Severity Growth Rate:** To understand the rate of change in severity, calculate the growth rate for each period using:
-`Severity Growth Rate (%) = ((Average Claim Severity in Current Period - Average Claim`
-Severity in Previous Period) / Average Claim Severity in Previous Period) x 100
+`Severity Growth Rate (%) = ((Average Claim Severity in Current Period - Average Claim Severity in Previous Period) / Average Claim Severity in Previous Period) x 100`
 5. Analyze Severity Trends by Claim Type (Optional)
 If relevant, break down severity trends within each line of business by claim type or category to identify specific cost drivers (e.g., theft, natural disaster, liability).
 6. **Compile Results:** Present findings in a table with severity values, growth rates, and trends by line of business, along with any specific categories if applicable.

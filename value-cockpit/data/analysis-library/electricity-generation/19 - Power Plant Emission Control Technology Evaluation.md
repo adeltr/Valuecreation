@@ -33,7 +33,8 @@ To assess the effectiveness, cost-efficiency, and scalability of emission contro
 `Removal Efficiency (%) = [(Baseline Emissions - Post-Treatment Emissions) / Baseline Emissions] x 100`
 3. **Identify Gaps in Compliance:** ○ Compare post-treatment emissions to regulatory limits for each pollutant. ○ Highlight pollutants for which current technologies are insufficient.
 4. **Assess Cost-Effectiveness:** ○ Calculate the cost per ton of pollutant removed for each technology:
-`Cost Efficiency ($/ton) = Total Operating Cost / Pollutant Removed (tons) ○ Rank technologies based on cost efficiency and effectiveness.`
+`Cost Efficiency ($/ton) = Total Operating Cost / Pollutant Removed (tons)`
+○ Rank technologies based on cost efficiency and effectiveness.
 5. **Explore Technology Alternatives:** ○ Research alternative or advanced emission control technologies applicable to the plant’s configuration and fuel type.
 51 ○ Evaluate the feasibility of upgrades or replacements, considering capital expenditure and downtime.
 6. **Model Future Scenarios:** ○ Simulate emissions and costs under stricter future regulatory limits or operational changes (e.g., increased output, fuel switching).

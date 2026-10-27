@@ -30,7 +30,8 @@ To evaluate the operational efficiency and scalability of production facilities 
 
 ## 🪜 Step-by-step
 1. Assess Current Facility Utilization ○ Calculate capacity utilization:
-`Capacity Utilization (%) = (Actual Production / Maximum Capacity) x 100. ○ Identify underutilized or overburdened facilities and production lines.`
+`Capacity Utilization (%) = (Actual Production / Maximum Capacity) x 100.`
+○ Identify underutilized or overburdened facilities and production lines.
 2. Analyze Operational Efficiency ○ Measure key performance indicators (KPIs) such as cycle time, yield, and downtime. ○ Review causes of inefficiencies, such as equipment breakdowns or process delays.
 3. Evaluate Scalability Potential ○ Compare current production capacity to forecasted demand. ○ Identify equipment, labor, or space constraints that may limit future scalability.
 4. Review Cost Efficiency ○ Analyze costs per unit of production, segmenting by labor, energy, and raw materials. ○ Benchmark against industry standards to identify potential savings.

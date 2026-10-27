@@ -38,6 +38,11 @@ const isNoise = (line: string) =>
   || /^\*Catégorie :/.test(line.trim());
 
 const isFormula = (line: string) => /^\s{10,}\S/.test(line) && line.includes('=');
+const indentOf = (line: string) => line.length - line.trimStart().length;
+const unfinished = (formula: string) => {
+  const body = formula.replace(/`/g, '');
+  return (body.match(/\(/g)?.length ?? 0) > (body.match(/\)/g)?.length ?? 0) || /[-+x*/(=,]$/.test(body.trim());
+};
 const endsSentence = (s: string) => /[.:;?!)]$/.test(s.trim());
 
 /** Joins hard-wrapped lines into items; keeps bullets, numbered items and formulas apart. */
@@ -46,6 +51,7 @@ function reflow(lines: string[], boldStepTitles: boolean): string[] {
   let cur = '';
   let titleOnly = false; // cur is a bare "N. Step title" line awaiting its paragraph
   let inFormula = false;  // last emitted item is a formula still open for wrapped lines
+  let formulaIndent = 0;
   const flush = () => { if (cur.trim()) out.push(cur.trim()); cur = ''; titleOnly = false; };
   for (const raw of lines) {
     const line = raw.replace(/\s+$/, '');
@@ -58,13 +64,15 @@ function reflow(lines: string[], boldStepTitles: boolean): string[] {
       continue;
     }
     // Formulas: deeply indented, or right after a sentence announcing one ("…the formula:").
-    if (inFormula && /^\s{6,}\S/.test(line)) {
+    // A formula wraps onto lines indented deeper than itself, or while it is visibly
+    // unfinished; an example at the same indent ("For example, …") is ordinary text.
+    if (inFormula && (indentOf(line) > formulaIndent || unfinished(out[out.length - 1]))) {
       out[out.length - 1] = out[out.length - 1].slice(0, -1) + ' ' + t + '`'; // wrapped formula
       continue;
     }
     inFormula = false;
-    if (!/^●/.test(t) && (isFormula(line) || (t.includes(' = ') && /:$/.test(cur || out.at(-1) || '')))) {
-      flush(); out.push('`' + t + '`'); inFormula = true; continue;
+    if (!/^(●|○|For example)/.test(t) && (isFormula(line) || (t.includes(' = ') && /:$/.test(cur || out.at(-1) || '')))) {
+      flush(); out.push('`' + t + '`'); inFormula = true; formulaIndent = indentOf(line); continue;
     }
     if (/^\s{10,}\//.test(line) && out.at(-1)?.startsWith('`')) {
       out[out.length - 1] = out[out.length - 1].slice(0, -1) + ' ' + t + '`'; // formula resumed after a page break

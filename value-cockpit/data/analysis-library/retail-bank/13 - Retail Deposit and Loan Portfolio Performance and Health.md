@@ -24,13 +24,20 @@ To evaluate the performance and financial health of the bank’s retail deposit 
 
 ## 🪜 Step-by-step
 1. Analyze Deposit Portfolio Performance ○ Calculate deposit growth rate:
-`Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100 ○ Segment deposits by product type and customer demographics. ○ Assess contribution of deposits to net interest margin (NIM): NIM = (Net Interest Income / Average Earning Assets) x 100`
+`Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100`
+○ Segment deposits by product type and customer demographics. ○ Assess contribution of deposits to net interest margin (NIM):
+`NIM = (Net Interest Income / Average Earning Assets) x 100`
 2. Assess Loan Portfolio Performance ○ Calculate loan growth rate:
-`Loan Growth Rate = ((Current Period Loan Balance - Previous Period Loan Balance) / Previous Period Loan Balance) x 100 ○ Evaluate portfolio composition (e.g., percentage of mortgages vs. personal loans). ○ Assess yield on loans: Loan Yield = (Interest Income from Loans / Average Loan Balance) x 100`
+`Loan Growth Rate = ((Current Period Loan Balance - Previous Period Loan Balance) / Previous Period Loan Balance) x 100`
+○ Evaluate portfolio composition (e.g., percentage of mortgages vs. personal loans). ○ Assess yield on loans:
+`Loan Yield = (Interest Income from Loans / Average Loan Balance) x 100`
 3. **Evaluate Credit Quality:** 39 ○ Calculate delinquency rate:
-`Delinquency Rate = (Delinquent Loans / Total Loan Portfolio) x 100 ○ Measure non-performing assets (NPA) as a percentage of the total loan portfolio: NPA Ratio = (Non-Performing Assets / Total Loan Portfolio) x 100`
+`Delinquency Rate = (Delinquent Loans / Total Loan Portfolio) x 100`
+○ Measure non-performing assets (NPA) as a percentage of the total loan portfolio:
+`NPA Ratio = (Non-Performing Assets / Total Loan Portfolio) x 100`
 4. Analyze Profitability Metrics ○ Assess net contribution of deposits and loans:
-`Net Contribution = (Interest Income - Interest Expense - Loan Loss Provisions) / Total Portfolio Balance ○ Compare profitability across product types and customer segments.`
+`Net Contribution = (Interest Income - Interest Expense - Loan Loss Provisions) / Total Portfolio Balance`
+○ Compare profitability across product types and customer segments.
 5. Trend Analysis ○ Review historical trends in deposit and loan balances, growth rates, and credit quality. ○ Identify patterns such as seasonal spikes or declines.
 6. Segment Analysis ○ Segment performance by demographics, geography, or customer value tiers. ○ Identify high-performing segments and underperforming areas for targeted strategies.
 7. Identify Risks and Opportunities ○ Highlight risk areas such as increasing delinquencies or slowing deposit growth. ○ Identify opportunities such as promoting higher-yield loan products or attracting long-term deposits.

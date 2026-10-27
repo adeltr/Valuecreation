@@ -22,11 +22,14 @@ To evaluate the bank’s reliance on fee-based income and assess the sustainabil
 
 ## 🪜 Step-by-step
 1. Calculate Fee Income Contribution ○ Determine the percentage of total revenue derived from fees:
-`Fee Income Contribution = (Fee Income / Total Revenue) x 100 ○ Segment the calculation by fee type to identify key contributors.`
+`Fee Income Contribution = (Fee Income / Total Revenue) x 100`
+○ Segment the calculation by fee type to identify key contributors.
 2. Analyze Fee Income Trends ○ Track fee income growth over time:
-`Fee Income Growth Rate = ((Current Period Fee Income - Previous Period Fee Income) / Previous Period Fee Income) x 100 ○ Identify seasonal or cyclical patterns in fee income.`
+`Fee Income Growth Rate = ((Current Period Fee Income - Previous Period Fee Income) / Previous Period Fee Income) x 100`
+○ Identify seasonal or cyclical patterns in fee income.
 3. Assess Revenue Dependency ○ Evaluate dependency on fee income relative to other revenue streams:
-`Revenue Dependency Ratio = (Fee Income / Non-Fee Income) x 100 ○ Highlight high-dependency areas that may be vulnerable to regulatory changes or customer dissatisfaction.`
+`Revenue Dependency Ratio = (Fee Income / Non-Fee Income) x 100`
+○ Highlight high-dependency areas that may be vulnerable to regulatory changes or customer dissatisfaction.
 4. Segment Fee Income by Customer Groups ○ Analyze fee income by customer segments (e.g., retail, business, high-net-worth individuals). ○ Identify segments with the highest or lowest fee contribution.
 5. Benchmark Against Competitors ○ Compare the bank’s fee income ratios and growth rates with industry averages.
 112 ○ Identify areas where the bank charges higher or lower fees compared to peers.

@@ -22,9 +22,14 @@ To evaluate the profitability and associated risks of different customer segment
 ## 🪜 Step-by-step
 1. Segment Customers ○ Divide customers into segments based on demographics, product usage, or behaviors (e.g., high-income individuals, young professionals, retirees).
 2. Calculate Profitability Metrics ○ Calculate revenue per customer:
-`Revenue per Customer = Total Revenue from Segment / Number of Customers in Segment ○ Determine cost-to-serve per customer: Cost-to-Serve per Customer = Total Costs for Segment / Number of Customers in Segment ○ Compute net profitability: Net Profitability = Revenue per Customer - Cost-to-Serve per Customer`
+`Revenue per Customer = Total Revenue from Segment / Number of`
+Customers in Segment ○ Determine cost-to-serve per customer:
+`Cost-to-Serve per Customer = Total Costs for Segment / Number of`
+Customers in Segment ○ Compute net profitability:
+`Net Profitability = Revenue per Customer - Cost-to-Serve per Customer`
 3. Assess Segment Risk ○ Calculate default or delinquency rates:
-`Default Rate = (Number of Defaulting Customers in Segment / Total Customers in Segment) x 100 ○ Analyze credit scores or risk scores within segments. ○ Identify other risk factors, such as high loan-to-value (LTV) ratios or high credit utilization.`
+`Default Rate = (Number of Defaulting Customers in Segment / Total Customers in Segment) x 100`
+○ Analyze credit scores or risk scores within segments. ○ Identify other risk factors, such as high loan-to-value (LTV) ratios or high credit utilization.
 4. **Develop a Profitability-Risk Matrix:** 29 ○ Plot customer segments on a matrix with axes for profitability and risk (e.g., high-profit, low-risk; low-profit, high-risk).
 5. Identify Drivers of Profitability and Risk ○ Analyze factors driving profitability (e.g., product bundling, premium products). ○ Examine root causes of risk (e.g., geographic location, economic conditions, behavioral patterns).
 6. Conduct Trend Analysis ○ Track segment performance over time to identify shifts in profitability or risk.

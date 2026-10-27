@@ -22,7 +22,8 @@ The goal of Policy Limits and Deductibles Analysis is to evaluate the distributi
 1. Collect Policy Limit Data by Product Line For each product line, gather data on the limits of liability chosen by policyholders, such as coverage limits for auto, home, or liability policies.
 2. Analyze Deductibles by Product Line Record deductible amounts chosen by policyholders within each product line to understand customer preferences and risk tolerance.
 3. Calculate Average Policy Limit and Deductible per Product Line Determine the average limit and deductible amount for each product line:
-`○ Average Policy Limit = Total Policy Limits / Number of Policies ○ Average Deductible = Total Deductibles / Number of Policies`
+`○ Average Policy Limit = Total Policy Limits / Number of Policies`
+`○ Average Deductible = Total Deductibles / Number of Policies`
 4. Segment Analysis by Customer Demographics or Regions (Optional) If available, segment the data by customer demographics (e.g., income level, age group) or regions to identify patterns in policy limit and deductible preferences.
 5. Compare Claims to Policy Limits Examine claims data, especially for high-severity claims, to see how often claims reach or exceed policy limits. This highlights any potential gaps in coverage or overly conservative limits.
 6. Compile Results Organize findings in a table to show the distribution of policy limits and deductibles by product line and any relevant segments.

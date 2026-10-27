@@ -21,7 +21,8 @@ To assess the rate at which policyholders renew their policies and maintain thei
 
 ## 🪜 Step-by-step
 1. Define Key Metrics
-`○ Persistency Rate = (Number of Policies In Force After a Defined Period / Number of Policies In Force at the Start of the Period) x 100. ○ Renewal Rate = (Number of Policies Renewed During the Period / Total Policies Due for Renewal During the Period) x 100.`
+`○ Persistency Rate = (Number of Policies In Force After a Defined Period / Number of Policies In Force at the Start of the Period) x 100.`
+`○ Renewal Rate = (Number of Policies Renewed During the Period / Total Policies Due for Renewal During the Period) x 100.`
 2. Segment the Data ○ Categorize policies based on type (e.g., term, whole life, universal life). ○ Group data by demographics (e.g., age, income, geography) and payment frequency (monthly, quarterly, annual).
 3. Calculate Persistency and Renewal Rates ○ Use the above formulas to calculate persistency and renewal rates for each segment. ○ Track persistency at multiple intervals (e.g., 13-month, 25-month, and 37-month periods).
 4. Analyze Trends and Correlations ○ Compare persistency and renewal rates across segments. ○ Identify correlations between policy type, distribution channels, and demographics with persistency rates.

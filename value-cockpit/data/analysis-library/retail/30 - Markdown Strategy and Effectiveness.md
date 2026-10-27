@@ -31,14 +31,17 @@ The goal of Markdown Strategy and E9ectiveness Analysis is to evaluate how well 
 ## 🪜 Step-by-step
 1. **Collect sales and inventory data for markdown products:** Gather data on product sales, inventory levels, and pricing before, during, and after markdown periods. This will provide insights into the sales lift and inventory movement driven by markdowns.
 2. **Calculate markdown percentage:** For each product, calculate the markdown percentage to understand the depth of the discount o9ered:
-`Markdown Percentage = ((Original Price - Markdown Price) / Original Price) x 100 This metric shows how much of a price reduction was applied.`
+`Markdown Percentage = ((Original Price - Markdown Price) / Original Price) x 100`
+This metric shows how much of a price reduction was applied.
 3. **Measure the sell-through rate during markdown:** The sell-through rate helps measure how much of the inventory was sold during the markdown period:
-`Sell-Through Rate (%) = (Units Sold During Markdown / Total Units Available Before Markdown) x 100 A high sell-through rate indicates that the markdown successfully moved inventory, while a low rate may indicate a need for deeper discounts.`
+`Sell-Through Rate (%) = (Units Sold During Markdown / Total Units Available Before Markdown) x 100`
+A high sell-through rate indicates that the markdown successfully moved inventory, while a low rate may indicate a need for deeper discounts.
 4. **Analyze the impact on sales:** Compare the sales volume and revenue generated before, during, and after the markdown. Use the following equation to calculate the sales lift during the markdown:
 `Sales Lift (%) = ((Sales During Markdown - Sales Before Markdown) / Sales Before`
 Markdown) x 100 This helps assess the e9ectiveness of the markdown in boosting sales.
 5. **Evaluate the proﬁt impact:** To assess the proﬁtability of the markdown, calculate the gross proﬁt margin both before and during the markdown period:
-`Gross Proﬁt Margin (%) = ((Sales - Cost of Goods Sold) / Sales) x 100 A signiﬁcant drop in the proﬁt margin may indicate that the markdown was too deep, while a slight reduction may indicate that the markdown was well-targeted.`
+`Gross Proﬁt Margin (%) = ((Sales - Cost of Goods Sold) / Sales) x 100`
+A signiﬁcant drop in the proﬁt margin may indicate that the markdown was too deep, while a slight reduction may indicate that the markdown was well-targeted.
 6. **Analyze markdown timing and inventory levels:** Examine whether markdowns were applied at the optimal time, such as before product obsolescence or seasonality shifts. Assess inventory levels before and after the markdown to ensure that markdowns are being used e9ectively to clear out slow-moving products.
 7. **Monitor customer behavior during markdown periods:** If foot tra9ic and conversion data are available, analyze how markdowns a9ect customer behavior. Increased foot tra9ic or higher conversion rates during markdowns suggest that the discounts are e9ectively driving customer demand.
 Potential complications that can arise with this analysis •   Overuse of markdowns: Frequent markdowns may lead customers to expect discounts and reduce their willingness to pay full price, undermining proﬁtability in the long term.

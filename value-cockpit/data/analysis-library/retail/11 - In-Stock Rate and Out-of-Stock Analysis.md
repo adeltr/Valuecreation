@@ -29,9 +29,12 @@ The goal of the In-Stock Rate and Out-of-Stock Analysis is to measure how e9ecti
 ## 🪜 Step-by-step
 1. **Collect inventory data:** Record the total number of SKUs o9ered and the number of SKUs that are in-stock during a speciﬁc time period. Ensure this data is collected from the same time frame (e.g., daily, weekly, monthly) across all stores or locations being analyzed.
 2. **Calculate the in-stock rate:** Use the following formula to calculate the in-stock rate:
-`In-Stock Rate (%) = (Number of In-Stock SKUs / Total Number of SKUs) x 100 This tells you what percentage of products are available for customers at any given time.`
+`In-Stock Rate (%) = (Number of In-Stock SKUs / Total Number of SKUs) x 100`
+This tells you what percentage of products are available for customers at any given time.
 3. **Calculate the out-of-stock rate:** Use this formula to calculate the out-of-stock rate:
-`Out-of-Stock Rate (%) = (Number of Out-of-Stock SKUs / Total Number of SKUs) x 100 Alternatively, you can subtract the in-stock rate from 100 to ﬁnd the out-of-stock rate: Out-of-Stock Rate (%) = 100 - In-Stock Rate (%)`
+`Out-of-Stock Rate (%) = (Number of Out-of-Stock SKUs / Total Number of SKUs) x 100`
+Alternatively, you can subtract the in-stock rate from 100 to ﬁnd the out-of-stock rate:
+`Out-of-Stock Rate (%) = 100 - In-Stock Rate (%)`
 4. **Segment analysis by store or product category (optional):** If more granular data is available, conduct the in-stock and out-of-stock analysis by store location, product category, or region. This helps in identifying areas with higher or lower product availability.
 5. **Analyze trends over time:** Track the in-stock and out-of-stock rates over time to identify patterns, such as frequent stockouts during peak demand periods or seasonal ﬂuctuations.
 6. **Compare against sales data (optional):** If sales data is available, compare the out-of-stock rates to missed sales opportunities. Products with high sales volume but frequent stockouts can highlight signiﬁcant lost revenue potential.

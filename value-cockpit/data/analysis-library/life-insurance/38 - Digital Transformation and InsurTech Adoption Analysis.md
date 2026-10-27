@@ -25,9 +25,11 @@ To evaluate the company’s progress in digital transformation and adoption of I
 2. Measure Operational Efficiency Gains a. Compare pre- and post-digital adoption metrics: ■ Underwriting processing times ■ Claims settlement timelines ■ Policy issuance turnaround times b. Calculate the percentage improvement in efficiency:
 `Efficiency Improvement (%) = [(Old Time - New Time) / Old Time] x 100`
 3. **Evaluate Financial Impact and ROI a. Measure cost savings from digital adoption:** ■ Reduction in labor costs, error rates, and processing expenses. b. Compare savings and profits to technology investment costs:
-`ROI (%) = [(Savings - Digital Investment Cost) / Digital Investment Cost] x 100`
+`ROI (%) = [(Savings - Digital Investment Cost) / Digital Investment`
+Cost] x 100
 4. Assess Customer Engagement and Experience a. Analyze usage rates for digital platforms, portals, and mobile apps:
-`Digital Engagement Rate (%) = (Number of Digital Interactions / Total Customer Interactions) x 100 b. Measure improvements in customer satisfaction (e.g., CSAT scores, NPS) and retention rates.`
+`Digital Engagement Rate (%) = (Number of Digital Interactions / Total Customer Interactions) x 100`
+b. Measure improvements in customer satisfaction (e.g., CSAT scores, NPS) and retention rates.
 5. Benchmark Digital Adoption a. Compare the company’s digital capabilities and InsurTech adoption with industry peers. b. Identify gaps in technology adoption and areas where competitors have achieved better outcomes.
 6. Identify Key Challenges a. Assess barriers to full digital transformation, such as legacy systems, resistance to change, or poor integration between platforms. b. Evaluate cybersecurity risks and regulatory compliance for digital initiatives.
 7. Perform Future Readiness Assessment a. Assess the company’s readiness to adopt emerging technologies like: ■ AI/ML for predictive analytics ■ IoT (Internet of Things) for health and wellness tracking 111 ■ Blockchain for policy transparency and claims verification

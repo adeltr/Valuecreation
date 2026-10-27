@@ -33,7 +33,8 @@ To assess the utilization rates and maintenance efficiency of clinical equipment
 2. Calculate utilization rates Measure how frequently each piece of equipment is used compared to its availability. Equation:
 `Utilization Rate (%) = (Hours Used / Total Available Hours) x 100.`
 3. Assess maintenance efficiency Analyze maintenance logs to determine the frequency and type of maintenance performed and calculate the average downtime per maintenance event. Equation:
-`Average Downtime per Event = Total Downtime / Number of Maintenance Events.`
+`Average Downtime per Event = Total Downtime / Number of Maintenance`
+Events.
 4. Identify underutilized equipment Highlight equipment with low utilization rates (<50%) and investigate reasons for underuse, such as poor scheduling or redundancy.
 5. Analyze repair costs and trends Evaluate the total maintenance costs for each piece of equipment and identify trends in repair frequency.
 36

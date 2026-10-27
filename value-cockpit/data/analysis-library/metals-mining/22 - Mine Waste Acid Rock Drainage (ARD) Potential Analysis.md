@@ -30,7 +30,9 @@ The goal of this analysis is to assess the potential for mine waste, such as was
 ## 🪜 Step-by-step
 1. **Collect and Analyze Geological Samples:** ○ Obtain representative samples of waste rock, tailings, and overburden. ○ Perform mineralogical analysis to determine the presence of sulfide minerals and neutralizing agents like carbonates.
 2. **Conduct Acid-Base Accounting (ABA):** ○ Calculate the Acid Potential (AP) based on the sulfide content using the formula:
-`AP (kg H₂SO₄/ton) = % Sulfur x 31.25 ○ Determine the Neutralization Potential (NP) by measuring carbonate content or other neutralizing materials. ○ Calculate the Net Neutralization Potential (NNP): NNP = NP - AP`
+`AP (kg H₂SO₄/ton) = % Sulfur x 31.25`
+○ Determine the Neutralization Potential (NP) by measuring carbonate content or other neutralizing materials. ○ Calculate the Net Neutralization Potential (NNP):
+`NNP = NP - AP`
 3. **Evaluate ARD Potential:** Use the NNP and the NP/AP ratio to categorize materials as: ○ Non-acid generating (NNP > 20). ○ Potentially acid generating (NNP between 0 and 20). ○ Acid generating (NNP < 0).
 4. Perform Kinetic Testing:
 67 ○ Conduct long-term kinetic tests, such as humidity cell or column tests, to predict ARD generation rates and evaluate long-term environmental risks.

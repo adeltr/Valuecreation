@@ -36,13 +36,19 @@ The goal of a Trade Spend Optimization and Return on Investment (ROI) analysis i
 1. **Define the objectives of the analysis:** Establish clear goals for the trade spend optimization and ROI analysis. Objectives may include improving the efficiency of trade promotions, reducing wasteful spend, and increasing profitability through better-targeted promotions. For example, a goal might be to achieve a 10% increase in the ROI of trade promotions while maintaining or increasing sales volumes.
 2. **Segment trade spend by promotion type:** Break down trade spend into different categories, such as price discounts, off-invoice allowances, rebates, shelf space buy-ins, and in-store promotions. This segmentation allows you to analyze the effectiveness of each promotion type in driving sales and profitability. Track how much budget is allocated to each type and its impact on sales performance.
 3. **Measure incremental sales lift from trade promotions:** Analyze the incremental sales generated during and after trade promotions. Sales lift represents the additional revenue attributable to the promotion. To calculate sales lift, compare sales during the promotion period to baseline sales (what would have been expected without the promotion). The formula for incremental sales lift is:
-`Incremental Sales Lift = (Promotional Period Sales - Baseline Sales) For example, if sales were $500,000 during a promotion and $350,000 baseline sales were expected without the promotion: Incremental Sales Lift = $500,000 - $350,000 = $150,000`
+`Incremental Sales Lift = (Promotional Period Sales - Baseline Sales)`
+For example, if sales were $500,000 during a promotion and $350,000 baseline sales were expected without the promotion:
+`Incremental Sales Lift = $500,000 - $350,000 = $150,000`
 4. **Calculate ROI for each trade promotion:** Determine the ROI for each trade promotion by comparing the incremental sales lift to the cost of the promotion. The formula for trade promotion ROI is:
-`ROI (%) = ((Incremental Gross Profit - Trade Spend) / Trade Spend) x 100 For example, if a trade promotion generated $150,000 in incremental gross profit`
-255 and the trade spend was $50,000:
-`ROI = (($150,000 - $50,000) / $50,000) x 100 = 200% A high ROI indicates that the promotion was effective in generating profit, while a low or negative ROI suggests inefficiency or overspending.`
+`ROI (%) = ((Incremental Gross Profit - Trade Spend) / Trade Spend) x 100`
+For example, if a trade promotion generated $150,000 in incremental gross profit 255 and the trade spend was $50,000:
+`ROI = (($150,000 - $50,000) / $50,000) x 100 = 200%`
+A high ROI indicates that the promotion was effective in generating profit, while a low or negative ROI suggests inefficiency or overspending.
 5. **Evaluate the impact of trade promotions on gross margins:** Review how trade promotions affect gross margins, considering the additional costs of discounts or allowances. Promotions that generate high incremental sales but erode margins may not be as profitable as they initially appear. To calculate the impact on gross margin:
-`Gross Margin = (Revenue - Cost of Goods Sold) / Revenue x 100 If a promotion generates $500,000 in sales and costs $350,000 to produce the products, the gross margin is: Gross Margin = (($500,000 - $350,000) / $500,000) x 100 = 30% Ensure that promotions deliver sufficient margin growth and are not undermining profitability.`
+`Gross Margin = (Revenue - Cost of Goods Sold) / Revenue x 100`
+If a promotion generates $500,000 in sales and costs $350,000 to produce the products, the gross margin is:
+`Gross Margin = (($500,000 - $350,000) / $500,000) x 100 = 30%`
+Ensure that promotions deliver sufficient margin growth and are not undermining profitability.
 6. **Analyze promotional compliance and execution:** Assess how well retailers and distributors execute the trade promotions. Compliance with promotional agreements, such as in-store displays, product placement, and discount application, is critical to maximizing trade promotion effectiveness. Poor execution may lead to missed opportunities or lower sales than expected. Track promotional compliance rates and adjust retailer relationships or future trade investments accordingly.
 7. **Compare performance across different retailers and regions:** Analyze the performance of trade promotions across different retailers and geographic regions. Promotions may work better in certain markets or with specific retailers. Understanding these differences helps target future trade spend more effectively, focusing investments where they deliver the highest returns. Example: If promotions with a national retailer consistently deliver a 250% ROI, while promotions with a smaller regional retailer deliver only 50% ROI, consider reallocating resources toward the more profitable retailer.
 256

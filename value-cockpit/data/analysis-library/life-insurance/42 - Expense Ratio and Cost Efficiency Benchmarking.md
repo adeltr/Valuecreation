@@ -20,9 +20,14 @@ To evaluate the company’s operating cost structure by analyzing expense ratios
 
 ## 🪜 Step-by-step
 1. Calculate Expense Ratios a. Determine the company’s total expense ratio:
-`Expense Ratio (%) = (Total Operating Expenses / Net Premium Revenue) x 100 b. Break it down into key components: ■ Acquisition Expense Ratio: Acquisition Ratio (%) = (Acquisition Costs / Net Premium Revenue) x 100 ■ Maintenance and Administrative Expense Ratio: Administrative Ratio (%) = (Administrative Costs / Net Premium Revenue) x 100`
+`Expense Ratio (%) = (Total Operating Expenses / Net Premium Revenue) x 100`
+b. Break it down into key components: ■ Acquisition Expense Ratio:
+`Acquisition Ratio (%) = (Acquisition Costs / Net Premium Revenue) x 100`
+■ Maintenance and Administrative Expense Ratio:
+`Administrative Ratio (%) = (Administrative Costs / Net Premium Revenue) x 100`
 2. **Segment Expenses by Function a. Categorize expenses into core functions:** ■ Underwriting and policy issuance ■ Claims management ■ Sales and distribution 124 ■ IT and infrastructure ■ General and administrative costs b. Calculate cost per unit:
-`Cost per Policy = Total Operating Expenses / Total Policies Issued or Serviced`
+`Cost per Policy = Total Operating Expenses / Total Policies Issued or`
+Serviced
 3. Benchmark Against Industry Standards a. Compare the company’s expense ratios (overall and segmented) with industry averages or best-in-class benchmarks. b. Identify gaps where the company’s expense ratios exceed industry standards.
 4. Evaluate Cost Drivers a. Analyze trends in expense growth over time to identify key cost drivers. b. Measure the impact of: ■ Acquisition channel costs (e.g., commissions, marketing) ■ Operational inefficiencies (e.g., redundant processes or manual interventions) ■ Technology and IT expenses
 5. Assess Productivity and Cost Efficiency a. Compare productivity metrics to benchmarks: ■ Policies issued or serviced per employee ■ Cost per policy vs. industry best practices b. Evaluate automation levels in core processes (e.g., claims, underwriting, customer service).

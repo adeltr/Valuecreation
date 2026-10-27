@@ -31,10 +31,12 @@ To assess the age distribution of power generation and grid assets and evaluate 
 ## 🪜 Step-by-step
 1. **Compile an Asset Inventory:** ○ List all assets, including their installation dates, capacities, and technical specifications. ○ Group assets by category (e.g., generation, transmission, distribution).
 2. **Determine Asset Age Profiles:** ○ Calculate the current age of each asset:
-`Asset Age (Years) = Current Year - Installation Year ○ Create a distribution chart showing the age range of assets.`
+`Asset Age (Years) = Current Year - Installation Year`
+○ Create a distribution chart showing the age range of assets.
 3. **Evaluate Asset Performance:** ○ Correlate asset age with performance metrics, such as efficiency, reliability, and failure rates. ○ Identify trends indicating performance degradation over time.
 4. **Assess Remaining Useful Life:** ○ Estimate the remaining useful life for each asset:
-`Remaining Life (Years) = Useful Life (Years) - Asset Age (Years) ○ Highlight assets nearing the end of their useful life.`
+`Remaining Life (Years) = Useful Life (Years) - Asset Age (Years)`
+○ Highlight assets nearing the end of their useful life.
 5. **Analyze Lifecycle Costs:** ○ Calculate total lifecycle costs, including acquisition, maintenance, and operational costs. ○ Compare lifecycle costs of aging assets to replacement or upgrade costs.
 123
 6. **Model Replacement and Upgrade Scenarios:** ○ Simulate scenarios for asset replacements, retrofits, or upgrades to determine cost and operational impacts. ○ Include factors such as newer technology adoption and potential efficiency gains.

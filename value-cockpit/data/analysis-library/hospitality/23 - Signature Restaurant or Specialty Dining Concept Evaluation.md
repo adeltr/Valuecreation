@@ -30,7 +30,9 @@ Review the financial performance and market appeal of a distinct dining concept,
 ## 🪜 Step-by-step
 1. Compile financial data specific to the specialty dining concept. Collect revenue, cost of goods sold, labor, and overhead expenses for a set period (monthly, quarterly, or annually).
 2. Calculate key performance metrics.
-`○ Food & Beverage Cost % = (Total Food & Beverage Cost / Total F&B Revenue) x 100 ○ Labor Cost % = (Total Labor Cost / Total F&B Revenue) x 100 ○ Net Profit Margin = [(Total Revenue - (COGS + Labor + Overhead)) / Total Revenue] x 100`
+`○ Food & Beverage Cost % = (Total Food & Beverage Cost / Total F&B Revenue) x 100`
+`○ Labor Cost % = (Total Labor Cost / Total F&B Revenue) x 100`
+`○ Net Profit Margin = [(Total Revenue - (COGS + Labor + Overhead)) / Total Revenue] x 100`
 3. Segment sales by category and daypart. Analyze how much revenue comes from lunch vs. dinner, bar sales vs. dining room, or special events vs. regular service.
 4. Review reservation patterns. Note peak times, average check size, table turnover, and the split between hotel guests vs. external patrons.
 5. Examine guest feedback. Synthesize online reviews, comment cards, or satisfaction survey data to identify what aspects (menu, ambiance, service) drive positive or negative sentiment.

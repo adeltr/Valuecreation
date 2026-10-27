@@ -29,11 +29,14 @@ The goal of Planogram Compliance and Store Layout E9iciency Analysis is to ensur
 
 ## 🪜 Step-by-step
 1. **Conduct a planogram compliance audit:** Perform an in-store audit by comparing the actual product placement to the planogram. Record any discrepancies, such as missing items, incorrect product placements, or wrong facing counts (the number of product facings on the shelf). Calculate the planogram compliance rate using the following formula:
-`Planogram Compliance (%) = (Number of Correct Placements / Total Planned Placements) x 100 This measures how closely the store adheres to the planned layout.`
+`Planogram Compliance (%) = (Number of Correct Placements / Total Planned Placements) x 100`
+This measures how closely the store adheres to the planned layout.
 2. **Analyze sales data by shelf location and endcap performance:** Collect sales data for products based on their shelf location and endcap placement. Use the following equation to assess the sales performance of endcap displays:
-`Endcap Sales Performance (%) = (Sales from Endcap Products / Total Store Sales) x 100 This shows the contribution of endcap displays to overall store sales.`
+`Endcap Sales Performance (%) = (Sales from Endcap Products / Total Store Sales) x 100`
+This shows the contribution of endcap displays to overall store sales.
 3. **Calculate sales per square foot:** To evaluate overall layout e9iciency, calculate the sales per square foot for each section of the store:
-`Sales per Square Foot = Total Sales for Section / Total Square Footage of Section Compare this across di9erent sections of the store to identify areas that generate high or low sales relative to their size.`
+`Sales per Square Foot = Total Sales for Section / Total Square Footage of Section`
+Compare this across di9erent sections of the store to identify areas that generate high or low sales relative to their size.
 4. **Assess customer ﬂow and foot traMic (optional):** If foot tra9ic data is available, analyze how customers move through the store and which sections receive the most or least tra9ic. This helps evaluate the e9ectiveness of the layout in guiding customers to key areas, including endcaps.
 5. **Identify high- and low-performing product placements:** Analyze sales data to identify which product placements (e.g., eye-level, endcaps) generate the most sales and which are underperforming. Adjust the planogram as needed to optimize these placements.
 6. **Review labor costs for maintaining compliance:** Calculate the labor or operational costs associated with setting up and maintaining planogram compliance. This helps evaluate whether the compliance process is e9icient and cost-e9ective.

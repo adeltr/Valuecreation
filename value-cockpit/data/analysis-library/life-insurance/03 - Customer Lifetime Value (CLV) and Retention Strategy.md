@@ -21,7 +21,8 @@ To calculate the lifetime value of a policyholder and evaluate the effectiveness
 
 ## 🪜 Step-by-step
 1. Calculate the Average Customer Lifetime
-`○ Use the formula: Average Lifetime = 1 / Churn Rate ○ Churn Rate = (Number of Customers Lost During the Period / Total Customers at Start of the Period) x 100.`
+`○ Use the formula: Average Lifetime = 1 / Churn Rate`
+`○ Churn Rate = (Number of Customers Lost During the Period / Total Customers at Start of the Period) x 100.`
 2. Determine Average Annual Revenue per Customer (AARPC) ○ Sum all premiums and additional revenue generated from riders or upsells for a policyholder segment and divide by the number of active policyholders in that segment.
 3. Estimate Customer Lifetime Value (CLV)
 `○ Use the formula: CLV = AARPC x Average Lifetime - Retention Cost per Customer`

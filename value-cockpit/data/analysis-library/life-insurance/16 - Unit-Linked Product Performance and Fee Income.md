@@ -21,11 +21,14 @@ To evaluate the financial performance of unit-linked insurance products (ULIPs) 
 
 ## 🪜 Step-by-step
 1. Analyze Fund Performance ○ Compare NAV (Net Asset Value) growth for each ULIP fund against relevant benchmarks (e.g., equity index, bond index). ○ Calculate annualized returns:
-`Fund Return (%) = [(Ending NAV / Beginning NAV) ^ (1 / Years)] - 1 ○ Identify funds with consistent underperformance or volatility.`
+`Fund Return (%) = [(Ending NAV / Beginning NAV) ^ (1 / Years)] - 1`
+○ Identify funds with consistent underperformance or volatility.
 2. **Evaluate Fee Income:** 45 ○ Calculate total fee income from ULIPs:
-`Total Fee Income = Fund Management Fees + Policy Charges + Surrender Charges ○ Analyze the contribution of each fee type to overall income. ○ Assess fee income as a percentage of total premium and AUM (Assets Under Management).`
+`Total Fee Income = Fund Management Fees + Policy Charges + Surrender Charges`
+○ Analyze the contribution of each fee type to overall income. ○ Assess fee income as a percentage of total premium and AUM (Assets Under Management).
 3. Measure Product Profitability ○ Determine profitability for unit-linked products:
-`Profit = Total Fee Income - (Claims + Acquisition Costs + Maintenance Expenses) ○ Break down profit margins by policy type, premium frequency, and policyholder segment.`
+`Profit = Total Fee Income - (Claims + Acquisition Costs + Maintenance Expenses)`
+○ Break down profit margins by policy type, premium frequency, and policyholder segment.
 4. Persistency and Lapse Analysis ○ Evaluate persistency rates to measure policyholder retention. ○ Identify any correlation between high lapse rates and fund underperformance or fee structures.
 5. Segment Analysis ○ Compare performance and fee income across different customer demographics and policy types. ○ Identify high-value customer segments contributing most to fee income and profitability.
 6. Benchmark Against Competitors ○ Compare ULIP fee structures (e.g., fund management charges, premium allocation charges) and fund returns with competitors.

@@ -21,10 +21,12 @@ To evaluate the profitability of a life insurance company’s product mix and as
 
 ## 🪜 Step-by-step
 1. Calculate Product Profitability ○ Use the formula:
-`Product Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses) ○ Determine profit margins as a percentage of premium revenue for each product type.`
+`Product Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)`
+○ Determine profit margins as a percentage of premium revenue for each product type.
 2. Segment Profitability by Product ○ Break down profit margins by product category (e.g., term life, whole life, universal life, annuities). ○ Identify products with the highest and lowest margins.
 3. Analyze Contribution to Overall Profitability ○ Calculate the contribution of each product to the company’s total profit:
-`Contribution (%) = (Product Profit / Total Profit) x 100 ○ Identify products driving profitability and those eroding margins.`
+`Contribution (%) = (Product Profit / Total Profit) x 100`
+○ Identify products driving profitability and those eroding margins.
 42
 4. Evaluate Market Positioning ○ Compare the company’s product offerings, pricing, and profitability with competitors. ○ Assess whether the company competes on price, features, or unique benefits. ○ Analyze gaps in the market where demand exceeds supply.
 5. Analyze Customer Segments ○ Identify which customer segments are purchasing specific products and how profitable they are. ○ Evaluate whether there is alignment between profitable products and high-growth customer segments.

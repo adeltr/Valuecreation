@@ -30,7 +30,8 @@ Assess the effectiveness of carrier selection criteria, measure ongoing performa
 1. **Establish Carrier Evaluation Criteria:** Identify the key metrics for evaluating a carrier's performance (cost, on-time delivery, claims ratio, capacity, coverage, technology capabilities). Assign weights or priority levels to each criterion to reflect their importance.
 2. **Gather Carrier Data:** Compile historical data on freight costs, transit times, on-time performance, and service failures or claims for each carrier. Validate data accuracy to ensure the analysis reflects the true performance.
 3. **Calculate Performance Scores:** Develop a scoring model to measure each carrier against the identified metrics. For example:
-`Carrier Score = (Weight_Cost * Score_Cost) + (Weight_OnTime * Score_OnTime) + ... Each metric will have a score based on thresholds or comparative ranking.`
+`Carrier Score = (Weight_Cost * Score_Cost) + (Weight_OnTime * Score_OnTime) + ...`
+Each metric will have a score based on thresholds or comparative ranking.
 4. **Benchmark Against Industry or Peer Averages:** Compare each carrier’s performance metrics to external benchmarks (industry averages, peer performance, or published rate indexes). Identify carriers that stand out positively or negatively.
 5. **Analyze Spend vs. Service Quality:** Evaluate the relationship between freight spend and performance outcomes to determine whether higher costs are delivering proportionately better service levels or if more cost-effective alternatives exist.
 8

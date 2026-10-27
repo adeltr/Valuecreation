@@ -33,7 +33,8 @@ The goal of Consumer Sentiment and Brand Perception Analysis is to evaluate how 
 1. **Collect customer survey and feedback data:** Conduct customer surveys using questions related to overall brand perception, product quality, customer service, and how likely they are to recommend the brand. Use a standardized scale (e.g., 1 to 5) to rate each category. Example questions include:
 o   "How would you rate your satisfaction with our brand?" o   "How likely are you to recommend us to a friend?" (for NPS).
 2. **Calculate Net Promoter Score (NPS):** NPS measures customer loyalty and brand advocacy. Use this equation to calculate NPS:
-`NPS = % of Promoters (9-10 ratings) - % of Detractors (0-6 ratings) This score provides a single number to track overall customer sentiment, with a higher score indicating stronger customer loyalty.`
+`NPS = % of Promoters (9-10 ratings) - % of Detractors (0-6 ratings)`
+This score provides a single number to track overall customer sentiment, with a higher score indicating stronger customer loyalty.
 3. **Monitor social media sentiment:** Use social listening tools to track how often customers mention your brand on social media and whether those mentions are positive, neutral, or negative. Calculate the sentiment ratio:
 `Sentiment Ratio = (Number of Positive Mentions - Number of Negative Mentions) / Total`
 Mentions A positive ratio indicates a favorable brand perception, while a negative ratio signals issues.

@@ -34,7 +34,8 @@ To forecast electricity spot prices and assess their impact on revenue, cost str
 4. **Incorporate Market Scenarios:** ○ Simulate different market conditions (e.g., high demand, renewable generation surges) to assess potential price trajectories. ○ Account for regulatory changes or events like fuel price spikes.
 5. Assess Revenue and Cost Impacts:
 45 ○ Model the impact of forecasted prices on operational profitability using:
-`Revenue Impact ($) = Generation Output (Mffh) x Forecasted Spot Price ($/Mffh) ○ Evaluate how price fluctuations affect fuel procurement costs, especially for flexible or peaking plants.`
+`Revenue Impact ($) = Generation Output (Mffh) x Forecasted Spot Price`
+($/Mffh) ○ Evaluate how price fluctuations affect fuel procurement costs, especially for flexible or peaking plants.
 6. **Evaluate Hedging Effectiveness:** ○ Analyze how existing hedging strategies mitigate the impact of forecasted price volatility on revenues.
 7. **Benchmark Against Industry Forecasts:** ○ Compare internal price forecasts with publicly available or industry-standard forecasts to validate assumptions.
 

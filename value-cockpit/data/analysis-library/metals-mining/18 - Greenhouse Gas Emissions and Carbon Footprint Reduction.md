@@ -32,9 +32,11 @@ The goal of this analysis is to measure greenhouse gas (GHG) emissions across al
 ## 🪜 Step-by-step
 1. **Gather Emission Data:** ○ Collect operational data for fuel usage, electricity consumption, and other emission-generating activities. ○ Break down emissions into Scope 1, 2, and 3 categories.
 2. **Calculate Total GHG Emissions:** ○ Use the formula for each scope:
-`Emissions (tCO2e) = Activity Data x Emission Factor ○ Sum the results across all scopes to determine the total carbon footprint.`
+`Emissions (tCO2e) = Activity Data x Emission Factor`
+○ Sum the results across all scopes to determine the total carbon footprint.
 3. **Evaluate Emission Intensity:** ○ Calculate emission intensity using the formula:
-`Emission Intensity = Total GHG Emissions / Total Production Output ○ Compare the result with industry benchmarks.`
+`Emission Intensity = Total GHG Emissions / Total Production Output`
+○ Compare the result with industry benchmarks.
 4. Identify Major Emission Sources:
 55 ○ Analyze the contribution of different sources (e.g., transportation, processing, energy use) to the total emissions. ○ Highlight high-impact areas for targeted reduction efforts.
 5. **Benchmark Against Peers and Standards:** ○ Compare the company’s emissions and reduction progress with industry averages and regulatory standards.

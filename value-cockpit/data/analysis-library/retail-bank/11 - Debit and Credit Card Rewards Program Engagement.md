@@ -22,10 +22,12 @@ To evaluate customer engagement with debit and credit card rewards programs, ide
 
 ## 🪜 Step-by-step
 1. Analyze Enrollment Rates ○ Calculate the percentage of eligible customers enrolled in rewards programs:
-`Enrollment Rate = (Number of Enrolled Customers / Total Eligible Customers) x 100 ○ Segment the enrollment rates by demographics and card types (debit vs. credit).`
+`Enrollment Rate = (Number of Enrolled Customers / Total Eligible Customers) x 100`
+○ Segment the enrollment rates by demographics and card types (debit vs. credit).
 2. Track Reward-Earning Activities ○ Analyze the volume and value of transactions generating rewards points. ○ Calculate average rewards earned per transaction and total rewards earned per customer.
 3. Assess Redemption Patterns ○ Identify the most popular rewards categories (e.g., cashback, travel, merchandise). ○ Calculate redemption rates:
-`Redemption Rate = (Number of Rewards Redeemed / Total Rewards Available) x 100 ○ Analyze time to redemption, indicating how quickly customers use their rewards.`
+`Redemption Rate = (Number of Rewards Redeemed / Total Rewards Available) x 100`
+○ Analyze time to redemption, indicating how quickly customers use their rewards.
 34
 4. Evaluate Program Engagement ○ Compare activity levels (e.g., transaction frequency) of rewards program participants vs. non-participants. ○ Assess changes in spending behavior after program enrollment.
 5. Determine Program ROI ○ Calculate the revenue generated from reward program participants and compare it with program costs. ○ Key metric: Rewards Program ROI = (Incremental Revenue - Program Costs) / Program Costs

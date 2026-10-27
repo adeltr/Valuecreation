@@ -24,7 +24,8 @@ To evaluate the adequacy of a life insurance company’s capital relative to its
 `RBC Requirement = Credit Risk Capital + Market Risk Capital + Insurance Risk Capital + Operational Risk Capital.`
 2. Determine Available Capital ○ Identify surplus, adjusted reserves, and retained earnings to determine total available capital.
 3. Calculate RBC Ratio ○ Use the formula:
-`RBC Ratio (%) = (Available Capital / RBC Requirement) x 100. ○ A ratio above 200% indicates strong capital adequacy, while below 100% suggests heightened solvency risk.`
+`RBC Ratio (%) = (Available Capital / RBC Requirement) x 100.`
+○ A ratio above 200% indicates strong capital adequacy, while below 100% suggests heightened solvency risk.
 4. Calculate Solvency Ratio ○ Solvency Ratio assesses capital adequacy relative to liabilities using the formula:
 `Solvency Ratio (%) = (Available Capital / Total Liabilities) x 100.`
 5. **Segment Risk Contribution:** 65 ○ Break down RBC requirements by risk category (e.g., credit, market, insurance). ○ Identify key risk drivers contributing the most to capital strain.

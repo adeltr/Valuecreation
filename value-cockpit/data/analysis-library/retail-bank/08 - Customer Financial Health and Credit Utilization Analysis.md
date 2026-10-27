@@ -22,11 +22,14 @@ To evaluate the financial health of customers by analyzing their income, savings
 
 ## 🪜 Step-by-step
 1. Calculate Credit Utilization Rate ○ Use the formula:
-`Credit Utilization Rate = (Total Credit Used / Total Credit Available) x 100 ○ Segment credit utilization rates by customer groups (e.g., low-income, high-income).`
+`Credit Utilization Rate = (Total Credit Used / Total Credit Available) x 100`
+○ Segment credit utilization rates by customer groups (e.g., low-income, high-income).
 2. Measure Savings-to-Income Ratio ○ Estimate this ratio if income data is available:
-`Savings-to-Income Ratio = (Total Savings / Estimated Annual Income) x 100 ○ Identify segments with low ratios indicating financial vulnerability.`
+`Savings-to-Income Ratio = (Total Savings / Estimated Annual Income) x 100`
+○ Identify segments with low ratios indicating financial vulnerability.
 3. Segment Spending Patterns ○ Analyze transaction data to categorize spending into discretionary (e.g., dining, travel) and non-discretionary (e.g., rent, utilities). ○ Calculate the proportion of discretionary spending to total spending:
-`Discretionary Spending Ratio = (Discretionary Spending / Total Spending) x 100`
+`Discretionary Spending Ratio = (Discretionary Spending / Total Spending)`
+x 100
 4. Assess Loan and Debt Payment Patterns ○ Identify customers with consistently high loan balances or missed payments.
 26 ○ Highlight customers nearing or exceeding debt-to-income thresholds for proactive risk management.
 5. **Score Financial Health:** Develop a composite financial health score incorporating:

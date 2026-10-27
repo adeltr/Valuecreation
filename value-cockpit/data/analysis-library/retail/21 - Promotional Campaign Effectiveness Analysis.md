@@ -31,14 +31,17 @@ The goal of Promotional Campaign E9ectiveness Analysis is to evaluate how well a
 1. **Deﬁne the analysis period:** Establish the time frame for the analysis, including the pre-promotion period (baseline), the promotion period itself, and the post-promotion period for measuring lasting e9ects.
 2. **Collect sales data:** Gather sales data for the promoted products and any non-promoted products (for comparison) during the analysis period. Make sure to include data on total units sold and revenue generated.
 3. **Calculate incremental sales:** To assess the impact of the promotion, calculate the incremental sales using the following equation:
-`Incremental Sales = Sales During Promotion - Sales Before Promotion This measures the increase in sales that can be attributed directly to the promotion.`
+`Incremental Sales = Sales During Promotion - Sales Before Promotion`
+This measures the increase in sales that can be attributed directly to the promotion.
 4. **Evaluate promotional lift:** Use this formula to determine the percentage increase in sales due to the promotion:
-`Promotional Lift (%) = ((Sales During Promotion - Sales Before Promotion) / Sales Before Promotion) x 100 This shows how much the promotion boosted sales compared to the baseline period.`
+`Promotional Lift (%) = ((Sales During Promotion - Sales Before Promotion) / Sales Before Promotion) x 100`
+This shows how much the promotion boosted sales compared to the baseline period.
 5. **Calculate promotional ROI:** To evaluate the proﬁtability of the promotion, calculate the return on investment (ROI) using this equation:
 `Promotional ROI (%) = ((Incremental Revenue - Promotional Costs) / Promotional Costs) x`
 100 This helps determine whether the promotion generated more revenue than it cost.
 6. **Analyze customer traMic and conversion rates:** If customer tra9ic and conversion data are available, calculate the conversion rate during the promotion period:
-`Conversion Rate (%) = (Number of Transactions / Customer Tra9ic) x 100 Compare this to the conversion rate before the promotion to see if the promotion attracted more customers and increased purchases.`
+`Conversion Rate (%) = (Number of Transactions / Customer Tra9ic) x 100`
+Compare this to the conversion rate before the promotion to see if the promotion attracted more customers and increased purchases.
 7. **Segment by product category (optional):** If the promotion covered multiple product categories, analyze the e9ectiveness by category to see which products performed best. This can help reﬁne future promotional targeting.
 8. **Assess post-promotion impact (optional):** Track sales after the promotion ends to determine if there is any lasting impact. Some promotions may result in a short-term sales spike, while others may create long-term customer loyalty.
 Potential complications that can arise with this analysis •   Attribution challenges: It may be di9icult to attribute sales increases solely to the promotion, especially if other factors (e.g., seasonality or external events) also impact sales.

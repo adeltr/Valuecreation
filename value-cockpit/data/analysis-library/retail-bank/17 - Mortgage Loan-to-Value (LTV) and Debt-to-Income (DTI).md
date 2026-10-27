@@ -21,9 +21,11 @@ To assess the risk profile of the mortgage portfolio by analyzing Loan-to-Value 
 
 ## 🪜 Step-by-step
 1. Calculate Loan-to-Value (LTV) Ratios ○ Calculate the current LTV for each loan:
-`Current LTV = (Outstanding Loan Balance / Current Property Value) x 100 ○ Segment loans by LTV ranges (e.g., ≤50%, 51–80%, >80%). ○ Identify loans with high LTV ratios (>80%), indicating increased default risk.`
+`Current LTV = (Outstanding Loan Balance / Current Property Value) x 100`
+○ Segment loans by LTV ranges (e.g., ≤50%, 51–80%, >80%). ○ Identify loans with high LTV ratios (>80%), indicating increased default risk.
 2. Analyze Debt-to-Income (DTI) Ratios ○ Calculate DTI for each borrower:
-`DTI = (Total Monthly Debt Payments / Monthly Gross Income) x 100 ○ Segment borrowers by DTI thresholds (e.g., ≤35%, 36–50%, >50%). ○ Highlight borrowers with DTI ratios exceeding standard limits (e.g., >43%).`
+`DTI = (Total Monthly Debt Payments / Monthly Gross Income) x 100`
+○ Segment borrowers by DTI thresholds (e.g., ≤35%, 36–50%, >50%). ○ Highlight borrowers with DTI ratios exceeding standard limits (e.g., >43%).
 3. Evaluate Risk Correlations ○ Assess the relationship between high LTV/DTI ratios and delinquency or default rates. ○ Identify geographic regions or borrower profiles with higher risk levels.
 4. Monitor Trends in LTV and DTI ○ Track changes in LTV and DTI ratios over time due to property value fluctuations, loan repayments, or changes in borrower income. ○ Highlight trends in market conditions (e.g., declining property values increasing LTV ratios).
 5. **Perform Stress Testing:** 50 ○ Simulate scenarios such as property value declines or income reductions to evaluate impacts on LTV and DTI ratios. ○ Assess changes in risk levels under adverse conditions.

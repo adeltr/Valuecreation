@@ -21,7 +21,9 @@ To evaluate the profitability of critical illness benefits and policy riders (e.
 ## 🪜 Step-by-step
 1. Segment Rider Data ○ Separate policy data by rider type (e.g., critical illness, accidental death, waiver of premium). ○ Group riders by demographics, such as age, gender, and policy duration.
 2. Calculate Profitability per Rider ○ Use the formula:
-`Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses) ○ Calculate the profit margin for each rider as a percentage of premium revenue: Profit Margin (%) = (Profitability / Premium Revenue) x 100`
+`Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)`
+○ Calculate the profit margin for each rider as a percentage of premium revenue:
+`Profit Margin (%) = (Profitability / Premium Revenue) x 100`
 3. Analyze Claims Experience ○ Compare observed morbidity and incidence rates for riders (e.g., critical illness claims) against actuarial assumptions.
 51 ○ Calculate the Claim Ratio:
 `Claim Ratio (%) = (Total Claims Paid / Premium Revenue) x 100`

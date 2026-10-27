@@ -29,9 +29,11 @@ The goal of this analysis is to assess the ratio of waste material to ore extrac
 ## 🪜 Step-by-step
 1. **Gather Data on Waste and Ore Quantities:** ○ Collect operational data for a specific time period, recording the quantities of waste removed and ore extracted.
 2. **Calculate Stripping Ratio (for open-pit mining):** ○ Use the formula:
-`Stripping Ratio = (Volume or Weight of Waste Removed / Volume or Weight of Ore Extracted) ○ This ratio helps determine the feasibility of an open-pit mine and its economic cutoff.`
+`Stripping Ratio = (Volume or Weight of Waste Removed / Volume or Weight of Ore Extracted)`
+○ This ratio helps determine the feasibility of an open-pit mine and its economic cutoff.
 3. **Calculate Waste-to-Ore Ratio (for general mining):** ○ Use the formula:
-`Waste-to-Ore Ratio = (Weight of Waste Removed / Weight of Ore Extracted) ○ This ratio is similar to the stripping ratio but can be applied to underground mining operations.`
+`Waste-to-Ore Ratio = (Weight of Waste Removed / Weight of Ore Extracted)`
+○ This ratio is similar to the stripping ratio but can be applied to underground mining operations.
 4. **Evaluate Trends and Variations:** ○ Compare current stripping and waste-to-ore ratios with historical trends and industry benchmarks. ○ Identify areas where the ratios deviate significantly, signaling potential inefficiencies.
 5. Analyze Cost Implications:
 17 ○ Estimate the cost of waste removal and its impact on overall mining profitability using the formula:

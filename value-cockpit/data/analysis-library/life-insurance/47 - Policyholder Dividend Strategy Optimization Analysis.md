@@ -20,7 +20,8 @@ To optimize the company’s dividend strategy for participating policies by bala
 
 ## 🪜 Step-by-step
 1. Analyze Current Dividend Strategy a. Calculate the company’s dividend payout ratio:
-`Dividend Payout Ratio (%) = (Dividends Paid / Total Surplus Generated) x 100 b. Break down surplus allocation between policyholder dividends and retained reserves. c. Segment dividend payouts by: ■ Policyholder group (e.g., tenure, policy size, risk profile) ■ Product type (e.g., whole life, universal life)`
+`Dividend Payout Ratio (%) = (Dividends Paid / Total Surplus Generated) x 100`
+b. Break down surplus allocation between policyholder dividends and retained reserves. c. Segment dividend payouts by: ■ Policyholder group (e.g., tenure, policy size, risk profile) ■ Product type (e.g., whole life, universal life)
 2. Assess Surplus Generation Sources a. Measure the contribution of each surplus source: ■ Investment Income: Returns from assets backing participating policies.
 140 ■ Underwriting Gains: Difference between expected and actual claims/lapse experience. ■ Expense Savings: Savings from operational efficiencies. b. Compare surplus generation trends over time and identify any volatility in key sources.
 3. Evaluate Policyholder Fairness a. Measure equity in surplus distribution across policyholder segments. b. Assess if long-tenured or high-contributing policyholders receive proportionate benefits compared to newer or smaller policies. c. Identify any disparities in dividend payouts that may create dissatisfaction.

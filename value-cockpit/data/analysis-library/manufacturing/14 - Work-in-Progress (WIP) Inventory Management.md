@@ -32,8 +32,8 @@ The goal of a Work-in-Progress (WIP) Inventory Management analysis is to optimiz
 ## 🪜 Step-by-step
 1. **Measure Current WIP Levels:** ○ Collect data on WIP inventory across the production line. Identify where materials are accumulating and where there may be shortages of partially completed products.
 2. **Calculate WIP Turnover Rate:** ○ The WIP turnover rate measures how quickly WIP inventory moves
-`through the production process. It can be calculated as: WIP Turnover = Cost of Goods Manufactured / Average WIP Inventory For example, if the cost of goods manufactured is $1,000,000 and the`
-51
+`through the production process. It can be calculated as: WIP Turnover = Cost of Goods Manufactured / Average WIP Inventory`
+For example, if the cost of goods manufactured is $1,000,000 and the 51
 `average WIP inventory is $200,000: WIP Turnover = $1,000,000 / $200,000 = 5`
 3. **Assess Cycle Times at Each Production Stage:** ○ Measure the cycle times for each stage of production to identify where delays occur. Longer cycle times in certain stages may lead to excessive WIP build-up and slow down the production process.
 4. **Analyze Production Bottlenecks:** ○ Identify stages in the production process where bottlenecks or constraints slow down throughput. Bottlenecks can cause WIP inventory to build up ahead of slow production stages, leading to inefficiencies and increased lead times.

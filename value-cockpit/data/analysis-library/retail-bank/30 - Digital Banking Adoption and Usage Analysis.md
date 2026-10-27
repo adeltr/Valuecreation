@@ -23,9 +23,11 @@ To evaluate the adoption and usage patterns of the bank’s digital banking plat
 
 ## 🪜 Step-by-step
 1. Measure Digital Banking Adoption Rates ○ Calculate the percentage of customers registered for digital banking:
-`Adoption Rate = (Number of Digital Banking Users / Total Customers) x 100 ○ Segment adoption rates by customer demographics (e.g., age, income, location).`
+`Adoption Rate = (Number of Digital Banking Users / Total Customers) x 100`
+○ Segment adoption rates by customer demographics (e.g., age, income, location).
 2. Analyze Usage Patterns ○ Calculate average login frequency:
-`Average Logins per User = Total Logins / Total Digital Banking Users ○ Determine the most common transaction types and their frequency. ○ Assess session duration and navigation behavior to understand user engagement.`
+`Average Logins per User = Total Logins / Total Digital Banking Users`
+○ Determine the most common transaction types and their frequency. ○ Assess session duration and navigation behavior to understand user engagement.
 3. Evaluate Transaction Volumes ○ Compare the volume of transactions performed via digital banking with other channels. ○ Identify peak usage periods to assess platform scalability.
 4. **Analyze Customer Demographics and Preferences:** 88 ○ Segment digital banking users by demographics to identify trends (e.g., younger customers using mobile apps more frequently). ○ Highlight customer groups with low adoption or usage for targeted outreach.
 5. Monitor Technical Performance ○ Track technical issues, such as app crashes or slow page loads, and their impact on user satisfaction. ○ Calculate the downtime rate:

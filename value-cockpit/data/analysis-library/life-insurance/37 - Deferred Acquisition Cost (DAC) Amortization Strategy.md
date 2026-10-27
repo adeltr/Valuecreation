@@ -22,9 +22,11 @@ To evaluate the company's deferred acquisition cost (DAC) amortization practices
 1. Calculate the Current DAC Balance and Amortization Schedule a. Summarize acquisition costs deferred at policy inception and track the DAC balance over time. b. Review the amortization method used: ■ Straight-line amortization: costs are spread evenly over the policy’s duration. ■ Revenue-based amortization: amortization aligns with expected premium revenue. ■ Present value of expected profits (PVEP): amortization reflects future profit emergence.
 2. Evaluate Amortization Impact on Profitability a. Compare the amortization schedule with premium revenue and profit emergence:
 107
-`DAC Amortization Ratio (%) = (Amortized DAC / Premium Revenue) x 100 b. Analyze whether the timing of amortization aligns with revenue recognition to avoid front-loading expenses.`
+`DAC Amortization Ratio (%) = (Amortized DAC / Premium Revenue) x 100`
+b. Analyze whether the timing of amortization aligns with revenue recognition to avoid front-loading expenses.
 3. Assess Key Assumptions and Sensitivity a. Review assumptions for lapse rates, mortality, and persistency that drive DAC amortization schedules. b. Conduct sensitivity analysis to model the impact of higher-than-expected lapse rates or changes in persistency on unamortized DAC:
-`Impact on DAC = Change in Assumption x Remaining Unamortized DAC`
+`Impact on DAC = Change in Assumption x Remaining Unamortized`
+DAC
 4. Analyze DAC Write-Off Risks a. Identify policies with high DAC balances relative to projected future revenue. b. Measure the risk of DAC write-offs in case of policy lapses, low persistency, or profitability deviations.
 5. Benchmark DAC Practices a. Compare the company’s DAC amortization methods and schedules with industry standards and regulatory guidelines. b. Identify gaps where amortization practices may overstate profitability or conflict with regulatory standards (e.g., IFRS 17).
 6. Measure Financial Impact of Alternative Strategies a. Test alternative amortization methods, such as shifting from straight-line to revenue-based amortization, to evaluate: ■ Profit recognition timing ■ Alignment with cash flow patterns and expected profits ■ Impact on capital and financial statements

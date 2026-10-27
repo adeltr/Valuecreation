@@ -22,9 +22,13 @@ To evaluate the diversification of the bank’s loan portfolio across sectors an
 ## 🪜 Step-by-step
 1. Categorize the Portfolio by Sector ○ Group all loans into predefined sectors based on their purpose or industry (e.g., consumer loans, business loans, real estate loans). ○ Calculate the total loan amount allocated to each sector.
 2. Measure Sector Concentration ○ Calculate the percentage share of each sector in the total loan portfolio:
-`Sector Share = (Total Loan Amount in Sector / Total Loan Portfolio) x 100 ○ Identify sectors with high concentration levels that may pose risk.`
+`Sector Share = (Total Loan Amount in Sector / Total Loan Portfolio) x 100`
+○ Identify sectors with high concentration levels that may pose risk.
 3. Assess Sectoral Credit Quality ○ Calculate delinquency rates for each sector:
-`Delinquency Rate = (Delinquent Loans in Sector / Total Loans in Sector) x 100 ○ Evaluate non-performing loan (NPL) ratios: NPL Ratio = (Non-Performing Loans in Sector / Total Loans in Sector) x 100 ○ Compare credit quality metrics across sectors to highlight high-risk areas.`
+`Delinquency Rate = (Delinquent Loans in Sector / Total Loans in Sector) x 100`
+○ Evaluate non-performing loan (NPL) ratios:
+`NPL Ratio = (Non-Performing Loans in Sector / Total Loans in Sector) x 100`
+○ Compare credit quality metrics across sectors to highlight high-risk areas.
 4. Conduct Stress Testing ○ Simulate economic downturn scenarios to evaluate potential impacts on sectoral performance (e.g., declining property values for real estate loans). ○ Assess the change in NPL ratios and portfolio losses under adverse conditions.
 47
 5. Evaluate Geographic Diversification ○ Analyze sectoral distribution by geographic location to identify regional concentrations of risk. ○ For example, assess whether agriculture loans are overly concentrated in a single region vulnerable to weather risks.

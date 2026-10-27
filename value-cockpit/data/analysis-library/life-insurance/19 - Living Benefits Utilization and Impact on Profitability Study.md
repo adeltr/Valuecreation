@@ -25,7 +25,8 @@ To evaluate the utilization of living benefits (e.g., accelerated death benefits
 `Utilization Rate (%) = (Number of Living Benefit Claims Filed / Total Policies with Living Benefits) x 100`
 3. Measure Financial Impact ○ Calculate total claims payouts for living benefits.
 54 ○ Assess profitability by comparing claims and expenses against premium revenue:
-`Profitability = Premium Revenue - (Claims Paid + Expenses) ○ Identify the contribution of living benefit claims to overall product profitability.`
+`Profitability = Premium Revenue - (Claims Paid + Expenses)`
+○ Identify the contribution of living benefit claims to overall product profitability.
 4. Compare Expected vs. Actual Utilization ○ Compare observed utilization rates with actuarial assumptions to identify deviations. ○ Calculate the deviation percentage:
 `Deviation (%) = ((Actual Utilization - Expected Utilization) / Expected Utilization) x 100`
 5. Analyze Impact on Mortality and Reserves ○ Assess how living benefit claims impact future death benefit payouts and reserves. ○ Calculate reserve adjustments due to accelerated claims payments.

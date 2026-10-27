@@ -23,7 +23,9 @@ To evaluate the trends in household wealth accumulation across different custome
 ## 🪜 Step-by-step
 1. Aggregate Household Wealth Data ○ Consolidate account balances, investments, and other assets into household-level profiles. ○ Include liabilities (e.g., loans, mortgages) to calculate net wealth.
 2. Calculate Household Wealth Metrics ○ Determine average and median household wealth:
-`Average Household Wealth = (Total Wealth of All Households / Total Number of Households) ○ Calculate wealth accumulation rate over time: Wealth Accumulation Rate = ((Current Wealth - Previous Wealth) / Previous Wealth) x 100`
+`Average Household Wealth = (Total Wealth of All Households / Total Number of Households)`
+○ Calculate wealth accumulation rate over time:
+`Wealth Accumulation Rate = ((Current Wealth - Previous Wealth) / Previous Wealth) x 100`
 3. Segment Wealth Accumulation Trends ○ Analyze wealth trends by demographic factors (e.g., age, income, geographic region). ○ Identify segments with high or low wealth growth rates.
 4. Evaluate Asset Allocation Patterns ○ Break down household assets into categories (e.g., savings, investments, property). ○ Analyze shifts in asset allocation over time and correlate with market or economic changes.
 5. **Monitor Factors Influencing Wealth Growth:** 130 ○ Assess the impact of key drivers such as income growth, investment returns, and debt reduction. ○ Identify barriers to wealth accumulation, such as high debt levels or low savings rates.

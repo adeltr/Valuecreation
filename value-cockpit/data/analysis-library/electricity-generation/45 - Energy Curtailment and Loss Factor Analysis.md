@@ -29,9 +29,11 @@ To evaluate the extent of energy curtailment and transmission losses in power ge
 
 ## 🪜 Step-by-step
 1. **Collect and Analyze Curtailment Data:** ○ Quantify total energy curtailed over a specific period:
-`Curtailment Rate (%) = (Curtailment Energy / Total Potential Generation) x 100 ○ Identify patterns or trends in curtailment by location, generation type, or time of year.`
+`Curtailment Rate (%) = (Curtailment Energy / Total Potential Generation) x 100`
+○ Identify patterns or trends in curtailment by location, generation type, or time of year.
 2. **Assess Transmission and Distribution Loss Factors:** ○ Calculate loss factors using the formula:
-`Loss Factor (%) = [(Energy Input - Energy Delivered) / Energy Input] x 100 ○ Break down losses by transmission and distribution stages to pinpoint high-loss areas.`
+`Loss Factor (%) = [(Energy Input - Energy Delivered) / Energy Input] x 100`
+○ Break down losses by transmission and distribution stages to pinpoint high-loss areas.
 3. **Identify Root Causes of Curtailment and Losses:** ○ Analyze factors contributing to curtailment, such as grid congestion, renewable variability, or insufficient storage. ○ Evaluate infrastructure-related losses, including line inefficiencies, equipment degradation, or overloads.
 4. Benchmark Against Industry Standards:
 129 ○ Compare curtailment rates and loss factors with industry averages or best-performing systems.

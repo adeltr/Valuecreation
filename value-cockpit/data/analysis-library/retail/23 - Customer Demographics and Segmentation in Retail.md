@@ -31,12 +31,14 @@ The goal of Customer Demographics and Segmentation Analysis is to group retail c
 ## 🪜 Step-by-step
 1. **Collect demographic and behavioral data:** Start by gathering customer demographic data such as age, gender, income, and geographic location. If available, include purchase history, customer preferences, and shopping behavior (online vs. in-store).
 2. **Segment customers based on key demographics:** Group customers into segments based on shared demographic characteristics. For example, you can segment customers by age group (e.g., 18-24, 25-34, 35-44), gender, or income level. Use this formula to calculate the size of each demographic segment:
-`Segment Size (%) = (Number of Customers in Segment / Total Number of Customers) x 100 This helps determine the proportion of the total customer base that each segment represents.`
+`Segment Size (%) = (Number of Customers in Segment / Total Number of Customers) x 100`
+This helps determine the proportion of the total customer base that each segment represents.
 3. **Analyze purchasing behavior within each segment:** For each segment, analyze key metrics such as purchase frequency, average transaction value, and product preferences. Calculate metrics such as:
 `o   Purchase Frequency = Total Transactions by Segment / Number of Customers in Segment`
 `o   Average Transaction Value = Total Revenue from Segment / Total Transactions by Segment This provides insight into the purchasing habits of each customer segment.`
 4. **Identify high-value customer segments:** If customer lifetime value (CLV) data is available, calculate the CLV for each segment using this equation:
-`Customer Lifetime Value (CLV) = (Average Transaction Value x Purchase Frequency x Customer Retention Period) This helps identify which segments are the most valuable to the business and should receive the most marketing focus.`
+`Customer Lifetime Value (CLV) = (Average Transaction Value x Purchase Frequency x Customer Retention Period)`
+This helps identify which segments are the most valuable to the business and should receive the most marketing focus.
 5. **Use geographic or behavioral segmentation (optional):** For further insights, segment customers based on their geographic location or shopping behavior. This can help retail companies target speciﬁc regions or create marketing strategies based on whether customers prefer to shop in-store or online.
 6. **Review customer feedback and satisfaction data (optional):** If customer feedback or survey data is available, segment customers based on their satisfaction levels or preferences. This can help identify which segments are highly satisﬁed and which may require attention to improve their experience.
 Potential complications that can arise with this analysis •   Incomplete customer data: If demographic or behavioral data is missing or inaccurate, it can limit the accuracy of the segmentation analysis.

@@ -38,7 +38,8 @@ The goal of this analysis is to estimate the total costs associated with a minin
 6. **Calculate Lifecycle Costs:** ○ Sum all costs (CapEx, OpEx, and closure costs) over the project’s timeline. ○ Use the formula:
 `Total Lifecycle Cost = CapEx + (OpEx x Mine Life) + Closure Costs`
 7. **Determine Net Present Value (NPV):** ○ Discount future cash flows using the formula:
-`NPV = Σ [(Revenue - OpEx) / (1 + Discount Rate)^Year] - CapEx - Closure Costs ○ A positive NPV indicates economic viability.`
+`NPV = Σ [(Revenue - OpEx) / (1 + Discount Rate)^Year] - CapEx - Closure`
+Costs ○ A positive NPV indicates economic viability.
 8. **Perform Sensitivity Analysis:** ○ Test project viability under different scenarios (e.g., changes in commodity prices, production rates, or cost estimates).
 9. **Compare Against Alternatives:** ○ Benchmark the lifecycle costs and NPV against similar projects to assess competitiveness.
 

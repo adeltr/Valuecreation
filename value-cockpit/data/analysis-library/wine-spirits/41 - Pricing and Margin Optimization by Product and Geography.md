@@ -32,7 +32,8 @@ To optimize pricing and maximize profit margins for wine, beer, and spirits prod
 1. Analyze Cost Structures ○ Calculate the cost of goods sold (COGS) for each product, including production, distribution, and marketing expenses. ○ Add region-specific costs, such as taxes, tariffs, and excise duties.
 2. Segment by Geography ○ Divide data by region to identify geographic variations in costs, taxes, consumer preferences, and competitive landscapes.
 3. Assess Current Margins ○ Calculate gross margins for each product and region:
-`Gross Margin (%) = [(Price – COGS) / Price] x 100. ○ Identify regions or products with low margins for potential optimization.`
+`Gross Margin (%) = [(Price – COGS) / Price] x 100.`
+○ Identify regions or products with low margins for potential optimization.
 4. Benchmark Competitor Pricing ○ Compare your pricing with competitors for similar products in each region. ○ Analyze how competitor pricing strategies impact market share and customer preferences.
 5. **Evaluate Consumer Price Sensitivity:** 122 ○ Use elasticity data to understand how price changes affect demand for each product in different regions. ○ Segment consumers by demographic or channel to refine insights.
 6. Incorporate Sales Trends ○ Analyze historical sales data to identify products or regions with high volume but low margins. ○ Look for underperforming regions or channels with potential for growth through adjusted pricing.

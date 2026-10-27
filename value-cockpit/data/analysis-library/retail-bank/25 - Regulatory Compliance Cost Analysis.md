@@ -25,7 +25,9 @@ To evaluate the costs associated with meeting regulatory compliance requirements
 1. Compile Compliance Cost Data ○ Gather all direct and indirect compliance costs over a defined period (e.g., annually). ○ Break down costs by category, such as personnel, technology, and external advisory fees.
 2. Segment Costs by Regulatory Requirement ○ Allocate costs to specific regulatory areas (e.g., AML/KYC, data protection, Basel III compliance). ○ Identify areas with the highest compliance spending.
 3. Calculate Cost Ratios ○ Measure the proportion of total operating expenses dedicated to compliance:
-`Compliance Cost Ratio = (Total Compliance Costs / Total Operating Expenses) x 100 ○ Compare compliance costs to revenue to assess impact: Compliance Cost-to-Revenue Ratio = (Total Compliance Costs / Total Revenue) x 100`
+`Compliance Cost Ratio = (Total Compliance Costs / Total Operating Expenses) x 100`
+○ Compare compliance costs to revenue to assess impact:
+`Compliance Cost-to-Revenue Ratio = (Total Compliance Costs / Total Revenue) x 100`
 4. **Analyze Cost Drivers:** 73 Identify major drivers of compliance costs, such as:
 ○ Staff training and salaries. ○ Implementation and maintenance of compliance systems. ○ Costs of regulatory reporting.
 5. Benchmark Against Peers ○ Compare compliance costs as a percentage of expenses and revenue with industry averages. ○ Highlight areas where the bank spends more or less than competitors.

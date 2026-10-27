@@ -31,9 +31,11 @@ The goal of SKU Rationalization and Retail Product Assortment Optimization is to
 ## 🪜 Step-by-step
 1. **Collect sales and proﬁtability data per SKU:** Gather sales volume, revenue, and proﬁt margin data for each SKU over a speciﬁc period (e.g., monthly, quarterly). This will help identify high-performing and low-performing products.
 2. **Calculate SKU proﬁtability:** Use the following equation to calculate the proﬁtability of each SKU:
-`SKU Proﬁtability = (Revenue per SKU - Cost per SKU) This shows the actual contribution of each SKU to the company’s bottom line.`
+`SKU Proﬁtability = (Revenue per SKU - Cost per SKU)`
+This shows the actual contribution of each SKU to the company’s bottom line.
 3. **Analyze SKU inventory turnover:** Measure how frequently each SKU is sold and replenished using the following formula:
-`SKU Turnover Rate = (Cost of Goods Sold / Average Inventory) High turnover rates indicate that products are selling quickly, while low turnover rates suggest slow-moving items that may tie up capital.`
+`SKU Turnover Rate = (Cost of Goods Sold / Average Inventory)`
+High turnover rates indicate that products are selling quickly, while low turnover rates suggest slow-moving items that may tie up capital.
 4. **Identify underperforming SKUs:** Review sales, proﬁt margins, and turnover rates to identify SKUs that are underperforming. Use the following equation to identify slow-moving items:
 `Slow-Moving SKU (%) = (Number of Slow-Moving SKUs / Total SKUs) x 100`
 Underperforming SKUs typically have low sales, low proﬁt margins, and high inventory levels.

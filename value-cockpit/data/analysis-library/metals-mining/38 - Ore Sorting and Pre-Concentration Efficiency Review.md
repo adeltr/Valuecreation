@@ -31,7 +31,8 @@ The goal of this analysis is to evaluate the efficiency of ore sorting and pre-c
 
 ## 🪜 Step-by-step
 1. **Analyze Feed and Product Grades:** ○ Compare the feed grade to the sorted ore grade using the formula:
-`Grade Improvement (%) = [(Sorted Ore Grade - Feed Grade) / Feed Grade] x 100`
+`Grade Improvement (%) = [(Sorted Ore Grade - Feed Grade) / Feed`
+Grade] x 100
 2. **Evaluate Recovery Rates:** ○ Calculate the recovery of valuable minerals using the formula:
 `Recovery Rate (%) = (Mass of Recovered Material x Grade of Recovered Material) / (Mass of Feed Material x Feed Grade) x 100`
 3. **Assess Waste Removal Efficiency:** ○ Determine the percentage of waste removed by the sorting process:

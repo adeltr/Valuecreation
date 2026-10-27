@@ -21,10 +21,12 @@ To evaluate the deferred profitability and surplus for long-duration life insura
 
 ## 🪜 Step-by-step
 1. Calculate Present Value of Future Cash Flows (PVFCF)
-`a. Use the formula: PVFCF = Present Value of Future Premiums - Present Value of Future Claims and Expenses b. Apply actuarial assumptions for discount rates, mortality, and lapses.`
+`a. Use the formula: PVFCF = Present Value of Future Premiums - Present Value of Future Claims and Expenses`
+b. Apply actuarial assumptions for discount rates, mortality, and lapses.
 2. Assess Deferred Profitability a. For each policy segment, evaluate the expected profitability over the contract's duration by comparing the PVFCF to initial reserves. b. Identify periods where deferred profitability is expected to materialize.
 3. Analyze Surplus Levels
-`a. Calculate the surplus for each segment: Surplus = Reserves Held - PVFCF b. Identify segments with surplus shortfalls or excessive surpluses.`
+`a. Calculate the surplus for each segment: Surplus = Reserves Held - PVFCF`
+b. Identify segments with surplus shortfalls or excessive surpluses.
 32
 4. Segment Analysis by Policy Type a. Break down profitability and surplus by product type, payment frequency, and demographic segment.
 5. **Stress Testing a. Model adverse scenarios, such as:** ■ Higher-than-expected lapse rates. ■ Lower-than-expected investment returns. ■ Adverse mortality/morbidity experience. b. Quantify the impact on deferred profitability and surplus.

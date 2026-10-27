@@ -20,8 +20,7 @@ The goal of New Business Growth Rate Analysis is to measure the growth in new po
 ## 🪜 Step-by-step
 1. **Define the Period:** Select the period for analysis (e.g., quarterly, yearly) based on the company’s business cycle and reporting needs.
 2. **Calculate New Business Growth Rate:** Use the formula:
-`New Business Growth Rate = ((Number of New Policies in Current Period - Number of`
-New Policies in Previous Period) / Number of New Policies in Previous Period) x 100
+`New Business Growth Rate = ((Number of New Policies in Current Period - Number of New Policies in Previous Period) / Number of New Policies in Previous Period) x 100`
 3. **Segment the Data:** If data is available, calculate the growth rate by segment (e.g., by product line, region, or customer demographic) to identify areas with high or low new business growth.
 4. **Track Growth Over Multiple Periods:** Calculate new business growth over multiple periods to observe trends and determine if growth is accelerating, stable, or declining.
 5. **Compile Results:** Summarize the results in a table or chart format to compare new business growth rates across different periods and segments.

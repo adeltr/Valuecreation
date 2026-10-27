@@ -30,7 +30,12 @@ The goal of analyzing Clinical Trial Success Rates is to evaluate the likelihood
 ## 🪜 Step-by-step
 1. **Data Collection:** ○ Gather the total number of drug candidates that entered each phase of clinical development (Phase I, II, and III) over a defined period. ○ Record the number of candidates that successfully advanced to the next phase and ultimately to approval.
 2. **Calculate Success Rates for Each Phase:** ○ Use the following formula to calculate the success rate for each phase of clinical development:
-`Success Rate (Phase X to Next Phase) = (Number of Candidates Advancing from Phase X / Number of Candidates Entering Phase X) * 100 For example: ■ Phase I Success Rate = (Number of Candidates Advancing from Phase I to Phase II / Number of Candidates Entering Phase I) * 100 ■ Phase II Success Rate = (Number of Candidates Advancing from Phase II to Phase III / Number of Candidates Entering Phase II) * 100 ■ Phase III Success Rate = (Number of Candidates Advancing from Phase III to Regulatory Submission / Number of Candidates Entering Phase III) * 100 ■ Approval Rate = (Number of Candidates Approved / Number of Candidates Submitted for Approval) * 100`
+`Success Rate (Phase X to Next Phase) = (Number of Candidates Advancing from Phase X / Number of Candidates Entering Phase X) * 100`
+For example:
+`■ Phase I Success Rate = (Number of Candidates Advancing from Phase I to Phase II / Number of Candidates Entering Phase I) * 100`
+`■ Phase II Success Rate = (Number of Candidates Advancing from Phase II to Phase III / Number of Candidates Entering Phase II) * 100`
+`■ Phase III Success Rate = (Number of Candidates Advancing from Phase III to Regulatory Submission / Number of Candidates Entering Phase III) * 100`
+`■ Approval Rate = (Number of Candidates Approved / Number of Candidates Submitted for Approval) * 100`
 3. **Compare with Industry Benchmarks:** ○ Compare the calculated success rates with industry benchmarks. For example, 9 typical industry success rates are approximately: ■ Phase I to II: 60% ■ Phase II to III: 30% ■ Phase III to Approval: 50%
 4. If the company's success rates are lower than the benchmarks, it may indicate weaknesses in clinical trial design, target selection, or patient recruitment.
 5. **Analyze Variability by Therapeutic Area:** ○ Analyze success rates by therapeutic area (e.g., oncology, cardiovascular, neurology). Some therapeutic areas are known to have lower success rates (e.g., oncology) due to higher scientific and regulatory hurdles, so understanding the variation can help contextualize results.

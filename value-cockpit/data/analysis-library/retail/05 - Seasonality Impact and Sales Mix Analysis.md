@@ -30,9 +30,11 @@ The goal of the Seasonality Impact and Sales Mix Analysis is to understand how s
 1. **Collect historical sales data:** Gather sales data for each product category over a multi-year period (if available), segmented by time periods (e.g., weeks or months). Ensure the data covers both peak and o9-peak seasons.
 2. **Identify seasonal sales trends:** Plot sales data over time to identify patterns or spikes during speciﬁc seasons. For example, you might notice increased sales during holidays, back-to-school periods, or summer months.
 3. **Calculate seasonality index:** For each product category, calculate the seasonality index using the following formula:
-`Seasonality Index = (Sales for a given period / Average Sales across all periods) x 100 A seasonality index greater than 100 indicates a peak sales period, while an index less than 100 indicates a slower sales period.`
+`Seasonality Index = (Sales for a given period / Average Sales across all periods) x 100`
+A seasonality index greater than 100 indicates a peak sales period, while an index less than 100 indicates a slower sales period.
 4. **Analyze sales mix during peak periods:** Determine the contribution of each product category to total sales during di9erent seasons. Use the following equation:
-`Sales Mix (%) = (Category Sales / Total Sales) x 100 This will help identify which products or categories perform well during peak seasons and which do not.`
+`Sales Mix (%) = (Category Sales / Total Sales) x 100`
+This will help identify which products or categories perform well during peak seasons and which do not.
 5. **Compare sales mix between seasons:** Examine how the sales mix changes between peak and o9-peak seasons. This can highlight shifts in customer preferences and demand during di9erent times of the year.
 6. **Incorporate external factors:** If available, analyze how external factors such as weather, holidays, or events correlate with seasonal sales trends. For example, cold weather might drive sales of winter apparel, while holidays could increase demand for gifts.
 Potential complications that can arise with this analysis •   Incomplete historical data: If you don’t have enough historical sales data, it may be di9icult to identify long-term seasonal trends accurately.

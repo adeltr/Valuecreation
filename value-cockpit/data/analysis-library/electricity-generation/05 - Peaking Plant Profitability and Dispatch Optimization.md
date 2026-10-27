@@ -29,11 +29,13 @@ To evaluate the financial performance and operational efficiency of peaking powe
 
 ## 🪜 Step-by-step
 1. **Calculate Revenue from Dispatch:** ○ Multiply generation output during dispatched hours by the corresponding market price:
-`Revenue ($) = Output (Mffh) x Market Price ($/Mffh) ○ Sum revenues for all dispatched periods within the analysis timeframe.`
+`Revenue ($) = Output (Mffh) x Market Price ($/Mffh)`
+○ Sum revenues for all dispatched periods within the analysis timeframe.
 2. **Assess Operating Costs:** ○ Calculate total costs for dispatched periods, including:
 `Total Costs ($) = (Fuel Costs + Variable O&M Costs + Startup Costs) x Dispatched Hours`
 3. **Determine Net Profitability:** ○ Use the formula:
-`Net Profit ($) = Total Revenue - Total Operating Costs - Fixed Operating Costs`
+`Net Profit ($) = Total Revenue - Total Operating Costs - Fixed Operating`
+Costs
 4. **Analyze Dispatch Efficiency:** ○ Evaluate whether dispatch decisions align with peak market prices and profitability thresholds. ○ Identify instances of suboptimal dispatch, such as operating during low-price periods or missing high-price opportunities.
 5. **Identify Market and Operational Trends:** ○ Review hourly or seasonal trends in market prices and demand to identify optimal dispatch windows.
 14

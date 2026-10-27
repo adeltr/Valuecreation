@@ -20,11 +20,15 @@ To evaluate policyholder behavior related to fund withdrawals and policy loans, 
 
 ## 🪜 Step-by-step
 1. Measure Fund Withdrawal and Loan Utilization Rates a. Calculate the withdrawal rate as a percentage of total policies:
-`Withdrawal Rate (%) = (Number of Policies with Withdrawals / Total Policies) x 100 b. Measure average loan utilization: Average Loan Utilization = Total Loan Amount Outstanding / Total Available Cash Value c. Segment by policy type, demographics, and policyholder tenure.`
+`Withdrawal Rate (%) = (Number of Policies with Withdrawals / Total Policies) x 100`
+b. Measure average loan utilization:
+`Average Loan Utilization = Total Loan Amount Outstanding / Total`
+Available Cash Value c. Segment by policy type, demographics, and policyholder tenure.
 2. Analyze Patterns in Withdrawals and Loans a. Identify trends in fund withdrawals and loan utilization, including: ■ Frequency (e.g., one-time withdrawals vs. recurring behavior)
 146 ■ Loan repayment rates and defaults b. Analyze withdrawal or loan triggers, such as: ■ Economic factors (e.g., income stress, job loss) ■ Life events (e.g., education, emergencies, retirement planning)
 3. Assess the Financial Impact a. Quantify the effect of withdrawals and loans on cash value accumulation, persistency rates, and future profitability:
-`Impact on Profitability = (Interest Income - Loan Defaults) - Surrender Charges b. Measure the impact of higher withdrawal rates on policy reserves and long-term sustainability.`
+`Impact on Profitability = (Interest Income - Loan Defaults) - Surrender`
+Charges b. Measure the impact of higher withdrawal rates on policy reserves and long-term sustainability.
 4. Evaluate Policyholder Segments with High Utilization a. Segment policyholders based on withdrawal or loan behavior to identify: ■ Demographics with higher withdrawal or loan tendencies ■ Policy types with higher fund access activity (e.g., flexible premium products).
 5. Compare Actual vs. Expected Behavior a. Compare actual withdrawal and loan utilization patterns against actuarial assumptions. b. Highlight variances and their financial impact, such as higher-than-expected withdrawals leading to liquidity strain.
 6. Benchmark Behavior Against Industry Trends a. Compare withdrawal rates, loan utilization, and repayment patterns with industry benchmarks. b. Identify gaps where the company’s experience deviates from competitors or expected norms.

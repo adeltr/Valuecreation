@@ -29,7 +29,8 @@ The goal of Customer Lifetime Value (CLV) Analysis is to estimate the total reve
 ## 🪜 Step-by-step
 1. **Collect key data inputs:** Gather data on the average purchase value, the average number of purchases per customer per year, and the average customer lifespan. If available, collect data on customer acquisition costs (CAC) and gross proﬁt margins to reﬁne the analysis.
 2. **Calculate Customer Lifetime Value (CLV):** The basic formula for CLV in retail is:
-`CLV = (APV x PF x L) Where:`
+`CLV = (APV x PF x L)`
+Where:
 o   APV is the Average Purchase Value (the average dollar amount spent by a customer in each transaction).
 o   PF is the Purchase Frequency (the average number of purchases made by the customer per year).
 o   L is the average Customer Lifespan (in years).
@@ -40,7 +41,8 @@ For example, if the average customer spends $50 per purchase, buys 5 times per y
 For instance, if the gross proﬁt margin is 40%, the calculation would be:
 `CLV = $50 x 5 x 3 x 0.40 = $300`
 4. **Subtract customer acquisition cost (optional):** To assess the proﬁtability of acquiring a customer, you can subtract the Customer Acquisition Cost (CAC) from the CLV:
-`Net CLV = CLV - CAC For example, if the CLV is $300 and the CAC is $100, the net CLV would be $200.`
+`Net CLV = CLV - CAC`
+For example, if the CLV is $300 and the CAC is $100, the net CLV would be $200.
 5. **Segment CLV by customer type or demographic (optional):** If available, calculate CLV for di9erent customer segments based on demographics, purchase behavior, or loyalty program membership. This allows the retailer to understand which segments are most valuable and focus marketing e9orts accordingly.
 Potential complications that can arise with this analysis •   Inaccurate lifespan estimation: If the customer lifespan (L) is not accurately calculated, the CLV can be signiﬁcantly overstated or understated. This is especially di9icult with new customers or markets.
 •   Variable purchase behavior: Not all customers follow the same purchasing patterns, and infrequent or seasonal customers can skew the results.

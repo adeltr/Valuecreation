@@ -31,7 +31,8 @@ The goal of this analysis is to evaluate the economic and strategic viability of
 ## 🪜 Step-by-step
 1. **Catalog Existing Agreements:** ○ List all royalty and offtake agreements, including parties involved, key terms, and duration. ○ Note specific clauses, such as price caps, escalators, or minimum delivery requirements.
 2. **Evaluate Royalty Agreements:** ○ Calculate royalty payments under different price and production scenarios using the formula:
-`Royalty Payment = Production Revenue x Royalty Percentage ○ Assess the impact of royalties on gross margins and overall project profitability.`
+`Royalty Payment = Production Revenue x Royalty Percentage`
+○ Assess the impact of royalties on gross margins and overall project profitability.
 3. **Analyze Offtake Agreements:** ○ Review pricing mechanisms (e.g., fixed price, spot price, price index-linked). ○ Calculate revenue potential from committed volumes and pricing terms. ○ Examine penalties or risks for under-delivery or price fluctuations.
 4. **Perform Economic Feasibility Analysis:** ○ Use sensitivity analysis to model the impact of changes in commodity prices, production rates, and costs on agreement profitability.
 82 ○ Calculate Net Present Value (NPV) for the project with and without the agreements to assess their contribution to financial performance.

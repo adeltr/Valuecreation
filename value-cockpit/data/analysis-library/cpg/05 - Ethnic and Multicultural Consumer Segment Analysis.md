@@ -39,11 +39,15 @@ The goal of an Ethnic and Multicultural Consumer Segment Analysis in the consume
 6. **Analyze regional and geographic data:** Identify regions or neighborhoods with high concentrations of specific ethnic groups. Focus on understanding how product preferences and purchasing behavior vary across different regions. Use geographic segmentation to inform distribution and store-level strategies. For example: ○ Urban areas with large Hispanic/Latino populations might have different product needs compared to suburban areas with a high Asian American population. ○ Regional preferences for certain traditional foods, household goods, or personal care items can inform tailored marketing and in-store strategies.
 7. **Evaluate product fit and market opportunities:** Assess whether the company's current product offerings meet the needs of ethnic and multicultural consumers. Identify gaps in the product portfolio that could be filled with new culturally relevant products. Key questions to consider: ○ Are the products tailored to specific cultural preferences (e.g., halal, kosher, vegan options)? ○ Are there opportunities to develop ethnic-specific product lines (e.g., hair care products for natural African American hair, traditional Asian snacks)? ○ Does the company offer culturally relevant packaging or branding?
 8. **Analyze marketing effectiveness and brand reach:** Evaluate the effectiveness of current marketing efforts aimed at ethnic and multicultural consumers. Calculate the return on marketing investment (ROMI) for campaigns targeting specific segments using the formula:
-`ROMI = (Revenue Attributable to Marketing - Marketing Spend) / Marketing Spend x 100 For example, if a campaign targeting the Hispanic community generated $400,000 in revenue with a marketing spend of $100,000: ROMI = ($400,000 - $100,000) / $100,000 x 100 = 300%`
+`ROMI = (Revenue Attributable to Marketing - Marketing Spend) / Marketing`
+Spend x 100 For example, if a campaign targeting the Hispanic community generated $400,000 in revenue with a marketing spend of $100,000:
+`ROMI = ($400,000 - $100,000) / $100,000 x 100 = 300%`
 27 Additionally, review engagement metrics such as social media interactions, website traffic, and brand awareness within ethnic and multicultural segments.
 9. **Evaluate competitor strategies in multicultural marketing:** Analyze how competitors are engaging with ethnic and multicultural groups. This could include evaluating their marketing campaigns, product lines, and overall presence in these communities. Identify gaps or areas where the company can differentiate itself by providing more culturally relevant offerings.
 10. **Segment contribution to total revenue:** Calculate each segment’s contribution to overall revenue to understand the financial impact of multicultural consumers. The formula for segment contribution is:
-`Segment Contribution = (Segment Revenue / Total Revenue) x 100 For example, if the Hispanic segment generates $25 million in revenue, and total company revenue is $200 million: Segment Contribution = ($25 million / $200 million) x 100 = 12.5%`
+`Segment Contribution = (Segment Revenue / Total Revenue) x 100`
+For example, if the Hispanic segment generates $25 million in revenue, and total company revenue is $200 million:
+`Segment Contribution = ($25 million / $200 million) x 100 = 12.5%`
 
 
 ## 📤 Output format

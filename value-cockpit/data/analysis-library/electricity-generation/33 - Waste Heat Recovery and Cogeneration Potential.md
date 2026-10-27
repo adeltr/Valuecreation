@@ -30,11 +30,12 @@ To evaluate the potential for utilizing waste heat from power generation process
 
 ## 🪜 Step-by-step
 1. **Quantify Waste Heat Availability:** ○ Measure the total heat loss in current generation processes:
-`Total Waste Heat (MW) = Heat Input (MW) - Useful Energy Output (MW). ○ Break down heat loss by source (e.g., exhaust, cooling water).`
+`Total Waste Heat (MW) = Heat Input (MW) - Useful Energy Output (MW).`
+○ Break down heat loss by source (e.g., exhaust, cooling water).
 2. **Assess Utilization Potential:** ○ Evaluate the technical feasibility of capturing and reusing waste heat through recovery systems (e.g., heat exchangers, organic Rankine cycle). ○ Identify potential applications, such as electricity generation, industrial heating, or district heating.
 3. **Evaluate Cogeneration Feasibility:** ○ Assess the potential to implement CHP systems that simultaneously produce electricity and useful heat. ○ Estimate efficiency improvements by comparing CHP systems to conventional generation:
-`Overall Efficiency (%) = (Electricity Output + Useful Heat Output) / Total Energy Input x 100`
-93
+`Overall Efficiency (%) = (Electricity Output + Useful Heat Output) / Total`
+Energy Input x 100 93
 4. **Analyze Demand and Infrastructure:** ○ Identify nearby heat or electricity consumers (e.g., industrial facilities, residential areas). ○ Evaluate the infrastructure required for heat distribution, such as district heating networks or thermal pipelines.
 5. **Perform Financial Analysis:** ○ Calculate the Levelized Cost of Energy (LCOE) for proposed waste heat recovery and cogeneration projects. ○ Estimate payback periods and return on investment (ROI).
 6. **Benchmark Against Industry Standards:** ○ Compare potential efficiency gains and cost savings to benchmarks from similar projects.

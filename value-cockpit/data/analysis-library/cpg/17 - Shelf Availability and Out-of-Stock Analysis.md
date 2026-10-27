@@ -35,9 +35,15 @@ The goal of a Shelf Availability and Out-of-Stock Analysis in the consumer packa
 1. **Define the objectives of the analysis:** Set clear goals for the shelf availability and out-of-stock analysis. These may include minimizing stockouts, improving supply chain efficiency, increasing sales by ensuring products are always available, and enhancing retailer compliance with stocking agreements.
 2. **Collect shelf availability and out-of-stock data:** Gather data on how often and for how long products are out of stock at the store level. Track stockout events by SKU, store, and region to identify patterns. For example, certain stores may experience more frequent stockouts due to higher demand, poor inventory management, or delayed shipments.
 3. **Measure out-of-stock frequency and duration:** Calculate how frequently stockouts occur and how long products remain unavailable. The formula for out-of-stock frequency is:
-`Out-of-Stock Frequency (%) = (Number of Days Product is Out of Stock / Total Days in Period) x 100 For example, if a product is out of stock for 10 days during a 30-day period: Out-of-Stock Frequency = (10 / 30) x 100 = 33.33% Out-of-stock duration measures how long a product remains unavailable once it runs out. Longer durations suggest issues with supply chain responsiveness or retailer replenishment processes.`
+`Out-of-Stock Frequency (%) = (Number of Days Product is Out of Stock / Total Days in Period) x 100`
+For example, if a product is out of stock for 10 days during a 30-day period:
+`Out-of-Stock Frequency = (10 / 30) x 100 = 33.33%`
+Out-of-stock duration measures how long a product remains unavailable once it runs out. Longer durations suggest issues with supply chain responsiveness or retailer replenishment processes.
 4. **Calculate lost sales due to out-of-stocks:** Estimate how much revenue is lost when products are out of stock. One approach is to compare sales before and after stockouts to calculate the drop in revenue during the stockout period. The formula for lost sales is:
-`Lost Sales = (Average Daily Sales x Number of Out-of-Stock Days) For example, if a product sells $1,000 per day on average, and it is out of stock for 10 days: Lost Sales = $1,000 x 10 = $10,000 This helps quantify the financial impact of out-of-stocks.`
+`Lost Sales = (Average Daily Sales x Number of Out-of-Stock Days)`
+For example, if a product sells $1,000 per day on average, and it is out of stock for 10 days:
+`Lost Sales = $1,000 x 10 = $10,000`
+This helps quantify the financial impact of out-of-stocks.
 97
 5. **Analyze consumer behavior during stockouts:** Examine how stockouts affect consumer behavior. Determine whether consumers switch to a competitor’s product when yours is out of stock or if they leave the store without making a purchase. This data can be gathered through loyalty programs, point-of-sale systems, or shopper surveys. Key questions to address include: ○ Are consumers switching to a competitor’s product? ○ Are consumers willing to purchase an alternative SKU within your brand? ○ Do consumers go to another store to find your product?
 6. **Review retailer compliance and planogram adherence:** Assess whether retailers are adhering to planograms (shelf space allocation) and keeping the right number of product facings on shelves. Poor compliance can lead to products being unavailable even when they are in stock at the store. Use shelf audits or data from retail partners to monitor how well stores are stocking your products according to the agreed-upon planogram.

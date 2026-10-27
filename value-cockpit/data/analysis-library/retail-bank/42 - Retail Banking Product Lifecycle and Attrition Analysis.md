@@ -23,7 +23,8 @@ To evaluate the lifecycle of retail banking products from acquisition to attriti
 ## 🪜 Step-by-step
 1. Map the Product Lifecycle Stages ○ Define key lifecycle stages for retail products (e.g., acquisition, growth, maturity, and attrition). ○ Categorize customers by their stage in the lifecycle for each product.
 2. Calculate Attrition Rates ○ Use the formula:
-`Attrition Rate = (Number of Customers Who Discontinued the Product / Total Customers at Start of Period) x 100 ○ Segment attrition rates by product type and customer demographics.`
+`Attrition Rate = (Number of Customers Who Discontinued the Product / Total Customers at Start of Period) x 100`
+○ Segment attrition rates by product type and customer demographics.
 3. Analyze Product Usage Trends ○ Track usage frequency and transaction volumes over the product lifecycle. ○ Identify periods of declining engagement that may precede attrition.
 4. Segment Customers by Lifecycle Stage ○ Categorize customers into lifecycle stages based on tenure and usage patterns. ○ Highlight segments with high attrition or low engagement rates.
 5. Evaluate Factors Contributing to Attrition ○ Analyze survey data or feedback to identify common reasons for discontinuation (e.g., high fees, poor service).

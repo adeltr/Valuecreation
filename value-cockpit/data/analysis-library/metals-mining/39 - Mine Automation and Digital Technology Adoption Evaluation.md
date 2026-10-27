@@ -32,7 +32,8 @@ The goal of this analysis is to assess the level of automation and digital techn
 1. **Catalog Existing Technologies:** ○ Create an inventory of automation and digital technologies currently deployed, including their purpose and operational areas.
 2. **Evaluate Technology Utilization:** ○ Measure equipment utilization rates, throughput, and productivity improvements attributed to automation. ○ Compare these metrics with pre-automation levels to determine gains.
 3. **Assess Cost-Benefit Metrics:** ○ Calculate cost efficiency using the formula:
-`Cost Efficiency ($/ton) = Total Operational Costs / Total Output (tons) ○ Compare costs and benefits before and after technology adoption.`
+`Cost Efficiency ($/ton) = Total Operational Costs / Total Output (tons)`
+○ Compare costs and benefits before and after technology adoption.
 4. **Analyze Safety and Operational Impacts:** ○ Review incident data to assess whether automation has improved workplace safety. ○ Evaluate the impact of automation on operational consistency and error reduction.
 5. **Review Employee Adaptation and Training:** ○ Analyze employee engagement and training metrics to determine readiness for and adaptation to digital tools.
 6. Benchmark Against Industry Standards:

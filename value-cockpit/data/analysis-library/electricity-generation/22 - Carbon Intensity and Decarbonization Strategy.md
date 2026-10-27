@@ -30,7 +30,8 @@ To measure the carbon intensity of power generation operations and develop a dec
 
 ## 🪜 Step-by-step
 1. **Calculate Carbon Intensity:** ○ Use the formula:
-`Carbon Intensity (kg CO₂e/Mffh) = Total GHG Emissions (kg CO₂e) / Total Electricity Generated (Mffh) ○ Perform this calculation for each power plant and the entire generation portfolio.`
+`Carbon Intensity (kg CO₂e/Mffh) = Total GHG Emissions (kg CO₂e) / Total`
+Electricity Generated (Mffh) ○ Perform this calculation for each power plant and the entire generation portfolio.
 2. **Identify Emissions Sources:** ○ Break down emissions by fuel type, operational activity (e.g., generation, maintenance), and plant. ○ Highlight high-emission plants and processes.
 3. **Benchmark Against Industry Standards:** ○ Compare the carbon intensity of each plant with industry benchmarks for similar generation types.
 4. **Evaluate Decarbonization Technologies:** ○ Review available technologies such as carbon capture and storage (CCS), renewable energy integration, and fuel switching. ○ Calculate potential emission reductions and associated costs for each technology.

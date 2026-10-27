@@ -28,9 +28,11 @@ The goal of Product Category Margin Analysis is to assess the proﬁtability of 
 ## 🪜 Step-by-step
 1. **Collect sales and COGS data:** Gather the total sales revenue and COGS for each product category during the period under review. Ensure data is accurate and categorized appropriately.
 2. **Calculate gross margin for each product category:** Use the following equation to determine the gross margin for each category:
-`Gross Margin = (Sales - COGS) This gives you the absolute margin in dollars for each category.`
+`Gross Margin = (Sales - COGS)`
+This gives you the absolute margin in dollars for each category.
 3. **Calculate gross margin percentage:** To express the margin as a percentage, use this formula:
-`Gross Margin (%) = ((Sales - COGS) / Sales) x 100 This provides insight into how much proﬁt is made as a percentage of sales for each product category.`
+`Gross Margin (%) = ((Sales - COGS) / Sales) x 100`
+This provides insight into how much proﬁt is made as a percentage of sales for each product category.
 4. **Adjust for promotional expenses (optional):** If discounts or promotional costs signiﬁcantly impact certain categories, subtract these from the gross margin to get a more accurate picture of net proﬁtability.
 5. **Allocate overhead costs (optional):** If possible, allocate operating costs (e.g., store labor, marketing expenses) to each category to understand the true proﬁtability beyond gross margin.
 6. **Compare across categories:** Once margins are calculated, compare them across categories to identify which ones are performing well and which are underperforming.

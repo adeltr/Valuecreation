@@ -31,10 +31,12 @@ The goal of Shelf Space Allocation and Optimization is to determine the most e9e
 1. **Collect sales and inventory data for each product:** Gather the sales data (units sold, revenue) and inventory turnover rate for each product in the store. This will provide insight into the demand for each product and its contribution to overall proﬁtability.
 2. **Measure current shelf space allocation:** Record the current amount of shelf space (linear feet or square feet) allocated to each product or category. This can be based on physical shelf measurements or from existing planograms.
 3. **Calculate sales per square foot of shelf space:** To evaluate the performance of each product relative to its shelf space, calculate the sales per square foot (or linear foot) of shelf space:
-`Sales per Square Foot = Total Sales / Total Shelf Space This metric provides a measure of how e9iciently the allocated space is generating revenue.`
+`Sales per Square Foot = Total Sales / Total Shelf Space`
+This metric provides a measure of how e9iciently the allocated space is generating revenue.
 4. **Identify high-margin and high-turnover products:** Analyze the gross proﬁt margin and inventory turnover rate for each product. High-margin products generate more proﬁt per sale, while high-turnover products sell quickly and require more frequent replenishment. Inventory Turnover Rate = (Cost of Goods Sold / Average Inventory)
 5. **Optimize shelf space based on product performance:** Reallocate shelf space to prioritize high-margin, high-turnover products. Products that generate higher sales per square foot and have higher proﬁt margins should be given more prominent or larger shelf space. Use the following equation to adjust shelf space allocation:
-`Optimal Shelf Space = (Product Sales / Total Store Sales) x Total Available Shelf Space This formula helps allocate space proportionally based on the contribution of each product to total sales.`
+`Optimal Shelf Space = (Product Sales / Total Store Sales) x Total Available Shelf Space`
+This formula helps allocate space proportionally based on the contribution of each product to total sales.
 6. **Consider customer foot traMic:** If foot tra9ic data is available, analyze high-tra9ic zones in the store and place high-margin or popular products in these areas to maximize visibility. Products with lower performance can be placed in less prominent areas.
 7. **Test and adjust the planogram:** Once shelf space is reallocated, implement a new planogram and monitor sales performance. Continuously track sales and inventory data to identify whether the adjustments have improved performance. If necessary, reﬁne the space allocation further based on updated data.
 Potential complications that can arise with this analysis •   Seasonal ﬂuctuations: Sales performance for certain products may vary seasonally, which can lead to over- or under-allocation of shelf space if seasonality is not taken into account.

@@ -32,7 +32,9 @@ The goal of this analysis is to evaluate mine safety practices and ensure compli
 ## 🪜 Step-by-step
 1. **Review Incident History:** ○ Collect data on past incidents, including causes, severity, and frequency. ○ Identify trends and recurring safety issues.
 2. **Analyze Safety Metrics:** ○ Calculate key safety performance indicators using the formulas:
-`■ LTIFR = (Number of Lost Time Injuries x 1,000,000) / Total Hours Worked ■ TRIFR = (Number of Recordable Injuries x 1,000,000) / Total Hours Worked ○ Benchmark metrics against industry standards to assess performance.`
+`■ LTIFR = (Number of Lost Time Injuries x 1,000,000) / Total Hours Worked`
+`■ TRIFR = (Number of Recordable Injuries x 1,000,000) / Total Hours Worked`
+○ Benchmark metrics against industry standards to assess performance.
 3. **Evaluate Safety Protocols:** ○ Review existing safety procedures for high-risk activities, such as blasting, hauling, and underground operations.
 109 ○ Assess the implementation of personal protective equipment (PPE) policies.
 4. **Inspect Equipment and Maintenance Records:** ○ Verify that all equipment has undergone regular safety checks and maintenance. ○ Ensure compliance with operational safety standards for critical machinery.

@@ -31,7 +31,8 @@ To evaluate the ability of the grid to maintain reliability, stability, and bala
 
 ## 🪜 Step-by-step
 1. **Assess Grid Reliability Metrics:** ○ Calculate reliability indices such as SAIDI and SAIFI using outage data.
-`SAIDI (minutes) = (Total Duration of Customer Interruptions / Total Number of Customers) SAIFI = (Total Number of Customer Interruptions / Total Number of Customers)`
+`SAIDI (minutes) = (Total Duration of Customer Interruptions / Total Number of Customers)`
+`SAIFI = (Total Number of Customer Interruptions / Total Number of Customers)`
 2. **Analyze Frequency Stability:** ○ Evaluate real-time frequency data for deviations from nominal levels (e.g., 50 Hz or 60 Hz). ○ Identify patterns of frequency instability and correlate them with load or generation changes.
 3. **Evaluate Load Balancing Capabilities:** ○ Analyze load-generation balance data to determine how well supply meets demand. ○ Assess the adequacy of spinning and contingency reserves during peak and off-peak periods.
 4. Assess Response Times for Balancing and Regulation:

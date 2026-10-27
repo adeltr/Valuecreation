@@ -29,11 +29,14 @@ The goal of this analysis is to evaluate the company’s exposure to commodity p
 
 ## 🪜 Step-by-step
 1. **Analyze Commodity Price Exposure:** ○ Identify the commodities contributing significantly to revenue. ○ Calculate revenue dependency for each commodity using the formula:
-`Revenue Dependency (%) = (Revenue from Commodity / Total Revenue) x 100`
+`Revenue Dependency (%) = (Revenue from Commodity / Total Revenue)`
+x 100
 2. **Evaluate Historical Price Volatility:** ○ Calculate price volatility using the formula:
-`Price Volatility (%) = (Standard Deviation of Prices / Mean Price) x 100 ○ Identify commodities with high historical volatility that pose greater financial risks.`
+`Price Volatility (%) = (Standard Deviation of Prices / Mean Price) x 100`
+○ Identify commodities with high historical volatility that pose greater financial risks.
 3. **Perform Sensitivity Analysis:** ○ Model the impact of price changes on revenue and profitability using scenarios such as a 10%, 20%, or 30% price change. ○ Use the formula:
-`Revenue Impact = Production Volume x Price Change (%) Profitability Impact = Revenue Impact - Variable Costs`
+`Revenue Impact = Production Volume x Price Change (%)`
+`Profitability Impact = Revenue Impact - Variable Costs`
 4. Assess Risk Management Strategies:
 88 ○ Review the company’s use of financial instruments like hedging contracts or futures. ○ Evaluate the effectiveness of these tools in stabilizing revenue.
 5. **Develop Risk Exposure Metrics:** ○ Calculate the breakeven price for key commodities using the formula:

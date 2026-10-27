@@ -29,11 +29,13 @@ To assess the environmental impact of power generation operations by analyzing e
 
 ## 🪜 Step-by-step
 1. **Collect Emissions Data:** ○ Gather plant-level emissions data for all regulated pollutants. ○ Normalize emissions data based on generation output using:
-`Emissions Intensity = Total Emissions (tons) / Total Electricity Generated (Mffh)`
+`Emissions Intensity = Total Emissions (tons) / Total Electricity Generated`
+(Mffh)
 2. **Review Regulatory Requirements:** ○ Identify emissions limits applicable to each plant. ○ Compile information on penalties, reporting deadlines, and required mitigation measures.
 3. **Evaluate Compliance Status:** ○ Compare plant emissions intensities to regulatory limits. ○ Identify plants operating above permissible levels.
 4. **Assess Financial Implications:** ○ Calculate potential penalties for non-compliance:
-`Penalty Cost = (Emissions Exceeding Limit) x Penalty Rate ○ Evaluate the cost of compliance investments versus penalties.`
+`Penalty Cost = (Emissions Exceeding Limit) x Penalty Rate`
+○ Evaluate the cost of compliance investments versus penalties.
 5. Analyze Reduction Opportunities:
 48 ○ Review available emission control technologies (e.g., scrubbers, carbon capture, low-NOx burners) and their cost-effectiveness. ○ Calculate potential emission reductions from implementing each technology.
 6. **Model Future Scenarios:** ○ Simulate changes in emissions intensity under different operating conditions (e.g., fuel switching, renewable integration). ○ Assess compliance under stricter future regulations.

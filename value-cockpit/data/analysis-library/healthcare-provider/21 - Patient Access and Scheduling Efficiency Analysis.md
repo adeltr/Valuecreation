@@ -31,7 +31,8 @@ To evaluate the efficiency and accessibility of patient scheduling processes, id
 1. Analyze appointment lead times Measure the average time between when a patient requests an appointment and the appointment date. Equation:
 `Appointment Lead Time (days) = (Appointment Date - Request Date).`
 2. Calculate appointment wait times Assess the time patients spend waiting to see a provider after arriving for their appointment. Equation:
-`Average Wait Time (minutes) = Total Patient Wait Time / Total Number of Appointments.`
+`Average Wait Time (minutes) = Total Patient Wait Time / Total Number of`
+Appointments.
 3. Evaluate no-show and cancellation rates Analyze trends in no-shows and cancellations by service line and patient demographics. Equation:
 `No-Show Rate (%) = (Number of No-Show Appointments / Total Scheduled Appointments) x 100.`
 4. Assess provider utilization Measure the percentage of a provider’s available time that is booked and used for patient care.

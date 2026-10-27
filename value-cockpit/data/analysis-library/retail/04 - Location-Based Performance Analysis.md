@@ -31,11 +31,14 @@ The goal of Location-Based Performance Analysis is to evaluate the ﬁnancial an
 ## 🪜 Step-by-step
 1. **Collect sales and cost data for each location:** Gather the total sales and operational costs for each store during the analysis period. Ensure the data is consistent across all locations to allow for accurate comparison.
 2. **Calculate proﬁtability per store:** Calculate the proﬁt for each store using the following equation:
-`Store Proﬁt = Sales - Operational Costs This will show how much each store contributes to overall proﬁtability.`
+`Store Proﬁt = Sales - Operational Costs`
+This will show how much each store contributes to overall proﬁtability.
 3. **Calculate sales per square foot:** To evaluate the productivity of the retail space, calculate sales per square foot:
-`Sales per Square Foot = Total Sales / Store Size (in square feet) This provides insight into how e9ectively the store is using its space.`
+`Sales per Square Foot = Total Sales / Store Size (in square feet)`
+This provides insight into how e9ectively the store is using its space.
 4. **Analyze foot traMic and conversion rates (optional):** If foot tra9ic data is available, calculate the conversion rate for each location:
-`Conversion Rate (%) = (Number of Transactions / Foot Tra9ic) x 100 This helps identify whether the store is converting visitors into customers e9iciently.`
+`Conversion Rate (%) = (Number of Transactions / Foot Tra9ic) x 100`
+This helps identify whether the store is converting visitors into customers e9iciently.
 5. **Assess local demographic impact (optional):** If demographic data is available, segment store performance by local customer proﬁles (e.g., income, age, population density) to identify how local factors impact performance.
 6. **Compare performance across locations:** Rank stores based on key performance indicators (e.g., sales, proﬁtability, sales per square foot). Identify which stores are outperforming and which are underperforming relative to company averages or targets.
 7. **Evaluate the competitive landscape (optional):** If available, gather data on nearby competitors for each location and assess how competition might inﬂuence store performance.

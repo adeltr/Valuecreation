@@ -30,14 +30,16 @@ The goal of this analysis is to enhance the efficiency of metals recovery proces
 
 ## 🪜 Step-by-step
 1. **Assess Current Recovery Rates:** ○ Measure the percentage of metal extracted compared to the total available in the ore using the formula:
-`Recovery Rate (%) = (Metal Recovered / Total Metal in Ore) x 100 ○ Identify deviations from expected or benchmark rates.`
+`Recovery Rate (%) = (Metal Recovered / Total Metal in Ore) x 100`
+○ Identify deviations from expected or benchmark rates.
 2. **Analyze Processing Efficiency:** ○ Evaluate the efficiency of current processing methods for recovering primary and secondary metals. ○ Identify bottlenecks or inefficiencies in critical stages, such as grinding, flotation, or smelting.
 3. **Evaluate Byproduct Generation:** ○ Document the types and volumes of byproducts generated during processing. ○ Assess the market value or reuse potential of these byproducts.
 4. **Benchmark Recovery Rates:** ○ Compare the company’s recovery rates with industry standards and peer companies. ○ Identify gaps and improvement opportunities.
 5. Assess Environmental and Regulatory Impacts:
 121 ○ Review the environmental impact of byproducts, including waste disposal methods and emissions. ○ Verify compliance with environmental regulations.
 6. **Perform Economic Analysis:** ○ Calculate cost efficiency for recovery and byproduct management using the formula:
-`Cost Efficiency ($/unit) = Total Recovery Cost / Metal Recovered ○ Evaluate profitability for both primary metals and byproducts.`
+`Cost Efficiency ($/unit) = Total Recovery Cost / Metal Recovered`
+○ Evaluate profitability for both primary metals and byproducts.
 7. **Conduct Scenario Analysis:** ○ Model the impact of process changes, such as improved reagents or advanced equipment, on recovery rates and byproduct management costs.
 8. **Develop Optimization Strategies:** ○ Propose specific actions to enhance recovery rates and monetize byproducts effectively.
 

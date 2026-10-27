@@ -23,11 +23,17 @@ To evaluate the performance and cost efficiency of different distribution channe
 1. Segment Policies by Distribution Channel a. Categorize policies based on the distribution channel through which they were sold: ■ Agents (individual or tied) ■ Brokers ■ Bancassurance ■ Direct-to-customer (digital platforms, call centers)
 2. **Calculate Channel Effectiveness Metrics a. Total Premium Revenue:** Sum of premium income generated per channel.
 89 b. Persistency Rate: Measure the percentage of policies that remain active over time:
-`Persistency Rate (%) = (Number of Active Policies / Total Policies Sold) x 100 c. Conversion Rate: Evaluate efficiency in converting leads to policies: Conversion Rate (%) = (Number of Policies Sold / Number of Leads) x 100`
+`Persistency Rate (%) = (Number of Active Policies / Total Policies Sold) x 100`
+c. Conversion Rate: Evaluate efficiency in converting leads to policies:
+`Conversion Rate (%) = (Number of Policies Sold / Number of Leads) x 100`
 3. Measure Cost Efficiency a. Acquisition Cost per Policy:
-`Acquisition Cost = Total Acquisition Expense / Number of Policies Sold b. Cost Ratio: Measure the cost efficiency of each channel as a percentage of premium revenue: Cost Ratio (%) = (Total Costs / Premium Revenue) x 100`
+`Acquisition Cost = Total Acquisition Expense / Number of Policies`
+Sold b. Cost Ratio: Measure the cost efficiency of each channel as a percentage of premium revenue:
+`Cost Ratio (%) = (Total Costs / Premium Revenue) x 100`
 4. Analyze Profitability by Channel a. Calculate profit margins for each channel:
-`Profit Margin (%) = [(Premium Revenue - Total Costs) / Premium Revenue] x 100 b. Compare ROI by channel: Channel ROI (%) = [(Profit Generated - Costs) / Costs] x 100`
+`Profit Margin (%) = [(Premium Revenue - Total Costs) / Premium`
+Revenue] x 100 b. Compare ROI by channel:
+`Channel ROI (%) = [(Profit Generated - Costs) / Costs] x 100`
 5. Evaluate Customer Profiles a. Assess customer demographics (age, income, region) acquired through each channel. b. Identify which channels attract high-value, low-risk customers contributing to long-term profitability.
 6. Benchmark Performance a. Compare channel performance metrics (acquisition costs, persistency rates, and ROI) against industry benchmarks to identify gaps.
 7. Perform Trend Analysis a. Track premium revenue, costs, and persistency rates for each channel over time to identify growth or underperformance trends.

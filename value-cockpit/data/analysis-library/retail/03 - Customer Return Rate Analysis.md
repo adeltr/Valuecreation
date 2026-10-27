@@ -29,7 +29,8 @@ The goal of Customer Return Rate Analysis is to assess the percentage of product
 ## 🪜 Step-by-step
 1. **Collect sales and returns data:** Gather the total number of items sold and the total number of items returned during a speciﬁc period (e.g., monthly, quarterly). Ensure the data is categorized by product, product category, or SKU for more detailed analysis.
 2. **Calculate the return rate:** Use the following formula to calculate the return rate:
-`Return Rate (%) = (Number of Items Returned / Number of Items Sold) x 100 This gives the percentage of sold items that are returned by customers.`
+`Return Rate (%) = (Number of Items Returned / Number of Items Sold) x 100`
+This gives the percentage of sold items that are returned by customers.
 3. **Segment by product category (optional):** If the data is available, calculate the return rate for each product category or SKU to identify which products or categories have the highest return rates.
 4. **Analyze return reasons (optional):** If your company collects return reason codes (e.g., damaged goods, incorrect size, buyer’s remorse), segment the return rate by reason. This will help identify speciﬁc issues like quality control or customer dissatisfaction.
 5. **Evaluate the ﬁnancial impact (optional):** If sales and revenue data is available, calculate the revenue lost due to returns. You can also assess whether certain categories are contributing disproportionately to the overall return rate and ﬁnancial loss.

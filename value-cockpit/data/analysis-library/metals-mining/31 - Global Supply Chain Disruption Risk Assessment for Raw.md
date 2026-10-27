@@ -32,7 +32,8 @@ The goal of this analysis is to evaluate the risks associated with disruptions i
 ## 🪜 Step-by-step
 1. **Map the Supply Chain:** ○ Document all raw material sources, suppliers, and transportation routes. ○ Identify critical suppliers and regions that significantly contribute to raw material procurement.
 2. **Evaluate Supplier Dependency:** ○ Calculate dependency metrics using the formula:
-`Supplier Dependency (%) = (Supply from Supplier / Total Raw Material Supply) x 100 ○ Identify single-source dependencies and their associated risks.`
+`Supplier Dependency (%) = (Supply from Supplier / Total Raw Material Supply) x 100`
+○ Identify single-source dependencies and their associated risks.
 3. **Assess Transportation and Logistics Risks:** ○ Analyze transportation routes for potential disruptions, such as port congestion, weather risks, or geopolitical tensions. ○ Evaluate lead times and on-time delivery performance.
 4. **Analyze Inventory and Buffer Levels:** ○ Compare inventory levels to operational requirements. ○ Calculate days of coverage using the formula:
 `Days of Coverage = Inventory Level / Daily Raw Material Usage`

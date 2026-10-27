@@ -23,9 +23,14 @@ To evaluate the efficiency and scalability of the core banking system by analyzi
 
 ## 🪜 Step-by-step
 1. Measure System Performance Metrics ○ Calculate transaction processing speed:
-`Average Processing Time = (Total Processing Time / Number of Transactions) ○ Analyze downtime data: Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100 ○ Evaluate error rates in transactions: Error Rate = (Number of Failed Transactions / Total Transactions) x 100`
+`Average Processing Time = (Total Processing Time / Number of Transactions)`
+○ Analyze downtime data:
+`Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100`
+○ Evaluate error rates in transactions:
+`Error Rate = (Number of Failed Transactions / Total Transactions) x 100`
 2. Assess Scalability Metrics ○ Monitor system utilization rates during normal and peak periods:
-`System Utilization Rate = (Current System Load / Maximum Capacity) x 100 ○ Simulate peak load scenarios to test system scalability and resilience.`
+`System Utilization Rate = (Current System Load / Maximum Capacity) x 100`
+○ Simulate peak load scenarios to test system scalability and resilience.
 3. **Analyze Operational Costs:** Break down costs into categories such as:
 - Infrastructure (e.g., servers, cloud storage).
 - Licensing and software updates.

@@ -31,7 +31,8 @@ To evaluate the efficiency and sustainability of water usage and cooling technol
 
 ## 🪜 Step-by-step
 1. **Assess Current Water Usage:** ○ Collect data on the total volume of water used by cooling systems over a given period (e.g., annual water withdrawal). ○ Calculate water intensity by using the formula:
-`Water Intensity (gallons/Mffh) = Total Water Consumption (gallons) / Total Energy Produced (Mffh)`
+`Water Intensity (gallons/Mffh) = Total Water Consumption (gallons) / Total`
+Energy Produced (Mffh)
 2. **Evaluate Cooling Technology Types:** ○ Identify the types of cooling systems used (e.g., once-through, cooling towers, dry cooling systems) and their respective efficiencies. ○ Assess the water savings potential of different cooling technologies based on performance and environmental conditions.
 3. **Analyze Environmental Impacts:** ○ Evaluate the environmental effects of water usage, such as thermal pollution, ecosystem disruption, and water temperature changes in surrounding bodies of water.
 135 ○ Quantify the potential impact on aquatic life and local water quality.

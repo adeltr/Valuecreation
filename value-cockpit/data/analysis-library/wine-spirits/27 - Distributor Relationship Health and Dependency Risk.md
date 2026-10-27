@@ -33,7 +33,8 @@ To evaluate the strength of distributor relationships and assess dependency risk
 1. Identify Key Distributors ○ List all distributors by region and segment their contribution to total revenue. ○ Highlight those with exclusivity agreements or significant market influence.
 2. Analyze Performance Metrics ○ Evaluate distributor sales volume, growth rates, and market penetration. ○ Assess reliability metrics, including on-time deliveries and adherence to contract terms.
 3. Assess Dependency Risks ○ Calculate the percentage of revenue dependent on each distributor:
-`Dependency Ratio = (Distributor Revenue Contribution / Total Revenue) x 100. ○ Highlight distributors with high dependency ratios and assess potential risks.`
+`Dependency Ratio = (Distributor Revenue Contribution / Total Revenue) x 100.`
+○ Highlight distributors with high dependency ratios and assess potential risks.
 4. **Evaluate Financial Stability and Market Trends:** 80 ○ Research financial health and operational stability of distributors, particularly those critical to your supply chain. ○ Monitor industry trends, such as distributor consolidation or regulatory changes, that may impact relationships.
 5. Benchmark Against Competitors ○ Analyze competitors’ reliance on shared distributors to identify potential conflicts or alignment opportunities. ○ Compare distributor diversification strategies across competitors.
 6. Gather Feedback ○ Conduct surveys or interviews with distributors to understand their perspective on the partnership. ○ Assess areas where support or incentives could improve collaboration.

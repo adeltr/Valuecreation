@@ -30,11 +30,14 @@ The goal of the Private Label vs. Branded Product Performance and Supplier Depen
 ## 🪜 Step-by-step
 1. **Collect sales and COGS data:** Gather the total sales and COGS for private label and branded products across all relevant categories during a speciﬁc period (e.g., monthly, quarterly).
 2. **Calculate gross proﬁt margins:** Use the following equation to calculate the gross proﬁt margin for both private label and branded products:
-`Gross Proﬁt Margin (%) = ((Sales - COGS) / Sales) x 100 This helps determine which product type is more proﬁtable.`
+`Gross Proﬁt Margin (%) = ((Sales - COGS) / Sales) x 100`
+This helps determine which product type is more proﬁtable.
 3. **Compare sales volumes:** Analyze the total sales volume for private label versus branded products to understand customer preferences. You can use the following equation to calculate the proportion of each type:
-`Sales Proportion (%) = (Product Sales / Total Sales) x 100 This shows the percentage of total sales coming from private label vs. branded products.`
+`Sales Proportion (%) = (Product Sales / Total Sales) x 100`
+This shows the percentage of total sales coming from private label vs. branded products.
 4. **Assess supplier dependency:** For branded products, calculate the company’s reliance on speciﬁc suppliers using this formula:
-`Supplier Dependency (%) = (Supplier’s Sales Contribution / Total Branded Sales) x 100 This will highlight any overreliance on a particular supplier.`
+`Supplier Dependency (%) = (Supplier’s Sales Contribution / Total Branded Sales) x 100`
+This will highlight any overreliance on a particular supplier.
 5. **Analyze customer feedback (optional):** If customer reviews or feedback data is available, analyze whether private label products are meeting customer expectations compared to branded products. This can help assess whether the lower price point of private labels is balanced by product quality.
 6. **Evaluate the impact of supplier terms:** Review supplier terms such as pricing, lead times, and volume discounts. Consider how ﬂexible or restrictive these terms are, and assess the risk of being dependent on a limited number of suppliers for branded products.
 7. **Segment analysis by product category:** If the data allows, break down the performance of private label vs. branded products by category to identify which categories have stronger private label potential.

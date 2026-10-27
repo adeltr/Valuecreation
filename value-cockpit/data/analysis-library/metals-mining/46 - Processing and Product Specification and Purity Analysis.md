@@ -32,13 +32,15 @@ The goal of this analysis is to evaluate the processing efficiency and the quali
 ## 🪜 Step-by-step
 1. **Review Input Material Composition:** ○ Analyze the grade and mineral composition of input materials to identify potential challenges in achieving desired specifications.
 2. **Evaluate Processing Efficiency:** ○ Assess recovery rates at each processing stage using the formula:
-`Recovery Rate (%) = (Metal or Mineral Recovered / Metal or Mineral in Input Material) x 100 ○ Identify inefficiencies or bottlenecks affecting purity and yield.`
+`Recovery Rate (%) = (Metal or Mineral Recovered / Metal or Mineral in Input Material) x 100`
+○ Identify inefficiencies or bottlenecks affecting purity and yield.
 3. **Analyze Finished Product Purity:** ○ Compare the purity of finished products with target specifications and industry benchmarks. ○ Measure deviations and assess their root causes, such as contamination or incomplete processing.
 4. **Review QA/QC Testing Data:** ○ Examine product testing results for consistency and adherence to market specifications. ○ Identify trends or recurring issues in quality deviations.
 5. Assess Market and Regulatory Compliance:
 139 ○ Confirm that products meet the purity and specification standards required by customers and regulators. ○ Review potential penalties or market rejections for non-compliance.
 6. **Perform Cost Analysis:** ○ Calculate the cost per unit of processing to achieve the desired purity using the formula:
-`Processing Cost per Unit ($/ton) = Total Processing Costs / Total Output (tons)`
+`Processing Cost per Unit ($/ton) = Total Processing Costs / Total Output`
+(tons)
 7. **Benchmark Against Industry Standards:** ○ Compare the company’s product specifications, purity levels, and processing costs with those of peer companies.
 8. **Conduct Scenario Analysis:** ○ Model the impact of changes in processing parameters, such as reagent usage or equipment upgrades, on purity and cost.
 9. **Develop Optimization Strategies:** ○ Identify opportunities to enhance processing efficiency, reduce costs, and improve product quality.

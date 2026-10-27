@@ -23,10 +23,13 @@ To evaluate the performance and profitability of the bank’s branch network by 
 
 ## 🪜 Step-by-step
 1. Measure Branch Profitability ○ Calculate net profit for each branch:
-`Net Profit = Total Revenue - Total Operating Expenses ○ Determine profitability ratio: Profitability Ratio = (Net Profit / Total Revenue) x 100`
+`Net Profit = Total Revenue - Total Operating Expenses`
+○ Determine profitability ratio:
+`Profitability Ratio = (Net Profit / Total Revenue) x 100`
 2. Analyze Revenue Streams ○ Break down revenue by product type (e.g., loans, savings accounts, credit cards) for each branch. ○ Identify high-revenue-generating branches and products.
 3. Evaluate Cost Efficiency ○ Calculate cost-to-income ratio for each branch:
-`Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100 ○ Highlight branches with high ratios for potential cost-reduction measures.`
+`Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100`
+○ Highlight branches with high ratios for potential cost-reduction measures.
 4. Assess Customer Engagement ○ Analyze customer activity levels (e.g., number of transactions, account openings) by branch. ○ Measure footfall and average transaction size to evaluate branch utilization.
 79
 5. Segment Branches by Performance ○ Classify branches into performance tiers (e.g., high-performing, average, underperforming) based on profitability, cost efficiency, and customer engagement.

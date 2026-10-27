@@ -24,9 +24,12 @@ To evaluate how behavioral economics principles influence policyholder decisions
 2. Segment Customer Data a. Categorize policyholders based on demographics, behavior, and policy types to identify segments most affected by behavioral biases.
 114 b. Compare uptake and retention patterns across these segments.
 3. Analyze Policy Uptake Trends a. Measure how pricing, incentives, and messaging influence uptake:
-`Policy Uptake Rate (%) = (Number of New Policies Sold / Total Prospects Contacted) x 100 b. Test the impact of behavioral nudges, such as limited-time offers, bundled benefits, or simplified product explanations.`
+`Policy Uptake Rate (%) = (Number of New Policies Sold / Total Prospects Contacted) x 100`
+b. Test the impact of behavioral nudges, such as limited-time offers, bundled benefits, or simplified product explanations.
 4. Evaluate Retention and Lapse Trends a. Calculate persistency and lapse rates:
-`Persistency Rate (%) = (Active Policies / Policies at Start of Period) x 100 Lapse Rate (%) = (Policies Terminated / Total Policies) x 100 b. Correlate lapses with factors such as communication frequency, incentives, or decision fatigue.`
+`Persistency Rate (%) = (Active Policies / Policies at Start of Period) x 100`
+`Lapse Rate (%) = (Policies Terminated / Total Policies) x 100`
+b. Correlate lapses with factors such as communication frequency, incentives, or decision fatigue.
 5. **Test Behavioral Interventions a. Evaluate the impact of interventions such as:** ■ Default options: Offering automatic policy renewals or bundling products. ■ Framing: Highlighting the benefits of retention (e.g., savings, protection continuity). ■ Incentives: Rewards for early renewals or multi-policy adoption. ■ Simplification: Clear, jargon-free communication and easy policy processes.
 6. Conduct A/B Testing a. Test different behavioral approaches on small customer groups: ■ Group A: Default renewal enabled vs. Group B: Manual renewal. ■ Group A: Framed messages highlighting benefits vs. Group B: Standard communication. b. Measure the differences in policy uptake, persistency rates, and response rates.
 7. **Measure Financial Impact a. Quantify changes in:** ■ Policy acquisition costs ■ Retention costs ■ Lifetime value (LTV) of policyholders after implementing behavioral strategies.

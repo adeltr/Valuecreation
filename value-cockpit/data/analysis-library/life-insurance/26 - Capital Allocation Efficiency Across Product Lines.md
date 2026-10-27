@@ -22,7 +22,9 @@ To evaluate how effectively capital is allocated across different product lines.
 ## 🪜 Step-by-step
 1. Calculate Capital Requirements for Each Product Line ○ Use the company’s internal or regulatory models to determine capital requirements for each product based on risk exposure. ○ Include components such as underwriting risk, market risk, and credit risk.
 2. Measure Product-Level Profitability ○ Calculate the profit for each product line:
-`Profit = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Costs) ○ Derive the return on allocated capital (ROAC): ROAC (%) = (Profit / Capital Allocated) x 100`
+`Profit = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Costs)`
+○ Derive the return on allocated capital (ROAC):
+`ROAC (%) = (Profit / Capital Allocated) x 100`
 3. Compare Risk-Adjusted Returns ○ Adjust profitability for risk to identify high-performing and low-performing products:
 `Risk-Adjusted Return (%) = (Profit / Capital Requirement Adjusted for Risk Exposure)`
 4. Evaluate Capital Efficiency ○ Measure capital efficiency by comparing the ROAC for each product line against company benchmarks or target thresholds. ○ Identify overcapitalized products (high capital allocation but low returns) and undercapitalized products (high returns but insufficient capital).

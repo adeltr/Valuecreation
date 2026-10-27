@@ -22,7 +22,9 @@ To evaluate the effectiveness of the company’s reinsurance strategies in manag
 
 ## 🪜 Step-by-step
 1. Analyze Reinsurance Costs and Benefits a. Calculate the ceded premium ratio to measure reinsurance cost:
-`Ceded Premium Ratio (%) = (Ceded Premium / Gross Premium Written) x 100 b. Evaluate reinsurance recoveries (claims paid by reinsurers) as a percentage of ceded premiums. c. Measure the net impact of reinsurance on profitability: Net Impact = Ceded Premium - Reinsurance Recoveries - Reinsurance Costs`
+`Ceded Premium Ratio (%) = (Ceded Premium / Gross Premium Written) x 100`
+b. Evaluate reinsurance recoveries (claims paid by reinsurers) as a percentage of ceded premiums. c. Measure the net impact of reinsurance on profitability:
+`Net Impact = Ceded Premium - Reinsurance Recoveries - Reinsurance Costs`
 2. **Assess Risk Mitigation Effectiveness:** 98 a. Compare retained claims exposure with and without reinsurance to quantify risk reduction. b. Measure reinsurance effectiveness for high-risk policies (e.g., mortality spikes, catastrophic claims).
 3. Evaluate Capital Relief and Solvency Impact a. Assess the reduction in required capital due to reinsurance arrangements, particularly under solvency frameworks such as Risk-Based Capital (RBC) or Solvency II. b. Measure the improvement in solvency ratios:
 `Solvency Ratio (%) = (Available Capital / Required Capital) x 100`

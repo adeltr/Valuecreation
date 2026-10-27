@@ -31,7 +31,8 @@ The goal of this analysis is to evaluate the financial and operational impacts o
 ## 🪜 Step-by-step
 1. **Review Applicable Fiscal Terms:** ○ Document royalty rates, tax obligations, and revenue-sharing agreements specific to each jurisdiction. ○ Identify variations based on production volume, commodity type, or market price.
 2. **Calculate Financial Obligations:** ○ Estimate royalty payments using the formula:
-`Royalty Payment = Revenue x Royalty Rate ○ Calculate tax liabilities based on corporate income tax rates and allowable deductions.`
+`Royalty Payment = Revenue x Royalty Rate`
+○ Calculate tax liabilities based on corporate income tax rates and allowable deductions.
 3. **Assess Revenue-Sharing Agreements:** ○ Analyze government participation terms, such as equity stakes or production-sharing ratios. ○ Estimate the financial impact of these agreements on net revenue.
 4. **Evaluate Compliance and Risk:** ○ Verify adherence to local laws and agreements governing royalties, taxation, and revenue sharing.
 130 ○ Identify risks of non-compliance, such as penalties or disputes with government authorities.

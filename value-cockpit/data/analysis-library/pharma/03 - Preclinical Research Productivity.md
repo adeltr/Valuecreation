@@ -30,11 +30,13 @@ The goal of Preclinical Research Productivity analysis is to evaluate how effici
 ## 🪜 Step-by-step
 1. **Data Collection:** ○ Gather historical data on the number of drug candidates entering preclinical research each year. ○ Collect information on preclinical success rates, measured as the number of drug candidates that successfully transition to clinical trials (Phase I). ○ Obtain preclinical research expenditure for the evaluation period. ○ Track time spent per drug candidate in the preclinical stage, from target identification to IND (Investigational New Drug) filing.
 2. **Calculate Preclinical Success Rate:** ○ Use the following equation to calculate the success rate:
-`Preclinical Success Rate = (Number of Candidates Entering Phase I / Number of Candidates in Preclinical Research) x 100 ○ This percentage shows the rate at which preclinical candidates are successfully progressing to clinical trials.`
+`Preclinical Success Rate = (Number of Candidates Entering Phase I / Number of Candidates in Preclinical Research) x 100`
+○ This percentage shows the rate at which preclinical candidates are successfully progressing to clinical trials.
 3. **Evaluate Productivity Metrics:** ○ Research Efficiency (Cost per Candidate): ■ This metric calculates the financial efficiency of preclinical research by determining the cost per drug candidate successfully transitioned to clinical trials:
-`Cost per Candidate = Preclinical Research Spending / Number of Candidates Entering Phase I`
-12 ■ A lower value indicates higher productivity, as the company is advancing more candidates at a lower cost. ○ Time to Preclinical Advancement: ■ This measures how quickly a company is able to advance candidates through preclinical research:
-`Time to Preclinical Advancement = Total Preclinical Duration (in months or years) / Number of Candidates Entering Phase I ■ Shorter time frames indicate higher research efficiency and faster drug development timelines.`
+`Cost per Candidate = Preclinical Research Spending / Number of`
+Candidates Entering Phase I 12 ■ A lower value indicates higher productivity, as the company is advancing more candidates at a lower cost. ○ Time to Preclinical Advancement: ■ This measures how quickly a company is able to advance candidates through preclinical research:
+`Time to Preclinical Advancement = Total Preclinical Duration (in months or years) / Number of Candidates Entering Phase I`
+■ Shorter time frames indicate higher research efficiency and faster drug development timelines.
 4. **Pipeline Output Analysis:** ○ Compare the number of successful preclinical candidates entering Phase I against the company’s historical performance and industry benchmarks. ○ Assess whether the output of viable candidates is increasing or stagnating over time, and correlate this with changes in R&D investment or strategic focus areas.
 5. **Scientific Impact Assessment:** ○ Quantify the number of publications, patents, or significant technology licenses that result from preclinical research efforts. These outputs can serve as indirect indicators of the company’s research productivity and innovation potential.
 

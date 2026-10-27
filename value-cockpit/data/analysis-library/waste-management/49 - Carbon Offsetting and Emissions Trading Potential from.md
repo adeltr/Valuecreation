@@ -35,8 +35,7 @@ To explore how waste management operations—such as landfill gas capture, compo
 144
 4. Assess financial viability Estimate the cost of implementing or enhancing emissions reduction projects. Forecast potential offset revenue based on market prices for carbon credits.
 Equation (if useful):
-`Projected Annual Offset Revenue (USD) = (Expected GHG Reductions (tonnes`
-CO2e)) x (Market Price per Tonne (USD/tonne CO2e)) - (Verification/Transaction Costs)
+`Projected Annual Offset Revenue (USD) = (Expected GHG Reductions (tonnes CO2e)) x (Market Price per Tonne (USD/tonne CO2e)) - (Verification/Transaction Costs)`
 5. Investigate emissions trading schemes Determine whether local or regional compliance markets (e.g., EU ETS, California’s Cap-and-Trade Program) accept waste-sector credits. If so, confirm project eligibility and transaction processes.
 6. Analyze risks and uncertainties Consider price volatility in carbon markets, changing regulations, and verification complexities. Include these factors in the financial projections.
 7. Develop an implementation and monitoring plan Outline how to initiate or expand emission reduction projects, compile necessary documentation, and set up monitoring and verification protocols.

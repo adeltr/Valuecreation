@@ -26,7 +26,8 @@ To evaluate the financial resilience of a life insurance company under adverse m
 3. **Apply stress scenarios to financial components:** ○ Adjust asset values to reflect market downturns. ○ Increase liabilities to simulate prolonged low-interest rates or higher claims reserves. ○ Model increased expenses and claims under inflation scenarios. ○ Simulate higher lapse rates during economic distress.
 71
 4. Calculate solvency and capital adequacy post-stress. Use the formulas:
-`Solvency Ratio (%) = (Available Capital / Required Capital) x 100 Capital Buffer = Available Capital - Required Capital`
+`Solvency Ratio (%) = (Available Capital / Required Capital) x 100`
+Capital Buffer = Available Capital - Required Capital
 5. Segment results by risk type to identify key vulnerabilities. Assess the impact on market risk, credit risk, insurance risk, and operational risk.
 6. Benchmark post-stress results against regulatory thresholds, such as Solvency II or local solvency requirements, to assess compliance.
 7. Perform trend analysis to compare results with historical stress tests and monitor changes in risk exposure.

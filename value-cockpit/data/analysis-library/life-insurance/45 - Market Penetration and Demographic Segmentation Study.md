@@ -20,7 +20,8 @@ To assess the company’s market penetration and identify opportunities for grow
 
 ## 🪜 Step-by-step
 1. Measure Current Market Penetration a. Calculate the company’s market share:
-`Market Share (%) = (Company Premium Revenue / Total Market Premium Revenue) x 100 b. Segment policy sales by geography, age group, income bracket, gender, and product type. c. Identify which customer segments have the highest and lowest penetration rates.`
+`Market Share (%) = (Company Premium Revenue / Total Market Premium Revenue) x 100`
+b. Segment policy sales by geography, age group, income bracket, gender, and product type. c. Identify which customer segments have the highest and lowest penetration rates.
 2. Analyze Demographic Segmentation a. Categorize customers into key demographic segments: ■ Age brackets: millennials, Gen X, baby boomers, retirees ■ Income levels: low, middle, high income ■ Geographic regions: urban, suburban, rural b. Evaluate the following metrics for each segment:
 134 ■ Policy sales ■ Premium volume ■ Product preferences ■ Persistency and lapse rates
 3. Identify Penetration Gaps a. Compare the company’s current penetration rates across demographic segments with the total addressable market (TAM). b. Highlight underserved or underperforming segments where market penetration is below industry norms.

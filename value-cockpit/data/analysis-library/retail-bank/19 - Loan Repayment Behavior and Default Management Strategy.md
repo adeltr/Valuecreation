@@ -28,7 +28,11 @@ Calculate the percentage of loans in each category:
 `Repayment Category Percentage = (Number of Loans in Category / Total Loans) x 100`
 2. Identify Risk Factors for Defaults ○ Examine correlations between borrower characteristics (e.g., low credit scores, high DTI ratios) and default rates. ○ Highlight loan types with higher default rates (e.g., personal loans, subprime loans).
 3. **Calculate Key Metrics:** 55 ○ Delinquency rate:
-`Delinquency Rate = (Delinquent Loans / Total Loans) x 100 ○ Default rate: Default Rate = (Defaulted Loans / Total Loans) x 100 ○ Recovery rate: Recovery Rate = (Recovered Amount from Defaults / Total Default Amount) x 100`
+`Delinquency Rate = (Delinquent Loans / Total Loans) x 100`
+○ Default rate:
+`Default Rate = (Defaulted Loans / Total Loans) x 100`
+○ Recovery rate:
+`Recovery Rate = (Recovered Amount from Defaults / Total Default Amount) x 100`
 4. Conduct Trend Analysis ○ Track changes in repayment behavior and default rates over time to identify trends or seasonal variations. ○ Assess the impact of external factors (e.g., economic downturns) on default patterns.
 5. **Evaluate Default Management Strategies:** Review the effectiveness of existing default management measures, such as:
 - Early warning systems to identify at-risk borrowers.

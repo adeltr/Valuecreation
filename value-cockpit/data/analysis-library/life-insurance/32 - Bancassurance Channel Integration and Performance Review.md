@@ -22,13 +22,15 @@ To evaluate the performance and integration of the bancassurance channel in dist
 ## 🪜 Step-by-step
 1. Measure Bancassurance Premium Revenue a. Calculate total premium revenue generated through bancassurance partnerships. b. Compare premium contribution of bancassurance to other distribution channels.
 2. Evaluate Cost Efficiency a. Measure acquisition and servicing costs for bancassurance policies:
-`Cost per Policy = Total Bancassurance Costs / Number of Policies Sold`
-92 b. Calculate the cost ratio:
+`Cost per Policy = Total Bancassurance Costs / Number of Policies`
+Sold 92 b. Calculate the cost ratio:
 `Cost Ratio (%) = (Total Bancassurance Costs / Premium Revenue) x 100`
 3. Analyze Conversion and Productivity Metrics a. Calculate conversion rates for leads generated through bank referrals:
-`Conversion Rate (%) = (Policies Sold / Total Leads Generated) x 100 b. Assess bank staff productivity by measuring average policies sold per branch or salesperson.`
+`Conversion Rate (%) = (Policies Sold / Total Leads Generated) x 100`
+b. Assess bank staff productivity by measuring average policies sold per branch or salesperson.
 4. Assess Persistency and Lapse Rates a. Measure persistency rates at different intervals (e.g., 13-month, 25-month) for policies sold via bancassurance:
-`Persistency Rate (%) = (Active Policies / Total Policies Sold) x 100 b. Identify lapse trends and compare with other channels.`
+`Persistency Rate (%) = (Active Policies / Total Policies Sold) x 100`
+b. Identify lapse trends and compare with other channels.
 5. Segment Bancassurance Performance by Product a. Analyze product mix sold through bancassurance (e.g., savings plans, unit-linked products, protection plans). b. Measure profitability and persistency by product to identify high-performing offerings.
 6. Evaluate Integration with Bank Partners a. Assess the level of operational integration, such as: ■ Effectiveness of training programs for bank staff. ■ Use of digital tools for policy issuance, tracking, and servicing. ■ Efficiency of cross-selling initiatives between banking and insurance products.
 7. Benchmark Performance a. Compare bancassurance premium revenue, cost ratios, persistency rates, and ROI with industry standards. b. Evaluate partnership performance against competitors.

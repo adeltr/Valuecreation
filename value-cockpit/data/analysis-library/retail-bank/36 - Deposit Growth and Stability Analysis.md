@@ -22,15 +22,20 @@ To assess the growth and stability of the bank’s deposit base by analyzing tre
 
 ## 🪜 Step-by-step
 1. Calculate Deposit Growth Rate ○ Use the formula:
-`Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100 ○ Segment growth rates by account type and customer demographics.`
+`Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100`
+○ Segment growth rates by account type and customer demographics.
 2. Assess Deposit Stability ○ Calculate deposit turnover ratio:
-`Deposit Turnover Ratio = (Withdrawals / Total Deposit Balance) x 100 ○ Measure account attrition rate: Attrition Rate = (Number of Closed Accounts / Total Accounts) x 100`
+`Deposit Turnover Ratio = (Withdrawals / Total Deposit Balance) x 100`
+○ Measure account attrition rate:
+`Attrition Rate = (Number of Closed Accounts / Total Accounts) x 100`
 3. Analyze Deposit Composition ○ Determine the percentage of deposits in each category (e.g., savings, term deposits):
-`Deposit Composition = (Balance of Deposit Type / Total Deposit Balance) x 100 ○ Identify the contribution of high-value accounts to total deposits.`
+`Deposit Composition = (Balance of Deposit Type / Total Deposit Balance)`
+x 100 ○ Identify the contribution of high-value accounts to total deposits.
 4. Monitor Trends Over Time ○ Track changes in deposit balances and growth rates to identify seasonal or long-term trends. ○ Correlate trends with external factors such as interest rate changes or economic conditions.
 106
 5. Evaluate Cost of Deposits ○ Calculate the weighted average cost of deposits (WACD):
-`WACD = (Total Interest Expense on Deposits / Average Deposit Balance) x 100 ○ Compare the WACD across deposit types to identify cost-effective funding sources.`
+`WACD = (Total Interest Expense on Deposits / Average Deposit Balance)`
+x 100 ○ Compare the WACD across deposit types to identify cost-effective funding sources.
 6. Benchmark Against Competitors ○ Compare deposit growth rates, stability metrics, and cost of deposits with industry averages. ○ Highlight areas where the bank’s performance lags behind or excels.
 7. Identify Risks and Opportunities ○ Highlight high-attrition segments or deposit types that may indicate instability. ○ Identify opportunities to attract more deposits, such as promotional offers or new products.
 8. Develop Strategies for Growth and Retention ○ Recommend targeted initiatives to attract new deposits, such as loyalty programs or competitive interest rates. ○ Propose retention strategies for high-value depositors, such as relationship management or personalized offers.

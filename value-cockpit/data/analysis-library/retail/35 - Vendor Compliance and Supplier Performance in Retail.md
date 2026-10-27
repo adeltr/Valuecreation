@@ -31,11 +31,14 @@ The goal of the Vendor Compliance and Supplier Performance Analysis is to evalua
 ## 🪜 Step-by-step
 1. **Collect supplier performance data:** Gather data on delivery timelines, order accuracy, ﬁll rates, and product quality for each supplier over a deﬁned period (e.g., monthly or quarterly).
 2. **Calculate delivery compliance:** Use the following formula to calculate the percentage of on-time deliveries:
-`Delivery Compliance (%) = (Number of On-Time Deliveries / Total Deliveries) x 100 This shows how reliably a supplier meets delivery deadlines.`
+`Delivery Compliance (%) = (Number of On-Time Deliveries / Total Deliveries) x 100`
+This shows how reliably a supplier meets delivery deadlines.
 3. **Measure order accuracy:** Calculate the order accuracy rate using this formula:
-`Order Accuracy (%) = (Number of Correct Orders / Total Orders) x 100 This indicates how often suppliers are delivering the correct products, in the right quantities and speciﬁcations.`
+`Order Accuracy (%) = (Number of Correct Orders / Total Orders) x 100`
+This indicates how often suppliers are delivering the correct products, in the right quantities and speciﬁcations.
 4. **Evaluate vendor ﬁll rates:** Use this formula to calculate the ﬁll rate:
-`Vendor Fill Rate (%) = (Number of Items Delivered / Number of Items Ordered) x 100 This metric shows the percentage of an order that a supplier fulﬁlled completely.`
+`Vendor Fill Rate (%) = (Number of Items Delivered / Number of Items Ordered) x 100`
+This metric shows the percentage of an order that a supplier fulﬁlled completely.
 5. **Assess product quality:** Analyze data on product returns, defects, or customer complaints related to supplier products. Calculate the defect rate as follows:
 `Defect Rate (%) = (Number of Defective Products / Total Products Received) x 100`
 6. **Compare supplier lead times:** Evaluate the average time between placing an order and receiving products from each supplier. Shorter lead times may indicate higher e9iciency, while longer lead times may suggest delays or ine9iciencies in the supply chain.

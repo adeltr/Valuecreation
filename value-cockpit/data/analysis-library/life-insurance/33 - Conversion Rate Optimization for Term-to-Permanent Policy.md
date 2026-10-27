@@ -24,7 +24,8 @@ To evaluate and improve the conversion rate of term life insurance policies to p
 2. **Segment Policyholders ○ Group term policyholders by key demographics:** age, income level, geography, and policy duration. ○ Identify segments with high and low conversion rates to uncover patterns.
 3. Analyze Financial Impact of Conversions ○ Compare premium growth, profitability, and persistency of converted policies:
 95
-`Premium Growth (%) = [(New Premium - Term Premium) / Term Premium] x 100 ○ Measure the lifetime value (LTV) of converted policies to assess long-term financial benefits.`
+`Premium Growth (%) = [(New Premium - Term Premium) / Term`
+Premium] x 100 ○ Measure the lifetime value (LTV) of converted policies to assess long-term financial benefits.
 4. Evaluate Conversion Barriers ○ Analyze policyholder communication records and sales feedback to identify common objections, such as affordability, lack of awareness, or perceived product value. ○ Assess the role of distribution channels in addressing or failing to address these barriers.
 5. Assess Distribution Channel Performance ○ Compare conversion rates across channels, including agents, brokers, and digital platforms. ○ Identify which channels are most effective at driving conversions and which require optimization.
 6. Review Incentives and Offers ○ Evaluate the success of incentives or communication campaigns (e.g., premium discounts, simplified underwriting) in improving conversion rates. ○ Test the impact of offers using historical campaign data and policyholder responses.

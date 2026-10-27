@@ -31,9 +31,12 @@ The goal of this analysis is to assess the capacity, efficiency, and cost-effect
 
 ## 🪜 Step-by-step
 1. **Evaluate Capacity Utilization:** ○ Measure the ratio of actual throughput to designed capacity using the formula:
-`Capacity Utilization (%) = (Actual Throughput / Designed Capacity) x 100 ○ Identify underutilized or overstrained facilities.`
+`Capacity Utilization (%) = (Actual Throughput / Designed Capacity) x 100`
+○ Identify underutilized or overstrained facilities.
 2. **Assess Efficiency Metrics:** ○ Calculate recovery rates for key metals:
-`Recovery Rate (%) = (Metal Recovered / Metal Input) x 100 ○ Analyze energy efficiency using the formula: Energy Efficiency (kffh/ton) = Total Energy Consumed / Tons of Output`
+`Recovery Rate (%) = (Metal Recovered / Metal Input) x 100`
+○ Analyze energy efficiency using the formula:
+`Energy Efficiency (kffh/ton) = Total Energy Consumed / Tons of Output`
 3. **Analyze Operational Costs:** ○ Calculate the cost per ton of smelted and refined metal:
 `Cost per Ton ($/ton) = Total Operational Costs / Total Output (tons)`
 4. **Review Material Flow and Losses:** ○ Track material flow through each stage, from input ore or concentrates to final refined product. ○ Quantify and analyze losses or waste (e.g., slag, dust, emissions).

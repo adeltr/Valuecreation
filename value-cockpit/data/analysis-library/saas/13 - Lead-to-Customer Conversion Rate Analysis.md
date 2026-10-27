@@ -29,8 +29,8 @@ The goal of Lead-to-Customer Conversion Rate analysis is to measure the percenta
 2. **Collect the total number of leads generated:** Gather the total number of leads generated during the selected period. This data is typically available from your CRM or lead management system. Leads may include trial users, demo requests, or qualiﬁed leads generated from marketing campaigns.
 3. **Identify the number of leads that converted to paying customers:** Track the number of leads from the same period that successfully converted to paying customers. This is often found in your sales or customer onboarding system.
 4. **Calculate the Lead-to-Customer Conversion Rate:** Use the following formula to calculate the conversion rate:
-`Lead-to-Customer Conversion Rate (%) = (Number of Leads Converted to Customers / Total`
-Number of Leads) x 100 For example, if you generated 1,000 leads in a month and 50 of them became paying customers, the conversion rate would be:
+`Lead-to-Customer Conversion Rate (%) = (Number of Leads Converted to Customers / Total Number of Leads) x 100`
+For example, if you generated 1,000 leads in a month and 50 of them became paying customers, the conversion rate would be:
 `Lead-to-Customer Conversion Rate (%) = (50 / 1,000) x 100 = 5%`
 42
 

@@ -32,7 +32,8 @@ To ensure that generation and grid resources are sufficient to meet electricity 
 1. **Analyze Seasonal Demand Patterns:** ○ Use historical demand data to identify seasonal variations in electricity consumption. ○ Forecast seasonal peak and trough demand levels for future periods.
 2. **Assess Generation Resource Availability:** ○ Compile data on generation capacity and seasonal availability, accounting for planned outages and maintenance. ○ Evaluate the reliability of intermittent resources (e.g., solar, wind) during each season.
 3. **Calculate Reserve Margins:** ○ Determine the reserve margin for each season:
-`Reserve Margin (%) = [(Total Available Capacity - Peak Demand) / Peak Demand] x 100 ○ Compare calculated margins to regulatory requirements or best practices.`
+`Reserve Margin (%) = [(Total Available Capacity - Peak Demand) / Peak`
+Demand] x 100 ○ Compare calculated margins to regulatory requirements or best practices.
 4. **Evaluate Flexibility Resources:** ○ Assess the availability and responsiveness of flexible resources, such as peaking plants, energy storage, and demand response programs. ○ Quantify their contribution to meeting seasonal peak demand.
 5. Identify Potential Shortfalls:
 111 ○ Simulate scenarios where demand exceeds available capacity due to extreme weather, fuel supply constraints, or renewable intermittency. ○ Highlight periods with high risk of resource inadequacy.

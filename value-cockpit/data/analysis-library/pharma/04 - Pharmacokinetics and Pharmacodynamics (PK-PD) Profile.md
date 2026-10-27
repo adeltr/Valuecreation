@@ -32,7 +32,8 @@ The goal of PK/PD Profile Analysis is to evaluate the relationship between the c
 ## 🪜 Step-by-step
 1. **Data Collection:** ○ Obtain PK data from preclinical studies (animal models) and clinical trials (Phase I and II). This includes measurements of how the drug is absorbed, distributed, metabolized, and excreted over time. ○ Gather PD data to understand the drug's biological effect on the body, which may include receptor binding assays, biomarkers, and patient outcomes from clinical trials.
 2. **Plot the PK Profile:** ○ Plot the drug concentration over time to generate a time-concentration curve. Key metrics to calculate include: ■ Cmax: The maximum concentration of the drug in the bloodstream. ■ Tmax: The time at which the drug reaches Cmax. ■ AUC (Area Under the Curve): This represents the total drug exposure
-`over time and can be calculated using: AUC = Integral of the concentration-time curve`
+`over time and can be calculated using: AUC = Integral of the`
+concentration-time curve
 3. Analyze Drug Absorption and Distribution:
 15 ○   Evaluate the rate and extent of drug absorption into the bloodstream (bioavailability). ○ Examine how the drug is distributed to tissues, particularly the target organs. Drugs with poor distribution to target tissues may require higher doses or reformulation.
 4.   **Evaluate Drug Metabolism and Excretion:** ○ Assess how quickly the drug is metabolized and eliminated from the body. Short half-lives may require more frequent dosing, while long half-lives may indicate a risk of accumulation or toxicity.

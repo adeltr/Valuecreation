@@ -33,12 +33,14 @@ The goal of this analysis is to evaluate the quality of the ore grade and the ef
 3. **Analyze Historical Recovery Rates:** ○ Review historical recovery data from the processing plant to establish benchmarks.
 ○ Identify any deviations or inefficiencies in current recovery processes.
 4. **Calculate Recovery Rate:** ○ Use the formula:
-`Recovery Rate (%) = (Recovered Metal / Contained Metal in Ore) x 100 ○ Calculate this rate for individual processing steps and overall plant performance.`
+`Recovery Rate (%) = (Recovered Metal / Contained Metal in Ore) x 100`
+○ Calculate this rate for individual processing steps and overall plant performance.
 5. Perform Grade-Recovery Relationship Analysis:
 25 ○ Plot ore grade against recovery rates to identify patterns, such as diminishing returns for lower grades. ○ Use regression analysis to determine the optimal grade range for economic recovery.
 6. **Assess Metallurgical Test Results:** ○ Review laboratory tests to evaluate the effectiveness of alternative processing methods, such as flotation, leaching, or gravity separation.
 7. **Conduct Economic Analysis:** ○ Calculate the recoverable value per ton of ore using the formula:
-`Recoverable Value = (Grade x Recovery Rate x Commodity Price). ○ Compare recoverable value to processing costs to assess economic viability.`
+`Recoverable Value = (Grade x Recovery Rate x Commodity Price).`
+○ Compare recoverable value to processing costs to assess economic viability.
 8. **Benchmark Performance:** ○ Compare ore grades and recovery rates with industry averages or peer companies to evaluate competitiveness.
 9. **Identify Improvement Opportunities:** ○ Highlight areas for improvement, such as optimizing process parameters or upgrading equipment.
 

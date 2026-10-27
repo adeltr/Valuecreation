@@ -30,13 +30,17 @@ The goal of Cross-Selling and Up-Selling E9ectiveness Analysis is to evaluate ho
 ## 🪜 Step-by-step
 1. **Collect transaction and sales data:** Start by gathering sales transaction data that includes details on items purchased, the total order value, and any additional products sold as part of cross-selling or up-selling e9orts.
 2. **Calculate the average order value (AOV):** Measure the AOV before and after cross-selling and up-selling e9orts to assess the impact on sales:
-`AOV = Total Sales Revenue / Number of Transactions Compare this metric over a period when cross-selling or up-selling strategies were in place to periods when they were not.`
+`AOV = Total Sales Revenue / Number of Transactions`
+Compare this metric over a period when cross-selling or up-selling strategies were in place to periods when they were not.
 3. **Measure the percentage of transactions involving cross-sells or up-sells:** Calculate the percentage of total transactions that included cross-sell or up-sell items:
-`Cross-Sell/Up-Sell Transactions (%) = (Number of Transactions with Cross-Sell or Up-Sell Items / Total Transactions) x 100 This shows how often customers are purchasing additional or higher-value items as a result of these e9orts.`
+`Cross-Sell/Up-Sell Transactions (%) = (Number of Transactions with Cross-Sell or Up-Sell Items / Total Transactions) x 100`
+This shows how often customers are purchasing additional or higher-value items as a result of these e9orts.
 4. **Analyze sales uplift due to cross-selling and up-selling:** Measure the increase in revenue attributed to cross-selling or up-selling:
-`Sales Uplift (%) = ((Total Sales from Cross-Sell/Up-Sell Transactions - Sales Without Cross- Sell/Up-Sell) / Sales Without Cross-Sell/Up-Sell) x 100 This metric helps quantify the impact of cross-selling and up-selling on overall revenue.`
+`Sales Uplift (%) = ((Total Sales from Cross-Sell/Up-Sell Transactions - Sales Without Cross- Sell/Up-Sell) / Sales Without Cross-Sell/Up-Sell) x 100`
+This metric helps quantify the impact of cross-selling and up-selling on overall revenue.
 5. **Evaluate gross proﬁt margin (optional):** If proﬁtability is a concern, calculate the gross proﬁt margin for cross-sell and up-sell items to assess their contribution to proﬁt:
-`Gross Proﬁt Margin (%) = ((Revenue - Cost of Goods Sold) / Revenue) x 100 Comparing the margins on cross-sell or up-sell items to other products can help determine if these strategies are contributing to overall proﬁtability.`
+`Gross Proﬁt Margin (%) = ((Revenue - Cost of Goods Sold) / Revenue) x 100`
+Comparing the margins on cross-sell or up-sell items to other products can help determine if these strategies are contributing to overall proﬁtability.
 6. **Segment analysis by product or customer type (optional):** If available, segment cross-selling and up-selling data by product category or customer type to identify which items or customer groups respond best to these strategies. This can help tailor future e9orts to maximize e9ectiveness.
 Potential complications that can arise with this analysis •   Customer dissatisfaction: Aggressive cross-selling or up-selling strategies may lead to customer frustration if they feel pressured or if the suggested products are irrelevant.
 •   Impact on proﬁtability: Up-selling to higher-margin products can increase proﬁtability, but up-selling or cross-selling low-margin items may reduce overall proﬁtability despite higher sales.

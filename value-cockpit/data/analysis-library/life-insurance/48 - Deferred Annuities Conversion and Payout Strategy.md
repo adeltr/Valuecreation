@@ -20,11 +20,13 @@ To evaluate the performance and effectiveness of the company's deferred annuitie
 
 ## 🪜 Step-by-step
 1. Measure Deferred Annuities Conversion Rate a. Calculate the percentage of deferred annuities converted to the payout phase:
-`Conversion Rate (%) = (Number of Annuities Converted / Total Eligible Annuities) x 100 b. Segment conversion rates by demographics, policy duration, and payout option chosen.`
+`Conversion Rate (%) = (Number of Annuities Converted / Total Eligible Annuities) x 100`
+b. Segment conversion rates by demographics, policy duration, and payout option chosen.
 2. Analyze Payout Option Selection a. Categorize converted policies based on payout choices:
 143 ■ Life-only annuity ■ Period-certain annuity (e.g., 10 years, 20 years) ■ Lump sum withdrawals b. Evaluate trends in policyholder preferences across age, gender, and income levels.
 3. Assess Financial Performance of Conversions a. Compare expected vs. actual cash flow outcomes post-conversion. b. Calculate the profit margin for converted policies:
-`Profit Margin (%) = [(Present Value of Premiums - Present Value of Payouts - Expenses) / Present Value of Premiums] x 100 c. Assess the impact of payout option selection on reserves, liquidity, and profitability.`
+`Profit Margin (%) = [(Present Value of Premiums - Present Value of Payouts - Expenses) / Present Value of Premiums] x 100`
+c. Assess the impact of payout option selection on reserves, liquidity, and profitability.
 4. Evaluate Conversion Trends a. Analyze trends in conversion rates over time to identify factors influencing policyholder decisions, such as: ■ Communication effectiveness (e.g., reminders and incentives) ■ Economic conditions influencing lump sum withdrawals ■ Competitive payout rates relative to market standards
 5. Conduct Mortality Experience Analysis a. Compare actual mortality rates of converted policies with assumptions used in reserve calculations. b. Identify deviations and their financial impact on payout sustainability.
 6. Benchmark Conversion Rates and Payout Options a. Compare the company’s annuity conversion rates, payout strategies, and customer choices with industry benchmarks. b. Highlight areas where conversion performance lags competitors or industry averages.

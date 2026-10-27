@@ -34,15 +34,22 @@ The goal of a Distributor and Wholesaler Performance Analysis in the consumer pa
 ## 🪜 Step-by-step
 1. **Define the objectives of the analysis:** Establish clear goals for evaluating distributor and wholesaler performance. Objectives may include improving sales growth through better distribution, reducing stockouts, improving order fulfillment accuracy, and ensuring timely delivery. For example, a goal could be to improve on-time delivery rates by 10% while reducing stockouts at distributor warehouses.
 2. **Collect sales data by distributor and wholesaler:** Gather sales data for each distributor and wholesaler, including revenue generated, volume of products sold, and market share contribution. Analyze how each distributor or wholesaler contributes to overall sales growth and whether they meet sales targets. The formula for sales growth is:
-`Sales Growth (%) = ((Current Sales - Previous Sales) / Previous Sales) x 100 For example, if a distributor’s sales grew from $1 million to $1.2 million: Sales Growth = (($1.2 million - $1 million) / $1 million) x 100 = 20%`
+`Sales Growth (%) = ((Current Sales - Previous Sales) / Previous Sales) x 100`
+For example, if a distributor’s sales grew from $1 million to $1.2 million:
+`Sales Growth = (($1.2 million - $1 million) / $1 million) x 100 = 20%`
 3. **Evaluate order accuracy and fulfillment rates:** Measure how accurately distributors and wholesalers fulfill orders by comparing orders placed to orders delivered. Inaccuracies or incomplete orders can lead to lost sales and customer dissatisfaction. The formula for order fulfillment rate is:
-`Order Fulfillment Rate (%) = (Number of Orders Fulfilled Correctly / Total Number of Orders) x 100 For example, if 950 out of 1,000 orders were fulfilled correctly: Order Fulfillment Rate = (950 / 1,000) x 100 = 95%`
+`Order Fulfillment Rate (%) = (Number of Orders Fulfilled Correctly / Total Number of Orders) x 100`
+For example, if 950 out of 1,000 orders were fulfilled correctly:
+`Order Fulfillment Rate = (950 / 1,000) x 100 = 95%`
 4. **Track on-time delivery performance:** Review on-time delivery rates for each distributor and wholesaler. Timely delivery ensures that products are available for sale at retail locations when needed, minimizing stockouts and lost sales. The formula for on-time delivery rate is:
 `On-time Delivery Rate (%) = (Number of On-time Deliveries / Total Number of Deliveries) x 100`
 185 For example, if a wholesaler made 480 out of 500 deliveries on time:
-`On-time Delivery Rate = (480 / 500) x 100 = 96% High on-time delivery rates indicate that the distributor or wholesaler is reliable in getting products to market as scheduled.`
+`On-time Delivery Rate = (480 / 500) x 100 = 96%`
+High on-time delivery rates indicate that the distributor or wholesaler is reliable in getting products to market as scheduled.
 5. **Analyze inventory turnover and stock levels:** Assess how efficiently distributors and wholesalers manage their inventory levels by calculating inventory turnover rates. A low turnover rate may indicate overstocking or inefficiencies in demand forecasting, while a high turnover rate suggests that products are moving efficiently through the supply chain. The formula for inventory turnover is:
-`Inventory Turnover = Cost of Goods Sold (COGS) / Average Inventory For example, if a distributor had $500,000 in COGS and an average inventory value of $250,000: Inventory Turnover = $500,000 / $250,000 = 2`
+`Inventory Turnover = Cost of Goods Sold (COGS) / Average Inventory`
+For example, if a distributor had $500,000 in COGS and an average inventory value of $250,000:
+`Inventory Turnover = $500,000 / $250,000 = 2`
 6. **Monitor stockout frequency and lead times:** Track how often distributors and wholesalers experience stockouts and measure the lead times for restocking products. Frequent stockouts or long lead times can disrupt the supply chain and result in lost sales. By reducing stockouts and improving lead times, distributors can ensure product availability.
 7. **Assess promotional execution and compliance:** Evaluate how well distributors and wholesalers execute promotions and adhere to promotional agreements. This includes ensuring that promotional materials are in place, discounts are applied correctly, and marketing efforts are consistent with the company’s strategies. Track sales uplift during promotions to determine the effectiveness of distributor support.
 8. **Review return rates and product defects:** Analyze return rates and product defects for products delivered by distributors and wholesalers. High return rates may indicate issues with product handling, transportation, or storage, leading to damaged goods. The formula for return rate is:

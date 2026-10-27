@@ -31,7 +31,8 @@ To measure customer loyalty and retention for wine, beer, and spirits brands, id
 
 ## 🪜 Step-by-step
 1. **Calculate Key Retention Metrics ○ Measure repeat purchase rates:** Repeat Purchase Rate (%) = (Number of Repeat Customers / Total Customers) x 100. ○ Calculate customer lifetime value (CLV):
-`CLV = (Average Purchase Value x Purchase Frequency) x Average Customer Lifespan.`
+`CLV = (Average Purchase Value x Purchase Frequency) x Average`
+Customer Lifespan.
 2. Segment Customer Base ○ Group customers by purchasing behavior, such as frequent buyers, occasional buyers, and one-time buyers. ○ Analyze retention rates within each segment to identify trends and opportunities.
 3. Analyze Churn Rate ○ Calculate churn rates across channels and customer segments. ○ Identify periods of high churn and potential contributing factors.
 4. **Evaluate Loyalty Program Effectiveness:** 136 ○ Assess the impact of loyalty program participation on retention rates and repeat purchases. ○ Measure loyalty program engagement, such as points redemption or referrals.

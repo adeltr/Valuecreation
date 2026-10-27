@@ -32,12 +32,15 @@ The goal of this analysis is to assess how the physical atmosphere and overall c
 ## 🪜 Step-by-step
 1. **Collect sales and foot traMic data:** Gather historical sales data for the store(s) you are analyzing, along with foot tra9ic data to establish a baseline. This will help you measure the impact of changes in the store atmosphere on overall sales. Track these metrics over a speciﬁc period (e.g., daily, weekly, or monthly).
 2. **Measure customer dwell time:** Use sensors, video analytics, or surveys to measure how long customers spend in the store. Calculate the average customer dwell time using this formula:
-`Average Dwell Time = Total Time Spent by All Customers / Total Number of Customers This will help establish how long customers typically stay and whether there is a correlation between dwell time and sales.`
+`Average Dwell Time = Total Time Spent by All Customers / Total Number of Customers`
+This will help establish how long customers typically stay and whether there is a correlation between dwell time and sales.
 3. **Analyze sales per minute of dwell time:** Calculate the sales generated relative to the time customers spend in the store to see how dwell time a9ects spending:
-`Sales per Minute of Dwell Time = Total Sales / Total Dwell Time This metric will allow you to assess whether customers who stay longer tend to spend more.`
+`Sales per Minute of Dwell Time = Total Sales / Total Dwell Time`
+This metric will allow you to assess whether customers who stay longer tend to spend more.
 4. **Conduct atmosphere changes (optional):** If you are testing speciﬁc changes in store atmosphere (e.g., new lighting, music, or scent), document the changes and their timing. Apply changes to select stores or departments and track the impact on sales and dwell time.
 5. **Evaluate the impact on sales:** Compare sales data before and after the atmosphere changes or correlate sales performance with periods of longer customer dwell time. Use this formula to calculate the change in sales:
-`Sales Change (%) = ((Sales After Atmosphere Change - Sales Before Atmosphere Change) / Sales Before Atmosphere Change) x 100 This will indicate whether atmosphere modiﬁcations positively impact sales.`
+`Sales Change (%) = ((Sales After Atmosphere Change - Sales Before Atmosphere Change) / Sales Before Atmosphere Change) x 100`
+This will indicate whether atmosphere modiﬁcations positively impact sales.
 6. **Collect customer feedback on store experience (optional):** Use customer surveys or feedback tools to gather insights into how customers perceive the store atmosphere. Questions can focus on aspects such as lighting, music, layout, and employee interactions, and their overall satisfaction.
 7. **Analyze layout and high-traMic areas (optional):** If data is available, analyze customer movement patterns and identify high-tra9ic areas in the store. Determine whether speciﬁc parts of the store with better visual merchandising or atmosphere enhancements lead to higher sales.
 8. **Assess employee-customer interactions (optional):** If relevant, measure the number of employee-customer interactions and compare this to sales. Customer service and interactions can play a signiﬁcant role in enhancing the shopping experience and potentially boosting sales.

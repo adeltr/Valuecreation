@@ -37,10 +37,14 @@ The goal of a Brand Portfolio Analysis is to assess the performance, alignment, 
 5. **Evaluate brand performance vs. competition:** Conduct a competitive analysis for each brand by comparing their market share, pricing strategy, and consumer perception with competitors' brands in the same category. Look for gaps where the company’s brands underperform relative to competitors.
 6. **Identify gaps and overlaps:** Using the data from previous steps, determine if any brands are underperforming in terms of revenue or consumer perception. Also, identify if multiple brands are competing against each other in similar categories, which may cause internal competition or brand dilution.
 7. **Calculate brand contribution:** Determine each brand’s contribution to overall portfolio performance. This can be done using the formula:
-`Brand Contribution = (Brand Revenue / Total Portfolio Revenue) x 100 For example, if Brand A generates $50 million in revenue, and the total portfolio revenue is $250 million, the contribution of Brand A would be: Brand Contribution = ($50 million / $250 million) x 100 = 20%`
+`Brand Contribution = (Brand Revenue / Total Portfolio Revenue) x 100`
+For example, if Brand A generates $50 million in revenue, and the total portfolio revenue is $250 million, the contribution of Brand A would be:
+`Brand Contribution = ($50 million / $250 million) x 100 = 20%`
 7
 8. **Analyze profitability and marketing efficiency:** Compare each brand’s profit margins against marketing and promotional spend to identify whether any brands are over-invested or under-invested. The formula for Return on Marketing Investment (ROMI) can be calculated as:
-`ROMI = (Brand Revenue - Marketing Spend) / Marketing Spend x 100 For example, if Brand B generates $30 million in revenue and spends $5 million on marketing, ROMI would be: ROMI = ($30 million - $5 million) / $5 million x 100 = 500%`
+`ROMI = (Brand Revenue - Marketing Spend) / Marketing Spend x 100`
+For example, if Brand B generates $30 million in revenue and spends $5 million on marketing, ROMI would be:
+`ROMI = ($30 million - $5 million) / $5 million x 100 = 500%`
 9. **Summarize strategic insights:** Based on the findings, summarize key insights regarding underperforming brands, potential for portfolio consolidation, areas for brand growth, and market opportunities for brand repositioning or expansion.
 
 

@@ -31,7 +31,8 @@ To evaluate the efficiency of the provider credentialing and privileging process
 
 ## 🪜 Step-by-step
 1. Measure average processing time Calculate the time taken to complete credentialing and privileging processes for each provider. Equation:
-`Average Processing Time = Total Time for All Applications / Number of Applications Processed.`
+`Average Processing Time = Total Time for All Applications / Number of`
+Applications Processed.
 2. Assess success rates Evaluate the proportion of applications successfully completed versus those delayed or rejected. Equation:
 `Success Rate (%) = (Number of Completed Applications / Total Applications) x 100.`
 3. Segment data by provider role and specialty Analyze processing times and success rates by provider specialty or role to identify areas requiring improvement.
@@ -39,7 +40,8 @@ To evaluate the efficiency of the provider credentialing and privileging process
 84
 5. Evaluate compliance with standards Review adherence to regulatory and accreditation standards for credentialing and privileging processes.
 6. Analyze cost efficiency Assess costs associated with credentialing, including administrative labor and external verification services. Equation:
-`Cost per Credentialed Provider = Total Credentialing Costs / Number of Providers Credentialed.`
+`Cost per Credentialed Provider = Total Credentialing Costs / Number of Providers`
+Credentialed.
 7. Benchmark against industry standards Compare internal timelines, success rates, and costs with benchmarks to identify gaps.
 8. Summarize findings Highlight average processing times, reasons for delays, and areas where efficiency improvements or compliance enhancements are needed.
 

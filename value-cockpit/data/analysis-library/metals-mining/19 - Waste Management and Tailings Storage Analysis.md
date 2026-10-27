@@ -34,7 +34,8 @@ The goal of this analysis is to evaluate the effectiveness and safety of waste m
 3. **Analyze Environmental Impacts:** ○ Examine environmental monitoring data to identify impacts on water, soil, and air quality. ○ Assess the effectiveness of containment systems in preventing contamination.
 4. **Assess Waste Management Costs:** ○ Calculate costs for waste handling, storage, and treatment using the formula:
 58
-`Cost per Unit ($/ton) = Total Waste Management Cost / Total Waste Generated`
+`Cost per Unit ($/ton) = Total Waste Management Cost / Total Waste`
+Generated
 5. **Review Compliance and Risk Factors:** ○ Verify adherence to local, national, and international regulations. ○ Identify potential risks, such as TSF breaches or non-compliance with waste management standards.
 6. **Benchmark Against Industry Practices:** ○ Compare the company’s waste and tailings management practices with those of peer companies.
 7. **Conduct Scenario Analysis:** ○ Simulate the effects of alternative waste management methods or technologies on costs and environmental impacts.

@@ -27,12 +27,14 @@ The goal of the Inventory Turnover and Management Analysis is to evaluate how e9
 
 ## 🪜 Step-by-step
 1. Calculate the average inventory for the period:
-`Average Inventory = (Beginning Inventory + Ending Inventory) / 2 This gives a more accurate reﬂection of the inventory levels across the period rather than just using one data point.`
+`Average Inventory = (Beginning Inventory + Ending Inventory) / 2`
+This gives a more accurate reﬂection of the inventory levels across the period rather than just using one data point.
 2. **Obtain Cost of Goods Sold (COGS):** COGS can be found on the company’s income statement. It represents the direct costs attributable to the production of the goods sold by the company.
 3. **Calculate the inventory turnover ratio:** Use the following formula to determine inventory turnover:
 `Inventory Turnover = COGS / Average Inventory`
 4. **Determine the inventory turnover in days:** To understand how long it takes, on average, to sell the inventory, use this formula:
-`Days in Inventory = (365 / Inventory Turnover) This calculates the average number of days that inventory remains unsold.`
+`Days in Inventory = (365 / Inventory Turnover)`
+This calculates the average number of days that inventory remains unsold.
 5. **Analyze by category (optional):** If more detailed data is available, calculate the inventory turnover for di9erent product categories. This helps identify fast-moving vs. slow-moving items, allowing for more precise management.
 Potential complications that can arise with this analysis •   Seasonality: Retail businesses often experience ﬂuctuations in demand due to seasonal events, which can distort inventory turnover results if not adjusted properly.
 •   Stockouts: High inventory turnover might sometimes indicate stockouts, which result in missed sales opportunities. This can falsely signal good performance.

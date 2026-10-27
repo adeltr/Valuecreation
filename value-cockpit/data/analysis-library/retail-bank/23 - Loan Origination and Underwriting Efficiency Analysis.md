@@ -22,13 +22,18 @@ To evaluate the efficiency and effectiveness of the loan origination and underwr
 
 ## 🪜 Step-by-step
 1. Measure Loan Processing Times ○ Calculate average time from application submission to approval or rejection:
-`Average Processing Time = (Total Time for All Applications / Total Number of Applications) ○ Segment processing times by loan type and customer profile to identify variations.`
+`Average Processing Time = (Total Time for All Applications / Total Number of Applications)`
+○ Segment processing times by loan type and customer profile to identify variations.
 2. Evaluate Underwriting Efficiency ○ Measure underwriting time per loan:
-`Average Underwriting Time = (Total Underwriting Time / Total Loans Processed) ○ Calculate underwriting productivity: Underwriter Productivity = (Number of Loans Processed / Number of Underwriters)`
+`Average Underwriting Time = (Total Underwriting Time / Total Loans Processed)`
+○ Calculate underwriting productivity:
+`Underwriter Productivity = (Number of Loans Processed / Number of Underwriters)`
 3. Analyze Approval and Rejection Rates ○ Calculate approval rate:
-`Approval Rate = (Number of Approved Loans / Total Applications) x 100 ○ Analyze reasons for rejections (e.g., credit score, incomplete documentation). ○ Segment approval and rejection rates by loan type, amount, and customer demographic.`
+`Approval Rate = (Number of Approved Loans / Total Applications) x 100`
+○ Analyze reasons for rejections (e.g., credit score, incomplete documentation). ○ Segment approval and rejection rates by loan type, amount, and customer demographic.
 4. **Assess Cost Efficiency:** 67 ○ Calculate average cost per loan originated:
-`Average Origination Cost = (Total Origination Costs / Total Loans Processed) ○ Identify high-cost segments or loan types requiring process optimization.`
+`Average Origination Cost = (Total Origination Costs / Total Loans Processed)`
+○ Identify high-cost segments or loan types requiring process optimization.
 5. Identify Bottlenecks ○ Track stages in the process with the longest delays (e.g., document verification, credit evaluation). ○ Use workflow data to pinpoint inefficiencies in task assignments or processing sequences.
 6. Evaluate Customer Experience ○ Analyze customer feedback on the application and approval process (e.g., clarity, transparency, time taken). ○ Correlate customer satisfaction scores with processing times and approval rates.
 7. Benchmark Against Industry Standards ○ Compare processing times, costs, and approval rates with industry averages. ○ Identify areas where the bank lags behind competitors.

@@ -32,14 +32,16 @@ The goal of Retail Store Expansion and Cannibalization Risk Analysis is to evalu
 ## 🪜 Step-by-step
 1. **Identify potential new store locations:** Deﬁne the geographic areas or markets where you are considering expanding by opening new stores. Gather demographic data, foot tra9ic projections, and competitor presence in these areas.
 2. **Evaluate proximity to existing stores:** Map out the proximity of the proposed new store to existing locations. For areas where the new store is within a certain radius (e.g., 5 to 10 miles) of an existing store, there is a risk of sales cannibalization. Use the following formula to assess overlap:
-`Proximity Overlap (%) = (Number of Shared Customers between New and Existing Store / Total Customers in the Region) x 100 This indicates how much of the customer base might be shared between the new and existing stores.`
+`Proximity Overlap (%) = (Number of Shared Customers between New and Existing Store / Total Customers in the Region) x 100`
+This indicates how much of the customer base might be shared between the new and existing stores.
 3. **Estimate incremental sales for the new store:** Based on population and foot tra9ic data, estimate the expected incremental sales for the new location. This can be calculated as:
 `Incremental Sales = (Estimated New Store Sales - Cannibalized Sales from Existing Stores)`
 This shows the net new sales the store would bring in, after accounting for potential sales lost from existing locations.
 4. **Analyze existing store sales trends:** Examine the sales trends at stores near the proposed new location. If existing stores are already experiencing slowing sales or declining foot tra9ic, they may be more vulnerable to cannibalization by a new store.
 5. **Estimate cannibalization impact on existing stores:** Assess how much of the new store’s sales would likely come from cannibalizing sales at nearby existing stores. Use historical data to calculate the likely reduction in sales at existing stores based on their distance from the new location. Cannibalization Rate (%) = (Estimated Sales Lost by Existing Store / Existing Store Sales Before New Opening) x 100
 6. **Evaluate proﬁtability impact:** Once cannibalization risks and incremental sales are determined, calculate the proﬁtability impact of the new store. Use the following formula:
-`Net Proﬁt Impact = (Incremental Sales x Proﬁt Margin) - Cannibalization Impact This shows whether the new store will have a positive or negative impact on overall company proﬁtability.`
+`Net Proﬁt Impact = (Incremental Sales x Proﬁt Margin) - Cannibalization Impact`
+This shows whether the new store will have a positive or negative impact on overall company proﬁtability.
 7. **Analyze external factors (optional):** Consider external factors such as competitor proximity, market saturation, and regional economic conditions that could a9ect the new store’s success and the potential for cannibalization.
 Potential complications that can arise with this analysis •   Uncertain sales projections: Estimating incremental sales and cannibalization impact involves assumptions that may be inaccurate, especially if there is limited data for the new location.
 •   Market ﬂuctuations: Changes in local or regional market conditions, such as economic downturns or competitor moves, can impact the new store’s performance or increase cannibalization risk.

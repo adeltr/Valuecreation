@@ -24,7 +24,10 @@ To calculate the long-term value a customer brings to the bank and assess the co
 Use the following formula to calculate CLV:
 `CLV = (Annual Revenue per Customer - Annual Cost to Serve) x (Retention Rate / (1 + Discount Rate - Retention Rate))`
 Example:
-`○ Annual Revenue per Customer = $500 ○ Annual Cost to Serve = $200 ○ Retention Rate = 80% (0.8) ○ Discount Rate = 10% (0.1) CLV = ($500 - $200) x (0.8 / (1 + 0.1 - 0.8)) = $720`
+`○ Annual Revenue per Customer = $500`
+`○ Annual Cost to Serve = $200`
+`○ Retention Rate = 80% (0.8)`
+`○ Discount Rate = 10% (0.1) CLV = ($500 - $200) x (0.8 / (1 + 0.1 - 0.8)) = $720`
 2. Calculate Customer Acquisition Cost (CAC)
 Use the formula:
 `CAC = Total Acquisition Costs / Number of New Customers Acquired`
@@ -33,7 +36,8 @@ Example:
 15
 `○ Number of New Customers Acquired = 500 CAC = $100,000 / 500 = $200`
 3. Compare CLV and CAC ○ Calculate the ratio:
-`CLV-to-CAC Ratio = CLV / CAC ○ A ratio greater than 3:1 indicates a healthy balance between value generation and acquisition costs.`
+`CLV-to-CAC Ratio = CLV / CAC`
+○ A ratio greater than 3:1 indicates a healthy balance between value generation and acquisition costs.
 4. Segment Analysis ○ Segment customers based on demographics, behaviors, or product ownership to calculate segment-specific CLV and CAC. ○ Identify high-value segments with low acquisition costs to prioritize marketing efforts.
 5. Trend Analysis ○ Track CLV and CAC over time to measure improvements in customer retention, cost optimization, and marketing effectiveness.
 

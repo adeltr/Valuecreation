@@ -29,9 +29,11 @@ To evaluate the procurement, utilization, and financial impact of Renewable Ener
 
 ## 🪜 Step-by-step
 1. **Assess Current REC Utilization:** ○ Calculate the percentage of electricity generation covered by RECs:
-`REC Coverage (%) = (RECs Procured / Total Electricity Generated) x 100 ○ Identify whether RECs are sourced internally (from renewable assets) or purchased externally.`
+`REC Coverage (%) = (RECs Procured / Total Electricity Generated) x 100`
+○ Identify whether RECs are sourced internally (from renewable assets) or purchased externally.
 2. **Quantify Carbon Offsets:** ○ Determine the total volume of carbon offsets purchased and their alignment with emissions goals:
-`Offset Coverage (%) = (Carbon Offsets Procured / Total GHG Emissions) x 100`
+`Offset Coverage (%) = (Carbon Offsets Procured / Total GHG Emissions)`
+x 100
 3. **Evaluate Financial Impact:** ○ Calculate the total expenditure on RECs and offsets and analyze cost trends over time. ○ Compare costs with market averages to identify potential savings opportunities.
 4. **Analyze Regulatory Compliance:** ○ Review local and international regulatory requirements related to RECs and carbon offsets. ○ Identify compliance gaps or opportunities for exceeding regulatory standards.
 27

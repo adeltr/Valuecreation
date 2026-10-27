@@ -30,8 +30,8 @@ The goal of Contract Renewal Rate analysis is to measure the percentage of custo
 2. **Collect the total number of contracts up for renewal:** Gather data on how many customer contracts were scheduled to expire during the selected period. This includes all contracts that are at the end of their subscription term.
 3. **Identify the number of contracts renewed:** Determine how many of those expiring contracts were successfully renewed by customers during the same period.
 4. **Calculate the Contract Renewal Rate:** Use the following formula to calculate the contract renewal rate:
-`Contract Renewal Rate (%) = (Number of Contracts Renewed / Total Number of Contracts Up for`
-Renewal) x 100 For example, if 100 contracts were up for renewal and 85 were successfully renewed, the renewal rate would be:
+`Contract Renewal Rate (%) = (Number of Contracts Renewed / Total Number of Contracts Up for Renewal) x 100`
+For example, if 100 contracts were up for renewal and 85 were successfully renewed, the renewal rate would be:
 `Contract Renewal Rate (%) = (85 / 100) x 100 = 85%`
 67
 

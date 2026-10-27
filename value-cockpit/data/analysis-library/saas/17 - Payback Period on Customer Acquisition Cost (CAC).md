@@ -34,7 +34,8 @@ o    For example, if a company spends $500,000 on sales and marketing and acquir
 o    ARPU is the average revenue generated per customer in a speciﬁc period (usually monthly or annually).
 `o    Use the formula: ARPU = Total Revenue / Total Number of Customers`
 o    For example, if the company generates $100,000 in monthly revenue from 1,000
-`customers, the ARPU would be: ARPU = $100,000 / 1,000 = $100 per customer per month`
+`customers, the ARPU would be: ARPU = $100,000 / 1,000 = $100 per customer per`
+month
 3. Incorporate the gross margin to account for costs of service delivery:
 53 o    To reﬁne the payback period calculation, account for gross margin, which is the percentage of revenue left after accounting for the cost of providing the service.
 o    The revenue used to recover CAC should be calculated using the gross margin- adjusted ARPU.

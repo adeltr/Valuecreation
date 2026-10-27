@@ -21,7 +21,9 @@ To evaluate the effectiveness of cross-selling and up-selling efforts, identify 
 
 ## 🪜 Step-by-step
 1. Define Key Metrics ○ Calculate cross-sell ratio:
-`Cross-Sell Ratio = (Number of Products Owned / Number of Customers) ○ Measure up-sell success rate: Up-Sell Success Rate = (Number of Successful Up-Sells / Number of Up-Sell Offers Made) x 100`
+`Cross-Sell Ratio = (Number of Products Owned / Number of Customers)`
+○ Measure up-sell success rate:
+`Up-Sell Success Rate = (Number of Successful Up-Sells / Number of Up-Sell Offers Made) x 100`
 2. Data Collection ○ Gather customer data to identify products each customer owns and services they’ve added after initial acquisition. ○ Collect campaign data to measure the outcomes of cross-sell and up-sell efforts.
 3. Customer Segmentation ○ Segment customers by demographics, behaviors, and product ownership to understand preferences and opportunities. ○ Examples: High-net-worth individuals, young professionals, or customers with a single product.
 4. Product Pairing Analysis ○ Identify common product pairings (e.g., savings accounts with credit cards, mortgages with insurance). ○ Use association rule mining (e.g., market basket analysis) to uncover patterns in product combinations.

@@ -38,7 +38,8 @@ To assess and optimize the use of advanced imaging and diagnostic services (e.g.
 42
 5. Correlate imaging use with patient outcomes Assess whether imaging results positively impact diagnostic accuracy, treatment plans, and patient outcomes.
 6. Examine cost efficiency Compare imaging costs with patient benefits (e.g., reduced readmissions or improved diagnosis). Equation:
-`Cost per Beneficial Outcome = Total Imaging Costs / Number of Beneficial Outcomes.`
+`Cost per Beneficial Outcome = Total Imaging Costs / Number of Beneficial`
+Outcomes.
 7. Benchmark against industry standards Compare utilization rates and appropriateness metrics with benchmarks to identify overuse or underuse.
 8. Identify bottlenecks Use process mapping to locate delays in scheduling, performing, or interpreting imaging services.
 9. Summarize findings Highlight areas of overutilization, underutilization, and inefficiencies. Provide actionable recommendations to improve imaging service utilization.

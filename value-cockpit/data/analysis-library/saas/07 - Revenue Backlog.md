@@ -34,7 +34,8 @@ o    Determine the portion of the contracted revenue that has already been recog
 o    Subtract the recognized revenue from the total contracted revenue to determine the revenue backlog.
 `o    Use the formula: Revenue Backlog = Total Contracted Revenue - Revenue Recognized to Date`
 22 o    For example, if a SaaS company has $10 million in contracted revenue and has
-`already recognized $4 million, the backlog is: Revenue Backlog = $10M - $4M = $6 million`
+`already recognized $4 million, the backlog is: Revenue Backlog = $10M - $4M = $6`
+million
 4. Segment backlog by time:
 o    Break down the revenue backlog by the period over which it will be recognized (e.g., next quarter, next year). This gives insight into how much of the backlog will be realized in the near term versus the long term.
 `o    If relevant, use the formula: Revenue Backlog per Period = Total Revenue Backlog / Number of Remaining Periods`

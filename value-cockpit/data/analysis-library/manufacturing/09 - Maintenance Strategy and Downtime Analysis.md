@@ -31,11 +31,12 @@ The goal of a Maintenance Strategy and Downtime Analysis is to assess the effect
 ## 🪜 Step-by-step
 1. **Analyze Downtime Events:** ○ Review downtime logs to determine how frequently machines or equipment fail, and how long they remain down. Classify downtime events into categories (e.g., mechanical failure, electrical issues, human error).
 2. **Calculate MTBF (Mean Time Between Failures):** ○ MTBF measures how long equipment operates before experiencing
-`failure. The formula is: MTBF = Total Operating Time / Number of Failures For example, if a machine operates for 1,000 hours and experiences 5 failures: MTBF = 1,000 / 5 = 200 hours`
+`failure. The formula is: MTBF = Total Operating Time / Number of Failures`
+For example, if a machine operates for 1,000 hours and experiences 5
+`failures: MTBF = 1,000 / 5 = 200 hours`
 3. **Calculate MTTR (Mean Time to Repair):** ○ MTTR measures the average time it takes to repair equipment after a
 `failure. The formula is: MTTR = Total Downtime / Number of Failures`
-31
-`For example, if total downtime is 50 hours over 5 failures: MTTR = 50 / 5 = 10 hours`
+31 For example, if total downtime is 50 hours over 5 failures: MTTR = 50 / 5 = 10 hours
 4. **Identify Root Causes of Downtime:** ○ Perform a root cause analysis of downtime events using tools like the 5 Whys or fishbone diagrams. Identify recurring causes of downtime (e.g., poor maintenance practices, inadequate operator training, equipment age).
 5. **Evaluate Maintenance Strategies:** ○ Review the company’s current maintenance strategy (e.g., preventive, predictive, or reactive maintenance). Compare downtime events with scheduled maintenance activities to assess whether preventive maintenance is being performed effectively.
 6. **Quantify Production Losses Due to Downtime:** ○ Calculate the production losses caused by equipment downtime by comparing the actual production output to the planned output. This helps quantify the financial impact of downtime on the company’s bottom line.

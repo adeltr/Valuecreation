@@ -31,7 +31,8 @@ The goal of this analysis is to evaluate the company’s commodity portfolio to 
 1. **Map the Current Commodity Portfolio:** ○ Categorize commodities by type (e.g., base metals, precious metals, critical minerals). ○ Calculate revenue contributions and profit margins for each commodity.
 2. **Assess Revenue Dependency:** ○ Determine the percentage of total revenue derived from each commodity. ○ Identify over-reliance on specific commodities.
 3. **Analyze Market Volatility and Trends:** ○ Evaluate historical price volatility for each commodity using the formula:
-`Price Volatility (%) = (Standard Deviation of Prices / Mean Price) x 100 ○ Review market forecasts for future demand and supply trends.`
+`Price Volatility (%) = (Standard Deviation of Prices / Mean Price) x 100`
+○ Review market forecasts for future demand and supply trends.
 4. **Perform Resilience Assessment:** ○ Simulate portfolio performance under different market conditions, such as price declines or demand shifts. ○ Assess the impact of external factors, like geopolitical risks or regulatory changes, on key commodities.
 5. **Benchmark Against Industry Standards:** ○ Compare the company’s portfolio diversification and resilience metrics with those of peer companies.
 73

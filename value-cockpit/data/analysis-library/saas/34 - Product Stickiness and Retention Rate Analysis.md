@@ -40,8 +40,8 @@ Retention Rate Calculation:
 1. **Collect the number of customers at the start of the period:** Determine how many paying customers were active at the beginning of the analysis period.
 2. **Determine the number of customers retained at the end of the period:** Record the number of paying customers who remained at the end of the period (excluding any newly acquired customers).
 3. **Calculate the Retention Rate:** Use the following formula to calculate retention rate:
-`Retention Rate (%) = (Number of Customers at End of Period / Number of Customers at Start of`
-Period) x 100 For example, if you started with 500 customers and retained 450 by the end of the month, the retention rate would be:
+`Retention Rate (%) = (Number of Customers at End of Period / Number of Customers at Start of Period) x 100`
+For example, if you started with 500 customers and retained 450 by the end of the month, the retention rate would be:
 `Retention Rate (%) = (450 / 500) x 100 = 90%`
 
 

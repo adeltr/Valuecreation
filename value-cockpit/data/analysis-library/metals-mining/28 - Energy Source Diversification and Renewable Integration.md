@@ -31,12 +31,14 @@ The goal of this analysis is to assess the energy sources used in mining operati
 ## 🪜 Step-by-step
 1. **Analyze Current Energy Usage:** ○ Collect data on energy consumption by source and operational activity (e.g., processing, hauling, drilling). ○ Calculate the percentage contribution of each energy source to total consumption.
 2. **Assess Energy Cost and Efficiency:** ○ Calculate energy cost per unit of production using the formula:
-`Energy Cost per Unit ($/ton) = Total Energy Costs / Total Units Produced ○ Identify high-cost or inefficient energy sources.`
+`Energy Cost per Unit ($/ton) = Total Energy Costs / Total Units Produced`
+○ Identify high-cost or inefficient energy sources.
 3. **Evaluate Renewable Energy Feasibility:** ○ Assess regional potential for renewable energy (e.g., solar irradiation, wind speeds, hydro resources). ○ Review infrastructure requirements for renewable integration, such as battery storage or grid connectivity.
 4. **Perform Scenario Analysis for Diversification:** ○ Model the impact of shifting to renewable energy sources on costs and emissions.
 85 ○ Evaluate energy supply resilience under various scenarios, such as fuel price hikes or grid outages.
 5. **Calculate Emission Reductions:** ○ Estimate emissions saved by transitioning to renewable sources using the formula:
-`Emissions Saved (tCO2e) = Energy Consumed (Mffh) x Emission Factor Difference (fossil vs. renewable).`
+`Emissions Saved (tCO2e) = Energy Consumed (Mffh) x Emission Factor`
+Difference (fossil vs. renewable).
 6. **Benchmark Against Industry Standards:** ○ Compare energy mix and renewable integration metrics with peer companies or industry averages.
 7. **Assess Regulatory and Financial Incentives:** ○ Identify government policies or subsidies that support renewable energy projects. ○ Evaluate potential for carbon credit generation through emissions reductions.
 8. **Develop Diversification and Integration Plan:** ○ Propose a phased approach for diversifying energy sources and integrating renewables based on findings.

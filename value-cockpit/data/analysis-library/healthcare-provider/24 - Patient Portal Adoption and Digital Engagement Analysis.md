@@ -30,7 +30,8 @@ To assess the adoption rates and engagement levels of patient portals, identify 
 
 ## 🪜 Step-by-step
 1. Calculate patient portal adoption rate Measure the percentage of patients who have registered for the patient portal. Equation:
-`Portal Adoption Rate (%) = (Number of Registered Users / Total Eligible Patients) x 100.`
+`Portal Adoption Rate (%) = (Number of Registered Users / Total Eligible Patients)`
+x 100.
 2. Evaluate engagement metrics Analyze how often patients log in and which features they use most frequently. Equation:
 `Engagement Rate (%) = (Number of Active Users / Total Registered Users) x 100.`
 3. Segment data by demographics Break down adoption and engagement rates by patient demographics to identify trends or disparities.

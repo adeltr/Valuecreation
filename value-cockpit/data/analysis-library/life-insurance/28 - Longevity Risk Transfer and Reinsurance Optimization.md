@@ -27,7 +27,8 @@ To evaluate strategies for managing and mitigating longevity risk through reinsu
 80
 4. Evaluate Longevity Risk Transfer Options a. Compare available longevity risk transfer strategies: ■ Longevity swaps: fixed payments from reinsurers in exchange for variable payments linked to actual mortality. ■ Traditional reinsurance treaties: quota share or excess-of-loss arrangements for annuity books. ■ Capital market solutions: securitization of longevity risk through mortality bonds. b. Model the cost-benefit of each option in terms of reserve relief, solvency impact, and long-term financial gains.
 5. Calculate the Impact on Capital and Solvency a. Measure the impact of longevity risk transfer on the Solvency Capital Requirement (SCR):
-`Capital Reduction (%) = (Capital Before Risk Transfer - Capital After Risk Transfer) / Capital Before Risk Transfer x 100 b. Assess changes in solvency ratios and surplus levels under various risk transfer arrangements.`
+`Capital Reduction (%) = (Capital Before Risk Transfer - Capital After Risk Transfer) / Capital Before Risk Transfer x 100`
+b. Assess changes in solvency ratios and surplus levels under various risk transfer arrangements.
 6. Perform Stress Testing a. Test longevity risk under adverse scenarios, such as accelerated mortality improvement. b. Model the financial impact with and without risk transfer mechanisms.
 7. Benchmark Against Industry Practices a. Compare the company’s risk transfer strategies, reinsurance terms, and capital optimization efforts with competitors and industry standards.
 8. Visualize Results a. Summarize reinsurance costs, reserve relief, and capital impacts in tables. b. Generate charts comparing the effectiveness of different longevity risk transfer solutions.

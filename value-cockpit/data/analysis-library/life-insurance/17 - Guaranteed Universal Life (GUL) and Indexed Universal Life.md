@@ -22,7 +22,8 @@ To evaluate the financial performance and profitability of Guaranteed Universal 
 ## 🪜 Step-by-step
 1. Segment Product Performance a. Separate GUL and IUL policies to evaluate performance individually. b. Analyze profitability at a cohort level based on age, premium structure, and duration.
 2. Calculate Policy Profitability a. Use the formula:
-`Product Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Costs) b. For IUL products, factor in interest crediting rates and investment-linked components.`
+`Product Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Costs)`
+b. For IUL products, factor in interest crediting rates and investment-linked components.
 3. **Analyze Persistency and Lapse Rates:** 48 a. Measure persistency rates over time (e.g., 13-month, 25-month, and 37-month persistency). b. Identify segments with high lapse rates and assess the causes (e.g., affordability, market performance).
 4. Evaluate Investment Performance for IUL a. Compare interest crediting rates applied to IUL policies with market index performance (e.g., S&P 500). b. Assess policyholder value derived from minimum guarantees vs. actual credited interest.
 5. Stress Test Under Key Scenarios a. Conduct sensitivity analysis for both products: ■ GUL: Impact of changes in lapse rates, mortality assumptions, and discount rates on profitability. ■ IUL: Impact of market volatility and index underperformance on crediting rates and reserve adequacy.

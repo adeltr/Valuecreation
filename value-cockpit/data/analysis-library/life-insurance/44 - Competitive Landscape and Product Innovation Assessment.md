@@ -27,7 +27,9 @@ To evaluate the company’s competitive position within the life insurance marke
 4. Identify Market Gaps and Emerging Trends a. Analyze industry trends to identify opportunities for product innovation, such as: ■ Digital-only policies and automated underwriting ■ Flexible premium structures and pay-per-use life insurance ■ Value-added riders (e.g., critical illness, long-term care, wellness benefits) ■ Integration with InsurTech solutions for personalized offerings b. Highlight unmet customer needs or underserved segments in the market.
 5. Evaluate Competitive Differentiation a. Compare the company’s product innovation capabilities with competitors’ strategies. b. Assess differentiation based on: ■ Product features (e.g., flexibility, customization, pricing) ■ Technology integration (e.g., AI for underwriting, customer portals, apps) ■ Customer value-adds (e.g., rewards programs, health and wellness tie-ins).
 6. Perform Financial Impact Analysis a. Estimate the financial contribution of innovative products:
-`Product Margin (%) = (Revenue - Costs) / Revenue x 100 b. Calculate return on investment (ROI) for product innovation initiatives: ROI (%) = [(Net Profit from Innovation - Development Costs) / Development Costs] x 100`
+`Product Margin (%) = (Revenue - Costs) / Revenue x 100`
+b. Calculate return on investment (ROI) for product innovation initiatives:
+`ROI (%) = [(Net Profit from Innovation - Development Costs) / Development Costs] x 100`
 7. **Benchmark Key Metrics Against Competitors:** 131 a. Compare product sales, persistency rates, pricing, and innovation success rates with peer companies. b. Evaluate gaps in product offerings or pricing where competitors may hold an advantage.
 8. Visualize Results a. Summarize product performance, innovation uptake, and competitive benchmarks in tables.
 b. Use charts to illustrate market share, product margins, and trends in customer preferences.

@@ -21,7 +21,9 @@ To evaluate the financial performance of the annuity book, measure longevity ris
 
 ## 🪜 Step-by-step
 1. Analyze Annuity Book Performance a. Calculate the profitability of the annuity book:
-`Profitability = Premium Revenue - (Payouts + Reserves + Expenses) b. Measure return on capital (ROC): ROC (%) = (Net Profit / Allocated Capital) x 100`
+`Profitability = Premium Revenue - (Payouts + Reserves + Expenses)`
+b. Measure return on capital (ROC):
+`ROC (%) = (Net Profit / Allocated Capital) x 100`
 2. Compare Actual vs. Expected Mortality a. Measure deviations in mortality rates:
 `Mortality Deviation (%) = [(Actual Mortality - Expected Mortality) / Expected Mortality] x 100`
 101 b. Identify trends in mortality improvements that increase the risk of higher-than-expected payouts.

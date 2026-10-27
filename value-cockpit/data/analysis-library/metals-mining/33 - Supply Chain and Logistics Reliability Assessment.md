@@ -34,7 +34,8 @@ The goal of this analysis is to evaluate the reliability and efficiency of the s
 2. **Evaluate Supplier Performance:** ○ Analyze key metrics such as order accuracy, delivery times, and quality of goods received. ○ Calculate supplier reliability using the formula:
 `Supplier Reliability (%) = (On-Time Deliveries / Total Deliveries) x 100`
 3. **Analyze Logistics Efficiency:** ○ Evaluate transit times, on-time delivery rates, and transportation costs for each mode and route. ○ Calculate logistics cost per unit using the formula:
-`Logistics Cost per Unit ($/ton) = Total Logistics Costs / Total Tons Delivered`
+`Logistics Cost per Unit ($/ton) = Total Logistics Costs / Total Tons`
+Delivered
 4. **Assess Inventory Management:** ○ Review inventory levels and turnover rates to determine adequacy in meeting operational demands.
 100 ○ Calculate days of inventory coverage:
 `Days of Inventory Coverage = Inventory Level / Daily Usage Rate`

@@ -30,12 +30,15 @@ The goal of Store Labor Productivity Analysis is to assess how e9iciently a reta
 ## 🪜 Step-by-step
 1. **Collect labor hours and cost data:** Gather the total number of labor hours worked and the total labor costs (including wages and beneﬁts) for each store during the analysis period (e.g., monthly, quarterly).
 2. **Calculate labor productivity (sales per labor hour):** Use the following equation to calculate labor productivity:
-`Sales per Labor Hour = Total Store Sales / Total Labor Hours Worked This provides insight into how much revenue each labor hour generates.`
+`Sales per Labor Hour = Total Store Sales / Total Labor Hours Worked`
+This provides insight into how much revenue each labor hour generates.
 3. **Calculate labor cost percentage:** To understand the portion of sales consumed by labor costs, calculate the labor cost percentage:
-`Labor Cost Percentage (%) = (Total Labor Costs / Total Sales) x 100 This shows how much of the store's revenue is used to cover labor expenses.`
+`Labor Cost Percentage (%) = (Total Labor Costs / Total Sales) x 100`
+This shows how much of the store's revenue is used to cover labor expenses.
 4. **Analyze labor productivity by store:** Conduct the same analysis for each store and compare productivity levels across locations. Stores with low sales per labor hour or high labor cost percentages may indicate ine9iciencies in sta9ing or operations.
 5. **Consider foot traMic (optional):** If foot tra9ic data is available, compare it to labor hours to assess whether sta9ing levels are aligned with customer demand. For example, calculate labor hours per customer visit:
-`Labor Hours per Customer = Total Labor Hours / Foot Tra9ic This helps evaluate whether the store is over- or understa9ed relative to customer volume.`
+`Labor Hours per Customer = Total Labor Hours / Foot Tra9ic`
+This helps evaluate whether the store is over- or understa9ed relative to customer volume.
 6. **Segment analysis by time period (optional):** Analyze labor productivity over time (e.g., daily, weekly, or seasonally) to identify trends and adjust sta9ing levels accordingly. Peak periods may require more labor, while slower periods may present opportunities for sta9ing reductions.
 Potential complications that can arise with this analysis •   Fluctuating sales volume: Sales may ﬂuctuate seasonally, which can make labor productivity seem artiﬁcially high or low during certain periods.
 •   Service quality trade-oMs: Reducing labor to improve productivity may negatively impact customer service, leading to lower satisfaction or sales.

@@ -31,7 +31,9 @@ To evaluate the financial and operational impacts of reserve shutdowns and start
 ## 🪜 Step-by-step
 1. **Gather Cost Data:** ○ Collect data on fuel usage, labor, and maintenance associated with each start-up and shutdown. ○ Break costs down by category (e.g., fuel, wear-and-tear).
 2. **Quantify Start-up and Shutdown Costs:** ○ Calculate total costs per event using:
-`Total Start-up Cost ($) = Fuel Cost + Labor Cost + Maintenance Cost Total Shutdown Cost ($) = Residual Fuel Loss + Labor Cost + Preparation Cost`
+`Total Start-up Cost ($) = Fuel Cost + Labor Cost + Maintenance Cost`
+`Total Shutdown Cost ($) = Residual Fuel Loss + Labor Cost + Preparation`
+Cost
 3. **Analyze Frequency and Timing:** ○ Determine how often shutdowns and startups occur and their correlation with grid demand patterns and economic dispatch decisions.
 4. **Assess Total Costs Over the Period:** ○ Sum all start-up and shutdown costs for the analysis period to calculate the overall financial impact.
 5. **Compare to Industry Benchmarks:** ○ Benchmark total and per-event costs against similar plants to identify inefficiencies.

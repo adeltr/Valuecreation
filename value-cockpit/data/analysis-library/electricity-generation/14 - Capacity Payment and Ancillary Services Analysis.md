@@ -29,7 +29,8 @@ To evaluate the financial contributions of capacity payments and ancillary servi
 
 ## 🪜 Step-by-step
 1. **Assess Capacity Payments:** ○ Review contracts or agreements specifying capacity payment terms. ○ Calculate revenue from capacity payments using the formula:
-`Capacity Payment Revenue ($) = Contracted Capacity (MW) x Payment Rate ($/MW) x Time Period`
+`Capacity Payment Revenue ($) = Contracted Capacity (MW) x Payment`
+Rate ($/MW) x Time Period
 2. **Evaluate Ancillary Service Revenue:** ○ Break down revenue by ancillary service type (e.g., frequency regulation, spinning reserves). ○ Calculate contribution to total revenue from each service:
 `Ancillary Service Contribution (%) = (Revenue from Service / Total Revenue) x 100`
 3. **Analyze Plant Availability:** ○ Review availability and performance data to assess plant reliability in delivering ancillary services.

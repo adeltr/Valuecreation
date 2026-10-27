@@ -28,8 +28,8 @@ The goal of a Quality Control and Defect Rate Analysis is to measure the effecti
 
 
 ## 🪜 Step-by-step
-1. Calculate Defect Rate:
-`○ The basic formula for calculating the defect rate is: Defect Rate (%) = (Defective Units / Total Units Produced) x 100 For example, if a company produced 10,000 units and 500 of those units were defective: Defect Rate = (500 / 10,000) x 100 = 5%`
+1. **Calculate Defect Rate:** ○ The basic formula for calculating the defect rate is: Defect Rate (%) = (Defective Units / Total Units Produced) x 100 For example, if a company produced 10,000 units and 500 of those units
+`were defective: Defect Rate = (500 / 10,000) x 100 = 5%`
 2. **Analyze Defect Distribution:** ○ Break down the defective units by production stage. Identify at which points in the production process defects are most likely to occur (e.g., assembly, machining, packaging).
 3. **Examine Scrap and Rework:** ○ Quantify the amount of scrap produced and the level of rework required due to defects. High levels of scrap and rework indicate inefficiencies in the production process and add to production costs.
 4. Perform Root Cause Analysis:

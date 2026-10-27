@@ -35,7 +35,8 @@ To assess the structure, financial implications, and risk exposure of Power Purc
 5. Align with Operational Performance:
 30 ○ Ensure that the PPA terms align with the plant’s operational capabilities and costs. ○ Analyze how downtime or maintenance schedules impact contractual obligations.
 6. **Quantify Financial Impacts:** ○ Calculate the revenue generated under each PPA:
-`Revenue = Contract Price ($/Mffh) x Contract Volume (Mffh). ○ Compare against operational costs to determine profitability.`
+`Revenue = Contract Price ($/Mffh) x Contract Volume (Mffh).`
+○ Compare against operational costs to determine profitability.
 7. **Evaluate Regulatory Compliance:** ○ Ensure that PPA terms comply with local and regional regulations, such as renewable energy mandates or emissions caps. ○ Identify any potential incentives or subsidies tied to the contracts.
 8. **Model Market Scenarios:** ○ Simulate revenue and risk scenarios under varying market price conditions to assess contract resilience.
 9. **Benchmark Performance:** ○ Compare the terms, pricing, and profitability of the company’s PPAs against industry benchmarks to identify competitive advantages or inefficiencies.

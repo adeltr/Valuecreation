@@ -28,9 +28,11 @@ To evaluate the efficiency and reliability of power plants by analyzing their ca
 
 ## 🪜 Step-by-step
 1. **Calculate Capacity Factor:** ○ Use the formula:
-`Capacity Factor (%) = (Actual Electricity Generated (Mffh) / (Installed Capacity (MW) x Total Hours in Period)) x 100 ○ Perform this calculation for each power plant and the portfolio as a whole.`
+`Capacity Factor (%) = (Actual Electricity Generated (Mffh) / (Installed Capacity (MW) x Total Hours in Period)) x 100`
+○ Perform this calculation for each power plant and the portfolio as a whole.
 2. **Calculate Forced Outage Rate:** ○ Use the formula:
-`Forced Outage Rate (%) = (Forced Outage Hours / Total Hours in Period) x 100 ○ Ensure this calculation reflects only unplanned outages and excludes scheduled maintenance.`
+`Forced Outage Rate (%) = (Forced Outage Hours / Total Hours in Period)`
+x 100 ○ Ensure this calculation reflects only unplanned outages and excludes scheduled maintenance.
 3. **Segment by Generation Type:** ○ Group plants by type (e.g., coal, natural gas, renewable) to identify trends specific to certain technologies.
 4. **Compare Against Benchmarks:** ○ Evaluate capacity factors and forced outage rates against industry benchmarks for similar plant types and ages.
 5. **Correlate Capacity Factor with Outage Data:** ○ Assess whether low capacity factors correlate with high forced outage rates or if other factors (e.g., demand patterns) are responsible.

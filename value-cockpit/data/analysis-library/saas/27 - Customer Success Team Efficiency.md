@@ -39,7 +39,8 @@ o    The ratio of customers per CSM provides insight into the workload distribut
 o    If necessary, segment customers by size or value (e.g., small business, mid-market, enterprise) to analyze whether different CSMs have varied workloads based on customer complexity. Larger or more strategic customers may require more attention, so the ratio may differ across segments.
 `o    Use the formula: Customers per CSM by Segment = Total Number of Customers in Segment / Number of CSMs Assigned to that Segment`
 o    For example, if there are 100 enterprise customers and 5 CSMs managing them:
-`Customers per CSM (Enterprise) = 100 / 5 = 20 customers per CSM for enterprise clients`
+`Customers per CSM (Enterprise) = 100 / 5 = 20 customers per CSM for enterprise`
+clients
 5. Analyze customer satisfaction and retention (optional):
 o    If available, correlate the customers per CSM ratio with customer satisfaction scores (e.g., NPS) or retention metrics (e.g., churn rate) to understand whether the current workload is affecting service quality. For example, a high customer-to-CSM ratio might lead to lower customer satisfaction or higher churn rates.
 

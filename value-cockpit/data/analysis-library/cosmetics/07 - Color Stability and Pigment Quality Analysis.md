@@ -41,7 +41,8 @@ The goal of the Color Stability and Pigment Quality Analysis is to evaluate the 
 7.   **Test environmental exposure effects:** Conduct tests to assess how the product's pigments hold up under environmental conditions such as exposure to water, oil, or sweat. This is particularly important for long-wear or waterproof formulations.
 8.   **Review regulatory compliance:** Ensure that all pigments used comply with local and international regulations (e.g., FDA, EU). This includes checking for approved pigments and ensuring no use of restricted or harmful substances.
 9.   **Assess long-term shelf life:** Use the following formula to calculate the product’s expected shelf life based on accelerated stability testing:
-`Expected Shelf Life = (Duration of Accelerated Test Conditions / Degradation Rate). Document any significant color shifts over time and estimate how long the product will remain viable under normal storage conditions.`
+`Expected Shelf Life = (Duration of Accelerated Test Conditions / Degradation Rate).`
+Document any significant color shifts over time and estimate how long the product will remain viable under normal storage conditions.
 
 
 ## 📤 Output format

@@ -22,9 +22,11 @@ To evaluate the security and authentication measures of the mobile banking platf
 
 ## 🪜 Step-by-step
 1. Evaluate Authentication Success and Failure Rates ○ Calculate the success rate for login attempts:
-`Authentication Success Rate = (Successful Logins / Total Login Attempts) x 100 ○ Analyze failed login attempts to identify potential usability or security issues.`
+`Authentication Success Rate = (Successful Logins / Total Login Attempts)`
+x 100 ○ Analyze failed login attempts to identify potential usability or security issues.
 2. Assess Multi-Factor Authentication (MFA) Adoption ○ Determine the percentage of users enrolled in MFA:
-`MFA Adoption Rate = (Number of Users with MFA Enabled / Total Users) x 100 ○ Evaluate MFA success rates and user feedback on the process.`
+`MFA Adoption Rate = (Number of Users with MFA Enabled / Total Users) x 100`
+○ Evaluate MFA success rates and user feedback on the process.
 3. Monitor Security Incidents ○ Track the number and severity of security breaches or fraud attempts. ○ Categorize incidents by type (e.g., phishing, brute force attacks) and frequency.
 4. Conduct Vulnerability Analysis ○ Review penetration testing results and vulnerability reports for the mobile app.
 91 ○ Identify and prioritize areas requiring immediate attention (e.g., outdated encryption protocols).

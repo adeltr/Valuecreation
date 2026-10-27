@@ -34,7 +34,8 @@ Examine each F&B outlet’s financial results and operational metrics to identif
 5. Compute gross margin for each outlet:
 `Gross Margin = [(Outlet Revenue - COGS) / Outlet Revenue] x 100`
 6. Compute net profit margin for each outlet:
-`Net Profit Margin = [(Outlet Revenue - (COGS + Labor + Overhead)) / Outlet Revenue] x 100`
+`Net Profit Margin = [(Outlet Revenue - (COGS + Labor + Overhead)) / Outlet`
+Revenue] x 100
 7. Analyze key operational metrics (e.g., average check, covers served, seat turnover rate, peak vs. off‐peak performance).
 8. Benchmark performance against historical data or industry standards. Look for trends or anomalies in margin, revenue, or labor efficiency.
 9. Review menu engineering data to identify high‐margin items vs. items that are less profitable or unpopular.

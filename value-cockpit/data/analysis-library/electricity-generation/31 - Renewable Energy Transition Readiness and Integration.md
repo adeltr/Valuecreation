@@ -30,7 +30,8 @@ To evaluate the readiness of a power generation company to transition to renewab
 
 ## 🪜 Step-by-step
 1. **Assess Current Energy Mix:** ○ Calculate the share of renewables in the current generation mix:
-`Renewable Share (%) = (Renewable Energy Output / Total Energy Output) x 100`
+`Renewable Share (%) = (Renewable Energy Output / Total Energy Output)`
+x 100
 2. **Evaluate Resource Potential:** ○ Identify renewable energy resources available in the company’s operating regions. ○ Quantify resource potential in terms of capacity (MW) and energy output (Mffh).
 3. **Analyze Infrastructure Readiness:** ○ Assess the grid’s ability to handle renewable energy inputs, including storage systems, interconnections, and smart grid technologies. ○ Identify potential bottlenecks, such as transmission constraints or insufficient storage capacity.
 87

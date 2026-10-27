@@ -31,7 +31,8 @@ The goal of this analysis is to estimate the remaining lifespan of a mine and it
 1. **Gather Reserve Data:** ○ Collect current reserve estimates categorized by classification (Measured, Indicated, Proven, Probable). ○ Validate reserve estimates using updated geological and resource models.
 2. **Analyze Historical Production Rates:** ○ Calculate average annual production rates based on historical data. ○ Identify trends, such as increasing or decreasing extraction rates.
 3. **Estimate Remaining Mine Life:** ○ Use the formula:
-`Mine Life (years) = Proven and Probable Reserves / Annual Production Rate ○ Adjust for planned production changes, including ramp-ups or slowdowns.`
+`Mine Life (years) = Proven and Probable Reserves / Annual Production`
+Rate ○ Adjust for planned production changes, including ramp-ups or slowdowns.
 4. **Evaluate Production Capacity:** ○ Assess processing plant throughput (tons per day or year). ○ Determine if the current production rate is optimized or constrained by plant capacity.
 5. **Perform Scenario Analysis:** ○ Evaluate mine life and capacity under different production scenarios, such as increased throughput or lower cut-off grades.
 6. Incorporate Economic Viability:

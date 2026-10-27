@@ -25,7 +25,8 @@ To assess the performance of shadow accounting mechanisms and evaluate how marke
 `Fair Value Gap = Fair Value of Assets - Fair Value of Liabilities`
 3. **Analyze Unrealized Gains and Losses:** 86 a. Identify unrealized gains or losses on investment assets under volatile market conditions. b. Measure the impact of these gains/losses on market-linked liability valuations under shadow accounting rules.
 4. Evaluate Market-Linked Liability Performance a. Measure the performance of unit-linked and indexed funds:
-`Fund Return (%) = [(Ending NAV - Beginning NAV + Dividends) / Beginning NAV] x 100 b. Compare fund returns to benchmarks (e.g., equity or bond indices).`
+`Fund Return (%) = [(Ending NAV - Beginning NAV + Dividends) / Beginning NAV] x 100`
+b. Compare fund returns to benchmarks (e.g., equity or bond indices).
 5. Assess Asset-Liability Alignment a. Analyze whether assets backing market-linked liabilities are appropriately matched in terms of duration, risk exposure, and market sensitivity. b. Identify gaps where asset performance fails to meet liability obligations.
 6. Perform Stress Testing a. Model the impact of adverse market movements (e.g., equity market declines, interest rate shifts) on: ■ Fair value of assets ■ Market-linked liabilities b. Assess whether shadow accounting mitigates volatility in reported financials.
 7. Benchmark Against Industry Practices a. Compare shadow accounting processes, fund performance, and liability management practices with peer companies. b. Identify areas of improvement to reduce accounting mismatches and optimize risk-adjusted returns.

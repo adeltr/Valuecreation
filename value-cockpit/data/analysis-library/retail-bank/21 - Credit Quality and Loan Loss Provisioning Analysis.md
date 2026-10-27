@@ -22,11 +22,17 @@ To assess the credit quality of the loan portfolio and evaluate the adequacy of 
 
 ## 🪜 Step-by-step
 1. Assess Credit Quality Metrics ○ Calculate delinquency rate:
-`Delinquency Rate = (Number of Delinquent Loans / Total Loans) x 100 ○ Measure non-performing loans (NPL) ratio: NPL Ratio = (Non-Performing Loans / Total Loan Portfolio) x 100 ○ Analyze borrower credit scores to identify high-risk loans.`
+`Delinquency Rate = (Number of Delinquent Loans / Total Loans) x 100`
+○ Measure non-performing loans (NPL) ratio:
+`NPL Ratio = (Non-Performing Loans / Total Loan Portfolio) x 100`
+○ Analyze borrower credit scores to identify high-risk loans.
 2. Evaluate Default and Recovery Rates ○ Compute default rate:
-`Default Rate = (Number of Defaulted Loans / Total Loans) x 100 ○ Calculate recovery rate on defaulted loans: Recovery Rate = (Recovered Amount / Total Defaulted Loan Amount) x 100`
+`Default Rate = (Number of Defaulted Loans / Total Loans) x 100`
+○ Calculate recovery rate on defaulted loans:
+`Recovery Rate = (Recovered Amount / Total Defaulted Loan Amount) x 100`
 3. Analyze Loan Loss Provisions ○ Compare current loan loss provisions to historical losses and economic trends:
-`Loan Loss Coverage Ratio = (Loan Loss Provisions / Non-Performing Loans) x 100 ○ Ensure compliance with regulatory requirements for provisioning.`
+`Loan Loss Coverage Ratio = (Loan Loss Provisions / Non-Performing Loans) x 100`
+○ Ensure compliance with regulatory requirements for provisioning.
 4. Segment Portfolio by Risk Levels ○ Classify loans into risk categories (e.g., Low, Medium, High) based on credit scores, LTV ratios, and repayment history.
 61 ○ Highlight segments or loan types with elevated risks requiring additional provisions.
 5. Perform Stress Testing ○ Simulate adverse economic scenarios (e.g., recession, interest rate hikes) to estimate potential increases in NPL and default rates. ○ Evaluate the sufficiency of current provisioning under stressed conditions.

@@ -33,7 +33,8 @@ Discover which products are most popular and profitable in the hotel’s retail 
 3. Assess sales velocity. Determine how quickly each product sells by looking at average daily or monthly sales rates.
 4. Identify top‐selling and high‐margin products. Flag items that generate the highest revenue and profit.
 5. Analyze inventory turnover. Use the formula:
-`Inventory Turnover = Cost of Goods Sold / Average Inventory Value Identify slow‐moving products that tie up capital.`
+`Inventory Turnover = Cost of Goods Sold / Average Inventory Value`
+Identify slow‐moving products that tie up capital.
 6. Segment items by category or price point. Group products into categories (snacks, local souvenirs, essentials, etc.) to see where sales are strongest.
 7. Review guest feedback. Determine if certain products are frequently requested or if there are gaps in the product assortment.
 8. Make data‐driven decisions on product mix. Decide which items to discontinue, increase, or introduce based on profitability and demand.

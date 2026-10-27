@@ -31,7 +31,8 @@ The goal of this analysis is to assess a mining company’s ability to replace d
 1. **Calculate Reserve Depletion:** ○ Determine the quantity of ore extracted in the analysis period (e.g., one year). ○ Record the corresponding decrease in reserve estimates.
 2. **Track Reserve Additions:** ○ Quantify new reserves added through exploration, reclassification of resources, or acquisitions. ○ Separate data by source: greenfield exploration, brownfield expansion, or external purchases.
 3. **Calculate Reserve Replacement Rate (RRR):** ○ Use the formula:
-`RRR = (Reserves Added / Reserves Depleted) x 100 ○ An RRR above 100% indicates reserves are being replenished faster than they are depleted.`
+`RRR = (Reserves Added / Reserves Depleted) x 100`
+○ An RRR above 100% indicates reserves are being replenished faster than they are depleted.
 4. **Analyze Resource Conversion Efficiency:** ○ Track the conversion of Measured and Indicated resources into reserves. ○ Calculate the Resource Conversion Rate using the formula:
 `Resource Conversion Rate = (Reserves Added from Resource Conversion / Total Measured and Indicated Resources) x 100`
 5. Evaluate Exploration Success:

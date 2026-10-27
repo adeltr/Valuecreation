@@ -30,7 +30,8 @@ To evaluate electricity losses during transmission and identify opportunities to
 
 ## 🪜 Step-by-step
 1. **Calculate Transmission Losses:** ○ Use the formula:
-`Transmission Loss (%) = [(Electricity Generated - Electricity Delivered) / Electricity Generated] x 100 ○ Perform this calculation for the entire grid and specific transmission lines if data is available.`
+`Transmission Loss (%) = [(Electricity Generated - Electricity Delivered) / Electricity Generated] x 100`
+○ Perform this calculation for the entire grid and specific transmission lines if data is available.
 2. **Analyze Loss Drivers:** ○ Assess technical losses caused by resistance in conductors and other equipment. ○ Evaluate non-technical losses (e.g., theft, metering errors) using discrepancy analysis.
 3. **Assess Load Impact:** ○ Correlate transmission losses with load levels and peak demand periods to identify high-loss conditions.
 4. **Evaluate Infrastructure Condition:** ○ Review maintenance records and inspect aging or poorly maintained transmission lines and equipment. ○ Identify areas where infrastructure upgrades may reduce losses.

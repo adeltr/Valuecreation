@@ -29,7 +29,8 @@ The goal of Foot Tra9ic and Conversion Rate Analysis is to assess how e9ectively
 1. **Collect foot traMic data:** Use tools such as sensors, cameras, or manual counting to track the number of visitors entering the store during a speciﬁc period (e.g., daily, weekly, monthly).
 2. **Collect transaction data:** Gather the total number of transactions or purchases made during the same time period. This data is typically available from the point-of-sale (POS) system.
 3. **Calculate the conversion rate:** Use the following formula to calculate the conversion rate:
-`Conversion Rate (%) = (Number of Transactions / Number of Visitors) x 100 This gives the percentage of visitors who made a purchase.`
+`Conversion Rate (%) = (Number of Transactions / Number of Visitors) x 100`
+This gives the percentage of visitors who made a purchase.
 4. **Segment analysis (optional):** If you have access to customer demographic data (age, gender, etc.) or regional store data, perform a segmented analysis to identify whether speciﬁc customer groups or locations have higher or lower conversion rates.
 5. **Track over time:** Conduct the analysis over di9erent periods (e.g., monthly, quarterly) to observe trends in foot tra9ic and conversion rates. This can help identify peak sales periods or low- performing times.
 6. **Compare foot traMic to sales revenue (optional):** If sales revenue data is available, compare foot tra9ic and sales trends to understand how foot tra9ic correlates with actual revenue generation. This can provide insights into whether higher tra9ic results in proportionally higher sales.

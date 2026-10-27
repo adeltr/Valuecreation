@@ -22,9 +22,11 @@ To evaluate the adoption of personalized banking services, such as tailored fina
 
 ## 🪜 Step-by-step
 1. Analyze Uptake of Personalized Services ○ Calculate the percentage of customers using personalized banking services:
-`Uptake Rate = (Number of Customers Using Personalized Services / Total Customers) x 100 ○ Segment uptake rates by customer demographics (e.g., age, income, geographic location).`
+`Uptake Rate = (Number of Customers Using Personalized Services / Total Customers) x 100`
+○ Segment uptake rates by customer demographics (e.g., age, income, geographic location).
 2. Evaluate Revenue Contribution ○ Determine the revenue generated from personalized services:
-`Revenue Contribution = (Revenue from Personalized Services / Total Revenue) x 100 ○ Identify high-revenue services or customer segments driving adoption.`
+`Revenue Contribution = (Revenue from Personalized Services / Total Revenue) x 100`
+○ Identify high-revenue services or customer segments driving adoption.
 3. Assess Customer Engagement Metrics ○ Measure changes in transaction activity, account balances, or loan uptake among users of personalized services. ○ Compare retention rates between customers using personalized services and non-users.
 4. **Monitor Trends Over Time:** 118 ○ Track adoption and revenue growth rates for personalized services over time. ○ Correlate trends with marketing campaigns or new service launches.
 5. Analyze Customer Feedback and Satisfaction ○ Review customer feedback to identify perceived value and satisfaction with personalized services. ○ Segment feedback by customer demographics to uncover specific pain points or preferences.

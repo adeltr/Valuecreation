@@ -36,8 +36,7 @@ To evaluate whether reclaiming buried materials (e.g., metals, plastics, organic
 19
 5. Calculate net economic value Compare the estimated value of recovered materials plus any revenue from extended landfill capacity against the total project cost.
 Equation:
-`Net Economic Value (USD) = (Revenue from Recovered Materials + Value of`
-Reclaimed Airspace) - (Excavation and Processing Costs + Disposal of Residue)
+`Net Economic Value (USD) = (Revenue from Recovered Materials + Value of Reclaimed Airspace) - (Excavation and Processing Costs + Disposal of Residue)`
 6. Perform sensitivity and risk analysis Run scenarios adjusting key variables (commodity prices, recovery rates, labor costs) to determine the resilience of the project’s economic viability.
 7. Finalize feasibility recommendation Compile findings into a comprehensive report, highlighting the economic, environmental, and regulatory considerations that inform whether to proceed with landfill mining.
 

@@ -28,7 +28,8 @@ To assess compliance with Solvency II and local regulatory stress testing requir
 4. **Measure Minimum Capital Requirement (MCR):** ○ Determine the minimum threshold of capital needed to meet regulatory compliance. ○ Ensure available capital is greater than the MCR.
 5. Evaluate Solvency Ratios:
 68
-`○ Solvency Ratio = (Available Capital / SCR) x 100. ○ Compare against regulatory minimums and identify gaps.`
+`○ Solvency Ratio = (Available Capital / SCR) x 100.`
+○ Compare against regulatory minimums and identify gaps.
 6. **Segment Risk Contributions:** ○ Analyze the share of each risk type contributing to the total SCR. ○ Identify the largest contributors to capital strain.
 7. **Conduct stress testing to model adverse scenarios:** ○ Market downturns (e.g., 30% equity loss). ○ Higher-than-expected mortality or morbidity claims. ○ Increased lapse rates. ○ Measure the impact of these scenarios on solvency ratios and capital adequacy.
 8. Benchmark results against local regulatory requirements and peer companies. ○ Identify gaps in compliance and opportunities to improve.

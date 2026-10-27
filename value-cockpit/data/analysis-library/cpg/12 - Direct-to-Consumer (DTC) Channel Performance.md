@@ -34,17 +34,31 @@ The goal of a Direct-to-Consumer (DTC) Channel Performance analysis in the consu
 ## 🪜 Step-by-step
 1. **Define the objectives of the analysis:** Set clear goals for evaluating DTC performance. These objectives could include assessing sales growth, optimizing customer acquisition costs, improving profitability, or enhancing the customer experience. Common objectives include increasing customer retention, growing sales volume, or expanding product offerings through the DTC channel.
 2. **Collect DTC sales and revenue data:** Gather sales data from all DTC channels, including the company’s website, mobile app, and any subscription models. Track total revenue, units sold, and order volume. Calculate average order value (AOV) using the formula:
-`AOV = Total Revenue / Number of Orders For example, if the DTC channel generated $500,000 in revenue from 10,000 orders: AOV = $500,000 / 10,000 = $50 per order`
+`AOV = Total Revenue / Number of Orders`
+For example, if the DTC channel generated $500,000 in revenue from 10,000 orders:
+`AOV = $500,000 / 10,000 = $50 per order`
 3. **Evaluate website traffic and conversion rates:** Track how many visitors come to your DTC platform (website or app) and how many of those visitors convert into paying customers. Calculate the conversion rate using the formula:
-`Conversion Rate (%) = (Number of Conversions / Number of Website Visitors) x 100 For example, if 50,000 visitors came to the website and 1,000 made a purchase: Conversion Rate = (1,000 / 50,000) x 100 = 2% Analyze how effectively your DTC platform turns traffic into sales and identify any friction points in the purchasing process.`
+`Conversion Rate (%) = (Number of Conversions / Number of Website Visitors) x 100`
+For example, if 50,000 visitors came to the website and 1,000 made a purchase:
+`Conversion Rate = (1,000 / 50,000) x 100 = 2%`
+Analyze how effectively your DTC platform turns traffic into sales and identify any friction points in the purchasing process.
 4. **Assess customer acquisition cost (CAC) and customer lifetime value (CLV):** Measure how much it costs to acquire a customer through the DTC channel and compare that to the customer lifetime value (CLV) to ensure profitability. Use the formula:
-`CAC = Total Marketing Spend / Number of New Customers Acquired CLV = (Average Purchase Value) x (Purchase Frequency) x (Customer Lifespan)`
+`CAC = Total Marketing Spend / Number of New Customers Acquired`
+CLV = (Average Purchase Value) x (Purchase Frequency) x (Customer Lifespan)
 67 For example, if your total marketing spend is $100,000 and you acquired 2,000 new customers:
-`CAC = $100,000 / 2,000 = $50 per new customer If your average customer spends $50 per order, makes two purchases per year, and remains a customer for three years: CLV = $50 x 2 x 3 = $300 Ideally, CLV should be significantly higher than CAC for long-term profitability.`
+`CAC = $100,000 / 2,000 = $50 per new customer`
+If your average customer spends $50 per order, makes two purchases per year, and remains a customer for three years:
+`CLV = $50 x 2 x 3 = $300`
+Ideally, CLV should be significantly higher than CAC for long-term profitability.
 5. **Analyze profitability metrics:** Review the profitability of your DTC channel by analyzing gross margin, cost-to-serve, and operational costs like shipping and returns. Calculate gross margin using the formula:
-`Gross Margin (%) = ((Revenue - Cost of Goods Sold) / Revenue) x 100 For example, if the DTC revenue is $500,000 and COGS is $300,000: Gross Margin = (($500,000 - $300,000) / $500,000) x 100 = 40% Factor in additional costs like shipping, packaging, and handling to determine the cost-to-serve. A high cost-to-serve can erode profitability, especially if the company offers free shipping or frequent returns.`
+`Gross Margin (%) = ((Revenue - Cost of Goods Sold) / Revenue) x 100`
+For example, if the DTC revenue is $500,000 and COGS is $300,000:
+`Gross Margin = (($500,000 - $300,000) / $500,000) x 100 = 40%`
+Factor in additional costs like shipping, packaging, and handling to determine the cost-to-serve. A high cost-to-serve can erode profitability, especially if the company offers free shipping or frequent returns.
 6. **Assess cart abandonment and conversion barriers:** Review cart abandonment data to identify common reasons why consumers do not complete their purchases. Typical reasons for abandonment include high shipping costs, complicated checkout processes, or lack of payment options. Calculate the cart abandonment rate using the formula:
-`Cart Abandonment Rate (%) = (Number of Abandoned Carts / Number of Carts Created) x 100 For example, if 2,000 carts were created and 800 were abandoned: Cart Abandonment Rate = (800 / 2,000) x 100 = 40%`
+`Cart Abandonment Rate (%) = (Number of Abandoned Carts / Number of Carts Created) x 100`
+For example, if 2,000 carts were created and 800 were abandoned:
+`Cart Abandonment Rate = (800 / 2,000) x 100 = 40%`
 7. **Track customer retention and repeat purchase behavior:** Analyze how well the DTC channel retains customers and encourages repeat purchases. Calculate repeat purchase rate by tracking how many customers make a second purchase within a specific time period. The higher the repeat purchase rate, the more value the DTC channel brings in terms of customer loyalty and long-term engagement.
 68
 8. **Collect consumer feedback on the DTC experience:** Review consumer feedback, product reviews, and customer service interactions to gauge satisfaction with the DTC experience. Key areas to focus on include ease of use of the website or app, shipping and delivery times, product packaging, and the returns process.

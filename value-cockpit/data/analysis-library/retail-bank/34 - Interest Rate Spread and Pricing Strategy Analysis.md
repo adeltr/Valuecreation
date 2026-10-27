@@ -22,10 +22,12 @@ To evaluate the interest rate spread—the difference between interest earned on
 
 ## 🪜 Step-by-step
 1. Calculate Current Interest Rate Spread ○ Use the formula:
-`Interest Rate Spread = Weighted Average Interest Rate on Assets - Weighted Average Interest Rate on Liabilities ○ Segment the calculation by product type (e.g., mortgages, personal loans, term deposits).`
+`Interest Rate Spread = Weighted Average Interest Rate on Assets - Weighted Average Interest Rate on Liabilities`
+○ Segment the calculation by product type (e.g., mortgages, personal loans, term deposits).
 2. Evaluate Asset and Liability Pricing Trends ○ Analyze trends in interest rates for loans and deposits over time. ○ Compare the bank’s rates with market averages to assess competitiveness.
 3. Analyze Contribution to Profitability ○ Calculate the contribution of the spread to net interest income (NII):
-`Contribution to NII = Interest Rate Spread x Average Balance of Earning Assets ○ Identify product types or customer segments with the highest contribution.`
+`Contribution to NII = Interest Rate Spread x Average Balance of Earning`
+Assets ○ Identify product types or customer segments with the highest contribution.
 4. Assess Pricing Strategies by Segment ○ Evaluate pricing for specific customer groups (e.g., high-net-worth individuals, small businesses). ○ Identify price sensitivity and elasticity to guide competitive pricing decisions.
 5. **Monitor Competitive Positioning:** 100 ○ Benchmark the bank’s loan and deposit rates against competitors to identify areas where pricing is uncompetitive. ○ Highlight products where aggressive pricing could drive market share.
 6. **Conduct Scenario Analysis:** Model the impact of changes in interest rates on the spread and profitability.

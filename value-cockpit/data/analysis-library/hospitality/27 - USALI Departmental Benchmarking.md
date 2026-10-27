@@ -30,7 +30,8 @@ Use standardized financial reporting to compare each department’s performance 
 2. Gather departmental financial data. Break down income statements by department (Rooms, F&B, etc.) covering the same reporting period (monthly, quarterly, or annually).
 3. **Calculate departmental profitability. Within each department, determine:** ○ Revenue ○ Direct expenses (e.g., cost of sales for F&B, housekeeping wages for Rooms) ○ Departmental profit (Revenue – Direct Expenses)
 4. Compute relevant ratios. For each department, consider metrics such as:
-`○ Departmental Profit Margin = (Departmental Profit / Departmental Revenue) x 100 ○ Payroll & Related Expenses as % of Departmental Revenue ○ Cost of Goods Sold as % of Departmental Revenue (F&B or Retail outlets)`
+`○ Departmental Profit Margin = (Departmental Profit / Departmental Revenue) x 100`
+○ Payroll & Related Expenses as % of Departmental Revenue ○ Cost of Goods Sold as % of Departmental Revenue (F&B or Retail outlets)
 5. Compare to industry benchmarks. Obtain benchmark data for your market segment or brand classification (e.g., upscale, midscale) and compare each department’s ratios to the norm.
 6. Analyze variances. Identify where departmental expenses or profit margins deviate significantly from benchmarks. Consider structural differences in the property, market conditions, or operational inefficiencies.
 60

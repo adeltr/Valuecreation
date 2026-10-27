@@ -29,7 +29,8 @@ To evaluate the adequacy of power generation resources to meet peak electricity 
 
 ## 🪜 Step-by-step
 1. **Calculate Reserve Margin:** ○ Use the formula:
-`Reserve Margin (%) = [(Total Available Capacity - Peak Demand) / Peak Demand] x 100 ○ Perform calculations for different scenarios, such as normal operations and high-demand periods.`
+`Reserve Margin (%) = [(Total Available Capacity - Peak Demand) / Peak`
+Demand] x 100 ○ Perform calculations for different scenarios, such as normal operations and high-demand periods.
 2. **Analyze Generation Availability:** ○ Assess the total generation capacity, accounting for planned outages and derated capacities of plants. ○ Include contributions from renewable energy, adjusted for their variability during peak periods.
 3. **Evaluate Demand Variability:** ○ Analyze historical peak demand data and identify trends or anomalies. ○ Forecast future peak demand using relevant drivers, such as population growth or industrial activity.
 4. **Simulate Contingency Scenarios:** ○ Model scenarios with unexpected outages, extreme weather conditions, or demand spikes. ○ Calculate reserve margins under each scenario to evaluate system resilience.

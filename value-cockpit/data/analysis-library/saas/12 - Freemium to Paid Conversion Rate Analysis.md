@@ -29,8 +29,8 @@ The goal of Freemium to Paid Conversion Rate analysis is to measure the percenta
 2. **Collect the total number of freemium users:** Gather the total number of users who are on the freemium plan during the selected period. This data is typically available from CRM systems, user databases, or subscription management tools.
 3. **Identify the number of freemium users who converted to paid plans:** Determine the number of freemium users who upgraded to a paid plan during the same period. These users are the ones who started with the free version and then moved to a paid tier.
 4. **Calculate the Freemium to Paid Conversion Rate:** Use the following formula to calculate the conversion rate:
-`Freemium to Paid Conversion Rate (%) = (Number of Users Converted to Paid Plans / Total Number`
-of Freemium Users) x 100 For example, if you had 10,000 freemium users in a month and 500 of them upgraded to paid plans, the conversion rate would be:
+`Freemium to Paid Conversion Rate (%) = (Number of Users Converted to Paid Plans / Total Number of Freemium Users) x 100`
+For example, if you had 10,000 freemium users in a month and 500 of them upgraded to paid plans, the conversion rate would be:
 `Freemium to Paid Conversion Rate (%) = (500 / 10,000) x 100 = 5%`
 39
 

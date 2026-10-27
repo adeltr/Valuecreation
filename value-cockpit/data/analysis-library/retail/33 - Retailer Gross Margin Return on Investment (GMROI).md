@@ -28,7 +28,8 @@ The goal of the Gross Margin Return on Investment (GMROI) analysis is to evaluat
 ## 🪜 Step-by-step
 1. **Gather data on gross proﬁt and inventory costs:** Start by collecting gross proﬁt data (revenue minus cost of goods sold) and average inventory cost or value for each product or category over a speciﬁc period (e.g., monthly, quarterly).
 2. **Calculate GMROI for each product or category:** The formula to calculate GMROI is:
-`GMROI = (Gross Proﬁt / Average Inventory Cost) Where:`
+`GMROI = (Gross Proﬁt / Average Inventory Cost)`
+Where:
 o   Gross Proﬁt is the total revenue minus the cost of goods sold (COGS).
 o   Average Inventory Cost is the average value of the inventory over the period being analyzed.
 For example, if a product category generates $50,000 in gross proﬁt and the average inventory value is $25,000, the GMROI would be:

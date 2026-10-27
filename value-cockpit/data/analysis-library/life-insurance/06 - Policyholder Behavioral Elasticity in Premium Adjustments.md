@@ -21,7 +21,8 @@ To evaluate how changes in premium amounts influence policyholder behavior, such
 
 ## 🪜 Step-by-step
 1. Define Behavioral Elasticity Formula
-`○ Elasticity = (% Change in Policyholder Behavior / % Change in Premium Amount). ○ Behavior could include lapse rate, retention rate, or renewal rate.`
+`○ Elasticity = (% Change in Policyholder Behavior / % Change in Premium Amount).`
+○ Behavior could include lapse rate, retention rate, or renewal rate.
 2. Segment Data ○ Group policyholders based on demographics, policy type, and payment frequency. ○ Create segments for those affected by premium increases vs. decreases.
 3. Calculate Behavioral Changes ○ Measure percentage changes in key behaviors (e.g., lapse rates, retention rates) before and after premium adjustments.
 4. Assess Elasticity for Each Segment ○ Apply the elasticity formula to each segment to determine how sensitive policyholders are to premium changes. ○ Identify segments with the highest and lowest sensitivity.

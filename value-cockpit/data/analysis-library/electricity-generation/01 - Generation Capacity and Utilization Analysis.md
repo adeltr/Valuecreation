@@ -28,9 +28,11 @@ To assess the operational efficiency and effectiveness of electricity generation
 
 ## 🪜 Step-by-step
 1. **Calculate Capacity Factor:** ○ Use the formula:
-`Capacity Factor (%) = (Actual Power Generated (Mffh) / (Installed Capacity (MW) x Hours in Period)) x 100 ○ Perform this calculation for each power plant and the entire generation portfolio.`
+`Capacity Factor (%) = (Actual Power Generated (Mffh) / (Installed Capacity (MW) x Hours in Period)) x 100`
+○ Perform this calculation for each power plant and the entire generation portfolio.
 2. **Assess Plant Availability:** ○ Calculate the percentage of time each plant was available to generate power using:
-`Plant Availability (%) = [(Total Hours in Period - Downtime Hours) / Total Hours in Period] x 100`
+`Plant Availability (%) = [(Total Hours in Period - Downtime Hours) / Total`
+Hours in Period] x 100
 3. **Evaluate Utilization Gaps:** ○ Compare the calculated capacity factor against industry benchmarks or the expected capacity utilization rate. ○ Identify plants with significant deviations.
 4. **Segment Analysis by Generation Type:** ○ Break down results by generation type (e.g., coal, natural gas, renewables) to identify specific areas of inefficiency.
 5. **Conduct Temporal Analysis:** ○ Analyze utilization patterns by season, month, or hour to uncover demand-supply mismatches or seasonal inefficiencies.

@@ -30,14 +30,16 @@ The goal of this analysis is to evaluate the performance and maintenance efficie
 ## 🪜 Step-by-step
 1. **Inventory Equipment:** ○ Create a comprehensive list of all mining equipment, including specifications and operational roles.
 2. **Analyze Utilization Rates:** ○ Calculate equipment utilization rates using the formula:
-`Utilization (%) = (Operating Hours / Total Available Hours) x 100 ○ Identify underutilized equipment and investigate reasons for low utilization.`
+`Utilization (%) = (Operating Hours / Total Available Hours) x 100`
+○ Identify underutilized equipment and investigate reasons for low utilization.
 3. **Evaluate Downtime Causes:** ○ Categorize downtime into planned (e.g., preventive maintenance) and unplanned (e.g., breakdowns). ○ Record the frequency and duration of downtime events for each equipment type.
 4. **Assess Maintenance Efficiency:** ○ Compare the costs and frequency of preventive vs. corrective maintenance. ○ Evaluate adherence to manufacturer-recommended maintenance schedules. ○ Calculate Mean Time Between Failures (MTBF) using the formula:
 `MTBF = Total Operating Time / Number of Failures`
 37 ○ Calculate Mean Time to Repair (MTTR) using the formula:
 `MTTR = Total Downtime / Number of Repairs`
 5. **Analyze Operational Performance:** ○ Assess the productivity of equipment using metrics such as:
-`Equipment Productivity = (Tons Moved or Processed / Operating Hours). ○ Benchmark performance against manufacturer specifications or industry standards.`
+`Equipment Productivity = (Tons Moved or Processed / Operating Hours).`
+○ Benchmark performance against manufacturer specifications or industry standards.
 6. **Review Energy and Fuel Efficiency:** ○ Track fuel and energy consumption rates for each equipment type. ○ Compare actual consumption with manufacturer specifications to identify inefficiencies.
 7. **Perform Benchmarking:** ○ Compare utilization, downtime, maintenance costs, and productivity metrics with peer companies or industry averages.
 8. **Conduct Root Cause Analysis for Inefficiencies:** ○ Identify recurring issues or patterns, such as specific equipment types with high breakdown rates or inefficiencies.

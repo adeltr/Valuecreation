@@ -22,7 +22,8 @@ To identify opportunities for expanding the bank’s presence in new markets or 
 
 ## 🪜 Step-by-step
 1. Assess Current Market Position ○ Calculate the bank’s market share in existing regions or customer segments:
-`Market Share = (Bank’s Revenue in Market / Total Market Revenue) x 100 ○ Identify regions or segments with high penetration and growth potential.`
+`Market Share = (Bank’s Revenue in Market / Total Market Revenue) x 100`
+○ Identify regions or segments with high penetration and growth potential.
 2. Conduct Market Opportunity Analysis ○ Evaluate the size, growth, and unmet needs of potential target markets. ○ Segment opportunities by demographic groups, geographic regions, or product lines.
 3. Analyze Competitor Positioning ○ Identify competitors’ strengths, weaknesses, and market shares in target areas. ○ Highlight underserved or less competitive regions where the bank can differentiate itself.
 4. Evaluate Economic and Regulatory Factors ○ Assess the economic environment in potential markets, including income levels and digital readiness. ○ Analyze regulatory requirements and potential risks for market entry.

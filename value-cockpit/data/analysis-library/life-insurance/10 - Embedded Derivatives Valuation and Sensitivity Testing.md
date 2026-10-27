@@ -24,7 +24,8 @@ To evaluate the fair value of embedded derivatives within life insurance product
 2. Select a Valuation Methodology a. Use financial models appropriate for the derivative type, such as: ■ Black-Scholes Model for simple options. ■ Monte Carlo Simulation for complex guarantees with path dependencies.
 3. Calculate the Fair Value a. Use the chosen model to determine the present value of the embedded derivative.
 29 b. Formula for simple guarantees:
-`Fair Value = Expected Payout x Discount Factor c. For complex guarantees, simulate multiple paths to project possible outcomes and calculate the expected payout.`
+`Fair Value = Expected Payout x Discount Factor`
+c. For complex guarantees, simulate multiple paths to project possible outcomes and calculate the expected payout.
 4. Assess Sensitivity to Key Variables a. Perform sensitivity testing by varying input parameters, such as: ■ Interest rates (e.g., +/- 100 basis points). ■ Market volatility (e.g., +/- 10%). ■ Lapse and mortality rates. b. Record changes in fair value for each parameter shift.
 5. Stress Testing Under Extreme Scenarios a. Model scenarios such as prolonged low-interest-rate environments or sharp equity market declines. b. Quantify the impact on derivative valuation and reserve requirements.
 6. Benchmark Against Industry Standards a. Compare valuation methods, fair values, and sensitivities with industry benchmarks to identify gaps or alignment with best practices.

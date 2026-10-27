@@ -23,14 +23,16 @@ To evaluate the extent of financial product cross-holdings within households, id
 ## 🪜 Step-by-step
 1. Aggregate Household Data ○ Consolidate individual accounts into household-level profiles by linking related accounts (e.g., through shared addresses or family relationships). ○ List all financial products held by each household.
 2. Calculate Cross-Holdings Metrics ○ Determine the average number of products held per household:
-`Average Cross-Holdings = (Total Number of Products Held by Households / Total Number of Households) ○ Segment households based on the number of products held (e.g., single-product, multi-product).`
+`Average Cross-Holdings = (Total Number of Products Held by Households / Total Number of Households)`
+○ Segment households based on the number of products held (e.g., single-product, multi-product).
 3. Analyze Product Bundling Patterns ○ Identify common product combinations (e.g., savings account + mortgage + credit card). ○ Assess which products are most frequently bundled and their sequence of acquisition.
 4. Evaluate Revenue Contribution by Household ○ Calculate revenue generated per household:
-`Household Revenue = Sum of Revenue from All Products Held by Household`
-121 ○ Identify high-value households with extensive cross-holdings and significant revenue contributions.
+`Household Revenue = Sum of Revenue from All Products Held by`
+Household 121 ○ Identify high-value households with extensive cross-holdings and significant revenue contributions.
 5. Segment Households by Demographics and Geography ○ Analyze cross-holdings by income, age, and geographic location to uncover trends in product adoption. ○ Highlight underpenetrated segments or regions with low cross-holdings.
 6. Assess Cross-Selling and Up-Selling Effectiveness ○ Measure success rates of cross-selling initiatives by product type:
-`Cross-Selling Rate = (Number of Additional Products Sold to Existing Customers / Total Customers Targeted) x 100 ○ Identify products or segments with the highest cross-selling potential.`
+`Cross-Selling Rate = (Number of Additional Products Sold to Existing Customers / Total Customers Targeted) x 100`
+○ Identify products or segments with the highest cross-selling potential.
 7. Monitor Trends Over Time ○ Track changes in household-level cross-holdings and revenue contributions over time. ○ Evaluate the impact of campaigns or new product launches on cross-holdings.
 8. Develop Strategies for Increasing Cross-Holdings ○ Propose initiatives to promote bundling (e.g., discounted fees for multi-product households). ○ Highlight opportunities to introduce new products to households with limited cross-holdings.
 

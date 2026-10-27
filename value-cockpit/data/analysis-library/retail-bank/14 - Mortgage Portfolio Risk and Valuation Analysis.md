@@ -24,7 +24,11 @@ To assess the risk and valuation of the bank’s mortgage portfolio by analyzing
 ## 🪜 Step-by-step
 1. Evaluate Portfolio Composition ○ Segment the portfolio by mortgage type (e.g., fixed-rate, adjustable-rate). ○ Analyze distribution by geographic location, borrower demographics, and loan sizes. ○ Calculate the weighted average interest rate and remaining term for the portfolio.
 2. Calculate Risk Metrics ○ Determine current LTV ratios:
-`Current LTV = (Outstanding Loan Balance / Current Property Value) x 100 ○ Calculate delinquency rate: Delinquency Rate = (Number of Delinquent Mortgages / Total Mortgages) x 100 ○ Assess default rate: Default Rate = (Number of Defaulted Mortgages / Total Mortgages) x 100`
+`Current LTV = (Outstanding Loan Balance / Current Property Value) x 100`
+○ Calculate delinquency rate:
+`Delinquency Rate = (Number of Delinquent Mortgages / Total Mortgages)`
+x 100 ○ Assess default rate:
+`Default Rate = (Number of Defaulted Mortgages / Total Mortgages) x 100`
 3. **Perform Valuation Analysis:** Calculate net present value (NPV) of the mortgage portfolio using the formula:
 `NPV = ∑ (Cash Flow_t / (1 + Discount Rate)^t)`
 - Cash Flow_t = expected monthly payment for each loan.

@@ -36,7 +36,8 @@ To evaluate the extent of referral leakage, understand the reasons behind it, an
 3. Segment data by demographics and services Break down referral patterns by patient demographics, service line, and referring providers to identify trends and disparities.
 4. Assess financial impact Estimate the revenue lost due to referral leakage by comparing the average revenue per referral with the volume of leaked referrals.
 69 Equation:
-`Lost Revenue = Referral Leakage Rate x Average Revenue per Referral x Total Referrals.`
+`Lost Revenue = Referral Leakage Rate x Average Revenue per Referral x Total`
+Referrals.
 5. Identify drivers of leakage Use patient and provider feedback to uncover reasons for leakage, such as limited availability, geographic barriers, or patient preference.
 6. Evaluate provider capacity Assess whether internal providers have sufficient availability to accommodate referrals, identifying gaps in resources or scheduling.
 7. Benchmark against industry standards Compare internal referral retention rates with industry benchmarks to gauge performance.

@@ -32,16 +32,16 @@ Customer Churn Rate Analysis:
 2. **Collect the number of customers at the start of the period:** Determine how many paying customers you had at the beginning of the selected period.
 3. **Count the number of customers lost during the period:** Identify the number of customers who canceled their subscriptions (churned) during the period.
 4. **Calculate the Customer Churn Rate:** Use the following formula to calculate the Customer Churn Rate:
-`Customer Churn Rate (%) = (Number of Customers Lost During the Period / Number of Customers`
-at the Start of the Period) x 100 For example, if you started the month with 1,000 customers and lost 50, the churn rate would be:
+`Customer Churn Rate (%) = (Number of Customers Lost During the Period / Number of Customers at the Start of the Period) x 100`
+For example, if you started the month with 1,000 customers and lost 50, the churn rate would be:
 `Customer Churn Rate (%) = (50 / 1,000) x 100 = 5%`
 73 Revenue Churn Rate Analysis:
 1. **Determine total revenue at the start of the period:** Gather the total recurring revenue from all customers at the start of the period.
 2. **Identify revenue lost due to churned customers:** Calculate the total revenue that was lost during the period due to customers canceling their subscriptions.
 3. **Identify revenue lost due to downgrades:** If applicable, calculate the revenue lost from customers who downgraded their subscription plans (this is sometimes combined with churned customer revenue).
 4. **Calculate the Revenue Churn Rate:** Use the following formula to calculate the Revenue Churn Rate:
-`Revenue Churn Rate (%) = (Revenue Lost During the Period / Total Revenue at the Start of the`
-Period) x 100 For example, if your starting revenue was $100,000 and you lost $5,000 due to churned customers, the revenue churn rate would be:
+`Revenue Churn Rate (%) = (Revenue Lost During the Period / Total Revenue at the Start of the Period) x 100`
+For example, if your starting revenue was $100,000 and you lost $5,000 due to churned customers, the revenue churn rate would be:
 `Revenue Churn Rate (%) = ($5,000 / $100,000) x 100 = 5%`
 Net Revenue Churn Rate Analysis (optional):
 1. **Account for expansion revenue:** Gather the revenue gained from existing customers through upgrades or cross-sells during the period.

@@ -30,7 +30,9 @@ The goal of a Throughput and Bottleneck Identification analysis is to assess the
 
 ## 🪜 Step-by-step
 1. **Measure Throughput:** ○ Throughput is the rate at which the manufacturing process produces
-`finished goods. It can be measured as: Throughput = Total Units Produced / Total Time For example, if a factory produces 500 units in 8 hours: Throughput = 500 units / 8 hours = 62.5 units per hour`
+`finished goods. It can be measured as: Throughput = Total Units Produced / Total Time`
+For example, if a factory produces 500 units in 8 hours: Throughput = 500
+`units / 8 hours = 62.5 units per hour`
 2. **Map the Production Process:** ○ Create a detailed map of the entire production process, showing each step from raw materials to finished goods. For each stage, include data on cycle times, machine utilization, and WIP inventory.
 3. Identify Bottlenecks:
 39 ○ Compare cycle times across all stages of production. A bottleneck occurs when one stage takes significantly longer than others, causing work to pile up. For example, if a machine can only process 20 units per hour while the next stage processes 40 units per hour, the slower machine is the bottleneck.

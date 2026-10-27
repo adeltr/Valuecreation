@@ -32,7 +32,8 @@ To evaluate the payer mix and optimize reimbursement rates by identifying high- 
 1. Analyze payer mix distribution Calculate the percentage of revenue contributed by each payer type. Equation:
 `Payer Mix (%) = (Revenue from Payer / Total Revenue) x 100.`
 2. Evaluate reimbursement rates Assess average reimbursement rates for high-volume services or procedures across all payers. Equation:
-`Average Reimbursement Rate = Total Reimbursement from Payer / Total Billed Charges for Payer.`
+`Average Reimbursement Rate = Total Reimbursement from Payer / Total Billed`
+Charges for Payer.
 3. Assess profitability by payer Compare reimbursement rates with service costs to determine profitability margins. Equation:
 `Profit Margin (%) = ((Reimbursement - Cost) / Reimbursement) x 100.`
 4. Segment patient volume by payer Analyze the patient population for each payer type to identify trends and opportunities to optimize contracts.

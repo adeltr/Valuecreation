@@ -30,7 +30,8 @@ The goal of this analysis is to break down the cost components of mining operati
 ## 🪜 Step-by-step
 1. **Gather Operating and Capital Cost Data:** ○ Break down total costs into specific categories such as mining, processing, maintenance, and transportation. ○ Include indirect costs such as administrative expenses and regulatory compliance costs.
 2. **Calculate Total Operating Cost per Unit:** ○ Use the formula:
-`Operating Cost per Unit ($/unit) = Total Operating Costs / Total Units of Production`
+`Operating Cost per Unit ($/unit) = Total Operating Costs / Total Units of`
+Production
 3. **Incorporate By-Product Credits:** ○ Account for revenues from by-products to offset operating costs using the formula:
 `Net Operating Cost = Total Operating Costs - By-Product Revenues`
 4. **Calculate Cash Cost per Unit:** ○ Use the formula:

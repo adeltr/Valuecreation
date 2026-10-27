@@ -25,7 +25,8 @@ To evaluate the use of reserve financing and captive insurance structures to opt
 2. **Assess Reserve Financing Options a. Analyze financing mechanisms such as:** ■ Letters of credit (LOCs) ■ Surplus notes ■ Reinsurance treaties (funds withheld, modified coinsurance) b. Compare the cost of financing options against expected benefits in terms of capital relief.
 3. Analyze Captive Insurance Structures a. Review captive insurance arrangements, including premiums ceded, risk retained, and claims experience. b. Measure the capital and cost benefits of transferring reserves to the captive entity.
 4. Calculate Financial Impact a. Quantify the savings or costs of reserve financing and captive strategies:
-`Net Financing Benefit = Reserve Relief - (Financing Costs + Administrative Costs) b. Measure the impact on statutory capital, liquidity, and surplus levels.`
+`Net Financing Benefit = Reserve Relief - (Financing Costs + Administrative Costs)`
+b. Measure the impact on statutory capital, liquidity, and surplus levels.
 77
 5. Evaluate Counterparty and Credit Risk a. Analyze the risk exposure to financing providers (e.g., LOC issuers or reinsurers). b. Assess counterparty creditworthiness and default risk.
 6. Ensure Regulatory Compliance a. Compare reserve financing and captive arrangements against regulatory requirements in applicable jurisdictions. b. Review reporting and disclosure obligations to ensure compliance.

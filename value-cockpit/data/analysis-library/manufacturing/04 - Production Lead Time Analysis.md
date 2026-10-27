@@ -30,8 +30,7 @@ The goal of a Production Lead Time Analysis is to measure the time it takes from
 ## 🪜 Step-by-step
 1. **Gather Data on Production Orders:** ○ Collect data for several recent production orders, including the date of order placement, start of production, and completion date.
 2. **Break Down Production Stages:** ○ Identify the key stages in the production process (e.g., raw material preparation, assembly, packaging, quality checks). For each stage, record the time taken.
-3. Calculate Total Production Lead Time:
-`○ Production Lead Time = End of Production Date - Start of Production Date`
+3. **Calculate Total Production Lead Time:** ○ Production Lead Time = End of Production Date - Start of Production Date
 4. For example, if production started on September 1 and ended on September 10, the lead time is 9 days.
 5. **Identify Bottlenecks:** ○ Analyze each stage of production to identify where the most time is spent. Compare this to standard cycle times or benchmarks to find bottlenecks or inefficiencies.
 6. Evaluate Impact of Downtime:

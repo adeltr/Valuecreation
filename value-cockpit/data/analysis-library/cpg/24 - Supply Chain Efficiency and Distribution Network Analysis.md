@@ -37,13 +37,16 @@ The goal of a Supply Chain Efficiency and Distribution Network Analysis in the c
 3. **Map the distribution network:** Create a detailed map of your current distribution network, including manufacturing plants, warehouses, and distribution centers. Evaluate the geographic alignment of your distribution network with your key retail markets. Determine whether certain locations (e.g., warehouses or distribution centers) are underutilized or lead to unnecessary transportation distances. Average Distance Traveled can be calculated as:
 `Average Distance = Total Distance Traveled by Goods / Number of Deliveries`
 4. **Evaluate inventory turnover and stock levels:** Review inventory turnover rates and stock levels at each node in the supply chain, including warehouses and distribution centers. High inventory levels or low turnover rates may indicate inefficiencies in demand forecasting or supply chain management. Inventory turnover can be calculated using the formula:
-`Inventory Turnover Ratio = Cost of Goods Sold / Average Inventory For example, if a distribution center has $500,000 in COGS and an average`
-140 inventory value of $250,000:
-`Inventory Turnover = $500,000 / $250,000 = 2 (indicating that inventory turns over twice in the period) Low turnover rates indicate excess stock, while high turnover rates with frequent stockouts suggest a need for better inventory management.`
+`Inventory Turnover Ratio = Cost of Goods Sold / Average Inventory`
+For example, if a distribution center has $500,000 in COGS and an average 140 inventory value of $250,000:
+`Inventory Turnover = $500,000 / $250,000 = 2 (indicating that inventory turns over twice in the period)`
+Low turnover rates indicate excess stock, while high turnover rates with frequent stockouts suggest a need for better inventory management.
 5. **Analyze transportation efficiency:** Assess the efficiency of your transportation operations by analyzing metrics such as fuel costs, vehicle utilization, route optimization, and delivery lead times. Inefficient transportation routes, underutilized vehicles, or high fuel costs can drive up logistics expenses. Focus on improving vehicle load utilization and optimizing delivery routes to reduce costs and improve service levels. Fuel Efficiency can be calculated as:
 `Fuel Efficiency = Total Distance Traveled / Total Fuel Consumed`
 6. **Track delivery lead times and service levels:** Monitor delivery lead times and service levels across different distribution centers and regions. Long delivery lead times can result in stockouts and poor service levels, negatively impacting retailer and consumer satisfaction. Track how well your distribution network meets service level agreements (SLAs) and ensure timely deliveries. On-time Delivery Rate can be calculated as:
-`On-time Delivery Rate (%) = (Number of On-time Deliveries / Total Number of Deliveries) x 100 For example, if 900 out of 1,000 deliveries were on time: On-time Delivery Rate = (900 / 1,000) x 100 = 90%`
+`On-time Delivery Rate (%) = (Number of On-time Deliveries / Total Number of Deliveries) x 100`
+For example, if 900 out of 1,000 deliveries were on time:
+`On-time Delivery Rate = (900 / 1,000) x 100 = 90%`
 7. **Assess supplier lead times and reliability:** Evaluate the performance of suppliers in delivering raw materials or finished goods to your manufacturing plants or warehouses. Suppliers with long or inconsistent lead times can cause delays and disrupt the flow of goods. Use data on supplier performance to identify bottlenecks and negotiate improved delivery terms where necessary. Supplier Reliability can be measured as the percentage of orders delivered on time and in full (OTIF).
 141
 8. **Analyze SKU performance across distribution centers:** Review how different SKUs perform across your distribution network. Some SKUs may be overstocked in certain regions while understocked in others. Use SKU-level performance data to adjust inventory levels and ensure that products are available where demand is highest, minimizing stockouts and excess inventory.

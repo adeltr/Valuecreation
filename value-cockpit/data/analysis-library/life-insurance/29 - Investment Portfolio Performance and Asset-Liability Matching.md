@@ -20,11 +20,13 @@ To assess the performance of the life insurance company’s investment portfolio
 
 ## 🪜 Step-by-step
 1. Analyze Investment Portfolio Performance a. Calculate historical and current investment returns for each asset class:
-`Investment Return (%) = (Investment Income + Capital Gains) / Portfolio Value x 100 b. Compare actual returns to benchmarks for each asset class (e.g., government bonds, equity indices).`
+`Investment Return (%) = (Investment Income + Capital Gains) / Portfolio Value x 100`
+b. Compare actual returns to benchmarks for each asset class (e.g., government bonds, equity indices).
 2. Evaluate Portfolio Risk and Asset Composition a. Assess the portfolio’s risk exposure by asset type, credit ratings, and geographic diversification. b. Quantify portfolio volatility and downside risks using metrics such as Value at Risk (VaR).
 83
 3. Measure Asset-Liability Matching (ALM) a. Calculate the duration and cash flow profile of both assets and liabilities:
-`Duration Gap = Asset Duration - Liability Duration b. Identify mismatches where the duration of assets does not align with the timing of future liabilities.`
+`Duration Gap = Asset Duration - Liability Duration`
+b. Identify mismatches where the duration of assets does not align with the timing of future liabilities.
 4. Perform ALM Gap Analysis a. Compare projected asset cash flows with liability cash flow obligations. b. Highlight gaps where asset maturities fall short of covering liability payouts, creating liquidity or reinvestment risk.
 5. Stress Test ALM Under Adverse Scenarios a. Model the impact of macroeconomic shocks on asset returns and liability values, such as: ■ Interest rate increases or decreases (100–200 basis points). ■ Equity market declines. ■ Inflationary impacts on liabilities. b. Measure changes in portfolio returns and ALM gaps under each scenario.
 6. Benchmark Portfolio and ALM Results a. Compare portfolio returns, asset allocation, and ALM metrics to industry peers and best practices. b. Assess alignment with regulatory requirements for asset-liability management.

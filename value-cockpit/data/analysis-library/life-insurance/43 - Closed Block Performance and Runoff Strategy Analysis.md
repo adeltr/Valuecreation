@@ -21,7 +21,11 @@ To evaluate the financial performance and operational sustainability of a closed
 
 ## 🪜 Step-by-step
 1. Assess the Current Financial Performance of the Closed Block a. Calculate key performance indicators:
-`Closed Block Surplus = (Reserves + Investment Income - Claims Paid - Operating Expenses) Expense Ratio (%) = (Total Administrative Costs / Premium Revenue) x 100 Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100 b. Measure the adequacy of reserves to meet future obligations based on mortality, lapse, and expense trends.`
+`Closed Block Surplus = (Reserves + Investment Income - Claims Paid - Operating Expenses)`
+`Expense Ratio (%) = (Total Administrative Costs / Premium Revenue)`
+x 100
+`Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100`
+b. Measure the adequacy of reserves to meet future obligations based on mortality, lapse, and expense trends.
 2. **Analyze the Investment Income Supporting the Closed Block:** 127 a. Assess the yield and performance of the assets backing the closed block liabilities. b. Compare the expected investment income to projected claims and expenses to identify funding gaps.
 3. Evaluate Risk Factors a. Analyze mortality and lapse rate experience compared to actuarial assumptions. b. Assess the impact of adverse deviations (e.g., higher-than-expected mortality, low lapses, or expense inflation) on reserves and surplus.
 4. Model Cash Flow Projections a. Project future cash flows for the closed block, including premium income, claims payouts, administrative costs, and investment returns. b. Measure the expected runoff duration of the closed block under baseline and adverse scenarios.

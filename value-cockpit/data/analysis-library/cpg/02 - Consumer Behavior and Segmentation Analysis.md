@@ -37,8 +37,8 @@ The goal of a Consumer Behavior and Segmentation Analysis is to understand the k
 5. **Cluster analysis for consumer segmentation:** Use clustering algorithms (e.g., k-means clustering) to identify groups of consumers with similar attributes. The number of clusters (segments) can be determined based on the variability in the data. For each cluster, analyze the key traits that differentiate them from others.
 6. **Develop consumer personas for each segment:** Once the clusters are identified, create detailed consumer personas for each segment. These personas should include key characteristics, motivations, purchasing behaviors, and preferred communication channels. For example, "Tech-Savvy Millennial Moms" or "Value-Conscious Suburban Families."
 7. **Calculate segment contribution to revenue:** Analyze the contribution of each segment to overall company revenue. The formula for Segment Contribution can be calculated as:
-`Segment Contribution = (Segment Revenue / Total Revenue) x 100 For example, if the "Urban Professionals" segment generated $30 million in`
-11 revenue, and the total company revenue is $150 million:
+`Segment Contribution = (Segment Revenue / Total Revenue) x 100`
+For example, if the "Urban Professionals" segment generated $30 million in 11 revenue, and the total company revenue is $150 million:
 `Segment Contribution = ($30 million / $150 million) x 100 = 20%`
 8. **Analyze consumer behavior within each segment:** Evaluate key behaviors and purchasing patterns within each segment, such as: ○ Frequency of purchase (e.g., weekly, monthly, seasonally) ○ Average basket size or order value ○ Brand loyalty vs. switching behavior ○ Preferred shopping channels (e.g., in-store, online, mobile)
 9. **Identify needs and pain points:** Through consumer surveys or feedback, identify the unique needs, preferences, and pain points of each segment. This insight can help inform product development, marketing messages, and customer service improvements.

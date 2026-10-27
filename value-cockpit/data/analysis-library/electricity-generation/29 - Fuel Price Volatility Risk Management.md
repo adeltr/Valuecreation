@@ -29,9 +29,11 @@ To evaluate exposure to fuel price volatility and develop strategies to mitigate
 
 ## 🪜 Step-by-step
 1. **Analyze Historical Fuel Price Volatility:** ○ Calculate price volatility for each fuel type using historical data:
-`Price Volatility (%) = (Standard Deviation of Prices / Average Price) x 100 ○ Identify periods of high price fluctuations and their drivers.`
+`Price Volatility (%) = (Standard Deviation of Prices / Average Price) x 100`
+○ Identify periods of high price fluctuations and their drivers.
 2. **Assess Fuel Cost Exposure:** ○ Calculate the percentage of total generation costs attributable to fuel expenses:
-`Fuel Cost Exposure (%) = (Fuel Costs / Total Generation Costs) x 100 ○ Break down exposure by plant and generation type.`
+`Fuel Cost Exposure (%) = (Fuel Costs / Total Generation Costs) x 100`
+○ Break down exposure by plant and generation type.
 3. **Evaluate Procurement Strategies:** ○ Review procurement contracts to assess the proportion of fuel secured through fixed-price agreements versus spot market purchases. ○ Identify gaps in contract coverage that increase exposure to price fluctuations.
 4. **Review Hedging Effectiveness:** ○ Analyze the financial performance of existing hedging strategies by comparing actual costs with and without hedging instruments. ○ Calculate cost savings or losses resulting from hedging activities.
 5. Simulate Price Volatility Scenarios:

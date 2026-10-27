@@ -37,11 +37,13 @@ The goal of a Consumer Demand Shaping through Marketing Campaigns analysis in th
 2. **Collect pre-campaign baseline data:** Gather data on sales performance, consumer awareness, and market share before launching the campaign. This will serve as the baseline for measuring the impact of marketing efforts. Key metrics to track include: ○ Sales volume of the targeted product(s) ○ Market share in key categories ○ Brand awareness or recall rates
 3. **Track marketing campaign performance:** Monitor the performance of the campaign across various channels (e.g., digital, TV, social media, print). Use key performance indicators (KPIs) like: ○ Impressions: The total number of times your ad was viewed. ○ Click-through rates (CTR): The percentage of people who clicked on your ad after seeing it. ○ Engagement: Likes, shares, comments, and overall interaction with the campaign. ○ Coupon redemption rates (if applicable): The percentage of distributed coupons that were redeemed.
 4. **Measure the uplift in sales during and after the campaign:** Compare sales data from the campaign period with pre-campaign data to assess the increase in demand. Use the formula to calculate the percentage sales uplift:
-`Sales Uplift (%) = ((Sales During Campaign - Sales Before Campaign) / Sales Before Campaign) x 100 For example, if sales before the campaign were $100,000 and sales during the`
-55 campaign were $130,000:
+`Sales Uplift (%) = ((Sales During Campaign - Sales Before Campaign) / Sales Before Campaign) x 100`
+For example, if sales before the campaign were $100,000 and sales during the 55 campaign were $130,000:
 `Sales Uplift (%) = (($130,000 - $100,000) / $100,000) x 100 = 30%`
 5. **Assess market share changes:** Track how the campaign impacts the company’s market share in the targeted product categories. Calculate the change in market share using the formula:
-`Market Share Change (%) = ((Market Share After Campaign - Market Share Before Campaign) / Market Share Before Campaign) x 100 For example, if market share was 15% before the campaign and increased to 18% after: Market Share Change (%) = ((18 - 15) / 15) x 100 = 20%`
+`Market Share Change (%) = ((Market Share After Campaign - Market Share Before Campaign) / Market Share Before Campaign) x 100`
+For example, if market share was 15% before the campaign and increased to 18% after:
+`Market Share Change (%) = ((18 - 15) / 15) x 100 = 20%`
 6. **Analyze consumer behavior shifts:** Review consumer behavior data to determine how the campaign has influenced purchasing patterns. Key questions include: ○ Did the campaign lead to increased purchase frequency? ○ Did it drive consumers to try new products or categories? ○ How did the campaign impact consumer loyalty or repeat purchases?
 7. For example, if the goal of the campaign was to increase purchases of a new product, analyze if sales for that product have increased while maintaining or growing market share for other product lines.
 8. **Evaluate channel effectiveness:** Break down the performance of each marketing channel to understand which were most effective in shaping demand. Compare engagement and conversion rates across digital, TV, in-store promotions, and social media. For example, if digital ads had a higher CTR but in-store promotions drove more sales, consider adjusting future spend toward higher-performing channels.

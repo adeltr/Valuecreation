@@ -22,9 +22,11 @@ To construct survival curves and calibrate mortality tables for life insurance p
 ## 🪜 Step-by-step
 1. Clean and prepare data by grouping policyholders into cohorts based on age, gender, and policy type. Identify exposure periods (e.g., years at risk).
 2. Construct survival curves using the Kaplan-Meier estimator:
-`Survival Probability (S_t) = S_(t-1) * (1 - d_t / n_t) where d_t = number of deaths at time t and n_t = number of individuals at risk just before t.`
+`Survival Probability (S_t) = S_(t-1) * (1 - d_t / n_t)`
+where d_t = number of deaths at time t and n_t = number of individuals at risk just before t.
 3. Calculate mortality rates for each age group:
-`Mortality Rate (q_x) = Number of Deaths in Age Group / Number of Lives Exposed in Age Group.`
+`Mortality Rate (q_x) = Number of Deaths in Age Group / Number of Lives`
+Exposed in Age Group.
 4. Compare observed mortality rates to a baseline mortality table. Apply adjustment factors where deviations occur. For example:
 `Adjusted Mortality Rate = Standard Mortality Rate * Scaling Factor.`
 5. Perform goodness-of-fit tests to validate the adjusted mortality table. Use methods like Chi-squared tests to confirm alignment between observed and expected mortality rates.

@@ -33,7 +33,8 @@ The goal of this analysis is to evaluate the effectiveness and efficiency of a m
 3. **Evaluate Discovered Resources:** ○ Aggregate the total quantity of discovered resources by classification (Measured, Indicated, Inferred).
 4. **Analyze Exploration Expenditures:** ○ Sum up the total costs incurred for exploration activities during the analysis period.
 5. **Calculate Discovery Cost:** ○ Use the formula:
-`Discovery Cost ($/unit) = Total Exploration Expenditures / Total Quantity of Discovered Resources`
+`Discovery Cost ($/unit) = Total Exploration Expenditures / Total Quantity of`
+Discovered Resources
 6. **Segment Analysis by Region or Commodity:** ○ Break down the data by geographic region, resource type, or project type to identify patterns or inefficiencies.
 7. Perform Benchmarking:
 15 ○ Compare the company’s success rate and discovery cost with industry averages or peer companies to evaluate competitive positioning.

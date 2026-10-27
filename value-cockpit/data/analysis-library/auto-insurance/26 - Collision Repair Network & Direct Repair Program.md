@@ -22,7 +22,8 @@ Assess how effectively the company’s preferred collision repair network or dir
 ## 🪜 Step-by-step
 1. Gather claims data specifying whether a repair was completed through a DRP shop or an out-of-network facility. Collect information on total repair costs, parts usage, labor hours, and repair duration.
 2. Calculate key performance indicators (KPIs) for each DRP partner, such as:
-`○ Average repair cost = (Total Incurred Repair Costs / Number of Repairs) ○ Average cycle time (days from drop-off to completion) ○ Rework rate (percentage of repairs requiring additional work or corrections)`
+`○ Average repair cost = (Total Incurred Repair Costs / Number of Repairs)`
+○ Average cycle time (days from drop-off to completion) ○ Rework rate (percentage of repairs requiring additional work or corrections)
 3. Compare DRP performance against out-of-network repairs to see if in-network shops deliver lower costs, faster turnaround, or higher customer satisfaction. Note if there are specific shops with exceptional or subpar results.
 4. Examine trends in parts usage (OEM vs. aftermarket) and labor charges among DRP shops. Determine if contract terms (e.g., negotiated labor rates) are effectively containing costs without compromising quality.
 5. Assess customer satisfaction by reviewing feedback or survey results. Correlate satisfaction scores with factors such as repair quality, timeliness, and communication.

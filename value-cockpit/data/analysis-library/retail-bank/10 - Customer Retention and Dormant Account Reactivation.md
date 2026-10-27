@@ -32,7 +32,8 @@ To evaluate retention rates and identify strategies to reduce customer churn. Ad
 For reactivation:
 ○ Use targeted campaigns offering incentives (e.g., fee waivers, bonus interest) for reactivation. ○ Personalize outreach using channels preferred by dormant customers (email, SMS, or phone).
 7. Monitor and Test Strategy Effectiveness ○ Track retention rate improvements and reactivation campaign success rates:
-`Reactivation Rate = (Number of Reactivated Accounts / Total Dormant Accounts Targeted) x 100 ○ Use A/B testing to optimize reactivation messages and offers.`
+`Reactivation Rate = (Number of Reactivated Accounts / Total Dormant Accounts Targeted) x 100`
+○ Use A/B testing to optimize reactivation messages and offers.
 
 
 ## 📤 Output format

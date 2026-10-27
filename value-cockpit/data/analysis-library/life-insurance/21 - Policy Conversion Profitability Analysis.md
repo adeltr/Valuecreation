@@ -22,9 +22,12 @@ To evaluate the financial performance of policy conversions, such as term-to-per
 ## 🪜 Step-by-step
 1. Segment Conversion Data ○ Group converted policies by product type (e.g., term-to-whole life, term-to-universal life). ○ Further segment data by demographics, such as age, gender, and policy duration before conversion.
 2. Calculate Profitability Metrics ○ Measure profitability for converted policies using the formula:
-`Profitability = Post-Conversion Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses) ○ Compare profit margins between converted policies and original term policies: Profit Margin (%) = (Profitability / Premium Revenue) x 100`
+`Profitability = Post-Conversion Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)`
+○ Compare profit margins between converted policies and original term policies:
+`Profit Margin (%) = (Profitability / Premium Revenue) x 100`
 3. **Analyze Persistency Trends:** 60 ○ Evaluate persistency rates for converted policies:
-`Persistency Rate (%) = (Number of Active Converted Policies / Total Converted Policies) x 100 ○ Compare with non-converted policies to identify retention differences.`
+`Persistency Rate (%) = (Number of Active Converted Policies / Total Converted Policies) x 100`
+○ Compare with non-converted policies to identify retention differences.
 4. Measure Claims Experience ○ Analyze mortality claims post-conversion relative to actuarial assumptions. ○ Calculate the Loss Ratio to assess claims performance:
 `Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100`
 5. Assess Cost of Conversion ○ Quantify acquisition and administrative costs incurred during the conversion process. ○ Compare costs to profitability margins to assess financial efficiency.

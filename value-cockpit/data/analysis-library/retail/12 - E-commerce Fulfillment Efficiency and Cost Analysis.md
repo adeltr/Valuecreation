@@ -31,17 +31,23 @@ The goal of E-commerce Fulﬁllment E9iciency and Cost Analysis is to evaluate h
 
 ## 🪜 Step-by-step
 1. **Collect data on order processing and fulﬁllment times:** Gather data on how long it takes to process, pick, pack, and ship each online order. Measure the average fulﬁllment time using this formula:
-`Fulﬁllment Time = Total Time for Order Fulﬁllment / Number of Orders Fulﬁlled This metric tracks the e9iciency of the fulﬁllment process and highlights any delays in processing.`
+`Fulﬁllment Time = Total Time for Order Fulﬁllment / Number of Orders Fulﬁlled`
+This metric tracks the e9iciency of the fulﬁllment process and highlights any delays in processing.
 2. **Calculate fulﬁllment costs per order:** Analyze the cost of fulﬁlling each order, including labor, packaging materials, and shipping costs. Use the following equation to determine the average cost per order:
-`Fulﬁllment Cost per Order = (Labor Costs + Packaging Costs + Shipping Costs) / Number of Orders Fulﬁlled This helps identify how much each order costs to fulﬁll and where potential savings can be found.`
+`Fulﬁllment Cost per Order = (Labor Costs + Packaging Costs + Shipping Costs) / Number of`
+Orders Fulﬁlled This helps identify how much each order costs to fulﬁll and where potential savings can be found.
 3. **Measure order accuracy rate:** Evaluate the accuracy of the fulﬁllment process by calculating the percentage of orders that are correctly picked, packed, and shipped without errors:
-`Order Accuracy Rate (%) = (Number of Correct Orders Fulﬁlled / Total Orders Fulﬁlled) x 100 High accuracy ensures customer satisfaction and reduces costly returns or replacements.`
+`Order Accuracy Rate (%) = (Number of Correct Orders Fulﬁlled / Total Orders Fulﬁlled) x 100`
+High accuracy ensures customer satisfaction and reduces costly returns or replacements.
 4. **Assess shipping costs:** Break down shipping costs by order, region, or weight to identify where costs are higher and potentially ﬁnd opportunities for optimization. Use this equation:
-`Shipping Cost per Order = Total Shipping Costs / Number of Orders Shipped Compare these costs to industry benchmarks or company goals to determine if shipping is e9icient.`
+`Shipping Cost per Order = Total Shipping Costs / Number of Orders Shipped`
+Compare these costs to industry benchmarks or company goals to determine if shipping is e9icient.
 5. **Analyze return rates due to fulﬁllment errors (optional):** Track the percentage of orders returned due to fulﬁllment mistakes (e.g., wrong items, incorrect quantities):
-`Return Rate Due to Fulﬁllment Errors (%) = (Returns Due to Errors / Total Orders Fulﬁlled) x 100 A high return rate may indicate problems in the fulﬁllment process that require improvement.`
+`Return Rate Due to Fulﬁllment Errors (%) = (Returns Due to Errors / Total Orders Fulﬁlled) x 100`
+A high return rate may indicate problems in the fulﬁllment process that require improvement.
 6. **Evaluate labor eMiciency:** Measure how much labor is required to fulﬁll orders by calculating the average number of orders processed per employee or per labor hour:
-`Orders per Labor Hour = Total Orders Fulﬁlled / Total Labor Hours This metric can help identify whether labor resources are being used e9iciently or if more sta9ing is required during peak times.`
+`Orders per Labor Hour = Total Orders Fulﬁlled / Total Labor Hours`
+This metric can help identify whether labor resources are being used e9iciently or if more sta9ing is required during peak times.
 7. **Review customer satisfaction and feedback (optional):** If available, analyze customer feedback related to delivery times, order accuracy, and overall fulﬁllment experience. Customer satisfaction can provide insights into how well the fulﬁllment process meets customer expectations.
 Potential complications that can arise with this analysis •   Inconsistent data collection: Incomplete or inaccurate tracking of fulﬁllment times, labor hours, or shipping costs can lead to incorrect conclusions about the e9iciency of the process.
 •   Seasonal variability: Fulﬁllment e9iciency may ﬂuctuate during peak seasons, leading to temporary delays or increased labor costs that must be accounted for in the analysis.

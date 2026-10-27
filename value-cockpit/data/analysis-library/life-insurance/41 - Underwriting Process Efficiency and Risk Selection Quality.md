@@ -21,13 +21,19 @@ To evaluate the efficiency of the underwriting process and assess the quality of
 
 ## 🪜 Step-by-step
 1. Measure Underwriting Process Efficiency a. Calculate average underwriting turnaround times:
-`Average Turnaround Time = Total Underwriting Time / Number of Policies Issued b. Compare processing times between: ■ Automated underwriting (straight-through processing) ■ Manual underwriting (cases referred for further assessment)`
+`Average Turnaround Time = Total Underwriting Time / Number of`
+Policies Issued b. Compare processing times between: ■ Automated underwriting (straight-through processing) ■ Manual underwriting (cases referred for further assessment)
 120 c. Measure cost per underwritten policy:
-`Cost per Policy = Total Underwriting Expenses / Total Policies Underwritten`
+`Cost per Policy = Total Underwriting Expenses / Total Policies`
+Underwritten
 2. **Analyze Risk Selection Quality a. Segment policies by risk classification:** preferred, standard, and substandard. b. Measure claims experience for each risk class:
-`Loss Ratio (%) = (Claims Paid / Premium Collected) x 100 c. Compare expected vs. actual claims experience for each segment to identify gaps in risk assessment.`
+`Loss Ratio (%) = (Claims Paid / Premium Collected) x 100`
+c. Compare expected vs. actual claims experience for each segment to identify gaps in risk assessment.
 3. Assess Underwriting Decision Outcomes a. Measure approval, decline, and referral rates:
-`Approval Rate (%) = (Approved Policies / Total Applications) x 100 Decline Rate (%) = (Declined Policies / Total Applications) x 100 Referral Rate (%) = (Referred Policies / Total Applications) x 100 b. Identify reasons for high referral or decline rates, such as missing information, underwriting guidelines, or process inefficiencies.`
+`Approval Rate (%) = (Approved Policies / Total Applications) x 100`
+`Decline Rate (%) = (Declined Policies / Total Applications) x 100`
+`Referral Rate (%) = (Referred Policies / Total Applications) x 100`
+b. Identify reasons for high referral or decline rates, such as missing information, underwriting guidelines, or process inefficiencies.
 4. Evaluate Underwriting Accuracy a. Track claims performance for underwritten policies to assess underwriting quality: ■ High loss ratios in certain risk segments indicate underwriting inaccuracies. ■ Low claims performance in “preferred” risk classes highlights opportunities to refine risk selection criteria.
 5. Benchmark Underwriting Efficiency a. Compare the company’s underwriting turnaround times, costs, and loss ratios with industry standards. b. Identify gaps where underwriting processes lag behind competitors.
 6. Analyze Process Bottlenecks a. Map the underwriting workflow to identify delays or inefficiencies, such as: ■ Manual data entry or verification ■ Insufficient integration with external data sources (e.g., health records, credit scores)

@@ -23,7 +23,8 @@ To identify distinct customer segments within the retail bank's customer base an
 1. Data Collection ○ Extract relevant customer demographic and transactional data from CRM systems and banking databases. ○ Ensure data accuracy and completeness by cleaning and validating datasets.
 2. Segment Creation ○ Use clustering techniques (e.g., k-means clustering or hierarchical clustering) to group customers based on shared attributes such as demographics, behaviors, and product usage. ○ Identify key segments such as "High-Value Customers," "Young Professionals," "Retirees," etc.
 3. Product Penetration Analysis ○ Calculate product penetration rate for each segment using the formula:
-`Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100 ○ Compare penetration rates across segments for each product.`
+`Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100`
+○ Compare penetration rates across segments for each product.
 4. **Gap and Opportunity Identification:** 6 ○ Identify products with low penetration in specific segments but high potential for adoption based on segment characteristics. ○ For example, if "Young Professionals" have a low penetration of investment products, this signals a growth opportunity.
 5. Behavioral Insights ○ Analyze transaction and interaction data to uncover preferences, spending habits, or service needs unique to each segment.
 6. Action Plan Development ○ Recommend tailored marketing and product bundling strategies for each segment based on identified gaps and preferences.

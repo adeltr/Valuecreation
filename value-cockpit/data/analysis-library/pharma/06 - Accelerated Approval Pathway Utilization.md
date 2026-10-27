@@ -32,14 +32,16 @@ The goal of analyzing Accelerated Approval Pathway Utilization is to assess how 
 ## 🪜 Step-by-step
 1. **Data Collection:** ○ Gather a list of all drugs in the company's pipeline that have applied for or received an expedited regulatory designation, such as Fast Track or Breakthrough Therapy. ○ Record the time taken from the start of clinical trials to approval and compare this with drugs that did not use accelerated pathways.
 2. **Evaluate Success Rates of Accelerated Pathways:** ○ Use the following formula to calculate the success rate for drugs that utilized accelerated pathways:
-`Success Rate (Accelerated Pathways) = (Number of Drugs Approved via Accelerated Pathway / Number of Drugs Applying for Accelerated Pathway) * 100 ○ Compare these rates with standard approval pathways to determine whether accelerated programs increase the likelihood of approval.`
+`Success Rate (Accelerated Pathways) = (Number of Drugs Approved via Accelerated Pathway / Number of Drugs Applying for Accelerated Pathway) * 100`
+○ Compare these rates with standard approval pathways to determine whether accelerated programs increase the likelihood of approval.
 3. **Analyze Development Timelines:** ○ Measure the reduction in development time for drugs using accelerated pathways compared to standard approval processes. ○ Evaluate how much earlier drugs reach the market by using these pathways, and calculate the impact on projected revenue.
 4. Assess Use of Surrogate Endpoints:
 22 ○Review the surrogate endpoints used in clinical trials for drugs in accelerated programs. Surrogate endpoints (e.g., biomarker improvements, tumor shrinkage) are often used in lieu of traditional endpoints like overall survival or symptom reduction. ○ Determine how effective these surrogate endpoints are at meeting FDA or EMA requirements for Accelerated Approval.
 5. **Post-Marketing Study Commitments:** ○ Analyze the post-marketing study commitments (also known as Phase IV studies) required for drugs approved via Accelerated Approval. These studies are needed to confirm the drug’s long-term efficacy or safety. ○ Examine the company’s track record for completing these studies in a timely manner and how this affects ongoing regulatory requirements.
 6. **Compare with Competitors:** ○ Investigate whether competitors are using similar expedited pathways for their drugs in the same therapeutic areas. ○ Analyze how the company’s use of accelerated pathways affects its competitive position in terms of time-to-market and potential market share.
 7. **Assess Impact on Revenue and Market Entry:** ○ Estimate the financial impact of faster market entry due to accelerated approval. This includes earlier revenue generation and the potential to gain first-mover advantage in competitive therapeutic areas. ○ Use the following equation to estimate the revenue impact:
-`Early Revenue Impact = (Annual Revenue Potential of Drug / 12) * Months Saved via Accelerated Approval ○ For example, if a drug is expected to generate $500M annually and Accelerated Approval leads to a market entry 12 months earlier, the early revenue impact would be approximately $500M.`
+`Early Revenue Impact = (Annual Revenue Potential of Drug / 12) * Months`
+Saved via Accelerated Approval ○ For example, if a drug is expected to generate $500M annually and Accelerated Approval leads to a market entry 12 months earlier, the early revenue impact would be approximately $500M.
 
 
 ## 📤 Output format

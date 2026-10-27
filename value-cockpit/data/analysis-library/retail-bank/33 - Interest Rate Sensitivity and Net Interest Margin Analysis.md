@@ -22,9 +22,12 @@ To assess the bank’s sensitivity to interest rate changes and evaluate its Net
 
 ## 🪜 Step-by-step
 1. Calculate Current Net Interest Margin (NIM) ○ Use the formula:
-`NIM = ((Interest Income - Interest Expense) / Average Earning Assets) x 100 ○ Segment NIM by product type (e.g., fixed-rate loans, adjustable-rate loans, term deposits).`
+`NIM = ((Interest Income - Interest Expense) / Average Earning Assets) x 100`
+○ Segment NIM by product type (e.g., fixed-rate loans, adjustable-rate loans, term deposits).
 2. Perform Interest Rate Sensitivity Analysis ○ Categorize assets and liabilities by their interest rate terms (e.g., fixed vs. variable). ○ Analyze the gap between rate-sensitive assets (RSAs) and rate-sensitive liabilities (RSLs):
-`Repricing Gap = RSAs - RSLs ○ Calculate the impact of interest rate changes on net interest income (NII): Change in NII = Repricing Gap x Change in Interest Rate`
+`Repricing Gap = RSAs - RSLs`
+○ Calculate the impact of interest rate changes on net interest income (NII):
+`Change in NII = Repricing Gap x Change in Interest Rate`
 3. Assess Repricing Mismatches ○ Evaluate the maturity mismatches between assets and liabilities to identify exposure to rate changes. ○ Identify the time buckets (e.g., 1 month, 6 months, 1 year) with the largest mismatches.
 97
 4. Evaluate Historical Trends ○ Analyze NIM trends over time and correlate them with historical interest rate changes. ○ Identify patterns where rising or falling interest rates have impacted margins.

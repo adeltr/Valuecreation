@@ -22,7 +22,8 @@ To analyze the tenure of savings and investment accounts, assess customer retent
 
 ## 🪜 Step-by-step
 1. Calculate Average Account Tenure ○ Determine the average tenure of accounts:
-`Average Tenure = (Sum of All Account Durations) / (Total Number of Accounts) ○ Segment results by account type (e.g., savings vs. investment) and customer demographics.`
+`Average Tenure = (Sum of All Account Durations) / (Total Number of Accounts)`
+○ Segment results by account type (e.g., savings vs. investment) and customer demographics.
 2. Assess Retention Rates ○ Calculate annual retention rates for accounts:
 `Retention Rate = (Number of Accounts Retained at Year-End / Total Accounts at Start of Year) x 100`
 3. Analyze Tenure Patterns ○ Identify common breakpoints where customers are likely to close accounts (e.g., after 1 year, 5 years). ○ Compare tenure patterns across demographic groups or account balances.

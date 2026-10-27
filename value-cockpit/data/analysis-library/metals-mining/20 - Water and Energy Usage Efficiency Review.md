@@ -31,12 +31,16 @@ The goal of this analysis is to assess the efficiency of water and energy usage 
 ## 🪜 Step-by-step
 1. **Gather Water and Energy Usage Data:** ○ Record total water consumption, including extraction, use in processing, and discharge/recycling rates. ○ Collect energy usage data for all operational activities, segmented by source (electricity, diesel, renewables).
 2. **Calculate Usage Efficiency Metrics:** ○ Water Usage Efficiency:
-`Water Usage Efficiency (m³/ton) = Total Water Used / Total Ore Processed ○ Energy Usage Efficiency: Energy Usage Efficiency (kffh/ton) = Total Energy Consumed / Total Ore Processed`
+`Water Usage Efficiency (m³/ton) = Total Water Used / Total Ore Processed`
+○ Energy Usage Efficiency:
+`Energy Usage Efficiency (kffh/ton) = Total Energy Consumed / Total Ore`
+Processed
 3. **Evaluate Recycling and Recovery Rates:** ○ Calculate water recycling efficiency:
-`Recycling Rate (%) = (Volume of Recycled Water / Total Water Used) x 100 ○ Assess energy recovery systems (e.g., heat recovery or co-generation).`
+`Recycling Rate (%) = (Volume of Recycled Water / Total Water Used) x 100`
+○ Assess energy recovery systems (e.g., heat recovery or co-generation).
 4. **Analyze Costs:** ○ Calculate water and energy costs per unit of production:
-`Cost per Unit ($/ton) = Total Cost of Water or Energy / Total Ore Processed`
-61
+`Cost per Unit ($/ton) = Total Cost of Water or Energy / Total Ore`
+Processed 61
 5. **Benchmark Against Industry Standards:** ○ Compare efficiency metrics and recycling rates with industry benchmarks or peer companies.
 6. **Assess Regulatory Compliance:** ○ Verify adherence to water and energy usage regulations and sustainability goals.
 7. **Identify Inefficiencies and High-Consumption Areas:** ○ Pinpoint processes or equipment that consume excessive water or energy, such as grinding, crushing, or dewatering.
