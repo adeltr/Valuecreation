@@ -1,4 +1,4 @@
-import { useMemo, useReducer } from 'react';
+import { useMemo, useReducer, useState } from 'react';
 import { initialState, reducer, selectBaseline, selectMetrics, selectScenario } from './state/store';
 import { TEMPLATES } from '../templates';
 import { getCatalog } from '../catalog';
@@ -8,11 +8,17 @@ import { CompanyView } from './components/CompanyView';
 import { CopilotPanel } from './components/CopilotPanel';
 import { SimulationPanel } from './components/SimulationPanel';
 import { HundredDayPlan } from './components/HundredDayPlan';
+import { DossierBar } from './components/DossierBar';
+import type { KeyValueStore } from './state/library';
+import { hasUnsavedWork } from './state/unsaved';
 
-export function App() {
+export function App({ storage = window.localStorage }: { storage?: KeyValueStore } = {}) {
   const [state, dispatch] = useReducer(reducer, 'airline' as SectorArchetype, initialState);
   const metrics = useMemo(() => selectMetrics(state), [state]);
   const catalog = getCatalog(state.archetype);
+  const [clean, setClean] = useState<string | null>(null);
+  const mayReplace = () => !hasUnsavedWork(state, clean)
+    || window.confirm('Les modifications non enregistrées du dossier en cours seront perdues. Continuer ?');
 
   // The engine may refuse an input set (e.g. a division by zero while typing): show it, never guess.
   let baseline = new Map<string, number>();
@@ -32,7 +38,7 @@ export function App() {
         <label>
           Type d'entreprise{' '}
           <select value={state.archetype}
-            onChange={(e) => dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype })}>
+            onChange={(e) => mayReplace() && dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype })}>
             {([2, 1] as const).map((level) => {
               const entries = Object.entries(TEMPLATES).filter(([, t]) => t!.level === level);
               return entries.length === 0 ? null : (
@@ -45,6 +51,7 @@ export function App() {
           </select>
         </label>
       </header>
+      <DossierBar state={state} dispatch={dispatch} storage={storage} mayReplace={mayReplace} markClean={setClean} />
       {state.error && (
         <div role="alert" className="banner">
           {state.error} <button type="button" className="secondary" onClick={() => dispatch({ type: 'clearError' })}>×</button>

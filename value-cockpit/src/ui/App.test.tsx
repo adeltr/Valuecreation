@@ -1,7 +1,9 @@
 // @vitest-environment jsdom
-import { describe, it, expect, afterEach, beforeAll } from 'vitest';
+import { describe, it, expect, afterEach, beforeAll, beforeEach, vi } from 'vitest';
 import { render, screen, cleanup, fireEvent, within } from '@testing-library/react';
 import { App } from './App';
+import { initialState, reducer } from './state/store';
+import { toDossier } from './state/dossier';
 
 beforeAll(() => {
   // React Flow measures its container.
@@ -93,3 +95,115 @@ describe('App', () => {
     expect(within(graph).getByText(/airline-13/)).toBeTruthy();
   });
 });
+
+describe('App – dossiers', () => {
+  beforeEach(() => localStorage.clear());
+
+  const bar = () => within(screen.getByRole('region', { name: 'Dossier' }));
+  const typeSelect = () => screen.getByLabelText(/Type d'entreprise/) as HTMLSelectElement;
+  const loadFactor = () => within(screen.getByRole('region', { name: 'Entreprise' })).getByLabelText('LOAD_FACTOR') as HTMLInputElement;
+  const importFile = (content: string) => fireEvent.change(bar().getByLabelText(/Importer/), {
+    target: { files: [new File([content], 'dossier.json', { type: 'application/json' })] },
+  });
+
+  it('saves a named case in the browser and reopens it later', () => {
+    render(<App />);
+    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
+    fireEvent.change(loadFactor(), { target: { value: '0.7' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
+    expect(bar().getByText(/Enregistré/)).toBeTruthy();
+
+    fireEvent.change(typeSelect(), { target: { value: 'cpg' } });
+    expect((bar().getByLabelText('Nom du dossier') as HTMLInputElement).value).toBe('');
+
+    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Ouvrir' }));
+    expect(typeSelect().value).toBe('airline');
+    expect(loadFactor().value).toBe('0.7');
+    expect((bar().getByLabelText('Nom du dossier') as HTMLInputElement).value).toBe('Air X');
+  });
+
+  it('asks before replacing unsaved work, and keeps it on cancel', () => {
+    render(<App />);
+    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
+    fireEvent.change(loadFactor(), { target: { value: '0.6' } });
+    const confirm = vi.spyOn(window, 'confirm').mockReturnValue(false);
+    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Ouvrir' }));
+    expect(confirm).toHaveBeenCalledWith(expect.stringMatching(/non enregistrées/));
+    expect(loadFactor().value).toBe('0.6');
+    vi.restoreAllMocks();
+  });
+
+  it('switching company type also asks before discarding unsaved work', () => {
+    const confirm = vi.spyOn(window, 'confirm').mockReturnValue(false);
+    render(<App />);
+    fireEvent.change(loadFactor(), { target: { value: '0.6' } });
+    fireEvent.change(typeSelect(), { target: { value: 'cpg' } });
+    expect(confirm).toHaveBeenCalled();
+    expect(typeSelect().value).toBe('airline');
+    vi.restoreAllMocks();
+  });
+
+  it('does not ask when the current case is saved', () => {
+    const confirm = vi.spyOn(window, 'confirm');
+    render(<App />);
+    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
+    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Ouvrir' }));
+    expect(confirm).not.toHaveBeenCalled();
+    vi.restoreAllMocks();
+  });
+
+  it('refuses to save a case without a name', () => {
+    render(<App />);
+    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
+    expect(screen.getByRole('alert').textContent).toMatch(/nom/i);
+    expect(localStorage.length).toBe(0);
+  });
+
+  it('deletes a saved dossier after confirmation', () => {
+    vi.spyOn(window, 'confirm').mockReturnValue(true);
+    render(<App />);
+    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
+    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Supprimer' }));
+    expect(bar().queryByRole('option', { name: /Air X/ })).toBeNull();
+    vi.restoreAllMocks();
+  });
+
+  it('exports the case as a JSON dossier file', async () => {
+    let blob: Blob | null = null;
+    URL.createObjectURL = vi.fn((b: Blob) => { blob = b; return 'blob:x'; });
+    URL.revokeObjectURL = vi.fn();
+    vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => {});
+    render(<App />);
+    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
+    fireEvent.click(bar().getByRole('button', { name: 'Exporter' }));
+    const text = await new Promise<string>((resolve) => {
+      const r = new FileReader(); r.onload = () => resolve(String(r.result)); r.readAsText(blob!);
+    });
+    const file = JSON.parse(text);
+    expect(file).toMatchObject({ format: 'value-cockpit-dossier', name: 'Air X', archetype: 'airline' });
+    vi.restoreAllMocks();
+  });
+
+  it('imports a dossier file', async () => {
+    const saved = reducer(reducer(initialState('cpg'), { type: 'setName', name: 'Brand Co' }), { type: 'setInput', code: 'GROSS_MARGIN', value: 0.5 });
+    render(<App />);
+    importFile(JSON.stringify(toDossier(saved, 't')));
+    expect(await bar().findByDisplayValue('Brand Co')).toBeTruthy();
+    expect(typeSelect().value).toBe('cpg');
+  });
+
+  it('refuses an invalid dossier file and keeps the current case', async () => {
+    render(<App />);
+    importFile('{"format":"nope"}');
+    expect((await screen.findByRole('alert')).textContent).toMatch(/Dossier refusé/);
+    expect(typeSelect().value).toBe('airline');
+  });
+});
+
