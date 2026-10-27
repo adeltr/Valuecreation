@@ -99,9 +99,9 @@ documenter.)
 3. Cargo (#24) : dans le périmètre v1 ou hors périmètre ?
 
 ## Fichiers du vault dont j'ai besoin pour Airline
-1. `02 - Analyser une entreprise/Airline Company - Analyses/` — les 40 `.md`.
+1. ~~Les 40 analyses Airline~~ reçues, importées dans `data/analysis-library/airline/`.
 2. ~~`KPI — Travel & Logistics`~~ reçu (`data/kpi-library/`).
-3. `04 - KPI par fonction` (pour décider ce qui monte dans la base).
+3. ~~`04 - KPI par fonction`~~ reçu (`data/kpi-library/fonctions/`).
 4. Optionnel : `01 - Comprendre un secteur/Travel & Hospitality.md` + son
    dossier `Sous-secteurs` (contexte copilote, benchmarks de marges).
 

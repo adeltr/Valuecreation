@@ -22,7 +22,9 @@ docs/
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
 data/analysis-library/<secteur>/    ← fichiers sources des frameworks sectoriels (.md) + _curation.md
-data/kpi-library/                   ← 32 glossaires KPI Umbrex (type 2), copiés tels quels
+data/kpi-library/                   ← 32 glossaires KPI Umbrex par industrie (type 2), copiés tels quels
+data/kpi-library/fonctions/         ← 11 glossaires KPI par fonction (Finance, Supply Chain, RH…)
+scripts/import-analyses.ts          ← import d'analyses brutes du vault → format data/analysis-library
 .claude/skills/value-cockpit/SKILL.md     ← invariants chargés sur CHAQUE tâche
 ```
 
