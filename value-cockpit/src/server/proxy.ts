@@ -2,6 +2,8 @@ import express from 'express';
 import { sanitizeProposal, type CopilotProposal } from '../copilot/proposal';
 import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
 import { getCatalog } from '../catalog';
+import type { DossierRepository } from '../dossier/repository';
+import { dossierRoutes } from './dossierRoutes';
 
 export function buildSystemPrompt(archetype: SectorArchetype): string {
   const v = getActiveVocabulary(archetype);
@@ -36,8 +38,12 @@ export async function handleProposal(
   return sanitizeProposal(JSON.parse(cleaned), getActiveVocabulary(archetype));
 }
 
-export function createServer(callModel: (s: string, u: string) => Promise<string>) {
+export function createServer(
+  callModel: (s: string, u: string) => Promise<string>,
+  options: { dossiers?: DossierRepository } = {},
+) {
   const app = express();
+  if (options.dossiers) app.use('/api/dossiers', dossierRoutes(options.dossiers));
   app.use(express.json());
   app.post('/api/propose', async (req, res) => {
     try {
