@@ -35,6 +35,19 @@
       "Enhance farm mechanization and precision agriculture techniques for better input control.",
       "Regularly monitor weather and adjust planting or harvesting schedules accordingly.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Step 2: Calculate average crop yield. Use the formula: Average Crop Yield",
+        "variables": [
+          "Total Harvested Volume",
+          "Planted Area"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Step 2: Calculate average crop yield. Use the formula: Average Crop Yield = (Total Harvested Volume / Planted Area). Perform this calculation per crop variety and compare results across multiple growing seasons.",
+        "step": null
+      }
     ]
   },
   {
@@ -71,7 +84,8 @@
       "Use crop rotations that include legumes to fix nitrogen and improve soil biology.",
       "Add organic amendments (compost, manure) to boost microbial activity and nutrient availability.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-03",
@@ -106,7 +120,8 @@
       "Enhance biosecurity protocols, including equipment sterilization and isolation of infected plants.",
       "Provide ongoing training for farm staff on IPM best practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-04",
@@ -142,7 +157,8 @@
       "Conduct regular economic evaluations to ensure that the rotation plan remains profitable.",
       "Work with agronomists or extension services to update rotation strategies as soil conditions and market demands evolve.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-05",
@@ -178,7 +194,8 @@
       "Rotate chemicals with different modes of action to prevent resistance.",
       "Explore biological alternatives, such as biopesticides or beneficial insects, where feasible.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-06",
@@ -208,7 +225,8 @@
       "Optimize hive placement based on field layout and bloom periods to maximize pollination coverage.",
       "Consider using alternative pollinators (e.g., native bees) to reduce dependence on a single species.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-07",
@@ -240,7 +258,8 @@
       "Apply regenerative practices (cover crops, minimal tillage) to maximize synergies between trees and annual crops.",
       "Participate in government or NGO agroforestry programs for technical support and financial incentives.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-08",
@@ -271,7 +290,8 @@
       "Construct or repair terraces, diversions, or retaining walls where slopes are steep.",
       "Conduct regular soil testing and on-farm audits to track erosion rates and adjust strategies as needed.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-09",
@@ -307,7 +327,8 @@
       "Use regular leaf tissue or sap analysis to fine-tune fertilization and address nutrient deficiencies.",
       "Employ technology (e.g., drones, sensors) for real-time monitoring of crop health, canopy density, and irrigation needs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-10",
@@ -345,7 +366,8 @@
       "Use foliar feeding strategies when soil applications are less effective due to pH or soil type constraints.",
       "Train field staff to recognize early signs of micronutrient deficiencies and take prompt action.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-11",
@@ -384,7 +406,8 @@
       "Train farm staff on proper handling, storage, and usage of biological products to maintain viability.",
       "Work with suppliers or agronomists to stay updated on the latest research and product innovations.",
       "B. Livestock Management & Animal Health"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-12",
@@ -420,7 +443,8 @@
       "Use selective breeding programs to enhance disease resistance and improve productivity traits.",
       "Provide ongoing training for farm staff on animal handling, hygiene, and health monitoring best practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-13",
@@ -455,7 +479,8 @@
       "Seek partnerships or grants to fund infrastructure improvements for sustainable waste management.",
       "Implement regular training and audits to ensure ongoing compliance and operational efficiency in waste handling practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-14",
@@ -492,7 +517,8 @@
       "Monitor animal performance closely and adjust feed formulations as needed.",
       "Implement on-farm trials with new feed ingredients to compare productivity and cost outcomes.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-15",
@@ -529,7 +555,8 @@
       "Monitor soil health metrics and livestock productivity to assess the ongoing benefits of integration.",
       "Explore partnerships with external farms or neighbors if on-site crops and livestock cannot be fully integrated.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-16",
@@ -568,7 +595,8 @@
       "Strengthen biosecurity measures (quarantine protocols, vaccination programs) to reduce mortality and disease spread.",
       "Seek certifications (e.g., ASC, Global GAP) or meet sustainable aquaculture standards to access premium markets.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-17",
@@ -604,7 +632,8 @@
       "Conduct regular soil tests and pasture assessments to track improvements and adjust management practices.",
       "Educate and train farm staff on holistic grazing principles, record-keeping, and continuous monitoring.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-18",
@@ -642,7 +671,8 @@
       "Enforce strict cleaning and disinfection protocols for equipment, housing, and feed storage areas.",
       "Conduct regular biosecurity audits and refresher training sessions for all personnel.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-19",
@@ -677,7 +707,8 @@
       "Invest in infrastructure (fencing, water points) to manage livestock movement effectively.",
       "Monitor forage quality and adjust stocking rates or supplementary feed as needed.",
       "C. Environmental Sustainability & Resource Efficiency"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-20",
@@ -715,7 +746,8 @@
       "Recycle or reuse water where feasible (tailwater recovery systems, rainwater harvesting).",
       "Provide training to staff on efficient watering techniques and equipment upkeep.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-21",
@@ -749,7 +781,8 @@
       "Explore insurance products or government programs that provide financial buffers against extreme weather.",
       "Pursue agroforestry or shelterbelt planting to protect fields from wind damage and help stabilize microclimates.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-22",
@@ -783,7 +816,8 @@
       "Leverage government grants, loans, or tax incentives to reduce upfront costs of renewable systems.",
       "Train staff on energy-saving practices, such as operating machinery during off-peak hours.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-23",
@@ -818,7 +852,8 @@
       "Explore grant funding or cost-sharing opportunities to offset upfront investment in regenerative methods.",
       "Collaborate with industry peers or cooperatives to share best practices and reduce verification costs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-24",
@@ -854,7 +889,8 @@
       "",
       "Engage in local watershed initiatives or training programs to stay updated on regulations and best practices.",
       "D. Technology & Innovation in Agriculture"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-25",
@@ -892,7 +928,8 @@
       "",
       "Continuously measure performance post-adoption and adjust usage or configurations as needed.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-26",
@@ -925,7 +962,8 @@
       "Ensure breeding objectives align with projected climate scenarios and market demands.",
       "Maintain proper records on breeding lines to safeguard intellectual property and compliance.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-27",
@@ -959,7 +997,8 @@
       "Develop a clear path to commercialization, including pilot testing and go-to-market strategies.",
       "Allocate resources dynamically based on ongoing project performance, adjusting investment levels when new data emerges.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-28",
@@ -996,7 +1035,8 @@
       "Explore leasing or co-op arrangements for machinery that is only needed seasonally or intermittently.",
       "Conduct regular utilization reviews to reassess machinery alignment with evolving farm needs and technologies.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-29",
@@ -1037,7 +1077,8 @@
       "Consider automation (sensors, climate control systems) for real-time monitoring and reduced labor demands.",
       "Diversify marketing channels (local produce boxes, restaurants, farmers’ markets) to maximize revenue potential.",
       "E. Market Positioning & Value Chain"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-30",
@@ -1074,7 +1115,8 @@
       "Use digital tracking systems (RFID, barcodes) for real-time visibility of inventory and shipments.",
       "Provide staff training on proper post-harvest handling to reduce damage and ensure consistency.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-31",
@@ -1121,7 +1163,8 @@
       "Invest in staff training on organic farming principles and specialty crop handling.",
       "Continuously monitor consumer trends to identify emerging niches or product categories.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-32",
@@ -1158,7 +1201,8 @@
       "",
       "Collaborate closely with supply chain partners to share data and improve overall transparency.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-33",
@@ -1197,7 +1241,8 @@
       "Conduct periodic contract reviews with farmer representatives to address grievances and build trust.",
       "Incorporate digital tools for tracking deliveries, payments, and input usage to enhance transparency.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-34",
@@ -1238,7 +1283,8 @@
       "Use regular consumer and stakeholder feedback sessions to adapt brand positioning to evolving preferences.",
       "Train staff on brand standards and certification requirements, ensuring consistent execution at every stage.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-35",
@@ -1276,7 +1322,8 @@
       "Start with small-scale pilot offerings to gauge consumer interest and refine the visitor experience before committing larger investments.",
       "Continuously gather visitor feedback and monitor financial metrics to guide ongoing improvements and expansion plans.",
       "F. Regulatory Compliance & Risk Management"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-36",
@@ -1311,7 +1358,8 @@
       "Leverage technology (compliance management software) to track ongoing requirements and file applications efficiently.",
       "Collaborate with industry associations or advocacy groups that can provide updates on evolving regulations and funding programs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-37",
@@ -1348,7 +1396,8 @@
       "",
       "Develop a robust record-keeping system to streamline claims processes and support accurate loss assessments.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-38",
@@ -1386,7 +1435,8 @@
       "Evaluate potential for premium pricing or niche markets if transitioning to non-GMO or organic production.",
       "Collaborate with seed suppliers, extension services, or industry groups to stay updated on GMO technology improvements and compliance guidelines.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "agriculture-39",
@@ -1421,6 +1471,7 @@
       "Regularly monitor competitor patents and licensing strategies to identify emerging risks or opportunities.",
       "Seek legal counsel to ensure compliance with seed laws, patent regulations, and international treaties (e.g., UPOV).",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

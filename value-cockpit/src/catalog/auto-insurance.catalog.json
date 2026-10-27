@@ -32,6 +32,20 @@
       "Collaborate closely with underwriting and claims departments to gather insights on evolving risks.",
       "Maintain clear documentation and rationale for rate changes to satisfy regulatory requirements.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Loss Ratio = (Incurred Losses + Loss Adjustment Expenses) / Earned Premium. Perform this calculation for each relevant rating segment (e.g., age group, territory).",
+        "step": "Calculate overall loss ratio using the formula"
+      }
     ]
   },
   {
@@ -62,6 +76,22 @@
       "Periodically update pricing and underwriting guidelines to maintain profitability and compliance with regulations.",
       "Benchmark against competitors to ensure rates and offerings remain competitive in the market.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the UM/UIM segment loss ratio using Loss Ratio",
+        "variables": [
+          "UM",
+          "UIM Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium for UM",
+          "UIM"
+        ],
+        "expression": "( v0 / v1 + v2 ) / v3 / v4",
+        "percentOutput": false,
+        "source": "Calculate the UM/UIM segment loss ratio using Loss Ratio = (UM/UIM Incurred Losses + Loss Adjustment Expenses) / Earned Premium for UM/UIM. Determine if the segment is profitable, breaking even, or underpriced.",
+        "step": null
+      }
     ]
   },
   {
@@ -93,6 +123,20 @@
       "Collaborate with auto dealerships or finance companies to ensure informed GAP coverage sales and better data collection.",
       "Conduct regular market benchmarking to maintain a competitive edge and align with evolving industry practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine the GAP-specific loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred GAP Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the GAP-specific loss ratio using Loss Ratio = (Incurred GAP Losses + Loss Adjustment Expenses) / Earned Premium. Evaluate whether the loss ratio meets target profitability levels.",
+        "step": null
+      }
     ]
   },
   {
@@ -125,7 +169,8 @@
       "Partner with rental agencies or repair shops to control costs and speed up turnaround times.",
       "Educate policyholders on coverage parameters to reduce misunderstandings and improve satisfaction.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-05",
@@ -156,7 +201,8 @@
       "Partner with preferred glass repair vendors to obtain favorable rates and streamline the claim process.",
       "Monitor state regulations closely to ensure compliance while optimizing product offerings and profitability.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-06",
@@ -184,7 +230,8 @@
       "Promote the discount through targeted marketing to attract genuinely safety-conscious drivers.",
       "Work with recognized defensive driving course providers to ensure consistent quality and to gather post-course performance data.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-07",
@@ -216,7 +263,8 @@
       "Collaborate with local authorities or other data providers to track changes in crime rates, traffic patterns, or road improvements.",
       "Maintain open communication with regulators to ensure territorial rate changes comply with filing requirements and do not raise unfair discrimination concerns.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-08",
@@ -251,6 +299,31 @@
       "Offer incentives or discounts for consistently low-mileage or safe-driving customers.",
       "Periodically review competitor offerings and market data to keep pricing and coverage options competitive and aligned with real-world risk.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the adoption rate by using Adoption Rate",
+        "variables": [
+          "Number of Pay-Per-Mile Policies",
+          "Total Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the adoption rate by using Adoption Rate = (Number of Pay-Per-Mile Policies / Total Policies) x 100. Compare this rate over time to understand growth trends.",
+        "step": null
+      },
+      {
+        "output": "Calculate a pay-per-mile loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium for pay-per-mile policies"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate a pay-per-mile loss ratio using Loss Ratio = (Incurred Losses + Loss Adjustment Expenses) / Earned Premium for pay-per-mile policies. Compare against traditional auto policies to gauge profitability differences.",
+        "step": null
+      }
     ]
   },
   {
@@ -281,6 +354,20 @@
       "Regularly benchmark against competitors to maintain competitive yet profitable coverage offerings.",
       "Stay current with regulatory changes and legal precedents that could affect non-owned auto liability.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the non-owned auto coverage loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE for Non-Owned Auto",
+          "Earned Premium for Non-Owned Auto"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate the non-owned auto coverage loss ratio using Loss Ratio = (Incurred Losses + LAE for Non-Owned Auto) / Earned Premium for Non-Owned Auto. Compare these results to standard auto coverage to identify any abnormal patterns.",
+        "step": null
+      }
     ]
   },
   {
@@ -314,6 +401,31 @@
       "Offer proactive maintenance programs or discounts to policyholders who get regular vehicle check-ups, thereby reducing roadside incidents.",
       "Periodically review and update coverage terms, such as maximum towing distance, to align with actual usage and cost trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Roadside Assistance Frequency",
+        "variables": [
+          "Number of Roadside Assistance Calls",
+          "Number of Policies with Coverage"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Roadside Assistance Frequency = (Number of Roadside Assistance Calls / Number of Policies with Coverage) x 100. Compare across different segments (e.g., vehicle age, driver age, location) to pinpoint high-usage groups.",
+        "step": "Calculate usage frequency by using the formula"
+      },
+      {
+        "output": "Compute the roadside assistance coverage loss ratio using Loss Ratio",
+        "variables": [
+          "Total Roadside Assistance Costs",
+          "Related Expenses",
+          "Earned Premium for the coverage"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Compute the roadside assistance coverage loss ratio using Loss Ratio = (Total Roadside Assistance Costs + Related Expenses) / Earned Premium for the coverage. Assess whether the program remains profitable or if costs exceed collected premiums.",
+        "step": "Calculate usage frequency by using the formula"
+      }
     ]
   },
   {
@@ -347,6 +459,20 @@
       "Consider flexible programs, such as point forgiveness after a period of safe driving, to retain customers while still managing risk.",
       "Communicate surcharge rationale and potential benefits of safe driving to policyholders, enhancing transparency and retention.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine the surcharge program loss ratio by applying Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium for surcharged drivers"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the surcharge program loss ratio by applying Loss Ratio = (Incurred Losses + Loss Adjustment Expenses) / Earned Premium for surcharged drivers. Compare to non-surcharged drivers to identify whether the surcharge appropriately offsets higher risk.",
+        "step": null
+      }
     ]
   },
   {
@@ -378,6 +504,20 @@
       "Incorporate driver education or safe driving incentives alongside accident forgiveness to reduce moral hazard.",
       "Regularly track and benchmark program metrics against market norms to stay competitive and profitable.",
       "B. Underwriting & Risk Segmentation"
+    ],
+    "formulas": [
+      {
+        "output": "Assess overall loss ratio by using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium for accident forgiveness policies"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Assess overall loss ratio by using Loss Ratio = (Incurred Losses + LAE) / Earned Premium for accident forgiveness policies. Compare these results against non-forgiveness policies to see if profitability is affected.",
+        "step": null
+      }
     ]
   },
   {
@@ -413,7 +553,8 @@
       "Regularly review and update pricing structures to ensure fair discounts or surcharges based on observed driving data.",
       "Collaborate with technology vendors or in-house IT teams to enhance data accuracy, reduce costs, and streamline user experience.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-14",
@@ -445,6 +586,19 @@
       "",
       "Introduce policyholder self-service tools allowing easy updates of vehicle usage or driver information, reducing accidental misreporting.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the frequency of discrepancies by using Discrepancy Rate",
+        "variables": [
+          "Number of Policies with Under-Reported Exposures",
+          "Total Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the frequency of discrepancies by using Discrepancy Rate = (Number of Policies with Under-Reported Exposures / Total Policies) x 100. Categorize discrepancies by type (e.g., unreported drivers, incorrect mileage, false address).",
+        "step": null
+      }
     ]
   },
   {
@@ -477,6 +631,20 @@
       "Collaborate with regulators to align assigned risk rates and policy structures with actual loss experience.",
       "Continuously monitor the size and performance of the assigned risk segment and make data-driven adjustments to underwriting and pricing practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine the loss ratio for assigned risk policies using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the loss ratio for assigned risk policies using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Assess whether the pool’s profitability (or lack thereof) aligns with internal targets and industry norms.",
+        "step": null
+      }
     ]
   },
   {
@@ -508,6 +676,20 @@
       "Monitor competitor rates to remain competitive while maintaining actuarially sound pricing for high-risk segments.",
       "Implement tiered pricing or phased renewal approaches to reward proven risk improvement among SR-22/high-risk customers.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine segment-level loss ratios using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine segment-level loss ratios using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Assess whether SR-22/high-risk premiums align with actual claims experience and profitability goals.",
+        "step": null
+      }
     ]
   },
   {
@@ -546,7 +728,8 @@
       "Periodically review and adjust credit score thresholds to reflect actual loss outcomes rather than broad assumptions.",
       "Monitor competitor strategies to maintain a competitive yet profitable presence in the non-standard auto market.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-18",
@@ -574,7 +757,8 @@
       "Provide feedback loops to drivers, encouraging improved habits and thus lowering future risk.",
       "Integrate multiple data sources (e.g., telematics, claims, and external records) to build a more comprehensive view of driver behavior and risk.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-19",
@@ -605,7 +789,8 @@
       "Continuously refine mapping and data analytics to evolve your underwriting segmentation as neighborhoods shift and traffic flows change.",
       "Educate agents and policyholders about higher-risk routes and potential discounts for alternative commuting options or low-mileage usage.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-20",
@@ -636,6 +821,20 @@
       "Use third-party data sources or partnerships with specialty garages to verify modifications and reduce fraud.",
       "Review and update guidelines regularly to keep pace with emerging modification trends and technologies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the loss ratio for the modified vehicle segment using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate the loss ratio for the modified vehicle segment using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Benchmark these results against the standard vehicle portfolio to measure profitability gaps.",
+        "step": null
+      }
     ]
   },
   {
@@ -669,6 +868,20 @@
       "Introduce targeted safety programs or driver training for high-risk fleet segments to reduce claim frequency and severity.",
       "Regularly benchmark fleet data against industry norms and update pricing strategies to remain both competitive and profitable.",
       "C. Claims & Loss Management"
+    ],
+    "formulas": [
+      {
+        "output": "Determine the fleet usage loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the fleet usage loss ratio using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Track these ratios over multiple years to observe trends or fluctuations in segment performance.",
+        "step": null
+      }
     ]
   },
   {
@@ -703,6 +916,30 @@
       "Work with preferred repair networks or negotiate favorable rates to manage repair costs and reduce severity.",
       "Continuously monitor external factors (economic, legal, technological) and update strategies accordingly.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate claim frequency by using Frequency",
+        "variables": [
+          "Number of Claims",
+          "Number of Exposures"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate claim frequency by using Frequency = (Number of Claims / Number of Exposures) x 100. Break down by relevant segments such as driver age, coverage type, or region.",
+        "step": null
+      },
+      {
+        "output": "Compute claim severity by using Severity",
+        "variables": [
+          "Total Incurred Losses",
+          "Number of Claims"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Compute claim severity by using Severity = (Total Incurred Losses / Number of Claims). Compare severity across segments to spot unusually high-cost categories.",
+        "step": null
+      }
     ]
   },
   {
@@ -734,7 +971,8 @@
       "Introduce or refine service-level agreements with third parties (repair facilities, medical providers) to reduce external delays.",
       "Provide policyholders with transparent updates and self-service tools, alleviating call center loads and building trust during the claim process.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-24",
@@ -769,6 +1007,19 @@
       "Provide dedicated training for claims adjusters and subrogation specialists to sharpen negotiation and legal knowledge.",
       "Regularly review and refine subrogation and salvage policies to align with emerging market trends and regulatory environments.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate subrogation success rates by using Subrogation Success Rate",
+        "variables": [
+          "Number of Successful Recoveries",
+          "Total Subrogation Attempts"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate subrogation success rates by using Subrogation Success Rate = (Number of Successful Recoveries / Total Subrogation Attempts) x 100. Compare across different lines of business or claim types to see which areas yield higher or lower success.",
+        "step": null
+      }
     ]
   },
   {
@@ -803,7 +1054,8 @@
       "Continuously monitor repair cost indices and global supply chain trends to anticipate and plan for inflationary pressures.",
       "Revisit underwriting and rating strategies for vehicle models or segments known to have ongoing parts supply issues.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-26",
@@ -838,7 +1090,8 @@
       "Implement transparent tracking and reporting for repair status updates, enhancing policyholder experience.",
       "Offer incentives or seamless referral processes to encourage customers to choose DRP shops for their repairs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-27",
@@ -874,6 +1127,19 @@
       "Incorporate customer preference data and offer tiered coverage options, allowing policyholders to choose OEM vs. aftermarket parts.",
       "Monitor technological advancements (e.g., 3D-printed parts) that may further expand cost-effective and high-quality repair options.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Evaluate rework rates by calculating Rework Rate",
+        "variables": [
+          "Number of Repairs Requiring Follow-up",
+          "Total Repairs in Category"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Evaluate rework rates by calculating Rework Rate = (Number of Repairs Requiring Follow-up / Total Repairs in Category) x 100. Determine if aftermarket parts show higher rework or warranty issues than OEM parts.",
+        "step": null
+      }
     ]
   },
   {
@@ -906,6 +1172,19 @@
       "Collaborate with law enforcement and vehicle tracking services to streamline the recovery process.",
       "Adjust underwriting and rating strategies to reflect theft risk, incentivizing safer vehicle choices and adoption of security features.",
       "D. Financial Performance & Reserving"
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the stolen vehicle rate using Stolen Vehicle Rate",
+        "variables": [
+          "Number of Stolen Vehicle Claims",
+          "Total Insured Vehicles"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the stolen vehicle rate using Stolen Vehicle Rate = (Number of Stolen Vehicle Claims / Total Insured Vehicles) x 100. Segment these results by factors like vehicle make/model, geographic region, and presence of anti-theft devices.",
+        "step": null
+      }
     ]
   },
   {
@@ -940,6 +1219,20 @@
       "Collaborate with claims and underwriting teams to refine selection criteria and reduce adverse risk accumulation.",
       "Leverage predictive analytics to anticipate shifts in claim severity or frequency, informing proactive pricing and coverage strategies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the loss ratio for each segment using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate the loss ratio for each segment using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Compare these ratios across multiple years to detect upward or downward trends.",
+        "step": null
+      }
     ]
   },
   {
@@ -970,7 +1263,8 @@
       "Incorporate robust scenario testing (e.g., economic downturns, inflation spikes) to assess reserve adequacy under stress conditions.",
       "Continuously update models to reflect legal, technological, and economic changes that may alter claim patterns.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-31",
@@ -1000,7 +1294,8 @@
       "Align reinsurance strategy with capital management objectives, potentially retaining more risk if capital levels permit.",
       "Use dynamic scenario testing to adapt reinsurance structures in response to emerging risks or market changes.",
       "E. Technology, Mobility & Operational Efficiency"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-32",
@@ -1033,7 +1328,8 @@
       "",
       "Continuously update policy language and coverage options (e.g., specialized roadside assistance for EVs) to align with evolving EV/ADAS technology and driver needs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-33",
@@ -1065,7 +1361,8 @@
       "Update policy language to address complex ownership and liability scenarios commonly arising in shared mobility models.",
       "Track and adapt quickly to new regulations or consumer demands in the rapidly evolving mobility landscape.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-34",
@@ -1097,6 +1394,20 @@
       "Provide driver education on TNC coverage triggers and policy conditions to reduce coverage misunderstandings and potential disputes.",
       "Continuously monitor regulatory developments, adjusting coverage forms and pricing to remain compliant and competitive.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Assess net profitability using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium for TNC-related coverage"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Assess net profitability using Loss Ratio = (Incurred Losses + LAE) / Earned Premium for TNC-related coverage. Identify segments or geographic regions with elevated risk or loss patterns that may require targeted rate adjustments.",
+        "step": null
+      }
     ]
   },
   {
@@ -1127,6 +1438,19 @@
       "Work with regulatory bodies and industry groups to strengthen distracted driving legislation or awareness campaigns.",
       "Refine underwriting and marketing to attract safer drivers who value and properly use crash avoidance technology.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate distracted driving claim frequency using Claim Frequency",
+        "variables": [
+          "Number of Distracted Driving Claims",
+          "Total Claims"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate distracted driving claim frequency using Claim Frequency = (Number of Distracted Driving Claims / Total Claims) x 100. Compare to overall claim frequency and note variations by geography or vehicle type. Identify which vehicles are equipped with crash avoidance features to see if these systems reduce claim occurrences.",
+        "step": null
+      }
     ]
   },
   {
@@ -1160,6 +1484,19 @@
       "Offer tiered insurance products that incentivize telematics adoption and continuous improvement in driver behavior metrics.",
       "Continuously update modeling techniques to account for new telematics features and advanced analytics (e.g., AI-based driver risk scoring).",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate telematics-equipped fleet claim frequency with Claim Frequency",
+        "variables": [
+          "Number of Claims",
+          "Number of Telematics-Equipped Vehicles"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate telematics-equipped fleet claim frequency with Claim Frequency = (Number of Claims / Number of Telematics-Equipped Vehicles) x 100. Compare to non-telematics fleets in similar industries or vehicle classes.",
+        "step": null
+      }
     ]
   },
   {
@@ -1195,7 +1532,8 @@
       "Offer training or guidelines for customers and adjusters on capturing clear, high-quality images, improving estimation accuracy.",
       "Consider hybrid workflows where complex claims automatically trigger manual reviews while straightforward cases are finalized by AI.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-38",
@@ -1230,7 +1568,8 @@
       "Integrate digital platforms or telematics data to streamline repair scheduling, parts ordering, and real-time status updates for policyholders.",
       "Educate policyholders on the benefits of OEM-certified repairs, including quality guarantees and potential impacts on vehicle resale value.",
       "I. Specialty & Niche Segments"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "auto-insurance-39",
@@ -1261,6 +1600,20 @@
       "Collaborate with specialty appraisers or vintage car associations to establish accurate valuations and reduce claims disputes.",
       "Conduct regular reviews of competitor rates and industry trends, ensuring the product remains competitive yet profitable.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Compute the loss ratio for the segment using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Compute the loss ratio for the segment using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Analyze trends over several policy terms (e.g., 3–5 years) to see if profitability is improving or declining.",
+        "step": null
+      }
     ]
   }
 ]

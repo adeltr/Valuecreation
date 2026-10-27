@@ -32,6 +32,30 @@
       "Monitor booking pace and adjust rates in real time as needed.",
       "Diversify distribution channels to reduce reliance on a single channel and tap into broader market segments.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Occupancy Rate",
+        "variables": [
+          "Total Number of Rooms Occupied",
+          "Total Number of Rooms Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Occupancy Rate = (Total Number of Rooms Occupied / Total Number of Rooms Available) x 100",
+        "step": null
+      },
+      {
+        "output": "ADR",
+        "variables": [
+          "Total Room Revenue",
+          "Total Number of Rooms Occupied"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "ADR = (Total Room Revenue / Total Number of Rooms Occupied)",
+        "step": null
+      }
     ]
   },
   {
@@ -65,6 +89,30 @@
       "Monitor competitive set pricing and market demand signals to adjust strategies proactively.",
       "Implement effective yield management tactics, including overbooking strategies where appropriate, to maximize occupancy during high-demand periods.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "RevPAR",
+        "variables": [
+          "Total Room Revenue",
+          "Total Number of Available Rooms"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "RevPAR = (Total Room Revenue / Total Number of Available Rooms)",
+        "step": null
+      },
+      {
+        "output": "RevPAR",
+        "variables": [
+          "Occupancy Rate",
+          "ADR"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "RevPAR = (Occupancy Rate x ADR)",
+        "step": null
+      }
     ]
   },
   {
@@ -101,7 +149,8 @@
       "Optimize channel mix by shifting focus toward lower-cost distribution sources without sacrificing volume.",
       "Segment marketing campaigns based on the booking window and demographics of each channel’s audience.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-04",
@@ -133,7 +182,8 @@
       "Diversify promotional activities to balance the mix, ensuring stability and maximizing revenue potential.",
       "Collaborate with local convention and tourism bureaus to secure group bookings or citywide events.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-05",
@@ -168,7 +218,8 @@
       "Monitor booking windows by length-of-stay to adjust pricing in real time.",
       "Utilize upsell strategies during the reservation process to encourage guests to extend their stay.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-06",
@@ -201,7 +252,8 @@
       "Monitor booking window trends weekly or monthly to quickly adapt pricing and marketing.",
       "Segment offers by lead time, tailoring promotions to suit both short- and long-lead travelers.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-07",
@@ -234,6 +286,19 @@
       "Implement remarketing strategies for visitors who abandon bookings (email reminders, retargeting ads).",
       "Continuously A/B test changes to the booking flow and user interface to measure impact on conversion rates.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the Look‐to‐Book ratio. Look‐to‐Book Ratio",
+        "variables": [
+          "Number of Bookings",
+          "Number of Website Visits"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the Look‐to‐Book ratio. Look‐to‐Book Ratio = (Number of Bookings / Number of Website Visits) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -265,7 +330,8 @@
       "Use guest satisfaction feedback to refine the portfolio of activities and remove underperforming options.",
       "Incorporate technology (e.g., mobile apps, pre‐arrival emails) to showcase available activities and drive early bookings.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-09",
@@ -297,7 +363,8 @@
       "Consider “by request” or “on‐demand” models for low‐usage amenities to reduce waste.",
       "Communicate the value of upgraded amenities (e.g., premium coffee, eco‐friendly toiletries) to enhance perceived quality and support premium pricing.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-10",
@@ -329,7 +396,8 @@
       "Consider partnering with local attractions or children’s entertainment providers to expand offerings.",
       "Leverage marketing channels focusing on family‐centric travel segments to drive awareness and bookings.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-11",
@@ -363,7 +431,8 @@
       "Adjust marketing efforts to highlight extended‐stay benefits on direct channels.",
       "Refine pricing to balance occupancy gains with satisfactory margins, evaluating competitor rates as a reference.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-12",
@@ -398,6 +467,21 @@
       "Continuously adjust pricing to balance perceived value with profitability.",
       "Use targeted digital marketing to promote packages to relevant segments (e.g., repeat guests, loyalty members, holiday travelers).",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Package Profit",
+        "variables": [
+          "Package Revenue",
+          "Cost of Inclusions",
+          "Marketing",
+          "Distribution Costs"
+        ],
+        "expression": "v0 - ( v1 + v2 / v3 )",
+        "percentOutput": false,
+        "source": "Package Profit = Package Revenue – (Cost of Inclusions + Marketing/Distribution Costs)",
+        "step": null
+      }
     ]
   },
   {
@@ -433,7 +517,8 @@
       "Monitor booking pace closely during lead‐up to major events and adjust rates in real time.",
       "Conduct a post‐event audit to refine forecasting accuracy and enhance strategies for subsequent events.",
       "B. Guest Experience"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-14",
@@ -467,7 +552,8 @@
       "Monitor and respond to online reviews regularly, thanking positive reviewers and offering solutions to dissatisfied guests.",
       "Continuously update facilities and amenities based on feedback to meet or exceed guest expectations.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-15",
@@ -497,7 +583,8 @@
       "Enhance service offerings that are most valued by each group (e.g., faster check‐in for business travelers, activity planning for leisure guests).",
       "Monitor shifts in segmentation over time to stay ahead of changing travel trends and refine strategies accordingly.",
       "C. Technology"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-16",
@@ -527,7 +614,8 @@
       "Train staff to handle basic troubleshooting, ensuring a quick resolution to tech issues that could otherwise diminish satisfaction.",
       "Consider tiered rooms or packages that highlight premium technology features, with appropriate pricing for those who value them.",
       "D. Operations & Hospitality Services"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-17",
@@ -561,7 +649,8 @@
       "Invest in technology (e.g., housekeeping apps or real‐time room status tracking) to optimize scheduling and reduce idle time.",
       "Introduce incentives or recognition programs to reward staff who consistently meet quality and efficiency standards.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-18",
@@ -594,7 +683,8 @@
       "Monitor housekeeping and staffing needs to ensure that granting additional requests does not compromise operational efficiency.",
       "Track guest satisfaction scores for those who receive flexible stay options to refine policies and pricing strategies.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-19",
@@ -632,7 +722,8 @@
       "Control waste by refining inventory management, portion sizes, and forecasting demand more accurately.",
       "Enhance marketing and upselling strategies to boost check averages, highlight seasonal specials, or create bundled F&B packages.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-20",
@@ -668,6 +759,19 @@
       "Remove or replace Dog items unless they are essential to the brand identity or guest experience.",
       "Continuously monitor food costs and sales data to refine the menu engineering process over time.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine contribution margin (CM) of each item. Contribution Margin",
+        "variables": [
+          "Menu Price",
+          "Food Cost"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Determine contribution margin (CM) of each item. Contribution Margin = (Menu Price - Food Cost)",
+        "step": null
+      }
     ]
   },
   {
@@ -705,6 +809,19 @@
       "Monitor real‐time sales data to quickly identify shifts in demand and reallocate inventory accordingly.",
       "Continuously gather feedback from guests and staff to stay attuned to changing preferences.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Inventory Turnover",
+        "variables": [
+          "Cost of Goods Sold",
+          "Average Inventory Value"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Inventory Turnover = Cost of Goods Sold / Average Inventory Value",
+        "step": null
+      }
     ]
   },
   {
@@ -743,7 +860,8 @@
       "Offer promotions or loyalty incentives for in‐room dining to encourage trial and repeat orders.",
       "Periodically review and update the in‐room dining menu to keep it fresh, relevant, and profitable.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-23",
@@ -783,7 +901,8 @@
       "",
       "Track the impact of changes by regularly reviewing financial performance, guest feedback, and competitive positioning.",
       "E. Marketing & Competitive Positioning"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-24",
@@ -815,7 +934,8 @@
       "Allocate marketing budgets toward the most successful partnerships and phase out or refine underperforming collaborations.",
       "Request and share post‐event feedback with partners to continuously improve offerings and promotional strategies.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-25",
@@ -852,7 +972,8 @@
       "Explore flexible inventory or distribution strategies (e.g., limited‐service apartments within the hotel) if feasible.",
       "Monitor regulatory changes and adapt marketing messages to reassure guests of the safety, compliance, and professional standards of a hotel stay.",
       "F. Ownership & Financial Structures"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-26",
@@ -889,7 +1010,8 @@
       "",
       "Consider hybrid approaches. In some cases, partial management assistance or a soft brand affiliation may offer a balance between full franchise and management contract models.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-27",
@@ -927,7 +1049,8 @@
       "Monitor continuously. Regularly update departmental P&Ls, compare them against benchmarks, and adjust strategies as needed.",
       "Share best practices across departments and properties. If one department outperforms benchmarks significantly, replicate successful tactics in other areas.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-28",
@@ -963,7 +1086,8 @@
       "Strengthen communication and engagement with owners through personalized touchpoints, clear explanations of rules/fees, and regular updates on improvements.",
       "Monitor delinquency and resale trends to intervene early, offer solutions, and maintain a healthy community of owners.",
       "G. Events & Alternative Offerings"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-29",
@@ -1000,6 +1124,19 @@
       "Improve service standards through staff training and updated equipment to deliver a seamless event experience, boosting word‐of‐mouth and repeat business.",
       "Solicit and act on feedback from clients to continually refine offerings, address pain points, and stay competitive in the local events market.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Total Hours Booked",
+          "Total Hours Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Total Hours Booked / Total Hours Available) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1042,7 +1179,8 @@
       "",
       "Monitor pickup and post‐event data to refine future contracts, reduce attrition risk, and forecast revenue more accurately.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-31",
@@ -1079,7 +1217,8 @@
       "Solicit and act on guest feedback regarding new treatments, product preferences, and overall spa ambiance.",
       "Collaborate with marketing to feature wellness and spa offerings in loyalty programs, seasonal campaigns, or special events.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-32",
@@ -1114,7 +1253,8 @@
       "Revisit the arrangement periodically (annually or bi‐annually) to ensure the chosen model continues to align with market conditions and strategic goals.",
       "Leverage cross‐promotions between spa services and other hotel amenities (F&B, rooms) regardless of management model to drive additional revenue.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "hospitality-33",
@@ -1146,6 +1286,7 @@
       "Enhance guest communication about shuttle availability, routes, and wait times (via mobile apps, SMS alerts, or lobby screens).",
       "Explore partnerships with ride‐sharing services or local transportation companies for overflow demand or specialized routes.",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

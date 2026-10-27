@@ -31,7 +31,8 @@
       "Explore interest rate hedging strategies to manage rate volatility.",
       "Diversify asset portfolios to achieve a stable yield across different economic cycles.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-02",
@@ -65,7 +66,8 @@
       "Improve pricing strategies for key services based on value delivered and market benchmarks.",
       "Explore partnerships or acquisitions in high-margin fee areas (e.g., payments, merchant acquiring) to diversify revenue sources.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-03",
@@ -101,6 +103,20 @@
       "Consolidate overlapping systems and reduce redundancies across business units.",
       "Establish clear cost-management frameworks, accountability measures, and regular performance reviews.",
       "B. Lending and Credit Management"
+    ],
+    "formulas": [
+      {
+        "output": "Step 2: Calculate the Efficiency Ratio. Efficiency Ratio",
+        "variables": [
+          "Total Operating Expenses",
+          "Total Operating Income",
+          "Step 3"
+        ],
+        "expression": "( v0 / v1 ) * 100 v2",
+        "percentOutput": false,
+        "source": "Step 2: Calculate the Efficiency Ratio. Efficiency Ratio = (Total Operating Expenses / Total Operating Income) x 100 Step 3: Compare the Efficiency Ratio over time and against peers or industry benchmarks to determine whether the bank’s cost structure is improving or deteriorating.",
+        "step": null
+      }
     ]
   },
   {
@@ -141,7 +157,8 @@
       "Revisit loan pricing strategies to ensure adequate returns for higher-risk segments.",
       "Review and adjust loan loss provisioning practices to remain aligned with evolving credit risk profiles.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-05",
@@ -177,7 +194,8 @@
       "Implement ongoing training programs to ensure underwriters are well-versed in updated policies and risk assessment techniques.",
       "Conduct regular back-testing of credit scoring models and adjust as necessary to enhance predictive power.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-06",
@@ -207,6 +225,20 @@
       "Train lending and risk staff on collateral valuation principles and the importance of timely revaluations.",
       "Develop contingency plans for rapidly calling additional collateral or restructuring loans when LTV ratios exceed acceptable risk limits.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Step 3: Calculate the Loan-to-Value ratio for each loan or segment. LTV",
+        "variables": [
+          "Outstanding Loan Balance",
+          "Collateral Value",
+          "Step 4"
+        ],
+        "expression": "( v0 / v1 ) * 100 v2",
+        "percentOutput": false,
+        "source": "Step 3: Calculate the Loan-to-Value ratio for each loan or segment. LTV = (Outstanding Loan Balance / Collateral Value) x 100 Step 4: Identify loans or portfolios with high LTV ratios (e.g., above policy thresholds). Segment the loans by collateral type (e.g., real estate, machinery, receivables) to understand areas of greater risk exposure.",
+        "step": null
+      }
     ]
   },
   {
@@ -238,7 +270,8 @@
       "Regularly monitor macroeconomic indicators and industry trends to stay proactive in managing concentration risks.",
       "Develop specialized expertise or industry-focused teams for better risk assessment and client selection.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-08",
@@ -270,7 +303,8 @@
       "Implement clear policies for loan restructuring, settlement, or write-offs when recovery potential is limited.",
       "Enhance ongoing monitoring and reporting on NPL trends to guide proactive risk management decisions.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-09",
@@ -305,7 +339,8 @@
       "Develop dedicated syndication and distribution teams, emphasizing speed and efficiency in the transaction process.",
       "Continuously benchmark performance and refine strategies based on market trends, investor appetite, and peer practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-10",
@@ -342,7 +377,8 @@
       "Benchmark competitor pricing strategies to ensure the bank remains competitive and profitable.",
       "Implement dynamic pricing tools that integrate real-time market and risk information to promptly adjust loan rates.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-11",
@@ -374,7 +410,8 @@
       "Implement enhanced due diligence or additional covenants for borrowers operating in highly cyclical or volatile industries.",
       "Provide internal training to improve staff competencies in analyzing borrower financials and collateral data.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-12",
@@ -411,7 +448,8 @@
       "Conduct periodic reviews of pricing and terms to ensure they reflect changes in market conditions and credit risk.",
       "Gather and act on client feedback to continuously refine the supply chain financing offering and deepen customer relationships.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-13",
@@ -441,7 +479,8 @@
       "Engage with external ESG rating agencies to validate the bank’s approach and gain insights for continuous improvement.",
       "Enhance reporting and disclosure practices to increase transparency with stakeholders, including investors, customers, and regulators.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-14",
@@ -478,7 +517,8 @@
       "Diversify across multiple specialized segments to mitigate concentration risk and capture a broader range of revenue opportunities.",
       "Regularly review and update pricing models to reflect current market conditions, risk appetite, and observed credit performance.",
       "C. Risk Management and Compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-15",
@@ -512,7 +552,8 @@
       "Refine borrower risk ratings to better capture emerging risks and improve accuracy of PD and LGD estimates.",
       "Maintain transparent disclosures and ongoing dialogue with regulators to align provisioning practices with evolving guidelines.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-16",
@@ -543,7 +584,8 @@
       "Conduct regular back-testing and model validation to confirm the reliability of stress test projections.",
       "Strengthen governance around stress testing by establishing clear accountability and documentation for methodology, assumptions, and results.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-17",
@@ -576,7 +618,8 @@
       "Engage in hedging strategies (e.g., interest rate swaps) to reduce exposure to market volatility.",
       "Conduct ongoing scenario analysis and stress testing to refine portfolio management strategies over time.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-18",
@@ -608,7 +651,8 @@
       "Enhance staff training programs to foster a compliance-oriented culture across all levels of the organization.",
       "Conduct periodic, independent reviews or assessments to validate the effectiveness of governance and compliance controls.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-19",
@@ -635,7 +679,8 @@
       "Integrate off-balance sheet exposures into the bank’s overall stress testing and scenario analysis.",
       "Regularly review and update policies to align with evolving regulatory guidance and market conditions.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-20",
@@ -666,7 +711,8 @@
       "Provide continuous training to employees on operational risk awareness, cybersecurity hygiene, and incident reporting.",
       "Integrate operational and cybersecurity KRIs into strategic decision-making, ensuring that the board and senior management monitor risk trends consistently.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-21",
@@ -698,7 +744,8 @@
       "Establish clear escalation procedures for unresolved breaches, including tighter oversight or possible workout strategies.",
       "Periodically review and update covenant structures to align with evolving business conditions and risk appetite.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-22",
@@ -729,7 +776,8 @@
       "Implement real-time exposure monitoring tools to track potential spikes or changes in market conditions.",
       "Regularly update policies and procedures to align with evolving Basel regulations and industry best practices.",
       "D. Capital, Liquidity, and Funding"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-23",
@@ -769,7 +817,8 @@
       "Use data analytics to identify deposit trends and potential for cross-selling or bundling deposit products.",
       "Continuously monitor interest rate movements and revisit deposit pricing strategies to maintain cost efficiency while meeting liquidity needs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-24",
@@ -809,7 +858,8 @@
       "Optimize daily liquidity forecasts and internal controls for real-time visibility into cash positions and near-term obligations.",
       "Engage in ongoing stress testing under various scenarios to validate the adequacy of liquidity buffers and refine action plans as market conditions change.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-25",
@@ -845,7 +895,8 @@
       "Conduct more frequent or enhanced stress testing to anticipate emerging risks and calibrate capital buffers.",
       "Maintain ongoing dialogue with regulators to confirm alignment with evolving capital standards and guidelines.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-26",
@@ -883,7 +934,8 @@
       "Regularly update and stress test ALM models to capture emerging risks in market conditions or regulatory environments.",
       "Integrate ALM considerations into strategic planning, ensuring that product growth initiatives align with the desired balance sheet structure.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-27",
@@ -919,7 +971,8 @@
       "Adopt a more granular or matched-maturity approach for products with distinct liquidity profiles, such as long-term loans or seasonal deposits.",
       "Benchmark against industry peers or best practices to stay competitive and ensure fairness in internal cost and profit allocation.",
       "E. Operations and Process Improvement"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-28",
@@ -954,7 +1007,8 @@
       "Evaluate property costs and renegotiate leases where possible to reduce overhead expenses.",
       "Implement ongoing performance monitoring and periodic market assessments to adapt the branch network strategy as local conditions evolve.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-29",
@@ -987,6 +1041,20 @@
       "Use analytics and early-warning systems (e.g., sudden drop in transaction volume) to proactively intervene before customers exit.",
       "Align product and pricing strategies more closely with the evolving needs of commercial clients, leveraging ongoing market research and competitor insights.",
       "F. Digital and Technology Transformation"
+    ],
+    "formulas": [
+      {
+        "output": "Step 3: Calculate your churn rate. Churn Rate",
+        "variables": [
+          "Number of Commercial Customers Who Discontinued",
+          "Average Number of Commercial Customers",
+          "Step 4"
+        ],
+        "expression": "( v0 / v1 ) * 100 v2",
+        "percentOutput": false,
+        "source": "Step 3: Calculate your churn rate. Churn Rate = (Number of Commercial Customers Who Discontinued / Average Number of Commercial Customers) x 100 Step 4: Segment the churned customers by key attributes (e.g., industry, company size, products used) to identify patterns or risk factors associated with higher churn.",
+        "step": null
+      }
     ]
   },
   {
@@ -1021,7 +1089,8 @@
       "Offer targeted digital onboarding and training for segments less familiar with online banking, ensuring broader adoption.",
       "Expand partnerships with fintechs or technology providers to access cutting-edge digital capabilities and maintain a competitive edge in the marketplace.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-31",
@@ -1057,7 +1126,8 @@
       "Implement robust testing and monitoring tools to proactively identify and address performance bottlenecks.",
       "Foster cross-functional collaboration to ensure system improvements align with front-line and customer needs.",
       "G. Payment Services and Transaction Banking"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-32",
@@ -1094,7 +1164,8 @@
       "Introduce targeted training for relationship managers to cross-sell or educate clients about underutilized payment and cash management services.",
       "Regularly review performance data, customer feedback, and emerging industry trends to refine product offerings and maintain a competitive edge.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-33",
@@ -1130,7 +1201,8 @@
       "Conduct targeted marketing or sales campaigns aimed at underpenetrated segments (e.g., SMEs or specific industries).",
       "Improve customer support and technology integration (e.g., expense management tools) to drive higher adoption and usage rates.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-34",
@@ -1163,7 +1235,8 @@
       "Enhance the payment gateway user experience, ensuring seamless integrations and fast transaction processing for merchants.",
       "Explore strategic partnerships or technology upgrades to broaden acceptance methods (e.g., mobile wallets, contactless) and capture additional revenue streams.",
       "H. Specialized and Industry-Specific Solutions"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-35",
@@ -1200,7 +1273,8 @@
       "Build specialized teams or hire industry experts for specific equipment categories, improving asset valuation and portfolio management.",
       "Diversify lease offerings (e.g., flexible lease terms, buyback guarantees) to stay competitive and address a broader range of customer needs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-36",
@@ -1230,7 +1304,8 @@
       "Explore technology enhancements, like API-based connectivity or real-time settlement networks, to streamline cross-border transactions.",
       "Periodically review market conditions and counterparties’ financial health, adjusting the correspondent banking network to capture emerging opportunities.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-37",
@@ -1266,7 +1341,8 @@
       "Cross-sell trade finance instruments alongside other commercial banking products to deepen relationships and boost overall profitability.",
       "Periodically review and update product offerings in response to changing market conditions, trade regulations, or client needs.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-38",
@@ -1298,7 +1374,8 @@
       "Develop targeted marketing or outreach to clients in sectors or countries that could benefit most from ECA coverage.",
       "Continuously monitor regulatory changes or new ECA initiatives to expand product offerings and stay competitive.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-39",
@@ -1334,7 +1411,8 @@
       "Review credit policies to ensure borrower and transaction eligibility criteria match the bank’s current risk appetite and market dynamics.",
       "Enhance analytics and reporting tools that provide ongoing visibility into commodity exposures, hedging effectiveness, and policy compliance.",
       "I. Mergers and Acquisitions"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "commercial-bank-40",
@@ -1364,6 +1442,7 @@
       "Negotiate earn-out provisions or performance-linked deal structures to mitigate valuation risks.",
       "Engage external advisors or consult peers who have recently undergone similar mergers for best practices and lessons learned.",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

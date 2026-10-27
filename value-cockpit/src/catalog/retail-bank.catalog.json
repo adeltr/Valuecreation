@@ -32,6 +32,19 @@
       "",
       "Continuously refine segmentation and strategies using updated data and advanced analytics tools.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Penetration Rate",
+        "variables": [
+          "Number of Customers Using Product",
+          "Total Customers in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -65,7 +78,8 @@
       "",
       "Personalize customer engagement strategies based on segment-specific needs and preferences.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "retail-bank-03",
@@ -101,6 +115,30 @@
       "Personalize marketing campaigns based on customer preferences and past behaviors.",
       "Invest in digital sales channels to improve accessibility and convenience for cross-selling and up-selling.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cross-Sell Ratio",
+        "variables": [
+          "Number of Products Owned",
+          "Number of Customers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Cross-Sell Ratio = (Number of Products Owned / Number of Customers)",
+        "step": null
+      },
+      {
+        "output": "Up-Sell Success Rate",
+        "variables": [
+          "Number of Successful Up-Sells",
+          "Number of Up-Sell Offers Made"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Up-Sell Success Rate = (Number of Successful Up-Sells / Number of Up-Sell Offers Made) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -138,6 +176,43 @@
       "Reduce servicing costs by promoting digital channels and streamlining operations.",
       "Continuously monitor and refine retention and acquisition strategies to improve CLV and CAC over time.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "CLV",
+        "variables": [
+          "Annual Revenue per Customer",
+          "Annual Cost to Serve",
+          "Retention Rate",
+          "Discount Rate"
+        ],
+        "expression": "( v0 - v1 ) * ( v2 / ( 1 + v3 - v2 ) )",
+        "percentOutput": false,
+        "source": "CLV = (Annual Revenue per Customer - Annual Cost to Serve) x (Retention Rate / (1 + Discount Rate - Retention Rate))",
+        "step": null
+      },
+      {
+        "output": "CAC",
+        "variables": [
+          "Total Acquisition Costs",
+          "Number of New Customers Acquired"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CAC = Total Acquisition Costs / Number of New Customers Acquired",
+        "step": null
+      },
+      {
+        "output": "CLV-to-CAC Ratio",
+        "variables": [
+          "CLV",
+          "CAC"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CLV-to-CAC Ratio = CLV / CAC",
+        "step": null
+      }
     ]
   },
   {
@@ -170,7 +245,8 @@
       "Use omnichannel strategies to ensure consistency across touchpoints.",
       "Regularly solicit and act on customer feedback to iterate improvements.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "retail-bank-06",
@@ -199,6 +275,30 @@
       "Promote financial literacy programs to encourage better credit and financial management in high-risk segments.",
       "Develop region-specific strategies based on geographic variations in customer behavior.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average account balance",
+        "variables": [
+          "Total Balance in Segment",
+          "Number of Customers in Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average account balance = Total Balance in Segment / Number of Customers in Segment",
+        "step": "Analyze Financial Behavior by Segment"
+      },
+      {
+        "output": "Transaction frequency",
+        "variables": [
+          "Total Transactions in Segment",
+          "Number of Customers in Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Transaction frequency = Total Transactions in Segment / Number of Customers in Segment",
+        "step": "Analyze Financial Behavior by Segment"
+      }
     ]
   },
   {
@@ -236,6 +336,30 @@
       "Target low-adoption segments with personalized marketing campaigns promoting specific use cases.",
       "Regularly update and expand the tool’s features based on user feedback and emerging customer needs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Feature Engagement Rate",
+        "variables": [
+          "Number of Sessions Using Feature",
+          "Total Sessions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Feature Engagement Rate = (Number of Sessions Using Feature / Total Sessions) x 100",
+        "step": null
+      },
+      {
+        "output": "Adoption Rate",
+        "variables": [
+          "Number of PFM Tool Users",
+          "Total Eligible Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Adoption Rate = (Number of PFM Tool Users / Total Eligible Customers) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -267,6 +391,41 @@
       "Use predictive analytics to identify at-risk customers and recommend targeted interventions.",
       "Regularly update financial health scoring models to reflect changing customer behaviors and economic conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Credit Utilization Rate",
+        "variables": [
+          "Total Credit Used",
+          "Total Credit Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Credit Utilization Rate = (Total Credit Used / Total Credit Available) x 100",
+        "step": null
+      },
+      {
+        "output": "Savings-to-Income Ratio",
+        "variables": [
+          "Total Savings",
+          "Estimated Annual Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Savings-to-Income Ratio = (Total Savings / Estimated Annual Income) x 100",
+        "step": null
+      },
+      {
+        "output": "Discretionary Spending Ratio",
+        "variables": [
+          "Discretionary Spending",
+          "Total Spending"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Discretionary Spending Ratio = (Discretionary Spending / Total Spending)",
+        "step": null
+      }
     ]
   },
   {
@@ -303,6 +462,52 @@
       "Offer financial counseling or risk-mitigation products (e.g., insurance, debt consolidation) to vulnerable segments.",
       "",
       "Continuously monitor segment profitability and risk metrics to refine strategies and adapt to market changes."
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Customer",
+        "variables": [
+          "Total Revenue from Segment",
+          "Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Customer = Total Revenue from Segment / Number of",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Serve per Customer",
+        "variables": [
+          "Total Costs for Segment",
+          "Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost-to-Serve per Customer = Total Costs for Segment / Number of",
+        "step": null
+      },
+      {
+        "output": "Net Profitability",
+        "variables": [
+          "Revenue per Customer",
+          "Cost-to-Serve per Customer"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Profitability = Revenue per Customer - Cost-to-Serve per Customer",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulting Customers in Segment",
+          "Total Customers in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulting Customers in Segment / Total Customers in Segment) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -339,6 +544,19 @@
       "Promote account activity through gamification or reward programs for frequent transactions.",
       "Regularly monitor churn and dormancy trends to identify emerging risks and adjust strategies accordingly.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Reactivation Rate",
+        "variables": [
+          "Number of Reactivated Accounts",
+          "Total Dormant Accounts Targeted"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Reactivation Rate = (Number of Reactivated Accounts / Total Dormant Accounts Targeted) x 100",
+        "step": "Develop Retention and Reactivation Strategies"
+      }
     ]
   },
   {
@@ -372,6 +590,30 @@
       "Market the benefits of the rewards program to under-enrolled or low-engagement segments.",
       "Regularly review program costs and adjust structures to maximize ROI while maintaining customer satisfaction.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Enrollment Rate",
+        "variables": [
+          "Number of Enrolled Customers",
+          "Total Eligible Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Enrollment Rate = (Number of Enrolled Customers / Total Eligible Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Redemption Rate",
+        "variables": [
+          "Number of Rewards Redeemed",
+          "Total Rewards Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Redemption Rate = (Number of Rewards Redeemed / Total Rewards Available) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -406,6 +648,19 @@
       "Monitor and adjust staffing levels to handle peak support volumes efficiently.",
       "Regularly solicit and act on customer feedback to refine support processes and tools.",
       "B. Product and Portfolio Performance"
+    ],
+    "formulas": [
+      {
+        "output": "Average Resolution Time",
+        "variables": [
+          "Sum of Time to Resolve All Cases",
+          "Total Number of Cases"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Resolution Time = (Sum of Time to Resolve All Cases / Total Number of Cases)",
+        "step": null
+      }
     ]
   },
   {
@@ -448,6 +703,87 @@
       "Promote digital channels to increase convenience and attract tech-savvy customers.",
       "Regularly review and adjust product offerings to align with changing customer needs and market trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Deposit Growth Rate",
+        "variables": [
+          "Current Period Deposit Balance",
+          "Previous Period Deposit Balance"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "NIM",
+        "variables": [
+          "Net Interest Income",
+          "Average Earning Assets"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NIM = (Net Interest Income / Average Earning Assets) x 100",
+        "step": null
+      },
+      {
+        "output": "Loan Growth Rate",
+        "variables": [
+          "Current Period Loan Balance",
+          "Previous Period Loan Balance"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loan Growth Rate = ((Current Period Loan Balance - Previous Period Loan Balance) / Previous Period Loan Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Loan Yield",
+        "variables": [
+          "Interest Income from Loans",
+          "Average Loan Balance"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loan Yield = (Interest Income from Loans / Average Loan Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Delinquent Loans",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Delinquent Loans / Total Loan Portfolio) x 100",
+        "step": "Evaluate Credit Quality"
+      },
+      {
+        "output": "NPA Ratio",
+        "variables": [
+          "Non-Performing Assets",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NPA Ratio = (Non-Performing Assets / Total Loan Portfolio) x 100",
+        "step": "Evaluate Credit Quality"
+      },
+      {
+        "output": "Net Contribution",
+        "variables": [
+          "Interest Income",
+          "Interest Expense",
+          "Loan Loss Provisions",
+          "Total Portfolio Balance"
+        ],
+        "expression": "( v0 - v1 - v2 ) / v3",
+        "percentOutput": false,
+        "source": "Net Contribution = (Interest Income - Interest Expense - Loan Loss Provisions) / Total Portfolio Balance",
+        "step": "Evaluate Credit Quality"
+      }
     ]
   },
   {
@@ -483,6 +819,52 @@
       "Diversify the geographic composition of the portfolio to reduce exposure to regional market fluctuations.",
       "Leverage predictive analytics to monitor borrower behavior and proactively mitigate delinquency risks.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Current LTV",
+        "variables": [
+          "Outstanding Loan Balance",
+          "Current Property Value"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Current LTV = (Outstanding Loan Balance / Current Property Value) x 100",
+        "step": null
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Number of Delinquent Mortgages",
+          "Total Mortgages"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Delinquency Rate = (Number of Delinquent Mortgages / Total Mortgages)",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulted Mortgages",
+          "Total Mortgages"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulted Mortgages / Total Mortgages) x 100",
+        "step": null
+      },
+      {
+        "output": "Prepayment Rate",
+        "variables": [
+          "Number of Prepaid Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Prepayment Rate = (Number of Prepaid Loans / Total Loans) x 100",
+        "step": "Perform Valuation Analysis"
+      }
     ]
   },
   {
@@ -517,6 +899,30 @@
       "Improve onboarding processes to ensure a smooth start for new accounts.",
       "Use predictive analytics to identify customers at risk of closure and proactively offer personalized retention offers.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Tenure",
+        "variables": [
+          "Sum of All Account Durations",
+          "Total Number of Accounts"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Average Tenure = (Sum of All Account Durations) / (Total Number of Accounts)",
+        "step": null
+      },
+      {
+        "output": "Retention Rate",
+        "variables": [
+          "Number of Accounts Retained at Year-End",
+          "Total Accounts at Start of Year"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Retention Rate = (Number of Accounts Retained at Year-End / Total Accounts at Start of Year) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -552,6 +958,41 @@
       "",
       "Regularly review portfolio allocation and credit quality metrics to adapt to changing market conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Sector Share",
+        "variables": [
+          "Total Loan Amount in Sector",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sector Share = (Total Loan Amount in Sector / Total Loan Portfolio) x 100",
+        "step": null
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Delinquent Loans in Sector",
+          "Total Loans in Sector"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Delinquent Loans in Sector / Total Loans in Sector) x 100",
+        "step": null
+      },
+      {
+        "output": "NPL Ratio",
+        "variables": [
+          "Non-Performing Loans in Sector",
+          "Total Loans in Sector"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NPL Ratio = (Non-Performing Loans in Sector / Total Loans in Sector) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -581,6 +1022,30 @@
       "Introduce loan insurance products to mitigate risks associated with high LTV loans.",
       "Use predictive analytics to proactively identify loans at risk of default based on LTV and DTI trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Current LTV",
+        "variables": [
+          "Outstanding Loan Balance",
+          "Current Property Value"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Current LTV = (Outstanding Loan Balance / Current Property Value) x 100",
+        "step": null
+      },
+      {
+        "output": "DTI",
+        "variables": [
+          "Total Monthly Debt Payments",
+          "Monthly Gross Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "DTI = (Total Monthly Debt Payments / Monthly Gross Income) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -618,6 +1083,41 @@
       "Regularly review and update product features to remain competitive (e.g., lower interest rates, streamlined application processes).",
       "Monitor repayment patterns closely to proactively identify at-risk borrowers and mitigate defaults.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Consolidation Candidate Rate",
+        "variables": [
+          "Number of Eligible Customers",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Consolidation Candidate Rate = (Number of Eligible Customers / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulted Consolidation Loans",
+          "Total Consolidation Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulted Consolidation Loans / Total Consolidation Loans) x 100",
+        "step": null
+      },
+      {
+        "output": "Post-Consolidation DTI",
+        "variables": [
+          "Monthly Debt Payment Post-Consolidation",
+          "Monthly Gross Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Post-Consolidation DTI = (Monthly Debt Payment Post-Consolidation / Monthly Gross Income) x 100",
+        "step": "Assess Borrower Repayment Capacity"
+      }
     ]
   },
   {
@@ -653,6 +1153,52 @@
       "Optimize collection processes with a focus on maintaining customer relationships.",
       "Continuously monitor repayment behavior and adjust credit policies to adapt to market conditions.",
       "C. Operational Efficiency and Risk Management"
+    ],
+    "formulas": [
+      {
+        "output": "Repayment Category Percentage",
+        "variables": [
+          "Number of Loans in Category",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Repayment Category Percentage = (Number of Loans in Category / Total Loans) x 100",
+        "step": "Analyze Repayment Behavior"
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Delinquent Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Delinquent Loans / Total Loans) x 100",
+        "step": "Calculate Key Metrics"
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Defaulted Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Defaulted Loans / Total Loans) x 100",
+        "step": "Calculate Key Metrics"
+      },
+      {
+        "output": "Recovery Rate",
+        "variables": [
+          "Recovered Amount from Defaults",
+          "Total Default Amount"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate = (Recovered Amount from Defaults / Total Default Amount) x 100",
+        "step": "Calculate Key Metrics"
+      }
     ]
   },
   {
@@ -687,7 +1233,8 @@
       "Enhance transaction monitoring systems to detect suspicious activities more effectively.",
       "Establish a robust governance structure to oversee risk and compliance adherence, with clear accountability.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "retail-bank-21",
@@ -724,6 +1271,63 @@
       "Conduct periodic stress tests to evaluate portfolio resilience under various scenarios.",
       "Use advanced analytics to identify high-risk loans early and take proactive measures.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Number of Delinquent Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Number of Delinquent Loans / Total Loans) x 100",
+        "step": null
+      },
+      {
+        "output": "NPL Ratio",
+        "variables": [
+          "Non-Performing Loans",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NPL Ratio = (Non-Performing Loans / Total Loan Portfolio) x 100",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulted Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulted Loans / Total Loans) x 100",
+        "step": null
+      },
+      {
+        "output": "Recovery Rate",
+        "variables": [
+          "Recovered Amount",
+          "Total Defaulted Loan Amount"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate = (Recovered Amount / Total Defaulted Loan Amount) x 100",
+        "step": null
+      },
+      {
+        "output": "Loan Loss Coverage Ratio",
+        "variables": [
+          "Loan Loss Provisions",
+          "Non-Performing Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loan Loss Coverage Ratio = (Loan Loss Provisions / Non-Performing Loans) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -758,6 +1362,52 @@
       "Provide customer education on fraud awareness to minimize susceptibility to scams.",
       "Conduct routine audits of fraud detection and prevention processes to identify and rectify weaknesses.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Fraud Detection Rate",
+        "variables": [
+          "Number of Detected Fraudulent Transactions",
+          "Total Fraudulent Transactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fraud Detection Rate = (Number of Detected Fraudulent Transactions / Total Fraudulent Transactions) x 100",
+        "step": null
+      },
+      {
+        "output": "False Positive Rate",
+        "variables": [
+          "Number of Legitimate Transactions Flagged as Fraud",
+          "Total Flagged Transactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "False Positive Rate = (Number of Legitimate Transactions Flagged as Fraud / Total Flagged Transactions) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Resolution Time",
+        "variables": [
+          "Sum of Resolution Times for All Cases",
+          "Total Number of Cases"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Resolution Time = (Sum of Resolution Times for All Cases / Total Number of Cases)",
+        "step": null
+      },
+      {
+        "output": "Fraud Prevention Rate",
+        "variables": [
+          "Value of Prevented Fraud",
+          "Total Value of Attempted Fraud"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fraud Prevention Rate = (Value of Prevented Fraud / Total Value of Attempted Fraud) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -792,6 +1442,63 @@
       "Monitor customer feedback to identify pain points and improve the application experience.",
       "Use predictive analytics to prioritize low-risk applications for faster processing.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Processing Time",
+        "variables": [
+          "Total Time for All Applications",
+          "Total Number of Applications"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Processing Time = (Total Time for All Applications / Total Number of Applications)",
+        "step": null
+      },
+      {
+        "output": "Average Underwriting Time",
+        "variables": [
+          "Total Underwriting Time",
+          "Total Loans Processed"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Underwriting Time = (Total Underwriting Time / Total Loans Processed)",
+        "step": null
+      },
+      {
+        "output": "Underwriter Productivity",
+        "variables": [
+          "Number of Loans Processed",
+          "Number of Underwriters"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Underwriter Productivity = (Number of Loans Processed / Number of Underwriters)",
+        "step": null
+      },
+      {
+        "output": "Approval Rate",
+        "variables": [
+          "Number of Approved Loans",
+          "Total Applications"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Approval Rate = (Number of Approved Loans / Total Applications) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Origination Cost",
+        "variables": [
+          "Total Origination Costs",
+          "Total Loans Processed"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Origination Cost = (Total Origination Costs / Total Loans Processed)",
+        "step": "Assess Cost Efficiency"
+      }
     ]
   },
   {
@@ -829,6 +1536,41 @@
       "Implement performance-based incentives to increase employee productivity.",
       "Continuously benchmark against industry peers to identify areas where the bank can improve efficiency.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost-to-Income Ratio",
+        "variables": [
+          "Operating Expenses",
+          "Operating Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue per Employee",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Employees"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Employee = Total Revenue / Total Number of Employees.",
+        "step": "Assess Productivity Metrics"
+      },
+      {
+        "output": "Transactions per Branch",
+        "variables": [
+          "Total Transactions",
+          "Total Branches"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Transactions per Branch = Total Transactions / Total Branches.",
+        "step": "Assess Productivity Metrics"
+      }
     ]
   },
   {
@@ -864,6 +1606,30 @@
       "Enhance staff training to reduce reliance on external consultants and improve internal capabilities.",
       "Monitor regulatory changes proactively to minimize last-minute implementation costs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Compliance Cost Ratio",
+        "variables": [
+          "Total Compliance Costs",
+          "Total Operating Expenses"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Compliance Cost Ratio = (Total Compliance Costs / Total Operating Expenses) x 100",
+        "step": null
+      },
+      {
+        "output": "Compliance Cost-to-Revenue Ratio",
+        "variables": [
+          "Total Compliance Costs",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Compliance Cost-to-Revenue Ratio = (Total Compliance Costs / Total Revenue) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -899,6 +1665,41 @@
       "Conduct regular stress testing to proactively identify and address vulnerabilities.",
       "Align internal capital targets with evolving regulatory standards and market conditions.",
       "D. Branch and Channel Performance"
+    ],
+    "formulas": [
+      {
+        "output": "CET1 Ratio",
+        "variables": [
+          "CET1 Capital",
+          "Risk-Weighted Assets"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "CET1 Ratio = (CET1 Capital / Risk-Weighted Assets) x 100",
+        "step": "Calculate Capital Adequacy Ratios"
+      },
+      {
+        "output": "Tier 1 Capital Ratio",
+        "variables": [
+          "Tier 1 Capital",
+          "Risk-Weighted Assets"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Tier 1 Capital Ratio = (Tier 1 Capital / Risk-Weighted Assets) x 100",
+        "step": "Calculate Capital Adequacy Ratios"
+      },
+      {
+        "output": "Post-Stress Capital Ratio",
+        "variables": [
+          "Post-Stress Capital",
+          "Post-Stress RWAs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Post-Stress Capital Ratio = (Post-Stress Capital / Post-Stress RWAs) x 100",
+        "step": "Develop Stress Testing Scenarios"
+      }
     ]
   },
   {
@@ -935,6 +1736,41 @@
       "Use digital tools to complement physical branch services, reducing dependency on high-cost locations.",
       "Regularly review and adjust branch network strategies to align with customer behavior and market conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Profit",
+        "variables": [
+          "Total Revenue",
+          "Total Operating Expenses"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Profit = Total Revenue - Total Operating Expenses",
+        "step": null
+      },
+      {
+        "output": "Profitability Ratio",
+        "variables": [
+          "Net Profit",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Profitability Ratio = (Net Profit / Total Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Income Ratio",
+        "variables": [
+          "Operating Expenses",
+          "Operating Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -969,6 +1805,30 @@
       "Tailor channel strategies based on demographic and geographic preferences.",
       "Continuously monitor channel metrics to adapt strategies to evolving customer needs and technological advancements.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Revenue by Channel",
+        "variables": [
+          "Total Revenue from Channel",
+          "Total Revenue Across All Channels"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue by Channel = (Total Revenue from Channel / Total Revenue Across All Channels) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Revenue Ratio",
+        "variables": [
+          "Operating Costs for Channel",
+          "Revenue from Channel"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Revenue Ratio = (Operating Costs for Channel / Revenue from Channel) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1004,6 +1864,63 @@
       "Use customer demographic and geographic data to optimize ATM placement and accessibility.",
       "Monitor and adjust ATM network strategies regularly to align with evolving customer needs and market conditions.",
       "E. Digital and Technological Capabilities"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per ATM",
+        "variables": [
+          "Total Fees Collected from Transactions",
+          "Total"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per ATM = Total Fees Collected from Transactions / Total",
+        "step": null
+      },
+      {
+        "output": "Utilization Rate",
+        "variables": [
+          "Number of Transactions at ATM",
+          "Maximum Capacity of ATM"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate = (Number of Transactions at ATM / Maximum Capacity of ATM) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Operating Cost",
+        "variables": [
+          "Total Operating Costs",
+          "Total Number of ATMs"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Operating Cost = Total Operating Costs / Total Number of ATMs",
+        "step": null
+      },
+      {
+        "output": "ATM Profitability",
+        "variables": [
+          "Revenue per ATM",
+          "Operating Cost per ATM"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "ATM Profitability = Revenue per ATM - Operating Cost per ATM",
+        "step": null
+      },
+      {
+        "output": "Downtime Rate",
+        "variables": [
+          "Total Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1040,6 +1957,41 @@
       "Continuously monitor platform performance to address technical issues proactively.",
       "Regularly update digital platforms with new features to meet evolving customer needs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Adoption Rate",
+        "variables": [
+          "Number of Digital Banking Users",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Adoption Rate = (Number of Digital Banking Users / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Logins per User",
+        "variables": [
+          "Total Logins",
+          "Total Digital Banking Users"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Logins per User = Total Logins / Total Digital Banking Users",
+        "step": null
+      },
+      {
+        "output": "Downtime Rate",
+        "variables": [
+          "Total Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100",
+        "step": "Analyze Customer Demographics and Preferences"
+      }
     ]
   },
   {
@@ -1068,6 +2020,30 @@
       "Optimize the balance between security and usability by continuously gathering and acting on user feedback.",
       "Stay updated on evolving security standards and threats to proactively adapt authentication protocols.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Authentication Success Rate",
+        "variables": [
+          "Successful Logins",
+          "Total Login Attempts"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Authentication Success Rate = (Successful Logins / Total Login Attempts)",
+        "step": null
+      },
+      {
+        "output": "MFA Adoption Rate",
+        "variables": [
+          "Number of Users with MFA Enabled",
+          "Total Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "MFA Adoption Rate = (Number of Users with MFA Enabled / Total Users) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1105,6 +2081,52 @@
       "Optimize costs through vendor negotiations and transitioning to more cost-efficient technologies.",
       "Conduct periodic scalability testing to ensure the system meets future growth requirements.",
       "F. Financial Performance and Revenue Management"
+    ],
+    "formulas": [
+      {
+        "output": "Average Processing Time",
+        "variables": [
+          "Total Processing Time",
+          "Number of Transactions"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Processing Time = (Total Processing Time / Number of Transactions)",
+        "step": null
+      },
+      {
+        "output": "Downtime Rate",
+        "variables": [
+          "Total Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100",
+        "step": null
+      },
+      {
+        "output": "Error Rate",
+        "variables": [
+          "Number of Failed Transactions",
+          "Total Transactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Error Rate = (Number of Failed Transactions / Total Transactions) x 100",
+        "step": null
+      },
+      {
+        "output": "System Utilization Rate",
+        "variables": [
+          "Current System Load",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "System Utilization Rate = (Current System Load / Maximum Capacity) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1141,6 +2163,42 @@
       "Regularly monitor market interest rates and their potential impact on profitability.",
       "Use advanced analytics to model interest rate scenarios and guide strategic decision-making.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "NIM",
+        "variables": [
+          "Interest Income",
+          "Interest Expense",
+          "Average Earning Assets"
+        ],
+        "expression": "( ( v0 - v1 ) / v2 ) * 100",
+        "percentOutput": true,
+        "source": "NIM = ((Interest Income - Interest Expense) / Average Earning Assets) x 100",
+        "step": null
+      },
+      {
+        "output": "Repricing Gap",
+        "variables": [
+          "RSAs",
+          "RSLs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Repricing Gap = RSAs - RSLs",
+        "step": null
+      },
+      {
+        "output": "Change in NII",
+        "variables": [
+          "Repricing Gap",
+          "Change in Interest Rate"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Change in NII = Repricing Gap x Change in Interest Rate",
+        "step": null
+      }
     ]
   },
   {
@@ -1177,6 +2235,30 @@
       "Use predictive analytics to anticipate rate changes and adjust pricing strategies proactively.",
       "Regularly review competitor pricing to ensure the bank remains competitive without sacrificing margins.",
       "G. Market Penetration and Strategic Growth Opportunities"
+    ],
+    "formulas": [
+      {
+        "output": "Interest Rate Spread",
+        "variables": [
+          "Weighted Average Interest Rate on Assets",
+          "Weighted Average Interest Rate on Liabilities"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Interest Rate Spread = Weighted Average Interest Rate on Assets - Weighted Average Interest Rate on Liabilities",
+        "step": null
+      },
+      {
+        "output": "Contribution to NII",
+        "variables": [
+          "Interest Rate Spread",
+          "Average Balance of Earning"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Contribution to NII = Interest Rate Spread x Average Balance of Earning",
+        "step": null
+      }
     ]
   },
   {
@@ -1215,6 +2297,30 @@
       "Reduce barriers to entry, such as high fees or complex application processes, for new customers.",
       "Continuously monitor progress and adjust strategies to meet evolving inclusion and penetration goals.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Market Penetration Rate",
+        "variables": [
+          "Number of Customers in Target Segment",
+          "Total Population in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Penetration Rate = (Number of Customers in Target Segment / Total Population in Segment) x 100",
+        "step": null
+      },
+      {
+        "output": "Product Penetration Rate",
+        "variables": [
+          "Number of Customers Using Product",
+          "Total Customers in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1254,6 +2360,63 @@
       "Enhance customer engagement and satisfaction through personalized communication and services.",
       "Regularly review and optimize deposit products to align with market conditions and customer needs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Deposit Growth Rate",
+        "variables": [
+          "Current Period Deposit Balance",
+          "Previous Period Deposit Balance"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Deposit Turnover Ratio",
+        "variables": [
+          "Withdrawals",
+          "Total Deposit Balance"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Deposit Turnover Ratio = (Withdrawals / Total Deposit Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Attrition Rate",
+        "variables": [
+          "Number of Closed Accounts",
+          "Total Accounts"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Attrition Rate = (Number of Closed Accounts / Total Accounts) x 100",
+        "step": null
+      },
+      {
+        "output": "Deposit Composition",
+        "variables": [
+          "Balance of Deposit Type",
+          "Total Deposit Balance"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Deposit Composition = (Balance of Deposit Type / Total Deposit Balance)",
+        "step": null
+      },
+      {
+        "output": "WACD",
+        "variables": [
+          "Total Interest Expense on Deposits",
+          "Average Deposit Balance"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "WACD = (Total Interest Expense on Deposits / Average Deposit Balance)",
+        "step": null
+      }
     ]
   },
   {
@@ -1288,6 +2451,30 @@
       "Conduct financial literacy programs to educate customers about investment opportunities and benefits.",
       "Regularly review and adjust product offerings to align with customer needs and market trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Penetration Rate",
+        "variables": [
+          "Number of Customers Using Product",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Penetration Rate = (Number of Customers Using Product / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue per Product",
+        "variables": [
+          "Total Revenue from Product",
+          "Total Revenue from Wealth Management"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue per Product = (Total Revenue from Product / Total Revenue from Wealth Management) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1320,6 +2507,41 @@
       "Introduce value-added services to justify premium fees, such as exclusive account benefits or financial planning tools.",
       "Monitor regulatory trends to proactively adapt fee strategies and minimize potential impacts.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Fee Income Contribution",
+        "variables": [
+          "Fee Income",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fee Income Contribution = (Fee Income / Total Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Fee Income Growth Rate",
+        "variables": [
+          "Current Period Fee Income",
+          "Previous Period Fee Income"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fee Income Growth Rate = ((Current Period Fee Income - Previous Period Fee Income) / Previous Period Fee Income) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue Dependency Ratio",
+        "variables": [
+          "Fee Income",
+          "Non-Fee Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Dependency Ratio = (Fee Income / Non-Fee Income) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1354,6 +2576,30 @@
       "Regularly review and adjust pricing strategies to maintain competitiveness while optimizing revenue.",
       "Monitor regulatory changes to adapt quickly and minimize impacts on fee structures.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Revenue by Service",
+        "variables": [
+          "Fees and Charges from Service",
+          "Total Payment Services Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue by Service = (Fees and Charges from Service / Total Payment Services Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Revenue Ratio",
+        "variables": [
+          "Operating Costs for Service",
+          "Revenue from Service"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Revenue Ratio = (Operating Costs for Service / Revenue from Service) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1387,6 +2633,30 @@
       "Invest in training staff to provide high-quality, personalized advice and support.",
       "Continuously gather and act on customer feedback to refine and improve service offerings.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Uptake Rate",
+        "variables": [
+          "Number of Customers Using Personalized Services",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Uptake Rate = (Number of Customers Using Personalized Services / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue Contribution",
+        "variables": [
+          "Revenue from Personalized Services",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Contribution = (Revenue from Personalized Services / Total Revenue) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1425,6 +2695,30 @@
       "Simplify the onboarding process for additional products to encourage multi-product adoption.",
       "Regularly review cross-selling strategies and adjust based on customer feedback and market trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Cross-Holdings",
+        "variables": [
+          "Total Number of Products Held by Households",
+          "Total Number of Households"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Cross-Holdings = (Total Number of Products Held by Households / Total Number of Households)",
+        "step": null
+      },
+      {
+        "output": "Cross-Selling Rate",
+        "variables": [
+          "Number of Additional Products Sold to Existing Customers",
+          "Total Customers Targeted"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cross-Selling Rate = (Number of Additional Products Sold to Existing Customers / Total Customers Targeted) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1462,6 +2756,19 @@
       "Use predictive analytics to identify at-risk customers and implement timely retention measures.",
       "Continuously gather and act on customer feedback to address pain points and reduce attrition.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Attrition Rate",
+        "variables": [
+          "Number of Customers Who Discontinued the Product",
+          "Total Customers at Start of Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Attrition Rate = (Number of Customers Who Discontinued the Product / Total Customers at Start of Period) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1495,7 +2802,8 @@
       "Regularly review loan terms and pricing strategies to align with market trends and customer needs.",
       "Monitor external economic conditions to anticipate spikes in prepayment or refinance activity and adjust strategies accordingly.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "retail-bank-44",
@@ -1530,6 +2838,30 @@
       "Develop specific campaigns targeting underserved or slow-growth segments to promote wealth-building behaviors.",
       "Monitor external economic factors affecting wealth trends and proactively adjust strategies to align with market conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Household Wealth",
+        "variables": [
+          "Total Wealth of All Households",
+          "Total Number of Households"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Household Wealth = (Total Wealth of All Households / Total Number of Households)",
+        "step": null
+      },
+      {
+        "output": "Wealth Accumulation Rate",
+        "variables": [
+          "Current Wealth",
+          "Previous Wealth"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Wealth Accumulation Rate = ((Current Wealth - Previous Wealth) / Previous Wealth) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1567,6 +2899,19 @@
       "Strengthen partnerships with local entities to ease market entry and build trust.",
       "Regularly review and adjust growth strategies based on performance and evolving market conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Market Share",
+        "variables": [
+          "Bank’s Revenue in Market",
+          "Total Market Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Share = (Bank’s Revenue in Market / Total Market Revenue) x 100",
+        "step": null
+      }
     ]
   }
 ]

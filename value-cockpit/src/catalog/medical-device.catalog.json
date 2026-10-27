@@ -35,7 +35,8 @@
       "Strengthen internal regulatory affairs expertise or partner with external consultants.",
       "Perform ongoing gap analyses to identify missing documentation, data, or testing needs prior to submission.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-02",
@@ -70,7 +71,8 @@
       "Streamline documentation and ensure that procedures match actual practices on the production floor or in service delivery.",
       "Conduct periodic gap assessments to stay current with evolving regulations and standards (for example, EU MDR, MDSAP).",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-03",
@@ -101,7 +103,8 @@
       "Conduct periodic internal audits to verify the accuracy and compliance of labeling and UDI submissions.",
       "Collaborate with cross-functional teams (for example, regulatory, manufacturing, logistics) to maintain synchronized updates.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-04",
@@ -135,7 +138,8 @@
       "Implement a robust internal process for classifying new devices, involving cross-functional teams (for example, R&D, regulatory affairs).",
       "Review classifications regularly as product features evolve or new regulatory interpretations emerge.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-05",
@@ -167,7 +171,8 @@
       "Establish robust risk management processes that integrate both device and drug/biologic components.",
       "Continuously refine the submission strategy based on feedback from regulatory authorities and updated guidance.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-06",
@@ -203,7 +208,8 @@
       "Establish ongoing training programs to ensure staff understand evolving MDR/IVDR obligations.",
       "Maintain close communication with Notified Bodies to clarify expectations, submission timelines, and ongoing compliance requirements.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-07",
@@ -238,7 +244,8 @@
       "Engage with MDSAP-recognized Auditing Organizations early to clarify any ambiguities.",
       "Maintain a continuous improvement mindset, using feedback from all audits to refine QMS procedures and documentation.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-08",
@@ -270,7 +277,8 @@
       "Plan for post-market surveillance strategies (for example, complaint tracking) to quickly identify any issues if the device is marketed OTC.",
       "Invest in additional risk mitigation features (for example, alarms, error-prevention design) to support safe and effective use by non-professionals.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-09",
@@ -301,7 +309,8 @@
       "Conduct regular internal audits to identify deviations and drive continuous improvement.",
       "Collaborate with device designers to incorporate features that facilitate effective reprocessing and reduce contamination risk.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-10",
@@ -332,7 +341,8 @@
       "Conduct regular internal audits or mock external audits focusing on software lifecycle compliance.",
       "Provide ongoing training for software development teams on IEC 62304 standards and best practices.",
       "B. Clinical & Post-Market"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-11",
@@ -366,7 +376,8 @@
       "",
       "Leverage systematic reviews of published literature to complement internal clinical data and support regulatory submissions.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-12",
@@ -406,7 +417,8 @@
       "",
       "Engage with regulatory bodies or external experts to clarify evolving post-market requirements and incorporate best practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-13",
@@ -443,7 +455,8 @@
       "Conduct regular reviews and audits of CRO processes and site practices, sharing best practices among all sites.",
       "Establish collaborative partnerships with CROs and site teams to encourage transparency, trust, and continuous improvement.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-14",
@@ -476,7 +489,8 @@
       "Maintain transparency with regulators about methodologies, limitations, and the real-world applicability of outcomes.",
       "Continuously update and refine RWE approaches based on new data sources, evolving technologies, and shifting regulatory landscapes.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-15",
@@ -509,7 +523,8 @@
       "Allocate resources to well-designed clinical trials that focus on high-priority endpoints and underserved patient populations.",
       "Implement ongoing, iterative reviews of clinical evidence to proactively identify and address future gaps.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-16",
@@ -540,7 +555,8 @@
       "Regularly monitor evolving standards of care and update benchmarking analyses to maintain a competitive edge.",
       "Explore real-world data to complement clinical trials, providing additional insights into device performance across diverse settings.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-17",
@@ -576,7 +592,8 @@
       "Continuously monitor complaint data, adverse events, and emerging product risks to catch potential recall triggers early.",
       "Engage in periodic third-party audits to validate the efficacy of FSCA and recall processes, incorporating external best practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-18",
@@ -608,7 +625,8 @@
       "Collaborate with healthcare providers and patient advocacy groups to refine educational materials and engagement programs.",
       "Continuously collect and analyze real-world usage data to update and optimize patient engagement strategies.",
       "C. Reimbursement & Market Access"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-19",
@@ -645,7 +663,8 @@
       "Monitor ongoing policy changes at both national and local levels, updating internal reimbursement strategies accordingly.",
       "Collaborate with industry associations, patient advocacy groups, or professional societies to advocate for new or revised codes.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-20",
@@ -683,7 +702,8 @@
       "Provide training and explanatory materials to stakeholders (for example, hospital administrators, insurers) to help them understand and apply model insights.",
       "Employ continuous feedback loops, refining health economic models in partnership with external research organizations and key opinion leaders.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-21",
@@ -721,7 +741,8 @@
       "Train sales teams on navigating hospital procurement protocols and understanding the roles of key influencers.",
       "Regularly review market feedback and purchasing data to refine pricing strategies and align with hospital priorities.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-22",
@@ -760,7 +781,8 @@
       "",
       "Regularly reassess global market performance, using data-driven insights to refine and expand the market entry strategy.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-23",
@@ -799,7 +821,8 @@
       "",
       "Continuously monitor and update economic models to reflect changes in reimbursement rules and evolving clinical best practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-24",
@@ -835,7 +858,8 @@
       "Update and refine the dossier as new data emerges or HTA requirements change, maintaining ongoing compliance and relevance.",
       "Foster relationships with key opinion leaders and patient advocacy groups to support the device’s value story and real-world applicability.",
       "D. Product Development & Lifecycle"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-25",
@@ -874,7 +898,8 @@
       "Seek strategic partnerships or acquisitions to fill high-value gaps and complement internal R&D capabilities.",
       "Cultivate an innovation culture that balances near-term returns with longer-term breakthrough opportunities.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-26",
@@ -914,7 +939,8 @@
       "Explore strategic partnerships or acquisitions to bring new technologies into older product lines.",
       "Maintain a clear roadmap that includes critical milestones for updating or phasing out products, ensuring clear communication with regulators and customers.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-27",
@@ -944,7 +970,8 @@
       "",
       "Collaborate with supply chain partners to ensure handling and storage conditions align with validated packaging requirements.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-28",
@@ -983,7 +1010,8 @@
       "Stay current with emerging standards, guidelines, and material innovations in the 3D printing space.",
       "Engage healthcare providers and end-users early to incorporate customization and design feedback into the AM product strategy.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-29",
@@ -1017,7 +1045,8 @@
       "Develop a comprehensive reimbursement strategy, detailing the clinical and economic value of the companion diagnostic to payers and providers.",
       "Continuously update the co-development plan as clinical, regulatory, or market dynamics evolve to maintain alignment and mitigate risks.",
       "E. Operations & Supply Chain"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-30",
@@ -1056,7 +1085,8 @@
       "Train operators and quality staff to manage new equipment, processes, and higher production demands effectively.",
       "Regularly re-evaluate production forecasts, adjusting capacity plans and investment strategies as market conditions evolve.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-31",
@@ -1091,7 +1121,8 @@
       "Maintain a backup supply strategy, either through multiple approved vendors or internal manufacturing capabilities.",
       "Use digital supply chain management tools for real-time performance monitoring, transparency, and more accurate forecasting.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-32",
@@ -1125,7 +1156,8 @@
       "Conduct regular audits of environmental monitoring data, using trend analysis to proactively address emerging issues.",
       "Continuously invest in new technologies (for example, advanced air handling units, automated monitoring systems) to enhance contamination control.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-33",
@@ -1157,7 +1189,8 @@
       "Leverage tracking systems (for example, RFID or barcode scanning) to monitor instrument usage and automate inventory management.",
       "Conduct periodic audits to ensure that instrument sets remain relevant and efficient as surgical techniques and technologies advance.",
       "F. Risk Management & Quality"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-34",
@@ -1189,6 +1222,20 @@
       "Conduct periodic training so all team members understand FMEA concepts and remain engaged in ongoing risk reduction efforts.",
       "Update FMEA documents whenever there are changes to the design, materials, or manufacturing process to keep the risk profile current.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate Risk Priority Number (RPN). RPN",
+        "variables": [
+          "Severity",
+          "Occurrence",
+          "Detection"
+        ],
+        "expression": "v0 * v1 * v2",
+        "percentOutput": false,
+        "source": "Calculate Risk Priority Number (RPN). RPN = Severity x Occurrence x Detection. A high RPN indicates a higher-priority failure mode that needs immediate attention.",
+        "step": null
+      }
     ]
   },
   {
@@ -1221,7 +1268,8 @@
       "",
       "Document all validation and testing thoroughly to support regulatory submissions and future audits.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-36",
@@ -1255,7 +1303,8 @@
       "Implement ongoing risk management plans that track new safety signals as the device is introduced to broader populations.",
       "Continuously update internal risk-benefit documentation as real-world data emerges, ensuring timely and evidence-based submissions.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-37",
@@ -1288,7 +1337,8 @@
       "Use data-driven decision-making to refine processes over time, focusing resources on areas that most impact quality.",
       "Continuously align QbD strategies with evolving regulatory expectations, ensuring devices remain compliant and competitive.",
       "G. Commercial Strategy & Marketing"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-38",
@@ -1324,7 +1374,8 @@
       "",
       "Engage in ongoing provider education and relationship-building (for example, webinars, user groups) to foster trust and sustained adoption.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-39",
@@ -1359,7 +1410,8 @@
       "",
       "Track the impact of each KOL collaboration (for example, new clinical evidence, improved product features) to demonstrate mutual benefit and guide future partnerships.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-40",
@@ -1393,7 +1445,8 @@
       "Foster peer-to-peer knowledge exchange, encouraging experienced users to mentor new adopters.",
       "Continuously measure and refine the program by tracking physician performance metrics, gathering feedback, and aligning with emerging clinical guidelines.",
       "H. Technology & Innovation"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-41",
@@ -1426,7 +1479,8 @@
       "Collaborate with external partners (for example, cloud service providers) to ensure all integrated systems meet cybersecurity requirements.",
       "Maintain a continuous post-market surveillance program to address new threats, patch vulnerabilities promptly, and communicate risks to stakeholders.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-42",
@@ -1460,7 +1514,8 @@
       "Develop and test recall readiness exercises periodically to confirm rapid device identification and retrieval capability.",
       "Stay current with evolving regulations on device tracking in different markets, updating internal procedures and systems as needed.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-43",
@@ -1491,7 +1546,8 @@
       "",
       "Maintain a living usability file to inform design updates, post-market surveillance, and future device generations.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-44",
@@ -1526,7 +1582,8 @@
       "Integrate material considerations into early design stages to minimize downstream changes or delays.",
       "Update risk management files (for example, FMEA) whenever material changes or updates occur in the device’s lifecycle.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-45",
@@ -1562,7 +1619,8 @@
       "",
       "Establish ongoing governance processes to review data quality, security controls, and user feedback, adapting integration strategies as technologies evolve.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-46",
@@ -1595,7 +1653,8 @@
       "Periodically review manufacturer updates or service bulletins to keep calibration protocols current.",
       "Implement continuous quality improvement by leveraging data analytics on maintenance frequency, repair costs, and device performance trends.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-47",
@@ -1629,7 +1688,8 @@
       "Perform periodic interface audits to track error rates, network latency, and system updates, maintaining continuous alignment with evolving standards.",
       "Collaborate with LIS and IVD device vendors to share feedback, request feature enhancements, and ensure coordinated support for future upgrades.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-48",
@@ -1665,7 +1725,8 @@
       "Develop clear escalation procedures for issues that cannot be resolved remotely, ensuring a seamless handoff to on-site support.",
       "Continuously monitor performance metrics (for example, remote fix rates, update success rates) to refine and expand remote servicing capabilities.",
       "I. Intellectual Property"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-49",
@@ -1696,7 +1757,8 @@
       "Leverage defensive publishing to prevent competitors from patenting incremental innovations.",
       "Collaborate with universities or research institutions for joint IP development, leveraging complementary expertise and access to cutting-edge research.",
       "J. Sustainability & Environmental Impact"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "medical-device-50",
@@ -1733,6 +1795,7 @@
       "Encourage healthcare facilities to adopt best practices for disposal, including recycling or regulated reprocessing.",
       "Regularly update the environmental impact assessment as technologies evolve, new materials emerge, or regulatory requirements change.",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

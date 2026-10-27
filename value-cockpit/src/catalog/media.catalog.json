@@ -34,6 +34,19 @@
       "Diversify the content slate to reach different demographics and mitigate the risk of reliance on one genre or audience segment",
       "Explore additional monetization opportunities such as merchandise, spin-offs, and licensing deals to extend the content lifecycle.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Total Revenue",
+          "Total Costs"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Total Revenue - Total Costs) / Total Costs x 100. This calculation should incorporate production, distribution, and marketing spend.",
+        "step": "Calculate ROI for each piece of content. Use a standard formula such as"
+      }
     ]
   },
   {
@@ -67,7 +80,8 @@
       "Coordinate marketing campaigns around key calendar events or competitor releases to maximize audience attention",
       "Pilot alternative windowing strategies, such as shorter theatrical windows or day-and-date streaming releases, and measure impact on overall ROI.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-03",
@@ -104,7 +118,8 @@
       "Explore co-production or collaboration with external studios for global reach and shared investment risk",
       "Continually reassess portfolio performance and adjust strategies to capitalize on emerging trends or technologies.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-04",
@@ -138,7 +153,8 @@
       "Establish brand guidelines for cross-franchise integration to maintain consistency and prevent brand dilution",
       "Explore licensing or co-production agreements with external partners for franchises that can enhance and expand the shared universe.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-05",
@@ -173,6 +189,19 @@
       "Utilize data analytics tools to closely track audience sentiment and real-time ROI on campaign spending",
       "Build long-term relationships with awards voters, guilds, and influencers for sustained recognition over future projects.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Incremental Revenue from Awards",
+          "Campaign Cost"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Incremental Revenue from Awards - Campaign Cost) / Campaign Cost x 100. Adjust for intangible factors like talent relationships and studio prestige if necessary.",
+        "step": "Conduct ROI modeling. Use a formula such as"
+      }
     ]
   },
   {
@@ -208,7 +237,8 @@
       "Stage a phased rollout, beginning with teasers or limited-scale content to gauge audience reaction before committing to full-scale production",
       "Continuously monitor fan response throughout development and adjust marketing and storytelling strategies as needed.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-07",
@@ -241,7 +271,8 @@
       "Regularly review competitor schedules and consumer trends to identify emerging unscripted sub-genres or niche scripted storytelling opportunities",
       "Continuously track performance data, adapting the content mix to shifting audience preferences and market conditions.",
       "B. Rights, Licensing & Distribution"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-08",
@@ -278,7 +309,8 @@
       "Develop co-marketing opportunities that align with both the IP’s image and the licensee’s brand positioning",
       "Continuously monitor market trends and competitor moves to adjust licensing strategies and uncover new opportunities.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-09",
@@ -309,7 +341,8 @@
       "Maintain comprehensive metadata and rights databases to quickly identify licensing gaps and new opportunities",
       "Develop best-practice guidelines for structuring digital distribution contracts, including standardized reporting formats and clear payment timelines.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-10",
@@ -344,7 +377,8 @@
       "Maintain strong relationships with key distributors, platforms, and content creators to access privileged deal opportunities",
       "Conduct regular market intelligence updates to stay informed on rights pricing trends and emerging distribution platforms.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-11",
@@ -379,7 +413,8 @@
       "Negotiate favorable licensing terms that include performance-based incentives and enforce strict brand guidelines",
       "Gather post-launch performance data to refine adaptation strategies and strengthen future deal terms.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-12",
@@ -413,6 +448,19 @@
       "Consider alternative release strategies (simultaneous or shortened windows) to reduce demand for pirated copies",
       "Perform periodic audits of the end-to-end content supply chain to stay ahead of evolving piracy tactics.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Estimated Revenue Loss",
+        "variables": [
+          "Number of Illegal Downloads or Streams",
+          "Average Potential Sale Value"
+        ],
+        "expression": "( v0 ) * ( v1 )",
+        "percentOutput": false,
+        "source": "Estimated Revenue Loss = (Number of Illegal Downloads or Streams) x (Average Potential Sale Value). Adjust for variables like repeat viewership or differential pricing.",
+        "step": "Quantify potential piracy losses. Use a formula such as"
+      }
     ]
   },
   {
@@ -449,7 +497,8 @@
       "Consider re-editing or repackaging older content (e.g., highlight compilations) to appeal to new audiences",
       "Maintain relationships with broadcast and streaming partners to stay updated on shifts in platform strategies and audience preferences.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-14",
@@ -481,7 +530,8 @@
       "Utilize data analytics to forecast streaming patterns and align music releases with audience preferences or high-traffic periods",
       "Continuously audit music assets to identify opportunities for remastering, re-releasing, or bundling soundtracks with other media assets.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-15",
@@ -516,7 +566,8 @@
       "Optimize inventory management by aligning production runs more closely with demand forecasts and sell-through patterns",
       "Regularly review competitor pricing and promotional strategies to maintain a competitive edge.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-16",
@@ -547,7 +598,8 @@
       "Explore alternative distribution (streaming partnerships, direct-to-consumer options) to reduce over-reliance on any single distributor",
       "Stay vigilant about market trends (cord-cutting, streaming migrations) and adjust fee structures to stay competitive and future-proof.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-17",
@@ -580,6 +632,21 @@
       "Consider bundling your FAST channel offerings with additional services or exclusive content to differentiate from competitors",
       "Continuously monitor market trends and emerging FAST platforms to remain agile and capture new audiences.",
       "C. Live & Experiential Entertainment"
+    ],
+    "formulas": [
+      {
+        "output": "Ad Revenue",
+        "variables": [
+          "Ad Inventory",
+          "CPM",
+          "Impressions",
+          "Revenue Share with Platform"
+        ],
+        "expression": "( v0 * v1 * v2 ) - v3",
+        "percentOutput": false,
+        "source": "Ad Revenue = (Ad Inventory x CPM x Impressions) - Revenue Share with Platform. Adjust for average fill rates and possible seasonal fluctuations.",
+        "step": "Model ad revenue potential. Estimate revenue using an equation such as"
+      }
     ]
   },
   {
@@ -615,7 +682,8 @@
       "Negotiate deeper partnership deals with sponsors, focusing on innovative on-site activations that enhance brand visibility",
       "Leverage post-event analytics to refine future strategies, including scheduling, venue selection, and cross-promotional opportunities.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-19",
@@ -648,7 +716,8 @@
       "Adjust pricing tiers and seat configurations to optimize revenue and cater to different audience preferences",
       "Continuously evaluate performance metrics and audience feedback to refine content mix, scheduling, and promotional tactics.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-20",
@@ -682,7 +751,8 @@
       "Offer compelling annual pass programs and loyalty incentives to encourage repeat visits and stable cash flow",
       "Continuously evolve the experience with seasonal events, new ride technology, and IP-based refreshes to maintain excitement and drive return traffic.",
       "D. Sports & Gaming"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-21",
@@ -715,6 +785,19 @@
       "Explore cross-platform synergies, such as in-game events tied to film or TV releases, to attract and engage fans across mediums",
       "Encourage grassroots community-building (fan tournaments, social media engagement) to develop a loyal player and viewer base over time.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Total Costs"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Projected Revenue - Total Costs) / Total Costs x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -750,6 +833,19 @@
       "Combine sports content with interactive elements (betting, fantasy sports, real-time polls) to increase engagement and diversify revenue",
       "Monitor audience trends and periodically reassess the value proposition of each set of rights before renewal deadlines.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Rights Acquisition Cost"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Projected Revenue - Rights Acquisition Cost) / Rights Acquisition Cost x 100. Factor in production expenses, distribution fees, and potential subscriber or advertising revenue.",
+        "step": "Forecast financial impact. Use a formula like"
+      }
     ]
   },
   {
@@ -779,6 +875,20 @@
       "Implement robust responsible gambling tools, including spending limits and self-exclusion options, to protect users and preserve brand reputation",
       "Continuously gather user feedback and engagement data to optimize betting features and target marketing to receptive segments.",
       "E. Technology & Innovation"
+    ],
+    "formulas": [
+      {
+        "output": "Net Partnership Revenue",
+        "variables": [
+          "Total Betting Volume",
+          "Commission Rate",
+          "Any Fixed Fees or Costs, adjusting for different adoption rates and retention scenarios"
+        ],
+        "expression": "( v0 * v1 ) - v2",
+        "percentOutput": false,
+        "source": "Net Partnership Revenue = (Total Betting Volume x Commission Rate) - Any Fixed Fees or Costs, adjusting for different adoption rates and retention scenarios.",
+        "step": "Model financial outcomes. Use formulas such as"
+      }
     ]
   },
   {
@@ -813,6 +923,20 @@
       "Experiment with monetization models, such as subscription add-ons, digital merchandise, or branded sponsorship, to identify the most profitable approach for your audience.",
       "Continuously track emerging VR/AR technologies (lighter headsets, mobile-based AR advancements) to keep experiences accessible and maintain a competitive edge.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Projected VR/AR Revenue",
+        "variables": [
+          "Expected User Base",
+          "Average Revenue per User",
+          "Production and Distribution 52 Costs"
+        ],
+        "expression": "( v0 * v1 ) - v2",
+        "percentOutput": false,
+        "source": "Projected VR/AR Revenue = (Expected User Base x Average Revenue per User) - Production and Distribution 52 Costs. Consider additional income from brand sponsorships, premium in-app purchases, or licensing deals.",
+        "step": "Model potential revenue. Use a formula such as"
+      }
     ]
   },
   {
@@ -847,6 +971,21 @@
       "Secure platform exclusives or marquee placements on streaming services to capture additional promotional support and audience traffic",
       "Monitor emerging technologies (AI-driven upscaling, next-gen audio formats) to continuously enhance remaster quality while controlling costs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Potential Revenue",
+        "variables": [
+          "Digital Sales",
+          "Streaming Licensing",
+          "Physical Re-release Sales",
+          "Restoration Costs"
+        ],
+        "expression": "( v0 + v1 + v2 ) - v3",
+        "percentOutput": false,
+        "source": "Potential Revenue = (Digital Sales + Streaming Licensing + Physical Re-release Sales) - Restoration Costs. Adjust for distribution fees or platform revenue shares.",
+        "step": "Project potential revenue. Use a formula such as"
+      }
     ]
   },
   {
@@ -879,7 +1018,8 @@
       "Integrate Web3 strategies into broader marketing campaigns, connecting NFT drops or token launches with major releases or fan celebrations",
       "Stay adaptive to evolving regulations, ensuring compliance while exploring creative new approaches to decentralized ownership and digital collectibles.",
       "F. Financing & Partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-27",
@@ -913,7 +1053,8 @@
       "Leverage cross-platform synergies, incorporating the exclusive talent/IP across films, TV series, streaming content, or live events to maximize brand impact 60",
       "Implement renewal clauses that allow for renegotiation if the partnership exceeds or fails to meet performance expectations, safeguarding both creative and financial interests.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-28",
@@ -949,7 +1090,8 @@
       "Leverage data-driven insights (audience research, competitive intelligence) to validate project potential and strengthen negotiation positions",
       "Regularly review partnership performance, using post-mortems and lessons learned to refine future co-production and financing strategies.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-29",
@@ -983,6 +1125,19 @@
       "Use a phased approach for technology and process integration to minimize operational disruptions",
       "Continuously refine valuation and synergy models with real-time data as new information emerges during negotiations and due diligence.",
       "G. Regulatory, Compliance & Guilds"
+    ],
+    "formulas": [
+      {
+        "output": "Net Synergy Value",
+        "variables": [
+          "Synergy Benefits",
+          "Integration Costs"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Net Synergy Value = (Synergy Benefits - Integration Costs).",
+        "step": null
+      }
     ]
   },
   {
@@ -1018,7 +1173,8 @@
       "Negotiate contract terms that clarify revenue-sharing and guild obligations across various distribution windows",
       "Conduct periodic training for finance, legal, and production staff on evolving guild rules and local labor regulations.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-31",
@@ -1053,7 +1209,8 @@
       "Pursue co-branded merchandise or educational product lines featuring popular show characters to expand revenue streams 69",
       "Continuously collect and review parental and viewer feedback, using insights to update content and strengthen engagement strategies.",
       "H. Merchandising & Ancillary Revenue"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-32",
@@ -1090,6 +1247,22 @@
       "Create premium, limited-edition items that appeal to collectors and superfans, thereby driving word-of-mouth marketing and higher margins 72",
       "Leverage data analytics (sales trends, consumer insights) to continuously optimize product portfolios and minimize inventory risks.",
       "I. Audience Engagement & Monetization"
+    ],
+    "formulas": [
+      {
+        "output": "Merchandise Profit",
+        "variables": [
+          "Units Sold",
+          "Unit Price",
+          "Manufacturing",
+          "Distribution",
+          "Marketing Costs"
+        ],
+        "expression": "( v0 * v1 ) - ( v2 + v3 + v4 )",
+        "percentOutput": false,
+        "source": "Merchandise Profit = (Units Sold x Unit Price) - (Manufacturing + Distribution + Marketing Costs).",
+        "step": null
+      }
     ]
   },
   {
@@ -1127,6 +1300,21 @@
       "Incentivize loyalty and community-building via perks like early access to future PPV events, discounts on merchandise, or exclusive fan club interactions 75",
       "Continuously gather fan feedback to refine content offers, pricing strategies, and promotional messaging for improved retention and revenue.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Projected Revenue",
+        "variables": [
+          "Number of Paying Viewers or Subscribers",
+          "Fee per Event or Subscription",
+          "Platform",
+          "Marketing Costs"
+        ],
+        "expression": "( v0 ) * ( v1 ) - ( v2 / v3 )",
+        "percentOutput": false,
+        "source": "Projected Revenue = (Number of Paying Viewers or Subscribers) x (Fee per Event or Subscription) - (Platform/Marketing Costs). Adjust for potential churn or tech overhead.",
+        "step": "Forecast revenue potential. Apply a formula like"
+      }
     ]
   },
   {
@@ -1162,7 +1350,8 @@
       "Negotiate performance-based deals tying sponsor fees to specific metrics (viewership, sales upticks, online traffic) to share risk and reward",
       "Solicit real-time viewer feedback via social media or in-show engagement polls, adjusting integration strategies when evidence of fatigue or negative perception arises.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "media-35",
@@ -1197,6 +1386,7 @@
       "Incorporate feedback loops so users can refine or correct their recommendations (e.g., “thumbs up/down” systems)",
       "Expand data sources by integrating social media sentiment or third-party data to uncover deeper behavioral insights and refine audience segmentation.",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

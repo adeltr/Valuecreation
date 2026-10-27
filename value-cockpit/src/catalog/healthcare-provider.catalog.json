@@ -37,6 +37,41 @@
       "Optimize scheduling systems to reduce no-show rates and maximize throughput.",
       "Regularly monitor KPIs to identify and act on emerging trends promptly.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Growth Rate (%)",
+        "variables": [
+          "Current Period Volume",
+          "Previous Period Volume"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Growth Rate (%) = ((Current Period Volume - Previous Period Volume) / Previous Period Volume) x 100.",
+        "step": null
+      },
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Patient Load",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Patient Load / Maximum Capacity) x 100.",
+        "step": null
+      },
+      {
+        "output": "Profitability (%)",
+        "variables": [
+          "Revenue",
+          "Cost"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Profitability (%) = ((Revenue - Cost) / Revenue) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -75,6 +110,30 @@
       "Collaborate with peer institutions to share best practices and improve benchmark comparisons.",
       "Monitor and refine clinical performance metrics continuously for sustained improvement.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Mortality Rate (%)",
+        "variables": [
+          "Number of Deaths",
+          "Number of Patients Treated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Mortality Rate (%) = (Number of Deaths / Number of Patients Treated) x 100.",
+        "step": null
+      },
+      {
+        "output": "Infection Rate (%)",
+        "variables": [
+          "Number of Infections",
+          "Total Patient Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Infection Rate (%) = (Number of Infections / Total Patient Days) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -114,6 +173,30 @@
       "Strengthen care coordination between hospitals, primary care providers, and specialists.",
       "Regularly review readmission data and refine strategies based on evolving trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Readmission Rate (%)",
+        "variables": [
+          "Number of Readmissions Within 30 Days",
+          "Total Discharges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Readmission Rate (%) = (Number of Readmissions Within 30 Days / Total Discharges) x 100.",
+        "step": null
+      },
+      {
+        "output": "Follow-Up Rate (%)",
+        "variables": [
+          "Number of Patients with Follow-Up Visits",
+          "Total Discharges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Follow-Up Rate (%) = (Number of Patients with Follow-Up Visits / Total Discharges) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -150,6 +233,30 @@
       "Increase staffing or provide additional resources in high-risk areas to reduce the burden on existing teams.",
       "Regularly review and update infection control and safety protocols to align with evolving best practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "HAI Rate (%)",
+        "variables": [
+          "Number of Hospital-Acquired Infections",
+          "Total Patient Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "HAI Rate (%) = (Number of Hospital-Acquired Infections / Total Patient Days) x 100.",
+        "step": null
+      },
+      {
+        "output": "Hand Hygiene Compliance (%)",
+        "variables": [
+          "Number of Compliant Observations",
+          "Total Observations"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Hand Hygiene Compliance (%) = (Number of Compliant Observations / Total Observations) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -191,6 +298,41 @@
       "Regularly monitor LOS and discharge metrics to identify trends and areas for targeted interventions.",
       "Partner with community organizations to address barriers such as transportation or home care needs that delay discharges.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average LOS (days)",
+        "variables": [
+          "Total Patient Days",
+          "Number of Discharges"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average LOS (days) = Total Patient Days / Number of Discharges.",
+        "step": null
+      },
+      {
+        "output": "Readmission Rate (%)",
+        "variables": [
+          "Number of Readmissions Within 30 Days",
+          "Total Discharges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Readmission Rate (%) = (Number of Readmissions Within 30 Days / Total Discharges) x 100.",
+        "step": null
+      },
+      {
+        "output": "Bed Occupancy Rate (%)",
+        "variables": [
+          "Total Occupied Bed Days",
+          "Total Available Bed Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Bed Occupancy Rate (%) = (Total Occupied Bed Days / Total Available Bed Days) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -229,6 +371,19 @@
       "Continuously monitor patient outcomes and update care pathways based on new evidence or observed gaps.",
       "Leverage technology, such as predictive analytics, to personalize pathways for high-risk or complex cases while maintaining standardization.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Variation Rate (%)",
+        "variables": [
+          "Number of Deviations from Pathway",
+          "Total Cases"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Variation Rate (%) = (Number of Deviations from Pathway / Total Cases) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -266,6 +421,30 @@
       "Partner with external quality improvement organizations to access best practices and benchmarking tools.",
       "Establish multidisciplinary HAC prevention teams to review incidents and recommend system-level changes.",
       "B. Operational Efficiency and Resource Optimization"
+    ],
+    "formulas": [
+      {
+        "output": "HAC Rate (%)",
+        "variables": [
+          "Number of HAC Events",
+          "Total Patient Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "HAC Rate (%) = (Number of HAC Events / Total Patient Days) x 100.",
+        "step": null
+      },
+      {
+        "output": "Compliance Rate (%)",
+        "variables": [
+          "Number of Compliant Observations",
+          "Total Observations"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Compliance Rate (%) = (Number of Compliant Observations / Total Observations) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -304,6 +483,30 @@
       "Adjust staffing levels based on demand to ensure adequate coverage for peak OR utilization periods.",
       "Regularly review performance metrics and benchmark against industry best practices to identify areas for ongoing improvement.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "OR Utilization Rate (%)",
+        "variables": [
+          "Total Hours Used",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "OR Utilization Rate (%) = (Total Hours Used / Total Available Hours) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Turnaround Time",
+        "variables": [
+          "Total Turnaround Time",
+          "Number of Surgeries"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Turnaround Time = Total Turnaround Time / Number of Surgeries.",
+        "step": null
+      }
     ]
   },
   {
@@ -339,6 +542,30 @@
       "Partner with urgent care centers to redirect non-emergency cases and reduce ED congestion.",
       "Regularly monitor and analyze ED performance metrics to identify trends and refine improvement strategies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Wait Time",
+        "variables": [
+          "Total Wait Time for All Patients",
+          "Number of Patients"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Wait Time = Total Wait Time for All Patients / Number of Patients.",
+        "step": null
+      },
+      {
+        "output": "ED Throughput",
+        "variables": [
+          "Total Patients Treated",
+          "Total Operating Hours"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ED Throughput = Total Patients Treated / Total Operating Hours.",
+        "step": null
+      }
     ]
   },
   {
@@ -379,6 +606,30 @@
       "Collaborate with coding teams to align CDI efforts with reimbursement and compliance requirements.",
       "Benchmark CDI performance regularly against peer institutions to identify best practices and improvement opportunities.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "CMI",
+        "variables": [
+          "Total DRG Weights",
+          "Total Number of Cases"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CMI = Total DRG Weights / Total Number of Cases.",
+        "step": null
+      },
+      {
+        "output": "Change (%)",
+        "variables": [
+          "Post-CDI Reimbursement",
+          "Pre-CDI Reimbursement"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Change (%) = ((Post-CDI Reimbursement - Pre-CDI Reimbursement) / Pre-CDI Reimbursement) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -417,6 +668,30 @@
       "Benchmark equipment performance regularly to ensure alignment with industry standards and best practices.",
       "Explore leasing or sharing options for underutilized equipment to reduce costs and improve access.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Hours Used",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Hours Used / Total Available Hours) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Downtime per Event",
+        "variables": [
+          "Total Downtime",
+          "Number of Maintenance"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Downtime per Event = Total Downtime / Number of Maintenance",
+        "step": null
+      }
     ]
   },
   {
@@ -456,6 +731,30 @@
       "Introduce outcome-based incentives for post-acute care providers to ensure alignment with quality goals.",
       "Continuously monitor patient outcomes and satisfaction to refine care strategies and improve service delivery.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Readmission Rate (%)",
+        "variables": [
+          "Number of Readmissions Within 30 Days",
+          "Total Post-Acute Care Transitions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Readmission Rate (%) = (Number of Readmissions Within 30 Days / Total Post-Acute Care Transitions) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Positive Outcome",
+        "variables": [
+          "Total Post-Acute Care Costs",
+          "Number of Patients"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Positive Outcome = Total Post-Acute Care Costs / Number of Patients",
+        "step": null
+      }
     ]
   },
   {
@@ -495,6 +794,41 @@
       "Conduct regular audits of imaging orders to identify patterns of overuse or underuse.",
       "Benchmark imaging utilization and outcomes against peer institutions to identify best practices and set improvement goals.",
       "C. Financial Performance and Revenue Management"
+    ],
+    "formulas": [
+      {
+        "output": "Equipment Utilization Rate (%)",
+        "variables": [
+          "Actual Operating Hours",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Equipment Utilization Rate (%) = (Actual Operating Hours / Total Available Hours) x 100.",
+        "step": null
+      },
+      {
+        "output": "Inappropriate Utilization Rate (%)",
+        "variables": [
+          "Number of Unnecessary Scans",
+          "Total Scans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Inappropriate Utilization Rate (%) = (Number of Unnecessary Scans / Total Scans) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Beneficial Outcome",
+        "variables": [
+          "Total Imaging Costs",
+          "Number of Beneficial"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Beneficial Outcome = Total Imaging Costs / Number of Beneficial",
+        "step": null
+      }
     ]
   },
   {
@@ -538,6 +872,19 @@
       "Review and renegotiate contracts with third-party providers for outsourced services.",
       "Invest in technologies like automation and digital tools to reduce administrative overhead and improve operational efficiency.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Discharge",
+        "variables": [
+          "Total Costs",
+          "Total Discharges"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Discharge = Total Costs / Total Discharges.",
+        "step": null
+      }
     ]
   },
   {
@@ -582,6 +929,52 @@
       "Monitor and track RCM metrics in real time using advanced analytics dashboards.",
       "Benchmark RCM performance regularly to identify areas for improvement and set performance goals.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Days in AR",
+        "variables": [
+          "Total AR",
+          "Average Daily Revenue"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Days in AR = (Total AR / Average Daily Revenue).",
+        "step": null
+      },
+      {
+        "output": "Denial Rate (%)",
+        "variables": [
+          "Number of Denied Claims",
+          "Total Submitted Claims"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Denial Rate (%) = (Number of Denied Claims / Total Submitted Claims) x 100.",
+        "step": null
+      },
+      {
+        "output": "Collection Rate (%)",
+        "variables": [
+          "Total Collected Revenue",
+          "Total Billed Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Collection Rate (%) = (Total Collected Revenue / Total Billed Revenue) x 100.",
+        "step": null
+      },
+      {
+        "output": "Write-Off Rate (%)",
+        "variables": [
+          "Total Write-Offs",
+          "Total Billed Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Write-Off Rate (%) = (Total Write-Offs / Total Billed Revenue) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -626,6 +1019,41 @@
       "Collaborate with payers on value-based care initiatives to align incentives and improve reimbursement.",
       "Regularly review payer contracts to ensure they align with organizational financial goals and market conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Payer Mix (%)",
+        "variables": [
+          "Revenue from Payer",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Payer Mix (%) = (Revenue from Payer / Total Revenue) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Reimbursement Rate",
+        "variables": [
+          "Total Reimbursement from Payer",
+          "Total Billed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Reimbursement Rate = Total Reimbursement from Payer / Total Billed",
+        "step": null
+      },
+      {
+        "output": "Profit Margin (%)",
+        "variables": [
+          "Reimbursement",
+          "Cost"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Profit Margin (%) = ((Reimbursement - Cost) / Reimbursement) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -668,6 +1096,30 @@
       "Monitor charity care and uncompensated care metrics in real time to ensure alignment with financial goals and regulatory requirements.",
       "Leverage tax benefits or grants tied to charity care efforts to offset financial losses and sustain community support initiatives.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Charity Care Percentage (%)",
+        "variables": [
+          "Charity Care Costs",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Charity Care Percentage (%) = (Charity Care Costs / Total Revenue) x 100.",
+        "step": null
+      },
+      {
+        "output": "Uncompensated Care Impact (%)",
+        "variables": [
+          "Uncompensated Care Costs",
+          "Total Operating Costs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Uncompensated Care Impact (%) = (Uncompensated Care Costs / Total Operating Costs) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -704,6 +1156,31 @@
       "Leverage partnerships with post-acute care providers to align services with cost and quality expectations.",
       "Benchmark internal performance against peer organizations to identify areas for competitive advantage or improvement.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Cost per Episode",
+        "variables": [
+          "Pre-Acute Costs",
+          "Acute Costs",
+          "Post-Acute Costs"
+        ],
+        "expression": "( v0 + v1 + v2 )",
+        "percentOutput": false,
+        "source": "Total Cost per Episode = (Pre-Acute Costs + Acute Costs + Post-Acute Costs).",
+        "step": null
+      },
+      {
+        "output": "Episode Margin (%)",
+        "variables": [
+          "Reimbursement",
+          "Total Cost"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Episode Margin (%) = ((Reimbursement - Total Cost) / Reimbursement) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -742,6 +1219,41 @@
       "Negotiate contract terms that include realistic benchmarks and adequate risk adjustment factors.",
       "Monitor VBC performance metrics continuously and adapt strategies to respond to trends or gaps in real time.",
       "D. Patient Experience and Access"
+    ],
+    "formulas": [
+      {
+        "output": "TCOC per Patient",
+        "variables": [
+          "Total Healthcare Costs",
+          "Total Covered Lives"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "TCOC per Patient = Total Healthcare Costs / Total Covered Lives.",
+        "step": null
+      },
+      {
+        "output": "Cost Savings (%)",
+        "variables": [
+          "Target Costs",
+          "Actual Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Savings (%) = ((Target Costs - Actual Costs) / Target Costs) x 100.",
+        "step": null
+      },
+      {
+        "output": "Shared Savings",
+        "variables": [
+          "Cost Savings",
+          "Shared Savings Percentage"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "Shared Savings = (Cost Savings x Shared Savings Percentage).",
+        "step": null
+      }
     ]
   },
   {
@@ -776,7 +1288,8 @@
       "Regularly review and update patient satisfaction surveys to align with changing expectations and industry standards.",
       "Celebrate and share high-performing departments’ best practices to motivate staff and replicate success across the organization.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "healthcare-provider-21",
@@ -815,6 +1328,52 @@
       "Monitor and regularly review scheduling performance metrics to identify and resolve emerging inefficiencies.",
       "Increase staffing or expand hours of operation in high-demand departments to address scheduling constraints.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Appointment Lead Time (days)",
+        "variables": [
+          "Appointment Date",
+          "Request Date"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Appointment Lead Time (days) = (Appointment Date - Request Date).",
+        "step": null
+      },
+      {
+        "output": "Average Wait Time (minutes)",
+        "variables": [
+          "Total Patient Wait Time",
+          "Total Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Wait Time (minutes) = Total Patient Wait Time / Total Number of",
+        "step": null
+      },
+      {
+        "output": "No-Show Rate (%)",
+        "variables": [
+          "Number of No-Show Appointments",
+          "Total Scheduled Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "No-Show Rate (%) = (Number of No-Show Appointments / Total Scheduled Appointments) x 100.",
+        "step": null
+      },
+      {
+        "output": "Provider Utilization Rate (%)",
+        "variables": [
+          "Time Booked",
+          "Total Available Time"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Provider Utilization Rate (%) = (Time Booked / Total Available Time) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -853,6 +1412,42 @@
       "Strengthen provider-patient relationships by emphasizing personalized care and convenience in internal services.",
       "Regularly monitor referral metrics and feedback to refine strategies and address emerging issues.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Referral Leakage Rate (%)",
+        "variables": [
+          "Number of External Referrals",
+          "Total Referrals"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Referral Leakage Rate (%) = (Number of External Referrals / Total Referrals) x 100.",
+        "step": null
+      },
+      {
+        "output": "Completion Rate (%)",
+        "variables": [
+          "Completed Internal Referrals",
+          "Total Internal Referrals"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Completion Rate (%) = (Completed Internal Referrals / Total Internal Referrals) x 100.",
+        "step": null
+      },
+      {
+        "output": "Lost Revenue",
+        "variables": [
+          "Referral Leakage Rate",
+          "Average Revenue per Referral",
+          "Total"
+        ],
+        "expression": "v0 * v1 * v2",
+        "percentOutput": false,
+        "source": "Lost Revenue = Referral Leakage Rate x Average Revenue per Referral x Total",
+        "step": null
+      }
     ]
   },
   {
@@ -891,6 +1486,30 @@
       "Monitor and act on patient and provider feedback to continuously improve telemedicine services.",
       "Benchmark telemedicine performance regularly against industry standards to identify areas for competitive advantage or improvement.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Telemedicine Adoption Rate (%)",
+        "variables": [
+          "Telemedicine Appointments",
+          "Total Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Telemedicine Adoption Rate (%) = (Telemedicine Appointments / Total Appointments) x 100.",
+        "step": null
+      },
+      {
+        "output": "Completion Rate (%)",
+        "variables": [
+          "Completed Telemedicine Visits",
+          "Scheduled Telemedicine Visits"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Completion Rate (%) = (Completed Telemedicine Visits / Scheduled Telemedicine Visits) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -925,6 +1544,30 @@
       "Integrate reminders and notifications into the portal to prompt engagement, such as test results availability or appointment scheduling reminders.",
       "Monitor and benchmark portal performance continuously to ensure alignment with patient needs and industry standards.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Portal Adoption Rate (%)",
+        "variables": [
+          "Number of Registered Users",
+          "Total Eligible Patients"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Portal Adoption Rate (%) = (Number of Registered Users / Total Eligible Patients)",
+        "step": null
+      },
+      {
+        "output": "Engagement Rate (%)",
+        "variables": [
+          "Number of Active Users",
+          "Total Registered Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Engagement Rate (%) = (Number of Active Users / Total Registered Users) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -965,6 +1608,41 @@
       "Regularly train staff to address common barriers, such as stigma or patient reluctance, and improve patient-provider interactions.",
       "Monitor and act on feedback from patients and providers to refine services and reduce barriers continuously.",
       "E. Regulatory Compliance and Risk Management"
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Number of Patients Using Services",
+          "Total Eligible Population"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Number of Patients Using Services / Total Eligible Population) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Appointment Lead Time",
+        "variables": [
+          "Total Time from Request to Appointment",
+          "Total Appointments"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Appointment Lead Time = Total Time from Request to Appointment / Total Appointments.",
+        "step": null
+      },
+      {
+        "output": "No-Show Rate (%)",
+        "variables": [
+          "Number of Missed Appointments",
+          "Total Scheduled Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "No-Show Rate (%) = (Number of Missed Appointments / Total Scheduled Appointments) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1004,7 +1682,8 @@
       "Partner with consultants or peer organizations to conduct readiness reviews and share best practices.",
       "Schedule periodic mock audits to prepare staff and systems for official regulatory or accreditation evaluations.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "healthcare-provider-27",
@@ -1044,6 +1723,41 @@
       "Engage providers with regular updates and support during the credentialing process to reduce frustration.",
       "Benchmark regularly against industry standards to identify performance gaps and opportunities for improvement.",
       "F. Technology Utilization and Digital Engagement"
+    ],
+    "formulas": [
+      {
+        "output": "Average Processing Time",
+        "variables": [
+          "Total Time for All Applications",
+          "Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Processing Time = Total Time for All Applications / Number of",
+        "step": null
+      },
+      {
+        "output": "Success Rate (%)",
+        "variables": [
+          "Number of Completed Applications",
+          "Total Applications"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Success Rate (%) = (Number of Completed Applications / Total Applications) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Credentialed Provider",
+        "variables": [
+          "Total Credentialing Costs",
+          "Number of Providers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Credentialed Provider = Total Credentialing Costs / Number of Providers",
+        "step": null
+      }
     ]
   },
   {
@@ -1079,6 +1793,30 @@
       "Leverage advanced EHR features, such as predictive analytics and AI-driven clinical decision support, to enhance care delivery.",
       "Benchmark regularly against peer organizations to ensure the EHR system remains competitive and aligned with industry standards.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "EHR Adoption Rate (%)",
+        "variables": [
+          "Active EHR Users",
+          "Total Eligible Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "EHR Adoption Rate (%) = (Active EHR Users / Total Eligible Users) x 100.",
+        "step": null
+      },
+      {
+        "output": "Documentation Timeliness (%)",
+        "variables": [
+          "Timely Completed Notes",
+          "Total Notes"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Documentation Timeliness (%) = (Timely Completed Notes / Total Notes) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1116,6 +1854,19 @@
       "Establish key performance indicators (KPIs) for HIE participation and monitor them regularly to identify improvement opportunities.",
       "Advocate for regional or state-level initiatives to support broader HIE participation and interoperability across healthcare systems.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "HIE Participation Rate (%)",
+        "variables": [
+          "HIE Transactions",
+          "Total Eligible Data Exchanges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "HIE Participation Rate (%) = (HIE Transactions / Total Eligible Data Exchanges) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1156,6 +1907,30 @@
       "Expand the use of APPs in underserved areas or high-demand specialties to address gaps in care.",
       "Benchmark APP practices and outcomes against leading institutions to adopt best practices and maintain competitiveness.",
       "G. Population Health and Care Coordination"
+    ],
+    "formulas": [
+      {
+        "output": "APP Utilization Rate (%)",
+        "variables": [
+          "Number of APP-Managed Encounters",
+          "Total Patient Encounters"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "APP Utilization Rate (%) = (Number of APP-Managed Encounters / Total Patient Encounters) x 100.",
+        "step": null
+      },
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Revenue Generated by APPs",
+          "APP Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Revenue Generated by APPs - APP Costs) / APP Costs) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1193,6 +1968,19 @@
       "Benchmark program performance regularly against peer organizations to stay competitive and adopt best practices.",
       "Provide ongoing training for care teams to ensure alignment with integrated care best practices and protocols.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Patient",
+        "variables": [
+          "Total Program Costs",
+          "Number of Patients Managed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Patient = Total Program Costs / Number of Patients Managed.",
+        "step": null
+      }
     ]
   },
   {
@@ -1228,6 +2016,41 @@
       "Collaborate with community organizations to address social determinants of health that may affect chronic disease outcomes.",
       "Regularly review program performance metrics to refine strategies and adapt to emerging patient needs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Participation Rate (%)",
+        "variables": [
+          "Enrolled Patients",
+          "Eligible Patients"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Participation Rate (%) = (Enrolled Patients / Eligible Patients) x 100.",
+        "step": null
+      },
+      {
+        "output": "Utilization Reduction (%)",
+        "variables": [
+          "Pre-Program Utilization",
+          "Post-Program Utilization"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Reduction (%) = ((Pre-Program Utilization - Post-Program Utilization) / Pre-Program Utilization) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost Reduction (%)",
+        "variables": [
+          "Pre-Program Costs",
+          "Post-Program Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Reduction (%) = ((Pre-Program Costs - Post-Program Costs) / Pre-Program Costs) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1263,7 +2086,8 @@
       "Regularly engage with community stakeholders to ensure ongoing alignment with health priorities and build trust.",
       "Leverage funding opportunities, such as grants or public-private partnerships, to support community health initiatives.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "healthcare-provider-34",
@@ -1304,6 +2128,19 @@
       "Foster a culture of recognition by celebrating physicians’ contributions to organizational success.",
       "Benchmark engagement strategies against top-performing organizations to identify and adopt best practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Physician Turnover Rate (%)",
+        "variables": [
+          "Number of Physicians Leaving",
+          "Total Number of Physicians"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Physician Turnover Rate (%) = (Number of Physicians Leaving / Total Number of Physicians) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1342,7 +2179,8 @@
       "Introduce telehealth services to expand access to care for high-risk patients in underserved areas.",
       "Benchmark risk management strategies against industry best practices to ensure alignment with organizational goals and standards.",
       "H. Specialty Services and Market Expansion"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "healthcare-provider-36",
@@ -1382,6 +2220,41 @@
       "Use predictive analytics to forecast demand and align resources with patient needs.",
       "Regularly benchmark performance metrics against peers to identify best practices and maintain competitiveness.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Visits",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Visits / Maximum Capacity) x 100.",
+        "step": null
+      },
+      {
+        "output": "No-Show Rate (%)",
+        "variables": [
+          "Number of No-Show Appointments",
+          "Total Scheduled Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "No-Show Rate (%) = (Number of No-Show Appointments / Total Scheduled Appointments) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Visit",
+        "variables": [
+          "Total Operating Costs",
+          "Total Visits"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Visit = Total Operating Costs / Total Visits.",
+        "step": null
+      }
     ]
   },
   {
@@ -1418,6 +2291,30 @@
       "Provide targeted training for specialty care providers to enhance efficiency and patient outcomes.",
       "Collaborate with referring providers to align expectations and improve referral quality and follow-through.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Referral Completion Rate (%)",
+        "variables": [
+          "Completed Referrals",
+          "Total Referrals"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Referral Completion Rate (%) = (Completed Referrals / Total Referrals) x 100.",
+        "step": null
+      },
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Visits",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Visits / Maximum Capacity) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1461,6 +2358,19 @@
       "Benchmark performance regularly to ensure competitive positioning and adopt industry best practices.",
       "Use predictive analytics to identify emerging trends and adapt service line strategies accordingly.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Service Line Profitability (%)",
+        "variables": [
+          "Revenue",
+          "Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Service Line Profitability (%) = ((Revenue - Costs) / Revenue) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1506,6 +2416,30 @@
       "Monitor and analyze patient feedback to ensure high satisfaction and retention in expanded services.",
       "Benchmark performance regularly to adjust strategies and maintain competitiveness.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Visits",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Visits / Maximum Capacity) x 100.",
+        "step": null
+      },
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Projected Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Projected Revenue - Projected Costs) / Projected Costs) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1546,6 +2480,30 @@
       "Enhance participant engagement through personalized communication and support services to improve retention.",
       "Regularly monitor trial performance metrics and benchmark them against industry standards to identify areas for improvement.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Enrollment Rate (%)",
+        "variables": [
+          "Number of Enrolled Patients",
+          "Target Enrollment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Enrollment Rate (%) = (Number of Enrolled Patients / Target Enrollment) x 100.",
+        "step": null
+      },
+      {
+        "output": "Net Revenue",
+        "variables": [
+          "Total Revenue",
+          "Total Costs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Revenue = Total Revenue - Total Costs.",
+        "step": null
+      }
     ]
   },
   {
@@ -1587,6 +2545,19 @@
       "Market the COE to patients and referring providers, emphasizing its unique capabilities and outcomes.",
       "Monitor and continuously evaluate COE performance post-launch to ensure alignment with goals and benchmarks.",
       "I. Staffing and Workforce Optimization"
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Projected Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Projected Revenue - Projected Costs) / Projected Costs) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1630,6 +2601,41 @@
       "Benchmark productivity and staffing metrics against peer organizations to identify best practices.",
       "Utilize cross-training programs to create a more flexible workforce capable of adapting to changing patient needs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Productivity Rate",
+        "variables": [
+          "Total Patient Encounters or Procedures",
+          "Total Hours Worked"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Productivity Rate = Total Patient Encounters or Procedures / Total Hours Worked.",
+        "step": null
+      },
+      {
+        "output": "Revenue per Staff Member",
+        "variables": [
+          "Total Revenue",
+          "Total Staff Members"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Staff Member = Total Revenue / Total Staff Members.",
+        "step": null
+      },
+      {
+        "output": "Turnover Rate (%)",
+        "variables": [
+          "Number of Departures",
+          "Total Staff"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Turnover Rate (%) = (Number of Departures / Total Staff) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1672,6 +2678,19 @@
       "Establish peer support programs or mentorship opportunities to build a supportive work culture.",
       "Monitor burnout and retention metrics continuously to identify trends and adapt strategies proactively.",
       "J. Community Impact and Health Equity"
+    ],
+    "formulas": [
+      {
+        "output": "Turnover Rate (%)",
+        "variables": [
+          "Number of Departures",
+          "Total Staff"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Turnover Rate (%) = (Number of Departures / Total Staff) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1711,7 +2730,8 @@
       "Leverage data analytics to identify high-risk populations and prioritize resources effectively.",
       "Advocate for policy changes or funding opportunities to support health equity and community health initiatives.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "healthcare-provider-45",
@@ -1752,6 +2772,20 @@
       "Regularly monitor post-modernization performance metrics to ensure projected benefits are realized.",
       "Benchmark results against similar investments in the industry to refine future capital planning strategies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Savings",
+          "Projected Revenue Increase",
+          "Capital Costs"
+        ],
+        "expression": "( ( v0 + v1 - v2 ) / v2 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Projected Savings + Projected Revenue Increase - Capital Costs) / Capital Costs) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1793,6 +2827,30 @@
       "Monitor and act on infection control metrics to reduce hospital-acquired conditions in the ICU.",
       "Benchmark performance continuously to identify emerging trends and adopt best practices from top-performing ICUs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Bed Occupancy Rate (%)",
+        "variables": [
+          "Occupied Bed Days",
+          "Total Available Bed Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Bed Occupancy Rate (%) = (Occupied Bed Days / Total Available Bed Days) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per ICU Stay",
+        "variables": [
+          "Total ICU Costs",
+          "Number of ICU Patients"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per ICU Stay = Total ICU Costs / Number of ICU Patients.",
+        "step": null
+      }
     ]
   },
   {
@@ -1830,6 +2888,19 @@
       "Expand telehealth services and mobile clinics to reach populations with geographic or transportation barriers.",
       "Benchmark regularly against leading organizations to adopt innovative approaches and remain competitive in addressing SDOH challenges.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Intervention Impact (%)",
+        "variables": [
+          "Post-Intervention Outcome",
+          "Pre-Intervention Outcome"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Intervention Impact (%) = ((Post-Intervention Outcome - Pre-Intervention Outcome) / Pre-Intervention Outcome) x 100.",
+        "step": null
+      }
     ]
   }
 ]

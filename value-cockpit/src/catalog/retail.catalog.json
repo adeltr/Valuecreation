@@ -31,6 +31,30 @@
       "Implement omnichannel strategies",
       "Improve store layout",
       "Training staM"
+    ],
+    "formulas": [
+      {
+        "output": "Same-Store Sales Growth (%)",
+        "variables": [
+          "Current Period Sales",
+          "Prior Period Sales"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Same-Store Sales Growth (%) = ((Current Period Sales - Prior Period Sales) / Prior Period Sales) x 100",
+        "step": "Calculate same-store sales growth for each store"
+      },
+      {
+        "output": "Total Same-Store Sales Growth (%)",
+        "variables": [
+          "Total Current Period Sales",
+          "Total Prior Period Sales"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Total Same-Store Sales Growth (%) = ((Total Current Period Sales - Total Prior Period Sales) / Total Prior Period Sales) x 100",
+        "step": "Calculate overall same-store sales growth"
+      }
     ]
   },
   {
@@ -67,6 +91,19 @@
       "Leverage data to target key demographics",
       "Review store location and marketing",
       "Improve signage and wayﬁnding"
+    ],
+    "formulas": [
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Transactions",
+          "Number of Visitors"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Transactions / Number of Visitors) x 100",
+        "step": "Calculate the conversion rate"
+      }
     ]
   },
   {
@@ -100,6 +137,19 @@
       "Analyze customer feedback",
       "Implement proactive communication",
       "Review return policy"
+    ],
+    "formulas": [
+      {
+        "output": "Return Rate (%)",
+        "variables": [
+          "Number of Items Returned",
+          "Number of Items Sold"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Return Rate (%) = (Number of Items Returned / Number of Items Sold) x 100",
+        "step": "Calculate the return rate"
+      }
     ]
   },
   {
@@ -140,6 +190,41 @@
       "Review store locations for closures or relocations",
       "Leverage local partnerships",
       "Monitor local economic and competitive factors"
+    ],
+    "formulas": [
+      {
+        "output": "Store Proﬁt",
+        "variables": [
+          "Sales",
+          "Operational Costs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Store Proﬁt = Sales - Operational Costs",
+        "step": "Calculate proﬁtability per store"
+      },
+      {
+        "output": "Sales per Square Foot",
+        "variables": [
+          "Total Sales",
+          "Store Size (in square feet)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Sales per Square Foot = Total Sales / Store Size (in square feet)",
+        "step": "Calculate sales per square foot"
+      },
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Transactions",
+          "Foot Tra9ic"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Transactions / Foot Tra9ic) x 100",
+        "step": "Analyze foot traMic and conversion rates (optional)"
+      }
     ]
   },
   {
@@ -179,6 +264,30 @@
       "Improve demand forecasting",
       "Align staMing with seasonality",
       "Incorporate external factors"
+    ],
+    "formulas": [
+      {
+        "output": "Seasonality Index",
+        "variables": [
+          "Sales for a given period",
+          "Average Sales across all periods"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Seasonality Index = (Sales for a given period / Average Sales across all periods) x 100",
+        "step": "Calculate seasonality index"
+      },
+      {
+        "output": "Sales Mix (%)",
+        "variables": [
+          "Category Sales",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sales Mix (%) = (Category Sales / Total Sales) x 100",
+        "step": "Analyze sales mix during peak periods"
+      }
     ]
   },
   {
@@ -220,6 +329,63 @@
       "Monitor customer feedback across channels",
       "Optimize fulﬁllment for online orders",
       "Track channel-speciﬁc proﬁtability"
+    ],
+    "formulas": [
+      {
+        "output": "Online Sales Contribution (%)",
+        "variables": [
+          "Online Sales",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Online Sales Contribution (%) = (Online Sales / Total Sales) x 100",
+        "step": "Compare online vs. in-store sales performance"
+      },
+      {
+        "output": "Cross-Channel Usage (%)",
+        "variables": [
+          "Number of Cross-Channel Customers",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cross-Channel Usage (%) = (Number of Cross-Channel Customers / Total Customers) x 100",
+        "step": "Analyze customer behavior across channels"
+      },
+      {
+        "output": "Promotional Lift (%)",
+        "variables": [
+          "Sales During Promotion",
+          "Sales Before Promotion"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Promotional Lift (%) = ((Sales During Promotion - Sales Before Promotion) / Sales Before Promotion) x 100",
+        "step": "Evaluate the impact of promotions by channel"
+      },
+      {
+        "output": "Return Rate (%)",
+        "variables": [
+          "Number of Returned Items",
+          "Total Items Sold"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Return Rate (%) = (Number of Returned Items / Total Items Sold) x 100",
+        "step": "Analyze customer satisfaction and return rates (optional)"
+      },
+      {
+        "output": "Gross Proﬁt Margin (%)",
+        "variables": [
+          "Sales",
+          "Cost of Goods Sold"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Gross Proﬁt Margin (%) = ((Sales - Cost of Goods Sold) / Sales) x 100",
+        "step": "Calculate channel-speciﬁc proﬁtability"
+      }
     ]
   },
   {
@@ -252,6 +418,31 @@
       "Optimize acquisition costs",
       "Segment customers for targeted marketing",
       "Enhance customer satisfaction"
+    ],
+    "formulas": [
+      {
+        "output": "CLV",
+        "variables": [
+          "APV",
+          "PF",
+          "L"
+        ],
+        "expression": "( v0 * v1 * v2 )",
+        "percentOutput": false,
+        "source": "CLV = (APV x PF x L)",
+        "step": "Calculate Customer Lifetime Value (CLV)"
+      },
+      {
+        "output": "Net CLV",
+        "variables": [
+          "CLV",
+          "CAC"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net CLV = CLV - CAC",
+        "step": "Subtract customer acquisition cost (optional)"
+      }
     ]
   },
   {
@@ -289,6 +480,56 @@
       "Use promotions to boost cross-sell and up-sell",
       "Test diMerent strategies",
       "Incorporate customer feedback"
+    ],
+    "formulas": [
+      {
+        "output": "AOV",
+        "variables": [
+          "Total Sales Revenue",
+          "Number of Transactions"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "AOV = Total Sales Revenue / Number of Transactions",
+        "step": "Calculate the average order value (AOV)"
+      },
+      {
+        "output": "Cross-Sell/Up-Sell Transactions (%)",
+        "variables": [
+          "Number of Transactions with Cross-Sell or Up-Sell Items",
+          "Total Transactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cross-Sell/Up-Sell Transactions (%) = (Number of Transactions with Cross-Sell or Up-Sell Items / Total Transactions) x 100",
+        "step": "Measure the percentage of transactions involving cross-sells or up-sells"
+      },
+      {
+        "output": "Sales Uplift (%)",
+        "variables": [
+          "Total Sales from Cross-Sell",
+          "Up-Sell Transactions",
+          "Sales Without Cross",
+          "Sell",
+          "Up-Sell",
+          "Sales Without Cross-Sell"
+        ],
+        "expression": "( ( v0 / v1 - v2 - v3 / v4 ) / v5 / v4 ) * 100",
+        "percentOutput": true,
+        "source": "Sales Uplift (%) = ((Total Sales from Cross-Sell/Up-Sell Transactions - Sales Without Cross- Sell/Up-Sell) / Sales Without Cross-Sell/Up-Sell) x 100",
+        "step": "Analyze sales uplift due to cross-selling and up-selling"
+      },
+      {
+        "output": "Gross Proﬁt Margin (%)",
+        "variables": [
+          "Revenue",
+          "Cost of Goods Sold"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Gross Proﬁt Margin (%) = ((Revenue - Cost of Goods Sold) / Revenue) x 100",
+        "step": "Evaluate gross proﬁt margin (optional)"
+      }
     ]
   },
   {
@@ -325,6 +566,41 @@
       "Solicit customer feedback regularly",
       "Test and iterate atmosphere changes",
       "B. Operations"
+    ],
+    "formulas": [
+      {
+        "output": "Average Dwell Time",
+        "variables": [
+          "Total Time Spent by All Customers",
+          "Total Number of Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Dwell Time = Total Time Spent by All Customers / Total Number of Customers",
+        "step": "Measure customer dwell time"
+      },
+      {
+        "output": "Sales per Minute of Dwell Time",
+        "variables": [
+          "Total Sales",
+          "Total Dwell Time"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Sales per Minute of Dwell Time = Total Sales / Total Dwell Time",
+        "step": "Analyze sales per minute of dwell time"
+      },
+      {
+        "output": "Sales Change (%)",
+        "variables": [
+          "Sales After Atmosphere Change",
+          "Sales Before Atmosphere Change"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sales Change (%) = ((Sales After Atmosphere Change - Sales Before Atmosphere Change) / Sales Before Atmosphere Change) x 100",
+        "step": "Evaluate the impact on sales"
+      }
     ]
   },
   {
@@ -355,6 +631,40 @@
       "Liquidate slow-moving inventory",
       "Focus on supply chain eMiciency",
       "Improve category management"
+    ],
+    "formulas": [
+      {
+        "output": "Average Inventory",
+        "variables": [
+          "Beginning Inventory",
+          "Ending Inventory"
+        ],
+        "expression": "( v0 + v1 ) / 2",
+        "percentOutput": false,
+        "source": "Average Inventory = (Beginning Inventory + Ending Inventory) / 2",
+        "step": null
+      },
+      {
+        "output": "Inventory Turnover",
+        "variables": [
+          "COGS",
+          "Average Inventory"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Inventory Turnover = COGS / Average Inventory",
+        "step": "Calculate the inventory turnover ratio"
+      },
+      {
+        "output": "Days in Inventory",
+        "variables": [
+          "Inventory Turnover"
+        ],
+        "expression": "( 365 / v0 )",
+        "percentOutput": false,
+        "source": "Days in Inventory = (365 / Inventory Turnover)",
+        "step": "Determine the inventory turnover in days"
+      }
     ]
   },
   {
@@ -394,6 +704,30 @@
       "Leverage safety stock",
       "Implement inventory tracking technology",
       "Run promotions cautiously"
+    ],
+    "formulas": [
+      {
+        "output": "In-Stock Rate (%)",
+        "variables": [
+          "Number of In-Stock SKUs",
+          "Total Number of SKUs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "In-Stock Rate (%) = (Number of In-Stock SKUs / Total Number of SKUs) x 100",
+        "step": "Calculate the in-stock rate"
+      },
+      {
+        "output": "Out-of-Stock Rate (%)",
+        "variables": [
+          "Number of Out-of-Stock SKUs",
+          "Total Number of SKUs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Out-of-Stock Rate (%) = (Number of Out-of-Stock SKUs / Total Number of SKUs) x 100",
+        "step": "Calculate the out-of-stock rate"
+      }
     ]
   },
   {
@@ -434,6 +768,32 @@
       "Enhance order accuracy",
       "Reduce packaging costs",
       "Monitor customer satisfaction"
+    ],
+    "formulas": [
+      {
+        "output": "Fulﬁllment Cost per Order",
+        "variables": [
+          "Labor Costs",
+          "Packaging Costs",
+          "Shipping Costs",
+          "Number of"
+        ],
+        "expression": "( v0 + v1 + v2 ) / v3",
+        "percentOutput": false,
+        "source": "Fulﬁllment Cost per Order = (Labor Costs + Packaging Costs + Shipping Costs) / Number of",
+        "step": "Calculate fulﬁllment costs per order"
+      },
+      {
+        "output": "Shipping Cost per Order",
+        "variables": [
+          "Total Shipping Costs",
+          "Number of Orders Shipped"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Shipping Cost per Order = Total Shipping Costs / Number of Orders Shipped",
+        "step": "Assess shipping costs"
+      }
     ]
   },
   {
@@ -475,6 +835,31 @@
       "Address stockout issues",
       "Use data-driven planogram adjustments",
       "Consider promotional areas"
+    ],
+    "formulas": [
+      {
+        "output": "Sales per Square Foot",
+        "variables": [
+          "Total Sales",
+          "Total Shelf Space"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Sales per Square Foot = Total Sales / Total Shelf Space",
+        "step": "Calculate sales per square foot of shelf space"
+      },
+      {
+        "output": "Optimal Shelf Space",
+        "variables": [
+          "Product Sales",
+          "Total Store Sales",
+          "Total Available Shelf Space"
+        ],
+        "expression": "( v0 / v1 ) * v2",
+        "percentOutput": false,
+        "source": "Optimal Shelf Space = (Product Sales / Total Store Sales) x Total Available Shelf Space",
+        "step": "Optimize shelf space based on product performance"
+      }
     ]
   },
   {
@@ -517,6 +902,41 @@
       "Expand pickup options",
       "Monitor customer feedback",
       "Integrate with loyalty programs"
+    ],
+    "formulas": [
+      {
+        "output": "BOPIS Completion Rate (%)",
+        "variables": [
+          "Number of Orders Picked Up",
+          "Total BOPIS Orders Placed"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "BOPIS Completion Rate (%) = (Number of Orders Picked Up / Total BOPIS Orders Placed) x 100",
+        "step": "Calculate BOPIS order completion rate"
+      },
+      {
+        "output": "Incremental Sales (%)",
+        "variables": [
+          "Total BOPIS In-Store Sales",
+          "BOPIS Online Sales"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Incremental Sales (%) = ((Total BOPIS In-Store Sales - BOPIS Online Sales) / BOPIS Online Sales) x 100",
+        "step": "Measure incremental sales from BOPIS customers"
+      },
+      {
+        "output": "Cancellation Rate (%)",
+        "variables": [
+          "Canceled BOPIS Orders",
+          "Total BOPIS Orders"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cancellation Rate (%) = (Canceled BOPIS Orders / Total BOPIS Orders) x 100",
+        "step": "Monitor return or cancellation rates (optional)"
+      }
     ]
   },
   {
@@ -555,6 +975,41 @@
       "Monitor real estate market trends",
       "Consolidate operations",
       "Leverage technology for remote inventory management"
+    ],
+    "formulas": [
+      {
+        "output": "Rent-to-Sales Ratio (%)",
+        "variables": [
+          "Store Rent",
+          "Store Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Rent-to-Sales Ratio (%) = (Store Rent / Store Sales) x 100",
+        "step": "Calculate rent-to-sales ratio"
+      },
+      {
+        "output": "Occupancy Cost per Square Foot",
+        "variables": [
+          "Total Occupancy Costs",
+          "Store Size in Square Feet"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Occupancy Cost per Square Foot = (Total Occupancy Costs / Store Size in Square Feet)",
+        "step": "Calculate occupancy cost per square foot"
+      },
+      {
+        "output": "Sales per Square Foot",
+        "variables": [
+          "Store Sales",
+          "Store Size in Square Feet"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Sales per Square Foot = Store Sales / Store Size in Square Feet",
+        "step": "Compare sales per square foot"
+      }
     ]
   },
   {
@@ -592,6 +1047,41 @@
       "Monitor labor costs regularly",
       "Set performance benchmarks",
       "Align incentives with productivity"
+    ],
+    "formulas": [
+      {
+        "output": "Sales per Labor Hour",
+        "variables": [
+          "Total Store Sales",
+          "Total Labor Hours Worked"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Sales per Labor Hour = Total Store Sales / Total Labor Hours Worked",
+        "step": "Calculate labor productivity (sales per labor hour)"
+      },
+      {
+        "output": "Labor Cost Percentage (%)",
+        "variables": [
+          "Total Labor Costs",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Labor Cost Percentage (%) = (Total Labor Costs / Total Sales) x 100",
+        "step": "Calculate labor cost percentage"
+      },
+      {
+        "output": "Labor Hours per Customer",
+        "variables": [
+          "Total Labor Hours",
+          "Foot Tra9ic"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Labor Hours per Customer = Total Labor Hours / Foot Tra9ic",
+        "step": "Consider foot traMic (optional)"
+      }
     ]
   },
   {
@@ -631,6 +1121,41 @@
       "Monitor market trends",
       "Communicate with customers",
       "Use closure as an opportunity"
+    ],
+    "formulas": [
+      {
+        "output": "Proﬁt Margin (%)",
+        "variables": [
+          "Revenue",
+          "Operating Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Proﬁt Margin (%) = ((Revenue - Operating Costs) / Revenue) x 100",
+        "step": "Calculate the proﬁtability of each store"
+      },
+      {
+        "output": "Store Contribution (%)",
+        "variables": [
+          "Store Revenue",
+          "Total Company Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Store Contribution (%) = (Store Revenue / Total Company Revenue) x 100",
+        "step": "Evaluate store contribution to overall revenue"
+      },
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Transactions",
+          "Total Foot Tra9ic"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Transactions / Total Foot Tra9ic) x 100",
+        "step": "Analyze store foot traMic and conversion rates"
+      }
     ]
   },
   {
@@ -670,6 +1195,30 @@
       "Enhance customer retention at existing stores",
       "Factor in long-term growth",
       "Review competitor landscape"
+    ],
+    "formulas": [
+      {
+        "output": "Proximity Overlap (%)",
+        "variables": [
+          "Number of Shared Customers between New and Existing Store",
+          "Total Customers in the Region"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Proximity Overlap (%) = (Number of Shared Customers between New and Existing Store / Total Customers in the Region) x 100",
+        "step": "Evaluate proximity to existing stores"
+      },
+      {
+        "output": "Incremental Sales",
+        "variables": [
+          "Estimated New Store Sales",
+          "Cannibalized Sales from Existing Stores"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Incremental Sales = (Estimated New Store Sales - Cannibalized Sales from Existing Stores)",
+        "step": "Estimate incremental sales for the new store"
+      }
     ]
   },
   {
@@ -707,6 +1256,41 @@
       "Benchmark and set sustainability goals",
       "Improve transparency in the supply chain",
       "C. Marketing"
+    ],
+    "formulas": [
+      {
+        "output": "Sustainable Sourcing Rate (%)",
+        "variables": [
+          "Number of Products from Sustainable Suppliers",
+          "Total Products"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sustainable Sourcing Rate (%) = (Number of Products from Sustainable Suppliers / Total Products) x 100",
+        "step": "Collect supplier sourcing data"
+      },
+      {
+        "output": "Carbon Emissions per Unit",
+        "variables": [
+          "Total Carbon Emissions",
+          "Number of Units Produced or Sold"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Carbon Emissions per Unit = Total Carbon Emissions / Number of Units Produced or Sold",
+        "step": "Analyze carbon footprint and environmental impact"
+      },
+      {
+        "output": "Packaging Sustainability Rate (%)",
+        "variables": [
+          "Number of Products with Sustainable Packaging",
+          "Total Products"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Packaging Sustainability Rate (%) = (Number of Products with Sustainable Packaging / Total Products) x 100",
+        "step": "Assess waste and recycling rates"
+      }
     ]
   },
   {
@@ -747,6 +1331,41 @@
       "Implement data-driven pricing strategies",
       "Monitor competitor pricing more frequently",
       "Reduce dependency on blanket discounts"
+    ],
+    "formulas": [
+      {
+        "output": "Price Elasticity of Demand",
+        "variables": [
+          "Percentage Change in Quantity Sold",
+          "Percentage Change in Price"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Price Elasticity of Demand = (Percentage Change in Quantity Sold / Percentage Change in Price)",
+        "step": "Analyze sales performance based on pricing"
+      },
+      {
+        "output": "Gross Proﬁt Margin (%)",
+        "variables": [
+          "Sales Price",
+          "Cost of Goods Sold"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Gross Proﬁt Margin (%) = ((Sales Price - Cost of Goods Sold) / Sales Price) x 100",
+        "step": "Calculate proﬁt margins"
+      },
+      {
+        "output": "Discount Impact on Revenue (%)",
+        "variables": [
+          "Revenue During Discount",
+          "Revenue Without Discount"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Discount Impact on Revenue (%) = ((Revenue During Discount - Revenue Without Discount) / Revenue Without Discount) x 100",
+        "step": "Evaluate discount eMectiveness"
+      }
     ]
   },
   {
@@ -785,6 +1404,41 @@
       "Monitor customer behavior post-promotion",
       "Control promotional frequency",
       "Improve cross-selling"
+    ],
+    "formulas": [
+      {
+        "output": "Incremental Sales",
+        "variables": [
+          "Sales During Promotion",
+          "Sales Before Promotion"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Incremental Sales = Sales During Promotion - Sales Before Promotion",
+        "step": "Calculate incremental sales"
+      },
+      {
+        "output": "Promotional Lift (%)",
+        "variables": [
+          "Sales During Promotion",
+          "Sales Before Promotion"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Promotional Lift (%) = ((Sales During Promotion - Sales Before Promotion) / Sales Before Promotion) x 100",
+        "step": "Evaluate promotional lift"
+      },
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Transactions",
+          "Customer Tra9ic"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Transactions / Customer Tra9ic) x 100",
+        "step": "Analyze customer traMic and conversion rates"
+      }
     ]
   },
   {
@@ -823,6 +1477,53 @@
       "Use personalized marketing",
       "Monitor program performance regularly",
       "Segment loyalty members"
+    ],
+    "formulas": [
+      {
+        "output": "o   Purchase Frequency (Loyalty Members)",
+        "variables": [
+          "Total Transactions by Loyalty Members",
+          "Total Loyalty Members"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o   Purchase Frequency (Loyalty Members) = Total Transactions by Loyalty Members / Total Loyalty Members",
+        "step": "Calculate loyalty member engagement"
+      },
+      {
+        "output": "Incremental Revenue",
+        "variables": [
+          "Revenue per Loyalty Member",
+          "Revenue per Non-Member",
+          "Number of Loyalty Members"
+        ],
+        "expression": "( v0 - v1 ) * v2",
+        "percentOutput": false,
+        "source": "Incremental Revenue = (Revenue per Loyalty Member - Revenue per Non-Member) x Number of Loyalty Members",
+        "step": "Measure incremental revenue"
+      },
+      {
+        "output": "Redemption Rate (%)",
+        "variables": [
+          "Number of Rewards Redeemed",
+          "Total Rewards Earned"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Redemption Rate (%) = (Number of Rewards Redeemed / Total Rewards Earned) x 100",
+        "step": "Calculate redemption rate"
+      },
+      {
+        "output": "Loyalty Program ROI (%)",
+        "variables": [
+          "Incremental Revenue",
+          "Loyalty Program Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loyalty Program ROI (%) = ((Incremental Revenue - Loyalty Program Costs) / Loyalty Program Costs) x 100",
+        "step": "Calculate loyalty program ROI"
+      }
     ]
   },
   {
@@ -860,6 +1561,42 @@
       "Monitor segment performance regularly",
       "Test new segments or strategies",
       "Incorporate feedback for segment-speciﬁc improvements"
+    ],
+    "formulas": [
+      {
+        "output": "Segment Size (%)",
+        "variables": [
+          "Number of Customers in Segment",
+          "Total Number of Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Segment Size (%) = (Number of Customers in Segment / Total Number of Customers) x 100",
+        "step": "Segment customers based on key demographics"
+      },
+      {
+        "output": "o   Purchase Frequency",
+        "variables": [
+          "Total Transactions by Segment",
+          "Number of Customers in Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o   Purchase Frequency = Total Transactions by Segment / Number of Customers in Segment",
+        "step": "Analyze purchasing behavior within each segment"
+      },
+      {
+        "output": "Customer Lifetime Value (CLV)",
+        "variables": [
+          "Average Transaction Value",
+          "Purchase Frequency",
+          "Customer Retention Period"
+        ],
+        "expression": "( v0 * v1 * v2 )",
+        "percentOutput": false,
+        "source": "Customer Lifetime Value (CLV) = (Average Transaction Value x Purchase Frequency x Customer Retention Period)",
+        "step": "Identify high-value customer segments"
+      }
     ]
   },
   {
@@ -895,6 +1632,20 @@
       "Regularly conduct customer surveys",
       "Proactively address recurring issues",
       "Benchmark against competitors"
+    ],
+    "formulas": [
+      {
+        "output": "Sentiment Ratio",
+        "variables": [
+          "Number of Positive Mentions",
+          "Number of Negative Mentions",
+          "Total"
+        ],
+        "expression": "( v0 - v1 ) / v2",
+        "percentOutput": false,
+        "source": "Sentiment Ratio = (Number of Positive Mentions - Number of Negative Mentions) / Total",
+        "step": "Monitor social media sentiment"
+      }
     ]
   },
   {
@@ -934,6 +1685,41 @@
       "Gather post-event data",
       "Test and iterate",
       "D. Merchandising"
+    ],
+    "formulas": [
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Transactions",
+          "Total Number of Visitors"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Transactions / Total Number of Visitors) x 100",
+        "step": "Calculate conversion rate"
+      },
+      {
+        "output": "AOV",
+        "variables": [
+          "Total Sales Revenue",
+          "Number of Transactions"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "AOV = Total Sales Revenue / Number of Transactions",
+        "step": "Analyze average order value (AOV)"
+      },
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Total Sales",
+          "Total Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Total Sales - Total Costs) / Total Costs) x 100",
+        "step": "Calculate return on investment (ROI)"
+      }
     ]
   },
   {
@@ -973,6 +1759,30 @@
       "Improve inventory management",
       "Reevaluate product assortment",
       "Focus on upselling and cross-selling"
+    ],
+    "formulas": [
+      {
+        "output": "Gross Margin",
+        "variables": [
+          "Sales",
+          "COGS"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Gross Margin = (Sales - COGS)",
+        "step": "Calculate gross margin for each product category"
+      },
+      {
+        "output": "Gross Margin (%)",
+        "variables": [
+          "Sales",
+          "COGS"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Gross Margin (%) = ((Sales - COGS) / Sales) x 100",
+        "step": "Calculate gross margin percentage"
+      }
     ]
   },
   {
@@ -1007,6 +1817,41 @@
       "Improve customer perception of private labels",
       "Segment product oMerings",
       "Tailor marketing strategies"
+    ],
+    "formulas": [
+      {
+        "output": "Gross Proﬁt Margin (%)",
+        "variables": [
+          "Sales",
+          "COGS"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Gross Proﬁt Margin (%) = ((Sales - COGS) / Sales) x 100",
+        "step": "Calculate gross proﬁt margins"
+      },
+      {
+        "output": "Sales Proportion (%)",
+        "variables": [
+          "Product Sales",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sales Proportion (%) = (Product Sales / Total Sales) x 100",
+        "step": "Compare sales volumes"
+      },
+      {
+        "output": "Supplier Dependency (%)",
+        "variables": [
+          "Supplier’s Sales Contribution",
+          "Total Branded Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Supplier Dependency (%) = (Supplier’s Sales Contribution / Total Branded Sales) x 100",
+        "step": "Assess supplier dependency"
+      }
     ]
   },
   {
@@ -1043,6 +1888,41 @@
       "Test new layouts",
       "Align layout with seasonal trends",
       "Use data-driven decisions"
+    ],
+    "formulas": [
+      {
+        "output": "Planogram Compliance (%)",
+        "variables": [
+          "Number of Correct Placements",
+          "Total Planned Placements"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Planogram Compliance (%) = (Number of Correct Placements / Total Planned Placements) x 100",
+        "step": "Conduct a planogram compliance audit"
+      },
+      {
+        "output": "Endcap Sales Performance (%)",
+        "variables": [
+          "Sales from Endcap Products",
+          "Total Store Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Endcap Sales Performance (%) = (Sales from Endcap Products / Total Store Sales) x 100",
+        "step": "Analyze sales data by shelf location and endcap performance"
+      },
+      {
+        "output": "Sales per Square Foot",
+        "variables": [
+          "Total Sales for Section",
+          "Total Square Footage of Section"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Sales per Square Foot = Total Sales for Section / Total Square Footage of Section",
+        "step": "Calculate sales per square foot"
+      }
     ]
   },
   {
@@ -1085,6 +1965,41 @@
       "Test new SKUs strategically",
       "Improve inventory management",
       "Work with suppliers"
+    ],
+    "formulas": [
+      {
+        "output": "SKU Proﬁtability",
+        "variables": [
+          "Revenue per SKU",
+          "Cost per SKU"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "SKU Proﬁtability = (Revenue per SKU - Cost per SKU)",
+        "step": "Calculate SKU proﬁtability"
+      },
+      {
+        "output": "SKU Turnover Rate",
+        "variables": [
+          "Cost of Goods Sold",
+          "Average Inventory"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "SKU Turnover Rate = (Cost of Goods Sold / Average Inventory)",
+        "step": "Analyze SKU inventory turnover"
+      },
+      {
+        "output": "Slow-Moving SKU (%)",
+        "variables": [
+          "Number of Slow-Moving SKUs",
+          "Total SKUs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Slow-Moving SKU (%) = (Number of Slow-Moving SKUs / Total SKUs) x 100",
+        "step": "Identify underperforming SKUs"
+      }
     ]
   },
   {
@@ -1127,6 +2042,41 @@
       "Integrate markdowns with promotions",
       "Test and iterate",
       "Monitor customer behavior"
+    ],
+    "formulas": [
+      {
+        "output": "Markdown Percentage",
+        "variables": [
+          "Original Price",
+          "Markdown Price"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Markdown Percentage = ((Original Price - Markdown Price) / Original Price) x 100",
+        "step": "Calculate markdown percentage"
+      },
+      {
+        "output": "Sell-Through Rate (%)",
+        "variables": [
+          "Units Sold During Markdown",
+          "Total Units Available Before Markdown"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sell-Through Rate (%) = (Units Sold During Markdown / Total Units Available Before Markdown) x 100",
+        "step": "Measure the sell-through rate during markdown"
+      },
+      {
+        "output": "Gross Proﬁt Margin (%)",
+        "variables": [
+          "Sales",
+          "Cost of Goods Sold"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Gross Proﬁt Margin (%) = ((Sales - Cost of Goods Sold) / Sales) x 100",
+        "step": "Evaluate the proﬁt impact"
+      }
     ]
   },
   {
@@ -1167,6 +2117,41 @@
       "Tailor merchandising to customer preferences",
       "Improve data collection and monitoring",
       "Test new merchandising tactics"
+    ],
+    "formulas": [
+      {
+        "output": "Sales Growth (%)",
+        "variables": [
+          "Sales in Current Period",
+          "Sales in Previous Period"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sales Growth (%) = ((Sales in Current Period - Sales in Previous Period) / Sales in Previous Period) x 100",
+        "step": "Calculate sales growth by product or category"
+      },
+      {
+        "output": "Gross Proﬁt Margin (%)",
+        "variables": [
+          "Sales",
+          "Cost of Goods Sold"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Gross Proﬁt Margin (%) = ((Sales - Cost of Goods Sold) / Sales) x 100",
+        "step": "Analyze gross proﬁt margins"
+      },
+      {
+        "output": "Inventory Turnover",
+        "variables": [
+          "Cost of Goods Sold",
+          "Average Inventory"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Inventory Turnover = (Cost of Goods Sold / Average Inventory)",
+        "step": "Measure inventory turnover"
+      }
     ]
   },
   {
@@ -1202,6 +2187,41 @@
       "Leverage digital displays",
       "Train staM on visual merchandising principles",
       "E. Finance"
+    ],
+    "formulas": [
+      {
+        "output": "Sales Rate",
+        "variables": [
+          "Total Units Sold",
+          "Days in Display"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Sales Rate = Total Units Sold / Days in Display",
+        "step": "Monitor product movement in display areas"
+      },
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Transactions",
+          "Number of Visitors"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Transactions / Number of Visitors) x 100",
+        "step": "Measure foot traMic and conversion rates in key areas"
+      },
+      {
+        "output": "Sales Lift (%)",
+        "variables": [
+          "Sales After Merchandising Change",
+          "Sales Before Merchandising Change"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sales Lift (%) = ((Sales After Merchandising Change - Sales Before Merchandising Change) / Sales Before Merchandising Change) x 100",
+        "step": "Calculate the impact on sales"
+      }
     ]
   },
   {
@@ -1239,7 +2259,8 @@
       "Leverage sales data for smarter forecasting",
       "Analyze supplier terms",
       "Use dynamic inventory management systems"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "retail-34",
@@ -1276,6 +2297,31 @@
       "Use technology to track inventory",
       "Improve vendor management",
       "Create accountability"
+    ],
+    "formulas": [
+      {
+        "output": "Expected Inventory",
+        "variables": [
+          "Beginning Inventory",
+          "Purchases",
+          "Sales"
+        ],
+        "expression": "v0 + v1 - v2",
+        "percentOutput": false,
+        "source": "Expected Inventory = Beginning Inventory + Purchases - Sales",
+        "step": "Calculate expected inventory"
+      },
+      {
+        "output": "Shrinkage Rate (%)",
+        "variables": [
+          "Shrinkage",
+          "Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Shrinkage Rate (%) = (Shrinkage / Sales) x 100",
+        "step": "Calculate shrinkage rate"
+      }
     ]
   },
   {
@@ -1312,6 +2358,52 @@
       "Diversify supplier base",
       "Conduct regular performance reviews",
       "Collaborate on process improvements"
+    ],
+    "formulas": [
+      {
+        "output": "Delivery Compliance (%)",
+        "variables": [
+          "Number of On-Time Deliveries",
+          "Total Deliveries"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delivery Compliance (%) = (Number of On-Time Deliveries / Total Deliveries) x 100",
+        "step": "Calculate delivery compliance"
+      },
+      {
+        "output": "Order Accuracy (%)",
+        "variables": [
+          "Number of Correct Orders",
+          "Total Orders"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Order Accuracy (%) = (Number of Correct Orders / Total Orders) x 100",
+        "step": "Measure order accuracy"
+      },
+      {
+        "output": "Vendor Fill Rate (%)",
+        "variables": [
+          "Number of Items Delivered",
+          "Number of Items Ordered"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Vendor Fill Rate (%) = (Number of Items Delivered / Number of Items Ordered) x 100",
+        "step": "Evaluate vendor ﬁll rates"
+      },
+      {
+        "output": "Defect Rate (%)",
+        "variables": [
+          "Number of Defective Products",
+          "Total Products Received"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Defect Rate (%) = (Number of Defective Products / Total Products Received) x 100",
+        "step": "Assess product quality"
+      }
     ]
   }
 ]

@@ -30,6 +30,19 @@
       "Leverage predictive modeling to identify at-risk policyholders early and offer retention strategies, such as discounts or loyalty rewards.",
       "Strengthen training for agents and distributors to ensure proper alignment of products with customer needs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Lapse Rate (%)",
+        "variables": [
+          "Number of Policies Lapsed During the Period",
+          "Number of Policies In Force at Start of the Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Lapse Rate (%) = (Number of Policies Lapsed During the Period / Number of Policies In Force at Start of the Period) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -67,7 +80,8 @@
       "Develop targeted retention campaigns focused on high-risk segments identified in the analysis.",
       "Use predictive modeling to proactively identify customers at risk of non-renewal and offer tailored retention solutions.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-03",
@@ -103,7 +117,8 @@
       "Evaluate and refine retention campaigns to ensure a positive ROI and alignment with high-value segments.",
       "Conduct regular feedback surveys to identify areas of dissatisfaction and improve customer experience.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-04",
@@ -140,7 +155,8 @@
       "Strengthen retention strategies for high-risk segments identified through the analysis, such as offering targeted incentives to retain policies.",
       "Monitor macroeconomic indicators regularly and adjust liquidity reserves proactively to mitigate risk during economic downturns.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-05",
@@ -174,7 +190,8 @@
       "Collaborate with bancassurance partners to develop tailored retention strategies, such as cross-selling or bundled products.",
       "Monitor persistency rates regularly by channel and implement retention-focused initiatives where necessary.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-06",
@@ -208,7 +225,8 @@
       "Introduce product options with adjustable coverage levels, allowing policyholders to maintain affordability during premium increases.",
       "Regularly monitor market conditions and competitor pricing to remain competitive in high-elasticity segments.",
       "B. Actuarial and Reserve Management"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-07",
@@ -240,7 +258,8 @@
       "Increase capital reserves or adjust reinsurance strategies to mitigate risks from underfunded liabilities.",
       "Conduct regular audits of reserve calculations to ensure accuracy and transparency.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-08",
@@ -279,6 +298,19 @@
       "Diversify product offerings to balance exposure to mortality and longevity risks (e.g., combining term policies with annuities).",
       "Monitor external factors, such as advancements in healthcare or demographic changes, to proactively adjust risk models.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Mortality Ratio",
+        "variables": [
+          "Actual Deaths",
+          "Expected Deaths"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Mortality Ratio = (Actual Deaths / Expected Deaths) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -313,6 +345,19 @@
       "Regularly review and update actuarial assumptions, including mortality rates and investment returns, to ensure accurate liability valuation.",
       "Develop predictive models to monitor emerging risks in real-time and adjust reserve strategies proactively.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Guaranteed Liability",
+        "variables": [
+          "Present Value of Expected Guaranteed Payouts",
+          "Present Value of Expected Premiums"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Guaranteed Liability = (Present Value of Expected Guaranteed Payouts - Present Value of Expected Premiums)",
+        "step": null
+      }
     ]
   },
   {
@@ -346,6 +391,19 @@
       "Ensure compliance with financial reporting standards (e.g., IFRS 9, IFRS 17) by aligning valuation practices with regulatory requirements.",
       "Monitor competitor practices and benchmarks to identify gaps in current risk and valuation strategies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Fair Value",
+        "variables": [
+          "Expected Payout",
+          "Discount Factor"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Fair Value = Expected Payout x Discount Factor",
+        "step": null
+      }
     ]
   },
   {
@@ -382,6 +440,30 @@
       "Use predictive modeling to improve accuracy in forecasting future cash flows and profitability.",
       "Identify and phase out or adjust products with consistently negative deferred profitability.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "a. Use the formula: PVFCF",
+        "variables": [
+          "Present Value of Future Premiums",
+          "Present Value of Future Claims and Expenses"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "a. Use the formula: PVFCF = Present Value of Future Premiums - Present Value of Future Claims and Expenses",
+        "step": null
+      },
+      {
+        "output": "a. Calculate the surplus for each segment: Surplus",
+        "variables": [
+          "Reserves Held",
+          "PVFCF"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "a. Calculate the surplus for each segment: Surplus = Reserves Held - PVFCF",
+        "step": null
+      }
     ]
   },
   {
@@ -416,6 +498,30 @@
       "Use reinsurance to transfer excess mortality or longevity risk for specific high-risk segments.",
       "Monitor population trends and external shocks (e.g., pandemics) to adjust assumptions proactively.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Mortality Rate (q_x)",
+        "variables": [
+          "Number of Deaths in Age Group",
+          "Number of Lives"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Mortality Rate (q_x) = Number of Deaths in Age Group / Number of Lives",
+        "step": null
+      },
+      {
+        "output": "Adjusted Mortality Rate",
+        "variables": [
+          "Standard Mortality Rate",
+          "Scaling Factor"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Adjusted Mortality Rate = Standard Mortality Rate * Scaling Factor.",
+        "step": null
+      }
     ]
   },
   {
@@ -452,6 +558,41 @@
       "Use predictive analytics to monitor and project mortality trends, identifying early deviations.",
       "Explore reinsurance strategies to mitigate exposure to segments with consistently adverse mortality experience.",
       "C. Profitability and Product Performance"
+    ],
+    "formulas": [
+      {
+        "output": "Actual Mortality Rate (q_actual)",
+        "variables": [
+          "Number of Deaths",
+          "Number of Lives Exposed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Actual Mortality Rate (q_actual) = Number of Deaths / Number of Lives Exposed.",
+        "step": null
+      },
+      {
+        "output": "Determine Mortality Margin Mortality Margin",
+        "variables": [
+          "Expected Mortality Rate",
+          "Actual Mortality Rate"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Determine Mortality Margin Mortality Margin = (Expected Mortality Rate - Actual Mortality Rate) / Expected Mortality Rate x 100. This measures the degree to which actual mortality differs from expected values.",
+        "step": null
+      },
+      {
+        "output": "Calculate Mortality Experience Ratio Mortality Experience Ratio",
+        "variables": [
+          "Actual Deaths",
+          "Expected Deaths"
+        ],
+        "expression": "v0 / v1 * 100",
+        "percentOutput": true,
+        "source": "Calculate Mortality Experience Ratio Mortality Experience Ratio = Actual Deaths / Expected Deaths x 100. Ratios greater than 100% indicate mortality losses, while lower ratios suggest favorable mortality experience.",
+        "step": null
+      }
     ]
   },
   {
@@ -489,6 +630,19 @@
       "Improve investment strategies to increase returns on assets backing future liabilities.",
       "Use predictive analytics to identify high-value policyholders and enhance cross-selling opportunities.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "EV",
+        "variables": [
+          "NAV",
+          "PVFP"
+        ],
+        "expression": "v0 + v1",
+        "percentOutput": false,
+        "source": "EV = NAV + PVFP",
+        "step": "Calculate Embedded Value (EV) EV consists of two components"
+      }
     ]
   },
   {
@@ -526,6 +680,32 @@
       "Enhance marketing efforts for competitive products to capture market share and boost profitability.",
       "Monitor competitor offerings and pricing regularly to adjust positioning and remain competitive.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Profitability",
+        "variables": [
+          "Premium Revenue",
+          "Claims Paid",
+          "Acquisition Costs",
+          "Maintenance Expenses"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Product Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)",
+        "step": null
+      },
+      {
+        "output": "Contribution (%)",
+        "variables": [
+          "Product Profit",
+          "Total Profit"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Contribution (%) = (Product Profit / Total Profit) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -559,6 +739,33 @@
       "Regularly benchmark fund returns and fee structures against competitors to remain competitive.",
       "Use data analytics to identify patterns in lapse behavior and address underlying issues proactively.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Fee Income",
+        "variables": [
+          "Fund Management Fees",
+          "Policy Charges",
+          "Surrender Charges"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Fee Income = Fund Management Fees + Policy Charges + Surrender Charges",
+        "step": "Evaluate Fee Income"
+      },
+      {
+        "output": "Profit",
+        "variables": [
+          "Total Fee Income",
+          "Claims",
+          "Acquisition Costs",
+          "Maintenance Expenses"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Profit = Total Fee Income - (Claims + Acquisition Costs + Maintenance Expenses)",
+        "step": "Evaluate Fee Income"
+      }
     ]
   },
   {
@@ -594,6 +801,21 @@
       "Monitor competitor products regularly to refine guarantees, features, and pricing to maintain market competitiveness.",
       "Conduct regular experience studies to validate actuarial assumptions for mortality, lapse rates, and expense trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Profitability",
+        "variables": [
+          "Premium Revenue",
+          "Claims Paid",
+          "Acquisition Costs",
+          "Maintenance Costs"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Product Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Costs)",
+        "step": null
+      }
     ]
   },
   {
@@ -631,6 +853,43 @@
       "Monitor competitor pricing and claims experience to ensure market competitiveness while maintaining profitability.",
       "Optimize distribution strategies to emphasize high-performing riders with strong margins.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Profitability",
+        "variables": [
+          "Premium Revenue",
+          "Claims Paid",
+          "Acquisition Costs",
+          "Maintenance Expenses"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)",
+        "step": null
+      },
+      {
+        "output": "Profit Margin (%)",
+        "variables": [
+          "Profitability",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Profit Margin (%) = (Profitability / Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Claim Ratio (%)",
+        "variables": [
+          "Total Claims Paid",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Claim Ratio (%) = (Total Claims Paid / Premium Revenue) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -666,6 +925,42 @@
       "Conduct regular experience studies to monitor deviations from assumptions and recalibrate reserve requirements.",
       "Benchmark against competitor products to identify opportunities for innovation, such as flexible living benefit options or bundled riders.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Number of Living Benefit Claims Filed",
+          "Total Policies with Living Benefits"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Number of Living Benefit Claims Filed / Total Policies with Living Benefits) x 100",
+        "step": null
+      },
+      {
+        "output": "Profitability",
+        "variables": [
+          "Premium Revenue",
+          "Claims Paid",
+          "Expenses"
+        ],
+        "expression": "v0 - ( v1 + v2 )",
+        "percentOutput": false,
+        "source": "Profitability = Premium Revenue - (Claims Paid + Expenses)",
+        "step": null
+      },
+      {
+        "output": "Deviation (%)",
+        "variables": [
+          "Actual Utilization",
+          "Expected Utilization"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Deviation (%) = ((Actual Utilization - Expected Utilization) / Expected Utilization) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -702,6 +997,54 @@
       "Conduct regular experience studies to refine assumptions for claims incidence and expense ratios.",
       "Monitor competitor benchmarks to identify pricing or feature gaps and improve product positioning.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Profitability",
+        "variables": [
+          "Premium Revenue",
+          "Claims Paid",
+          "Acquisition Costs",
+          "Maintenance Expenses"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Profitability = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)",
+        "step": null
+      },
+      {
+        "output": "Profit Margin (%)",
+        "variables": [
+          "Profitability",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Profit Margin (%) = (Profitability / Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Loss Ratio (%)",
+        "variables": [
+          "Claims Paid",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100",
+        "step": "Analyze Claims Experience"
+      },
+      {
+        "output": "Renewal Rate (%)",
+        "variables": [
+          "Number of Policies Renewed",
+          "Number of Policies Eligible for Renewal"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Renewal Rate (%) = (Number of Policies Renewed / Number of Policies Eligible for Renewal) x 100",
+        "step": "Analyze Claims Experience"
+      }
     ]
   },
   {
@@ -739,6 +1082,54 @@
       "Benchmark conversion strategies against industry best practices to identify pricing, product, or process improvements.",
       "Develop targeted campaigns to identify high-value policyholders likely to benefit from conversions, ensuring alignment with profitability goals.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Profitability",
+        "variables": [
+          "Post-Conversion Premium Revenue",
+          "Claims Paid",
+          "Acquisition Costs",
+          "Maintenance Expenses"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Profitability = Post-Conversion Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Expenses)",
+        "step": null
+      },
+      {
+        "output": "Profit Margin (%)",
+        "variables": [
+          "Profitability",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Profit Margin (%) = (Profitability / Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Persistency Rate (%)",
+        "variables": [
+          "Number of Active Converted Policies",
+          "Total Converted Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Persistency Rate (%) = (Number of Active Converted Policies / Total Converted Policies) x 100",
+        "step": "Analyze Persistency Trends"
+      },
+      {
+        "output": "Loss Ratio (%)",
+        "variables": [
+          "Claims Paid",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100",
+        "step": "Analyze Persistency Trends"
+      }
     ]
   },
   {
@@ -781,7 +1172,8 @@
       "Analyze geographic and demographic segments to focus on areas with high growth potential.",
       "Regularly benchmark performance against competitors and adjust pricing or sales strategies to align with market opportunities.",
       "D. Capital and Solvency Management"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-23",
@@ -819,6 +1211,43 @@
       "Conduct regular stress testing to ensure preparedness for adverse scenarios and capital shocks.",
       "Align capital allocation strategies with low-risk, high-performing segments to optimize profitability and solvency.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "RBC Requirement",
+        "variables": [
+          "Credit Risk Capital",
+          "Market Risk Capital",
+          "Insurance Risk Capital",
+          "Operational Risk Capital"
+        ],
+        "expression": "v0 + v1 + v2 + v3",
+        "percentOutput": false,
+        "source": "RBC Requirement = Credit Risk Capital + Market Risk Capital + Insurance Risk Capital + Operational Risk Capital.",
+        "step": null
+      },
+      {
+        "output": "RBC Ratio (%)",
+        "variables": [
+          "Available Capital",
+          "RBC Requirement"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "RBC Ratio (%) = (Available Capital / RBC Requirement) x 100.",
+        "step": null
+      },
+      {
+        "output": "Solvency Ratio (%)",
+        "variables": [
+          "Available Capital",
+          "Total Liabilities"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Solvency Ratio (%) = (Available Capital / Total Liabilities) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -857,7 +1286,8 @@
       "Streamline governance processes to meet Pillar 2 requirements and strengthen internal controls.",
       "Regularly benchmark capital performance and stress testing outcomes against peers and industry best practices.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-25",
@@ -894,6 +1324,30 @@
       "Conduct regular internal stress testing to anticipate capital shortfalls and take preemptive corrective actions.",
       "Monitor regulatory changes to ensure compliance and proactively adjust capital allocation strategies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Solvency Ratio (%)",
+        "variables": [
+          "Available Capital",
+          "Required Capital"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Solvency Ratio (%) = (Available Capital / Required Capital) x 100",
+        "step": "Apply stress scenarios to financial components"
+      },
+      {
+        "output": "Capital Buffer",
+        "variables": [
+          "Available Capital",
+          "Required Capital"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Capital Buffer = Available Capital - Required Capital",
+        "step": "Apply stress scenarios to financial components"
+      }
     ]
   },
   {
@@ -930,6 +1384,43 @@
       "Regularly monitor and optimize capital allocation strategies to align with market conditions and profitability targets.",
       "Benchmark product performance and capital efficiency against competitors to identify strategic gaps.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Profit",
+        "variables": [
+          "Premium Revenue",
+          "Claims Paid",
+          "Acquisition Costs",
+          "Maintenance Costs"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Profit = Premium Revenue - (Claims Paid + Acquisition Costs + Maintenance Costs)",
+        "step": null
+      },
+      {
+        "output": "ROAC (%)",
+        "variables": [
+          "Profit",
+          "Capital Allocated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROAC (%) = (Profit / Capital Allocated) x 100",
+        "step": null
+      },
+      {
+        "output": "Risk-Adjusted Return (%)",
+        "variables": [
+          "Profit",
+          "Capital Requirement Adjusted for Risk Exposure"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Risk-Adjusted Return (%) = (Profit / Capital Requirement Adjusted for Risk Exposure)",
+        "step": null
+      }
     ]
   },
   {
@@ -963,6 +1454,20 @@
       "Conduct stress testing to ensure financing and captive strategies can withstand adverse conditions without jeopardizing capital adequacy.",
       "Use analytics to project reserve needs accurately, minimizing over-reliance on external financing.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Financing Benefit",
+        "variables": [
+          "Reserve Relief",
+          "Financing Costs",
+          "Administrative Costs"
+        ],
+        "expression": "v0 - ( v1 + v2 )",
+        "percentOutput": false,
+        "source": "Net Financing Benefit = Reserve Relief - (Financing Costs + Administrative Costs)",
+        "step": "Assess Reserve Financing Options a. Analyze financing mechanisms such as"
+      }
     ]
   },
   {
@@ -999,6 +1504,19 @@
       "Conduct regular stress testing to validate the effectiveness of longevity risk transfer mechanisms under adverse scenarios.",
       "Benchmark longevity risk management strategies against leading competitors to identify opportunities for improvement.",
       "E. Investment and Asset-Liability Management (ALM)"
+    ],
+    "formulas": [
+      {
+        "output": "Capital Reduction (%)",
+        "variables": [
+          "Capital Before Risk Transfer",
+          "Capital After Risk Transfer"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Capital Reduction (%) = (Capital Before Risk Transfer - Capital After Risk Transfer) / Capital Before Risk Transfer x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1036,6 +1554,31 @@
       "Explore alternative investment strategies, such as infrastructure or real estate, for enhanced yield while maintaining ALM discipline.",
       "Benchmark asset performance and ALM metrics against industry peers to identify best practices for optimization.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Investment Return (%)",
+        "variables": [
+          "Investment Income",
+          "Capital Gains",
+          "Portfolio Value"
+        ],
+        "expression": "( v0 + v1 ) / v2 * 100",
+        "percentOutput": true,
+        "source": "Investment Return (%) = (Investment Income + Capital Gains) / Portfolio Value x 100",
+        "step": null
+      },
+      {
+        "output": "Duration Gap",
+        "variables": [
+          "Asset Duration",
+          "Liability Duration"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Duration Gap = Asset Duration - Liability Duration",
+        "step": null
+      }
     ]
   },
   {
@@ -1072,6 +1615,19 @@
       "Benchmark fund performance and accounting practices against peers to identify areas for improvement.",
       "Improve communication with policyholders to manage expectations for market-linked product performance, reducing lapse risks.",
       "F. Distribution and Channel Performance"
+    ],
+    "formulas": [
+      {
+        "output": "Fair Value Gap",
+        "variables": [
+          "Fair Value of Assets",
+          "Fair Value of Liabilities"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Fair Value Gap = Fair Value of Assets - Fair Value of Liabilities",
+        "step": null
+      }
     ]
   },
   {
@@ -1110,6 +1666,52 @@
       "Introduce performance-based incentives for agents and brokers to improve productivity and reduce acquisition costs.",
       "Regularly benchmark and monitor channel metrics to ensure cost efficiency and alignment with industry best practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Persistency Rate (%)",
+        "variables": [
+          "Number of Active Policies",
+          "Total Policies Sold"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Persistency Rate (%) = (Number of Active Policies / Total Policies Sold) x 100",
+        "step": "Calculate Channel Effectiveness Metrics a. Total Premium Revenue"
+      },
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Policies Sold",
+          "Number of Leads"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Policies Sold / Number of Leads) x 100",
+        "step": "Calculate Channel Effectiveness Metrics a. Total Premium Revenue"
+      },
+      {
+        "output": "Acquisition Cost",
+        "variables": [
+          "Total Acquisition Expense",
+          "Number of Policies"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Acquisition Cost = Total Acquisition Expense / Number of Policies",
+        "step": "Calculate Channel Effectiveness Metrics a. Total Premium Revenue"
+      },
+      {
+        "output": "Cost Ratio (%)",
+        "variables": [
+          "Total Costs",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Ratio (%) = (Total Costs / Premium Revenue) x 100",
+        "step": "Calculate Channel Effectiveness Metrics a. Total Premium Revenue"
+      }
     ]
   },
   {
@@ -1148,6 +1750,52 @@
       "Monitor persistency rates closely and engage policyholders early to reduce lapse risk.",
       "Benchmark bancassurance performance regularly to identify gaps and align with industry best practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Policy",
+        "variables": [
+          "Total Bancassurance Costs",
+          "Number of Policies"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Policy = Total Bancassurance Costs / Number of Policies",
+        "step": null
+      },
+      {
+        "output": "Cost Ratio (%)",
+        "variables": [
+          "Total Bancassurance Costs",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Ratio (%) = (Total Bancassurance Costs / Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Policies Sold",
+          "Total Leads Generated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Policies Sold / Total Leads Generated) x 100",
+        "step": null
+      },
+      {
+        "output": "Persistency Rate (%)",
+        "variables": [
+          "Active Policies",
+          "Total Policies Sold"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Persistency Rate (%) = (Active Policies / Total Policies Sold) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1185,6 +1833,19 @@
       "Monitor conversion trends regularly and adjust campaigns or incentives based on performance data.",
       "Leverage digital tools to automate policyholder outreach, track responses, and streamline the conversion process.",
       "G. Risk Management and Hedging"
+    ],
+    "formulas": [
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Policies Converted",
+          "Number of Eligible Term Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Policies Converted / Number of Eligible Term Policies) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1221,6 +1882,42 @@
       "Benchmark reinsurance costs and treaty structures against industry best practices to identify areas for optimization.",
       "Enhance risk modeling and data analytics to improve pricing accuracy, risk segmentation, and treaty design.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Ceded Premium Ratio (%)",
+        "variables": [
+          "Ceded Premium",
+          "Gross Premium Written"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Ceded Premium Ratio (%) = (Ceded Premium / Gross Premium Written) x 100",
+        "step": null
+      },
+      {
+        "output": "Net Impact",
+        "variables": [
+          "Ceded Premium",
+          "Reinsurance Recoveries",
+          "Reinsurance Costs"
+        ],
+        "expression": "v0 - v1 - v2",
+        "percentOutput": false,
+        "source": "Net Impact = Ceded Premium - Reinsurance Recoveries - Reinsurance Costs",
+        "step": null
+      },
+      {
+        "output": "Solvency Ratio (%)",
+        "variables": [
+          "Available Capital",
+          "Required Capital"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Solvency Ratio (%) = (Available Capital / Required Capital) x 100",
+        "step": "Assess Risk Mitigation Effectiveness"
+      }
     ]
   },
   {
@@ -1253,6 +1950,43 @@
       "Benchmark hedging costs and effectiveness against industry practices to identify cost-saving opportunities.",
       "Enhance risk management frameworks to monitor and address longevity risk proactively.",
       "H. Regulatory Compliance and Financial Reporting"
+    ],
+    "formulas": [
+      {
+        "output": "Profitability",
+        "variables": [
+          "Premium Revenue",
+          "Payouts",
+          "Reserves",
+          "Expenses"
+        ],
+        "expression": "v0 - ( v1 + v2 + v3 )",
+        "percentOutput": false,
+        "source": "Profitability = Premium Revenue - (Payouts + Reserves + Expenses)",
+        "step": null
+      },
+      {
+        "output": "ROC (%)",
+        "variables": [
+          "Net Profit",
+          "Allocated Capital"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROC (%) = (Net Profit / Allocated Capital) x 100",
+        "step": null
+      },
+      {
+        "output": "Hedge Efficiency (%)",
+        "variables": [
+          "Risk Reduced",
+          "Cost of Hedging"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Hedge Efficiency (%) = (Risk Reduced / Cost of Hedging) x 100",
+        "step": "Assess Longevity Hedging Strategies a. Review existing hedges, such as"
+      }
     ]
   },
   {
@@ -1285,7 +2019,8 @@
       "Monitor regulatory updates and industry best practices to ensure ongoing alignment with IFRS 17 standards.",
       "Establish a robust internal audit process to validate data accuracy, calculations, and compliance readiness.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "life-insurance-37",
@@ -1316,6 +2051,30 @@
       "Conduct sensitivity testing regularly to measure the financial impact of changes in assumptions and adjust strategies accordingly.",
       "Improve expense management to reduce acquisition costs and limit DAC exposure over time.",
       "I. Customer Experience and Digital Transformation"
+    ],
+    "formulas": [
+      {
+        "output": "DAC Amortization Ratio (%)",
+        "variables": [
+          "Amortized DAC",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "DAC Amortization Ratio (%) = (Amortized DAC / Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Impact on DAC",
+        "variables": [
+          "Change in Assumption",
+          "Remaining Unamortized"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Impact on DAC = Change in Assumption x Remaining Unamortized",
+        "step": null
+      }
     ]
   },
   {
@@ -1354,6 +2113,19 @@
       "",
       "Measure digital transformation performance regularly and refine strategies based on customer feedback and operational results.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Digital Engagement Rate (%)",
+        "variables": [
+          "Number of Digital Interactions",
+          "Total Customer Interactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Digital Engagement Rate (%) = (Number of Digital Interactions / Total Customer Interactions) x 100",
+        "step": "Evaluate Financial Impact and ROI a. Measure cost savings from digital adoption"
+      }
     ]
   },
   {
@@ -1390,6 +2162,41 @@
       "Conduct continuous A/B testing to refine behavioral strategies and measure their impact.",
       "Leverage behavioral insights to enhance digital tools, such as self-service portals and reminder systems, for improved customer engagement.",
       "J. Operational Efficiency and Cost Management"
+    ],
+    "formulas": [
+      {
+        "output": "Policy Uptake Rate (%)",
+        "variables": [
+          "Number of New Policies Sold",
+          "Total Prospects Contacted"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Policy Uptake Rate (%) = (Number of New Policies Sold / Total Prospects Contacted) x 100",
+        "step": null
+      },
+      {
+        "output": "Persistency Rate (%)",
+        "variables": [
+          "Active Policies",
+          "Policies at Start of Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Persistency Rate (%) = (Active Policies / Policies at Start of Period) x 100",
+        "step": null
+      },
+      {
+        "output": "Lapse Rate (%)",
+        "variables": [
+          "Policies Terminated",
+          "Total Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Lapse Rate (%) = (Policies Terminated / Total Policies) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1428,6 +2235,74 @@
       "Regularly analyze fraud detection performance and refine algorithms to reduce false positives and improve accuracy.",
       "Benchmark claims ratios and fraud metrics against peers to identify areas requiring cost optimization.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Processing Time",
+        "variables": [
+          "Total Processing Days",
+          "Total Claims"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Processing Time = Total Processing Days / Total Claims",
+        "step": null
+      },
+      {
+        "output": "Cost per Claim",
+        "variables": [
+          "Total Administrative Costs",
+          "Total Claims Processed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Claim = Total Administrative Costs / Total Claims Processed",
+        "step": null
+      },
+      {
+        "output": "Claims Ratio (%)",
+        "variables": [
+          "Total Claims Paid",
+          "Total Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Claims Ratio (%) = (Total Claims Paid / Total Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Fraud Flag Rate (%)",
+        "variables": [
+          "Suspicious Claims",
+          "Total Claims Received"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fraud Flag Rate (%) = (Suspicious Claims / Total Claims Received) x 100",
+        "step": null
+      },
+      {
+        "output": "Fraud Detection Accuracy (%)",
+        "variables": [
+          "Confirmed Fraudulent Claims",
+          "Total Flagged Claims"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fraud Detection Accuracy (%) = (Confirmed Fraudulent Claims / Total Flagged Claims) x 100",
+        "step": null
+      },
+      {
+        "output": "Digital Claims Adoption (%)",
+        "variables": [
+          "Digital Claims Processed",
+          "Total Claims Processed"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Digital Claims Adoption (%) = (Digital Claims Processed / Total Claims Processed) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1464,6 +2339,74 @@
       "",
       "Benchmark underwriting performance against competitors to identify and adopt best practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Turnaround Time",
+        "variables": [
+          "Total Underwriting Time",
+          "Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Turnaround Time = Total Underwriting Time / Number of",
+        "step": null
+      },
+      {
+        "output": "Cost per Policy",
+        "variables": [
+          "Total Underwriting Expenses",
+          "Total Policies"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Policy = Total Underwriting Expenses / Total Policies",
+        "step": null
+      },
+      {
+        "output": "Loss Ratio (%)",
+        "variables": [
+          "Claims Paid",
+          "Premium Collected"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loss Ratio (%) = (Claims Paid / Premium Collected) x 100",
+        "step": "Analyze Risk Selection Quality a. Segment policies by risk classification"
+      },
+      {
+        "output": "Approval Rate (%)",
+        "variables": [
+          "Approved Policies",
+          "Total Applications"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Approval Rate (%) = (Approved Policies / Total Applications) x 100",
+        "step": "Analyze Risk Selection Quality a. Segment policies by risk classification"
+      },
+      {
+        "output": "Decline Rate (%)",
+        "variables": [
+          "Declined Policies",
+          "Total Applications"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Decline Rate (%) = (Declined Policies / Total Applications) x 100",
+        "step": "Analyze Risk Selection Quality a. Segment policies by risk classification"
+      },
+      {
+        "output": "Referral Rate (%)",
+        "variables": [
+          "Referred Policies",
+          "Total Applications"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Referral Rate (%) = (Referred Policies / Total Applications) x 100",
+        "step": "Analyze Risk Selection Quality a. Segment policies by risk classification"
+      }
     ]
   },
   {
@@ -1504,6 +2447,52 @@
       "Improve staff productivity by setting performance targets and providing tools for better resource allocation.",
       "Benchmark expense performance against peers regularly to align with best-in-class practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Expense Ratio (%)",
+        "variables": [
+          "Total Operating Expenses",
+          "Net Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Expense Ratio (%) = (Total Operating Expenses / Net Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Acquisition Ratio (%)",
+        "variables": [
+          "Acquisition Costs",
+          "Net Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Acquisition Ratio (%) = (Acquisition Costs / Net Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Administrative Ratio (%)",
+        "variables": [
+          "Administrative Costs",
+          "Net Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Administrative Ratio (%) = (Administrative Costs / Net Premium Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost per Policy",
+        "variables": [
+          "Total Operating Expenses",
+          "Total Policies Issued or"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Policy = Total Operating Expenses / Total Policies Issued or",
+        "step": "Segment Expenses by Function a. Categorize expenses into core functions"
+      }
     ]
   },
   {
@@ -1538,6 +2527,43 @@
       "Streamline operations with digital tools to reduce manual interventions and long-term servicing costs.",
       "Monitor and stress test reserves regularly to ensure adequacy under both baseline and adverse scenarios.",
       "K. Market Strategy and Competitive Positioning"
+    ],
+    "formulas": [
+      {
+        "output": "Closed Block Surplus",
+        "variables": [
+          "Reserves",
+          "Investment Income",
+          "Claims Paid",
+          "Operating Expenses"
+        ],
+        "expression": "( v0 + v1 - v2 - v3 )",
+        "percentOutput": false,
+        "source": "Closed Block Surplus = (Reserves + Investment Income - Claims Paid - Operating Expenses)",
+        "step": null
+      },
+      {
+        "output": "Expense Ratio (%)",
+        "variables": [
+          "Total Administrative Costs",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Expense Ratio (%) = (Total Administrative Costs / Premium Revenue)",
+        "step": null
+      },
+      {
+        "output": "Loss Ratio (%)",
+        "variables": [
+          "Claims Paid",
+          "Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loss Ratio (%) = (Claims Paid / Premium Revenue) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1570,6 +2596,19 @@
       "Use customer analytics to identify unmet needs and inform product development strategies.",
       "Collaborate with InsurTech firms to accelerate product innovation and enhance customer experiences.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Margin (%)",
+        "variables": [
+          "Revenue",
+          "Costs"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Product Margin (%) = (Revenue - Costs) / Revenue x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1605,6 +2644,19 @@
       "Conduct regular market surveys to understand customer needs and align product offerings with evolving preferences.",
       "Benchmark market share regularly to identify emerging opportunities and refine competitive strategies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Market Share (%)",
+        "variables": [
+          "Company Premium Revenue",
+          "Total Market Premium Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Share (%) = (Company Premium Revenue / Total Market Premium Revenue) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1636,6 +2688,19 @@
       "Communicate dividend strategies clearly to policyholders to manage expectations and build trust.",
       "Conduct scenario modeling regularly to stress test surplus levels and future dividend sustainability under adverse conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Dividend Payout Ratio (%)",
+        "variables": [
+          "Total Dividends Paid",
+          "Total Surplus Generated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Dividend Payout Ratio (%) = (Total Dividends Paid / Total Surplus Generated) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1667,6 +2732,19 @@
       "Improve communication with policyholders to explain dividend strategies, surplus performance, and future expectations clearly.",
       "Stress test surplus reserves and dividend sustainability regularly to mitigate the impact of adverse financial conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Dividend Payout Ratio (%)",
+        "variables": [
+          "Dividends Paid",
+          "Total Surplus Generated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Dividend Payout Ratio (%) = (Dividends Paid / Total Surplus Generated) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1699,6 +2777,19 @@
       "Use predictive analytics to identify policyholders most likely to convert and proactively engage them with tailored offers.",
       "Monitor economic conditions influencing payout decisions and adapt strategies to align with policyholder behaviors.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Number of Annuities Converted",
+          "Total Eligible Annuities"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Number of Annuities Converted / Total Eligible Annuities) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1729,6 +2820,42 @@
       "Strengthen communication strategies to promote alternative solutions, such as rider benefits or payment extensions, during financial hardship.",
       "Regularly review and recalibrate actuarial assumptions related to withdrawal and loan behavior to improve reserve accuracy and risk management.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Withdrawal Rate (%)",
+        "variables": [
+          "Number of Policies with Withdrawals",
+          "Total Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Withdrawal Rate (%) = (Number of Policies with Withdrawals / Total Policies) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Loan Utilization",
+        "variables": [
+          "Total Loan Amount Outstanding",
+          "Total"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Loan Utilization = Total Loan Amount Outstanding / Total",
+        "step": null
+      },
+      {
+        "output": "Impact on Profitability",
+        "variables": [
+          "Interest Income",
+          "Loan Defaults",
+          "Surrender"
+        ],
+        "expression": "( v0 - v1 ) - v2",
+        "percentOutput": false,
+        "source": "Impact on Profitability = (Interest Income - Loan Defaults) - Surrender",
+        "step": null
+      }
     ]
   }
 ]

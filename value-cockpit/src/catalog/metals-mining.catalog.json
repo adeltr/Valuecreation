@@ -35,6 +35,20 @@
       "Collaborate with metallurgical experts to enhance recovery rates through improved processing techniques.",
       "Regularly update resource and reserve models to reflect changes in commodity prices and operational costs.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cut-off Grade",
+        "variables": [
+          "Operating Costs",
+          "Commodity Price",
+          "Recovery Rate"
+        ],
+        "expression": "v0 / ( v1 * v2 )",
+        "percentOutput": false,
+        "source": "Cut-off Grade = Operating Costs / (Commodity Price x Recovery Rate).",
+        "step": "Analyze Cut-off Grade"
+      }
     ]
   },
   {
@@ -71,6 +85,41 @@
       "Enhance exploration efficiency by adopting innovative drilling and sampling technologies.",
       "Regularly update exploration and development strategies based on market conditions and geological insights.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "RRR",
+        "variables": [
+          "Reserves Added",
+          "Reserves Depleted"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "RRR = (Reserves Added / Reserves Depleted) x 100",
+        "step": "Calculate Reserve Replacement Rate (RRR)"
+      },
+      {
+        "output": "Resource Conversion Rate",
+        "variables": [
+          "Reserves Added from Resource Conversion",
+          "Total Measured and Indicated Resources"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Resource Conversion Rate = (Reserves Added from Resource Conversion / Total Measured and Indicated Resources) x 100",
+        "step": "Analyze Resource Conversion Efficiency"
+      },
+      {
+        "output": "Discovery Cost",
+        "variables": [
+          "Exploration Expenditures",
+          "Reserves Added"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Discovery Cost = Exploration Expenditures / Reserves Added",
+        "step": "Analyze Resource Conversion Efficiency"
+      }
     ]
   },
   {
@@ -106,7 +155,8 @@
       "Develop contingency plans for high-risk projects to minimize potential disruptions.",
       "Monitor competitor pipelines to identify gaps or opportunities in the company’s strategy.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-04",
@@ -136,6 +186,30 @@
       "Leverage data analytics and AI to identify trends and improve exploration decision-making.",
       "Continuously monitor and adjust exploration strategies based on outcomes and market conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Success Rate (%)",
+        "variables": [
+          "Number of Successful Discoveries",
+          "Total Number of Projects"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Success Rate (%) = (Number of Successful Discoveries / Total Number of Projects) x 100",
+        "step": "Determine Success Rate"
+      },
+      {
+        "output": "Discovery Cost ($/unit)",
+        "variables": [
+          "Total Exploration Expenditures",
+          "Total Quantity of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Discovery Cost ($/unit) = Total Exploration Expenditures / Total Quantity of",
+        "step": "Calculate Discovery Cost"
+      }
     ]
   },
   {
@@ -173,6 +247,41 @@
       "Explore technological solutions like in-pit crushing and conveying (IPCC) to reduce waste handling costs.",
       "Develop waste management plans to minimize environmental impact and enhance land reclamation efforts.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Stripping Ratio",
+        "variables": [
+          "Volume or Weight of Waste Removed",
+          "Volume or Weight of Ore Extracted"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Stripping Ratio = (Volume or Weight of Waste Removed / Volume or Weight of Ore Extracted)",
+        "step": "Calculate Stripping Ratio (for open-pit mining)"
+      },
+      {
+        "output": "Waste-to-Ore Ratio",
+        "variables": [
+          "Weight of Waste Removed",
+          "Weight of Ore Extracted"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Waste-to-Ore Ratio = (Weight of Waste Removed / Weight of Ore Extracted)",
+        "step": "Calculate Waste-to-Ore Ratio (for general mining)"
+      },
+      {
+        "output": "Cost Impact",
+        "variables": [
+          "Waste Quantity",
+          "Cost per Unit of Waste Removal"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "Cost Impact = (Waste Quantity x Cost per Unit of Waste Removal).",
+        "step": "Evaluate Trends and Variations"
+      }
     ]
   },
   {
@@ -209,7 +318,8 @@
       "Conduct periodic audits of reconciliation processes to identify and address gaps.",
       "Train staff in variance analysis and problem-solving methodologies to reduce future discrepancies.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-07",
@@ -242,7 +352,8 @@
       "Enhance infrastructure planning to improve accessibility, including roads and utilities.",
       "Engage with regulatory bodies and local communities early to address potential constraints proactively.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-08",
@@ -283,6 +394,31 @@
       "Evaluate alternative processing methods for challenging ore types, such as refractory ores or fine-grained materials.",
       "Collaborate with research institutions or industry experts to explore cutting-edge recovery solutions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Recovery Rate (%)",
+        "variables": [
+          "Recovered Metal",
+          "Contained Metal in Ore"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate (%) = (Recovered Metal / Contained Metal in Ore) x 100",
+        "step": "Calculate Recovery Rate"
+      },
+      {
+        "output": "Recoverable Value",
+        "variables": [
+          "Grade",
+          "Recovery Rate",
+          "Commodity Price"
+        ],
+        "expression": "( v0 * v1 * v2 )",
+        "percentOutput": false,
+        "source": "Recoverable Value = (Grade x Recovery Rate x Commodity Price).",
+        "step": "Conduct Economic Analysis"
+      }
     ]
   },
   {
@@ -324,6 +460,19 @@
       "Plan for phased mine expansions or new development projects to ensure continuous production.",
       "Collaborate with stakeholders and regulatory bodies to fast-track approvals for expansion projects.",
       "B. Operational Efficiency and Cost Management"
+    ],
+    "formulas": [
+      {
+        "output": "Mine Life (years)",
+        "variables": [
+          "Proven and Probable Reserves",
+          "Annual Production"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Mine Life (years) = Proven and Probable Reserves / Annual Production",
+        "step": "Estimate Remaining Mine Life"
+      }
     ]
   },
   {
@@ -366,6 +515,44 @@
       "Reassess the feasibility of by-product recovery to offset operating costs.",
       "Regularly benchmark costs against peers and adopt best practices from industry leaders.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Operating Cost per Unit ($/unit)",
+        "variables": [
+          "Total Operating Costs",
+          "Total Units of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Operating Cost per Unit ($/unit) = Total Operating Costs / Total Units of",
+        "step": "Calculate Total Operating Cost per Unit"
+      },
+      {
+        "output": "Net Operating Cost",
+        "variables": [
+          "Total Operating Costs",
+          "By-Product Revenues"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Operating Cost = Total Operating Costs - By-Product Revenues",
+        "step": "Incorporate By-Product Credits"
+      },
+      {
+        "output": "Cash Cost per Unit ($/unit)",
+        "variables": [
+          "Net Operating Cost",
+          "Royalties",
+          "Refining",
+          "Smelting Costs",
+          "Units of Primary Metal or Mineral Produced"
+        ],
+        "expression": "( v0 + v1 + v2 / v3 ) / v4",
+        "percentOutput": false,
+        "source": "Cash Cost per Unit ($/unit) = (Net Operating Cost + Royalties + Refining/Smelting Costs) / Units of Primary Metal or Mineral Produced",
+        "step": "Calculate Cash Cost per Unit"
+      }
     ]
   },
   {
@@ -408,6 +595,41 @@
       "Monitor and reduce energy and material consumption through efficiency programs.",
       "Regularly benchmark performance against peers and adopt best practices from industry leaders.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Equipment Utilization (%)",
+        "variables": [
+          "Operating Hours",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Equipment Utilization (%) = (Operating Hours / Total Available Hours) x 100",
+        "step": "Measure Equipment Utilization and Downtime"
+      },
+      {
+        "output": "Throughput Efficiency (%)",
+        "variables": [
+          "Actual Throughput",
+          "Design Throughput"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Throughput Efficiency (%) = (Actual Throughput / Design Throughput) x 100",
+        "step": "Analyze Processing Throughput"
+      },
+      {
+        "output": "Labor Productivity",
+        "variables": [
+          "Total Output",
+          "Number of Workers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Labor Productivity = Total Output / Number of Workers",
+        "step": "Evaluate Labor Productivity"
+      }
     ]
   },
   {
@@ -447,6 +669,52 @@
       "Establish a performance dashboard to track key metrics like utilization, MTBF, and MTTR in real time.",
       "Benchmark performance regularly and adopt best practices from industry leaders for equipment and maintenance optimization.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization (%)",
+        "variables": [
+          "Operating Hours",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization (%) = (Operating Hours / Total Available Hours) x 100",
+        "step": "Analyze Utilization Rates"
+      },
+      {
+        "output": "MTBF",
+        "variables": [
+          "Total Operating Time",
+          "Number of Failures"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "MTBF = Total Operating Time / Number of Failures",
+        "step": "Assess Maintenance Efficiency"
+      },
+      {
+        "output": "MTTR",
+        "variables": [
+          "Total Downtime",
+          "Number of Repairs"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "MTTR = Total Downtime / Number of Repairs",
+        "step": "Assess Maintenance Efficiency"
+      },
+      {
+        "output": "Equipment Productivity",
+        "variables": [
+          "Tons Moved or Processed",
+          "Operating Hours"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Equipment Productivity = (Tons Moved or Processed / Operating Hours).",
+        "step": "Analyze Operational Performance"
+      }
     ]
   },
   {
@@ -488,6 +756,30 @@
       "Regularly review staffing levels to prevent overstaffing or underutilization.",
       "Conduct regular workforce performance reviews and provide training to improve skills and efficiency.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Labor Productivity",
+        "variables": [
+          "Total Output",
+          "Total Labor Hours Worked"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Labor Productivity = (Total Output / Total Labor Hours Worked)",
+        "step": "Analyze Labor Productivity"
+      },
+      {
+        "output": "Labor Cost per Unit",
+        "variables": [
+          "Total Labor Costs",
+          "Total Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Labor Cost per Unit = Total Labor Costs / Total Output",
+        "step": "Evaluate Labor Cost Efficiency"
+      }
     ]
   },
   {
@@ -529,6 +821,19 @@
       "Regularly review and update blasting protocols based on feedback and performance metrics.",
       "Benchmark against industry standards to identify and adopt best practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost Efficiency ($/ton)",
+        "variables": [
+          "Total Blasting Cost",
+          "Total Tons Blasted"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost Efficiency ($/ton) = Total Blasting Cost / Total Tons Blasted",
+        "step": "Analyze Explosive Usage"
+      }
     ]
   },
   {
@@ -568,6 +873,43 @@
       "Implement selective mining techniques to focus on high-grade zones while minimizing dilution.",
       "Collaborate across geology, mining, and processing teams to align operational goals and ensure grade consistency.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Dilution (%)",
+        "variables": [
+          "Tonnage of Diluted Material",
+          "Total Ore Tonnage"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Dilution (%) = (Tonnage of Diluted Material / Total Ore Tonnage) x 100",
+        "step": "Calculate Dilution Metrics"
+      },
+      {
+        "output": "Ore Recovery (%)",
+        "variables": [
+          "Ore Tonnage Recovered",
+          "Planned Ore Tonnage"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Ore Recovery (%) = (Ore Tonnage Recovered / Planned Ore Tonnage) x 100",
+        "step": "Analyze Ore Recovery Efficiency"
+      },
+      {
+        "output": "Cost Impact ($)",
+        "variables": [
+          "Diluted Material",
+          "Mining Cost per Ton",
+          "Lost Grade",
+          "Processing Cost per Unit"
+        ],
+        "expression": "( v0 * v1 ) + ( v2 * v3 )",
+        "percentOutput": false,
+        "source": "Cost Impact ($) = (Diluted Material x Mining Cost per Ton) + (Lost Grade x Processing Cost per Unit).",
+        "step": "Assess Economic Impact of Dilution"
+      }
     ]
   },
   {
@@ -608,6 +950,21 @@
       "Perform phased project implementation to manage financial risks and optimize cash flows.",
       "Regularly review and update cost and revenue projections to reflect market and operational changes.",
       "C. Environmental Sustainability and Compliance"
+    ],
+    "formulas": [
+      {
+        "output": "Total Lifecycle Cost",
+        "variables": [
+          "CapEx",
+          "OpEx",
+          "Mine Life",
+          "Closure Costs"
+        ],
+        "expression": "v0 + ( v1 * v2 ) + v3",
+        "percentOutput": false,
+        "source": "Total Lifecycle Cost = CapEx + (OpEx x Mine Life) + Closure Costs",
+        "step": "Calculate Lifecycle Costs"
+      }
     ]
   },
   {
@@ -641,7 +998,8 @@
       "Regularly audit ESG performance and disclose progress in line with industry standards.",
       "Leverage technology for real-time monitoring and reporting of ESG metrics.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-18",
@@ -682,6 +1040,30 @@
       "Regularly monitor and report emissions to ensure transparency and accountability.",
       "Educate employees and stakeholders about sustainable practices to promote a culture of environmental responsibility.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Emissions (tCO2e)",
+        "variables": [
+          "Activity Data",
+          "Emission Factor"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Emissions (tCO2e) = Activity Data x Emission Factor",
+        "step": "Calculate Total GHG Emissions"
+      },
+      {
+        "output": "Emission Intensity",
+        "variables": [
+          "Total GHG Emissions",
+          "Total Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Emission Intensity = Total GHG Emissions / Total Production Output",
+        "step": "Evaluate Emission Intensity"
+      }
     ]
   },
   {
@@ -717,6 +1099,19 @@
       "Educate workers and stakeholders on sustainable waste practices and risk mitigation.",
       "Collaborate with environmental experts to explore innovative solutions, such as repurposing tailings for construction materials.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Unit ($/ton)",
+        "variables": [
+          "Total Waste Management Cost",
+          "Total Waste"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Unit ($/ton) = Total Waste Management Cost / Total Waste",
+        "step": "Assess Waste Management Costs"
+      }
     ]
   },
   {
@@ -758,6 +1153,52 @@
       "Educate the workforce on sustainable practices and the importance of efficient resource use.",
       "Collaborate with external consultants or researchers to explore innovative solutions, such as using dry processing techniques.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Water Usage Efficiency (m³/ton)",
+        "variables": [
+          "Total Water Used",
+          "Total Ore Processed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Water Usage Efficiency (m³/ton) = Total Water Used / Total Ore Processed",
+        "step": "Calculate Usage Efficiency Metrics"
+      },
+      {
+        "output": "Energy Usage Efficiency (kffh/ton)",
+        "variables": [
+          "Total Energy Consumed",
+          "Total Ore"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Energy Usage Efficiency (kffh/ton) = Total Energy Consumed / Total Ore",
+        "step": "Calculate Usage Efficiency Metrics"
+      },
+      {
+        "output": "Recycling Rate (%)",
+        "variables": [
+          "Volume of Recycled Water",
+          "Total Water Used"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recycling Rate (%) = (Volume of Recycled Water / Total Water Used) x 100",
+        "step": "Evaluate Recycling and Recovery Rates"
+      },
+      {
+        "output": "Cost per Unit ($/ton)",
+        "variables": [
+          "Total Cost of Water or Energy",
+          "Total Ore"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Unit ($/ton) = Total Cost of Water or Energy / Total Ore",
+        "step": "Analyze Costs"
+      }
     ]
   },
   {
@@ -793,7 +1234,8 @@
       "Invest in research and innovation for cost-effective and environmentally friendly reclamation methods.",
       "Collaborate with environmental experts to address complex rehabilitation challenges, such as water contamination or biodiversity restoration.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-22",
@@ -826,6 +1268,19 @@
       "Engage with regulators and environmental experts to align ARD management strategies with best practices and standards.",
       "Regularly review and update waste management plans based on site-specific data and evolving regulatory requirements.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "NNP",
+        "variables": [
+          "NP",
+          "AP"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "NNP = NP - AP",
+        "step": "Conduct Acid-Base Accounting (ABA)"
+      }
     ]
   },
   {
@@ -864,7 +1319,8 @@
       "Collaborate with environmental agencies and communities to ensure transparency and proactive engagement on dust mitigation efforts.",
       "Regularly review and update dust management plans to incorporate new technologies and evolving standards.",
       "D. Strategic Planning and Investment Feasibility"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-24",
@@ -905,6 +1361,19 @@
       "Increase investment in exploration for underrepresented or high-potential commodities.",
       "Develop scenario planning models to test the impact of external shocks on portfolio performance and adjust strategies proactively.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Price Volatility (%)",
+        "variables": [
+          "Standard Deviation of Prices",
+          "Mean Price"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Price Volatility (%) = (Standard Deviation of Prices / Mean Price) x 100",
+        "step": "Analyze Market Volatility and Trends"
+      }
     ]
   },
   {
@@ -945,6 +1414,19 @@
       "Explore opportunities for automation and energy efficiency upgrades to reduce sustaining CapEx.",
       "Reassess underperforming assets or projects to allocate resources more effectively toward growth initiatives.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "CapEx Intensity ($/unit)",
+        "variables": [
+          "Total CapEx",
+          "Total Units of Production"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CapEx Intensity ($/unit) = Total CapEx / Total Units of Production",
+        "step": "Calculate CapEx Intensity"
+      }
     ]
   },
   {
@@ -982,7 +1464,8 @@
       "Monitor market trends and adjust processing capacity to align with demand fluctuations.",
       "Regularly review downstream performance metrics and refine operations to enhance efficiency and profitability.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-27",
@@ -1020,6 +1503,19 @@
       "Invest in production efficiency improvements to mitigate the impact of high royalty or offtake costs.",
       "Explore alternative funding or revenue mechanisms to reduce reliance on high-commitment agreements.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Royalty Payment",
+        "variables": [
+          "Production Revenue",
+          "Royalty Percentage"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Royalty Payment = Production Revenue x Royalty Percentage",
+        "step": "Evaluate Royalty Agreements"
+      }
     ]
   },
   {
@@ -1057,6 +1553,30 @@
       "Regularly review and update energy strategies based on technological advancements and market trends.",
       "Monitor performance metrics post-integration to identify further opportunities for improvement and scaling.",
       "E. Market and Commodity Risk Management"
+    ],
+    "formulas": [
+      {
+        "output": "Energy Cost per Unit ($/ton)",
+        "variables": [
+          "Total Energy Costs",
+          "Total Units Produced"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Energy Cost per Unit ($/ton) = Total Energy Costs / Total Units Produced",
+        "step": "Assess Energy Cost and Efficiency"
+      },
+      {
+        "output": "Emissions Saved (tCO2e)",
+        "variables": [
+          "Energy Consumed (Mffh)",
+          "Emission Factor"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Emissions Saved (tCO2e) = Energy Consumed (Mffh) x Emission Factor",
+        "step": "Calculate Emission Reductions"
+      }
     ]
   },
   {
@@ -1099,6 +1619,52 @@
       "Engage with financial experts to design customized risk management tools suited to the company’s needs.",
       "Enhance transparency and communication with stakeholders to build confidence in risk mitigation strategies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Dependency (%)",
+        "variables": [
+          "Revenue from Commodity",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Revenue Dependency (%) = (Revenue from Commodity / Total Revenue)",
+        "step": "Analyze Commodity Price Exposure"
+      },
+      {
+        "output": "Price Volatility (%)",
+        "variables": [
+          "Standard Deviation of Prices",
+          "Mean Price"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Price Volatility (%) = (Standard Deviation of Prices / Mean Price) x 100",
+        "step": "Evaluate Historical Price Volatility"
+      },
+      {
+        "output": "Profitability Impact",
+        "variables": [
+          "Revenue Impact",
+          "Variable Costs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Profitability Impact = Revenue Impact - Variable Costs",
+        "step": "Perform Sensitivity Analysis"
+      },
+      {
+        "output": "Breakeven Price",
+        "variables": [
+          "Total Costs",
+          "Production Volume"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Breakeven Price = Total Costs / Production Volume",
+        "step": "Develop Risk Exposure Metrics"
+      }
     ]
   },
   {
@@ -1141,6 +1707,19 @@
       "Strengthen relationships with key customers and trade partners to secure long-term demand.",
       "Regularly update forecasts and market analyses to adapt to changing economic and industry conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Supply-Demand Balance",
+        "variables": [
+          "Total Supply",
+          "Total Demand"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Supply-Demand Balance = Total Supply - Total Demand",
+        "step": "Evaluate Current Supply and Demand Balance"
+      }
     ]
   },
   {
@@ -1181,6 +1760,30 @@
       "Collaborate with industry peers to pool resources or share supply chain insights during disruptions.",
       "Regularly update risk assessments and scenario analyses to reflect evolving geopolitical and market conditions.",
       "F. Infrastructure and Logistics"
+    ],
+    "formulas": [
+      {
+        "output": "Supplier Dependency (%)",
+        "variables": [
+          "Supply from Supplier",
+          "Total Raw Material Supply"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Supplier Dependency (%) = (Supply from Supplier / Total Raw Material Supply) x 100",
+        "step": "Evaluate Supplier Dependency"
+      },
+      {
+        "output": "Days of Coverage",
+        "variables": [
+          "Inventory Level",
+          "Daily Raw Material Usage"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Days of Coverage = Inventory Level / Daily Raw Material Usage",
+        "step": "Analyze Inventory and Buffer Levels"
+      }
     ]
   },
   {
@@ -1218,6 +1821,19 @@
       "Optimize production scheduling to align with transportation and export capacity, reducing peak congestion.",
       "Regularly review and update transportation and export plans based on production forecasts and market conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Transportation Cost per Ton",
+        "variables": [
+          "Total Transportation Costs",
+          "Total Tons"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Transportation Cost per Ton = Total Transportation Costs / Total Tons",
+        "step": "Analyze Transportation Efficiency"
+      }
     ]
   },
   {
@@ -1257,6 +1873,41 @@
       "Develop contingency plans for alternative suppliers, routes, and logistics providers to respond to emergencies.",
       "Regularly review and benchmark supply chain and logistics performance to identify and adopt best practices.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Supplier Reliability (%)",
+        "variables": [
+          "On-Time Deliveries",
+          "Total Deliveries"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Supplier Reliability (%) = (On-Time Deliveries / Total Deliveries) x 100",
+        "step": "Evaluate Supplier Performance"
+      },
+      {
+        "output": "Logistics Cost per Unit ($/ton)",
+        "variables": [
+          "Total Logistics Costs",
+          "Total Tons"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Logistics Cost per Unit ($/ton) = Total Logistics Costs / Total Tons",
+        "step": "Analyze Logistics Efficiency"
+      },
+      {
+        "output": "Days of Inventory Coverage",
+        "variables": [
+          "Inventory Level",
+          "Daily Usage Rate"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Days of Inventory Coverage = Inventory Level / Daily Usage Rate",
+        "step": "Assess Inventory Management"
+      }
     ]
   },
   {
@@ -1292,6 +1943,19 @@
       "Conduct regular inspections and audits to ensure proactive identification of risks.",
       "Train personnel in slope monitoring techniques and emergency response protocols for slope failures.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "FoS",
+        "variables": [
+          "Resisting Forces",
+          "Driving Forces"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "FoS = Resisting Forces / Driving Forces",
+        "step": "Assess Slope and Mine Wall Geometry"
+      }
     ]
   },
   {
@@ -1329,6 +1993,19 @@
       "Train staff in seismic safety protocols and emergency response procedures for ground failure events.",
       "Conduct regular audits and inspections to ensure ongoing stability and compliance with safety standards.",
       "G. Safety, Community, and Stakeholder Engagement"
+    ],
+    "formulas": [
+      {
+        "output": "FoS",
+        "variables": [
+          "Resisting Forces",
+          "Driving Forces"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "FoS = Resisting Forces / Driving Forces",
+        "step": "Perform Geotechnical Stability Analysis"
+      }
     ]
   },
   {
@@ -1369,7 +2046,8 @@
       "Implement a rewards program to encourage a culture of safety and proactive risk management.",
       "Collaborate with industry bodies and regulators to stay updated on best practices and new safety requirements.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-37",
@@ -1400,7 +2078,8 @@
       "Train employees and leadership on cultural awareness and communication to enhance stakeholder interactions.",
       "Publish annual community relations reports to improve transparency and accountability.",
       "H. Technology and Innovation"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-38",
@@ -1441,6 +2120,32 @@
       "Collaborate with technology providers to customize sorting solutions for unique operational needs.",
       "Implement a continuous monitoring system to track sorting performance and identify improvement opportunities promptly.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Recovery Rate (%)",
+        "variables": [
+          "Mass of Recovered Material",
+          "Grade of Recovered Material",
+          "Mass of Feed Material",
+          "Feed Grade"
+        ],
+        "expression": "( v0 * v1 ) / ( v2 * v3 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate (%) = (Mass of Recovered Material x Grade of Recovered Material) / (Mass of Feed Material x Feed Grade) x 100",
+        "step": "Evaluate Recovery Rates"
+      },
+      {
+        "output": "Waste Removal Efficiency (%)",
+        "variables": [
+          "Mass of Waste Removed",
+          "Total Feed Mass"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Waste Removal Efficiency (%) = (Mass of Waste Removed / Total Feed Mass) x 100",
+        "step": "Assess Waste Removal Efficiency"
+      }
     ]
   },
   {
@@ -1478,6 +2183,19 @@
       "Regularly review and update technology strategies to align with industry trends and operational goals.",
       "Establish key performance indicators (KPIs) to monitor the effectiveness and ROI of automation initiatives.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost Efficiency ($/ton)",
+        "variables": [
+          "Total Operational Costs",
+          "Total Output (tons)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost Efficiency ($/ton) = Total Operational Costs / Total Output (tons)",
+        "step": "Assess Cost-Benefit Metrics"
+      }
     ]
   },
   {
@@ -1520,6 +2238,30 @@
       "Implement real-time monitoring systems to ensure consistent process performance and recovery optimization.",
       "Train personnel on advanced recovery techniques and byproduct management practices.",
       "I. Legal, Regulatory, and Geopolitical Risk"
+    ],
+    "formulas": [
+      {
+        "output": "Recovery Rate (%)",
+        "variables": [
+          "Metal Recovered",
+          "Total Metal in Ore"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate (%) = (Metal Recovered / Total Metal in Ore) x 100",
+        "step": "Assess Current Recovery Rates"
+      },
+      {
+        "output": "Cost Efficiency ($/unit)",
+        "variables": [
+          "Total Recovery Cost",
+          "Metal Recovered"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost Efficiency ($/unit) = Total Recovery Cost / Metal Recovered",
+        "step": "Perform Economic Analysis"
+      }
     ]
   },
   {
@@ -1555,7 +2297,8 @@
       "Collaborate with industry groups to advocate for fair and consistent regulatory policies.",
       "Leverage technology for real-time monitoring of geopolitical and regulatory risks, enhancing responsiveness to emerging challenges.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-42",
@@ -1591,7 +2334,8 @@
       "Collaborate with legal and land management experts to refine agreements and mitigate risks.",
       "Build long-term partnerships with local communities to enhance trust and align on land use expectations.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "metals-mining-43",
@@ -1633,6 +2377,19 @@
       "Collaborate with industry associations to advocate for stable and competitive fiscal regimes.",
       "Conduct periodic reviews of fiscal obligations to identify opportunities for cost savings or renegotiations.",
       "J. Processing and Value Addition"
+    ],
+    "formulas": [
+      {
+        "output": "Royalty Payment",
+        "variables": [
+          "Revenue",
+          "Royalty Rate"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Royalty Payment = Revenue x Royalty Rate",
+        "step": "Calculate Financial Obligations"
+      }
     ]
   },
   {
@@ -1676,6 +2433,52 @@
       "Collaborate with industry experts or technology providers to explore innovations in smelting and refining.",
       "Benchmark against top-performing facilities and adopt best practices to improve competitiveness.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Utilization (%)",
+        "variables": [
+          "Actual Throughput",
+          "Designed Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Utilization (%) = (Actual Throughput / Designed Capacity) x 100",
+        "step": "Evaluate Capacity Utilization"
+      },
+      {
+        "output": "Recovery Rate (%)",
+        "variables": [
+          "Metal Recovered",
+          "Metal Input"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate (%) = (Metal Recovered / Metal Input) x 100",
+        "step": "Assess Efficiency Metrics"
+      },
+      {
+        "output": "Energy Efficiency (kffh/ton)",
+        "variables": [
+          "Total Energy Consumed",
+          "Tons of Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Energy Efficiency (kffh/ton) = Total Energy Consumed / Tons of Output",
+        "step": "Assess Efficiency Metrics"
+      },
+      {
+        "output": "Cost per Ton ($/ton)",
+        "variables": [
+          "Total Operational Costs",
+          "Total Output (tons)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Ton ($/ton) = Total Operational Costs / Total Output (tons)",
+        "step": "Analyze Operational Costs"
+      }
     ]
   },
   {
@@ -1715,6 +2518,19 @@
       "Monitor market trends to align product offerings with high-demand sectors, such as renewable energy or technology.",
       "Regularly update feasibility studies and business cases to adapt to changing market conditions or regulatory environments.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Unit ($/unit)",
+        "variables": [
+          "Total Costs",
+          "Total Output (units)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Unit ($/unit) = Total Costs / Total Output (units)",
+        "step": "Estimate Costs for Value Addition"
+      }
     ]
   },
   {
@@ -1759,6 +2575,30 @@
       "Train personnel on the latest processing and quality assurance methods to maintain high standards.",
       "Regularly review input material quality and adjust processing strategies to account for variations.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Recovery Rate (%)",
+        "variables": [
+          "Metal or Mineral Recovered",
+          "Metal or Mineral in Input Material"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate (%) = (Metal or Mineral Recovered / Metal or Mineral in Input Material) x 100",
+        "step": "Evaluate Processing Efficiency"
+      },
+      {
+        "output": "Processing Cost per Unit ($/ton)",
+        "variables": [
+          "Total Processing Costs",
+          "Total Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Processing Cost per Unit ($/ton) = Total Processing Costs / Total Output",
+        "step": "Perform Cost Analysis"
+      }
     ]
   },
   {
@@ -1801,6 +2641,7 @@
       "Monitor and adapt to evolving regulations and customer requirements for ethical sourcing compliance.",
       "Publish transparent reports on supply chain practices to enhance stakeholder trust and accountability.",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

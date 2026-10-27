@@ -1,4 +1,5 @@
 import type { SectorArchetype } from '../ontology/registry';
+import type { ParsedFormula } from '../workshop/formulas';
 
 export interface AnalysisRef {
   id: string;                      // '<archetype>-NN', e.g. 'airline-13'
@@ -13,4 +14,5 @@ export interface AnalysisRef {
   goal: string;                    // first sentence of 🎯 Goal — text only, never a value
   dataRequired: string[];          // 📊 Data required
   improve: string[];               // 🚀 Steps to improve (titles)
+  formulas: ParsedFormula[];       // computable formulas of the step-by-step (src/workshop) — structure only
 }

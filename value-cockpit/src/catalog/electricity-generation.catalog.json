@@ -32,6 +32,20 @@
       "Improve demand forecasting and load balancing to align generation with actual consumption.",
       "Assess the feasibility of decommissioning chronically underutilized assets or replacing them with more flexible generation technologies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Factor (%)",
+        "variables": [
+          "Actual Power Generated (Mffh)",
+          "Installed Capacity (MW)",
+          "Hours in Period"
+        ],
+        "expression": "( v0 / ( v1 * v2 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Factor (%) = (Actual Power Generated (Mffh) / (Installed Capacity (MW) x Hours in Period)) x 100",
+        "step": "Calculate Capacity Factor"
+      }
     ]
   },
   {
@@ -69,6 +83,30 @@
       "Use predictive analytics and real-time monitoring systems to proactively identify and address inefficiencies.",
       "Conduct employee training programs to improve operational best practices and reduce performance variability.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Thermal Efficiency (%)",
+        "variables": [
+          "Net Electricity Output (Mffh)",
+          "Fuel Input in GJ"
+        ],
+        "expression": "( v0 * 3.6 ) / ( v1 ) * 100",
+        "percentOutput": true,
+        "source": "Thermal Efficiency (%) = (Net Electricity Output (Mffh) x 3.6) / (Fuel Input in GJ) x 100",
+        "step": "Calculate Thermal Efficiency"
+      },
+      {
+        "output": "Heat Rate (kJ/kffh)",
+        "variables": [
+          "Fuel Input (GJ)",
+          "Net Electricity Output (Mffh)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Heat Rate (kJ/kffh) = Fuel Input (GJ) / Net Electricity Output (Mffh)",
+        "step": "Evaluate Heat Rate"
+      }
     ]
   },
   {
@@ -106,6 +144,19 @@
       "Implement predictive maintenance strategies to address potential issues before they affect performance.",
       "Conduct periodic audits to ensure alignment with industry best practices and benchmarks.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Heat Rate (kJ/kffh)",
+        "variables": [
+          "Fuel Input (GJ)",
+          "Net Electricity Output (Mffh)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Heat Rate (kJ/kffh) = Fuel Input (GJ) / Net Electricity Output (Mffh).",
+        "step": "Collect Historical Heat Rate Data"
+      }
     ]
   },
   {
@@ -142,6 +193,31 @@
       "Train operations staff to detect early signs of equipment failure and improve response times during outages.",
       "Use real-time monitoring and data analytics to track performance and proactively address inefficiencies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Factor (%)",
+        "variables": [
+          "Actual Electricity Generated (Mffh)",
+          "Installed Capacity (MW)",
+          "Total Hours in Period"
+        ],
+        "expression": "( v0 / ( v1 * v2 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Factor (%) = (Actual Electricity Generated (Mffh) / (Installed Capacity (MW) x Total Hours in Period)) x 100",
+        "step": "Calculate Capacity Factor"
+      },
+      {
+        "output": "Forced Outage Rate (%)",
+        "variables": [
+          "Forced Outage Hours",
+          "Total Hours in Period"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Forced Outage Rate (%) = (Forced Outage Hours / Total Hours in Period)",
+        "step": "Calculate Forced Outage Rate"
+      }
     ]
   },
   {
@@ -181,6 +257,33 @@
       "Invest in energy storage solutions to complement peaking operations and capture additional revenue streams during off-peak periods.",
       "Conduct regular profitability reviews and adjust dispatch strategies based on evolving market conditions and cost structures.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Costs ($)",
+        "variables": [
+          "Fuel Costs",
+          "Variable O&M Costs",
+          "Startup Costs",
+          "Dispatched Hours"
+        ],
+        "expression": "( v0 + v1 + v2 ) * v3",
+        "percentOutput": false,
+        "source": "Total Costs ($) = (Fuel Costs + Variable O&M Costs + Startup Costs) x Dispatched Hours",
+        "step": "Assess Operating Costs"
+      },
+      {
+        "output": "Net Profit ($)",
+        "variables": [
+          "Total Revenue",
+          "Total Operating Costs",
+          "Fixed Operating"
+        ],
+        "expression": "v0 - v1 - v2",
+        "percentOutput": false,
+        "source": "Net Profit ($) = Total Revenue - Total Operating Costs - Fixed Operating",
+        "step": "Determine Net Profitability"
+      }
     ]
   },
   {
@@ -221,6 +324,32 @@
       "Implement workforce training programs to enhance efficiency during start-up and shutdown processes.",
       "Collaborate with grid operators to ensure better integration of reserve plants in dispatch strategies, minimizing start-up costs while maintaining grid reliability.",
       "B. Fuel and Energy Resource Management"
+    ],
+    "formulas": [
+      {
+        "output": "Total Start-up Cost ($)",
+        "variables": [
+          "Fuel Cost",
+          "Labor Cost",
+          "Maintenance Cost"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Start-up Cost ($) = Fuel Cost + Labor Cost + Maintenance Cost",
+        "step": "Quantify Start-up and Shutdown Costs"
+      },
+      {
+        "output": "Total Shutdown Cost ($)",
+        "variables": [
+          "Residual Fuel Loss",
+          "Labor Cost",
+          "Preparation"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Shutdown Cost ($) = Residual Fuel Loss + Labor Cost + Preparation",
+        "step": "Quantify Start-up and Shutdown Costs"
+      }
     ]
   },
   {
@@ -261,6 +390,19 @@
       "Conduct regular reviews of policy and market trends to proactively adapt the fuel mix to changing conditions.",
       "Engage with regulators and stakeholders to align fuel diversification goals with broader energy transition policies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Fuel Mix (%)",
+        "variables": [
+          "Energy Generated by Fuel Type (Mffh)",
+          "Total Energy Generated (Mffh)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fuel Mix (%) = (Energy Generated by Fuel Type (Mffh) / Total Energy Generated (Mffh)) x 100",
+        "step": "Calculate Fuel Mix Composition"
+      }
     ]
   },
   {
@@ -301,7 +443,8 @@
       "",
       "Implement digital supply chain management tools for real-time tracking and predictive analytics to address potential disruptions proactively.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-09",
@@ -339,7 +482,8 @@
       "Continuously monitor market trends and emerging technologies to identify new fuel opportunities.",
       "Create contingency plans to mitigate risks associated with switching, such as supply chain disruptions or unforeseen technical challenges.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-10",
@@ -375,6 +519,30 @@
       "Explore innovative offset projects, such as reforestation or community-based initiatives, to enhance sustainability impact and public perception.",
       "Conduct regular audits of REC and offset usage to ensure alignment with evolving goals and compliance needs.",
       "C. Financial and Market Strategy"
+    ],
+    "formulas": [
+      {
+        "output": "REC Coverage (%)",
+        "variables": [
+          "RECs Procured",
+          "Total Electricity Generated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "REC Coverage (%) = (RECs Procured / Total Electricity Generated) x 100",
+        "step": "Assess Current REC Utilization"
+      },
+      {
+        "output": "Offset Coverage (%)",
+        "variables": [
+          "Carbon Offsets Procured",
+          "Total GHG Emissions"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Offset Coverage (%) = (Carbon Offsets Procured / Total GHG Emissions)",
+        "step": "Quantify Carbon Offsets"
+      }
     ]
   },
   {
@@ -414,7 +582,8 @@
       "Regularly review and update contracts to adapt to evolving market trends, regulatory changes, and operational shifts.",
       "Invest in operational flexibility to meet PPA volume commitments more consistently, reducing penalties and maximizing revenue.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-12",
@@ -454,6 +623,54 @@
       "Use strategic procurement strategies to minimize CapEx during plant construction or expansion phases.",
       "Monitor market and regulatory trends to capitalize on incentives that reduce lifecycle costs, such as tax credits or subsidies for clean energy technologies.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Lifecycle Costs",
+        "variables": [
+          "CapEx",
+          "Annual OpEx",
+          "Plant Lifespan",
+          "Decommissioning Costs"
+        ],
+        "expression": "v0 + ( v1 * v2 ) + v3",
+        "percentOutput": false,
+        "source": "Total Lifecycle Costs = CapEx + (Annual OpEx x Plant Lifespan) + Decommissioning Costs",
+        "step": "Calculate Total Lifecycle Costs"
+      },
+      {
+        "output": "Total Generation (Mffh)",
+        "variables": [
+          "Annual Electricity Generation (Mffh)",
+          "Plant"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Total Generation (Mffh) = Annual Electricity Generation (Mffh) x Plant",
+        "step": "Calculate Total Electricity Generation"
+      },
+      {
+        "output": "LCOE ($/Mffh)",
+        "variables": [
+          "Total Lifecycle Costs",
+          "Total Generation (Mffh)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "LCOE ($/Mffh) = Total Lifecycle Costs / Total Generation (Mffh)",
+        "step": "Calculate LCOE"
+      },
+      {
+        "output": "Discounted LCOE",
+        "variables": [
+          "Sum of Discounted Costs",
+          "Sum of Discounted Electricity Generation"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Discounted LCOE = (Sum of Discounted Costs) / (Sum of Discounted Electricity Generation)",
+        "step": "Incorporate Discount Rate"
+      }
     ]
   },
   {
@@ -494,6 +711,30 @@
       "Collaborate with financial advisors or consultants to develop customized hedging strategies that align with revenue targets and risk profiles.",
       "Establish internal policies for hedging thresholds and periodic performance reviews to ensure continuous improvement.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Spot Market Exposure (%)",
+        "variables": [
+          "Spot Market Sales",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Spot Market Exposure (%) = (Spot Market Sales / Total Sales) x 100",
+        "step": "Analyze Market Price Exposure"
+      },
+      {
+        "output": "Hedging Coverage (%)",
+        "variables": [
+          "Hedged Volume",
+          "Total Generation Volume"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Hedging Coverage (%) = (Hedged Volume / Total Generation Volume) x 100",
+        "step": "Evaluate Hedging Coverage"
+      }
     ]
   },
   {
@@ -535,6 +776,30 @@
       "Explore opportunities in emerging markets, such as energy storage, to provide high-value grid services.",
       "Conduct regular performance reviews to identify and capitalize on underutilized revenue streams.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Payment Revenue ($)",
+        "variables": [
+          "Contracted Capacity (MW)",
+          "Payment"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Capacity Payment Revenue ($) = Contracted Capacity (MW) x Payment",
+        "step": "Assess Capacity Payments"
+      },
+      {
+        "output": "Ancillary Service Contribution (%)",
+        "variables": [
+          "Revenue from Service",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Ancillary Service Contribution (%) = (Revenue from Service / Total Revenue) x 100",
+        "step": "Evaluate Ancillary Service Revenue"
+      }
     ]
   },
   {
@@ -569,6 +834,30 @@
       "Improve revenue streams by exploring higher-margin market opportunities (e.g., renewable energy incentives or premium markets).",
       "Conduct regular reviews of capital deployment strategies to ensure alignment with market trends and organizational goals.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Invested Capital",
+        "variables": [
+          "Fixed Assets",
+          "Net Working Capital"
+        ],
+        "expression": "v0 + v1",
+        "percentOutput": false,
+        "source": "Invested Capital = Fixed Assets + Net Working Capital",
+        "step": "Determine Invested Capital"
+      },
+      {
+        "output": "ROIC (%)",
+        "variables": [
+          "EBIT",
+          "Invested Capital"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROIC (%) = (EBIT / Invested Capital) x 100",
+        "step": "Calculate ROIC"
+      }
     ]
   },
   {
@@ -612,7 +901,8 @@
       "Invest in energy storage systems to enable arbitrage and enhance participation in peak pricing periods.",
       "Regularly review market trends, pricing, and regulatory developments to adapt strategies proactively.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-17",
@@ -654,6 +944,19 @@
       "",
       "Regularly review and recalibrate forecasting models to adapt to changing market dynamics and emerging trends.",
       "D. Regulatory and Environmental Compliance"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Impact ($)",
+        "variables": [
+          "Generation Output (Mffh)",
+          "Forecasted Spot Price"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Revenue Impact ($) = Generation Output (Mffh) x Forecasted Spot Price",
+        "step": "Incorporate Market Scenarios"
+      }
     ]
   },
   {
@@ -693,6 +996,30 @@
       "Conduct regular audits of emissions data to ensure accuracy and identify trends early.",
       "Train operational staff on best practices for minimizing emissions and meeting compliance standards.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Emissions Intensity",
+        "variables": [
+          "Total Emissions (tons)",
+          "Total Electricity Generated"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Emissions Intensity = Total Emissions (tons) / Total Electricity Generated",
+        "step": "Collect Emissions Data"
+      },
+      {
+        "output": "Penalty Cost",
+        "variables": [
+          "Emissions Exceeding Limit",
+          "Penalty Rate"
+        ],
+        "expression": "( v0 ) * v1",
+        "percentOutput": false,
+        "source": "Penalty Cost = (Emissions Exceeding Limit) x Penalty Rate",
+        "step": "Assess Financial Implications"
+      }
     ]
   },
   {
@@ -729,6 +1056,19 @@
       "Regularly monitor and maintain emission control systems to sustain performance and avoid efficiency degradation.",
       "Engage with industry groups and regulators to stay informed about emerging technologies and potential incentives for upgrades.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost Efficiency ($/ton)",
+        "variables": [
+          "Total Operating Cost",
+          "Pollutant Removed (tons)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost Efficiency ($/ton) = Total Operating Cost / Pollutant Removed (tons)",
+        "step": "Assess Cost-Effectiveness"
+      }
     ]
   },
   {
@@ -765,7 +1105,8 @@
       "Develop contingency plans for rapid adaptation to new regulations, minimizing operational disruptions.",
       "Allocate a dedicated compliance team to oversee adherence efforts and coordinate with regulators.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-21",
@@ -804,7 +1145,8 @@
       "Engage with regulatory bodies to stay updated on evolving standards and proactively align operations with future requirements.",
       "Allocate resources for periodic third-party audits to validate compliance and identify improvement areas.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-22",
@@ -843,7 +1185,8 @@
       "Regularly monitor emissions data to track progress toward decarbonization goals.",
       "Engage stakeholders to align decarbonization efforts with broader corporate sustainability strategies and reporting requirements.",
       "E. Grid Integration and Reliability"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-23",
@@ -881,6 +1224,19 @@
       "Engage in long-term planning to align grid infrastructure with renewable energy integration and future demand growth.",
       "Explore partnerships or funding opportunities to share the costs of large-scale transmission improvements with stakeholders.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Electricity Flow",
+          "Maximum Transmission Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Electricity Flow / Maximum Transmission Capacity) x 100",
+        "step": "Analyze Electricity Flows"
+      }
     ]
   },
   {
@@ -920,6 +1276,30 @@
       "Conduct regular training for operations teams to enhance performance during stability and balancing challenges.",
       "Engage in long-term planning to integrate renewable energy sources while maintaining grid reliability and stability.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "SAIDI (minutes)",
+        "variables": [
+          "Total Duration of Customer Interruptions",
+          "Total Number of Customers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "SAIDI (minutes) = (Total Duration of Customer Interruptions / Total Number of Customers)",
+        "step": "Assess Grid Reliability Metrics"
+      },
+      {
+        "output": "SAIFI",
+        "variables": [
+          "Total Number of Customer Interruptions",
+          "Total Number of Customers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "SAIFI = (Total Number of Customer Interruptions / Total Number of Customers)",
+        "step": "Assess Grid Reliability Metrics"
+      }
     ]
   },
   {
@@ -958,7 +1338,8 @@
       "Conduct training programs for operations teams to manage and mitigate frequency and voltage deviations more effectively.",
       "Explore the integration of energy storage systems to support both frequency and voltage regulation.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-26",
@@ -995,7 +1376,8 @@
       "Address non-technical losses through improved metering, theft detection, and enforcement measures.",
       "Engage in long-term planning to align transmission upgrades with renewable energy integration and future demand growth.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-27",
@@ -1033,7 +1415,8 @@
       "Monitor regulatory requirements and align black start capabilities with updated compliance standards.",
       "Implement predictive maintenance tools to ensure black start equipment remains operational during emergencies.",
       "F. Risk Management and Resilience"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-28",
@@ -1070,7 +1453,8 @@
       "Engage in long-term planning to align infrastructure upgrades with projected climate trends and regulatory requirements.",
       "Train operational staff to implement resilience measures effectively during and after weather events.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-29",
@@ -1113,6 +1497,30 @@
       "Develop partnerships with fuel suppliers to gain preferential terms and improve supply chain stability.",
       "Conduct regular reviews of hedging strategies to ensure alignment with market conditions and organizational risk tolerance.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Price Volatility (%)",
+        "variables": [
+          "Standard Deviation of Prices",
+          "Average Price"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Price Volatility (%) = (Standard Deviation of Prices / Average Price) x 100",
+        "step": "Analyze Historical Fuel Price Volatility"
+      },
+      {
+        "output": "Fuel Cost Exposure (%)",
+        "variables": [
+          "Fuel Costs",
+          "Total Generation Costs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fuel Cost Exposure (%) = (Fuel Costs / Total Generation Costs) x 100",
+        "step": "Assess Fuel Cost Exposure"
+      }
     ]
   },
   {
@@ -1150,7 +1558,8 @@
       "Foster a culture of safety through leadership commitment, employee engagement, and recognition of safety best practices.",
       "Collaborate with industry peers to adopt and implement proven safety innovations and methodologies.",
       "G. Renewable Energy and Sustainability"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-31",
@@ -1192,6 +1601,19 @@
       "Conduct workforce training programs to equip staff with the skills needed for operating and maintaining renewable systems.",
       "Regularly review and update the renewable energy strategy to align with evolving market conditions, technology advancements, and policy changes.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Renewable Share (%)",
+        "variables": [
+          "Renewable Energy Output",
+          "Total Energy Output"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Renewable Share (%) = (Renewable Energy Output / Total Energy Output)",
+        "step": "Assess Current Energy Mix"
+      }
     ]
   },
   {
@@ -1230,7 +1652,8 @@
       "Collaborate with grid operators to integrate ancillary services, such as spinning reserves, into the renewable energy strategy.",
       "Monitor and adapt intermittency management strategies to align with evolving grid conditions, renewable penetration levels, and market trends.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-33",
@@ -1271,6 +1694,31 @@
       "Monitor and evaluate system performance post-implementation to ensure expected efficiency gains and cost savings are realized.",
       "Regularly review technological advancements in heat recovery and cogeneration to stay competitive and maintain operational efficiency.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Waste Heat (MW)",
+        "variables": [
+          "Heat Input (MW)",
+          "Useful Energy Output (MW)"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Total Waste Heat (MW) = Heat Input (MW) - Useful Energy Output (MW).",
+        "step": "Quantify Waste Heat Availability"
+      },
+      {
+        "output": "Overall Efficiency (%)",
+        "variables": [
+          "Electricity Output",
+          "Useful Heat Output",
+          "Total"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Overall Efficiency (%) = (Electricity Output + Useful Heat Output) / Total",
+        "step": "Evaluate Cogeneration Feasibility"
+      }
     ]
   },
   {
@@ -1308,7 +1756,8 @@
       "Develop contingency plans to address fuel constraints and unexpected demand spikes.",
       "Regularly review and update operational practices to ensure alignment with evolving demand patterns and regulatory requirements.",
       "H. Technological Innovation and Modernization"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-35",
@@ -1344,7 +1793,8 @@
       "Leverage advanced analytics and AI to optimize grid operations and improve forecasting capabilities.",
       "Regularly assess and update the grid modernization strategy to align with emerging technologies and regulatory changes.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-36",
@@ -1384,6 +1834,33 @@
       "Train operational teams to manage and maintain storage systems effectively, ensuring long-term performance.",
       "Use advanced forecasting tools to optimize charge and discharge cycles for maximum financial and operational benefits.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Round-Trip Efficiency (%)",
+        "variables": [
+          "Energy Discharged",
+          "Energy Charged"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Round-Trip Efficiency (%) = (Energy Discharged / Energy Charged) x 100",
+        "step": "Evaluate Storage Technologies"
+      },
+      {
+        "output": "Lifecycle Cost ($/Mffh)",
+        "variables": [
+          "CapEx",
+          "OpEx",
+          "Lifespan",
+          "Replacement Costs",
+          "Total Energy Stored (Mffh)"
+        ],
+        "expression": "( v0 + ( v1 * v2 ) + v3 ) / v4",
+        "percentOutput": false,
+        "source": "Lifecycle Cost ($/Mffh) = (CapEx + (OpEx x Lifespan) + Replacement Costs) / Total Energy Stored (Mffh)",
+        "step": "Calculate Lifecycle Costs"
+      }
     ]
   },
   {
@@ -1425,7 +1902,8 @@
       "Train grid operators and planners on managing the unique challenges posed by DG systems.",
       "Regularly assess and upgrade interconnection standards to ensure safe and efficient integration of DG sources.",
       "I. Capacity Planning and Utilization"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-38",
@@ -1465,7 +1943,8 @@
       "Develop contingency plans for scenarios of extreme demand, such as unexpected weather events or rapid economic changes.",
       "Explore regional partnerships to balance demand and supply through grid interconnections and shared resources.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-39",
@@ -1504,7 +1983,8 @@
       "Use advanced forecasting tools to refine seasonal demand and resource adequacy predictions.",
       "Monitor regulatory requirements and update resource adequacy planning to align with evolving standards.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-40",
@@ -1546,7 +2026,8 @@
       "Regularly update demand forecasts and capacity assessments to ensure reserve margins align with evolving conditions.",
       "Collaborate with regulators to refine reserve margin requirements and integrate innovative solutions, such as virtual power plants.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-41",
@@ -1586,6 +2067,19 @@
       "Collaborate with regulators to access incentives or funding for DR program expansion.",
       "Continuously monitor and evaluate program performance to identify and address gaps in effectiveness.",
       "J. Lifecycle and Asset Management"
+    ],
+    "formulas": [
+      {
+        "output": "Load Reduction (%)",
+        "variables": [
+          "Demand Reduction During Event",
+          "Baseline Demand"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Reduction (%) = (Demand Reduction During Event / Baseline Demand) x 100",
+        "step": "Evaluate Program Effectiveness"
+      }
     ]
   },
   {
@@ -1630,7 +2124,8 @@
       "Enhance workforce training to improve the effectiveness of maintenance activities and reduce repair time.",
       "Monitor and adjust the long-term plan based on emerging trends, regulatory changes, and technological advancements.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-43",
@@ -1670,6 +2165,30 @@
       "Engage in long-term planning to balance short-term operational needs with strategic investments in asset renewal.",
       "Regularly update the asset inventory and lifecycle analysis to align with evolving operational demands and market trends.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Asset Age (Years)",
+        "variables": [
+          "Current Year",
+          "Installation Year"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Asset Age (Years) = Current Year - Installation Year",
+        "step": "Determine Asset Age Profiles"
+      },
+      {
+        "output": "Remaining Life (Years)",
+        "variables": [
+          "Useful Life (Years)",
+          "Asset Age (Years)"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Remaining Life (Years) = Useful Life (Years) - Asset Age (Years)",
+        "step": "Assess Remaining Useful Life"
+      }
     ]
   },
   {
@@ -1708,7 +2227,8 @@
       "Regularly update cost and timeline estimates based on lessons learned from ongoing and completed projects.",
       "Collaborate with regulators and local communities to ensure transparency and alignment with expectations during the decommissioning process.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-45",
@@ -1746,6 +2266,19 @@
       "Conduct regular maintenance on transmission and distribution systems to minimize losses due to wear and inefficiencies.",
       "Explore flexible interconnection agreements to export surplus energy and reduce curtailment.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Curtailment Rate (%)",
+        "variables": [
+          "Curtailment Energy",
+          "Total Potential Generation"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Curtailment Rate (%) = (Curtailment Energy / Total Potential Generation) x 100",
+        "step": "Collect and Analyze Curtailment Data"
+      }
     ]
   },
   {
@@ -1784,7 +2317,8 @@
       "Enhance grid flexibility through advanced technologies, such as phase-shifting transformers or HVDC systems, to improve trade efficiency.",
       "Regularly monitor and evaluate trade patterns and interconnection performance to adjust strategies based on evolving market dynamics.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "electricity-generation-47",
@@ -1821,6 +2355,19 @@
       "Engage in water stewardship programs and collaborate with local authorities to manage water resources sustainably.",
       "Regularly review and update cooling technologies to align with emerging trends, such as water-efficient cooling systems and renewable energy integration.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Water Intensity (gallons/Mffh)",
+        "variables": [
+          "Total Water Consumption (gallons)",
+          "Total"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Water Intensity (gallons/Mffh) = Total Water Consumption (gallons) / Total",
+        "step": "Assess Current Water Usage"
+      }
     ]
   }
 ]

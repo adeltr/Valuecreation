@@ -37,6 +37,19 @@
       "Establish robust financial assurance funds or insurance instruments to manage closure/post-closure liabilities.",
       "Integrate renewable energy projects (e.g., landfill gas-to-energy) to offset some closure costs and improve sustainability outcomes.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Remaining Landfill Life (years)",
+        "variables": [
+          "Remaining Airspace (cubic yards)",
+          "Annual Disposal Volume (cubic yards per year)"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Remaining Landfill Life (years) = (Remaining Airspace (cubic yards) / Annual Disposal Volume (cubic yards per year))",
+        "step": "Calculate remaining landfill life"
+      }
     ]
   },
   {
@@ -74,7 +87,8 @@
       "Implement pretreatment options (e.g., aeration, biological treatment) to lower contaminant loads.",
       "Investigate alternative leachate disposal or beneficial reuse strategies, such as recirculation in bioreactor landfills or industrial reuse.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-03",
@@ -111,7 +125,8 @@
       "",
       "Implement continuous monitoring and reporting systems to track residual volumes and costs in real time, enabling proactive adjustments.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-04",
@@ -146,6 +161,19 @@
       "Explore partnerships with producers and retailers to encourage upstream waste reduction (e.g., reduced packaging).",
       "Develop flexible waste management infrastructure that can adapt to evolving waste streams (e.g., modular MRFs, scalable composting facilities).",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Annual Growth Rate (%)",
+        "variables": [
+          "Current Year Volume",
+          "Previous Year Volume"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Annual Growth Rate (%) = ((Current Year Volume - Previous Year Volume) / Previous Year Volume) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -183,7 +211,8 @@
       "Invest in ongoing site monitoring and maintenance to preserve cap integrity and ensure long-term project sustainability.",
       "Diversify redevelopment options (e.g., mixed-use concepts) to spread risk and maximize potential revenue.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-06",
@@ -218,6 +247,21 @@
       "Investigate potential funding or incentives from government agencies that support circular economy initiatives.",
       "Develop robust environmental management plans to address emissions, odors, and potential public concerns during excavation.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Economic Value (USD)",
+        "variables": [
+          "Revenue from Recovered Materials",
+          "Value of Reclaimed Airspace",
+          "Excavation and Processing Costs",
+          "Disposal of Residue"
+        ],
+        "expression": "( v0 + v1 ) - ( v2 + v3 )",
+        "percentOutput": false,
+        "source": "Net Economic Value (USD) = (Revenue from Recovered Materials + Value of Reclaimed Airspace) - (Excavation and Processing Costs + Disposal of Residue)",
+        "step": null
+      }
     ]
   },
   {
@@ -255,6 +299,19 @@
       "Evaluate the addition of co-digestion feedstocks (e.g., biosolids) that may accelerate decomposition and boost methane yields.",
       "Conduct regular maintenance and audits of the liners, piping, and well systems to prevent leaks and maintain efficient operations.",
       "B. Recycling & Materials Recovery"
+    ],
+    "formulas": [
+      {
+        "output": "Methane Yield (cubic meters CH4 per tonne of waste)",
+        "variables": [
+          "Total Methane Collected Over a Period",
+          "Total Waste Landfilled Over the Same Period"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Methane Yield (cubic meters CH4 per tonne of waste) = (Total Methane Collected Over a Period) / (Total Waste Landfilled Over the Same Period)",
+        "step": null
+      }
     ]
   },
   {
@@ -294,6 +351,30 @@
       "Collaborate with municipalities or suppliers to improve inbound material quality and reduce contamination.",
       "Monitor commodity market trends and adjust the material mix or processing focus to maximize revenue opportunities.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Throughput (tons/hour)",
+        "variables": [
+          "Total Tons Processed in a Period",
+          "Total Operating Hours in the Same Period"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Throughput (tons/hour) = (Total Tons Processed in a Period) / (Total Operating Hours in the Same Period)",
+        "step": null
+      },
+      {
+        "output": "Recovery Rate (%)",
+        "variables": [
+          "Marketable Recovered Materials",
+          "Inbound Recyclables"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate (%) = ((Marketable Recovered Materials) / (Inbound Recyclables)) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -329,6 +410,19 @@
       "Evaluate and upgrade sorting technologies (e.g., optical sorters) to improve material capture rates.",
       "Collaborate with local stakeholders, including municipalities and recyclers, to expand markets for recovered materials and secure more stable commodity pricing.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Recycling Rate (%)",
+        "variables": [
+          "Total Recycled Material",
+          "Total Waste Generated"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Recycling Rate (%) = ((Total Recycled Material) / (Total Waste Generated)) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -368,7 +462,8 @@
       "Regularly monitor and forecast commodity prices using reputable market intelligence to adjust sales timing or inventory strategies.",
       "Invest in improving material quality (e.g., reducing contamination) to secure better prices and expand potential buyers.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-11",
@@ -406,7 +501,8 @@
       "Engage in industry coalitions or circular economy initiatives to expand the overall market for high-quality recycled plastics.",
       "Implement robust tracking and reporting tools to document plastic credit purchases and recycled content usage, ensuring transparency and credibility.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-12",
@@ -443,7 +539,8 @@
       "Integrate renewable energy components (solar, biogas utilization) to reduce the facility’s environmental footprint and operating costs.",
       "Implement robust monitoring systems for material flow and performance metrics, enabling continuous optimization of operations.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-13",
@@ -477,6 +574,19 @@
       "",
       "Leverage green building certifications and local regulations to secure funding, tax benefits, or recognition for high diversion performance.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Diversion Rate (%)",
+        "variables": [
+          "C&D Waste Diverted",
+          "Total C&D Waste Generated"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Diversion Rate (%) = ((C&D Waste Diverted) / (Total C&D Waste Generated)) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -516,7 +626,8 @@
       "Advocate for supportive policies (e.g., minimum recycled content legislation) to spur end-market demand.",
       "Invest in market intelligence and regular communication with buyers to anticipate demand shifts and adapt quickly.",
       "C. Organics & Composting"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-15",
@@ -553,6 +664,19 @@
       "Implement rigorous monitoring protocols (temperature, moisture, odor) and adjust operations promptly to address issues.",
       "Explore new markets or value-added products (e.g., bagged compost, specialty soil blends) to increase revenue and justify process enhancements.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Mass Reduction (%)",
+        "variables": [
+          "Incoming Feedstock Mass",
+          "Outgoing Compost Mass"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Mass Reduction (%) = ((Incoming Feedstock Mass - Outgoing Compost Mass) / Incoming Feedstock Mass) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -589,7 +713,8 @@
       "",
       "Continuously monitor compost quality and operational metrics to refine processes and maximize efficiency.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-17",
@@ -626,6 +751,20 @@
       "Explore additional end markets or refine outputs (e.g., high-quality compost, RDF) to increase revenue streams.",
       "Implement continuous monitoring and advanced control systems to proactively address process variations and reduce downtime.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Diversion Rate (%)",
+        "variables": [
+          "Amount of Recovered",
+          "Processed Material",
+          "Total Incoming Waste"
+        ],
+        "expression": "( ( v0 / v1 ) / ( v2 ) ) * 100",
+        "percentOutput": true,
+        "source": "Diversion Rate (%) = ((Amount of Recovered/Processed Material) / (Total Incoming Waste)) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -658,7 +797,8 @@
       "",
       "Develop a public outreach strategy to educate the community on the benefits and safety measures associated with biosolids use.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-19",
@@ -694,6 +834,19 @@
       "Explore beneficial uses or markets for high-quality digestate (e.g., land application, soil amendments).",
       "Collaborate with local waste collectors or municipalities to ensure a consistent supply of organic-rich MSW.",
       "D. Waste-to-Energy & Thermal Treatment"
+    ],
+    "formulas": [
+      {
+        "output": "Daily Biogas Yield (cubic meters/day)",
+        "variables": [
+          "Total Biogas Produced in a Period",
+          "Number of Days in the Same Period"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Daily Biogas Yield (cubic meters/day) = (Total Biogas Produced in a Period) / (Number of Days in the Same Period)",
+        "step": null
+      }
     ]
   },
   {
@@ -733,6 +886,19 @@
       "Pursue opportunities to secure renewable energy credits, carbon offsets, or grants that enhance project profitability.",
       "Implement ongoing performance monitoring (e.g., SCADA systems) to fine-tune operations and adapt to changing landfill conditions.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Simple Payback (years)",
+        "variables": [
+          "Total Capital Investment",
+          "Annual Net Revenue"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Simple Payback (years) = (Total Capital Investment) / (Annual Net Revenue)",
+        "step": null
+      }
     ]
   },
   {
@@ -772,6 +938,19 @@
       "Conduct regular predictive and preventive maintenance to minimize unplanned downtime and extend equipment life.",
       "Explore co-firing with complementary fuels or feedstocks (e.g., biomass) to boost calorific input and further optimize plant output.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Plant Efficiency (%)",
+        "variables": [
+          "Net Electrical Output (kffh)",
+          "Energy Input from Waste (kffh)"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Net Plant Efficiency (%) = ((Net Electrical Output (kffh)) / (Energy Input from Waste (kffh))) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -805,7 +984,8 @@
       "Engage with potential off-takers (e.g., local utilities, industrial users) early to secure long-term contracts for syngas or power purchase.",
       "Integrate robust monitoring and control systems to maintain optimal process conditions and ensure consistent product quality.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-23",
@@ -842,7 +1022,8 @@
       "Implement ongoing testing and quality control to ensure consistent metal purity and maintain competitiveness in the metals market.",
       "Review and optimize incineration parameters (e.g., combustion temperature, residence time) to improve ash quality and facilitate metal recovery.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-24",
@@ -876,7 +1057,8 @@
       "Investigate combining thermal treatment with complementary methods (e.g., soil washing for metals) for more comprehensive remediation.",
       "Engage with regulators early to streamline permitting, secure approvals, and confirm acceptable post-treatment soil uses or disposal options.",
       "E. Fleet & Collection Optimization"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-25",
@@ -917,6 +1099,19 @@
       "Provide driver training on efficient driving techniques and proper vehicle operation to reduce fuel consumption and maintenance costs.",
       "Schedule periodic reviews of routes and fleet performance, allowing for adjustments as population densities or customer demands change.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Route Density (tons/mile)",
+        "variables": [
+          "Total Waste Collected on Route (tons)",
+          "Total Miles Driven on Route"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Route Density (tons/mile) = (Total Waste Collected on Route (tons)) / (Total Miles Driven on Route)",
+        "step": null
+      }
     ]
   },
   {
@@ -956,6 +1151,20 @@
       "Explore public-private partnerships or cost-sharing models to reduce upfront capital expenses.",
       "Continuously refine operational strategies (e.g., scheduling collection routes to align with transfer station hours) to maximize the benefits of an optimized network.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Transport Cost (USD/year)",
+        "variables": [
+          "Annual Tonnage",
+          "Average Distance Traveled",
+          "Cost per Mile"
+        ],
+        "expression": "( v0 * v1 * v2 )",
+        "percentOutput": false,
+        "source": "Transport Cost (USD/year) = (Annual Tonnage x Average Distance Traveled x Cost per Mile)",
+        "step": null
+      }
     ]
   },
   {
@@ -996,6 +1205,22 @@
       "Use telematics and real-time monitoring to optimize routes and maximize the operational benefits of alternative fuel vehicles.",
       "Continuously track and evaluate vehicle performance, adjusting the fleet conversion strategy as technologies evolve and cost structures change.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "TCO (USD)",
+        "variables": [
+          "Capital Cost",
+          "Annual Operating Cost",
+          "Vehicle Lifespan",
+          "Incentives",
+          "Grants"
+        ],
+        "expression": "v0 + ( v1 * v2 ) - v3 / v4",
+        "percentOutput": false,
+        "source": "TCO (USD) = Capital Cost + (Annual Operating Cost x Vehicle Lifespan) - Incentives/Grants",
+        "step": null
+      }
     ]
   },
   {
@@ -1032,6 +1257,19 @@
       "Consider establishing a central drop-off facility with sorting and triage for repair, recycling, or reuse channels.",
       "Monitor key metrics (cost per pickup, diversion rate, customer satisfaction) regularly to refine the program and target the greatest impact.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Bulky Waste Diversion Rate (%)",
+        "variables": [
+          "Diverted Bulky Waste",
+          "Total Bulky Waste Collected"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Bulky Waste Diversion Rate (%) = ((Diverted Bulky Waste) / (Total Bulky Waste Collected)) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1071,6 +1309,19 @@
       "Conduct regular audits and feedback loops (e.g., tagging bins with errors) to reduce contamination over time.",
       "Explore incentive or reward systems (e.g., pay-as-you-throw, recycling rebates) to encourage better source separation and higher participation.",
       "F. Hazardous & Specialized Waste Handling"
+    ],
+    "formulas": [
+      {
+        "output": "Capture Rate (%)",
+        "variables": [
+          "Amount of Targeted Material Correctly Collected",
+          "Total Amount of Targeted Material in Waste Stream"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capture Rate (%) = ((Amount of Targeted Material Correctly Collected) / (Total Amount of Targeted Material in Waste Stream)) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1104,6 +1355,21 @@
       "Investigate opportunities for onsite treatment or recycling (e.g., solvent recovery systems) where regulations permit.",
       "Conduct regular audits and inspections, updating procedures and documentation to maintain continuous compliance.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Hazardous Waste Cost (USD)",
+        "variables": [
+          "Collection and Packaging Costs",
+          "Transport Costs",
+          "Disposal",
+          "Treatment Fees"
+        ],
+        "expression": "( v0 + v1 + v2 / v3 )",
+        "percentOutput": false,
+        "source": "Total Hazardous Waste Cost (USD) = (Collection and Packaging Costs + Transport Costs + Disposal/Treatment Fees)",
+        "step": null
+      }
     ]
   },
   {
@@ -1140,6 +1406,21 @@
       "Explore extended producer responsibility (EPR) or manufacturer take-back programs to share costs and logistical burdens.",
       "Integrate robust tracking and reporting tools to measure collection volumes, recycling rates, and revenue trends, enabling ongoing optimization.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Program Cost (or Revenue) (USD)",
+        "variables": [
+          "Collection",
+          "Transportation",
+          "Processing Costs",
+          "Revenue from Recovered Materials"
+        ],
+        "expression": "( v0 + v1 + v2 ) - ( v3 )",
+        "percentOutput": false,
+        "source": "Net Program Cost (or Revenue) (USD) = (Collection + Transportation + Processing Costs) - (Revenue from Recovered Materials)",
+        "step": null
+      }
     ]
   },
   {
@@ -1172,6 +1453,20 @@
       "Evaluate alternative treatment or recycling options that may reduce disposal costs and environmental impact.",
       "Maintain comprehensive records, including waste manifests and disposal certificates, to demonstrate ongoing compliance and support internal tracking.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Special Waste Management Cost (USD)",
+        "variables": [
+          "Packaging and Container Costs",
+          "Transport Fees",
+          "Disposal or Treatment Fees"
+        ],
+        "expression": "( v0 + v1 + v2 )",
+        "percentOutput": false,
+        "source": "Total Special Waste Management Cost (USD) = (Packaging and Container Costs + Transport Fees + Disposal or Treatment Fees)",
+        "step": null
+      }
     ]
   },
   {
@@ -1211,6 +1506,19 @@
       "Offer incentives or rewards (e.g., discount coupons) for households that responsibly dispose of HHW.",
       "Regularly review and update contractor agreements to ensure competitive pricing for disposal and treatment services.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Capture Rate (%)",
+        "variables": [
+          "HHW Collected",
+          "Estimated Total HHW Generated"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capture Rate (%) = ((HHW Collected) / (Estimated Total HHW Generated)) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1247,6 +1555,22 @@
       "Promote recycling options to employees or customers, highlighting the health and environmental risks of improper disposal.",
       "Maintain detailed records of volumes collected, recycling manifests, and any incidents for ongoing compliance and continuous improvement.",
       "G. Regulatory Compliance & Environmental Impact"
+    ],
+    "formulas": [
+      {
+        "output": "Total Program Cost (USD)",
+        "variables": [
+          "Collection Containers",
+          "Transport",
+          "Shipping Fees",
+          "Recycling",
+          "Disposal Charges"
+        ],
+        "expression": "( v0 + v1 / v2 + v3 / v4 )",
+        "percentOutput": false,
+        "source": "Total Program Cost (USD) = (Collection Containers + Transport/Shipping Fees + Recycling/Disposal Charges)",
+        "step": null
+      }
     ]
   },
   {
@@ -1281,7 +1605,8 @@
       "Engage in open communication with local stakeholders, addressing concerns proactively and building community trust.",
       "Conduct periodic internal audits and invite third-party assessors to verify compliance and recommend continuous improvements.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-36",
@@ -1318,7 +1643,8 @@
       "Involve community stakeholders early to address concerns about post-closure land use or potential environmental impacts.",
       "Implement robust recordkeeping and monitoring during facility operations to reduce uncertainty and surprises at closure time.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-37",
@@ -1354,7 +1680,8 @@
       "",
       "Engage the local community, providing channels for immediate odor reporting and demonstrating the facility’s commitment to timely mitigation.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-38",
@@ -1390,6 +1717,19 @@
       "Foster partnerships with recyclers and municipal waste managers to improve logistical efficiency and lower processing costs.",
       "Conduct regular audits and public reporting to maintain transparency and drive continuous improvement of the EPR program.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Recycling Rate Change (%)",
+        "variables": [
+          "Current EPR Recycling Rate",
+          "Baseline Recycling Rate"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recycling Rate Change (%) = ((Current EPR Recycling Rate - Baseline Recycling Rate) / Baseline Recycling Rate) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1427,7 +1767,8 @@
       "Invest in staff training on sampling protocols, treatment system operations, and emergency response procedures.",
       "Maintain open communication channels with regulatory agencies and the public to build trust and demonstrate proactive environmental stewardship.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-40",
@@ -1461,7 +1802,8 @@
       "Explore nature-based solutions (e.g., constructed wetlands, vegetated swales) to enhance infiltration and reduce runoff loads.",
       "Collaborate with local authorities and community stakeholders to address broader flood risks and integrate landfill resilience into regional stormwater management plans.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-41",
@@ -1501,6 +1843,20 @@
       "Implement operational efficiencies (route optimization, technology for billing accuracy) to mitigate the financial impact of franchise fees.",
       "Periodically benchmark against neighboring jurisdictions or industry standards to advocate for reasonable fee structures that reflect actual market conditions.",
       "H. Financial & Contractual Structuring"
+    ],
+    "formulas": [
+      {
+        "output": "Net Margin Under Franchise (USD)",
+        "variables": [
+          "Total Revenue from Collection",
+          "Operating Costs",
+          "Franchise Fees"
+        ],
+        "expression": "( v0 - v1 - v2 )",
+        "percentOutput": false,
+        "source": "Net Margin Under Franchise (USD) = (Total Revenue from Collection - Operating Costs - Franchise Fees)",
+        "step": null
+      }
     ]
   },
   {
@@ -1543,6 +1899,20 @@
       "Implement performance tracking to proactively address service issues and avoid penalties, improving contract profitability.",
       "Use market intelligence and competitor pricing data to set more accurate rates and avoid undercutting the market.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Profit (or Loss) per Contract (USD)",
+        "variables": [
+          "Total Revenue",
+          "Direct Operating Costs",
+          "Allocated Overhead"
+        ],
+        "expression": "( v0 ) - ( v1 ) - ( v2 )",
+        "percentOutput": false,
+        "source": "Profit (or Loss) per Contract (USD) = (Total Revenue) - (Direct Operating Costs) - (Allocated Overhead)",
+        "step": null
+      }
     ]
   },
   {
@@ -1581,6 +1951,19 @@
       "Adjust pricing structures or contract terms to better reflect the true costs and value of each segment.",
       "Regularly review and update segmentation criteria as waste streams evolve (e.g., shifts in packaging materials, changes in local regulations).",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Margin (USD)",
+        "variables": [
+          "Stream Revenue",
+          "Stream-Allocated Costs"
+        ],
+        "expression": "( v0 ) - ( v1 )",
+        "percentOutput": false,
+        "source": "Net Margin (USD) = (Stream Revenue) - (Stream-Allocated Costs)",
+        "step": null
+      }
     ]
   },
   {
@@ -1620,6 +2003,20 @@
       "Develop a detailed integration roadmap with milestones and accountability to secure cost savings and revenue enhancements quickly.",
       "Continuously monitor and refine post-acquisition operations, addressing issues early to maximize long-term value from the transaction.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Synergy Value (USD)",
+        "variables": [
+          "Projected Cost Reductions",
+          "Incremental Revenue",
+          "Integration Expenses"
+        ],
+        "expression": "( v0 + v1 ) - ( v2 )",
+        "percentOutput": false,
+        "source": "Synergy Value (USD) = (Projected Cost Reductions + Incremental Revenue) - (Integration Expenses)",
+        "step": null
+      }
     ]
   },
   {
@@ -1658,7 +2055,8 @@
       "Communicate clearly with stakeholders (e.g., municipalities, commercial haulers) about fee changes, ensuring transparency and rationales are well understood.",
       "Continuously monitor market trends and competitor actions to adapt pricing strategies as conditions evolve.",
       "I. Sustainability & ESG"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-46",
@@ -1691,7 +2089,8 @@
       "Regularly review and update ESG targets in response to evolving industry standards, technology advancements, and stakeholder expectations.",
       "Seek external assurance or third-party verification of ESG data to enhance credibility and demonstrate commitment to transparency.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-47",
@@ -1724,7 +2123,8 @@
       "Establish a community advisory panel or stakeholder group to gather ongoing feedback and collaborate on solutions.",
       "Regularly measure public sentiment (through surveys or social media monitoring) and adapt engagement tactics to address evolving concerns.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-48",
@@ -1758,7 +2158,8 @@
       "Build industry coalitions or consortiums to share best practices, scale impact, and pool investment in advanced recycling technologies.",
       "Set measurable targets (e.g., material recovery rates, carbon footprint reductions) to track and communicate progress to stakeholders.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-49",
@@ -1792,7 +2193,8 @@
       "Diversify emissions reduction efforts to lower overall risk; for instance, combine landfill gas capture with organics diversion.",
       "Monitor policy developments and carbon price trends, adjusting project investments or credit selling strategies accordingly.",
       "J. Technology & Innovation"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "waste-management-50",
@@ -1833,6 +2235,19 @@
       "Continuously monitor sorting performance post-installation, using data analytics or real-time dashboards to fine-tune operations.",
       "Explore ongoing partnerships or service agreements with technology providers for software updates, parts replacement, and system optimization.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Annual Net Benefit from Automated Sorting",
+          "Initial Investment"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Annual Net Benefit from Automated Sorting) / (Initial Investment)) x 100",
+        "step": null
+      }
     ]
   }
 ]

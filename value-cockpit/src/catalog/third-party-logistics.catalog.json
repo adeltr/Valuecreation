@@ -35,7 +35,8 @@
       "Expand or Consolidate Strategically",
       "Establish Collaborative Partnerships",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-02",
@@ -71,7 +72,8 @@
       "Diversify Carrier Base",
       "Invest in Technology",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-03",
@@ -107,6 +109,19 @@
       "Invest in Driver Training",
       "Expand Value-Added Services",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "On-Time Delivery Rate",
+        "variables": [
+          "Number of On-Time Deliveries",
+          "Total Deliveries"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "On-Time Delivery Rate = (Number of On-Time Deliveries / Total Deliveries) x 100",
+        "step": "Analyze Delivery Performance"
+      }
     ]
   },
   {
@@ -141,6 +156,19 @@
       "Strengthen Customer Collaboration",
       "Implement Preventive Maintenance",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Trailer Utilization Rate",
+        "variables": [
+          "Number of Loaded Movements",
+          "Total Trailers in Pool"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Trailer Utilization Rate = (Number of Loaded Movements / Total Trailers in Pool) x 100",
+        "step": "Calculate Dwell Times & Utilization Rates"
+      }
     ]
   },
   {
@@ -172,7 +200,8 @@
       "Streamline Container Management",
       "Leverage Multiple Providers",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-06",
@@ -205,7 +234,8 @@
       "Refine Scheduling & Dispatch",
       "Continuous Network Review",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-07",
@@ -237,7 +267,8 @@
       "Enhance 4PL Solutions",
       "Upskill Workforce",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-08",
@@ -269,6 +300,19 @@
       "Implement Dynamic Merge & Deconsolidation Points",
       "Analyze Trade-Offs",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Consolidation Rate",
+        "variables": [
+          "Number of Merged Shipments",
+          "Total Eligible Shipments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Consolidation Rate = (Number of Merged Shipments / Total Eligible Shipments) x 100",
+        "step": "Calculate Consolidation Rates"
+      }
     ]
   },
   {
@@ -306,6 +350,19 @@
       "Implement End-to-End Visibility",
       "Monitor Market Trends",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "On-Time Arrival Rate",
+        "variables": [
+          "Number of On-Time Arrivals",
+          "Total Shipments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "On-Time Arrival Rate = (Number of On-Time Arrivals / Total Shipments) x 100",
+        "step": "Evaluate On-Time Performance"
+      }
     ]
   },
   {
@@ -340,6 +397,19 @@
       "Promote Internal Buy-In",
       "Continuously Monitor & Refine",
       "B. Warehousing & Fulfillment"
+    ],
+    "formulas": [
+      {
+        "output": "Empty Miles Reduction Rate",
+        "variables": [
+          "Potential Empty Miles Reduced",
+          "Total Current Empty Miles"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Empty Miles Reduction Rate = (Potential Empty Miles Reduced / Total Current Empty Miles) x 100",
+        "step": "Calculate Expected Savings & Utilization Increases"
+      }
     ]
   },
   {
@@ -375,7 +445,8 @@
       "Stagger Arrival Times",
       "Conduct Regular Audits",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-12",
@@ -412,7 +483,8 @@
       "Train Warehouse Staff",
       "Incorporate Automation",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-13",
@@ -449,7 +521,8 @@
       "Automate Material Handling",
       "Prioritize Fast-Moving SKUs",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-14",
@@ -486,6 +559,19 @@
       "Enhance Training & Cross-Training",
       "Leverage Data & Continuous Improvement",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Units per Labor Hour",
+        "variables": [
+          "Total Units Produced",
+          "Total Labor Hours"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Units per Labor Hour = (Total Units Produced) / (Total Labor Hours)",
+        "step": "Measure Efficiency & Throughput"
+      }
     ]
   },
   {
@@ -519,7 +605,8 @@
       "Educate & Train Personnel",
       "Conduct Regular Audits",
       "C. Technology & Systems"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-16",
@@ -552,7 +639,8 @@
       "",
       "Plan for Scalability & Future Needs",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-17",
@@ -588,7 +676,8 @@
       "Leverage Analytics & Predictive Tools",
       "Conduct Ongoing Audits",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-18",
@@ -620,7 +709,8 @@
       "Expand Advanced Analytics Use Cases",
       "Promote a Data-Driven Culture",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-19",
@@ -655,7 +745,8 @@
       "",
       "Implement Continuous Improvement Processes",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-20",
@@ -687,7 +778,8 @@
       "Regularly Review KPIs & Adjust Processes",
       "Leverage Advanced Analytics",
       "D. Commercial & Contractual Structures"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-21",
@@ -724,7 +816,8 @@
       "Regularly Benchmark & Update Rates",
       "Leverage Data Analytics",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-22",
@@ -757,7 +850,8 @@
       "Implement Rigorous Performance Tracking",
       "Review Periodically",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-23",
@@ -794,7 +888,8 @@
       "Review & Update Periodically",
       "Balance Risks & Rewards",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-24",
@@ -828,7 +923,8 @@
       "Implement Clear SLAs",
       "Cross-Train Internal Teams",
       "E. Value-Added & Specialized Services"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-25",
@@ -867,7 +963,8 @@
       "Leverage Data & Analytics",
       "Expand Service Offerings Strategically",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-26",
@@ -903,7 +1000,8 @@
       "Plan for Seasonal Peaks",
       "Refine Returns Management",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-27",
@@ -940,7 +1038,8 @@
       "Implement Common Technology Platforms",
       "Engage Clients on Collaboration",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-28",
@@ -977,7 +1076,8 @@
       "Refine Inventory Policies",
       "Regularly Audit Performance & Root Causes",
       "F. Trade & Regulatory Compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-29",
@@ -1011,7 +1111,8 @@
       "",
       "Collaborate with Compliance Experts",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-30",
@@ -1045,7 +1146,8 @@
       "Improve Documentation & Audits",
       "Pursue Relevant Certifications",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-31",
@@ -1076,7 +1178,8 @@
       "Invest in Protective Equipment & Infrastructure",
       "Establish Quick-Escalation Protocols",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-32",
@@ -1108,7 +1211,8 @@
       "",
       "Maintain Accurate & Updated Documentation",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-33",
@@ -1144,7 +1248,8 @@
       "Leverage Technology Tools",
       "Collaborate with Carriers & NMFC Experts",
       "G. Strategic Growth & Resilience"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-34",
@@ -1178,7 +1283,8 @@
       "Conduct Regular Network Audits",
       "Create Comprehensive Contingency Plans",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-35",
@@ -1216,7 +1322,8 @@
       "Enhance IT Integrations & Visibility",
       "Ongoing Regulatory Monitoring & Training",
       "H. Cost Optimization & Efficiency"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-36",
@@ -1251,6 +1358,19 @@
       "Use Technology for Optimized Mode Selection",
       "Engage in Ongoing Training & Collaboration",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Mile",
+        "variables": [
+          "Total Mode-Specific Costs",
+          "Total Miles Moved by That Mode"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Cost per Mile = (Total Mode-Specific Costs) / (Total Miles Moved by That Mode)",
+        "step": "Calculate Cost per Mile and Cost per Pound (or Unit)"
+      }
     ]
   },
   {
@@ -1285,7 +1405,8 @@
       "Implement Root Cause Analysis for Recurrent Errors",
       "Regularly Benchmark & Negotiate Rates",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-38",
@@ -1320,7 +1441,8 @@
       "Track & Analyze Accessorials Continuously",
       "Train Operations & Warehouse Teams",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "third-party-logistics-39",
@@ -1356,6 +1478,19 @@
       "Promote Driver & Dispatcher Communication",
       "Regularly Review & Refine Routes",
       "I. Workforce & Labor Management"
+    ],
+    "formulas": [
+      {
+        "output": "Empty Miles Reduction",
+        "variables": [
+          "Baseline Empty Miles",
+          "Optimized Empty Miles"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Empty Miles Reduction = (Baseline Empty Miles - Optimized Empty Miles)",
+        "step": "Analyze Cost Savings & Asset Utilization"
+      }
     ]
   },
   {
@@ -1389,6 +1524,7 @@
       "Offer Career Growth & Recognition",
       "Refine Owner-Operator Contracts",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

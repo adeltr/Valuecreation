@@ -27,7 +27,7 @@ describe('buildCatalog', () => {
       relatedCauseCategories: ['MARKET'],
       relatedLeverCategories: ['NETWORK_OPTIMIZATION', 'REVENUE_MANAGEMENT'],
       sourcePath: 'data/analysis-library/airline/13 - x.md',
-      goal: '', dataRequired: [], improve: [],
+      goal: '', dataRequired: [], improve: [], formulas: [],
     }]);
   });
 
@@ -43,6 +43,16 @@ describe('buildCatalog', () => {
     expect(entries[0].goal).toBe('The goal is to compare fuel burn per aircraft type.');
     expect(entries[0].dataRequired).toEqual(['Fuel consumption per aircraft type', 'RPK and ASK per type']);
     expect(entries[0].improve).toEqual(['Optimize Fleet Allocation by Route', 'Invest in Fuel-Efficient Aircraft']);
+  });
+
+  it('carries the computable formulas of the protocol (structure only)', () => {
+    const body = ['## 🪜 Step-by-step', '1. **Load factor:** Use:', '`Load Factor = (RPK / ASK) x 100`'].join('\n');
+    const f = file('13 - x.md', good);
+    const { entries } = buildCatalog('airline', [{ ...f, content: f.content.replace('body', body) }]);
+    expect(entries[0].formulas).toEqual([{
+      output: 'Load Factor', variables: ['RPK', 'ASK'], expression: '( v0 / v1 ) * 100', percentOutput: true,
+      source: 'Load Factor = (RPK / ASK) x 100', step: 'Load factor',
+    }]);
   });
 
   it('skips files without kind: analysis (not curated yet) and curation tables', () => {

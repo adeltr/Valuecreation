@@ -31,6 +31,41 @@
       "Invest in Staff Training and Automation to reduce human error and improve process automation, which can increase output without additional capacity.",
       "Consider Process Optimization and Innovation, such as using advanced catalysts or modifying production processes to boost reaction speeds or yields, thus increasing throughput without additional capacity.",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "CUR",
+        "variables": [
+          "Actual Production Output",
+          "Maximum Production Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "CUR = (Actual Production Output / Maximum Production Capacity) x 100",
+        "step": null
+      },
+      {
+        "output": "Downtime Impact (%)",
+        "variables": [
+          "Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Impact (%) = (Downtime Hours / Total Operational Hours) x 100",
+        "step": null
+      },
+      {
+        "output": "How to Analyze a Chemicals Company For example, Energy Efficiency",
+        "variables": [
+          "Total Energy Consumed",
+          "Actual Production Output"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "How to Analyze a Chemicals Company For example, Energy Efficiency = (Total Energy Consumed / Actual Production Output)",
+        "step": null
+      }
     ]
   },
   {
@@ -68,6 +103,30 @@
       "Regularly Maintain and Calibrate Equipment",
       "Explore Renewable Energy Sources",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Energy Consumption per Unit",
+        "variables": [
+          "Total Energy Consumed",
+          "Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Energy Consumption per Unit = Total Energy Consumed / Production Output",
+        "step": null
+      },
+      {
+        "output": "Energy Cost per Unit",
+        "variables": [
+          "Energy Consumption per Unit",
+          "Energy Cost per kffh"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Energy Cost per Unit = Energy Consumption per Unit x Energy Cost per kffh",
+        "step": null
+      }
     ]
   },
   {
@@ -106,6 +165,42 @@
       "Enhance Staff Training",
       "Focus on Waste Reuse or Repurposing",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Product Yield (%)",
+        "variables": [
+          "Total Product Output",
+          "Total Raw Materials Input"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Yield (%) = (Total Product Output / Total Raw Materials Input) x 100",
+        "step": null
+      },
+      {
+        "output": "Waste Percentage",
+        "variables": [
+          "Total Waste Generated",
+          "Total Raw Materials Input"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Waste Percentage = (Total Waste Generated / Total Raw Materials Input) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost of Waste",
+        "variables": [
+          "Total Waste Generated",
+          "Material Cost per Ton",
+          "Waste Disposal Cost"
+        ],
+        "expression": "( v0 * v1 ) + v2",
+        "percentOutput": false,
+        "source": "Cost of Waste = (Total Waste Generated x Material Cost per Ton) + Waste Disposal Cost",
+        "step": null
+      }
     ]
   },
   {
@@ -143,6 +238,30 @@
       "Explore Catalyst Recycling Options",
       "Invest in Advanced Catalyst Technologies",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Catalyst Efficiency",
+        "variables": [
+          "Total Product Output",
+          "Total Catalyst Used"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Catalyst Efficiency = (Total Product Output / Total Catalyst Used)",
+        "step": null
+      },
+      {
+        "output": "Catalyst Cost per Unit",
+        "variables": [
+          "Total Catalyst Cost",
+          "Total Product Output"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Catalyst Cost per Unit = (Total Catalyst Cost / Total Product Output)",
+        "step": null
+      }
     ]
   },
   {
@@ -183,6 +302,32 @@
       "Invest in Flexible Equipment",
       "Increase Collaboration with Supply Chain",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Unit",
+        "variables": [
+          "Fixed Costs",
+          "Variable Costs",
+          "Batch Size"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Cost per Unit = (Fixed Costs + Variable Costs) / Batch Size",
+        "step": "Calculate Cost per Unit for Different Batch Sizes"
+      },
+      {
+        "output": "Setup Cost per Batch",
+        "variables": [
+          "Setup Time",
+          "Labor Cost per Hour",
+          "Setup Material Costs"
+        ],
+        "expression": "( v0 * v1 ) + v2",
+        "percentOutput": false,
+        "source": "Setup Cost per Batch = (Setup Time x Labor Cost per Hour) + Setup Material Costs",
+        "step": "Evaluate Setup Time and Costs for Each Batch Size"
+      }
     ]
   },
   {
@@ -220,6 +365,52 @@
       "How to Analyze a Chemicals Company",
       "Use Reliability-Centered Maintenance (RCM)",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "MTBF",
+        "variables": [
+          "Total Operating Time",
+          "Number of Failures"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "MTBF = Total Operating Time / Number of Failures",
+        "step": null
+      },
+      {
+        "output": "MTTR",
+        "variables": [
+          "Total Downtime",
+          "Number of Repairs"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "MTTR = Total Downtime / Number of Repairs",
+        "step": null
+      },
+      {
+        "output": "Maintenance Cost per Unit",
+        "variables": [
+          "Total Maintenance Cost",
+          "Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Maintenance Cost per Unit = Total Maintenance Cost / Production Output",
+        "step": null
+      },
+      {
+        "output": "Lost Output (tons)",
+        "variables": [
+          "Downtime Hours",
+          "Average Production Rate"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "Lost Output (tons) = (Downtime Hours x Average Production Rate)",
+        "step": null
+      }
     ]
   },
   {
@@ -253,6 +444,43 @@
       "How to Analyze a Chemicals Company",
       "Invest in Advanced Treatment Technology",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total Treatment Cost",
+        "variables": [
+          "Volume of Wastewater",
+          "Cost per Unit of Treatment"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Total Treatment Cost = Volume of Wastewater x Cost per Unit of Treatment",
+        "step": null
+      },
+      {
+        "output": "Total Disposal Cost",
+        "variables": [
+          "Transportation Cost",
+          "Disposal Fees",
+          "Regulatory Fees"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Disposal Cost = Transportation Cost + Disposal Fees + Regulatory Fees",
+        "step": null
+      },
+      {
+        "output": "Treatment and Disposal Cost per Unit",
+        "variables": [
+          "Total Treatment Cost",
+          "Total Disposal Cost",
+          "Production Output"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Treatment and Disposal Cost per Unit = (Total Treatment Cost + Total Disposal Cost) / Production Output",
+        "step": null
+      }
     ]
   },
   {
@@ -292,6 +520,41 @@
       "Improve Raw Material Quality",
       "Reduce Energy Consumption",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Actual Yield",
+        "variables": [
+          "Mass or Volume of Product Produced",
+          "Theoretical Maximum Yield"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Actual Yield = (Mass or Volume of Product Produced / Theoretical Maximum Yield) x 100",
+        "step": null
+      },
+      {
+        "output": "Reaction Efficiency",
+        "variables": [
+          "Total Product Output",
+          "Total Reactants Used"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Reaction Efficiency = (Total Product Output / Total Reactants Used) x 100",
+        "step": null
+      },
+      {
+        "output": "Energy Consumption per Unit",
+        "variables": [
+          "Total Energy Consumed",
+          "Total Product Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Energy Consumption per Unit = Total Energy Consumed / Total Product Output",
+        "step": null
+      }
     ]
   },
   {
@@ -328,6 +591,30 @@
       "How to Analyze a Chemicals Company",
       "Use Advanced Coatings and Treatments",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Failure Rate",
+        "variables": [
+          "Number of Failures",
+          "Total Operating Time"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Failure Rate = (Number of Failures / Total Operating Time) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost Impact per Downtime Hour",
+        "variables": [
+          "Total Downtime Costs",
+          "Total Downtime Hours"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Cost Impact per Downtime Hour = (Total Downtime Costs / Total Downtime Hours)",
+        "step": null
+      }
     ]
   },
   {
@@ -370,6 +657,41 @@
       "How to Analyze a Chemicals Company",
       "Implement Real-Time Monitoring",
       "How to Analyze a Chemicals Company B. Finance"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Unit",
+        "variables": [
+          "Total Production Cost",
+          "Total Polymer Output"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Cost per Unit = (Total Production Cost) / (Total Polymer Output)",
+        "step": "Determine Cost per Unit of Polymer Produced"
+      },
+      {
+        "output": "Energy Consumption per Unit",
+        "variables": [
+          "Total Energy Consumed for Polymerization",
+          "Total Polymer Output"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Energy Consumption per Unit = (Total Energy Consumed for Polymerization) / (Total Polymer Output)",
+        "step": "Analyze Energy Consumption per Unit of Polymer"
+      },
+      {
+        "output": "Catalyst Efficiency",
+        "variables": [
+          "Polymer Yield per Unit of Catalyst",
+          "Catalyst Cost"
+        ],
+        "expression": "( v0 ) / v1",
+        "percentOutput": false,
+        "source": "Catalyst Efficiency = (Polymer Yield per Unit of Catalyst) / Catalyst Cost",
+        "step": "Analyze Energy Consumption per Unit of Polymer"
+      }
     ]
   },
   {
@@ -412,6 +734,75 @@
       "Reduce Lead Times and Increase Supplier Reliability",
       "Implement Just-in-Time (JIT) Inventory",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Inventory Turnover Rate",
+        "variables": [
+          "Cost of Goods Sold (COGS)",
+          "Average Inventory"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Inventory Turnover Rate = Cost of Goods Sold (COGS) / Average Inventory",
+        "step": "Calculate Inventory Turnover Rate"
+      },
+      {
+        "output": "DIO",
+        "variables": [
+          "Average Inventory",
+          "COGS"
+        ],
+        "expression": "( v0 / v1 ) * 365",
+        "percentOutput": false,
+        "source": "DIO = (Average Inventory / COGS) x 365",
+        "step": "Calculate Inventory Turnover Rate"
+      },
+      {
+        "output": "DPO",
+        "variables": [
+          "Accounts Payable",
+          "COGS"
+        ],
+        "expression": "( v0 / v1 ) * 365",
+        "percentOutput": false,
+        "source": "DPO = (Accounts Payable / COGS) x 365",
+        "step": "Analyze Working Capital Metrics"
+      },
+      {
+        "output": "DSO",
+        "variables": [
+          "Accounts Receivable",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 365",
+        "percentOutput": false,
+        "source": "DSO = (Accounts Receivable / Total Sales) x 365",
+        "step": "Analyze Working Capital Metrics"
+      },
+      {
+        "output": "CCC",
+        "variables": [
+          "DIO",
+          "DSO",
+          "DPO"
+        ],
+        "expression": "v0 + v1 - v2",
+        "percentOutput": false,
+        "source": "CCC = DIO + DSO - DPO",
+        "step": "Analyze Working Capital Metrics"
+      },
+      {
+        "output": "Inventory Carrying Cost",
+        "variables": [
+          "Average Inventory",
+          "Carrying Cost Rate"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Inventory Carrying Cost = Average Inventory x Carrying Cost Rate",
+        "step": "Calculate Cost of Inventory Carrying"
+      }
     ]
   },
   {
@@ -449,6 +840,30 @@
       "How to Analyze a Chemicals Company",
       "Track and Adjust Investments Regularly",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Capital Intensity",
+        "variables": [
+          "Total Capital Investment",
+          "Annual Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Capital Intensity = Total Capital Investment / Annual Production Output",
+        "step": "Calculate Capital Intensity for Each Facility"
+      },
+      {
+        "output": "Operating Cost per Unit",
+        "variables": [
+          "Annual Operating Costs",
+          "Annual Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Operating Cost per Unit = Annual Operating Costs / Annual Production Output",
+        "step": "Analyze Operating Efficiency and Maintenance Costs"
+      }
     ]
   },
   {
@@ -488,7 +903,8 @@
       "Implement Dynamic Pricing",
       "Regularly Review Competitor Pricing",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-14",
@@ -530,6 +946,19 @@
       "Implement Risk Contingency Plans",
       "Consider Alternative Materials",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Cost Exposure (%)",
+        "variables": [
+          "Raw Material Cost",
+          "Total Production Cost"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Exposure (%) = (Raw Material Cost / Total Production Cost) x 100",
+        "step": "Analyze Financial Exposure to Raw Material Costs"
+      }
     ]
   },
   {
@@ -565,6 +994,30 @@
       "Implement Recycling and Reuse Programs",
       "Invest in Sustainable Disposal Options",
       "How to Analyze a Chemicals Company C. Regulatory & Compliance"
+    ],
+    "formulas": [
+      {
+        "output": "By-product Revenue",
+        "variables": [
+          "Quantity of By-product",
+          "Selling Price per Unit"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "By-product Revenue = Quantity of By-product x Selling Price per Unit",
+        "step": "Calculate By-product Revenue"
+      },
+      {
+        "output": "Net Contribution",
+        "variables": [
+          "Total By-product Revenue",
+          "Total Waste Management Cost"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Contribution = Total By-product Revenue - Total Waste Management Cost",
+        "step": "Analyze Net Contribution from By-products and Waste Management"
+      }
     ]
   },
   {
@@ -603,6 +1056,42 @@
       "Adopt Circular Economy Practices",
       "Set Emission Reduction Targets",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total GHG Emissions (tons CO2e)",
+        "variables": [
+          "Scope 1 (direct emissions)",
+          "Scope 2 (indirect emissions from purchased energy)",
+          "Scope 3 (other indirect emissions)"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total GHG Emissions (tons CO2e) = Scope 1 (direct emissions) + Scope 2 (indirect emissions from purchased energy) + Scope 3 (other indirect emissions)",
+        "step": "Calculate Total Greenhouse Gas (GHG) Emissions"
+      },
+      {
+        "output": "Carbon Intensity",
+        "variables": [
+          "Total GHG Emissions",
+          "Production Output (tons or units)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Carbon Intensity = Total GHG Emissions / Production Output (tons or units)",
+        "step": "Determine Carbon Intensity per Unit of Production"
+      },
+      {
+        "output": "Renewable Energy Use (%)",
+        "variables": [
+          "Renewable Energy Consumption",
+          "Total Energy Consumption"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Renewable Energy Use (%) = (Renewable Energy Consumption / Total Energy Consumption) x 100",
+        "step": "Analyze Energy Consumption by Source"
+      }
     ]
   },
   {
@@ -636,7 +1125,8 @@
       "Engage with Regulators and Industry Bodies",
       "Optimize Compliance Efficiency",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-18",
@@ -673,7 +1163,8 @@
       "Improve Incident Reporting and Analysis",
       "Engage in Continuous Safety Audits and Inspections",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-19",
@@ -706,7 +1197,8 @@
       "Establish Environmental Reserves",
       "Engage in Regular Environmental Audits",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-20",
@@ -738,6 +1230,32 @@
       "Seek Alternative Disposal Methods",
       "Invest in Sustainable Materials",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total Disposal Cost",
+        "variables": [
+          "Collection",
+          "Transportation",
+          "Recycling",
+          "Disposal Fees"
+        ],
+        "expression": "v0 + v1 + v2 / v3",
+        "percentOutput": false,
+        "source": "Total Disposal Cost = Collection + Transportation + Recycling/Disposal Fees",
+        "step": "Determine Disposal and Recycling Costs"
+      },
+      {
+        "output": "Net Disposal Cost",
+        "variables": [
+          "Total Disposal Cost",
+          "Revenue from Recycled Materials"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Disposal Cost = Total Disposal Cost - Revenue from Recycled Materials",
+        "step": "Evaluate Potential Revenue from Recycled Materials"
+      }
     ]
   },
   {
@@ -774,6 +1292,20 @@
       "Implement a Compliance Management System",
       "Reduce Compliance Costs Through In-House Testing",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total Compliance Cost",
+        "variables": [
+          "Registration Fees",
+          "Testing Costs",
+          "Administrative Costs"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Compliance Cost = Registration Fees + Testing Costs + Administrative Costs",
+        "step": "Assess Cost of Registration and Compliance Activities"
+      }
     ]
   },
   {
@@ -807,7 +1339,8 @@
       "Negotiate with Carriers for Better Rates",
       "Regularly Audit Compliance and Safety Protocols",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-23",
@@ -839,7 +1372,8 @@
       "Engage in Pre-certification Audits",
       "Explore Alternative Certification Programs",
       "How to Analyze a Chemicals Company D. Sales & Marketing"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-24",
@@ -878,7 +1412,8 @@
       "Consider Portfolio Restructuring",
       "Enhance Product Differentiation",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-25",
@@ -914,7 +1449,8 @@
       "Refine Product Offerings Based on Segment Needs",
       "Explore New Market Segments",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-26",
@@ -952,7 +1488,8 @@
       "How to Analyze a Chemicals Company",
       "Leverage Economies of Scale in Commodities",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-27",
@@ -990,7 +1527,8 @@
       "How to Analyze a Chemicals Company",
       "Focus on High-Growth Regions",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-28",
@@ -1026,7 +1564,8 @@
       "Monitor and Adapt to Industry Trends",
       "Expand into Complementary Markets",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-29",
@@ -1063,7 +1602,8 @@
       "Align Production with Contracted Demand",
       "Expand Options for Volume Flexibility",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-30",
@@ -1099,7 +1639,8 @@
       "How to Analyze a Chemicals Company",
       "Monitor and Adjust Competitive Strategy Post-expiration",
       "How to Analyze a Chemicals Company E. Technology"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-31",
@@ -1135,7 +1676,8 @@
       "Prioritize R&D in Process Innovation",
       "Monitor and Adjust Based on Industry Standards",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-32",
@@ -1172,7 +1714,8 @@
       "Adopt Data-Driven Decision-Making",
       "Implement Gradual Automation and Pilot Programs",
       "How to Analyze a Chemicals Company F. Research & Development (R&D)"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-33",
@@ -1209,7 +1752,8 @@
       "Implement Agile R&D Practices",
       "Monitor Competitor Innovations and Adapt Accordingly",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-34",
@@ -1248,7 +1792,8 @@
       "Optimize Inventory and Batch Production",
       "Benchmark Against Leaders in Customization",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-35",
@@ -1282,6 +1827,19 @@
       "Invest in Predictive Market Research",
       "Benchmark R&D Processes Regularly",
       "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Innovation Rate",
+        "variables": [
+          "Number of New Product Launches",
+          "Year"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Innovation Rate = (Number of New Product Launches / Year)",
+        "step": "Calculate Annual Innovation Rate"
+      }
     ]
   },
   {
@@ -1324,7 +1882,8 @@
       "Develop a Sustainable Sourcing Strategy",
       "Monitor and Adapt to Industry Trends in Feedstock Use",
       "How to Analyze a Chemicals Company G. Supply Chain"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-37",
@@ -1361,7 +1920,8 @@
       "Reduce Transportation Costs Through Optimization",
       "Streamline Order Fulfillment Processes",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-38",
@@ -1396,7 +1956,8 @@
       "How to Analyze a Chemicals Company",
       "Invest in Supplier Development and Collaboration",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-39",
@@ -1435,7 +1996,8 @@
       "How to Analyze a Chemicals Company",
       "Utilize Digital Tools for Real-Time Tracking",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-40",
@@ -1470,7 +2032,8 @@
       "Establish Contingency Plans for Critical Components",
       "Use Performance-based Contracts and Incentives",
       "How to Analyze a Chemicals Company"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "chemical-41",
@@ -1508,6 +2071,7 @@
       "Invest in Technologies for Process Efficiency",
       "Explore Downstream Control for Enhanced Market Reach",
       "Implement Supply Chain Transparency Initiatives"
-    ]
+    ],
+    "formulas": []
   }
 ]

@@ -29,7 +29,8 @@
       "Regular Monitoring",
       "Negotiate with Providers",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-02",
@@ -68,7 +69,8 @@
       "",
       "Engage with Regulators",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-03",
@@ -102,7 +104,8 @@
       "Increase Member Engagement",
       "Regularly Monitor and Adjust",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-04",
@@ -131,7 +134,8 @@
       "Adopt Data-Driven Personalization",
       "Enhance Care Coordination",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-05",
@@ -162,7 +166,8 @@
       "Monitor and Update Reinsurance Needs Annually",
       "",
       "Negotiate Reinsurance Terms"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-06",
@@ -193,7 +198,8 @@
       "",
       "Address Specialty Drug Costs",
       "Monitor Member Satisfaction"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-07",
@@ -225,7 +231,8 @@
       "Promote Biosimilars and Alternatives",
       "Partner with Specialty Pharmacies",
       "Monitor Member Satisfaction and Access"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-08",
@@ -255,7 +262,8 @@
       "Develop Predictive Models for Early Intervention",
       "Monitor Cost Trends and Adjust Annually",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-09",
@@ -288,7 +296,8 @@
       "",
       "Regularly Monitor and Adjust Bundled Payments",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-10",
@@ -319,7 +328,8 @@
       "Integrate Care Coordination for End-of-Life Services",
       "Regularly Monitor and Adjust End-of-Life Care Protocols",
       "B. Member Experience and Engagement"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-11",
@@ -354,7 +364,8 @@
       "",
       "Develop Targeted Retention Strategies",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-12",
@@ -385,7 +396,8 @@
       "Enhance Digital Access and Usability",
       "Act on Member Feedback",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-13",
@@ -416,7 +428,8 @@
       "",
       "Gather Regular Feedback and Iterate",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-14",
@@ -445,7 +458,8 @@
       "Enhance Program Usability and Satisfaction",
       "",
       "Regularly Monitor Health Outcomes"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-15",
@@ -478,7 +492,8 @@
       "Increase Provider Education on SDOH",
       "Regularly Monitor and Adjust Programs",
       "C. Care and Disease Management Programs"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-16",
@@ -512,7 +527,8 @@
       "",
       "Educate Providers to Support Referrals",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-17",
@@ -544,7 +560,8 @@
       "",
       "Monitor and Adjust Program Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-18",
@@ -577,7 +594,8 @@
       "Increase Digital Access to Incentives",
       "Collect Continuous Feedback for Iterative Improvement",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-19",
@@ -608,7 +626,8 @@
       "Incentivize Preventive Care Participation",
       "Regularly Monitor and Adjust Strategies",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-20",
@@ -639,7 +658,8 @@
       "Encourage Preventive Care and Early Interventions",
       "Gather Continuous Member Feedback",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-21",
@@ -672,7 +692,8 @@
       "Increase Member Education on Health Management",
       "Utilize Predictive Analytics for Early Intervention",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-22",
@@ -704,7 +725,8 @@
       "Use Predictive Analytics for Early Identification",
       "Improve Care Coordination",
       "D. Provider Network and Contracting"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-23",
@@ -739,7 +761,8 @@
       "Enhance Provider Search Tools",
       "Monitor and Adjust Network Adequacy Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-24",
@@ -774,7 +797,8 @@
       "Monitor Provider Performance Regularly",
       "Enhance Provider Communication and Coordination",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-25",
@@ -810,7 +834,8 @@
       "Enhance Provider Support and Training",
       "Regularly Monitor and Adjust VBC Outcomes",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-26",
@@ -845,7 +870,8 @@
       "Incentivize Utilization of High-Value Providers",
       "Regularly Monitor Provider Performance and Outcomes",
       "E. Risk Assessment and Population Health"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-27",
@@ -878,7 +904,8 @@
       "Expand Data Sources for Comprehensive Scoring",
       "Evaluate Intervention Impact and Re-Score Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-28",
@@ -910,7 +937,8 @@
       "Improve Post-Discharge Follow-Up",
       "Regularly Benchmark and Adjust Programs",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-29",
@@ -945,7 +973,8 @@
       "Enhance Data Collection and Monitoring",
       "Educate Providers on Health Equity",
       "F. Claims Management and Compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-30",
@@ -982,7 +1011,8 @@
       "Optimize Data Entry and Validation",
       "Monitor and Adjust Processes Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-31",
@@ -1017,7 +1047,8 @@
       "",
       "Improve Training for Claims Processors",
       "Regularly Review and Adjust Denial Criteria"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-32",
@@ -1052,7 +1083,8 @@
       "Automate Flagging for Common FWA Scenarios",
       "Enhance Reporting and Feedback Mechanisms",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-33",
@@ -1087,7 +1119,8 @@
       "Strengthen Internal Compliance Audits",
       "Use Data Analytics to Monitor and Improve Compliance",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-34",
@@ -1120,7 +1153,8 @@
       "Regularly Monitor Parity Compliance",
       "Enhance Member Communication on MH/SUD Benefits",
       "G. Access to Care and Integration"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-35",
@@ -1155,7 +1189,8 @@
       "Enhance Telehealth Experience",
       "Monitor and Optimize Cost and Quality Metrics",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-36",
@@ -1189,7 +1224,8 @@
       "Implement Care Management Programs",
       "Monitor Quality and Cost Metrics Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-37",
@@ -1224,7 +1260,8 @@
       "Regularly Monitor Network Adequacy",
       "Streamline Referral and Authorization Processes",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-38",
@@ -1257,7 +1294,8 @@
       "Address Technological and Interoperability Barriers",
       "Monitor and Promote Health Outcome Benefits",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-39",
@@ -1290,7 +1328,8 @@
       "Educate Members on the Referral Process",
       "Continuously Monitor and Adjust Referral Efficiency Metrics",
       "H. Government Programs and Regulatory Performance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-40",
@@ -1329,7 +1368,8 @@
       "Improve Member Education and Engagement",
       "Regularly Monitor Compliance and Quality Metrics",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "health-payor-41",
@@ -1367,6 +1407,7 @@
       "Implement Real-Time Status Tracking for Members",
       "Monitor and Adjust Based on Volume Trends",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

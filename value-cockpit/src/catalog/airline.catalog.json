@@ -32,6 +32,30 @@
       "Expand into Underserved Markets",
       "Strategic Alliances and Code-Shares",
       "Optimize Load Factor"
+    ],
+    "formulas": [
+      {
+        "output": "Route Profitability",
+        "variables": [
+          "Route Revenue",
+          "Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Route Profitability = (Route Revenue - Route Cost) / Route Revenue x 100",
+        "step": "Evaluate Route Profitability"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "Revenue Passenger Kilometers (RPK)",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (Revenue Passenger Kilometers (RPK) / Available Seat Kilometers (ASK)) x 100",
+        "step": "Analyze Market Demand and Load Factors"
+      }
     ]
   },
   {
@@ -66,6 +90,19 @@
       "Develop High-Potential Spokes",
       "Strengthen Competitive Positioning",
       "Streamline Operations at Hubs"
+    ],
+    "formulas": [
+      {
+        "output": "Spoke Profitability",
+        "variables": [
+          "Spoke Route Revenue",
+          "Spoke Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Spoke Profitability = (Spoke Route Revenue - Spoke Route Cost) / Spoke Route Revenue x 100",
+        "step": "Analyze Spoke Performance"
+      }
     ]
   },
   {
@@ -104,6 +141,52 @@
       "Increase Presence in Key Markets",
       "Cost Reduction Initiatives",
       "Optimize Aircraft Allocation"
+    ],
+    "formulas": [
+      {
+        "output": "Route Profitability",
+        "variables": [
+          "Route Revenue",
+          "Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Route Profitability = (Route Revenue - Route Cost) / Route Revenue x 100",
+        "step": "Calculate Route Profitability"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "Revenue Passenger Kilometers (RPK)",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (Revenue Passenger Kilometers (RPK) / Available Seat Kilometers (ASK)) x 100",
+        "step": "Analyze Load Factor and Yield"
+      },
+      {
+        "output": "Yield",
+        "variables": [
+          "Total Passenger Revenue",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Yield = Total Passenger Revenue / RPK",
+        "step": "Analyze Load Factor and Yield"
+      },
+      {
+        "output": "Market Share",
+        "variables": [
+          "Total Passengers on Airline Route",
+          "Total Passengers in Market"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Share = (Total Passengers on Airline Route / Total Passengers in Market) x 100",
+        "step": "Market Share Analysis"
+      }
     ]
   },
   {
@@ -139,6 +222,19 @@
       "Adjust Pricing Strategies Seasonally",
       "Introduce Seasonal Routes",
       "Enhance Operational Flexibility"
+    ],
+    "formulas": [
+      {
+        "output": "Seasonal Load Factor",
+        "variables": [
+          "RPK in Season",
+          "ASK in Season"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Seasonal Load Factor = (RPK in Season / ASK in Season) x 100",
+        "step": "Calculate Seasonal Load Factors"
+      }
     ]
   },
   {
@@ -173,6 +269,19 @@
       "Leverage Partnerships",
       "Adjust Capacity Based on Demand",
       "Monitor Competitor and Regulatory Shifts"
+    ],
+    "formulas": [
+      {
+        "output": "Projected Profitability",
+        "variables": [
+          "Projected Route Revenue",
+          "Projected Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Projected Profitability = (Projected Route Revenue - Projected Route Cost) / Projected Route Revenue x 100",
+        "step": "Estimate Route Profitability"
+      }
     ]
   },
   {
@@ -210,6 +319,41 @@
       "Optimize Capacity and Frequency",
       "Differentiate In-Flight Services",
       "Monitor Competitor Movements"
+    ],
+    "formulas": [
+      {
+        "output": "Market Share",
+        "variables": [
+          "Airline Passengers on Route",
+          "Total Market Passengers on Route"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Share = (Airline Passengers on Route / Total Market Passengers on Route) x 100",
+        "step": "Calculate Market Share on Overlapping Routes"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "RPK",
+          "ASK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (RPK / ASK) x 100",
+        "step": "Analyze Load Factors and Yield on Competitive Routes"
+      },
+      {
+        "output": "Yield",
+        "variables": [
+          "Total Revenue",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Yield = Total Revenue / RPK",
+        "step": "Analyze Load Factors and Yield on Competitive Routes"
+      }
     ]
   },
   {
@@ -244,7 +388,8 @@
       "Adjust Operational Strategy for Compliance",
       "Monitor Regulatory Changes",
       "B. Fleet and Asset Optimization"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "airline-08",
@@ -281,6 +426,52 @@
       "Optimize Maintenance Schedules",
       "Match Fleet to Demand",
       "Reduce High CASK Routes"
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate",
+        "variables": [
+          "Total Flight Hours",
+          "Total Days in Operation"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Utilization Rate = (Total Flight Hours / Total Days in Operation)",
+        "step": "Calculate Aircraft Utilization Rates"
+      },
+      {
+        "output": "Fuel Efficiency",
+        "variables": [
+          "Total Fuel Consumed",
+          "Total Passenger Kilometers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Fuel Efficiency = (Total Fuel Consumed / Total Passenger Kilometers)",
+        "step": "Analyze Fuel Efficiency by Aircraft Type"
+      },
+      {
+        "output": "Downtime Percentage",
+        "variables": [
+          "Total Days Out of Service",
+          "Total Days in Operation"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Percentage = (Total Days Out of Service / Total Days in Operation) x 100",
+        "step": "Evaluate Maintenance Downtime"
+      },
+      {
+        "output": "CASK",
+        "variables": [
+          "Total Operating Costs",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CASK = Total Operating Costs / Available Seat Kilometers (ASK)",
+        "step": "Match Aircraft Types to Route Demand"
+      }
     ]
   },
   {
@@ -314,6 +505,33 @@
       "Prioritize High-Residual-Value Aircraft for Ownership",
       "Negotiate Lease Terms",
       "Monitor Market Conditions"
+    ],
+    "formulas": [
+      {
+        "output": "TCO",
+        "variables": [
+          "Purchase Price",
+          "Total Maintenance Costs",
+          "Depreciation",
+          "Residual Value"
+        ],
+        "expression": "v0 + ( v1 + v2 - v3 )",
+        "percentOutput": false,
+        "source": "TCO = Purchase Price + (Total Maintenance Costs + Depreciation - Residual Value)",
+        "step": "Analyze Current Fleet Composition"
+      },
+      {
+        "output": "Total Lease Cost",
+        "variables": [
+          "Monthly Lease Payment",
+          "Lease Term",
+          "Maintenance Costs"
+        ],
+        "expression": "v0 * v1 + v2",
+        "percentOutput": false,
+        "source": "Total Lease Cost = Monthly Lease Payment x Lease Term + Maintenance Costs",
+        "step": "Calculate Total Cost of Leasing"
+      }
     ]
   },
   {
@@ -348,6 +566,52 @@
       "Invest in Fuel-Efficient Aircraft",
       "Optimize Flight Operations",
       "Monitor Fuel Price Trends"
+    ],
+    "formulas": [
+      {
+        "output": "Fuel Efficiency (RPK)",
+        "variables": [
+          "Total Fuel Consumed",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Fuel Efficiency (RPK) = Total Fuel Consumed / RPK.",
+        "step": "Calculate Fuel Efficiency Metrics"
+      },
+      {
+        "output": "Fuel Efficiency (ASK)",
+        "variables": [
+          "Total Fuel Consumed",
+          "ASK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Fuel Efficiency (ASK) = Total Fuel Consumed / ASK.",
+        "step": "Calculate Fuel Efficiency Metrics"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "RPK",
+          "ASK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (RPK / ASK) x 100",
+        "step": "Assess Impact of Load Factors"
+      },
+      {
+        "output": "Fuel Cost Impact",
+        "variables": [
+          "Fuel Efficiency (ASK or RPK)",
+          "Fuel Price"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Fuel Cost Impact = Fuel Efficiency (ASK or RPK) x Fuel Price",
+        "step": "Evaluate Financial Impact of Fuel Efficiency"
+      }
     ]
   },
   {
@@ -381,6 +645,19 @@
       "Improve Parts Availability and Inventory Management",
       "Implement Condition-Based Maintenance",
       "Benchmark and Adjust Maintenance Intervals"
+    ],
+    "formulas": [
+      {
+        "output": "Average Downtime",
+        "variables": [
+          "Total Downtime for Maintenance Type",
+          "Number of Maintenance Events"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Downtime = Total Downtime for Maintenance Type / Number of Maintenance Events",
+        "step": "Calculate Average Downtime per Maintenance Event"
+      }
     ]
   },
   {
@@ -413,6 +690,19 @@
       "Expand Cross-Training Programs",
       "Leverage Data-Driven Scheduling",
       "C. Operational Efficiency"
+    ],
+    "formulas": [
+      {
+        "output": "Simulator Utilization Rate",
+        "variables": [
+          "Total Simulator Hours Used",
+          "Total Available Simulator Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Simulator Utilization Rate = (Total Simulator Hours Used / Total Available Simulator Hours) x 100",
+        "step": "Assess Current Simulator Utilization"
+      }
     ]
   },
   {
@@ -449,6 +739,30 @@
       "Enhance Pricing Strategies",
       "Align Seasonal Capacity with Demand Patterns",
       "Monitor Competitor Actions"
+    ],
+    "formulas": [
+      {
+        "output": "Load Factor",
+        "variables": [
+          "RPK",
+          "ASK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (RPK / ASK) x 100",
+        "step": "Calculate Current Load Factor"
+      },
+      {
+        "output": "Route Profitability",
+        "variables": [
+          "Total Route Revenue",
+          "Total Route Costs"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Route Profitability = (Total Route Revenue - Total Route Costs) / Total Route Revenue x 100",
+        "step": "Assess Route Profitability in Relation to Load Factor"
+      }
     ]
   },
   {
@@ -484,6 +798,30 @@
       "Negotiate Supplier Contracts",
       "Streamline Maintenance Schedules",
       "Implement Predictive Maintenance Technologies"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Event",
+        "variables": [
+          "Total Cost for Maintenance Type",
+          "Number of Events"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Event = Total Cost for Maintenance Type / Number of Events",
+        "step": "Analyze Maintenance Frequency and Cost per Event"
+      },
+      {
+        "output": "Downtime Cost",
+        "variables": [
+          "Downtime Hours",
+          "Revenue Lost per Hour"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Downtime Cost = Downtime Hours x Revenue Lost per Hour",
+        "step": "Analyze Downtime Impact on Costs"
+      }
     ]
   },
   {
@@ -519,6 +857,19 @@
       "Adjust Buffer Times Strategically",
       "Enhance Crew Scheduling Flexibility",
       "Monitor and Adjust for External Factors"
+    ],
+    "formulas": [
+      {
+        "output": "On-Time Performance",
+        "variables": [
+          "Number of On-Time Flights",
+          "Total Flights"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "On-Time Performance = (Number of On-Time Flights / Total Flights) x 100",
+        "step": "Calculate On-Time Performance Metrics"
+      }
     ]
   },
   {
@@ -551,6 +902,19 @@
       "Adjust Staff Schedules for Demand",
       "Renegotiate Contracts for Airport Services",
       "Introduce Self-Service Options"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Flight",
+        "variables": [
+          "Total Operational Costs",
+          "Total Flights"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Flight = Total Operational Costs / Total Flights",
+        "step": "Break Down Airport Operational Costs"
+      }
     ]
   },
   {
@@ -585,6 +949,21 @@
       "Enhance Compliance with Rest Regulations",
       "Develop an On-Call Reserve Pool",
       "Benchmark and Adjust Labor Costs"
+    ],
+    "formulas": [
+      {
+        "output": "Labor Cost per Flight",
+        "variables": [
+          "Crew Wages",
+          "Overtime",
+          "Per Diem",
+          "Total Flights"
+        ],
+        "expression": "( v0 + v1 + v2 ) / v3",
+        "percentOutput": false,
+        "source": "Labor Cost per Flight = (Crew Wages + Overtime + Per Diem) / Total Flights",
+        "step": "Calculate Labor Cost per Flight and Route"
+      }
     ]
   },
   {
@@ -618,6 +997,19 @@
       "Balance Comfort with Density",
       "Implement Flexible Configurations",
       "Optimize Based on Benchmarking"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Seat",
+        "variables": [
+          "Total Revenue for Cabin Class",
+          "Number of Seats in Class"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Seat = Total Revenue for Cabin Class / Number of Seats in Class",
+        "step": "Analyze Revenue per Seat and Load Factor by Cabin Class"
+      }
     ]
   },
   {
@@ -652,6 +1044,19 @@
       "Streamline Boarding and Deplaning Procedures",
       "Regularly Maintain Ground Equipment",
       "Establish Real-Time Communication Protocols"
+    ],
+    "formulas": [
+      {
+        "output": "Average Turnaround Time",
+        "variables": [
+          "Total Turnaround Time",
+          "Number of Flights"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Turnaround Time = Total Turnaround Time / Number of Flights",
+        "step": "Calculate Average Turnaround Times by Aircraft Type and Route"
+      }
     ]
   },
   {
@@ -685,6 +1090,19 @@
       "Optimize Staffing and Resource Allocation",
       "Consolidate Service Provider Contracts",
       "Adjust Flight Schedules at High-Cost Airports"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Flight",
+        "variables": [
+          "Total Ground Handling and Airport Costs",
+          "Total Flights"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Flight = Total Ground Handling and Airport Costs / Total Flights",
+        "step": "Categorize Airport and Ground Handling Costs"
+      }
     ]
   },
   {
@@ -718,6 +1136,19 @@
       "Enhance Communication with Passengers",
       "Introduce Technology-Driven Solutions",
       "D. Revenue and Yield Maximization"
+    ],
+    "formulas": [
+      {
+        "output": "Average Boarding Time",
+        "variables": [
+          "Total Time from First Boarding Call to Last Passenger Seated",
+          "Total Passengers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Boarding Time = Total Time from First Boarding Call to Last Passenger Seated / Total Passengers",
+        "step": "Calculate Average Boarding Time per Flight"
+      }
     ]
   },
   {
@@ -753,6 +1184,41 @@
       "Personalize Pricing for Customer Segments",
       "Monitor Competitor Pricing Regularly",
       "Refine Seasonal and Peak-Time Pricing"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Seat",
+        "variables": [
+          "Total Revenue from Cabin Class",
+          "Number of Seats in Class"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Seat = Total Revenue from Cabin Class / Number of Seats in Class",
+        "step": "Analyze Current Revenue and Pricing Structure"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "Revenue Passenger Kilometers (RPK)",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (Revenue Passenger Kilometers (RPK) / Available Seat Kilometers (ASK)) x 100",
+        "step": "Evaluate Load Factors and Yield Performance by Route"
+      },
+      {
+        "output": "Yield",
+        "variables": [
+          "Total Revenue from Route",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Yield = Total Revenue from Route / RPK",
+        "step": "Evaluate Load Factors and Yield Performance by Route"
+      }
     ]
   },
   {
@@ -787,6 +1253,30 @@
       "Reduce Costs on High-Expense Services",
       "Promote Ancillary Services Pre-Flight",
       "Personalize Offers Based on Customer Segmentation"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Service",
+        "variables": [
+          "Total Revenue from Service",
+          "Total Passengers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Service = Total Revenue from Service / Total Passengers",
+        "step": "Categorize Ancillary Services by Revenue Contribution"
+      },
+      {
+        "output": "Profitability per Service",
+        "variables": [
+          "Revenue per Service",
+          "Cost per Service"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Profitability per Service = (Revenue per Service - Cost per Service) / Revenue per Service x 100",
+        "step": "Determine Cost and Profitability per Ancillary Service"
+      }
     ]
   },
   {
@@ -817,6 +1307,41 @@
       "Streamline Cargo Handling and Storage Costs",
       "Offer Priority and Value-Added Services",
       "Align Capacity with Seasonal Demand"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per RTK",
+        "variables": [
+          "Total Cargo Revenue",
+          "Total RTK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per RTK = Total Cargo Revenue / Total RTK",
+        "step": "Calculate Cargo Revenue Metrics"
+      },
+      {
+        "output": "Cargo Load Factor",
+        "variables": [
+          "Total RTK",
+          "Total ACTK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cargo Load Factor = (Total RTK / Total ACTK) x 100",
+        "step": "Assess Cargo Load Factor by Route"
+      },
+      {
+        "output": "Cargo Profitability",
+        "variables": [
+          "Cargo Revenue",
+          "Cargo Costs"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Cargo Profitability = (Cargo Revenue - Cargo Costs) / Cargo Revenue x 100",
+        "step": "Determine Cargo-Specific Costs and Profitability per Route"
+      }
     ]
   },
   {
@@ -851,6 +1376,19 @@
       "Optimize Seasonal Pricing",
       "Differentiate Based on Competitor Insights",
       "Market to High-Yield Segments"
+    ],
+    "formulas": [
+      {
+        "output": "Passenger Yield",
+        "variables": [
+          "Total Revenue",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Passenger Yield = Total Revenue / RPK",
+        "step": "Calculate Passenger Yield by Route and Cabin Class"
+      }
     ]
   },
   {
@@ -885,6 +1423,19 @@
       "Enhance Customer Experience with Unique Offerings",
       "Regularly Benchmark and Update Services",
       "Leverage Technology for Personalized Service"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Service",
+        "variables": [
+          "Total Revenue from Service",
+          "Number of Passengers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Service = Total Revenue from Service / Number of Passengers",
+        "step": "Evaluate Revenue and Costs for In-Flight Purchases"
+      }
     ]
   },
   {
@@ -920,6 +1471,30 @@
       "Enhance Reward Options Based on Member Feedback",
       "Implement Tier-Based Reward Strategies",
       "E. Customer Experience and Loyalty"
+    ],
+    "formulas": [
+      {
+        "output": "Redemption Cost per Point",
+        "variables": [
+          "Total Redemption Costs",
+          "Total Points Redeemed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Redemption Cost per Point = Total Redemption Costs / Total Points Redeemed",
+        "step": "Calculate Redemption Cost per Point"
+      },
+      {
+        "output": "Breakage Rate",
+        "variables": [
+          "Total Points Issued",
+          "Total Points Redeemed"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Breakage Rate = (Total Points Issued - Total Points Redeemed) / Total Points Issued x 100",
+        "step": "Determine Breakage Rate"
+      }
     ]
   },
   {
@@ -952,7 +1527,8 @@
       "Optimize High-Cost, Low-Value Services",
       "Differentiate Through Unique Offerings",
       "Regularly Review and Update Offerings"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "airline-29",
@@ -985,6 +1561,19 @@
       "Address Common Pain Points",
       "Regularly Benchmark and Update Program Offerings",
       "F. Regulatory and Environmental Compliance"
+    ],
+    "formulas": [
+      {
+        "output": "Retention Rate",
+        "variables": [
+          "Total Members",
+          "Members Lost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Retention Rate = (Total Members - Members Lost) / Total Members x 100",
+        "step": "Calculate Retention and Churn Rates by Tier"
+      }
     ]
   },
   {
@@ -1020,6 +1609,19 @@
       "Enhance Waste Reduction and Recycling Programs",
       "Invest in Carbon Offsetting Programs",
       "Regularly Benchmark and Update Sustainability Efforts"
+    ],
+    "formulas": [
+      {
+        "output": "Emissions per Flight",
+        "variables": [
+          "Total Fuel Consumption",
+          "Emission Factor"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Emissions per Flight = Total Fuel Consumption x Emission Factor",
+        "step": "Calculate Emissions and Fuel Efficiency by Aircraft and Route"
+      }
     ]
   },
   {
@@ -1052,6 +1654,19 @@
       "Enhance Coordination with Airport De-icing Services",
       "Implement Real-Time Weather Monitoring and Alerts",
       "Improve Passenger Handling for Weather Delays"
+    ],
+    "formulas": [
+      {
+        "output": "Average De-icing Cost per Event",
+        "variables": [
+          "Total De-icing Costs",
+          "Number of De-icing Events"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average De-icing Cost per Event = Total De-icing Costs / Number of De-icing Events",
+        "step": "Calculate Historical De-icing Costs by Airport and Season"
+      }
     ]
   },
   {
@@ -1083,7 +1698,8 @@
       "Adopt Real-Time Safety Monitoring",
       "Communicate Safety Improvements to Passengers",
       "G. Cost Management and Financial Strategy"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "airline-33",
@@ -1117,6 +1733,19 @@
       "Focus on Fuel Efficiency Initiatives",
       "Benchmark and Regularly Review Hedging Strategy",
       "Forecast Fuel Needs and Plan for Seasonal Variability"
+    ],
+    "formulas": [
+      {
+        "output": "CASM (Fuel)",
+        "variables": [
+          "Total Fuel Cost",
+          "Available Seat Miles (ASM)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CASM (Fuel) = Total Fuel Cost / Available Seat Miles (ASM)",
+        "step": "Analyze Historical Fuel Costs and Consumption"
+      }
     ]
   },
   {
@@ -1149,6 +1778,32 @@
       "Monitor and Adjust Debt Covenants",
       "Consider Alternative Financing Options",
       "Optimize Lease-to-Buy Decisions"
+    ],
+    "formulas": [
+      {
+        "output": "Annual Debt Servicing Cost",
+        "variables": [
+          "Principal",
+          "Interest Rate",
+          "Scheduled Repayments"
+        ],
+        "expression": "v0 * v1 + v2",
+        "percentOutput": false,
+        "source": "Annual Debt Servicing Cost = Principal x Interest Rate + Scheduled Repayments",
+        "step": "Review Debt Structure and Terms"
+      },
+      {
+        "output": "Debt/Lease Servicing Ratio",
+        "variables": [
+          "Debt Servicing Cost",
+          "Lease Payments",
+          "Operating Cash Flow"
+        ],
+        "expression": "( v0 + v1 ) / v2 * 100",
+        "percentOutput": true,
+        "source": "Debt/Lease Servicing Ratio = (Debt Servicing Cost + Lease Payments) / Operating Cash Flow x 100",
+        "step": "Assess Cash Flow Impacts of Debt and Lease Servicing"
+      }
     ]
   },
   {
@@ -1184,6 +1839,31 @@
       "Reduce Frequency or Capacity on Low-Demand Routes",
       "Optimize CASM with Efficient Fleet Utilization",
       "Explore Alternative Airports"
+    ],
+    "formulas": [
+      {
+        "output": "Total Operating Cost per Route",
+        "variables": [
+          "Landing Fees",
+          "Gate Fees",
+          "Fuel"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Operating Cost per Route = Landing Fees + Gate Fees + Fuel",
+        "step": "Calculate Operating Costs by Airport and Route"
+      },
+      {
+        "output": "CASM",
+        "variables": [
+          "Total Operating Cost per Route",
+          "Available Seat Miles (ASM)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CASM = Total Operating Cost per Route / Available Seat Miles (ASM)",
+        "step": "Evaluate Cost per Available Seat Mile (CASM) by Route and Airport\\"
+      }
     ]
   },
   {
@@ -1218,6 +1898,32 @@
       "Optimize Tankering by Season",
       "Use Partial Tankering for Balanced Savings",
       "Benchmark and Refine Tankering Strategy"
+    ],
+    "formulas": [
+      {
+        "output": "Fuel Price Differential",
+        "variables": [
+          "Price at Destination",
+          "Price at Departure"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Fuel Price Differential = Price at Destination - Price at Departure",
+        "step": "Calculate Fuel Price Differential by Route"
+      },
+      {
+        "output": "Cost Savings per Flight",
+        "variables": [
+          "Fuel Price Differential",
+          "Tankered Fuel Quantity",
+          "Additional Fuel Burn",
+          "Fuel Price at Departure"
+        ],
+        "expression": "( v0 * v1 ) - ( v2 * v3 )",
+        "percentOutput": false,
+        "source": "Cost Savings per Flight = (Fuel Price Differential x Tankered Fuel Quantity) - (Additional Fuel Burn x Fuel Price at Departure)",
+        "step": "Calculate Potential Cost Savings per Flight"
+      }
     ]
   },
   {
@@ -1249,6 +1955,20 @@
       "Adjust Refund and Cancellation Policies for High-Risk Routes",
       "Regularly Review and Update Fraud Prevention Rules",
       "H. Alliance and Partnership Strategy"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Loss from Fraud",
+        "variables": [
+          "Total Lost Revenue",
+          "Chargeback Fees",
+          "Refund Abuses"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Revenue Loss from Fraud = Total Lost Revenue + Chargeback Fees + Refund Abuses",
+        "step": "Calculate Revenue Loss from Fraud Incidents"
+      }
     ]
   },
   {
@@ -1281,6 +2001,19 @@
       "Enhance Customer Experience Through Loyalty Integration",
       "Expand Alliances in Strategic Markets",
       "Regularly Benchmark Partnerships Against Industry Standards"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Contribution per Partnership",
+        "variables": [
+          "Total Revenue from Partner Routes",
+          "Total Airline Revenue"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue Contribution per Partnership = Total Revenue from Partner Routes / Total Airline Revenue",
+        "step": "Calculate Revenue Contribution by Partnership"
+      }
     ]
   },
   {
@@ -1314,6 +2047,19 @@
       "Strengthen Competitive Positioning on Overlapping Routes",
       "Regularly Benchmark and Optimize Alliance Contributions",
       "I. Technology and Digital Transformation"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Contribution from Alliance",
+        "variables": [
+          "Total Revenue from Alliance Routes",
+          "Total Airline Revenue"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue Contribution from Alliance = Total Revenue from Alliance Routes / Total Airline Revenue",
+        "step": "Quantify Revenue Contribution from Alliances by Route"
+      }
     ]
   },
   {
@@ -1347,6 +2093,19 @@
       "Improve Data Management and Analytics",
       "Focus on Employee Training for Digital Proficiency",
       "Adopt Benchmarking Best Practices and Innovate"
+    ],
+    "formulas": [
+      {
+        "output": "System Downtime Impact",
+        "variables": [
+          "Total Downtime Hours",
+          "Operational Cost per Hour"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "System Downtime Impact = (Total Downtime Hours x Operational Cost per Hour)",
+        "step": "Evaluate System Reliability and Security"
+      }
     ]
   }
 ]

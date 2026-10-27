@@ -36,6 +36,30 @@
       "Reduce costs for low-margin products",
       "Introduce new products to fill gaps",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Profit",
+        "variables": [
+          "Product Revenue",
+          "Product Cost"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Product Profit = (Product Revenue - Product Cost)",
+        "step": null
+      },
+      {
+        "output": "Inventory Turnover",
+        "variables": [
+          "Cost of Goods Sold",
+          "Average Inventory"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Inventory Turnover = Cost of Goods Sold / Average Inventory",
+        "step": null
+      }
     ]
   },
   {
@@ -79,6 +103,41 @@
       "Enhance post-launch feedback loops",
       "Reallocate R&D resources",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Innovation Success Rate",
+        "variables": [
+          "Number of Products Successfully Launched",
+          "Total Ideas in R&D Pipeline"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Innovation Success Rate = (Number of Products Successfully Launched / Total Ideas in R&D Pipeline) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Time to Market",
+        "variables": [
+          "Total Time Taken for Product Development",
+          "Number of Products Launched"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Time to Market = Total Time Taken for Product Development / Number of Products Launched",
+        "step": null
+      },
+      {
+        "output": "R&D Cost per Product",
+        "variables": [
+          "Total R&D Spend",
+          "Number of Products Launched"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "R&D Cost per Product = Total R&D Spend / Number of Products Launched.",
+        "step": null
+      }
     ]
   },
   {
@@ -121,6 +180,32 @@
       "Leverage economies of scale",
       "Monitor formulation cost trends",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Formulation Cost per Unit",
+        "variables": [
+          "Total Ingredient Costs",
+          "Manufacturing Costs",
+          "Packaging Costs",
+          "Number of Units in Batch"
+        ],
+        "expression": "( v0 + v1 + v2 ) / v3",
+        "percentOutput": false,
+        "source": "Formulation Cost per Unit = (Total Ingredient Costs + Manufacturing Costs + Packaging Costs) / Number of Units in Batch",
+        "step": null
+      },
+      {
+        "output": "Profit Margin",
+        "variables": [
+          "Sales Price",
+          "Formulation Cost per Unit"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Profit Margin = (Sales Price - Formulation Cost per Unit) / Sales Price x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -157,6 +242,19 @@
       "Monitor return rates and sales by shade",
       "Benchmark against competitors regularly",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Shade Sales Share",
+        "variables": [
+          "Sales of Specific Shade",
+          "Total Sales of All Shades"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Shade Sales Share = (Sales of Specific Shade / Total Sales of All Shades) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -194,7 +292,8 @@
       "Use consumer feedback for post-launch testing",
       "Publicize clinical testing results",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-06",
@@ -229,7 +328,8 @@
       "Monitor product feedback closely post-launch",
       "Educate consumers on removal techniques",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-07",
@@ -266,6 +366,19 @@
       "Monitor customer feedback post-launch",
       "Ensure regulatory compliance",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Expected Shelf Life",
+        "variables": [
+          "Duration of Accelerated Test Conditions",
+          "Degradation Rate"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Expected Shelf Life = (Duration of Accelerated Test Conditions / Degradation Rate).",
+        "step": "Assess long-term shelf life"
+      }
     ]
   },
   {
@@ -301,7 +414,8 @@
       "Improve consumer education",
       "Stay compliant with emerging regulations",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-09",
@@ -335,7 +449,8 @@
       "Educate consumers on microbiome health",
       "Monitor and update formulations",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-10",
@@ -370,6 +485,19 @@
       "Benchmark and improve based on competitor analysis",
       "Obtain third-party validation",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Tensile Strength",
+        "variables": [
+          "Maximum Force Applied",
+          "Cross-Sectional Area of the Hair"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Tensile Strength = Maximum Force Applied / Cross-Sectional Area of the Hair",
+        "step": null
+      }
     ]
   },
   {
@@ -409,7 +537,8 @@
       "Benchmark regularly against competitors",
       "Leverage third-party certifications",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-12",
@@ -444,7 +573,8 @@
       "Increase shelf-life testing",
       "Benchmark regularly against competitors",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-13",
@@ -483,7 +613,8 @@
       "Leverage partnerships with beauty device brands",
       "Highlight product-device synergy in marketing",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-14",
@@ -526,7 +657,8 @@
       "Explore sustainable and eco-friendly multifunctional products",
       "Expand into emerging sub-trends",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-15",
@@ -562,7 +694,8 @@
       "Obtain expert endorsements",
       "Target specific consumer concerns",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-16",
@@ -600,7 +733,8 @@
       "Benchmark claims regularly",
       "Strengthen consumer education",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-17",
@@ -635,7 +769,8 @@
       "Benchmark and refine based on competitors",
       "Educate consumers on proper use",
       "B. Marketing and Consumer Insights"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-18",
@@ -679,7 +814,8 @@
       "Refine product development",
       "Invest in brand advocacy",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-19",
@@ -721,6 +857,19 @@
       "Improve consumer engagement",
       "Leverage user-generated content (UGC)",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI",
+        "variables": [
+          "Net Profit from Campaign",
+          "Cost of Campaign"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI = (Net Profit from Campaign - Cost of Campaign) / Cost of Campaign x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -766,6 +915,32 @@
       "Regularly assess and optimize",
       "Promote program benefits",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Retention Rate",
+        "variables": [
+          "Customers at End of Period",
+          "New Customers",
+          "Customers at Start of Period"
+        ],
+        "expression": "( v0 - v1 ) / v2 * 100",
+        "percentOutput": true,
+        "source": "Retention Rate = (Customers at End of Period - New Customers) / Customers at Start of Period x 100",
+        "step": null
+      },
+      {
+        "output": "CLV",
+        "variables": [
+          "Average Purchase Value",
+          "Purchase Frequency",
+          "Customer Lifespan"
+        ],
+        "expression": "v0 * v1 * v2",
+        "percentOutput": false,
+        "source": "CLV = Average Purchase Value x Purchase Frequency x Customer Lifespan",
+        "step": null
+      }
     ]
   },
   {
@@ -810,7 +985,8 @@
       "",
       "Monitor and adapt to emerging trends",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-22",
@@ -853,7 +1029,8 @@
       "Regularly evaluate global vs. local performance",
       "Develop region-specific product lines",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-23",
@@ -889,7 +1066,8 @@
       "Ensure long-term fragrance stability",
       "Leverage sensory appeal in marketing",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-24",
@@ -933,7 +1111,8 @@
       "Monitor and respond to shifting cultural trends",
       "Expand cross-cultural market research",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-25",
@@ -973,7 +1152,8 @@
       "Improve label design",
       "Monitor and respond to consumer concerns",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-26",
@@ -1012,7 +1192,8 @@
       "Monitor regulatory compliance",
       "Regularly test packaging prototypes",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-27",
@@ -1056,7 +1237,8 @@
       "Optimize marketing channels",
       "Monitor competitor strategies",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-28",
@@ -1101,7 +1283,8 @@
       "Monitor social media sentiment",
       "Segment product lines",
       "C. Sales and Distribution"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-29",
@@ -1145,7 +1328,8 @@
       "Adopt an omnichannel strategy",
       "Monitor competitor performance",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-30",
@@ -1192,7 +1376,8 @@
       "Monitor competitor strategies",
       "Tailor contracts to partner needs",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-31",
@@ -1235,7 +1420,8 @@
       "Leverage consumer behavior insights",
       "Strengthen retailer partnerships",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-32",
@@ -1279,7 +1465,8 @@
       "Improve customer acquisition and retention",
       "Monitor competitor performance",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-33",
@@ -1325,7 +1512,8 @@
       "Monitor competitor performance",
       "Tailor subscriptions to different segments",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-34",
@@ -1368,7 +1556,8 @@
       "Track digital engagement",
       "Monitor competitor sampling efforts",
       "D. Operations and Supply Chain"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-35",
@@ -1415,7 +1604,8 @@
       "Leverage competitor insights",
       "Reduce environmental impact",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-36",
@@ -1459,6 +1649,19 @@
       "Monitor and reduce product disposal rates",
       "Benchmark and implement best practices",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Inventory Turnover",
+        "variables": [
+          "Cost of Goods Sold (COGS)",
+          "Average Inventory"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Inventory Turnover = Cost of Goods Sold (COGS) / Average Inventory",
+        "step": null
+      }
     ]
   },
   {
@@ -1496,7 +1699,8 @@
       "Monitor regulatory compliance",
       "Explore patent opportunities",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-38",
@@ -1541,7 +1745,8 @@
       "Partner with sustainable suppliers",
       "Stay compliant with environmental regulations",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-39",
@@ -1582,7 +1787,8 @@
       "Streamline supply chain processes",
       "Monitor consumer behavior",
       "E. Compliance and Regulatory"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-40",
@@ -1623,7 +1829,8 @@
       "Monitor emerging regulations",
       "Pursue additional certifications",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-41",
@@ -1659,7 +1866,8 @@
       "Partner with dermatologists or allergists",
       "Stay informed about allergen research",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-42",
@@ -1700,7 +1908,8 @@
       "Monitor emerging trends in ethical beauty",
       "Implement transparent labeling practices",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-43",
@@ -1740,7 +1949,8 @@
       "Ensure accurate labeling",
       "Benchmark against industry leaders",
       "F. Finance and Intellectual Property"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-44",
@@ -1784,7 +1994,8 @@
       "Improve promotional campaign marketing",
       "Track and adjust pricing based on consumer feedback",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "cosmetics-45",
@@ -1828,6 +2039,7 @@
       "Increase R&D investment in patentable innovations",
       "Mitigate IP risks",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

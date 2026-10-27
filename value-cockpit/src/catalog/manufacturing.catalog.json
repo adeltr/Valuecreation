@@ -32,7 +32,8 @@
       "Reduce Downtime",
       "○ Analyze the root causes of downtime and take corrective actions, such as optimizing maintenance schedules or speeding up changeovers.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-02",
@@ -66,7 +67,8 @@
       "Increase Quality",
       "Continuous Monitoring",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-03",
@@ -104,7 +106,8 @@
       "Invest in Warehouse Management Systems",
       "Perform Regular Supply Chain Audits",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-04",
@@ -142,7 +145,8 @@
       "Enhance Workforce Training",
       "Improve Supplier Coordination",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-05",
@@ -182,7 +186,8 @@
       "○ Implement stricter quality control processes to reduce defects, rework, and scrap. Use root cause analysis to identify and correct sources of defects in the production process.",
       "Minimize Downtime",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-06",
@@ -219,6 +224,20 @@
       "Segment Inventory by Importance",
       "Optimize Product Mix",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "calculated as: Days Inventory Outstanding (DIO)",
+        "variables": [
+          "Average Inventory",
+          "COGS",
+          "Number of Days in the Period"
+        ],
+        "expression": "( v0 / v1 ) * v2",
+        "percentOutput": false,
+        "source": "calculated as: Days Inventory Outstanding (DIO) = (Average Inventory / COGS) x Number of Days in the Period",
+        "step": "Calculate Days Inventory Outstanding (DIO)"
+      }
     ]
   },
   {
@@ -260,7 +279,8 @@
       "Use Continuous Improvement (Kaizen)",
       "Monitor Supplier Quality",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-08",
@@ -302,6 +322,19 @@
       "Plan for Future Flexibility",
       "Monitor Utilization Regularly",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "that expansion is needed. Capacity Utilization (%)",
+        "variables": [
+          "Actual Output",
+          "Maximum Possible Output"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "that expansion is needed. Capacity Utilization (%) = (Actual Output / Maximum Possible Output) x 100",
+        "step": "Determine Current Capacity Utilization"
+      }
     ]
   },
   {
@@ -343,6 +376,30 @@
       "Perform Root Cause Analysis on Major Downtime Events",
       "○ For significant downtime events, perform a detailed root cause analysis to understand what went wrong and implement corrective actions to prevent recurrence.",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "failure. The formula is: MTBF",
+        "variables": [
+          "Total Operating Time",
+          "Number of Failures"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "failure. The formula is: MTBF = Total Operating Time / Number of Failures",
+        "step": "Calculate MTBF (Mean Time Between Failures)"
+      },
+      {
+        "output": "failure. The formula is: MTTR",
+        "variables": [
+          "Total Downtime",
+          "Number of Failures"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "failure. The formula is: MTTR = Total Downtime / Number of Failures",
+        "step": "Calculate MTTR (Mean Time to Repair)"
+      }
     ]
   },
   {
@@ -384,7 +441,8 @@
       "Design for Flexibility",
       "Track Key Performance Indicators (KPIs)",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-11",
@@ -424,6 +482,30 @@
       "Use Buffer Stocks at Bottlenecks",
       "Continuous Monitoring of Bottlenecks",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "finished goods. It can be measured as: Throughput",
+        "variables": [
+          "Total Units Produced",
+          "Total Time"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "finished goods. It can be measured as: Throughput = Total Units Produced / Total Time",
+        "step": "Measure Throughput"
+      },
+      {
+        "output": "Bottleneck Identification",
+        "variables": [
+          "Slowest Cycle Time",
+          "Average Cycle Time"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Bottleneck Identification = Slowest Cycle Time / Average Cycle Time",
+        "step": "Map the Production Process"
+      }
     ]
   },
   {
@@ -463,7 +545,8 @@
       "Increase Cross-Departmental Collaboration",
       "Implement Advanced Planning and Scheduling (APS) Systems",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-13",
@@ -499,7 +582,8 @@
       "Encourage Continuous Improvement",
       "Leverage Data Analytics",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-14",
@@ -539,6 +623,19 @@
       "Enhance WIP Tracking and Monitoring",
       "Conduct Regular WIP Audits",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "through the production process. It can be calculated as: WIP Turnover",
+        "variables": [
+          "Cost of Goods Manufactured",
+          "Average WIP Inventory"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "through the production process. It can be calculated as: WIP Turnover = Cost of Goods Manufactured / Average WIP Inventory",
+        "step": "Calculate WIP Turnover Rate"
+      }
     ]
   },
   {
@@ -577,7 +674,8 @@
       "Train Employees on Efficient Material Handling",
       "Monitor and Track Performance",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-16",
@@ -619,7 +717,8 @@
       "Automate Material Handling",
       "Conduct Regular Audits",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-17",
@@ -664,6 +763,30 @@
       "Use Real-Time Monitoring",
       "Collaborate with Suppliers",
       "B. Supply Chain and Procurement"
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Utilization (%)",
+        "variables": [
+          "Actual Output",
+          "Maximum Output Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Utilization (%) = (Actual Output / Maximum Output Capacity) x 100",
+        "step": "Determine Current Capacity Utilization"
+      },
+      {
+        "output": "Buffer Capacity",
+        "variables": [
+          "Forecasted Peak Demand",
+          "Current Capacity"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "Buffer Capacity = (Forecasted Peak Demand - Current Capacity) / Current Capacity x 100",
+        "step": "Calculate Buffer Capacity Requirements"
+      }
     ]
   },
   {
@@ -710,6 +833,20 @@
       "Implement Continuous Improvement Initiatives",
       "Analyze Make-or-Buy Decisions",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Cost per Unit",
+        "variables": [
+          "Total Material Costs",
+          "Total Labor Costs",
+          "Allocated Overhead Costs"
+        ],
+        "expression": "( v0 + v1 + v2 )",
+        "percentOutput": false,
+        "source": "Total Cost per Unit = (Total Material Costs + Total Labor Costs + Allocated Overhead Costs)",
+        "step": "Summarize the Total Cost Structure"
+      }
     ]
   },
   {
@@ -750,6 +887,19 @@
       "Use Technology for Supply Chain Transparency",
       "Conduct Regular Risk Audits",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Dependency (%)",
+        "variables": [
+          "Value of Supplies from a Supplier",
+          "Total Value of Supplies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Dependency (%) = (Value of Supplies from a Supplier / Total Value of Supplies) x 100",
+        "step": "Measure Supply Chain Dependency"
+      }
     ]
   },
   {
@@ -794,7 +944,8 @@
       "Develop a Supplier Quality Risk Matrix",
       "Promote Supplier Collaboration",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-21",
@@ -840,7 +991,8 @@
       "Monitor and Adjust Procurement Practices Regularly",
       "Enhance Forecast Accuracy",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-22",
@@ -887,7 +1039,8 @@
       "Implement Continuous Improvement Initiatives",
       "Monitor Customer Satisfaction",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-23",
@@ -929,7 +1082,8 @@
       "Develop Contingency Plans",
       "Continuously Re-evaluate the Decision",
       "C. Technology and Automation"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-24",
@@ -970,7 +1124,8 @@
       "Regularly Review and Optimize Automation",
       "Ensure Cybersecurity and Data Protection",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-25",
@@ -1013,7 +1168,8 @@
       "Focus on Continuous Improvement",
       "Adopt Industry 4.0 and IoT Solutions",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-26",
@@ -1054,7 +1210,8 @@
       "Conduct Regular Setup Audits",
       "Monitor OEE Continuously",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-27",
@@ -1098,7 +1255,8 @@
       "Conduct Regular Root Cause Analysis Reviews",
       "Benchmark Downtime Performance",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-28",
@@ -1146,7 +1304,8 @@
       "Focus on High-Criticality Parts",
       "Continuously Refine Predictive Algorithms",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-29",
@@ -1192,7 +1351,8 @@
       "Balance Production Lines",
       "Regularly Review and Update Processes",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-30",
@@ -1232,7 +1392,8 @@
       "Conduct Regular Energy Audits",
       "Utilize Waste Heat Recovery",
       "D. Finance and Asset Management"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-31",
@@ -1275,7 +1436,8 @@
       "Consider Leasing or Outsourcing",
       "Incorporate Sustainability into CapEx Decisions",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-32",
@@ -1324,7 +1486,8 @@
       "",
       "Revisit Pricing Strategies",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-33",
@@ -1365,7 +1528,8 @@
       "Consider Asset Leasing or Outsourcing",
       "Develop an Asset Replacement Plan",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-34",
@@ -1407,7 +1571,8 @@
       "Monitor ROIC Trends",
       "○ Continuously track ROIC for manufacturing assets to identify changes in performance over time. Use this data to inform decisions about asset allocation, capital investment, and operational improvements.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-35",
@@ -1460,7 +1625,8 @@
       "Align Production with Demand",
       "Consider Financing for Seasonal Working Capital",
       "E. Product and Process Development"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-36",
@@ -1501,7 +1667,8 @@
       "Monitor Quality and Customer Feedback",
       "Expand Customization as a Premium Offering",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-37",
@@ -1545,7 +1712,8 @@
       "Align Marketing and Launch Strategy with Production",
       "Monitor and Adjust Based on Post-Launch Feedback",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-38",
@@ -1590,7 +1758,8 @@
       "Maximize Economies of Scale in Mass Production",
       "Explore Hybrid Production Models",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-39",
@@ -1634,7 +1803,8 @@
       "Use Higher-Quality Materials",
       "Track and Monitor Yield and Scrap Metrics",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-40",
@@ -1677,7 +1847,8 @@
       "Manage Customer Expectations for MTO",
       "Leverage Technology for Both Strategies",
       "F. Environmental and Sustainability"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-41",
@@ -1723,7 +1894,8 @@
       "Engage with Suppliers on Sustainability",
       "Implement Environmental Monitoring Systems",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-42",
@@ -1762,7 +1934,8 @@
       "Engage Employees in Sustainability Initiatives",
       "Employee participation can lead to innovative solutions and a company-wide commitment to sustainability.",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-43",
@@ -1801,7 +1974,8 @@
       "Leverage Digital Tools for Monitoring",
       "Participate in Carbon Offsetting",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-44",
@@ -1839,7 +2013,8 @@
       "○ Use digital tools, such as enterprise resource planning (ERP) systems or product lifecycle management (PLM) software, to track products throughout their lifecycle and manage reverse logistics more effectively.",
       "Adopt Circular Economy Business Models",
       "G. Logistics and Aftermarket Services"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-45",
@@ -1885,7 +2060,8 @@
       "Implement Real-Time Tracking Systems",
       "Develop Aftermarket Service Contracts",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-46",
@@ -1929,7 +2105,8 @@
       "○ Implement just-in-time (JIT) inventory management or cross-site inventory sharing to reduce excess inventory levels while ensuring critical parts and materials are available when needed.",
       "Monitor Key Performance Indicators (KPIs)",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "manufacturing-47",
@@ -1972,6 +2149,7 @@
       "Improve Emergency Preparedness",
       "Monitor KPIs for Safety and Compliance",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

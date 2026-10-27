@@ -33,7 +33,8 @@
       "Leverage Technology for Personalization",
       "Focus on Emerging Markets",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-02",
@@ -72,7 +73,8 @@
       "Monitor Changes Continuously",
       "Build Local Partnerships",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-03",
@@ -104,7 +106,8 @@
       "Test and Iterate",
       "Leverage Cultural Themes",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-04",
@@ -140,7 +143,8 @@
       "Diversify Portfolio",
       "Invest in Predictive Analytics",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-05",
@@ -178,7 +182,8 @@
       "Improve Marketing ROI",
       "Monitor Trends Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-06",
@@ -218,7 +223,8 @@
       "Monitor External Factors Continuously",
       "Optimize Supply Chain Flexibility",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-07",
@@ -258,7 +264,8 @@
       "Leverage Data Insights",
       "Build Partnerships",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-08",
@@ -294,7 +301,8 @@
       "Monitor Online Reputation",
       "Refine Marketing Strategies",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-09",
@@ -329,7 +337,8 @@
       "Follow Up Strategically",
       "Refine Audience Targeting",
       "B. Brand Positioning and Marketing Strategy"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-10",
@@ -367,7 +376,8 @@
       "Leverage Customer Feedback",
       "Monitor Market Trends",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-11",
@@ -403,7 +413,8 @@
       "Leverage Data Analytics",
       "Monitor Competitors Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-12",
@@ -440,7 +451,8 @@
       "Explore Trend-Driven Products",
       "Personalize Marketing",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-13",
@@ -477,7 +489,8 @@
       "Monitor Campaign Authenticity",
       "Enhance Tracking Tools",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-14",
@@ -516,7 +529,8 @@
       "Evaluate Cost-Effectiveness",
       "Monitor Risks and Reactions",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-15",
@@ -555,7 +569,8 @@
       "Optimize Marketing Channels",
       "Monitor Inventory Closely",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-16",
@@ -595,7 +610,8 @@
       "Monitor Pricing Trends",
       "Engage Key Influencers",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-17",
@@ -628,7 +644,8 @@
       "Leverage Seasonal Trends",
       "Enhance Accessibility",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-18",
@@ -666,7 +683,8 @@
       "Host Celebratory Events",
       "Track Consumer Sentiment",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-19",
@@ -699,7 +717,8 @@
       "Collaborate with Retailers",
       "Optimize Seasonal Displays",
       "C. Product Innovation and Development"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-20",
@@ -734,7 +753,8 @@
       "Strengthen Regulatory Expertise",
       "Benchmark Competitors Regularly",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-21",
@@ -770,7 +790,8 @@
       "Leverage Social Media",
       "Monitor and Iterate",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-22",
@@ -809,7 +830,8 @@
       "Innovate with Ingredients",
       "Monitor Trends and Feedback",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-23",
@@ -848,7 +870,8 @@
       "Refine Sensory Analysis",
       "Monitor Yield Metrics",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-24",
@@ -884,7 +907,8 @@
       "Monitor Climate Trends",
       "Educate Consumers",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-25",
@@ -923,7 +947,8 @@
       "Enhance Scalability",
       "Regularly Reassess",
       "D. Supply Chain and Sourcing Stability"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-26",
@@ -961,7 +986,8 @@
       "Develop Contingency Plans",
       "Monitor Market Trends",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-27",
@@ -1002,6 +1028,19 @@
       "Leverage Technology",
       "Develop Contingency Plans",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Dependency Ratio",
+        "variables": [
+          "Distributor Revenue Contribution",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Dependency Ratio = (Distributor Revenue Contribution / Total Revenue) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1041,7 +1080,8 @@
       "Enhance Sustainability",
       "Train Sensory Panels",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-29",
@@ -1083,7 +1123,8 @@
       "Adjust Production Flexibly",
       "Monitor Market Trends",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-30",
@@ -1117,7 +1158,8 @@
       "Leverage Predictive Analytics",
       "Collaborate with Growers",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-31",
@@ -1154,7 +1196,8 @@
       "Monitor Climate Data",
       "Explore Emerging Regions",
       "E. Production and Quality Control"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-32",
@@ -1196,6 +1239,19 @@
       "Optimize Resource Allocation",
       "Leverage Demand Forecasting",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Utilization (%)",
+        "variables": [
+          "Actual Production",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Utilization (%) = (Actual Production / Maximum Capacity) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1238,6 +1294,19 @@
       "Implement Preventive Maintenance",
       "Train Staff",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Bottling Efficiency (%)",
+        "variables": [
+          "Actual Bottles Produced",
+          "Maximum Bottling Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Bottling Efficiency (%) = (Actual Bottles Produced / Maximum Bottling Capacity) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1278,6 +1347,19 @@
       "Streamline Inventory Management",
       "Scale Storage Strategically",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Loss Impact",
+        "variables": [
+          "Volume Lost",
+          "Product Value"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "Loss Impact = (Volume Lost x Product Value).",
+        "step": null
+      }
     ]
   },
   {
@@ -1311,7 +1393,8 @@
       "Incorporate Feedback Loops",
       "Monitor Production Factors",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-36",
@@ -1349,7 +1432,8 @@
       "Monitor Consumer Feedback",
       "Regularly Audit Processes",
       "F. Regulatory and Compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-37",
@@ -1387,7 +1471,8 @@
       "Audit Supply Chains",
       "Prepare for Emerging Regulations",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-38",
@@ -1423,7 +1508,8 @@
       "Monitor Regulatory Changes",
       "Engage Third-Party Auditors",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-39",
@@ -1458,7 +1544,8 @@
       "Collaborate with Legal Experts",
       "Proactively Address Feedback",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-40",
@@ -1502,6 +1589,21 @@
       "Enhance Cost Efficiency",
       "Advocate for Policy Reforms",
       "G. Financial and Revenue Optimization"
+    ],
+    "formulas": [
+      {
+        "output": "Tax Burden per Unit",
+        "variables": [
+          "Tax Rate",
+          "Tariff",
+          "Excise Duty",
+          "Product Price"
+        ],
+        "expression": "( v0 + v1 + v2 ) * v3",
+        "percentOutput": false,
+        "source": "Tax Burden per Unit = (Tax Rate + Tariff + Excise Duty) x Product Price.",
+        "step": null
+      }
     ]
   },
   {
@@ -1543,7 +1645,8 @@
       "Test Dynamic Pricing Models",
       "Leverage Regional Insights",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-42",
@@ -1583,6 +1686,19 @@
       "Focus on Regional Promotions",
       "Monitor and Adapt",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Conversion Rate (%)",
+        "variables": [
+          "Purchases",
+          "Total Visitors"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Conversion Rate (%) = (Purchases / Total Visitors) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1622,6 +1738,19 @@
       "Experiment with New Strategies",
       "Align Marketing with Sales Goals",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "CAC",
+        "variables": [
+          "Total Marketing Spend",
+          "Number of New Customers Acquired"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CAC = Total Marketing Spend / Number of New Customers Acquired.",
+        "step": null
+      }
     ]
   },
   {
@@ -1663,6 +1792,19 @@
       "Enhance Distributor Relationships",
       "Align with Consumer Preferences",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost-to-Revenue Ratio",
+        "variables": [
+          "Channel Costs",
+          "Channel Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Revenue Ratio = (Channel Costs / Channel Revenue) x 100.",
+        "step": null
+      }
     ]
   },
   {
@@ -1697,7 +1839,8 @@
       "Enhance Retail Placement",
       "",
       "Test Consumer Response"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "wine-spirits-46",
@@ -1736,6 +1879,20 @@
       "Expand Referral Incentives",
       "Invest in Data Analytics",
       "H. Sustainability and Environmental Impact"
+    ],
+    "formulas": [
+      {
+        "output": "CLV",
+        "variables": [
+          "Average Purchase Value",
+          "Purchase Frequency",
+          "Average"
+        ],
+        "expression": "( v0 * v1 ) * v2",
+        "percentOutput": false,
+        "source": "CLV = (Average Purchase Value x Purchase Frequency) x Average",
+        "step": "Calculate Key Retention Metrics ○ Measure repeat purchase rates"
+      }
     ]
   },
   {
@@ -1774,6 +1931,19 @@
       "Communicate Sustainability",
       "Monitor and Adapt",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Water Efficiency",
+        "variables": [
+          "Total Water Used",
+          "Units Produced"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Water Efficiency = Total Water Used / Units Produced.",
+        "step": null
+      }
     ]
   },
   {
@@ -1808,6 +1978,7 @@
       "Monitor Consumer Trends",
       "Refine Marketing Efforts",
       ""
-    ]
+    ],
+    "formulas": []
   }
 ]

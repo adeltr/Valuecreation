@@ -32,7 +32,8 @@
       "Optimize data storage and bandwidth usage",
       "Review direct labor eKiciency",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "saas-02",
@@ -70,7 +71,8 @@
       "Reduce customer downgrades",
       "Monitor customer feedback",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "saas-03",
@@ -102,6 +104,19 @@
       "Tailor pricing to enterprise customers",
       "Bundle services",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ACV",
+        "variables": [
+          "Total Contract Value",
+          "Contract Length (in years)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ACV = Total Contract Value / Contract Length (in years)",
+        "step": "Calculate ACV for each contract"
+      }
     ]
   },
   {
@@ -136,6 +151,19 @@
       "Improve customer segmentation",
       "Provide discounts for annual plans",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ARPU",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Active Users"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ARPU = Total Revenue / Total Number of Active Users",
+        "step": "Calculate ARPU"
+      }
     ]
   },
   {
@@ -167,6 +195,19 @@
       "Align sales and ﬁnance teams",
       "OKer ﬂexible payment options",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Deferred Revenue",
+        "variables": [
+          "Total Payment Received",
+          "Revenue Recognized to Date"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Deferred Revenue = Total Payment Received - Revenue Recognized to Date",
+        "step": "Calculate Deferred Revenue for each customer"
+      }
     ]
   },
   {
@@ -207,6 +248,19 @@
       "Improve product onboarding",
       "Develop add-on services",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Expansion Revenue (%)",
+        "variables": [
+          "Revenue from Expansions",
+          "Revenue at Start of Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Expansion Revenue (%) = (Revenue from Expansions / Revenue at Start of Period) x 100",
+        "step": "Calculate the percentage of expansion revenue"
+      }
     ]
   },
   {
@@ -240,6 +294,30 @@
       "Track backlog trends over time",
       "Align sales and customer success teams",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Revenue Backlog",
+        "variables": [
+          "Total Contracted Revenue",
+          "Revenue Recognized to Date"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Revenue Backlog = Total Contracted Revenue - Revenue Recognized to Date",
+        "step": null
+      },
+      {
+        "output": "o    If relevant, use the formula: Revenue Backlog per Period",
+        "variables": [
+          "Total Revenue Backlog",
+          "Number of Remaining Periods"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    If relevant, use the formula: Revenue Backlog per Period = Total Revenue Backlog / Number of Remaining Periods",
+        "step": null
+      }
     ]
   },
   {
@@ -273,6 +351,19 @@
       "Expand into new market segments",
       "OKer tiered pricing models",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Concentration (%)",
+        "variables": [
+          "Revenue from Top Customers",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Concentration (%) = (Revenue from Top Customers / Total Revenue) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -307,6 +398,19 @@
       "Implement rolling forecasts",
       "Improve cross-functional collaboration",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Forecasting Error",
+        "variables": [
+          "Actual Revenue",
+          "Forecasted Revenue"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Forecasting Error = Actual Revenue - Forecasted Revenue",
+        "step": null
+      }
     ]
   },
   {
@@ -344,6 +448,54 @@
       "Monitor discount eKectiveness",
       "Test diKerent discount structures",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Average Discount Rate (%)",
+        "variables": [
+          "Total Discount Amount",
+          "Total Original Contract Value"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Average Discount Rate (%) = (Total Discount Amount / Total Original Contract Value) x 100",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Revenue Loss",
+        "variables": [
+          "Total Original Contract Value",
+          "Revenue from Discounted Deals"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Revenue Loss = Total Original Contract Value - Revenue from Discounted Deals",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Adjusted Gross Proﬁt",
+        "variables": [
+          "Revenue from Discounted Deals",
+          "Gross Margin"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Adjusted Gross Proﬁt = Revenue from Discounted Deals x Gross Margin",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Customer Acquisition/Retention via Discounts (%)",
+        "variables": [
+          "Number of Customers Acquired",
+          "Retained via Discounts",
+          "Total Number of Customers Acquired",
+          "Retained"
+        ],
+        "expression": "( v0 / v1 / v2 / v3 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Customer Acquisition/Retention via Discounts (%) = (Number of Customers Acquired/Retained via Discounts / Total Number of Customers Acquired/Retained) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -378,6 +530,19 @@
       "Reduce churn",
       "Scale operational processes",
       "B. Sales & Marketing"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Employee",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Employees"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Employee = Total Revenue / Total Number of Employees",
+        "step": "Calculate Revenue per Employee"
+      }
     ]
   },
   {
@@ -412,6 +577,19 @@
       "Provide customer support for freemium users",
       "Segment users and tailor conversion strategies",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Freemium to Paid Conversion Rate (%)",
+        "variables": [
+          "Number of Users Converted to Paid Plans",
+          "Total Number of Freemium Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Freemium to Paid Conversion Rate (%) = (Number of Users Converted to Paid Plans / Total Number of Freemium Users) x 100",
+        "step": "Calculate the Freemium to Paid Conversion Rate"
+      }
     ]
   },
   {
@@ -446,6 +624,19 @@
       "Align marketing and sales teams",
       "Analyze conversion by source",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Lead-to-Customer Conversion Rate (%)",
+        "variables": [
+          "Number of Leads Converted to Customers",
+          "Total Number of Leads"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Lead-to-Customer Conversion Rate (%) = (Number of Leads Converted to Customers / Total Number of Leads) x 100",
+        "step": "Calculate the Lead-to-Customer Conversion Rate"
+      }
     ]
   },
   {
@@ -478,6 +669,19 @@
       "Leverage referral programs",
       "Improve conversion rates",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "CAC",
+        "variables": [
+          "Total Sales and Marketing Expenses",
+          "Number of New Customers Acquired"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CAC = Total Sales and Marketing Expenses / Number of New Customers Acquired",
+        "step": "Calculate CAC"
+      }
     ]
   },
   {
@@ -511,6 +715,30 @@
       "Collaborate with the marketing team",
       "Analyze and address objections",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Sales Cycle Length",
+        "variables": [
+          "Date of Conversion",
+          "Date of First Contact"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Sales Cycle Length = Date of Conversion - Date of First Contact",
+        "step": "Calculate the sales cycle length for each deal"
+      },
+      {
+        "output": "Average Sales Cycle Length",
+        "variables": [
+          "Sum of Sales Cycle Lengths for All Deals",
+          "Number of Deals Closed"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Average Sales Cycle Length = (Sum of Sales Cycle Lengths for All Deals) / (Number of Deals Closed)",
+        "step": "Calculate the average sales cycle length"
+      }
     ]
   },
   {
@@ -546,7 +774,8 @@
       "Improve product-market ﬁt",
       "Leverage automation and technology",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "saas-17",
@@ -583,6 +812,52 @@
       "Improve customer retention",
       "Optimize pricing models",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: CAC",
+        "variables": [
+          "Total Sales and Marketing Expenses",
+          "Number of New Customers Acquired"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: CAC = Total Sales and Marketing Expenses / Number of New Customers Acquired",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: ARPU",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: ARPU = Total Revenue / Total Number of Customers",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Gross Margin-Adjusted ARPU",
+        "variables": [
+          "ARPU",
+          "Gross Margin"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Gross Margin-Adjusted ARPU = ARPU x Gross Margin",
+        "step": null
+      },
+      {
+        "output": "o    Payback Period (months)",
+        "variables": [
+          "CAC",
+          "Gross Margin-Adjusted ARPU"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Payback Period (months) = CAC / Gross Margin-Adjusted ARPU",
+        "step": null
+      }
     ]
   },
   {
@@ -614,6 +889,19 @@
       "OKer targeted incentives to convert",
       "Address user objections",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Engagement-to-Subscription Rate (%)",
+        "variables": [
+          "Number of Users Who Convert to Paid Subscription",
+          "Number of Engaged Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Engagement-to-Subscription Rate (%) = (Number of Users Who Convert to Paid Subscription / Number of Engaged Users) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -646,6 +934,41 @@
       "Monitor and optimize partner performance",
       "Focus on strategic partners",
       "C. Customer Retention & Success"
+    ],
+    "formulas": [
+      {
+        "output": "Partner Revenue Contribution (%)",
+        "variables": [
+          "Revenue from Partners",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Partner Revenue Contribution (%) = (Revenue from Partners / Total Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Partner Customer Acquisition Rate (%)",
+        "variables": [
+          "Number of Customers Acquired via Partners",
+          "Total Number of Customers Acquired"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Partner Customer Acquisition Rate (%) = (Number of Customers Acquired via Partners / Total Number of Customers Acquired) x 100",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Partner Proﬁt",
+        "variables": [
+          "Revenue from Partners",
+          "Partner-Related Costs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Partner Proﬁt = Revenue from Partners - Partner-Related Costs",
+        "step": null
+      }
     ]
   },
   {
@@ -682,6 +1005,30 @@
       "",
       "Monitor segment-speciﬁc churn drivers",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Average Revenue Per User (ARPU) per segment: ARPU",
+        "variables": [
+          "Total Revenue from Segment",
+          "Number of Customers in Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Average Revenue Per User (ARPU) per segment: ARPU = Total Revenue from Segment / Number of Customers in Segment",
+        "step": "Calculate metrics for each segment"
+      },
+      {
+        "output": "o    Churn rate per segment: Churn Rate",
+        "variables": [
+          "Number of Customers Lost in Segment",
+          "Number of Customers at Start of Period in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Churn rate per segment: Churn Rate = (Number of Customers Lost in Segment / Number of Customers at Start of Period in Segment) x 100",
+        "step": "Calculate metrics for each segment"
+      }
     ]
   },
   {
@@ -716,6 +1063,19 @@
       "Tailor communication around renewal time",
       "Conduct regular health checks",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Contract Renewal Rate (%)",
+        "variables": [
+          "Number of Contracts Renewed",
+          "Total Number of Contracts Up for Renewal"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Contract Renewal Rate (%) = (Number of Contracts Renewed / Total Number of Contracts Up for Renewal) x 100",
+        "step": "Calculate the Contract Renewal Rate"
+      }
     ]
   },
   {
@@ -757,7 +1117,8 @@
       "Segment customers based on value and potential",
       "Regularly monitor and adjust pricing",
       ""
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "saas-23",
@@ -792,6 +1153,30 @@
       "Create customer engagement strategies",
       "Identify churn risk early",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Customer Churn Rate (%)",
+        "variables": [
+          "Number of Customers Lost During the Period",
+          "Number of Customers at the Start of the Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Customer Churn Rate (%) = (Number of Customers Lost During the Period / Number of Customers at the Start of the Period) x 100",
+        "step": "Calculate the Customer Churn Rate"
+      },
+      {
+        "output": "Revenue Churn Rate (%)",
+        "variables": [
+          "Revenue Lost During the Period",
+          "Total Revenue at the Start of the Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Churn Rate (%) = (Revenue Lost During the Period / Total Revenue at the Start of the Period) x 100",
+        "step": "Calculate the Revenue Churn Rate"
+      }
     ]
   },
   {
@@ -832,6 +1217,52 @@
       "Increase customer satisfaction and product usage",
       "Monitor customer segmentation",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "ARPU",
+        "variables": [
+          "Total Revenue from Customers",
+          "Total Number of Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ARPU = Total Revenue from Customers / Total Number of Customers",
+        "step": "Calculate the Average Revenue Per User (ARPU)"
+      },
+      {
+        "output": "Average Customer Lifespan",
+        "variables": [
+          "Monthly Churn Rate"
+        ],
+        "expression": "1 / v0",
+        "percentOutput": false,
+        "source": "Average Customer Lifespan = 1 / Monthly Churn Rate",
+        "step": "Determine the average customer lifespan"
+      },
+      {
+        "output": "CLV",
+        "variables": [
+          "ARPU",
+          "Average Customer Lifespan"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "CLV = ARPU x Average Customer Lifespan",
+        "step": "Calculate Customer Lifetime Value (CLV)"
+      },
+      {
+        "output": "CLV",
+        "variables": [
+          "ARPU",
+          "Average Customer Lifespan",
+          "Gross Margin"
+        ],
+        "expression": "( v0 * v1 ) * v2",
+        "percentOutput": false,
+        "source": "CLV = (ARPU x Average Customer Lifespan) x Gross Margin",
+        "step": "Reﬁne the CLV by incorporating gross margin (optional)"
+      }
     ]
   },
   {
@@ -863,6 +1294,19 @@
       "Monitor and reﬁne common issue workﬂows",
       "OKer proactive support",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the following formula to calculate the FCR rate: FCR Rate (%)",
+        "variables": [
+          "Number of Cases Resolved on First Contact",
+          "Total Number of Customer Support Cases"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the following formula to calculate the FCR rate: FCR Rate (%) = (Number of Cases Resolved on First Contact / Total Number of Customer Support Cases) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -895,6 +1339,19 @@
       "Segment and personalize outreach",
       "Enhance product features",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: NPS",
+        "variables": [
+          "Promoter Percentage",
+          "Detractor Percentage"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: NPS = Promoter Percentage - Detractor Percentage",
+        "step": null
+      }
     ]
   },
   {
@@ -929,6 +1386,30 @@
       "Invest in CSM training and resources",
       "Expand the team as the customer base grows",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Customers per CSM",
+        "variables": [
+          "Total Number of Customers",
+          "Number of CSMs"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Customers per CSM = Total Number of Customers / Number of CSMs",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Customers per CSM by Segment",
+        "variables": [
+          "Total Number of Customers in Segment",
+          "Number of CSMs Assigned to that Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Customers per CSM by Segment = Total Number of Customers in Segment / Number of CSMs Assigned to that Segment",
+        "step": null
+      }
     ]
   },
   {
@@ -964,6 +1445,30 @@
       "Monitor customer satisfaction",
       "Automate repetitive tasks",
       "D. Product & Engagement"
+    ],
+    "formulas": [
+      {
+        "output": "Tickets per Customer",
+        "variables": [
+          "Total Number of Tickets",
+          "Total Number of Unique Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Tickets per Customer = Total Number of Tickets / Total Number of Unique Customers",
+        "step": "Calculate Tickets per Customer"
+      },
+      {
+        "output": "Average Resolution Time",
+        "variables": [
+          "Total Time to Resolve All Tickets",
+          "Total Number of Tickets Resolved"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Resolution Time = Total Time to Resolve All Tickets / Total Number of Tickets Resolved",
+        "step": "Calculate the average resolution time"
+      }
     ]
   },
   {
@@ -997,6 +1502,19 @@
       "Leverage partnerships for integrations",
       "Encourage customer feedback and involvement",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Number of Integrations per Customer",
+        "variables": [
+          "Total Number of Integrations Used",
+          "Total Number"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Number of Integrations per Customer = Total Number of Integrations Used / Total Number",
+        "step": "Analyze the number of integrations per customer"
+      }
     ]
   },
   {
@@ -1032,6 +1550,30 @@
       "Automate onboarding with triggered events",
       "OKer onboarding incentives",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Time to First Value (TTFV)",
+        "variables": [
+          "Date of First Value",
+          "Customer Sign-up Date"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Time to First Value (TTFV) = Date of First Value - Customer Sign-up Date",
+        "step": "Calculate the Time to First Value (TTFV) for each customer"
+      },
+      {
+        "output": "Average TTFV",
+        "variables": [
+          "Total TTFV for All Customers",
+          "Total Number of Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average TTFV = Total TTFV for All Customers / Total Number of Customers",
+        "step": "Calculate the average TTFV"
+      }
     ]
   },
   {
@@ -1066,6 +1608,41 @@
       "Use incentives to complete onboarding",
       "Leverage user feedback",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Onboarding Completion Rate (%)",
+        "variables": [
+          "Number of Users Completing Onboarding",
+          "Number of Users Starting Onboarding"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Onboarding Completion Rate (%) = (Number of Users Completing Onboarding / Number of Users Starting Onboarding) x 100",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Average Time to Activation",
+        "variables": [
+          "Total Time Taken for All Users to Activate",
+          "Number of Users Activated"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Average Time to Activation = Total Time Taken for All Users to Activate / Number of Users Activated",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Onboarding Churn Rate (%)",
+        "variables": [
+          "Number of Users Who Churn During Onboarding",
+          "Number of Users Starting Onboarding"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Onboarding Churn Rate (%) = (Number of Users Who Churn During Onboarding / Number of Users Starting Onboarding) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1101,6 +1678,19 @@
       "Optimize pricing strategies",
       "Personalize engagement based on tier",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula for each tier: Feature Usage by Tier (%)",
+        "variables": [
+          "Number of Features Used by Tier",
+          "Number of Available Features in Tier"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula for each tier: Feature Usage by Tier (%) = (Number of Features Used by Tier / Number of Available Features in Tier) x 100",
+        "step": null
+      }
     ]
   },
   {
@@ -1137,6 +1727,30 @@
       "",
       "Gamify user engagement",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "DAU/MAU Ratio",
+        "variables": [
+          "Daily Active Users",
+          "Monthly Active Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "DAU/MAU Ratio = (Daily Active Users / Monthly Active Users) x 100",
+        "step": "Calculate DAU/MAU ratio"
+      },
+      {
+        "output": "Average Sessions per User",
+        "variables": [
+          "Total Number of Sessions",
+          "Number of Active Users"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Sessions per User = Total Number of Sessions / Number of Active Users",
+        "step": "Analyze session frequency and duration"
+      }
     ]
   },
   {
@@ -1171,6 +1785,30 @@
       "Gather feedback and address pain points",
       "Launch new features or updates based on user needs",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Stickiness (%)",
+        "variables": [
+          "DAU",
+          "MAU"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Stickiness (%) = (DAU / MAU) x 100",
+        "step": "Calculate Product Stickiness"
+      },
+      {
+        "output": "Retention Rate (%)",
+        "variables": [
+          "Number of Customers at End of Period",
+          "Number of Customers at Start of Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Retention Rate (%) = (Number of Customers at End of Period / Number of Customers at Start of Period) x 100",
+        "step": "Calculate the Retention Rate"
+      }
     ]
   },
   {
@@ -1206,6 +1844,19 @@
       "Segment onboarding for diKerent customer types",
       "Track and address bottlenecks",
       ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: TTV (in days)",
+        "variables": [
+          "Date of Value Realization",
+          "Date of Onboarding Start"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: TTV (in days) = Date of Value Realization - Date of Onboarding Start",
+        "step": null
+      }
     ]
   }
 ]

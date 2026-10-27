@@ -38,7 +38,8 @@
       "Strengthen client relationships",
       "Expand into new markets",
       "Enhance competitive intelligence"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-02",
@@ -72,7 +73,8 @@
       "Enhance scenario planning",
       "Deepen alliances with key partners",
       "Monitor international defense spending trends"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-03",
@@ -111,7 +113,8 @@
       "Expand market presence",
       "Enhance government relationships",
       "Competitor benchmarking"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-04",
@@ -151,7 +154,8 @@
       "Enhance regulatory compliance",
       "Pursue strategic M&A opportunities",
       "Monitor market share shifts"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-05",
@@ -189,7 +193,8 @@
       "Diversify export markets",
       "Negotiate better payment terms",
       "Monitor competitors' financing approaches"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-06",
@@ -225,7 +230,8 @@
       "Form strategic partnerships",
       "Develop government relations",
       "Monitor global defense spending"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-07",
@@ -261,7 +267,8 @@
       "Develop strategic partnerships",
       "Increase focus on emerging threats",
       "Benchmark regularly against competitors"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-08",
@@ -294,7 +301,8 @@
       "Monitor geopolitical changes",
       "Develop exit strategies for high-risk markets",
       "Engage legal experts"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-09",
@@ -333,7 +341,8 @@
       "Expand labor force",
       "Prepare for future demand",
       "Improve production planning"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-10",
@@ -369,7 +378,8 @@
       "Regularly audit export control compliance",
       "Increase training for employees",
       "Monitor geopolitical risks"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-11",
@@ -408,7 +418,8 @@
       "Optimize spare parts inventory management",
       "Reduce MRO cycle times",
       "Monitor and benchmark MRO performance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-12",
@@ -449,7 +460,8 @@
       "Improve quality control through vertical integration",
       "Develop strategic partnerships where vertical integration is not feasible",
       "Monitor regulatory and compliance requirements"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-13",
@@ -488,7 +500,8 @@
       "Enhance security vetting",
       "Develop contingency plans",
       "Foster long-term relationships with trusted contractors"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-14",
@@ -523,7 +536,8 @@
       "Pursue environmental certifications",
       "Monitor and reduce emissions",
       "Develop a sustainability roadmap"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-15",
@@ -557,7 +571,8 @@
       "Ensure subcontractor compliance",
       "Review cost accounting practices",
       "Enhance whistleblower protections and ethics programs"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-16",
@@ -595,7 +610,8 @@
       "Reduce costs through smarter investments",
       "Monitor regulatory changes",
       "Benchmark against competitors"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-17",
@@ -635,7 +651,8 @@
       "Strengthen intellectual property protection",
       "Monitor and adapt to market trends",
       "Focus on compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-18",
@@ -673,7 +690,8 @@
       "Enhance workforce expertise",
       "Secure intellectual property",
       "Monitor regulatory changes"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-19",
@@ -712,7 +730,8 @@
       "Expand intellectual property protection",
       "Strengthen cybersecurity measures",
       "Monitor and adapt to regulatory changes"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-20",
@@ -752,7 +771,8 @@
       "Enhance cybersecurity measures",
       "Monitor regulatory changes",
       "Expand intellectual property protection"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-21",
@@ -793,7 +813,8 @@
       "Expand intellectual property protection",
       "Enhance cybersecurity measures",
       "Incorporate sustainability into design"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-22",
@@ -832,7 +853,8 @@
       "Expand intellectual property protection",
       "Enhance sustainability efforts",
       "Scale the use of additive manufacturing"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-23",
@@ -872,7 +894,8 @@
       "Expand intellectual property protection",
       "Focus on emerging technologies",
       "Leverage strategic partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-24",
@@ -912,7 +935,8 @@
       "Expand intellectual property protection",
       "Improve cybersecurity measures",
       "Leverage strategic partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-25",
@@ -953,7 +977,8 @@
       "Enhance cybersecurity measures for AI systems",
       "Focus on ethical and regulatory compliance",
       "Leverage partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-26",
@@ -994,7 +1019,8 @@
       "Enhance cybersecurity measures",
       "Strengthen partnerships",
       "Monitor regulatory compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-27",
@@ -1035,7 +1061,8 @@
       "Enhance cybersecurity measures",
       "Collaborate with strategic partners",
       "Ensure regulatory compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-28",
@@ -1076,7 +1103,8 @@
       "Strengthen cybersecurity measures",
       "Leverage partnerships",
       "Ensure regulatory compliance"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-29",
@@ -1117,7 +1145,8 @@
       "Strengthen integration with defense platforms",
       "Enhance cybersecurity measures",
       "Leverage strategic partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-30",
@@ -1157,7 +1186,8 @@
       "Expand intellectual property protection",
       "Strengthen cybersecurity protocols",
       "Leverage strategic partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-31",
@@ -1197,7 +1227,8 @@
       "Expand intellectual property protection",
       "Strengthen cybersecurity protocols",
       "Leverage strategic partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-32",
@@ -1233,7 +1264,8 @@
       "Expand intellectual property protection",
       "Strengthen cybersecurity protocols",
       "Leverage strategic partnerships"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-33",
@@ -1269,7 +1301,8 @@
       "Expand intellectual property protection",
       "Improve cybersecurity measures",
       "Conduct regular audits and assessments"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-34",
@@ -1306,7 +1339,8 @@
       "Expand intellectual property protection",
       "Ensure regulatory compliance",
       "Improve cybersecurity training"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-35",
@@ -1342,7 +1376,8 @@
       "Expand intellectual property protection",
       "Ensure regulatory compliance",
       "Improve cybersecurity training"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-36",
@@ -1385,7 +1420,8 @@
       "Expand global presence in defense markets",
       "Increase R&D investments in dual-use technologies",
       "Monitor geopolitical developments and budget forecasts"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-37",
@@ -1429,7 +1465,8 @@
       "Enhance partnerships with suppliers",
       "Improve contract structures for sustainment",
       "Incorporate lifecycle cost management into R&D"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-38",
@@ -1474,7 +1511,8 @@
       "Strengthen subcontractor relationships",
       "Focus on high-win sectors and geographies",
       "Streamline internal workflows"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-39",
@@ -1517,7 +1555,8 @@
       "Expand intellectual property protection",
       "Enhance regulatory compliance measures",
       "Focus on emerging markets"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-40",
@@ -1564,7 +1603,8 @@
       "Improve subcontractor selection and oversight",
       "Refine contract structures",
       "Focus on scalable technology development"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-41",
@@ -1605,7 +1645,8 @@
       "Enhance project management for classified programs",
       "Expand partnerships in the classified sector",
       "Monitor geopolitical and policy risks"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-42",
@@ -1645,7 +1686,8 @@
       "Expand R&D investments",
       "Diversify partnerships carefully",
       "Monitor geopolitical risks"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-43",
@@ -1685,7 +1727,8 @@
       "Improve cybersecurity and data protection for personnel",
       "Expand subcontractor oversight",
       "Develop succession planning for key roles"
-    ]
+    ],
+    "formulas": []
   },
   {
     "id": "aero-44",
@@ -1725,6 +1768,7 @@
       "Expand cybersecurity protocols",
       "Develop a risk management plan for export violations",
       "Engage external legal counsel for high-risk transactions"
-    ]
+    ],
+    "formulas": []
   }
 ]
