@@ -26,7 +26,8 @@ if all tests pass.
 - Adding a term = add it to the extension AND its IRI to `context.jsonld` in
   the same commit. Never hardcode a term elsewhere.
 - `EXIT_MULTIPLE` is a scenario ASSUMPTION; `MULTIPLE_EXPANSION` is never a
-  proposable lever category.
+  proposable lever category, and no lever may target a `NON_LEVER_CODES`
+  metric (ENTRY/EXIT_MULTIPLE, HOLD_YEARS, NET_DEBT_ENTRY).
 
 ## 4. Analyst gate before simulation
 - A scenario may only reference levers with `status='validated'`.

@@ -27,3 +27,10 @@ describe('makeLeverSchema', () => {
     expect(saasSchema.safeParse({ ...base, confidenceBasis: 'x', deltaKind: 'vibes' }).success).toBe(false);
   });
 });
+
+describe('makeLeverSchema – deal-structure codes', () => {
+  it('rejects a lever whose impactMetricCode is EXIT_MULTIPLE', () => {
+    const r = saasSchema.safeParse({ ...base, confidenceBasis: 'x', category: 'PRICING', impactMetricCode: 'EXIT_MULTIPLE' });
+    expect(r.success).toBe(false);
+  });
+});

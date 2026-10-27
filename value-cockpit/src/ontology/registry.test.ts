@@ -59,3 +59,17 @@ describe('ontology registry – aero extension', () => {
     }
   });
 });
+
+describe('ontology registry – lever targets', () => {
+  const v = getActiveVocabulary('aero');
+  it('excludes deal-structure codes from lever targets', () => {
+    for (const code of ['EXIT_MULTIPLE', 'ENTRY_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY']) {
+      expect(v.isMetricCode(code)).toBe(true);
+      expect(v.isLeverTarget(code), code).toBe(false);
+    }
+  });
+  it('accepts operational inputs as lever targets', () => {
+    expect(v.isLeverTarget('COST_OVERRUN_RATE')).toBe(true);
+    expect(v.isLeverTarget('NOT_A_CODE')).toBe(false);
+  });
+});

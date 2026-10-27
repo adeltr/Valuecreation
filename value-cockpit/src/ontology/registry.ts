@@ -1,6 +1,6 @@
 import {
   BASE_METRIC_CODES, BASE_METRIC_META, BASE_LEVER_CATEGORIES,
-  BASE_CAUSE_CATEGORIES, NODE_TYPES, type MetricMeta,
+  BASE_CAUSE_CATEGORIES, NODE_TYPES, NON_LEVER_CODES, type MetricMeta,
 } from './base';
 import { SAAS_METRIC_CODES, SAAS_METRIC_META, SAAS_LEVER_CATEGORIES } from './sectors/saas';
 import {
@@ -18,6 +18,7 @@ export interface ActiveVocabulary {
   causeCategories: string[];
   nodeTypes: string[];
   isMetricCode(v: unknown): boolean;
+  isLeverTarget(v: unknown): boolean;
   isLeverCategory(v: unknown): boolean;
   isCauseCategory(v: unknown): boolean;
 }
@@ -42,6 +43,8 @@ export function getActiveVocabulary(archetype: SectorArchetype): ActiveVocabular
   return {
     metricCodes, metricMeta, leverCategories, causeCategories, nodeTypes: [...NODE_TYPES],
     isMetricCode: (v) => metricCodes.includes(v as string),
+    isLeverTarget: (v) => metricCodes.includes(v as string)
+      && !(NON_LEVER_CODES as readonly string[]).includes(v as string),
     isLeverCategory: (v) => leverCategories.includes(v as string),
     isCauseCategory: (v) => causeCategories.includes(v as string),
   };

@@ -17,3 +17,11 @@ describe('proxy', () => {
     expect((out as any).scenarioResults).toBeUndefined();
   });
 });
+
+describe('proxy – lever targets in prompt', () => {
+  it('does not offer deal-structure codes as impactMetricCode', () => {
+    const line = buildSystemPrompt('aero').split('\n').find((l) => l.startsWith('impactMetricCode'))!;
+    expect(line).toMatch(/COST_OVERRUN_RATE/);
+    expect(line).not.toMatch(/EXIT_MULTIPLE|ENTRY_MULTIPLE|HOLD_YEARS|NET_DEBT_ENTRY/);
+  });
+});

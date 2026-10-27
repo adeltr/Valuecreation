@@ -9,7 +9,7 @@ export function buildSystemPrompt(archetype: SectorArchetype): string {
     'Return ONLY a JSON object: { "rootCauses": [...], "levers": [...] }. No prose, no markdown.',
     `Lever.category MUST be one of: ${v.leverCategories.join(', ')}.`,
     `RootCause.category MUST be one of: ${v.causeCategories.join(', ')}.`,
-    `impactMetricCode MUST be one of: ${v.metricCodes.join(', ')}.`,
+    `impactMetricCode MUST be one of: ${v.metricCodes.filter(v.isLeverTarget).join(', ')}.`,
     "Every lever MUST include deltaKind ('absolute' or 'percent') and a non-empty confidenceBasis.",
     'NEVER output computed figures, scenario results, exit multiples, or assumptions — the engine and the analyst own those.',
   ].join('\n');

@@ -30,6 +30,10 @@ export const BASE_METRIC_CODES = [
   'EBITDA_EXIT', 'EQUITY_ENTRY', 'EQUITY_EXIT', 'MOIC',
 ] as const;
 
+// Deal-structure codes: set by the analyst (entry facts or scenario assumptions),
+// never the target of a lever — multiple expansion is largely exogenous.
+export const NON_LEVER_CODES = ['ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY'] as const;
+
 export interface MetricMeta { unit: Unit; fiboRef?: string }
 
 export const BASE_METRIC_META: Record<(typeof BASE_METRIC_CODES)[number], MetricMeta> = {
