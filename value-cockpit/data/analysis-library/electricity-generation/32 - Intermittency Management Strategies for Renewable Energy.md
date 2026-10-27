@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/G
+kind: analysis
+id: electricity-generation-32
+part: G
+partLabel: Renewable Energy and Sustainability
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 32 · Intermittency Management Strategies for Renewable Energy Sources
 

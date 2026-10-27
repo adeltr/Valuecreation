@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-12
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 12 · Product Texture Change Over Time (Stability Testing)
 

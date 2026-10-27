@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/C
+kind: analysis
+id: cosmetics-31
+part: C
+partLabel: Sales and Distribution
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 31 · Shelf Space and In-Store Visibility Study
 

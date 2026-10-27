@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/D
+kind: analysis
+id: retail-31
+part: D
+partLabel: Merchandising
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, WC_DSO, WC_DIO]
 ---
 # 31 · Merchandising Strategy Effectiveness Analysis
 

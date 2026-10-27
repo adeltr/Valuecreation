@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-13
+part: B
+partLabel: Sales
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 13 · Promotional Pricing and Discount Depth Analysis
 

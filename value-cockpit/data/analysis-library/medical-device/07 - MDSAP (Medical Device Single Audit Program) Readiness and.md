@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-07
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 7 · MDSAP (Medical Device Single Audit Program) Readiness and Gap Analysis
 

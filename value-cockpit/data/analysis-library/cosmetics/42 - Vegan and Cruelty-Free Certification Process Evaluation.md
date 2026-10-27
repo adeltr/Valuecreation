@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/E
+kind: analysis
+id: cosmetics-42
+part: E
+partLabel: Compliance and Regulatory
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: []
 ---
 # 42 · Vegan and Cruelty-Free Certification Process Evaluation
 

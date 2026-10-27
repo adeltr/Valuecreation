@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/E
+kind: analysis
+id: wine-spirits-36
+part: E
+partLabel: Production and Quality Control
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 36 · Product Recall and Quality Assurance Risk Assessment
 

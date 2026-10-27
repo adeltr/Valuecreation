@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-14
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: []
+causes: []
+levers: [PRICING]
 ---
 # 14 · Music Streaming Partnerships & Catalog Management
 

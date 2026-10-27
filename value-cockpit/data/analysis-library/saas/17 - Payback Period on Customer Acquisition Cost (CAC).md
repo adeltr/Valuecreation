@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-17
+part: B
+partLabel: Sales & Marketing
+quant: [REVENUE_GROWTH, CAC]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, RETENTION, SALES_EFFICIENCY]
 ---
 # 17 · Payback Period on Customer Acquisition Cost (CAC)
 

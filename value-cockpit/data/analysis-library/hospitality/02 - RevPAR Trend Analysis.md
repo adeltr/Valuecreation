@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-02
+part: A
+partLabel: Revenue & Pricing Management
+quant: [REVENUE_GROWTH]
+causes: [MARKET]
+levers: [PRICING]
 ---
 # 2 · RevPAR Trend Analysis
 

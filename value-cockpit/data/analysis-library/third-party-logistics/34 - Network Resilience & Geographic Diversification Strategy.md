@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/G
+kind: analysis
+id: third-party-logistics-34
+part: G
+partLabel: Strategic Growth & Resilience
+quant: []
+causes: [OPERATIONAL]
+levers: [MIX]
 ---
 # 34 · Network Resilience & Geographic Diversification Strategy
 

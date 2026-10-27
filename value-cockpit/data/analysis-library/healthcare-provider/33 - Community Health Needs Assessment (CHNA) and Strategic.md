@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/G
+kind: analysis
+id: healthcare-provider-33
+part: G
+partLabel: Population Health and Care Coordination
+quant: []
+causes: []
+levers: [VOLUME]
 ---
 # 33 · Community Health Needs Assessment (CHNA) and Strategic Alignment
 

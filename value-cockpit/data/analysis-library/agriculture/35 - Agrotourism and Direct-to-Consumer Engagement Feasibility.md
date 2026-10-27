@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/E
+kind: analysis
+id: agriculture-35
+part: E
+partLabel: Market Positioning & Value Chain
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 35 · Agrotourism and Direct-to-Consumer Engagement Feasibility
 

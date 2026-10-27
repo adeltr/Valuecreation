@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/D
+kind: analysis
+id: saas-34
+part: D
+partLabel: Product & Engagement
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME, RETENTION]
 ---
 # 34 · Product Stickiness and Retention Rate Analysis
 

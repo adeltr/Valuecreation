@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/D
+kind: analysis
+id: wine-spirits-31
+part: D
+partLabel: Supply Chain and Sourcing Stability
+quant: []
+causes: [OPERATIONAL, MARKET]
+levers: []
 ---
 # 31 · Climate Change Impact on Vineyard-Yield Stability
 

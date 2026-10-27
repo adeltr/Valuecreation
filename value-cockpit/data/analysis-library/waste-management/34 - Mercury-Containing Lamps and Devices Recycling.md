@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/F
+kind: analysis
+id: waste-management-34
+part: F
+partLabel: Hazardous & Specialized Waste Handling
+quant: []
+causes: [REGULATORY]
+levers: [VOLUME, COST_OPS, WC_DSO]
 ---
 # 34 · Mercury-Containing Lamps and Devices Recycling Compliance
 

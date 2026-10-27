@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/F
+kind: analysis
+id: waste-management-32
+part: F
+partLabel: Hazardous & Specialized Waste Handling
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 32 · Special Waste Streams Handling and Compliance Analysis
 

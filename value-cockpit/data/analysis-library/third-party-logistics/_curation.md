@@ -6,7 +6,7 @@
 > La colonne « indices » donne le mot qui a déclenché chaque proposition. Rien n'est
 > appliqué aux fichiers avant ta validation ; aucun terme n'est ajouté au vocabulaire.
 
-40 analyses · 14 sans métrique ni levier (qualitatives) · 7 à contenu réglementaire.
+40 analyses · 14 sans métrique ni levier (qualitatives) · 7 à contenu réglementaire (cause REGULATORY).
 
 ## Mapping proposé
 
@@ -40,13 +40,13 @@
 | 26 | E | DIO | — | COMMERCIAL | DIO←inventory · COMMERCIAL←channel |
 | 27 | E | — | COST_OPS | OPERATIONAL, FINANCIAL | COST_OPS←labor · OPERATIONAL←operations · FINANCIAL←costs |
 | 28 | E | DIO | WC_DIO | OPERATIONAL | DIO←inventory · WC_DIO←inventory · OPERATIONAL←manufacturing |
-| 29 | F | — | COST_OPS | OPERATIONAL | COST_OPS←staff · OPERATIONAL←processes |
-| 30 | F | — | COST_OPS | COMMERCIAL | COST_OPS←maintenance · COMMERCIAL←customer |
-| 31 | F | — | — | — |  |
-| 32 | F | — | — | OPERATIONAL | OPERATIONAL←supply chain |
+| 29 | F | — | COST_OPS | OPERATIONAL, REGULATORY | COST_OPS←staff · OPERATIONAL←processes · REGULATORY←compliance |
+| 30 | F | — | COST_OPS | COMMERCIAL, REGULATORY | COST_OPS←maintenance · COMMERCIAL←customer · REGULATORY←compliance |
+| 31 | F | — | — | REGULATORY | REGULATORY←regulatory |
+| 32 | F | — | — | OPERATIONAL, REGULATORY | OPERATIONAL←supply chain · REGULATORY←compliance |
 | 33 | F | — | COST_OPS | FINANCIAL | COST_OPS←staff · FINANCIAL←costs |
 | 34 | G | — | MIX | OPERATIONAL | MIX←portfolio · OPERATIONAL←capacity |
-| 35 | G | — | VOLUME, COST_OPS | OPERATIONAL, MARKET | VOLUME←distribution · COST_OPS←efficiency · OPERATIONAL←logistics · MARKET←markets |
+| 35 | G | — | VOLUME, COST_OPS | OPERATIONAL, MARKET, REGULATORY | VOLUME←distribution · COST_OPS←efficiency · OPERATIONAL←logistics · MARKET←markets · REGULATORY←regulations |
 | 36 | H | — | — | OPERATIONAL, FINANCIAL | OPERATIONAL←operational · FINANCIAL←cost |
 | 37 | H | — | COST_OPS | OPERATIONAL, FINANCIAL | COST_OPS←automate · OPERATIONAL←process · FINANCIAL←financial |
 | 38 | H | — | — | COMMERCIAL, FINANCIAL | COMMERCIAL←customer · FINANCIAL←cost |
@@ -55,11 +55,7 @@
 
 Libellés des parties : A Transportation & Network Strategy · B Warehousing & Fulfillment · C Technology & Systems · D Commercial & Contractual Structures · E Value-Added & Specialized Services · F Trade & Regulatory Compliance · G Strategic Growth & Resilience · H Cost Optimization & Efficiency · I Workforce & Labor Management.
 
-## Hors vocabulaire
+## Arbitrages
 
-Analyses réglementaires / conformité (11, 28, 29, 30, 31, 32, 35) : aucune cause de base ne les exprime. Candidat : remonter `REGULATORY` (déjà utilisé par aero et airline) dans la base.
-
-## Tes arbitrages attendus
-
-1. Corrige les lignes du mapping qui ne te conviennent pas (le reste sera appliqué tel quel).
-2. `REGULATORY` dans la base : oui / non ?
+1. Corrige les lignes du mapping qui ne te conviennent pas ; le reste est appliqué tel quel
+   (`tsx scripts/apply-curation.ts <archetype>` puis `npm run catalog:build -- <archetype>`).

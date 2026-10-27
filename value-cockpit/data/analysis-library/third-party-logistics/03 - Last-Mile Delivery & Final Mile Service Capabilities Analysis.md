@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-03
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [VOLUME]
 ---
 # 3 · Last-Mile Delivery & Final Mile Service Capabilities Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/F
+kind: analysis
+id: media-27
+part: F
+partLabel: Financing & Partnerships
+quant: []
+causes: [FINANCIAL, ORGANIZATIONAL]
+levers: []
 ---
 # 27 · Exclusive Talent & Content Deals Evaluation
 

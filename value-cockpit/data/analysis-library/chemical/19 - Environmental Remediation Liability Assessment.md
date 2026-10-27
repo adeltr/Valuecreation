@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-19
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 19 · Environmental Remediation Liability Assessment
 

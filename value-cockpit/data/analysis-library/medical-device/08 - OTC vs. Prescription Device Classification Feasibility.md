@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-08
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: []
 ---
 # 8 · OTC vs. Prescription Device Classification Feasibility
 

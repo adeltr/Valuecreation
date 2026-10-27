@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/E
+kind: analysis
+id: retail-35
+part: E
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 35 · Vendor Compliance and Supplier Performance in Retail
 

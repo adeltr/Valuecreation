@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-17
+part: B
+partLabel: Sales
+quant: [DIO]
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [WC_DIO]
 ---
 # 17 · Shelf Availability and Out-of-Stock Analysis
 

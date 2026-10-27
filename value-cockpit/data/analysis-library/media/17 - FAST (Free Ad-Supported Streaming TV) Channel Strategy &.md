@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-17
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 17 · FAST (Free Ad-Supported Streaming TV) Channel Strategy & Monetization
 

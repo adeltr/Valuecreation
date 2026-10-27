@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-06
+part: A
+partLabel: Revenue & Pricing Management
+quant: [DIO]
+causes: [COMMERCIAL]
+levers: [PRICING]
 ---
 # 6 · Booking Window Patterns Analysis
 

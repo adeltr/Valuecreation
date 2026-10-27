@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/E
+kind: analysis
+id: chemical-32
+part: E
+partLabel: Technology
+quant: []
+causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL, MARKET]
+levers: [COST_OPS]
 ---
 # 32 · Process Automation and Digitalization Readiness
 

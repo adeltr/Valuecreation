@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/C
+kind: analysis
+id: wine-spirits-24
+part: C
+partLabel: Product Innovation and Development
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [PRICING]
 ---
 # 24 · Vintage Variation Impact on Brand and Pricing Strategy
 

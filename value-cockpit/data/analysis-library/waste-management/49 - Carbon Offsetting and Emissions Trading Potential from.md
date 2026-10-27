@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/I
+kind: analysis
+id: waste-management-49
+part: I
+partLabel: Sustainability & ESG
+quant: []
+causes: [OPERATIONAL]
+levers: [PRICING, COST_OPS]
 ---
 # 49 · Carbon Offsetting and Emissions Trading Potential from Waste Operations
 

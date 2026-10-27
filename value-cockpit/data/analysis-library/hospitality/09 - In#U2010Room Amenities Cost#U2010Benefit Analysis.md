@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-09
+part: A
+partLabel: Revenue & Pricing Management
+quant: [EBITDA_MARGIN]
+causes: [FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT]
 ---
 # 9 · In‐Room Amenities Cost‐Benefit Analysis
 

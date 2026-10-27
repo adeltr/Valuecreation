@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/I
+kind: analysis
+id: waste-management-47
+part: I
+partLabel: Sustainability & ESG
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: []
 ---
 # 47 · Community Engagement and Public Relations Strategy Review
 

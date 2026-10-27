@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/A
+kind: analysis
+id: waste-management-04
+part: A
+partLabel: Landfill Management & Operations
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: []
 ---
 # 4 · Municipal Solid Waste (MSW) Composition Trend Forecasting for Long-Term Capacity Planning
 

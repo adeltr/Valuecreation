@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-12
+part: B
+partLabel: Sales & Marketing
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [PRICING, RETENTION, SALES_EFFICIENCY]
 ---
 # 12 · Freemium to Paid Conversion Rate Analysis
 

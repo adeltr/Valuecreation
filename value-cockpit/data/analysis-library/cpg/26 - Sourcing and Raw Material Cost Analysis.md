@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-26
+part: C
+partLabel: Operations
+quant: [EBITDA_MARGIN, COGS]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 26 · Sourcing and Raw Material Cost Analysis
 

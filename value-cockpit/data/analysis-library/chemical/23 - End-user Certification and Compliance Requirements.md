@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-23
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: []
 ---
 # 23 · End-user Certification and Compliance Requirements
 

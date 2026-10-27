@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-18
+part: B
+partLabel: Marketing and Consumer Insights
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: []
 ---
 # 18 · Brand Perception and Consumer Sentiment Analysis
 

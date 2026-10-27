@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/D
+kind: analysis
+id: healthcare-provider-21
+part: D
+partLabel: Patient Experience and Access
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 21 · Patient Access and Scheduling Efficiency Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/C
+kind: analysis
+id: waste-management-15
+part: C
+partLabel: Organics & Composting
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [VOLUME, MIX]
 ---
 # 15 · Organics Recycling and Composting Facility Operational Review
 

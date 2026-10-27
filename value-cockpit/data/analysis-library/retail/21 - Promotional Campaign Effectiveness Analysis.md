@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/C
+kind: analysis
+id: retail-21
+part: C
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 21 · Promotional Campaign Effectiveness Analysis
 

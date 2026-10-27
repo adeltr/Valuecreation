@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/E
+kind: analysis
+id: metals-mining-31
+part: E
+partLabel: Market and Commodity Risk Management
+quant: [COGS]
+causes: [OPERATIONAL]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 31 · Global Supply Chain Disruption Risk Assessment for Raw Materials
 

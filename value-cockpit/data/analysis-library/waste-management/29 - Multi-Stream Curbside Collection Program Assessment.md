@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/E
+kind: analysis
+id: waste-management-29
+part: E
+partLabel: Fleet & Collection Optimization
+quant: [DSO]
+causes: [OPERATIONAL]
+levers: [COST_OPS, WC_DSO]
 ---
 # 29 · Multi-Stream Curbside Collection Program Assessment
 

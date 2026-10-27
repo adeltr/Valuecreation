@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-05
+part: A
+partLabel: Market and Consumer Insights
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 5 · Channel-Specific Sales Performance
 

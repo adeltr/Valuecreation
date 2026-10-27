@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-17
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 17 · Regulatory Risk Assessment Across Key Markets
 

@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/E
+kind: analysis
+id: retail-33
+part: E
+partLabel: Finance
+quant: [EBITDA_MARGIN, DIO]
+causes: [FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT, WC_DIO]
 ---
 # 33 · Retailer Gross Margin Return on Investment (GMROI)
 

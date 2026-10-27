@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/G
+kind: analysis
+id: wine-spirits-46
+part: G
+partLabel: Financial and Revenue Optimization
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME, COST_PROCUREMENT]
 ---
 # 46 · Customer Loyalty and Retention Metrics Analysis
 

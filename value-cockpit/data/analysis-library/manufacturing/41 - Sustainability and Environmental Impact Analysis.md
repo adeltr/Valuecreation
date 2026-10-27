@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/F
+kind: analysis
+id: manufacturing-41
+part: F
+partLabel: Environmental and Sustainability
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 41 · Sustainability and Environmental Impact Analysis
 

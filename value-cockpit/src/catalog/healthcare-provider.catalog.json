@@ -1,0 +1,724 @@
+[
+  {
+    "id": "healthcare-provider-01",
+    "archetype": "healthcare-provider",
+    "title": "Patient Volume and Service Line Performance Analysis",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/01 - Patient Volume and Service Line Performance Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-02",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Outcomes and Quality of Care Assessment",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/02 - Clinical Outcomes and Quality of Care Assessment.md"
+  },
+  {
+    "id": "healthcare-provider-03",
+    "archetype": "healthcare-provider",
+    "title": "Hospital Readmission Rates and Avoidable Admissions Study",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/03 - Hospital Readmission Rates and Avoidable Admissions Study.md"
+  },
+  {
+    "id": "healthcare-provider-04",
+    "archetype": "healthcare-provider",
+    "title": "Infection Control and Patient Safety Protocol Compliance Review",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/04 - Infection Control and Patient Safety Protocol Compliance.md"
+  },
+  {
+    "id": "healthcare-provider-05",
+    "archetype": "healthcare-provider",
+    "title": "Length of Stay (LOS) Optimization and Discharge Planning Review",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/05 - Length of Stay (LOS) Optimization and Discharge Planning.md"
+  },
+  {
+    "id": "healthcare-provider-06",
+    "archetype": "healthcare-provider",
+    "title": "Care Pathway Standardization and Variation Reduction Analysis",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/06 - Care Pathway Standardization and Variation Reduction.md"
+  },
+  {
+    "id": "healthcare-provider-07",
+    "archetype": "healthcare-provider",
+    "title": "Hospital-Acquired Condition (HAC) Rate Analysis",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/07 - Hospital-Acquired Condition (HAC) Rate Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-08",
+    "archetype": "healthcare-provider",
+    "title": "Operating Room Utilization and Surgical Throughput Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/08 - Operating Room Utilization and Surgical Throughput Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-09",
+    "archetype": "healthcare-provider",
+    "title": "Emergency Department Throughput and Wait Time Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/09 - Emergency Department Throughput and Wait Time Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-10",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Documentation Improvement (CDI) Impact Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/10 - Clinical Documentation Improvement (CDI) Impact Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-11",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Equipment Utilization and Maintenance Efficiency Study",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/11 - Clinical Equipment Utilization and Maintenance Efficiency.md"
+  },
+  {
+    "id": "healthcare-provider-12",
+    "archetype": "healthcare-provider",
+    "title": "Post-Acute Care Integration and Outcomes Evaluation",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/12 - Post-Acute Care Integration and Outcomes Evaluation.md"
+  },
+  {
+    "id": "healthcare-provider-13",
+    "archetype": "healthcare-provider",
+    "title": "Advanced Imaging and Diagnostic Services Utilization Optimization",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/13 - Advanced Imaging and Diagnostic Services Utilization.md"
+  },
+  {
+    "id": "healthcare-provider-14",
+    "archetype": "healthcare-provider",
+    "title": "Healthcare Provider Cost Efficiency and Benchmarking Study",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/14 - Healthcare Provider Cost Efficiency and Benchmarking Study.md"
+  },
+  {
+    "id": "healthcare-provider-15",
+    "archetype": "healthcare-provider",
+    "title": "Revenue Cycle Management Performance Assessment",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/15 - Revenue Cycle Management Performance Assessment.md"
+  },
+  {
+    "id": "healthcare-provider-16",
+    "archetype": "healthcare-provider",
+    "title": "Payer Mix and Reimbursement Rate Optimization Analysis",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/16 - Payer Mix and Reimbursement Rate Optimization Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-17",
+    "archetype": "healthcare-provider",
+    "title": "Charity Care and Uncompensated Care Impact Analysis",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/17 - Charity Care and Uncompensated Care Impact Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-18",
+    "archetype": "healthcare-provider",
+    "title": "Bundled Payment Model Performance and Alignment Assessment",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/18 - Bundled Payment Model Performance and Alignment.md"
+  },
+  {
+    "id": "healthcare-provider-19",
+    "archetype": "healthcare-provider",
+    "title": "Value-Based Care Contract Performance Evaluation",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/19 - Value-Based Care Contract Performance Evaluation.md"
+  },
+  {
+    "id": "healthcare-provider-20",
+    "archetype": "healthcare-provider",
+    "title": "Patient Experience and Satisfaction Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/20 - Patient Experience and Satisfaction Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-21",
+    "archetype": "healthcare-provider",
+    "title": "Patient Access and Scheduling Efficiency Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/21 - Patient Access and Scheduling Efficiency Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-22",
+    "archetype": "healthcare-provider",
+    "title": "Referral Leakage and Patient Retention Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/22 - Referral Leakage and Patient Retention Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-23",
+    "archetype": "healthcare-provider",
+    "title": "Telemedicine Adoption and Virtual Care Delivery Performance Assessment",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/23 - Telemedicine Adoption and Virtual Care Delivery Performance.md"
+  },
+  {
+    "id": "healthcare-provider-24",
+    "archetype": "healthcare-provider",
+    "title": "Patient Portal Adoption and Digital Engagement Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/24 - Patient Portal Adoption and Digital Engagement Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-25",
+    "archetype": "healthcare-provider",
+    "title": "Behavioral Health Services Access and Utilization Study",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/25 - Behavioral Health Services Access and Utilization Study.md"
+  },
+  {
+    "id": "healthcare-provider-26",
+    "archetype": "healthcare-provider",
+    "title": "Regulatory Compliance and Accreditation Readiness Review",
+    "part": "E",
+    "partLabel": "Regulatory Compliance and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/26 - Regulatory Compliance and Accreditation Readiness Review.md"
+  },
+  {
+    "id": "healthcare-provider-27",
+    "archetype": "healthcare-provider",
+    "title": "Provider Credentialing and Privileging Efficiency Review",
+    "part": "E",
+    "partLabel": "Regulatory Compliance and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/27 - Provider Credentialing and Privileging Efficiency Review.md"
+  },
+  {
+    "id": "healthcare-provider-28",
+    "archetype": "healthcare-provider",
+    "title": "Healthcare Technology and Electronic Health Record (EHR) Utilization Assessment",
+    "part": "F",
+    "partLabel": "Technology Utilization and Digital Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/28 - Healthcare Technology and Electronic Health Record (EHR).md"
+  },
+  {
+    "id": "healthcare-provider-29",
+    "archetype": "healthcare-provider",
+    "title": "Health Information Exchange (HIE) Participation and Data Integration Review",
+    "part": "F",
+    "partLabel": "Technology Utilization and Digital Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/29 - Health Information Exchange (HIE) Participation and Data.md"
+  },
+  {
+    "id": "healthcare-provider-30",
+    "archetype": "healthcare-provider",
+    "title": "Advanced Practice Provider (APP) Role Utilization and Effectiveness Analysis",
+    "part": "F",
+    "partLabel": "Technology Utilization and Digital Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/30 - Advanced Practice Provider (APP) Role Utilization and.md"
+  },
+  {
+    "id": "healthcare-provider-31",
+    "archetype": "healthcare-provider",
+    "title": "Population Health and Integrated Care Model Effectiveness Assessment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/31 - Population Health and Integrated Care Model Effectiveness.md"
+  },
+  {
+    "id": "healthcare-provider-32",
+    "archetype": "healthcare-provider",
+    "title": "Chronic Disease Management Program Effectiveness Assessment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/32 - Chronic Disease Management Program Effectiveness.md"
+  },
+  {
+    "id": "healthcare-provider-33",
+    "archetype": "healthcare-provider",
+    "title": "Community Health Needs Assessment (CHNA) and Strategic Alignment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/33 - Community Health Needs Assessment (CHNA) and Strategic.md"
+  },
+  {
+    "id": "healthcare-provider-34",
+    "archetype": "healthcare-provider",
+    "title": "Physician Alignment and Engagement Strategy Assessment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/34 - Physician Alignment and Engagement Strategy Assessment.md"
+  },
+  {
+    "id": "healthcare-provider-35",
+    "archetype": "healthcare-provider",
+    "title": "Patient Population Risk Stratification and Resource Allocation Study",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/35 - Patient Population Risk Stratification and Resource Allocation.md"
+  },
+  {
+    "id": "healthcare-provider-36",
+    "archetype": "healthcare-provider",
+    "title": "Ambulatory Care Center Performance and Utilization Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/36 - Ambulatory Care Center Performance and Utilization Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-37",
+    "archetype": "healthcare-provider",
+    "title": "Specialty Care Utilization Patterns and Optimization Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/37 - Specialty Care Utilization Patterns and Optimization Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-38",
+    "archetype": "healthcare-provider",
+    "title": "Specialized Service Line Development and Growth Potential Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/38 - Specialized Service Line Development and Growth Potential.md"
+  },
+  {
+    "id": "healthcare-provider-39",
+    "archetype": "healthcare-provider",
+    "title": "Outpatient Service Expansion and Market Demand Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/39 - Outpatient Service Expansion and Market Demand Analysis.md"
+  },
+  {
+    "id": "healthcare-provider-40",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Trial Participation and Research Revenue Potential Assessment",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/40 - Clinical Trial Participation and Research Revenue Potential.md"
+  },
+  {
+    "id": "healthcare-provider-41",
+    "archetype": "healthcare-provider",
+    "title": "Disease-Specific Center of Excellence Development Feasibility Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/41 - Disease-Specific Center of Excellence Development.md"
+  },
+  {
+    "id": "healthcare-provider-42",
+    "archetype": "healthcare-provider",
+    "title": "Physician and Nursing Staff Productivity and Workforce Optimization",
+    "part": "I",
+    "partLabel": "Staffing and Workforce Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/42 - Physician and Nursing Staff Productivity and Workforce.md"
+  },
+  {
+    "id": "healthcare-provider-43",
+    "archetype": "healthcare-provider",
+    "title": "Staff Burnout and Retention Risk Assessment in Clinical Settings",
+    "part": "I",
+    "partLabel": "Staffing and Workforce Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/43 - Staff Burnout and Retention Risk Assessment in Clinical.md"
+  },
+  {
+    "id": "healthcare-provider-44",
+    "archetype": "healthcare-provider",
+    "title": "Health Equity and Community Impact Evaluation",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/44 - Health Equity and Community Impact Evaluation.md"
+  },
+  {
+    "id": "healthcare-provider-45",
+    "archetype": "healthcare-provider",
+    "title": "Capital Investment and Facility Modernization Feasibility Analysis",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/45 - Capital Investment and Facility Modernization Feasibility.md"
+  },
+  {
+    "id": "healthcare-provider-46",
+    "archetype": "healthcare-provider",
+    "title": "Critical Care Resource Allocation and ICU Performance Analysis",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/46 - Critical Care Resource Allocation and ICU Performance.md"
+  },
+  {
+    "id": "healthcare-provider-47",
+    "archetype": "healthcare-provider",
+    "title": "Social Determinants of Health (SDOH) Integration and Impact Assessment",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/47 - Social Determinants of Health (SDOH) Integration and Impact.md"
+  }
+]

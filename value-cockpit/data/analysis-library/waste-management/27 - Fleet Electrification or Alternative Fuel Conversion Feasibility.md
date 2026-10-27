@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/E
+kind: analysis
+id: waste-management-27
+part: E
+partLabel: Fleet & Collection Optimization
+quant: [DSO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 27 · Fleet Electrification or Alternative Fuel Conversion Feasibility Study
 

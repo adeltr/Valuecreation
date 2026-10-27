@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-11
+part: B
+partLabel: Clinical & Post-Market
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 11 · Clinical Evidence Review
 

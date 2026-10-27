@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-13
+part: B
+partLabel: Clinical & Post-Market
+quant: []
+causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 13 · CRO and Clinical Site Management Efficiency Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/D
+kind: analysis
+id: pharma-24
+part: D
+partLabel: Marketing & Market Access
+quant: [REVENUE_GROWTH]
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 24 · Therapeutic Area Specialization and Competitive Position
 

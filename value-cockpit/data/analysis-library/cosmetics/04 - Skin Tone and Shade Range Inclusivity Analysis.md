@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-04
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 4 · Skin Tone and Shade Range Inclusivity Analysis
 

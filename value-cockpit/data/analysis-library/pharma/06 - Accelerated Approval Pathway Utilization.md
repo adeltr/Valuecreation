@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-06
+part: A
+partLabel: Research & Development
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 6 · Accelerated Approval Pathway Utilization
 

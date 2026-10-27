@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/B
+kind: analysis
+id: chemical-14
+part: B
+partLabel: Finance
+quant: [COGS]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [MIX, COST_PROCUREMENT]
 ---
 # 14 · Raw Material Hedging and Risk Management Strategy
 

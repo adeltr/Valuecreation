@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/H
+kind: analysis
+id: wine-spirits-48
+part: H
+partLabel: Sustainability and Environmental Impact
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 48 · Terroir and Regional Origin Impact on Brand Perception Analysis
 

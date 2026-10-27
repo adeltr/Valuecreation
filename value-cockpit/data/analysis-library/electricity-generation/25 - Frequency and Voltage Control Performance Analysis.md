@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/E
+kind: analysis
+id: electricity-generation-25
+part: E
+partLabel: Grid Integration and Reliability
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 25 · Frequency and Voltage Control Performance Analysis
 

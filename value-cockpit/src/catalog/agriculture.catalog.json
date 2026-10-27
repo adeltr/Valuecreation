@@ -1,0 +1,615 @@
+[
+  {
+    "id": "agriculture-01",
+    "archetype": "agriculture",
+    "title": "Crop Yield and Farm Productivity Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/01 - Crop Yield and Farm Productivity Analysis.md"
+  },
+  {
+    "id": "agriculture-02",
+    "archetype": "agriculture",
+    "title": "Soil Health and Fertility Assessment",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/02 - Soil Health and Fertility Assessment.md"
+  },
+  {
+    "id": "agriculture-03",
+    "archetype": "agriculture",
+    "title": "Pest and Disease Risk Management Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/03 - Pest and Disease Risk Management Evaluation.md"
+  },
+  {
+    "id": "agriculture-04",
+    "archetype": "agriculture",
+    "title": "Crop Rotation and Diversification Strategy Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/04 - Crop Rotation and Diversification Strategy Evaluation.md"
+  },
+  {
+    "id": "agriculture-05",
+    "archetype": "agriculture",
+    "title": "Agrochemical Usage Optimization and Compliance Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/05 - Agrochemical Usage Optimization and Compliance Analysis.md"
+  },
+  {
+    "id": "agriculture-06",
+    "archetype": "agriculture",
+    "title": "Pollination Management and Bee Health Impact Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/06 - Pollination Management and Bee Health Impact Analysis.md"
+  },
+  {
+    "id": "agriculture-07",
+    "archetype": "agriculture",
+    "title": "Agroforestry Potential and Land-Use Diversification Assessment",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/07 - Agroforestry Potential and Land-Use Diversification.md"
+  },
+  {
+    "id": "agriculture-08",
+    "archetype": "agriculture",
+    "title": "Soil Conservation and Erosion Control Measures Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/08 - Soil Conservation and Erosion Control Measures Evaluation.md"
+  },
+  {
+    "id": "agriculture-09",
+    "archetype": "agriculture",
+    "title": "Orchard and Vineyard Management Efficiency Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/09 - Orchard and Vineyard Management Efficiency Analysis.md"
+  },
+  {
+    "id": "agriculture-10",
+    "archetype": "agriculture",
+    "title": "Trace Minerals and Micronutrient Management for Crop Optimization",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/10 - Trace Minerals and Micronutrient Management for Crop.md"
+  },
+  {
+    "id": "agriculture-11",
+    "archetype": "agriculture",
+    "title": "Biostimulants and Biological Crop Protection Product Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/11 - Biostimulants and Biological Crop Protection Product.md"
+  },
+  {
+    "id": "agriculture-12",
+    "archetype": "agriculture",
+    "title": "Livestock Health and Productivity Analysis",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/12 - Livestock Health and Productivity Analysis.md"
+  },
+  {
+    "id": "agriculture-13",
+    "archetype": "agriculture",
+    "title": "Livestock Waste Management and Circular Economy Opportunities",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/13 - Livestock Waste Management and Circular Economy.md"
+  },
+  {
+    "id": "agriculture-14",
+    "archetype": "agriculture",
+    "title": "Livestock Feed Sourcing and Nutrition Analysis",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/14 - Livestock Feed Sourcing and Nutrition Analysis.md"
+  },
+  {
+    "id": "agriculture-15",
+    "archetype": "agriculture",
+    "title": "Crop–Livestock Integration Synergy Review",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/15 - Crop#U2013Livestock Integration Synergy Review.md"
+  },
+  {
+    "id": "agriculture-16",
+    "archetype": "agriculture",
+    "title": "Aquaculture Development and Sustainability Analysis",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/16 - Aquaculture Development and Sustainability Analysis.md"
+  },
+  {
+    "id": "agriculture-17",
+    "archetype": "agriculture",
+    "title": "Holistic Grazing and Rangeland Management Evaluation",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/17 - Holistic Grazing and Rangeland Management Evaluation.md"
+  },
+  {
+    "id": "agriculture-18",
+    "archetype": "agriculture",
+    "title": "Biosecurity Protocol and Disease Containment Strategy",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/18 - Biosecurity Protocol and Disease Containment Strategy.md"
+  },
+  {
+    "id": "agriculture-19",
+    "archetype": "agriculture",
+    "title": "Sustainable Forage and Pasture Improvement Strategy",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/19 - Sustainable Forage and Pasture Improvement Strategy.md"
+  },
+  {
+    "id": "agriculture-20",
+    "archetype": "agriculture",
+    "title": "Water Resource Management and Irrigation Efficiency Review",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/20 - Water Resource Management and Irrigation Efficiency Review.md"
+  },
+  {
+    "id": "agriculture-21",
+    "archetype": "agriculture",
+    "title": "Agronomic Climate Resilience and Extreme Weather Scenario Evaluation",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/21 - Agronomic Climate Resilience and Extreme Weather Scenario.md"
+  },
+  {
+    "id": "agriculture-22",
+    "archetype": "agriculture",
+    "title": "On-Farm Energy Usage and Renewable Integration Analysis",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/22 - On-Farm Energy Usage and Renewable Integration Analysis.md"
+  },
+  {
+    "id": "agriculture-23",
+    "archetype": "agriculture",
+    "title": "Carbon Credits and Regenerative Agriculture Sequestration Opportunity",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/23 - Carbon Credits and Regenerative Agriculture Sequestration.md"
+  },
+  {
+    "id": "agriculture-24",
+    "archetype": "agriculture",
+    "title": "Nutrient Runoff Compliance and Watershed Protection Review",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/24 - Nutrient Runoff Compliance and Watershed Protection.md"
+  },
+  {
+    "id": "agriculture-25",
+    "archetype": "agriculture",
+    "title": "Adoption of Agricultural Technology Evaluation",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/25 - Adoption of Agricultural Technology Evaluation.md"
+  },
+  {
+    "id": "agriculture-26",
+    "archetype": "agriculture",
+    "title": "Seed Portfolio and Breeding Program Assessment",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/26 - Seed Portfolio and Breeding Program Assessment.md"
+  },
+  {
+    "id": "agriculture-27",
+    "archetype": "agriculture",
+    "title": "Agricultural R&D Pipeline and Innovation Investment Assessment",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/27 - Agricultural R&D Pipeline and Innovation Investment.md"
+  },
+  {
+    "id": "agriculture-28",
+    "archetype": "agriculture",
+    "title": "Agricultural Machinery and Equipment Utilization Review",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/28 - Agricultural Machinery and Equipment Utilization Review.md"
+  },
+  {
+    "id": "agriculture-29",
+    "archetype": "agriculture",
+    "title": "Greenhouse-Hydroponic Conversion Feasibility and Cultivation Methods Review",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/29 - Greenhouse-Hydroponic Conversion Feasibility and.md"
+  },
+  {
+    "id": "agriculture-30",
+    "archetype": "agriculture",
+    "title": "Supply Chain and Post-Harvest Logistics Review",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/30 - Supply Chain and Post-Harvest Logistics Review.md"
+  },
+  {
+    "id": "agriculture-31",
+    "archetype": "agriculture",
+    "title": "Organic and Specialty Crop Market Opportunity Analysis",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/31 - Organic and Specialty Crop Market Opportunity Analysis.md"
+  },
+  {
+    "id": "agriculture-32",
+    "archetype": "agriculture",
+    "title": "Farm-to-Fork Traceability and Food Safety Compliance Review",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/32 - Farm-to-Fork Traceability and Food Safety Compliance.md"
+  },
+  {
+    "id": "agriculture-33",
+    "archetype": "agriculture",
+    "title": "Contract Farming and Outgrower Network Assessment",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/33 - Contract Farming and Outgrower Network Assessment.md"
+  },
+  {
+    "id": "agriculture-34",
+    "archetype": "agriculture",
+    "title": "Agribusiness Branding and Certification Review",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/34 - Agribusiness Branding and Certification Review.md"
+  },
+  {
+    "id": "agriculture-35",
+    "archetype": "agriculture",
+    "title": "Agrotourism and Direct-to-Consumer Engagement Feasibility",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/35 - Agrotourism and Direct-to-Consumer Engagement Feasibility.md"
+  },
+  {
+    "id": "agriculture-36",
+    "archetype": "agriculture",
+    "title": "Regulatory Compliance and Agricultural Subsidies Analysis",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/36 - Regulatory Compliance and Agricultural Subsidies Analysis.md"
+  },
+  {
+    "id": "agriculture-37",
+    "archetype": "agriculture",
+    "title": "Crop Insurance and Risk Mitigation Strategy Review",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/37 - Crop Insurance and Risk Mitigation Strategy Review.md"
+  },
+  {
+    "id": "agriculture-38",
+    "archetype": "agriculture",
+    "title": "GMO Compliance and Strategic Positioning Analysis",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/38 - GMO Compliance and Strategic Positioning Analysis.md"
+  },
+  {
+    "id": "agriculture-39",
+    "archetype": "agriculture",
+    "title": "Seed Licensing and Intellectual Property Positioning",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/39 - Seed Licensing and Intellectual Property Positioning.md"
+  }
+]

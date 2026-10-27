@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/D
+kind: analysis
+id: agriculture-26
+part: D
+partLabel: Technology & Innovation in Agriculture
+quant: []
+causes: []
+levers: [MIX]
 ---
 # 26 · Seed Portfolio and Breeding Program Assessment
 

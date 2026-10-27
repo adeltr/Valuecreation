@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-07
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 7 · Color Stability and Pigment Quality Analysis
 

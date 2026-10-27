@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-17
+part: B
+partLabel: Clinical & Post-Market
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 17 · Field Safety Corrective Action and Recall Readiness Evaluation
 

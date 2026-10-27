@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/B
+kind: analysis
+id: agriculture-17
+part: B
+partLabel: Livestock Management & Animal Health
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 17 · Holistic Grazing and Rangeland Management Evaluation
 

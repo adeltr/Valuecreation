@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/C
+kind: analysis
+id: wine-spirits-21
+part: C
+partLabel: Product Innovation and Development
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 21 · Flavor Innovation and Experimentation Impact Analysis
 

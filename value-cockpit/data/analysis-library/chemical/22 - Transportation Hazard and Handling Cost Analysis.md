@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-22
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 22 · Transportation Hazard and Handling Cost Analysis
 

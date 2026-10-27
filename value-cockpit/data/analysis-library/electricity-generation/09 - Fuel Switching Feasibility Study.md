@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/B
+kind: analysis
+id: electricity-generation-09
+part: B
+partLabel: Fuel and Energy Resource Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 9 · Fuel Switching Feasibility Study
 

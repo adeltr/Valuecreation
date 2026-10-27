@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/D
+kind: analysis
+id: metals-mining-26
+part: D
+partLabel: Strategic Planning and Investment Feasibility
+quant: []
+causes: [OPERATIONAL, MARKET]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 26 · Downstream Processing Integration and Feasibility Analysis
 

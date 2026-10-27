@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/E
+kind: analysis
+id: manufacturing-38
+part: E
+partLabel: Product and Process Development
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS, WC_DIO]
 ---
 # 38 · Custom Manufacturing vs. Mass Production Analysis
 

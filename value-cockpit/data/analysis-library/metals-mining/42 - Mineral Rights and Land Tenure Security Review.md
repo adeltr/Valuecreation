@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/I
+kind: analysis
+id: metals-mining-42
+part: I
+partLabel: Legal, Regulatory, and Geopolitical Risk
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: []
 ---
 # 42 · Mineral Rights and Land Tenure Security Review
 

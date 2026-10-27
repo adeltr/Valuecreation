@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-09
+part: A
+partLabel: Crop Management & Soil Health
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 9 · Orchard and Vineyard Management Efficiency Analysis
 

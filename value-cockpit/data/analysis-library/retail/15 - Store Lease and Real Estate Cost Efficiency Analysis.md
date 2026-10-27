@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-15
+part: B
+partLabel: Operations
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 15 · Store Lease and Real Estate Cost Efficiency Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-12
+part: B
+partLabel: Clinical & Post-Market
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 12 · Post-Market Surveillance and Vigilance
 

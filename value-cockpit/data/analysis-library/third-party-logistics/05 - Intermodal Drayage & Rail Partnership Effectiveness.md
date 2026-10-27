@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-05
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 5 · Intermodal Drayage & Rail Partnership Effectiveness
 

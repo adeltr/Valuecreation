@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-03
+part: A
+partLabel: Marketing
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 3 · Consumer Loyalty and Retention Analysis
 

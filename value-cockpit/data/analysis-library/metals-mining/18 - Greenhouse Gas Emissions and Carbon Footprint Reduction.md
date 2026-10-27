@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/C
+kind: analysis
+id: metals-mining-18
+part: C
+partLabel: Environmental Sustainability and Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 18 · Greenhouse Gas Emissions and Carbon Footprint Reduction Strategy
 

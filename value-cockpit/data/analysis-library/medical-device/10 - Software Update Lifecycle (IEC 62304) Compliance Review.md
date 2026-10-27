@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-10
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 10 · Software Update Lifecycle (IEC 62304) Compliance Review
 

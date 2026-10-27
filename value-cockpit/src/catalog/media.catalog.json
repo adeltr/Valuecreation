@@ -1,0 +1,561 @@
+[
+  {
+    "id": "media-01",
+    "archetype": "media",
+    "title": "Content Portfolio & ROI Analysis",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/01 - Content Portfolio & ROI Analysis.md"
+  },
+  {
+    "id": "media-02",
+    "archetype": "media",
+    "title": "Windowing Strategy & Release Calendar Optimization",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/02 - Windowing Strategy & Release Calendar Optimization.md"
+  },
+  {
+    "id": "media-03",
+    "archetype": "media",
+    "title": "IP Library Valuation & Franchise Development Potential",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/media/03 - IP Library Valuation & Franchise Development Potential.md"
+  },
+  {
+    "id": "media-04",
+    "archetype": "media",
+    "title": "Cross-Franchise Synergy & Universe-Building Analysis",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/04 - Cross-Franchise Synergy & Universe-Building Analysis.md"
+  },
+  {
+    "id": "media-05",
+    "archetype": "media",
+    "title": "Award Campaign Strategy & Prestige Project ROI",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/05 - Award Campaign Strategy & Prestige Project ROI.md"
+  },
+  {
+    "id": "media-06",
+    "archetype": "media",
+    "title": "Franchise Refresh & Reboot Potential",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/06 - Franchise Refresh & Reboot Potential.md"
+  },
+  {
+    "id": "media-07",
+    "archetype": "media",
+    "title": "Scripted vs. Unscripted Content Mix Analysis",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/media/07 - Scripted vs. Unscripted Content Mix Analysis.md"
+  },
+  {
+    "id": "media-08",
+    "archetype": "media",
+    "title": "Intellectual Property & Licensing Monetization Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/08 - Intellectual Property & Licensing Monetization Strategy.md"
+  },
+  {
+    "id": "media-09",
+    "archetype": "media",
+    "title": "Digital Rights & Royalties Management",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/media/09 - Digital Rights & Royalties Management.md"
+  },
+  {
+    "id": "media-10",
+    "archetype": "media",
+    "title": "Rights Acquisition & Window Negotiation Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/10 - Rights Acquisition & Window Negotiation Strategy.md"
+  },
+  {
+    "id": "media-11",
+    "archetype": "media",
+    "title": "Global Format Licensing & Adaptation Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/11 - Global Format Licensing & Adaptation Strategy.md"
+  },
+  {
+    "id": "media-12",
+    "archetype": "media",
+    "title": "Piracy Risk & Content Protection Strategies",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/12 - Piracy Risk & Content Protection Strategies.md"
+  },
+  {
+    "id": "media-13",
+    "archetype": "media",
+    "title": "Syndication & Re-run Monetization Potential",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/13 - Syndication & Re-run Monetization Potential.md"
+  },
+  {
+    "id": "media-14",
+    "archetype": "media",
+    "title": "Music Streaming Partnerships & Catalog Management",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/media/14 - Music Streaming Partnerships & Catalog Management.md"
+  },
+  {
+    "id": "media-15",
+    "archetype": "media",
+    "title": "Physical Media Sell-Through & Retail Channel Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/media/15 - Physical Media Sell-Through & Retail Channel Strategy.md"
+  },
+  {
+    "id": "media-16",
+    "archetype": "media",
+    "title": "Retransmission Consent & Carriage Fee Negotiation Analysis",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/16 - Retransmission Consent & Carriage Fee Negotiation Analysis.md"
+  },
+  {
+    "id": "media-17",
+    "archetype": "media",
+    "title": "FAST (Free Ad-Supported Streaming TV) Channel Strategy & Monetization",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/17 - FAST (Free Ad-Supported Streaming TV) Channel Strategy &.md"
+  },
+  {
+    "id": "media-18",
+    "archetype": "media",
+    "title": "Live Events, Concerts & Experiential Marketing Evaluation",
+    "part": "C",
+    "partLabel": "Live & Experiential Entertainment",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/media/18 - Live Events, Concerts & Experiential Marketing Evaluation.md"
+  },
+  {
+    "id": "media-19",
+    "archetype": "media",
+    "title": "Alternative Theatrical Content & Premium Exhibition Strategy",
+    "part": "C",
+    "partLabel": "Live & Experiential Entertainment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/media/19 - Alternative Theatrical Content & Premium Exhibition Strategy.md"
+  },
+  {
+    "id": "media-20",
+    "archetype": "media",
+    "title": "Theme Park & Location-Based Entertainment Expansion Analysis",
+    "part": "C",
+    "partLabel": "Live & Experiential Entertainment",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/20 - Theme Park & Location-Based Entertainment Expansion.md"
+  },
+  {
+    "id": "media-21",
+    "archetype": "media",
+    "title": "Gaming & eSports Integration & Monetization Strategy",
+    "part": "D",
+    "partLabel": "Sports & Gaming",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/21 - Gaming & eSports Integration & Monetization Strategy.md"
+  },
+  {
+    "id": "media-22",
+    "archetype": "media",
+    "title": "Sports Broadcasting Rights & League Partnership Strategy",
+    "part": "D",
+    "partLabel": "Sports & Gaming",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/22 - Sports Broadcasting Rights & League Partnership Strategy.md"
+  },
+  {
+    "id": "media-23",
+    "archetype": "media",
+    "title": "Betting & Sportsbook Integration Partnerships Analysis",
+    "part": "D",
+    "partLabel": "Sports & Gaming",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/23 - Betting & Sportsbook Integration Partnerships Analysis.md"
+  },
+  {
+    "id": "media-24",
+    "archetype": "media",
+    "title": "Virtual & Augmented Reality Content Opportunities",
+    "part": "E",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/24 - Virtual & Augmented Reality Content Opportunities.md"
+  },
+  {
+    "id": "media-25",
+    "archetype": "media",
+    "title": "Archive Digitization & Remaster Monetization Strategy",
+    "part": "E",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/media/25 - Archive Digitization & Remaster Monetization Strategy.md"
+  },
+  {
+    "id": "media-26",
+    "archetype": "media",
+    "title": "Blockchain & Web3-based Content Strategies",
+    "part": "E",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/media/26 - Blockchain & Web3-based Content Strategies.md"
+  },
+  {
+    "id": "media-27",
+    "archetype": "media",
+    "title": "Exclusive Talent & Content Deals Evaluation",
+    "part": "F",
+    "partLabel": "Financing & Partnerships",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/27 - Exclusive Talent & Content Deals Evaluation.md"
+  },
+  {
+    "id": "media-28",
+    "archetype": "media",
+    "title": "Co-production & Financing Partnerships Analysis",
+    "part": "F",
+    "partLabel": "Financing & Partnerships",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/28 - Co-production & Financing Partnerships Analysis.md"
+  },
+  {
+    "id": "media-29",
+    "archetype": "media",
+    "title": "M&A Strategy & Integration for Media Enterprises",
+    "part": "F",
+    "partLabel": "Financing & Partnerships",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/29 - M&A Strategy & Integration for Media Enterprises.md"
+  },
+  {
+    "id": "media-30",
+    "archetype": "media",
+    "title": "Industry Guild, Residuals & Global Compliance Analysis",
+    "part": "G",
+    "partLabel": "Regulatory, Compliance & Guilds",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/media/30 - Industry Guild, Residuals & Global Compliance Analysis.md"
+  },
+  {
+    "id": "media-31",
+    "archetype": "media",
+    "title": "Children’s & Family Programming Compliance & Monetization Strategy",
+    "part": "G",
+    "partLabel": "Regulatory, Compliance & Guilds",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/media/31 - Children#U2019s & Family Programming Compliance & Monetization.md"
+  },
+  {
+    "id": "media-32",
+    "archetype": "media",
+    "title": "Merchandising & Ancillary Revenue Stream Strategy",
+    "part": "H",
+    "partLabel": "Merchandising & Ancillary Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/media/32 - Merchandising & Ancillary Revenue Stream Strategy.md"
+  },
+  {
+    "id": "media-33",
+    "archetype": "media",
+    "title": "Pay-Per-View & Direct-to-Fan Engagement Models",
+    "part": "I",
+    "partLabel": "Audience Engagement & Monetization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/33 - Pay-Per-View & Direct-to-Fan Engagement Models.md"
+  },
+  {
+    "id": "media-34",
+    "archetype": "media",
+    "title": "In-Show Brand Integration & Sponsorship Effectiveness Analysis",
+    "part": "I",
+    "partLabel": "Audience Engagement & Monetization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/media/34 - In-Show Brand Integration & Sponsorship Effectiveness.md"
+  },
+  {
+    "id": "media-35",
+    "archetype": "media",
+    "title": "Audience Analytics & Personalization Strategy",
+    "part": "I",
+    "partLabel": "Audience Engagement & Monetization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/35 - Audience Analytics & Personalization Strategy.md"
+  }
+]

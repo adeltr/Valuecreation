@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/D
+kind: analysis
+id: wine-spirits-28
+part: D
+partLabel: Supply Chain and Sourcing Stability
+quant: [COGS]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 28 · Oak Barrel Sourcing and Quality Impact Analysis
 

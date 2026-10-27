@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/B
+kind: analysis
+id: waste-management-08
+part: B
+partLabel: Recycling & Materials Recovery
+quant: []
+causes: [OPERATIONAL]
+levers: [MIX, COST_PROCUREMENT, COST_OPS]
 ---
 # 8 · Material Recovery Facility (MRF) Throughput and Efficiency Analysis
 

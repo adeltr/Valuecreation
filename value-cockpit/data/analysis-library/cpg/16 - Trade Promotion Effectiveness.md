@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-16
+part: B
+partLabel: Sales
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 16 · Trade Promotion Effectiveness
 

@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/D
+kind: analysis
+id: manufacturing-32
+part: D
+partLabel: Finance and Asset Management
+quant: [EBITDA_MARGIN, COGS]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 32 · Cost of Goods Sold (COGS) Breakdown and Margins Analysis
 

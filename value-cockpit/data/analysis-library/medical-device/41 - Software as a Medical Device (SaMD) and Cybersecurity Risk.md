@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-41
+part: H
+partLabel: Technology & Innovation
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS]
 ---
 # 41 · Software as a Medical Device (SaMD) and Cybersecurity Risk Assessment
 

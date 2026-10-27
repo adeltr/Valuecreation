@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-12
+part: B
+partLabel: Operations
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 12 · E-commerce Fulfillment Efficiency and Cost Analysis
 

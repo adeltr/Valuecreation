@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/C
+kind: analysis
+id: manufacturing-26
+part: C
+partLabel: Technology and Automation
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 26 · Tooling and Machine Setup Time Optimization
 

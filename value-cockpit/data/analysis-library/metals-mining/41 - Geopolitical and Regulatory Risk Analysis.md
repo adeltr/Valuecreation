@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/I
+kind: analysis
+id: metals-mining-41
+part: I
+partLabel: Legal, Regulatory, and Geopolitical Risk
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 41 · Geopolitical and Regulatory Risk Analysis
 

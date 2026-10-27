@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/J
+kind: analysis
+id: healthcare-provider-46
+part: J
+partLabel: Community Impact and Health Equity
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 46 · Critical Care Resource Allocation and ICU Performance Analysis
 

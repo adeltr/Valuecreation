@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-15
+part: B
+partLabel: Operations & Supply Chain
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 15 · Government Contract Compliance and Audit Readiness
 

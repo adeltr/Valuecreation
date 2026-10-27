@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/D
+kind: analysis
+id: electricity-generation-22
+part: D
+partLabel: Regulatory and Environmental Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 22 · Carbon Intensity and Decarbonization Strategy
 

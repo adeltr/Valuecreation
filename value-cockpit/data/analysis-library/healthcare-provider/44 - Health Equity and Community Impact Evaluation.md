@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/J
+kind: analysis
+id: healthcare-provider-44
+part: J
+partLabel: Community Impact and Health Equity
+quant: []
+causes: [ORGANIZATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 44 · Health Equity and Community Impact Evaluation
 

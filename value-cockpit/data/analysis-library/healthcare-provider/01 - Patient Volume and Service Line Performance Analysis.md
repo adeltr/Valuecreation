@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/A
+kind: analysis
+id: healthcare-provider-01
+part: A
+partLabel: Clinical Performance and Quality
+quant: [REVENUE_GROWTH]
+causes: [MARKET]
+levers: [VOLUME, COST_OPS]
 ---
 # 1 · Patient Volume and Service Line Performance Analysis
 

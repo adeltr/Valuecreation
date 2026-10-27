@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-19
+part: B
+partLabel: Sales
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, ORGANIZATIONAL, MARKET]
+levers: []
 ---
 # 19 · Category Management and Shelf Space Optimization
 

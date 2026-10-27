@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/E
+kind: analysis
+id: electricity-generation-27
+part: E
+partLabel: Grid Integration and Reliability
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 27 · Emergency and Black Start Capability Analysis
 

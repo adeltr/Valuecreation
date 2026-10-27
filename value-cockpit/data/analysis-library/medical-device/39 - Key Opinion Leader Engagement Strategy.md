@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/G
+kind: analysis
+id: medical-device-39
+part: G
+partLabel: Commercial Strategy & Marketing
+quant: []
+causes: [MARKET]
+levers: []
 ---
 # 39 · Key Opinion Leader Engagement Strategy
 

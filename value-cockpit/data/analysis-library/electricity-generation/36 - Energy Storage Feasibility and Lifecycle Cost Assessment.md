@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/H
+kind: analysis
+id: electricity-generation-36
+part: H
+partLabel: Technological Innovation and Modernization
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 36 · Energy Storage Feasibility and Lifecycle Cost Assessment
 

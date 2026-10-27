@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/E
+kind: analysis
+id: pharma-30
+part: E
+partLabel: Licensing & Partnerships
+quant: []
+causes: [FINANCIAL, MARKET, REGULATORY]
+levers: [VOLUME]
 ---
 # 30 · Early-Stage Compound Licensing Opportunities
 

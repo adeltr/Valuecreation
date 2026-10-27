@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/E
+kind: analysis
+id: hospitality-24
+part: E
+partLabel: Marketing & Competitive Positioning
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING]
 ---
 # 24 · Destination Marketing and Local Partnership Effectiveness
 

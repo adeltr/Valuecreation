@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/A
+kind: analysis
+id: healthcare-provider-06
+part: A
+partLabel: Clinical Performance and Quality
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 6 · Care Pathway Standardization and Variation Reduction Analysis
 

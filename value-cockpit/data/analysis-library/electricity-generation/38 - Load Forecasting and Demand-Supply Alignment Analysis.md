@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/I
+kind: analysis
+id: electricity-generation-38
+part: I
+partLabel: Capacity Planning and Utilization
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 38 · Load Forecasting and Demand-Supply Alignment Analysis
 

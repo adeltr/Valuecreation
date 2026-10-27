@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-11
+part: B
+partLabel: Operations
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, COST_PROCUREMENT, WC_DIO]
 ---
 # 11 · In-Stock Rate and Out-of-Stock Analysis
 

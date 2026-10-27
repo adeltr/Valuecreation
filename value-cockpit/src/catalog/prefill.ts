@@ -59,6 +59,7 @@ const CAUSE_RULES: Rule[] = [
 ];
 
 const REGULATORY = /\b(regulat\w*|compliance|fda|epa|licens\w*|permits?|certification\w*)\b/i;
+CAUSE_RULES.push(['REGULATORY', REGULATORY]);
 
 function section(content: string, heading: string): string[] {
   const lines = content.split('\n');

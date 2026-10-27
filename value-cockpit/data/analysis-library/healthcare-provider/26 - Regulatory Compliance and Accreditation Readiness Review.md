@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/E
+kind: analysis
+id: healthcare-provider-26
+part: E
+partLabel: Regulatory Compliance and Risk Management
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 26 · Regulatory Compliance and Accreditation Readiness Review
 

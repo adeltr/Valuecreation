@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-16
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: []
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 16 · Retransmission Consent & Carriage Fee Negotiation Analysis
 

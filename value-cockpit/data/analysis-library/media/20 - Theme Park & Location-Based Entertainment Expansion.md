@@ -2,6 +2,13 @@
 tags:
   - media
   - part/C
+kind: analysis
+id: media-20
+part: C
+partLabel: Live & Experiential Entertainment
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 20 · Theme Park & Location-Based Entertainment Expansion Analysis
 

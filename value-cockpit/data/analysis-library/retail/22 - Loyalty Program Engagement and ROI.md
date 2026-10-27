@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/C
+kind: analysis
+id: retail-22
+part: C
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 22 · Loyalty Program Engagement and ROI
 

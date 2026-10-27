@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/F
+kind: analysis
+id: cosmetics-44
+part: F
+partLabel: Finance and Intellectual Property
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 44 · Pricing and Promotional Strategy Benchmarking
 

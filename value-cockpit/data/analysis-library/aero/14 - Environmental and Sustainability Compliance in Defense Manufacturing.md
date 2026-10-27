@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-14
+part: B
+partLabel: Operations & Supply Chain
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 14 · Environmental and Sustainability Compliance in Defense Manufacturing
 

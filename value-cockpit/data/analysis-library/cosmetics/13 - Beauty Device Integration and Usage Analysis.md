@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-13
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 13 · Beauty Device Integration and Usage Analysis
 

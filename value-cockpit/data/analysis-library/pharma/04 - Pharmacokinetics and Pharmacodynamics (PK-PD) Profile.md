@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-04
+part: A
+partLabel: Research & Development
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 4 · Pharmacokinetics and Pharmacodynamics (PK-PD) Profile Analysis
 

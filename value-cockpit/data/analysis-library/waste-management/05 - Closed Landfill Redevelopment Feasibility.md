@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/A
+kind: analysis
+id: waste-management-05
+part: A
+partLabel: Landfill Management & Operations
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 5 · Closed Landfill Redevelopment Feasibility
 

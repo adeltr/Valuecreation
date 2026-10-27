@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/B
+kind: analysis
+id: pharma-13
+part: B
+partLabel: Regulatory & Compliance
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, ORGANIZATIONAL, MARKET, REGULATORY]
+levers: []
 ---
 # 13 · International Regulatory Harmonization and Compliance Strategy
 

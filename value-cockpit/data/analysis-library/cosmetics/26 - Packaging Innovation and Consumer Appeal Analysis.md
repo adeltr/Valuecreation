@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-26
+part: B
+partLabel: Marketing and Consumer Insights
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 26 · Packaging Innovation and Consumer Appeal Analysis
 

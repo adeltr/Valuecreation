@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/G
+kind: analysis
+id: pharma-36
+part: G
+partLabel: Financial Analysis
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [PRICING]
 ---
 # 36 · Pharmacoeconomic Impact Studies
 

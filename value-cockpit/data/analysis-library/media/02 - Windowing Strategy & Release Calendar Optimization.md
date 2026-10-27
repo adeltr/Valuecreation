@@ -2,6 +2,13 @@
 tags:
   - media
   - part/A
+kind: analysis
+id: media-02
+part: A
+partLabel: Content Strategy & Portfolio
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 2 · Windowing Strategy & Release Calendar Optimization
 

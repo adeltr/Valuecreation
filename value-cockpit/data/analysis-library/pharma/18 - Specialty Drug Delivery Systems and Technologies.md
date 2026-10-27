@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/C
+kind: analysis
+id: pharma-18
+part: C
+partLabel: Operations & Supply Chain
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [VOLUME]
 ---
 # 18 · Specialty Drug Delivery Systems and Technologies
 

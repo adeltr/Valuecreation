@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-08
+part: A
+partLabel: Market and Consumer Insights
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 8 · Customer Experience Metrics in Tasting Rooms or Tours
 

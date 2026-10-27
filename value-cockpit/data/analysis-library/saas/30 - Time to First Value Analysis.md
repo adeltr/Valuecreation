@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/D
+kind: analysis
+id: saas-30
+part: D
+partLabel: Product & Engagement
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [COST_OPS, RETENTION]
 ---
 # 30 · Time to First Value Analysis
 

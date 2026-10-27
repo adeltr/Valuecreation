@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/D
+kind: analysis
+id: waste-management-24
+part: D
+partLabel: Waste-to-Energy & Thermal Treatment
+quant: []
+causes: [FINANCIAL]
+levers: [WC_DSO]
 ---
 # 24 · Thermal Desorption or Incineration Feasibility for Contaminated Soil Treatment
 

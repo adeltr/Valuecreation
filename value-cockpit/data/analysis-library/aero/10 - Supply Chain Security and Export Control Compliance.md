@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-10
+part: B
+partLabel: Operations & Supply Chain
+quant: []
+causes: [REGULATORY, OPERATIONAL]
+levers: [SUPPLY_CHAIN_CONTROL]
 ---
 # 10 · Supply Chain Security and Export Control Compliance
 

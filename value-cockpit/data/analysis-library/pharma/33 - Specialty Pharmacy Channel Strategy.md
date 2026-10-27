@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/F
+kind: analysis
+id: pharma-33
+part: F
+partLabel: Sales & Commercialization
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 33 · Specialty Pharmacy Channel Strategy
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/F
+kind: analysis
+id: media-29
+part: F
+partLabel: Financing & Partnerships
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 29 · M&A Strategy & Integration for Media Enterprises
 

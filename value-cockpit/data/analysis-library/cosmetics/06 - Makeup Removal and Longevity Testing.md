@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-06
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 6 · Makeup Removal and Longevity Testing
 

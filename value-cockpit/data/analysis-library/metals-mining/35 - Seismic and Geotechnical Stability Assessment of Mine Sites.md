@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/F
+kind: analysis
+id: metals-mining-35
+part: F
+partLabel: Infrastructure and Logistics
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 35 · Seismic and Geotechnical Stability Assessment of Mine Sites
 

@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/G
+kind: analysis
+id: healthcare-provider-35
+part: G
+partLabel: Population Health and Care Coordination
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 35 · Patient Population Risk Stratification and Resource Allocation Study
 

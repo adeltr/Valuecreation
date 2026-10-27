@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/D
+kind: analysis
+id: retail-29
+part: D
+partLabel: Merchandising
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [MIX, COST_PROCUREMENT, WC_DIO]
 ---
 # 29 · Stock Keeping Unit (SKU) Rationalization and Retail Product Assortment Optimization
 

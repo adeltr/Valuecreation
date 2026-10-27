@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/F
+kind: analysis
+id: healthcare-provider-28
+part: F
+partLabel: Technology Utilization and Digital Engagement
+quant: []
+causes: []
+levers: [COST_OPS]
 ---
 # 28 · Healthcare Technology and Electronic Health Record (EHR) Utilization Assessment
 

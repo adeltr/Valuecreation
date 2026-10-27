@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/H
+kind: analysis
+id: metals-mining-38
+part: H
+partLabel: Technology and Innovation
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 38 · Ore Sorting and Pre-Concentration Efficiency Review
 

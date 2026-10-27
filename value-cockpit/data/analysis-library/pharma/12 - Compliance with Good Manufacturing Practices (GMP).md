@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/B
+kind: analysis
+id: pharma-12
+part: B
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 12 · Compliance with Good Manufacturing Practices (GMP)
 

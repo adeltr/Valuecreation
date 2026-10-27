@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-05
+part: A
+partLabel: Strategy & Market Position
+quant: [DSO]
+causes: [GEOPOLITICAL, FINANCIAL]
+levers: [WC_MILESTONES, EXPORT_FMS]
 ---
 # 5 · Defense Export Financing and Risk Mitigation Strategies
 

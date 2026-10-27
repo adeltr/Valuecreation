@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-13
+part: B
+partLabel: Sales & Marketing
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [PRICING, SALES_EFFICIENCY]
 ---
 # 13 · Lead-to-Customer Conversion Rate Analysis
 

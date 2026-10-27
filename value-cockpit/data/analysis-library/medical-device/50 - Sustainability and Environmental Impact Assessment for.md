@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/J
+kind: analysis
+id: medical-device-50
+part: J
+partLabel: Sustainability & Environmental Impact
+quant: [COGS]
+causes: [REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 50 · Sustainability and Environmental Impact Assessment for Single-Use Devices
 

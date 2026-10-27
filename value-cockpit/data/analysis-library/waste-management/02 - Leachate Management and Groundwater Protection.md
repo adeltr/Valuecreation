@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/A
+kind: analysis
+id: waste-management-02
+part: A
+partLabel: Landfill Management & Operations
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS, WC_DSO]
 ---
 # 2 · Leachate Management and Groundwater Protection Compliance
 

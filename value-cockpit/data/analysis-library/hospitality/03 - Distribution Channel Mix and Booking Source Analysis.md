@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-03
+part: A
+partLabel: Revenue & Pricing Management
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, MIX]
 ---
 # 3 · Distribution Channel Mix and Booking Source Analysis
 

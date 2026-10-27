@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/E
+kind: analysis
+id: manufacturing-36
+part: E
+partLabel: Product and Process Development
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [VOLUME, MIX, WC_DIO]
 ---
 # 36 · Product Customization and Modularity Assessment
 

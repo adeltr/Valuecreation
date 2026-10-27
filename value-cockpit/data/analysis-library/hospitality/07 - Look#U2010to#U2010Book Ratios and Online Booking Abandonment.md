@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-07
+part: A
+partLabel: Revenue & Pricing Management
+quant: []
+causes: [OPERATIONAL]
+levers: [PRICING]
 ---
 # 7 · Look‐to‐Book Ratios and Online Booking Abandonment Analysis
 

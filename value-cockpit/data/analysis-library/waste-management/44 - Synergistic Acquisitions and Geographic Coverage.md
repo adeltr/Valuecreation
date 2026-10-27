@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/H
+kind: analysis
+id: waste-management-44
+part: H
+partLabel: Financial & Contractual Structuring
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 44 · Synergistic Acquisitions and Geographic Coverage Optimization
 

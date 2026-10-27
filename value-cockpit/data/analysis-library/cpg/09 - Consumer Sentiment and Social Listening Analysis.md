@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-09
+part: A
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 9 · Consumer Sentiment and Social Listening Analysis
 

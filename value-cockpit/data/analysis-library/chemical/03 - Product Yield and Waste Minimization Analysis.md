@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/A
+kind: analysis
+id: chemical-03
+part: A
+partLabel: Production & Process Optimization
+quant: [EBITDA_MARGIN, COGS]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 3 · Product Yield and Waste Minimization Analysis
 

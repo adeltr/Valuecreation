@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/G
+kind: analysis
+id: electricity-generation-31
+part: G
+partLabel: Renewable Energy and Sustainability
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 31 · Renewable Energy Transition Readiness and Integration Strategy Assessment
 

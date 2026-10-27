@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-08
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 8 · Sun Protection Factor (SPF) Validation and Compliance
 

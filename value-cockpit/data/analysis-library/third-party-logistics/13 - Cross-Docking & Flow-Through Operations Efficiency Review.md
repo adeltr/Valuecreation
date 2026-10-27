@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/B
+kind: analysis
+id: third-party-logistics-13
+part: B
+partLabel: Warehousing & Fulfillment
+quant: [DIO]
+causes: [OPERATIONAL]
+levers: [MIX, COST_OPS]
 ---
 # 13 · Cross-Docking & Flow-Through Operations Efficiency Review
 

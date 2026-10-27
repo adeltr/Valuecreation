@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-04
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 4 · Production Lead Time Analysis
 

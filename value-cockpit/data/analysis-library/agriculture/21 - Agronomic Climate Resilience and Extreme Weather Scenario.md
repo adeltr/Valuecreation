@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/C
+kind: analysis
+id: agriculture-21
+part: C
+partLabel: Environmental Sustainability & Resource
+quant: []
+causes: []
+levers: [VOLUME]
 ---
 # 21 · Agronomic Climate Resilience and Extreme Weather Scenario Evaluation
 

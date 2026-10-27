@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-07
+part: A
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 7 · Consumer Advocacy and Brand Perception Tracking
 

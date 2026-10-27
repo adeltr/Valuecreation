@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/G
+kind: analysis
+id: waste-management-35
+part: G
+partLabel: Regulatory Compliance & Environmental Impact
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 35 · Regulatory Compliance and Environmental Impact Assessment
 

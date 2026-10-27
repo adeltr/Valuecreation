@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-05
+part: A
+partLabel: Marketing
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, ORGANIZATIONAL, MARKET]
+levers: [VOLUME]
 ---
 # 5 · Ethnic and Multicultural Consumer Segment Analysis
 

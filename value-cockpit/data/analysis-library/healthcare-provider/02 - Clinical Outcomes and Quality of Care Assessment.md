@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/A
+kind: analysis
+id: healthcare-provider-02
+part: A
+partLabel: Clinical Performance and Quality
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 2 · Clinical Outcomes and Quality of Care Assessment
 

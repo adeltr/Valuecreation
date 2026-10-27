@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-22
+part: C
+partLabel: Customer Retention & Success
+quant: [REVENUE_GROWTH, GROSS_CHURN, NRR, EXPANSION_RATE]
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, COST_OPS, RETENTION, EXPANSION]
 ---
 # 22 · Net Revenue Retention (NRR) Analysis
 

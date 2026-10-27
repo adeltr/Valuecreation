@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/I
+kind: analysis
+id: waste-management-46
+part: I
+partLabel: Sustainability & ESG
+quant: []
+causes: [OPERATIONAL]
+levers: [WC_DSO]
 ---
 # 46 · Corporate Sustainability and ESG Impact Assessment
 

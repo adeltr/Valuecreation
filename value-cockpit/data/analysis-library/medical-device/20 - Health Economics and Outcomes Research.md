@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/C
+kind: analysis
+id: medical-device-20
+part: C
+partLabel: Reimbursement & Market Access
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [PRICING]
 ---
 # 20 · Health Economics and Outcomes Research
 

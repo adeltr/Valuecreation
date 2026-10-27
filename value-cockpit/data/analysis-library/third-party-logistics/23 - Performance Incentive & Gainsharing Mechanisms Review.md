@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/D
+kind: analysis
+id: third-party-logistics-23
+part: D
+partLabel: Commercial & Contractual Structures
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 23 · Performance Incentive & Gainsharing Mechanisms Review
 

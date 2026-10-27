@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-10
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 10 · Backhaul Collaboration & Cross-Industry Cargo Matching Initiatives
 

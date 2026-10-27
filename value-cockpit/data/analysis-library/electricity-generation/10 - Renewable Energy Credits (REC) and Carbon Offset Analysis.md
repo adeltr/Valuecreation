@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/B
+kind: analysis
+id: electricity-generation-10
+part: B
+partLabel: Fuel and Energy Resource Management
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 10 · Renewable Energy Credits (REC) and Carbon Offset Analysis
 

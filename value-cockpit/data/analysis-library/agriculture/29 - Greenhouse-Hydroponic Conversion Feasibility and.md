@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/D
+kind: analysis
+id: agriculture-29
+part: D
+partLabel: Technology & Innovation in Agriculture
+quant: []
+causes: [OPERATIONAL]
+levers: [PRICING, VOLUME, COST_OPS]
 ---
 # 29 · Greenhouse-Hydroponic Conversion Feasibility and Cultivation Methods Review
 

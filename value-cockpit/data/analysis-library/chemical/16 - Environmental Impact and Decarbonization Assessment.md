@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-16
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 16 · Environmental Impact and Decarbonization Assessment
 

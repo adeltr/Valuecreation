@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/F
+kind: analysis
+id: third-party-logistics-32
+part: F
+partLabel: Trade & Regulatory Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 32 · C-TPAT, AEO & Supply Chain Security Protocols Compliance
 

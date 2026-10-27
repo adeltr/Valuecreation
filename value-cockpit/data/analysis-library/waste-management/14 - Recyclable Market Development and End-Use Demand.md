@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/B
+kind: analysis
+id: waste-management-14
+part: B
+partLabel: Recycling & Materials Recovery
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, MARKET]
+levers: [WC_DSO]
 ---
 # 14 · Recyclable Market Development and End-Use Demand Analysis
 

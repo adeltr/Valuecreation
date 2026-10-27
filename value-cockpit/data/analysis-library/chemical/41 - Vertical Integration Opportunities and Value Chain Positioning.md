@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/G
+kind: analysis
+id: chemical-41
+part: G
+partLabel: Supply Chain
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 41 · Vertical Integration Opportunities and Value Chain Positioning
 

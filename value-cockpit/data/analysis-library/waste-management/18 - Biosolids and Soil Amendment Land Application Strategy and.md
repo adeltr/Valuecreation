@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/C
+kind: analysis
+id: waste-management-18
+part: C
+partLabel: Organics & Composting
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 18 · Biosolids and Soil Amendment Land Application Strategy and Compliance Review
 

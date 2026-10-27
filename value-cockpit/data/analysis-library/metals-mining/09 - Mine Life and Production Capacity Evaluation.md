@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-09
+part: A
+partLabel: Resource and Reserve Management
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 9 · Mine Life and Production Capacity Evaluation
 

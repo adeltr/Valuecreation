@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-18
+part: B
+partLabel: Clinical & Post-Market
+quant: []
+causes: [REGULATORY]
+levers: [VOLUME]
 ---
 # 18 · Patient Engagement and Compliance Tracking for Home-Use Devices
 

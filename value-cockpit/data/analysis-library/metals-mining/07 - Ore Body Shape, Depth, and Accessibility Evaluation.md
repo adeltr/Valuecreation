@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-07
+part: A
+partLabel: Resource and Reserve Management
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 7 · Ore Body Shape, Depth, and Accessibility Evaluation
 

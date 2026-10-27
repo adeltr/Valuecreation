@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/C
+kind: analysis
+id: pharma-17
+part: C
+partLabel: Operations & Supply Chain
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 17 · Biosimilars Threat Assessment
 

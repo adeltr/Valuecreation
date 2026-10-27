@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/D
+kind: analysis
+id: chemical-26
+part: D
+partLabel: Sales & Marketing
+quant: []
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 26 · Competitive Positioning in Specialty vs. Commodity Chemicals
 

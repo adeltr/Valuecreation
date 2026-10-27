@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/D
+kind: analysis
+id: cpg-40
+part: D
+partLabel: Research & Development
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, COST_PROCUREMENT]
 ---
 # 40 · Global Sourcing Strategy for Commoditized Ingredients
 

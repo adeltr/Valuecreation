@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/C
+kind: analysis
+id: manufacturing-25
+part: C
+partLabel: Technology and Automation
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [VOLUME, COST_OPS]
 ---
 # 25 · Factory Automation Level and Robotics Utilization
 

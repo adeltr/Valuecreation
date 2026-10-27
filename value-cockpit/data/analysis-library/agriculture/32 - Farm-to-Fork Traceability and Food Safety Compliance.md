@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/E
+kind: analysis
+id: agriculture-32
+part: E
+partLabel: Market Positioning & Value Chain
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 32 · Farm-to-Fork Traceability and Food Safety Compliance Review
 

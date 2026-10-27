@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-11
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 11 · Throughput and Bottleneck Identification
 

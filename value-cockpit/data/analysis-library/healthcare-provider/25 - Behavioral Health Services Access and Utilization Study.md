@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/D
+kind: analysis
+id: healthcare-provider-25
+part: D
+partLabel: Patient Experience and Access
+quant: []
+causes: []
+levers: [VOLUME, COST_OPS]
 ---
 # 25 · Behavioral Health Services Access and Utilization Study
 

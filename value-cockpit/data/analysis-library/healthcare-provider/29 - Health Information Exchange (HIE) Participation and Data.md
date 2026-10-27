@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/F
+kind: analysis
+id: healthcare-provider-29
+part: F
+partLabel: Technology Utilization and Digital Engagement
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 29 · Health Information Exchange (HIE) Participation and Data Integration Review
 

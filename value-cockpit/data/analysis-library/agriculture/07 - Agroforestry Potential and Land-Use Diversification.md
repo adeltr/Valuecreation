@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-07
+part: A
+partLabel: Crop Management & Soil Health
+quant: []
+causes: []
+levers: []
 ---
 # 7 · Agroforestry Potential and Land-Use Diversification Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-06
+part: A
+partLabel: Finance & Revenue
+quant: [REVENUE_GROWTH, EXPANSION_RATE, LTV]
+causes: [COMMERCIAL]
+levers: [PRICING, RETENTION, EXPANSION]
 ---
 # 6 · Expansion Revenue Analysis
 

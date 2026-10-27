@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/C
+kind: analysis
+id: wine-spirits-25
+part: C
+partLabel: Product Innovation and Development
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 25 · In-House vs. Outsourced Production Feasibility Study
 

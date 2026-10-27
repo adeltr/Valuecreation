@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-09
+part: A
+partLabel: Market and Consumer Insights
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, COST_OPS]
 ---
 # 9 · Customer Experience and Engagement at Trade Shows and Festivals
 

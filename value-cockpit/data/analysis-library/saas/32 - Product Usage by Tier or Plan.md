@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/D
+kind: analysis
+id: saas-32
+part: D
+partLabel: Product & Engagement
+quant: [EXPANSION_RATE]
+causes: [COMMERCIAL]
+levers: [PRICING, EXPANSION]
 ---
 # 32 · Product Usage by Tier or Plan
 

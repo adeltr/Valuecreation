@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/B
+kind: analysis
+id: pharma-11
+part: B
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 11 · Regulatory Risk for Off-Label Drug Use
 

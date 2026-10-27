@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-20
+part: B
+partLabel: Sales
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 20 · In-store Sampling and Shopper Activation Effectiveness
 

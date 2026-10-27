@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-03
+part: A
+partLabel: Market and Consumer Insights
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 3 · Regional and Geographic Flavor Profile Adaptation Analysis
 

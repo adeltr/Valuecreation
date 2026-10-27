@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-23
+part: B
+partLabel: Marketing and Consumer Insights
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 23 · Fragrance and Sensory Appeal Testing
 

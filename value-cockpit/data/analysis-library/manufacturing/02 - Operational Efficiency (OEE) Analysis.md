@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-02
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 2 · Operational Efficiency (OEE) Analysis
 

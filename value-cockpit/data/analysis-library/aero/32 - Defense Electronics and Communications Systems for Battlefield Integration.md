@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-32
+part: D
+partLabel: Technology & Cybersecurity
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 32 · Defense Electronics and Communications Systems for Battlefield Integration
 

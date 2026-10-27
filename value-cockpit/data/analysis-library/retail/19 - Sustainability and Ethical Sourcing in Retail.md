@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-19
+part: B
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_PROCUREMENT]
 ---
 # 19 · Sustainability and Ethical Sourcing in Retail
 

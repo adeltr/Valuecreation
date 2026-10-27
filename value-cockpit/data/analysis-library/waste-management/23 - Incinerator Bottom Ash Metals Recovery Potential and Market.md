@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/D
+kind: analysis
+id: waste-management-23
+part: D
+partLabel: Waste-to-Energy & Thermal Treatment
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 23 · Incinerator Bottom Ash Metals Recovery Potential and Market Valuation
 

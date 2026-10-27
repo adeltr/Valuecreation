@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/E
+kind: analysis
+id: manufacturing-40
+part: E
+partLabel: Product and Process Development
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [WC_DIO]
 ---
 # 40 · Make-to-Stock vs. Make-to-Order Strategy Evaluation
 

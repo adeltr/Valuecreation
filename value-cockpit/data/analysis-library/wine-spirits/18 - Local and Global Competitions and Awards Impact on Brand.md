@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/B
+kind: analysis
+id: wine-spirits-18
+part: B
+partLabel: Brand Positioning and Marketing Strategy
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 18 · Local and Global Competitions and Awards Impact on Brand Perception
 

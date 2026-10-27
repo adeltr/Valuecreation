@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/B
+kind: analysis
+id: waste-management-13
+part: B
+partLabel: Recycling & Materials Recovery
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 13 · Construction & Demolition (C&D) Waste Diversion and Recycling Efficiency
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/G
+kind: analysis
+id: medical-device-40
+part: G
+partLabel: Commercial Strategy & Marketing
+quant: []
+causes: [ORGANIZATIONAL]
+levers: []
 ---
 # 40 · Physician Training and Education Program Evaluation
 

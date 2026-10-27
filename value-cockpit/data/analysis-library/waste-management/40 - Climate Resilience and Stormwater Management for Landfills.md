@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/G
+kind: analysis
+id: waste-management-40
+part: G
+partLabel: Regulatory Compliance & Environmental Impact
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS]
 ---
 # 40 · Climate Resilience and Stormwater Management for Landfills
 

@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/C
+kind: analysis
+id: retail-20
+part: C
+partLabel: Marketing
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING]
 ---
 # 20 · Retail Pricing and Discount Strategy Analysis
 

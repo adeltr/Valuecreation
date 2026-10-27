@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/C
+kind: analysis
+id: waste-management-17
+part: C
+partLabel: Organics & Composting
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 17 · Mechanical Biological Treatment (MBT) Facility Performance and Throughput Analysis
 

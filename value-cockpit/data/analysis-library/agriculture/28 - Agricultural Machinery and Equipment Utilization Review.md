@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/D
+kind: analysis
+id: agriculture-28
+part: D
+partLabel: Technology & Innovation in Agriculture
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 28 · Agricultural Machinery and Equipment Utilization Review
 

@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/D
+kind: analysis
+id: saas-29
+part: D
+partLabel: Product & Engagement
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 29 · Platform and Ecosystem Integration Analysis
 

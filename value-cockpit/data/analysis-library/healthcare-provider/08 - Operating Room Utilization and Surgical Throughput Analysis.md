@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/B
+kind: analysis
+id: healthcare-provider-08
+part: B
+partLabel: Operational Efficiency and Resource
+quant: []
+causes: []
+levers: [COST_OPS]
 ---
 # 8 · Operating Room Utilization and Surgical Throughput Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-43
+part: H
+partLabel: Technology & Innovation
+quant: []
+causes: []
+levers: []
 ---
 # 43 · Human Factors Engineering and Usability Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/C
+kind: analysis
+id: cosmetics-32
+part: C
+partLabel: Sales and Distribution
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 32 · E-commerce and Digital Marketing Performance
 

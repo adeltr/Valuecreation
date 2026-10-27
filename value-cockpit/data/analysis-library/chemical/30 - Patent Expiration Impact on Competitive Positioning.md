@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/D
+kind: analysis
+id: chemical-30
+part: D
+partLabel: Sales & Marketing
+quant: [REVENUE_GROWTH]
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 30 · Patent Expiration Impact on Competitive Positioning
 

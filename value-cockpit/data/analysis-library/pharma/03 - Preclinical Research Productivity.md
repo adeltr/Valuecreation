@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-03
+part: A
+partLabel: Research & Development
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 3 · Preclinical Research Productivity
 

@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/B
+kind: analysis
+id: chemical-15
+part: B
+partLabel: Finance
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 15 · By-product Revenue and Waste Management Cost Analysis
 

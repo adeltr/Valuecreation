@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/E
+kind: analysis
+id: manufacturing-37
+part: E
+partLabel: Product and Process Development
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 37 · New Product Introduction (NPI) and Time-to-Market Evaluation
 

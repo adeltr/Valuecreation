@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-25
+part: C
+partLabel: Customer Retention & Success
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: []
 ---
 # 25 · First Contact Resolution (FCR) Rate
 

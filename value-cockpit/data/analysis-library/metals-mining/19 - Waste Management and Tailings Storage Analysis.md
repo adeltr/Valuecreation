@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/C
+kind: analysis
+id: metals-mining-19
+part: C
+partLabel: Environmental Sustainability and Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 19 · Waste Management and Tailings Storage Analysis
 

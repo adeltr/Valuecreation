@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/J
+kind: analysis
+id: metals-mining-45
+part: J
+partLabel: Processing and Value Addition
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 45 · Downstream Value-Addition Opportunities Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/D
+kind: analysis
+id: cosmetics-38
+part: D
+partLabel: Operations and Supply Chain
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 38 · Sustainability and Environmental Impact Evaluation
 

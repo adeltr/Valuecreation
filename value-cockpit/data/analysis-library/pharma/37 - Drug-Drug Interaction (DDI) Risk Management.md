@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/G
+kind: analysis
+id: pharma-37
+part: G
+partLabel: Financial Analysis
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 37 · Drug-Drug Interaction (DDI) Risk Management
 

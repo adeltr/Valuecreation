@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-32
+part: C
+partLabel: Operations
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 32 · Distributor Margin and Channel Conflict Assessment
 

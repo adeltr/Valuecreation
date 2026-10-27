@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/I
+kind: analysis
+id: medical-device-49
+part: I
+partLabel: Intellectual Property
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 49 · Intellectual Property and Patent Landscape
 

@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/G
+kind: analysis
+id: waste-management-36
+part: G
+partLabel: Regulatory Compliance & Environmental Impact
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: []
 ---
 # 36 · Decommissioning and Site Remediation Liability Analysis
 

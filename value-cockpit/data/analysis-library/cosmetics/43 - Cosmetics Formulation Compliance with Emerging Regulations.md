@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/E
+kind: analysis
+id: cosmetics-43
+part: E
+partLabel: Compliance and Regulatory
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 43 · Cosmetics Formulation Compliance with Emerging Regulations
 

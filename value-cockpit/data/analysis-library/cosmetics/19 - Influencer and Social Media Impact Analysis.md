@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-19
+part: B
+partLabel: Marketing and Consumer Insights
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: []
 ---
 # 19 · Influencer and Social Media Impact Analysis
 

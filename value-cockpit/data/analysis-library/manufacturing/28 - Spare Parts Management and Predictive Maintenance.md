@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/C
+kind: analysis
+id: manufacturing-28
+part: C
+partLabel: Technology and Automation
+quant: [DIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 28 · Spare Parts Management and Predictive Maintenance Systems
 

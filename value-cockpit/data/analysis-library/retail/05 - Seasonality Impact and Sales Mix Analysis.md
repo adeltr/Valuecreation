@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-05
+part: A
+partLabel: Finance
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, MIX, WC_DIO]
 ---
 # 5 · Seasonality Impact and Sales Mix Analysis
 

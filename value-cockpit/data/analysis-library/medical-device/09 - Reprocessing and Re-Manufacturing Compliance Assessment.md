@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-09
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 9 · Reprocessing and Re-Manufacturing Compliance Assessment
 

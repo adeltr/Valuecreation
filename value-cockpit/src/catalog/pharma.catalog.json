@@ -1,0 +1,612 @@
+[
+  {
+    "id": "pharma-01",
+    "archetype": "pharma",
+    "title": "Drug Pipeline Analysis",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/pharma/01 - Drug Pipeline Analysis.md"
+  },
+  {
+    "id": "pharma-02",
+    "archetype": "pharma",
+    "title": "Clinical Trial Success Rates",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/02 - Clinical Trial Success Rates.md"
+  },
+  {
+    "id": "pharma-03",
+    "archetype": "pharma",
+    "title": "Preclinical Research Productivity",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/pharma/03 - Preclinical Research Productivity.md"
+  },
+  {
+    "id": "pharma-04",
+    "archetype": "pharma",
+    "title": "Pharmacokinetics and Pharmacodynamics (PK-PD) Profile Analysis",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/04 - Pharmacokinetics and Pharmacodynamics (PK-PD) Profile.md"
+  },
+  {
+    "id": "pharma-05",
+    "archetype": "pharma",
+    "title": "Pipeline Attrition Rate and Risk Mitigation",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/05 - Pipeline Attrition Rate and Risk Mitigation.md"
+  },
+  {
+    "id": "pharma-06",
+    "archetype": "pharma",
+    "title": "Accelerated Approval Pathway Utilization",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/06 - Accelerated Approval Pathway Utilization.md"
+  },
+  {
+    "id": "pharma-07",
+    "archetype": "pharma",
+    "title": "Companion Diagnostics Integration",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/07 - Companion Diagnostics Integration.md"
+  },
+  {
+    "id": "pharma-08",
+    "archetype": "pharma",
+    "title": "Adaptive Clinical Trial Design Strategy",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/08 - Adaptive Clinical Trial Design Strategy.md"
+  },
+  {
+    "id": "pharma-09",
+    "archetype": "pharma",
+    "title": "Breakthrough Therapy Designation Utilization",
+    "part": "A",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/09 - Breakthrough Therapy Designation Utilization.md"
+  },
+  {
+    "id": "pharma-10",
+    "archetype": "pharma",
+    "title": "Regulatory Pathway Complexity",
+    "part": "B",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/10 - Regulatory Pathway Complexity.md"
+  },
+  {
+    "id": "pharma-11",
+    "archetype": "pharma",
+    "title": "Regulatory Risk for Off-Label Drug Use",
+    "part": "B",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/11 - Regulatory Risk for Off-Label Drug Use.md"
+  },
+  {
+    "id": "pharma-12",
+    "archetype": "pharma",
+    "title": "Compliance with Good Manufacturing Practices (GMP)",
+    "part": "B",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/pharma/12 - Compliance with Good Manufacturing Practices (GMP).md"
+  },
+  {
+    "id": "pharma-13",
+    "archetype": "pharma",
+    "title": "International Regulatory Harmonization and Compliance Strategy",
+    "part": "B",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "ORGANIZATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/13 - International Regulatory Harmonization and Compliance.md"
+  },
+  {
+    "id": "pharma-14",
+    "archetype": "pharma",
+    "title": "Drug Price Transparency and Regulatory Compliance",
+    "part": "B",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pharma/14 - Drug Price Transparency and Regulatory Compliance.md"
+  },
+  {
+    "id": "pharma-15",
+    "archetype": "pharma",
+    "title": "Pediatric Exclusivity and Extensions",
+    "part": "B",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/15 - Pediatric Exclusivity and Extensions.md"
+  },
+  {
+    "id": "pharma-16",
+    "archetype": "pharma",
+    "title": "Supply Chain and Cold Chain Logistics Evaluation",
+    "part": "C",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/pharma/16 - Supply Chain and Cold Chain Logistics Evaluation.md"
+  },
+  {
+    "id": "pharma-17",
+    "archetype": "pharma",
+    "title": "Biosimilars Threat Assessment",
+    "part": "C",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/17 - Biosimilars Threat Assessment.md"
+  },
+  {
+    "id": "pharma-18",
+    "archetype": "pharma",
+    "title": "Specialty Drug Delivery Systems and Technologies",
+    "part": "C",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/18 - Specialty Drug Delivery Systems and Technologies.md"
+  },
+  {
+    "id": "pharma-19",
+    "archetype": "pharma",
+    "title": "Expanded Access Program Impact",
+    "part": "C",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/pharma/19 - Expanded Access Program Impact.md"
+  },
+  {
+    "id": "pharma-20",
+    "archetype": "pharma",
+    "title": "Compassionate Use Program Strategy",
+    "part": "C",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/pharma/20 - Compassionate Use Program Strategy.md"
+  },
+  {
+    "id": "pharma-21",
+    "archetype": "pharma",
+    "title": "Pricing Power and Reimbursement Environment",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pharma/21 - Pricing Power and Reimbursement Environment.md"
+  },
+  {
+    "id": "pharma-22",
+    "archetype": "pharma",
+    "title": "Pharmaceutical Market Access and Health Technology Assessment (HTA) Outcomes",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pharma/22 - Pharmaceutical Market Access and Health Technology.md"
+  },
+  {
+    "id": "pharma-23",
+    "archetype": "pharma",
+    "title": "Real-World Evidence (RWE) Integration for Drug Development",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/23 - Real-World Evidence (RWE) Integration for Drug.md"
+  },
+  {
+    "id": "pharma-24",
+    "archetype": "pharma",
+    "title": "Therapeutic Area Specialization and Competitive Position",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/24 - Therapeutic Area Specialization and Competitive Position.md"
+  },
+  {
+    "id": "pharma-25",
+    "archetype": "pharma",
+    "title": "Global Drug Launch Strategy and Sequencing",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pharma/25 - Global Drug Launch Strategy and Sequencing.md"
+  },
+  {
+    "id": "pharma-26",
+    "archetype": "pharma",
+    "title": "Rare Disease Market Penetration",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/26 - Rare Disease Market Penetration.md"
+  },
+  {
+    "id": "pharma-27",
+    "archetype": "pharma",
+    "title": "Drug Pricing Regulation Across Emerging Markets",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/27 - Drug Pricing Regulation Across Emerging Markets.md"
+  },
+  {
+    "id": "pharma-28",
+    "archetype": "pharma",
+    "title": "Healthcare Provider (HCP) Engagement and Influence Strategy",
+    "part": "D",
+    "partLabel": "Marketing & Market Access",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/28 - Healthcare Provider (HCP) Engagement and Influence.md"
+  },
+  {
+    "id": "pharma-29",
+    "archetype": "pharma",
+    "title": "Licensing and Partnership Agreements",
+    "part": "E",
+    "partLabel": "Licensing & Partnerships",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/29 - Licensing and Partnership Agreements.md"
+  },
+  {
+    "id": "pharma-30",
+    "archetype": "pharma",
+    "title": "Early-Stage Compound Licensing Opportunities",
+    "part": "E",
+    "partLabel": "Licensing & Partnerships",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pharma/30 - Early-Stage Compound Licensing Opportunities.md"
+  },
+  {
+    "id": "pharma-31",
+    "archetype": "pharma",
+    "title": "Generics Portfolio Strength and Market Share",
+    "part": "E",
+    "partLabel": "Licensing & Partnerships",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/pharma/31 - Generics Portfolio Strength and Market Share.md"
+  },
+  {
+    "id": "pharma-32",
+    "archetype": "pharma",
+    "title": "Pharmaceutical Sales Force Effectiveness",
+    "part": "F",
+    "partLabel": "Sales & Commercialization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/32 - Pharmaceutical Sales Force Effectiveness.md"
+  },
+  {
+    "id": "pharma-33",
+    "archetype": "pharma",
+    "title": "Specialty Pharmacy Channel Strategy",
+    "part": "F",
+    "partLabel": "Sales & Commercialization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/pharma/33 - Specialty Pharmacy Channel Strategy.md"
+  },
+  {
+    "id": "pharma-34",
+    "archetype": "pharma",
+    "title": "Intellectual Property (IP) Portfolio and Patent Expiry Risk",
+    "part": "G",
+    "partLabel": "Financial Analysis",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pharma/34 - Intellectual Property (IP) Portfolio and Patent Expiry Risk.md"
+  },
+  {
+    "id": "pharma-35",
+    "archetype": "pharma",
+    "title": "Market Exclusivity Periods for Key Drugs",
+    "part": "G",
+    "partLabel": "Financial Analysis",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pharma/35 - Market Exclusivity Periods for Key Drugs.md"
+  },
+  {
+    "id": "pharma-36",
+    "archetype": "pharma",
+    "title": "Pharmacoeconomic Impact Studies",
+    "part": "G",
+    "partLabel": "Financial Analysis",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pharma/36 - Pharmacoeconomic Impact Studies.md"
+  },
+  {
+    "id": "pharma-37",
+    "archetype": "pharma",
+    "title": "Drug-Drug Interaction (DDI) Risk Management",
+    "part": "G",
+    "partLabel": "Financial Analysis",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pharma/37 - Drug-Drug Interaction (DDI) Risk Management.md"
+  }
+]

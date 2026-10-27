@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/C
+kind: analysis
+id: manufacturing-30
+part: C
+partLabel: Technology and Automation
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 30 · Energy Consumption and Efficiency Analysis
 

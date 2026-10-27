@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/C
+kind: analysis
+id: electricity-generation-14
+part: C
+partLabel: Financial and Market Strategy
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [VOLUME, COST_OPS]
 ---
 # 14 · Capacity Payment and Ancillary Services Analysis
 

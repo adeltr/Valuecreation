@@ -2,6 +2,13 @@
 tags:
   - media
   - part/I
+kind: analysis
+id: media-34
+part: I
+partLabel: Audience Engagement & Monetization
+quant: []
+causes: [COMMERCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 34 · In-Show Brand Integration & Sponsorship Effectiveness Analysis
 

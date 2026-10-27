@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/B
+kind: analysis
+id: agriculture-18
+part: B
+partLabel: Livestock Management & Animal Health
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 18 · Biosecurity Protocol and Disease Containment Strategy
 

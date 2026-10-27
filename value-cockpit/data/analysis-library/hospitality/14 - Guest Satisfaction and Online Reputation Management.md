@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/B
+kind: analysis
+id: hospitality-14
+part: B
+partLabel: Guest Experience
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 14 · Guest Satisfaction and Online Reputation Management Review
 

@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/J
+kind: analysis
+id: electricity-generation-45
+part: J
+partLabel: Lifecycle and Asset Management
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 45 · Energy Curtailment and Loss Factor Analysis
 

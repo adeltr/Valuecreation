@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/C
+kind: analysis
+id: healthcare-provider-16
+part: C
+partLabel: Financial Performance and Revenue Management
+quant: [EBITDA_MARGIN]
+causes: [FINANCIAL]
+levers: [VOLUME, MIX, WC_DSO]
 ---
 # 16 · Payer Mix and Reimbursement Rate Optimization Analysis
 

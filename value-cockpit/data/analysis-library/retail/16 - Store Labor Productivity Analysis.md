@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-16
+part: B
+partLabel: Operations
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 16 · Store Labor Productivity Analysis
 

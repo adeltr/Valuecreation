@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/E
+kind: analysis
+id: electricity-generation-24
+part: E
+partLabel: Grid Integration and Reliability
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 24 · Grid Reliability, Stability, Balancing, and Frequency Regulation Assessment
 

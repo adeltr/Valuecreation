@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/E
+kind: analysis
+id: third-party-logistics-27
+part: E
+partLabel: Value-Added & Specialized Services
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 27 · Multi-Client Facility Synergies & Consolidation Strategy Analysis
 

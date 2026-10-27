@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-04
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 4 · Drop Trailer & Trailer Pool Management Assessment
 

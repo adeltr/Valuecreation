@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/A
+kind: analysis
+id: chemical-02
+part: A
+partLabel: Production & Process Optimization
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 2 · Energy Consumption and Cost Structure Analysis
 

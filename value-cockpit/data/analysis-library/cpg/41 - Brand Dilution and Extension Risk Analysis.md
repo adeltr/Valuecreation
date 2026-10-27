@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/D
+kind: analysis
+id: cpg-41
+part: D
+partLabel: Research & Development
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 41 · Brand Dilution and Extension Risk Analysis
 

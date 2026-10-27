@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/D
+kind: analysis
+id: retail-28
+part: D
+partLabel: Merchandising
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: []
 ---
 # 28 · Planogram Compliance and Store Layout Efficiency, including Endcap Performance
 

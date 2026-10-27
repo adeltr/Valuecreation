@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/C
+kind: analysis
+id: retail-25
+part: C
+partLabel: Marketing
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL]
+levers: []
 ---
 # 25 · Pop-Up Store and Event-Based Retail Performance
 

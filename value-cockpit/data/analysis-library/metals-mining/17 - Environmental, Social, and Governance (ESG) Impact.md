@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/C
+kind: analysis
+id: metals-mining-17
+part: C
+partLabel: Environmental Sustainability and Compliance
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS]
 ---
 # 17 · Environmental, Social, and Governance (ESG) Impact Assessment
 

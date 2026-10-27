@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/A
+kind: analysis
+id: chemical-01
+part: A
+partLabel: Production & Process Optimization
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 1 · Capacity Utilization and Efficiency Metrics
 

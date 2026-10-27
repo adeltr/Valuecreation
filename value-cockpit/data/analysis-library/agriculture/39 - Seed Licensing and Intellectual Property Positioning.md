@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/F
+kind: analysis
+id: agriculture-39
+part: F
+partLabel: Regulatory Compliance & Risk Management
+quant: []
+causes: [REGULATORY]
+levers: [VOLUME]
 ---
 # 39 · Seed Licensing and Intellectual Property Positioning
 

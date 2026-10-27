@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/A
+kind: analysis
+id: electricity-generation-01
+part: A
+partLabel: Operational Performance and Efficiency
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 1 · Generation Capacity and Utilization Analysis
 

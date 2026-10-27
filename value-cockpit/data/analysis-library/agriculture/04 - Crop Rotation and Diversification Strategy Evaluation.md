@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-04
+part: A
+partLabel: Crop Management & Soil Health
+quant: [EBITDA_MARGIN]
+causes: [FINANCIAL]
+levers: []
 ---
 # 4 · Crop Rotation and Diversification Strategy Evaluation
 

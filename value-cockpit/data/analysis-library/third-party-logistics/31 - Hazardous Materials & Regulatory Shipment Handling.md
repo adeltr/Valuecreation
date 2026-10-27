@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/F
+kind: analysis
+id: third-party-logistics-31
+part: F
+partLabel: Trade & Regulatory Compliance
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 31 · Hazardous Materials & Regulatory Shipment Handling Compliance
 

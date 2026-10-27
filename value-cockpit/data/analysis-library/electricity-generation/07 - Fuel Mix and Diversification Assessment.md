@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/B
+kind: analysis
+id: electricity-generation-07
+part: B
+partLabel: Fuel and Energy Resource Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [MIX, COST_PROCUREMENT, COST_OPS]
 ---
 # 7 · Fuel Mix and Diversification Assessment
 

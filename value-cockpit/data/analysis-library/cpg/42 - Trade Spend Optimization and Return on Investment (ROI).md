@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/E
+kind: analysis
+id: cpg-42
+part: E
+partLabel: Finance
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, MIX]
 ---
 # 42 · Trade Spend Optimization and Return on Investment (ROI)
 

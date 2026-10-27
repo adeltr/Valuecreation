@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/D
+kind: analysis
+id: pharma-23
+part: D
+partLabel: Marketing & Market Access
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [VOLUME]
 ---
 # 23 · Real-World Evidence (RWE) Integration for Drug Development
 

@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/E
+kind: analysis
+id: pharma-29
+part: E
+partLabel: Licensing & Partnerships
+quant: [REVENUE_GROWTH]
+causes: [FINANCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 29 · Licensing and Partnership Agreements
 

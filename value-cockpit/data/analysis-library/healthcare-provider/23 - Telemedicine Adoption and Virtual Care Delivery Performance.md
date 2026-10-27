@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/D
+kind: analysis
+id: healthcare-provider-23
+part: D
+partLabel: Patient Experience and Access
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME]
 ---
 # 23 · Telemedicine Adoption and Virtual Care Delivery Performance Assessment
 

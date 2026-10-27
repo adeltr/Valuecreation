@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/G
+kind: analysis
+id: metals-mining-37
+part: G
+partLabel: Safety, Community, and Stakeholder
+quant: []
+causes: []
+levers: []
 ---
 # 37 · Community Relations and Stakeholder Engagement Assessment
 

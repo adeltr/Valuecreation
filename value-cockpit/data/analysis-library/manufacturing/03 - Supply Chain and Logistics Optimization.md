@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-03
+part: A
+partLabel: Operations
+quant: [COGS]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 3 · Supply Chain and Logistics Optimization
 

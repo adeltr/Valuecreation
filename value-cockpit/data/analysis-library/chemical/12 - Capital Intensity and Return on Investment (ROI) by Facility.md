@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/B
+kind: analysis
+id: chemical-12
+part: B
+partLabel: Finance
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 12 · Capital Intensity and Return on Investment (ROI) by Facility
 

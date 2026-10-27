@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/A
+kind: analysis
+id: electricity-generation-04
+part: A
+partLabel: Operational Performance and Efficiency
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 4 · Capacity Factor and Forced Outage Rate Analysis
 

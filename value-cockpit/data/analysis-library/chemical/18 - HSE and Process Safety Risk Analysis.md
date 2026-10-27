@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-18
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 18 · HSE and Process Safety Risk Analysis
 

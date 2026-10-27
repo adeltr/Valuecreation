@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-05
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 5 · Lean Manufacturing and Waste Reduction Assessment
 

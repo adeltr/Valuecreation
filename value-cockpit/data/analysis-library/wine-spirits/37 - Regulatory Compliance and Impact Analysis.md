@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/F
+kind: analysis
+id: wine-spirits-37
+part: F
+partLabel: Regulatory and Compliance
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 37 · Regulatory Compliance and Impact Analysis
 

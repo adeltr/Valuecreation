@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-16
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: []
 ---
 # 16 · Product Efficacy and Claims Substantiation Review
 

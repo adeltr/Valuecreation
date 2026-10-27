@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/H
+kind: analysis
+id: waste-management-43
+part: H
+partLabel: Financial & Contractual Structuring
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING, COST_OPS]
 ---
 # 43 · Waste Stream Segmentation and Profitability Analysis
 

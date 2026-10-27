@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/A
+kind: analysis
+id: waste-management-06
+part: A
+partLabel: Landfill Management & Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 6 · Landfill Mining and Resource Recovery Feasibility
 

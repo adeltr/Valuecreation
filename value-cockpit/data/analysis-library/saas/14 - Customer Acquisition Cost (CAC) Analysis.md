@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-14
+part: B
+partLabel: Sales & Marketing
+quant: [REVENUE_GROWTH, CAC]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [SALES_EFFICIENCY]
 ---
 # 14 · Customer Acquisition Cost (CAC) Analysis
 

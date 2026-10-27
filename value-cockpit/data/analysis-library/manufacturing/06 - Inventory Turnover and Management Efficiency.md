@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-06
+part: A
+partLabel: Operations
+quant: [DIO]
+causes: [COMMERCIAL]
+levers: [MIX, COST_PROCUREMENT, WC_DIO]
 ---
 # 6 · Inventory Turnover and Management Efficiency
 

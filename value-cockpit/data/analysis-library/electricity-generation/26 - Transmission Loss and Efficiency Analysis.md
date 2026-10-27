@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/E
+kind: analysis
+id: electricity-generation-26
+part: E
+partLabel: Grid Integration and Reliability
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 26 · Transmission Loss and Efficiency Analysis
 

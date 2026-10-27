@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/G
+kind: analysis
+id: manufacturing-45
+part: G
+partLabel: Logistics and Aftermarket Services
+quant: [DIO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 45 · Aftermarket Services and Spare Parts Logistics
 

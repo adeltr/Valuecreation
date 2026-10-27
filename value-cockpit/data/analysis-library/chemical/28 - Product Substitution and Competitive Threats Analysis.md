@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/D
+kind: analysis
+id: chemical-28
+part: D
+partLabel: Sales & Marketing
+quant: [REVENUE_GROWTH]
+causes: [MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 28 · Product Substitution and Competitive Threats Analysis
 

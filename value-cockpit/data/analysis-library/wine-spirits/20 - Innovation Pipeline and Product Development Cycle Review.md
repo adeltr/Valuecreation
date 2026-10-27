@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/C
+kind: analysis
+id: wine-spirits-20
+part: C
+partLabel: Product Innovation and Development
+quant: []
+causes: [MARKET]
+levers: []
 ---
 # 20 · Innovation Pipeline and Product Development Cycle Review
 

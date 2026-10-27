@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-02
+part: A
+partLabel: Resource and Reserve Management
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 2 · Reserve Replacement Rate and Resource Conversion Analysis
 

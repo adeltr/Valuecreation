@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/E
+kind: analysis
+id: chemical-31
+part: E
+partLabel: Technology
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 31 · Process Technology Competitiveness
 

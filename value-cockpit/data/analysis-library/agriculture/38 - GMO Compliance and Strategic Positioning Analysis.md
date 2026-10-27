@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/F
+kind: analysis
+id: agriculture-38
+part: F
+partLabel: Regulatory Compliance & Risk Management
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [PRICING, COST_PROCUREMENT]
 ---
 # 38 · GMO Compliance and Strategic Positioning Analysis
 

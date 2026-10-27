@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/D
+kind: analysis
+id: wine-spirits-26
+part: D
+partLabel: Supply Chain and Sourcing Stability
+quant: [COGS]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 26 · Supply Chain and Raw Material Sourcing Stability Analysis
 

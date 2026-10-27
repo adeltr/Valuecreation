@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/A
+kind: analysis
+id: electricity-generation-05
+part: A
+partLabel: Operational Performance and Efficiency
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, COST_OPS]
 ---
 # 5 · Peaking Plant Profitability and Dispatch Optimization
 

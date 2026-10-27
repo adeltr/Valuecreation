@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/C
+kind: analysis
+id: healthcare-provider-19
+part: C
+partLabel: Financial Performance and Revenue Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 19 · Value-Based Care Contract Performance Evaluation
 

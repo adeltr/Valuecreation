@@ -1,0 +1,741 @@
+[
+  {
+    "id": "cosmetics-01",
+    "archetype": "cosmetics",
+    "title": "Product Portfolio Performance Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/01 - Product Portfolio Performance Analysis.md"
+  },
+  {
+    "id": "cosmetics-02",
+    "archetype": "cosmetics",
+    "title": "Innovation Pipeline and R&D Efficiency Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/02 - Innovation Pipeline and R&D Efficiency Analysis.md"
+  },
+  {
+    "id": "cosmetics-03",
+    "archetype": "cosmetics",
+    "title": "Formulation Cost Efficiency Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/03 - Formulation Cost Efficiency Analysis.md"
+  },
+  {
+    "id": "cosmetics-04",
+    "archetype": "cosmetics",
+    "title": "Skin Tone and Shade Range Inclusivity Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/04 - Skin Tone and Shade Range Inclusivity Analysis.md"
+  },
+  {
+    "id": "cosmetics-05",
+    "archetype": "cosmetics",
+    "title": "Dermatological Testing and Clinical Trials Assessment",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/05 - Dermatological Testing and Clinical Trials Assessment.md"
+  },
+  {
+    "id": "cosmetics-06",
+    "archetype": "cosmetics",
+    "title": "Makeup Removal and Longevity Testing",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/06 - Makeup Removal and Longevity Testing.md"
+  },
+  {
+    "id": "cosmetics-07",
+    "archetype": "cosmetics",
+    "title": "Color Stability and Pigment Quality Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/07 - Color Stability and Pigment Quality Analysis.md"
+  },
+  {
+    "id": "cosmetics-08",
+    "archetype": "cosmetics",
+    "title": "Sun Protection Factor (SPF) Validation and Compliance",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/08 - Sun Protection Factor (SPF) Validation and Compliance.md"
+  },
+  {
+    "id": "cosmetics-09",
+    "archetype": "cosmetics",
+    "title": "Microbiome-Friendly Product Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/09 - Microbiome-Friendly Product Analysis.md"
+  },
+  {
+    "id": "cosmetics-10",
+    "archetype": "cosmetics",
+    "title": "Hair Care Efficacy and Damage Control Testing",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/10 - Hair Care Efficacy and Damage Control Testing.md"
+  },
+  {
+    "id": "cosmetics-11",
+    "archetype": "cosmetics",
+    "title": "Waterless Beauty Product Innovation Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/11 - Waterless Beauty Product Innovation Analysis.md"
+  },
+  {
+    "id": "cosmetics-12",
+    "archetype": "cosmetics",
+    "title": "Product Texture Change Over Time (Stability Testing)",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/12 - Product Texture Change Over Time (Stability Testing).md"
+  },
+  {
+    "id": "cosmetics-13",
+    "archetype": "cosmetics",
+    "title": "Beauty Device Integration and Usage Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/13 - Beauty Device Integration and Usage Analysis.md"
+  },
+  {
+    "id": "cosmetics-14",
+    "archetype": "cosmetics",
+    "title": "Multifunctional Product Trend Analysis",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/14 - Multifunctional Product Trend Analysis.md"
+  },
+  {
+    "id": "cosmetics-15",
+    "archetype": "cosmetics",
+    "title": "Regeneration and Anti-Aging Efficacy Studies",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/15 - Regeneration and Anti-Aging Efficacy Studies.md"
+  },
+  {
+    "id": "cosmetics-16",
+    "archetype": "cosmetics",
+    "title": "Product Efficacy and Claims Substantiation Review",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/16 - Product Efficacy and Claims Substantiation Review.md"
+  },
+  {
+    "id": "cosmetics-17",
+    "archetype": "cosmetics",
+    "title": "Product Texture and Sensory Evaluation",
+    "part": "A",
+    "partLabel": "Product and Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/17 - Product Texture and Sensory Evaluation.md"
+  },
+  {
+    "id": "cosmetics-18",
+    "archetype": "cosmetics",
+    "title": "Brand Perception and Consumer Sentiment Analysis",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/18 - Brand Perception and Consumer Sentiment Analysis.md"
+  },
+  {
+    "id": "cosmetics-19",
+    "archetype": "cosmetics",
+    "title": "Influencer and Social Media Impact Analysis",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/19 - Influencer and Social Media Impact Analysis.md"
+  },
+  {
+    "id": "cosmetics-20",
+    "archetype": "cosmetics",
+    "title": "Customer Loyalty and Retention Program Effectiveness",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/20 - Customer Loyalty and Retention Program Effectiveness.md"
+  },
+  {
+    "id": "cosmetics-21",
+    "archetype": "cosmetics",
+    "title": "Trends in Natural, Organic, and Clean Beauty Products Analysis",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/21 - Trends in Natural, Organic, and Clean Beauty Products Analysis.md"
+  },
+  {
+    "id": "cosmetics-22",
+    "archetype": "cosmetics",
+    "title": "Global vs. Local Market Adaptation Strategy",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/22 - Global vs. Local Market Adaptation Strategy.md"
+  },
+  {
+    "id": "cosmetics-23",
+    "archetype": "cosmetics",
+    "title": "Fragrance and Sensory Appeal Testing",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/23 - Fragrance and Sensory Appeal Testing.md"
+  },
+  {
+    "id": "cosmetics-24",
+    "archetype": "cosmetics",
+    "title": "Cross-Cultural Beauty Standards and Preferences Study",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/24 - Cross-Cultural Beauty Standards and Preferences Study.md"
+  },
+  {
+    "id": "cosmetics-25",
+    "archetype": "cosmetics",
+    "title": "Consumer Perception of Ingredient Transparency and Clean Labeling",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/25 - Consumer Perception of Ingredient Transparency and Clean.md"
+  },
+  {
+    "id": "cosmetics-26",
+    "archetype": "cosmetics",
+    "title": "Packaging Innovation and Consumer Appeal Analysis",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/26 - Packaging Innovation and Consumer Appeal Analysis.md"
+  },
+  {
+    "id": "cosmetics-27",
+    "archetype": "cosmetics",
+    "title": "Seasonal and Limited Edition Product Performance Evaluation",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/27 - Seasonal and Limited Edition Product Performance Evaluation.md"
+  },
+  {
+    "id": "cosmetics-28",
+    "archetype": "cosmetics",
+    "title": "Luxury vs. Mass-Market Positioning Assessment",
+    "part": "B",
+    "partLabel": "Marketing and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/28 - Luxury vs. Mass-Market Positioning Assessment.md"
+  },
+  {
+    "id": "cosmetics-29",
+    "archetype": "cosmetics",
+    "title": "Distribution Channel Performance and Reach Analysis",
+    "part": "C",
+    "partLabel": "Sales and Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/29 - Distribution Channel Performance and Reach Analysis.md"
+  },
+  {
+    "id": "cosmetics-30",
+    "archetype": "cosmetics",
+    "title": "Retailer and Distributor Relationships Assessment",
+    "part": "C",
+    "partLabel": "Sales and Distribution",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/30 - Retailer and Distributor Relationships Assessment.md"
+  },
+  {
+    "id": "cosmetics-31",
+    "archetype": "cosmetics",
+    "title": "Shelf Space and In-Store Visibility Study",
+    "part": "C",
+    "partLabel": "Sales and Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/31 - Shelf Space and In-Store Visibility Study.md"
+  },
+  {
+    "id": "cosmetics-32",
+    "archetype": "cosmetics",
+    "title": "E-commerce and Digital Marketing Performance",
+    "part": "C",
+    "partLabel": "Sales and Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/32 - E-commerce and Digital Marketing Performance.md"
+  },
+  {
+    "id": "cosmetics-33",
+    "archetype": "cosmetics",
+    "title": "Beauty Subscription Model Feasibility and Growth Analysis",
+    "part": "C",
+    "partLabel": "Sales and Distribution",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/33 - Beauty Subscription Model Feasibility and Growth Analysis.md"
+  },
+  {
+    "id": "cosmetics-34",
+    "archetype": "cosmetics",
+    "title": "Customer Sampling Program Effectiveness",
+    "part": "C",
+    "partLabel": "Sales and Distribution",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/34 - Customer Sampling Program Effectiveness.md"
+  },
+  {
+    "id": "cosmetics-35",
+    "archetype": "cosmetics",
+    "title": "Ingredient Sourcing and Supply Chain Analysis",
+    "part": "D",
+    "partLabel": "Operations and Supply Chain",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/35 - Ingredient Sourcing and Supply Chain Analysis.md"
+  },
+  {
+    "id": "cosmetics-36",
+    "archetype": "cosmetics",
+    "title": "Product Shelf Life and Inventory Turnover Analysis",
+    "part": "D",
+    "partLabel": "Operations and Supply Chain",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/36 - Product Shelf Life and Inventory Turnover Analysis.md"
+  },
+  {
+    "id": "cosmetics-37",
+    "archetype": "cosmetics",
+    "title": "Innovation in Applicators and Delivery Systems Study",
+    "part": "D",
+    "partLabel": "Operations and Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/37 - Innovation in Applicators and Delivery Systems Study.md"
+  },
+  {
+    "id": "cosmetics-38",
+    "archetype": "cosmetics",
+    "title": "Sustainability and Environmental Impact Evaluation",
+    "part": "D",
+    "partLabel": "Operations and Supply Chain",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/38 - Sustainability and Environmental Impact Evaluation.md"
+  },
+  {
+    "id": "cosmetics-39",
+    "archetype": "cosmetics",
+    "title": "Product Refill and Reusability Program Feasibility",
+    "part": "D",
+    "partLabel": "Operations and Supply Chain",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/39 - Product Refill and Reusability Program Feasibility.md"
+  },
+  {
+    "id": "cosmetics-40",
+    "archetype": "cosmetics",
+    "title": "Regulatory Compliance and Safety Standards Assessment",
+    "part": "E",
+    "partLabel": "Compliance and Regulatory",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/40 - Regulatory Compliance and Safety Standards Assessment.md"
+  },
+  {
+    "id": "cosmetics-41",
+    "archetype": "cosmetics",
+    "title": "Allergen, Sensitivity, and Hypoallergenic Claims Validation",
+    "part": "E",
+    "partLabel": "Compliance and Regulatory",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/41 - Allergen, Sensitivity, and Hypoallergenic Claims Validation.md"
+  },
+  {
+    "id": "cosmetics-42",
+    "archetype": "cosmetics",
+    "title": "Vegan and Cruelty-Free Certification Process Evaluation",
+    "part": "E",
+    "partLabel": "Compliance and Regulatory",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cosmetics/42 - Vegan and Cruelty-Free Certification Process Evaluation.md"
+  },
+  {
+    "id": "cosmetics-43",
+    "archetype": "cosmetics",
+    "title": "Cosmetics Formulation Compliance with Emerging Regulations",
+    "part": "E",
+    "partLabel": "Compliance and Regulatory",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/43 - Cosmetics Formulation Compliance with Emerging Regulations.md"
+  },
+  {
+    "id": "cosmetics-44",
+    "archetype": "cosmetics",
+    "title": "Pricing and Promotional Strategy Benchmarking",
+    "part": "F",
+    "partLabel": "Finance and Intellectual Property",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/44 - Pricing and Promotional Strategy Benchmarking.md"
+  },
+  {
+    "id": "cosmetics-45",
+    "archetype": "cosmetics",
+    "title": "Patent Portfolio and Intellectual Property Valuation",
+    "part": "F",
+    "partLabel": "Finance and Intellectual Property",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cosmetics/45 - Patent Portfolio and Intellectual Property Valuation.md"
+  }
+]

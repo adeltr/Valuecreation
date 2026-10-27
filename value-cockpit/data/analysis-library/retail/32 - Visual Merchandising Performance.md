@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/D
+kind: analysis
+id: retail-32
+part: D
+partLabel: Merchandising
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 32 · Visual Merchandising Performance
 

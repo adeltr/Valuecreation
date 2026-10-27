@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/J
+kind: analysis
+id: healthcare-provider-47
+part: J
+partLabel: Community Impact and Health Equity
+quant: []
+causes: [ORGANIZATIONAL]
+levers: [VOLUME]
 ---
 # 47 · Social Determinants of Health (SDOH) Integration and Impact Assessment
 

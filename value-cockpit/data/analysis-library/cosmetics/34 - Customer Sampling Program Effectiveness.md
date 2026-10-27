@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/C
+kind: analysis
+id: cosmetics-34
+part: C
+partLabel: Sales and Distribution
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 34 · Customer Sampling Program Effectiveness
 

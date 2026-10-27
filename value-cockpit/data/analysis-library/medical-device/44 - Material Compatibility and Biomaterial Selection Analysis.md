@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-44
+part: H
+partLabel: Technology & Innovation
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 44 · Material Compatibility and Biomaterial Selection Analysis
 

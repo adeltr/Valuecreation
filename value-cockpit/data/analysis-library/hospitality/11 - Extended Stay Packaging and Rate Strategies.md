@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-11
+part: A
+partLabel: Revenue & Pricing Management
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 11 · Extended Stay Packaging and Rate Strategies
 

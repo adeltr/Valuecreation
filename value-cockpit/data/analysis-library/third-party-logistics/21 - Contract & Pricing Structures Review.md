@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/D
+kind: analysis
+id: third-party-logistics-21
+part: D
+partLabel: Commercial & Contractual Structures
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 21 · Contract & Pricing Structures Review
 

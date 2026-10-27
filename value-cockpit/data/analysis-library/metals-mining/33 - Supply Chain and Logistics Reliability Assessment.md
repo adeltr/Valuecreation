@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/F
+kind: analysis
+id: metals-mining-33
+part: F
+partLabel: Infrastructure and Logistics
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 33 · Supply Chain and Logistics Reliability Assessment
 

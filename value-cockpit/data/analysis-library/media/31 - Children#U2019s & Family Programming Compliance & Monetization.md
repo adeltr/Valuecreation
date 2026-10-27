@@ -2,6 +2,13 @@
 tags:
   - media
   - part/G
+kind: analysis
+id: media-31
+part: G
+partLabel: Regulatory, Compliance & Guilds
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: [VOLUME, MIX, COST_OPS]
 ---
 # 31 · Children’s & Family Programming Compliance & Monetization Strategy
 

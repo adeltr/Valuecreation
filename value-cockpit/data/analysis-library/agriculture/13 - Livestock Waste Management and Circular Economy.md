@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/B
+kind: analysis
+id: agriculture-13
+part: B
+partLabel: Livestock Management & Animal Health
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS]
 ---
 # 13 · Livestock Waste Management and Circular Economy Opportunities
 

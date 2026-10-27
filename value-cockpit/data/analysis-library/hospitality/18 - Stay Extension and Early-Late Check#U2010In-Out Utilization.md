@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/D
+kind: analysis
+id: hospitality-18
+part: D
+partLabel: Operations & Hospitality Services
+quant: []
+causes: []
+levers: [PRICING, COST_OPS]
 ---
 # 18 · Stay Extension and Early-Late Check‐In-Out Utilization
 

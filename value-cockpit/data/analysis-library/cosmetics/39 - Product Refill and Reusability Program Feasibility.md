@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/D
+kind: analysis
+id: cosmetics-39
+part: D
+partLabel: Operations and Supply Chain
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 39 · Product Refill and Reusability Program Feasibility
 

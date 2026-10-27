@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-05
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 5 · Combination Product Regulatory Strategy
 

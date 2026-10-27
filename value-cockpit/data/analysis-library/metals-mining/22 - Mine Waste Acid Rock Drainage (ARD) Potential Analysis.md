@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/C
+kind: analysis
+id: metals-mining-22
+part: C
+partLabel: Environmental Sustainability and Compliance
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 22 · Mine Waste Acid Rock Drainage (ARD) Potential Analysis
 

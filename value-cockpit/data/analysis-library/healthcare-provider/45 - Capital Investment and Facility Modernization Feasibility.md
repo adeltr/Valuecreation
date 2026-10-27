@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/J
+kind: analysis
+id: healthcare-provider-45
+part: J
+partLabel: Community Impact and Health Equity
+quant: [CAPEX]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 45 · Capital Investment and Facility Modernization Feasibility Analysis
 

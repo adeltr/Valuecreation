@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/E
+kind: analysis
+id: third-party-logistics-28
+part: E
+partLabel: Value-Added & Specialized Services
+quant: [DIO]
+causes: [OPERATIONAL]
+levers: [WC_DIO]
 ---
 # 28 · Inbound-to-Manufacturing (I2M) & JIT Delivery Capability Analysis
 

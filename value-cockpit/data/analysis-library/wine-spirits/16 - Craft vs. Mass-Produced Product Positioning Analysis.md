@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/B
+kind: analysis
+id: wine-spirits-16
+part: B
+partLabel: Brand Positioning and Marketing Strategy
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 16 · Craft vs. Mass-Produced Product Positioning Analysis
 

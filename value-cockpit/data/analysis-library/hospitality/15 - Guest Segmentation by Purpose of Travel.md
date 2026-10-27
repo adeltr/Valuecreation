@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/B
+kind: analysis
+id: hospitality-15
+part: B
+partLabel: Guest Experience
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 15 · Guest Segmentation by Purpose of Travel
 

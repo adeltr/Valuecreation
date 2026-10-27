@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-10
+part: A
+partLabel: Crop Management & Soil Health
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 10 · Trace Minerals and Micronutrient Management for Crop Optimization
 

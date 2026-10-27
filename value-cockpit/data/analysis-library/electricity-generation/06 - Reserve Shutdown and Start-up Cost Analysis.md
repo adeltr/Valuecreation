@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/A
+kind: analysis
+id: electricity-generation-06
+part: A
+partLabel: Operational Performance and Efficiency
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 6 · Reserve Shutdown and Start-up Cost Analysis
 

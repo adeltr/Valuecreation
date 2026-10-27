@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-28
+part: C
+partLabel: Customer Retention & Success
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 28 · Customer Support Efficiency Analysis
 

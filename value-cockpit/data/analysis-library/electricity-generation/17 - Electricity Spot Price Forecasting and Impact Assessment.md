@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/C
+kind: analysis
+id: electricity-generation-17
+part: C
+partLabel: Financial and Market Strategy
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, MIX]
 ---
 # 17 · Electricity Spot Price Forecasting and Impact Assessment
 

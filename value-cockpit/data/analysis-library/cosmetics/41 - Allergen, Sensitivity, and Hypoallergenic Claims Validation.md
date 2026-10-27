@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/E
+kind: analysis
+id: cosmetics-41
+part: E
+partLabel: Compliance and Regulatory
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: []
 ---
 # 41 · Allergen, Sensitivity, and Hypoallergenic Claims Validation
 

@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/G
+kind: analysis
+id: chemical-38
+part: G
+partLabel: Supply Chain
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_PROCUREMENT]
 ---
 # 38 · Supplier Dependence and Diversification Analysis
 

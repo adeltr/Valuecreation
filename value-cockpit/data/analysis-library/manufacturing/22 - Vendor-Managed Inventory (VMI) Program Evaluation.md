@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/B
+kind: analysis
+id: manufacturing-22
+part: B
+partLabel: Supply Chain and Procurement
+quant: [DIO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [VOLUME, MIX, COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 22 · Vendor-Managed Inventory (VMI) Program Evaluation
 

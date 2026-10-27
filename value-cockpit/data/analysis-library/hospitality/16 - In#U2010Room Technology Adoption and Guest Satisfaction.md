@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/C
+kind: analysis
+id: hospitality-16
+part: C
+partLabel: Technology
+quant: []
+causes: []
+levers: [PRICING, COST_OPS]
 ---
 # 16 · In‐Room Technology Adoption and Guest Satisfaction Correlation
 

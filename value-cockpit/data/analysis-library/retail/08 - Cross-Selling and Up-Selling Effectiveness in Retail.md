@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-08
+part: A
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 8 · Cross-Selling and Up-Selling Effectiveness in Retail
 

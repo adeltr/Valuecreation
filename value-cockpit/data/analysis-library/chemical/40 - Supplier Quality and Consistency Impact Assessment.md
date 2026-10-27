@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/G
+kind: analysis
+id: chemical-40
+part: G
+partLabel: Supply Chain
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [COST_PROCUREMENT]
 ---
 # 40 · Supplier Quality and Consistency Impact Assessment
 

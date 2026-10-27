@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/A
+kind: analysis
+id: chemical-09
+part: A
+partLabel: Production & Process Optimization
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 9 · High-Temperature and High-Pressure Process Resilience Analysis
 

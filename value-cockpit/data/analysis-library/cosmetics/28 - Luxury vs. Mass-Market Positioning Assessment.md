@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-28
+part: B
+partLabel: Marketing and Consumer Insights
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME, MIX]
 ---
 # 28 · Luxury vs. Mass-Market Positioning Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-05
+part: A
+partLabel: Crop Management & Soil Health
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 5 · Agrochemical Usage Optimization and Compliance Analysis
 

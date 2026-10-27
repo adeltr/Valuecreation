@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/D
+kind: analysis
+id: hospitality-17
+part: D
+partLabel: Operations & Hospitality Services
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 17 · Housekeeping Efficiency and Turnaround Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/A
+kind: analysis
+id: media-01
+part: A
+partLabel: Content Strategy & Portfolio
+quant: [EBITDA_MARGIN]
+causes: [FINANCIAL]
+levers: []
 ---
 # 1 · Content Portfolio & ROI Analysis
 

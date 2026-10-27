@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-17
+part: B
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 17 · Store Closure and Rationalization Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/B
+kind: analysis
+id: wine-spirits-17
+part: B
+partLabel: Brand Positioning and Marketing Strategy
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 17 · Cocktail Recipe Inclusion and Cross-Product Pairing Potential
 

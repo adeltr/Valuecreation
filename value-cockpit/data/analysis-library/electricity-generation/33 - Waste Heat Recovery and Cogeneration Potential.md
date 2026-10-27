@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/G
+kind: analysis
+id: electricity-generation-33
+part: G
+partLabel: Renewable Energy and Sustainability
+quant: [OPEX]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 33 · Waste Heat Recovery and Cogeneration Potential
 

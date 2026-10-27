@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-02
+part: A
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [PRICING, MIX]
 ---
 # 2 · Foot Traffic and Conversion Rate Analysis
 

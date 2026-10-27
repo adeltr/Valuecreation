@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/B
+kind: analysis
+id: third-party-logistics-11
+part: B
+partLabel: Warehousing & Fulfillment
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 11 · Live Loading-Unloading & Appointment Scheduling Efficiency Review
 

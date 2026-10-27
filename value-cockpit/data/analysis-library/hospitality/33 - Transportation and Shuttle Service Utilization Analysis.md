@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/G
+kind: analysis
+id: hospitality-33
+part: G
+partLabel: Events & Alternative Offerings
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 33 · Transportation and Shuttle Service Utilization Analysis
 

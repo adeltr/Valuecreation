@@ -2,6 +2,13 @@
 tags:
   - media
   - part/F
+kind: analysis
+id: media-28
+part: F
+partLabel: Financing & Partnerships
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 28 · Co-production & Financing Partnerships Analysis
 

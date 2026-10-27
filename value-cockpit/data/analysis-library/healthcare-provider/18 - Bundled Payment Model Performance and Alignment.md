@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/C
+kind: analysis
+id: healthcare-provider-18
+part: C
+partLabel: Financial Performance and Revenue Management
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 18 · Bundled Payment Model Performance and Alignment Assessment
 

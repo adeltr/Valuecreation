@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/F
+kind: analysis
+id: medical-device-36
+part: F
+partLabel: Risk Management & Quality
+quant: [REVENUE_GROWTH]
+causes: [REGULATORY]
+levers: []
 ---
 # 36 · Risk-Benefit Assessment for Label Expansion
 

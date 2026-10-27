@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-06
+part: A
+partLabel: Marketing
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [PRICING, COST_OPS]
 ---
 # 6 · Product Reformulation and Ingredient Cost Trade-off Analysis
 

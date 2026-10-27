@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/B
+kind: analysis
+id: metals-mining-12
+part: B
+partLabel: Operational Efficiency and Cost Management
+quant: [OPEX]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 12 · Mining Equipment and Maintenance Efficiency Review
 

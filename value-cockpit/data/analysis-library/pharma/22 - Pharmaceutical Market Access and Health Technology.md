@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/D
+kind: analysis
+id: pharma-22
+part: D
+partLabel: Marketing & Market Access
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING]
 ---
 # 22 · Pharmaceutical Market Access and Health Technology Assessment (HTA) Outcomes
 

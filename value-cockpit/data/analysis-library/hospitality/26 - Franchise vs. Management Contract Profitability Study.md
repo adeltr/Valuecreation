@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/F
+kind: analysis
+id: hospitality-26
+part: F
+partLabel: Ownership & Financial Structures
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 26 · Franchise vs. Management Contract Profitability Study
 

@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-01
+part: A
+partLabel: Finance
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL]
+levers: [PRICING, WC_DIO]
 ---
 # 1 · Comparable Store Sales Analysis
 

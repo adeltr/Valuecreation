@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/D
+kind: analysis
+id: cpg-39
+part: D
+partLabel: Research & Development
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME, MIX]
 ---
 # 39 · Health and Wellness Trends Impact on Product Portfolio
 

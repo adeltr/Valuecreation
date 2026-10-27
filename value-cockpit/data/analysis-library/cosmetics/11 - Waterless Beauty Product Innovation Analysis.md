@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-11
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 11 · Waterless Beauty Product Innovation Analysis
 

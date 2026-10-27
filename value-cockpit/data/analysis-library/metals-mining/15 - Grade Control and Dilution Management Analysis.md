@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/B
+kind: analysis
+id: metals-mining-15
+part: B
+partLabel: Operational Efficiency and Cost Management
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 15 · Grade Control and Dilution Management Analysis
 

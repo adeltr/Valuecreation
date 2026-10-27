@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/B
+kind: analysis
+id: manufacturing-23
+part: B
+partLabel: Supply Chain and Procurement
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 23 · In-house Production vs. Outsourcing Feasibility
 

@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/H
+kind: analysis
+id: third-party-logistics-38
+part: H
+partLabel: Cost Optimization & Efficiency
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: []
 ---
 # 38 · Accessorial & Ancillary Fee Optimization Analysis
 

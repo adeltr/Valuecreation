@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-22
+part: B
+partLabel: Marketing and Consumer Insights
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [MIX, COST_PROCUREMENT]
 ---
 # 22 · Global vs. Local Market Adaptation Strategy
 

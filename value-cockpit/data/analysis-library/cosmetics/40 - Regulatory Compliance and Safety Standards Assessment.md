@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/E
+kind: analysis
+id: cosmetics-40
+part: E
+partLabel: Compliance and Regulatory
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 40 · Regulatory Compliance and Safety Standards Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/A
+kind: analysis
+id: healthcare-provider-03
+part: A
+partLabel: Clinical Performance and Quality
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME]
 ---
 # 3 · Hospital Readmission Rates and Avoidable Admissions Study
 

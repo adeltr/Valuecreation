@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/D
+kind: analysis
+id: metals-mining-27
+part: D
+partLabel: Strategic Planning and Investment Feasibility
+quant: []
+causes: []
+levers: [PRICING, COST_OPS]
 ---
 # 27 · Royalty and Offtake Agreement Viability Assessment
 

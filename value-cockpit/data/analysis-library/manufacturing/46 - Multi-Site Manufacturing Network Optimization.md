@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/G
+kind: analysis
+id: manufacturing-46
+part: G
+partLabel: Logistics and Aftermarket Services
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [WC_DIO]
 ---
 # 46 · Multi-Site Manufacturing Network Optimization
 

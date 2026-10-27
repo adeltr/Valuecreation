@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/C
+kind: analysis
+id: waste-management-19
+part: C
+partLabel: Organics & Composting
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 19 · Sludge Co-Digestion with MSW for Enhanced Biogas Production
 

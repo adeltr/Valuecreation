@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/D
+kind: analysis
+id: pharma-25
+part: D
+partLabel: Marketing & Market Access
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: [PRICING]
 ---
 # 25 · Global Drug Launch Strategy and Sequencing
 

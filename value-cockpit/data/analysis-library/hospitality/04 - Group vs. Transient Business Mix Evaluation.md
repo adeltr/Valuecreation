@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-04
+part: A
+partLabel: Revenue & Pricing Management
+quant: []
+causes: []
+levers: [PRICING, MIX]
 ---
 # 4 · Group vs. Transient Business Mix Evaluation
 

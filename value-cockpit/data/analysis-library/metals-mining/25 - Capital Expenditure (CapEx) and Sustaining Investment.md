@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/D
+kind: analysis
+id: metals-mining-25
+part: D
+partLabel: Strategic Planning and Investment Feasibility
+quant: [REVENUE_GROWTH, CAPEX]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 25 · Capital Expenditure (CapEx) and Sustaining Investment Requirements
 

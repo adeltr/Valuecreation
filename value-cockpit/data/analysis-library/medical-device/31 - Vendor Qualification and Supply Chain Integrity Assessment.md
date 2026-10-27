@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/E
+kind: analysis
+id: medical-device-31
+part: E
+partLabel: Operations & Supply Chain
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 31 · Vendor Qualification and Supply Chain Integrity Assessment
 

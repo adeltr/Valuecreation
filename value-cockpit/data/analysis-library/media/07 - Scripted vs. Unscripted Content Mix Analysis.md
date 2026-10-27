@@ -2,6 +2,13 @@
 tags:
   - media
   - part/A
+kind: analysis
+id: media-07
+part: A
+partLabel: Content Strategy & Portfolio
+quant: []
+causes: []
+levers: [VOLUME, MIX]
 ---
 # 7 · Scripted vs. Unscripted Content Mix Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-15
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, WC_DIO]
 ---
 # 15 · Physical Media Sell-Through & Retail Channel Strategy
 

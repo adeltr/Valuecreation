@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-07
+part: A
+partLabel: Finance & Revenue
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME, RETENTION, EXPANSION]
 ---
 # 7 · Revenue Backlog
 

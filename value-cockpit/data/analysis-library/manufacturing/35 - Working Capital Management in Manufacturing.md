@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/D
+kind: analysis
+id: manufacturing-35
+part: D
+partLabel: Finance and Asset Management
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, DIO, DSO, DPO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_PROCUREMENT, COST_OPS, WC_DSO, WC_DIO, WC_DPO]
 ---
 # 35 · Working Capital Management in Manufacturing
 

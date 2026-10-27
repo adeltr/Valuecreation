@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-01
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 1 · Capacity Utilization Analysis
 

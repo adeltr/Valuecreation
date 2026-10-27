@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-05
+part: A
+partLabel: Finance & Revenue
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 5 · Deferred Revenue Analysis
 

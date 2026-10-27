@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-21
+part: B
+partLabel: Sales
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 21 · Price-Pack Architecture Optimization
 

@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-33
+part: D
+partLabel: Technology & Cybersecurity
+quant: []
+causes: [REGULATORY, CYBER]
+levers: []
 ---
 # 33 · Classified and Sensitive Information Management Compliance
 

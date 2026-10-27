@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-26
+part: C
+partLabel: Customer Retention & Success
+quant: [REVENUE_GROWTH, GROSS_CHURN]
+causes: [COMMERCIAL]
+levers: []
 ---
 # 26 · Customer Advocacy or Net Promoter Score (NPS)
 

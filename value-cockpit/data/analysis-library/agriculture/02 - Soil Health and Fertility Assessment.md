@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-02
+part: A
+partLabel: Crop Management & Soil Health
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 2 · Soil Health and Fertility Assessment
 

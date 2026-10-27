@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/B
+kind: analysis
+id: waste-management-09
+part: B
+partLabel: Recycling & Materials Recovery
+quant: []
+causes: []
+levers: [PRICING, VOLUME, WC_DSO]
 ---
 # 9 · Waste Composition and Recycling Rate Analysis
 

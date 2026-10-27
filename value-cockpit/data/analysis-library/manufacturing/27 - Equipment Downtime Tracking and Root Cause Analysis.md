@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/C
+kind: analysis
+id: manufacturing-27
+part: C
+partLabel: Technology and Automation
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 27 · Equipment Downtime Tracking and Root Cause Analysis
 

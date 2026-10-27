@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-06
+part: A
+partLabel: Resource and Reserve Management
+quant: [DIO]
+causes: [OPERATIONAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 6 · Mineral Inventory Reconciliation and Variance Analysis
 

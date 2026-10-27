@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/C
+kind: analysis
+id: retail-23
+part: C
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL]
+levers: [MIX]
 ---
 # 23 · Customer Demographics and Segmentation in Retail
 

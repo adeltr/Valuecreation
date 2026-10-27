@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/E
+kind: analysis
+id: electricity-generation-23
+part: E
+partLabel: Grid Integration and Reliability
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 23 · Grid Interconnection, Transmission, and Congestion Analysis
 

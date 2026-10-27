@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-13
+part: A
+partLabel: Revenue & Pricing Management
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 13 · Revenue Management Integration with Local-Seasonal Event Calendars
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/D
+kind: analysis
+id: medical-device-25
+part: D
+partLabel: Product Development & Lifecycle
+quant: []
+causes: [FINANCIAL, MARKET]
+levers: [VOLUME, MIX]
 ---
 # 25 · Product Pipeline and R&D Portfolio Assessment
 

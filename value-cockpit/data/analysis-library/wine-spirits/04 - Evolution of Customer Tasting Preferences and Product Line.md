@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-04
+part: A
+partLabel: Market and Consumer Insights
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME, MIX]
 ---
 # 4 · Evolution of Customer Tasting Preferences and Product Line Influence Analysis
 

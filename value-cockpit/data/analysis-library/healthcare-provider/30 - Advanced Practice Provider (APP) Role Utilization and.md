@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/F
+kind: analysis
+id: healthcare-provider-30
+part: F
+partLabel: Technology Utilization and Digital Engagement
+quant: []
+causes: []
+levers: [VOLUME, COST_OPS]
 ---
 # 30 · Advanced Practice Provider (APP) Role Utilization and Effectiveness Analysis
 

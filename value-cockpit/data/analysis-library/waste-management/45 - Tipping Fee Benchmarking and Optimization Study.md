@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/H
+kind: analysis
+id: waste-management-45
+part: H
+partLabel: Financial & Contractual Structuring
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING]
 ---
 # 45 · Tipping Fee Benchmarking and Optimization Study
 

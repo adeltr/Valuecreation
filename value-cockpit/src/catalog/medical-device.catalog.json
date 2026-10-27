@@ -1,0 +1,768 @@
+[
+  {
+    "id": "medical-device-01",
+    "archetype": "medical-device",
+    "title": "Regulatory Pathway Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/01 - Regulatory Pathway Analysis.md"
+  },
+  {
+    "id": "medical-device-02",
+    "archetype": "medical-device",
+    "title": "Regulatory Compliance and Quality Management Systems Review",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/02 - Regulatory Compliance and Quality Management Systems.md"
+  },
+  {
+    "id": "medical-device-03",
+    "archetype": "medical-device",
+    "title": "Labeling and Unique Device Identification (UDI) Compliance Assessment",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/03 - Labeling and Unique Device Identification (UDI) Compliance.md"
+  },
+  {
+    "id": "medical-device-04",
+    "archetype": "medical-device",
+    "title": "Device Classification and Product Code Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/04 - Device Classification and Product Code Analysis.md"
+  },
+  {
+    "id": "medical-device-05",
+    "archetype": "medical-device",
+    "title": "Combination Product Regulatory Strategy",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/05 - Combination Product Regulatory Strategy.md"
+  },
+  {
+    "id": "medical-device-06",
+    "archetype": "medical-device",
+    "title": "EU MDR-IVDR Compliance Gap Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/06 - EU MDR-IVDR Compliance Gap Analysis.md"
+  },
+  {
+    "id": "medical-device-07",
+    "archetype": "medical-device",
+    "title": "MDSAP (Medical Device Single Audit Program) Readiness and Gap Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/07 - MDSAP (Medical Device Single Audit Program) Readiness and.md"
+  },
+  {
+    "id": "medical-device-08",
+    "archetype": "medical-device",
+    "title": "OTC vs. Prescription Device Classification Feasibility",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/08 - OTC vs. Prescription Device Classification Feasibility.md"
+  },
+  {
+    "id": "medical-device-09",
+    "archetype": "medical-device",
+    "title": "Reprocessing and Re-Manufacturing Compliance Assessment",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/09 - Reprocessing and Re-Manufacturing Compliance Assessment.md"
+  },
+  {
+    "id": "medical-device-10",
+    "archetype": "medical-device",
+    "title": "Software Update Lifecycle (IEC 62304) Compliance Review",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/10 - Software Update Lifecycle (IEC 62304) Compliance Review.md"
+  },
+  {
+    "id": "medical-device-11",
+    "archetype": "medical-device",
+    "title": "Clinical Evidence Review",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/11 - Clinical Evidence Review.md"
+  },
+  {
+    "id": "medical-device-12",
+    "archetype": "medical-device",
+    "title": "Post-Market Surveillance and Vigilance",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/12 - Post-Market Surveillance and Vigilance.md"
+  },
+  {
+    "id": "medical-device-13",
+    "archetype": "medical-device",
+    "title": "CRO and Clinical Site Management Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/13 - CRO and Clinical Site Management Efficiency Analysis.md"
+  },
+  {
+    "id": "medical-device-14",
+    "archetype": "medical-device",
+    "title": "Real-World Evidence Generation Strategy for Device Performance",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/14 - Real-World Evidence Generation Strategy for Device.md"
+  },
+  {
+    "id": "medical-device-15",
+    "archetype": "medical-device",
+    "title": "Clinical Evidence Gap Analysis",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/15 - Clinical Evidence Gap Analysis.md"
+  },
+  {
+    "id": "medical-device-16",
+    "archetype": "medical-device",
+    "title": "Comparative Efficacy and Safety Benchmarking vs. Standard of Care",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/16 - Comparative Efficacy and Safety Benchmarking vs. Standard.md"
+  },
+  {
+    "id": "medical-device-17",
+    "archetype": "medical-device",
+    "title": "Field Safety Corrective Action and Recall Readiness Evaluation",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/17 - Field Safety Corrective Action and Recall Readiness.md"
+  },
+  {
+    "id": "medical-device-18",
+    "archetype": "medical-device",
+    "title": "Patient Engagement and Compliance Tracking for Home-Use Devices",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/18 - Patient Engagement and Compliance Tracking for Home-Use.md"
+  },
+  {
+    "id": "medical-device-19",
+    "archetype": "medical-device",
+    "title": "Reimbursement and Coding Assessment",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/19 - Reimbursement and Coding Assessment.md"
+  },
+  {
+    "id": "medical-device-20",
+    "archetype": "medical-device",
+    "title": "Health Economics and Outcomes Research",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/20 - Health Economics and Outcomes Research.md"
+  },
+  {
+    "id": "medical-device-21",
+    "archetype": "medical-device",
+    "title": "Hospital Purchasing and Procurement Process Evaluation",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/21 - Hospital Purchasing and Procurement Process Evaluation.md"
+  },
+  {
+    "id": "medical-device-22",
+    "archetype": "medical-device",
+    "title": "Global Market Entry and Distribution Strategy",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/22 - Global Market Entry and Distribution Strategy.md"
+  },
+  {
+    "id": "medical-device-23",
+    "archetype": "medical-device",
+    "title": "Bundled Payment and Value-Based Care Program Impact Analysis",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/23 - Bundled Payment and Value-Based Care Program Impact.md"
+  },
+  {
+    "id": "medical-device-24",
+    "archetype": "medical-device",
+    "title": "Health Technology Assessment (HTA) Dossier Development",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/24 - Health Technology Assessment (HTA) Dossier Development.md"
+  },
+  {
+    "id": "medical-device-25",
+    "archetype": "medical-device",
+    "title": "Product Pipeline and R&D Portfolio Assessment",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/25 - Product Pipeline and R&D Portfolio Assessment.md"
+  },
+  {
+    "id": "medical-device-26",
+    "archetype": "medical-device",
+    "title": "Lifecycle Management for Legacy Devices",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/26 - Lifecycle Management for Legacy Devices.md"
+  },
+  {
+    "id": "medical-device-27",
+    "archetype": "medical-device",
+    "title": "Packaging Validation and Shelf-Life Testing",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/27 - Packaging Validation and Shelf-Life Testing.md"
+  },
+  {
+    "id": "medical-device-28",
+    "archetype": "medical-device",
+    "title": "Evaluation of 3D Printing and Additive Manufacturing Feasibility",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/28 - Evaluation of 3D Printing and Additive Manufacturing.md"
+  },
+  {
+    "id": "medical-device-29",
+    "archetype": "medical-device",
+    "title": "Co-Development Analysis for Companion Diagnostics",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/29 - Co-Development Analysis for Companion Diagnostics.md"
+  },
+  {
+    "id": "medical-device-30",
+    "archetype": "medical-device",
+    "title": "Manufacturing Scalability and Technology Transfer Analysis",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/30 - Manufacturing Scalability and Technology Transfer Analysis.md"
+  },
+  {
+    "id": "medical-device-31",
+    "archetype": "medical-device",
+    "title": "Vendor Qualification and Supply Chain Integrity Assessment",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/31 - Vendor Qualification and Supply Chain Integrity Assessment.md"
+  },
+  {
+    "id": "medical-device-32",
+    "archetype": "medical-device",
+    "title": "Environmental Monitoring and Control Strategy in Manufacturing",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/32 - Environmental Monitoring and Control Strategy in.md"
+  },
+  {
+    "id": "medical-device-33",
+    "archetype": "medical-device",
+    "title": "Instrument Set Standardization and Workflow Efficiency Analysis",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/33 - Instrument Set Standardization and Workflow Efficiency.md"
+  },
+  {
+    "id": "medical-device-34",
+    "archetype": "medical-device",
+    "title": "Failure Mode and Effects Analysis (FMEA)",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/34 - Failure Mode and Effects Analysis (FMEA).md"
+  },
+  {
+    "id": "medical-device-35",
+    "archetype": "medical-device",
+    "title": "Sterilization and Biocompatibility Assessment",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/35 - Sterilization and Biocompatibility Assessment.md"
+  },
+  {
+    "id": "medical-device-36",
+    "archetype": "medical-device",
+    "title": "Risk-Benefit Assessment for Label Expansion",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/36 - Risk-Benefit Assessment for Label Expansion.md"
+  },
+  {
+    "id": "medical-device-37",
+    "archetype": "medical-device",
+    "title": "Quality-by-Design (QbD) Implementation",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/37 - Quality-by-Design (QbD) Implementation.md"
+  },
+  {
+    "id": "medical-device-38",
+    "archetype": "medical-device",
+    "title": "Healthcare Provider Adoption Analysis",
+    "part": "G",
+    "partLabel": "Commercial Strategy & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/38 - Healthcare Provider Adoption Analysis.md"
+  },
+  {
+    "id": "medical-device-39",
+    "archetype": "medical-device",
+    "title": "Key Opinion Leader Engagement Strategy",
+    "part": "G",
+    "partLabel": "Commercial Strategy & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/39 - Key Opinion Leader Engagement Strategy.md"
+  },
+  {
+    "id": "medical-device-40",
+    "archetype": "medical-device",
+    "title": "Physician Training and Education Program Evaluation",
+    "part": "G",
+    "partLabel": "Commercial Strategy & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/40 - Physician Training and Education Program Evaluation.md"
+  },
+  {
+    "id": "medical-device-41",
+    "archetype": "medical-device",
+    "title": "Software as a Medical Device (SaMD) and Cybersecurity Risk Assessment",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/41 - Software as a Medical Device (SaMD) and Cybersecurity Risk.md"
+  },
+  {
+    "id": "medical-device-42",
+    "archetype": "medical-device",
+    "title": "Device Tracking and Traceability Program Analysis",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/42 - Device Tracking and Traceability Program Analysis.md"
+  },
+  {
+    "id": "medical-device-43",
+    "archetype": "medical-device",
+    "title": "Human Factors Engineering and Usability Evaluation",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/43 - Human Factors Engineering and Usability Evaluation.md"
+  },
+  {
+    "id": "medical-device-44",
+    "archetype": "medical-device",
+    "title": "Material Compatibility and Biomaterial Selection Analysis",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/44 - Material Compatibility and Biomaterial Selection Analysis.md"
+  },
+  {
+    "id": "medical-device-45",
+    "archetype": "medical-device",
+    "title": "Clinical Data Integration with Wearables and IoT Devices",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/45 - Clinical Data Integration with Wearables and IoT Devices.md"
+  },
+  {
+    "id": "medical-device-46",
+    "archetype": "medical-device",
+    "title": "Calibration and Maintenance Program for Reusable Devices",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/46 - Calibration and Maintenance Program for Reusable Devices.md"
+  },
+  {
+    "id": "medical-device-47",
+    "archetype": "medical-device",
+    "title": "In-Vitro Diagnostic (IVD) Connectivity with Laboratory Information Systems (LIS) Workflow Analysis",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/47 - In-Vitro Diagnostic (IVD) Connectivity with Laboratory.md"
+  },
+  {
+    "id": "medical-device-48",
+    "archetype": "medical-device",
+    "title": "Remote Servicing and Maintenance Approach for Connected Medical Devices",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/48 - Remote Servicing and Maintenance Approach for Connected.md"
+  },
+  {
+    "id": "medical-device-49",
+    "archetype": "medical-device",
+    "title": "Intellectual Property and Patent Landscape",
+    "part": "I",
+    "partLabel": "Intellectual Property",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/49 - Intellectual Property and Patent Landscape.md"
+  },
+  {
+    "id": "medical-device-50",
+    "archetype": "medical-device",
+    "title": "Sustainability and Environmental Impact Assessment for Single-Use Devices",
+    "part": "J",
+    "partLabel": "Sustainability & Environmental Impact",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/50 - Sustainability and Environmental Impact Assessment for.md"
+  }
+]

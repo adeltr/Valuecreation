@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/B
+kind: analysis
+id: agriculture-15
+part: B
+partLabel: Livestock Management & Animal Health
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 15 · Crop–Livestock Integration Synergy Review
 

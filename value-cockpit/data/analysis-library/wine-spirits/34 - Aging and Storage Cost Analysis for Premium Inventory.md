@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/E
+kind: analysis
+id: wine-spirits-34
+part: E
+partLabel: Production and Quality Control
+quant: [DIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [WC_DIO]
 ---
 # 34 · Aging and Storage Cost Analysis for Premium Inventory
 

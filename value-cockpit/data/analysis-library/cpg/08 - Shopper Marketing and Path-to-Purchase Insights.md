@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-08
+part: A
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [PRICING, VOLUME, COST_PROCUREMENT]
 ---
 # 8 · Shopper Marketing and Path-to-Purchase Insights
 

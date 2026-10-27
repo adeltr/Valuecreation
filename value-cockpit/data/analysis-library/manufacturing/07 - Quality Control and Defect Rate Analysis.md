@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-07
+part: A
+partLabel: Operations
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 7 · Quality Control and Defect Rate Analysis
 

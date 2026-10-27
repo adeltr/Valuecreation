@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/H
+kind: analysis
+id: wine-spirits-47
+part: H
+partLabel: Sustainability and Environmental Impact
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 47 · Sustainability Practices and Environmental Impact Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-04
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 4 · Device Classification and Product Code Analysis
 

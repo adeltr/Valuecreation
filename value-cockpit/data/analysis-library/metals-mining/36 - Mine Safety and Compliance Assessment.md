@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/G
+kind: analysis
+id: metals-mining-36
+part: G
+partLabel: Safety, Community, and Stakeholder
+quant: []
+causes: [MARKET, REGULATORY]
+levers: [VOLUME, COST_OPS]
 ---
 # 36 · Mine Safety and Compliance Assessment
 

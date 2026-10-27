@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/J
+kind: analysis
+id: waste-management-50
+part: J
+partLabel: Technology & Innovation
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 50 · Automated Sorting Technology Investment Assessment
 

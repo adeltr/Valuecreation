@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/D
+kind: analysis
+id: metals-mining-28
+part: D
+partLabel: Strategic Planning and Investment Feasibility
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 28 · Energy Source Diversification and Renewable Integration Analysis
 

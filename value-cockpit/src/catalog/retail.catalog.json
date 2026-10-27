@@ -1,0 +1,596 @@
+[
+  {
+    "id": "retail-01",
+    "archetype": "retail",
+    "title": "Comparable Store Sales Analysis",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/01 - Comparable Store Sales Analysis.md"
+  },
+  {
+    "id": "retail-02",
+    "archetype": "retail",
+    "title": "Foot Traffic and Conversion Rate Analysis",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/retail/02 - Foot Traffic and Conversion Rate Analysis.md"
+  },
+  {
+    "id": "retail-03",
+    "archetype": "retail",
+    "title": "Customer Return Rate Analysis",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail/03 - Customer Return Rate Analysis.md"
+  },
+  {
+    "id": "retail-04",
+    "archetype": "retail",
+    "title": "Location-Based Performance Analysis",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/retail/04 - Location-Based Performance Analysis.md"
+  },
+  {
+    "id": "retail-05",
+    "archetype": "retail",
+    "title": "Seasonality Impact and Sales Mix Analysis",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/05 - Seasonality Impact and Sales Mix Analysis.md"
+  },
+  {
+    "id": "retail-06",
+    "archetype": "retail",
+    "title": "Omnichannel Strategy Effectiveness, including Online vs. In- Store Sales Performance",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/06 - Omnichannel Strategy Effectiveness, including Online vs. In-.md"
+  },
+  {
+    "id": "retail-07",
+    "archetype": "retail",
+    "title": "Customer Lifetime Value (CLV) in Retail Context",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail/07 - Customer Lifetime Value (CLV) in Retail Context.md"
+  },
+  {
+    "id": "retail-08",
+    "archetype": "retail",
+    "title": "Cross-Selling and Up-Selling Effectiveness in Retail",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail/08 - Cross-Selling and Up-Selling Effectiveness in Retail.md"
+  },
+  {
+    "id": "retail-09",
+    "archetype": "retail",
+    "title": "Store Atmosphere and Experience Impact on Sales, including Customer Dwell Time",
+    "part": "A",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail/09 - Store Atmosphere and Experience Impact on Sales, including.md"
+  },
+  {
+    "id": "retail-10",
+    "archetype": "retail",
+    "title": "Inventory Turnover and Management Analysis",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/10 - Inventory Turnover and Management Analysis.md"
+  },
+  {
+    "id": "retail-11",
+    "archetype": "retail",
+    "title": "In-Stock Rate and Out-of-Stock Analysis",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/11 - In-Stock Rate and Out-of-Stock Analysis.md"
+  },
+  {
+    "id": "retail-12",
+    "archetype": "retail",
+    "title": "E-commerce Fulfillment Efficiency and Cost Analysis",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/12 - E-commerce Fulfillment Efficiency and Cost Analysis.md"
+  },
+  {
+    "id": "retail-13",
+    "archetype": "retail",
+    "title": "Shelf Space Allocation and Optimization",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail/13 - Shelf Space Allocation and Optimization.md"
+  },
+  {
+    "id": "retail-14",
+    "archetype": "retail",
+    "title": "Click-and-Collect-Buy Online, Pickup In-Store (BOPIS) Effectiveness",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/14 - Click-and-Collect-Buy Online, Pickup In-Store (BOPIS).md"
+  },
+  {
+    "id": "retail-15",
+    "archetype": "retail",
+    "title": "Store Lease and Real Estate Cost Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/15 - Store Lease and Real Estate Cost Efficiency Analysis.md"
+  },
+  {
+    "id": "retail-16",
+    "archetype": "retail",
+    "title": "Store Labor Productivity Analysis",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail/16 - Store Labor Productivity Analysis.md"
+  },
+  {
+    "id": "retail-17",
+    "archetype": "retail",
+    "title": "Store Closure and Rationalization Analysis",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail/17 - Store Closure and Rationalization Analysis.md"
+  },
+  {
+    "id": "retail-18",
+    "archetype": "retail",
+    "title": "Store Expansion and Cannibalization Risk Analysis",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail/18 - Store Expansion and Cannibalization Risk Analysis.md"
+  },
+  {
+    "id": "retail-19",
+    "archetype": "retail",
+    "title": "Sustainability and Ethical Sourcing in Retail",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail/19 - Sustainability and Ethical Sourcing in Retail.md"
+  },
+  {
+    "id": "retail-20",
+    "archetype": "retail",
+    "title": "Retail Pricing and Discount Strategy Analysis",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail/20 - Retail Pricing and Discount Strategy Analysis.md"
+  },
+  {
+    "id": "retail-21",
+    "archetype": "retail",
+    "title": "Promotional Campaign Effectiveness Analysis",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail/21 - Promotional Campaign Effectiveness Analysis.md"
+  },
+  {
+    "id": "retail-22",
+    "archetype": "retail",
+    "title": "Loyalty Program Engagement and ROI",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail/22 - Loyalty Program Engagement and ROI.md"
+  },
+  {
+    "id": "retail-23",
+    "archetype": "retail",
+    "title": "Customer Demographics and Segmentation in Retail",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/retail/23 - Customer Demographics and Segmentation in Retail.md"
+  },
+  {
+    "id": "retail-24",
+    "archetype": "retail",
+    "title": "Consumer Sentiment and Brand Perception in Retail",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail/24 - Consumer Sentiment and Brand Perception in Retail.md"
+  },
+  {
+    "id": "retail-25",
+    "archetype": "retail",
+    "title": "Pop-Up Store and Event-Based Retail Performance",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail/25 - Pop-Up Store and Event-Based Retail Performance.md"
+  },
+  {
+    "id": "retail-26",
+    "archetype": "retail",
+    "title": "Product Category Margin Analysis",
+    "part": "D",
+    "partLabel": "Merchandising",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX",
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/26 - Product Category Margin Analysis.md"
+  },
+  {
+    "id": "retail-27",
+    "archetype": "retail",
+    "title": "Private Label vs. Branded Product Performance and Supplier Dependency Strategy",
+    "part": "D",
+    "partLabel": "Merchandising",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail/27 - Private Label vs. Branded Product Performance and Supplier.md"
+  },
+  {
+    "id": "retail-28",
+    "archetype": "retail",
+    "title": "Planogram Compliance and Store Layout Efficiency, including Endcap Performance",
+    "part": "D",
+    "partLabel": "Merchandising",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail/28 - Planogram Compliance and Store Layout Efficiency,.md"
+  },
+  {
+    "id": "retail-29",
+    "archetype": "retail",
+    "title": "Stock Keeping Unit (SKU) Rationalization and Retail Product Assortment Optimization",
+    "part": "D",
+    "partLabel": "Merchandising",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/29 - Stock Keeping Unit (SKU) Rationalization and Retail Product.md"
+  },
+  {
+    "id": "retail-30",
+    "archetype": "retail",
+    "title": "Markdown Strategy and Effectiveness",
+    "part": "D",
+    "partLabel": "Merchandising",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/30 - Markdown Strategy and Effectiveness.md"
+  },
+  {
+    "id": "retail-31",
+    "archetype": "retail",
+    "title": "Merchandising Strategy Effectiveness Analysis",
+    "part": "D",
+    "partLabel": "Merchandising",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DSO",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/31 - Merchandising Strategy Effectiveness Analysis.md"
+  },
+  {
+    "id": "retail-32",
+    "archetype": "retail",
+    "title": "Visual Merchandising Performance",
+    "part": "D",
+    "partLabel": "Merchandising",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail/32 - Visual Merchandising Performance.md"
+  },
+  {
+    "id": "retail-33",
+    "archetype": "retail",
+    "title": "Retailer Gross Margin Return on Investment (GMROI)",
+    "part": "E",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/33 - Retailer Gross Margin Return on Investment (GMROI).md"
+  },
+  {
+    "id": "retail-34",
+    "archetype": "retail",
+    "title": "Shrinkage (Theft and Loss) Rate Analysis",
+    "part": "E",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/retail/34 - Shrinkage (Theft and Loss) Rate Analysis.md"
+  },
+  {
+    "id": "retail-35",
+    "archetype": "retail",
+    "title": "Vendor Compliance and Supplier Performance in Retail",
+    "part": "E",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail/35 - Vendor Compliance and Supplier Performance in Retail.md"
+  }
+]

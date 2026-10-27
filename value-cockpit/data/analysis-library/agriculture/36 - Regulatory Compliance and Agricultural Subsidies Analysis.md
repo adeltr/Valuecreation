@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/F
+kind: analysis
+id: agriculture-36
+part: F
+partLabel: Regulatory Compliance & Risk Management
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 36 · Regulatory Compliance and Agricultural Subsidies Analysis
 

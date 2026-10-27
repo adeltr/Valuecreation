@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/D
+kind: analysis
+id: agriculture-27
+part: D
+partLabel: Technology & Innovation in Agriculture
+quant: []
+causes: [FINANCIAL]
+levers: [MIX]
 ---
 # 27 · Agricultural R&D Pipeline and Innovation Investment Assessment
 

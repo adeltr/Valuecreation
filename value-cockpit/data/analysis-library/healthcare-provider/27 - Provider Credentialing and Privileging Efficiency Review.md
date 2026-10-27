@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/E
+kind: analysis
+id: healthcare-provider-27
+part: E
+partLabel: Regulatory Compliance and Risk Management
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS, WC_DSO]
 ---
 # 27 · Provider Credentialing and Privileging Efficiency Review
 

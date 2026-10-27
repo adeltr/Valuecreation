@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-42
+part: H
+partLabel: Technology & Innovation
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 42 · Device Tracking and Traceability Program Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/B
+kind: analysis
+id: wine-spirits-12
+part: B
+partLabel: Brand Positioning and Marketing Strategy
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 12 · Premiumization and Upselling Opportunities Assessment
 

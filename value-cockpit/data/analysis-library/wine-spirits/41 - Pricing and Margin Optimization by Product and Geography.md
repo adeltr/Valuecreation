@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/G
+kind: analysis
+id: wine-spirits-41
+part: G
+partLabel: Financial and Revenue Optimization
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 41 · Pricing and Margin Optimization by Product and Geography
 

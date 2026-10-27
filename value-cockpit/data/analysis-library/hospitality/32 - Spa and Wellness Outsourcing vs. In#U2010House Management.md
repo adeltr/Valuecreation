@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/G
+kind: analysis
+id: hospitality-32
+part: G
+partLabel: Events & Alternative Offerings
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 32 · Spa and Wellness Outsourcing vs. In‐House Management Assessment
 

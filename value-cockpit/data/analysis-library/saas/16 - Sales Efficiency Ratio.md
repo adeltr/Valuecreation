@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-16
+part: B
+partLabel: Sales & Marketing
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [COST_OPS, SALES_EFFICIENCY]
 ---
 # 16 · Sales Efficiency Ratio
 

@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/B
+kind: analysis
+id: agriculture-16
+part: B
+partLabel: Livestock Management & Animal Health
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 16 · Aquaculture Development and Sustainability Analysis
 

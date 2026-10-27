@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/D
+kind: analysis
+id: cpg-38
+part: D
+partLabel: Research & Development
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 38 · Sustainability and Packaging Innovation Analysis
 

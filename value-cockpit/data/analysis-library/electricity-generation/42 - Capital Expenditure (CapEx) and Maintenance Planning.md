@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/J
+kind: analysis
+id: electricity-generation-42
+part: J
+partLabel: Lifecycle and Asset Management
+quant: [CAPEX]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 42 · Capital Expenditure (CapEx) and Maintenance Planning Analysis
 

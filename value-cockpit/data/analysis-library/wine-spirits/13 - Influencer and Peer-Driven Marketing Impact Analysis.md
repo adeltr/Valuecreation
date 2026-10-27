@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/B
+kind: analysis
+id: wine-spirits-13
+part: B
+partLabel: Brand Positioning and Marketing Strategy
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 13 · Influencer and Peer-Driven Marketing Impact Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/G
+kind: analysis
+id: hospitality-31
+part: G
+partLabel: Events & Alternative Offerings
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, COST_OPS]
 ---
 # 31 · Wellness and Spa Services Utilization
 

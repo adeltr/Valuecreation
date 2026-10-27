@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-10
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: []
+causes: [OPERATIONAL]
+levers: [PRICING, VOLUME]
 ---
 # 10 · Rights Acquisition & Window Negotiation Strategy
 

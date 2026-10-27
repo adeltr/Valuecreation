@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/H
+kind: analysis
+id: electricity-generation-35
+part: H
+partLabel: Technological Innovation and Modernization
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 35 · Grid Modernization and Smart Grid Integration Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-14
+part: B
+partLabel: Operations
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [VOLUME, WC_DIO]
 ---
 # 14 · Click-and-Collect-Buy Online, Pickup In-Store (BOPIS) Effectiveness
 

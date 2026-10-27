@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/D
+kind: analysis
+id: agriculture-25
+part: D
+partLabel: Technology & Innovation in Agriculture
+quant: []
+causes: [FINANCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 25 · Adoption of Agricultural Technology Evaluation
 

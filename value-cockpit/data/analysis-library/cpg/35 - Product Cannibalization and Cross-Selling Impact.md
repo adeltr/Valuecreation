@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/D
+kind: analysis
+id: cpg-35
+part: D
+partLabel: Research & Development
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 35 · Product Cannibalization and Cross-Selling Impact
 

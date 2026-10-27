@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/F
+kind: analysis
+id: waste-management-30
+part: F
+partLabel: Hazardous & Specialized Waste Handling
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 30 · Hazardous Waste Handling and Specialized Disposal Analysis
 

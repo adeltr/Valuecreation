@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/J
+kind: analysis
+id: metals-mining-47
+part: J
+partLabel: Processing and Value Addition
+quant: [COGS]
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 47 · Supply Chain Traceability and Ethical Sourcing Compliance
 

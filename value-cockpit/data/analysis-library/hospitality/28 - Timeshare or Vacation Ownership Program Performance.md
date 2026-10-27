@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/F
+kind: analysis
+id: hospitality-28
+part: F
+partLabel: Ownership & Financial Structures
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 28 · Timeshare or Vacation Ownership Program Performance Analysis
 

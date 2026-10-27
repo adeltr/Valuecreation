@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-05
+part: A
+partLabel: Research & Development
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 5 · Pipeline Attrition Rate and Risk Mitigation
 

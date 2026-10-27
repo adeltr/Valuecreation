@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/F
+kind: analysis
+id: manufacturing-43
+part: F
+partLabel: Environmental and Sustainability
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 43 · Environmental Compliance and Emissions Reduction Strategies
 

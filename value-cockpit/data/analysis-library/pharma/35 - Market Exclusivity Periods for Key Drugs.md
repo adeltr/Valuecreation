@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/G
+kind: analysis
+id: pharma-35
+part: G
+partLabel: Financial Analysis
+quant: []
+causes: [MARKET, REGULATORY]
+levers: [MIX]
 ---
 # 35 · Market Exclusivity Periods for Key Drugs
 

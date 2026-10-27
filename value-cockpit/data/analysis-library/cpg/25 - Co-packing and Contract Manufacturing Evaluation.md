@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-25
+part: C
+partLabel: Operations
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 25 · Co-packing and Contract Manufacturing Evaluation
 

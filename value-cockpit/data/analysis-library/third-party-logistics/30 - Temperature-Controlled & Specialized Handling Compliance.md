@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/F
+kind: analysis
+id: third-party-logistics-30
+part: F
+partLabel: Trade & Regulatory Compliance
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 30 · Temperature-Controlled & Specialized Handling Compliance Evaluation
 

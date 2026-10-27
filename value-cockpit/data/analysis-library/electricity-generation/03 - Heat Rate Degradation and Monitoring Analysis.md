@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/A
+kind: analysis
+id: electricity-generation-03
+part: A
+partLabel: Operational Performance and Efficiency
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 3 · Heat Rate Degradation and Monitoring Analysis
 

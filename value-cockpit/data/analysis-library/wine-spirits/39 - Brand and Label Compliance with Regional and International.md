@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/F
+kind: analysis
+id: wine-spirits-39
+part: F
+partLabel: Regulatory and Compliance
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 39 · Brand and Label Compliance with Regional and International Standards
 

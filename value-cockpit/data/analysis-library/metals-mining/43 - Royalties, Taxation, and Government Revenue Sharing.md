@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/I
+kind: analysis
+id: metals-mining-43
+part: I
+partLabel: Legal, Regulatory, and Geopolitical Risk
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 43 · Royalties, Taxation, and Government Revenue Sharing Analysis
 

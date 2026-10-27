@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-46
+part: H
+partLabel: Technology & Innovation
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 46 · Calibration and Maintenance Program for Reusable Devices
 

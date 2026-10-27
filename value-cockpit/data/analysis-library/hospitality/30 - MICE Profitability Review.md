@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/G
+kind: analysis
+id: hospitality-30
+part: G
+partLabel: Events & Alternative Offerings
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [FINANCIAL, MARKET]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS]
 ---
 # 30 · MICE Profitability Review
 

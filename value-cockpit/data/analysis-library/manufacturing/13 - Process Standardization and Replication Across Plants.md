@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-13
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 13 · Process Standardization and Replication Across Plants
 

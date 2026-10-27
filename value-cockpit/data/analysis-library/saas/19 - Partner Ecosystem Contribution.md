@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-19
+part: B
+partLabel: Sales & Marketing
+quant: [REVENUE_GROWTH]
+causes: []
+levers: [VOLUME, RETENTION]
 ---
 # 19 · Partner Ecosystem Contribution
 

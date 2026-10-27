@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/G
+kind: analysis
+id: waste-management-38
+part: G
+partLabel: Regulatory Compliance & Environmental Impact
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS, WC_DSO]
 ---
 # 38 · Extended Producer Responsibility (EPR) Program Implementation Evaluation
 

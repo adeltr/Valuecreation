@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-04
+part: A
+partLabel: Finance & Revenue
+quant: [REVENUE_GROWTH, EXPANSION_RATE]
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, EXPANSION]
 ---
 # 4 · Average Revenue Per User (ARPU) Analysis
 

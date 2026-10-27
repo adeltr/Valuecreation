@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/E
+kind: analysis
+id: third-party-logistics-26
+part: E
+partLabel: Value-Added & Specialized Services
+quant: [DIO]
+causes: [COMMERCIAL]
+levers: []
 ---
 # 26 · Omni-Channel Fulfillment & E-Commerce Readiness Review
 

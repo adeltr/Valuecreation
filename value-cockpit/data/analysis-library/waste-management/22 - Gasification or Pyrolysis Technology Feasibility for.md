@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/D
+kind: analysis
+id: waste-management-22
+part: D
+partLabel: Waste-to-Energy & Thermal Treatment
+quant: []
+causes: []
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 22 · Gasification or Pyrolysis Technology Feasibility for High-Calorific Residual Waste
 

@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/D
+kind: analysis
+id: chemical-27
+part: D
+partLabel: Sales & Marketing
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: []
 ---
 # 27 · Market Entry and Expansion Feasibility by Region
 

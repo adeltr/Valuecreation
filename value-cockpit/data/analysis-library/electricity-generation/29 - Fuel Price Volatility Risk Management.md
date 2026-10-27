@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/F
+kind: analysis
+id: electricity-generation-29
+part: F
+partLabel: Risk Management and Resilience
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS]
 ---
 # 29 · Fuel Price Volatility Risk Management
 

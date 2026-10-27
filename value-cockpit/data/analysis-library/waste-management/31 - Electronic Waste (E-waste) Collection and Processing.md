@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/F
+kind: analysis
+id: waste-management-31
+part: F
+partLabel: Hazardous & Specialized Waste Handling
+quant: [DSO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [WC_DSO]
 ---
 # 31 · Electronic Waste (E-waste) Collection and Processing Strategy
 

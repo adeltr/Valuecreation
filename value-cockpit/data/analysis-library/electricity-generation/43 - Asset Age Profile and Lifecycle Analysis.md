@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/J
+kind: analysis
+id: electricity-generation-43
+part: J
+partLabel: Lifecycle and Asset Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 43 · Asset Age Profile and Lifecycle Analysis
 

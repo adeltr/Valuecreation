@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/D
+kind: analysis
+id: pharma-21
+part: D
+partLabel: Marketing & Market Access
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY]
+levers: [PRICING]
 ---
 # 21 · Pricing Power and Reimbursement Environment
 

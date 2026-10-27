@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-28
+part: D
+partLabel: Technology & Cybersecurity
+quant: [RD_INTENSITY]
+causes: [MARKET, REGULATORY]
+levers: [RD_PORTFOLIO]
 ---
 # 28 · Missile Defense and Strategic Deterrence Program Assessment
 

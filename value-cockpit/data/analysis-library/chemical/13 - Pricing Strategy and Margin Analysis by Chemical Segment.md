@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/B
+kind: analysis
+id: chemical-13
+part: B
+partLabel: Finance
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 13 · Pricing Strategy and Margin Analysis by Chemical Segment
 

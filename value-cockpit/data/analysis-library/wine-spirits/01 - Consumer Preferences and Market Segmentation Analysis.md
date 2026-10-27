@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-01
+part: A
+partLabel: Market and Consumer Insights
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING]
 ---
 # 1 · Consumer Preferences and Market Segmentation Analysis
 

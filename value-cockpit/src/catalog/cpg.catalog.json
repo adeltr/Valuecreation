@@ -1,0 +1,825 @@
+[
+  {
+    "id": "cpg-01",
+    "archetype": "cpg",
+    "title": "Brand Portfolio Analysis",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/cpg/01 - Brand Portfolio Analysis.md"
+  },
+  {
+    "id": "cpg-02",
+    "archetype": "cpg",
+    "title": "Consumer Behavior and Segmentation Analysis",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/02 - Consumer Behavior and Segmentation Analysis.md"
+  },
+  {
+    "id": "cpg-03",
+    "archetype": "cpg",
+    "title": "Consumer Loyalty and Retention Analysis",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/03 - Consumer Loyalty and Retention Analysis.md"
+  },
+  {
+    "id": "cpg-04",
+    "archetype": "cpg",
+    "title": "Marketing Mix Effectiveness (4Ps)",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/cpg/04 - Marketing Mix Effectiveness (4Ps).md"
+  },
+  {
+    "id": "cpg-05",
+    "archetype": "cpg",
+    "title": "Ethnic and Multicultural Consumer Segment Analysis",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/05 - Ethnic and Multicultural Consumer Segment Analysis.md"
+  },
+  {
+    "id": "cpg-06",
+    "archetype": "cpg",
+    "title": "Product Reformulation and Ingredient Cost Trade-off Analysis",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/cpg/06 - Product Reformulation and Ingredient Cost Trade-off Analysis.md"
+  },
+  {
+    "id": "cpg-07",
+    "archetype": "cpg",
+    "title": "Consumer Advocacy and Brand Perception Tracking",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/07 - Consumer Advocacy and Brand Perception Tracking.md"
+  },
+  {
+    "id": "cpg-08",
+    "archetype": "cpg",
+    "title": "Shopper Marketing and Path-to-Purchase Insights",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cpg/08 - Shopper Marketing and Path-to-Purchase Insights.md"
+  },
+  {
+    "id": "cpg-09",
+    "archetype": "cpg",
+    "title": "Consumer Sentiment and Social Listening Analysis",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/09 - Consumer Sentiment and Social Listening Analysis.md"
+  },
+  {
+    "id": "cpg-10",
+    "archetype": "cpg",
+    "title": "Consumer Demand Shaping through Marketing Campaigns",
+    "part": "A",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cpg/10 - Consumer Demand Shaping through Marketing Campaigns.md"
+  },
+  {
+    "id": "cpg-11",
+    "archetype": "cpg",
+    "title": "Channel Strategy Assessment",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/11 - Channel Strategy Assessment.md"
+  },
+  {
+    "id": "cpg-12",
+    "archetype": "cpg",
+    "title": "Direct-to-Consumer (DTC) Channel Performance",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/12 - Direct-to-Consumer (DTC) Channel Performance.md"
+  },
+  {
+    "id": "cpg-13",
+    "archetype": "cpg",
+    "title": "Promotional Pricing and Discount Depth Analysis",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/cpg/13 - Promotional Pricing and Discount Depth Analysis.md"
+  },
+  {
+    "id": "cpg-14",
+    "archetype": "cpg",
+    "title": "Retailer Relationship and Negotiation Power Assessment",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/14 - Retailer Relationship and Negotiation Power Assessment.md"
+  },
+  {
+    "id": "cpg-15",
+    "archetype": "cpg",
+    "title": "Retailer-Specific Marketing and Joint Business Planning (JBP)",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/15 - Retailer-Specific Marketing and Joint Business Planning (JBP).md"
+  },
+  {
+    "id": "cpg-16",
+    "archetype": "cpg",
+    "title": "Trade Promotion Effectiveness",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/16 - Trade Promotion Effectiveness.md"
+  },
+  {
+    "id": "cpg-17",
+    "archetype": "cpg",
+    "title": "Shelf Availability and Out-of-Stock Analysis",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/17 - Shelf Availability and Out-of-Stock Analysis.md"
+  },
+  {
+    "id": "cpg-18",
+    "archetype": "cpg",
+    "title": "In-store Execution and Merchandising Compliance Analysis",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/cpg/18 - In-store Execution and Merchandising Compliance Analysis.md"
+  },
+  {
+    "id": "cpg-19",
+    "archetype": "cpg",
+    "title": "Category Management and Shelf Space Optimization",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/19 - Category Management and Shelf Space Optimization.md"
+  },
+  {
+    "id": "cpg-20",
+    "archetype": "cpg",
+    "title": "In-store Sampling and Shopper Activation Effectiveness",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/cpg/20 - In-store Sampling and Shopper Activation Effectiveness.md"
+  },
+  {
+    "id": "cpg-21",
+    "archetype": "cpg",
+    "title": "Price-Pack Architecture Optimization",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/21 - Price-Pack Architecture Optimization.md"
+  },
+  {
+    "id": "cpg-22",
+    "archetype": "cpg",
+    "title": "Private Label Cannibalization and Erosion Impact",
+    "part": "B",
+    "partLabel": "Sales",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/cpg/22 - Private Label Cannibalization and Erosion Impact.md"
+  },
+  {
+    "id": "cpg-23",
+    "archetype": "cpg",
+    "title": "Product Mix and SKU Rationalization",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/23 - Product Mix and SKU Rationalization.md"
+  },
+  {
+    "id": "cpg-24",
+    "archetype": "cpg",
+    "title": "Supply Chain Efficiency and Distribution Network Analysis",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/24 - Supply Chain Efficiency and Distribution Network Analysis.md"
+  },
+  {
+    "id": "cpg-25",
+    "archetype": "cpg",
+    "title": "Co-packing and Contract Manufacturing Evaluation",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/cpg/25 - Co-packing and Contract Manufacturing Evaluation.md"
+  },
+  {
+    "id": "cpg-26",
+    "archetype": "cpg",
+    "title": "Sourcing and Raw Material Cost Analysis",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/26 - Sourcing and Raw Material Cost Analysis.md"
+  },
+  {
+    "id": "cpg-27",
+    "archetype": "cpg",
+    "title": "Regional and Local Market Penetration Analysis",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/27 - Regional and Local Market Penetration Analysis.md"
+  },
+  {
+    "id": "cpg-28",
+    "archetype": "cpg",
+    "title": "Perishability and Freshness Management in Supply Chain",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/28 - Perishability and Freshness Management in Supply Chain.md"
+  },
+  {
+    "id": "cpg-29",
+    "archetype": "cpg",
+    "title": "End-to-End Product Traceability and Transparency Analysis",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cpg/29 - End-to-End Product Traceability and Transparency Analysis.md"
+  },
+  {
+    "id": "cpg-30",
+    "archetype": "cpg",
+    "title": "Inventory Turns and Shelf-Life Optimization",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/30 - Inventory Turns and Shelf-Life Optimization.md"
+  },
+  {
+    "id": "cpg-31",
+    "archetype": "cpg",
+    "title": "Distributor and Wholesaler Performance Analysis",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/31 - Distributor and Wholesaler Performance Analysis.md"
+  },
+  {
+    "id": "cpg-32",
+    "archetype": "cpg",
+    "title": "Distributor Margin and Channel Conflict Assessment",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/32 - Distributor Margin and Channel Conflict Assessment.md"
+  },
+  {
+    "id": "cpg-33",
+    "archetype": "cpg",
+    "title": "Product Recall and Quality Control Analysis",
+    "part": "C",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cpg/33 - Product Recall and Quality Control Analysis.md"
+  },
+  {
+    "id": "cpg-34",
+    "archetype": "cpg",
+    "title": "Innovation Pipeline and New Product Development (NPD) Analysis",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/34 - Innovation Pipeline and New Product Development (NPD).md"
+  },
+  {
+    "id": "cpg-35",
+    "archetype": "cpg",
+    "title": "Product Cannibalization and Cross-Selling Impact",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/cpg/35 - Product Cannibalization and Cross-Selling Impact.md"
+  },
+  {
+    "id": "cpg-36",
+    "archetype": "cpg",
+    "title": "Product Lifecycle Management (PLM)",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/36 - Product Lifecycle Management (PLM).md"
+  },
+  {
+    "id": "cpg-37",
+    "archetype": "cpg",
+    "title": "Packaging and Labeling Regulatory Compliance",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/37 - Packaging and Labeling Regulatory Compliance.md"
+  },
+  {
+    "id": "cpg-38",
+    "archetype": "cpg",
+    "title": "Sustainability and Packaging Innovation Analysis",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cpg/38 - Sustainability and Packaging Innovation Analysis.md"
+  },
+  {
+    "id": "cpg-39",
+    "archetype": "cpg",
+    "title": "Health and Wellness Trends Impact on Product Portfolio",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/cpg/39 - Health and Wellness Trends Impact on Product Portfolio.md"
+  },
+  {
+    "id": "cpg-40",
+    "archetype": "cpg",
+    "title": "Global Sourcing Strategy for Commoditized Ingredients",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/cpg/40 - Global Sourcing Strategy for Commoditized Ingredients.md"
+  },
+  {
+    "id": "cpg-41",
+    "archetype": "cpg",
+    "title": "Brand Dilution and Extension Risk Analysis",
+    "part": "D",
+    "partLabel": "Research & Development",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/cpg/41 - Brand Dilution and Extension Risk Analysis.md"
+  },
+  {
+    "id": "cpg-42",
+    "archetype": "cpg",
+    "title": "Trade Spend Optimization and Return on Investment (ROI)",
+    "part": "E",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/cpg/42 - Trade Spend Optimization and Return on Investment (ROI).md"
+  },
+  {
+    "id": "cpg-43",
+    "archetype": "cpg",
+    "title": "Product Line Profitability by Retailer Analysis",
+    "part": "E",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/cpg/43 - Product Line Profitability by Retailer Analysis.md"
+  }
+]

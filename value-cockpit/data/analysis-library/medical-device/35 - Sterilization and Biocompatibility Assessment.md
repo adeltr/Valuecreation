@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/F
+kind: analysis
+id: medical-device-35
+part: F
+partLabel: Risk Management & Quality
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 35 · Sterilization and Biocompatibility Assessment
 

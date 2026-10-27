@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/E
+kind: analysis
+id: wine-spirits-33
+part: E
+partLabel: Production and Quality Control
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 33 · Bottling Process Efficiency and Contamination Risk Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/C
+kind: analysis
+id: wine-spirits-22
+part: C
+partLabel: Product Innovation and Development
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 22 · Emerging Alcohol-Free and Low-ABV Product Trend Analysis
 

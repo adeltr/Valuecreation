@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/C
+kind: analysis
+id: electricity-generation-12
+part: C
+partLabel: Financial and Market Strategy
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_PROCUREMENT, COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 12 · Levelized Cost of Electricity (LCOE) Comparison
 

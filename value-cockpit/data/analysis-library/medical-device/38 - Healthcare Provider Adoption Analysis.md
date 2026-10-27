@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/G
+kind: analysis
+id: medical-device-38
+part: G
+partLabel: Commercial Strategy & Marketing
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 38 · Healthcare Provider Adoption Analysis
 

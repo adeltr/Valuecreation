@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-16
+part: A
+partLabel: Operations
+quant: [DIO]
+causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 16 · Finished Goods Storage and Warehousing Optimization
 

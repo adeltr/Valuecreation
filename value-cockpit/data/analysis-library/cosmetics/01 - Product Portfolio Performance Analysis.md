@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-01
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, MIX]
 ---
 # 1 · Product Portfolio Performance Analysis
 

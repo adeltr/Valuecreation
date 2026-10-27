@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/F
+kind: analysis
+id: medical-device-37
+part: F
+partLabel: Risk Management & Quality
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 37 · Quality-by-Design (QbD) Implementation
 

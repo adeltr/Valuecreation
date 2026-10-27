@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/I
+kind: analysis
+id: electricity-generation-39
+part: I
+partLabel: Capacity Planning and Utilization
+quant: [REVENUE_GROWTH]
+causes: [MARKET]
+levers: [COST_OPS]
 ---
 # 39 · Seasonal Resource Adequacy Planning
 

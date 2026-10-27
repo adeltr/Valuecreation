@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/F
+kind: analysis
+id: third-party-logistics-29
+part: F
+partLabel: Trade & Regulatory Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 29 · Customs & Trade Compliance Framework Evaluation
 

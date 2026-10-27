@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/B
+kind: analysis
+id: third-party-logistics-14
+part: B
+partLabel: Warehousing & Fulfillment
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 14 · Co-Packing, Labeling & Kitting Operations Efficiency Assessment
 

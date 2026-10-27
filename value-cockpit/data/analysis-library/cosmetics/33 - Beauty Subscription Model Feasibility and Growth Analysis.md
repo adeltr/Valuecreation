@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/C
+kind: analysis
+id: cosmetics-33
+part: C
+partLabel: Sales and Distribution
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 33 · Beauty Subscription Model Feasibility and Growth Analysis
 

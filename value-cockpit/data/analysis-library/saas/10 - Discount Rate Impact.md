@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-10
+part: A
+partLabel: Finance & Revenue
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 10 · Discount Rate Impact
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-03
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 3 · Labeling and Unique Device Identification (UDI) Compliance Assessment
 

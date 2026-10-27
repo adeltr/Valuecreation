@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-10
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 10 · Factory Layout and Process Flow Optimization
 

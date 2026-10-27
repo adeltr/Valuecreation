@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/F
+kind: analysis
+id: electricity-generation-30
+part: F
+partLabel: Risk Management and Resilience
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 30 · Operational Risk and Safety Performance Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-04
+part: A
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [MIX]
 ---
 # 4 · Location-Based Performance Analysis
 

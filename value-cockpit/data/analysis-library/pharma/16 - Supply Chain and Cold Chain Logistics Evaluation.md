@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/C
+kind: analysis
+id: pharma-16
+part: C
+partLabel: Operations & Supply Chain
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 16 · Supply Chain and Cold Chain Logistics Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-08
+part: A
+partLabel: Research & Development
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME]
 ---
 # 8 · Adaptive Clinical Trial Design Strategy
 

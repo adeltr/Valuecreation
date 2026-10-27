@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/H
+kind: analysis
+id: waste-management-42
+part: H
+partLabel: Financial & Contractual Structuring
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, REGULATORY]
+levers: [PRICING, VOLUME, WC_DSO]
 ---
 # 42 · Municipal and Commercial Contract Structuring and Profitability Analysis
 

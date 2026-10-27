@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/C
+kind: analysis
+id: medical-device-19
+part: C
+partLabel: Reimbursement & Market Access
+quant: []
+causes: [MARKET]
+levers: [WC_DSO]
 ---
 # 19 · Reimbursement and Coding Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-29
+part: C
+partLabel: Operations
+quant: [COGS]
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 29 · End-to-End Product Traceability and Transparency Analysis
 

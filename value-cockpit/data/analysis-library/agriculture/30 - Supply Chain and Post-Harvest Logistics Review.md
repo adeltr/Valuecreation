@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/E
+kind: analysis
+id: agriculture-30
+part: E
+partLabel: Market Positioning & Value Chain
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS, WC_DIO]
 ---
 # 30 · Supply Chain and Post-Harvest Logistics Review
 

@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-24
+part: C
+partLabel: Operations
+quant: [DIO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [VOLUME, COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 24 · Supply Chain Efficiency and Distribution Network Analysis
 

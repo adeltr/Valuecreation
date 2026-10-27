@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/I
+kind: analysis
+id: waste-management-48
+part: I
+partLabel: Sustainability & ESG
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_PROCUREMENT]
 ---
 # 48 · Circular Economy Partnerships and Upstream Collaboration Analysis
 

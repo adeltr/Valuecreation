@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-01
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 1 · Regulatory Pathway Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/D
+kind: analysis
+id: retail-27
+part: D
+partLabel: Merchandising
+quant: []
+causes: [COMMERCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 27 · Private Label vs. Branded Product Performance and Supplier Dependency Strategy
 

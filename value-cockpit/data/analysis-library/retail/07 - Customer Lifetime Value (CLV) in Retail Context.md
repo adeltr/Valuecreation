@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-07
+part: A
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 7 · Customer Lifetime Value (CLV) in Retail Context
 

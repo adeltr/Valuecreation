@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/G
+kind: analysis
+id: healthcare-provider-31
+part: G
+partLabel: Population Health and Care Coordination
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME]
 ---
 # 31 · Population Health and Integrated Care Model Effectiveness Assessment
 

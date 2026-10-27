@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-02
+part: A
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 2 · Consumer Behavior and Segmentation Analysis
 

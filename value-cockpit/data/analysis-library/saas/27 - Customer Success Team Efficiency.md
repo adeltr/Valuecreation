@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-27
+part: C
+partLabel: Customer Retention & Success
+quant: [GROSS_CHURN]
+causes: [COMMERCIAL]
+levers: [VOLUME, RETENTION]
 ---
 # 27 · Customer Success Team Efficiency
 

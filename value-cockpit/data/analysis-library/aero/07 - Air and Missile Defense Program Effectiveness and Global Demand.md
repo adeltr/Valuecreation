@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-07
+part: A
+partLabel: Strategy & Market Position
+quant: []
+causes: [MARKET, GEOPOLITICAL]
+levers: [COMMERCIAL_PIPELINE, EXPORT_FMS]
 ---
 # 7 · Air and Missile Defense Program Effectiveness and Global Demand
 

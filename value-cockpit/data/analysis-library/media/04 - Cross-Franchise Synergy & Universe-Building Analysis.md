@@ -2,6 +2,13 @@
 tags:
   - media
   - part/A
+kind: analysis
+id: media-04
+part: A
+partLabel: Content Strategy & Portfolio
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 4 · Cross-Franchise Synergy & Universe-Building Analysis
 

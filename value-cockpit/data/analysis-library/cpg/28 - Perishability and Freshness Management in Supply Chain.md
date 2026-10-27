@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-28
+part: C
+partLabel: Operations
+quant: [DIO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 28 · Perishability and Freshness Management in Supply Chain
 

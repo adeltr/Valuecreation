@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/D
+kind: analysis
+id: electricity-generation-21
+part: D
+partLabel: Regulatory and Environmental Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS, WC_DSO]
 ---
 # 21 · Nuclear Plant Safety and Regulatory Compliance Evaluation
 

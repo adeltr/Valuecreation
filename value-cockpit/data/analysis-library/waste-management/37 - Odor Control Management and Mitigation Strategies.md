@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/G
+kind: analysis
+id: waste-management-37
+part: G
+partLabel: Regulatory Compliance & Environmental Impact
+quant: []
+causes: [REGULATORY]
+levers: [VOLUME, COST_OPS, WC_DSO]
 ---
 # 37 · Odor Control Management and Mitigation Strategies
 

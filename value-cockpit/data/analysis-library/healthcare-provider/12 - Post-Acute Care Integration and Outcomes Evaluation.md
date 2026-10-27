@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/B
+kind: analysis
+id: healthcare-provider-12
+part: B
+partLabel: Operational Efficiency and Resource
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 12 · Post-Acute Care Integration and Outcomes Evaluation
 

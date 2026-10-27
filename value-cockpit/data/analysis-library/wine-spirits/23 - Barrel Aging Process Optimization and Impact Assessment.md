@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/C
+kind: analysis
+id: wine-spirits-23
+part: C
+partLabel: Product Innovation and Development
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 23 · Barrel Aging Process Optimization and Impact Assessment
 

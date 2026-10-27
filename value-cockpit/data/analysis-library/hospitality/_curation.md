@@ -6,7 +6,7 @@
 > La colonne « indices » donne le mot qui a déclenché chaque proposition. Rien n'est
 > appliqué aux fichiers avant ta validation ; aucun terme n'est ajouté au vocabulaire.
 
-33 analyses · 0 sans métrique ni levier (qualitatives) · 1 à contenu réglementaire.
+33 analyses · 0 sans métrique ni levier (qualitatives) · 1 à contenu réglementaire (cause REGULATORY).
 
 ## Mapping proposé
 
@@ -48,11 +48,7 @@
 
 Libellés des parties : A Revenue & Pricing Management · B Guest Experience · C Technology · D Operations & Hospitality Services · E Marketing & Competitive Positioning · F Ownership & Financial Structures · G Events & Alternative Offerings.
 
-## Hors vocabulaire
+## Arbitrages
 
-Analyses réglementaires / conformité (25) : aucune cause de base ne les exprime. Candidat : remonter `REGULATORY` (déjà utilisé par aero et airline) dans la base.
-
-## Tes arbitrages attendus
-
-1. Corrige les lignes du mapping qui ne te conviennent pas (le reste sera appliqué tel quel).
-2. `REGULATORY` dans la base : oui / non ?
+1. Corrige les lignes du mapping qui ne te conviennent pas ; le reste est appliqué tel quel
+   (`tsx scripts/apply-curation.ts <archetype>` puis `npm run catalog:build -- <archetype>`).

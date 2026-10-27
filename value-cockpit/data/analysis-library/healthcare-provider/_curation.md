@@ -6,7 +6,7 @@
 > La colonne « indices » donne le mot qui a déclenché chaque proposition. Rien n'est
 > appliqué aux fichiers avant ta validation ; aucun terme n'est ajouté au vocabulaire.
 
-47 analyses · 8 sans métrique ni levier (qualitatives) · 12 à contenu réglementaire.
+47 analyses · 8 sans métrique ni levier (qualitatives) · 12 à contenu réglementaire (cause REGULATORY).
 
 ## Mapping proposé
 
@@ -15,13 +15,13 @@
 | 01 | A | REVENUE_GROWTH | VOLUME, COST_OPS | MARKET | REVENUE_GROWTH←growth · VOLUME←expand · COST_OPS←staff · MARKET←trends |
 | 02 | A | — | COST_OPS | OPERATIONAL | COST_OPS←staff · OPERATIONAL←quality |
 | 03 | A | — | VOLUME | FINANCIAL | VOLUME←expand · FINANCIAL←costs |
-| 04 | A | — | COST_OPS | — | COST_OPS←staff |
+| 04 | A | — | COST_OPS | REGULATORY | COST_OPS←staff · REGULATORY←compliance |
 | 05 | A | — | — | FINANCIAL | FINANCIAL←costs |
 | 06 | A | — | COST_OPS | FINANCIAL | COST_OPS←staff · FINANCIAL←cost |
-| 07 | A | — | COST_OPS | FINANCIAL | COST_OPS←staff · FINANCIAL←financial |
+| 07 | A | — | COST_OPS | FINANCIAL, REGULATORY | COST_OPS←staff · FINANCIAL←financial · REGULATORY←compliance |
 | 08 | B | — | COST_OPS | — | COST_OPS←efficiency |
 | 09 | B | — | COST_OPS | — | COST_OPS←staffing |
-| 10 | B | — | — | — |  |
+| 10 | B | — | — | REGULATORY | REGULATORY←compliance |
 | 11 | B | — | COST_OPS | OPERATIONAL, FINANCIAL | COST_OPS←maintenance · OPERATIONAL←maintenance · FINANCIAL←costs |
 | 12 | B | — | — | FINANCIAL | FINANCIAL←costs |
 | 13 | B | — | — | FINANCIAL | FINANCIAL←costs |
@@ -37,8 +37,8 @@
 | 23 | D | — | VOLUME | OPERATIONAL | VOLUME←expand · OPERATIONAL←quality |
 | 24 | D | — | — | — |  |
 | 25 | D | — | VOLUME, COST_OPS | — | VOLUME←expanding · COST_OPS←staff |
-| 26 | E | — | COST_OPS | OPERATIONAL | COST_OPS←staff · OPERATIONAL←operational |
-| 27 | E | — | COST_OPS, WC_DSO | OPERATIONAL | COST_OPS←automated · WC_DSO←collection · OPERATIONAL←processes |
+| 26 | E | — | COST_OPS | OPERATIONAL, REGULATORY | COST_OPS←staff · OPERATIONAL←operational · REGULATORY←regulatory |
+| 27 | E | — | COST_OPS, WC_DSO | OPERATIONAL, REGULATORY | COST_OPS←automated · WC_DSO←collection · OPERATIONAL←processes · REGULATORY←compliance |
 | 28 | F | — | COST_OPS | — | COST_OPS←staff |
 | 29 | F | — | COST_OPS | OPERATIONAL | COST_OPS←staff · OPERATIONAL←processes |
 | 30 | F | — | VOLUME, COST_OPS | — | VOLUME←expand · COST_OPS←efficiency |
@@ -62,11 +62,7 @@
 
 Libellés des parties : A Clinical Performance and Quality · B Operational Efficiency and Resource · C Financial Performance and Revenue Management · D Patient Experience and Access · E Regulatory Compliance and Risk Management · F Technology Utilization and Digital Engagement · G Population Health and Care Coordination · H Specialty Services and Market Expansion · I Staffing and Workforce Optimization · J Community Impact and Health Equity.
 
-## Hors vocabulaire
+## Arbitrages
 
-Analyses réglementaires / conformité (02, 04, 07, 10, 15, 17, 19, 25, 26, 27, 30, 40) : aucune cause de base ne les exprime. Candidat : remonter `REGULATORY` (déjà utilisé par aero et airline) dans la base.
-
-## Tes arbitrages attendus
-
-1. Corrige les lignes du mapping qui ne te conviennent pas (le reste sera appliqué tel quel).
-2. `REGULATORY` dans la base : oui / non ?
+1. Corrige les lignes du mapping qui ne te conviennent pas ; le reste est appliqué tel quel
+   (`tsx scripts/apply-curation.ts <archetype>` puis `npm run catalog:build -- <archetype>`).

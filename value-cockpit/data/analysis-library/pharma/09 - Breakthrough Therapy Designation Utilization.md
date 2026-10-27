@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-09
+part: A
+partLabel: Research & Development
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 9 · Breakthrough Therapy Designation Utilization
 

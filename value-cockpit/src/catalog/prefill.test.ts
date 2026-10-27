@@ -55,7 +55,9 @@ describe('suggestMapping (base vocabulary)', () => {
     expect(m.evidence).toContain('PRICING←promotions');
   });
 
-  it('flags regulatory content the base vocabulary cannot express', () => {
+  it('maps regulatory content to the REGULATORY base cause', () => {
+    const r = suggestMapping({ ...parseAnalysis(doc), title: 'FDA Labeling Compliance Review', goal: '' }, getActiveVocabulary('cpg'));
+    expect(r.causes).toContain('REGULATORY');
     expect(m.regulatory).toBe(true);
   });
 

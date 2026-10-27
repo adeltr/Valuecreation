@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/D
+kind: analysis
+id: hospitality-20
+part: D
+partLabel: Operations & Hospitality Services
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 20 · F&B Menu Engineering and Cost Control
 

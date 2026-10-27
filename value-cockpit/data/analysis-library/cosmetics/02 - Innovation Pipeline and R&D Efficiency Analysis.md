@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-02
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 2 · Innovation Pipeline and R&D Efficiency Analysis
 

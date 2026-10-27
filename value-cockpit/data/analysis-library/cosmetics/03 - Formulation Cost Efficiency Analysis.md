@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-03
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 3 · Formulation Cost Efficiency Analysis
 

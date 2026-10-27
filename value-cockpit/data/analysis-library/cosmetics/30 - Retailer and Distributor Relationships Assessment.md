@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/C
+kind: analysis
+id: cosmetics-30
+part: C
+partLabel: Sales and Distribution
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [VOLUME, WC_DIO]
 ---
 # 30 · Retailer and Distributor Relationships Assessment
 

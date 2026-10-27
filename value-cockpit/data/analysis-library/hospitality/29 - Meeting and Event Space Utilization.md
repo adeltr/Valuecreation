@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/G
+kind: analysis
+id: hospitality-29
+part: G
+partLabel: Events & Alternative Offerings
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, COST_OPS]
 ---
 # 29 · Meeting and Event Space Utilization
 

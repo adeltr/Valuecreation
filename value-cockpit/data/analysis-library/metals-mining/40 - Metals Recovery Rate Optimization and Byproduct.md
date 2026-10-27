@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/H
+kind: analysis
+id: metals-mining-40
+part: H
+partLabel: Technology and Innovation
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 40 · Metals Recovery Rate Optimization and Byproduct Management
 

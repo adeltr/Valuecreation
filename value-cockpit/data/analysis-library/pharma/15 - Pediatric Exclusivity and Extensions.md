@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/B
+kind: analysis
+id: pharma-15
+part: B
+partLabel: Regulatory & Compliance
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 15 · Pediatric Exclusivity and Extensions
 

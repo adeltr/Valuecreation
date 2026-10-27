@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-27
+part: C
+partLabel: Operations
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 27 · Regional and Local Market Penetration Analysis
 

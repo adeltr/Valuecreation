@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-34
+part: D
+partLabel: Technology & Cybersecurity
+quant: []
+causes: [REGULATORY, OPERATIONAL, CYBER]
+levers: []
 ---
 # 34 · Cybersecurity Risk and Resilience in Defense Systems
 

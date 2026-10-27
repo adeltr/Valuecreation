@@ -1,0 +1,781 @@
+[
+  {
+    "id": "wine-spirits-01",
+    "archetype": "wine-spirits",
+    "title": "Consumer Preferences and Market Segmentation Analysis",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/01 - Consumer Preferences and Market Segmentation Analysis.md"
+  },
+  {
+    "id": "wine-spirits-02",
+    "archetype": "wine-spirits",
+    "title": "Consumer Demographic Shifts and Emerging Market Potential",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/02 - Consumer Demographic Shifts and Emerging Market Potential.md"
+  },
+  {
+    "id": "wine-spirits-03",
+    "archetype": "wine-spirits",
+    "title": "Regional and Geographic Flavor Profile Adaptation Analysis",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/03 - Regional and Geographic Flavor Profile Adaptation Analysis.md"
+  },
+  {
+    "id": "wine-spirits-04",
+    "archetype": "wine-spirits",
+    "title": "Evolution of Customer Tasting Preferences and Product Line Influence Analysis",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/04 - Evolution of Customer Tasting Preferences and Product Line.md"
+  },
+  {
+    "id": "wine-spirits-05",
+    "archetype": "wine-spirits",
+    "title": "Channel-Specific Sales Performance",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/05 - Channel-Specific Sales Performance.md"
+  },
+  {
+    "id": "wine-spirits-06",
+    "archetype": "wine-spirits",
+    "title": "Seasonal and Event-Driven Demand Forecasting",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/06 - Seasonal and Event-Driven Demand Forecasting.md"
+  },
+  {
+    "id": "wine-spirits-07",
+    "archetype": "wine-spirits",
+    "title": "Digital and E-commerce Penetration and Growth Analysis",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/07 - Digital and E-commerce Penetration and Growth Analysis.md"
+  },
+  {
+    "id": "wine-spirits-08",
+    "archetype": "wine-spirits",
+    "title": "Customer Experience Metrics in Tasting Rooms or Tours",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/08 - Customer Experience Metrics in Tasting Rooms or Tours.md"
+  },
+  {
+    "id": "wine-spirits-09",
+    "archetype": "wine-spirits",
+    "title": "Customer Experience and Engagement at Trade Shows and Festivals",
+    "part": "A",
+    "partLabel": "Market and Consumer Insights",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/09 - Customer Experience and Engagement at Trade Shows and.md"
+  },
+  {
+    "id": "wine-spirits-10",
+    "archetype": "wine-spirits",
+    "title": "Product Portfolio and Brand Equity Analysis",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/10 - Product Portfolio and Brand Equity Analysis.md"
+  },
+  {
+    "id": "wine-spirits-11",
+    "archetype": "wine-spirits",
+    "title": "Competitive Landscape and Market Positioning Evaluation",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/11 - Competitive Landscape and Market Positioning Evaluation.md"
+  },
+  {
+    "id": "wine-spirits-12",
+    "archetype": "wine-spirits",
+    "title": "Premiumization and Upselling Opportunities Assessment",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/12 - Premiumization and Upselling Opportunities Assessment.md"
+  },
+  {
+    "id": "wine-spirits-13",
+    "archetype": "wine-spirits",
+    "title": "Influencer and Peer-Driven Marketing Impact Analysis",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/13 - Influencer and Peer-Driven Marketing Impact Analysis.md"
+  },
+  {
+    "id": "wine-spirits-14",
+    "archetype": "wine-spirits",
+    "title": "Celebrity Endorsement and High-Profile Partnership Impact Assessment",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/14 - Celebrity Endorsement and High-Profile Partnership Impact.md"
+  },
+  {
+    "id": "wine-spirits-15",
+    "archetype": "wine-spirits",
+    "title": "Limited-Edition and Seasonal Product Performance Evaluation",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/15 - Limited-Edition and Seasonal Product Performance.md"
+  },
+  {
+    "id": "wine-spirits-16",
+    "archetype": "wine-spirits",
+    "title": "Craft vs. Mass-Produced Product Positioning Analysis",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/16 - Craft vs. Mass-Produced Product Positioning Analysis.md"
+  },
+  {
+    "id": "wine-spirits-17",
+    "archetype": "wine-spirits",
+    "title": "Cocktail Recipe Inclusion and Cross-Product Pairing Potential",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/17 - Cocktail Recipe Inclusion and Cross-Product Pairing Potential.md"
+  },
+  {
+    "id": "wine-spirits-18",
+    "archetype": "wine-spirits",
+    "title": "Local and Global Competitions and Awards Impact on Brand Perception",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/18 - Local and Global Competitions and Awards Impact on Brand.md"
+  },
+  {
+    "id": "wine-spirits-19",
+    "archetype": "wine-spirits",
+    "title": "Retail Shelf Placement and Visibility Optimization",
+    "part": "B",
+    "partLabel": "Brand Positioning and Marketing Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/19 - Retail Shelf Placement and Visibility Optimization.md"
+  },
+  {
+    "id": "wine-spirits-20",
+    "archetype": "wine-spirits",
+    "title": "Innovation Pipeline and Product Development Cycle Review",
+    "part": "C",
+    "partLabel": "Product Innovation and Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/20 - Innovation Pipeline and Product Development Cycle Review.md"
+  },
+  {
+    "id": "wine-spirits-21",
+    "archetype": "wine-spirits",
+    "title": "Flavor Innovation and Experimentation Impact Analysis",
+    "part": "C",
+    "partLabel": "Product Innovation and Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/21 - Flavor Innovation and Experimentation Impact Analysis.md"
+  },
+  {
+    "id": "wine-spirits-22",
+    "archetype": "wine-spirits",
+    "title": "Emerging Alcohol-Free and Low-ABV Product Trend Analysis",
+    "part": "C",
+    "partLabel": "Product Innovation and Development",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/22 - Emerging Alcohol-Free and Low-ABV Product Trend Analysis.md"
+  },
+  {
+    "id": "wine-spirits-23",
+    "archetype": "wine-spirits",
+    "title": "Barrel Aging Process Optimization and Impact Assessment",
+    "part": "C",
+    "partLabel": "Product Innovation and Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/23 - Barrel Aging Process Optimization and Impact Assessment.md"
+  },
+  {
+    "id": "wine-spirits-24",
+    "archetype": "wine-spirits",
+    "title": "Vintage Variation Impact on Brand and Pricing Strategy",
+    "part": "C",
+    "partLabel": "Product Innovation and Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/24 - Vintage Variation Impact on Brand and Pricing Strategy.md"
+  },
+  {
+    "id": "wine-spirits-25",
+    "archetype": "wine-spirits",
+    "title": "In-House vs. Outsourced Production Feasibility Study",
+    "part": "C",
+    "partLabel": "Product Innovation and Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/25 - In-House vs. Outsourced Production Feasibility Study.md"
+  },
+  {
+    "id": "wine-spirits-26",
+    "archetype": "wine-spirits",
+    "title": "Supply Chain and Raw Material Sourcing Stability Analysis",
+    "part": "D",
+    "partLabel": "Supply Chain and Sourcing Stability",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/26 - Supply Chain and Raw Material Sourcing Stability Analysis.md"
+  },
+  {
+    "id": "wine-spirits-27",
+    "archetype": "wine-spirits",
+    "title": "Distributor Relationship Health and Dependency Risk Assessment",
+    "part": "D",
+    "partLabel": "Supply Chain and Sourcing Stability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/27 - Distributor Relationship Health and Dependency Risk.md"
+  },
+  {
+    "id": "wine-spirits-28",
+    "archetype": "wine-spirits",
+    "title": "Oak Barrel Sourcing and Quality Impact Analysis",
+    "part": "D",
+    "partLabel": "Supply Chain and Sourcing Stability",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/28 - Oak Barrel Sourcing and Quality Impact Analysis.md"
+  },
+  {
+    "id": "wine-spirits-29",
+    "archetype": "wine-spirits",
+    "title": "Harvest Yield Forecasting and Its Impact on Production Planning",
+    "part": "D",
+    "partLabel": "Supply Chain and Sourcing Stability",
+    "relatedMetricCodes": [
+      "COGS",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/29 - Harvest Yield Forecasting and Its Impact on Production.md"
+  },
+  {
+    "id": "wine-spirits-30",
+    "archetype": "wine-spirits",
+    "title": "Microclimate Effects on Crop Quality and Product Consistency",
+    "part": "D",
+    "partLabel": "Supply Chain and Sourcing Stability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/30 - Microclimate Effects on Crop Quality and Product Consistency.md"
+  },
+  {
+    "id": "wine-spirits-31",
+    "archetype": "wine-spirits",
+    "title": "Climate Change Impact on Vineyard-Yield Stability",
+    "part": "D",
+    "partLabel": "Supply Chain and Sourcing Stability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/31 - Climate Change Impact on Vineyard-Yield Stability.md"
+  },
+  {
+    "id": "wine-spirits-32",
+    "archetype": "wine-spirits",
+    "title": "Production Facility Efficiency and Scalability Assessment",
+    "part": "E",
+    "partLabel": "Production and Quality Control",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/32 - Production Facility Efficiency and Scalability Assessment.md"
+  },
+  {
+    "id": "wine-spirits-33",
+    "archetype": "wine-spirits",
+    "title": "Bottling Process Efficiency and Contamination Risk Assessment",
+    "part": "E",
+    "partLabel": "Production and Quality Control",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/33 - Bottling Process Efficiency and Contamination Risk.md"
+  },
+  {
+    "id": "wine-spirits-34",
+    "archetype": "wine-spirits",
+    "title": "Aging and Storage Cost Analysis for Premium Inventory",
+    "part": "E",
+    "partLabel": "Production and Quality Control",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/34 - Aging and Storage Cost Analysis for Premium Inventory.md"
+  },
+  {
+    "id": "wine-spirits-35",
+    "archetype": "wine-spirits",
+    "title": "Tasting Panel and Sensory Quality Consistency Evaluation",
+    "part": "E",
+    "partLabel": "Production and Quality Control",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/35 - Tasting Panel and Sensory Quality Consistency Evaluation.md"
+  },
+  {
+    "id": "wine-spirits-36",
+    "archetype": "wine-spirits",
+    "title": "Product Recall and Quality Assurance Risk Assessment",
+    "part": "E",
+    "partLabel": "Production and Quality Control",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/36 - Product Recall and Quality Assurance Risk Assessment.md"
+  },
+  {
+    "id": "wine-spirits-37",
+    "archetype": "wine-spirits",
+    "title": "Regulatory Compliance and Impact Analysis",
+    "part": "F",
+    "partLabel": "Regulatory and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/37 - Regulatory Compliance and Impact Analysis.md"
+  },
+  {
+    "id": "wine-spirits-38",
+    "archetype": "wine-spirits",
+    "title": "Alcohol Content Regulation and Compliance Analysis",
+    "part": "F",
+    "partLabel": "Regulatory and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/38 - Alcohol Content Regulation and Compliance Analysis.md"
+  },
+  {
+    "id": "wine-spirits-39",
+    "archetype": "wine-spirits",
+    "title": "Brand and Label Compliance with Regional and International Standards",
+    "part": "F",
+    "partLabel": "Regulatory and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/39 - Brand and Label Compliance with Regional and International.md"
+  },
+  {
+    "id": "wine-spirits-40",
+    "archetype": "wine-spirits",
+    "title": "Taxation, Tariffs, and Excise Duty Impacts on Cost and Pricing Strategy",
+    "part": "F",
+    "partLabel": "Regulatory and Compliance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/40 - Taxation, Tariffs, and Excise Duty Impacts on Cost and Pricing.md"
+  },
+  {
+    "id": "wine-spirits-41",
+    "archetype": "wine-spirits",
+    "title": "Pricing and Margin Optimization by Product and Geography",
+    "part": "G",
+    "partLabel": "Financial and Revenue Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/41 - Pricing and Margin Optimization by Product and Geography.md"
+  },
+  {
+    "id": "wine-spirits-42",
+    "archetype": "wine-spirits",
+    "title": "Direct-to-Consumer Sales Strategy and Winery-Tasting Room Revenue Potential",
+    "part": "G",
+    "partLabel": "Financial and Revenue Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/42 - Direct-to-Consumer Sales Strategy and Winery-Tasting Room.md"
+  },
+  {
+    "id": "wine-spirits-43",
+    "archetype": "wine-spirits",
+    "title": "Marketing Spend Efficiency and Return on Investment",
+    "part": "G",
+    "partLabel": "Financial and Revenue Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/43 - Marketing Spend Efficiency and Return on Investment.md"
+  },
+  {
+    "id": "wine-spirits-44",
+    "archetype": "wine-spirits",
+    "title": "Route-to-Market and Distribution Channel Effectiveness Analysis",
+    "part": "G",
+    "partLabel": "Financial and Revenue Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/44 - Route-to-Market and Distribution Channel Effectiveness.md"
+  },
+  {
+    "id": "wine-spirits-45",
+    "archetype": "wine-spirits",
+    "title": "Specialty Packaging and Bottle Design Impact on Sales",
+    "part": "G",
+    "partLabel": "Financial and Revenue Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/45 - Specialty Packaging and Bottle Design Impact on Sales.md"
+  },
+  {
+    "id": "wine-spirits-46",
+    "archetype": "wine-spirits",
+    "title": "Customer Loyalty and Retention Metrics Analysis",
+    "part": "G",
+    "partLabel": "Financial and Revenue Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/46 - Customer Loyalty and Retention Metrics Analysis.md"
+  },
+  {
+    "id": "wine-spirits-47",
+    "archetype": "wine-spirits",
+    "title": "Sustainability Practices and Environmental Impact Analysis",
+    "part": "H",
+    "partLabel": "Sustainability and Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/wine-spirits/47 - Sustainability Practices and Environmental Impact Analysis.md"
+  },
+  {
+    "id": "wine-spirits-48",
+    "archetype": "wine-spirits",
+    "title": "Terroir and Regional Origin Impact on Brand Perception Analysis",
+    "part": "H",
+    "partLabel": "Sustainability and Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/wine-spirits/48 - Terroir and Regional Origin Impact on Brand Perception.md"
+  }
+]

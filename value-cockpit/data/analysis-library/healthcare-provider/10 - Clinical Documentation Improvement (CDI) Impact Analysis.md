@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/B
+kind: analysis
+id: healthcare-provider-10
+part: B
+partLabel: Operational Efficiency and Resource
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 10 · Clinical Documentation Improvement (CDI) Impact Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-01
+part: A
+partLabel: Finance & Revenue
+quant: [EBITDA_MARGIN, COGS]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 1 · Cost of Goods Sold (COGS) Analysis
 

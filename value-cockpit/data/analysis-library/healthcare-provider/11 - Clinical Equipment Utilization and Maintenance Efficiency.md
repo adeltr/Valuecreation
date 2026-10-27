@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/B
+kind: analysis
+id: healthcare-provider-11
+part: B
+partLabel: Operational Efficiency and Resource
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 11 · Clinical Equipment Utilization and Maintenance Efficiency Study
 

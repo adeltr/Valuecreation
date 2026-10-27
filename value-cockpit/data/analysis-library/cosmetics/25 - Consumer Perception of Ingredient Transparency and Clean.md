@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-25
+part: B
+partLabel: Marketing and Consumer Insights
+quant: []
+causes: [COMMERCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 25 · Consumer Perception of Ingredient Transparency and Clean Labeling
 

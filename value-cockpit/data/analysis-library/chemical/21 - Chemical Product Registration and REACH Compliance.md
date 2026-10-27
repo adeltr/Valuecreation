@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-21
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 21 · Chemical Product Registration and REACH Compliance
 

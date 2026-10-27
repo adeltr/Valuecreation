@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-11
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 11 · Global Format Licensing & Adaptation Strategy
 

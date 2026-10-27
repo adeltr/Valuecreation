@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/E
+kind: analysis
+id: medical-device-32
+part: E
+partLabel: Operations & Supply Chain
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 32 · Environmental Monitoring and Control Strategy in Manufacturing
 

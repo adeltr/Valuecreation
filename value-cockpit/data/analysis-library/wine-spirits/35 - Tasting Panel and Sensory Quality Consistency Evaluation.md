@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/E
+kind: analysis
+id: wine-spirits-35
+part: E
+partLabel: Production and Quality Control
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 35 · Tasting Panel and Sensory Quality Consistency Evaluation
 

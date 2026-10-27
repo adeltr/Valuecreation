@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/B
+kind: analysis
+id: chemical-11
+part: B
+partLabel: Finance
+quant: [REVENUE_GROWTH, DIO]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_PROCUREMENT, WC_DSO, WC_DIO]
 ---
 # 11 · Supply Chain, Inventory, and Working Capital Efficiency Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-12
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME]
 ---
 # 12 · Piracy Risk & Content Protection Strategies
 

@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/C
+kind: analysis
+id: third-party-logistics-16
+part: C
+partLabel: Technology & Systems
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 16 · Advanced Systems Integration & EDI Capabilities Assessment
 

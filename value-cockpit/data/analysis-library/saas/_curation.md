@@ -6,7 +6,7 @@
 > La colonne « indices » donne le mot qui a déclenché chaque proposition. Rien n'est
 > appliqué aux fichiers avant ta validation ; aucun terme n'est ajouté au vocabulaire.
 
-35 analyses · 1 sans métrique ni levier (qualitatives) · 0 à contenu réglementaire.
+35 analyses · 1 sans métrique ni levier (qualitatives) · 0 à contenu réglementaire (cause REGULATORY).
 
 ## Mapping proposé
 
@@ -50,11 +50,7 @@
 
 Libellés des parties : A Finance & Revenue · B Sales & Marketing · C Customer Retention & Success · D Product & Engagement.
 
-## Hors vocabulaire
+## Arbitrages
 
-Aucune analyse réglementaire détectée.
-
-## Tes arbitrages attendus
-
-1. Corrige les lignes du mapping qui ne te conviennent pas (le reste sera appliqué tel quel).
-2. `REGULATORY` dans la base : oui / non ?
+1. Corrige les lignes du mapping qui ne te conviennent pas ; le reste est appliqué tel quel
+   (`tsx scripts/apply-curation.ts <archetype>` puis `npm run catalog:build -- <archetype>`).

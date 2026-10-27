@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/D
+kind: analysis
+id: medical-device-27
+part: D
+partLabel: Product Development & Lifecycle
+quant: []
+causes: []
+levers: []
 ---
 # 27 · Packaging Validation and Shelf-Life Testing
 

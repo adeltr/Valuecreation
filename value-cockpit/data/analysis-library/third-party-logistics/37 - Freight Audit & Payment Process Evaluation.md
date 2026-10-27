@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/H
+kind: analysis
+id: third-party-logistics-37
+part: H
+partLabel: Cost Optimization & Efficiency
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 37 · Freight Audit & Payment Process Evaluation
 

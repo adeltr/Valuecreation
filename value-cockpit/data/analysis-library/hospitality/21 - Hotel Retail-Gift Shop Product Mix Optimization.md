@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/D
+kind: analysis
+id: hospitality-21
+part: D
+partLabel: Operations & Hospitality Services
+quant: [EBITDA_MARGIN, DIO]
+causes: [FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 21 · Hotel Retail-Gift Shop Product Mix Optimization
 

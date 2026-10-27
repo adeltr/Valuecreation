@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/A
+kind: analysis
+id: medical-device-06
+part: A
+partLabel: Regulatory & Compliance
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS]
 ---
 # 6 · EU MDR-IVDR Compliance Gap Analysis
 

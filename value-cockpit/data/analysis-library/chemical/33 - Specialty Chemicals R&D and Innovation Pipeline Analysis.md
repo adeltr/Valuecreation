@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/F
+kind: analysis
+id: chemical-33
+part: F
+partLabel: Research & Development (R&D)
+quant: []
+causes: [MARKET]
+levers: []
 ---
 # 33 · Specialty Chemicals R&D and Innovation Pipeline Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/F
+kind: analysis
+id: manufacturing-44
+part: F
+partLabel: Environmental and Sustainability
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 44 · Reverse Logistics and Product Lifecycle Management
 

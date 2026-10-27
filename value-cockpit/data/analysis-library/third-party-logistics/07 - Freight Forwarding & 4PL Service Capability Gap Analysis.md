@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-07
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME]
 ---
 # 7 · Freight Forwarding & 4PL Service Capability Gap Analysis
 

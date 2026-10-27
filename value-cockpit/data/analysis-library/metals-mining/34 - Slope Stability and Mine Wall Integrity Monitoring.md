@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/F
+kind: analysis
+id: metals-mining-34
+part: F
+partLabel: Infrastructure and Logistics
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 34 · Slope Stability and Mine Wall Integrity Monitoring
 

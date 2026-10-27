@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/D
+kind: analysis
+id: healthcare-provider-20
+part: D
+partLabel: Patient Experience and Access
+quant: []
+causes: []
+levers: [COST_OPS]
 ---
 # 20 · Patient Experience and Satisfaction Analysis
 

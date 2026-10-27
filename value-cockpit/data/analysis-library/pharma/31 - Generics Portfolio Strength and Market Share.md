@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/E
+kind: analysis
+id: pharma-31
+part: E
+partLabel: Licensing & Partnerships
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [FINANCIAL, MARKET]
+levers: [VOLUME, MIX, COST_OPS]
 ---
 # 31 · Generics Portfolio Strength and Market Share
 

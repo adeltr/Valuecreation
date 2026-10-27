@@ -1,0 +1,629 @@
+[
+  {
+    "id": "saas-01",
+    "archetype": "saas",
+    "title": "Cost of Goods Sold (COGS) Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/01 - Cost of Goods Sold (COGS) Analysis.md"
+  },
+  {
+    "id": "saas-02",
+    "archetype": "saas",
+    "title": "Monthly Recurring Revenue (MRR) Growth Rate",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "ARR"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/02 - Monthly Recurring Revenue (MRR) Growth Rate.md"
+  },
+  {
+    "id": "saas-03",
+    "archetype": "saas",
+    "title": "Annual Contract Value (ACV) Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/03 - Annual Contract Value (ACV) Analysis.md"
+  },
+  {
+    "id": "saas-04",
+    "archetype": "saas",
+    "title": "Average Revenue Per User (ARPU) Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "EXPANSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/04 - Average Revenue Per User (ARPU) Analysis.md"
+  },
+  {
+    "id": "saas-05",
+    "archetype": "saas",
+    "title": "Deferred Revenue Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/05 - Deferred Revenue Analysis.md"
+  },
+  {
+    "id": "saas-06",
+    "archetype": "saas",
+    "title": "Expansion Revenue Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "EXPANSION_RATE",
+      "LTV"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/06 - Expansion Revenue Analysis.md"
+  },
+  {
+    "id": "saas-07",
+    "archetype": "saas",
+    "title": "Revenue Backlog",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/07 - Revenue Backlog.md"
+  },
+  {
+    "id": "saas-08",
+    "archetype": "saas",
+    "title": "Revenue Concentration",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/saas/08 - Revenue Concentration.md"
+  },
+  {
+    "id": "saas-09",
+    "archetype": "saas",
+    "title": "Revenue Forecasting Accuracy",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DSO",
+      "RETENTION",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/09 - Revenue Forecasting Accuracy.md"
+  },
+  {
+    "id": "saas-10",
+    "archetype": "saas",
+    "title": "Discount Rate Impact",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/saas/10 - Discount Rate Impact.md"
+  },
+  {
+    "id": "saas-11",
+    "archetype": "saas",
+    "title": "Revenue per Employee Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/11 - Revenue per Employee Analysis.md"
+  },
+  {
+    "id": "saas-12",
+    "archetype": "saas",
+    "title": "Freemium to Paid Conversion Rate Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RETENTION",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/12 - Freemium to Paid Conversion Rate Analysis.md"
+  },
+  {
+    "id": "saas-13",
+    "archetype": "saas",
+    "title": "Lead-to-Customer Conversion Rate Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/13 - Lead-to-Customer Conversion Rate Analysis.md"
+  },
+  {
+    "id": "saas-14",
+    "archetype": "saas",
+    "title": "Customer Acquisition Cost (CAC) Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CAC"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/14 - Customer Acquisition Cost (CAC) Analysis.md"
+  },
+  {
+    "id": "saas-15",
+    "archetype": "saas",
+    "title": "Sales Cycle Length Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/15 - Sales Cycle Length Analysis.md"
+  },
+  {
+    "id": "saas-16",
+    "archetype": "saas",
+    "title": "Sales Efficiency Ratio",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/16 - Sales Efficiency Ratio.md"
+  },
+  {
+    "id": "saas-17",
+    "archetype": "saas",
+    "title": "Payback Period on Customer Acquisition Cost (CAC)",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CAC"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RETENTION",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/17 - Payback Period on Customer Acquisition Cost (CAC).md"
+  },
+  {
+    "id": "saas-18",
+    "archetype": "saas",
+    "title": "Engagement-to-Subscription Rate",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/saas/18 - Engagement-to-Subscription Rate.md"
+  },
+  {
+    "id": "saas-19",
+    "archetype": "saas",
+    "title": "Partner Ecosystem Contribution",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/19 - Partner Ecosystem Contribution.md"
+  },
+  {
+    "id": "saas-20",
+    "archetype": "saas",
+    "title": "Customer Segmentation Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/20 - Customer Segmentation Analysis.md"
+  },
+  {
+    "id": "saas-21",
+    "archetype": "saas",
+    "title": "Contract Renewal Rate Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/21 - Contract Renewal Rate Analysis.md"
+  },
+  {
+    "id": "saas-22",
+    "archetype": "saas",
+    "title": "Net Revenue Retention (NRR) Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "GROSS_CHURN",
+      "NRR",
+      "EXPANSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/22 - Net Revenue Retention (NRR) Analysis.md"
+  },
+  {
+    "id": "saas-23",
+    "archetype": "saas",
+    "title": "Churn Rate Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/23 - Churn Rate Analysis.md"
+  },
+  {
+    "id": "saas-24",
+    "archetype": "saas",
+    "title": "Customer Lifetime Value (CLV) Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CAC",
+      "LTV"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/24 - Customer Lifetime Value (CLV) Analysis.md"
+  },
+  {
+    "id": "saas-25",
+    "archetype": "saas",
+    "title": "First Contact Resolution (FCR) Rate",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/saas/25 - First Contact Resolution (FCR) Rate.md"
+  },
+  {
+    "id": "saas-26",
+    "archetype": "saas",
+    "title": "Customer Advocacy or Net Promoter Score (NPS)",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/saas/26 - Customer Advocacy or Net Promoter Score (NPS).md"
+  },
+  {
+    "id": "saas-27",
+    "archetype": "saas",
+    "title": "Customer Success Team Efficiency",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/27 - Customer Success Team Efficiency.md"
+  },
+  {
+    "id": "saas-28",
+    "archetype": "saas",
+    "title": "Customer Support Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/28 - Customer Support Efficiency Analysis.md"
+  },
+  {
+    "id": "saas-29",
+    "archetype": "saas",
+    "title": "Platform and Ecosystem Integration Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/saas/29 - Platform and Ecosystem Integration Analysis.md"
+  },
+  {
+    "id": "saas-30",
+    "archetype": "saas",
+    "title": "Time to First Value Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/30 - Time to First Value Analysis.md"
+  },
+  {
+    "id": "saas-31",
+    "archetype": "saas",
+    "title": "User Onboarding Efficiency",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/31 - User Onboarding Efficiency.md"
+  },
+  {
+    "id": "saas-32",
+    "archetype": "saas",
+    "title": "Product Usage by Tier or Plan",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "EXPANSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/32 - Product Usage by Tier or Plan.md"
+  },
+  {
+    "id": "saas-33",
+    "archetype": "saas",
+    "title": "Usage and Engagement Metrics Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/33 - Usage and Engagement Metrics Analysis.md"
+  },
+  {
+    "id": "saas-34",
+    "archetype": "saas",
+    "title": "Product Stickiness and Retention Rate Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/34 - Product Stickiness and Retention Rate Analysis.md"
+  },
+  {
+    "id": "saas-35",
+    "archetype": "saas",
+    "title": "Time to Value (TTV) for Customers",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/35 - Time to Value (TTV) for Customers.md"
+  }
+]

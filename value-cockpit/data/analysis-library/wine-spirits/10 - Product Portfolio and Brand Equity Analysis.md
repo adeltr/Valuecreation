@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/B
+kind: analysis
+id: wine-spirits-10
+part: B
+partLabel: Brand Positioning and Marketing Strategy
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [MIX]
 ---
 # 10 · Product Portfolio and Brand Equity Analysis
 

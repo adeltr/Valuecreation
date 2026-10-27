@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-24
+part: C
+partLabel: Customer Retention & Success
+quant: [REVENUE_GROWTH, CAC, LTV]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, RETENTION, EXPANSION]
 ---
 # 24 · Customer Lifetime Value (CLV) Analysis
 

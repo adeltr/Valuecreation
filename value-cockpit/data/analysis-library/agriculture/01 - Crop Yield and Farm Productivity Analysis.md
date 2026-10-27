@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-01
+part: A
+partLabel: Crop Management & Soil Health
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 1 · Crop Yield and Farm Productivity Analysis
 

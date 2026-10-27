@@ -2,6 +2,13 @@
 tags:
   - media
   - part/B
+kind: analysis
+id: media-09
+part: B
+partLabel: Rights, Licensing & Distribution
+quant: []
+causes: []
+levers: [VOLUME, COST_OPS]
 ---
 # 9 · Digital Rights & Royalties Management
 

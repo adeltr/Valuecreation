@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/B
+kind: analysis
+id: waste-management-12
+part: B
+partLabel: Recycling & Materials Recovery
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 12 · Resource Recovery Park Master Planning and Integrated Facility Design
 

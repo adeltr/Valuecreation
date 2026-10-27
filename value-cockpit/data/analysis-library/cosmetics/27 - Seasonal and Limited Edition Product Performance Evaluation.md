@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-27
+part: B
+partLabel: Marketing and Consumer Insights
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 27 · Seasonal and Limited Edition Product Performance Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/C
+kind: analysis
+id: agriculture-24
+part: C
+partLabel: Environmental Sustainability & Resource
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [VOLUME]
 ---
 # 24 · Nutrient Runoff Compliance and Watershed Protection Review
 

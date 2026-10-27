@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/C
+kind: analysis
+id: third-party-logistics-19
+part: C
+partLabel: Technology & Systems
+quant: []
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 19 · Digital Freight Matching & Marketplace Integration Assessment
 

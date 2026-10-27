@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/G
+kind: analysis
+id: healthcare-provider-34
+part: G
+partLabel: Population Health and Care Coordination
+quant: []
+causes: [OPERATIONAL, ORGANIZATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 34 · Physician Alignment and Engagement Strategy Assessment
 

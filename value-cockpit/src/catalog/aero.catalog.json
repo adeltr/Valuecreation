@@ -1,1 +1,764 @@
-[]
+[
+  {
+    "id": "aero-01",
+    "archetype": "aero",
+    "title": "Defense Contracting Portfolio Analysis",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "FIXED_PRICE_SHARE",
+      "COST_OVERRUN_RATE",
+      "ON_TIME_DELIVERY",
+      "WIN_RATE",
+      "TOP5_CONTRACT_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM",
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CONTRACT_MIX",
+      "COMMERCIAL_PIPELINE",
+      "PROGRAM_EXECUTION"
+    ],
+    "sourcePath": "data/analysis-library/aero/01 - Defense Contracting Portfolio Analysis.md"
+  },
+  {
+    "id": "aero-02",
+    "archetype": "aero",
+    "title": "Global Geopolitical Risk Exposure and Strategic Alignment",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "GEOPOLITICAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/02 - Global Geopolitical Risk Exposure and Strategic Alignment.md"
+  },
+  {
+    "id": "aero-03",
+    "archetype": "aero",
+    "title": "International Defense Sales and Foreign Military Sales (FMS) Performance",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "ON_TIME_DELIVERY",
+      "COST_OVERRUN_RATE",
+      "WIN_RATE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "EXPORT_FMS",
+      "PROGRAM_EXECUTION"
+    ],
+    "sourcePath": "data/analysis-library/aero/03 - International Defense Sales and Foreign Military Sales (FMS) Performance.md"
+  },
+  {
+    "id": "aero-04",
+    "archetype": "aero",
+    "title": "Defense Industry Consolidation and Merger Synergies",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "REVENUE",
+      "EBITDA_MARGIN",
+      "OPEX"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/aero/04 - Defense Industry Consolidation and Merger Synergies.md"
+  },
+  {
+    "id": "aero-05",
+    "archetype": "aero",
+    "title": "Defense Export Financing and Risk Mitigation Strategies",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "GEOPOLITICAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_MILESTONES",
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/05 - Defense Export Financing and Risk Mitigation Strategies.md"
+  },
+  {
+    "id": "aero-06",
+    "archetype": "aero",
+    "title": "Global Defense Technology Export Strategy",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/06 - Global Defense Technology Export Strategy.md"
+  },
+  {
+    "id": "aero-07",
+    "archetype": "aero",
+    "title": "Air and Missile Defense Program Effectiveness and Global Demand",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "COMMERCIAL_PIPELINE",
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/07 - Air and Missile Defense Program Effectiveness and Global Demand.md"
+  },
+  {
+    "id": "aero-08",
+    "archetype": "aero",
+    "title": "International Sanctions Risk and Compliance in Defense Trade",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/08 - International Sanctions Risk and Compliance in Defense Trade.md"
+  },
+  {
+    "id": "aero-09",
+    "archetype": "aero",
+    "title": "Military and Civilian Aircraft Manufacturing Capacity Assessment",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "FACILITY_UTILIZATION"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "CAPACITY_UTILIZATION",
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/09 - Military and Civilian Aircraft Manufacturing Capacity Assessment.md"
+  },
+  {
+    "id": "aero-10",
+    "archetype": "aero",
+    "title": "Supply Chain Security and Export Control Compliance",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/10 - Supply Chain Security and Export Control Compliance.md"
+  },
+  {
+    "id": "aero-11",
+    "archetype": "aero",
+    "title": "Defense Logistics and Maintenance, Repair, Overhaul (MRO) Capabilities",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "MRO_CYCLE_DAYS",
+      "OPERATIONAL_AVAILABILITY",
+      "SPARE_PARTS_AVAILABILITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MRO_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/aero/11 - Defense Logistics and Maintenance, Repair, Overhaul (MRO) Capabilities.md"
+  },
+  {
+    "id": "aero-12",
+    "archetype": "aero",
+    "title": "Vertical Integration of Defense Manufacturing and Supply Chain Control",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "COGS",
+      "ON_TIME_DELIVERY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "SUPPLY_CHAIN_CONTROL",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/aero/12 - Vertical Integration of Defense Manufacturing and Supply Chain Control.md"
+  },
+  {
+    "id": "aero-13",
+    "archetype": "aero",
+    "title": "Defense Contractor Vetting Analysis",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "ON_TIME_DELIVERY"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/13 - Defense Contractor Vetting Analysis.md"
+  },
+  {
+    "id": "aero-14",
+    "archetype": "aero",
+    "title": "Environmental and Sustainability Compliance in Defense Manufacturing",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/14 - Environmental and Sustainability Compliance in Defense Manufacturing.md"
+  },
+  {
+    "id": "aero-15",
+    "archetype": "aero",
+    "title": "Government Contract Compliance and Audit Readiness",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/15 - Government Contract Compliance and Audit Readiness.md"
+  },
+  {
+    "id": "aero-16",
+    "archetype": "aero",
+    "title": "Offset Obligations and Industrial Participation Strategy",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "OFFSET_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/aero/16 - Offset Obligations and Industrial Participation Strategy.md"
+  },
+  {
+    "id": "aero-17",
+    "archetype": "aero",
+    "title": "Research & Development in Defense Technologies",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/17 - Research & Development in Defense Technologies.md"
+  },
+  {
+    "id": "aero-18",
+    "archetype": "aero",
+    "title": "Emerging Threats and Defense Technology Innovation Pipeline",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/18 - Emerging Threats and Defense Technology Innovation Pipeline.md"
+  },
+  {
+    "id": "aero-19",
+    "archetype": "aero",
+    "title": "Unmanned Systems and Autonomous Defense Technologies Development",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/19 - Unmanned Systems and Autonomous Defense Technologies Development.md"
+  },
+  {
+    "id": "aero-20",
+    "archetype": "aero",
+    "title": "Hypersonic Weapons Development and Competitiveness",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/20 - Hypersonic Weapons Development and Competitiveness.md"
+  },
+  {
+    "id": "aero-21",
+    "archetype": "aero",
+    "title": "Next-Generation Fighter Jet Program Development",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/21 - Next-Generation Fighter Jet Program Development.md"
+  },
+  {
+    "id": "aero-22",
+    "archetype": "aero",
+    "title": "Advanced Materials and Additive Manufacturing Adoption in Defense Platforms",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/22 - Advanced Materials and Additive Manufacturing Adoption in Defense Platforms.md"
+  },
+  {
+    "id": "aero-23",
+    "archetype": "aero",
+    "title": "Advanced Avionics and Electronic Systems Development",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/23 - Advanced Avionics and Electronic Systems Development.md"
+  },
+  {
+    "id": "aero-24",
+    "archetype": "aero",
+    "title": "Advanced Sensor and Electronic Warfare Systems Integration",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/24 - Advanced Sensor and Electronic Warfare Systems Integration.md"
+  },
+  {
+    "id": "aero-25",
+    "archetype": "aero",
+    "title": "Artificial Intelligence and Machine Learning in Defense Operations",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/25 - Artificial Intelligence and Machine Learning in Defense Operations.md"
+  },
+  {
+    "id": "aero-26",
+    "archetype": "aero",
+    "title": "Tactical and Strategic Weapons Systems Innovation Capability",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/26 - Tactical and Strategic Weapons Systems Innovation Capability.md"
+  },
+  {
+    "id": "aero-27",
+    "archetype": "aero",
+    "title": "Nuclear Deterrence and Strategic Defense Systems",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/27 - Nuclear Deterrence and Strategic Defense Systems.md"
+  },
+  {
+    "id": "aero-28",
+    "archetype": "aero",
+    "title": "Missile Defense and Strategic Deterrence Program Assessment",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/28 - Missile Defense and Strategic Deterrence Program Assessment.md"
+  },
+  {
+    "id": "aero-29",
+    "archetype": "aero",
+    "title": "Space Systems Development and Launch Capabilities",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/29 - Space Systems Development and Launch Capabilities.md"
+  },
+  {
+    "id": "aero-30",
+    "archetype": "aero",
+    "title": "Space Domain Awareness and Defense Satellite Programs",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/30 - Space Domain Awareness and Defense Satellite Programs.md"
+  },
+  {
+    "id": "aero-31",
+    "archetype": "aero",
+    "title": "Space Warfare Capabilities and Investment in Defensive Systems",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/31 - Space Warfare Capabilities and Investment in Defensive Systems.md"
+  },
+  {
+    "id": "aero-32",
+    "archetype": "aero",
+    "title": "Defense Electronics and Communications Systems for Battlefield Integration",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/32 - Defense Electronics and Communications Systems for Battlefield Integration.md"
+  },
+  {
+    "id": "aero-33",
+    "archetype": "aero",
+    "title": "Classified and Sensitive Information Management Compliance",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "CYBER"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/33 - Classified and Sensitive Information Management Compliance.md"
+  },
+  {
+    "id": "aero-34",
+    "archetype": "aero",
+    "title": "Cybersecurity Risk and Resilience in Defense Systems",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "OPERATIONAL",
+      "CYBER"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/34 - Cybersecurity Risk and Resilience in Defense Systems.md"
+  },
+  {
+    "id": "aero-35",
+    "archetype": "aero",
+    "title": "Defense Cybersecurity Standards Compliance",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "CYBER"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/35 - Defense Cybersecurity Standards Compliance.md"
+  },
+  {
+    "id": "aero-36",
+    "archetype": "aero",
+    "title": "Defense Budget Dependency and Risk Assessment",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "TOP5_CONTRACT_SHARE",
+      "DEFENSE_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "COMMERCIAL_PIPELINE"
+    ],
+    "sourcePath": "data/analysis-library/aero/36 - Defense Budget Dependency and Risk Assessment.md"
+  },
+  {
+    "id": "aero-37",
+    "archetype": "aero",
+    "title": "Weapons Systems Lifecycle and Sustainment Cost Analysis",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "FIXED_PRICE_SHARE",
+      "COST_OVERRUN_RATE",
+      "SUSTAINMENT_COST"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM"
+    ],
+    "relatedLeverCategories": [
+      "MRO_EFFICIENCY",
+      "CONTRACT_MIX"
+    ],
+    "sourcePath": "data/analysis-library/aero/37 - Weapons Systems Lifecycle and Sustainment Cost Analysis.md"
+  },
+  {
+    "id": "aero-38",
+    "archetype": "aero",
+    "title": "Defense Procurement Process Efficiency and Contract Win Rate",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "WIN_RATE",
+      "FIXED_PRICE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COMMERCIAL_PIPELINE",
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/aero/38 - Defense Procurement Process Efficiency and Contract Win Rate.md"
+  },
+  {
+    "id": "aero-39",
+    "archetype": "aero",
+    "title": "Advanced Munitions and Precision-Guided Weapons Development",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "COST_OVERRUN_RATE"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "CAPACITY_UTILIZATION"
+    ],
+    "sourcePath": "data/analysis-library/aero/39 - Advanced Munitions and Precision-Guided Weapons Development.md"
+  },
+  {
+    "id": "aero-40",
+    "archetype": "aero",
+    "title": "Defense Program Delays and Cost Overrun Analysis",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "COST_OVERRUN_RATE",
+      "ON_TIME_DELIVERY",
+      "FIXED_PRICE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM"
+    ],
+    "relatedLeverCategories": [
+      "PROGRAM_EXECUTION",
+      "CONTRACT_MIX",
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/40 - Defense Program Delays and Cost Overrun Analysis.md"
+  },
+  {
+    "id": "aero-41",
+    "archetype": "aero",
+    "title": "Classified Program Revenue Contribution and Risk",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "CLASSIFIED_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/41 - Classified Program Revenue Contribution and Risk.md"
+  },
+  {
+    "id": "aero-42",
+    "archetype": "aero",
+    "title": "Intellectual Property and Technology Transfer Agreements",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/42 - Intellectual Property and Technology Transfer Agreements.md"
+  },
+  {
+    "id": "aero-43",
+    "archetype": "aero",
+    "title": "Workforce Expertise in Classified and Technical Defense Programs",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "WORKFORCE_TURNOVER"
+    ],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/43 - Workforce Expertise in Classified and Technical Defense Programs.md"
+  },
+  {
+    "id": "aero-44",
+    "archetype": "aero",
+    "title": "Arms Control and Export Regulation Compliance",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/44 - Arms Control and Export Regulation Compliance.md"
+  }
+]

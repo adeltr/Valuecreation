@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/D
+kind: analysis
+id: waste-management-20
+part: D
+partLabel: Waste-to-Energy & Thermal Treatment
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS, WC_DSO]
 ---
 # 20 · Landfill Gas Capture and Bioenergy Potential Evaluation
 

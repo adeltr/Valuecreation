@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/D
+kind: analysis
+id: hospitality-19
+part: D
+partLabel: Operations & Hospitality Services
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 19 · Food & Beverage Outlet Performance and Profitability Assessment
 

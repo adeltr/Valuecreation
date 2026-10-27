@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/C
+kind: analysis
+id: third-party-logistics-17
+part: C
+partLabel: Technology & Systems
+quant: [DIO]
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [WC_DSO]
 ---
 # 17 · Real-Time Tracking & Visibility Tools Analysis
 

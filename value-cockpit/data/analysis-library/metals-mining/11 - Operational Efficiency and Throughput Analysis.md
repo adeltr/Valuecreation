@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/B
+kind: analysis
+id: metals-mining-11
+part: B
+partLabel: Operational Efficiency and Cost Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 11 · Operational Efficiency and Throughput Analysis
 

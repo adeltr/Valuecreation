@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-12
+part: B
+partLabel: Sales
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 12 · Direct-to-Consumer (DTC) Channel Performance
 

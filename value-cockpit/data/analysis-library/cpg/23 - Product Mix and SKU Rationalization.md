@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-23
+part: C
+partLabel: Operations
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [MIX, WC_DIO]
 ---
 # 23 · Product Mix and SKU Rationalization
 

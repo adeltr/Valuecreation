@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/G
+kind: analysis
+id: manufacturing-47
+part: G
+partLabel: Logistics and Aftermarket Services
+quant: []
+causes: [OPERATIONAL, ORGANIZATIONAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 47 · Safety and Compliance Audit
 

@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-10
+part: A
+partLabel: Revenue & Pricing Management
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 10 · Children’s Programs and Family Amenity ROI
 

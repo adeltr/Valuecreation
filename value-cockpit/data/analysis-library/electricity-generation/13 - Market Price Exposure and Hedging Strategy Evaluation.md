@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/C
+kind: analysis
+id: electricity-generation-13
+part: C
+partLabel: Financial and Market Strategy
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 13 · Market Price Exposure and Hedging Strategy Evaluation
 

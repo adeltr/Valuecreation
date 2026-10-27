@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-15
+part: B
+partLabel: Clinical & Post-Market
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 15 · Clinical Evidence Gap Analysis
 

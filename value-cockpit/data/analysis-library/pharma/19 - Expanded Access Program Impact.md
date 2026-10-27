@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/C
+kind: analysis
+id: pharma-19
+part: C
+partLabel: Operations & Supply Chain
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [WC_DSO]
 ---
 # 19 · Expanded Access Program Impact
 

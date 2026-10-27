@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/E
+kind: analysis
+id: waste-management-28
+part: E
+partLabel: Fleet & Collection Optimization
+quant: [DSO]
+causes: []
+levers: [VOLUME, WC_DSO]
 ---
 # 28 · Bulky Waste Collection and Diversion Efficiency
 

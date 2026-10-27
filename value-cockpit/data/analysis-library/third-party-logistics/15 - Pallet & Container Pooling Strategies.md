@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/B
+kind: analysis
+id: third-party-logistics-15
+part: B
+partLabel: Warehousing & Fulfillment
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 15 · Pallet & Container Pooling Strategies
 

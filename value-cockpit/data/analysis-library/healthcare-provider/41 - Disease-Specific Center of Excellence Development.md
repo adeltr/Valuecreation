@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/H
+kind: analysis
+id: healthcare-provider-41
+part: H
+partLabel: Specialty Services and Market Expansion
+quant: [REVENUE_GROWTH]
+causes: [FINANCIAL, ORGANIZATIONAL, MARKET]
+levers: [COST_OPS]
 ---
 # 41 · Disease-Specific Center of Excellence Development Feasibility Analysis
 

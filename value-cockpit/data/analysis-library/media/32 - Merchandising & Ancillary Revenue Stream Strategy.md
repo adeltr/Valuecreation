@@ -2,6 +2,13 @@
 tags:
   - media
   - part/H
+kind: analysis
+id: media-32
+part: H
+partLabel: Merchandising & Ancillary Revenue
+quant: []
+causes: [COMMERCIAL, REGULATORY]
+levers: [VOLUME, WC_DIO]
 ---
 # 32 · Merchandising & Ancillary Revenue Stream Strategy
 

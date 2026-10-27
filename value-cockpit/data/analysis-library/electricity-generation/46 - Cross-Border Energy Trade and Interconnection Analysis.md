@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/J
+kind: analysis
+id: electricity-generation-46
+part: J
+partLabel: Lifecycle and Asset Management
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [PRICING, COST_OPS]
 ---
 # 46 · Cross-Border Energy Trade and Interconnection Analysis
 

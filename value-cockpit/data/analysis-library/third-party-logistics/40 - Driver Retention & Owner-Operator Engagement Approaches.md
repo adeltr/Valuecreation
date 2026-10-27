@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/I
+kind: analysis
+id: third-party-logistics-40
+part: I
+partLabel: Workforce & Labor Management
+quant: []
+causes: []
+levers: []
 ---
 # 40 · Driver Retention & Owner-Operator Engagement Approaches
 

@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/B
+kind: analysis
+id: waste-management-10
+part: B
+partLabel: Recycling & Materials Recovery
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, MIX, WC_DIO]
 ---
 # 10 · Commodity Price Fluctuation and Recycling Revenue Analysis
 

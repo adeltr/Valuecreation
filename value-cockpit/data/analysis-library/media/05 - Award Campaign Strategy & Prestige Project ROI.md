@@ -2,6 +2,13 @@
 tags:
   - media
   - part/A
+kind: analysis
+id: media-05
+part: A
+partLabel: Content Strategy & Portfolio
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 5 · Award Campaign Strategy & Prestige Project ROI
 

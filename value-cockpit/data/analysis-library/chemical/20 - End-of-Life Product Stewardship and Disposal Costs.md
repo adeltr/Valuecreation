@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/C
+kind: analysis
+id: chemical-20
+part: C
+partLabel: Regulatory & Compliance
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 20 · End-of-Life Product Stewardship and Disposal Costs
 

@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/C
+kind: analysis
+id: healthcare-provider-17
+part: C
+partLabel: Financial Performance and Revenue Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 17 · Charity Care and Uncompensated Care Impact Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/F
+kind: analysis
+id: agriculture-37
+part: F
+partLabel: Regulatory Compliance & Risk Management
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 37 · Crop Insurance and Risk Mitigation Strategy Review
 

@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-03
+part: A
+partLabel: Finance & Revenue
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, EXPANSION]
 ---
 # 3 · Annual Contract Value (ACV) Analysis
 

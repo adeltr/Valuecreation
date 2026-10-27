@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-45
+part: H
+partLabel: Technology & Innovation
+quant: [DSO]
+causes: [REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 45 · Clinical Data Integration with Wearables and IoT Devices
 

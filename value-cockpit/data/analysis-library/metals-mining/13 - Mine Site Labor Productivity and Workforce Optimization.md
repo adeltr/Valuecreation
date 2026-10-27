@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/B
+kind: analysis
+id: metals-mining-13
+part: B
+partLabel: Operational Efficiency and Cost Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL]
+levers: [COST_OPS]
 ---
 # 13 · Mine Site Labor Productivity and Workforce Optimization Analysis
 

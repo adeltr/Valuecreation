@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-14
+part: A
+partLabel: Operations
+quant: [DIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 14 · Work-in-Progress (WIP) Inventory Management
 

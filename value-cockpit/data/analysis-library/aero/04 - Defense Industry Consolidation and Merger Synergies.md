@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-04
+part: A
+partLabel: Strategy & Market Position
+quant: [REVENUE, EBITDA_MARGIN, OPEX]
+causes: [MARKET, ORGANIZATIONAL]
+levers: [COST_OPS, COST_PROCUREMENT]
 ---
 # 4 · Defense Industry Consolidation and Merger Synergies
 

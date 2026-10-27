@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/J
+kind: analysis
+id: electricity-generation-44
+part: J
+partLabel: Lifecycle and Asset Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: []
 ---
 # 44 · Power Plant Decommissioning and Remediation Planning
 

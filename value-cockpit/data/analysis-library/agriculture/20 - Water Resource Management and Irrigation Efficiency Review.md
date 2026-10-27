@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/C
+kind: analysis
+id: agriculture-20
+part: C
+partLabel: Environmental Sustainability & Resource
+quant: []
+causes: []
+levers: [VOLUME, COST_OPS]
 ---
 # 20 · Water Resource Management and Irrigation Efficiency Review
 

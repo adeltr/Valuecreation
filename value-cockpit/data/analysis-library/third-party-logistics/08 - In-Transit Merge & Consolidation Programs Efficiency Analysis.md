@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-08
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 8 · In-Transit Merge & Consolidation Programs Efficiency Analysis
 

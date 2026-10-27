@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-23
+part: C
+partLabel: Customer Retention & Success
+quant: [REVENUE_GROWTH, GROSS_CHURN]
+causes: [COMMERCIAL]
+levers: [RETENTION]
 ---
 # 23 · Churn Rate Analysis
 

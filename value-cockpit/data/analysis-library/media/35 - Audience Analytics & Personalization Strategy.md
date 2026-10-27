@@ -2,6 +2,13 @@
 tags:
   - media
   - part/I
+kind: analysis
+id: media-35
+part: I
+partLabel: Audience Engagement & Monetization
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 35 · Audience Analytics & Personalization Strategy
 

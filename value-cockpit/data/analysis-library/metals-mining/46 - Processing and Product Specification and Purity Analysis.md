@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/J
+kind: analysis
+id: metals-mining-46
+part: J
+partLabel: Processing and Value Addition
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
+levers: []
 ---
 # 46 · Processing and Product Specification and Purity Analysis
 

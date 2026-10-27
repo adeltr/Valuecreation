@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-06
+part: A
+partLabel: Market and Consumer Insights
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [PRICING, WC_DIO]
 ---
 # 6 · Seasonal and Event-Driven Demand Forecasting
 

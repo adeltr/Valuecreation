@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/J
+kind: analysis
+id: electricity-generation-47
+part: J
+partLabel: Lifecycle and Asset Management
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 47 · Water Usage and Cooling Technology Assessment
 

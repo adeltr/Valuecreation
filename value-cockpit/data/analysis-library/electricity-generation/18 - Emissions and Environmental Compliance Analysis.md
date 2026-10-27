@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/D
+kind: analysis
+id: electricity-generation-18
+part: D
+partLabel: Regulatory and Environmental Compliance
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 18 · Emissions and Environmental Compliance Analysis
 

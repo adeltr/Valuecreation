@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-20
+part: C
+partLabel: Customer Retention & Success
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, RETENTION, EXPANSION]
 ---
 # 20 · Customer Segmentation Analysis
 

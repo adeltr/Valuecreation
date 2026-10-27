@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/C
+kind: analysis
+id: agriculture-23
+part: C
+partLabel: Environmental Sustainability & Resource
+quant: []
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 23 · Carbon Credits and Regenerative Agriculture Sequestration Opportunity
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-48
+part: H
+partLabel: Technology & Innovation
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [VOLUME]
 ---
 # 48 · Remote Servicing and Maintenance Approach for Connected Medical Devices
 

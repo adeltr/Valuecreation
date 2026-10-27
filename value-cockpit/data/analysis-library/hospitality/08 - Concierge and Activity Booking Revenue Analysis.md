@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-08
+part: A
+partLabel: Revenue & Pricing Management
+quant: []
+causes: []
+levers: [MIX, COST_OPS]
 ---
 # 8 · Concierge and Activity Booking Revenue Analysis
 

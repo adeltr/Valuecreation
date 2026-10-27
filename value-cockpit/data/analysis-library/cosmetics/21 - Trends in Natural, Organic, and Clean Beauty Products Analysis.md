@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-21
+part: B
+partLabel: Marketing and Consumer Insights
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [VOLUME]
 ---
 # 21 · Trends in Natural, Organic, and Clean Beauty Products Analysis
 

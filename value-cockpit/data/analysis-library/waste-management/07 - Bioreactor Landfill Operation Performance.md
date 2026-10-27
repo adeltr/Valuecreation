@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/A
+kind: analysis
+id: waste-management-07
+part: A
+partLabel: Landfill Management & Operations
+quant: [DSO]
+causes: [OPERATIONAL]
+levers: [COST_OPS, WC_DSO]
 ---
 # 7 · Bioreactor Landfill Operation Performance
 

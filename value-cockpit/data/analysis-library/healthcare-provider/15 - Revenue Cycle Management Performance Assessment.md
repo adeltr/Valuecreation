@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/C
+kind: analysis
+id: healthcare-provider-15
+part: C
+partLabel: Financial Performance and Revenue Management
+quant: [DSO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, WC_DSO]
 ---
 # 15 · Revenue Cycle Management Performance Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/D
+kind: analysis
+id: healthcare-provider-22
+part: D
+partLabel: Patient Experience and Access
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME]
 ---
 # 22 · Referral Leakage and Patient Retention Analysis
 

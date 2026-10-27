@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-14
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 14 · Multifunctional Product Trend Analysis
 

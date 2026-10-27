@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/D
+kind: analysis
+id: manufacturing-34
+part: D
+partLabel: Finance and Asset Management
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 34 · Return on Invested Capital (ROIC) for Manufacturing Assets
 

@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/G
+kind: analysis
+id: chemical-37
+part: G
+partLabel: Supply Chain
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 37 · Supply Chain Integration and Logistics Optimization
 

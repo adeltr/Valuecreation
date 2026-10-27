@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/C
+kind: analysis
+id: cosmetics-29
+part: C
+partLabel: Sales and Distribution
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 29 · Distribution Channel Performance and Reach Analysis
 

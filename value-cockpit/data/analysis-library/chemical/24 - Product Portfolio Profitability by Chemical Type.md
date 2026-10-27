@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/D
+kind: analysis
+id: chemical-24
+part: D
+partLabel: Sales & Marketing
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, MIX]
 ---
 # 24 · Product Portfolio Profitability by Chemical Type
 

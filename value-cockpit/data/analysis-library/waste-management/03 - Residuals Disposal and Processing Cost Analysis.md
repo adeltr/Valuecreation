@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/A
+kind: analysis
+id: waste-management-03
+part: A
+partLabel: Landfill Management & Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 3 · Residuals Disposal and Processing Cost Analysis
 

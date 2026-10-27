@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/D
+kind: analysis
+id: cpg-37
+part: D
+partLabel: Research & Development
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 37 · Packaging and Labeling Regulatory Compliance
 

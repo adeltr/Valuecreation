@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/A
+kind: analysis
+id: chemical-04
+part: A
+partLabel: Production & Process Optimization
+quant: [COGS]
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 4 · Catalyst Efficiency and Lifecycle Analysis
 

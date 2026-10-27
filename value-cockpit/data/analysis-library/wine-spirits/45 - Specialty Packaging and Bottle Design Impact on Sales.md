@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/G
+kind: analysis
+id: wine-spirits-45
+part: G
+partLabel: Financial and Revenue Optimization
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 45 · Specialty Packaging and Bottle Design Impact on Sales
 

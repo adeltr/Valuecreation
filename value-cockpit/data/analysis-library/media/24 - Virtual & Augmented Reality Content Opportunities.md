@@ -2,6 +2,13 @@
 tags:
   - media
   - part/E
+kind: analysis
+id: media-24
+part: E
+partLabel: Technology & Innovation
+quant: []
+causes: [MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 24 · Virtual & Augmented Reality Content Opportunities
 

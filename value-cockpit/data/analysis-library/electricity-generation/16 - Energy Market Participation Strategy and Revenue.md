@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/C
+kind: analysis
+id: electricity-generation-16
+part: C
+partLabel: Financial and Market Strategy
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS]
 ---
 # 16 · Energy Market Participation Strategy and Revenue Optimization
 

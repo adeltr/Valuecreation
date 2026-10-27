@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/C
+kind: analysis
+id: third-party-logistics-20
+part: C
+partLabel: Technology & Systems
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 20 · Transportation Management System (TMS) Implementation & ROI Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/F
+kind: analysis
+id: medical-device-34
+part: F
+partLabel: Risk Management & Quality
+quant: []
+causes: [OPERATIONAL, ORGANIZATIONAL]
+levers: []
 ---
 # 34 · Failure Mode and Effects Analysis (FMEA)
 

@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/C
+kind: analysis
+id: metals-mining-23
+part: C
+partLabel: Environmental Sustainability and Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 23 · Dust and Particulate Emission Control Assessment
 

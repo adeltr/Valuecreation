@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/D
+kind: analysis
+id: chemical-29
+part: D
+partLabel: Sales & Marketing
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 29 · Customer Contract and Offtake Agreement Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/D
+kind: analysis
+id: saas-31
+part: D
+partLabel: Product & Engagement
+quant: [GROSS_CHURN]
+causes: [OPERATIONAL]
+levers: [RETENTION]
 ---
 # 31 · User Onboarding Efficiency
 

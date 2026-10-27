@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-02
+part: A
+partLabel: Finance & Revenue
+quant: [REVENUE_GROWTH, ARR]
+causes: [COMMERCIAL]
+levers: [VOLUME, RETENTION, EXPANSION]
 ---
 # 2 · Monthly Recurring Revenue (MRR) Growth Rate
 

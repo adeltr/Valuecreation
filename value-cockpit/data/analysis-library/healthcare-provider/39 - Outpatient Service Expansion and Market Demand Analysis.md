@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/H
+kind: analysis
+id: healthcare-provider-39
+part: H
+partLabel: Specialty Services and Market Expansion
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [FINANCIAL, ORGANIZATIONAL, MARKET]
+levers: [VOLUME, COST_OPS]
 ---
 # 39 · Outpatient Service Expansion and Market Demand Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-03
+part: A
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: []
 ---
 # 3 · Customer Return Rate Analysis
 

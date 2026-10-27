@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/A
+kind: analysis
+id: healthcare-provider-04
+part: A
+partLabel: Clinical Performance and Quality
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS]
 ---
 # 4 · Infection Control and Patient Safety Protocol Compliance Review
 

@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/B
+kind: analysis
+id: healthcare-provider-09
+part: B
+partLabel: Operational Efficiency and Resource
+quant: []
+causes: []
+levers: [COST_OPS]
 ---
 # 9 · Emergency Department Throughput and Wait Time Analysis
 

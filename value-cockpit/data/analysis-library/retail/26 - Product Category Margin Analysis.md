@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/D
+kind: analysis
+id: retail-26
+part: D
+partLabel: Merchandising
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, MIX, COST_PROCUREMENT, WC_DIO]
 ---
 # 26 · Product Category Margin Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/D
+kind: analysis
+id: saas-33
+part: D
+partLabel: Product & Engagement
+quant: [GROSS_CHURN]
+causes: [COMMERCIAL]
+levers: [RETENTION]
 ---
 # 33 · Usage and Engagement Metrics Analysis
 

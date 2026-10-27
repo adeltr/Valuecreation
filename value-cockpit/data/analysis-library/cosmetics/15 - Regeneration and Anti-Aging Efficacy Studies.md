@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-15
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 15 · Regeneration and Anti-Aging Efficacy Studies
 

@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/G
+kind: analysis
+id: healthcare-provider-32
+part: G
+partLabel: Population Health and Care Coordination
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 32 · Chronic Disease Management Program Effectiveness Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/C
+kind: analysis
+id: waste-management-16
+part: C
+partLabel: Organics & Composting
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 16 · In-Vessel vs. Windrow Composting Operational Efficiency Comparison
 

@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/D
+kind: analysis
+id: manufacturing-33
+part: D
+partLabel: Finance and Asset Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL]
+levers: [COST_OPS]
 ---
 # 33 · Asset Utilization and Lifecycle Management
 

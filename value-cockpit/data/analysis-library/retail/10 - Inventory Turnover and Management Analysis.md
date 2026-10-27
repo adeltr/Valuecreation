@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-10
+part: B
+partLabel: Operations
+quant: [DIO]
+causes: []
+levers: [WC_DIO]
 ---
 # 10 · Inventory Turnover and Management Analysis
 

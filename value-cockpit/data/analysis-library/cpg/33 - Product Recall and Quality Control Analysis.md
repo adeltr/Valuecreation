@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-33
+part: C
+partLabel: Operations
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 33 · Product Recall and Quality Control Analysis
 

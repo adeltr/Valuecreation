@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/E
+kind: analysis
+id: medical-device-33
+part: E
+partLabel: Operations & Supply Chain
+quant: []
+causes: []
+levers: [COST_OPS, WC_DIO]
 ---
 # 33 · Instrument Set Standardization and Workflow Efficiency Analysis
 

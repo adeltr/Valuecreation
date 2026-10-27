@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/B
+kind: analysis
+id: manufacturing-19
+part: B
+partLabel: Supply Chain and Procurement
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 19 · Supplier Risk and Dependency Analysis
 

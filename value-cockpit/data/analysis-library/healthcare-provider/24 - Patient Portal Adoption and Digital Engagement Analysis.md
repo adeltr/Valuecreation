@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/D
+kind: analysis
+id: healthcare-provider-24
+part: D
+partLabel: Patient Experience and Access
+quant: []
+causes: []
+levers: []
 ---
 # 24 · Patient Portal Adoption and Digital Engagement Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/H
+kind: analysis
+id: healthcare-provider-40
+part: H
+partLabel: Specialty Services and Market Expansion
+quant: []
+causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 40 · Clinical Trial Participation and Research Revenue Potential Assessment
 

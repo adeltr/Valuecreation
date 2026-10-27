@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-18
+part: B
+partLabel: Sales & Marketing
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [PRICING]
 ---
 # 18 · Engagement-to-Subscription Rate
 

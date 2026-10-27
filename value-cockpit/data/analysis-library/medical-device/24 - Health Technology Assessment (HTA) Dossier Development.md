@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/C
+kind: analysis
+id: medical-device-24
+part: C
+partLabel: Reimbursement & Market Access
+quant: []
+causes: [MARKET]
+levers: [WC_DSO]
 ---
 # 24 · Health Technology Assessment (HTA) Dossier Development
 

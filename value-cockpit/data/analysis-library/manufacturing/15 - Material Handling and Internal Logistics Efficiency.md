@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-15
+part: A
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, WC_DIO]
 ---
 # 15 · Material Handling and Internal Logistics Efficiency
 

@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-12
+part: A
+partLabel: Operations
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: []
 ---
 # 12 · Production Scheduling and Demand Alignment
 

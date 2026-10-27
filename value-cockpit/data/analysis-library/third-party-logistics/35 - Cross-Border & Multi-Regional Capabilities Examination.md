@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/G
+kind: analysis
+id: third-party-logistics-35
+part: G
+partLabel: Strategic Growth & Resilience
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [VOLUME, COST_OPS]
 ---
 # 35 · Cross-Border & Multi-Regional Capabilities Examination
 

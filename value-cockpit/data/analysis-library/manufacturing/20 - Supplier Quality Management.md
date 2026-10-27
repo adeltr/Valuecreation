@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/B
+kind: analysis
+id: manufacturing-20
+part: B
+partLabel: Supply Chain and Procurement
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 20 · Supplier Quality Management
 

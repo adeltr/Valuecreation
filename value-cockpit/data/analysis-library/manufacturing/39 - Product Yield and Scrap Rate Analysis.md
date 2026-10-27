@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/E
+kind: analysis
+id: manufacturing-39
+part: E
+partLabel: Product and Process Development
+quant: [EBITDA_MARGIN, COGS]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 39 · Product Yield and Scrap Rate Analysis
 

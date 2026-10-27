@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/I
+kind: analysis
+id: electricity-generation-41
+part: I
+partLabel: Capacity Planning and Utilization
+quant: [REVENUE_GROWTH]
+causes: [MARKET]
+levers: [PRICING, VOLUME, COST_OPS]
 ---
 # 41 · Demand Response and Load Shifting Capabilities
 

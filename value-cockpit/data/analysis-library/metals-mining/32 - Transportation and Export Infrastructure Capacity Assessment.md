@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/F
+kind: analysis
+id: metals-mining-32
+part: F
+partLabel: Infrastructure and Logistics
+quant: []
+causes: [OPERATIONAL, MARKET]
+levers: [VOLUME]
 ---
 # 32 · Transportation and Export Infrastructure Capacity Assessment
 

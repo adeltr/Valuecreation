@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/E
+kind: analysis
+id: cpg-43
+part: E
+partLabel: Finance
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, WC_DIO]
 ---
 # 43 · Product Line Profitability by Retailer Analysis
 

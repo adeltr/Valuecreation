@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/D
+kind: analysis
+id: cosmetics-35
+part: D
+partLabel: Operations and Supply Chain
+quant: [COGS]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 35 · Ingredient Sourcing and Supply Chain Analysis
 

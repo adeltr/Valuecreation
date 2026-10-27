@@ -1,0 +1,775 @@
+[
+  {
+    "id": "metals-mining-01",
+    "archetype": "metals-mining",
+    "title": "Ore Reserve and Resource Assessment",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/01 - Ore Reserve and Resource Assessment.md"
+  },
+  {
+    "id": "metals-mining-02",
+    "archetype": "metals-mining",
+    "title": "Reserve Replacement Rate and Resource Conversion Analysis",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/02 - Reserve Replacement Rate and Resource Conversion Analysis.md"
+  },
+  {
+    "id": "metals-mining-03",
+    "archetype": "metals-mining",
+    "title": "Exploration and Development Pipeline Review",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/03 - Exploration and Development Pipeline Review.md"
+  },
+  {
+    "id": "metals-mining-04",
+    "archetype": "metals-mining",
+    "title": "Exploration Success Rate and Discovery Cost Analysis",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/04 - Exploration Success Rate and Discovery Cost Analysis.md"
+  },
+  {
+    "id": "metals-mining-05",
+    "archetype": "metals-mining",
+    "title": "Stripping Ratio and Waste-to-Ore Ratio Evaluation",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/05 - Stripping Ratio and Waste-to-Ore Ratio Evaluation.md"
+  },
+  {
+    "id": "metals-mining-06",
+    "archetype": "metals-mining",
+    "title": "Mineral Inventory Reconciliation and Variance Analysis",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/06 - Mineral Inventory Reconciliation and Variance Analysis.md"
+  },
+  {
+    "id": "metals-mining-07",
+    "archetype": "metals-mining",
+    "title": "Ore Body Shape, Depth, and Accessibility Evaluation",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/07 - Ore Body Shape, Depth, and Accessibility Evaluation.md"
+  },
+  {
+    "id": "metals-mining-08",
+    "archetype": "metals-mining",
+    "title": "Grade Quality and Metallurgical Recovery Analysis",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/08 - Grade Quality and Metallurgical Recovery Analysis.md"
+  },
+  {
+    "id": "metals-mining-09",
+    "archetype": "metals-mining",
+    "title": "Mine Life and Production Capacity Evaluation",
+    "part": "A",
+    "partLabel": "Resource and Reserve Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/09 - Mine Life and Production Capacity Evaluation.md"
+  },
+  {
+    "id": "metals-mining-10",
+    "archetype": "metals-mining",
+    "title": "Cost Structure and Cash Cost Positioning",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/10 - Cost Structure and Cash Cost Positioning.md"
+  },
+  {
+    "id": "metals-mining-11",
+    "archetype": "metals-mining",
+    "title": "Operational Efficiency and Throughput Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/11 - Operational Efficiency and Throughput Analysis.md"
+  },
+  {
+    "id": "metals-mining-12",
+    "archetype": "metals-mining",
+    "title": "Mining Equipment and Maintenance Efficiency Review",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [
+      "OPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/12 - Mining Equipment and Maintenance Efficiency Review.md"
+  },
+  {
+    "id": "metals-mining-13",
+    "archetype": "metals-mining",
+    "title": "Mine Site Labor Productivity and Workforce Optimization Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/13 - Mine Site Labor Productivity and Workforce Optimization.md"
+  },
+  {
+    "id": "metals-mining-14",
+    "archetype": "metals-mining",
+    "title": "Drilling and Blasting Efficiency Assessment",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/14 - Drilling and Blasting Efficiency Assessment.md"
+  },
+  {
+    "id": "metals-mining-15",
+    "archetype": "metals-mining",
+    "title": "Grade Control and Dilution Management Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/15 - Grade Control and Dilution Management Analysis.md"
+  },
+  {
+    "id": "metals-mining-16",
+    "archetype": "metals-mining",
+    "title": "Lifecycle Cost Analysis for New Project Viability",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/16 - Lifecycle Cost Analysis for New Project Viability.md"
+  },
+  {
+    "id": "metals-mining-17",
+    "archetype": "metals-mining",
+    "title": "Environmental, Social, and Governance (ESG) Impact Assessment",
+    "part": "C",
+    "partLabel": "Environmental Sustainability and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/17 - Environmental, Social, and Governance (ESG) Impact.md"
+  },
+  {
+    "id": "metals-mining-18",
+    "archetype": "metals-mining",
+    "title": "Greenhouse Gas Emissions and Carbon Footprint Reduction Strategy",
+    "part": "C",
+    "partLabel": "Environmental Sustainability and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/18 - Greenhouse Gas Emissions and Carbon Footprint Reduction.md"
+  },
+  {
+    "id": "metals-mining-19",
+    "archetype": "metals-mining",
+    "title": "Waste Management and Tailings Storage Analysis",
+    "part": "C",
+    "partLabel": "Environmental Sustainability and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/19 - Waste Management and Tailings Storage Analysis.md"
+  },
+  {
+    "id": "metals-mining-20",
+    "archetype": "metals-mining",
+    "title": "Water and Energy Usage Efficiency Review",
+    "part": "C",
+    "partLabel": "Environmental Sustainability and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/20 - Water and Energy Usage Efficiency Review.md"
+  },
+  {
+    "id": "metals-mining-21",
+    "archetype": "metals-mining",
+    "title": "Mine Closure and Rehabilitation Liability Evaluation",
+    "part": "C",
+    "partLabel": "Environmental Sustainability and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/21 - Mine Closure and Rehabilitation Liability Evaluation.md"
+  },
+  {
+    "id": "metals-mining-22",
+    "archetype": "metals-mining",
+    "title": "Mine Waste Acid Rock Drainage (ARD) Potential Analysis",
+    "part": "C",
+    "partLabel": "Environmental Sustainability and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/22 - Mine Waste Acid Rock Drainage (ARD) Potential Analysis.md"
+  },
+  {
+    "id": "metals-mining-23",
+    "archetype": "metals-mining",
+    "title": "Dust and Particulate Emission Control Assessment",
+    "part": "C",
+    "partLabel": "Environmental Sustainability and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/23 - Dust and Particulate Emission Control Assessment.md"
+  },
+  {
+    "id": "metals-mining-24",
+    "archetype": "metals-mining",
+    "title": "Commodity Diversification and Portfolio Resilience Analysis",
+    "part": "D",
+    "partLabel": "Strategic Planning and Investment Feasibility",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/24 - Commodity Diversification and Portfolio Resilience Analysis.md"
+  },
+  {
+    "id": "metals-mining-25",
+    "archetype": "metals-mining",
+    "title": "Capital Expenditure (CapEx) and Sustaining Investment Requirements",
+    "part": "D",
+    "partLabel": "Strategic Planning and Investment Feasibility",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/25 - Capital Expenditure (CapEx) and Sustaining Investment.md"
+  },
+  {
+    "id": "metals-mining-26",
+    "archetype": "metals-mining",
+    "title": "Downstream Processing Integration and Feasibility Analysis",
+    "part": "D",
+    "partLabel": "Strategic Planning and Investment Feasibility",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/26 - Downstream Processing Integration and Feasibility Analysis.md"
+  },
+  {
+    "id": "metals-mining-27",
+    "archetype": "metals-mining",
+    "title": "Royalty and Offtake Agreement Viability Assessment",
+    "part": "D",
+    "partLabel": "Strategic Planning and Investment Feasibility",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/27 - Royalty and Offtake Agreement Viability Assessment.md"
+  },
+  {
+    "id": "metals-mining-28",
+    "archetype": "metals-mining",
+    "title": "Energy Source Diversification and Renewable Integration Analysis",
+    "part": "D",
+    "partLabel": "Strategic Planning and Investment Feasibility",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/28 - Energy Source Diversification and Renewable Integration.md"
+  },
+  {
+    "id": "metals-mining-29",
+    "archetype": "metals-mining",
+    "title": "Commodity Price Risk Management and Sensitivity Analysis",
+    "part": "E",
+    "partLabel": "Market and Commodity Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/29 - Commodity Price Risk Management and Sensitivity Analysis.md"
+  },
+  {
+    "id": "metals-mining-30",
+    "archetype": "metals-mining",
+    "title": "Market Demand and Supply Analysis for Key Commodities",
+    "part": "E",
+    "partLabel": "Market and Commodity Risk Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/30 - Market Demand and Supply Analysis for Key Commodities.md"
+  },
+  {
+    "id": "metals-mining-31",
+    "archetype": "metals-mining",
+    "title": "Global Supply Chain Disruption Risk Assessment for Raw Materials",
+    "part": "E",
+    "partLabel": "Market and Commodity Risk Management",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/31 - Global Supply Chain Disruption Risk Assessment for Raw.md"
+  },
+  {
+    "id": "metals-mining-32",
+    "archetype": "metals-mining",
+    "title": "Transportation and Export Infrastructure Capacity Assessment",
+    "part": "F",
+    "partLabel": "Infrastructure and Logistics",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/32 - Transportation and Export Infrastructure Capacity Assessment.md"
+  },
+  {
+    "id": "metals-mining-33",
+    "archetype": "metals-mining",
+    "title": "Supply Chain and Logistics Reliability Assessment",
+    "part": "F",
+    "partLabel": "Infrastructure and Logistics",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/33 - Supply Chain and Logistics Reliability Assessment.md"
+  },
+  {
+    "id": "metals-mining-34",
+    "archetype": "metals-mining",
+    "title": "Slope Stability and Mine Wall Integrity Monitoring",
+    "part": "F",
+    "partLabel": "Infrastructure and Logistics",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/34 - Slope Stability and Mine Wall Integrity Monitoring.md"
+  },
+  {
+    "id": "metals-mining-35",
+    "archetype": "metals-mining",
+    "title": "Seismic and Geotechnical Stability Assessment of Mine Sites",
+    "part": "F",
+    "partLabel": "Infrastructure and Logistics",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/35 - Seismic and Geotechnical Stability Assessment of Mine Sites.md"
+  },
+  {
+    "id": "metals-mining-36",
+    "archetype": "metals-mining",
+    "title": "Mine Safety and Compliance Assessment",
+    "part": "G",
+    "partLabel": "Safety, Community, and Stakeholder",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/36 - Mine Safety and Compliance Assessment.md"
+  },
+  {
+    "id": "metals-mining-37",
+    "archetype": "metals-mining",
+    "title": "Community Relations and Stakeholder Engagement Assessment",
+    "part": "G",
+    "partLabel": "Safety, Community, and Stakeholder",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/37 - Community Relations and Stakeholder Engagement.md"
+  },
+  {
+    "id": "metals-mining-38",
+    "archetype": "metals-mining",
+    "title": "Ore Sorting and Pre-Concentration Efficiency Review",
+    "part": "H",
+    "partLabel": "Technology and Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/38 - Ore Sorting and Pre-Concentration Efficiency Review.md"
+  },
+  {
+    "id": "metals-mining-39",
+    "archetype": "metals-mining",
+    "title": "Mine Automation and Digital Technology Adoption Evaluation",
+    "part": "H",
+    "partLabel": "Technology and Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/39 - Mine Automation and Digital Technology Adoption Evaluation.md"
+  },
+  {
+    "id": "metals-mining-40",
+    "archetype": "metals-mining",
+    "title": "Metals Recovery Rate Optimization and Byproduct Management",
+    "part": "H",
+    "partLabel": "Technology and Innovation",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/40 - Metals Recovery Rate Optimization and Byproduct.md"
+  },
+  {
+    "id": "metals-mining-41",
+    "archetype": "metals-mining",
+    "title": "Geopolitical and Regulatory Risk Analysis",
+    "part": "I",
+    "partLabel": "Legal, Regulatory, and Geopolitical Risk",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/41 - Geopolitical and Regulatory Risk Analysis.md"
+  },
+  {
+    "id": "metals-mining-42",
+    "archetype": "metals-mining",
+    "title": "Mineral Rights and Land Tenure Security Review",
+    "part": "I",
+    "partLabel": "Legal, Regulatory, and Geopolitical Risk",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/42 - Mineral Rights and Land Tenure Security Review.md"
+  },
+  {
+    "id": "metals-mining-43",
+    "archetype": "metals-mining",
+    "title": "Royalties, Taxation, and Government Revenue Sharing Analysis",
+    "part": "I",
+    "partLabel": "Legal, Regulatory, and Geopolitical Risk",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/43 - Royalties, Taxation, and Government Revenue Sharing.md"
+  },
+  {
+    "id": "metals-mining-44",
+    "archetype": "metals-mining",
+    "title": "Smelting and Refining Capacity and Efficiency Evaluation",
+    "part": "J",
+    "partLabel": "Processing and Value Addition",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/44 - Smelting and Refining Capacity and Efficiency Evaluation.md"
+  },
+  {
+    "id": "metals-mining-45",
+    "archetype": "metals-mining",
+    "title": "Downstream Value-Addition Opportunities Analysis",
+    "part": "J",
+    "partLabel": "Processing and Value Addition",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/45 - Downstream Value-Addition Opportunities Analysis.md"
+  },
+  {
+    "id": "metals-mining-46",
+    "archetype": "metals-mining",
+    "title": "Processing and Product Specification and Purity Analysis",
+    "part": "J",
+    "partLabel": "Processing and Value Addition",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/metals-mining/46 - Processing and Product Specification and Purity Analysis.md"
+  },
+  {
+    "id": "metals-mining-47",
+    "archetype": "metals-mining",
+    "title": "Supply Chain Traceability and Ethical Sourcing Compliance",
+    "part": "J",
+    "partLabel": "Processing and Value Addition",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/metals-mining/47 - Supply Chain Traceability and Ethical Sourcing Compliance.md"
+  }
+]

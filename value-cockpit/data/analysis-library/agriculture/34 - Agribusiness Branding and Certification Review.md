@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/E
+kind: analysis
+id: agriculture-34
+part: E
+partLabel: Market Positioning & Value Chain
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [VOLUME, COST_PROCUREMENT, COST_OPS]
 ---
 # 34 · Agribusiness Branding and Certification Review
 

@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/B
+kind: analysis
+id: manufacturing-21
+part: B
+partLabel: Supply Chain and Procurement
+quant: [COGS]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 21 · Raw Material Sourcing and Procurement Efficiency
 

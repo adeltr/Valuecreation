@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/D
+kind: analysis
+id: third-party-logistics-24
+part: D
+partLabel: Commercial & Contractual Structures
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 24 · Outsourced vs. In-House Brokerage Operations Synergy Review
 

@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-04
+part: A
+partLabel: Resource and Reserve Management
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 4 · Exploration Success Rate and Discovery Cost Analysis
 

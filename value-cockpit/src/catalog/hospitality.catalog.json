@@ -1,0 +1,569 @@
+[
+  {
+    "id": "hospitality-01",
+    "archetype": "hospitality",
+    "title": "Occupancy Rate and ADR Evaluation",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/01 - Occupancy Rate and ADR Evaluation.md"
+  },
+  {
+    "id": "hospitality-02",
+    "archetype": "hospitality",
+    "title": "RevPAR Trend Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/02 - RevPAR Trend Analysis.md"
+  },
+  {
+    "id": "hospitality-03",
+    "archetype": "hospitality",
+    "title": "Distribution Channel Mix and Booking Source Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/03 - Distribution Channel Mix and Booking Source Analysis.md"
+  },
+  {
+    "id": "hospitality-04",
+    "archetype": "hospitality",
+    "title": "Group vs. Transient Business Mix Evaluation",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/04 - Group vs. Transient Business Mix Evaluation.md"
+  },
+  {
+    "id": "hospitality-05",
+    "archetype": "hospitality",
+    "title": "Length‐of‐Stay Patterns and Rate Optimization Review",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/05 - Length#U2010of#U2010Stay Patterns and Rate Optimization Review.md"
+  },
+  {
+    "id": "hospitality-06",
+    "archetype": "hospitality",
+    "title": "Booking Window Patterns Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/06 - Booking Window Patterns Analysis.md"
+  },
+  {
+    "id": "hospitality-07",
+    "archetype": "hospitality",
+    "title": "Look‐to‐Book Ratios and Online Booking Abandonment Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/07 - Look#U2010to#U2010Book Ratios and Online Booking Abandonment.md"
+  },
+  {
+    "id": "hospitality-08",
+    "archetype": "hospitality",
+    "title": "Concierge and Activity Booking Revenue Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/08 - Concierge and Activity Booking Revenue Analysis.md"
+  },
+  {
+    "id": "hospitality-09",
+    "archetype": "hospitality",
+    "title": "In‐Room Amenities Cost‐Benefit Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/09 - In#U2010Room Amenities Cost#U2010Benefit Analysis.md"
+  },
+  {
+    "id": "hospitality-10",
+    "archetype": "hospitality",
+    "title": "Children’s Programs and Family Amenity ROI",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/10 - Children#U2019s Programs and Family Amenity ROI.md"
+  },
+  {
+    "id": "hospitality-11",
+    "archetype": "hospitality",
+    "title": "Extended Stay Packaging and Rate Strategies",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/11 - Extended Stay Packaging and Rate Strategies.md"
+  },
+  {
+    "id": "hospitality-12",
+    "archetype": "hospitality",
+    "title": "Vacation Package and Bundled Rate Plan Efficacy",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/12 - Vacation Package and Bundled Rate Plan Efficacy.md"
+  },
+  {
+    "id": "hospitality-13",
+    "archetype": "hospitality",
+    "title": "Revenue Management Integration with Local-Seasonal Event Calendars",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/hospitality/13 - Revenue Management Integration with Local-Seasonal Event.md"
+  },
+  {
+    "id": "hospitality-14",
+    "archetype": "hospitality",
+    "title": "Guest Satisfaction and Online Reputation Management Review",
+    "part": "B",
+    "partLabel": "Guest Experience",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/14 - Guest Satisfaction and Online Reputation Management.md"
+  },
+  {
+    "id": "hospitality-15",
+    "archetype": "hospitality",
+    "title": "Guest Segmentation by Purpose of Travel",
+    "part": "B",
+    "partLabel": "Guest Experience",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/15 - Guest Segmentation by Purpose of Travel.md"
+  },
+  {
+    "id": "hospitality-16",
+    "archetype": "hospitality",
+    "title": "In‐Room Technology Adoption and Guest Satisfaction Correlation",
+    "part": "C",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/16 - In#U2010Room Technology Adoption and Guest Satisfaction.md"
+  },
+  {
+    "id": "hospitality-17",
+    "archetype": "hospitality",
+    "title": "Housekeeping Efficiency and Turnaround Analysis",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/17 - Housekeeping Efficiency and Turnaround Analysis.md"
+  },
+  {
+    "id": "hospitality-18",
+    "archetype": "hospitality",
+    "title": "Stay Extension and Early-Late Check‐In-Out Utilization",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/18 - Stay Extension and Early-Late Check#U2010In-Out Utilization.md"
+  },
+  {
+    "id": "hospitality-19",
+    "archetype": "hospitality",
+    "title": "Food & Beverage Outlet Performance and Profitability Assessment",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/19 - Food & Beverage Outlet Performance and Profitability.md"
+  },
+  {
+    "id": "hospitality-20",
+    "archetype": "hospitality",
+    "title": "F&B Menu Engineering and Cost Control",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/20 - F&B Menu Engineering and Cost Control.md"
+  },
+  {
+    "id": "hospitality-21",
+    "archetype": "hospitality",
+    "title": "Hotel Retail-Gift Shop Product Mix Optimization",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/21 - Hotel Retail-Gift Shop Product Mix Optimization.md"
+  },
+  {
+    "id": "hospitality-22",
+    "archetype": "hospitality",
+    "title": "In‐Room Dining Profitability and Utilization",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/22 - In#U2010Room Dining Profitability and Utilization.md"
+  },
+  {
+    "id": "hospitality-23",
+    "archetype": "hospitality",
+    "title": "Signature Restaurant or Specialty Dining Concept Evaluation",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/23 - Signature Restaurant or Specialty Dining Concept Evaluation.md"
+  },
+  {
+    "id": "hospitality-24",
+    "archetype": "hospitality",
+    "title": "Destination Marketing and Local Partnership Effectiveness",
+    "part": "E",
+    "partLabel": "Marketing & Competitive Positioning",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/24 - Destination Marketing and Local Partnership Effectiveness.md"
+  },
+  {
+    "id": "hospitality-25",
+    "archetype": "hospitality",
+    "title": "Impact of Alternative Accommodation Competitors",
+    "part": "E",
+    "partLabel": "Marketing & Competitive Positioning",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/25 - Impact of Alternative Accommodation Competitors.md"
+  },
+  {
+    "id": "hospitality-26",
+    "archetype": "hospitality",
+    "title": "Franchise vs. Management Contract Profitability Study",
+    "part": "F",
+    "partLabel": "Ownership & Financial Structures",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/26 - Franchise vs. Management Contract Profitability Study.md"
+  },
+  {
+    "id": "hospitality-27",
+    "archetype": "hospitality",
+    "title": "USALI Departmental Benchmarking",
+    "part": "F",
+    "partLabel": "Ownership & Financial Structures",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/27 - USALI Departmental Benchmarking.md"
+  },
+  {
+    "id": "hospitality-28",
+    "archetype": "hospitality",
+    "title": "Timeshare or Vacation Ownership Program Performance Analysis",
+    "part": "F",
+    "partLabel": "Ownership & Financial Structures",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/28 - Timeshare or Vacation Ownership Program Performance.md"
+  },
+  {
+    "id": "hospitality-29",
+    "archetype": "hospitality",
+    "title": "Meeting and Event Space Utilization",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/29 - Meeting and Event Space Utilization.md"
+  },
+  {
+    "id": "hospitality-30",
+    "archetype": "hospitality",
+    "title": "MICE Profitability Review",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/30 - MICE Profitability Review.md"
+  },
+  {
+    "id": "hospitality-31",
+    "archetype": "hospitality",
+    "title": "Wellness and Spa Services Utilization",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/31 - Wellness and Spa Services Utilization.md"
+  },
+  {
+    "id": "hospitality-32",
+    "archetype": "hospitality",
+    "title": "Spa and Wellness Outsourcing vs. In‐House Management Assessment",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/32 - Spa and Wellness Outsourcing vs. In#U2010House Management.md"
+  },
+  {
+    "id": "hospitality-33",
+    "archetype": "hospitality",
+    "title": "Transportation and Shuttle Service Utilization Analysis",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/33 - Transportation and Shuttle Service Utilization Analysis.md"
+  }
+]

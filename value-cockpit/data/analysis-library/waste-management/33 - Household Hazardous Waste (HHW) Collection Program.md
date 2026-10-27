@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/F
+kind: analysis
+id: waste-management-33
+part: F
+partLabel: Hazardous & Specialized Waste Handling
+quant: [DSO]
+causes: [REGULATORY]
+levers: [PRICING, VOLUME, COST_PROCUREMENT, WC_DSO]
 ---
 # 33 · Household Hazardous Waste (HHW) Collection Program Effectiveness
 

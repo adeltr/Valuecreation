@@ -1,0 +1,859 @@
+[
+  {
+    "id": "manufacturing-01",
+    "archetype": "manufacturing",
+    "title": "Capacity Utilization Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/01 - Capacity Utilization Analysis.md"
+  },
+  {
+    "id": "manufacturing-02",
+    "archetype": "manufacturing",
+    "title": "Operational Efficiency (OEE) Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/manufacturing/02 - Operational Efficiency (OEE) Analysis.md"
+  },
+  {
+    "id": "manufacturing-03",
+    "archetype": "manufacturing",
+    "title": "Supply Chain and Logistics Optimization",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/03 - Supply Chain and Logistics Optimization.md"
+  },
+  {
+    "id": "manufacturing-04",
+    "archetype": "manufacturing",
+    "title": "Production Lead Time Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/04 - Production Lead Time Analysis.md"
+  },
+  {
+    "id": "manufacturing-05",
+    "archetype": "manufacturing",
+    "title": "Lean Manufacturing and Waste Reduction Assessment",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/05 - Lean Manufacturing and Waste Reduction Assessment.md"
+  },
+  {
+    "id": "manufacturing-06",
+    "archetype": "manufacturing",
+    "title": "Inventory Turnover and Management Efficiency",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/06 - Inventory Turnover and Management Efficiency.md"
+  },
+  {
+    "id": "manufacturing-07",
+    "archetype": "manufacturing",
+    "title": "Quality Control and Defect Rate Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/07 - Quality Control and Defect Rate Analysis.md"
+  },
+  {
+    "id": "manufacturing-08",
+    "archetype": "manufacturing",
+    "title": "Capacity Expansion and Flexibility Assessment",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/manufacturing/08 - Capacity Expansion and Flexibility Assessment.md"
+  },
+  {
+    "id": "manufacturing-09",
+    "archetype": "manufacturing",
+    "title": "Maintenance Strategy and Downtime Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/09 - Maintenance Strategy and Downtime Analysis.md"
+  },
+  {
+    "id": "manufacturing-10",
+    "archetype": "manufacturing",
+    "title": "Factory Layout and Process Flow Optimization",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/10 - Factory Layout and Process Flow Optimization.md"
+  },
+  {
+    "id": "manufacturing-11",
+    "archetype": "manufacturing",
+    "title": "Throughput and Bottleneck Identification",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/11 - Throughput and Bottleneck Identification.md"
+  },
+  {
+    "id": "manufacturing-12",
+    "archetype": "manufacturing",
+    "title": "Production Scheduling and Demand Alignment",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/manufacturing/12 - Production Scheduling and Demand Alignment.md"
+  },
+  {
+    "id": "manufacturing-13",
+    "archetype": "manufacturing",
+    "title": "Process Standardization and Replication Across Plants",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/manufacturing/13 - Process Standardization and Replication Across Plants.md"
+  },
+  {
+    "id": "manufacturing-14",
+    "archetype": "manufacturing",
+    "title": "Work-in-Progress (WIP) Inventory Management",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/manufacturing/14 - Work-in-Progress (WIP) Inventory Management.md"
+  },
+  {
+    "id": "manufacturing-15",
+    "archetype": "manufacturing",
+    "title": "Material Handling and Internal Logistics Efficiency",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/15 - Material Handling and Internal Logistics Efficiency.md"
+  },
+  {
+    "id": "manufacturing-16",
+    "archetype": "manufacturing",
+    "title": "Finished Goods Storage and Warehousing Optimization",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/16 - Finished Goods Storage and Warehousing Optimization.md"
+  },
+  {
+    "id": "manufacturing-17",
+    "archetype": "manufacturing",
+    "title": "Capacity Buffers and Flexibility in Response to Demand Fluctuations",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/17 - Capacity Buffers and Flexibility in Response to Demand.md"
+  },
+  {
+    "id": "manufacturing-18",
+    "archetype": "manufacturing",
+    "title": "Bill of Materials (BOM) and Cost Structure Analysis",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/18 - Bill of Materials (BOM) and Cost Structure Analysis.md"
+  },
+  {
+    "id": "manufacturing-19",
+    "archetype": "manufacturing",
+    "title": "Supplier Risk and Dependency Analysis",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/19 - Supplier Risk and Dependency Analysis.md"
+  },
+  {
+    "id": "manufacturing-20",
+    "archetype": "manufacturing",
+    "title": "Supplier Quality Management",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/20 - Supplier Quality Management.md"
+  },
+  {
+    "id": "manufacturing-21",
+    "archetype": "manufacturing",
+    "title": "Raw Material Sourcing and Procurement Efficiency",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/21 - Raw Material Sourcing and Procurement Efficiency.md"
+  },
+  {
+    "id": "manufacturing-22",
+    "archetype": "manufacturing",
+    "title": "Vendor-Managed Inventory (VMI) Program Evaluation",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/22 - Vendor-Managed Inventory (VMI) Program Evaluation.md"
+  },
+  {
+    "id": "manufacturing-23",
+    "archetype": "manufacturing",
+    "title": "In-house Production vs. Outsourcing Feasibility",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/23 - In-house Production vs. Outsourcing Feasibility.md"
+  },
+  {
+    "id": "manufacturing-24",
+    "archetype": "manufacturing",
+    "title": "Automation and Technology Integration Analysis",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/24 - Automation and Technology Integration Analysis.md"
+  },
+  {
+    "id": "manufacturing-25",
+    "archetype": "manufacturing",
+    "title": "Factory Automation Level and Robotics Utilization",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/25 - Factory Automation Level and Robotics Utilization.md"
+  },
+  {
+    "id": "manufacturing-26",
+    "archetype": "manufacturing",
+    "title": "Tooling and Machine Setup Time Optimization",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/26 - Tooling and Machine Setup Time Optimization.md"
+  },
+  {
+    "id": "manufacturing-27",
+    "archetype": "manufacturing",
+    "title": "Equipment Downtime Tracking and Root Cause Analysis",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/27 - Equipment Downtime Tracking and Root Cause Analysis.md"
+  },
+  {
+    "id": "manufacturing-28",
+    "archetype": "manufacturing",
+    "title": "Spare Parts Management and Predictive Maintenance Systems",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/28 - Spare Parts Management and Predictive Maintenance.md"
+  },
+  {
+    "id": "manufacturing-29",
+    "archetype": "manufacturing",
+    "title": "Manufacturing Cycle Time Reduction",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/29 - Manufacturing Cycle Time Reduction.md"
+  },
+  {
+    "id": "manufacturing-30",
+    "archetype": "manufacturing",
+    "title": "Energy Consumption and Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/30 - Energy Consumption and Efficiency Analysis.md"
+  },
+  {
+    "id": "manufacturing-31",
+    "archetype": "manufacturing",
+    "title": "Capital Expenditure (CapEx) Effectiveness in Equipment and Technology",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/31 - Capital Expenditure (CapEx) Effectiveness in Equipment and.md"
+  },
+  {
+    "id": "manufacturing-32",
+    "archetype": "manufacturing",
+    "title": "Cost of Goods Sold (COGS) Breakdown and Margins Analysis",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/32 - Cost of Goods Sold (COGS) Breakdown and Margins Analysis.md"
+  },
+  {
+    "id": "manufacturing-33",
+    "archetype": "manufacturing",
+    "title": "Asset Utilization and Lifecycle Management",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/33 - Asset Utilization and Lifecycle Management.md"
+  },
+  {
+    "id": "manufacturing-34",
+    "archetype": "manufacturing",
+    "title": "Return on Invested Capital (ROIC) for Manufacturing Assets",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/34 - Return on Invested Capital (ROIC) for Manufacturing Assets.md"
+  },
+  {
+    "id": "manufacturing-35",
+    "archetype": "manufacturing",
+    "title": "Working Capital Management in Manufacturing",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "DIO",
+      "DSO",
+      "DPO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DSO",
+      "WC_DIO",
+      "WC_DPO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/35 - Working Capital Management in Manufacturing.md"
+  },
+  {
+    "id": "manufacturing-36",
+    "archetype": "manufacturing",
+    "title": "Product Customization and Modularity Assessment",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/36 - Product Customization and Modularity Assessment.md"
+  },
+  {
+    "id": "manufacturing-37",
+    "archetype": "manufacturing",
+    "title": "New Product Introduction (NPI) and Time-to-Market Evaluation",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/37 - New Product Introduction (NPI) and Time-to-Market.md"
+  },
+  {
+    "id": "manufacturing-38",
+    "archetype": "manufacturing",
+    "title": "Custom Manufacturing vs. Mass Production Analysis",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/38 - Custom Manufacturing vs. Mass Production Analysis.md"
+  },
+  {
+    "id": "manufacturing-39",
+    "archetype": "manufacturing",
+    "title": "Product Yield and Scrap Rate Analysis",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/39 - Product Yield and Scrap Rate Analysis.md"
+  },
+  {
+    "id": "manufacturing-40",
+    "archetype": "manufacturing",
+    "title": "Make-to-Stock vs. Make-to-Order Strategy Evaluation",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/40 - Make-to-Stock vs. Make-to-Order Strategy Evaluation.md"
+  },
+  {
+    "id": "manufacturing-41",
+    "archetype": "manufacturing",
+    "title": "Sustainability and Environmental Impact Analysis",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/41 - Sustainability and Environmental Impact Analysis.md"
+  },
+  {
+    "id": "manufacturing-42",
+    "archetype": "manufacturing",
+    "title": "Heat, Water, and Waste Management in Production",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/42 - Heat, Water, and Waste Management in Production.md"
+  },
+  {
+    "id": "manufacturing-43",
+    "archetype": "manufacturing",
+    "title": "Environmental Compliance and Emissions Reduction Strategies",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/43 - Environmental Compliance and Emissions Reduction.md"
+  },
+  {
+    "id": "manufacturing-44",
+    "archetype": "manufacturing",
+    "title": "Reverse Logistics and Product Lifecycle Management",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/44 - Reverse Logistics and Product Lifecycle Management.md"
+  },
+  {
+    "id": "manufacturing-45",
+    "archetype": "manufacturing",
+    "title": "Aftermarket Services and Spare Parts Logistics",
+    "part": "G",
+    "partLabel": "Logistics and Aftermarket Services",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/45 - Aftermarket Services and Spare Parts Logistics.md"
+  },
+  {
+    "id": "manufacturing-46",
+    "archetype": "manufacturing",
+    "title": "Multi-Site Manufacturing Network Optimization",
+    "part": "G",
+    "partLabel": "Logistics and Aftermarket Services",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/46 - Multi-Site Manufacturing Network Optimization.md"
+  },
+  {
+    "id": "manufacturing-47",
+    "archetype": "manufacturing",
+    "title": "Safety and Compliance Audit",
+    "part": "G",
+    "partLabel": "Logistics and Aftermarket Services",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "ORGANIZATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/47 - Safety and Compliance Audit.md"
+  }
+]

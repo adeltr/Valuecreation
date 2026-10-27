@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/H
+kind: analysis
+id: healthcare-provider-37
+part: H
+partLabel: Specialty Services and Market Expansion
+quant: []
+causes: []
+levers: [VOLUME, COST_OPS]
 ---
 # 37 · Specialty Care Utilization Patterns and Optimization Analysis
 

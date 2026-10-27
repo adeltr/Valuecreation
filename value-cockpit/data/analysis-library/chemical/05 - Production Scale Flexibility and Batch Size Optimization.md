@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/A
+kind: analysis
+id: chemical-05
+part: A
+partLabel: Production & Process Optimization
+quant: [REVENUE_GROWTH, DIO]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS]
 ---
 # 5 · Production Scale Flexibility and Batch Size Optimization
 

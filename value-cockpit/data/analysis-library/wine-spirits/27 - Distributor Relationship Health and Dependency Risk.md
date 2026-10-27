@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/D
+kind: analysis
+id: wine-spirits-27
+part: D
+partLabel: Supply Chain and Sourcing Stability
+quant: []
+causes: [MARKET]
+levers: [VOLUME]
 ---
 # 27 · Distributor Relationship Health and Dependency Risk Assessment
 

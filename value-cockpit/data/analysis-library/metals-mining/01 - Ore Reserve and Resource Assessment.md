@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-01
+part: A
+partLabel: Resource and Reserve Management
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 1 · Ore Reserve and Resource Assessment
 

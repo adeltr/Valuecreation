@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-05
+part: A
+partLabel: Resource and Reserve Management
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 5 · Stripping Ratio and Waste-to-Ore Ratio Evaluation
 

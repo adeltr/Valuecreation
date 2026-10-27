@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/A
+kind: analysis
+id: hospitality-01
+part: A
+partLabel: Revenue & Pricing Management
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 1 · Occupancy Rate and ADR Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/D
+kind: analysis
+id: third-party-logistics-22
+part: D
+partLabel: Commercial & Contractual Structures
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 22 · Dedicated vs. Shared Logistics Solutions Comparison
 

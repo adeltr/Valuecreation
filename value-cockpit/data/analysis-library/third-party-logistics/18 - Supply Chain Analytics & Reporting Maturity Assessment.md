@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/C
+kind: analysis
+id: third-party-logistics-18
+part: C
+partLabel: Technology & Systems
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME]
 ---
 # 18 · Supply Chain Analytics & Reporting Maturity Assessment
 

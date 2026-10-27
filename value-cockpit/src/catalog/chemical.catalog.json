@@ -1,0 +1,697 @@
+[
+  {
+    "id": "chemical-01",
+    "archetype": "chemical",
+    "title": "Capacity Utilization and Efficiency Metrics",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/01 - Capacity Utilization and Efficiency Metrics.md"
+  },
+  {
+    "id": "chemical-02",
+    "archetype": "chemical",
+    "title": "Energy Consumption and Cost Structure Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/02 - Energy Consumption and Cost Structure Analysis.md"
+  },
+  {
+    "id": "chemical-03",
+    "archetype": "chemical",
+    "title": "Product Yield and Waste Minimization Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/03 - Product Yield and Waste Minimization Analysis.md"
+  },
+  {
+    "id": "chemical-04",
+    "archetype": "chemical",
+    "title": "Catalyst Efficiency and Lifecycle Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/04 - Catalyst Efficiency and Lifecycle Analysis.md"
+  },
+  {
+    "id": "chemical-05",
+    "archetype": "chemical",
+    "title": "Production Scale Flexibility and Batch Size Optimization",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/05 - Production Scale Flexibility and Batch Size Optimization.md"
+  },
+  {
+    "id": "chemical-06",
+    "archetype": "chemical",
+    "title": "Asset Reliability and Maintenance Cost Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/06 - Asset Reliability and Maintenance Cost Analysis.md"
+  },
+  {
+    "id": "chemical-07",
+    "archetype": "chemical",
+    "title": "Wastewater Treatment and Disposal Cost Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/07 - Wastewater Treatment and Disposal Cost Analysis.md"
+  },
+  {
+    "id": "chemical-08",
+    "archetype": "chemical",
+    "title": "Chemical Reaction Yield and Optimization Study",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/08 - Chemical Reaction Yield and Optimization Study.md"
+  },
+  {
+    "id": "chemical-09",
+    "archetype": "chemical",
+    "title": "High-Temperature and High-Pressure Process Resilience Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/09 - High-Temperature and High-Pressure Process Resilience.md"
+  },
+  {
+    "id": "chemical-10",
+    "archetype": "chemical",
+    "title": "Polymerization Process Efficiency and Cost Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/10 - Polymerization Process Efficiency and Cost Analysis.md"
+  },
+  {
+    "id": "chemical-11",
+    "archetype": "chemical",
+    "title": "Supply Chain, Inventory, and Working Capital Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DSO",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/chemical/11 - Supply Chain, Inventory, and Working Capital Efficiency.md"
+  },
+  {
+    "id": "chemical-12",
+    "archetype": "chemical",
+    "title": "Capital Intensity and Return on Investment (ROI) by Facility",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/12 - Capital Intensity and Return on Investment (ROI) by Facility.md"
+  },
+  {
+    "id": "chemical-13",
+    "archetype": "chemical",
+    "title": "Pricing Strategy and Margin Analysis by Chemical Segment",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/chemical/13 - Pricing Strategy and Margin Analysis by Chemical Segment.md"
+  },
+  {
+    "id": "chemical-14",
+    "archetype": "chemical",
+    "title": "Raw Material Hedging and Risk Management Strategy",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/14 - Raw Material Hedging and Risk Management Strategy.md"
+  },
+  {
+    "id": "chemical-15",
+    "archetype": "chemical",
+    "title": "By-product Revenue and Waste Management Cost Analysis",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/15 - By-product Revenue and Waste Management Cost Analysis.md"
+  },
+  {
+    "id": "chemical-16",
+    "archetype": "chemical",
+    "title": "Environmental Impact and Decarbonization Assessment",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/16 - Environmental Impact and Decarbonization Assessment.md"
+  },
+  {
+    "id": "chemical-17",
+    "archetype": "chemical",
+    "title": "Regulatory Risk Assessment Across Key Markets",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/17 - Regulatory Risk Assessment Across Key Markets.md"
+  },
+  {
+    "id": "chemical-18",
+    "archetype": "chemical",
+    "title": "HSE and Process Safety Risk Analysis",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/18 - HSE and Process Safety Risk Analysis.md"
+  },
+  {
+    "id": "chemical-19",
+    "archetype": "chemical",
+    "title": "Environmental Remediation Liability Assessment",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/19 - Environmental Remediation Liability Assessment.md"
+  },
+  {
+    "id": "chemical-20",
+    "archetype": "chemical",
+    "title": "End-of-Life Product Stewardship and Disposal Costs",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/20 - End-of-Life Product Stewardship and Disposal Costs.md"
+  },
+  {
+    "id": "chemical-21",
+    "archetype": "chemical",
+    "title": "Chemical Product Registration and REACH Compliance",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/21 - Chemical Product Registration and REACH Compliance.md"
+  },
+  {
+    "id": "chemical-22",
+    "archetype": "chemical",
+    "title": "Transportation Hazard and Handling Cost Analysis",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/22 - Transportation Hazard and Handling Cost Analysis.md"
+  },
+  {
+    "id": "chemical-23",
+    "archetype": "chemical",
+    "title": "End-user Certification and Compliance Requirements",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/23 - End-user Certification and Compliance Requirements.md"
+  },
+  {
+    "id": "chemical-24",
+    "archetype": "chemical",
+    "title": "Product Portfolio Profitability by Chemical Type",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/chemical/24 - Product Portfolio Profitability by Chemical Type.md"
+  },
+  {
+    "id": "chemical-25",
+    "archetype": "chemical",
+    "title": "End-market Demand and Customer Segmentation Analysis",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/25 - End-market Demand and Customer Segmentation Analysis.md"
+  },
+  {
+    "id": "chemical-26",
+    "archetype": "chemical",
+    "title": "Competitive Positioning in Specialty vs. Commodity Chemicals",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/26 - Competitive Positioning in Specialty vs. Commodity.md"
+  },
+  {
+    "id": "chemical-27",
+    "archetype": "chemical",
+    "title": "Market Entry and Expansion Feasibility by Region",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/27 - Market Entry and Expansion Feasibility by Region.md"
+  },
+  {
+    "id": "chemical-28",
+    "archetype": "chemical",
+    "title": "Product Substitution and Competitive Threats Analysis",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/28 - Product Substitution and Competitive Threats Analysis.md"
+  },
+  {
+    "id": "chemical-29",
+    "archetype": "chemical",
+    "title": "Customer Contract and Offtake Agreement Assessment",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/29 - Customer Contract and Offtake Agreement Assessment.md"
+  },
+  {
+    "id": "chemical-30",
+    "archetype": "chemical",
+    "title": "Patent Expiration Impact on Competitive Positioning",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/30 - Patent Expiration Impact on Competitive Positioning.md"
+  },
+  {
+    "id": "chemical-31",
+    "archetype": "chemical",
+    "title": "Process Technology Competitiveness",
+    "part": "E",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/31 - Process Technology Competitiveness.md"
+  },
+  {
+    "id": "chemical-32",
+    "archetype": "chemical",
+    "title": "Process Automation and Digitalization Readiness",
+    "part": "E",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/32 - Process Automation and Digitalization Readiness.md"
+  },
+  {
+    "id": "chemical-33",
+    "archetype": "chemical",
+    "title": "Specialty Chemicals R&D and Innovation Pipeline Analysis",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/33 - Specialty Chemicals R&D and Innovation Pipeline Analysis.md"
+  },
+  {
+    "id": "chemical-34",
+    "archetype": "chemical",
+    "title": "Specialty Chemical Customization Capability Assessment",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/chemical/34 - Specialty Chemical Customization Capability Assessment.md"
+  },
+  {
+    "id": "chemical-35",
+    "archetype": "chemical",
+    "title": "R&D Pipeline and Innovation Rate in Specialty Chemicals",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/35 - R&D Pipeline and Innovation Rate in Specialty Chemicals.md"
+  },
+  {
+    "id": "chemical-36",
+    "archetype": "chemical",
+    "title": "Feedstock Dependency, Cost, Sourcing, and Substitution Strategy Analysis",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/36 - Feedstock Dependency, Cost, Sourcing, and Substitution.md"
+  },
+  {
+    "id": "chemical-37",
+    "archetype": "chemical",
+    "title": "Supply Chain Integration and Logistics Optimization",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/chemical/37 - Supply Chain Integration and Logistics Optimization.md"
+  },
+  {
+    "id": "chemical-38",
+    "archetype": "chemical",
+    "title": "Supplier Dependence and Diversification Analysis",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/38 - Supplier Dependence and Diversification Analysis.md"
+  },
+  {
+    "id": "chemical-39",
+    "archetype": "chemical",
+    "title": "Global Trade Flow Analysis for Raw Materials and Finished Products",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/39 - Global Trade Flow Analysis for Raw Materials and Finished.md"
+  },
+  {
+    "id": "chemical-40",
+    "archetype": "chemical",
+    "title": "Supplier Quality and Consistency Impact Assessment",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/40 - Supplier Quality and Consistency Impact Assessment.md"
+  },
+  {
+    "id": "chemical-41",
+    "archetype": "chemical",
+    "title": "Vertical Integration Opportunities and Value Chain Positioning",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/41 - Vertical Integration Opportunities and Value Chain Positioning.md"
+  }
+]

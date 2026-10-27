@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/F
+kind: analysis
+id: manufacturing-42
+part: F
+partLabel: Environmental and Sustainability
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 42 · Heat, Water, and Waste Management in Production
 

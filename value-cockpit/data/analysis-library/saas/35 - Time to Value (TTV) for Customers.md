@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/D
+kind: analysis
+id: saas-35
+part: D
+partLabel: Product & Engagement
+quant: [GROSS_CHURN]
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [RETENTION]
 ---
 # 35 · Time to Value (TTV) for Customers
 

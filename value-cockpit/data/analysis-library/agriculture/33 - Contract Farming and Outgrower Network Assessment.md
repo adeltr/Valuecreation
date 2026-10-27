@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/E
+kind: analysis
+id: agriculture-33
+part: E
+partLabel: Market Positioning & Value Chain
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING, WC_DSO]
 ---
 # 33 · Contract Farming and Outgrower Network Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/D
+kind: analysis
+id: media-21
+part: D
+partLabel: Sports & Gaming
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 21 · Gaming & eSports Integration & Monetization Strategy
 

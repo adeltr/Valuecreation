@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-01
+part: A
+partLabel: Marketing
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME, MIX]
 ---
 # 1 · Brand Portfolio Analysis
 

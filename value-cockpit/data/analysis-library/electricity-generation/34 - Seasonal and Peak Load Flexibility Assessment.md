@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/G
+kind: analysis
+id: electricity-generation-34
+part: G
+partLabel: Renewable Energy and Sustainability
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 34 · Seasonal and Peak Load Flexibility Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-08
+part: A
+partLabel: Resource and Reserve Management
+quant: [EBITDA_MARGIN]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 8 · Grade Quality and Metallurgical Recovery Analysis
 

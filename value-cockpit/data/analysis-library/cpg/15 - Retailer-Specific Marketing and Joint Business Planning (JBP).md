@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-15
+part: B
+partLabel: Sales
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 15 · Retailer-Specific Marketing and Joint Business Planning (JBP)
 

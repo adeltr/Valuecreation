@@ -2,6 +2,13 @@
 tags:
   - media
   - part/E
+kind: analysis
+id: media-26
+part: E
+partLabel: Technology & Innovation
+quant: []
+causes: [FINANCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 26 · Blockchain & Web3-based Content Strategies
 

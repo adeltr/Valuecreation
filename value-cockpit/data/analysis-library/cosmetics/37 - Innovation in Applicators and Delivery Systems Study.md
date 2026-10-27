@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/D
+kind: analysis
+id: cosmetics-37
+part: D
+partLabel: Operations and Supply Chain
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: []
 ---
 # 37 · Innovation in Applicators and Delivery Systems Study
 

@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/A
+kind: analysis
+id: cpg-04
+part: A
+partLabel: Marketing
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME, MIX]
 ---
 # 4 · Marketing Mix Effectiveness (4Ps)
 

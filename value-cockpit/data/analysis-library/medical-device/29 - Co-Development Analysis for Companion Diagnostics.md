@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/D
+kind: analysis
+id: medical-device-29
+part: D
+partLabel: Product Development & Lifecycle
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 29 · Co-Development Analysis for Companion Diagnostics
 

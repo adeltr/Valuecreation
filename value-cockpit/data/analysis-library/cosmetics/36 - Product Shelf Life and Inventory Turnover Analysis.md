@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/D
+kind: analysis
+id: cosmetics-36
+part: D
+partLabel: Operations and Supply Chain
+quant: [EBITDA_MARGIN, DIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT, WC_DIO]
 ---
 # 36 · Product Shelf Life and Inventory Turnover Analysis
 

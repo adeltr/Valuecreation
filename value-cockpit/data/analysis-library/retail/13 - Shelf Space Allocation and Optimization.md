@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/B
+kind: analysis
+id: retail-13
+part: B
+partLabel: Operations
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 13 · Shelf Space Allocation and Optimization
 

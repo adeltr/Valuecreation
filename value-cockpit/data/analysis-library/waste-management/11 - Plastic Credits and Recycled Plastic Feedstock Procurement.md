@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/B
+kind: analysis
+id: waste-management-11
+part: B
+partLabel: Recycling & Materials Recovery
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING, VOLUME, COST_PROCUREMENT]
 ---
 # 11 · Plastic Credits and Recycled Plastic Feedstock Procurement Analysis
 

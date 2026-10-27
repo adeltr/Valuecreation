@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/B
+kind: analysis
+id: cpg-18
+part: B
+partLabel: Sales
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 18 · In-store Execution and Merchandising Compliance Analysis
 

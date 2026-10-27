@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/C
+kind: analysis
+id: medical-device-22
+part: C
+partLabel: Reimbursement & Market Access
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [PRICING, VOLUME]
 ---
 # 22 · Global Market Entry and Distribution Strategy
 

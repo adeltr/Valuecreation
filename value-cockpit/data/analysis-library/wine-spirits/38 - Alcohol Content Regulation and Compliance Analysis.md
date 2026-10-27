@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/F
+kind: analysis
+id: wine-spirits-38
+part: F
+partLabel: Regulatory and Compliance
+quant: []
+causes: [MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 38 · Alcohol Content Regulation and Compliance Analysis
 

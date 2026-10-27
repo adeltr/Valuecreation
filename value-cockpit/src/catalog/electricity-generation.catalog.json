@@ -1,0 +1,807 @@
+[
+  {
+    "id": "electricity-generation-01",
+    "archetype": "electricity-generation",
+    "title": "Generation Capacity and Utilization Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/01 - Generation Capacity and Utilization Analysis.md"
+  },
+  {
+    "id": "electricity-generation-02",
+    "archetype": "electricity-generation",
+    "title": "Power Plant Performance and Efficiency Evaluation",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/02 - Power Plant Performance and Efficiency Evaluation.md"
+  },
+  {
+    "id": "electricity-generation-03",
+    "archetype": "electricity-generation",
+    "title": "Heat Rate Degradation and Monitoring Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/03 - Heat Rate Degradation and Monitoring Analysis.md"
+  },
+  {
+    "id": "electricity-generation-04",
+    "archetype": "electricity-generation",
+    "title": "Capacity Factor and Forced Outage Rate Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/04 - Capacity Factor and Forced Outage Rate Analysis.md"
+  },
+  {
+    "id": "electricity-generation-05",
+    "archetype": "electricity-generation",
+    "title": "Peaking Plant Profitability and Dispatch Optimization",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/05 - Peaking Plant Profitability and Dispatch Optimization.md"
+  },
+  {
+    "id": "electricity-generation-06",
+    "archetype": "electricity-generation",
+    "title": "Reserve Shutdown and Start-up Cost Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/06 - Reserve Shutdown and Start-up Cost Analysis.md"
+  },
+  {
+    "id": "electricity-generation-07",
+    "archetype": "electricity-generation",
+    "title": "Fuel Mix and Diversification Assessment",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/07 - Fuel Mix and Diversification Assessment.md"
+  },
+  {
+    "id": "electricity-generation-08",
+    "archetype": "electricity-generation",
+    "title": "Fuel Supply Chain Reliability and Cost Analysis",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/08 - Fuel Supply Chain Reliability and Cost Analysis.md"
+  },
+  {
+    "id": "electricity-generation-09",
+    "archetype": "electricity-generation",
+    "title": "Fuel Switching Feasibility Study",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/09 - Fuel Switching Feasibility Study.md"
+  },
+  {
+    "id": "electricity-generation-10",
+    "archetype": "electricity-generation",
+    "title": "Renewable Energy Credits (REC) and Carbon Offset Analysis",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/10 - Renewable Energy Credits (REC) and Carbon Offset Analysis.md"
+  },
+  {
+    "id": "electricity-generation-11",
+    "archetype": "electricity-generation",
+    "title": "Power Purchase Agreement (PPA) and Contract Analysis",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/11 - Power Purchase Agreement (PPA) and Contract Analysis.md"
+  },
+  {
+    "id": "electricity-generation-12",
+    "archetype": "electricity-generation",
+    "title": "Levelized Cost of Electricity (LCOE) Comparison",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/12 - Levelized Cost of Electricity (LCOE) Comparison.md"
+  },
+  {
+    "id": "electricity-generation-13",
+    "archetype": "electricity-generation",
+    "title": "Market Price Exposure and Hedging Strategy Evaluation",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/13 - Market Price Exposure and Hedging Strategy Evaluation.md"
+  },
+  {
+    "id": "electricity-generation-14",
+    "archetype": "electricity-generation",
+    "title": "Capacity Payment and Ancillary Services Analysis",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/14 - Capacity Payment and Ancillary Services Analysis.md"
+  },
+  {
+    "id": "electricity-generation-15",
+    "archetype": "electricity-generation",
+    "title": "Return on Invested Capital (ROIC) by Generation Type",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/15 - Return on Invested Capital (ROIC) by Generation Type.md"
+  },
+  {
+    "id": "electricity-generation-16",
+    "archetype": "electricity-generation",
+    "title": "Energy Market Participation Strategy and Revenue Optimization",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/16 - Energy Market Participation Strategy and Revenue.md"
+  },
+  {
+    "id": "electricity-generation-17",
+    "archetype": "electricity-generation",
+    "title": "Electricity Spot Price Forecasting and Impact Assessment",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/17 - Electricity Spot Price Forecasting and Impact Assessment.md"
+  },
+  {
+    "id": "electricity-generation-18",
+    "archetype": "electricity-generation",
+    "title": "Emissions and Environmental Compliance Analysis",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/18 - Emissions and Environmental Compliance Analysis.md"
+  },
+  {
+    "id": "electricity-generation-19",
+    "archetype": "electricity-generation",
+    "title": "Power Plant Emission Control Technology Evaluation",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/19 - Power Plant Emission Control Technology Evaluation.md"
+  },
+  {
+    "id": "electricity-generation-20",
+    "archetype": "electricity-generation",
+    "title": "Regulatory and Policy Compliance Review",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/20 - Regulatory and Policy Compliance Review.md"
+  },
+  {
+    "id": "electricity-generation-21",
+    "archetype": "electricity-generation",
+    "title": "Nuclear Plant Safety and Regulatory Compliance Evaluation",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/21 - Nuclear Plant Safety and Regulatory Compliance Evaluation.md"
+  },
+  {
+    "id": "electricity-generation-22",
+    "archetype": "electricity-generation",
+    "title": "Carbon Intensity and Decarbonization Strategy",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/22 - Carbon Intensity and Decarbonization Strategy.md"
+  },
+  {
+    "id": "electricity-generation-23",
+    "archetype": "electricity-generation",
+    "title": "Grid Interconnection, Transmission, and Congestion Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/23 - Grid Interconnection, Transmission, and Congestion Analysis.md"
+  },
+  {
+    "id": "electricity-generation-24",
+    "archetype": "electricity-generation",
+    "title": "Grid Reliability, Stability, Balancing, and Frequency Regulation Assessment",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/24 - Grid Reliability, Stability, Balancing, and Frequency Regulation.md"
+  },
+  {
+    "id": "electricity-generation-25",
+    "archetype": "electricity-generation",
+    "title": "Frequency and Voltage Control Performance Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/25 - Frequency and Voltage Control Performance Analysis.md"
+  },
+  {
+    "id": "electricity-generation-26",
+    "archetype": "electricity-generation",
+    "title": "Transmission Loss and Efficiency Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/26 - Transmission Loss and Efficiency Analysis.md"
+  },
+  {
+    "id": "electricity-generation-27",
+    "archetype": "electricity-generation",
+    "title": "Emergency and Black Start Capability Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/27 - Emergency and Black Start Capability Analysis.md"
+  },
+  {
+    "id": "electricity-generation-28",
+    "archetype": "electricity-generation",
+    "title": "Weather-Related Vulnerability and Climate Resilience Analysis",
+    "part": "F",
+    "partLabel": "Risk Management and Resilience",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/28 - Weather-Related Vulnerability and Climate Resilience.md"
+  },
+  {
+    "id": "electricity-generation-29",
+    "archetype": "electricity-generation",
+    "title": "Fuel Price Volatility Risk Management",
+    "part": "F",
+    "partLabel": "Risk Management and Resilience",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/29 - Fuel Price Volatility Risk Management.md"
+  },
+  {
+    "id": "electricity-generation-30",
+    "archetype": "electricity-generation",
+    "title": "Operational Risk and Safety Performance Analysis",
+    "part": "F",
+    "partLabel": "Risk Management and Resilience",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/30 - Operational Risk and Safety Performance Analysis.md"
+  },
+  {
+    "id": "electricity-generation-31",
+    "archetype": "electricity-generation",
+    "title": "Renewable Energy Transition Readiness and Integration Strategy Assessment",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/31 - Renewable Energy Transition Readiness and Integration.md"
+  },
+  {
+    "id": "electricity-generation-32",
+    "archetype": "electricity-generation",
+    "title": "Intermittency Management Strategies for Renewable Energy Sources",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/32 - Intermittency Management Strategies for Renewable Energy.md"
+  },
+  {
+    "id": "electricity-generation-33",
+    "archetype": "electricity-generation",
+    "title": "Waste Heat Recovery and Cogeneration Potential",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [
+      "OPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/33 - Waste Heat Recovery and Cogeneration Potential.md"
+  },
+  {
+    "id": "electricity-generation-34",
+    "archetype": "electricity-generation",
+    "title": "Seasonal and Peak Load Flexibility Assessment",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/34 - Seasonal and Peak Load Flexibility Assessment.md"
+  },
+  {
+    "id": "electricity-generation-35",
+    "archetype": "electricity-generation",
+    "title": "Grid Modernization and Smart Grid Integration Assessment",
+    "part": "H",
+    "partLabel": "Technological Innovation and Modernization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/35 - Grid Modernization and Smart Grid Integration Assessment.md"
+  },
+  {
+    "id": "electricity-generation-36",
+    "archetype": "electricity-generation",
+    "title": "Energy Storage Feasibility and Lifecycle Cost Assessment",
+    "part": "H",
+    "partLabel": "Technological Innovation and Modernization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/36 - Energy Storage Feasibility and Lifecycle Cost Assessment.md"
+  },
+  {
+    "id": "electricity-generation-37",
+    "archetype": "electricity-generation",
+    "title": "Distributed Generation Impact Assessment",
+    "part": "H",
+    "partLabel": "Technological Innovation and Modernization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/37 - Distributed Generation Impact Assessment.md"
+  },
+  {
+    "id": "electricity-generation-38",
+    "archetype": "electricity-generation",
+    "title": "Load Forecasting and Demand-Supply Alignment Analysis",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/38 - Load Forecasting and Demand-Supply Alignment Analysis.md"
+  },
+  {
+    "id": "electricity-generation-39",
+    "archetype": "electricity-generation",
+    "title": "Seasonal Resource Adequacy Planning",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/39 - Seasonal Resource Adequacy Planning.md"
+  },
+  {
+    "id": "electricity-generation-40",
+    "archetype": "electricity-generation",
+    "title": "Capacity Reserve Margin Analysis",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/40 - Capacity Reserve Margin Analysis.md"
+  },
+  {
+    "id": "electricity-generation-41",
+    "archetype": "electricity-generation",
+    "title": "Demand Response and Load Shifting Capabilities",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/41 - Demand Response and Load Shifting Capabilities.md"
+  },
+  {
+    "id": "electricity-generation-42",
+    "archetype": "electricity-generation",
+    "title": "Capital Expenditure (CapEx) and Maintenance Planning Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/42 - Capital Expenditure (CapEx) and Maintenance Planning.md"
+  },
+  {
+    "id": "electricity-generation-43",
+    "archetype": "electricity-generation",
+    "title": "Asset Age Profile and Lifecycle Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/43 - Asset Age Profile and Lifecycle Analysis.md"
+  },
+  {
+    "id": "electricity-generation-44",
+    "archetype": "electricity-generation",
+    "title": "Power Plant Decommissioning and Remediation Planning",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/electricity-generation/44 - Power Plant Decommissioning and Remediation Planning.md"
+  },
+  {
+    "id": "electricity-generation-45",
+    "archetype": "electricity-generation",
+    "title": "Energy Curtailment and Loss Factor Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/45 - Energy Curtailment and Loss Factor Analysis.md"
+  },
+  {
+    "id": "electricity-generation-46",
+    "archetype": "electricity-generation",
+    "title": "Cross-Border Energy Trade and Interconnection Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/46 - Cross-Border Energy Trade and Interconnection Analysis.md"
+  },
+  {
+    "id": "electricity-generation-47",
+    "archetype": "electricity-generation",
+    "title": "Water Usage and Cooling Technology Assessment",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/47 - Water Usage and Cooling Technology Assessment.md"
+  }
+]

@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/F
+kind: analysis
+id: third-party-logistics-33
+part: F
+partLabel: Trade & Regulatory Compliance
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 33 · Freight Classification (NMFC) & Reclassification Opportunities
 

@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-07
+part: A
+partLabel: Research & Development
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 7 · Companion Diagnostics Integration
 

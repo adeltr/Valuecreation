@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/B
+kind: analysis
+id: saas-15
+part: B
+partLabel: Sales & Marketing
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 15 · Sales Cycle Length Analysis
 

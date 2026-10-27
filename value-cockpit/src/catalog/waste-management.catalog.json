@@ -1,0 +1,828 @@
+[
+  {
+    "id": "waste-management-01",
+    "archetype": "waste-management",
+    "title": "Landfill Capacity and Closure-Post-Closure Liability Analysis",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/01 - Landfill Capacity and Closure-Post-Closure Liability Analysis.md"
+  },
+  {
+    "id": "waste-management-02",
+    "archetype": "waste-management",
+    "title": "Leachate Management and Groundwater Protection Compliance",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/02 - Leachate Management and Groundwater Protection.md"
+  },
+  {
+    "id": "waste-management-03",
+    "archetype": "waste-management",
+    "title": "Residuals Disposal and Processing Cost Analysis",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/03 - Residuals Disposal and Processing Cost Analysis.md"
+  },
+  {
+    "id": "waste-management-04",
+    "archetype": "waste-management",
+    "title": "Municipal Solid Waste (MSW) Composition Trend Forecasting for Long-Term Capacity Planning",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/04 - Municipal Solid Waste (MSW) Composition Trend Forecasting.md"
+  },
+  {
+    "id": "waste-management-05",
+    "archetype": "waste-management",
+    "title": "Closed Landfill Redevelopment Feasibility",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/05 - Closed Landfill Redevelopment Feasibility.md"
+  },
+  {
+    "id": "waste-management-06",
+    "archetype": "waste-management",
+    "title": "Landfill Mining and Resource Recovery Feasibility",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/06 - Landfill Mining and Resource Recovery Feasibility.md"
+  },
+  {
+    "id": "waste-management-07",
+    "archetype": "waste-management",
+    "title": "Bioreactor Landfill Operation Performance",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/07 - Bioreactor Landfill Operation Performance.md"
+  },
+  {
+    "id": "waste-management-08",
+    "archetype": "waste-management",
+    "title": "Material Recovery Facility (MRF) Throughput and Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/08 - Material Recovery Facility (MRF) Throughput and Efficiency.md"
+  },
+  {
+    "id": "waste-management-09",
+    "archetype": "waste-management",
+    "title": "Waste Composition and Recycling Rate Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/09 - Waste Composition and Recycling Rate Analysis.md"
+  },
+  {
+    "id": "waste-management-10",
+    "archetype": "waste-management",
+    "title": "Commodity Price Fluctuation and Recycling Revenue Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/10 - Commodity Price Fluctuation and Recycling Revenue.md"
+  },
+  {
+    "id": "waste-management-11",
+    "archetype": "waste-management",
+    "title": "Plastic Credits and Recycled Plastic Feedstock Procurement Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/11 - Plastic Credits and Recycled Plastic Feedstock Procurement.md"
+  },
+  {
+    "id": "waste-management-12",
+    "archetype": "waste-management",
+    "title": "Resource Recovery Park Master Planning and Integrated Facility Design",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/12 - Resource Recovery Park Master Planning and Integrated.md"
+  },
+  {
+    "id": "waste-management-13",
+    "archetype": "waste-management",
+    "title": "Construction & Demolition (C&D) Waste Diversion and Recycling Efficiency",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/13 - Construction & Demolition (C&D) Waste Diversion and.md"
+  },
+  {
+    "id": "waste-management-14",
+    "archetype": "waste-management",
+    "title": "Recyclable Market Development and End-Use Demand Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/14 - Recyclable Market Development and End-Use Demand.md"
+  },
+  {
+    "id": "waste-management-15",
+    "archetype": "waste-management",
+    "title": "Organics Recycling and Composting Facility Operational Review",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/15 - Organics Recycling and Composting Facility Operational.md"
+  },
+  {
+    "id": "waste-management-16",
+    "archetype": "waste-management",
+    "title": "In-Vessel vs. Windrow Composting Operational Efficiency Comparison",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/16 - In-Vessel vs. Windrow Composting Operational Efficiency.md"
+  },
+  {
+    "id": "waste-management-17",
+    "archetype": "waste-management",
+    "title": "Mechanical Biological Treatment (MBT) Facility Performance and Throughput Analysis",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/17 - Mechanical Biological Treatment (MBT) Facility Performance.md"
+  },
+  {
+    "id": "waste-management-18",
+    "archetype": "waste-management",
+    "title": "Biosolids and Soil Amendment Land Application Strategy and Compliance Review",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/18 - Biosolids and Soil Amendment Land Application Strategy and.md"
+  },
+  {
+    "id": "waste-management-19",
+    "archetype": "waste-management",
+    "title": "Sludge Co-Digestion with MSW for Enhanced Biogas Production",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/19 - Sludge Co-Digestion with MSW for Enhanced Biogas.md"
+  },
+  {
+    "id": "waste-management-20",
+    "archetype": "waste-management",
+    "title": "Landfill Gas Capture and Bioenergy Potential Evaluation",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/20 - Landfill Gas Capture and Bioenergy Potential Evaluation.md"
+  },
+  {
+    "id": "waste-management-21",
+    "archetype": "waste-management",
+    "title": "Waste-to-Energy (WTE) Plant Performance and Efficiency Review",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/21 - Waste-to-Energy (WTE) Plant Performance and Efficiency.md"
+  },
+  {
+    "id": "waste-management-22",
+    "archetype": "waste-management",
+    "title": "Gasification or Pyrolysis Technology Feasibility for High-Calorific Residual Waste",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/22 - Gasification or Pyrolysis Technology Feasibility for.md"
+  },
+  {
+    "id": "waste-management-23",
+    "archetype": "waste-management",
+    "title": "Incinerator Bottom Ash Metals Recovery Potential and Market Valuation",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/23 - Incinerator Bottom Ash Metals Recovery Potential and Market.md"
+  },
+  {
+    "id": "waste-management-24",
+    "archetype": "waste-management",
+    "title": "Thermal Desorption or Incineration Feasibility for Contaminated Soil Treatment",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/24 - Thermal Desorption or Incineration Feasibility for.md"
+  },
+  {
+    "id": "waste-management-25",
+    "archetype": "waste-management",
+    "title": "Route Density and Fleet Utilization Analysis",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/25 - Route Density and Fleet Utilization Analysis.md"
+  },
+  {
+    "id": "waste-management-26",
+    "archetype": "waste-management",
+    "title": "Transfer Station Siting and Network Optimization",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/26 - Transfer Station Siting and Network Optimization.md"
+  },
+  {
+    "id": "waste-management-27",
+    "archetype": "waste-management",
+    "title": "Fleet Electrification or Alternative Fuel Conversion Feasibility Study",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/27 - Fleet Electrification or Alternative Fuel Conversion Feasibility.md"
+  },
+  {
+    "id": "waste-management-28",
+    "archetype": "waste-management",
+    "title": "Bulky Waste Collection and Diversion Efficiency",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/28 - Bulky Waste Collection and Diversion Efficiency.md"
+  },
+  {
+    "id": "waste-management-29",
+    "archetype": "waste-management",
+    "title": "Multi-Stream Curbside Collection Program Assessment",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/29 - Multi-Stream Curbside Collection Program Assessment.md"
+  },
+  {
+    "id": "waste-management-30",
+    "archetype": "waste-management",
+    "title": "Hazardous Waste Handling and Specialized Disposal Analysis",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/30 - Hazardous Waste Handling and Specialized Disposal Analysis.md"
+  },
+  {
+    "id": "waste-management-31",
+    "archetype": "waste-management",
+    "title": "Electronic Waste (E-waste) Collection and Processing Strategy",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/31 - Electronic Waste (E-waste) Collection and Processing.md"
+  },
+  {
+    "id": "waste-management-32",
+    "archetype": "waste-management",
+    "title": "Special Waste Streams Handling and Compliance Analysis",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/32 - Special Waste Streams Handling and Compliance Analysis.md"
+  },
+  {
+    "id": "waste-management-33",
+    "archetype": "waste-management",
+    "title": "Household Hazardous Waste (HHW) Collection Program Effectiveness",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/33 - Household Hazardous Waste (HHW) Collection Program.md"
+  },
+  {
+    "id": "waste-management-34",
+    "archetype": "waste-management",
+    "title": "Mercury-Containing Lamps and Devices Recycling Compliance",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/34 - Mercury-Containing Lamps and Devices Recycling.md"
+  },
+  {
+    "id": "waste-management-35",
+    "archetype": "waste-management",
+    "title": "Regulatory Compliance and Environmental Impact Assessment",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/35 - Regulatory Compliance and Environmental Impact.md"
+  },
+  {
+    "id": "waste-management-36",
+    "archetype": "waste-management",
+    "title": "Decommissioning and Site Remediation Liability Analysis",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/36 - Decommissioning and Site Remediation Liability Analysis.md"
+  },
+  {
+    "id": "waste-management-37",
+    "archetype": "waste-management",
+    "title": "Odor Control Management and Mitigation Strategies",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/37 - Odor Control Management and Mitigation Strategies.md"
+  },
+  {
+    "id": "waste-management-38",
+    "archetype": "waste-management",
+    "title": "Extended Producer Responsibility (EPR) Program Implementation Evaluation",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/38 - Extended Producer Responsibility (EPR) Program.md"
+  },
+  {
+    "id": "waste-management-39",
+    "archetype": "waste-management",
+    "title": "PFAS and Emerging Contaminants Monitoring and Treatment Strategy",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/39 - PFAS and Emerging Contaminants Monitoring and Treatment.md"
+  },
+  {
+    "id": "waste-management-40",
+    "archetype": "waste-management",
+    "title": "Climate Resilience and Stormwater Management for Landfills",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/40 - Climate Resilience and Stormwater Management for Landfills.md"
+  },
+  {
+    "id": "waste-management-41",
+    "archetype": "waste-management",
+    "title": "Franchise Fee and Flow Control Policy Compliance and Optimization",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/41 - Franchise Fee and Flow Control Policy Compliance and.md"
+  },
+  {
+    "id": "waste-management-42",
+    "archetype": "waste-management",
+    "title": "Municipal and Commercial Contract Structuring and Profitability Analysis",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/42 - Municipal and Commercial Contract Structuring and.md"
+  },
+  {
+    "id": "waste-management-43",
+    "archetype": "waste-management",
+    "title": "Waste Stream Segmentation and Profitability Analysis",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/43 - Waste Stream Segmentation and Profitability Analysis.md"
+  },
+  {
+    "id": "waste-management-44",
+    "archetype": "waste-management",
+    "title": "Synergistic Acquisitions and Geographic Coverage Optimization",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/44 - Synergistic Acquisitions and Geographic Coverage.md"
+  },
+  {
+    "id": "waste-management-45",
+    "archetype": "waste-management",
+    "title": "Tipping Fee Benchmarking and Optimization Study",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/45 - Tipping Fee Benchmarking and Optimization Study.md"
+  },
+  {
+    "id": "waste-management-46",
+    "archetype": "waste-management",
+    "title": "Corporate Sustainability and ESG Impact Assessment",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/46 - Corporate Sustainability and ESG Impact Assessment.md"
+  },
+  {
+    "id": "waste-management-47",
+    "archetype": "waste-management",
+    "title": "Community Engagement and Public Relations Strategy Review",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/47 - Community Engagement and Public Relations Strategy.md"
+  },
+  {
+    "id": "waste-management-48",
+    "archetype": "waste-management",
+    "title": "Circular Economy Partnerships and Upstream Collaboration Analysis",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/48 - Circular Economy Partnerships and Upstream Collaboration.md"
+  },
+  {
+    "id": "waste-management-49",
+    "archetype": "waste-management",
+    "title": "Carbon Offsetting and Emissions Trading Potential from Waste Operations",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/49 - Carbon Offsetting and Emissions Trading Potential from.md"
+  },
+  {
+    "id": "waste-management-50",
+    "archetype": "waste-management",
+    "title": "Automated Sorting Technology Investment Assessment",
+    "part": "J",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/50 - Automated Sorting Technology Investment Assessment.md"
+  }
+]

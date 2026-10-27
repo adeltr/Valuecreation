@@ -2,6 +2,13 @@
 tags:
   - hospitality
   - part/F
+kind: analysis
+id: hospitality-27
+part: F
+partLabel: Ownership & Financial Structures
+quant: []
+causes: [FINANCIAL, MARKET]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 27 · USALI Departmental Benchmarking
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/G
+kind: analysis
+id: media-30
+part: G
+partLabel: Regulatory, Compliance & Guilds
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [VOLUME, COST_OPS]
 ---
 # 30 · Industry Guild, Residuals & Global Compliance Analysis
 

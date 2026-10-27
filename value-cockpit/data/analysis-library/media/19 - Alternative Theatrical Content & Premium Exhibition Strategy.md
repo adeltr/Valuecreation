@@ -2,6 +2,13 @@
 tags:
   - media
   - part/C
+kind: analysis
+id: media-19
+part: C
+partLabel: Live & Experiential Entertainment
+quant: []
+causes: []
+levers: [PRICING, MIX]
 ---
 # 19 · Alternative Theatrical Content & Premium Exhibition Strategy
 

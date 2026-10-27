@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/C
+kind: analysis
+id: pharma-20
+part: C
+partLabel: Operations & Supply Chain
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [VOLUME, WC_DSO]
 ---
 # 20 · Compassionate Use Program Strategy
 

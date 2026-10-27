@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/D
+kind: analysis
+id: cpg-34
+part: D
+partLabel: Research & Development
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: []
 ---
 # 34 · Innovation Pipeline and New Product Development (NPD) Analysis
 

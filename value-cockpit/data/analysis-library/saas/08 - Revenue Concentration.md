@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-08
+part: A
+partLabel: Finance & Revenue
+quant: [GROSS_CHURN]
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 8 · Revenue Concentration
 

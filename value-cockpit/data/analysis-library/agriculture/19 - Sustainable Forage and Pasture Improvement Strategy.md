@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/B
+kind: analysis
+id: agriculture-19
+part: B
+partLabel: Livestock Management & Animal Health
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 19 · Sustainable Forage and Pasture Improvement Strategy
 

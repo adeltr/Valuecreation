@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/B
+kind: analysis
+id: pharma-10
+part: B
+partLabel: Regulatory & Compliance
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 10 · Regulatory Pathway Complexity
 

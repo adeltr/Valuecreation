@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-11
+part: A
+partLabel: Crop Management & Soil Health
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 11 · Biostimulants and Biological Crop Protection Product Evaluation
 

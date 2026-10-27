@@ -2,6 +2,13 @@
 tags:
   - media
   - part/D
+kind: analysis
+id: media-23
+part: D
+partLabel: Sports & Gaming
+quant: []
+causes: [COMMERCIAL]
+levers: []
 ---
 # 23 · Betting & Sportsbook Integration Partnerships Analysis
 

@@ -1,12 +1,12 @@
 import { describe, it, expect } from 'vitest';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import type { AnalysisRef } from './types';
-import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
+import { getActiveVocabulary, SECTOR_ARCHETYPES } from '../ontology/registry';
+import { getCatalog } from './index';
 
-// Every archetype with a source library must ship a catalog that passes integrity.
-const CATALOGS: SectorArchetype[] = ['aero', 'airline'];
-// Fully curated libraries: every source analysis must be in the catalog.
-const EXPECTED_SIZE: Partial<Record<SectorArchetype, number>> = { airline: 40 };
+// Every archetype except generic ships a catalog covering its whole library.
+const CATALOGS = SECTOR_ARCHETYPES.filter((a) => a !== 'generic');
+const librarySize = (a: string) => readdirSync(`data/analysis-library/${a}`).filter((f) => /^\d{2} - .*\.md$/.test(f)).length;
 
 describe.each(CATALOGS)('%s catalog – referential integrity', (archetype) => {
   const path = `src/catalog/${archetype}.catalog.json`;
@@ -15,8 +15,12 @@ describe.each(CATALOGS)('%s catalog – referential integrity', (archetype) => {
 
   it('exists', () => expect(existsSync(path), path).toBe(true));
 
-  it.runIf(EXPECTED_SIZE[archetype] !== undefined)('covers every curated analysis', () => {
-    expect(entries.length).toBe(EXPECTED_SIZE[archetype]);
+  it('covers every analysis of the library', () => {
+    expect(entries.length).toBe(librarySize(archetype));
+  });
+
+  it('is served by getCatalog', () => {
+    expect(getCatalog(archetype)).toHaveLength(entries.length);
   });
 
   it('all ids are unique and prefixed by the archetype', () => {

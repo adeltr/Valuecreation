@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/E
+kind: analysis
+id: third-party-logistics-25
+part: E
+partLabel: Value-Added & Specialized Services
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [PRICING, VOLUME, COST_OPS]
 ---
 # 25 · Value-Added Services & Reverse Logistics Capabilities Review
 

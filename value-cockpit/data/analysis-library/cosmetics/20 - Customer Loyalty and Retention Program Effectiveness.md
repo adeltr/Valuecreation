@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-20
+part: B
+partLabel: Marketing and Consumer Insights
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 20 · Customer Loyalty and Retention Program Effectiveness
 

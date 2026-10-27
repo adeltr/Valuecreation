@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/H
+kind: analysis
+id: medical-device-47
+part: H
+partLabel: Technology & Innovation
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 47 · In-Vitro Diagnostic (IVD) Connectivity with Laboratory Information Systems (LIS) Workflow Analysis
 

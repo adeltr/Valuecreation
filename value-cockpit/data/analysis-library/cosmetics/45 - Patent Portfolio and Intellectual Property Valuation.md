@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/F
+kind: analysis
+id: cosmetics-45
+part: F
+partLabel: Finance and Intellectual Property
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY]
+levers: [VOLUME]
 ---
 # 45 · Patent Portfolio and Intellectual Property Valuation
 

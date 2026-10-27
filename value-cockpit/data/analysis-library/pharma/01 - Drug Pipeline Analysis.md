@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-01
+part: A
+partLabel: Research & Development
+quant: []
+causes: []
+levers: [VOLUME, COST_OPS]
 ---
 # 1 · Drug Pipeline Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - chemical
   - part/G
+kind: analysis
+id: chemical-39
+part: G
+partLabel: Supply Chain
+quant: [COGS]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 39 · Global Trade Flow Analysis for Raw Materials and Finished Products
 

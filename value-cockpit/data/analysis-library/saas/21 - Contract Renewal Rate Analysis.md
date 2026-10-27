@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/C
+kind: analysis
+id: saas-21
+part: C
+partLabel: Customer Retention & Success
+quant: [GROSS_CHURN]
+causes: [COMMERCIAL]
+levers: [RETENTION]
 ---
 # 21 · Contract Renewal Rate Analysis
 

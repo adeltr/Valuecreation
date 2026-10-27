@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-02
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 2 · Carrier Selection & Performance Benchmarking
 

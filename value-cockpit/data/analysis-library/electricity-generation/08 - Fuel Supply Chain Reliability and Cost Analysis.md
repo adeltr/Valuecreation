@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/B
+kind: analysis
+id: electricity-generation-08
+part: B
+partLabel: Fuel and Energy Resource Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT]
 ---
 # 8 · Fuel Supply Chain Reliability and Cost Analysis
 

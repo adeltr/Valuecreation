@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/E
+kind: analysis
+id: medical-device-30
+part: E
+partLabel: Operations & Supply Chain
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 30 · Manufacturing Scalability and Technology Transfer Analysis
 

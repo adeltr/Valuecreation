@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-14
+part: B
+partLabel: Clinical & Post-Market
+quant: [DSO]
+causes: [REGULATORY]
+levers: []
 ---
 # 14 · Real-World Evidence Generation Strategy for Device Performance
 

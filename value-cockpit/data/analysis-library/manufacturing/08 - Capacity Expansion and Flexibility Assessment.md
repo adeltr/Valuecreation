@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-08
+part: A
+partLabel: Operations
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 8 · Capacity Expansion and Flexibility Assessment
 

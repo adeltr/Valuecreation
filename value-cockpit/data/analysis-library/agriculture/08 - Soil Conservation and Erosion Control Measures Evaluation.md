@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/A
+kind: analysis
+id: agriculture-08
+part: A
+partLabel: Crop Management & Soil Health
+quant: []
+causes: []
+levers: []
 ---
 # 8 · Soil Conservation and Erosion Control Measures Evaluation
 

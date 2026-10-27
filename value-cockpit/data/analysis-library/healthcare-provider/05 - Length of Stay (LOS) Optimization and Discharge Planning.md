@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/A
+kind: analysis
+id: healthcare-provider-05
+part: A
+partLabel: Clinical Performance and Quality
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 5 · Length of Stay (LOS) Optimization and Discharge Planning Review
 

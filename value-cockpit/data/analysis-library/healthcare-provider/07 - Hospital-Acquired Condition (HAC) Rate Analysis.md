@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/A
+kind: analysis
+id: healthcare-provider-07
+part: A
+partLabel: Clinical Performance and Quality
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 7 · Hospital-Acquired Condition (HAC) Rate Analysis
 

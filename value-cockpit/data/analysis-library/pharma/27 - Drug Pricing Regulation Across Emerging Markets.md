@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/D
+kind: analysis
+id: pharma-27
+part: D
+partLabel: Marketing & Market Access
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [PRICING, VOLUME]
 ---
 # 27 · Drug Pricing Regulation Across Emerging Markets
 

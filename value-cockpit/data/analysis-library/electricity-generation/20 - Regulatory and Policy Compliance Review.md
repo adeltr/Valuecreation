@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/D
+kind: analysis
+id: electricity-generation-20
+part: D
+partLabel: Regulatory and Environmental Compliance
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 20 · Regulatory and Policy Compliance Review
 

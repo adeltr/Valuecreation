@@ -2,6 +2,13 @@
 tags:
   - waste-management
   - part/A
+kind: analysis
+id: waste-management-01
+part: A
+partLabel: Landfill Management & Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 1 · Landfill Capacity and Closure-Post-Closure Liability Analysis
 

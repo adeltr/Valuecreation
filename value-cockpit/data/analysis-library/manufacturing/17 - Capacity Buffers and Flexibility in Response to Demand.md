@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/A
+kind: analysis
+id: manufacturing-17
+part: A
+partLabel: Operations
+quant: [REVENUE_GROWTH, DIO]
+causes: [OPERATIONAL, MARKET]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 17 · Capacity Buffers and Flexibility in Response to Demand Fluctuations
 

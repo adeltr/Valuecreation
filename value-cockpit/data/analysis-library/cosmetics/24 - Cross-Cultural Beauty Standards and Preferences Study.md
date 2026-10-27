@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/B
+kind: analysis
+id: cosmetics-24
+part: B
+partLabel: Marketing and Consumer Insights
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME, MIX]
 ---
 # 24 · Cross-Cultural Beauty Standards and Preferences Study
 

@@ -2,6 +2,13 @@
 tags:
   - manufacturing
   - part/D
+kind: analysis
+id: manufacturing-31
+part: D
+partLabel: Finance and Asset Management
+quant: [CAPEX]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 31 · Capital Expenditure (CapEx) Effectiveness in Equipment and Technology
 

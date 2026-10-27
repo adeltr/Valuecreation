@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/H
+kind: analysis
+id: metals-mining-39
+part: H
+partLabel: Technology and Innovation
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 39 · Mine Automation and Digital Technology Adoption Evaluation
 

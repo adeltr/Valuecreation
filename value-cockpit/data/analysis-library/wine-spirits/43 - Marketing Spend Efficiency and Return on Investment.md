@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/G
+kind: analysis
+id: wine-spirits-43
+part: G
+partLabel: Financial and Revenue Optimization
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 43 · Marketing Spend Efficiency and Return on Investment
 

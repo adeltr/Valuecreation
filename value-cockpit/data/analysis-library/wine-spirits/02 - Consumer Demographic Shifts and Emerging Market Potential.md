@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/A
+kind: analysis
+id: wine-spirits-02
+part: A
+partLabel: Market and Consumer Insights
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 2 · Consumer Demographic Shifts and Emerging Market Potential
 

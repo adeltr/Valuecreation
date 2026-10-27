@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/D
+kind: analysis
+id: pharma-26
+part: D
+partLabel: Marketing & Market Access
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [PRICING, VOLUME]
 ---
 # 26 · Rare Disease Market Penetration
 

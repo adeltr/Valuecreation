@@ -2,6 +2,13 @@
 tags:
   - agriculture
   - part/C
+kind: analysis
+id: agriculture-22
+part: C
+partLabel: Environmental Sustainability & Resource
+quant: []
+causes: []
+levers: [COST_OPS]
 ---
 # 22 · On-Farm Energy Usage and Renewable Integration Analysis
 

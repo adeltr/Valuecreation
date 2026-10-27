@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/C
+kind: analysis
+id: electricity-generation-15
+part: C
+partLabel: Financial and Market Strategy
+quant: [EBITDA_MARGIN]
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 15 · Return on Invested Capital (ROIC) by Generation Type
 

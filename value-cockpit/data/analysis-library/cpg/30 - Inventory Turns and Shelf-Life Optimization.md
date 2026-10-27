@@ -2,6 +2,13 @@
 tags:
   - cpg
   - part/C
+kind: analysis
+id: cpg-30
+part: C
+partLabel: Operations
+quant: [REVENUE_GROWTH, DIO]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [COST_PROCUREMENT, WC_DIO]
 ---
 # 30 · Inventory Turns and Shelf-Life Optimization
 

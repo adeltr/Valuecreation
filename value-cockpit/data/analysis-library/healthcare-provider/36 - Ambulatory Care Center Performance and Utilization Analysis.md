@@ -2,6 +2,13 @@
 tags:
   - healthcare-provider
   - part/H
+kind: analysis
+id: healthcare-provider-36
+part: H
+partLabel: Specialty Services and Market Expansion
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 36 · Ambulatory Care Center Performance and Utilization Analysis
 

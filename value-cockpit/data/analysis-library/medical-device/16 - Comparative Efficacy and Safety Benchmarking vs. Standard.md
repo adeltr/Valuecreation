@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/B
+kind: analysis
+id: medical-device-16
+part: B
+partLabel: Clinical & Post-Market
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 16 · Comparative Efficacy and Safety Benchmarking vs. Standard of Care
 

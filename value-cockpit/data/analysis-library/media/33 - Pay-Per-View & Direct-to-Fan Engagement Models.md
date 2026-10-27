@@ -2,6 +2,13 @@
 tags:
   - media
   - part/I
+kind: analysis
+id: media-33
+part: I
+partLabel: Audience Engagement & Monetization
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 33 · Pay-Per-View & Direct-to-Fan Engagement Models
 

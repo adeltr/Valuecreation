@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-09
+part: A
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING]
 ---
 # 9 · Store Atmosphere and Experience Impact on Sales, including Customer Dwell Time
 

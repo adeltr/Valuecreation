@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-11
+part: A
+partLabel: Finance & Revenue
+quant: []
+causes: [ORGANIZATIONAL]
+levers: [PRICING, VOLUME, COST_OPS, RETENTION, EXPANSION]
 ---
 # 11 · Revenue per Employee Analysis
 

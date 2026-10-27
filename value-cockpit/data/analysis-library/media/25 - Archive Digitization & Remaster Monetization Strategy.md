@@ -2,6 +2,13 @@
 tags:
   - media
   - part/E
+kind: analysis
+id: media-25
+part: E
+partLabel: Technology & Innovation
+quant: []
+causes: []
+levers: [PRICING]
 ---
 # 25 · Archive Digitization & Remaster Monetization Strategy
 

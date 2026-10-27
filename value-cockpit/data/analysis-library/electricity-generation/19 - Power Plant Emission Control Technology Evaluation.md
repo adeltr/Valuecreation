@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/D
+kind: analysis
+id: electricity-generation-19
+part: D
+partLabel: Regulatory and Environmental Compliance
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 19 · Power Plant Emission Control Technology Evaluation
 

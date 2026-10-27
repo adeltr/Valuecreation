@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-06
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 6 · Line-Haul Network Planning & Optimization
 

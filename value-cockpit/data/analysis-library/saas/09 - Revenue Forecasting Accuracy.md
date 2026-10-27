@@ -2,6 +2,13 @@
 tags:
   - saas
   - part/A
+kind: analysis
+id: saas-09
+part: A
+partLabel: Finance & Revenue
+quant: []
+causes: []
+levers: [VOLUME, WC_DSO, RETENTION, SALES_EFFICIENCY]
 ---
 # 9 · Revenue Forecasting Accuracy
 

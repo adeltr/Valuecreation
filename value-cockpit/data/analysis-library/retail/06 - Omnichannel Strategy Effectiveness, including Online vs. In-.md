@@ -2,6 +2,13 @@
 tags:
   - retail
   - part/A
+kind: analysis
+id: retail-06
+part: A
+partLabel: Finance
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME, WC_DIO]
 ---
 # 6 · Omnichannel Strategy Effectiveness, including Online vs. In- Store Sales Performance
 

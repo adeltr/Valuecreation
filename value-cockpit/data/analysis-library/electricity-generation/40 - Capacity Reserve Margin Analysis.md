@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/I
+kind: analysis
+id: electricity-generation-40
+part: I
+partLabel: Capacity Planning and Utilization
+quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 40 · Capacity Reserve Margin Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - media
   - part/D
+kind: analysis
+id: media-22
+part: D
+partLabel: Sports & Gaming
+quant: [EBITDA_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 22 · Sports Broadcasting Rights & League Partnership Strategy
 

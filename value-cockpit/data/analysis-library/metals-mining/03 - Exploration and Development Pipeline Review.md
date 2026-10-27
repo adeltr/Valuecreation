@@ -2,6 +2,13 @@
 tags:
   - metals-mining
   - part/A
+kind: analysis
+id: metals-mining-03
+part: A
+partLabel: Resource and Reserve Management
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL]
+levers: []
 ---
 # 3 · Exploration and Development Pipeline Review
 

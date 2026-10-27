@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-01
+part: A
+partLabel: Transportation & Network Strategy
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [VOLUME]
 ---
 # 1 · Network Footprint & Capacity Utilization Analysis
 

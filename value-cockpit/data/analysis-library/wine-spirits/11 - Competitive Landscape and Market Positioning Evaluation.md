@@ -2,6 +2,13 @@
 tags:
   - wine-spirits
   - part/B
+kind: analysis
+id: wine-spirits-11
+part: B
+partLabel: Brand Positioning and Marketing Strategy
+quant: []
+causes: [MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 11 · Competitive Landscape and Market Positioning Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/A
+kind: analysis
+id: pharma-02
+part: A
+partLabel: Research & Development
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [VOLUME]
 ---
 # 2 · Clinical Trial Success Rates
 

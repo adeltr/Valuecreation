@@ -2,6 +2,13 @@
 tags:
   - electricity-generation
   - part/H
+kind: analysis
+id: electricity-generation-37
+part: H
+partLabel: Technological Innovation and Modernization
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 37 · Distributed Generation Impact Assessment
 

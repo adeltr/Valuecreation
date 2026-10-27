@@ -2,6 +2,13 @@
 tags:
   - third-party-logistics
   - part/A
+kind: analysis
+id: third-party-logistics-09
+part: A
+partLabel: Transportation & Network Strategy
+quant: []
+causes: [FINANCIAL, MARKET]
+levers: [MIX]
 ---
 # 9 · Ocean Freight & NVOCC Partnerships Performance Review
 

@@ -2,6 +2,13 @@
 tags:
   - pharma
   - part/G
+kind: analysis
+id: pharma-34
+part: G
+partLabel: Financial Analysis
+quant: []
+causes: [MARKET]
+levers: [MIX]
 ---
 # 34 · Intellectual Property (IP) Portfolio and Patent Expiry Risk
 

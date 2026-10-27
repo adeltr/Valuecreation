@@ -2,6 +2,13 @@
 tags:
   - cosmetics
   - part/A
+kind: analysis
+id: cosmetics-09
+part: A
+partLabel: Product and Research & Development (R&D)
+quant: []
+causes: []
+levers: [VOLUME]
 ---
 # 9 · Microbiome-Friendly Product Analysis
 

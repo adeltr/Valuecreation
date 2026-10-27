@@ -2,6 +2,13 @@
 tags:
   - medical-device
   - part/D
+kind: analysis
+id: medical-device-28
+part: D
+partLabel: Product Development & Lifecycle
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [CAPEX_DISCIPLINE]
 ---
 # 28 · Evaluation of 3D Printing and Additive Manufacturing Feasibility
 
