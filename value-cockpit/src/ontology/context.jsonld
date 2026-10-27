@@ -101,6 +101,7 @@
     "FLEET_FINANCING": "vcc:lever/FleetFinancing",
     "ALLIANCES": "vcc:lever/Alliances",
     "FUEL_PRICE": "vcc:cause/FuelPrice",
-    "LABOR": "vcc:cause/Labor"
+    "LABOR": "vcc:cause/Labor",
+    "REVENUE_GROWTH": "vcc:RevenueGrowthRate"
   }
 }

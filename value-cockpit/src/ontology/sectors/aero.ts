@@ -13,7 +13,7 @@ export const AERO_DIAGNOSTIC_CODES = [
 
 // Calculated metrics added by this extension
 export const AERO_CALCULATED_CODES = [
-  'REVENUE_EXIT', 'EBITDA_MARGIN_EXIT',
+  'EBITDA_MARGIN_EXIT',
 ] as const;
 
 export const AERO_METRIC_CODES = [
@@ -32,7 +32,6 @@ export const AERO_METRIC_META: Record<(typeof AERO_METRIC_CODES)[number], Metric
   TOP5_CONTRACT_SHARE:  { unit: 'percent' },
   FACILITY_UTILIZATION: { unit: 'percent' },
   MRO_CYCLE_DAYS:     { unit: 'days' },
-  REVENUE_EXIT:       { unit: 'currency' },
   EBITDA_MARGIN_EXIT: { unit: 'percent' },
 };
 

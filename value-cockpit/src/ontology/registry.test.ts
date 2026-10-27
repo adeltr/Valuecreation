@@ -111,3 +111,10 @@ describe('ontology registry – airline extension', () => {
     for (const code of airline.metricCodes) expect(airline.metricMeta[code]?.unit, code).toBeTypeOf('string');
   });
 });
+
+describe('ontology registry – no duplicate codes', () => {
+  it.each(SECTOR_ARCHETYPES)('%s vocabulary lists every code once', (a) => {
+    const codes = getActiveVocabulary(a).metricCodes;
+    expect(new Set(codes).size).toBe(codes.length);
+  });
+});

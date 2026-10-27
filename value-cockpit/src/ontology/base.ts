@@ -29,6 +29,8 @@ export const BRIDGE_METRIC_CODES = [
 export const BASE_METRIC_CODES = [
   // P&L (entry-period)
   'REVENUE', 'COGS', 'GROSS_PROFIT', 'OPEX', 'EBITDA_ENTRY', 'EBITDA_MARGIN',
+  // Growth to exit (generic EBITDA template; sector templates compute REVENUE_EXIT their own way)
+  'REVENUE_GROWTH', 'REVENUE_EXIT',
   // Working capital & cash
   'DSO', 'DIO', 'DPO', 'WORKING_CAPITAL', 'CAPEX', 'FCF_ANNUAL',
   ...BRIDGE_METRIC_CODES,
@@ -50,6 +52,8 @@ export const BASE_METRIC_META: Record<(typeof BASE_METRIC_CODES)[number], Metric
   OPEX: { unit: 'currency' },
   EBITDA_ENTRY: { unit: 'currency', fiboRef: 'fibo-fnd-acc-aeq:EBITDA' },
   EBITDA_MARGIN: { unit: 'percent' },
+  REVENUE_GROWTH: { unit: 'percent' },
+  REVENUE_EXIT: { unit: 'currency' },
   DSO: { unit: 'days' },
   DIO: { unit: 'days' },
   DPO: { unit: 'days' },

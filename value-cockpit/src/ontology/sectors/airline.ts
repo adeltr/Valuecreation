@@ -17,7 +17,7 @@ export const AIRLINE_DIAGNOSTIC_CODES = [
 
 // Calculated metrics added by this extension
 export const AIRLINE_CALCULATED_CODES = [
-  'ASK_EXIT', 'RPK_EXIT', 'PASSENGERS_EXIT', 'REVENUE_EXIT', 'OPERATING_COSTS_EXIT',
+  'ASK_EXIT', 'RPK_EXIT', 'PASSENGERS_EXIT', 'OPERATING_COSTS_EXIT',
 ] as const;
 
 export const AIRLINE_METRIC_CODES = [
@@ -46,7 +46,6 @@ export const AIRLINE_METRIC_META: Record<(typeof AIRLINE_METRIC_CODES)[number], 
   ASK_EXIT:              { unit: 'count' },
   RPK_EXIT:              { unit: 'count' },
   PASSENGERS_EXIT:       { unit: 'count' },
-  REVENUE_EXIT:          { unit: 'currency' },
   OPERATING_COSTS_EXIT:  { unit: 'currency' },
 };
 
