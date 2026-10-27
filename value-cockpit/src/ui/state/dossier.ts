@@ -27,7 +27,9 @@ export interface DossierFile {
   nextId: number;
 }
 
-export function toDossier(state: CockpitState, name: string, savedAt: string): DossierFile {
+export function toDossier(state: CockpitState, savedAt: string): DossierFile {
+  const name = state.name.trim();
+  if (!name) throw new Error('Donne un nom au dossier avant de l\'enregistrer');
   return {
     format: DOSSIER_FORMAT, version: DOSSIER_VERSION, name, savedAt,
     archetype: state.archetype,
@@ -62,7 +64,7 @@ function parseWith<T>(schema: z.ZodType<T>, value: unknown, what: string): T {
 }
 
 /** Validates an untrusted dossier file against the current templates and vocabulary. Throws, never guesses. */
-export function parseDossier(raw: unknown): { name: string; state: CockpitState } {
+export function parseDossier(raw: unknown): CockpitState {
   const head = envelope.safeParse(raw);
   if (!head.success) throw new Error(`Fichier de dossier invalide — ${issues(head.error)}`);
   const file = head.data;
@@ -106,10 +108,7 @@ export function parseDossier(raw: unknown): { name: string; state: CockpitState 
   const nextId = Math.max(file.nextId, ...used.map((n) => n + 1));
 
   return {
-    name: file.name,
-    state: {
-      archetype, inputs: file.inputs, levers, rootCauses,
-      scenario: { leverIds, applied, assumptions }, nextId, error: null,
-    },
+    name: file.name, archetype, inputs: file.inputs, levers, rootCauses,
+    scenario: { leverIds, applied, assumptions }, nextId, error: null,
   };
 }

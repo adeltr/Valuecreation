@@ -6,10 +6,12 @@ import { sanitizeProposal } from '../../copilot/proposal';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
+import { parseDossier } from './dossier';
 
 export type AssumptionCode = (typeof SCENARIO_ASSUMPTION_CODES)[number];
 
 export interface CockpitState {
+  name: string;
   archetype: SectorArchetype;
   inputs: Record<string, number>;
   levers: Lever[];
@@ -25,6 +27,8 @@ export interface CockpitState {
 
 export type Action =
   | { type: 'selectArchetype'; archetype: SectorArchetype }
+  | { type: 'setName'; name: string }
+  | { type: 'loadDossier'; raw: unknown }
   | { type: 'setInput'; code: string; value: number }
   | { type: 'ingestProposal'; raw: unknown; today: string }
   | { type: 'validateLever'; id: string }
@@ -43,6 +47,7 @@ const template = (archetype: SectorArchetype) => {
 
 export function initialState(archetype: SectorArchetype): CockpitState {
   return {
+    name: '',
     archetype,
     inputs: { ...template(archetype).demoInputs },
     levers: [], rootCauses: [],
@@ -64,6 +69,16 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
   switch (action.type) {
     case 'selectArchetype':
       return initialState(action.archetype);
+
+    case 'setName':
+      return { ...state, name: action.name };
+
+    case 'loadDossier':
+      try {
+        return parseDossier(action.raw);
+      } catch (e) {
+        return { ...state, error: `Dossier refusé : ${(e as Error).message}` };
+      }
 
     case 'setInput':
       return { ...state, inputs: { ...state.inputs, [action.code]: action.value } };

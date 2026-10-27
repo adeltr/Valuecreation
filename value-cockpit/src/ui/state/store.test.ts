@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+import { toDossier } from './dossier';
 import { initialState, reducer, selectBaseline, selectScenario, type CockpitState } from './store';
 
 const proposal = {
@@ -93,5 +94,24 @@ describe('cockpit store', () => {
   it('editing an input changes the baseline', () => {
     const s = reducer(airline(), { type: 'setInput', code: 'YIELD', value: 0.1 });
     expect(selectBaseline(s).get('MOIC')!).toBeGreaterThan(selectBaseline(airline()).get('MOIC')!);
+  });
+
+  it('a new case has no name; the analyst names it', () => {
+    const s = reducer(airline(), { type: 'setName', name: 'Air X' });
+    expect(airline().name).toBe('');
+    expect(s.name).toBe('Air X');
+  });
+
+  it('loading a dossier replaces the whole case, archetype included', () => {
+    const saved = reducer(reducer(initialState('cpg'), { type: 'setName', name: 'Brand Co' }), { type: 'setInput', code: 'GROSS_MARGIN', value: 0.5 });
+    const s = reducer(ingest(airline()), { type: 'loadDossier', raw: toDossier(saved, 't') });
+    expect(s).toEqual({ ...saved, error: null });
+  });
+
+  it('an invalid dossier is refused with a visible error and the current case is kept', () => {
+    const before = ingest(airline());
+    const after = reducer(before, { type: 'loadDossier', raw: { format: 'nope' } });
+    expect(after.levers).toEqual(before.levers);
+    expect(after.error).toMatch(/Dossier refusé/);
   });
 });
