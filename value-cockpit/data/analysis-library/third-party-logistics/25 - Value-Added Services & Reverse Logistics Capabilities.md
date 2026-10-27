@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-25
 part: E
 partLabel: Value-Added & Specialized Services
-quant: []
+quant: [VOLUME_GROWTH]
 causes: [COMMERCIAL, OPERATIONAL]
-levers: [PRICING, VOLUME, COST_OPS]
+levers: [PRICING, VOLUME, COST_OPS, VALUE_ADDED_SERVICES]
 ---
 # 25 · Value-Added Services & Reverse Logistics Capabilities Review
 

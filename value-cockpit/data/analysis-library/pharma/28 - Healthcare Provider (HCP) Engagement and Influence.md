@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-28
 part: D
 partLabel: Marketing & Market Access
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, SGA_RATE]
 causes: [COMMERCIAL]
-levers: []
+levers: [SALES_FORCE_EFFECTIVENESS]
 ---
 # 28 · Healthcare Provider (HCP) Engagement and Influence Strategy
 

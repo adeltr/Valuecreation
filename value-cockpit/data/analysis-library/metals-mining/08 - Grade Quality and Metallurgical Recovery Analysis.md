@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-08
 part: A
 partLabel: Resource and Reserve Management
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, HEAD_GRADE, RECOVERY_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, RECOVERY_OPTIMIZATION]
 ---
 # 8 · Grade Quality and Metallurgical Recovery Analysis
 

@@ -8,7 +8,7 @@ part: B
 partLabel: Regulatory & Compliance
 quant: []
 causes: [COMMERCIAL, MARKET, REGULATORY]
-levers: []
+levers: [LIFECYCLE_MANAGEMENT]
 ---
 # 15 · Pediatric Exclusivity and Extensions
 

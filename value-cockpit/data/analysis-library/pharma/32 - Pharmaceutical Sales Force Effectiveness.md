@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-32
 part: F
 partLabel: Sales & Commercialization
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, SGA_RATE]
 causes: [COMMERCIAL, ORGANIZATIONAL, MARKET]
-levers: []
+levers: [SALES_FORCE_EFFECTIVENESS]
 ---
 # 32 · Pharmaceutical Sales Force Effectiveness
 

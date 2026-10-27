@@ -8,7 +8,7 @@ part: A
 partLabel: Resource and Reserve Management
 quant: [DIO]
 causes: [OPERATIONAL]
-levers: [COST_OPS, WC_DIO]
+levers: [COST_OPS, WC_DIO, GRADE_CONTROL]
 ---
 # 6 · Mineral Inventory Reconciliation and Variance Analysis
 

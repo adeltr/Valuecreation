@@ -8,7 +8,7 @@ part: D
 partLabel: Commercial & Contractual Structures
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: []
+levers: [CARRIER_PROCUREMENT]
 ---
 # 24 · Outsourced vs. In-House Brokerage Operations Synergy Review
 

@@ -6,7 +6,7 @@ kind: analysis
 id: metals-mining-02
 part: A
 partLabel: Resource and Reserve Management
-quant: []
+quant: [RESERVE_REPLACEMENT_RATE]
 causes: [OPERATIONAL]
 levers: [COST_OPS]
 ---

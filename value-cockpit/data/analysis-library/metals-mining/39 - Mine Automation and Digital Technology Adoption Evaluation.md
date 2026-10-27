@@ -8,7 +8,7 @@ part: H
 partLabel: Technology and Innovation
 quant: []
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, THROUGHPUT_DEBOTTLENECKING]
 ---
 # 39 · Mine Automation and Digital Technology Adoption Evaluation
 

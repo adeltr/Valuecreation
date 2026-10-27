@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-35
 part: G
 partLabel: Financial Analysis
-quant: []
-causes: [MARKET, REGULATORY]
-levers: [MIX]
+quant: [LOE_REVENUE_AT_RISK]
+causes: [MARKET, REGULATORY, PATENT_CLIFF]
+levers: [MIX, LIFECYCLE_MANAGEMENT]
 ---
 # 35 · Market Exclusivity Periods for Key Drugs
 

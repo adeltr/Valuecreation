@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-33
 part: F
 partLabel: Trade & Regulatory Compliance
-quant: []
+quant: [ACCESSORIAL_REVENUE_RATIO]
 causes: [FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, ACCESSORIAL_PRICING]
 ---
 # 33 · Freight Classification (NMFC) & Reclassification Opportunities
 

@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-08
 part: A
 partLabel: Research & Development
-quant: []
+quant: [RD_RATE]
 causes: [FINANCIAL]
-levers: [VOLUME]
+levers: [VOLUME, PIPELINE_PRODUCTIVITY, RD_PRODUCTIVITY]
 ---
 # 8 · Adaptive Clinical Trial Design Strategy
 

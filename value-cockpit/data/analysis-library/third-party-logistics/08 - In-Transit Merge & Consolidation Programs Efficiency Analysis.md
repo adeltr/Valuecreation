@@ -6,7 +6,7 @@ kind: analysis
 id: third-party-logistics-08
 part: A
 partLabel: Transportation & Network Strategy
-quant: []
+quant: [CONSOLIDATION_RATE]
 causes: [FINANCIAL]
 levers: []
 ---

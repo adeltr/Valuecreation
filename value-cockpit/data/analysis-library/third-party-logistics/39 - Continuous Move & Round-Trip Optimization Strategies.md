@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-39
 part: H
 partLabel: Cost Optimization & Efficiency
-quant: []
+quant: [EMPTY_MILES_RATE]
 causes: [FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, BACKHAUL_OPTIMIZATION]
 ---
 # 39 · Continuous Move & Round-Trip Optimization Strategies
 

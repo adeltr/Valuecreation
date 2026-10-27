@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-03
 part: A
 partLabel: Research & Development
-quant: []
+quant: [RD_RATE]
 causes: [FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, PIPELINE_PRODUCTIVITY, RD_PRODUCTIVITY]
 ---
 # 3 · Preclinical Research Productivity
 

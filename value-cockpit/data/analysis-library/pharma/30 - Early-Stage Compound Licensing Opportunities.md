@@ -8,7 +8,7 @@ part: E
 partLabel: Licensing & Partnerships
 quant: []
 causes: [FINANCIAL, MARKET, REGULATORY]
-levers: [VOLUME]
+levers: [VOLUME, LICENSING_BD]
 ---
 # 30 · Early-Stage Compound Licensing Opportunities
 

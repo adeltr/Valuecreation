@@ -7,7 +7,7 @@ id: pharma-27
 part: D
 partLabel: Marketing & Market Access
 quant: []
-causes: [COMMERCIAL, MARKET, REGULATORY]
+causes: [COMMERCIAL, MARKET, REGULATORY, DRUG_PRICING_REGULATION]
 levers: [PRICING, VOLUME]
 ---
 # 27 · Drug Pricing Regulation Across Emerging Markets

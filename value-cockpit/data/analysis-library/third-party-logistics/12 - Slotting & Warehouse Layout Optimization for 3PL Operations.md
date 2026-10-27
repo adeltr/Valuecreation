@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-12
 part: B
 partLabel: Warehousing & Fulfillment
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, WAREHOUSE_LABOR_RATE, FACILITY_COST_RATE]
 causes: [OPERATIONAL, MARKET]
-levers: [COST_OPS]
+levers: [COST_OPS, WAREHOUSE_AUTOMATION]
 ---
 # 12 · Slotting & Warehouse Layout Optimization for 3PL Operations
 

@@ -8,7 +8,7 @@ part: G
 partLabel: Strategic Growth & Resilience
 quant: []
 causes: [OPERATIONAL]
-levers: [MIX]
+levers: [MIX, NETWORK_OPTIMIZATION]
 ---
 # 34 · Network Resilience & Geographic Diversification Strategy
 

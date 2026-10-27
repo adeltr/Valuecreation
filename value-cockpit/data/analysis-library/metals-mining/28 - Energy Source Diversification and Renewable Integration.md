@@ -8,7 +8,7 @@ part: D
 partLabel: Strategic Planning and Investment Feasibility
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, PROCESSING_ENERGY_EFFICIENCY]
 ---
 # 28 · Energy Source Diversification and Renewable Integration Analysis
 

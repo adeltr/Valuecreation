@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-40
 part: H
 partLabel: Technology and Innovation
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, RECOVERY_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, RECOVERY_OPTIMIZATION]
 ---
 # 40 · Metals Recovery Rate Optimization and Byproduct Management
 

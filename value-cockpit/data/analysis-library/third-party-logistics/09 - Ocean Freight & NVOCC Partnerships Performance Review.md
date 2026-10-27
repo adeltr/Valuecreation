@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-09
 part: A
 partLabel: Transportation & Network Strategy
-quant: []
+quant: [PURCHASED_TRANSPORT_RATE, ON_TIME_DELIVERY]
 causes: [FINANCIAL, MARKET]
-levers: [MIX]
+levers: [MIX, CARRIER_PROCUREMENT]
 ---
 # 9 · Ocean Freight & NVOCC Partnerships Performance Review
 

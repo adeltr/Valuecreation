@@ -8,7 +8,7 @@ part: B
 partLabel: Warehousing & Fulfillment
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: []
+levers: [COST_OPS]
 ---
 # 15 · Pallet & Container Pooling Strategies
 

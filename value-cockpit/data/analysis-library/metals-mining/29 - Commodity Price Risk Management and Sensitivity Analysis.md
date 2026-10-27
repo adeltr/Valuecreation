@@ -6,8 +6,8 @@ kind: analysis
 id: metals-mining-29
 part: E
 partLabel: Market and Commodity Risk Management
-quant: []
-causes: [COMMERCIAL, FINANCIAL, MARKET]
+quant: [METAL_PRICE]
+causes: [COMMERCIAL, FINANCIAL, MARKET, COMMODITY_PRICES]
 levers: [PRICING, VOLUME, MIX]
 ---
 # 29 · Commodity Price Risk Management and Sensitivity Analysis

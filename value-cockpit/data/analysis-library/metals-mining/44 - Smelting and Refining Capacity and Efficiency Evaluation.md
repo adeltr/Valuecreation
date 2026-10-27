@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-44
 part: J
 partLabel: Processing and Value Addition
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, PROCESSING_COST_PER_TONNE]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [COST_OPS]
+levers: [COST_OPS, PROCESSING_ENERGY_EFFICIENCY]
 ---
 # 44 · Smelting and Refining Capacity and Efficiency Evaluation
 

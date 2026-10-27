@@ -6,7 +6,7 @@ kind: analysis
 id: pharma-12
 part: B
 partLabel: Regulatory & Compliance
-quant: []
+quant: [GROSS_MARGIN]
 causes: [OPERATIONAL, REGULATORY]
 levers: [COST_PROCUREMENT, COST_OPS]
 ---

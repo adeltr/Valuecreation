@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-01
 part: A
 partLabel: Transportation & Network Strategy
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, FACILITY_COST_RATE, FACILITY_UTILIZATION]
 causes: [COMMERCIAL, OPERATIONAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, NETWORK_OPTIMIZATION]
 ---
 # 1 · Network Footprint & Capacity Utilization Analysis
 

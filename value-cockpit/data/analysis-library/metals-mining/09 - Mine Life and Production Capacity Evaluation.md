@@ -6,7 +6,7 @@ kind: analysis
 id: metals-mining-09
 part: A
 partLabel: Resource and Reserve Management
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, ORE_THROUGHPUT_MT, THROUGHPUT_GROWTH, MINE_LIFE]
 causes: [OPERATIONAL]
 levers: [VOLUME, COST_OPS]
 ---

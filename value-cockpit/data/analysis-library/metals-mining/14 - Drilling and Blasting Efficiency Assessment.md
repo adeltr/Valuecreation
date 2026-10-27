@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-14
 part: B
 partLabel: Operational Efficiency and Cost Management
-quant: []
+quant: [MINING_COST_PER_TONNE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, MINING_COST_EFFICIENCY]
 ---
 # 14 · Drilling and Blasting Efficiency Assessment
 

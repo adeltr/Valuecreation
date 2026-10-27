@@ -7,8 +7,8 @@ id: third-party-logistics-19
 part: C
 partLabel: Technology & Systems
 quant: []
-causes: [MARKET]
-levers: [VOLUME]
+causes: [MARKET, FREIGHT_RATES]
+levers: [VOLUME, CARRIER_PROCUREMENT]
 ---
 # 19 · Digital Freight Matching & Marketplace Integration Assessment
 

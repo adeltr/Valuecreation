@@ -6,7 +6,7 @@ kind: analysis
 id: pharma-26
 part: D
 partLabel: Marketing & Market Access
-quant: []
+quant: [BASE_PORTFOLIO_GROWTH]
 causes: [COMMERCIAL, MARKET, REGULATORY]
 levers: [PRICING, VOLUME]
 ---

@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-38
 part: H
 partLabel: Cost Optimization & Efficiency
-quant: []
+quant: [ACCESSORIAL_REVENUE_RATIO]
 causes: [COMMERCIAL, FINANCIAL]
-levers: []
+levers: [ACCESSORIAL_PRICING]
 ---
 # 38 · Accessorial & Ancillary Fee Optimization Analysis
 

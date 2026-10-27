@@ -6,7 +6,7 @@ kind: analysis
 id: pharma-16
 part: C
 partLabel: Operations & Supply Chain
-quant: []
+quant: [GROSS_MARGIN, COLD_CHAIN_DEVIATION_RATE]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
 levers: [COST_PROCUREMENT]
 ---

@@ -7,7 +7,7 @@ id: metals-mining-35
 part: F
 partLabel: Infrastructure and Logistics
 quant: []
-causes: [OPERATIONAL]
+causes: [OPERATIONAL, GEOTECHNICAL_RISK]
 levers: [COST_OPS]
 ---
 # 35 · Seismic and Geotechnical Stability Assessment of Mine Sites

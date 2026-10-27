@@ -6,8 +6,8 @@ kind: analysis
 id: third-party-logistics-36
 part: H
 partLabel: Cost Optimization & Efficiency
-quant: []
-causes: [OPERATIONAL, FINANCIAL]
+quant: [PURCHASED_TRANSPORT_RATE]
+causes: [OPERATIONAL, FINANCIAL, FREIGHT_RATES]
 levers: []
 ---
 # 36 · Modal Mix & Transportation Cost Optimization Analysis

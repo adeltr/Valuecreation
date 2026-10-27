@@ -6,7 +6,7 @@ kind: analysis
 id: third-party-logistics-35
 part: G
 partLabel: Strategic Growth & Resilience
-quant: []
+quant: [VOLUME_GROWTH]
 causes: [OPERATIONAL, MARKET, REGULATORY]
 levers: [VOLUME, COST_OPS]
 ---

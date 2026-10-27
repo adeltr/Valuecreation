@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-33
 part: F
 partLabel: Sales & Commercialization
-quant: []
+quant: [SGA_RATE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, SALES_FORCE_EFFECTIVENESS]
 ---
 # 33 · Specialty Pharmacy Channel Strategy
 

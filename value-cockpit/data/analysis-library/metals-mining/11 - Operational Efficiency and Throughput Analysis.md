@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-11
 part: B
 partLabel: Operational Efficiency and Cost Management
-quant: []
+quant: [ORE_THROUGHPUT_MT, THROUGHPUT_GROWTH, EQUIPMENT_UTILIZATION]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, THROUGHPUT_DEBOTTLENECKING]
 ---
 # 11 · Operational Efficiency and Throughput Analysis
 

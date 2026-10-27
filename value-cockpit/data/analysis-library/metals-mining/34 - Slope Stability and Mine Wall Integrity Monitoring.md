@@ -7,7 +7,7 @@ id: metals-mining-34
 part: F
 partLabel: Infrastructure and Logistics
 quant: []
-causes: [OPERATIONAL]
+causes: [OPERATIONAL, GEOTECHNICAL_RISK]
 levers: []
 ---
 # 34 · Slope Stability and Mine Wall Integrity Monitoring

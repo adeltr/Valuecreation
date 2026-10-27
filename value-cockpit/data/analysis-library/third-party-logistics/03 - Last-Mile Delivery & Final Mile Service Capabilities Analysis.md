@@ -6,7 +6,7 @@ kind: analysis
 id: third-party-logistics-03
 part: A
 partLabel: Transportation & Network Strategy
-quant: []
+quant: [ON_TIME_DELIVERY]
 causes: [COMMERCIAL, OPERATIONAL, MARKET]
 levers: [VOLUME]
 ---

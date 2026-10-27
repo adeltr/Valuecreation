@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-02
 part: A
 partLabel: Research & Development
-quant: []
+quant: [LAUNCH_REVENUE_RATIO, CLINICAL_TRIAL_SUCCESS_RATE]
 causes: [OPERATIONAL, REGULATORY]
-levers: [VOLUME]
+levers: [VOLUME, PIPELINE_PRODUCTIVITY]
 ---
 # 2 · Clinical Trial Success Rates
 

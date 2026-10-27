@@ -6,7 +6,7 @@ kind: analysis
 id: pharma-09
 part: A
 partLabel: Research & Development
-quant: []
+quant: [TIME_TO_MARKET]
 causes: [MARKET, REGULATORY]
 levers: []
 ---

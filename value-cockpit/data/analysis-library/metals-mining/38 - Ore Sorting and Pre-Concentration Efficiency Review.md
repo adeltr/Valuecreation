@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-38
 part: H
 partLabel: Technology and Innovation
-quant: []
+quant: [RECOVERY_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, GRADE_CONTROL]
 ---
 # 38 · Ore Sorting and Pre-Concentration Efficiency Review
 

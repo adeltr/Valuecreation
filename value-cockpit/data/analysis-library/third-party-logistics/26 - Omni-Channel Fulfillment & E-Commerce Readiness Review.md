@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-26
 part: E
 partLabel: Value-Added & Specialized Services
-quant: [DIO]
+quant: [DIO, VOLUME_GROWTH]
 causes: [COMMERCIAL]
-levers: []
+levers: [VALUE_ADDED_SERVICES]
 ---
 # 26 · Omni-Channel Fulfillment & E-Commerce Readiness Review
 

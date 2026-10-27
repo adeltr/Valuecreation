@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-21
 part: D
 partLabel: Commercial & Contractual Structures
-quant: []
+quant: [PRICE_GROWTH]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING]
+levers: [PRICING, ACCESSORIAL_PRICING]
 ---
 # 21 · Contract & Pricing Structures Review
 

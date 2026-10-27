@@ -8,7 +8,7 @@ part: G
 partLabel: Financial Analysis
 quant: []
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
-levers: [PRICING]
+levers: [PRICING, MARKET_ACCESS]
 ---
 # 36 · Pharmacoeconomic Impact Studies
 

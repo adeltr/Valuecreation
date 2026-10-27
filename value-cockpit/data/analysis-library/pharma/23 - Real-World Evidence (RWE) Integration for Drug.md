@@ -8,7 +8,7 @@ part: D
 partLabel: Marketing & Market Access
 quant: []
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [VOLUME]
+levers: [VOLUME, RD_PRODUCTIVITY]
 ---
 # 23 · Real-World Evidence (RWE) Integration for Drug Development
 

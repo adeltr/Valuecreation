@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-23
 part: D
 partLabel: Commercial & Contractual Structures
-quant: []
+quant: [PRICE_GROWTH]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
-levers: []
+levers: [ACCESSORIAL_PRICING]
 ---
 # 23 · Performance Incentive & Gainsharing Mechanisms Review
 

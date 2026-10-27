@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-46
 part: J
 partLabel: Processing and Value Addition
-quant: []
+quant: [RECOVERY_RATE, PROCESSING_COST_PER_TONNE]
 causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
-levers: []
+levers: [RECOVERY_OPTIMIZATION]
 ---
 # 46 · Processing and Product Specification and Purity Analysis
 

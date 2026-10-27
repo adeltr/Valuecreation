@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-12
 part: B
 partLabel: Operational Efficiency and Cost Management
-quant: [OPEX]
+quant: [OPEX, EQUIPMENT_UTILIZATION]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, THROUGHPUT_DEBOTTLENECKING]
 ---
 # 12 · Mining Equipment and Maintenance Efficiency Review
 

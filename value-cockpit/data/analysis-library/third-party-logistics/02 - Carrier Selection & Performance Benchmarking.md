@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-02
 part: A
 partLabel: Transportation & Network Strategy
-quant: []
+quant: [PURCHASED_TRANSPORT_RATE]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: []
+levers: [CARRIER_PROCUREMENT]
 ---
 # 2 · Carrier Selection & Performance Benchmarking
 

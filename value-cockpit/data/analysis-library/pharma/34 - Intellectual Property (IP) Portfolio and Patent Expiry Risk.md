@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-34
 part: G
 partLabel: Financial Analysis
-quant: []
-causes: [MARKET]
-levers: [MIX]
+quant: [LOE_REVENUE_AT_RISK]
+causes: [MARKET, PATENT_CLIFF]
+levers: [MIX, LIFECYCLE_MANAGEMENT]
 ---
 # 34 · Intellectual Property (IP) Portfolio and Patent Expiry Risk
 

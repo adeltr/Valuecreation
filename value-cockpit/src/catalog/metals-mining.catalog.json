@@ -6,7 +6,8 @@
     "part": "A",
     "partLabel": "Resource and Reserve Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "HEAD_GRADE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -23,7 +24,9 @@
     "title": "Reserve Replacement Rate and Resource Conversion Analysis",
     "part": "A",
     "partLabel": "Resource and Reserve Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RESERVE_REPLACEMENT_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
@@ -66,12 +69,16 @@
     "title": "Stripping Ratio and Waste-to-Ore Ratio Evaluation",
     "part": "A",
     "partLabel": "Resource and Reserve Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MINING_COST_PER_TONNE",
+      "STRIPPING_RATIO"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "MINING_COST_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/05 - Stripping Ratio and Waste-to-Ore Ratio Evaluation.md"
   },
@@ -89,7 +96,8 @@
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "GRADE_CONTROL"
     ],
     "sourcePath": "data/analysis-library/metals-mining/06 - Mineral Inventory Reconciliation and Variance Analysis.md"
   },
@@ -113,14 +121,17 @@
     "part": "A",
     "partLabel": "Resource and Reserve Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "HEAD_GRADE",
+      "RECOVERY_RATE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "RECOVERY_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/metals-mining/08 - Grade Quality and Metallurgical Recovery Analysis.md"
   },
@@ -131,7 +142,10 @@
     "part": "A",
     "partLabel": "Resource and Reserve Management",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "ORE_THROUGHPUT_MT",
+      "THROUGHPUT_GROWTH",
+      "MINE_LIFE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL"
@@ -149,7 +163,8 @@
     "part": "B",
     "partLabel": "Operational Efficiency and Cost Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "MINING_COST_PER_TONNE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -158,7 +173,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "MINING_COST_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/10 - Cost Structure and Cash Cost Positioning.md"
   },
@@ -168,13 +184,18 @@
     "title": "Operational Efficiency and Throughput Analysis",
     "part": "B",
     "partLabel": "Operational Efficiency and Cost Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ORE_THROUGHPUT_MT",
+      "THROUGHPUT_GROWTH",
+      "EQUIPMENT_UTILIZATION"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "THROUGHPUT_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/metals-mining/11 - Operational Efficiency and Throughput Analysis.md"
   },
@@ -185,14 +206,16 @@
     "part": "B",
     "partLabel": "Operational Efficiency and Cost Management",
     "relatedMetricCodes": [
-      "OPEX"
+      "OPEX",
+      "EQUIPMENT_UTILIZATION"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "THROUGHPUT_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/metals-mining/12 - Mining Equipment and Maintenance Efficiency Review.md"
   },
@@ -202,14 +225,17 @@
     "title": "Mine Site Labor Productivity and Workforce Optimization Analysis",
     "part": "B",
     "partLabel": "Operational Efficiency and Cost Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MINING_COST_PER_TONNE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "ORGANIZATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "MINING_COST_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/13 - Mine Site Labor Productivity and Workforce Optimization.md"
   },
@@ -219,14 +245,17 @@
     "title": "Drilling and Blasting Efficiency Assessment",
     "part": "B",
     "partLabel": "Operational Efficiency and Cost Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MINING_COST_PER_TONNE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "MINING_COST_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/14 - Drilling and Blasting Efficiency Assessment.md"
   },
@@ -237,13 +266,16 @@
     "part": "B",
     "partLabel": "Operational Efficiency and Cost Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "HEAD_GRADE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "GRADE_CONTROL"
+    ],
     "sourcePath": "data/analysis-library/metals-mining/15 - Grade Control and Dilution Management Analysis.md"
   },
   {
@@ -252,7 +284,9 @@
     "title": "Lifecycle Cost Analysis for New Project Viability",
     "part": "B",
     "partLabel": "Operational Efficiency and Cost Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
@@ -284,7 +318,9 @@
     "title": "Greenhouse Gas Emissions and Carbon Footprint Reduction Strategy",
     "part": "C",
     "partLabel": "Environmental Sustainability and Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CARBON_INTENSITY"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "REGULATORY"
@@ -315,14 +351,17 @@
     "title": "Water and Energy Usage Efficiency Review",
     "part": "C",
     "partLabel": "Environmental Sustainability and Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PROCESSING_COST_PER_TONNE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "PROCESSING_ENERGY_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/20 - Water and Energy Usage Efficiency Review.md"
   },
@@ -376,9 +415,12 @@
     "title": "Commodity Diversification and Portfolio Resilience Analysis",
     "part": "D",
     "partLabel": "Strategic Planning and Investment Feasibility",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "METAL_PRICE"
+    ],
     "relatedCauseCategories": [
-      "MARKET"
+      "MARKET",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -431,11 +473,14 @@
     "title": "Royalty and Offtake Agreement Viability Assessment",
     "part": "D",
     "partLabel": "Strategic Planning and Investment Feasibility",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ROYALTY_RATE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "PRICING",
-      "COST_OPS"
+      "COST_OPS",
+      "OFFTAKE_ROYALTY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/27 - Royalty and Offtake Agreement Viability Assessment.md"
   },
@@ -451,7 +496,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "PROCESSING_ENERGY_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/28 - Energy Source Diversification and Renewable Integration.md"
   },
@@ -461,11 +507,14 @@
     "title": "Commodity Price Risk Management and Sensitivity Analysis",
     "part": "E",
     "partLabel": "Market and Commodity Risk Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "METAL_PRICE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -486,7 +535,8 @@
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
-      "MARKET"
+      "MARKET",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -553,7 +603,8 @@
     "partLabel": "Infrastructure and Logistics",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "OPERATIONAL"
+      "OPERATIONAL",
+      "GEOTECHNICAL_RISK"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/metals-mining/34 - Slope Stability and Mine Wall Integrity Monitoring.md"
@@ -566,7 +617,8 @@
     "partLabel": "Infrastructure and Logistics",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "OPERATIONAL"
+      "OPERATIONAL",
+      "GEOTECHNICAL_RISK"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -579,7 +631,9 @@
     "title": "Mine Safety and Compliance Assessment",
     "part": "G",
     "partLabel": "Safety, Community, and Stakeholder",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LTIFR"
+    ],
     "relatedCauseCategories": [
       "MARKET",
       "REGULATORY"
@@ -607,13 +661,16 @@
     "title": "Ore Sorting and Pre-Concentration Efficiency Review",
     "part": "H",
     "partLabel": "Technology and Innovation",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RECOVERY_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "GRADE_CONTROL"
     ],
     "sourcePath": "data/analysis-library/metals-mining/38 - Ore Sorting and Pre-Concentration Efficiency Review.md"
   },
@@ -628,7 +685,8 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "THROUGHPUT_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/metals-mining/39 - Mine Automation and Digital Technology Adoption Evaluation.md"
   },
@@ -639,7 +697,8 @@
     "part": "H",
     "partLabel": "Technology and Innovation",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "RECOVERY_RATE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -647,7 +706,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "RECOVERY_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/metals-mining/40 - Metals Recovery Rate Optimization and Byproduct.md"
   },
@@ -660,7 +720,8 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "REGULATORY"
+      "REGULATORY",
+      "GEOPOLITICAL"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/metals-mining/41 - Geopolitical and Regulatory Risk Analysis.md"
@@ -675,7 +736,8 @@
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "REGULATORY"
+      "REGULATORY",
+      "GEOPOLITICAL"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/metals-mining/42 - Mineral Rights and Land Tenure Security Review.md"
@@ -686,7 +748,9 @@
     "title": "Royalties, Taxation, and Government Revenue Sharing Analysis",
     "part": "I",
     "partLabel": "Legal, Regulatory, and Geopolitical Risk",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ROYALTY_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -694,7 +758,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "OFFTAKE_ROYALTY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/43 - Royalties, Taxation, and Government Revenue Sharing.md"
   },
@@ -705,7 +770,8 @@
     "part": "J",
     "partLabel": "Processing and Value Addition",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "PROCESSING_COST_PER_TONNE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -713,7 +779,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "PROCESSING_ENERGY_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/metals-mining/44 - Smelting and Refining Capacity and Efficiency Evaluation.md"
   },
@@ -742,14 +809,19 @@
     "title": "Processing and Product Specification and Purity Analysis",
     "part": "J",
     "partLabel": "Processing and Value Addition",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RECOVERY_RATE",
+      "PROCESSING_COST_PER_TONNE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "MARKET",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "RECOVERY_OPTIMIZATION"
+    ],
     "sourcePath": "data/analysis-library/metals-mining/46 - Processing and Product Specification and Purity Analysis.md"
   },
   {

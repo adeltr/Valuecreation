@@ -8,7 +8,7 @@ part: D
 partLabel: Marketing & Market Access
 quant: []
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING]
+levers: [PRICING, MARKET_ACCESS]
 ---
 # 22 · Pharmaceutical Market Access and Health Technology Assessment (HTA) Outcomes
 

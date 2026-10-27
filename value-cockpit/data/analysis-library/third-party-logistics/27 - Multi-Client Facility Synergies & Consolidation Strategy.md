@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-27
 part: E
 partLabel: Value-Added & Specialized Services
-quant: []
+quant: [FACILITY_COST_RATE, FACILITY_UTILIZATION]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, NETWORK_OPTIMIZATION]
 ---
 # 27 · Multi-Client Facility Synergies & Consolidation Strategy Analysis
 

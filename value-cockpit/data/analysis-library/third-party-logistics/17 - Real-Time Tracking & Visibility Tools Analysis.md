@@ -8,7 +8,7 @@ part: C
 partLabel: Technology & Systems
 quant: [DIO]
 causes: [COMMERCIAL, OPERATIONAL]
-levers: [WC_DSO]
+levers: [WC_DSO, COST_OPS]
 ---
 # 17 · Real-Time Tracking & Visibility Tools Analysis
 

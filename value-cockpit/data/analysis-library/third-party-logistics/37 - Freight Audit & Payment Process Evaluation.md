@@ -8,7 +8,7 @@ part: H
 partLabel: Cost Optimization & Efficiency
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, ACCESSORIAL_PRICING]
 ---
 # 37 · Freight Audit & Payment Process Evaluation
 

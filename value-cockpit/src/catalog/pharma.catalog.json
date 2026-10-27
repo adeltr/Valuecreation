@@ -5,11 +5,15 @@
     "title": "Drug Pipeline Analysis",
     "part": "A",
     "partLabel": "Research & Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LAUNCH_REVENUE_RATIO",
+      "RD_RATE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "PIPELINE_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/pharma/01 - Drug Pipeline Analysis.md"
   },
@@ -19,13 +23,17 @@
     "title": "Clinical Trial Success Rates",
     "part": "A",
     "partLabel": "Research & Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LAUNCH_REVENUE_RATIO",
+      "CLINICAL_TRIAL_SUCCESS_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "PIPELINE_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/pharma/02 - Clinical Trial Success Rates.md"
   },
@@ -35,12 +43,16 @@
     "title": "Preclinical Research Productivity",
     "part": "A",
     "partLabel": "Research & Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RD_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "PIPELINE_PRODUCTIVITY",
+      "RD_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/pharma/03 - Preclinical Research Productivity.md"
   },
@@ -63,11 +75,16 @@
     "title": "Pipeline Attrition Rate and Risk Mitigation",
     "part": "A",
     "partLabel": "Research & Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LAUNCH_REVENUE_RATIO",
+      "PIPELINE_ATTRITION_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PIPELINE_PRODUCTIVITY"
+    ],
     "sourcePath": "data/analysis-library/pharma/05 - Pipeline Attrition Rate and Risk Mitigation.md"
   },
   {
@@ -76,7 +93,9 @@
     "title": "Accelerated Approval Pathway Utilization",
     "part": "A",
     "partLabel": "Research & Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "TIME_TO_MARKET"
+    ],
     "relatedCauseCategories": [
       "MARKET",
       "REGULATORY"
@@ -103,12 +122,16 @@
     "title": "Adaptive Clinical Trial Design Strategy",
     "part": "A",
     "partLabel": "Research & Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RD_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "PIPELINE_PRODUCTIVITY",
+      "RD_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/pharma/08 - Adaptive Clinical Trial Design Strategy.md"
   },
@@ -118,7 +141,9 @@
     "title": "Breakthrough Therapy Designation Utilization",
     "part": "A",
     "partLabel": "Research & Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "TIME_TO_MARKET"
+    ],
     "relatedCauseCategories": [
       "MARKET",
       "REGULATORY"
@@ -162,7 +187,9 @@
     "title": "Compliance with Good Manufacturing Practices (GMP)",
     "part": "B",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "REGULATORY"
@@ -201,7 +228,8 @@
       "COMMERCIAL",
       "FINANCIAL",
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "DRUG_PRICING_REGULATION"
     ],
     "relatedLeverCategories": [
       "PRICING"
@@ -220,7 +248,9 @@
       "MARKET",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LIFECYCLE_MANAGEMENT"
+    ],
     "sourcePath": "data/analysis-library/pharma/15 - Pediatric Exclusivity and Extensions.md"
   },
   {
@@ -229,7 +259,10 @@
     "title": "Supply Chain and Cold Chain Logistics Evaluation",
     "part": "C",
     "partLabel": "Operations & Supply Chain",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN",
+      "COLD_CHAIN_DEVIATION_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -248,13 +281,15 @@
     "partLabel": "Operations & Supply Chain",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "GENERIC_EROSION_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "BIOSIMILAR_COMPETITION"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -268,13 +303,16 @@
     "title": "Specialty Drug Delivery Systems and Technologies",
     "part": "C",
     "partLabel": "Operations & Supply Chain",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PATIENT_ADHERENCE_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "LIFECYCLE_MANAGEMENT"
     ],
     "sourcePath": "data/analysis-library/pharma/18 - Specialty Drug Delivery Systems and Technologies.md"
   },
@@ -321,16 +359,19 @@
     "partLabel": "Marketing & Market Access",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "BASE_PORTFOLIO_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "DRUG_PRICING_REGULATION"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKET_ACCESS"
     ],
     "sourcePath": "data/analysis-library/pharma/21 - Pricing Power and Reimbursement Environment.md"
   },
@@ -346,7 +387,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKET_ACCESS"
     ],
     "sourcePath": "data/analysis-library/pharma/22 - Pharmaceutical Market Access and Health Technology.md"
   },
@@ -364,7 +406,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "RD_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/pharma/23 - Real-World Evidence (RWE) Integration for Drug.md"
   },
@@ -392,7 +435,8 @@
     "part": "D",
     "partLabel": "Marketing & Market Access",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "LAUNCH_REVENUE_RATIO"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -411,7 +455,9 @@
     "title": "Rare Disease Market Penetration",
     "part": "D",
     "partLabel": "Marketing & Market Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "BASE_PORTFOLIO_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET",
@@ -433,7 +479,8 @@
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "DRUG_PRICING_REGULATION"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -448,12 +495,15 @@
     "part": "D",
     "partLabel": "Marketing & Market Access",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "SGA_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "SALES_FORCE_EFFECTIVENESS"
+    ],
     "sourcePath": "data/analysis-library/pharma/28 - Healthcare Provider (HCP) Engagement and Influence.md"
   },
   {
@@ -470,7 +520,9 @@
       "MARKET",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LICENSING_BD"
+    ],
     "sourcePath": "data/analysis-library/pharma/29 - Licensing and Partnership Agreements.md"
   },
   {
@@ -486,7 +538,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "LICENSING_BD"
     ],
     "sourcePath": "data/analysis-library/pharma/30 - Early-Stage Compound Licensing Opportunities.md"
   },
@@ -498,11 +551,13 @@
     "partLabel": "Licensing & Partnerships",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "BASE_PORTFOLIO_GROWTH"
     ],
     "relatedCauseCategories": [
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "BIOSIMILAR_COMPETITION"
     ],
     "relatedLeverCategories": [
       "VOLUME",
@@ -518,14 +573,17 @@
     "part": "F",
     "partLabel": "Sales & Commercialization",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "SGA_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "ORGANIZATIONAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "SALES_FORCE_EFFECTIVENESS"
+    ],
     "sourcePath": "data/analysis-library/pharma/32 - Pharmaceutical Sales Force Effectiveness.md"
   },
   {
@@ -534,14 +592,17 @@
     "title": "Specialty Pharmacy Channel Strategy",
     "part": "F",
     "partLabel": "Sales & Commercialization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SGA_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "SALES_FORCE_EFFECTIVENESS"
     ],
     "sourcePath": "data/analysis-library/pharma/33 - Specialty Pharmacy Channel Strategy.md"
   },
@@ -551,12 +612,16 @@
     "title": "Intellectual Property (IP) Portfolio and Patent Expiry Risk",
     "part": "G",
     "partLabel": "Financial Analysis",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LOE_REVENUE_AT_RISK"
+    ],
     "relatedCauseCategories": [
-      "MARKET"
+      "MARKET",
+      "PATENT_CLIFF"
     ],
     "relatedLeverCategories": [
-      "MIX"
+      "MIX",
+      "LIFECYCLE_MANAGEMENT"
     ],
     "sourcePath": "data/analysis-library/pharma/34 - Intellectual Property (IP) Portfolio and Patent Expiry Risk.md"
   },
@@ -566,13 +631,17 @@
     "title": "Market Exclusivity Periods for Key Drugs",
     "part": "G",
     "partLabel": "Financial Analysis",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LOE_REVENUE_AT_RISK"
+    ],
     "relatedCauseCategories": [
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "PATENT_CLIFF"
     ],
     "relatedLeverCategories": [
-      "MIX"
+      "MIX",
+      "LIFECYCLE_MANAGEMENT"
     ],
     "sourcePath": "data/analysis-library/pharma/35 - Market Exclusivity Periods for Key Drugs.md"
   },
@@ -591,7 +660,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKET_ACCESS"
     ],
     "sourcePath": "data/analysis-library/pharma/36 - Pharmacoeconomic Impact Studies.md"
   },

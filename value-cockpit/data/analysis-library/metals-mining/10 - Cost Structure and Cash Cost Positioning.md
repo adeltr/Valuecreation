@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-10
 part: B
 partLabel: Operational Efficiency and Cost Management
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, MINING_COST_PER_TONNE]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, MINING_COST_EFFICIENCY]
 ---
 # 10 · Cost Structure and Cash Cost Positioning
 

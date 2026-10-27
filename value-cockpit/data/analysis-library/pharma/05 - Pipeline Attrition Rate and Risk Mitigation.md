@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-05
 part: A
 partLabel: Research & Development
-quant: []
+quant: [LAUNCH_REVENUE_RATIO, PIPELINE_ATTRITION_RATE]
 causes: [OPERATIONAL]
-levers: []
+levers: [PIPELINE_PRODUCTIVITY]
 ---
 # 5 · Pipeline Attrition Rate and Risk Mitigation
 

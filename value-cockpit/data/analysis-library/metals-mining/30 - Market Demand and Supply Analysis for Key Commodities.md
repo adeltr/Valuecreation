@@ -7,7 +7,7 @@ id: metals-mining-30
 part: E
 partLabel: Market and Commodity Risk Management
 quant: [REVENUE_GROWTH]
-causes: [COMMERCIAL, OPERATIONAL, MARKET]
+causes: [COMMERCIAL, OPERATIONAL, MARKET, COMMODITY_PRICES]
 levers: [PRICING, WC_DIO]
 ---
 # 30 · Market Demand and Supply Analysis for Key Commodities

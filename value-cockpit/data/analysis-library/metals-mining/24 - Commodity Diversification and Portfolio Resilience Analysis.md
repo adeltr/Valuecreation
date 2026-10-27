@@ -6,8 +6,8 @@ kind: analysis
 id: metals-mining-24
 part: D
 partLabel: Strategic Planning and Investment Feasibility
-quant: []
-causes: [MARKET]
+quant: [METAL_PRICE]
+causes: [MARKET, COMMODITY_PRICES]
 levers: [PRICING, VOLUME, MIX, COST_OPS]
 ---
 # 24 · Commodity Diversification and Portfolio Resilience Analysis

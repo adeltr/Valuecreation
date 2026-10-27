@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-11
 part: B
 partLabel: Warehousing & Fulfillment
-quant: []
+quant: [WAREHOUSE_LABOR_RATE]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, WAREHOUSE_AUTOMATION]
 ---
 # 11 · Live Loading-Unloading & Appointment Scheduling Efficiency Review
 

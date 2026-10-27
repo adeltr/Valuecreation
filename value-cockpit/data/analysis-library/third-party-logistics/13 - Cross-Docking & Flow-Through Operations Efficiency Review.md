@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-13
 part: B
 partLabel: Warehousing & Fulfillment
-quant: [DIO]
+quant: [DIO, WAREHOUSE_LABOR_RATE]
 causes: [OPERATIONAL]
-levers: [MIX, COST_OPS]
+levers: [MIX, COST_OPS, WAREHOUSE_AUTOMATION]
 ---
 # 13 · Cross-Docking & Flow-Through Operations Efficiency Review
 

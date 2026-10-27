@@ -6,7 +6,7 @@ kind: analysis
 id: pharma-25
 part: D
 partLabel: Marketing & Market Access
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, LAUNCH_REVENUE_RATIO]
 causes: [COMMERCIAL, OPERATIONAL, MARKET, REGULATORY]
 levers: [PRICING]
 ---

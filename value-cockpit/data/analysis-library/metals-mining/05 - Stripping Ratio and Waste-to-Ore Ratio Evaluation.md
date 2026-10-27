@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-05
 part: A
 partLabel: Resource and Reserve Management
-quant: []
+quant: [MINING_COST_PER_TONNE, STRIPPING_RATIO]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, MINING_COST_EFFICIENCY]
 ---
 # 5 · Stripping Ratio and Waste-to-Ore Ratio Evaluation
 

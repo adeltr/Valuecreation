@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-01
 part: A
 partLabel: Research & Development
-quant: []
+quant: [LAUNCH_REVENUE_RATIO, RD_RATE]
 causes: []
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, PIPELINE_PRODUCTIVITY]
 ---
 # 1 · Drug Pipeline Analysis
 

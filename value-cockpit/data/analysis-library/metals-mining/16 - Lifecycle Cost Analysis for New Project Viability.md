@@ -6,7 +6,7 @@ kind: analysis
 id: metals-mining-16
 part: B
 partLabel: Operational Efficiency and Cost Management
-quant: []
+quant: [CAPEX]
 causes: [FINANCIAL]
 levers: [COST_PROCUREMENT, COST_OPS, CAPEX_DISCIPLINE]
 ---

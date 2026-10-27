@@ -6,8 +6,8 @@ kind: analysis
 id: pharma-17
 part: C
 partLabel: Operations & Supply Chain
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
-causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, GENERIC_EROSION_RATE]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, BIOSIMILAR_COMPETITION]
 levers: [PRICING, VOLUME]
 ---
 # 17 · Biosimilars Threat Assessment

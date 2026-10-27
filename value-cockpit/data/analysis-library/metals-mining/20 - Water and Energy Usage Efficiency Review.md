@@ -6,9 +6,9 @@ kind: analysis
 id: metals-mining-20
 part: C
 partLabel: Environmental Sustainability and Compliance
-quant: []
+quant: [PROCESSING_COST_PER_TONNE]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [COST_OPS]
+levers: [COST_OPS, PROCESSING_ENERGY_EFFICIENCY]
 ---
 # 20 · Water and Energy Usage Efficiency Review
 

@@ -7,7 +7,7 @@ id: pharma-14
 part: B
 partLabel: Regulatory & Compliance
 quant: []
-causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY]
+causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY, DRUG_PRICING_REGULATION]
 levers: [PRICING]
 ---
 # 14 · Drug Price Transparency and Regulatory Compliance

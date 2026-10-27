@@ -6,9 +6,9 @@ kind: analysis
 id: pharma-18
 part: C
 partLabel: Operations & Supply Chain
-quant: []
+quant: [PATIENT_ADHERENCE_RATE]
 causes: [FINANCIAL, REGULATORY]
-levers: [VOLUME]
+levers: [VOLUME, LIFECYCLE_MANAGEMENT]
 ---
 # 18 · Specialty Drug Delivery Systems and Technologies
 

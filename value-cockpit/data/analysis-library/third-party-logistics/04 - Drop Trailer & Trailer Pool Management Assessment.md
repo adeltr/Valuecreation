@@ -6,7 +6,7 @@ kind: analysis
 id: third-party-logistics-04
 part: A
 partLabel: Transportation & Network Strategy
-quant: []
+quant: [TRAILER_UTILIZATION]
 causes: [OPERATIONAL, FINANCIAL]
 levers: [COST_OPS]
 ---

@@ -6,7 +6,7 @@ kind: analysis
 id: metals-mining-18
 part: C
 partLabel: Environmental Sustainability and Compliance
-quant: []
+quant: [CARBON_INTENSITY]
 causes: [OPERATIONAL, REGULATORY]
 levers: [COST_PROCUREMENT, COST_OPS]
 ---

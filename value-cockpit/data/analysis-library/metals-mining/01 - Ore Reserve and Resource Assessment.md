@@ -6,7 +6,7 @@ kind: analysis
 id: metals-mining-01
 part: A
 partLabel: Resource and Reserve Management
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, HEAD_GRADE]
 causes: [OPERATIONAL, FINANCIAL]
 levers: [PRICING]
 ---

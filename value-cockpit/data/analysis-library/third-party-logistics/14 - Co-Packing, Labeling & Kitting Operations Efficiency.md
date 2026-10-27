@@ -6,9 +6,9 @@ kind: analysis
 id: third-party-logistics-14
 part: B
 partLabel: Warehousing & Fulfillment
-quant: []
+quant: [WAREHOUSE_LABOR_RATE, UNITS_PER_LABOR_HOUR]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, WAREHOUSE_AUTOMATION]
 ---
 # 14 · Co-Packing, Labeling & Kitting Operations Efficiency Assessment
 

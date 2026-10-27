@@ -6,7 +6,9 @@
     "part": "A",
     "partLabel": "Transportation & Network Strategy",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "FACILITY_COST_RATE",
+      "FACILITY_UTILIZATION"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -14,7 +16,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "NETWORK_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/01 - Network Footprint & Capacity Utilization Analysis.md"
   },
@@ -24,13 +27,17 @@
     "title": "Carrier Selection & Performance Benchmarking",
     "part": "A",
     "partLabel": "Transportation & Network Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PURCHASED_TRANSPORT_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CARRIER_PROCUREMENT"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/02 - Carrier Selection & Performance Benchmarking.md"
   },
   {
@@ -39,7 +46,9 @@
     "title": "Last-Mile Delivery & Final Mile Service Capabilities Analysis",
     "part": "A",
     "partLabel": "Transportation & Network Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ON_TIME_DELIVERY"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
@@ -56,7 +65,9 @@
     "title": "Drop Trailer & Trailer Pool Management Assessment",
     "part": "A",
     "partLabel": "Transportation & Network Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "TRAILER_UTILIZATION"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
@@ -91,7 +102,9 @@
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/06 - Line-Haul Network Planning & Optimization.md"
   },
   {
@@ -115,7 +128,9 @@
     "title": "In-Transit Merge & Consolidation Programs Efficiency Analysis",
     "part": "A",
     "partLabel": "Transportation & Network Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONSOLIDATION_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
@@ -128,13 +143,17 @@
     "title": "Ocean Freight & NVOCC Partnerships Performance Review",
     "part": "A",
     "partLabel": "Transportation & Network Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PURCHASED_TRANSPORT_RATE",
+      "ON_TIME_DELIVERY"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "MIX"
+      "MIX",
+      "CARRIER_PROCUREMENT"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/09 - Ocean Freight & NVOCC Partnerships Performance Review.md"
   },
@@ -144,12 +163,15 @@
     "title": "Backhaul Collaboration & Cross-Industry Cargo Matching Initiatives",
     "part": "A",
     "partLabel": "Transportation & Network Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "EMPTY_MILES_RATE"
+    ],
     "relatedCauseCategories": [
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "BACKHAUL_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/10 - Backhaul Collaboration & Cross-Industry Cargo Matching.md"
   },
@@ -159,12 +181,15 @@
     "title": "Live Loading-Unloading & Appointment Scheduling Efficiency Review",
     "part": "B",
     "partLabel": "Warehousing & Fulfillment",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "WAREHOUSE_LABOR_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "WAREHOUSE_AUTOMATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/11 - Live Loading-Unloading & Appointment Scheduling Efficiency.md"
   },
@@ -175,14 +200,17 @@
     "part": "B",
     "partLabel": "Warehousing & Fulfillment",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "WAREHOUSE_LABOR_RATE",
+      "FACILITY_COST_RATE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "WAREHOUSE_AUTOMATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/12 - Slotting & Warehouse Layout Optimization for 3PL Operations.md"
   },
@@ -193,14 +221,16 @@
     "part": "B",
     "partLabel": "Warehousing & Fulfillment",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "WAREHOUSE_LABOR_RATE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "MIX",
-      "COST_OPS"
+      "COST_OPS",
+      "WAREHOUSE_AUTOMATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/13 - Cross-Docking & Flow-Through Operations Efficiency Review.md"
   },
@@ -210,13 +240,17 @@
     "title": "Co-Packing, Labeling & Kitting Operations Efficiency Assessment",
     "part": "B",
     "partLabel": "Warehousing & Fulfillment",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "WAREHOUSE_LABOR_RATE",
+      "UNITS_PER_LABOR_HOUR"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "WAREHOUSE_AUTOMATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/14 - Co-Packing, Labeling & Kitting Operations Efficiency.md"
   },
@@ -231,7 +265,9 @@
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/15 - Pallet & Container Pooling Strategies.md"
   },
   {
@@ -263,7 +299,8 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "WC_DSO"
+      "WC_DSO",
+      "COST_OPS"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/17 - Real-Time Tracking & Visibility Tools Analysis.md"
   },
@@ -290,10 +327,12 @@
     "partLabel": "Technology & Systems",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "MARKET"
+      "MARKET",
+      "FREIGHT_RATES"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "CARRIER_PROCUREMENT"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/19 - Digital Freight Matching & Marketplace Integration.md"
   },
@@ -307,7 +346,9 @@
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/20 - Transportation Management System (TMS) Implementation &.md"
   },
   {
@@ -316,14 +357,17 @@
     "title": "Contract & Pricing Structures Review",
     "part": "D",
     "partLabel": "Commercial & Contractual Structures",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "ACCESSORIAL_PRICING"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/21 - Contract & Pricing Structures Review.md"
   },
@@ -348,13 +392,17 @@
     "title": "Performance Incentive & Gainsharing Mechanisms Review",
     "part": "D",
     "partLabel": "Commercial & Contractual Structures",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "ACCESSORIAL_PRICING"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/23 - Performance Incentive & Gainsharing Mechanisms Review.md"
   },
   {
@@ -368,7 +416,9 @@
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CARRIER_PROCUREMENT"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/24 - Outsourced vs. In-House Brokerage Operations Synergy.md"
   },
   {
@@ -377,7 +427,9 @@
     "title": "Value-Added Services & Reverse Logistics Capabilities Review",
     "part": "E",
     "partLabel": "Value-Added & Specialized Services",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "VOLUME_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL"
@@ -385,7 +437,8 @@
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "VALUE_ADDED_SERVICES"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/25 - Value-Added Services & Reverse Logistics Capabilities.md"
   },
@@ -396,12 +449,15 @@
     "part": "E",
     "partLabel": "Value-Added & Specialized Services",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "VALUE_ADDED_SERVICES"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/26 - Omni-Channel Fulfillment & E-Commerce Readiness Review.md"
   },
   {
@@ -410,13 +466,17 @@
     "title": "Multi-Client Facility Synergies & Consolidation Strategy Analysis",
     "part": "E",
     "partLabel": "Value-Added & Specialized Services",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "FACILITY_COST_RATE",
+      "FACILITY_UTILIZATION"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "NETWORK_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/27 - Multi-Client Facility Synergies & Consolidation Strategy.md"
   },
@@ -427,13 +487,15 @@
     "part": "E",
     "partLabel": "Value-Added & Specialized Services",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "WC_DIO"
+      "WC_DIO",
+      "VALUE_ADDED_SERVICES"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/28 - Inbound-to-Manufacturing (I2M) & JIT Delivery Capability.md"
   },
@@ -502,12 +564,15 @@
     "title": "Freight Classification (NMFC) & Reclassification Opportunities",
     "part": "F",
     "partLabel": "Trade & Regulatory Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ACCESSORIAL_REVENUE_RATIO"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "ACCESSORIAL_PRICING"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/33 - Freight Classification (NMFC) & Reclassification Opportunities.md"
   },
@@ -522,7 +587,8 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "MIX"
+      "MIX",
+      "NETWORK_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/34 - Network Resilience & Geographic Diversification Strategy.md"
   },
@@ -532,7 +598,9 @@
     "title": "Cross-Border & Multi-Regional Capabilities Examination",
     "part": "G",
     "partLabel": "Strategic Growth & Resilience",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "VOLUME_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "MARKET",
@@ -550,10 +618,13 @@
     "title": "Modal Mix & Transportation Cost Optimization Analysis",
     "part": "H",
     "partLabel": "Cost Optimization & Efficiency",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PURCHASED_TRANSPORT_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "FREIGHT_RATES"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/third-party-logistics/36 - Modal Mix & Transportation Cost Optimization Analysis.md"
@@ -570,7 +641,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "ACCESSORIAL_PRICING"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/37 - Freight Audit & Payment Process Evaluation.md"
   },
@@ -580,12 +652,16 @@
     "title": "Accessorial & Ancillary Fee Optimization Analysis",
     "part": "H",
     "partLabel": "Cost Optimization & Efficiency",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ACCESSORIAL_REVENUE_RATIO"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "ACCESSORIAL_PRICING"
+    ],
     "sourcePath": "data/analysis-library/third-party-logistics/38 - Accessorial & Ancillary Fee Optimization Analysis.md"
   },
   {
@@ -594,12 +670,15 @@
     "title": "Continuous Move & Round-Trip Optimization Strategies",
     "part": "H",
     "partLabel": "Cost Optimization & Efficiency",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "EMPTY_MILES_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "BACKHAUL_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/third-party-logistics/39 - Continuous Move & Round-Trip Optimization Strategies.md"
   },
@@ -609,8 +688,12 @@
     "title": "Driver Retention & Owner-Operator Engagement Approaches",
     "part": "I",
     "partLabel": "Workforce & Labor Management",
-    "relatedMetricCodes": [],
-    "relatedCauseCategories": [],
+    "relatedMetricCodes": [
+      "DRIVER_TURNOVER_RATE"
+    ],
+    "relatedCauseCategories": [
+      "LABOR"
+    ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/third-party-logistics/40 - Driver Retention & Owner-Operator Engagement Approaches.md"
   }
