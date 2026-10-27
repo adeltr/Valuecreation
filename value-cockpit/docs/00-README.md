@@ -16,6 +16,9 @@ docs/
   06-ENGINE.md                      ← moteur déterministe (formules, résolveur, scénarios)
   07-COPILOT.md                     ← contrat copilote Claude, pipeline, prompt
   08-ANALYSIS-LIBRARY.md            ← ingestion des fichiers d'industrie (2 types) → catalogue
+  09-ADD-SECTOR.md                  ← checklist + prompt pour ajouter un secteur
+  10-KICKOFF-PROMPT.md              ← prompt de démarrage d'une session Claude Code
+  11-ARCHETYPES-PROPOSAL.md         ← PROPOSITION (à valider) : archétypes = types d'entreprise, Airline
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
 data/analysis-library/<secteur>/    ← fichiers sources des frameworks sectoriels (.md)
