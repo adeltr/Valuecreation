@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-42
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: [CUSTOMER_ATTRITION_RATE]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME, ATTRITION_REDUCTION]
 ---
 # 42 · Retail Banking Product Lifecycle and Attrition Analysis
 

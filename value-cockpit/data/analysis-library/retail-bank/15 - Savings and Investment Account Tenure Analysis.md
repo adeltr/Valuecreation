@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/B
+kind: analysis
+id: retail-bank-15
+part: B
+partLabel: Product and Portfolio Performance
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, ATTRITION_REDUCTION]
 ---
 # 15 · Savings and Investment Account Tenure Analysis
 

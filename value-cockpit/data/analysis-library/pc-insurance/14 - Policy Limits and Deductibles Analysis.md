@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-14
+part: A
+partLabel: Underwriting
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING]
 ---
 # 14 · Policy Limits and Deductibles Analysis
 

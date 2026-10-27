@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-10
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL, MARKET]
+levers: [VOLUME, BIOMARKER_SELECTION]
 ---
 # 10 · Personalized Medicine Strategy and Customization Potential
 

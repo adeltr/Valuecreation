@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/E
+kind: analysis
+id: retail-bank-32
+part: E
+partLabel: Digital and Technological Capabilities
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 32 · Core Banking System Efficiency and Scalability Analysis
 

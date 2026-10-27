@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-09
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING]
 ---
 # 9 · Non-Owned Auto Coverage & Borrowed Vehicle Liabilities Analysis
 

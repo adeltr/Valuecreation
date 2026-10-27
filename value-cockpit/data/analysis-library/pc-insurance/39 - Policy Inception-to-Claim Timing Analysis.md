@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/E
+kind: analysis
+id: pc-insurance-39
+part: E
+partLabel: Operations
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING]
 ---
 # 39 · Policy Inception-to-Claim Timing Analysis
 

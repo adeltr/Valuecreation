@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-18
+part: B
+partLabel: Claims Management
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET, SOCIAL_INFLATION]
+levers: [PRICING]
 ---
 # 18 · Severity Trend Analysis by Line of Business
 

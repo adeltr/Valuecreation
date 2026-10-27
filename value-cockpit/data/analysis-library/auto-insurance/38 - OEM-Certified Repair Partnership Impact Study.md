@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/E
+kind: analysis
+id: auto-insurance-38
+part: E
+partLabel: Technology, Mobility & Operational Efficiency
+quant: [DIRECT_REPAIR_SHARE]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [PRICING, REPAIR_NETWORK]
 ---
 # 38 · OEM-Certified Repair Partnership Impact Study
 

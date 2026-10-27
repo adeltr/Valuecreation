@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-15
+part: C
+partLabel: Risk Management and Compliance
+quant: [COST_OF_RISK]
+causes: [CREDIT_CYCLE]
+levers: [CREDIT_RISK_MANAGEMENT]
 ---
 # 15 · Credit Risk Assessment and Provisioning Levels
 

@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-08
+part: B
+partLabel: Lending and Credit Management
+quant: [COST_OF_RISK, NPL_RATIO]
+causes: []
+levers: [CREDIT_RISK_MANAGEMENT]
 ---
 # 8 · Non-Performing Loan Management and Recovery
 

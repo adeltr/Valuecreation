@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/D
+kind: analysis
+id: retail-bank-27
+part: D
+partLabel: Branch and Channel Performance
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, BRANCH_OPTIMIZATION]
 ---
 # 27 · Branch Network Performance and Profitability Analysis
 

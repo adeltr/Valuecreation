@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/D
+kind: analysis
+id: commercial-bank-26
+part: D
+partLabel: Capital, Liquidity, and Funding
+quant: [NET_INTEREST_MARGIN]
+causes: [FINANCIAL, REGULATORY, INTEREST_RATES]
+levers: [PRICING, MIX, DEPOSIT_FRANCHISE]
 ---
 # 26 · Asset and Liability Management
 

@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-23
+part: B
+partLabel: Claims Management
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 23 · Claims Frequency Benchmarking by Region
 

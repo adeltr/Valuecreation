@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/C
+kind: analysis
+id: retail-bank-21
+part: C
+partLabel: Operational Efficiency and Risk Management
+quant: [COST_OF_RISK, NPL_RATIO]
+causes: [OPERATIONAL]
+levers: [MIX, CREDIT_RISK_MANAGEMENT]
 ---
 # 21 · Credit Quality and Loan Loss Provisioning Analysis
 

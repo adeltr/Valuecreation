@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-19
+part: B
+partLabel: Operations
+quant: [YEARS_TO_LAUNCH]
+causes: [OPERATIONAL, REGULATORY]
+levers: [REGULATORY_STRATEGY]
 ---
 # 19 · Regulatory Pathways
 

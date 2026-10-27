@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-20
+part: C
+partLabel: Profitability and Product Performance
+quant: [BENEFITS_RATIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 20 · Group Life Insurance Portfolio Profitability and Risk Assessment
 

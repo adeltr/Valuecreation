@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-23
+part: B
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 23 · Supply Chain Security and Raw Material Sourcing
 

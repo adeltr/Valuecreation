@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/A
+kind: analysis
+id: commercial-bank-02
+part: A
+partLabel: Financial Performance and Efficiency
+quant: [NON_INTEREST_INCOME_SHARE]
+causes: [FINANCIAL]
+levers: [PRICING, VOLUME, FEE_BUSINESS_GROWTH]
 ---
 # 2 · Non-Interest Income Analysis
 

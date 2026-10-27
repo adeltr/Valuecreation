@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/H
+kind: analysis
+id: commercial-bank-38
+part: H
+partLabel: Specialized and Industry-Specific Solutions
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME]
 ---
 # 38 · Export and Import Credit Agency Utilization Review
 

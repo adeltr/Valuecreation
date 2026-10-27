@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/I
+kind: analysis
+id: life-insurance-39
+part: I
+partLabel: Customer Experience and Digital Transformation
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, COST_OPS, PERSISTENCY_PROGRAM]
 ---
 # 39 · Impact Assessment of Behavioral Economics on Policy Uptake and Retention
 

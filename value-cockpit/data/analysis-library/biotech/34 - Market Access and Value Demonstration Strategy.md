@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/C
+kind: analysis
+id: biotech-34
+part: C
+partLabel: Marketing
+quant: [PEAK_SALES]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, MARKET_ACCESS]
 ---
 # 34 · Market Access and Value Demonstration Strategy
 

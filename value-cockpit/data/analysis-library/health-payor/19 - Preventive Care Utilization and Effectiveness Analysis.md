@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/C
+kind: analysis
+id: health-payor-19
+part: C
+partLabel: Care and Disease Management Programs
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 19 · Preventive Care Utilization and Effectiveness Analysis
 

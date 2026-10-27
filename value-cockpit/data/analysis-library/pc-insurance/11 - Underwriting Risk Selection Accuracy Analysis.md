@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-11
+part: A
+partLabel: Underwriting
+quant: [LOSS_RATIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING, UNDERWRITING_DISCIPLINE]
 ---
 # 11 · Underwriting Risk Selection Accuracy Analysis
 

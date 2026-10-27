@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/F
+kind: analysis
+id: pc-insurance-41
+part: F
+partLabel: Sales & Marketing
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 41 · Policyholder Behavior Analysis
 

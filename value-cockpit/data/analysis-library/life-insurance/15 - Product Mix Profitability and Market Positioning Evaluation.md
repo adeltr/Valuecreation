@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-15
+part: C
+partLabel: Profitability and Product Performance
+quant: []
+causes: [FINANCIAL, MARKET]
+levers: [PRICING, VOLUME, COST_OPS, PRODUCT_MIX_OPTIMIZATION]
 ---
 # 15 · Product Mix Profitability and Market Positioning Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-18
+part: C
+partLabel: Risk Management and Compliance
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS]
 ---
 # 18 · Regulatory, Governance, and Compliance Review
 

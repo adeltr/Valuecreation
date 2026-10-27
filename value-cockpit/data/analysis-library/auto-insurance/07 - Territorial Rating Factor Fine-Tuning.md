@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-07
+part: A
+partLabel: Pricing & Product Strategy
+quant: [AVERAGE_PREMIUM]
+causes: [COMMERCIAL]
+levers: [RATING_SOPHISTICATION]
 ---
 # 7 · Territorial Rating Factor Fine-Tuning
 

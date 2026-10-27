@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/E
+kind: analysis
+id: retail-bank-30
+part: E
+partLabel: Digital and Technological Capabilities
+quant: [DIGITAL_ADOPTION_RATE]
+causes: [COMMERCIAL, FINTECH_COMPETITION]
+levers: [DIGITAL_MIGRATION]
 ---
 # 30 · Digital Banking Adoption and Usage Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/G
+kind: analysis
+id: health-payor-36
+part: G
+partLabel: Access to Care and Integration
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 36 · Integrated Behavioral and Physical Health Access and Outcomes Analysis
 

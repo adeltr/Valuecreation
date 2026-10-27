@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/H
+kind: analysis
+id: commercial-bank-39
+part: H
+partLabel: Specialized and Industry-Specific Solutions
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, MIX]
 ---
 # 39 · Commodity Finance Structure and Risk Assessment
 

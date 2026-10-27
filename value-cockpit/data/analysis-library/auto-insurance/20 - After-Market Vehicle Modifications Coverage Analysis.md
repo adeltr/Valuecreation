@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-20
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: []
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING]
 ---
 # 20 · After-Market Vehicle Modifications Coverage Analysis
 

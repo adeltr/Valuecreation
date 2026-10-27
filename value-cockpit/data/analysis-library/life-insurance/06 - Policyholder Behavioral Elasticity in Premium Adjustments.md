@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/A
+kind: analysis
+id: life-insurance-06
+part: A
+partLabel: Policyholder Behavior and Retention
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 6 · Policyholder Behavioral Elasticity in Premium Adjustments Analysis
 

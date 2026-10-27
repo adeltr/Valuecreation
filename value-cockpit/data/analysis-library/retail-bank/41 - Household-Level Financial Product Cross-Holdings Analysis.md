@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-41
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: [REVENUE_PER_CUSTOMER, CROSS_SELL_RATIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, CROSS_SELL]
 ---
 # 41 · Household-Level Financial Product Cross-Holdings Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/C
+kind: analysis
+id: retail-bank-22
+part: C
+partLabel: Operational Efficiency and Risk Management
+quant: []
+causes: [OPERATIONAL]
+levers: [FRAUD_PREVENTION]
 ---
 # 22 · Fraud Detection and Prevention Effectiveness Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-11
+part: A
+partLabel: Customer Behavior and Engagement
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME]
 ---
 # 11 · Debit and Credit Card Rewards Program Engagement Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/D
+kind: analysis
+id: auto-insurance-29
+part: D
+partLabel: Financial Performance & Reserving
+quant: [CLAIM_FREQUENCY, LOSS_RATIO]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 29 · Loss Ratio Trends by Product Segment
 

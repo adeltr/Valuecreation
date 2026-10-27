@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-02
+part: A
+partLabel: Customer Behavior and Engagement
+quant: [NET_PROMOTER_SCORE]
+causes: [COMMERCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 2 · Customer Satisfaction and Net Promoter Score (NPS) Evaluation
 

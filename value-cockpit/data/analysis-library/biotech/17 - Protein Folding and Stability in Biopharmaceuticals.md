@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-17
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL]
+levers: []
 ---
 # 17 · Protein Folding and Stability in Biopharmaceuticals
 

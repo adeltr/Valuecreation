@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-16
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: []
+levers: [VOLUME]
 ---
 # 16 · Cellular Microenvironment Manipulation for Therapeutic Benefit
 

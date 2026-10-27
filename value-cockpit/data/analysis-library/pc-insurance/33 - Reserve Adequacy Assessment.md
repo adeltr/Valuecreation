@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/D
+kind: analysis
+id: pc-insurance-33
+part: D
+partLabel: Finance
+quant: [FLOAT_RATIO, RESERVE_DEVELOPMENT_RATIO]
+causes: [FINANCIAL, REGULATORY, RESERVE_RISK]
+levers: [MIX]
 ---
 # 33 · Reserve Adequacy Assessment
 

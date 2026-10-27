@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-03
+part: A
+partLabel: Customer Behavior and Engagement
+quant: [CROSS_SELL_RATIO]
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME, CROSS_SELL]
 ---
 # 3 · Cross-Selling and Up-Selling Effectiveness Analysis
 

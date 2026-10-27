@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/B
+kind: analysis
+id: health-payor-11
+part: B
+partLabel: Member Experience and Engagement
+quant: [MEMBERS, MEMBER_GROWTH, CUSTOMER_RETENTION_RATE]
+causes: []
+levers: [VOLUME, MEMBER_ENGAGEMENT]
 ---
 # 11 · Member Onboarding, Engagement, and Retention Analysis
 

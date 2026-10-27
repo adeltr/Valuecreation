@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/D
+kind: analysis
+id: biotech-36
+part: D
+partLabel: Technology
+quant: []
+causes: [OPERATIONAL, MARKET]
+levers: [VOLUME]
 ---
 # 36 · Gene Sequencing and Bioinformatics Capabilities
 

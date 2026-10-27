@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/K
+kind: analysis
+id: life-insurance-44
+part: K
+partLabel: Market Strategy and Competitive Positioning
+quant: []
+causes: [MARKET]
+levers: []
 ---
 # 44 · Competitive Landscape and Product Innovation Assessment
 

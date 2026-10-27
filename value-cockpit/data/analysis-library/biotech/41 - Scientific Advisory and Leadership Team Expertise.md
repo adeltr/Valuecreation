@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/F
+kind: analysis
+id: biotech-41
+part: F
+partLabel: Organization
+quant: []
+causes: [ORGANIZATIONAL, MARKET, REGULATORY]
+levers: [VOLUME]
 ---
 # 41 · Scientific Advisory and Leadership Team Expertise
 

@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-12
+part: A
+partLabel: Underwriting
+quant: []
+causes: [FINANCIAL]
+levers: [PRICING, UNDERWRITING_DISCIPLINE]
 ---
 # 12 · Risk Appetite Alignment and Underwriting Discipline Analysis
 

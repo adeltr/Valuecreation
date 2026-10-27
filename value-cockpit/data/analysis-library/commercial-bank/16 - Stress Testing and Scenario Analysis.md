@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-16
+part: C
+partLabel: Risk Management and Compliance
+quant: []
+causes: [FINANCIAL, INTEREST_RATES, CREDIT_CYCLE]
+levers: []
 ---
 # 16 · Stress Testing and Scenario Analysis
 

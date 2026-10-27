@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-18
+part: C
+partLabel: Profitability and Product Performance
+quant: [BENEFITS_RATIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, PRODUCT_MIX_OPTIMIZATION]
 ---
 # 18 · Critical Illness and Riders Profitability Assessment
 

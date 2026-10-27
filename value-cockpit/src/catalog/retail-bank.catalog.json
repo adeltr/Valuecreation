@@ -1,0 +1,798 @@
+[
+  {
+    "id": "retail-bank-01",
+    "archetype": "retail-bank",
+    "title": "Customer Segmentation and Product Penetration Opportunities Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "CUSTOMERS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/01 - Customer Segmentation and Product Penetration Opportunities.md"
+  },
+  {
+    "id": "retail-bank-02",
+    "archetype": "retail-bank",
+    "title": "Customer Satisfaction and Net Promoter Score (NPS) Evaluation",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "NET_PROMOTER_SCORE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/02 - Customer Satisfaction and Net Promoter Score (NPS).md"
+  },
+  {
+    "id": "retail-bank-03",
+    "archetype": "retail-bank",
+    "title": "Cross-Selling and Up-Selling Effectiveness Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "CROSS_SELL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/03 - Cross-Selling and Up-Selling Effectiveness Analysis.md"
+  },
+  {
+    "id": "retail-bank-04",
+    "archetype": "retail-bank",
+    "title": "Customer Lifetime Value (CLV) and Acquisition Cost Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "REVENUE_PER_CUSTOMER",
+      "COST_TO_SERVE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/04 - Customer Lifetime Value (CLV) and Acquisition Cost Analysis.md"
+  },
+  {
+    "id": "retail-bank-05",
+    "archetype": "retail-bank",
+    "title": "Customer Journey Mapping and Experience Optimization Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/05 - Customer Journey Mapping and Experience Optimization.md"
+  },
+  {
+    "id": "retail-bank-06",
+    "archetype": "retail-bank",
+    "title": "Customer Demographics and Financial Behavior Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/06 - Customer Demographics and Financial Behavior Analysis.md"
+  },
+  {
+    "id": "retail-bank-07",
+    "archetype": "retail-bank",
+    "title": "Personal Financial Management Tool Engagement Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "DIGITAL_ADOPTION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "FINTECH_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/07 - Personal Financial Management Tool Engagement Analysis.md"
+  },
+  {
+    "id": "retail-bank-08",
+    "archetype": "retail-bank",
+    "title": "Customer Financial Health and Credit Utilization Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/08 - Customer Financial Health and Credit Utilization Analysis.md"
+  },
+  {
+    "id": "retail-bank-09",
+    "archetype": "retail-bank",
+    "title": "Customer Segment Profitability and Risk Assessment",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "REVENUE_PER_CUSTOMER",
+      "COST_TO_SERVE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/09 - Customer Segment Profitability and Risk Assessment.md"
+  },
+  {
+    "id": "retail-bank-10",
+    "archetype": "retail-bank",
+    "title": "Customer Retention and Dormant Account Reactivation Strategy Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "CUSTOMER_ATTRITION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "ATTRITION_REDUCTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/10 - Customer Retention and Dormant Account Reactivation.md"
+  },
+  {
+    "id": "retail-bank-11",
+    "archetype": "retail-bank",
+    "title": "Debit and Credit Card Rewards Program Engagement Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/11 - Debit and Credit Card Rewards Program Engagement.md"
+  },
+  {
+    "id": "retail-bank-12",
+    "archetype": "retail-bank",
+    "title": "Customer Support and Resolution Time Efficiency Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/12 - Customer Support and Resolution Time Efficiency Analysis.md"
+  },
+  {
+    "id": "retail-bank-13",
+    "archetype": "retail-bank",
+    "title": "Retail Deposit and Loan Portfolio Performance and Health Assessment",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "LOANS_PER_CUSTOMER",
+      "DEPOSIT_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/13 - Retail Deposit and Loan Portfolio Performance and Health.md"
+  },
+  {
+    "id": "retail-bank-14",
+    "archetype": "retail-bank",
+    "title": "Mortgage Portfolio Risk and Valuation Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "LOANS_PER_CUSTOMER"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/14 - Mortgage Portfolio Risk and Valuation Analysis.md"
+  },
+  {
+    "id": "retail-bank-15",
+    "archetype": "retail-bank",
+    "title": "Savings and Investment Account Tenure Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "ATTRITION_REDUCTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/15 - Savings and Investment Account Tenure Analysis.md"
+  },
+  {
+    "id": "retail-bank-16",
+    "archetype": "retail-bank",
+    "title": "Loan Portfolio Diversification and Sectoral Risk Exposure Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "NPL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "CREDIT_CYCLE"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/16 - Loan Portfolio Diversification and Sectoral Risk Exposure.md"
+  },
+  {
+    "id": "retail-bank-17",
+    "archetype": "retail-bank",
+    "title": "Mortgage Loan-to-Value (LTV) and Debt-to-Income (DTI) Ratio Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/17 - Mortgage Loan-to-Value (LTV) and Debt-to-Income (DTI).md"
+  },
+  {
+    "id": "retail-bank-18",
+    "archetype": "retail-bank",
+    "title": "Debt Consolidation Product Demand and Risk Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/18 - Debt Consolidation Product Demand and Risk Analysis.md"
+  },
+  {
+    "id": "retail-bank-19",
+    "archetype": "retail-bank",
+    "title": "Loan Repayment Behavior and Default Management Strategy Assessment",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "COST_OF_RISK"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "CREDIT_CYCLE"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/19 - Loan Repayment Behavior and Default Management Strategy.md"
+  },
+  {
+    "id": "retail-bank-20",
+    "archetype": "retail-bank",
+    "title": "Risk and Compliance Adherence for Retail Banking Operations",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/20 - Risk and Compliance Adherence for Retail Banking.md"
+  },
+  {
+    "id": "retail-bank-21",
+    "archetype": "retail-bank",
+    "title": "Credit Quality and Loan Loss Provisioning Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [
+      "COST_OF_RISK",
+      "NPL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/21 - Credit Quality and Loan Loss Provisioning Analysis.md"
+  },
+  {
+    "id": "retail-bank-22",
+    "archetype": "retail-bank",
+    "title": "Fraud Detection and Prevention Effectiveness Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FRAUD_PREVENTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/22 - Fraud Detection and Prevention Effectiveness Analysis.md"
+  },
+  {
+    "id": "retail-bank-23",
+    "archetype": "retail-bank",
+    "title": "Loan Origination and Underwriting Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/23 - Loan Origination and Underwriting Efficiency Analysis.md"
+  },
+  {
+    "id": "retail-bank-24",
+    "archetype": "retail-bank",
+    "title": "Operational Efficiency and Cost-to-Income Ratio Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [
+      "COST_TO_SERVE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/24 - Operational Efficiency and Cost-to-Income Ratio Analysis.md"
+  },
+  {
+    "id": "retail-bank-25",
+    "archetype": "retail-bank",
+    "title": "Regulatory Compliance Cost Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/25 - Regulatory Compliance Cost Analysis.md"
+  },
+  {
+    "id": "retail-bank-26",
+    "archetype": "retail-bank",
+    "title": "Regulatory Capital Adequacy and Stress Testing Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [
+      "CET1_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/26 - Regulatory Capital Adequacy and Stress Testing Analysis.md"
+  },
+  {
+    "id": "retail-bank-27",
+    "archetype": "retail-bank",
+    "title": "Branch Network Performance and Profitability Analysis",
+    "part": "D",
+    "partLabel": "Branch and Channel Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "BRANCH_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/27 - Branch Network Performance and Profitability Analysis.md"
+  },
+  {
+    "id": "retail-bank-28",
+    "archetype": "retail-bank",
+    "title": "Channel Performance Analysis",
+    "part": "D",
+    "partLabel": "Branch and Channel Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/28 - Channel Performance Analysis.md"
+  },
+  {
+    "id": "retail-bank-29",
+    "archetype": "retail-bank",
+    "title": "ATM Network Optimization and Cost-Benefit Analysis",
+    "part": "D",
+    "partLabel": "Branch and Channel Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "BRANCH_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/29 - ATM Network Optimization and Cost-Benefit Analysis.md"
+  },
+  {
+    "id": "retail-bank-30",
+    "archetype": "retail-bank",
+    "title": "Digital Banking Adoption and Usage Analysis",
+    "part": "E",
+    "partLabel": "Digital and Technological Capabilities",
+    "relatedMetricCodes": [
+      "DIGITAL_ADOPTION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINTECH_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/30 - Digital Banking Adoption and Usage Analysis.md"
+  },
+  {
+    "id": "retail-bank-31",
+    "archetype": "retail-bank",
+    "title": "Mobile Banking Security and Authentication Effectiveness Analysis",
+    "part": "E",
+    "partLabel": "Digital and Technological Capabilities",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/31 - Mobile Banking Security and Authentication Effectiveness.md"
+  },
+  {
+    "id": "retail-bank-32",
+    "archetype": "retail-bank",
+    "title": "Core Banking System Efficiency and Scalability Analysis",
+    "part": "E",
+    "partLabel": "Digital and Technological Capabilities",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/32 - Core Banking System Efficiency and Scalability Analysis.md"
+  },
+  {
+    "id": "retail-bank-33",
+    "archetype": "retail-bank",
+    "title": "Interest Rate Sensitivity and Net Interest Margin Analysis",
+    "part": "F",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "DEPOSIT_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/33 - Interest Rate Sensitivity and Net Interest Margin Analysis.md"
+  },
+  {
+    "id": "retail-bank-34",
+    "archetype": "retail-bank",
+    "title": "Interest Rate Spread and Pricing Strategy Analysis",
+    "part": "F",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "DEPOSIT_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/34 - Interest Rate Spread and Pricing Strategy Analysis.md"
+  },
+  {
+    "id": "retail-bank-35",
+    "archetype": "retail-bank",
+    "title": "Financial Inclusion and Market Penetration Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CUSTOMERS",
+      "CUSTOMER_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/35 - Financial Inclusion and Market Penetration Analysis.md"
+  },
+  {
+    "id": "retail-bank-36",
+    "archetype": "retail-bank",
+    "title": "Deposit Growth and Stability Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DEPOSIT_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "DEPOSIT_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/36 - Deposit Growth and Stability Analysis.md"
+  },
+  {
+    "id": "retail-bank-37",
+    "archetype": "retail-bank",
+    "title": "Wealth Management and Investment Product Penetration Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/37 - Wealth Management and Investment Product Penetration.md"
+  },
+  {
+    "id": "retail-bank-38",
+    "archetype": "retail-bank",
+    "title": "Fee Income and Revenue Dependency Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/38 - Fee Income and Revenue Dependency Analysis.md"
+  },
+  {
+    "id": "retail-bank-39",
+    "archetype": "retail-bank",
+    "title": "Payment Services Usage and Revenue Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/39 - Payment Services Usage and Revenue Analysis.md"
+  },
+  {
+    "id": "retail-bank-40",
+    "archetype": "retail-bank",
+    "title": "Personalized Banking Services Uptake and Impact Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/40 - Personalized Banking Services Uptake and Impact Analysis.md"
+  },
+  {
+    "id": "retail-bank-41",
+    "archetype": "retail-bank",
+    "title": "Household-Level Financial Product Cross-Holdings Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_PER_CUSTOMER",
+      "CROSS_SELL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/41 - Household-Level Financial Product Cross-Holdings Analysis.md"
+  },
+  {
+    "id": "retail-bank-42",
+    "archetype": "retail-bank",
+    "title": "Retail Banking Product Lifecycle and Attrition Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "CUSTOMER_ATTRITION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "ATTRITION_REDUCTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/42 - Retail Banking Product Lifecycle and Attrition Analysis.md"
+  },
+  {
+    "id": "retail-bank-43",
+    "archetype": "retail-bank",
+    "title": "Loan Prepayment and Refinance Behavior Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/43 - Loan Prepayment and Refinance Behavior Analysis.md"
+  },
+  {
+    "id": "retail-bank-44",
+    "archetype": "retail-bank",
+    "title": "Household Wealth Accumulation Trends Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/44 - Household Wealth Accumulation Trends Analysis.md"
+  },
+  {
+    "id": "retail-bank-45",
+    "archetype": "retail-bank",
+    "title": "Strategic Growth and Market Expansion Planning",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CUSTOMERS",
+      "CUSTOMER_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "FINTECH_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/45 - Strategic Growth and Market Expansion Planning.md"
+  }
+]

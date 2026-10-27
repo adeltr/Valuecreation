@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-44
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 44 · Household Wealth Accumulation Trends Analysis
 

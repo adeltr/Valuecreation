@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-43
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: []
+causes: [COMMERCIAL, INTEREST_RATES]
+levers: [PRICING]
 ---
 # 43 · Loan Prepayment and Refinance Behavior Analysis
 

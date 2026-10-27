@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/B
+kind: analysis
+id: life-insurance-08
+part: B
+partLabel: Actuarial and Reserve Management
+quant: [BENEFITS_RATIO, MORTALITY_EXPERIENCE_RATIO]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, MORTALITY_UNDERWRITING]
 ---
 # 8 · Mortality and Longevity Risk Trend Analysis
 

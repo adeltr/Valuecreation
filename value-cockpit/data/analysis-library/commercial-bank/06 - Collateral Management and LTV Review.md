@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-06
+part: B
+partLabel: Lending and Credit Management
+quant: []
+causes: []
+levers: [COST_OPS]
 ---
 # 6 · Collateral Management and LTV Review
 

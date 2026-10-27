@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/F
+kind: analysis
+id: retail-bank-33
+part: F
+partLabel: Financial Performance and Revenue Management
+quant: []
+causes: [FINANCIAL, INTEREST_RATES]
+levers: [PRICING, MIX, DEPOSIT_PRICING]
 ---
 # 33 · Interest Rate Sensitivity and Net Interest Margin Analysis
 

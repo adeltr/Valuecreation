@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/B
+kind: analysis
+id: health-payor-15
+part: B
+partLabel: Member Experience and Engagement
+quant: []
+causes: [FINANCIAL]
+levers: [VOLUME, WC_DSO]
 ---
 # 15 · Social Determinants of Health Integration and Impact Assessment
 

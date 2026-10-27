@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/I
+kind: analysis
+id: commercial-bank-40
+part: I
+partLabel: Mergers and Acquisitions
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 40 · Banking Mergers and Acquisitions Evaluation
 

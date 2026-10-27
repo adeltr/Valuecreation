@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/D
+kind: analysis
+id: commercial-bank-23
+part: D
+partLabel: Capital, Liquidity, and Funding
+quant: [LOAN_TO_DEPOSIT_RATIO, COST_OF_FUNDS]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME, COST_OPS, DEPOSIT_FRANCHISE]
 ---
 # 23 · Deposit Base Structure and Cost of Funds Review
 

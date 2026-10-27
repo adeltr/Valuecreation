@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/I
+kind: analysis
+id: life-insurance-38
+part: I
+partLabel: Customer Experience and Digital Transformation
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [COST_OPS, ADMIN_AUTOMATION]
 ---
 # 38 · Digital Transformation and InsurTech Adoption Analysis
 

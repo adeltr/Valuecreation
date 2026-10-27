@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/F
+kind: analysis
+id: health-payor-32
+part: F
+partLabel: Claims Management and Compliance
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, PAYMENT_INTEGRITY]
 ---
 # 32 · Fraud, Waste, and Abuse Detection Effectiveness
 

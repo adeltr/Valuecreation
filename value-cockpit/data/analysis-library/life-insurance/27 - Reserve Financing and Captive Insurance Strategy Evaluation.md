@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/D
+kind: analysis
+id: life-insurance-27
+part: D
+partLabel: Capital and Solvency Management
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 27 · Reserve Financing and Captive Insurance Strategy Evaluation
 

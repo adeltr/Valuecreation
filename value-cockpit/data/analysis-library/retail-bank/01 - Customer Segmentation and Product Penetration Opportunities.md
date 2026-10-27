@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-01
+part: A
+partLabel: Customer Behavior and Engagement
+quant: [CUSTOMERS]
+causes: [COMMERCIAL]
+levers: [VOLUME, CROSS_SELL]
 ---
 # 1 · Customer Segmentation and Product Penetration Opportunities Analysis
 

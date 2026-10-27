@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-29
+part: C
+partLabel: Risk Management
+quant: []
+causes: []
+levers: [VOLUME, MIX]
 ---
 # 29 · Exposure Management and Aggregation Analysis
 

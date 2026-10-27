@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/G
+kind: analysis
+id: life-insurance-34
+part: G
+partLabel: Risk Management and Hedging
+quant: []
+causes: [FINANCIAL]
+levers: [PRICING, VOLUME, REINSURANCE_OPTIMIZATION]
 ---
 # 34 · Reinsurance Strategy Effectiveness and Cost Optimization Analysis
 

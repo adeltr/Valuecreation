@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-27
+part: C
+partLabel: Risk Management
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, COST_OPS, UNDERWRITING_DISCIPLINE]
 ---
 # 27 · Exposure-Based Pricing Sensitivity Analysis
 

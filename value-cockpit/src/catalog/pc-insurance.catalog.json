@@ -1,0 +1,818 @@
+[
+  {
+    "id": "pc-insurance-01",
+    "archetype": "pc-insurance",
+    "title": "Loss Ratio Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [
+      "LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/01 - Loss Ratio Analysis.md"
+  },
+  {
+    "id": "pc-insurance-02",
+    "archetype": "pc-insurance",
+    "title": "Expense Ratio Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [
+      "EXPENSE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "DISTRIBUTION_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/02 - Expense Ratio Analysis.md"
+  },
+  {
+    "id": "pc-insurance-03",
+    "archetype": "pc-insurance",
+    "title": "Underwriting Profitability and Combined Ratio Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [
+      "LOSS_RATIO",
+      "EXPENSE_RATIO",
+      "COMBINED_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/03 - Underwriting Profitability and Combined Ratio Analysis.md"
+  },
+  {
+    "id": "pc-insurance-04",
+    "archetype": "pc-insurance",
+    "title": "Pricing Adequacy Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "UNDERWRITING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/04 - Pricing Adequacy Analysis.md"
+  },
+  {
+    "id": "pc-insurance-05",
+    "archetype": "pc-insurance",
+    "title": "Segmented Loss Frequency and Severity Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/05 - Segmented Loss Frequency and Severity Analysis.md"
+  },
+  {
+    "id": "pc-insurance-06",
+    "archetype": "pc-insurance",
+    "title": "Policy Retention Rate Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [
+      "POLICY_RETENTION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RETENTION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/06 - Policy Retention Rate Analysis.md"
+  },
+  {
+    "id": "pc-insurance-07",
+    "archetype": "pc-insurance",
+    "title": "New Business Growth Rate Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "NET_PREMIUMS_EARNED",
+      "PREMIUM_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "RETENTION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/07 - New Business Growth Rate Analysis.md"
+  },
+  {
+    "id": "pc-insurance-08",
+    "archetype": "pc-insurance",
+    "title": "Geographic Risk Concentration Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "PORTFOLIO_STEERING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/08 - Geographic Risk Concentration Analysis.md"
+  },
+  {
+    "id": "pc-insurance-09",
+    "archetype": "pc-insurance",
+    "title": "Product Line Profitability Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "COST_OPS",
+      "PORTFOLIO_STEERING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/09 - Product Line Profitability Analysis.md"
+  },
+  {
+    "id": "pc-insurance-10",
+    "archetype": "pc-insurance",
+    "title": "Underwriting Cycle Position Assessment",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/10 - Underwriting Cycle Position Assessment.md"
+  },
+  {
+    "id": "pc-insurance-11",
+    "archetype": "pc-insurance",
+    "title": "Underwriting Risk Selection Accuracy Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [
+      "LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "UNDERWRITING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/11 - Underwriting Risk Selection Accuracy Analysis.md"
+  },
+  {
+    "id": "pc-insurance-12",
+    "archetype": "pc-insurance",
+    "title": "Risk Appetite Alignment and Underwriting Discipline Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "UNDERWRITING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/12 - Risk Appetite Alignment and Underwriting Discipline Analysis.md"
+  },
+  {
+    "id": "pc-insurance-13",
+    "archetype": "pc-insurance",
+    "title": "Renewal Rate Analysis by Product Line",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [
+      "POLICY_RETENTION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX",
+      "RETENTION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/13 - Renewal Rate Analysis by Product Line.md"
+  },
+  {
+    "id": "pc-insurance-14",
+    "archetype": "pc-insurance",
+    "title": "Policy Limits and Deductibles Analysis",
+    "part": "A",
+    "partLabel": "Underwriting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/14 - Policy Limits and Deductibles Analysis.md"
+  },
+  {
+    "id": "pc-insurance-15",
+    "archetype": "pc-insurance",
+    "title": "Claims Reserve Development Analysis",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [
+      "FLOAT_RATIO",
+      "RESERVE_DEVELOPMENT_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "RESERVE_RISK"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pc-insurance/15 - Claims Reserve Development Analysis.md"
+  },
+  {
+    "id": "pc-insurance-16",
+    "archetype": "pc-insurance",
+    "title": "Claims Settlement Speed and Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [
+      "CLAIMS_SETTLEMENT_DAYS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/16 - Claims Settlement Speed and Efficiency Analysis.md"
+  },
+  {
+    "id": "pc-insurance-17",
+    "archetype": "pc-insurance",
+    "title": "Claims Fraud Detection and Prevention Analysis",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/17 - Claims Fraud Detection and Prevention Analysis.md"
+  },
+  {
+    "id": "pc-insurance-18",
+    "archetype": "pc-insurance",
+    "title": "Severity Trend Analysis by Line of Business",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET",
+      "SOCIAL_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/18 - Severity Trend Analysis by Line of Business.md"
+  },
+  {
+    "id": "pc-insurance-19",
+    "archetype": "pc-insurance",
+    "title": "Claims Litigation Frequency and Cost Analysis",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [
+      "LITIGATION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/19 - Claims Litigation Frequency and Cost Analysis.md"
+  },
+  {
+    "id": "pc-insurance-20",
+    "archetype": "pc-insurance",
+    "title": "Claims Settlement Reserve Variability Analysis",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "RESERVE_RISK"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pc-insurance/20 - Claims Settlement Reserve Variability Analysis.md"
+  },
+  {
+    "id": "pc-insurance-21",
+    "archetype": "pc-insurance",
+    "title": "Claims Ratio by Broker vs. Direct Channel Analysis",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "DISTRIBUTION_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/21 - Claims Ratio by Broker vs. Direct Channel Analysis.md"
+  },
+  {
+    "id": "pc-insurance-22",
+    "archetype": "pc-insurance",
+    "title": "Large Loss Impact on Profitability Analysis",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [
+      "CATASTROPHE_LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/22 - Large Loss Impact on Profitability Analysis.md"
+  },
+  {
+    "id": "pc-insurance-23",
+    "archetype": "pc-insurance",
+    "title": "Claims Frequency Benchmarking by Region",
+    "part": "B",
+    "partLabel": "Claims Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/23 - Claims Frequency Benchmarking by Region.md"
+  },
+  {
+    "id": "pc-insurance-24",
+    "archetype": "pc-insurance",
+    "title": "Catastrophe Exposure Analysis",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [
+      "CATASTROPHE_LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "CATASTROPHE_EXPOSURE"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/24 - Catastrophe Exposure Analysis.md"
+  },
+  {
+    "id": "pc-insurance-25",
+    "archetype": "pc-insurance",
+    "title": "Integrated Reinsurance Strategy and Cost Efficiency Assessment",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [
+      "REINSURANCE_CEDED_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "REINSURANCE_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/25 - Integrated Reinsurance Strategy and Cost Efficiency.md"
+  },
+  {
+    "id": "pc-insurance-26",
+    "archetype": "pc-insurance",
+    "title": "Environmental and Climate Risk Exposure Analysis",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "CATASTROPHE_EXPOSURE"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/26 - Environmental and Climate Risk Exposure Analysis.md"
+  },
+  {
+    "id": "pc-insurance-27",
+    "archetype": "pc-insurance",
+    "title": "Exposure-Based Pricing Sensitivity Analysis",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS",
+      "UNDERWRITING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/27 - Exposure-Based Pricing Sensitivity Analysis.md"
+  },
+  {
+    "id": "pc-insurance-28",
+    "archetype": "pc-insurance",
+    "title": "Comprehensive Capital Adequacy and Solvency Analysis",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [
+      "SOLVENCY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/28 - Comprehensive Capital Adequacy and Solvency Analysis.md"
+  },
+  {
+    "id": "pc-insurance-29",
+    "archetype": "pc-insurance",
+    "title": "Exposure Management and Aggregation Analysis",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/29 - Exposure Management and Aggregation Analysis.md"
+  },
+  {
+    "id": "pc-insurance-30",
+    "archetype": "pc-insurance",
+    "title": "Catastrophic Claims Load Sensitivity Analysis",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [
+      "CATASTROPHE_LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "CATASTROPHE_EXPOSURE"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/30 - Catastrophic Claims Load Sensitivity Analysis.md"
+  },
+  {
+    "id": "pc-insurance-31",
+    "archetype": "pc-insurance",
+    "title": "Social Inflation Impact Analysis on Claims",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [
+      "LITIGATION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "SOCIAL_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "COST_OPS",
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/31 - Social Inflation Impact Analysis on Claims.md"
+  },
+  {
+    "id": "pc-insurance-32",
+    "archetype": "pc-insurance",
+    "title": "Layered Reinsurance Utilization Analysis",
+    "part": "C",
+    "partLabel": "Risk Management",
+    "relatedMetricCodes": [
+      "REINSURANCE_CEDED_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "COST_OPS",
+      "REINSURANCE_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/32 - Layered Reinsurance Utilization Analysis.md"
+  },
+  {
+    "id": "pc-insurance-33",
+    "archetype": "pc-insurance",
+    "title": "Reserve Adequacy Assessment",
+    "part": "D",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "FLOAT_RATIO",
+      "RESERVE_DEVELOPMENT_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY",
+      "RESERVE_RISK"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/33 - Reserve Adequacy Assessment.md"
+  },
+  {
+    "id": "pc-insurance-34",
+    "archetype": "pc-insurance",
+    "title": "Investment Portfolio Risk and Return Analysis",
+    "part": "D",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "INVESTMENT_YIELD"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "INVESTMENT_ALLOCATION"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/34 - Investment Portfolio Risk and Return Analysis.md"
+  },
+  {
+    "id": "pc-insurance-35",
+    "archetype": "pc-insurance",
+    "title": "Portfolio Diversification and Correlation Analysis",
+    "part": "D",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "INVESTMENT_ALLOCATION"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/35 - Portfolio Diversification and Correlation Analysis.md"
+  },
+  {
+    "id": "pc-insurance-36",
+    "archetype": "pc-insurance",
+    "title": "Reserve Runoff Analysis",
+    "part": "D",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "RESERVE_DEVELOPMENT_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "RESERVE_RISK"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/36 - Reserve Runoff Analysis.md"
+  },
+  {
+    "id": "pc-insurance-37",
+    "archetype": "pc-insurance",
+    "title": "Long-Tail vs. Short-Tail Business Profitability Analysis",
+    "part": "D",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "LOSS_RATIO",
+      "EXPENSE_RATIO",
+      "COMBINED_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS",
+      "PORTFOLIO_STEERING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/37 - Long-Tail vs. Short-Tail Business Profitability Analysis.md"
+  },
+  {
+    "id": "pc-insurance-38",
+    "archetype": "pc-insurance",
+    "title": "Distribution Channel Performance Analysis",
+    "part": "E",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "NET_PREMIUMS_EARNED",
+      "COMBINED_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "DISTRIBUTION_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/38 - Distribution Channel Performance Analysis.md"
+  },
+  {
+    "id": "pc-insurance-39",
+    "archetype": "pc-insurance",
+    "title": "Policy Inception-to-Claim Timing Analysis",
+    "part": "E",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/39 - Policy Inception-to-Claim Timing Analysis.md"
+  },
+  {
+    "id": "pc-insurance-40",
+    "archetype": "pc-insurance",
+    "title": "Premium Leakage Analysis",
+    "part": "E",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/40 - Premium Leakage Analysis.md"
+  },
+  {
+    "id": "pc-insurance-41",
+    "archetype": "pc-insurance",
+    "title": "Policyholder Behavior Analysis",
+    "part": "F",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/41 - Policyholder Behavior Analysis.md"
+  },
+  {
+    "id": "pc-insurance-42",
+    "archetype": "pc-insurance",
+    "title": "Retention vs. Lapse Rate Analysis by Customer Segment",
+    "part": "F",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "POLICY_RETENTION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/42 - Retention vs. Lapse Rate Analysis by Customer Segment.md"
+  },
+  {
+    "id": "pc-insurance-43",
+    "archetype": "pc-insurance",
+    "title": "Regulatory and Compliance Risk Analysis",
+    "part": "G",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/pc-insurance/43 - Regulatory and Compliance Risk Analysis.md"
+  },
+  {
+    "id": "pc-insurance-44",
+    "archetype": "pc-insurance",
+    "title": "Impact of Regulatory Changes on Pricing and Coverage Analysis",
+    "part": "G",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/44 - Impact of Regulatory Changes on Pricing and Coverage.md"
+  },
+  {
+    "id": "pc-insurance-45",
+    "archetype": "pc-insurance",
+    "title": "Risk-Based Capital (RBC) Requirement Analysis",
+    "part": "G",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "SOLVENCY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/pc-insurance/45 - Risk-Based Capital (RBC) Requirement Analysis.md"
+  }
+]

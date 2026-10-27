@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/B
+kind: analysis
+id: retail-bank-13
+part: B
+partLabel: Product and Portfolio Performance
+quant: [REVENUE_GROWTH, LOANS_PER_CUSTOMER, DEPOSIT_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 13 · Retail Deposit and Loan Portfolio Performance and Health Assessment
 

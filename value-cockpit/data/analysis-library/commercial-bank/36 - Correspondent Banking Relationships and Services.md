@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/H
+kind: analysis
+id: commercial-bank-36
+part: H
+partLabel: Specialized and Industry-Specific Solutions
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 36 · Correspondent Banking Relationships and Services
 

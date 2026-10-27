@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/F
+kind: analysis
+id: life-insurance-31
+part: F
+partLabel: Distribution and Channel Performance
+quant: [EXPENSE_RATIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, COST_OPS, DISTRIBUTION_EFFICIENCY]
 ---
 # 31 · Distribution Channel Effectiveness and Cost Efficiency Analysis
 

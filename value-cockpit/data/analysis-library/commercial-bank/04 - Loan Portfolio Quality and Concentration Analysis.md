@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-04
+part: B
+partLabel: Lending and Credit Management
+quant: [LOANS, COST_OF_RISK, NPL_RATIO]
+causes: [OPERATIONAL, FINANCIAL, CREDIT_CYCLE]
+levers: [PRICING, MIX, CREDIT_RISK_MANAGEMENT]
 ---
 # 4 · Loan Portfolio Quality and Concentration Analysis
 

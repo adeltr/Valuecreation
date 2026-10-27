@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/F
+kind: analysis
+id: biotech-43
+part: F
+partLabel: Organization
+quant: [PARTNERED_ASSET_SHARE]
+causes: [REGULATORY]
+levers: [VOLUME, LICENSING_BD]
 ---
 # 43 · CRADA (Cooperative Research and Development Agreement) Evaluation
 

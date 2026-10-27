@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-09
+part: A
+partLabel: Underwriting
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, MIX, COST_OPS, PORTFOLIO_STEERING]
 ---
 # 9 · Product Line Profitability Analysis
 

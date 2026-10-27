@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/G
+kind: analysis
+id: pc-insurance-44
+part: G
+partLabel: Regulatory & Compliance
+quant: []
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [PRICING, VOLUME]
 ---
 # 44 · Impact of Regulatory Changes on Pricing and Coverage Analysis
 

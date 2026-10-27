@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/C
+kind: analysis
+id: auto-insurance-23
+part: C
+partLabel: Claims & Loss Management
+quant: [CLAIMS_SETTLEMENT_DAYS]
+causes: []
+levers: [COST_OPS, CLAIMS_EXCELLENCE]
 ---
 # 23 · Claim Settlement Speed
 

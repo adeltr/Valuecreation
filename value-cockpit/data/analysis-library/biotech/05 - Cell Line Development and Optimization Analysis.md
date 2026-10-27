@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-05
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 5 · Cell Line Development and Optimization Analysis
 

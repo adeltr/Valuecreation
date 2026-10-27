@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/D
+kind: analysis
+id: commercial-bank-27
+part: D
+partLabel: Capital, Liquidity, and Funding
+quant: [NET_INTEREST_MARGIN]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [MIX, LOAN_PRICING]
 ---
 # 27 · Funds Transfer Pricing Methodology Review
 

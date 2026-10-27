@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/C
+kind: analysis
+id: retail-bank-26
+part: C
+partLabel: Operational Efficiency and Risk Management
+quant: [CET1_RATIO]
+causes: [FINANCIAL, REGULATORY]
+levers: [VOLUME]
 ---
 # 26 · Regulatory Capital Adequacy and Stress Testing Analysis
 

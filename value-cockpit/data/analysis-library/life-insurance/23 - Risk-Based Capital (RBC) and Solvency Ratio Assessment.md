@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/D
+kind: analysis
+id: life-insurance-23
+part: D
+partLabel: Capital and Solvency Management
+quant: [SOLVENCY_RATIO]
+causes: [FINANCIAL, REGULATORY]
+levers: [PRICING, COST_OPS]
 ---
 # 23 · Risk-Based Capital (RBC) and Solvency Ratio Assessment
 

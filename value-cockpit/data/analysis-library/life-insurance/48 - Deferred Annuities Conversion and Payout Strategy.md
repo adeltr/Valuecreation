@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/K
+kind: analysis
+id: life-insurance-48
+part: K
+partLabel: Market Strategy and Competitive Positioning
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 48 · Deferred Annuities Conversion and Payout Strategy Assessment
 

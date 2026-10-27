@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-07
+part: A
+partLabel: Customer Behavior and Engagement
+quant: [DIGITAL_ADOPTION_RATE]
+causes: [COMMERCIAL, FINANCIAL, FINTECH_COMPETITION]
+levers: [VOLUME, DIGITAL_MIGRATION]
 ---
 # 7 · Personal Financial Management Tool Engagement Analysis
 

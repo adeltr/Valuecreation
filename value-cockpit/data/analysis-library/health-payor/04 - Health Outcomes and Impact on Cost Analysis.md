@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-04
+part: A
+partLabel: Financial Performance and Cost Management
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 4 · Health Outcomes and Impact on Cost Analysis
 

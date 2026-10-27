@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/F
+kind: analysis
+id: health-payor-34
+part: F
+partLabel: Claims Management and Compliance
+quant: []
+causes: [REGULATORY]
+levers: [VOLUME]
 ---
 # 34 · Behavioral Health Parity Compliance Evaluation
 

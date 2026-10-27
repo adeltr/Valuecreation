@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/B
+kind: analysis
+id: life-insurance-11
+part: B
+partLabel: Actuarial and Reserve Management
+quant: [RESERVES]
+causes: [FINANCIAL, REGULATORY]
+levers: [PRICING]
 ---
 # 11 · Deferred Profitability and Surplus Analysis for Long-Duration Contracts
 

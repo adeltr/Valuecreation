@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-17
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: [REVENUE_GROWTH, POLICIES_IN_FORCE, POLICY_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME, SEGMENT_GROWTH]
 ---
 # 17 · Non-Standard Auto Market & Subprime Segment Evaluation
 

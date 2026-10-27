@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/D
+kind: analysis
+id: life-insurance-26
+part: D
+partLabel: Capital and Solvency Management
+quant: []
+causes: [FINANCIAL]
+levers: [PRICING, MIX, COST_OPS]
 ---
 # 26 · Capital Allocation Efficiency Across Product Lines
 

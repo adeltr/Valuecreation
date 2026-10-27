@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-01
+part: A
+partLabel: Financial Performance and Cost Management
+quant: [MEDICAL_LOSS_RATIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 1 · Medical Loss Ratio Analysis
 

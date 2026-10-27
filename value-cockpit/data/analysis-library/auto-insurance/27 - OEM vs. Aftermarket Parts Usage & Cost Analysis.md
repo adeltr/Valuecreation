@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/C
+kind: analysis
+id: auto-insurance-27
+part: C
+partLabel: Claims & Loss Management
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, REPAIR_COST_INFLATION]
+levers: [PRICING, VOLUME, COST_PROCUREMENT, REPAIR_NETWORK]
 ---
 # 27 · OEM vs. Aftermarket Parts Usage & Cost Analysis
 

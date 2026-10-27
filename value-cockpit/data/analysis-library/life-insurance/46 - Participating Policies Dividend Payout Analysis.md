@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/K
+kind: analysis
+id: life-insurance-46
+part: K
+partLabel: Market Strategy and Competitive Positioning
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 46 · Participating Policies Dividend Payout Analysis
 

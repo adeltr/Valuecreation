@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-15
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 15 · Residual Market & Assigned Risk Pool Analysis
 

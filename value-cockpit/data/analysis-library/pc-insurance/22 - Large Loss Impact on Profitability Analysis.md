@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-22
+part: B
+partLabel: Claims Management
+quant: [CATASTROPHE_LOSS_RATIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, MIX]
 ---
 # 22 · Large Loss Impact on Profitability Analysis
 

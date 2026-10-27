@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-09
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [CLINICAL_FAILURE]
+levers: []
 ---
 # 9 · Toxicology and Safety Pharmacology Study Outcomes
 

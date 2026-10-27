@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-19
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, RATING_SOPHISTICATION]
 ---
 # 19 · Street-Level Risk & Traffic Pattern Underwriting
 

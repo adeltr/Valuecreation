@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-04
+part: A
+partLabel: Underwriting
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, UNDERWRITING_DISCIPLINE]
 ---
 # 4 · Pricing Adequacy Analysis
 

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getActiveVocabulary, SECTOR_ARCHETYPES, EXTENDED_ARCHETYPES, BASE_ARCHETYPES, type SectorArchetype } from './registry';
+import { getActiveVocabulary, getBridgeFamily, SECTOR_ARCHETYPES, EXTENDED_ARCHETYPES, BASE_ARCHETYPES, type SectorArchetype } from './registry';
 
 describe('ontology registry', () => {
   const saas = getActiveVocabulary('saas');
@@ -75,10 +75,18 @@ describe('ontology registry – lever targets', () => {
 });
 
 describe('ontology registry – archetypes', () => {
-  it('lists generic, then every EBITDA company type at level 2', () => {
+  it('lists generic, then every company type at level 2 — the 26 Umbrex types but Telecommunications', () => {
     expect(SECTOR_ARCHETYPES.slice(0, 4)).toEqual(['generic', 'saas', 'aero', 'airline']);
-    expect(SECTOR_ARCHETYPES).toHaveLength(20);
+    expect(SECTOR_ARCHETYPES).toHaveLength(27);
     expect(SECTOR_ARCHETYPES).toContain('cpg');
+  });
+  it('insurers and banks are valued on book value, biotech on rNPV, the rest on EBITDA (docs/16)', () => {
+    for (const a of ['pc-insurance', 'auto-insurance', 'life-insurance', 'commercial-bank', 'retail-bank'] as const) {
+      expect(getBridgeFamily(a), a).toBe('book_value');
+    }
+    expect(getBridgeFamily('biotech')).toBe('rnpv');
+    expect(getBridgeFamily('health-payor')).toBe('ebitda');
+    expect(SECTOR_ARCHETYPES.filter((a) => getBridgeFamily(a) === 'ebitda')).toHaveLength(21);
   });
   it('no company type is left at level 1: every EBITDA type has its own extension', () => {
     expect(BASE_ARCHETYPES).toEqual([]);

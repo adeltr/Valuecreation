@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-09
+part: A
+partLabel: Customer Behavior and Engagement
+quant: [REVENUE_PER_CUSTOMER, COST_TO_SERVE]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 9 · Customer Segment Profitability and Risk Assessment
 

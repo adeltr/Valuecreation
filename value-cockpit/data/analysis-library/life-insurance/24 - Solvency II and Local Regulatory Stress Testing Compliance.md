@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/D
+kind: analysis
+id: life-insurance-24
+part: D
+partLabel: Capital and Solvency Management
+quant: [SOLVENCY_RATIO]
+causes: [FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 24 · Solvency II and Local Regulatory Stress Testing Compliance Review
 

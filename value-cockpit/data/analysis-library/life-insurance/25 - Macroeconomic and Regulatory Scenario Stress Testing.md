@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/D
+kind: analysis
+id: life-insurance-25
+part: D
+partLabel: Capital and Solvency Management
+quant: [SOLVENCY_RATIO]
+causes: [FINANCIAL, REGULATORY, INTEREST_RATES]
+levers: []
 ---
 # 25 · Macroeconomic and Regulatory Scenario Stress Testing Analysis
 

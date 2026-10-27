@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-12
+part: A
+partLabel: Customer Behavior and Engagement
+quant: []
+causes: [COMMERCIAL, OPERATIONAL]
+levers: [MIX, COST_OPS]
 ---
 # 12 · Customer Support and Resolution Time Efficiency Analysis
 

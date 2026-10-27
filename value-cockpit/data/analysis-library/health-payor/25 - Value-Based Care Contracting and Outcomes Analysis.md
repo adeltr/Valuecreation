@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/D
+kind: analysis
+id: health-payor-25
+part: D
+partLabel: Provider Network and Contracting
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME, VALUE_BASED_CONTRACTING]
 ---
 # 25 · Value-Based Care Contracting and Outcomes Analysis
 

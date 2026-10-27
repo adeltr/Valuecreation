@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/A
+kind: analysis
+id: life-insurance-03
+part: A
+partLabel: Policyholder Behavior and Retention
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, PERSISTENCY_PROGRAM]
 ---
 # 3 · Customer Lifetime Value (CLV) and Retention Strategy Evaluation
 

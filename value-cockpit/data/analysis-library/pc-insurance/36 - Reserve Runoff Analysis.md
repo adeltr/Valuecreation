@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/D
+kind: analysis
+id: pc-insurance-36
+part: D
+partLabel: Finance
+quant: [RESERVE_DEVELOPMENT_RATIO]
+causes: [MARKET, RESERVE_RISK]
+levers: [MIX]
 ---
 # 36 · Reserve Runoff Analysis
 

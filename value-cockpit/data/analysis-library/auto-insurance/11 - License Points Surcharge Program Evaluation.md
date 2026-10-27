@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-11
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [PRICING, VOLUME, RATING_SOPHISTICATION]
 ---
 # 11 · License Points Surcharge Program Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/G
+kind: analysis
+id: health-payor-35
+part: G
+partLabel: Access to Care and Integration
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 35 · Telehealth Adoption and Utilization Analysis
 

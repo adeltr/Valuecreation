@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-08
+part: A
+partLabel: Customer Behavior and Engagement
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: []
 ---
 # 8 · Customer Financial Health and Credit Utilization Analysis
 

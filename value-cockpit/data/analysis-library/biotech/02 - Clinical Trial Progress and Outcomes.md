@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-02
+part: A
+partLabel: Research & Development (R&D)
+quant: [PROBABILITY_OF_SUCCESS]
+causes: [OPERATIONAL, CLINICAL_FAILURE]
+levers: [TRIAL_DESIGN]
 ---
 # 2 · Clinical Trial Progress and Outcomes
 

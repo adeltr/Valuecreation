@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/J
+kind: analysis
+id: life-insurance-41
+part: J
+partLabel: Operational Efficiency and Cost Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, MORTALITY_UNDERWRITING]
 ---
 # 41 · Underwriting Process Efficiency and Risk Selection Quality Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-13
+part: B
+partLabel: Lending and Credit Management
+quant: []
+causes: []
+levers: [PRICING, COST_OPS]
 ---
 # 13 · Green Banking and ESG Lending Assessment
 

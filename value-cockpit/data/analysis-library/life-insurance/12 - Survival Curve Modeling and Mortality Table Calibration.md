@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/B
+kind: analysis
+id: life-insurance-12
+part: B
+partLabel: Actuarial and Reserve Management
+quant: [MORTALITY_EXPERIENCE_RATIO]
+causes: [COMMERCIAL]
+levers: [MORTALITY_UNDERWRITING]
 ---
 # 12 · Survival Curve Modeling and Mortality Table Calibration
 

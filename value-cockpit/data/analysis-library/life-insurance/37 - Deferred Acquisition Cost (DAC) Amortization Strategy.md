@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/H
+kind: analysis
+id: life-insurance-37
+part: H
+partLabel: Regulatory Compliance and Financial Reporting
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 37 · Deferred Acquisition Cost (DAC) Amortization Strategy Analysis
 

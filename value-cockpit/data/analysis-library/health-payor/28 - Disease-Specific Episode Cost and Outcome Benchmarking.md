@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/E
+kind: analysis
+id: health-payor-28
+part: E
+partLabel: Risk Assessment and Population Health
+quant: []
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: []
 ---
 # 28 · Disease-Specific Episode Cost and Outcome Benchmarking
 

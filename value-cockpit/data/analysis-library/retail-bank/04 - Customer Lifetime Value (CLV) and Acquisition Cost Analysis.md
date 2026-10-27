@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-04
+part: A
+partLabel: Customer Behavior and Engagement
+quant: [REVENUE_GROWTH, REVENUE_PER_CUSTOMER, COST_TO_SERVE]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 4 · Customer Lifetime Value (CLV) and Acquisition Cost Analysis
 

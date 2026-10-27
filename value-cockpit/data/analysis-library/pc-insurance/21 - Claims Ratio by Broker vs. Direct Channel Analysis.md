@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-21
+part: B
+partLabel: Claims Management
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, DISTRIBUTION_EFFICIENCY]
 ---
 # 21 · Claims Ratio by Broker vs. Direct Channel Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/D
+kind: analysis
+id: life-insurance-28
+part: D
+partLabel: Capital and Solvency Management
+quant: []
+causes: [FINANCIAL, MARKET, LONGEVITY_RISK]
+levers: [REINSURANCE_OPTIMIZATION]
 ---
 # 28 · Longevity Risk Transfer and Reinsurance Optimization Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/D
+kind: analysis
+id: health-payor-24
+part: D
+partLabel: Provider Network and Contracting
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME, VALUE_BASED_CONTRACTING]
 ---
 # 24 · Provider Network Performance, Reimbursement, and Referral Patterns Analysis
 

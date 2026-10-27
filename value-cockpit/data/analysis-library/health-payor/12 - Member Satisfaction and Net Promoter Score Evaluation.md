@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/B
+kind: analysis
+id: health-payor-12
+part: B
+partLabel: Member Experience and Engagement
+quant: [NET_PROMOTER_SCORE]
+causes: []
+levers: [MEMBER_ENGAGEMENT]
 ---
 # 12 · Member Satisfaction and Net Promoter Score Evaluation
 

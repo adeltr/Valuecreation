@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-20
+part: C
+partLabel: Risk Management and Compliance
+quant: []
+causes: [OPERATIONAL, CYBER]
+levers: []
 ---
 # 20 · Operational Risk, Cybersecurity, and KRI Assessment
 

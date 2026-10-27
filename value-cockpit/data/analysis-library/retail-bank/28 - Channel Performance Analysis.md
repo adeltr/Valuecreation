@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/D
+kind: analysis
+id: retail-bank-28
+part: D
+partLabel: Branch and Channel Performance
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, DIGITAL_MIGRATION]
 ---
 # 28 · Channel Performance Analysis
 

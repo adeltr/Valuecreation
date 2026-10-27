@@ -1,0 +1,857 @@
+[
+  {
+    "id": "life-insurance-01",
+    "archetype": "life-insurance",
+    "title": "Policyholder Behavior and Lapse Rate Analysis",
+    "part": "A",
+    "partLabel": "Policyholder Behavior and Retention",
+    "relatedMetricCodes": [
+      "LAPSE_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "PERSISTENCY_PROGRAM"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/01 - Policyholder Behavior and Lapse Rate Analysis.md"
+  },
+  {
+    "id": "life-insurance-02",
+    "archetype": "life-insurance",
+    "title": "Policy Renewal and Persistency Rate Analysis",
+    "part": "A",
+    "partLabel": "Policyholder Behavior and Retention",
+    "relatedMetricCodes": [
+      "PERSISTENCY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "PERSISTENCY_PROGRAM"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/02 - Policy Renewal and Persistency Rate Analysis.md"
+  },
+  {
+    "id": "life-insurance-03",
+    "archetype": "life-insurance",
+    "title": "Customer Lifetime Value (CLV) and Retention Strategy Evaluation",
+    "part": "A",
+    "partLabel": "Policyholder Behavior and Retention",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "PERSISTENCY_PROGRAM"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/03 - Customer Lifetime Value (CLV) and Retention Strategy.md"
+  },
+  {
+    "id": "life-insurance-04",
+    "archetype": "life-insurance",
+    "title": "Policy Surrender Trends and Impact on Liquidity Analysis",
+    "part": "A",
+    "partLabel": "Policyholder Behavior and Retention",
+    "relatedMetricCodes": [
+      "LAPSE_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "PERSISTENCY_PROGRAM"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/04 - Policy Surrender Trends and Impact on Liquidity Analysis.md"
+  },
+  {
+    "id": "life-insurance-05",
+    "archetype": "life-insurance",
+    "title": "Premium Persistency Analysis by Distribution Channel",
+    "part": "A",
+    "partLabel": "Policyholder Behavior and Retention",
+    "relatedMetricCodes": [
+      "PERSISTENCY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/05 - Premium Persistency Analysis by Distribution Channel.md"
+  },
+  {
+    "id": "life-insurance-06",
+    "archetype": "life-insurance",
+    "title": "Policyholder Behavioral Elasticity in Premium Adjustments Analysis",
+    "part": "A",
+    "partLabel": "Policyholder Behavior and Retention",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/06 - Policyholder Behavioral Elasticity in Premium Adjustments.md"
+  },
+  {
+    "id": "life-insurance-07",
+    "archetype": "life-insurance",
+    "title": "Actuarial Reserve Adequacy and Valuation Study",
+    "part": "B",
+    "partLabel": "Actuarial and Reserve Management",
+    "relatedMetricCodes": [
+      "RESERVES"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/07 - Actuarial Reserve Adequacy and Valuation Study.md"
+  },
+  {
+    "id": "life-insurance-08",
+    "archetype": "life-insurance",
+    "title": "Mortality and Longevity Risk Trend Analysis",
+    "part": "B",
+    "partLabel": "Actuarial and Reserve Management",
+    "relatedMetricCodes": [
+      "BENEFITS_RATIO",
+      "MORTALITY_EXPERIENCE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MORTALITY_UNDERWRITING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/08 - Mortality and Longevity Risk Trend Analysis.md"
+  },
+  {
+    "id": "life-insurance-09",
+    "archetype": "life-insurance",
+    "title": "Guaranteed Benefits and Embedded Guarantees Risk Analysis",
+    "part": "B",
+    "partLabel": "Actuarial and Reserve Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/09 - Guaranteed Benefits and Embedded Guarantees Risk Analysis.md"
+  },
+  {
+    "id": "life-insurance-10",
+    "archetype": "life-insurance",
+    "title": "Embedded Derivatives Valuation and Sensitivity Testing",
+    "part": "B",
+    "partLabel": "Actuarial and Reserve Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/10 - Embedded Derivatives Valuation and Sensitivity Testing.md"
+  },
+  {
+    "id": "life-insurance-11",
+    "archetype": "life-insurance",
+    "title": "Deferred Profitability and Surplus Analysis for Long-Duration Contracts",
+    "part": "B",
+    "partLabel": "Actuarial and Reserve Management",
+    "relatedMetricCodes": [
+      "RESERVES"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/11 - Deferred Profitability and Surplus Analysis for Long-Duration.md"
+  },
+  {
+    "id": "life-insurance-12",
+    "archetype": "life-insurance",
+    "title": "Survival Curve Modeling and Mortality Table Calibration",
+    "part": "B",
+    "partLabel": "Actuarial and Reserve Management",
+    "relatedMetricCodes": [
+      "MORTALITY_EXPERIENCE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MORTALITY_UNDERWRITING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/12 - Survival Curve Modeling and Mortality Table Calibration.md"
+  },
+  {
+    "id": "life-insurance-13",
+    "archetype": "life-insurance",
+    "title": "Mortality Margin and Experience Analysis",
+    "part": "B",
+    "partLabel": "Actuarial and Reserve Management",
+    "relatedMetricCodes": [
+      "BENEFITS_RATIO",
+      "MORTALITY_EXPERIENCE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MORTALITY_UNDERWRITING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/13 - Mortality Margin and Experience Analysis.md"
+  },
+  {
+    "id": "life-insurance-14",
+    "archetype": "life-insurance",
+    "title": "Embedded Value (EV) and Value of New Business (VNB) Analysis",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "VNB_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/14 - Embedded Value (EV) and Value of New Business (VNB).md"
+  },
+  {
+    "id": "life-insurance-15",
+    "archetype": "life-insurance",
+    "title": "Product Mix Profitability and Market Positioning Evaluation",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "PRODUCT_MIX_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/15 - Product Mix Profitability and Market Positioning Evaluation.md"
+  },
+  {
+    "id": "life-insurance-16",
+    "archetype": "life-insurance",
+    "title": "Unit-Linked Product Performance and Fee Income Assessment",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRODUCT_MIX_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/16 - Unit-Linked Product Performance and Fee Income.md"
+  },
+  {
+    "id": "life-insurance-17",
+    "archetype": "life-insurance",
+    "title": "Guaranteed Universal Life (GUL) and Indexed Universal Life (IUL) Product Performance Review",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "PRODUCT_MIX_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/17 - Guaranteed Universal Life (GUL) and Indexed Universal Life.md"
+  },
+  {
+    "id": "life-insurance-18",
+    "archetype": "life-insurance",
+    "title": "Critical Illness and Riders Profitability Assessment",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [
+      "BENEFITS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "PRODUCT_MIX_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/18 - Critical Illness and Riders Profitability Assessment.md"
+  },
+  {
+    "id": "life-insurance-19",
+    "archetype": "life-insurance",
+    "title": "Living Benefits Utilization and Impact on Profitability Study",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/19 - Living Benefits Utilization and Impact on Profitability Study.md"
+  },
+  {
+    "id": "life-insurance-20",
+    "archetype": "life-insurance",
+    "title": "Group Life Insurance Portfolio Profitability and Risk Assessment",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [
+      "BENEFITS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/20 - Group Life Insurance Portfolio Profitability and Risk.md"
+  },
+  {
+    "id": "life-insurance-21",
+    "archetype": "life-insurance",
+    "title": "Policy Conversion Profitability Analysis",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/21 - Policy Conversion Profitability Analysis.md"
+  },
+  {
+    "id": "life-insurance-22",
+    "archetype": "life-insurance",
+    "title": "Premium Growth and New Business Volume Analysis",
+    "part": "C",
+    "partLabel": "Profitability and Product Performance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "RESERVE_GROWTH",
+      "GROSS_PREMIUMS",
+      "PREMIUM_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/22 - Premium Growth and New Business Volume Analysis.md"
+  },
+  {
+    "id": "life-insurance-23",
+    "archetype": "life-insurance",
+    "title": "Risk-Based Capital (RBC) and Solvency Ratio Assessment",
+    "part": "D",
+    "partLabel": "Capital and Solvency Management",
+    "relatedMetricCodes": [
+      "SOLVENCY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/23 - Risk-Based Capital (RBC) and Solvency Ratio Assessment.md"
+  },
+  {
+    "id": "life-insurance-24",
+    "archetype": "life-insurance",
+    "title": "Solvency II and Local Regulatory Stress Testing Compliance Review",
+    "part": "D",
+    "partLabel": "Capital and Solvency Management",
+    "relatedMetricCodes": [
+      "SOLVENCY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/24 - Solvency II and Local Regulatory Stress Testing Compliance.md"
+  },
+  {
+    "id": "life-insurance-25",
+    "archetype": "life-insurance",
+    "title": "Macroeconomic and Regulatory Scenario Stress Testing Analysis",
+    "part": "D",
+    "partLabel": "Capital and Solvency Management",
+    "relatedMetricCodes": [
+      "SOLVENCY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/25 - Macroeconomic and Regulatory Scenario Stress Testing.md"
+  },
+  {
+    "id": "life-insurance-26",
+    "archetype": "life-insurance",
+    "title": "Capital Allocation Efficiency Across Product Lines",
+    "part": "D",
+    "partLabel": "Capital and Solvency Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/26 - Capital Allocation Efficiency Across Product Lines.md"
+  },
+  {
+    "id": "life-insurance-27",
+    "archetype": "life-insurance",
+    "title": "Reserve Financing and Captive Insurance Strategy Evaluation",
+    "part": "D",
+    "partLabel": "Capital and Solvency Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/27 - Reserve Financing and Captive Insurance Strategy Evaluation.md"
+  },
+  {
+    "id": "life-insurance-28",
+    "archetype": "life-insurance",
+    "title": "Longevity Risk Transfer and Reinsurance Optimization Analysis",
+    "part": "D",
+    "partLabel": "Capital and Solvency Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "LONGEVITY_RISK"
+    ],
+    "relatedLeverCategories": [
+      "REINSURANCE_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/28 - Longevity Risk Transfer and Reinsurance Optimization.md"
+  },
+  {
+    "id": "life-insurance-29",
+    "archetype": "life-insurance",
+    "title": "Investment Portfolio Performance and Asset-Liability Matching (ALM) Review",
+    "part": "E",
+    "partLabel": "Investment and Asset-Liability Management",
+    "relatedMetricCodes": [
+      "INVESTMENT_SPREAD",
+      "DURATION_GAP"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "ALM_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/29 - Investment Portfolio Performance and Asset-Liability Matching.md"
+  },
+  {
+    "id": "life-insurance-30",
+    "archetype": "life-insurance",
+    "title": "Shadow Accounting and Market-Linked Liability Management Analysis",
+    "part": "E",
+    "partLabel": "Investment and Asset-Liability Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "ALM_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/30 - Shadow Accounting and Market-Linked Liability Management.md"
+  },
+  {
+    "id": "life-insurance-31",
+    "archetype": "life-insurance",
+    "title": "Distribution Channel Effectiveness and Cost Efficiency Analysis",
+    "part": "F",
+    "partLabel": "Distribution and Channel Performance",
+    "relatedMetricCodes": [
+      "EXPENSE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "DISTRIBUTION_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/31 - Distribution Channel Effectiveness and Cost Efficiency.md"
+  },
+  {
+    "id": "life-insurance-32",
+    "archetype": "life-insurance",
+    "title": "Bancassurance Channel Integration and Performance Review",
+    "part": "F",
+    "partLabel": "Distribution and Channel Performance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "DISTRIBUTION_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/32 - Bancassurance Channel Integration and Performance Review.md"
+  },
+  {
+    "id": "life-insurance-33",
+    "archetype": "life-insurance",
+    "title": "Conversion Rate Optimization for Term-to-Permanent Policy Transitions",
+    "part": "F",
+    "partLabel": "Distribution and Channel Performance",
+    "relatedMetricCodes": [
+      "PREMIUM_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/33 - Conversion Rate Optimization for Term-to-Permanent Policy.md"
+  },
+  {
+    "id": "life-insurance-34",
+    "archetype": "life-insurance",
+    "title": "Reinsurance Strategy Effectiveness and Cost Optimization Analysis",
+    "part": "G",
+    "partLabel": "Risk Management and Hedging",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "REINSURANCE_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/34 - Reinsurance Strategy Effectiveness and Cost Optimization.md"
+  },
+  {
+    "id": "life-insurance-35",
+    "archetype": "life-insurance",
+    "title": "Annuity Book Performance and Longevity Hedging Strategy Review",
+    "part": "G",
+    "partLabel": "Risk Management and Hedging",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "LONGEVITY_RISK"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/35 - Annuity Book Performance and Longevity Hedging Strategy.md"
+  },
+  {
+    "id": "life-insurance-36",
+    "archetype": "life-insurance",
+    "title": "Regulatory Compliance and IFRS 17 Implementation Readiness Review",
+    "part": "H",
+    "partLabel": "Regulatory Compliance and Financial Reporting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/36 - Regulatory Compliance and IFRS 17 Implementation.md"
+  },
+  {
+    "id": "life-insurance-37",
+    "archetype": "life-insurance",
+    "title": "Deferred Acquisition Cost (DAC) Amortization Strategy Analysis",
+    "part": "H",
+    "partLabel": "Regulatory Compliance and Financial Reporting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/37 - Deferred Acquisition Cost (DAC) Amortization Strategy.md"
+  },
+  {
+    "id": "life-insurance-38",
+    "archetype": "life-insurance",
+    "title": "Digital Transformation and InsurTech Adoption Analysis",
+    "part": "I",
+    "partLabel": "Customer Experience and Digital Transformation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ADMIN_AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/38 - Digital Transformation and InsurTech Adoption Analysis.md"
+  },
+  {
+    "id": "life-insurance-39",
+    "archetype": "life-insurance",
+    "title": "Impact Assessment of Behavioral Economics on Policy Uptake and Retention",
+    "part": "I",
+    "partLabel": "Customer Experience and Digital Transformation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "PERSISTENCY_PROGRAM"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/39 - Impact Assessment of Behavioral Economics on Policy.md"
+  },
+  {
+    "id": "life-insurance-40",
+    "archetype": "life-insurance",
+    "title": "Claims Management Efficiency and Fraud Detection Analysis",
+    "part": "J",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ADMIN_AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/40 - Claims Management Efficiency and Fraud Detection Analysis.md"
+  },
+  {
+    "id": "life-insurance-41",
+    "archetype": "life-insurance",
+    "title": "Underwriting Process Efficiency and Risk Selection Quality Assessment",
+    "part": "J",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "MORTALITY_UNDERWRITING"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/41 - Underwriting Process Efficiency and Risk Selection Quality.md"
+  },
+  {
+    "id": "life-insurance-42",
+    "archetype": "life-insurance",
+    "title": "Expense Ratio and Cost Efficiency Benchmarking",
+    "part": "J",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [
+      "OPEX",
+      "EXPENSE_RATIO",
+      "LAPSE_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "DISTRIBUTION_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/42 - Expense Ratio and Cost Efficiency Benchmarking.md"
+  },
+  {
+    "id": "life-insurance-43",
+    "archetype": "life-insurance",
+    "title": "Closed Block Performance and Runoff Strategy Analysis",
+    "part": "J",
+    "partLabel": "Operational Efficiency and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/43 - Closed Block Performance and Runoff Strategy Analysis.md"
+  },
+  {
+    "id": "life-insurance-44",
+    "archetype": "life-insurance",
+    "title": "Competitive Landscape and Product Innovation Assessment",
+    "part": "K",
+    "partLabel": "Market Strategy and Competitive Positioning",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/44 - Competitive Landscape and Product Innovation Assessment.md"
+  },
+  {
+    "id": "life-insurance-45",
+    "archetype": "life-insurance",
+    "title": "Market Penetration and Demographic Segmentation Study",
+    "part": "K",
+    "partLabel": "Market Strategy and Competitive Positioning",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/life-insurance/45 - Market Penetration and Demographic Segmentation Study.md"
+  },
+  {
+    "id": "life-insurance-46",
+    "archetype": "life-insurance",
+    "title": "Participating Policies Dividend Payout Analysis",
+    "part": "K",
+    "partLabel": "Market Strategy and Competitive Positioning",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/46 - Participating Policies Dividend Payout Analysis.md"
+  },
+  {
+    "id": "life-insurance-47",
+    "archetype": "life-insurance",
+    "title": "Policyholder Dividend Strategy Optimization Analysis",
+    "part": "K",
+    "partLabel": "Market Strategy and Competitive Positioning",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/47 - Policyholder Dividend Strategy Optimization Analysis.md"
+  },
+  {
+    "id": "life-insurance-48",
+    "archetype": "life-insurance",
+    "title": "Deferred Annuities Conversion and Payout Strategy Assessment",
+    "part": "K",
+    "partLabel": "Market Strategy and Competitive Positioning",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/48 - Deferred Annuities Conversion and Payout Strategy.md"
+  },
+  {
+    "id": "life-insurance-49",
+    "archetype": "life-insurance",
+    "title": "Policyholder Fund Withdrawal and Loan Utilization Behavior Study",
+    "part": "K",
+    "partLabel": "Market Strategy and Competitive Positioning",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/life-insurance/49 - Policyholder Fund Withdrawal and Loan Utilization Behavior.md"
+  }
+]

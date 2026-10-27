@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-36
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: [REVENUE_GROWTH, DEPOSIT_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, MARKET]
+levers: [PRICING, VOLUME, DEPOSIT_PRICING]
 ---
 # 36 · Deposit Growth and Stability Analysis
 

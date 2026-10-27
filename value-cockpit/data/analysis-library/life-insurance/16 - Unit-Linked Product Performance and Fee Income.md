@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-16
+part: C
+partLabel: Profitability and Product Performance
+quant: []
+causes: [FINANCIAL]
+levers: [PRODUCT_MIX_OPTIMIZATION]
 ---
 # 16 · Unit-Linked Product Performance and Fee Income Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/G
+kind: analysis
+id: health-payor-38
+part: G
+partLabel: Access to Care and Integration
+quant: []
+causes: [OPERATIONAL]
+levers: [ADMIN_AUTOMATION]
 ---
 # 38 · Health Information Exchange Participation and Data Quality Review
 

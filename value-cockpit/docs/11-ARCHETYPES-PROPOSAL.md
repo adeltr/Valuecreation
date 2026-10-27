@@ -64,7 +64,7 @@ une revue (tableau). Les lots de 5–6 restent pour A&D, déjà engagé.
   Plus aucun type à ce niveau ; le mécanisme est conservé pour un futur type (Telecommunications,
   écarté pour l'instant). Les tables de curation pré-remplies par mots-clés (`scripts/prefill-curation.ts`)
   restent appliquées telles quelles et sont enrichies par `apply-level2`.
-- **Hors EBITDA (phase 3)** — auto/life/P&C insurance, commercial/retail bank, health
+- **Hors EBITDA (phase 3, fait — docs/16)** — auto/life/P&C insurance, commercial/retail bank (P/BV), biotech (rNPV) ; health payor finalement en famille EBITDA. Historique : auto/life/P&C insurance, commercial/retail bank, health
   payor, biotech : analyses importées, pas d'archétype tant que leur bridge n'existe pas.
 
 ## Inventaire des archétypes (d'après les liens des 32 fichiers KPI)

@@ -1,0 +1,666 @@
+[
+  {
+    "id": "health-payor-01",
+    "archetype": "health-payor",
+    "title": "Medical Loss Ratio Analysis",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [
+      "MEDICAL_LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/01 - Medical Loss Ratio Analysis.md"
+  },
+  {
+    "id": "health-payor-02",
+    "archetype": "health-payor",
+    "title": "Premium Pricing Competitiveness and Rate Setting Review",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "PREMIUM_PMPM",
+      "PREMIUM_TREND"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "RATE_ADEQUACY"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/02 - Premium Pricing Competitiveness and Rate Setting Review.md"
+  },
+  {
+    "id": "health-payor-03",
+    "archetype": "health-payor",
+    "title": "Cost-of-Care Reduction Initiatives Assessment",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [
+      "MEDICAL_LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CARE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/03 - Cost-of-Care Reduction Initiatives Assessment.md"
+  },
+  {
+    "id": "health-payor-04",
+    "archetype": "health-payor",
+    "title": "Health Outcomes and Impact on Cost Analysis",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/04 - Health Outcomes and Impact on Cost Analysis.md"
+  },
+  {
+    "id": "health-payor-05",
+    "archetype": "health-payor",
+    "title": "Risk Pool and Reinsurance Structure Evaluation",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "RISK_POOL_SELECTION"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/05 - Risk Pool and Reinsurance Structure Evaluation.md"
+  },
+  {
+    "id": "health-payor-06",
+    "archetype": "health-payor",
+    "title": "Pharmacy Benefit Management Performance and Cost Analysis",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PHARMACY_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/06 - Pharmacy Benefit Management Performance and Cost.md"
+  },
+  {
+    "id": "health-payor-07",
+    "archetype": "health-payor",
+    "title": "Specialty Drug Spend and Management Effectiveness Review",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MEDICAL_COST_TREND"
+    ],
+    "relatedLeverCategories": [
+      "PHARMACY_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/07 - Specialty Drug Spend and Management Effectiveness Review.md"
+  },
+  {
+    "id": "health-payor-08",
+    "archetype": "health-payor",
+    "title": "High-Cost Claimant and Catastrophic Coverage Analysis",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MEDICAL_COST_TREND"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/08 - High-Cost Claimant and Catastrophic Coverage Analysis.md"
+  },
+  {
+    "id": "health-payor-09",
+    "archetype": "health-payor",
+    "title": "Episode-Based Bundled Payments Performance Analysis",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VALUE_BASED_CONTRACTING"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/09 - Episode-Based Bundled Payments Performance Analysis.md"
+  },
+  {
+    "id": "health-payor-10",
+    "archetype": "health-payor",
+    "title": "End-of-Life Care Quality and Cost Management Evaluation",
+    "part": "A",
+    "partLabel": "Financial Performance and Cost Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/10 - End-of-Life Care Quality and Cost Management Evaluation.md"
+  },
+  {
+    "id": "health-payor-11",
+    "archetype": "health-payor",
+    "title": "Member Onboarding, Engagement, and Retention Analysis",
+    "part": "B",
+    "partLabel": "Member Experience and Engagement",
+    "relatedMetricCodes": [
+      "MEMBERS",
+      "MEMBER_GROWTH",
+      "CUSTOMER_RETENTION_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MEMBER_ENGAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/11 - Member Onboarding, Engagement, and Retention Analysis.md"
+  },
+  {
+    "id": "health-payor-12",
+    "archetype": "health-payor",
+    "title": "Member Satisfaction and Net Promoter Score Evaluation",
+    "part": "B",
+    "partLabel": "Member Experience and Engagement",
+    "relatedMetricCodes": [
+      "NET_PROMOTER_SCORE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "MEMBER_ENGAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/12 - Member Satisfaction and Net Promoter Score Evaluation.md"
+  },
+  {
+    "id": "health-payor-13",
+    "archetype": "health-payor",
+    "title": "Digital Engagement and Member Portal Utilization Analysis",
+    "part": "B",
+    "partLabel": "Member Experience and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MEMBER_ENGAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/13 - Digital Engagement and Member Portal Utilization Analysis.md"
+  },
+  {
+    "id": "health-payor-14",
+    "archetype": "health-payor",
+    "title": "Wellness Program Engagement and Health Improvement Review",
+    "part": "B",
+    "partLabel": "Member Experience and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/14 - Wellness Program Engagement and Health Improvement.md"
+  },
+  {
+    "id": "health-payor-15",
+    "archetype": "health-payor",
+    "title": "Social Determinants of Health Integration and Impact Assessment",
+    "part": "B",
+    "partLabel": "Member Experience and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/15 - Social Determinants of Health Integration and Impact.md"
+  },
+  {
+    "id": "health-payor-16",
+    "archetype": "health-payor",
+    "title": "Care Management Effectiveness and ROI Analysis",
+    "part": "C",
+    "partLabel": "Care and Disease Management Programs",
+    "relatedMetricCodes": [
+      "MEDICAL_LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CARE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/16 - Care Management Effectiveness and ROI Analysis.md"
+  },
+  {
+    "id": "health-payor-17",
+    "archetype": "health-payor",
+    "title": "Chronic Disease Management Program Effectiveness Analysis",
+    "part": "C",
+    "partLabel": "Care and Disease Management Programs",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CARE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/17 - Chronic Disease Management Program Effectiveness.md"
+  },
+  {
+    "id": "health-payor-18",
+    "archetype": "health-payor",
+    "title": "Chronic Care Incentive Program Effectiveness Review",
+    "part": "C",
+    "partLabel": "Care and Disease Management Programs",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CARE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/18 - Chronic Care Incentive Program Effectiveness Review.md"
+  },
+  {
+    "id": "health-payor-19",
+    "archetype": "health-payor",
+    "title": "Preventive Care Utilization and Effectiveness Analysis",
+    "part": "C",
+    "partLabel": "Care and Disease Management Programs",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/19 - Preventive Care Utilization and Effectiveness Analysis.md"
+  },
+  {
+    "id": "health-payor-20",
+    "archetype": "health-payor",
+    "title": "Patient-Centered Medical Home Model Performance Review",
+    "part": "C",
+    "partLabel": "Care and Disease Management Programs",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/20 - Patient-Centered Medical Home Model Performance Review.md"
+  },
+  {
+    "id": "health-payor-21",
+    "archetype": "health-payor",
+    "title": "Preventable Hospital Admissions and Readmissions Analysis",
+    "part": "C",
+    "partLabel": "Care and Disease Management Programs",
+    "relatedMetricCodes": [
+      "READMISSION_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "CARE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/21 - Preventable Hospital Admissions and Readmissions Analysis.md"
+  },
+  {
+    "id": "health-payor-22",
+    "archetype": "health-payor",
+    "title": "Ambulatory Care Sensitive Conditions Management Analysis",
+    "part": "C",
+    "partLabel": "Care and Disease Management Programs",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CARE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/22 - Ambulatory Care Sensitive Conditions Management Analysis.md"
+  },
+  {
+    "id": "health-payor-23",
+    "archetype": "health-payor",
+    "title": "Network Adequacy and Optimization Analysis",
+    "part": "D",
+    "partLabel": "Provider Network and Contracting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/23 - Network Adequacy and Optimization Analysis.md"
+  },
+  {
+    "id": "health-payor-24",
+    "archetype": "health-payor",
+    "title": "Provider Network Performance, Reimbursement, and Referral Patterns Analysis",
+    "part": "D",
+    "partLabel": "Provider Network and Contracting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "VALUE_BASED_CONTRACTING"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/24 - Provider Network Performance, Reimbursement, and Referral.md"
+  },
+  {
+    "id": "health-payor-25",
+    "archetype": "health-payor",
+    "title": "Value-Based Care Contracting and Outcomes Analysis",
+    "part": "D",
+    "partLabel": "Provider Network and Contracting",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "VALUE_BASED_CONTRACTING"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/25 - Value-Based Care Contracting and Outcomes Analysis.md"
+  },
+  {
+    "id": "health-payor-26",
+    "archetype": "health-payor",
+    "title": "High-Value Provider Utilization and Outcomes Analysis",
+    "part": "D",
+    "partLabel": "Provider Network and Contracting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "VALUE_BASED_CONTRACTING"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/26 - High-Value Provider Utilization and Outcomes Analysis.md"
+  },
+  {
+    "id": "health-payor-27",
+    "archetype": "health-payor",
+    "title": "Population Segmentation, Risk Scoring, and Predictive Modeling Analysis",
+    "part": "E",
+    "partLabel": "Risk Assessment and Population Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "RISK_POOL_SELECTION"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/27 - Population Segmentation, Risk Scoring, and Predictive.md"
+  },
+  {
+    "id": "health-payor-28",
+    "archetype": "health-payor",
+    "title": "Disease-Specific Episode Cost and Outcome Benchmarking",
+    "part": "E",
+    "partLabel": "Risk Assessment and Population Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/28 - Disease-Specific Episode Cost and Outcome Benchmarking.md"
+  },
+  {
+    "id": "health-payor-29",
+    "archetype": "health-payor",
+    "title": "Health Equity and Disparities in Care Analysis",
+    "part": "E",
+    "partLabel": "Risk Assessment and Population Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/29 - Health Equity and Disparities in Care Analysis.md"
+  },
+  {
+    "id": "health-payor-30",
+    "archetype": "health-payor",
+    "title": "Claims Processing Efficiency Evaluation",
+    "part": "F",
+    "partLabel": "Claims Management and Compliance",
+    "relatedMetricCodes": [
+      "ADMIN_EXPENSE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ADMIN_AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/30 - Claims Processing Efficiency Evaluation.md"
+  },
+  {
+    "id": "health-payor-31",
+    "archetype": "health-payor",
+    "title": "Claims Denial and Appeals Rate Analysis",
+    "part": "F",
+    "partLabel": "Claims Management and Compliance",
+    "relatedMetricCodes": [
+      "CLAIMS_DENIAL_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PAYMENT_INTEGRITY"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/31 - Claims Denial and Appeals Rate Analysis.md"
+  },
+  {
+    "id": "health-payor-32",
+    "archetype": "health-payor",
+    "title": "Fraud, Waste, and Abuse Detection Effectiveness",
+    "part": "F",
+    "partLabel": "Claims Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "PAYMENT_INTEGRITY"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/32 - Fraud, Waste, and Abuse Detection Effectiveness.md"
+  },
+  {
+    "id": "health-payor-33",
+    "archetype": "health-payor",
+    "title": "Quality Metrics and Accreditation Compliance Analysis",
+    "part": "F",
+    "partLabel": "Claims Management and Compliance",
+    "relatedMetricCodes": [
+      "STAR_RATING"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/health-payor/33 - Quality Metrics and Accreditation Compliance Analysis.md"
+  },
+  {
+    "id": "health-payor-34",
+    "archetype": "health-payor",
+    "title": "Behavioral Health Parity Compliance Evaluation",
+    "part": "F",
+    "partLabel": "Claims Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/34 - Behavioral Health Parity Compliance Evaluation.md"
+  },
+  {
+    "id": "health-payor-35",
+    "archetype": "health-payor",
+    "title": "Telehealth Adoption and Utilization Analysis",
+    "part": "G",
+    "partLabel": "Access to Care and Integration",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/35 - Telehealth Adoption and Utilization Analysis.md"
+  },
+  {
+    "id": "health-payor-36",
+    "archetype": "health-payor",
+    "title": "Integrated Behavioral and Physical Health Access and Outcomes Analysis",
+    "part": "G",
+    "partLabel": "Access to Care and Integration",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/36 - Integrated Behavioral and Physical Health Access and.md"
+  },
+  {
+    "id": "health-payor-37",
+    "archetype": "health-payor",
+    "title": "In-Network vs. Out-of-Network Utilization Rate Analysis",
+    "part": "G",
+    "partLabel": "Access to Care and Integration",
+    "relatedMetricCodes": [
+      "IN_NETWORK_UTILIZATION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/37 - In-Network vs. Out-of-Network Utilization Rate Analysis.md"
+  },
+  {
+    "id": "health-payor-38",
+    "archetype": "health-payor",
+    "title": "Health Information Exchange Participation and Data Quality Review",
+    "part": "G",
+    "partLabel": "Access to Care and Integration",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "ADMIN_AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/38 - Health Information Exchange Participation and Data Quality.md"
+  },
+  {
+    "id": "health-payor-39",
+    "archetype": "health-payor",
+    "title": "Integrated Care Coordination and Referral Efficiency Analysis",
+    "part": "G",
+    "partLabel": "Access to Care and Integration",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/39 - Integrated Care Coordination and Referral Efficiency Analysis.md"
+  },
+  {
+    "id": "health-payor-40",
+    "archetype": "health-payor",
+    "title": "Medicare Advantage and Medicaid Plan Performance Review",
+    "part": "H",
+    "partLabel": "Government Programs and Regulatory",
+    "relatedMetricCodes": [
+      "MEMBERS",
+      "MEMBER_GROWTH",
+      "STAR_RATING"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "MEMBER_ENGAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/40 - Medicare Advantage and Medicaid Plan Performance Review.md"
+  },
+  {
+    "id": "health-payor-41",
+    "archetype": "health-payor",
+    "title": "Enrollment and Eligibility Process Efficiency Review",
+    "part": "H",
+    "partLabel": "Government Programs and Regulatory",
+    "relatedMetricCodes": [
+      "MEMBERS",
+      "MEMBER_GROWTH",
+      "ADMIN_EXPENSE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ADMIN_AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/health-payor/41 - Enrollment and Eligibility Process Efficiency Review.md"
+  }
+]

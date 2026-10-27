@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/G
+kind: analysis
+id: health-payor-39
+part: G
+partLabel: Access to Care and Integration
+quant: []
+causes: [OPERATIONAL]
+levers: [COST_OPS]
 ---
 # 39 · Integrated Care Coordination and Referral Efficiency Analysis
 

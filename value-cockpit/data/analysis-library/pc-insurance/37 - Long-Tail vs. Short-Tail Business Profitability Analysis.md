@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/D
+kind: analysis
+id: pc-insurance-37
+part: D
+partLabel: Finance
+quant: [LOSS_RATIO, EXPENSE_RATIO, COMBINED_RATIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, COST_OPS, PORTFOLIO_STEERING]
 ---
 # 37 · Long-Tail vs. Short-Tail Business Profitability Analysis
 

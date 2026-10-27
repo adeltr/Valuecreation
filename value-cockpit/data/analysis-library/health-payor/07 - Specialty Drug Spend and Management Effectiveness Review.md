@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-07
+part: A
+partLabel: Financial Performance and Cost Management
+quant: []
+causes: [FINANCIAL, MEDICAL_COST_TREND]
+levers: [PHARMACY_MANAGEMENT]
 ---
 # 7 · Specialty Drug Spend and Management Effectiveness Review
 

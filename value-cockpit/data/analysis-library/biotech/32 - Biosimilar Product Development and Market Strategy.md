@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/C
+kind: analysis
+id: biotech-32
+part: C
+partLabel: Marketing
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY, BIOSIMILAR_COMPETITION]
+levers: [PRICING]
 ---
 # 32 · Biosimilar Product Development and Market Strategy
 

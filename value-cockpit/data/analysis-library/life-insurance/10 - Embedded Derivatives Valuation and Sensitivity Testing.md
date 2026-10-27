@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/B
+kind: analysis
+id: life-insurance-10
+part: B
+partLabel: Actuarial and Reserve Management
+quant: []
+causes: [FINANCIAL, MARKET, REGULATORY]
+levers: []
 ---
 # 10 · Embedded Derivatives Valuation and Sensitivity Testing
 

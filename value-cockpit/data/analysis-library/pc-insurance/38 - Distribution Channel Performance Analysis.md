@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/E
+kind: analysis
+id: pc-insurance-38
+part: E
+partLabel: Operations
+quant: [NET_PREMIUMS_EARNED, COMBINED_RATIO]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, COST_OPS, DISTRIBUTION_EFFICIENCY]
 ---
 # 38 · Distribution Channel Performance Analysis
 

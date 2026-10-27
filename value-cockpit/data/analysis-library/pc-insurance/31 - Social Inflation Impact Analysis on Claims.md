@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-31
+part: C
+partLabel: Risk Management
+quant: [LITIGATION_RATE]
+causes: [FINANCIAL, MARKET, SOCIAL_INFLATION]
+levers: [PRICING, MIX, COST_OPS, CLAIMS_EXCELLENCE]
 ---
 # 31 · Social Inflation Impact Analysis on Claims
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/C
+kind: analysis
+id: health-payor-20
+part: C
+partLabel: Care and Disease Management Programs
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 20 · Patient-Centered Medical Home Model Performance Review
 

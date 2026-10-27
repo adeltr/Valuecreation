@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-07
+part: B
+partLabel: Lending and Credit Management
+quant: [SECTOR_CONCENTRATION]
+causes: [MARKET]
+levers: []
 ---
 # 7 · Industry Exposure and Concentration Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/D
+kind: analysis
+id: biotech-37
+part: D
+partLabel: Technology
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, REGULATORY]
+levers: [VOLUME, MIX]
 ---
 # 37 · Biomaterials and Scaffold Technology for Tissue Engineering
 

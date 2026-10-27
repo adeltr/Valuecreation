@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/C
+kind: analysis
+id: biotech-29
+part: C
+partLabel: Marketing
+quant: []
+causes: [FINANCIAL, MARKET, BIOSIMILAR_COMPETITION]
+levers: [VOLUME, MIX]
 ---
 # 29 · Competitive Landscape and Differentiation of Technology
 

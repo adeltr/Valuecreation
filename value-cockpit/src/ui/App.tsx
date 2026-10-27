@@ -79,7 +79,8 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} />
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
           interactions={TEMPLATES[state.archetype]!.interactions}
-          bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows} />
+          bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}
+          multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} />
         <HundredDayPlan levers={state.levers} catalog={catalog} />
       </main>
     </div>

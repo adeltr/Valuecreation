@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/B
+kind: analysis
+id: life-insurance-13
+part: B
+partLabel: Actuarial and Reserve Management
+quant: [BENEFITS_RATIO, MORTALITY_EXPERIENCE_RATIO]
+causes: [FINANCIAL]
+levers: [VOLUME, MORTALITY_UNDERWRITING]
 ---
 # 13 · Mortality Margin and Experience Analysis
 

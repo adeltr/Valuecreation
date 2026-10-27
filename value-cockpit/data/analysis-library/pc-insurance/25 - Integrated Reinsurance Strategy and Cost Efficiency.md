@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-25
+part: C
+partLabel: Risk Management
+quant: [REINSURANCE_CEDED_RATIO]
+causes: [FINANCIAL]
+levers: [VOLUME, COST_OPS, REINSURANCE_OPTIMIZATION]
 ---
 # 25 · Integrated Reinsurance Strategy and Cost Efficiency Assessment
 

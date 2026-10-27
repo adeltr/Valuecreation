@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-18
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: []
+causes: []
+levers: [TELEMATICS_UBI]
 ---
 # 18 · Driver Monitoring & Scoring Model Validation
 

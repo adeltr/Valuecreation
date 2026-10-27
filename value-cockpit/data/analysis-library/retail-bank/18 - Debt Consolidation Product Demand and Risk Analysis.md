@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/B
+kind: analysis
+id: retail-bank-18
+part: B
+partLabel: Product and Portfolio Performance
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 18 · Debt Consolidation Product Demand and Risk Analysis
 

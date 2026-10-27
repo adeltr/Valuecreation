@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/D
+kind: analysis
+id: retail-bank-29
+part: D
+partLabel: Branch and Channel Performance
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, BRANCH_OPTIMIZATION]
 ---
 # 29 · ATM Network Optimization and Cost-Benefit Analysis
 

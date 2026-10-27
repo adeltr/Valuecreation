@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/A
+kind: analysis
+id: commercial-bank-03
+part: A
+partLabel: Financial Performance and Efficiency
+quant: [COST_INCOME_RATIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS, COST_TRANSFORMATION]
 ---
 # 3 · Efficiency Ratio and Cost Transformation
 

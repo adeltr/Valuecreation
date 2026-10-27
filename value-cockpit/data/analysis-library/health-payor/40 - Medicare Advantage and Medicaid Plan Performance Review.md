@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/H
+kind: analysis
+id: health-payor-40
+part: H
+partLabel: Government Programs and Regulatory
+quant: [MEMBERS, MEMBER_GROWTH, STAR_RATING]
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [MEMBER_ENGAGEMENT]
 ---
 # 40 · Medicare Advantage and Medicaid Plan Performance Review
 

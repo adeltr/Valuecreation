@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/C
+kind: analysis
+id: auto-insurance-26
+part: C
+partLabel: Claims & Loss Management
+quant: [CLAIM_SEVERITY, DIRECT_REPAIR_SHARE]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [REPAIR_NETWORK]
 ---
 # 26 · Collision Repair Network & Direct Repair Program Effectiveness
 

@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-15
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: []
+levers: [VOLUME]
 ---
 # 15 · Bioconjugation and Targeted Therapy Efficacy
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/C
+kind: analysis
+id: health-payor-21
+part: C
+partLabel: Care and Disease Management Programs
+quant: [READMISSION_RATE]
+causes: []
+levers: [CARE_MANAGEMENT]
 ---
 # 21 · Preventable Hospital Admissions and Readmissions Analysis
 

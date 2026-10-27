@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-01
+part: A
+partLabel: Pricing & Product Strategy
+quant: [AVERAGE_PREMIUM]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, RATING_SOPHISTICATION]
 ---
 # 1 · Rate Adequacy & Pricing Factor Assessment
 

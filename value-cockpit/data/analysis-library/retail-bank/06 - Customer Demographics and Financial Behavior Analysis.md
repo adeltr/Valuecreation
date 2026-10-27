@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-06
+part: A
+partLabel: Customer Behavior and Engagement
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: []
 ---
 # 6 · Customer Demographics and Financial Behavior Analysis
 

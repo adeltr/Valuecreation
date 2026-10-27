@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/E
+kind: analysis
+id: auto-insurance-32
+part: E
+partLabel: Technology, Mobility & Operational Efficiency
+quant: []
+causes: [COMMERCIAL, FINANCIAL, REPAIR_COST_INFLATION]
+levers: [PRICING]
 ---
 # 32 · Electric & Advanced Driver-Assistance Systems Vehicle Impact Assessment
 

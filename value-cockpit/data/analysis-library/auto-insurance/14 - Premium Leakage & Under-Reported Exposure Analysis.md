@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-14
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: [AVERAGE_PREMIUM]
+causes: []
+levers: [COST_OPS, LEAKAGE_CONTROL]
 ---
 # 14 · Premium Leakage & Under-Reported Exposure Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-09
+part: A
+partLabel: Financial Performance and Cost Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VALUE_BASED_CONTRACTING]
 ---
 # 9 · Episode-Based Bundled Payments Performance Analysis
 

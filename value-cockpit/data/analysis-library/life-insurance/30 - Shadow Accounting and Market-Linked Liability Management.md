@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/E
+kind: analysis
+id: life-insurance-30
+part: E
+partLabel: Investment and Asset-Liability Management
+quant: []
+causes: [FINANCIAL, MARKET, INTEREST_RATES]
+levers: [VOLUME, ALM_OPTIMIZATION]
 ---
 # 30 · Shadow Accounting and Market-Linked Liability Management Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/A
+kind: analysis
+id: life-insurance-04
+part: A
+partLabel: Policyholder Behavior and Retention
+quant: [LAPSE_RATE]
+causes: [FINANCIAL, MARKET]
+levers: [VOLUME, PERSISTENCY_PROGRAM]
 ---
 # 4 · Policy Surrender Trends and Impact on Liquidity Analysis
 

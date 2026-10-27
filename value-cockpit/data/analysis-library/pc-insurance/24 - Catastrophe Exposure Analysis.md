@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-24
+part: C
+partLabel: Risk Management
+quant: [CATASTROPHE_LOSS_RATIO]
+causes: [COMMERCIAL, FINANCIAL, CATASTROPHE_EXPOSURE]
+levers: [MIX]
 ---
 # 24 · Catastrophe Exposure Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-26
+part: B
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 26 · Biomanufacturing Facility Compliance and GMP Standards
 

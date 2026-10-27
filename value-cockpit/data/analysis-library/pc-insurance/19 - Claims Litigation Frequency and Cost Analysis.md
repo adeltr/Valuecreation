@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-19
+part: B
+partLabel: Claims Management
+quant: [LITIGATION_RATE]
+causes: [FINANCIAL]
+levers: [COST_OPS, CLAIMS_EXCELLENCE]
 ---
 # 19 · Claims Litigation Frequency and Cost Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-32
+part: C
+partLabel: Risk Management
+quant: [REINSURANCE_CEDED_RATIO]
+causes: [FINANCIAL]
+levers: [VOLUME, MIX, COST_OPS, REINSURANCE_OPTIMIZATION]
 ---
 # 32 · Layered Reinsurance Utilization Analysis
 

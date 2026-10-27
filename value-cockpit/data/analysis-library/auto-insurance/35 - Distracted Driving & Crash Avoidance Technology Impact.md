@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/E
+kind: analysis
+id: auto-insurance-35
+part: E
+partLabel: Technology, Mobility & Operational Efficiency
+quant: []
+causes: []
+levers: [PRICING, VOLUME, TELEMATICS_UBI]
 ---
 # 35 · Distracted Driving & Crash Avoidance Technology Impact Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/C
+kind: analysis
+id: biotech-30
+part: C
+partLabel: Marketing
+quant: [REVENUE_GROWTH, PEAK_SALES]
+causes: [COMMERCIAL, MARKET, REGULATORY]
+levers: [PRICING, VOLUME, MARKET_ACCESS]
 ---
 # 30 · Market Size and Commercial Viability for Lead Products
 

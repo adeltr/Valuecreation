@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/A
+kind: analysis
+id: commercial-bank-01
+part: A
+partLabel: Financial Performance and Efficiency
+quant: [NET_INTEREST_MARGIN]
+causes: [OPERATIONAL, FINANCIAL, INTEREST_RATES]
+levers: [PRICING]
 ---
 # 1 · Net Interest Margin and Spread Analysis
 

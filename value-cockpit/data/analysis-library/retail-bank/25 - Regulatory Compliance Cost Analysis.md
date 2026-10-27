@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/C
+kind: analysis
+id: retail-bank-25
+part: C
+partLabel: Operational Efficiency and Risk Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [COST_OPS]
 ---
 # 25 · Regulatory Compliance Cost Analysis
 

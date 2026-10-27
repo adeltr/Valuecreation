@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/C
+kind: analysis
+id: health-payor-18
+part: C
+partLabel: Care and Disease Management Programs
+quant: []
+causes: [FINANCIAL]
+levers: [CARE_MANAGEMENT]
 ---
 # 18 · Chronic Care Incentive Program Effectiveness Review
 

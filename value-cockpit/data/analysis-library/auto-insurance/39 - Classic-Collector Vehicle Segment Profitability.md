@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/I
+kind: analysis
+id: auto-insurance-39
+part: I
+partLabel: Specialty & Niche Segments
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 39 · Classic-Collector Vehicle Segment Profitability
 

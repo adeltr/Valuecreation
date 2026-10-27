@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/C
+kind: analysis
+id: biotech-33
+part: C
+partLabel: Marketing
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_OPS]
 ---
 # 33 · Biologic vs. Small Molecule Product Differentiation
 

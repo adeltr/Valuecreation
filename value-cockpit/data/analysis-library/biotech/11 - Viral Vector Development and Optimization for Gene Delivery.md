@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-11
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [VOLUME, COST_OPS]
 ---
 # 11 · Viral Vector Development and Optimization for Gene Delivery
 

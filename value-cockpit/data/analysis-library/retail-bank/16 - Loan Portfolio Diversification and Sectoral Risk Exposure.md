@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/B
+kind: analysis
+id: retail-bank-16
+part: B
+partLabel: Product and Portfolio Performance
+quant: [NPL_RATIO]
+causes: [FINANCIAL, CREDIT_CYCLE]
+levers: [MIX]
 ---
 # 16 · Loan Portfolio Diversification and Sectoral Risk Exposure Analysis
 

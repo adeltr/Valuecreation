@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-37
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, CROSS_SELL]
 ---
 # 37 · Wealth Management and Investment Product Penetration Analysis
 

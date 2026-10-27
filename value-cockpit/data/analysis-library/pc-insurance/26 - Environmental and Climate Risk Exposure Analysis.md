@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-26
+part: C
+partLabel: Risk Management
+quant: []
+causes: [COMMERCIAL, CATASTROPHE_EXPOSURE]
+levers: [PRICING, VOLUME, MIX]
 ---
 # 26 · Environmental and Climate Risk Exposure Analysis
 

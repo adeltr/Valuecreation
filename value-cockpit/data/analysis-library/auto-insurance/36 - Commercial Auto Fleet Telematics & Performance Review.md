@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/E
+kind: analysis
+id: auto-insurance-36
+part: E
+partLabel: Technology, Mobility & Operational Efficiency
+quant: [TELEMATICS_PENETRATION]
+causes: [COMMERCIAL]
+levers: [COST_OPS, SEGMENT_GROWTH]
 ---
 # 36 · Commercial Auto Fleet Telematics & Performance Review
 

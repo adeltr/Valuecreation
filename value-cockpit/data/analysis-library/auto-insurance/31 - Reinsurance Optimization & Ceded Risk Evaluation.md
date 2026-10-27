@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/D
+kind: analysis
+id: auto-insurance-31
+part: D
+partLabel: Financial Performance & Reserving
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS]
 ---
 # 31 · Reinsurance Optimization & Ceded Risk Evaluation
 

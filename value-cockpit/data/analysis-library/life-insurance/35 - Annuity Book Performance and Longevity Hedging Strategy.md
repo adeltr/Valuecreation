@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/G
+kind: analysis
+id: life-insurance-35
+part: G
+partLabel: Risk Management and Hedging
+quant: []
+causes: [FINANCIAL, LONGEVITY_RISK]
+levers: []
 ---
 # 35 · Annuity Book Performance and Longevity Hedging Strategy Review
 

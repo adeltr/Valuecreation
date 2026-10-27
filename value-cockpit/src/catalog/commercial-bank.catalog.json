@@ -1,0 +1,699 @@
+[
+  {
+    "id": "commercial-bank-01",
+    "archetype": "commercial-bank",
+    "title": "Net Interest Margin and Spread Analysis",
+    "part": "A",
+    "partLabel": "Financial Performance and Efficiency",
+    "relatedMetricCodes": [
+      "NET_INTEREST_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/01 - Net Interest Margin and Spread Analysis.md"
+  },
+  {
+    "id": "commercial-bank-02",
+    "archetype": "commercial-bank",
+    "title": "Non-Interest Income Analysis",
+    "part": "A",
+    "partLabel": "Financial Performance and Efficiency",
+    "relatedMetricCodes": [
+      "NON_INTEREST_INCOME_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "FEE_BUSINESS_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/02 - Non-Interest Income Analysis.md"
+  },
+  {
+    "id": "commercial-bank-03",
+    "archetype": "commercial-bank",
+    "title": "Efficiency Ratio and Cost Transformation",
+    "part": "A",
+    "partLabel": "Financial Performance and Efficiency",
+    "relatedMetricCodes": [
+      "COST_INCOME_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "COST_TRANSFORMATION"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/03 - Efficiency Ratio and Cost Transformation.md"
+  },
+  {
+    "id": "commercial-bank-04",
+    "archetype": "commercial-bank",
+    "title": "Loan Portfolio Quality and Concentration Analysis",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [
+      "LOANS",
+      "COST_OF_RISK",
+      "NPL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "CREDIT_CYCLE"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/04 - Loan Portfolio Quality and Concentration Analysis.md"
+  },
+  {
+    "id": "commercial-bank-05",
+    "archetype": "commercial-bank",
+    "title": "Loan Origination and Underwriting Standards Review",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [
+      "LOAN_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/05 - Loan Origination and Underwriting Standards Review.md"
+  },
+  {
+    "id": "commercial-bank-06",
+    "archetype": "commercial-bank",
+    "title": "Collateral Management and LTV Review",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/06 - Collateral Management and LTV Review.md"
+  },
+  {
+    "id": "commercial-bank-07",
+    "archetype": "commercial-bank",
+    "title": "Industry Exposure and Concentration Analysis",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [
+      "SECTOR_CONCENTRATION"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/commercial-bank/07 - Industry Exposure and Concentration Analysis.md"
+  },
+  {
+    "id": "commercial-bank-08",
+    "archetype": "commercial-bank",
+    "title": "Non-Performing Loan Management and Recovery",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [
+      "COST_OF_RISK",
+      "NPL_RATIO"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/08 - Non-Performing Loan Management and Recovery.md"
+  },
+  {
+    "id": "commercial-bank-09",
+    "archetype": "commercial-bank",
+    "title": "Syndicated Loan and Distribution Capabilities Analysis",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [
+      "LOAN_GROWTH"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "ORIGINATION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/09 - Syndicated Loan and Distribution Capabilities Analysis.md"
+  },
+  {
+    "id": "commercial-bank-10",
+    "archetype": "commercial-bank",
+    "title": "Loan Pricing and Risk-Based Pricing Analysis",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [
+      "NET_INTEREST_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "LOAN_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/10 - Loan Pricing and Risk-Based Pricing Analysis.md"
+  },
+  {
+    "id": "commercial-bank-11",
+    "archetype": "commercial-bank",
+    "title": "Cash Flow and Collateral-Based Lending Review",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ORIGINATION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/11 - Cash Flow and Collateral-Based Lending Review.md"
+  },
+  {
+    "id": "commercial-bank-12",
+    "archetype": "commercial-bank",
+    "title": "Supply Chain Financing and Receivables Purchase",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "ORIGINATION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/12 - Supply Chain Financing and Receivables Purchase.md"
+  },
+  {
+    "id": "commercial-bank-13",
+    "archetype": "commercial-bank",
+    "title": "Green Banking and ESG Lending Assessment",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/13 - Green Banking and ESG Lending Assessment.md"
+  },
+  {
+    "id": "commercial-bank-14",
+    "archetype": "commercial-bank",
+    "title": "Specialized Lending Analysis",
+    "part": "B",
+    "partLabel": "Lending and Credit Management",
+    "relatedMetricCodes": [
+      "LOANS",
+      "LOAN_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "ORIGINATION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/14 - Specialized Lending Analysis.md"
+  },
+  {
+    "id": "commercial-bank-15",
+    "archetype": "commercial-bank",
+    "title": "Credit Risk Assessment and Provisioning Levels",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [
+      "COST_OF_RISK"
+    ],
+    "relatedCauseCategories": [
+      "CREDIT_CYCLE"
+    ],
+    "relatedLeverCategories": [
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/15 - Credit Risk Assessment and Provisioning Levels.md"
+  },
+  {
+    "id": "commercial-bank-16",
+    "archetype": "commercial-bank",
+    "title": "Stress Testing and Scenario Analysis",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "INTEREST_RATES",
+      "CREDIT_CYCLE"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/commercial-bank/16 - Stress Testing and Scenario Analysis.md"
+  },
+  {
+    "id": "commercial-bank-17",
+    "archetype": "commercial-bank",
+    "title": "Securities Portfolio and Market Risk Assessment",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/17 - Securities Portfolio and Market Risk Assessment.md"
+  },
+  {
+    "id": "commercial-bank-18",
+    "archetype": "commercial-bank",
+    "title": "Regulatory, Governance, and Compliance Review",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/18 - Regulatory, Governance, and Compliance Review.md"
+  },
+  {
+    "id": "commercial-bank-19",
+    "archetype": "commercial-bank",
+    "title": "Off-Balance Sheet Exposure Review",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/commercial-bank/19 - Off-Balance Sheet Exposure Review.md"
+  },
+  {
+    "id": "commercial-bank-20",
+    "archetype": "commercial-bank",
+    "title": "Operational Risk, Cybersecurity, and KRI Assessment",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "CYBER"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/commercial-bank/20 - Operational Risk, Cybersecurity, and KRI Assessment.md"
+  },
+  {
+    "id": "commercial-bank-21",
+    "archetype": "commercial-bank",
+    "title": "Credit Covenant Tracking and Compliance Monitoring",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/21 - Credit Covenant Tracking and Compliance Monitoring.md"
+  },
+  {
+    "id": "commercial-bank-22",
+    "archetype": "commercial-bank",
+    "title": "Basel Counterparty Credit Risk Review",
+    "part": "C",
+    "partLabel": "Risk Management and Compliance",
+    "relatedMetricCodes": [
+      "RWA_DENSITY"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/commercial-bank/22 - Basel Counterparty Credit Risk Review.md"
+  },
+  {
+    "id": "commercial-bank-23",
+    "archetype": "commercial-bank",
+    "title": "Deposit Base Structure and Cost of Funds Review",
+    "part": "D",
+    "partLabel": "Capital, Liquidity, and Funding",
+    "relatedMetricCodes": [
+      "LOAN_TO_DEPOSIT_RATIO",
+      "COST_OF_FUNDS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "DEPOSIT_FRANCHISE"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/23 - Deposit Base Structure and Cost of Funds Review.md"
+  },
+  {
+    "id": "commercial-bank-24",
+    "archetype": "commercial-bank",
+    "title": "Liquidity and Funding Management Review",
+    "part": "D",
+    "partLabel": "Capital, Liquidity, and Funding",
+    "relatedMetricCodes": [
+      "LOAN_TO_DEPOSIT_RATIO",
+      "LIQUIDITY_COVERAGE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "DEPOSIT_FRANCHISE"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/24 - Liquidity and Funding Management Review.md"
+  },
+  {
+    "id": "commercial-bank-25",
+    "archetype": "commercial-bank",
+    "title": "Capital Adequacy Review",
+    "part": "D",
+    "partLabel": "Capital, Liquidity, and Funding",
+    "relatedMetricCodes": [
+      "CET1_RATIO",
+      "RWA_DENSITY"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/25 - Capital Adequacy Review.md"
+  },
+  {
+    "id": "commercial-bank-26",
+    "archetype": "commercial-bank",
+    "title": "Asset and Liability Management",
+    "part": "D",
+    "partLabel": "Capital, Liquidity, and Funding",
+    "relatedMetricCodes": [
+      "NET_INTEREST_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "DEPOSIT_FRANCHISE"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/26 - Asset and Liability Management.md"
+  },
+  {
+    "id": "commercial-bank-27",
+    "archetype": "commercial-bank",
+    "title": "Funds Transfer Pricing Methodology Review",
+    "part": "D",
+    "partLabel": "Capital, Liquidity, and Funding",
+    "relatedMetricCodes": [
+      "NET_INTEREST_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "LOAN_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/27 - Funds Transfer Pricing Methodology Review.md"
+  },
+  {
+    "id": "commercial-bank-28",
+    "archetype": "commercial-bank",
+    "title": "Branch Network Optimization",
+    "part": "E",
+    "partLabel": "Operations and Process Improvement",
+    "relatedMetricCodes": [
+      "COST_INCOME_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_TRANSFORMATION"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/28 - Branch Network Optimization.md"
+  },
+  {
+    "id": "commercial-bank-29",
+    "archetype": "commercial-bank",
+    "title": "Customer Churn and Retention Metrics",
+    "part": "E",
+    "partLabel": "Operations and Process Improvement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/29 - Customer Churn and Retention Metrics.md"
+  },
+  {
+    "id": "commercial-bank-30",
+    "archetype": "commercial-bank",
+    "title": "Digital Banking, Online Lending, and Analytics",
+    "part": "F",
+    "partLabel": "Digital and Technology Transformation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/30 - Digital Banking, Online Lending, and Analytics.md"
+  },
+  {
+    "id": "commercial-bank-31",
+    "archetype": "commercial-bank",
+    "title": "Core Banking Systems and Technology Transformation",
+    "part": "F",
+    "partLabel": "Digital and Technology Transformation",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "COST_INCOME_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "COST_TRANSFORMATION"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/31 - Core Banking Systems and Technology Transformation.md"
+  },
+  {
+    "id": "commercial-bank-32",
+    "archetype": "commercial-bank",
+    "title": "Payment and Cash Management Evaluation",
+    "part": "G",
+    "partLabel": "Payment Services and Transaction Banking",
+    "relatedMetricCodes": [
+      "NON_INTEREST_INCOME_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "FEE_BUSINESS_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/32 - Payment and Cash Management Evaluation.md"
+  },
+  {
+    "id": "commercial-bank-33",
+    "archetype": "commercial-bank",
+    "title": "Commercial Card Services Profitability Analysis",
+    "part": "G",
+    "partLabel": "Payment Services and Transaction Banking",
+    "relatedMetricCodes": [
+      "NON_INTEREST_INCOME_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "FEE_BUSINESS_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/33 - Commercial Card Services Profitability Analysis.md"
+  },
+  {
+    "id": "commercial-bank-34",
+    "archetype": "commercial-bank",
+    "title": "Merchant Acquiring and Payment Gateway Analysis",
+    "part": "G",
+    "partLabel": "Payment Services and Transaction Banking",
+    "relatedMetricCodes": [
+      "NON_INTEREST_INCOME_SHARE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "FEE_BUSINESS_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/34 - Merchant Acquiring and Payment Gateway Analysis.md"
+  },
+  {
+    "id": "commercial-bank-35",
+    "archetype": "commercial-bank",
+    "title": "Lease Financing and Equipment Finance Review",
+    "part": "H",
+    "partLabel": "Specialized and Industry-Specific Solutions",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "ORIGINATION_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/35 - Lease Financing and Equipment Finance Review.md"
+  },
+  {
+    "id": "commercial-bank-36",
+    "archetype": "commercial-bank",
+    "title": "Correspondent Banking Relationships and Services",
+    "part": "H",
+    "partLabel": "Specialized and Industry-Specific Solutions",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/commercial-bank/36 - Correspondent Banking Relationships and Services.md"
+  },
+  {
+    "id": "commercial-bank-37",
+    "archetype": "commercial-bank",
+    "title": "Trade Finance Instrument Profitability",
+    "part": "H",
+    "partLabel": "Specialized and Industry-Specific Solutions",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "FEE_BUSINESS_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/37 - Trade Finance Instrument Profitability.md"
+  },
+  {
+    "id": "commercial-bank-38",
+    "archetype": "commercial-bank",
+    "title": "Export and Import Credit Agency Utilization Review",
+    "part": "H",
+    "partLabel": "Specialized and Industry-Specific Solutions",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/38 - Export and Import Credit Agency Utilization Review.md"
+  },
+  {
+    "id": "commercial-bank-39",
+    "archetype": "commercial-bank",
+    "title": "Commodity Finance Structure and Risk Assessment",
+    "part": "H",
+    "partLabel": "Specialized and Industry-Specific Solutions",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/commercial-bank/39 - Commodity Finance Structure and Risk Assessment.md"
+  },
+  {
+    "id": "commercial-bank-40",
+    "archetype": "commercial-bank",
+    "title": "Banking Mergers and Acquisitions Evaluation",
+    "part": "I",
+    "partLabel": "Mergers and Acquisitions",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/commercial-bank/40 - Banking Mergers and Acquisitions Evaluation.md"
+  }
+]

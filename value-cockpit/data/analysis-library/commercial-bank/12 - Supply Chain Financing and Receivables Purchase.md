@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-12
+part: B
+partLabel: Lending and Credit Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING, VOLUME, COST_PROCUREMENT, COST_OPS, ORIGINATION_GROWTH]
 ---
 # 12 · Supply Chain Financing and Receivables Purchase
 

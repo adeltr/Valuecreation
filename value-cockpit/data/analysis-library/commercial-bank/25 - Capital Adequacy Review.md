@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/D
+kind: analysis
+id: commercial-bank-25
+part: D
+partLabel: Capital, Liquidity, and Funding
+quant: [CET1_RATIO, RWA_DENSITY]
+causes: [FINANCIAL, REGULATORY]
+levers: [MIX]
 ---
 # 25 · Capital Adequacy Review
 

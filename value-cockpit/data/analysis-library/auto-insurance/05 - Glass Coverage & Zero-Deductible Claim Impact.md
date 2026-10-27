@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-05
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: [FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT]
 ---
 # 5 · Glass Coverage & Zero-Deductible Claim Impact
 

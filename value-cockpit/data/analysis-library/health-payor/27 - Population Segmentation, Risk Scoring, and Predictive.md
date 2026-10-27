@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/E
+kind: analysis
+id: health-payor-27
+part: E
+partLabel: Risk Assessment and Population Health
+quant: []
+causes: [FINANCIAL, RISK_POOL_SELECTION]
+levers: [VOLUME]
 ---
 # 27 · Population Segmentation, Risk Scoring, and Predictive Modeling Analysis
 

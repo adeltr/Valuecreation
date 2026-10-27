@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/B
+kind: analysis
+id: retail-bank-17
+part: B
+partLabel: Product and Portfolio Performance
+quant: []
+causes: [FINANCIAL]
+levers: []
 ---
 # 17 · Mortgage Loan-to-Value (LTV) and Debt-to-Income (DTI) Ratio Analysis
 

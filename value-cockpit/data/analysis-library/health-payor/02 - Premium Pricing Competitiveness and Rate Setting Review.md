@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-02
+part: A
+partLabel: Financial Performance and Cost Management
+quant: [EBITDA_MARGIN, PREMIUM_PMPM, PREMIUM_TREND]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [RATE_ADEQUACY]
 ---
 # 2 · Premium Pricing Competitiveness and Rate Setting Review
 

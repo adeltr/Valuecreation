@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/K
+kind: analysis
+id: life-insurance-45
+part: K
+partLabel: Market Strategy and Competitive Positioning
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 45 · Market Penetration and Demographic Segmentation Study
 

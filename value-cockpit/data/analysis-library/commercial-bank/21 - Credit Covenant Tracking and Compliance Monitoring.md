@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-21
+part: C
+partLabel: Risk Management and Compliance
+quant: []
+causes: [REGULATORY]
+levers: [COST_OPS, CREDIT_RISK_MANAGEMENT]
 ---
 # 21 · Credit Covenant Tracking and Compliance Monitoring
 

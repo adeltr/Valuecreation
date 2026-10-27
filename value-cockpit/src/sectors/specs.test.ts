@@ -67,7 +67,7 @@ describe.each(Object.values(SPECS))('$archetype sector spec', (spec) => {
       effort: 'medium', confidence: 0.5, confidenceBasis: l.sources, source: 'analyst', status: 'validated',
     };
     expect(vocab.isLeverTarget(l.target)).toBe(true);
-    expect(spec.inputs.some((t) => t.code === l.target), `${l.target} is not a formula input`).toBe(true);
+    expect([...spec.inputs.map((t) => t.code), ...bridge.inputs], `${l.target} is not an input`).toContain(l.target);
     const r = runScenario('s', metrics, [lever], [{ scenarioId: 's', leverId: 'l', appliedDelta: l.delta, deltaKind: 'absolute' }], []);
     const v = new Map(r.map((x) => [x.metricCode, x.value]));
     expect(v.get(anchor)!).toBeGreaterThanOrEqual(base.get(anchor)!); // a burn lever moves cash, not the rNPV

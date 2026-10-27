@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/G
+kind: analysis
+id: commercial-bank-33
+part: G
+partLabel: Payment Services and Transaction Banking
+quant: [NON_INTEREST_INCOME_SHARE]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, FEE_BUSINESS_GROWTH]
 ---
 # 33 · Commercial Card Services Profitability Analysis
 

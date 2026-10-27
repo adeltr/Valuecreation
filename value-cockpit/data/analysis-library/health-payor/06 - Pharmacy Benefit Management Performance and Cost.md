@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-06
+part: A
+partLabel: Financial Performance and Cost Management
+quant: []
+causes: [FINANCIAL]
+levers: [PHARMACY_MANAGEMENT]
 ---
 # 6 · Pharmacy Benefit Management Performance and Cost Analysis
 

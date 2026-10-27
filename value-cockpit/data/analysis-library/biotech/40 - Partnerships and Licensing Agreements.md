@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/F
+kind: analysis
+id: biotech-40
+part: F
+partLabel: Organization
+quant: [REVENUE_GROWTH, PEAK_SALES_MULTIPLE, PARTNERED_ASSET_SHARE]
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
+levers: [VOLUME, LICENSING_BD]
 ---
 # 40 · Partnerships and Licensing Agreements
 

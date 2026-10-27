@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-10
+part: B
+partLabel: Lending and Credit Management
+quant: [NET_INTEREST_MARGIN]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, LOAN_PRICING]
 ---
 # 10 · Loan Pricing and Risk-Based Pricing Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/F
+kind: analysis
+id: health-payor-31
+part: F
+partLabel: Claims Management and Compliance
+quant: [CLAIMS_DENIAL_RATE]
+causes: [OPERATIONAL, MARKET]
+levers: [PAYMENT_INTEGRITY]
 ---
 # 31 · Claims Denial and Appeals Rate Analysis
 

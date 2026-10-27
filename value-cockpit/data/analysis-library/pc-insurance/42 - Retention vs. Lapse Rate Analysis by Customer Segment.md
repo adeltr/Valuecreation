@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/F
+kind: analysis
+id: pc-insurance-42
+part: F
+partLabel: Sales & Marketing
+quant: [POLICY_RETENTION_RATE]
+causes: [COMMERCIAL]
+levers: [VOLUME, RETENTION_GROWTH]
 ---
 # 42 · Retention vs. Lapse Rate Analysis by Customer Segment
 

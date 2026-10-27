@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/G
+kind: analysis
+id: health-payor-37
+part: G
+partLabel: Access to Care and Integration
+quant: [IN_NETWORK_UTILIZATION_RATE]
+causes: [FINANCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 37 · In-Network vs. Out-of-Network Utilization Rate Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-05
+part: B
+partLabel: Lending and Credit Management
+quant: [LOAN_GROWTH]
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS, CREDIT_RISK_MANAGEMENT]
 ---
 # 5 · Loan Origination and Underwriting Standards Review
 

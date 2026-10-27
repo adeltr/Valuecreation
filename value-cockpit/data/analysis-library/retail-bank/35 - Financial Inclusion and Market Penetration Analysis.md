@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-35
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: [REVENUE_GROWTH, CUSTOMERS, CUSTOMER_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [VOLUME]
 ---
 # 35 · Financial Inclusion and Market Penetration Analysis
 

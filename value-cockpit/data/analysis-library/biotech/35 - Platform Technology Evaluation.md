@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/D
+kind: analysis
+id: biotech-35
+part: D
+partLabel: Technology
+quant: []
+causes: [MARKET]
+levers: [VOLUME, COST_OPS]
 ---
 # 35 · Platform Technology Evaluation
 

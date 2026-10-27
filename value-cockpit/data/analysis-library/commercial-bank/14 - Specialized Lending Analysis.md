@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-14
+part: B
+partLabel: Lending and Credit Management
+quant: [LOANS, LOAN_GROWTH]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [PRICING, ORIGINATION_GROWTH]
 ---
 # 14 · Specialized Lending Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/F
+kind: analysis
+id: retail-bank-34
+part: F
+partLabel: Financial Performance and Revenue Management
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, DEPOSIT_PRICING]
 ---
 # 34 · Interest Rate Spread and Pricing Strategy Analysis
 

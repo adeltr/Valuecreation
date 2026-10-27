@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-39
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: []
+causes: [OPERATIONAL]
+levers: [PRICING, VOLUME, DIGITAL_MIGRATION]
 ---
 # 39 · Payment Services Usage and Revenue Analysis
 

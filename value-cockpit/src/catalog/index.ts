@@ -19,6 +19,13 @@ import retail from './retail.catalog.json';
 import thirdPartyLogistics from './third-party-logistics.catalog.json';
 import wasteManagement from './waste-management.catalog.json';
 import wineSpirits from './wine-spirits.catalog.json';
+import healthPayor from './health-payor.catalog.json';
+import pcInsurance from './pc-insurance.catalog.json';
+import autoInsurance from './auto-insurance.catalog.json';
+import lifeInsurance from './life-insurance.catalog.json';
+import commercialBank from './commercial-bank.catalog.json';
+import retailBank from './retail-bank.catalog.json';
+import biotech from './biotech.catalog.json';
 
 const CATALOGS: Partial<Record<SectorArchetype, AnalysisRef[]>> = {
   aero: aero as AnalysisRef[],
@@ -40,6 +47,13 @@ const CATALOGS: Partial<Record<SectorArchetype, AnalysisRef[]>> = {
   'third-party-logistics': thirdPartyLogistics as AnalysisRef[],
   'waste-management': wasteManagement as AnalysisRef[],
   'wine-spirits': wineSpirits as AnalysisRef[],
+  'health-payor': healthPayor as AnalysisRef[],
+  'pc-insurance': pcInsurance as AnalysisRef[],
+  'auto-insurance': autoInsurance as AnalysisRef[],
+  'life-insurance': lifeInsurance as AnalysisRef[],
+  'commercial-bank': commercialBank as AnalysisRef[],
+  'retail-bank': retailBank as AnalysisRef[],
+  biotech: biotech as AnalysisRef[],
 };
 
 /** Curated analysis protocols for an archetype (empty when none). Never carries values. */

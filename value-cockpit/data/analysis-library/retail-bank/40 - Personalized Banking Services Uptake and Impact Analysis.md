@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-40
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 40 · Personalized Banking Services Uptake and Impact Analysis
 

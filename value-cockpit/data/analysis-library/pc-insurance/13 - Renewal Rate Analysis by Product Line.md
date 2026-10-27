@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-13
+part: A
+partLabel: Underwriting
+quant: [POLICY_RETENTION_RATE]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING, VOLUME, MIX, RETENTION_GROWTH]
 ---
 # 13 · Renewal Rate Analysis by Product Line
 

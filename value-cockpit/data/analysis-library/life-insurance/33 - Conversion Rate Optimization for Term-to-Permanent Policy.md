@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/F
+kind: analysis
+id: life-insurance-33
+part: F
+partLabel: Distribution and Channel Performance
+quant: [PREMIUM_GROWTH]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, COST_OPS]
 ---
 # 33 · Conversion Rate Optimization for Term-to-Permanent Policy Transitions
 

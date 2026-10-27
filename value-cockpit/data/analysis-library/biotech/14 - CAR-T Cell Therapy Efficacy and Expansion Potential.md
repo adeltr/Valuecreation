@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-14
+part: A
+partLabel: Research & Development (R&D)
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, REGULATORY]
+levers: [VOLUME]
 ---
 # 14 · CAR-T Cell Therapy Efficacy and Expansion Potential
 

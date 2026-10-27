@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-20
+part: B
+partLabel: Operations
+quant: [REVENUE_GROWTH]
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [COST_PROCUREMENT]
 ---
 # 20 · Manufacturing and Scalability Assessment
 

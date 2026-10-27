@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/J
+kind: analysis
+id: life-insurance-42
+part: J
+partLabel: Operational Efficiency and Cost Management
+quant: [OPEX, EXPENSE_RATIO, LAPSE_RATE]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [VOLUME, COST_OPS, DISTRIBUTION_EFFICIENCY]
 ---
 # 42 · Expense Ratio and Cost Efficiency Benchmarking
 

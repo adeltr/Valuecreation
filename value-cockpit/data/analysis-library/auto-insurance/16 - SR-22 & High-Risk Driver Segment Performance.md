@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-16
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 16 · SR-22 & High-Risk Driver Segment Performance
 

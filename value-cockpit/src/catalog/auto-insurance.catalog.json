@@ -1,0 +1,679 @@
+[
+  {
+    "id": "auto-insurance-01",
+    "archetype": "auto-insurance",
+    "title": "Rate Adequacy & Pricing Factor Assessment",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [
+      "AVERAGE_PREMIUM"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/01 - Rate Adequacy & Pricing Factor Assessment.md"
+  },
+  {
+    "id": "auto-insurance-02",
+    "archetype": "auto-insurance",
+    "title": "Uninsured-Underinsured Motorist Coverage Utilization Trends",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/02 - Uninsured-Underinsured Motorist Coverage Utilization Trends.md"
+  },
+  {
+    "id": "auto-insurance-03",
+    "archetype": "auto-insurance",
+    "title": "GAP Insurance Performance Evaluation",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/03 - GAP Insurance Performance Evaluation.md"
+  },
+  {
+    "id": "auto-insurance-04",
+    "archetype": "auto-insurance",
+    "title": "Rental Reimbursement Coverage Usage & Cost Trends",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/04 - Rental Reimbursement Coverage Usage & Cost Trends.md"
+  },
+  {
+    "id": "auto-insurance-05",
+    "archetype": "auto-insurance",
+    "title": "Glass Coverage & Zero-Deductible Claim Impact",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/05 - Glass Coverage & Zero-Deductible Claim Impact.md"
+  },
+  {
+    "id": "auto-insurance-06",
+    "archetype": "auto-insurance",
+    "title": "Defensive Driving Discount Efficacy",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/06 - Defensive Driving Discount Efficacy.md"
+  },
+  {
+    "id": "auto-insurance-07",
+    "archetype": "auto-insurance",
+    "title": "Territorial Rating Factor Fine-Tuning",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [
+      "AVERAGE_PREMIUM"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/07 - Territorial Rating Factor Fine-Tuning.md"
+  },
+  {
+    "id": "auto-insurance-08",
+    "archetype": "auto-insurance",
+    "title": "Pay-Per-Mile Insurance Adoption & Loss Results",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "POLICY_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "TELEMATICS_UBI",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/08 - Pay-Per-Mile Insurance Adoption & Loss Results.md"
+  },
+  {
+    "id": "auto-insurance-09",
+    "archetype": "auto-insurance",
+    "title": "Non-Owned Auto Coverage & Borrowed Vehicle Liabilities Analysis",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/09 - Non-Owned Auto Coverage & Borrowed Vehicle Liabilities.md"
+  },
+  {
+    "id": "auto-insurance-10",
+    "archetype": "auto-insurance",
+    "title": "Roadside Assistance Utilization & Cost Analysis",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/10 - Roadside Assistance Utilization & Cost Analysis.md"
+  },
+  {
+    "id": "auto-insurance-11",
+    "archetype": "auto-insurance",
+    "title": "License Points Surcharge Program Evaluation",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/11 - License Points Surcharge Program Evaluation.md"
+  },
+  {
+    "id": "auto-insurance-12",
+    "archetype": "auto-insurance",
+    "title": "Accident Forgiveness Program Profitability Assessment",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/12 - Accident Forgiveness Program Profitability Assessment.md"
+  },
+  {
+    "id": "auto-insurance-13",
+    "archetype": "auto-insurance",
+    "title": "Telematics & Usage-Based Insurance Performance",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "POLICY_GROWTH",
+      "TELEMATICS_PENETRATION"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "TELEMATICS_UBI"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/13 - Telematics & Usage-Based Insurance Performance.md"
+  },
+  {
+    "id": "auto-insurance-14",
+    "archetype": "auto-insurance",
+    "title": "Premium Leakage & Under-Reported Exposure Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "AVERAGE_PREMIUM"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "LEAKAGE_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/14 - Premium Leakage & Under-Reported Exposure Analysis.md"
+  },
+  {
+    "id": "auto-insurance-15",
+    "archetype": "auto-insurance",
+    "title": "Residual Market & Assigned Risk Pool Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/15 - Residual Market & Assigned Risk Pool Analysis.md"
+  },
+  {
+    "id": "auto-insurance-16",
+    "archetype": "auto-insurance",
+    "title": "SR-22 & High-Risk Driver Segment Performance",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/16 - SR-22 & High-Risk Driver Segment Performance.md"
+  },
+  {
+    "id": "auto-insurance-17",
+    "archetype": "auto-insurance",
+    "title": "Non-Standard Auto Market & Subprime Segment Evaluation",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "POLICIES_IN_FORCE",
+      "POLICY_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/17 - Non-Standard Auto Market & Subprime Segment Evaluation.md"
+  },
+  {
+    "id": "auto-insurance-18",
+    "archetype": "auto-insurance",
+    "title": "Driver Monitoring & Scoring Model Validation",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "TELEMATICS_UBI"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/18 - Driver Monitoring & Scoring Model Validation.md"
+  },
+  {
+    "id": "auto-insurance-19",
+    "archetype": "auto-insurance",
+    "title": "Street-Level Risk & Traffic Pattern Underwriting",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/19 - Street-Level Risk & Traffic Pattern Underwriting.md"
+  },
+  {
+    "id": "auto-insurance-20",
+    "archetype": "auto-insurance",
+    "title": "After-Market Vehicle Modifications Coverage Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/20 - After-Market Vehicle Modifications Coverage Analysis.md"
+  },
+  {
+    "id": "auto-insurance-21",
+    "archetype": "auto-insurance",
+    "title": "Fleet Usage Segmentation Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "POLICIES_IN_FORCE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/21 - Fleet Usage Segmentation Analysis.md"
+  },
+  {
+    "id": "auto-insurance-22",
+    "archetype": "auto-insurance",
+    "title": "Claims Frequency & Severity Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIM_FREQUENCY",
+      "CLAIM_SEVERITY"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/22 - Claims Frequency & Severity Analysis.md"
+  },
+  {
+    "id": "auto-insurance-23",
+    "archetype": "auto-insurance",
+    "title": "Claim Settlement Speed",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIMS_SETTLEMENT_DAYS"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/23 - Claim Settlement Speed.md"
+  },
+  {
+    "id": "auto-insurance-24",
+    "archetype": "auto-insurance",
+    "title": "Subrogation & Salvage Recovery Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "SUBROGATION_RECOVERY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "RECOVERY_SALVAGE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/24 - Subrogation & Salvage Recovery Analysis.md"
+  },
+  {
+    "id": "auto-insurance-25",
+    "archetype": "auto-insurance",
+    "title": "Vehicle Repair Cost Inflation & Parts Availability Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIM_SEVERITY"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REPAIR_COST_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/25 - Vehicle Repair Cost Inflation & Parts Availability Analysis.md"
+  },
+  {
+    "id": "auto-insurance-26",
+    "archetype": "auto-insurance",
+    "title": "Collision Repair Network & Direct Repair Program Effectiveness",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIM_SEVERITY",
+      "DIRECT_REPAIR_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/26 - Collision Repair Network & Direct Repair Program.md"
+  },
+  {
+    "id": "auto-insurance-27",
+    "archetype": "auto-insurance",
+    "title": "OEM vs. Aftermarket Parts Usage & Cost Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REPAIR_COST_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/27 - OEM vs. Aftermarket Parts Usage & Cost Analysis.md"
+  },
+  {
+    "id": "auto-insurance-28",
+    "archetype": "auto-insurance",
+    "title": "Stolen Vehicle Rate & Recovery Effectiveness",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "THEFT_RECOVERY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RECOVERY_SALVAGE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/28 - Stolen Vehicle Rate & Recovery Effectiveness.md"
+  },
+  {
+    "id": "auto-insurance-29",
+    "archetype": "auto-insurance",
+    "title": "Loss Ratio Trends by Product Segment",
+    "part": "D",
+    "partLabel": "Financial Performance & Reserving",
+    "relatedMetricCodes": [
+      "CLAIM_FREQUENCY",
+      "LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/29 - Loss Ratio Trends by Product Segment.md"
+  },
+  {
+    "id": "auto-insurance-30",
+    "archetype": "auto-insurance",
+    "title": "Reserve Adequacy & Reserving Methodologies",
+    "part": "D",
+    "partLabel": "Financial Performance & Reserving",
+    "relatedMetricCodes": [
+      "FLOAT_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "RESERVE_RISK"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/auto-insurance/30 - Reserve Adequacy & Reserving Methodologies.md"
+  },
+  {
+    "id": "auto-insurance-31",
+    "archetype": "auto-insurance",
+    "title": "Reinsurance Optimization & Ceded Risk Evaluation",
+    "part": "D",
+    "partLabel": "Financial Performance & Reserving",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/31 - Reinsurance Optimization & Ceded Risk Evaluation.md"
+  },
+  {
+    "id": "auto-insurance-32",
+    "archetype": "auto-insurance",
+    "title": "Electric & Advanced Driver-Assistance Systems Vehicle Impact Assessment",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REPAIR_COST_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/32 - Electric & Advanced Driver-Assistance Systems Vehicle.md"
+  },
+  {
+    "id": "auto-insurance-33",
+    "archetype": "auto-insurance",
+    "title": "Emerging Mobility Coverage Analysis",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/33 - Emerging Mobility Coverage Analysis.md"
+  },
+  {
+    "id": "auto-insurance-34",
+    "archetype": "auto-insurance",
+    "title": "Rideshare Gap Coverage & TNC Endorsement Performance",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/34 - Rideshare Gap Coverage & TNC Endorsement Performance.md"
+  },
+  {
+    "id": "auto-insurance-35",
+    "archetype": "auto-insurance",
+    "title": "Distracted Driving & Crash Avoidance Technology Impact Analysis",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "TELEMATICS_UBI"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/35 - Distracted Driving & Crash Avoidance Technology Impact.md"
+  },
+  {
+    "id": "auto-insurance-36",
+    "archetype": "auto-insurance",
+    "title": "Commercial Auto Fleet Telematics & Performance Review",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [
+      "TELEMATICS_PENETRATION"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/36 - Commercial Auto Fleet Telematics & Performance Review.md"
+  },
+  {
+    "id": "auto-insurance-37",
+    "archetype": "auto-insurance",
+    "title": "AI-Driven Image-Based Collision Damage Estimation",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "REPAIR_NETWORK",
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/37 - AI-Driven Image-Based Collision Damage Estimation.md"
+  },
+  {
+    "id": "auto-insurance-38",
+    "archetype": "auto-insurance",
+    "title": "OEM-Certified Repair Partnership Impact Study",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [
+      "DIRECT_REPAIR_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/38 - OEM-Certified Repair Partnership Impact Study.md"
+  },
+  {
+    "id": "auto-insurance-39",
+    "archetype": "auto-insurance",
+    "title": "Classic-Collector Vehicle Segment Profitability",
+    "part": "I",
+    "partLabel": "Specialty & Niche Segments",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/39 - Classic-Collector Vehicle Segment Profitability.md"
+  }
+]

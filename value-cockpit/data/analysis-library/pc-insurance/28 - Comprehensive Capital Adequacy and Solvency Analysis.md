@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-28
+part: C
+partLabel: Risk Management
+quant: [SOLVENCY_RATIO]
+causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+levers: [MIX]
 ---
 # 28 · Comprehensive Capital Adequacy and Solvency Analysis
 

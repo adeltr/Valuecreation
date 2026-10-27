@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-45
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: [REVENUE_GROWTH, CUSTOMERS, CUSTOMER_GROWTH]
+causes: [MARKET, FINTECH_COMPETITION]
+levers: [VOLUME]
 ---
 # 45 · Strategic Growth and Market Expansion Planning
 

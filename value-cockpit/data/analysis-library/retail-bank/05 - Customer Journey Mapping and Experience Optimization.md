@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-05
+part: A
+partLabel: Customer Behavior and Engagement
+quant: []
+causes: [COMMERCIAL]
+levers: [VOLUME, COST_OPS]
 ---
 # 5 · Customer Journey Mapping and Experience Optimization Analysis
 

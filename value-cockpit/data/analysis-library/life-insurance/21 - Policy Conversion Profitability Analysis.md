@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-21
+part: C
+partLabel: Profitability and Product Performance
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME, COST_OPS]
 ---
 # 21 · Policy Conversion Profitability Analysis
 

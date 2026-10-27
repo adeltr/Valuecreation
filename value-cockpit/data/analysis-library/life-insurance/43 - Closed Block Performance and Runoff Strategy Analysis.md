@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/J
+kind: analysis
+id: life-insurance-43
+part: J
+partLabel: Operational Efficiency and Cost Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS]
 ---
 # 43 · Closed Block Performance and Runoff Strategy Analysis
 

@@ -8,11 +8,12 @@ interface Props {
   state: CockpitState; metrics: Metric[]; baseline: Map<string, number>;
   scenario: ScenarioResult[] | null; scenarioError: string | null; dispatch: Dispatch<Action>;
   interactions: InteractionRule[];
-  /** The bridge rows of the archetype's family (docs/16), MOIC last. */
+  /** The bridge of the archetype's family (docs/16): table rows (MOIC last) and multiple label. */
   bridgeRows: string[];
+  multipleLabel: string;
 }
 
-export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows }: Props) {
+export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows, multipleLabel }: Props) {
   const unit = (code: string) => metrics.find((m) => m.code === code)?.unit ?? 'currency';
   const scen = new Map(scenario?.map((r) => [r.metricCode, r.value]));
   const selectable = (l: Lever) => l.status === 'validated';
@@ -41,7 +42,7 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
           );
         })}
       </ul>
-      <label htmlFor="exit-multiple">Multiple de sortie (hypothèse analyste)</label>
+      <label htmlFor="exit-multiple">{`Multiple de sortie (${multipleLabel}, hypothèse analyste)`}</label>
       <input id="exit-multiple" type="number" step="0.5" value={exitMultiple}
         onChange={(e) => dispatch({ type: 'setAssumption', code: 'EXIT_MULTIPLE', value: Number(e.target.value) })} />
 

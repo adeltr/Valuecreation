@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-08
+part: A
+partLabel: Financial Performance and Cost Management
+quant: []
+causes: [FINANCIAL, MEDICAL_COST_TREND]
+levers: []
 ---
 # 8 · High-Cost Claimant and Catastrophic Coverage Analysis
 

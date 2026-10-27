@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/B
+kind: analysis
+id: life-insurance-09
+part: B
+partLabel: Actuarial and Reserve Management
+quant: []
+causes: [FINANCIAL]
+levers: [PRICING]
 ---
 # 9 · Guaranteed Benefits and Embedded Guarantees Risk Analysis
 

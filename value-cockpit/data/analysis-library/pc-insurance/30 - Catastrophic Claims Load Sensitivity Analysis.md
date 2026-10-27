@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/C
+kind: analysis
+id: pc-insurance-30
+part: C
+partLabel: Risk Management
+quant: [CATASTROPHE_LOSS_RATIO]
+causes: [FINANCIAL, CATASTROPHE_EXPOSURE]
+levers: [PRICING, VOLUME]
 ---
 # 30 · Catastrophic Claims Load Sensitivity Analysis
 

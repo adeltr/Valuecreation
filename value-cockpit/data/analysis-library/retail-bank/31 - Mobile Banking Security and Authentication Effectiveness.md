@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/E
+kind: analysis
+id: retail-bank-31
+part: E
+partLabel: Digital and Technological Capabilities
+quant: []
+causes: []
+levers: []
 ---
 # 31 · Mobile Banking Security and Authentication Effectiveness Analysis
 

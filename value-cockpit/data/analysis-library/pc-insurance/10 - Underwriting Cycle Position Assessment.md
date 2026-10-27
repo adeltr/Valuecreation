@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-10
+part: A
+partLabel: Underwriting
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 10 · Underwriting Cycle Position Assessment
 

@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-18
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: []
+levers: [VOLUME, BIOMARKER_SELECTION]
 ---
 # 18 · Gene-Environment Interaction Studies for Precision Medicine
 

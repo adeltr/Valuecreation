@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-04
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 4 · Rental Reimbursement Coverage Usage & Cost Trends
 

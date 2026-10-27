@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-17
+part: C
+partLabel: Risk Management and Compliance
+quant: []
+causes: [FINANCIAL, MARKET]
+levers: [MIX]
 ---
 # 17 · Securities Portfolio and Market Risk Assessment
 

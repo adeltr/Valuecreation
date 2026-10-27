@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/F
+kind: analysis
+id: commercial-bank-30
+part: F
+partLabel: Digital and Technology Transformation
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [VOLUME]
 ---
 # 30 · Digital Banking, Online Lending, and Analytics
 

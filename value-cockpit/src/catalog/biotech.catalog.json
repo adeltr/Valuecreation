@@ -1,0 +1,731 @@
+[
+  {
+    "id": "biotech-01",
+    "archetype": "biotech",
+    "title": "Pipeline Analysis",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "PROBABILITY_OF_SUCCESS",
+      "YEARS_TO_LAUNCH",
+      "PIPELINE_ASSETS"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/biotech/01 - Pipeline Analysis.md"
+  },
+  {
+    "id": "biotech-02",
+    "archetype": "biotech",
+    "title": "Clinical Trial Progress and Outcomes",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "PROBABILITY_OF_SUCCESS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "CLINICAL_FAILURE"
+    ],
+    "relatedLeverCategories": [
+      "TRIAL_DESIGN"
+    ],
+    "sourcePath": "data/analysis-library/biotech/02 - Clinical Trial Progress and Outcomes.md"
+  },
+  {
+    "id": "biotech-03",
+    "archetype": "biotech",
+    "title": "Preclinical Data Quality and Translational Potential",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/03 - Preclinical Data Quality and Translational Potential.md"
+  },
+  {
+    "id": "biotech-04",
+    "archetype": "biotech",
+    "title": "Gene Therapy or Genetic Engineering Platform Evaluation",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/04 - Gene Therapy or Genetic Engineering Platform Evaluation.md"
+  },
+  {
+    "id": "biotech-05",
+    "archetype": "biotech",
+    "title": "Cell Line Development and Optimization Analysis",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/biotech/05 - Cell Line Development and Optimization Analysis.md"
+  },
+  {
+    "id": "biotech-06",
+    "archetype": "biotech",
+    "title": "Regenerative Medicine and Stem Cell Platform Assessment",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/biotech/06 - Regenerative Medicine and Stem Cell Platform Assessment.md"
+  },
+  {
+    "id": "biotech-07",
+    "archetype": "biotech",
+    "title": "Biomarker Strategy and Companion Diagnostic Development",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "BIOMARKER_SELECTION"
+    ],
+    "sourcePath": "data/analysis-library/biotech/07 - Biomarker Strategy and Companion Diagnostic Development.md"
+  },
+  {
+    "id": "biotech-08",
+    "archetype": "biotech",
+    "title": "Immunogenicity Risk and Management for Biologics",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "CLINICAL_FAILURE"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/biotech/08 - Immunogenicity Risk and Management for Biologics.md"
+  },
+  {
+    "id": "biotech-09",
+    "archetype": "biotech",
+    "title": "Toxicology and Safety Pharmacology Study Outcomes",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "CLINICAL_FAILURE"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/biotech/09 - Toxicology and Safety Pharmacology Study Outcomes.md"
+  },
+  {
+    "id": "biotech-10",
+    "archetype": "biotech",
+    "title": "Personalized Medicine Strategy and Customization Potential",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "BIOMARKER_SELECTION"
+    ],
+    "sourcePath": "data/analysis-library/biotech/10 - Personalized Medicine Strategy and Customization Potential.md"
+  },
+  {
+    "id": "biotech-11",
+    "archetype": "biotech",
+    "title": "Viral Vector Development and Optimization for Gene Delivery",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/11 - Viral Vector Development and Optimization for Gene Delivery.md"
+  },
+  {
+    "id": "biotech-12",
+    "archetype": "biotech",
+    "title": "Advanced Drug Delivery Systems",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/12 - Advanced Drug Delivery Systems.md"
+  },
+  {
+    "id": "biotech-13",
+    "archetype": "biotech",
+    "title": "Monoclonal Antibody (mAb) Engineering and Optimization",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/biotech/13 - Monoclonal Antibody (mAb) Engineering and Optimization.md"
+  },
+  {
+    "id": "biotech-14",
+    "archetype": "biotech",
+    "title": "CAR-T Cell Therapy Efficacy and Expansion Potential",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/14 - CAR-T Cell Therapy Efficacy and Expansion Potential.md"
+  },
+  {
+    "id": "biotech-15",
+    "archetype": "biotech",
+    "title": "Bioconjugation and Targeted Therapy Efficacy",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/15 - Bioconjugation and Targeted Therapy Efficacy.md"
+  },
+  {
+    "id": "biotech-16",
+    "archetype": "biotech",
+    "title": "Cellular Microenvironment Manipulation for Therapeutic Benefit",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/16 - Cellular Microenvironment Manipulation for Therapeutic Benefit.md"
+  },
+  {
+    "id": "biotech-17",
+    "archetype": "biotech",
+    "title": "Protein Folding and Stability in Biopharmaceuticals",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/biotech/17 - Protein Folding and Stability in Biopharmaceuticals.md"
+  },
+  {
+    "id": "biotech-18",
+    "archetype": "biotech",
+    "title": "Gene-Environment Interaction Studies for Precision Medicine",
+    "part": "A",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "BIOMARKER_SELECTION"
+    ],
+    "sourcePath": "data/analysis-library/biotech/18 - Gene-Environment Interaction Studies for Precision Medicine.md"
+  },
+  {
+    "id": "biotech-19",
+    "archetype": "biotech",
+    "title": "Regulatory Pathways",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "YEARS_TO_LAUNCH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/biotech/19 - Regulatory Pathways.md"
+  },
+  {
+    "id": "biotech-20",
+    "archetype": "biotech",
+    "title": "Manufacturing and Scalability Assessment",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/biotech/20 - Manufacturing and Scalability Assessment.md"
+  },
+  {
+    "id": "biotech-21",
+    "archetype": "biotech",
+    "title": "Orphan Drug Designation and Exclusivity Opportunities",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "ORPHAN_DESIGNATIONS"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/biotech/21 - Orphan Drug Designation and Exclusivity Opportunities.md"
+  },
+  {
+    "id": "biotech-22",
+    "archetype": "biotech",
+    "title": "Manufacturing Process Intellectual Property",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "PATENT_LIFE_YEARS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/biotech/22 - Manufacturing Process Intellectual Property.md"
+  },
+  {
+    "id": "biotech-23",
+    "archetype": "biotech",
+    "title": "Supply Chain Security and Raw Material Sourcing",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/biotech/23 - Supply Chain Security and Raw Material Sourcing.md"
+  },
+  {
+    "id": "biotech-24",
+    "archetype": "biotech",
+    "title": "Patient Recruitment and Retention Strategies for Clinical Trials",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "TRIAL_ENROLLMENT_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "TRIAL_DESIGN"
+    ],
+    "sourcePath": "data/analysis-library/biotech/24 - Patient Recruitment and Retention Strategies for Clinical Trials.md"
+  },
+  {
+    "id": "biotech-25",
+    "archetype": "biotech",
+    "title": "Pharmacovigilance and Post-Market Surveillance Plans",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/25 - Pharmacovigilance and Post-Market Surveillance Plans.md"
+  },
+  {
+    "id": "biotech-26",
+    "archetype": "biotech",
+    "title": "Biomanufacturing Facility Compliance and GMP Standards",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/26 - Biomanufacturing Facility Compliance and GMP Standards.md"
+  },
+  {
+    "id": "biotech-27",
+    "archetype": "biotech",
+    "title": "Clinical Data Integration with Real-World Evidence (RWE)",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "TRIAL_DESIGN"
+    ],
+    "sourcePath": "data/analysis-library/biotech/27 - Clinical Data Integration with Real-World Evidence (RWE).md"
+  },
+  {
+    "id": "biotech-28",
+    "archetype": "biotech",
+    "title": "Adaptive Trial Design and Utilization in Drug Development",
+    "part": "B",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "YEARS_TO_LAUNCH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "TRIAL_DESIGN"
+    ],
+    "sourcePath": "data/analysis-library/biotech/28 - Adaptive Trial Design and Utilization in Drug Development.md"
+  },
+  {
+    "id": "biotech-29",
+    "archetype": "biotech",
+    "title": "Competitive Landscape and Differentiation of Technology",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "BIOSIMILAR_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/biotech/29 - Competitive Landscape and Differentiation of Technology.md"
+  },
+  {
+    "id": "biotech-30",
+    "archetype": "biotech",
+    "title": "Market Size and Commercial Viability for Lead Products",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "PEAK_SALES"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MARKET_ACCESS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/30 - Market Size and Commercial Viability for Lead Products.md"
+  },
+  {
+    "id": "biotech-31",
+    "archetype": "biotech",
+    "title": "Therapeutic Area Expertise and Alignment with Unmet Needs",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MARKET_ACCESS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/31 - Therapeutic Area Expertise and Alignment with Unmet Needs.md"
+  },
+  {
+    "id": "biotech-32",
+    "archetype": "biotech",
+    "title": "Biosimilar Product Development and Market Strategy",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY",
+      "BIOSIMILAR_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/biotech/32 - Biosimilar Product Development and Market Strategy.md"
+  },
+  {
+    "id": "biotech-33",
+    "archetype": "biotech",
+    "title": "Biologic vs. Small Molecule Product Differentiation",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/33 - Biologic vs. Small Molecule Product Differentiation.md"
+  },
+  {
+    "id": "biotech-34",
+    "archetype": "biotech",
+    "title": "Market Access and Value Demonstration Strategy",
+    "part": "C",
+    "partLabel": "Marketing",
+    "relatedMetricCodes": [
+      "PEAK_SALES"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MARKET_ACCESS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/34 - Market Access and Value Demonstration Strategy.md"
+  },
+  {
+    "id": "biotech-35",
+    "archetype": "biotech",
+    "title": "Platform Technology Evaluation",
+    "part": "D",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/biotech/35 - Platform Technology Evaluation.md"
+  },
+  {
+    "id": "biotech-36",
+    "archetype": "biotech",
+    "title": "Gene Sequencing and Bioinformatics Capabilities",
+    "part": "D",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/36 - Gene Sequencing and Bioinformatics Capabilities.md"
+  },
+  {
+    "id": "biotech-37",
+    "archetype": "biotech",
+    "title": "Biomaterials and Scaffold Technology for Tissue Engineering",
+    "part": "D",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/biotech/37 - Biomaterials and Scaffold Technology for Tissue Engineering.md"
+  },
+  {
+    "id": "biotech-38",
+    "archetype": "biotech",
+    "title": "Intellectual Property (IP) Portfolio Assessment",
+    "part": "E",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "PATENT_LIFE_YEARS"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/biotech/38 - Intellectual Property (IP) Portfolio Assessment.md"
+  },
+  {
+    "id": "biotech-39",
+    "archetype": "biotech",
+    "title": "Cash Burn Rate Relative to Milestone Achievement",
+    "part": "E",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "ANNUAL_BURN",
+      "RUNWAY_YEARS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY",
+      "FUNDING_MARKET"
+    ],
+    "relatedLeverCategories": [
+      "CASH_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/biotech/39 - Cash Burn Rate Relative to Milestone Achievement.md"
+  },
+  {
+    "id": "biotech-40",
+    "archetype": "biotech",
+    "title": "Partnerships and Licensing Agreements",
+    "part": "F",
+    "partLabel": "Organization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "PEAK_SALES_MULTIPLE",
+      "PARTNERED_ASSET_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "LICENSING_BD"
+    ],
+    "sourcePath": "data/analysis-library/biotech/40 - Partnerships and Licensing Agreements.md"
+  },
+  {
+    "id": "biotech-41",
+    "archetype": "biotech",
+    "title": "Scientific Advisory and Leadership Team Expertise",
+    "part": "F",
+    "partLabel": "Organization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/biotech/41 - Scientific Advisory and Leadership Team Expertise.md"
+  },
+  {
+    "id": "biotech-42",
+    "archetype": "biotech",
+    "title": "Partnerships with Academic and Research Institutions",
+    "part": "F",
+    "partLabel": "Organization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "PARTNERED_ASSET_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "LICENSING_BD"
+    ],
+    "sourcePath": "data/analysis-library/biotech/42 - Partnerships with Academic and Research Institutions.md"
+  },
+  {
+    "id": "biotech-43",
+    "archetype": "biotech",
+    "title": "CRADA (Cooperative Research and Development Agreement) Evaluation",
+    "part": "F",
+    "partLabel": "Organization",
+    "relatedMetricCodes": [
+      "PARTNERED_ASSET_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "LICENSING_BD"
+    ],
+    "sourcePath": "data/analysis-library/biotech/43 - CRADA (Cooperative Research and Development Agreement).md"
+  }
+]

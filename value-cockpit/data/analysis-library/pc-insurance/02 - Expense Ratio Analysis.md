@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-02
+part: A
+partLabel: Underwriting
+quant: [EXPENSE_RATIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME, COST_OPS, DISTRIBUTION_EFFICIENCY]
 ---
 # 2 · Expense Ratio Analysis
 

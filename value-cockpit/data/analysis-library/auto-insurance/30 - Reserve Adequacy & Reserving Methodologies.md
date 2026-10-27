@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/D
+kind: analysis
+id: auto-insurance-30
+part: D
+partLabel: Financial Performance & Reserving
+quant: [FLOAT_RATIO]
+causes: [RESERVE_RISK]
+levers: []
 ---
 # 30 · Reserve Adequacy & Reserving Methodologies
 

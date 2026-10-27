@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/F
+kind: analysis
+id: commercial-bank-31
+part: F
+partLabel: Digital and Technology Transformation
+quant: [REVENUE_GROWTH, COST_INCOME_RATIO]
+causes: [OPERATIONAL]
+levers: [COST_OPS, COST_TRANSFORMATION]
 ---
 # 31 · Core Banking Systems and Technology Transformation
 

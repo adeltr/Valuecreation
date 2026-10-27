@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-20
+part: B
+partLabel: Claims Management
+quant: []
+causes: [FINANCIAL, RESERVE_RISK]
+levers: []
 ---
 # 20 · Claims Settlement Reserve Variability Analysis
 

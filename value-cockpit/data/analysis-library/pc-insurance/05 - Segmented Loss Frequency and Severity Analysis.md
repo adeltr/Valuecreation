@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-05
+part: A
+partLabel: Underwriting
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 5 · Segmented Loss Frequency and Severity Analysis
 

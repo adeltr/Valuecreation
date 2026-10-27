@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-02
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: [MARKET]
+levers: [PRICING]
 ---
 # 2 · Uninsured-Underinsured Motorist Coverage Utilization Trends
 

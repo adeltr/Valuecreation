@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-15
+part: B
+partLabel: Claims Management
+quant: [FLOAT_RATIO, RESERVE_DEVELOPMENT_RATIO]
+causes: [FINANCIAL, RESERVE_RISK]
+levers: []
 ---
 # 15 · Claims Reserve Development Analysis
 

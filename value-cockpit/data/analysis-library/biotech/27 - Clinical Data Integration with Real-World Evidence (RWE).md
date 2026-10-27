@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-27
+part: B
+partLabel: Operations
+quant: []
+causes: [MARKET, REGULATORY]
+levers: [VOLUME, TRIAL_DESIGN]
 ---
 # 27 · Clinical Data Integration with Real-World Evidence (RWE)
 

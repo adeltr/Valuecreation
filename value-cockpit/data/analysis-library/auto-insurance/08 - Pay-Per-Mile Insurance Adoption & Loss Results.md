@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-08
+part: A
+partLabel: Pricing & Product Strategy
+quant: [REVENUE_GROWTH, POLICY_GROWTH]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, TELEMATICS_UBI, SEGMENT_GROWTH]
 ---
 # 8 · Pay-Per-Mile Insurance Adoption & Loss Results
 

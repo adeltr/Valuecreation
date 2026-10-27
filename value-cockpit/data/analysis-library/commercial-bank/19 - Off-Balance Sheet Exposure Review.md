@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-19
+part: C
+partLabel: Risk Management and Compliance
+quant: []
+causes: []
+levers: []
 ---
 # 19 · Off-Balance Sheet Exposure Review
 

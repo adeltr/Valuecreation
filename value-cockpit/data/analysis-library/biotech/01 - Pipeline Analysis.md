@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-01
+part: A
+partLabel: Research & Development (R&D)
+quant: [REVENUE_GROWTH, PROBABILITY_OF_SUCCESS, YEARS_TO_LAUNCH, PIPELINE_ASSETS]
+causes: [REGULATORY]
+levers: []
 ---
 # 1 · Pipeline Analysis
 

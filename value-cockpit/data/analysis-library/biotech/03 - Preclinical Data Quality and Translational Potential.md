@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-03
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [OPERATIONAL]
+levers: [VOLUME]
 ---
 # 3 · Preclinical Data Quality and Translational Potential
 

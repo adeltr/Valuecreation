@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/E
+kind: analysis
+id: commercial-bank-28
+part: E
+partLabel: Operations and Process Improvement
+quant: [COST_INCOME_RATIO]
+causes: [FINANCIAL, MARKET]
+levers: [COST_TRANSFORMATION]
 ---
 # 28 · Branch Network Optimization
 

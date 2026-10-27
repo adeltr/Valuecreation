@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/J
+kind: analysis
+id: life-insurance-40
+part: J
+partLabel: Operational Efficiency and Cost Management
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, ADMIN_AUTOMATION]
 ---
 # 40 · Claims Management Efficiency and Fraud Detection Analysis
 

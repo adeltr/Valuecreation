@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/G
+kind: analysis
+id: pc-insurance-43
+part: G
+partLabel: Regulatory & Compliance
+quant: []
+causes: [MARKET, REGULATORY]
+levers: []
 ---
 # 43 · Regulatory and Compliance Risk Analysis
 

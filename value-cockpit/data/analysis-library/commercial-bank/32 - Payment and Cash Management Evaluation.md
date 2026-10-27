@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/G
+kind: analysis
+id: commercial-bank-32
+part: G
+partLabel: Payment Services and Transaction Banking
+quant: [NON_INTEREST_INCOME_SHARE]
+causes: [FINANCIAL]
+levers: [PRICING, VOLUME, COST_OPS, FEE_BUSINESS_GROWTH]
 ---
 # 32 · Payment and Cash Management Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/A
+kind: analysis
+id: life-insurance-02
+part: A
+partLabel: Policyholder Behavior and Retention
+quant: [PERSISTENCY_RATE]
+causes: [FINANCIAL]
+levers: [PRICING, VOLUME, COST_OPS, PERSISTENCY_PROGRAM]
 ---
 # 2 · Policy Renewal and Persistency Rate Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/H
+kind: analysis
+id: life-insurance-36
+part: H
+partLabel: Regulatory Compliance and Financial Reporting
+quant: []
+causes: [OPERATIONAL, REGULATORY]
+levers: []
 ---
 # 36 · Regulatory Compliance and IFRS 17 Implementation Readiness Review
 

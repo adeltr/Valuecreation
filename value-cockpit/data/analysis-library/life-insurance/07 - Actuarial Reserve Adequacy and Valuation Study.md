@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/B
+kind: analysis
+id: life-insurance-07
+part: B
+partLabel: Actuarial and Reserve Management
+quant: [RESERVES]
+causes: [FINANCIAL, REGULATORY]
+levers: []
 ---
 # 7 · Actuarial Reserve Adequacy and Valuation Study
 

@@ -93,6 +93,15 @@ describe('App', () => {
     expect(within(sim).getByText(/PRICE_ELASTICITY = -0,8/)).toBeTruthy();
   });
 
+  it('a bank is valued on book value: P/BV exit multiple, book-value bridge rows', () => {
+    render(<App />);
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'commercial-bank' } });
+    const sim = screen.getByRole('region', { name: 'Simulation' });
+    expect(within(sim).getByLabelText(/Multiple de sortie \(P\/BV/)).toBeTruthy();
+    expect(within(sim).getByText('BOOK_VALUE_EXIT')).toBeTruthy();
+    expect(within(sim).queryByText('EBITDA_EXIT')).toBeNull();
+  });
+
   it('cpg uses its level-2 template (volume × price-mix, gross-to-net margin)', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });

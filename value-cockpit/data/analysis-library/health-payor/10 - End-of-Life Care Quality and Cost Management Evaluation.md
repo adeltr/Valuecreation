@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-10
+part: A
+partLabel: Financial Performance and Cost Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: []
 ---
 # 10 · End-of-Life Care Quality and Cost Management Evaluation
 

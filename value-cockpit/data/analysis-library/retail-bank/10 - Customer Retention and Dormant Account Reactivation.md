@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/A
+kind: analysis
+id: retail-bank-10
+part: A
+partLabel: Customer Behavior and Engagement
+quant: [CUSTOMER_ATTRITION_RATE]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, ATTRITION_REDUCTION]
 ---
 # 10 · Customer Retention and Dormant Account Reactivation Strategy Analysis
 

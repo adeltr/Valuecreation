@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-09
+part: B
+partLabel: Lending and Credit Management
+quant: [LOAN_GROWTH]
+causes: []
+levers: [PRICING, VOLUME, COST_OPS, ORIGINATION_GROWTH]
 ---
 # 9 · Syndicated Loan and Distribution Capabilities Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/B
+kind: analysis
+id: retail-bank-14
+part: B
+partLabel: Product and Portfolio Performance
+quant: [LOANS_PER_CUSTOMER]
+causes: [MARKET]
+levers: [MIX]
 ---
 # 14 · Mortgage Portfolio Risk and Valuation Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/G
+kind: analysis
+id: retail-bank-38
+part: G
+partLabel: Market Penetration and Strategic Growth
+quant: []
+causes: []
+levers: [VOLUME, PRICING]
 ---
 # 38 · Fee Income and Revenue Dependency Analysis
 

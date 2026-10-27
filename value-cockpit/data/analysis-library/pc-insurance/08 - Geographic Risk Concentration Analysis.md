@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-08
+part: A
+partLabel: Underwriting
+quant: []
+causes: [REGULATORY]
+levers: [VOLUME, PORTFOLIO_STEERING]
 ---
 # 8 · Geographic Risk Concentration Analysis
 

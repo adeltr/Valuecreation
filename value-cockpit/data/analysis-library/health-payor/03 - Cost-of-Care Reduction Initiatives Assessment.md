@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-03
+part: A
+partLabel: Financial Performance and Cost Management
+quant: [MEDICAL_LOSS_RATIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [CARE_MANAGEMENT]
 ---
 # 3 · Cost-of-Care Reduction Initiatives Assessment
 

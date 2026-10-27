@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-16
+part: B
+partLabel: Claims Management
+quant: [CLAIMS_SETTLEMENT_DAYS]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, CLAIMS_EXCELLENCE]
 ---
 # 16 · Claims Settlement Speed and Efficiency Analysis
 

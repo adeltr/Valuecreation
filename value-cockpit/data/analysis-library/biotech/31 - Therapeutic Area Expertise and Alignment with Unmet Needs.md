@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/C
+kind: analysis
+id: biotech-31
+part: C
+partLabel: Marketing
+quant: []
+causes: [MARKET]
+levers: [MARKET_ACCESS]
 ---
 # 31 · Therapeutic Area Expertise and Alignment with Unmet Needs
 

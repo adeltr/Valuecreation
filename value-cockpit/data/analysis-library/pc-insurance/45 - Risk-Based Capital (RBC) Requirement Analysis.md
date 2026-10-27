@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/G
+kind: analysis
+id: pc-insurance-45
+part: G
+partLabel: Regulatory & Compliance
+quant: [SOLVENCY_RATIO]
+causes: [FINANCIAL, REGULATORY]
+levers: [PRICING, MIX, COST_OPS]
 ---
 # 45 · Risk-Based Capital (RBC) Requirement Analysis
 

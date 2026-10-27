@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/A
+kind: analysis
+id: life-insurance-01
+part: A
+partLabel: Policyholder Behavior and Retention
+quant: [LAPSE_RATE]
+causes: []
+levers: [PRICING, VOLUME, PERSISTENCY_PROGRAM]
 ---
 # 1 · Policyholder Behavior and Lapse Rate Analysis
 

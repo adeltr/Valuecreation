@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-21
+part: B
+partLabel: Operations
+quant: [ORPHAN_DESIGNATIONS]
+causes: [MARKET, REGULATORY]
+levers: [REGULATORY_STRATEGY]
 ---
 # 21 · Orphan Drug Designation and Exclusivity Opportunities
 

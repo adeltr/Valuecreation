@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/H
+kind: analysis
+id: commercial-bank-37
+part: H
+partLabel: Specialized and Industry-Specific Solutions
+quant: []
+causes: [FINANCIAL]
+levers: [PRICING, VOLUME, COST_OPS, FEE_BUSINESS_GROWTH]
 ---
 # 37 · Trade Finance Instrument Profitability
 

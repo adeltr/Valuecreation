@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/E
+kind: analysis
+id: auto-insurance-34
+part: E
+partLabel: Technology, Mobility & Operational Efficiency
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [PRICING, SEGMENT_GROWTH]
 ---
 # 34 · Rideshare Gap Coverage & TNC Endorsement Performance
 

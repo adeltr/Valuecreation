@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/C
+kind: analysis
+id: commercial-bank-22
+part: C
+partLabel: Risk Management and Compliance
+quant: [RWA_DENSITY]
+causes: [FINANCIAL]
+levers: []
 ---
 # 22 · Basel Counterparty Credit Risk Review
 

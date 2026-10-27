@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/F
+kind: analysis
+id: health-payor-30
+part: F
+partLabel: Claims Management and Compliance
+quant: [ADMIN_EXPENSE_RATIO]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, ADMIN_AUTOMATION]
 ---
 # 30 · Claims Processing Efficiency Evaluation
 

@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-06
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: []
+levers: [PRICING]
 ---
 # 6 · Defensive Driving Discount Efficacy
 

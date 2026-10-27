@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-28
+part: B
+partLabel: Operations
+quant: [YEARS_TO_LAUNCH]
+causes: [OPERATIONAL, REGULATORY]
+levers: [COST_OPS, TRIAL_DESIGN]
 ---
 # 28 · Adaptive Trial Design and Utilization in Drug Development
 

@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/H
+kind: analysis
+id: commercial-bank-35
+part: H
+partLabel: Specialized and Industry-Specific Solutions
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [PRICING, MIX, COST_PROCUREMENT, COST_OPS, ORIGINATION_GROWTH]
 ---
 # 35 · Lease Financing and Equipment Finance Review
 

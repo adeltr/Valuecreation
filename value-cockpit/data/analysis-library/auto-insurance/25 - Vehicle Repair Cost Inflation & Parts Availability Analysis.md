@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/C
+kind: analysis
+id: auto-insurance-25
+part: C
+partLabel: Claims & Loss Management
+quant: [CLAIM_SEVERITY]
+causes: [FINANCIAL, REPAIR_COST_INFLATION]
+levers: [COST_PROCUREMENT, REPAIR_NETWORK]
 ---
 # 25 · Vehicle Repair Cost Inflation & Parts Availability Analysis
 

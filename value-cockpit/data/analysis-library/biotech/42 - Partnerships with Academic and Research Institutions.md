@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/F
+kind: analysis
+id: biotech-42
+part: F
+partLabel: Organization
+quant: [REVENUE_GROWTH, PARTNERED_ASSET_SHARE]
+causes: [MARKET]
+levers: [VOLUME, LICENSING_BD]
 ---
 # 42 · Partnerships with Academic and Research Institutions
 

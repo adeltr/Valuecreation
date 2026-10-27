@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-03
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING]
 ---
 # 3 · GAP Insurance Performance Evaluation
 

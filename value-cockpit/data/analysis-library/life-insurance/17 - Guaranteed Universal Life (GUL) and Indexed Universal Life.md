@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-17
+part: C
+partLabel: Profitability and Product Performance
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, PRODUCT_MIX_OPTIMIZATION]
 ---
 # 17 · Guaranteed Universal Life (GUL) and Indexed Universal Life (IUL) Product Performance Review
 

@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/C
+kind: analysis
+id: auto-insurance-22
+part: C
+partLabel: Claims & Loss Management
+quant: [CLAIM_FREQUENCY, CLAIM_SEVERITY]
+causes: [COMMERCIAL, MARKET]
+levers: [PRICING]
 ---
 # 22 · Claims Frequency & Severity Analysis
 

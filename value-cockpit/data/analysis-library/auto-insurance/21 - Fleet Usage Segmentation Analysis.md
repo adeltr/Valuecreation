@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-21
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: [POLICIES_IN_FORCE]
+causes: [FINANCIAL, ORGANIZATIONAL]
+levers: [PRICING]
 ---
 # 21 · Fleet Usage Segmentation Analysis
 

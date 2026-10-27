@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/C
+kind: analysis
+id: retail-bank-23
+part: C
+partLabel: Operational Efficiency and Risk Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_OPS, CREDIT_RISK_MANAGEMENT]
 ---
 # 23 · Loan Origination and Underwriting Efficiency Analysis
 

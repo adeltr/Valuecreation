@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/E
+kind: analysis
+id: life-insurance-29
+part: E
+partLabel: Investment and Asset-Liability Management
+quant: [INVESTMENT_SPREAD, DURATION_GAP]
+causes: [FINANCIAL, INTEREST_RATES]
+levers: [MIX, ALM_OPTIMIZATION]
 ---
 # 29 · Investment Portfolio Performance and Asset-Liability Matching (ALM) Review
 

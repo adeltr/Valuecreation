@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/E
+kind: analysis
+id: auto-insurance-33
+part: E
+partLabel: Technology, Mobility & Operational Efficiency
+quant: []
+causes: [MARKET]
+levers: [VOLUME, SEGMENT_GROWTH]
 ---
 # 33 · Emerging Mobility Coverage Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-01
+part: A
+partLabel: Underwriting
+quant: [LOSS_RATIO]
+causes: [FINANCIAL]
+levers: [PRICING, MIX, COST_OPS]
 ---
 # 1 · Loss Ratio Analysis
 

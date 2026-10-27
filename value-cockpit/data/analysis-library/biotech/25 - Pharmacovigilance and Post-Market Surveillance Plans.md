@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-25
+part: B
+partLabel: Operations
+quant: []
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: [VOLUME]
 ---
 # 25 · Pharmacovigilance and Post-Market Surveillance Plans
 

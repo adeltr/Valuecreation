@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/E
+kind: analysis
+id: commercial-bank-29
+part: E
+partLabel: Operations and Process Improvement
+quant: []
+causes: [COMMERCIAL]
+levers: [PRICING, VOLUME]
 ---
 # 29 · Customer Churn and Retention Metrics
 

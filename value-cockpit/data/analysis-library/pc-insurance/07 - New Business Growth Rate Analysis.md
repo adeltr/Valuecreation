@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-07
+part: A
+partLabel: Underwriting
+quant: [REVENUE_GROWTH, NET_PREMIUMS_EARNED, PREMIUM_GROWTH]
+causes: [COMMERCIAL, MARKET]
+levers: [VOLUME, COST_OPS, RETENTION_GROWTH]
 ---
 # 7 · New Business Growth Rate Analysis
 

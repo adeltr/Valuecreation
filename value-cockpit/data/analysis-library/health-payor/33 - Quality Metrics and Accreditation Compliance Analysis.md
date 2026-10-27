@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/F
+kind: analysis
+id: health-payor-33
+part: F
+partLabel: Claims Management and Compliance
+quant: [STAR_RATING]
+causes: [OPERATIONAL, MARKET, REGULATORY]
+levers: []
 ---
 # 33 · Quality Metrics and Accreditation Compliance Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/H
+kind: analysis
+id: health-payor-41
+part: H
+partLabel: Government Programs and Regulatory
+quant: [MEMBERS, MEMBER_GROWTH, ADMIN_EXPENSE_RATIO]
+causes: [OPERATIONAL]
+levers: [COST_OPS, ADMIN_AUTOMATION]
 ---
 # 41 · Enrollment and Eligibility Process Efficiency Review
 

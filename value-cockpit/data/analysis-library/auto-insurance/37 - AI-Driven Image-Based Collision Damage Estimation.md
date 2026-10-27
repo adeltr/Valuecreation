@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/E
+kind: analysis
+id: auto-insurance-37
+part: E
+partLabel: Technology, Mobility & Operational Efficiency
+quant: []
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
+levers: [VOLUME, COST_OPS, REPAIR_NETWORK, CLAIMS_EXCELLENCE]
 ---
 # 37 · AI-Driven Image-Based Collision Damage Estimation
 

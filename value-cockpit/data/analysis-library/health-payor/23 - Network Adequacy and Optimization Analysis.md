@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/D
+kind: analysis
+id: health-payor-23
+part: D
+partLabel: Provider Network and Contracting
+quant: []
+causes: [FINANCIAL, REGULATORY]
+levers: [VOLUME, MIX]
 ---
 # 23 · Network Adequacy and Optimization Analysis
 

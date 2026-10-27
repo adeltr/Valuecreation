@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/C
+kind: analysis
+id: health-payor-22
+part: C
+partLabel: Care and Disease Management Programs
+quant: []
+causes: [FINANCIAL]
+levers: [CARE_MANAGEMENT]
 ---
 # 22 · Ambulatory Care Sensitive Conditions Management Analysis
 

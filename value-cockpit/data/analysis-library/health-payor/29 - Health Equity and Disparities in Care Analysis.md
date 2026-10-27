@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/E
+kind: analysis
+id: health-payor-29
+part: E
+partLabel: Risk Assessment and Population Health
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [VOLUME, WC_DSO]
 ---
 # 29 · Health Equity and Disparities in Care Analysis
 

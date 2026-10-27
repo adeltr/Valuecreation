@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-03
+part: A
+partLabel: Underwriting
+quant: [LOSS_RATIO, EXPENSE_RATIO, COMBINED_RATIO]
+causes: [FINANCIAL]
+levers: [PRICING, MIX]
 ---
 # 3 · Underwriting Profitability and Combined Ratio Analysis
 

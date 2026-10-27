@@ -40,6 +40,8 @@ export interface FamilyBridge {
   formulas: Record<string, string>;
   /** Rows of the simulation's bridge table, MOIC last. */
   summaryRows: string[];
+  /** What ENTRY_MULTIPLE / EXIT_MULTIPLE multiply, for display. */
+  multipleLabel: string;
 }
 
 // Approximations (docs/16): book value accumulates net income on a straight line from the
@@ -51,6 +53,7 @@ export const FAMILY_BRIDGE: Record<BridgeFamily, FamilyBridge> = {
     inputs: ['EBITDA_ENTRY', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY', 'FCF_ANNUAL'],
     formulas: BRIDGE_FORMULAS,
     summaryRows: ['EBITDA_ENTRY', 'EQUITY_ENTRY', 'EBITDA_EXIT', 'NET_DEBT_EXIT', 'EQUITY_EXIT', 'MOIC'],
+    multipleLabel: 'EV/EBITDA',
   },
   book_value: {
     anchor: 'NET_INCOME_EXIT',
@@ -65,6 +68,7 @@ export const FAMILY_BRIDGE: Record<BridgeFamily, FamilyBridge> = {
       MOIC: '(EQUITY_EXIT + DIVIDENDS_CUMULATIVE) / EQUITY_ENTRY',
     },
     summaryRows: ['BOOK_VALUE_ENTRY', 'EQUITY_ENTRY', 'NET_INCOME_EXIT', 'BOOK_VALUE_EXIT', 'DIVIDENDS_CUMULATIVE', 'EQUITY_EXIT', 'MOIC'],
+    multipleLabel: 'P/BV',
   },
   rnpv: {
     anchor: 'RNPV_EXIT',
@@ -77,5 +81,6 @@ export const FAMILY_BRIDGE: Record<BridgeFamily, FamilyBridge> = {
       MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
     },
     summaryRows: ['RNPV_ENTRY', 'EQUITY_ENTRY', 'RNPV_EXIT', 'CASH_EXIT', 'RUNWAY_YEARS', 'EQUITY_EXIT', 'MOIC'],
+    multipleLabel: '× rNPV',
   },
 };

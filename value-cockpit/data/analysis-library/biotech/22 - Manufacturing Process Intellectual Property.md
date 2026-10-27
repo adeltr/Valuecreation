@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-22
+part: B
+partLabel: Operations
+quant: [PATENT_LIFE_YEARS]
+causes: [OPERATIONAL, MARKET]
+levers: [VOLUME, MIX]
 ---
 # 22 · Manufacturing Process Intellectual Property
 

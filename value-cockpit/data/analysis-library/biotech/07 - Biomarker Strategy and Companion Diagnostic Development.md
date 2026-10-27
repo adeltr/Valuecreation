@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-07
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [MARKET, REGULATORY]
+levers: [VOLUME, BIOMARKER_SELECTION]
 ---
 # 7 · Biomarker Strategy and Companion Diagnostic Development
 

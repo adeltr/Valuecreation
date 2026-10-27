@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/F
+kind: analysis
+id: life-insurance-32
+part: F
+partLabel: Distribution and Channel Performance
+quant: [REVENUE_GROWTH]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [VOLUME, COST_OPS, DISTRIBUTION_EFFICIENCY]
 ---
 # 32 · Bancassurance Channel Integration and Performance Review
 

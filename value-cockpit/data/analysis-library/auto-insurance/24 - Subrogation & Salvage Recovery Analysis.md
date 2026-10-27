@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/C
+kind: analysis
+id: auto-insurance-24
+part: C
+partLabel: Claims & Loss Management
+quant: [SUBROGATION_RECOVERY_RATE]
+causes: [OPERATIONAL, FINANCIAL]
+levers: [COST_PROCUREMENT, COST_OPS, RECOVERY_SALVAGE]
 ---
 # 24 · Subrogation & Salvage Recovery Analysis
 

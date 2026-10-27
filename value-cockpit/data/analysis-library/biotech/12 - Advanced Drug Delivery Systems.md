@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-12
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: []
+levers: [VOLUME]
 ---
 # 12 · Advanced Drug Delivery Systems
 

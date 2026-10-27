@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/E
+kind: analysis
+id: biotech-38
+part: E
+partLabel: Finance
+quant: [PATENT_LIFE_YEARS]
+causes: [MARKET]
+levers: []
 ---
 # 38 · Intellectual Property (IP) Portfolio Assessment
 

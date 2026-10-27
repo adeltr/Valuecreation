@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-22
+part: C
+partLabel: Profitability and Product Performance
+quant: [REVENUE_GROWTH, RESERVE_GROWTH, GROSS_PREMIUMS, PREMIUM_GROWTH]
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING, VOLUME]
 ---
 # 22 · Premium Growth and New Business Volume Analysis
 

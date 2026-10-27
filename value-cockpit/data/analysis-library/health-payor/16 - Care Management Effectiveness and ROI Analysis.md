@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/C
+kind: analysis
+id: health-payor-16
+part: C
+partLabel: Care and Disease Management Programs
+quant: [MEDICAL_LOSS_RATIO]
+causes: [FINANCIAL]
+levers: [CARE_MANAGEMENT]
 ---
 # 16 · Care Management Effectiveness and ROI Analysis
 

@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/B
+kind: analysis
+id: auto-insurance-13
+part: B
+partLabel: Underwriting & Risk Segmentation
+quant: [POLICY_GROWTH, TELEMATICS_PENETRATION]
+causes: [COMMERCIAL]
+levers: [PRICING, COST_PROCUREMENT, TELEMATICS_UBI]
 ---
 # 13 · Telematics & Usage-Based Insurance Performance
 

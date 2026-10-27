@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-08
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [CLINICAL_FAILURE]
+levers: []
 ---
 # 8 · Immunogenicity Risk and Management for Biologics
 

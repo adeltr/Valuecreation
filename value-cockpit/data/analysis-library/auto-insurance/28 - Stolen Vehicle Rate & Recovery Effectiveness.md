@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/C
+kind: analysis
+id: auto-insurance-28
+part: C
+partLabel: Claims & Loss Management
+quant: [THEFT_RECOVERY_RATE]
+causes: [FINANCIAL]
+levers: [RECOVERY_SALVAGE]
 ---
 # 28 · Stolen Vehicle Rate & Recovery Effectiveness
 

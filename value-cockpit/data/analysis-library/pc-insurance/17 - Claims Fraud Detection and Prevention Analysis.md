@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/B
+kind: analysis
+id: pc-insurance-17
+part: B
+partLabel: Claims Management
+quant: []
+causes: [OPERATIONAL, FINANCIAL]
+levers: [CLAIMS_EXCELLENCE]
 ---
 # 17 · Claims Fraud Detection and Prevention Analysis
 

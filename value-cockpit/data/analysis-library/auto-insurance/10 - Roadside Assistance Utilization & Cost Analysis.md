@@ -2,6 +2,13 @@
 tags:
   - auto-insurance
   - part/A
+kind: analysis
+id: auto-insurance-10
+part: A
+partLabel: Pricing & Product Strategy
+quant: []
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS]
 ---
 # 10 · Roadside Assistance Utilization & Cost Analysis
 

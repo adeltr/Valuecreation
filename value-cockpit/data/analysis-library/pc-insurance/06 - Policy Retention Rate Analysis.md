@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/A
+kind: analysis
+id: pc-insurance-06
+part: A
+partLabel: Underwriting
+quant: [POLICY_RETENTION_RATE]
+causes: [COMMERCIAL, FINANCIAL]
+levers: [PRICING, VOLUME, RETENTION_GROWTH]
 ---
 # 6 · Policy Retention Rate Analysis
 

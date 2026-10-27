@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/D
+kind: analysis
+id: commercial-bank-24
+part: D
+partLabel: Capital, Liquidity, and Funding
+quant: [LOAN_TO_DEPOSIT_RATIO, LIQUIDITY_COVERAGE_RATIO]
+causes: [FINANCIAL, MARKET, REGULATORY]
+levers: [VOLUME, DEPOSIT_FRANCHISE]
 ---
 # 24 · Liquidity and Funding Management Review
 

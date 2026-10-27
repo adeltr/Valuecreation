@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/B
+kind: analysis
+id: biotech-24
+part: B
+partLabel: Operations
+quant: [TRIAL_ENROLLMENT_RATE]
+causes: [OPERATIONAL]
+levers: [VOLUME, TRIAL_DESIGN]
 ---
 # 24 · Patient Recruitment and Retention Strategies for Clinical Trials
 

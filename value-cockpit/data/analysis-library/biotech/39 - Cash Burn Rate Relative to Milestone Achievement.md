@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/E
+kind: analysis
+id: biotech-39
+part: E
+partLabel: Finance
+quant: [ANNUAL_BURN, RUNWAY_YEARS]
+causes: [OPERATIONAL, FINANCIAL, REGULATORY, FUNDING_MARKET]
+levers: [CASH_DISCIPLINE]
 ---
 # 39 · Cash Burn Rate Relative to Milestone Achievement
 

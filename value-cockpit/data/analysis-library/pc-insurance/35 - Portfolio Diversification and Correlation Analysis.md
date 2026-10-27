@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/D
+kind: analysis
+id: pc-insurance-35
+part: D
+partLabel: Finance
+quant: []
+causes: [FINANCIAL, MARKET]
+levers: [MIX, INVESTMENT_ALLOCATION]
 ---
 # 35 · Portfolio Diversification and Correlation Analysis
 

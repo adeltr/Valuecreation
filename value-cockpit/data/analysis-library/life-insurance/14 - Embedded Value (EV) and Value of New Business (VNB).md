@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-14
+part: C
+partLabel: Profitability and Product Performance
+quant: [REVENUE_GROWTH, VNB_MARGIN]
+causes: [FINANCIAL]
+levers: [PRICING, VOLUME, COST_OPS]
 ---
 # 14 · Embedded Value (EV) and Value of New Business (VNB) Analysis
 

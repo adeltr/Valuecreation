@@ -2,6 +2,13 @@
 tags:
   - pc-insurance
   - part/D
+kind: analysis
+id: pc-insurance-34
+part: D
+partLabel: Finance
+quant: [INVESTMENT_YIELD]
+causes: [FINANCIAL]
+levers: [MIX, INVESTMENT_ALLOCATION]
 ---
 # 34 · Investment Portfolio Risk and Return Analysis
 

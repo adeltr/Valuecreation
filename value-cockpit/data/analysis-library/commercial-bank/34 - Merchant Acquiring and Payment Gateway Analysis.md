@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/G
+kind: analysis
+id: commercial-bank-34
+part: G
+partLabel: Payment Services and Transaction Banking
+quant: [NON_INTEREST_INCOME_SHARE]
+causes: []
+levers: [PRICING, FEE_BUSINESS_GROWTH]
 ---
 # 34 · Merchant Acquiring and Payment Gateway Analysis
 

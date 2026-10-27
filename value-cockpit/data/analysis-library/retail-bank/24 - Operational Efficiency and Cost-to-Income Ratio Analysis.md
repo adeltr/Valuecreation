@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/C
+kind: analysis
+id: retail-bank-24
+part: C
+partLabel: Operational Efficiency and Risk Management
+quant: [COST_TO_SERVE]
+causes: [OPERATIONAL, FINANCIAL, MARKET]
+levers: [VOLUME, COST_OPS]
 ---
 # 24 · Operational Efficiency and Cost-to-Income Ratio Analysis
 

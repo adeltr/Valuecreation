@@ -2,6 +2,13 @@
 tags:
   - commercial-bank
   - part/B
+kind: analysis
+id: commercial-bank-11
+part: B
+partLabel: Lending and Credit Management
+quant: []
+causes: [FINANCIAL]
+levers: [COST_OPS, ORIGINATION_GROWTH]
 ---
 # 11 · Cash Flow and Collateral-Based Lending Review
 

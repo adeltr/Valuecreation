@@ -2,6 +2,13 @@
 tags:
   - retail-bank
   - part/B
+kind: analysis
+id: retail-bank-19
+part: B
+partLabel: Product and Portfolio Performance
+quant: [COST_OF_RISK]
+causes: [COMMERCIAL, CREDIT_CYCLE]
+levers: [COST_OPS, CREDIT_RISK_MANAGEMENT]
 ---
 # 19 · Loan Repayment Behavior and Default Management Strategy Assessment
 

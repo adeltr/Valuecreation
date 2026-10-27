@@ -2,6 +2,13 @@
 tags:
   - health-payor
   - part/A
+kind: analysis
+id: health-payor-05
+part: A
+partLabel: Financial Performance and Cost Management
+quant: []
+causes: [FINANCIAL, RISK_POOL_SELECTION]
+levers: []
 ---
 # 5 · Risk Pool and Reinsurance Structure Evaluation
 

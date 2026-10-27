@@ -2,6 +2,13 @@
 tags:
   - life-insurance
   - part/C
+kind: analysis
+id: life-insurance-19
+part: C
+partLabel: Profitability and Product Performance
+quant: []
+causes: [COMMERCIAL, FINANCIAL, MARKET]
+levers: [PRICING]
 ---
 # 19 · Living Benefits Utilization and Impact on Profitability Study
 

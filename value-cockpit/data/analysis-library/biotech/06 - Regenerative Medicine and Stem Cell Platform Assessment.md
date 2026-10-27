@@ -2,6 +2,13 @@
 tags:
   - biotech
   - part/A
+kind: analysis
+id: biotech-06
+part: A
+partLabel: Research & Development (R&D)
+quant: []
+causes: [REGULATORY]
+levers: [VOLUME, MIX]
 ---
 # 6 · Regenerative Medicine and Stem Cell Platform Assessment
 
