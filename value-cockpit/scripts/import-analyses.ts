@@ -94,7 +94,8 @@ mkdirSync(OUT_DIR, { recursive: true });
 const files = readdirSync(srcDir).filter((f) => /^\d{2} - .*\.md$/.test(f)).sort();
 
 for (const file of files) {
-  const text = readFileSync(join(srcDir, file), 'utf8').replace(/\r\n/g, '\n');
+  // Some guides carry zero-width spaces after bullets and list numbers ("1.\u200b ").
+  const text = readFileSync(join(srcDir, file), 'utf8').replace(/\r\n/g, '\n').replace(/\u200b/g, '');
   const fm = text.match(/^---\n([\s\S]*?)\n---\n/);
   const categorie = fm?.[1].match(/categorie:\s*"([A-Z])\.\s*(.+)"/);
   if (!categorie) throw new Error(`${file}: missing categorie in frontmatter`);

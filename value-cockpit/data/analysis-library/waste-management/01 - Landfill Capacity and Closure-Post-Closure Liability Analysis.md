@@ -12,13 +12,13 @@ To determine the remaining usable life of a landfill, estimate closure and post-
 
 
 ## 📊 Data required
-- ​ Permitted landfill capacity (cubic yards)
-- ​ Historical and current fill rate (tons or cubic yards per year)
-- ​ Average compaction rates or density factors
-- ​ Regulatory requirements for closure and post-closure (monitoring, maintenance, etc.)
-- ​ Cost estimates for closure components (final cover, gas management, leachate systems)
-- ​ Cost estimates for post-closure care (monitoring, maintenance, reporting)
-- ​ Discount rate or financial assumptions (for Net Present Value calculations)
+- Permitted landfill capacity (cubic yards)
+- Historical and current fill rate (tons or cubic yards per year)
+- Average compaction rates or density factors
+- Regulatory requirements for closure and post-closure (monitoring, maintenance, etc.)
+- Cost estimates for closure components (final cover, gas management, leachate systems)
+- Cost estimates for post-closure care (monitoring, maintenance, reporting)
+- Discount rate or financial assumptions (for Net Present Value calculations)
 
 
 ## 🪜 Step-by-step
@@ -35,20 +35,24 @@ Apply an appropriate discount rate to both closure and post-closure costs to arr
 
 
 ## 📤 Output format
-- ​ A table summarizing remaining capacity, annual fill rate, and projected remaining operational years
-- ​ A breakdown of estimated closure and post-closure cost components
-- ​ Net Present Value calculations of closure and post-closure liabilities
-- ​ Charts or graphs illustrating landfill life projections over time
+- A table summarizing remaining capacity, annual fill rate, and projected remaining operational years
+- A breakdown of estimated closure and post-closure cost components
+- Net Present Value calculations of closure and post-closure liabilities
+- Charts or graphs illustrating landfill life projections over time
 
 
 ## 🔍 How to interpret the results
-- ​ A short remaining landfill life indicates the need for expansion, alternative disposal strategies, or accelerated waste diversion.
-- ​ High closure or post-closure cost estimates highlight significant financial obligations; proper funding mechanisms (escrow, bonding) should be in place.
-- ​ Compliance with regulatory guidelines ensures that the closure and post-closure plan protects environmental health and aligns with legal requirements.
+- A short remaining landfill life indicates the need for expansion, alternative disposal strategies, or accelerated waste diversion.
+- High closure or post-closure cost estimates highlight significant financial obligations; proper funding mechanisms (escrow, bonding) should be in place.
+- Compliance with regulatory guidelines ensures that the closure and post-closure plan protects environmental health and aligns with legal requirements.
 
 
 ## 🚀 Steps to improve
-1.​ Enhance compaction processes or introduce new landfill operating technologies to optimize airspace usage and extend landfill life. 2.​ Evaluate potential for landfill expansion or alternative disposal sites to delay closure. 3.​ Reduce waste inflow through recycling, diversion programs, or partnerships with local municipalities.
-7 4.​ Establish robust financial assurance funds or insurance instruments to manage closure/post-closure liabilities. 5.​ Integrate renewable energy projects (e.g., landfill gas-to-energy) to offset some closure costs and improve sustainability outcomes.
+1. Enhance compaction processes or introduce new landfill operating technologies to optimize airspace usage and extend landfill life.
+2. Evaluate potential for landfill expansion or alternative disposal sites to delay closure.
+3. Reduce waste inflow through recycling, diversion programs, or partnerships with local municipalities.
+7
+4. Establish robust financial assurance funds or insurance instruments to manage closure/post-closure liabilities.
+5. Integrate renewable energy projects (e.g., landfill gas-to-energy) to offset some closure costs and improve sustainability outcomes.
 8
 

@@ -1,0 +1,73 @@
+# Curation wine-spirits — mapping pré-rempli (niveau 1)
+
+> Statut : **à arbitrer**. Proposition automatique par mots-clés sur le vocabulaire
+> actif `wine-spirits` (base) :
+> métriques ← titre + Goal, leviers ← titres « Steps to improve », causes ← titre + Goal.
+> La colonne « indices » donne le mot qui a déclenché chaque proposition. Rien n'est
+> appliqué aux fichiers avant ta validation ; aucun terme n'est ajouté au vocabulaire.
+
+48 analyses · 15 sans métrique ni levier (qualitatives) · 9 à contenu réglementaire.
+
+## Mapping proposé
+
+| # | Partie | quant | levers | causes | indices |
+|---|---|---|---|---|---|
+| 01 | A | — | PRICING | COMMERCIAL, MARKET | PRICING←pricing · COMMERCIAL←consumer · MARKET←market |
+| 02 | A | REVENUE_GROWTH | VOLUME | COMMERCIAL, MARKET | REVENUE_GROWTH←demand · VOLUME←distribution · COMMERCIAL←consumer · MARKET←market |
+| 03 | A | — | — | COMMERCIAL, MARKET | COMMERCIAL←consumer · MARKET←markets |
+| 04 | A | — | VOLUME, MIX | COMMERCIAL | VOLUME←channels · MIX←portfolio · COMMERCIAL←customer |
+| 05 | A | REVENUE_GROWTH | VOLUME | COMMERCIAL | REVENUE_GROWTH←growth · VOLUME←channel · COMMERCIAL←channel |
+| 06 | A | REVENUE_GROWTH, DIO | PRICING, WC_DIO | COMMERCIAL, OPERATIONAL, MARKET | REVENUE_GROWTH←demand · DIO←inventory · PRICING←promotions · WC_DIO←inventory · COMMERCIAL←marketing · OPERATIONAL←production · MARKET←demand |
+| 07 | A | REVENUE_GROWTH | VOLUME | COMMERCIAL | REVENUE_GROWTH←growth · VOLUME←expand · COMMERCIAL←channels |
+| 08 | A | — | COST_OPS | COMMERCIAL, OPERATIONAL | COST_OPS←efficiency · COMMERCIAL←customer · OPERATIONAL←quality |
+| 09 | A | — | PRICING, COST_OPS | COMMERCIAL | PRICING←promotions · COST_OPS←staff · COMMERCIAL←customer |
+| 10 | B | REVENUE_GROWTH | MIX | COMMERCIAL, MARKET | REVENUE_GROWTH←growth · MIX←portfolio · COMMERCIAL←brand · MARKET←market |
+| 11 | B | — | PRICING, VOLUME | MARKET | PRICING←pricing · VOLUME←expand · MARKET←competitive |
+| 12 | B | — | — | COMMERCIAL | COMMERCIAL←pricing |
+| 13 | B | — | — | COMMERCIAL | COMMERCIAL←marketing |
+| 14 | B | — | PRICING | COMMERCIAL | PRICING←promotion · COMMERCIAL←brand |
+| 15 | B | — | VOLUME, WC_DIO | COMMERCIAL | VOLUME←channels · WC_DIO←inventory · COMMERCIAL←sales |
+| 16 | B | — | PRICING, VOLUME | COMMERCIAL, MARKET | PRICING←pricing · VOLUME←distribution · COMMERCIAL←brands · MARKET←market |
+| 17 | B | — | — | COMMERCIAL | COMMERCIAL←brands |
+| 18 | B | — | — | COMMERCIAL, MARKET | COMMERCIAL←brand · MARKET←competitions |
+| 19 | B | — | — | COMMERCIAL | COMMERCIAL←brands |
+| 20 | C | — | — | MARKET | MARKET←market |
+| 21 | C | — | — | COMMERCIAL, MARKET | COMMERCIAL←consumer · MARKET←market |
+| 22 | C | REVENUE_GROWTH | VOLUME | COMMERCIAL, MARKET | REVENUE_GROWTH←growth · VOLUME←expand · COMMERCIAL←consumer · MARKET←trend |
+| 23 | C | — | — | COMMERCIAL, OPERATIONAL, FINANCIAL | COMMERCIAL←brand · OPERATIONAL←process · FINANCIAL←costs |
+| 24 | C | — | PRICING | COMMERCIAL, OPERATIONAL | PRICING←pricing · COMMERCIAL←brand · OPERATIONAL←quality |
+| 25 | C | — | COST_PROCUREMENT | COMMERCIAL, OPERATIONAL, FINANCIAL | COST_PROCUREMENT←vendor · COMMERCIAL←brand · OPERATIONAL←production · FINANCIAL←cost |
+| 26 | D | COGS | COST_PROCUREMENT | OPERATIONAL, FINANCIAL | COGS←raw material · COST_PROCUREMENT←supplier · OPERATIONAL←supply chain · FINANCIAL←cost |
+| 27 | D | — | VOLUME | MARKET | VOLUME←distribution · MARKET←market |
+| 28 | D | COGS | COST_PROCUREMENT | OPERATIONAL, FINANCIAL | COGS←production costs · COST_PROCUREMENT←suppliers · OPERATIONAL←quality · FINANCIAL←costs |
+| 29 | D | COGS, DIO | COST_PROCUREMENT | OPERATIONAL, FINANCIAL, MARKET | COGS←raw materials · DIO←inventory · COST_PROCUREMENT←sourcing · OPERATIONAL←production · FINANCIAL←cost · MARKET←industry |
+| 30 | D | — | — | OPERATIONAL | OPERATIONAL←quality |
+| 31 | D | — | — | OPERATIONAL, MARKET | OPERATIONAL←quality · MARKET←industry |
+| 32 | E | REVENUE_GROWTH | VOLUME, COST_OPS | OPERATIONAL, FINANCIAL, MARKET | REVENUE_GROWTH←expansion · VOLUME←expand · COST_OPS←automation · OPERATIONAL←production · FINANCIAL←cost · MARKET←demand |
+| 33 | E | — | COST_PROCUREMENT, COST_OPS | OPERATIONAL, FINANCIAL | COST_PROCUREMENT←sourcing · COST_OPS←maintenance · OPERATIONAL←process · FINANCIAL←cost |
+| 34 | E | DIO | WC_DIO | OPERATIONAL, FINANCIAL | DIO←inventory · WC_DIO←inventory · OPERATIONAL←quality · FINANCIAL←cost |
+| 35 | E | — | — | OPERATIONAL | OPERATIONAL←quality |
+| 36 | E | — | COST_PROCUREMENT, COST_OPS | COMMERCIAL, OPERATIONAL, MARKET | COST_PROCUREMENT←supplier · COST_OPS←automation · COMMERCIAL←brand · OPERATIONAL←quality · MARKET←industry |
+| 37 | F | — | COST_OPS | OPERATIONAL, FINANCIAL, MARKET | COST_OPS←staff · OPERATIONAL←operational · FINANCIAL←financial · MARKET←industry |
+| 38 | F | — | COST_OPS | MARKET | COST_OPS←staff · MARKET←industry |
+| 39 | F | — | — | COMMERCIAL, MARKET | COMMERCIAL←brand · MARKET←market |
+| 40 | F | EBITDA_MARGIN, COGS | PRICING, COST_OPS | COMMERCIAL, OPERATIONAL, FINANCIAL | EBITDA_MARGIN←profitability · COGS←production costs · PRICING←pricing · COST_OPS←efficiency · COMMERCIAL←pricing · OPERATIONAL←production · FINANCIAL←cost |
+| 41 | G | EBITDA_MARGIN | PRICING | COMMERCIAL, FINANCIAL, MARKET | EBITDA_MARGIN←margin · PRICING←pricing · COMMERCIAL←pricing · FINANCIAL←margin · MARKET←competitive |
+| 42 | G | — | PRICING, VOLUME | COMMERCIAL | PRICING←promotions · VOLUME←expand · COMMERCIAL←consumer |
+| 43 | G | — | VOLUME | COMMERCIAL, FINANCIAL | VOLUME←channels · COMMERCIAL←marketing · FINANCIAL←investment |
+| 44 | G | EBITDA_MARGIN | VOLUME | COMMERCIAL, FINANCIAL, MARKET | EBITDA_MARGIN←profitability · VOLUME←channel · COMMERCIAL←channel · FINANCIAL←profitability · MARKET←market |
+| 45 | G | — | — | COMMERCIAL, MARKET | COMMERCIAL←sales · MARKET←market |
+| 46 | G | — | VOLUME, COST_PROCUREMENT | COMMERCIAL | VOLUME←loyalty · COST_PROCUREMENT←purchase · COMMERCIAL←customer |
+| 47 | H | — | COST_PROCUREMENT | COMMERCIAL, OPERATIONAL | COST_PROCUREMENT←sourcing · COMMERCIAL←consumer · OPERATIONAL←production |
+| 48 | H | — | — | COMMERCIAL, MARKET | COMMERCIAL←brand · MARKET←market |
+
+Libellés des parties : A Market and Consumer Insights · B Brand Positioning and Marketing Strategy · C Product Innovation and Development · D Supply Chain and Sourcing Stability · E Production and Quality Control · F Regulatory and Compliance · G Financial and Revenue Optimization · H Sustainability and Environmental Impact.
+
+## Hors vocabulaire
+
+Analyses réglementaires / conformité (20, 33, 36, 37, 38, 39, 40, 47, 48) : aucune cause de base ne les exprime. Candidat : remonter `REGULATORY` (déjà utilisé par aero et airline) dans la base.
+
+## Tes arbitrages attendus
+
+1. Corrige les lignes du mapping qui ne te conviennent pas (le reste sera appliqué tel quel).
+2. `REGULATORY` dans la base : oui / non ?

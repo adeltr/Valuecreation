@@ -52,6 +52,20 @@ Par archétype : je pré-remplis TOUS les frontmatters d'un coup avec la
 section source citée pour chaque mapping, dans `_curation.md`. Tu valides en
 une revue (tableau). Les lots de 5–6 restent pour A&D, déjà engagé.
 
+## Niveaux (validé)
+
+- **Niveau 2** — extension sectorielle + template dédié : `saas`, `aero`, `airline`.
+- **Niveau 1** — 16 types EBITDA sur le vocabulaire de base + template EBITDA générique
+  (`src/templates/ebitda.ts` : REVENUE × (1+REVENUE_GROWTH)^n × EBITDA_MARGIN) :
+  agriculture, chemical, cosmetics, cpg, electricity-generation, healthcare-provider,
+  hospitality, manufacturing, media, medical-device, metals-mining, pharma, retail,
+  third-party-logistics, waste-management, wine-spirits. Tables de curation pré-remplies
+  par mots-clés (`scripts/prefill-curation.ts`) dans `data/analysis-library/<type>/_curation.md`,
+  en attente de revue analyste.
+- **Hors EBITDA (phase 3)** — auto/life/P&C insurance, commercial/retail bank, health
+  payor, biotech : analyses importées, pas d'archétype tant que leur bridge n'existe pas.
+- Priorités niveau 2 : CPG, Manufacturing, Retail.
+
 ## Inventaire des archétypes (d'après les liens des 32 fichiers KPI)
 
 27 types d'entreprise : A&D, Agriculture, Airline, Auto Insurance,
