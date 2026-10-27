@@ -70,11 +70,12 @@ describe('App', () => {
     expect(within(company).getByLabelText('BOOK_TO_BILL')).toBeTruthy();
   });
 
-  it('a level-1 company type uses the generic EBITDA template', () => {
+  it('wine-spirits uses its level-2 template; no empty generic group in the picker', () => {
     render(<App />);
+    expect(screen.queryByRole('group', { name: 'Modèle EBITDA générique' })).toBeNull();
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'wine-spirits' } });
     const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByLabelText('REVENUE_GROWTH')).toBeTruthy();
+    expect(within(company).getByLabelText('EXCISE_TAX_RATE')).toBeTruthy();
     expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);
   });
 

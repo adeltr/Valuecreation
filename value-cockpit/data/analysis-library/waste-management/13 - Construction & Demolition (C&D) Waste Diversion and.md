@@ -6,7 +6,7 @@ kind: analysis
 id: waste-management-13
 part: B
 partLabel: Recycling & Materials Recovery
-quant: []
+quant: [RECYCLING_RATE, DIVERSION_RATE]
 causes: [FINANCIAL]
 levers: []
 ---

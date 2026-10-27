@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-16
 part: B
 partLabel: Brand Positioning and Marketing Strategy
-quant: []
+quant: [PRICE_MIX_GROWTH]
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, PREMIUMIZATION]
 ---
 # 16 · Craft vs. Mass-Produced Product Positioning Analysis
 

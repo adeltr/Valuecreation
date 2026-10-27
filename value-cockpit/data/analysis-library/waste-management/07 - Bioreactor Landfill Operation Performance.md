@@ -8,7 +8,7 @@ part: A
 partLabel: Landfill Management & Operations
 quant: [DSO]
 causes: [OPERATIONAL]
-levers: [COST_OPS, WC_DSO]
+levers: [COST_OPS, WC_DSO, WASTE_TO_ENERGY]
 ---
 # 7 · Bioreactor Landfill Operation Performance
 

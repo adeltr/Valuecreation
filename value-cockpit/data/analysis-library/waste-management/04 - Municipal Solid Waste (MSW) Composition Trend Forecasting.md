@@ -6,7 +6,7 @@ kind: analysis
 id: waste-management-04
 part: A
 partLabel: Landfill Management & Operations
-quant: []
+quant: [TONS_COLLECTED_MT, VOLUME_GROWTH]
 causes: [OPERATIONAL, MARKET, REGULATORY]
 levers: []
 ---

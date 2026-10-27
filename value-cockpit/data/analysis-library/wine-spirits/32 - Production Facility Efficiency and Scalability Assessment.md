@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-32
 part: E
 partLabel: Production and Quality Control
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, GROSS_MARGIN]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, PRODUCTION_EFFICIENCY]
 ---
 # 32 · Production Facility Efficiency and Scalability Assessment
 

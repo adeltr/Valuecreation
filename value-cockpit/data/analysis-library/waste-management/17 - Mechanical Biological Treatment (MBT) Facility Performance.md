@@ -6,7 +6,7 @@ kind: analysis
 id: waste-management-17
 part: C
 partLabel: Organics & Composting
-quant: []
+quant: [DIVERSION_RATE]
 causes: [OPERATIONAL]
 levers: [VOLUME, COST_OPS]
 ---

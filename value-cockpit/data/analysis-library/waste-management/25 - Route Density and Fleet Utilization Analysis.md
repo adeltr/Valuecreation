@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-25
 part: E
 partLabel: Fleet & Collection Optimization
-quant: [DSO]
+quant: [DSO, TONS_COLLECTED_MT, COLLECTION_COST_PER_TON, ROUTE_DENSITY]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, ROUTE_OPTIMIZATION]
 ---
 # 25 · Route Density and Fleet Utilization Analysis
 

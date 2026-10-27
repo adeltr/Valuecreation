@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-15
 part: B
 partLabel: Brand Positioning and Marketing Strategy
-quant: []
+quant: [PRICE_MIX_GROWTH]
 causes: [COMMERCIAL]
-levers: [VOLUME, WC_DIO]
+levers: [VOLUME, WC_DIO, PREMIUMIZATION]
 ---
 # 15 · Limited-Edition and Seasonal Product Performance Evaluation
 

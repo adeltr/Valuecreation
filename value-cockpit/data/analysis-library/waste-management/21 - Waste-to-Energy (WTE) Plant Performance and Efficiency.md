@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-21
 part: D
 partLabel: Waste-to-Energy & Thermal Treatment
-quant: []
+quant: [DISPOSAL_COST_PER_TON]
 causes: [OPERATIONAL, REGULATORY]
-levers: [COST_OPS]
+levers: [COST_OPS, WASTE_TO_ENERGY]
 ---
 # 21 · Waste-to-Energy (WTE) Plant Performance and Efficiency Review
 

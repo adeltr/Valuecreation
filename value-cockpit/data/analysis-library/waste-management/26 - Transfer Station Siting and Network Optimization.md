@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-26
 part: E
 partLabel: Fleet & Collection Optimization
-quant: [DSO]
+quant: [DSO, COLLECTION_COST_PER_TON]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [WC_DSO]
+levers: [WC_DSO, ROUTE_OPTIMIZATION, DISPOSAL_INTERNALIZATION]
 ---
 # 26 · Transfer Station Siting and Network Optimization
 

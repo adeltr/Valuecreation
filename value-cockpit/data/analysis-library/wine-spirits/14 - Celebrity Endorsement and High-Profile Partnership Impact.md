@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-14
 part: B
 partLabel: Brand Positioning and Marketing Strategy
-quant: []
+quant: [AP_RATE]
 causes: [COMMERCIAL]
-levers: [PRICING]
+levers: [PRICING, MARKETING_EFFECTIVENESS]
 ---
 # 14 · Celebrity Endorsement and High-Profile Partnership Impact Assessment
 

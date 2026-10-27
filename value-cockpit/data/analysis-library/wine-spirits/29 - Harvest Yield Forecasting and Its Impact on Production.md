@@ -6,8 +6,8 @@ kind: analysis
 id: wine-spirits-29
 part: D
 partLabel: Supply Chain and Sourcing Stability
-quant: [COGS, DIO]
-causes: [OPERATIONAL, FINANCIAL, MARKET]
+quant: [COGS, DIO, HARVEST_YIELD_VARIANCE]
+causes: [OPERATIONAL, FINANCIAL, MARKET, WEATHER_CLIMATE]
 levers: [COST_PROCUREMENT]
 ---
 # 29 · Harvest Yield Forecasting and Its Impact on Production Planning

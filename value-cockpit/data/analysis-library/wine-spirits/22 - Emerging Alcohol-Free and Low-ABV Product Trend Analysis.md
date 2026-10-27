@@ -8,7 +8,7 @@ part: C
 partLabel: Product Innovation and Development
 quant: [REVENUE_GROWTH]
 causes: [COMMERCIAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, INNOVATION_NPD]
 ---
 # 22 · Emerging Alcohol-Free and Low-ABV Product Trend Analysis
 

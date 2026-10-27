@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-40
 part: F
 partLabel: Regulatory and Compliance
-quant: [EBITDA_MARGIN, COGS]
+quant: [EBITDA_MARGIN, COGS, EXCISE_TAX_RATE]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [PRICING, COST_OPS]
+levers: [PRICING, COST_OPS, TAX_TARIFF_OPTIMIZATION]
 ---
 # 40 · Taxation, Tariffs, and Excise Duty Impacts on Cost and Pricing Strategy
 

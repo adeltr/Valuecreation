@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-42
 part: G
 partLabel: Financial and Revenue Optimization
-quant: []
+quant: [ONLINE_SALES_SHARE]
 causes: [COMMERCIAL]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, DTC_EXPANSION]
 ---
 # 42 · Direct-to-Consumer Sales Strategy and Winery-Tasting Room Revenue Potential
 

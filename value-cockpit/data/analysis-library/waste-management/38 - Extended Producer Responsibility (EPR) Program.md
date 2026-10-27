@@ -6,7 +6,7 @@ kind: analysis
 id: waste-management-38
 part: G
 partLabel: Regulatory Compliance & Environmental Impact
-quant: []
+quant: [RECYCLING_RATE]
 causes: [FINANCIAL]
 levers: [COST_OPS, WC_DSO]
 ---

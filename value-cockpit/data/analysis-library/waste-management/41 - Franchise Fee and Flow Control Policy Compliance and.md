@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-41
 part: G
 partLabel: Regulatory Compliance & Environmental Impact
-quant: [DSO]
+quant: [DSO, PRICE_PER_TON]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [COST_OPS, WC_DSO]
+levers: [COST_OPS, WC_DSO, PRICING_DISCIPLINE]
 ---
 # 41 · Franchise Fee and Flow Control Policy Compliance and Optimization
 

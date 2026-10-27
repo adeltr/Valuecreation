@@ -6,7 +6,7 @@ kind: analysis
 id: wine-spirits-02
 part: A
 partLabel: Market and Consumer Insights
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, VOLUME_GROWTH]
 causes: [COMMERCIAL, MARKET]
 levers: [VOLUME]
 ---

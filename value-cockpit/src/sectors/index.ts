@@ -1,5 +1,7 @@
 import type { SectorSpec } from './types';
 import { manufacturing } from './manufacturing';
+import { wineSpirits } from './wine-spirits';
+import { wasteManagement } from './waste-management';
 import { thirdPartyLogistics } from './third-party-logistics';
 import { pharma } from './pharma';
 import { metalsMining } from './metals-mining';
@@ -14,4 +16,4 @@ import { chemical } from './chemical';
 import { retail } from './retail';
 
 /** Level-2 sectors defined by a spec (docs/14). Keys must match SPEC_ARCHETYPES in the registry. */
-export const SPECS = { manufacturing, retail, chemical, agriculture, cosmetics, 'electricity-generation': electricityGeneration, 'healthcare-provider': healthcareProvider, hospitality, media, 'medical-device': medicalDevice, 'metals-mining': metalsMining, pharma, 'third-party-logistics': thirdPartyLogistics } satisfies Record<string, SectorSpec>;
+export const SPECS = { manufacturing, retail, chemical, agriculture, cosmetics, 'electricity-generation': electricityGeneration, 'healthcare-provider': healthcareProvider, hospitality, media, 'medical-device': medicalDevice, 'metals-mining': metalsMining, pharma, 'third-party-logistics': thirdPartyLogistics, 'waste-management': wasteManagement, 'wine-spirits': wineSpirits } satisfies Record<string, SectorSpec>;

@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-27
 part: E
 partLabel: Fleet & Collection Optimization
-quant: [DSO]
+quant: [DSO, COLLECTION_COST_PER_TON]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, FLEET_CONVERSION]
 ---
 # 27 · Fleet Electrification or Alternative Fuel Conversion Feasibility Study
 

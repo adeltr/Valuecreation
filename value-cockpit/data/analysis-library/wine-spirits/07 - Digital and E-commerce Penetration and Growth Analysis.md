@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-07
 part: A
 partLabel: Market and Consumer Insights
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, VOLUME_GROWTH, ONLINE_SALES_SHARE]
 causes: [COMMERCIAL]
-levers: [VOLUME]
+levers: [VOLUME, DTC_EXPANSION]
 ---
 # 7 · Digital and E-commerce Penetration and Growth Analysis
 

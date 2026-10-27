@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-13
 part: B
 partLabel: Brand Positioning and Marketing Strategy
-quant: []
+quant: [AP_RATE]
 causes: [COMMERCIAL]
-levers: []
+levers: [MARKETING_EFFECTIVENESS]
 ---
 # 13 · Influencer and Peer-Driven Marketing Impact Analysis
 

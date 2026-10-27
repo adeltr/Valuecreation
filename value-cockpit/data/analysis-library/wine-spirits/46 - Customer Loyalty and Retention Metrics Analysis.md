@@ -6,7 +6,7 @@ kind: analysis
 id: wine-spirits-46
 part: G
 partLabel: Financial and Revenue Optimization
-quant: []
+quant: [CUSTOMER_RETENTION_RATE]
 causes: [COMMERCIAL]
 levers: [VOLUME, COST_PROCUREMENT]
 ---

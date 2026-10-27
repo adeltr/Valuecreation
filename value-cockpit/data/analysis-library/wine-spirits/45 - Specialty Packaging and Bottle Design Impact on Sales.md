@@ -8,7 +8,7 @@ part: G
 partLabel: Financial and Revenue Optimization
 quant: []
 causes: [COMMERCIAL, MARKET]
-levers: []
+levers: [PREMIUMIZATION]
 ---
 # 45 · Specialty Packaging and Bottle Design Impact on Sales
 

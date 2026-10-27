@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-05
 part: A
 partLabel: Market and Consumer Insights
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, VOLUME_GROWTH]
 causes: [COMMERCIAL]
-levers: [VOLUME]
+levers: [VOLUME, ROUTE_TO_MARKET]
 ---
 # 5 · Channel-Specific Sales Performance
 

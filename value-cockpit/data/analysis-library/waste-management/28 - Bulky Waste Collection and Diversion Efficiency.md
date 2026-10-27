@@ -6,7 +6,7 @@ kind: analysis
 id: waste-management-28
 part: E
 partLabel: Fleet & Collection Optimization
-quant: [DSO]
+quant: [DSO, DIVERSION_RATE]
 causes: []
 levers: [VOLUME, WC_DSO]
 ---

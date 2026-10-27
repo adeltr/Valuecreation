@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-10
 part: B
 partLabel: Recycling & Materials Recovery
-quant: []
-causes: [COMMERCIAL]
-levers: [PRICING, VOLUME, MIX, WC_DIO]
+quant: [COMMODITY_PRICE_PER_TON]
+causes: [COMMERCIAL, COMMODITY_PRICES]
+levers: [PRICING, VOLUME, MIX, WC_DIO, RECYCLING_VALUE]
 ---
 # 10 · Commodity Price Fluctuation and Recycling Revenue Analysis
 

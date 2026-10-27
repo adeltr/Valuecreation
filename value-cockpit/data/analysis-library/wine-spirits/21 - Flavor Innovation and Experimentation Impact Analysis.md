@@ -8,7 +8,7 @@ part: C
 partLabel: Product Innovation and Development
 quant: []
 causes: [COMMERCIAL, MARKET]
-levers: []
+levers: [INNOVATION_NPD]
 ---
 # 21 · Flavor Innovation and Experimentation Impact Analysis
 

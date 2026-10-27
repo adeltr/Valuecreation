@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-44
 part: H
 partLabel: Financial & Contractual Structuring
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, VOLUME_GROWTH]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
-levers: []
+levers: [TUCK_IN_ACQUISITIONS]
 ---
 # 44 · Synergistic Acquisitions and Geographic Coverage Optimization
 

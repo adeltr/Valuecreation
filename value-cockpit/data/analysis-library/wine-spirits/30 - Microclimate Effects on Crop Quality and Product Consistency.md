@@ -7,7 +7,7 @@ id: wine-spirits-30
 part: D
 partLabel: Supply Chain and Sourcing Stability
 quant: []
-causes: [OPERATIONAL]
+causes: [OPERATIONAL, WEATHER_CLIMATE]
 levers: []
 ---
 # 30 · Microclimate Effects on Crop Quality and Product Consistency

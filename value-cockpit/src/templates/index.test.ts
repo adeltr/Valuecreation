@@ -5,9 +5,9 @@ import { NON_LEVER_CODES, SCENARIO_ASSUMPTION_CODES } from '../ontology/base';
 import { SECTOR_ARCHETYPES, BASE_ARCHETYPES, EXTENDED_ARCHETYPES } from '../ontology/registry';
 
 describe('templates registry', () => {
-  it('covers every archetype except generic: dedicated templates + generic EBITDA for level 1', () => {
+  it('covers every archetype except generic with a dedicated level-2 template', () => {
     expect(Object.keys(TEMPLATES).sort()).toEqual(SECTOR_ARCHETYPES.filter((a) => a !== 'generic').sort());
-    for (const a of BASE_ARCHETYPES) expect(TEMPLATES[a]!.level, a).toBe(1);
+    expect(BASE_ARCHETYPES).toHaveLength(0);
     for (const a of EXTENDED_ARCHETYPES) expect(TEMPLATES[a]!.level, a).toBe(2);
   });
   it.each(Object.entries(TEMPLATES))('%s demo inputs resolve to a finite MOIC', (_, t) => {

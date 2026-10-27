@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-43
 part: G
 partLabel: Financial and Revenue Optimization
-quant: []
+quant: [AP_RATE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME]
+levers: [VOLUME, MARKETING_EFFECTIVENESS]
 ---
 # 43 · Marketing Spend Efficiency and Return on Investment
 

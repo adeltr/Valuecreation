@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-05
 part: A
 partLabel: Landfill Management & Operations
-quant: []
+quant: [CAPEX]
 causes: [FINANCIAL, REGULATORY]
-levers: [COST_OPS]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 5 · Closed Landfill Redevelopment Feasibility
 

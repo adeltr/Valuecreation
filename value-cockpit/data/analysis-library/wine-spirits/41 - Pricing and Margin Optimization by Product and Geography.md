@@ -6,7 +6,7 @@ kind: analysis
 id: wine-spirits-41
 part: G
 partLabel: Financial and Revenue Optimization
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, PRICE_MIX_GROWTH, GROSS_MARGIN]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
 levers: [PRICING]
 ---

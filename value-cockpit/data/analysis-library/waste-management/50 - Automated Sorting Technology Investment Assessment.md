@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-50
 part: J
 partLabel: Technology & Innovation
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, CAPEX]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, RECYCLING_VALUE, CAPEX_DISCIPLINE]
 ---
 # 50 · Automated Sorting Technology Investment Assessment
 

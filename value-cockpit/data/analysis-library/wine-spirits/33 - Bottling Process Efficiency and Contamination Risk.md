@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-33
 part: E
 partLabel: Production and Quality Control
-quant: []
+quant: [GROSS_MARGIN]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, PRODUCTION_EFFICIENCY]
 ---
 # 33 · Bottling Process Efficiency and Contamination Risk Assessment
 

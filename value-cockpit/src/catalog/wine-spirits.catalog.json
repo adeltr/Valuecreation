@@ -22,7 +22,8 @@
     "part": "A",
     "partLabel": "Market and Consumer Insights",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -70,13 +71,15 @@
     "part": "A",
     "partLabel": "Market and Consumer Insights",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/05 - Channel-Specific Sales Performance.md"
   },
@@ -108,13 +111,16 @@
     "part": "A",
     "partLabel": "Market and Consumer Insights",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH",
+      "ONLINE_SALES_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "DTC_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/07 - Digital and E-commerce Penetration and Growth Analysis.md"
   },
@@ -130,7 +136,8 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "DTC_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/08 - Customer Experience Metrics in Tasting Rooms or Tours.md"
   },
@@ -190,11 +197,15 @@
     "title": "Premiumization and Upselling Opportunities Assessment",
     "part": "B",
     "partLabel": "Brand Positioning and Marketing Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_MIX_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PREMIUMIZATION"
+    ],
     "sourcePath": "data/analysis-library/wine-spirits/12 - Premiumization and Upselling Opportunities Assessment.md"
   },
   {
@@ -203,11 +214,15 @@
     "title": "Influencer and Peer-Driven Marketing Impact Analysis",
     "part": "B",
     "partLabel": "Brand Positioning and Marketing Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AP_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "MARKETING_EFFECTIVENESS"
+    ],
     "sourcePath": "data/analysis-library/wine-spirits/13 - Influencer and Peer-Driven Marketing Impact Analysis.md"
   },
   {
@@ -216,12 +231,15 @@
     "title": "Celebrity Endorsement and High-Profile Partnership Impact Assessment",
     "part": "B",
     "partLabel": "Brand Positioning and Marketing Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AP_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKETING_EFFECTIVENESS"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/14 - Celebrity Endorsement and High-Profile Partnership Impact.md"
   },
@@ -231,13 +249,16 @@
     "title": "Limited-Edition and Seasonal Product Performance Evaluation",
     "part": "B",
     "partLabel": "Brand Positioning and Marketing Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_MIX_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "WC_DIO"
+      "WC_DIO",
+      "PREMIUMIZATION"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/15 - Limited-Edition and Seasonal Product Performance.md"
   },
@@ -247,14 +268,17 @@
     "title": "Craft vs. Mass-Produced Product Positioning Analysis",
     "part": "B",
     "partLabel": "Brand Positioning and Marketing Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_MIX_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "PREMIUMIZATION"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/16 - Craft vs. Mass-Produced Product Positioning Analysis.md"
   },
@@ -277,12 +301,16 @@
     "title": "Local and Global Competitions and Awards Impact on Brand Perception",
     "part": "B",
     "partLabel": "Brand Positioning and Marketing Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AP_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "MARKETING_EFFECTIVENESS"
+    ],
     "sourcePath": "data/analysis-library/wine-spirits/18 - Local and Global Competitions and Awards Impact on Brand.md"
   },
   {
@@ -308,7 +336,9 @@
     "relatedCauseCategories": [
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "INNOVATION_NPD"
+    ],
     "sourcePath": "data/analysis-library/wine-spirits/20 - Innovation Pipeline and Product Development Cycle Review.md"
   },
   {
@@ -322,7 +352,9 @@
       "COMMERCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "INNOVATION_NPD"
+    ],
     "sourcePath": "data/analysis-library/wine-spirits/21 - Flavor Innovation and Experimentation Impact Analysis.md"
   },
   {
@@ -339,7 +371,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "INNOVATION_NPD"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/22 - Emerging Alcohol-Free and Low-ABV Product Trend Analysis.md"
   },
@@ -349,13 +382,17 @@
     "title": "Barrel Aging Process Optimization and Impact Assessment",
     "part": "C",
     "partLabel": "Product Innovation and Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AGING_INVENTORY_YEARS"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
     "sourcePath": "data/analysis-library/wine-spirits/23 - Barrel Aging Process Optimization and Impact Assessment.md"
   },
   {
@@ -380,14 +417,17 @@
     "title": "In-House vs. Outsourced Production Feasibility Study",
     "part": "C",
     "partLabel": "Product Innovation and Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "PRODUCTION_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/25 - In-House vs. Outsourced Production Feasibility Study.md"
   },
@@ -415,12 +455,17 @@
     "title": "Distributor Relationship Health and Dependency Risk Assessment",
     "part": "D",
     "partLabel": "Supply Chain and Sourcing Stability",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DISTRIBUTION_COST_RATE",
+      "DISTRIBUTOR_DEPENDENCY"
+    ],
     "relatedCauseCategories": [
-      "MARKET"
+      "MARKET",
+      "DISTRIBUTOR_POWER"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/27 - Distributor Relationship Health and Dependency Risk.md"
   },
@@ -450,12 +495,14 @@
     "partLabel": "Supply Chain and Sourcing Stability",
     "relatedMetricCodes": [
       "COGS",
-      "DIO"
+      "DIO",
+      "HARVEST_YIELD_VARIANCE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "WEATHER_CLIMATE"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
@@ -470,7 +517,8 @@
     "partLabel": "Supply Chain and Sourcing Stability",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "OPERATIONAL"
+      "OPERATIONAL",
+      "WEATHER_CLIMATE"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/wine-spirits/30 - Microclimate Effects on Crop Quality and Product Consistency.md"
@@ -481,10 +529,13 @@
     "title": "Climate Change Impact on Vineyard-Yield Stability",
     "part": "D",
     "partLabel": "Supply Chain and Sourcing Stability",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "HARVEST_YIELD_VARIANCE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "MARKET"
+      "MARKET",
+      "WEATHER_CLIMATE"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/wine-spirits/31 - Climate Change Impact on Vineyard-Yield Stability.md"
@@ -496,7 +547,8 @@
     "part": "E",
     "partLabel": "Production and Quality Control",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -505,7 +557,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "PRODUCTION_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/32 - Production Facility Efficiency and Scalability Assessment.md"
   },
@@ -515,7 +568,9 @@
     "title": "Bottling Process Efficiency and Contamination Risk Assessment",
     "part": "E",
     "partLabel": "Production and Quality Control",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -523,7 +578,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "PRODUCTION_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/33 - Bottling Process Efficiency and Contamination Risk.md"
   },
@@ -534,7 +590,8 @@
     "part": "E",
     "partLabel": "Production and Quality Control",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "AGING_INVENTORY_YEARS"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -633,7 +690,8 @@
     "partLabel": "Regulatory and Compliance",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "COGS"
+      "COGS",
+      "EXCISE_TAX_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -643,7 +701,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "COST_OPS"
+      "COST_OPS",
+      "TAX_TARIFF_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/40 - Taxation, Tariffs, and Excise Duty Impacts on Cost and Pricing.md"
   },
@@ -654,7 +713,9 @@
     "part": "G",
     "partLabel": "Financial and Revenue Optimization",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "PRICE_MIX_GROWTH",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -672,13 +733,16 @@
     "title": "Direct-to-Consumer Sales Strategy and Winery-Tasting Room Revenue Potential",
     "part": "G",
     "partLabel": "Financial and Revenue Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ONLINE_SALES_SHARE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "DTC_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/42 - Direct-to-Consumer Sales Strategy and Winery-Tasting Room.md"
   },
@@ -688,13 +752,16 @@
     "title": "Marketing Spend Efficiency and Return on Investment",
     "part": "G",
     "partLabel": "Financial and Revenue Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AP_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "MARKETING_EFFECTIVENESS"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/43 - Marketing Spend Efficiency and Return on Investment.md"
   },
@@ -705,7 +772,8 @@
     "part": "G",
     "partLabel": "Financial and Revenue Optimization",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "DISTRIBUTION_COST_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -713,7 +781,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "ROUTE_TO_MARKET"
     ],
     "sourcePath": "data/analysis-library/wine-spirits/44 - Route-to-Market and Distribution Channel Effectiveness.md"
   },
@@ -728,7 +797,9 @@
       "COMMERCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PREMIUMIZATION"
+    ],
     "sourcePath": "data/analysis-library/wine-spirits/45 - Specialty Packaging and Bottle Design Impact on Sales.md"
   },
   {
@@ -737,7 +808,9 @@
     "title": "Customer Loyalty and Retention Metrics Analysis",
     "part": "G",
     "partLabel": "Financial and Revenue Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CUSTOMER_RETENTION_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],

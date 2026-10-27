@@ -6,8 +6,8 @@ kind: analysis
 id: waste-management-11
 part: B
 partLabel: Recycling & Materials Recovery
-quant: []
-causes: [OPERATIONAL, FINANCIAL]
+quant: [COMMODITY_PRICE_PER_TON]
+causes: [OPERATIONAL, FINANCIAL, COMMODITY_PRICES]
 levers: [PRICING, VOLUME, COST_PROCUREMENT]
 ---
 # 11 · Plastic Credits and Recycled Plastic Feedstock Procurement Analysis

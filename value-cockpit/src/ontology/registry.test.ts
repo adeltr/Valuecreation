@@ -75,13 +75,15 @@ describe('ontology registry – lever targets', () => {
 });
 
 describe('ontology registry – archetypes', () => {
-  it('lists generic, the extended archetypes, then the 16 level-1 company types', () => {
+  it('lists generic, then every EBITDA company type at level 2', () => {
     expect(SECTOR_ARCHETYPES.slice(0, 4)).toEqual(['generic', 'saas', 'aero', 'airline']);
     expect(SECTOR_ARCHETYPES).toHaveLength(20);
     expect(SECTOR_ARCHETYPES).toContain('cpg');
   });
-  it('a level-1 archetype has exactly the base vocabulary', () => {
-    expect(getActiveVocabulary('wine-spirits').metricCodes).toEqual(getActiveVocabulary('generic').metricCodes);
+  it('no company type is left at level 1: every EBITDA type has its own extension', () => {
+    expect(BASE_ARCHETYPES).toEqual([]);
+    expect(getActiveVocabulary('wine-spirits').metricCodes).toContain('EXCISE_TAX_RATE');
+    expect(getActiveVocabulary('generic').metricCodes).not.toContain('EXCISE_TAX_RATE');
   });
 });
 

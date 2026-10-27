@@ -6,8 +6,8 @@ kind: analysis
 id: waste-management-36
 part: G
 partLabel: Regulatory Compliance & Environmental Impact
-quant: []
-causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+quant: [LANDFILL_CLOSURE_LIABILITY]
+causes: [OPERATIONAL, FINANCIAL, REGULATORY, ENVIRONMENTAL_LIABILITY]
 levers: []
 ---
 # 36 · Decommissioning and Site Remediation Liability Analysis

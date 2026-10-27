@@ -8,7 +8,7 @@ part: C
 partLabel: Organics & Composting
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, WASTE_TO_ENERGY]
 ---
 # 19 · Sludge Co-Digestion with MSW for Enhanced Biogas Production
 

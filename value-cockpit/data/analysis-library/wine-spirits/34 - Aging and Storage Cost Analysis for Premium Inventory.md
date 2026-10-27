@@ -6,7 +6,7 @@ kind: analysis
 id: wine-spirits-34
 part: E
 partLabel: Production and Quality Control
-quant: [DIO]
+quant: [DIO, AGING_INVENTORY_YEARS]
 causes: [OPERATIONAL, FINANCIAL]
 levers: [WC_DIO]
 ---

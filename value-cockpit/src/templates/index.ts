@@ -17,8 +17,7 @@ export interface TemplateEntry {
   demoInputs: Record<string, number>;
 }
 
-const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = { 'waste-management': 'Waste Management',
-  'wine-spirits': 'Wine, Beer & Spirits',
+const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = {
 };
 
 // Illustrative inputs shared by every level-1 archetype until the analyst enters the company's own.

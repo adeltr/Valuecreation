@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-14
 part: B
 partLabel: Recycling & Materials Recovery
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, COMMODITY_PRICE_PER_TON]
 causes: [OPERATIONAL, MARKET]
-levers: [WC_DSO]
+levers: [WC_DSO, RECYCLING_VALUE]
 ---
 # 14 · Recyclable Market Development and End-Use Demand Analysis
 

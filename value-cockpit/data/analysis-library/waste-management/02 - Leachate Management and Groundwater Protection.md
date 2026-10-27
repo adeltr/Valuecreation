@@ -7,7 +7,7 @@ id: waste-management-02
 part: A
 partLabel: Landfill Management & Operations
 quant: []
-causes: [REGULATORY]
+causes: [REGULATORY, ENVIRONMENTAL_LIABILITY]
 levers: [COST_OPS, WC_DSO]
 ---
 # 2 · Leachate Management and Groundwater Protection Compliance

@@ -6,8 +6,8 @@ kind: analysis
 id: waste-management-01
 part: A
 partLabel: Landfill Management & Operations
-quant: []
-causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+quant: [REMAINING_LANDFILL_LIFE, LANDFILL_CLOSURE_LIABILITY]
+causes: [OPERATIONAL, FINANCIAL, REGULATORY, ENVIRONMENTAL_LIABILITY]
 levers: [COST_OPS]
 ---
 # 1 · Landfill Capacity and Closure-Post-Closure Liability Analysis

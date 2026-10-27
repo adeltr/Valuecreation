@@ -7,7 +7,7 @@ id: waste-management-39
 part: G
 partLabel: Regulatory Compliance & Environmental Impact
 quant: []
-causes: [OPERATIONAL, REGULATORY]
+causes: [OPERATIONAL, REGULATORY, ENVIRONMENTAL_LIABILITY]
 levers: [VOLUME, COST_OPS]
 ---
 # 39 · PFAS and Emerging Contaminants Monitoring and Treatment Strategy

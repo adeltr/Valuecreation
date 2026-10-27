@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-03
 part: A
 partLabel: Landfill Management & Operations
-quant: []
+quant: [DISPOSAL_COST_PER_TON]
 causes: [OPERATIONAL, FINANCIAL]
-levers: []
+levers: [DISPOSAL_INTERNALIZATION]
 ---
 # 3 · Residuals Disposal and Processing Cost Analysis
 

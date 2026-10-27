@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-12
 part: B
 partLabel: Brand Positioning and Marketing Strategy
-quant: []
+quant: [PRICE_MIX_GROWTH]
 causes: [COMMERCIAL]
-levers: []
+levers: [PREMIUMIZATION]
 ---
 # 12 · Premiumization and Upselling Opportunities Assessment
 

@@ -8,7 +8,7 @@ part: H
 partLabel: Financial & Contractual Structuring
 quant: [EBITDA_MARGIN]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [PRICING, COST_OPS]
+levers: [PRICING, COST_OPS, PRICING_DISCIPLINE]
 ---
 # 43 · Waste Stream Segmentation and Profitability Analysis
 

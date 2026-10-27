@@ -5,11 +5,15 @@
     "title": "Landfill Capacity and Closure-Post-Closure Liability Analysis",
     "part": "A",
     "partLabel": "Landfill Management & Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REMAINING_LANDFILL_LIFE",
+      "LANDFILL_CLOSURE_LIABILITY"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "REGULATORY"
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -24,7 +28,8 @@
     "partLabel": "Landfill Management & Operations",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "REGULATORY"
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
     ],
     "relatedLeverCategories": [
       "COST_OPS",
@@ -38,12 +43,16 @@
     "title": "Residuals Disposal and Processing Cost Analysis",
     "part": "A",
     "partLabel": "Landfill Management & Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DISPOSAL_COST_PER_TON"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "DISPOSAL_INTERNALIZATION"
+    ],
     "sourcePath": "data/analysis-library/waste-management/03 - Residuals Disposal and Processing Cost Analysis.md"
   },
   {
@@ -52,7 +61,10 @@
     "title": "Municipal Solid Waste (MSW) Composition Trend Forecasting for Long-Term Capacity Planning",
     "part": "A",
     "partLabel": "Landfill Management & Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "TONS_COLLECTED_MT",
+      "VOLUME_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "MARKET",
@@ -67,13 +79,16 @@
     "title": "Closed Landfill Redevelopment Feasibility",
     "part": "A",
     "partLabel": "Landfill Management & Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/waste-management/05 - Closed Landfill Redevelopment Feasibility.md"
   },
@@ -107,7 +122,8 @@
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DSO"
+      "WC_DSO",
+      "WASTE_TO_ENERGY"
     ],
     "sourcePath": "data/analysis-library/waste-management/07 - Bioreactor Landfill Operation Performance.md"
   },
@@ -117,14 +133,18 @@
     "title": "Material Recovery Facility (MRF) Throughput and Efficiency Analysis",
     "part": "B",
     "partLabel": "Recycling & Materials Recovery",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RECYCLING_RATE",
+      "MRF_RECOVERY_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "MIX",
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "RECYCLING_VALUE"
     ],
     "sourcePath": "data/analysis-library/waste-management/08 - Material Recovery Facility (MRF) Throughput and Efficiency.md"
   },
@@ -134,12 +154,15 @@
     "title": "Waste Composition and Recycling Rate Analysis",
     "part": "B",
     "partLabel": "Recycling & Materials Recovery",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RECYCLING_RATE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "WC_DSO"
+      "WC_DSO",
+      "RECYCLING_VALUE"
     ],
     "sourcePath": "data/analysis-library/waste-management/09 - Waste Composition and Recycling Rate Analysis.md"
   },
@@ -149,15 +172,19 @@
     "title": "Commodity Price Fluctuation and Recycling Revenue Analysis",
     "part": "B",
     "partLabel": "Recycling & Materials Recovery",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "COMMODITY_PRICE_PER_TON"
+    ],
     "relatedCauseCategories": [
-      "COMMERCIAL"
+      "COMMERCIAL",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
       "MIX",
-      "WC_DIO"
+      "WC_DIO",
+      "RECYCLING_VALUE"
     ],
     "sourcePath": "data/analysis-library/waste-management/10 - Commodity Price Fluctuation and Recycling Revenue.md"
   },
@@ -167,10 +194,13 @@
     "title": "Plastic Credits and Recycled Plastic Feedstock Procurement Analysis",
     "part": "B",
     "partLabel": "Recycling & Materials Recovery",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "COMMODITY_PRICE_PER_TON"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -185,12 +215,16 @@
     "title": "Resource Recovery Park Master Planning and Integrated Facility Design",
     "part": "B",
     "partLabel": "Recycling & Materials Recovery",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "DISPOSAL_INTERNALIZATION",
+      "CAPEX_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/waste-management/12 - Resource Recovery Park Master Planning and Integrated.md"
   },
@@ -200,7 +234,10 @@
     "title": "Construction & Demolition (C&D) Waste Diversion and Recycling Efficiency",
     "part": "B",
     "partLabel": "Recycling & Materials Recovery",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RECYCLING_RATE",
+      "DIVERSION_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
@@ -214,14 +251,16 @@
     "part": "B",
     "partLabel": "Recycling & Materials Recovery",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "COMMODITY_PRICE_PER_TON"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "WC_DSO"
+      "WC_DSO",
+      "RECYCLING_VALUE"
     ],
     "sourcePath": "data/analysis-library/waste-management/14 - Recyclable Market Development and End-Use Demand.md"
   },
@@ -266,7 +305,9 @@
     "title": "Mechanical Biological Treatment (MBT) Facility Performance and Throughput Analysis",
     "part": "C",
     "partLabel": "Organics & Composting",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DIVERSION_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
@@ -301,7 +342,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "WASTE_TO_ENERGY"
     ],
     "sourcePath": "data/analysis-library/waste-management/19 - Sludge Co-Digestion with MSW for Enhanced Biogas.md"
   },
@@ -311,14 +353,17 @@
     "title": "Landfill Gas Capture and Bioenergy Potential Evaluation",
     "part": "D",
     "partLabel": "Waste-to-Energy & Thermal Treatment",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DISPOSAL_COST_PER_TON"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "VOLUME",
       "COST_OPS",
-      "WC_DSO"
+      "WC_DSO",
+      "WASTE_TO_ENERGY"
     ],
     "sourcePath": "data/analysis-library/waste-management/20 - Landfill Gas Capture and Bioenergy Potential Evaluation.md"
   },
@@ -328,13 +373,16 @@
     "title": "Waste-to-Energy (WTE) Plant Performance and Efficiency Review",
     "part": "D",
     "partLabel": "Waste-to-Energy & Thermal Treatment",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "DISPOSAL_COST_PER_TON"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "WASTE_TO_ENERGY"
     ],
     "sourcePath": "data/analysis-library/waste-management/21 - Waste-to-Energy (WTE) Plant Performance and Efficiency.md"
   },
@@ -392,14 +440,18 @@
     "part": "E",
     "partLabel": "Fleet & Collection Optimization",
     "relatedMetricCodes": [
-      "DSO"
+      "DSO",
+      "TONS_COLLECTED_MT",
+      "COLLECTION_COST_PER_TON",
+      "ROUTE_DENSITY"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "ROUTE_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/waste-management/25 - Route Density and Fleet Utilization Analysis.md"
   },
@@ -410,14 +462,17 @@
     "part": "E",
     "partLabel": "Fleet & Collection Optimization",
     "relatedMetricCodes": [
-      "DSO"
+      "DSO",
+      "COLLECTION_COST_PER_TON"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "WC_DSO"
+      "WC_DSO",
+      "ROUTE_OPTIMIZATION",
+      "DISPOSAL_INTERNALIZATION"
     ],
     "sourcePath": "data/analysis-library/waste-management/26 - Transfer Station Siting and Network Optimization.md"
   },
@@ -428,7 +483,8 @@
     "part": "E",
     "partLabel": "Fleet & Collection Optimization",
     "relatedMetricCodes": [
-      "DSO"
+      "DSO",
+      "COLLECTION_COST_PER_TON"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -436,7 +492,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "FLEET_CONVERSION"
     ],
     "sourcePath": "data/analysis-library/waste-management/27 - Fleet Electrification or Alternative Fuel Conversion Feasibility.md"
   },
@@ -447,7 +504,8 @@
     "part": "E",
     "partLabel": "Fleet & Collection Optimization",
     "relatedMetricCodes": [
-      "DSO"
+      "DSO",
+      "DIVERSION_RATE"
     ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
@@ -463,14 +521,16 @@
     "part": "E",
     "partLabel": "Fleet & Collection Optimization",
     "relatedMetricCodes": [
-      "DSO"
+      "DSO",
+      "TONS_COLLECTED_MT"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DSO"
+      "WC_DSO",
+      "ROUTE_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/waste-management/29 - Multi-Stream Curbside Collection Program Assessment.md"
   },
@@ -578,11 +638,14 @@
     "title": "Decommissioning and Site Remediation Liability Analysis",
     "part": "G",
     "partLabel": "Regulatory Compliance & Environmental Impact",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LANDFILL_CLOSURE_LIABILITY"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "REGULATORY"
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/waste-management/36 - Decommissioning and Site Remediation Liability Analysis.md"
@@ -610,7 +673,9 @@
     "title": "Extended Producer Responsibility (EPR) Program Implementation Evaluation",
     "part": "G",
     "partLabel": "Regulatory Compliance & Environmental Impact",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RECYCLING_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
@@ -629,7 +694,8 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "REGULATORY"
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
     ],
     "relatedLeverCategories": [
       "VOLUME",
@@ -659,7 +725,8 @@
     "part": "G",
     "partLabel": "Regulatory Compliance & Environmental Impact",
     "relatedMetricCodes": [
-      "DSO"
+      "DSO",
+      "PRICE_PER_TON"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -668,7 +735,8 @@
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DSO"
+      "WC_DSO",
+      "PRICING_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/waste-management/41 - Franchise Fee and Flow Control Policy Compliance and.md"
   },
@@ -679,7 +747,9 @@
     "part": "H",
     "partLabel": "Financial & Contractual Structuring",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "PRICE_PER_TON",
+      "PRICE_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -689,7 +759,8 @@
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "WC_DSO"
+      "WC_DSO",
+      "PRICING_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/waste-management/42 - Municipal and Commercial Contract Structuring and.md"
   },
@@ -708,7 +779,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "COST_OPS"
+      "COST_OPS",
+      "PRICING_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/waste-management/43 - Waste Stream Segmentation and Profitability Analysis.md"
   },
@@ -719,7 +791,8 @@
     "part": "H",
     "partLabel": "Financial & Contractual Structuring",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -727,7 +800,9 @@
       "FINANCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "TUCK_IN_ACQUISITIONS"
+    ],
     "sourcePath": "data/analysis-library/waste-management/44 - Synergistic Acquisitions and Geographic Coverage.md"
   },
   {
@@ -736,13 +811,17 @@
     "title": "Tipping Fee Benchmarking and Optimization Study",
     "part": "H",
     "partLabel": "Financial & Contractual Structuring",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_PER_TON",
+      "PRICE_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "PRICING_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/waste-management/45 - Tipping Fee Benchmarking and Optimization Study.md"
   },
@@ -813,7 +892,8 @@
     "part": "J",
     "partLabel": "Technology & Innovation",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "CAPEX"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -821,7 +901,9 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "RECYCLING_VALUE",
+      "CAPEX_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/waste-management/50 - Automated Sorting Technology Investment Assessment.md"
   }

@@ -8,7 +8,7 @@ part: C
 partLabel: Product Innovation and Development
 quant: []
 causes: [MARKET]
-levers: []
+levers: [INNOVATION_NPD]
 ---
 # 20 · Innovation Pipeline and Product Development Cycle Review
 

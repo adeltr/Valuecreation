@@ -8,7 +8,7 @@ part: A
 partLabel: Market and Consumer Insights
 quant: []
 causes: [COMMERCIAL, OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, DTC_EXPANSION]
 ---
 # 8 · Customer Experience Metrics in Tasting Rooms or Tours
 

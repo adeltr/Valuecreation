@@ -6,9 +6,9 @@ kind: analysis
 id: waste-management-12
 part: B
 partLabel: Recycling & Materials Recovery
-quant: []
+quant: [CAPEX]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, DISPOSAL_INTERNALIZATION, CAPEX_DISCIPLINE]
 ---
 # 12 · Resource Recovery Park Master Planning and Integrated Facility Design
 

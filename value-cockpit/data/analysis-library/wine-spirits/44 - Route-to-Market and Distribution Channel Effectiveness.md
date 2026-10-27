@@ -6,9 +6,9 @@ kind: analysis
 id: wine-spirits-44
 part: G
 partLabel: Financial and Revenue Optimization
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, DISTRIBUTION_COST_RATE]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, ROUTE_TO_MARKET]
 ---
 # 44 · Route-to-Market and Distribution Channel Effectiveness Analysis
 
