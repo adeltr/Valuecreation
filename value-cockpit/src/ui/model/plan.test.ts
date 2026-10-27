@@ -63,9 +63,11 @@ describe('100-day plan (PE best practice: diagnose J0–30, design J30–60, exe
     expect(plan.totals.moicBy100).toBeGreaterThan(plan.totals.moicBase);
   });
 
-  it('prioritisation: value × ease quadrant', () => {
+  it('prioritisation: value × ease, and a quick win must land within the 100 days', () => {
     expect(ws('fuel').quadrant).toBe('strategic');   // high value, high effort
-    expect(ws('lf').quadrant).toBe('quick_win');     // high value, low effort
+    expect(ws('lf').quadrant).toBe('strategic');     // high value, low effort, but impact at J+150
+    const fast = buildPlan(input({ levers: [{ ...lf, timeToImpactDays: 90 }] })).workstreams[0];
+    expect(fast.quadrant).toBe('quick_win');
   });
 
   it('cross-cutting foundations follow the bridge family', () => {

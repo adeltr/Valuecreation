@@ -1,10 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { formatValue } from './format';
 import { buildDriverGraph } from './graph';
-import { buildHundredDayPlan, analysesForMetric } from './hundredDay';
+import { analysesForMetric } from './hundredDay';
 import { TEMPLATES } from '../../templates';
 import { getCatalog } from '../../catalog';
-import type { Lever } from '../../domain/types';
 
 const sp = (s: string) => s.replace(/[  ]/g, ' ');
 
@@ -47,28 +46,8 @@ describe('buildDriverGraph', () => {
   });
 });
 
-const lever = (id: string, status: Lever['status'], days: number, category: string): Lever => ({
-  id, nodeId: 'n', causeId: null, label: id, mechanism: 'm', category, impactMetricCode: 'FUEL_CASK',
-  expectedDelta: -0.001, deltaKind: 'absolute', timeToImpactDays: days, effort: 'low',
-  confidence: 0.5, confidenceBasis: 'b', source: 'claude', status,
-});
-
-describe('buildHundredDayPlan', () => {
+describe('analysesForMetric', () => {
   const catalog = getCatalog('airline');
-  const plan = buildHundredDayPlan([
-    lever('late', 'validated', 180, 'FLEET_FINANCING'),
-    lever('quick', 'validated', 45, 'FUEL_EFFICIENCY'),
-    lever('hyp', 'hypothesis', 10, 'FUEL_EFFICIENCY'),
-  ], catalog);
-
-  it('keeps validated levers only, split at 100 days, sorted by time to impact', () => {
-    expect(plan.quickWins.map((i) => i.lever.id)).toEqual(['quick']);
-    expect(plan.later.map((i) => i.lever.id)).toEqual(['late']);
-  });
-
-  it('attaches the catalog analyses documenting each lever category', () => {
-    expect(plan.quickWins[0].analyses.map((a) => a.id)).toEqual(['airline-08', 'airline-10', 'airline-30', 'airline-33', 'airline-36']);
-  });
 
   it('lists the analyses to run for a metric (exploration mode)', () => {
     expect(analysesForMetric(catalog, 'FUEL_CASK').map((a) => a.id)).toEqual(['airline-10', 'airline-30', 'airline-33', 'airline-36']);

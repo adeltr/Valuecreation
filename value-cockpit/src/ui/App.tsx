@@ -8,7 +8,8 @@ import { DriverGraph } from './components/DriverGraph';
 import { CompanyView } from './components/CompanyView';
 import { CopilotPanel } from './components/CopilotPanel';
 import { SimulationPanel } from './components/SimulationPanel';
-import { HundredDayPlan } from './components/HundredDayPlan';
+import { PlanPanel } from './components/PlanPanel';
+import { buildPlan } from './model/plan';
 import { DossierBar, type SavedRef } from './components/DossierBar';
 import { LeverCardPanel } from './components/LeverCardPanel';
 import type { DossierRepository } from '../dossier/repository';
@@ -89,7 +90,10 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
           interactions={TEMPLATES[state.archetype]!.interactions}
           bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}
           multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} />
-        <HundredDayPlan levers={state.levers} catalog={catalog} />
+        <PlanPanel dispatch={dispatch} plan={buildPlan({
+          levers: state.levers, rootCauses: state.rootCauses, metrics, catalog,
+          rules: TEMPLATES[state.archetype]!.interactions, family: getBridgeFamily(state.archetype), overrides: state.plan,
+        })} />
       </main>
     </div>
   );

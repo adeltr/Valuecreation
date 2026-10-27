@@ -54,8 +54,8 @@ describe('App', () => {
     expect(within(sim).queryByText(/Interactions/)).toBeNull(); // airline has no interaction rule
 
     const plan = screen.getByRole('region', { name: 'Plan 100 jours' });
-    expect(within(plan).getByText(/Renouvellement de flotte/)).toBeTruthy();
-    expect(within(plan).getByText(/airline-33/)).toBeTruthy();
+    expect(within(plan).getAllByText('Renouvellement de flotte').length).toBeGreaterThan(0);
+    expect(within(plan).getAllByText(/airline-10/).length).toBeGreaterThan(0);
   });
 
   it('an out-of-vocabulary proposal is rejected with a visible error', () => {
@@ -102,6 +102,28 @@ describe('App', () => {
     expect(within(card).getByText(/Impact du levier/)).toBeTruthy();
     fireEvent.click(within(card).getByRole('button', { name: 'Fermer' }));
     expect(screen.queryByRole('region', { name: 'Fiche levier' })).toBeNull();
+  });
+
+  it('the 100-day plan: phased workstream with engine value, editable owner and status, foundations', () => {
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    const plan = screen.getByRole('region', { name: 'Plan 100 jours' });
+    expect(within(plan).queryByText('Renouvellement de flotte')).toBeNull(); // hypotheses stay out of the plan
+    expect(within(plan).getByText('Gouvernance et PMO')).toBeTruthy();
+
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    expect(within(plan).getAllByText('Renouvellement de flotte').length).toBeGreaterThan(0);
+    expect(within(plan).getByText(/captés d'ici J100/)).toBeTruthy();
+    expect(within(plan).getByText(/Premier impact mesuré sur FUEL_CASK/)).toBeTruthy();
+
+    const owner = within(plan).getByLabelText('Responsable — Renouvellement de flotte') as HTMLInputElement;
+    fireEvent.change(owner, { target: { value: 'Directeur des opérations' } });
+    expect(owner.value).toBe('Directeur des opérations');
+    const status = within(plan).getByLabelText('Statut — Renouvellement de flotte') as HTMLSelectElement;
+    fireEvent.change(status, { target: { value: 'in_progress' } });
+    expect(status.value).toBe('in_progress');
   });
 
   it('the simulation lists the interaction rules of the template', () => {

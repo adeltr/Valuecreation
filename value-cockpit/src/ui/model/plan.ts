@@ -53,9 +53,11 @@ function phases(t: number): Bar[] {
   return [{ phase: 'diagnose', from: 0, to: 30 }, { phase: 'design', from: 30, to: 60 }, { phase: 'execute', from: 60, to: Math.min(t, HORIZON) }];
 }
 
-const quadrant = (moic: number, effort: Lever['effort']): Quadrant => {
+// Value × ease; a quick win must also deliver within the horizon, otherwise it is strategic.
+const quadrant = (moic: number, effort: Lever['effort'], days: number): Quadrant => {
   const high = moic >= HIGH_VALUE_MOIC, easy = effort !== 'high';
-  return high ? (easy ? 'quick_win' : 'strategic') : (easy ? 'fill_in' : 'reconsider');
+  if (high) return easy && days <= HORIZON ? 'quick_win' : 'strategic';
+  return easy ? 'fill_in' : 'reconsider';
 };
 
 // Cross-cutting workstreams every 100-day plan carries; the cash one follows the bridge family.
@@ -121,7 +123,7 @@ export function buildPlan({ levers, rootCauses, metrics, catalog, rules, family,
         ? { code: l.impactMetricCode, unit: target.unit, baseline,
           target: l.deltaKind === 'percent' ? baseline * (1 + l.expectedDelta) : baseline + l.expectedDelta }
         : null,
-      value, quadrant: quadrant(value?.moic ?? 0, l.effort), effort: l.effort, analyses,
+      value, quadrant: quadrant(value?.moic ?? 0, l.effort, t), effort: l.effort, analyses,
     };
   });
 
