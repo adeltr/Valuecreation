@@ -21,6 +21,7 @@ docs/
   11-ARCHETYPES-PROPOSAL.md         ← décisions D1–D4 (validées) : archétype = type d'entreprise, catalogue v2
   12-SECTOR-AIRLINE.md              ← extension Airline + catalogue des 40 analyses
   13-SECTOR-CPG.md                  ← extension CPG (volume × prix-mix, gross-to-net)
+  14-SECTORS-LEVEL2.md              ← 15 secteurs de niveau 2 dérivés des fiches src/sectors/
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
     2026-10-27-value-cockpit-ui-phase2.md ← plan phase 2 (UI React, 3+1 panneaux)
@@ -48,7 +49,8 @@ scripts/import-analyses.ts          ← import d'analyses brutes du vault → fo
 | 15 (catalogue d'analyses A&D) | 08, 05 §catalogue |
 | Airline (extension, template, catalogue) | 12, 08 |
 | CPG (extension, template, catalogue) | 13, 08 |
-| Nouvel archétype | 09, 11, 12 (exemple le plus récent) |
+| Secteur issu d'une fiche (manufacturing, retail…) | 14, `data/analysis-library/<archetype>/_level2.md` |
+| Nouvel archétype | 14 (fiche), 09, 11 |
 | UI (phase 2) | plan phase 2, 02 (invariants) |
 
 Règle : ne JAMAIS charger 01 (vision) pendant l'implémentation — c'est du

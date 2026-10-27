@@ -99,7 +99,7 @@ hors périmètre v1. Seule la première pile touche `templates/aero.ts`.
   puis application : `tsx scripts/apply-curation.ts <archetype>` (idempotent) et
   `npm run catalog:build -- <archetype>`. Le script de pré-remplissage n'écrase
   jamais une table existante.
-- État : 19 catalogues curés (aero, airline, saas + 16 types niveau 1), 803
+- État : 19 catalogues curés (aero, airline, saas, cpg + 15 types issus des fiches, docs/14), 803
   analyses ; chaque catalogue couvre toute sa bibliothèque (test).
 
 ## Pour une nouvelle industrie

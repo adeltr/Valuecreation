@@ -1,7 +1,7 @@
 # 11 · Archétypes = types d'entreprise · priorité Airline
 
-> Statut : **validé par l'analyste**. D1, D3 et Airline sont implémentés
-> (voir docs/12) ; D2 (familles de bridge non-EBITDA) reste en phase 3 ; D4
+> Statut : **validé par l'analyste**. D1, D3, Airline (docs/12) et les 15 fiches de niveau 2
+> (docs/14) sont implémentés ; D2 (familles de bridge non-EBITDA) reste en phase 3 ; D4
 > s'applique à chaque nouvel archétype. La section « brouillon Airline »
 > ci-dessous est historique : la version retenue est dans docs/12.
 
@@ -54,17 +54,18 @@ une revue (tableau). Les lots de 5–6 restent pour A&D, déjà engagé.
 
 ## Niveaux (validé)
 
-- **Niveau 2** — extension sectorielle + template dédié : `saas`, `aero`, `airline`, `cpg` (docs/13).
-- **Niveau 1** — 15 types EBITDA (cpg passé au niveau 2) sur le vocabulaire de base + template EBITDA générique
-  (`src/templates/ebitda.ts` : REVENUE × (1+REVENUE_GROWTH)^n × EBITDA_MARGIN) :
-  agriculture, chemical, cosmetics, electricity-generation, healthcare-provider,
-  hospitality, manufacturing, media, medical-device, metals-mining, pharma, retail,
-  third-party-logistics, waste-management, wine-spirits. Tables de curation pré-remplies
-  par mots-clés (`scripts/prefill-curation.ts`), appliquées telles quelles (décision
-  analyste) → catalogues générés ; corrections possibles à tout moment dans `_curation.md`.
+- **Niveau 2** — extension sectorielle + template dédié pour les 19 types EBITDA :
+  `saas`, `aero`, `airline`, `cpg` (extensions écrites à la main, docs/04, 05, 12, 13) et
+  les 15 autres types, dérivés des fiches `src/sectors/` (docs/14) : agriculture, chemical,
+  cosmetics, electricity-generation, healthcare-provider, hospitality, manufacturing, media,
+  medical-device, metals-mining, pharma, retail, third-party-logistics, waste-management,
+  wine-spirits.
+- **Niveau 1** — vocabulaire de base + template EBITDA générique (`src/templates/ebitda.ts`).
+  Plus aucun type à ce niveau ; le mécanisme est conservé pour un futur type (Telecommunications,
+  écarté pour l'instant). Les tables de curation pré-remplies par mots-clés (`scripts/prefill-curation.ts`)
+  restent appliquées telles quelles et sont enrichies par `apply-level2`.
 - **Hors EBITDA (phase 3)** — auto/life/P&C insurance, commercial/retail bank, health
   payor, biotech : analyses importées, pas d'archétype tant que leur bridge n'existe pas.
-- Priorités niveau 2 : CPG, Manufacturing, Retail.
 
 ## Inventaire des archétypes (d'après les liens des 32 fichiers KPI)
 

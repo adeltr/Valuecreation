@@ -42,7 +42,7 @@ des métriques et leviers (requis par A&D : GEOPOLITICAL, PROGRAM, CYBER).
 
 Note v2.2 (validé analyste) : la base porte aussi `REGULATORY` (cause commune à
 tous les types d'entreprise), `REVENUE_GROWTH` et `REVENUE_EXIT` (template EBITDA
-générique, docs/11 niveau 1), et `NON_LEVER_CODES` / `SCENARIO_ASSUMPTION_CODES`
+générique, aujourd'hui inutilisé : docs/14), et `NON_LEVER_CODES` / `SCENARIO_ASSUMPTION_CODES`
 (structure du deal : jamais cible de levier ; seules hypothèses de scénario).
 
 ## Guide : écrire une extension sectorielle
