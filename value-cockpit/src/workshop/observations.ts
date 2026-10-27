@@ -41,13 +41,13 @@ export function toMetricValue(o: Observation, catalog: AnalysisRef[], unit: Unit
 
 const words = (s: string) => s.toUpperCase().replace(/\(.*?\)/g, '').replace(/[^A-Z0-9]+/g, ' ').trim().split(' ').filter(Boolean);
 
-/** Metrics an observation can measure among `candidates`: name match first, then the analysis' curated metrics. */
+/**
+ * Metrics an observation may measure among `candidates`: only names that match the formula
+ * output; the analysis' curated metrics break ties. No match ⇒ nothing (a diagnostic).
+ */
 export function suggestMetrics(analysis: AnalysisRef, f: ParsedFormula, candidates: string[]): string[] {
   const out = words(f.output);
-  const score = (code: string) => {
-    const parts = code.split('_');
-    const overlap = parts.filter((p) => out.includes(p)).length / parts.length;
-    return overlap + (analysis.relatedMetricCodes.includes(code) ? 0.5 : 0);
-  };
-  return candidates.filter((c) => score(c) > 0).sort((a, b) => score(b) - score(a));
+  const overlap = (code: string) => code.split('_').filter((p) => out.includes(p)).length / code.split('_').length;
+  const score = (code: string) => overlap(code) + (analysis.relatedMetricCodes.includes(code) ? 0.5 : 0);
+  return candidates.filter((c) => overlap(c) > 0).sort((a, b) => score(b) - score(a));
 }

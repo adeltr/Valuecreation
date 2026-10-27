@@ -1,18 +1,21 @@
 import type { InteractionRule, Lever, Metric } from '../../domain/types';
 import type { AnalysisRef } from '../../catalog/types';
 import { buildLeverCard } from '../model/leverCard';
+import { toMetricValue, type Observation } from '../../workshop/observations';
 import { formatValue } from '../model/format';
 import { Panel } from './Panel';
 
 interface Props {
   lever: Lever; metrics: Metric[]; catalog: AnalysisRef[]; interactions: InteractionRule[];
   onClose: () => void;
+  observations: Observation[];
+  onOpenAnalysis: (analysisId: string) => void;
 }
 
 const signed = (v: number) => `${v > 0 ? '+' : ''}${formatValue(v, 'ratio')}`;
 
 /** What a lever is, how it reaches the MOIC, and how to diagnose it. Every figure comes from the engine. */
-export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose }: Props) {
+export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose, observations, onOpenAnalysis }: Props) {
   let c: ReturnType<typeof buildLeverCard>;
   try {
     c = buildLeverCard(lever, metrics, catalog, interactions);
@@ -65,6 +68,23 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose 
         : <p className="muted">L'impact propre du levier est calculé par le moteur après validation par l'analyste.</p>}
       <p className="muted">{`Délai J+${lever.timeToImpactDays} · effort ${lever.effort} · confiance ${lever.confidence} — ${lever.confidenceBasis}`}</p>
 
+      {(() => {
+        const measured = observations.filter((o) => o.metricCode === c.target.code);
+        if (measured.length === 0) return null;
+        return (
+          <>
+            <h3>Mesures de l'atelier sur {c.target.code}</h3>
+            <ul className="list">
+              {measured.map((o) => {
+                let v: string;
+                try { v = formatValue(toMetricValue(o, catalog, c.target.unit), c.target.unit); } catch (e) { v = (e as Error).message; }
+                return <li key={o.id}>{`${v} — ${o.analysisId}, ${o.date}${o.applied ? ' (appliquée au modèle)' : ''}`}</li>;
+              })}
+            </ul>
+          </>
+        );
+      })()}
+
       <h3>Analyses pour le diagnostiquer</h3>
       {c.analyses.length === 0 && <p className="muted">Aucune analyse du catalogue n'est liée à ce levier.</p>}
       <ul className="list">
@@ -72,6 +92,9 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose 
           <li key={a.id}>
             <strong>{a.title}</strong> <span className="muted">{a.id} · {a.partLabel}</span>
             <div className="muted">{a.goal}</div>
+            <button type="button" className="link" onClick={() => onOpenAnalysis(a.id)} aria-label={`Ouvrir dans l'atelier ${a.id}`}>
+              Ouvrir dans l'atelier{a.formulas.length ? ` (${a.formulas.length} formule${a.formulas.length > 1 ? 's' : ''})` : ''}
+            </button>
           </li>
         ))}
       </ul>

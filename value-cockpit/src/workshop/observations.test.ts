@@ -27,6 +27,11 @@ describe('observations (workshop results)', () => {
     expect(suggestMetrics(lfAnalysis, f, inputs)[0]).toBe('LOAD_FACTOR');
   });
 
+  it('suggests nothing rather than an unrelated metric (no name match ⇒ diagnostic by default)', () => {
+    const f = { ...findFormula(catalog, lfAnalysis.id, 'Load Factor')!, output: 'Route Profitability' };
+    expect(suggestMetrics(lfAnalysis, f, Object.keys(TEMPLATES.airline!.demoInputs))).toEqual([]);
+  });
+
   it('fails loudly on an unknown analysis or formula', () => {
     expect(() => observationValue(obs({ analysisId: 'airline-99' }), catalog)).toThrow(/airline-99/);
     expect(() => observationValue(obs({ formula: 'Nope' }), catalog)).toThrow(/Nope/);

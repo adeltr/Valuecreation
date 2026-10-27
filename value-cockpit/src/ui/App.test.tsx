@@ -10,6 +10,7 @@ vi.mock('./export/planSlide', async (orig) => ({
 }));
 import { initialState, reducer } from './state/store';
 import { toDossier } from '../dossier/format';
+import { getCatalog } from '../catalog';
 import { LocalDossierRepository, type KeyValueStore } from './state/library';
 import type { DossierRepository } from '../dossier/repository';
 
@@ -150,6 +151,49 @@ describe('App', () => {
     expect(screen.getByRole('region', { name: 'Plan 100 jours' })).toBeTruthy();
     expect(within(screen.getByRole('region', { name: 'Fiche levier' })).getByText(/finite number/)).toBeTruthy();
     expect(screen.getAllByText(/finite number/).length).toBeGreaterThan(0);
+  });
+
+  it('workshop: run an analysis formula on company data, record it, apply it to the model', () => {
+    render(<App />);
+    const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
+    const vars = lf.formulas.find((f) => f.output === 'Load Factor')!.variables;
+    const ws = screen.getByRole('region', { name: 'Atelier d\'analyse' });
+    fireEvent.change(within(ws).getByLabelText('Analyse à mener'), { target: { value: lf.id } });
+    expect(within(ws).getByText(lf.goal)).toBeTruthy();
+
+    const calc = within(ws).getByRole('group', { name: 'Load Factor' });
+    fireEvent.change(within(calc).getByLabelText(vars[0]), { target: { value: '78' } });
+    fireEvent.change(within(calc).getByLabelText(vars[1]), { target: { value: '100' } });
+    expect(within(calc).getByTestId('result').textContent).toMatch(/78/);
+    expect((within(calc).getByLabelText('Métrique mesurée') as HTMLSelectElement).value).toBe('LOAD_FACTOR');
+    fireEvent.click(within(calc).getByRole('button', { name: 'Enregistrer l\'observation' }));
+
+    const list = within(ws).getByRole('list', { name: 'Observations' });
+    expect(within(list).getByText(/LOAD_FACTOR/)).toBeTruthy();
+    fireEvent.click(within(list).getByRole('button', { name: /Appliquer à l'entreprise/ }));
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    expect((within(company).getByLabelText('LOAD_FACTOR') as HTMLInputElement).value).toBe('0.78');
+    expect(within(list).getByText(/appliquée/)).toBeTruthy();
+
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal.replace(/FUEL_CASK/g, 'LOAD_FACTOR').replace('FUEL_EFFICIENCY', 'NETWORK_OPTIMIZATION') } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
+    const card = screen.getByRole('region', { name: 'Fiche levier' });
+    expect(within(card).getByText(/Mesures de l'atelier sur LOAD_FACTOR/)).toBeTruthy();
+    expect(within(card).getByText(/78,0 %.*appliquée au modèle/)).toBeTruthy();
+  });
+
+  it('the lever card opens its analyses in the workshop', () => {
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
+    const card = screen.getByRole('region', { name: 'Fiche levier' });
+    fireEvent.click(within(card).getAllByRole('button', { name: /Ouvrir dans l'atelier/ })[0]);
+    const ws = screen.getByRole('region', { name: 'Atelier d\'analyse' });
+    expect((within(ws).getByLabelText('Analyse à mener') as HTMLSelectElement).value).toMatch(/^airline-\d\d$/);
   });
 
   it('the simulation lists the interaction rules of the template', () => {

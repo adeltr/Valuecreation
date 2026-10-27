@@ -2,7 +2,7 @@ import { useEffect, useMemo, useReducer, useState } from 'react';
 import { initialState, reducer, selectBaseline, selectMetrics, selectScenario } from './state/store';
 import { TEMPLATES } from '../templates';
 import { getCatalog } from '../catalog';
-import { getBridgeFamily, type SectorArchetype } from '../ontology/registry';
+import { getActiveVocabulary, getBridgeFamily, type SectorArchetype } from '../ontology/registry';
 import { FAMILY_BRIDGE } from '../templates/build';
 import { DriverGraph } from './components/DriverGraph';
 import { CompanyView } from './components/CompanyView';
@@ -13,6 +13,7 @@ import { buildPlan } from './model/plan';
 import { buildSlideModel, renderPlanSlide } from './export/planSlide';
 import { DossierBar, type SavedRef } from './components/DossierBar';
 import { LeverCardPanel } from './components/LeverCardPanel';
+import { WorkshopPanel } from './components/WorkshopPanel';
 import type { DossierRepository } from '../dossier/repository';
 import { connectRepository, type DossierLocation } from './state/httpRepository';
 import { hasUnsavedWork } from './state/unsaved';
@@ -33,6 +34,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
   const [saved, setSaved] = useState<SavedRef | null>(null);
   const [cardLeverId, setCardLeverId] = useState<string | null>(null);
   const cardLever = state.levers.find((l) => l.id === cardLeverId);
+  const [workshopId, setWorkshopId] = useState<string | null>(null);
   const mayReplace = () => !hasUnsavedWork(state, saved?.fingerprint ?? null)
     || window.confirm('Les modifications non enregistrées du dossier en cours seront perdues. Continuer ?');
 
@@ -63,6 +65,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
               if (!mayReplace()) return;
               setSaved(null);
               setCardLeverId(null);
+              setWorkshopId(null);
               dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype });
             }}>
             {([2, 1] as const).map((level) => {
@@ -90,8 +93,11 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId} />
         {cardLever && (
           <LeverCardPanel lever={cardLever} metrics={metrics} catalog={catalog}
-            interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)} />
+            interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)}
+            observations={state.observations} onOpenAnalysis={setWorkshopId} />
         )}
+        <WorkshopPanel state={state} metrics={metrics} catalog={catalog} vocab={getActiveVocabulary(state.archetype)}
+          analysisId={workshopId} onSelect={setWorkshopId} dispatch={dispatch} />
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
           interactions={TEMPLATES[state.archetype]!.interactions}
           bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}
