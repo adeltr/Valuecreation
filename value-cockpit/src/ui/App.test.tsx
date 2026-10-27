@@ -2,6 +2,12 @@
 import { describe, it, expect, afterEach, beforeAll, beforeEach, vi } from 'vitest';
 import { render, screen, cleanup, fireEvent, within, waitFor } from '@testing-library/react';
 import { App } from './App';
+import { renderPlanSlide } from './export/planSlide';
+
+vi.mock('./export/planSlide', async (orig) => ({
+  ...(await orig<typeof import('./export/planSlide')>()),
+  renderPlanSlide: vi.fn(async () => null),
+}));
 import { initialState, reducer } from './state/store';
 import { toDossier } from '../dossier/format';
 import { LocalDossierRepository, type KeyValueStore } from './state/library';
@@ -104,7 +110,7 @@ describe('App', () => {
     expect(screen.queryByRole('region', { name: 'Fiche levier' })).toBeNull();
   });
 
-  it('the 100-day plan: phased workstream with engine value, editable owner and status, foundations', () => {
+  it('the 100-day plan: phased workstream with engine value, editable owner and status, foundations, slide export', async () => {
     render(<App />);
     const copilot = screen.getByRole('region', { name: 'Copilote' });
     fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
@@ -124,6 +130,26 @@ describe('App', () => {
     const status = within(plan).getByLabelText('Statut — Renouvellement de flotte') as HTMLSelectElement;
     fireEvent.change(status, { target: { value: 'in_progress' } });
     expect(status.value).toBe('in_progress');
+
+    fireEvent.click(within(plan).getByRole('button', { name: /Exporter le slide/ }));
+    await waitFor(() => expect(renderPlanSlide).toHaveBeenCalled());
+    const [model, output] = vi.mocked(renderPlanSlide).mock.calls[0];
+    expect(output).toBe('download');
+    expect(model.title).toMatch(/^Plan 100 jours : 1 chantier pour porter le MOIC/);
+    expect(model.table[1].slice(0, 2)).toEqual(['Renouvellement de flotte', 'Directeur des opérations']);
+  });
+
+  it('an input the engine cannot compute (division by zero) shows an error instead of crashing', () => {
+    render(<App />);
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
+    fireEvent.change(within(company).getByLabelText('AVG_TRIP_KM'), { target: { value: '0' } });
+    expect(screen.getByRole('region', { name: 'Plan 100 jours' })).toBeTruthy();
+    expect(within(screen.getByRole('region', { name: 'Fiche levier' })).getByText(/finite number/)).toBeTruthy();
+    expect(screen.getAllByText(/finite number/).length).toBeGreaterThan(0);
   });
 
   it('the simulation lists the interaction rules of the template', () => {

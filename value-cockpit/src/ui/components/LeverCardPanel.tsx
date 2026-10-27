@@ -13,7 +13,20 @@ const signed = (v: number) => `${v > 0 ? '+' : ''}${formatValue(v, 'ratio')}`;
 
 /** What a lever is, how it reaches the MOIC, and how to diagnose it. Every figure comes from the engine. */
 export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose }: Props) {
-  const c = buildLeverCard(lever, metrics, catalog, interactions);
+  let c: ReturnType<typeof buildLeverCard>;
+  try {
+    c = buildLeverCard(lever, metrics, catalog, interactions);
+  } catch (e) {
+    return (
+      <Panel title="Fiche levier" className="card">
+        <div className="card-head">
+          <strong>{lever.label}</strong>
+          <button type="button" className="secondary" onClick={onClose}>Fermer</button>
+        </div>
+        <p role="alert" className="error">{`Fiche indisponible : le moteur refuse les inputs actuels (${(e as Error).message}).`}</p>
+      </Panel>
+    );
+  }
   const step = c.sensitivity?.step;
   return (
     <Panel title="Fiche levier" className="card">

@@ -10,6 +10,7 @@ import { CopilotPanel } from './components/CopilotPanel';
 import { SimulationPanel } from './components/SimulationPanel';
 import { PlanPanel } from './components/PlanPanel';
 import { buildPlan } from './model/plan';
+import { buildSlideModel, renderPlanSlide } from './export/planSlide';
 import { DossierBar, type SavedRef } from './components/DossierBar';
 import { LeverCardPanel } from './components/LeverCardPanel';
 import type { DossierRepository } from '../dossier/repository';
@@ -38,10 +39,15 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
   // The engine may refuse an input set (e.g. a division by zero while typing): show it, never guess.
   let baseline = new Map<string, number>();
   let scenario = null;
+  let plan = null;
   let engineError: string | null = null;
   try {
     baseline = selectBaseline(state);
     scenario = selectScenario(state);
+    plan = buildPlan({
+      levers: state.levers, rootCauses: state.rootCauses, metrics, catalog,
+      rules: TEMPLATES[state.archetype]!.interactions, family: getBridgeFamily(state.archetype), overrides: state.plan,
+    });
   } catch (e) {
     engineError = (e as Error).message;
   }
@@ -90,10 +96,15 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
           interactions={TEMPLATES[state.archetype]!.interactions}
           bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}
           multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} />
-        <PlanPanel dispatch={dispatch} plan={buildPlan({
-          levers: state.levers, rootCauses: state.rootCauses, metrics, catalog,
-          rules: TEMPLATES[state.archetype]!.interactions, family: getBridgeFamily(state.archetype), overrides: state.plan,
-        })} />
+        <PlanPanel dispatch={dispatch} plan={plan} engineError={engineError} onExportSlide={() => {
+          if (!plan) return;
+          const model = buildSlideModel(plan, {
+            company: state.name, archetypeLabel: TEMPLATES[state.archetype]!.label, date: new Date().toLocaleDateString('fr-FR'),
+          });
+          const file = `${(state.name.trim() || 'plan').replace(/[\\/:*?"<>|]/g, '-')}-100-jours.pptx`;
+          renderPlanSlide(model, 'download', file)
+            .catch((e) => dispatch({ type: 'reportError', message: `Export du slide impossible : ${(e as Error).message}` }));
+        }} />
       </main>
     </div>
   );

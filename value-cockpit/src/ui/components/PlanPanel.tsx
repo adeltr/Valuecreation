@@ -39,7 +39,16 @@ const Milestones = ({ items }: { items: Milestone[] }) => (
 );
 
 /** 100-day plan: diagnose J0–30, design J30–60, execute J60–100. Values come from the engine. */
-export function PlanPanel({ plan, dispatch }: { plan: HundredDayPlan; dispatch: Dispatch<Action> }) {
+export function PlanPanel({ plan, engineError, dispatch, onExportSlide }: {
+  plan: HundredDayPlan | null; engineError: string | null; dispatch: Dispatch<Action>; onExportSlide: () => void;
+}) {
+  if (!plan) {
+    return (
+      <Panel title="Plan 100 jours" className="plan">
+        <p role="alert" className="error">{`Plan indisponible : le moteur refuse les inputs actuels (${engineError ?? 'erreur'}).`}</p>
+      </Panel>
+    );
+  }
   const { totals } = plan;
   return (
     <Panel title="Plan 100 jours" className="plan">
@@ -48,6 +57,9 @@ export function PlanPanel({ plan, dispatch }: { plan: HundredDayPlan; dispatch: 
         <strong>{formatValue(totals.moicAll, 'ratio')}</strong>
         {` avec tous les leviers validés, dont ${formatValue(totals.moicBy100, 'ratio')} captés d'ici J100 (moteur).`}
       </p>
+      <button type="button" className="secondary" onClick={onExportSlide} disabled={plan.workstreams.length === 0}>
+        Exporter le slide de restitution (.pptx)
+      </button>
       {plan.workstreams.length === 0 && <p className="muted">Validez des leviers dans le copilote : chacun devient un chantier.</p>}
 
       <div className="gantt" role="table" aria-label="Calendrier">
