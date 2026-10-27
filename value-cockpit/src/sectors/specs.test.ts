@@ -6,16 +6,16 @@ import { TEMPLATES } from '../templates';
 import { resolveMetrics } from '../engine/resolver';
 import { runScenario } from '../engine/scenario';
 import { extractDependencies } from '../engine/formula';
-import { BRIDGE_METRIC_CODES } from '../ontology/base';
+import { FAMILY_BRIDGE } from '../templates/build';
 import type { Lever } from '../domain/types';
-
-const BRIDGE_INPUTS = ['EBITDA_ENTRY', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY', 'FCF_ANNUAL'];
 
 describe.each(Object.values(SPECS))('$archetype sector spec', (spec) => {
   const a = spec.archetype as SectorArchetype;
   const vocab = getActiveVocabulary(a);
   const metrics = TEMPLATES[a]!.instantiate('c', spec.demoInputs);
   const base = resolveMetrics(metrics);
+  const bridge = FAMILY_BRIDGE[spec.family ?? 'ebitda'];
+  const anchor = bridge.anchor as keyof typeof spec.reference;
 
   it('is a level-2 archetype whose vocabulary holds every spec term', () => {
     expect(EXTENDED_ARCHETYPES).toContain(a);
@@ -31,8 +31,8 @@ describe.each(Object.values(SPECS))('$archetype sector spec', (spec) => {
     expect(spec.levers.length).toBeLessThanOrEqual(7);
   });
 
-  it('demo inputs are exactly the base inputs, the formula inputs and the bridge inputs', () => {
-    expect(Object.keys(spec.demoInputs).sort()).toEqual([...spec.baseInputs, ...spec.inputs.map((t) => t.code), ...BRIDGE_INPUTS].sort());
+  it('demo inputs are exactly the base inputs, the formula inputs and the bridge inputs of its family', () => {
+    expect(Object.keys(spec.demoInputs).sort()).toEqual([...spec.baseInputs, ...spec.inputs.map((t) => t.code), ...bridge.inputs].sort());
   });
 
   it('interaction rules link two formula inputs through a base coefficient the analyst sets', () => {
@@ -53,13 +53,14 @@ describe.each(Object.values(SPECS))('$archetype sector spec', (spec) => {
     for (const t of spec.diagnostics) expect(used.has(t.code), `${t.code} in a formula`).toBe(false);
   });
 
-  it('the engine reproduces the hand-computed EBITDA_EXIT reference', () => {
-    expect(base.get('EBITDA_EXIT')).toBeCloseTo(spec.reference.EBITDA_EXIT, 6);
+  it('the engine reproduces the hand-computed reference of the family anchor', () => {
+    expect(Object.keys(spec.reference)).toEqual([anchor]);
+    expect(base.get(anchor)).toBeCloseTo(spec.reference[anchor]!, 6);
     expect(Number.isFinite(base.get('MOIC'))).toBe(true);
-    for (const c of BRIDGE_METRIC_CODES) expect(base.has(c), c).toBe(true);
+    for (const c of [...bridge.summaryRows, ...Object.keys(bridge.formulas)]) expect(base.has(c), c).toBe(true);
   });
 
-  it.each(spec.levers.filter((l) => l.target))('lever $category on $target improves EBITDA_EXIT, entry untouched', (l) => {
+  it.each(spec.levers.filter((l) => l.target))('lever $category on $target improves the anchor and the MOIC, entry untouched', (l) => {
     const lever: Lever = {
       id: 'l', nodeId: 'n', causeId: null, label: l.category, mechanism: 'm', category: l.category,
       impactMetricCode: l.target!, expectedDelta: l.delta, deltaKind: 'absolute', timeToImpactDays: 90,
@@ -69,7 +70,8 @@ describe.each(Object.values(SPECS))('$archetype sector spec', (spec) => {
     expect(spec.inputs.some((t) => t.code === l.target), `${l.target} is not a formula input`).toBe(true);
     const r = runScenario('s', metrics, [lever], [{ scenarioId: 's', leverId: 'l', appliedDelta: l.delta, deltaKind: 'absolute' }], []);
     const v = new Map(r.map((x) => [x.metricCode, x.value]));
-    expect(v.get('EBITDA_EXIT')!).toBeGreaterThan(base.get('EBITDA_EXIT')!);
+    expect(v.get(anchor)!).toBeGreaterThanOrEqual(base.get(anchor)!); // a burn lever moves cash, not the rNPV
+    expect(v.get('MOIC')!).toBeGreaterThan(base.get('MOIC')!);
     expect(v.get('EQUITY_ENTRY')).toBe(base.get('EQUITY_ENTRY'));
     expect(r.every((x) => x.computedBy === 'engine')).toBe(true);
   });

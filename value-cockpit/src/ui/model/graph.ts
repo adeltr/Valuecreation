@@ -1,5 +1,7 @@
 import type { Metric } from '../../domain/types';
 import { BASE_METRIC_CODES, BRIDGE_METRIC_CODES } from '../../ontology/base';
+import { FAMILY_BRIDGE } from '../../templates/build';
+import { BRIDGE_FAMILIES, FAMILY_VOCAB } from '../../ontology/families';
 import { extractDependencies } from '../../engine/formula';
 
 export type Layer = 'L1' | 'L2' | 'L3';
@@ -9,13 +11,20 @@ export interface GraphEdge { id: string; source: string; target: string }
 
 const has = (list: readonly string[], code: string) => list.includes(code);
 
+// L1 = the bridge of every family (family codes are disjoint, so no archetype is needed).
+const L1_CODES = [...BRIDGE_METRIC_CODES, ...BRIDGE_FAMILIES.flatMap((f) => {
+  const b = FAMILY_BRIDGE[f];
+  return [b.anchor, ...b.inputs, ...Object.keys(b.formulas)];
+})];
+const L2_CODES = [...BASE_METRIC_CODES, ...BRIDGE_FAMILIES.flatMap((f) => FAMILY_VOCAB[f].codes)];
+
 /**
- * docs/01 layers: L1 = two-point bridge, L2 = financial drivers (base P&L/cash
+ * docs/01 layers: L1 = two-point bridge of the family (docs/16), L2 = financial drivers (base P&L/cash
  * codes and the extension's calculated exit aggregates), L3 = sector operational inputs.
  */
 export function layerOf(m: Metric): Layer {
-  if (has(BRIDGE_METRIC_CODES, m.code)) return 'L1';
-  if (has(BASE_METRIC_CODES, m.code) || m.isCalculated) return 'L2';
+  if (has(L1_CODES, m.code)) return 'L1';
+  if (has(L2_CODES, m.code) || m.isCalculated) return 'L2';
   return 'L3';
 }
 

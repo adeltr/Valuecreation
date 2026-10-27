@@ -4,15 +4,15 @@ import type { Action, CockpitState } from '../state/store';
 import { formatValue } from '../model/format';
 import { Panel } from './Panel';
 
-const BRIDGE_ROWS = ['EBITDA_ENTRY', 'EQUITY_ENTRY', 'EBITDA_EXIT', 'NET_DEBT_EXIT', 'EQUITY_EXIT', 'MOIC'];
-
 interface Props {
   state: CockpitState; metrics: Metric[]; baseline: Map<string, number>;
   scenario: ScenarioResult[] | null; scenarioError: string | null; dispatch: Dispatch<Action>;
   interactions: InteractionRule[];
+  /** The bridge rows of the archetype's family (docs/16), MOIC last. */
+  bridgeRows: string[];
 }
 
-export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions }: Props) {
+export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows }: Props) {
   const unit = (code: string) => metrics.find((m) => m.code === code)?.unit ?? 'currency';
   const scen = new Map(scenario?.map((r) => [r.metricCode, r.value]));
   const selectable = (l: Lever) => l.status === 'validated';
@@ -48,7 +48,7 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
       <table className="bridge">
         <thead><tr><th>Bridge</th><th>Base</th><th>Scénario</th></tr></thead>
         <tbody>
-          {BRIDGE_ROWS.map((code) => (
+          {bridgeRows.map((code) => (
             <tr key={code} className={code === 'MOIC' ? 'moic' : ''}>
               <th>{code}</th>
               <td className="num">{formatValue(baseline.get(code), unit(code))}</td>

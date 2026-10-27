@@ -1,7 +1,7 @@
 import type { Metric } from '../domain/types';
 import { BASE_ARCHETYPES, type SectorArchetype } from '../ontology/registry';
 import { SPECS } from '../sectors';
-import { makeTemplate, BRIDGE_FORMULAS } from './build';
+import { makeTemplate, FAMILY_BRIDGE } from './build';
 import type { InteractionRule } from '../domain/types';
 import { instantiateSaasTemplate, type SaasInputs } from './saas';
 import { instantiateAeroTemplate, type AeroInputs } from './aero';
@@ -41,7 +41,7 @@ const LEVEL1: Partial<Record<SectorArchetype, TemplateEntry>> = Object.fromEntri
 const LEVEL2_SPECS: Partial<Record<SectorArchetype, TemplateEntry>> = Object.fromEntries(
   Object.values(SPECS).map((spec) => [spec.archetype, {
     label: spec.label, level: 2,
-    instantiate: makeTemplate(spec.archetype as SectorArchetype, { ...spec.formulas, ...BRIDGE_FORMULAS }),
+    instantiate: makeTemplate(spec.archetype as SectorArchetype, { ...spec.formulas, ...FAMILY_BRIDGE[spec.family ?? 'ebitda'].formulas }),
     demoInputs: { ...spec.demoInputs },
     interactions: (spec.interactions ?? []).map((r) => ({ sourceCode: r.source, targetCode: r.target, coefficientCode: r.coefficient })),
   } satisfies TemplateEntry]),

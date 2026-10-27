@@ -2,7 +2,8 @@ import { useEffect, useMemo, useReducer, useState } from 'react';
 import { initialState, reducer, selectBaseline, selectMetrics, selectScenario } from './state/store';
 import { TEMPLATES } from '../templates';
 import { getCatalog } from '../catalog';
-import type { SectorArchetype } from '../ontology/registry';
+import { getBridgeFamily, type SectorArchetype } from '../ontology/registry';
+import { FAMILY_BRIDGE } from '../templates/build';
 import { DriverGraph } from './components/DriverGraph';
 import { CompanyView } from './components/CompanyView';
 import { CopilotPanel } from './components/CopilotPanel';
@@ -77,7 +78,8 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} />
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
-          interactions={TEMPLATES[state.archetype]!.interactions} />
+          interactions={TEMPLATES[state.archetype]!.interactions}
+          bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows} />
         <HundredDayPlan levers={state.levers} catalog={catalog} />
       </main>
     </div>

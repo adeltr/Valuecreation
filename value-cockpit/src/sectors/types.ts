@@ -19,7 +19,7 @@ export interface SectorSpec {
   inputs: SpecTerm[];                          // formula inputs (pile 1)
   diagnostics: SpecTerm[];                     // benchmarked, no formula (pile 2)
   calculated: { code: string; unit: Unit }[];  // extension-specific calculated codes
-  formulas: Record<string, string>;            // must define EBITDA_EXIT; the bridge is appended
+  formulas: Record<string, string>;            // must define the family anchor (EBITDA_EXIT, NET_INCOME_EXIT, RNPV_EXIT); the bridge is appended
   levers: { category: string; target: string | null; delta: number; sources: string; analyses: number[] }[];
   baseLevers: { category: string; analyses: number[] }[];
   causes: { category: string; sources: string; analyses: number[]; exogenous?: boolean }[];
@@ -27,6 +27,6 @@ export interface SectorSpec {
   /** Price → volume coupling applied by the engine in scenarios (docs/06); coefficient ∈ baseInputs. */
   interactions?: { source: string; target: string; coefficient: string; sources: string }[];
   demoInputs: Record<string, number>;
-  reference: { EBITDA_EXIT: number };          // computed by hand from demoInputs, not by the engine
+  reference: Partial<Record<'EBITDA_EXIT' | 'NET_INCOME_EXIT' | 'RNPV_EXIT', number>>; // the family anchor, computed by hand from demoInputs
   approximations: string[];
 }
