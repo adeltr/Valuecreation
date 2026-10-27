@@ -17,6 +17,7 @@ describe('formatValue (display boundary only)', () => {
     expect(sp(formatValue(45, 'days'))).toBe('45 j');
     expect(sp(formatValue(5, 'years'))).toBe('5 ans');
     expect(sp(formatValue(10000, 'count'))).toBe('10 000');
+    expect(sp(formatValue(6.6518, 'count'))).toBe('6,65');
     expect(formatValue(undefined, 'currency')).toBe('—');
   });
 });

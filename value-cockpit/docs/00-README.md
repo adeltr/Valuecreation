@@ -22,6 +22,8 @@ docs/
   12-SECTOR-AIRLINE.md              ← extension Airline + catalogue des 40 analyses
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
+    2026-10-27-value-cockpit-ui-phase2.md ← plan phase 2 (UI React, 3+1 panneaux)
+src/ui/                             ← UI phase 2 : store (reducer pur), view-models, panneaux — `npm run dev`
 data/analysis-library/<secteur>/    ← fichiers sources des frameworks sectoriels (.md) + _curation.md
 data/kpi-library/                   ← 32 glossaires KPI Umbrex par industrie (type 2), copiés tels quels
 data/kpi-library/fonctions/         ← 11 glossaires KPI par fonction (Finance, Supply Chain, RH…)
@@ -45,6 +47,7 @@ scripts/import-analyses.ts          ← import d'analyses brutes du vault → fo
 | 15 (catalogue d'analyses A&D) | 08, 05 §catalogue |
 | Airline (extension, template, catalogue) | 12, 08 |
 | Nouvel archétype | 09, 11, 12 (exemple le plus récent) |
+| UI (phase 2) | plan phase 2, 02 (invariants) |
 
 Règle : ne JAMAIS charger 01 (vision) pendant l'implémentation — c'est du
 contexte de cadrage, pas de spec exécutable. Le relire seulement si une

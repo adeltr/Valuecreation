@@ -32,6 +32,7 @@ export type Action =
   | { type: 'toggleScenarioLever'; id: string }
   | { type: 'setAppliedDelta'; id: string; value: number }
   | { type: 'setAssumption'; code: string; value: number }
+  | { type: 'reportError'; message: string }
   | { type: 'clearError' };
 
 const template = (archetype: SectorArchetype) => {
@@ -110,6 +111,9 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
         return { ...state, error: `Hypothèse non autorisée : ${action.code} (assumption limitée à ${SCENARIO_ASSUMPTION_CODES.join(', ')})` };
       }
       return { ...state, scenario: { ...state.scenario, assumptions: { ...state.scenario.assumptions, [action.code]: action.value } } };
+
+    case 'reportError':
+      return { ...state, error: action.message };
 
     case 'clearError':
       return { ...state, error: null };
