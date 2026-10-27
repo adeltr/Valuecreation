@@ -7,8 +7,8 @@ id: chemical-14
 part: B
 partLabel: Finance
 quant: [COGS]
-causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
-levers: [MIX, COST_PROCUREMENT]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, COMMODITY_PRICES]
+levers: [MIX, COST_PROCUREMENT, FEEDSTOCK_SOURCING]
 ---
 # 14 · Raw Material Hedging and Risk Management Strategy
 

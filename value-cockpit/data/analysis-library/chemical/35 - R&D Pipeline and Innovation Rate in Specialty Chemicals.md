@@ -6,7 +6,7 @@ kind: analysis
 id: chemical-35
 part: F
 partLabel: Research & Development (R&D)
-quant: []
+quant: [INNOVATION_RATE]
 causes: [MARKET]
 levers: []
 ---

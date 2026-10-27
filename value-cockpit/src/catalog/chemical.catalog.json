@@ -5,13 +5,16 @@
     "title": "Capacity Utilization and Efficiency Metrics",
     "part": "A",
     "partLabel": "Production & Process Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PLANT_UTILIZATION"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/chemical/01 - Capacity Utilization and Efficiency Metrics.md"
   },
@@ -21,13 +24,17 @@
     "title": "Energy Consumption and Cost Structure Analysis",
     "part": "A",
     "partLabel": "Production & Process Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ENERGY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "ENERGY_PRICES"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "ENERGY_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/chemical/02 - Energy Consumption and Cost Structure Analysis.md"
   },
@@ -39,7 +46,8 @@
     "partLabel": "Production & Process Optimization",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "COGS"
+      "COGS",
+      "PRODUCT_YIELD"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -47,7 +55,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "YIELD_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/chemical/03 - Product Yield and Waste Minimization Analysis.md"
   },
@@ -58,13 +67,16 @@
     "part": "A",
     "partLabel": "Production & Process Optimization",
     "relatedMetricCodes": [
-      "COGS"
+      "COGS",
+      "CATALYST_EFFICIENCY"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "YIELD_IMPROVEMENT"
+    ],
     "sourcePath": "data/analysis-library/chemical/04 - Catalyst Efficiency and Lifecycle Analysis.md"
   },
   {
@@ -75,7 +87,8 @@
     "partLabel": "Production & Process Optimization",
     "relatedMetricCodes": [
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "PLANT_UTILIZATION"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -83,7 +96,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/chemical/05 - Production Scale Flexibility and Batch Size Optimization.md"
   },
@@ -93,13 +107,16 @@
     "title": "Asset Reliability and Maintenance Cost Analysis",
     "part": "A",
     "partLabel": "Production & Process Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "RELIABILITY_MAINTENANCE"
     ],
     "sourcePath": "data/analysis-library/chemical/06 - Asset Reliability and Maintenance Cost Analysis.md"
   },
@@ -126,7 +143,8 @@
     "partLabel": "Production & Process Optimization",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "COGS"
+      "COGS",
+      "PRODUCT_YIELD"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -134,7 +152,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "YIELD_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/chemical/08 - Chemical Reaction Yield and Optimization Study.md"
   },
@@ -144,12 +163,15 @@
     "title": "High-Temperature and High-Pressure Process Resilience Analysis",
     "part": "A",
     "partLabel": "Production & Process Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "RELIABILITY_MAINTENANCE"
     ],
     "sourcePath": "data/analysis-library/chemical/09 - High-Temperature and High-Pressure Process Resilience.md"
   },
@@ -161,7 +183,9 @@
     "partLabel": "Production & Process Optimization",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "COGS"
+      "COGS",
+      "PRODUCT_YIELD",
+      "CATALYST_EFFICIENCY"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -169,7 +193,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "YIELD_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/chemical/10 - Polymerization Process Efficiency and Cost Analysis.md"
   },
@@ -181,7 +206,9 @@
     "partLabel": "Finance",
     "relatedMetricCodes": [
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "DSO",
+      "DPO"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -201,12 +228,17 @@
     "title": "Capital Intensity and Return on Investment (ROI) by Facility",
     "part": "B",
     "partLabel": "Finance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CAPACITY_DEBOTTLENECKING",
+      "CAPEX_DISCIPLINE"
+    ],
     "sourcePath": "data/analysis-library/chemical/12 - Capital Intensity and Return on Investment (ROI) by Facility.md"
   },
   {
@@ -217,7 +249,8 @@
     "partLabel": "Finance",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "PRICE_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -225,7 +258,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "SPECIALTY_MIX_SHIFT"
     ],
     "sourcePath": "data/analysis-library/chemical/13 - Pricing Strategy and Margin Analysis by Chemical Segment.md"
   },
@@ -242,11 +276,13 @@
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
       "MIX",
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "FEEDSTOCK_SOURCING"
     ],
     "sourcePath": "data/analysis-library/chemical/14 - Raw Material Hedging and Risk Management Strategy.md"
   },
@@ -272,13 +308,17 @@
     "title": "Environmental Impact and Decarbonization Assessment",
     "part": "C",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CARBON_INTENSITY"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "REGULATORY"
+      "REGULATORY",
+      "ENERGY_PRICES"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "ENERGY_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/chemical/16 - Environmental Impact and Decarbonization Assessment.md"
   },
@@ -304,7 +344,9 @@
     "title": "HSE and Process Safety Risk Analysis",
     "part": "C",
     "partLabel": "Regulatory & Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PROCESS_SAFETY_INCIDENTS"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -405,7 +447,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "MIX"
+      "MIX",
+      "SPECIALTY_MIX_SHIFT"
     ],
     "sourcePath": "data/analysis-library/chemical/24 - Product Portfolio Profitability by Chemical Type.md"
   },
@@ -416,7 +459,8 @@
     "part": "D",
     "partLabel": "Sales & Marketing",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -433,12 +477,16 @@
     "title": "Competitive Positioning in Specialty vs. Commodity Chemicals",
     "part": "D",
     "partLabel": "Sales & Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_GROWTH",
+      "SPECIALTY_REVENUE_SHARE"
+    ],
     "relatedCauseCategories": [
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "SPECIALTY_MIX_SHIFT"
     ],
     "sourcePath": "data/analysis-library/chemical/26 - Competitive Positioning in Specialty vs. Commodity.md"
   },
@@ -449,7 +497,8 @@
     "part": "D",
     "partLabel": "Sales & Marketing",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -554,11 +603,15 @@
     "title": "Specialty Chemicals R&D and Innovation Pipeline Analysis",
     "part": "F",
     "partLabel": "Research & Development (R&D)",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SPECIALTY_REVENUE_SHARE"
+    ],
     "relatedCauseCategories": [
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "SPECIALTY_MIX_SHIFT"
+    ],
     "sourcePath": "data/analysis-library/chemical/33 - Specialty Chemicals R&D and Innovation Pipeline Analysis.md"
   },
   {
@@ -567,7 +620,9 @@
     "title": "Specialty Chemical Customization Capability Assessment",
     "part": "F",
     "partLabel": "Research & Development (R&D)",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SPECIALTY_REVENUE_SHARE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
@@ -575,7 +630,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "WC_DIO"
+      "WC_DIO",
+      "SPECIALTY_MIX_SHIFT"
     ],
     "sourcePath": "data/analysis-library/chemical/34 - Specialty Chemical Customization Capability Assessment.md"
   },
@@ -585,7 +641,9 @@
     "title": "R&D Pipeline and Innovation Rate in Specialty Chemicals",
     "part": "F",
     "partLabel": "Research & Development (R&D)",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "INNOVATION_RATE"
+    ],
     "relatedCauseCategories": [
       "MARKET"
     ],
@@ -598,15 +656,19 @@
     "title": "Feedstock Dependency, Cost, Sourcing, and Substitution Strategy Analysis",
     "part": "F",
     "partLabel": "Research & Development (R&D)",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "FEEDSTOCK_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "FEEDSTOCK_SOURCING"
     ],
     "sourcePath": "data/analysis-library/chemical/36 - Feedstock Dependency, Cost, Sourcing, and Substitution.md"
   },
@@ -638,7 +700,8 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "FEEDSTOCK_SOURCING"
     ],
     "sourcePath": "data/analysis-library/chemical/38 - Supplier Dependence and Diversification Analysis.md"
   },
@@ -654,9 +717,12 @@
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "COMMODITY_PRICES"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "FEEDSTOCK_SOURCING"
+    ],
     "sourcePath": "data/analysis-library/chemical/39 - Global Trade Flow Analysis for Raw Materials and Finished.md"
   },
   {

@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-34
 part: F
 partLabel: Research & Development (R&D)
-quant: []
+quant: [SPECIALTY_REVENUE_SHARE]
 causes: [COMMERCIAL, OPERATIONAL, MARKET]
-levers: [VOLUME, WC_DIO]
+levers: [VOLUME, WC_DIO, SPECIALTY_MIX_SHIFT]
 ---
 # 34 · Specialty Chemical Customization Capability Assessment
 

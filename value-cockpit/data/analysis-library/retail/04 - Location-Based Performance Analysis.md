@@ -6,9 +6,9 @@ kind: analysis
 id: retail-04
 part: A
 partLabel: Finance
-quant: []
+quant: [CONVERSION_RATE, SALES_PER_SQ_FT]
 causes: [COMMERCIAL, OPERATIONAL, MARKET]
-levers: [MIX]
+levers: [MIX, STORE_PORTFOLIO]
 ---
 # 4 · Location-Based Performance Analysis
 

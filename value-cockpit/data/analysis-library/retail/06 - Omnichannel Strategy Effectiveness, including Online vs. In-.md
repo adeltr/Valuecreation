@@ -6,9 +6,9 @@ kind: analysis
 id: retail-06
 part: A
 partLabel: Finance
-quant: []
-causes: [COMMERCIAL]
-levers: [VOLUME, WC_DIO]
+quant: [GROSS_MARGIN, ONLINE_SALES_SHARE, RETURN_RATE]
+causes: [COMMERCIAL, ECOMMERCE_SHIFT]
+levers: [VOLUME, WC_DIO, OMNICHANNEL]
 ---
 # 6 · Omnichannel Strategy Effectiveness, including Online vs. In- Store Sales Performance
 

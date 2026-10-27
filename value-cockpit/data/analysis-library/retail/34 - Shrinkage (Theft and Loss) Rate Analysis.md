@@ -6,9 +6,9 @@ kind: analysis
 id: retail-34
 part: E
 partLabel: Finance
-quant: [DIO]
+quant: [DIO, SHRINKAGE_RATE]
 causes: [COMMERCIAL, OPERATIONAL]
-levers: [COST_PROCUREMENT, WC_DIO]
+levers: [COST_PROCUREMENT, WC_DIO, LOSS_PREVENTION]
 ---
 # 34 · Shrinkage (Theft and Loss) Rate Analysis
 

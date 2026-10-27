@@ -6,7 +6,7 @@ kind: analysis
 id: retail-01
 part: A
 partLabel: Finance
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, LFL_GROWTH]
 causes: [COMMERCIAL]
 levers: [PRICING, WC_DIO]
 ---

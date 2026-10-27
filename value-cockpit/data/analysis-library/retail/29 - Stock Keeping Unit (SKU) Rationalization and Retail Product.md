@@ -8,7 +8,7 @@ part: D
 partLabel: Merchandising
 quant: [REVENUE_GROWTH, DIO]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [MIX, COST_PROCUREMENT, WC_DIO]
+levers: [MIX, COST_PROCUREMENT, WC_DIO, MERCHANDISING_ASSORTMENT]
 ---
 # 29 · Stock Keeping Unit (SKU) Rationalization and Retail Product Assortment Optimization
 

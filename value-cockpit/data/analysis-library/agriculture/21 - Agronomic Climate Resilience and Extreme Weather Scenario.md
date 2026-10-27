@@ -7,7 +7,7 @@ id: agriculture-21
 part: C
 partLabel: Environmental Sustainability & Resource
 quant: []
-causes: []
+causes: [WEATHER_CLIMATE]
 levers: [VOLUME]
 ---
 # 21 · Agronomic Climate Resilience and Extreme Weather Scenario Evaluation

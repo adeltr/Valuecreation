@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-34
 part: E
 partLabel: Market Positioning & Value Chain
-quant: []
+quant: [ORGANIC_SHARE]
 causes: [COMMERCIAL, MARKET, REGULATORY]
-levers: [VOLUME, COST_PROCUREMENT, COST_OPS]
+levers: [VOLUME, COST_PROCUREMENT, COST_OPS, PREMIUM_CHANNELS]
 ---
 # 34 · Agribusiness Branding and Certification Review
 

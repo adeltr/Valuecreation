@@ -6,8 +6,8 @@ kind: analysis
 id: agriculture-37
 part: F
 partLabel: Regulatory Compliance & Risk Management
-quant: []
-causes: [COMMERCIAL]
+quant: [CROP_INSURANCE_COVERAGE]
+causes: [COMMERCIAL, WEATHER_CLIMATE, COMMODITY_PRICES]
 levers: []
 ---
 # 37 · Crop Insurance and Risk Mitigation Strategy Review

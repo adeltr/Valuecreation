@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-06
 part: A
 partLabel: Production & Process Optimization
-quant: []
+quant: [MAINTENANCE_COST_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, RELIABILITY_MAINTENANCE]
 ---
 # 6 · Asset Reliability and Maintenance Cost Analysis
 

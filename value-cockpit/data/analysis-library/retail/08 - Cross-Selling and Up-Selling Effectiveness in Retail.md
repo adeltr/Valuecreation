@@ -6,7 +6,7 @@ kind: analysis
 id: retail-08
 part: A
 partLabel: Finance
-quant: []
+quant: [GROSS_MARGIN, AVERAGE_TRANSACTION_VALUE]
 causes: [COMMERCIAL]
 levers: [PRICING, VOLUME]
 ---

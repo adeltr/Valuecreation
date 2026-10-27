@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-28
 part: D
 partLabel: Technology & Innovation in Agriculture
-quant: []
+quant: [LABOR_MACHINERY_COST_RATE]
 causes: [FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, MECHANIZATION]
 ---
 # 28 · Agricultural Machinery and Equipment Utilization Review
 

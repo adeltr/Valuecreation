@@ -6,9 +6,9 @@ kind: analysis
 id: retail-21
 part: C
 partLabel: Marketing
-quant: []
+quant: [CONVERSION_RATE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [PRICING, VOLUME]
+levers: [PRICING, VOLUME, MARKDOWN_OPTIMIZATION]
 ---
 # 21 · Promotional Campaign Effectiveness Analysis
 

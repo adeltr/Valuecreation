@@ -6,9 +6,9 @@ kind: analysis
 id: retail-17
 part: B
 partLabel: Operations
-quant: []
+quant: [NET_STORE_GROWTH, CONVERSION_RATE]
 causes: [OPERATIONAL]
-levers: []
+levers: [STORE_PORTFOLIO]
 ---
 # 17 · Store Closure and Rationalization Analysis
 

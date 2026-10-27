@@ -6,9 +6,9 @@ kind: analysis
 id: retail-31
 part: D
 partLabel: Merchandising
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, GROSS_MARGIN]
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING, WC_DSO, WC_DIO]
+levers: [PRICING, WC_DSO, WC_DIO, MERCHANDISING_ASSORTMENT]
 ---
 # 31 · Merchandising Strategy Effectiveness Analysis
 

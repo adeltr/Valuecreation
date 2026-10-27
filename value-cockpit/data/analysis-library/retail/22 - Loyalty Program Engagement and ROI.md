@@ -6,9 +6,9 @@ kind: analysis
 id: retail-22
 part: C
 partLabel: Marketing
-quant: []
+quant: [AVERAGE_TRANSACTION_VALUE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME]
+levers: [VOLUME, CUSTOMER_LOYALTY]
 ---
 # 22 · Loyalty Program Engagement and ROI
 

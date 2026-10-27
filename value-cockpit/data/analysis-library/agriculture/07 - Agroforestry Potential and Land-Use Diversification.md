@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-07
 part: A
 partLabel: Crop Management & Soil Health
-quant: []
+quant: [AREA_GROWTH]
 causes: []
-levers: []
+levers: [LAND_EXPANSION]
 ---
 # 7 · Agroforestry Potential and Land-Use Diversification Assessment
 

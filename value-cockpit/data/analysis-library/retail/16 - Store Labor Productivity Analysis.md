@@ -6,9 +6,9 @@ kind: analysis
 id: retail-16
 part: B
 partLabel: Operations
-quant: []
+quant: [STORE_LABOR_RATE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, LABOR_SCHEDULING]
 ---
 # 16 · Store Labor Productivity Analysis
 

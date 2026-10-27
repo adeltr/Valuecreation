@@ -6,7 +6,7 @@ kind: analysis
 id: agriculture-09
 part: A
 partLabel: Crop Management & Soil Health
-quant: []
+quant: [CROP_YIELD_GROWTH]
 causes: [OPERATIONAL]
 levers: [COST_OPS]
 ---

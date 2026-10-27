@@ -8,7 +8,7 @@ part: A
 partLabel: Finance
 quant: []
 causes: [COMMERCIAL]
-levers: [COST_PROCUREMENT]
+levers: [COST_PROCUREMENT, CUSTOMER_LOYALTY]
 ---
 # 7 · Customer Lifetime Value (CLV) in Retail Context
 

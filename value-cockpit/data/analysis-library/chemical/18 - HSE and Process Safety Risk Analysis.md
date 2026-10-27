@@ -6,7 +6,7 @@ kind: analysis
 id: chemical-18
 part: C
 partLabel: Regulatory & Compliance
-quant: []
+quant: [PROCESS_SAFETY_INCIDENTS]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
 levers: [COST_OPS]
 ---

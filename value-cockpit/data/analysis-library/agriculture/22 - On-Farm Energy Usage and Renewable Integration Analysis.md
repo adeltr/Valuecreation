@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-22
 part: C
 partLabel: Environmental Sustainability & Resource
-quant: []
+quant: [WATER_ENERGY_COST_RATE]
 causes: []
-levers: [COST_OPS]
+levers: [COST_OPS, WATER_ENERGY_EFFICIENCY]
 ---
 # 22 · On-Farm Energy Usage and Renewable Integration Analysis
 

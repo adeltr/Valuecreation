@@ -8,7 +8,7 @@ part: E
 partLabel: Market Positioning & Value Chain
 quant: [EBITDA_MARGIN]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [PRICING, WC_DSO]
+levers: [PRICING, WC_DSO, PREMIUM_CHANNELS]
 ---
 # 33 · Contract Farming and Outgrower Network Assessment
 

@@ -6,7 +6,7 @@ kind: analysis
 id: retail-27
 part: D
 partLabel: Merchandising
-quant: []
+quant: [GROSS_MARGIN]
 causes: [COMMERCIAL]
 levers: [COST_PROCUREMENT]
 ---

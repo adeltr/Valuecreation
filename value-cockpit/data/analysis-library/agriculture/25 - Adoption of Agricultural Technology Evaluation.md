@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-25
 part: D
 partLabel: Technology & Innovation in Agriculture
-quant: []
+quant: [LABOR_MACHINERY_COST_RATE]
 causes: [FINANCIAL]
-levers: [COST_PROCUREMENT]
+levers: [COST_PROCUREMENT, PRECISION_AGRONOMY, MECHANIZATION]
 ---
 # 25 · Adoption of Agricultural Technology Evaluation
 

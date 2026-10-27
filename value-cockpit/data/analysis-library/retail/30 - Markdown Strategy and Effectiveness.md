@@ -6,9 +6,9 @@ kind: analysis
 id: retail-30
 part: D
 partLabel: Merchandising
-quant: [REVENUE_GROWTH, DIO]
+quant: [REVENUE_GROWTH, DIO, GROSS_MARGIN, MARKDOWN_RATE]
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING, WC_DIO]
+levers: [PRICING, WC_DIO, MARKDOWN_OPTIMIZATION]
 ---
 # 30 · Markdown Strategy and Effectiveness
 

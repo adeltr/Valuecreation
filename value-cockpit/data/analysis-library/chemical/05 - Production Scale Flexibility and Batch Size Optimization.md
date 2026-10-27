@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-05
 part: A
 partLabel: Production & Process Optimization
-quant: [REVENUE_GROWTH, DIO]
+quant: [REVENUE_GROWTH, DIO, PLANT_UTILIZATION]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [COST_OPS]
+levers: [COST_OPS, CAPACITY_DEBOTTLENECKING]
 ---
 # 5 · Production Scale Flexibility and Batch Size Optimization
 

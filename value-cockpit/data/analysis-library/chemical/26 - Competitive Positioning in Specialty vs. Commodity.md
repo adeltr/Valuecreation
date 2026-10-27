@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-26
 part: D
 partLabel: Sales & Marketing
-quant: []
+quant: [PRICE_GROWTH, SPECIALTY_REVENUE_SHARE]
 causes: [MARKET]
-levers: [VOLUME]
+levers: [VOLUME, SPECIALTY_MIX_SHIFT]
 ---
 # 26 · Competitive Positioning in Specialty vs. Commodity Chemicals
 

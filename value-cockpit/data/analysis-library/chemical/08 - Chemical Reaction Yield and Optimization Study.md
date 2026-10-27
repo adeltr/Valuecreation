@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-08
 part: A
 partLabel: Production & Process Optimization
-quant: [EBITDA_MARGIN, COGS]
+quant: [EBITDA_MARGIN, COGS, PRODUCT_YIELD]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, YIELD_IMPROVEMENT]
 ---
 # 8 · Chemical Reaction Yield and Optimization Study
 

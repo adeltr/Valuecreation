@@ -17,12 +17,10 @@ export interface TemplateEntry {
   demoInputs: Record<string, number>;
 }
 
-const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = {
-  agriculture: 'Agriculture', chemical: 'Chemical', cosmetics: 'Cosmetics',
+const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = { cosmetics: 'Cosmetics',
   'electricity-generation': 'Electricity Generation', 'healthcare-provider': 'Healthcare Provider',
   hospitality: 'Hospitality', media: 'Media & Entertainment',
-  'medical-device': 'Medical Device', 'metals-mining': 'Metals & Mining', pharma: 'Pharmaceutical',
-  retail: 'Retail', 'third-party-logistics': 'Third Party Logistics', 'waste-management': 'Waste Management',
+  'medical-device': 'Medical Device', 'metals-mining': 'Metals & Mining', pharma: 'Pharmaceutical', 'third-party-logistics': 'Third Party Logistics', 'waste-management': 'Waste Management',
   'wine-spirits': 'Wine, Beer & Spirits',
 };
 

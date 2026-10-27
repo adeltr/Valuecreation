@@ -6,9 +6,9 @@ kind: analysis
 id: retail-14
 part: B
 partLabel: Operations
-quant: []
-causes: [COMMERCIAL, OPERATIONAL]
-levers: [VOLUME, WC_DIO]
+quant: [ONLINE_SALES_SHARE]
+causes: [COMMERCIAL, OPERATIONAL, ECOMMERCE_SHIFT]
+levers: [VOLUME, WC_DIO, OMNICHANNEL]
 ---
 # 14 · Click-and-Collect-Buy Online, Pickup In-Store (BOPIS) Effectiveness
 

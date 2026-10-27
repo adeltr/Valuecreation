@@ -6,7 +6,7 @@ kind: analysis
 id: retail-03
 part: A
 partLabel: Finance
-quant: []
+quant: [RETURN_RATE]
 causes: [COMMERCIAL, OPERATIONAL]
 levers: []
 ---

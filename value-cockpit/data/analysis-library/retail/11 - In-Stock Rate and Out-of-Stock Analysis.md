@@ -6,7 +6,7 @@ kind: analysis
 id: retail-11
 part: B
 partLabel: Operations
-quant: [REVENUE_GROWTH, DIO]
+quant: [REVENUE_GROWTH, DIO, OUT_OF_STOCK_RATE]
 causes: [COMMERCIAL, MARKET]
 levers: [PRICING, COST_PROCUREMENT, WC_DIO]
 ---

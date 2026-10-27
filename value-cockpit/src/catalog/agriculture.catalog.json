@@ -6,14 +6,16 @@
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "CROP_YIELD_GROWTH"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "PRECISION_AGRONOMY"
     ],
     "sourcePath": "data/analysis-library/agriculture/01 - Crop Yield and Farm Productivity Analysis.md"
   },
@@ -23,11 +25,16 @@
     "title": "Soil Health and Fertility Assessment",
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE",
+      "SOIL_ORGANIC_MATTER"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PRECISION_AGRONOMY"
+    ],
     "sourcePath": "data/analysis-library/agriculture/02 - Soil Health and Fertility Assessment.md"
   },
   {
@@ -38,10 +45,12 @@
     "partLabel": "Crop Management & Soil Health",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "OPERATIONAL"
+      "OPERATIONAL",
+      "PESTS_DISEASE"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "PRECISION_AGRONOMY"
     ],
     "sourcePath": "data/analysis-library/agriculture/03 - Pest and Disease Risk Management Evaluation.md"
   },
@@ -52,12 +61,15 @@
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "AREA_GROWTH"
     ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LAND_EXPANSION"
+    ],
     "sourcePath": "data/analysis-library/agriculture/04 - Crop Rotation and Diversification Strategy Evaluation.md"
   },
   {
@@ -66,13 +78,16 @@
     "title": "Agrochemical Usage Optimization and Compliance Analysis",
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "INPUT_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/agriculture/05 - Agrochemical Usage Optimization and Compliance Analysis.md"
   },
@@ -83,7 +98,9 @@
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
     "relatedMetricCodes": [],
-    "relatedCauseCategories": [],
+    "relatedCauseCategories": [
+      "PESTS_DISEASE"
+    ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/agriculture/06 - Pollination Management and Bee Health Impact Analysis.md"
   },
@@ -93,9 +110,13 @@
     "title": "Agroforestry Potential and Land-Use Diversification Assessment",
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AREA_GROWTH"
+    ],
     "relatedCauseCategories": [],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LAND_EXPANSION"
+    ],
     "sourcePath": "data/analysis-library/agriculture/07 - Agroforestry Potential and Land-Use Diversification.md"
   },
   {
@@ -104,7 +125,9 @@
     "title": "Soil Conservation and Erosion Control Measures Evaluation",
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SOIL_ORGANIC_MATTER"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/agriculture/08 - Soil Conservation and Erosion Control Measures Evaluation.md"
@@ -115,7 +138,9 @@
     "title": "Orchard and Vineyard Management Efficiency Analysis",
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CROP_YIELD_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
@@ -131,14 +156,16 @@
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "INPUT_COST_RATE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "PRECISION_AGRONOMY"
     ],
     "sourcePath": "data/analysis-library/agriculture/10 - Trace Minerals and Micronutrient Management for Crop.md"
   },
@@ -148,14 +175,18 @@
     "title": "Biostimulants and Biological Crop Protection Product Evaluation",
     "part": "A",
     "partLabel": "Crop Management & Soil Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "PRECISION_AGRONOMY",
+      "INPUT_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/agriculture/11 - Biostimulants and Biological Crop Protection Product.md"
   },
@@ -165,7 +196,9 @@
     "title": "Livestock Health and Productivity Analysis",
     "part": "B",
     "partLabel": "Livestock Management & Animal Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LIVESTOCK_MORTALITY_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
@@ -185,7 +218,8 @@
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "INPUT_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/agriculture/13 - Livestock Waste Management and Circular Economy.md"
   },
@@ -195,13 +229,16 @@
     "title": "Livestock Feed Sourcing and Nutrition Analysis",
     "part": "B",
     "partLabel": "Livestock Management & Animal Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "INPUT_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/agriculture/14 - Livestock Feed Sourcing and Nutrition Analysis.md"
   },
@@ -264,10 +301,13 @@
     "title": "Biosecurity Protocol and Disease Containment Strategy",
     "part": "B",
     "partLabel": "Livestock Management & Animal Health",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LIVESTOCK_MORTALITY_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "REGULATORY"
+      "REGULATORY",
+      "PESTS_DISEASE"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -296,11 +336,15 @@
     "title": "Water Resource Management and Irrigation Efficiency Review",
     "part": "C",
     "partLabel": "Environmental Sustainability & Resource",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "WATER_ENERGY_COST_RATE",
+      "IRRIGATION_EFFICIENCY"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "WATER_ENERGY_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/agriculture/20 - Water Resource Management and Irrigation Efficiency Review.md"
   },
@@ -311,7 +355,9 @@
     "part": "C",
     "partLabel": "Environmental Sustainability & Resource",
     "relatedMetricCodes": [],
-    "relatedCauseCategories": [],
+    "relatedCauseCategories": [
+      "WEATHER_CLIMATE"
+    ],
     "relatedLeverCategories": [
       "VOLUME"
     ],
@@ -323,10 +369,13 @@
     "title": "On-Farm Energy Usage and Renewable Integration Analysis",
     "part": "C",
     "partLabel": "Environmental Sustainability & Resource",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "WATER_ENERGY_COST_RATE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "WATER_ENERGY_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/agriculture/22 - On-Farm Energy Usage and Renewable Integration Analysis.md"
   },
@@ -367,12 +416,16 @@
     "title": "Adoption of Agricultural Technology Evaluation",
     "part": "D",
     "partLabel": "Technology & Innovation in Agriculture",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LABOR_MACHINERY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "PRECISION_AGRONOMY",
+      "MECHANIZATION"
     ],
     "sourcePath": "data/analysis-library/agriculture/25 - Adoption of Agricultural Technology Evaluation.md"
   },
@@ -382,7 +435,9 @@
     "title": "Seed Portfolio and Breeding Program Assessment",
     "part": "D",
     "partLabel": "Technology & Innovation in Agriculture",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CROP_YIELD_GROWTH"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "MIX"
@@ -410,12 +465,15 @@
     "title": "Agricultural Machinery and Equipment Utilization Review",
     "part": "D",
     "partLabel": "Technology & Innovation in Agriculture",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LABOR_MACHINERY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "MECHANIZATION"
     ],
     "sourcePath": "data/analysis-library/agriculture/28 - Agricultural Machinery and Equipment Utilization Review.md"
   },
@@ -425,14 +483,17 @@
     "title": "Greenhouse-Hydroponic Conversion Feasibility and Cultivation Methods Review",
     "part": "D",
     "partLabel": "Technology & Innovation in Agriculture",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AREA_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "LAND_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/agriculture/29 - Greenhouse-Hydroponic Conversion Feasibility and.md"
   },
@@ -462,7 +523,9 @@
     "partLabel": "Market Positioning & Value Chain",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "PRICE_GROWTH",
+      "ORGANIC_SHARE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -474,7 +537,8 @@
     "relatedLeverCategories": [
       "VOLUME",
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "PREMIUM_CHANNELS"
     ],
     "sourcePath": "data/analysis-library/agriculture/31 - Organic and Specialty Crop Market Opportunity Analysis.md"
   },
@@ -510,7 +574,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "WC_DSO"
+      "WC_DSO",
+      "PREMIUM_CHANNELS"
     ],
     "sourcePath": "data/analysis-library/agriculture/33 - Contract Farming and Outgrower Network Assessment.md"
   },
@@ -520,7 +585,9 @@
     "title": "Agribusiness Branding and Certification Review",
     "part": "E",
     "partLabel": "Market Positioning & Value Chain",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ORGANIC_SHARE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET",
@@ -529,7 +596,8 @@
     "relatedLeverCategories": [
       "VOLUME",
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "PREMIUM_CHANNELS"
     ],
     "sourcePath": "data/analysis-library/agriculture/34 - Agribusiness Branding and Certification Review.md"
   },
@@ -546,7 +614,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "PREMIUM_CHANNELS"
     ],
     "sourcePath": "data/analysis-library/agriculture/35 - Agrotourism and Direct-to-Consumer Engagement Feasibility.md"
   },
@@ -572,9 +641,13 @@
     "title": "Crop Insurance and Risk Mitigation Strategy Review",
     "part": "F",
     "partLabel": "Regulatory Compliance & Risk Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CROP_INSURANCE_COVERAGE"
+    ],
     "relatedCauseCategories": [
-      "COMMERCIAL"
+      "COMMERCIAL",
+      "WEATHER_CLIMATE",
+      "COMMODITY_PRICES"
     ],
     "relatedLeverCategories": [],
     "sourcePath": "data/analysis-library/agriculture/37 - Crop Insurance and Risk Mitigation Strategy Review.md"

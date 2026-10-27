@@ -7,7 +7,7 @@ id: agriculture-06
 part: A
 partLabel: Crop Management & Soil Health
 quant: []
-causes: []
+causes: [PESTS_DISEASE]
 levers: []
 ---
 # 6 · Pollination Management and Bee Health Impact Analysis

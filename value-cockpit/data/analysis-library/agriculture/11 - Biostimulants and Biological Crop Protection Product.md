@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-11
 part: A
 partLabel: Crop Management & Soil Health
-quant: []
+quant: [INPUT_COST_RATE]
 causes: [FINANCIAL, REGULATORY]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, PRECISION_AGRONOMY, INPUT_OPTIMIZATION]
 ---
 # 11 · Biostimulants and Biological Crop Protection Product Evaluation
 

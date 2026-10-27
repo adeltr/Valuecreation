@@ -6,7 +6,7 @@ kind: analysis
 id: agriculture-08
 part: A
 partLabel: Crop Management & Soil Health
-quant: []
+quant: [SOIL_ORGANIC_MATTER]
 causes: []
 levers: []
 ---

@@ -8,7 +8,7 @@ part: G
 partLabel: Supply Chain
 quant: []
 causes: [OPERATIONAL]
-levers: [COST_PROCUREMENT]
+levers: [COST_PROCUREMENT, FEEDSTOCK_SOURCING]
 ---
 # 38 · Supplier Dependence and Diversification Analysis
 

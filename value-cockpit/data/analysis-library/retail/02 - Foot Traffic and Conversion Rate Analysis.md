@@ -6,9 +6,9 @@ kind: analysis
 id: retail-02
 part: A
 partLabel: Finance
-quant: []
+quant: [CONVERSION_RATE]
 causes: [COMMERCIAL, OPERATIONAL]
-levers: [PRICING, MIX]
+levers: [PRICING, MIX, CUSTOMER_LOYALTY]
 ---
 # 2 · Foot Traffic and Conversion Rate Analysis
 

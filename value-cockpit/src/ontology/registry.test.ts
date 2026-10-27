@@ -81,7 +81,7 @@ describe('ontology registry – archetypes', () => {
     expect(SECTOR_ARCHETYPES).toContain('cpg');
   });
   it('a level-1 archetype has exactly the base vocabulary', () => {
-    expect(getActiveVocabulary('retail').metricCodes).toEqual(getActiveVocabulary('generic').metricCodes);
+    expect(getActiveVocabulary('wine-spirits').metricCodes).toEqual(getActiveVocabulary('generic').metricCodes);
   });
 });
 

@@ -6,7 +6,7 @@ kind: analysis
 id: retail-32
 part: D
 partLabel: Merchandising
-quant: []
+quant: [CONVERSION_RATE]
 causes: [COMMERCIAL]
 levers: []
 ---

@@ -6,7 +6,7 @@ kind: analysis
 id: agriculture-26
 part: D
 partLabel: Technology & Innovation in Agriculture
-quant: []
+quant: [CROP_YIELD_GROWTH]
 causes: []
 levers: [MIX]
 ---

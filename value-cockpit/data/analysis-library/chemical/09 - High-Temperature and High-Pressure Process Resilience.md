@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-09
 part: A
 partLabel: Production & Process Optimization
-quant: []
+quant: [MAINTENANCE_COST_RATE]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, RELIABILITY_MAINTENANCE]
 ---
 # 9 · High-Temperature and High-Pressure Process Resilience Analysis
 

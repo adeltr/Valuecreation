@@ -6,7 +6,8 @@
     "part": "A",
     "partLabel": "Finance",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "LFL_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
@@ -23,14 +24,17 @@
     "title": "Foot Traffic and Conversion Rate Analysis",
     "part": "A",
     "partLabel": "Finance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONVERSION_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "MIX"
+      "MIX",
+      "CUSTOMER_LOYALTY"
     ],
     "sourcePath": "data/analysis-library/retail/02 - Foot Traffic and Conversion Rate Analysis.md"
   },
@@ -40,7 +44,9 @@
     "title": "Customer Return Rate Analysis",
     "part": "A",
     "partLabel": "Finance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RETURN_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL"
@@ -54,14 +60,18 @@
     "title": "Location-Based Performance Analysis",
     "part": "A",
     "partLabel": "Finance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONVERSION_RATE",
+      "SALES_PER_SQ_FT"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "MIX"
+      "MIX",
+      "STORE_PORTFOLIO"
     ],
     "sourcePath": "data/analysis-library/retail/04 - Location-Based Performance Analysis.md"
   },
@@ -77,7 +87,8 @@
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
-      "MARKET"
+      "MARKET",
+      "SEASONALITY"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -92,13 +103,19 @@
     "title": "Omnichannel Strategy Effectiveness, including Online vs. In- Store Sales Performance",
     "part": "A",
     "partLabel": "Finance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN",
+      "ONLINE_SALES_SHARE",
+      "RETURN_RATE"
+    ],
     "relatedCauseCategories": [
-      "COMMERCIAL"
+      "COMMERCIAL",
+      "ECOMMERCE_SHIFT"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "WC_DIO"
+      "WC_DIO",
+      "OMNICHANNEL"
     ],
     "sourcePath": "data/analysis-library/retail/06 - Omnichannel Strategy Effectiveness, including Online vs. In-.md"
   },
@@ -113,7 +130,8 @@
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "CUSTOMER_LOYALTY"
     ],
     "sourcePath": "data/analysis-library/retail/07 - Customer Lifetime Value (CLV) in Retail Context.md"
   },
@@ -123,7 +141,10 @@
     "title": "Cross-Selling and Up-Selling Effectiveness in Retail",
     "part": "A",
     "partLabel": "Finance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN",
+      "AVERAGE_TRANSACTION_VALUE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
@@ -171,7 +192,8 @@
     "partLabel": "Operations",
     "relatedMetricCodes": [
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "OUT_OF_STOCK_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -194,11 +216,13 @@
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "ECOMMERCE_SHIFT"
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "OMNICHANNEL"
     ],
     "sourcePath": "data/analysis-library/retail/12 - E-commerce Fulfillment Efficiency and Cost Analysis.md"
   },
@@ -211,7 +235,8 @@
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "SALES_PER_SQ_FT"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -219,7 +244,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MERCHANDISING_ASSORTMENT"
     ],
     "sourcePath": "data/analysis-library/retail/13 - Shelf Space Allocation and Optimization.md"
   },
@@ -229,14 +255,18 @@
     "title": "Click-and-Collect-Buy Online, Pickup In-Store (BOPIS) Effectiveness",
     "part": "B",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "ONLINE_SALES_SHARE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
-      "OPERATIONAL"
+      "OPERATIONAL",
+      "ECOMMERCE_SHIFT"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "WC_DIO"
+      "WC_DIO",
+      "OMNICHANNEL"
     ],
     "sourcePath": "data/analysis-library/retail/14 - Click-and-Collect-Buy Online, Pickup In-Store (BOPIS).md"
   },
@@ -246,13 +276,17 @@
     "title": "Store Lease and Real Estate Cost Efficiency Analysis",
     "part": "B",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "OCCUPANCY_COST_RATE",
+      "SALES_PER_SQ_FT"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "STORE_PORTFOLIO"
     ],
     "sourcePath": "data/analysis-library/retail/15 - Store Lease and Real Estate Cost Efficiency Analysis.md"
   },
@@ -262,13 +296,16 @@
     "title": "Store Labor Productivity Analysis",
     "part": "B",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "STORE_LABOR_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "LABOR_SCHEDULING"
     ],
     "sourcePath": "data/analysis-library/retail/16 - Store Labor Productivity Analysis.md"
   },
@@ -278,11 +315,16 @@
     "title": "Store Closure and Rationalization Analysis",
     "part": "B",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "NET_STORE_GROWTH",
+      "CONVERSION_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "STORE_PORTFOLIO"
+    ],
     "sourcePath": "data/analysis-library/retail/17 - Store Closure and Rationalization Analysis.md"
   },
   {
@@ -292,13 +334,15 @@
     "part": "B",
     "partLabel": "Operations",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "NET_STORE_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "STORE_PORTFOLIO"
     ],
     "sourcePath": "data/analysis-library/retail/18 - Store Expansion and Cannibalization Risk Analysis.md"
   },
@@ -324,14 +368,17 @@
     "part": "C",
     "partLabel": "Marketing",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "GROSS_MARGIN",
+      "MARKDOWN_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "MARKDOWN_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/retail/20 - Retail Pricing and Discount Strategy Analysis.md"
   },
@@ -341,14 +388,17 @@
     "title": "Promotional Campaign Effectiveness Analysis",
     "part": "C",
     "partLabel": "Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONVERSION_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "MARKDOWN_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/retail/21 - Promotional Campaign Effectiveness Analysis.md"
   },
@@ -358,13 +408,16 @@
     "title": "Loyalty Program Engagement and ROI",
     "part": "C",
     "partLabel": "Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AVERAGE_TRANSACTION_VALUE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "CUSTOMER_LOYALTY"
     ],
     "sourcePath": "data/analysis-library/retail/22 - Loyalty Program Engagement and ROI.md"
   },
@@ -374,12 +427,15 @@
     "title": "Customer Demographics and Segmentation in Retail",
     "part": "C",
     "partLabel": "Marketing",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AVERAGE_TRANSACTION_VALUE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "MIX"
+      "MIX",
+      "CUSTOMER_LOYALTY"
     ],
     "sourcePath": "data/analysis-library/retail/23 - Customer Demographics and Segmentation in Retail.md"
   },
@@ -393,7 +449,9 @@
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CUSTOMER_LOYALTY"
+    ],
     "sourcePath": "data/analysis-library/retail/24 - Consumer Sentiment and Brand Perception in Retail.md"
   },
   {
@@ -403,7 +461,9 @@
     "part": "C",
     "partLabel": "Marketing",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "CONVERSION_RATE",
+      "AVERAGE_TRANSACTION_VALUE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
@@ -418,7 +478,8 @@
     "part": "D",
     "partLabel": "Merchandising",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -429,7 +490,8 @@
       "VOLUME",
       "MIX",
       "COST_PROCUREMENT",
-      "WC_DIO"
+      "WC_DIO",
+      "MERCHANDISING_ASSORTMENT"
     ],
     "sourcePath": "data/analysis-library/retail/26 - Product Category Margin Analysis.md"
   },
@@ -439,7 +501,9 @@
     "title": "Private Label vs. Branded Product Performance and Supplier Dependency Strategy",
     "part": "D",
     "partLabel": "Merchandising",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
@@ -454,12 +518,16 @@
     "title": "Planogram Compliance and Store Layout Efficiency, including Endcap Performance",
     "part": "D",
     "partLabel": "Merchandising",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SALES_PER_SQ_FT"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "MERCHANDISING_ASSORTMENT"
+    ],
     "sourcePath": "data/analysis-library/retail/28 - Planogram Compliance and Store Layout Efficiency,.md"
   },
   {
@@ -480,7 +548,8 @@
     "relatedLeverCategories": [
       "MIX",
       "COST_PROCUREMENT",
-      "WC_DIO"
+      "WC_DIO",
+      "MERCHANDISING_ASSORTMENT"
     ],
     "sourcePath": "data/analysis-library/retail/29 - Stock Keeping Unit (SKU) Rationalization and Retail Product.md"
   },
@@ -492,7 +561,9 @@
     "partLabel": "Merchandising",
     "relatedMetricCodes": [
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "GROSS_MARGIN",
+      "MARKDOWN_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -500,7 +571,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "WC_DIO"
+      "WC_DIO",
+      "MARKDOWN_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/retail/30 - Markdown Strategy and Effectiveness.md"
   },
@@ -511,7 +583,8 @@
     "part": "D",
     "partLabel": "Merchandising",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "GROSS_MARGIN"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -520,7 +593,8 @@
     "relatedLeverCategories": [
       "PRICING",
       "WC_DSO",
-      "WC_DIO"
+      "WC_DIO",
+      "MERCHANDISING_ASSORTMENT"
     ],
     "sourcePath": "data/analysis-library/retail/31 - Merchandising Strategy Effectiveness Analysis.md"
   },
@@ -530,7 +604,9 @@
     "title": "Visual Merchandising Performance",
     "part": "D",
     "partLabel": "Merchandising",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONVERSION_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
@@ -545,7 +621,8 @@
     "partLabel": "Finance",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "DIO"
+      "DIO",
+      "GMROI"
     ],
     "relatedCauseCategories": [
       "FINANCIAL"
@@ -564,7 +641,8 @@
     "part": "E",
     "partLabel": "Finance",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "SHRINKAGE_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -572,7 +650,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "WC_DIO"
+      "WC_DIO",
+      "LOSS_PREVENTION"
     ],
     "sourcePath": "data/analysis-library/retail/34 - Shrinkage (Theft and Loss) Rate Analysis.md"
   },

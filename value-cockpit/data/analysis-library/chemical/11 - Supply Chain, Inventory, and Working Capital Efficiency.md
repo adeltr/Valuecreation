@@ -6,7 +6,7 @@ kind: analysis
 id: chemical-11
 part: B
 partLabel: Finance
-quant: [REVENUE_GROWTH, DIO]
+quant: [REVENUE_GROWTH, DIO, DSO, DPO]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
 levers: [COST_PROCUREMENT, WC_DSO, WC_DIO]
 ---

@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-31
 part: E
 partLabel: Market Positioning & Value Chain
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, PRICE_GROWTH, ORGANIC_SHARE]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
-levers: [VOLUME, COST_PROCUREMENT, COST_OPS]
+levers: [VOLUME, COST_PROCUREMENT, COST_OPS, PREMIUM_CHANNELS]
 ---
 # 31 · Organic and Specialty Crop Market Opportunity Analysis
 

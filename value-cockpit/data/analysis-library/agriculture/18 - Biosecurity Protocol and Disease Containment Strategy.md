@@ -6,8 +6,8 @@ kind: analysis
 id: agriculture-18
 part: B
 partLabel: Livestock Management & Animal Health
-quant: []
-causes: [OPERATIONAL, REGULATORY]
+quant: [LIVESTOCK_MORTALITY_RATE]
+causes: [OPERATIONAL, REGULATORY, PESTS_DISEASE]
 levers: [COST_OPS]
 ---
 # 18 · Biosecurity Protocol and Disease Containment Strategy

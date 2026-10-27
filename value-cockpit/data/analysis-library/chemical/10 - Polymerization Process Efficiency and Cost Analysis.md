@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-10
 part: A
 partLabel: Production & Process Optimization
-quant: [EBITDA_MARGIN, COGS]
+quant: [EBITDA_MARGIN, COGS, PRODUCT_YIELD, CATALYST_EFFICIENCY]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, YIELD_IMPROVEMENT]
 ---
 # 10 · Polymerization Process Efficiency and Cost Analysis
 

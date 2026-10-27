@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-14
 part: B
 partLabel: Livestock Management & Animal Health
-quant: []
+quant: [INPUT_COST_RATE]
 causes: [FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, INPUT_OPTIMIZATION]
 ---
 # 14 · Livestock Feed Sourcing and Nutrition Analysis
 

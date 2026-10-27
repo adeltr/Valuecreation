@@ -6,7 +6,7 @@ kind: analysis
 id: retail-33
 part: E
 partLabel: Finance
-quant: [EBITDA_MARGIN, DIO]
+quant: [EBITDA_MARGIN, DIO, GMROI]
 causes: [FINANCIAL]
 levers: [PRICING, COST_PROCUREMENT, WC_DIO]
 ---

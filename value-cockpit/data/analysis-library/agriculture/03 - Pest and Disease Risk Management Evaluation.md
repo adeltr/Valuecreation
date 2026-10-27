@@ -7,8 +7,8 @@ id: agriculture-03
 part: A
 partLabel: Crop Management & Soil Health
 quant: []
-causes: [OPERATIONAL]
-levers: [COST_OPS]
+causes: [OPERATIONAL, PESTS_DISEASE]
+levers: [COST_OPS, PRECISION_AGRONOMY]
 ---
 # 3 · Pest and Disease Risk Management Evaluation
 

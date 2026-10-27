@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-12
 part: B
 partLabel: Finance
-quant: []
+quant: [CAPEX]
 causes: [OPERATIONAL, FINANCIAL]
-levers: []
+levers: [CAPACITY_DEBOTTLENECKING, CAPEX_DISCIPLINE]
 ---
 # 12 · Capital Intensity and Return on Investment (ROI) by Facility
 

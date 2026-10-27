@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-01
 part: A
 partLabel: Production & Process Optimization
-quant: []
+quant: [PLANT_UTILIZATION]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, CAPACITY_DEBOTTLENECKING]
 ---
 # 1 · Capacity Utilization and Efficiency Metrics
 

@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-04
 part: A
 partLabel: Production & Process Optimization
-quant: [COGS]
+quant: [COGS, CATALYST_EFFICIENCY]
 causes: [OPERATIONAL, FINANCIAL]
-levers: []
+levers: [YIELD_IMPROVEMENT]
 ---
 # 4 · Catalyst Efficiency and Lifecycle Analysis
 

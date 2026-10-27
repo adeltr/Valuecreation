@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-02
 part: A
 partLabel: Crop Management & Soil Health
-quant: []
+quant: [INPUT_COST_RATE, SOIL_ORGANIC_MATTER]
 causes: [OPERATIONAL]
-levers: []
+levers: [PRECISION_AGRONOMY]
 ---
 # 2 · Soil Health and Fertility Assessment
 

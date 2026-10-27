@@ -72,7 +72,7 @@ describe('App', () => {
 
   it('a level-1 company type uses the generic EBITDA template', () => {
     render(<App />);
-    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'retail' } });
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'wine-spirits' } });
     const company = screen.getByRole('region', { name: 'Entreprise' });
     expect(within(company).getByLabelText('REVENUE_GROWTH')).toBeTruthy();
     expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);

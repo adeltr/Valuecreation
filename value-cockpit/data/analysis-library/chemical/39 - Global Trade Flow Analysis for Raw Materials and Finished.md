@@ -7,8 +7,8 @@ id: chemical-39
 part: G
 partLabel: Supply Chain
 quant: [COGS]
-causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: []
+causes: [OPERATIONAL, FINANCIAL, MARKET, COMMODITY_PRICES]
+levers: [FEEDSTOCK_SOURCING]
 ---
 # 39 · Global Trade Flow Analysis for Raw Materials and Finished Products
 

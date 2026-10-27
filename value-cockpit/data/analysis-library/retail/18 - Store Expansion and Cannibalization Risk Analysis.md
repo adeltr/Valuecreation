@@ -6,9 +6,9 @@ kind: analysis
 id: retail-18
 part: B
 partLabel: Operations
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, NET_STORE_GROWTH]
 causes: [COMMERCIAL]
-levers: [VOLUME]
+levers: [VOLUME, STORE_PORTFOLIO]
 ---
 # 18 · Store Expansion and Cannibalization Risk Analysis
 

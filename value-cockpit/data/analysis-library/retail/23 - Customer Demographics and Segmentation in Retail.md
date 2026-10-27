@@ -6,9 +6,9 @@ kind: analysis
 id: retail-23
 part: C
 partLabel: Marketing
-quant: []
+quant: [AVERAGE_TRANSACTION_VALUE]
 causes: [COMMERCIAL]
-levers: [MIX]
+levers: [MIX, CUSTOMER_LOYALTY]
 ---
 # 23 · Customer Demographics and Segmentation in Retail
 

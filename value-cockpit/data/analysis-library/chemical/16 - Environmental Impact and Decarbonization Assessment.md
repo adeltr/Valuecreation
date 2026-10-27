@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-16
 part: C
 partLabel: Regulatory & Compliance
-quant: []
-causes: [OPERATIONAL, REGULATORY]
-levers: [COST_OPS]
+quant: [CARBON_INTENSITY]
+causes: [OPERATIONAL, REGULATORY, ENERGY_PRICES]
+levers: [COST_OPS, ENERGY_EFFICIENCY]
 ---
 # 16 · Environmental Impact and Decarbonization Assessment
 

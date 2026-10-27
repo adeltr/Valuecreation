@@ -6,9 +6,9 @@ kind: analysis
 id: agriculture-20
 part: C
 partLabel: Environmental Sustainability & Resource
-quant: []
+quant: [WATER_ENERGY_COST_RATE, IRRIGATION_EFFICIENCY]
 causes: []
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, WATER_ENERGY_EFFICIENCY]
 ---
 # 20 · Water Resource Management and Irrigation Efficiency Review
 

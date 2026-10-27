@@ -6,7 +6,7 @@ kind: analysis
 id: chemical-25
 part: D
 partLabel: Sales & Marketing
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, VOLUME_GROWTH]
 causes: [COMMERCIAL, MARKET]
 levers: [VOLUME]
 ---

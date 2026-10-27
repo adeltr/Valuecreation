@@ -8,7 +8,7 @@ part: C
 partLabel: Marketing
 quant: []
 causes: [COMMERCIAL]
-levers: []
+levers: [CUSTOMER_LOYALTY]
 ---
 # 24 · Consumer Sentiment and Brand Perception in Retail
 

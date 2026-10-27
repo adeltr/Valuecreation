@@ -8,7 +8,7 @@ part: E
 partLabel: Market Positioning & Value Chain
 quant: []
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, PREMIUM_CHANNELS]
 ---
 # 35 · Agrotourism and Direct-to-Consumer Engagement Feasibility
 

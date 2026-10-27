@@ -6,9 +6,9 @@ kind: analysis
 id: retail-20
 part: C
 partLabel: Marketing
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, GROSS_MARGIN, MARKDOWN_RATE]
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING]
+levers: [PRICING, MARKDOWN_OPTIMIZATION]
 ---
 # 20 · Retail Pricing and Discount Strategy Analysis
 

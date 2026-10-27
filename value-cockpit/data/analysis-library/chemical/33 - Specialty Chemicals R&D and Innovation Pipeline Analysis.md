@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-33
 part: F
 partLabel: Research & Development (R&D)
-quant: []
+quant: [SPECIALTY_REVENUE_SHARE]
 causes: [MARKET]
-levers: []
+levers: [SPECIALTY_MIX_SHIFT]
 ---
 # 33 · Specialty Chemicals R&D and Innovation Pipeline Analysis
 

@@ -6,9 +6,9 @@ kind: analysis
 id: chemical-36
 part: F
 partLabel: Research & Development (R&D)
-quant: []
-causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
-levers: [COST_PROCUREMENT]
+quant: [FEEDSTOCK_COST_RATE]
+causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY, COMMODITY_PRICES]
+levers: [COST_PROCUREMENT, FEEDSTOCK_SOURCING]
 ---
 # 36 · Feedstock Dependency, Cost, Sourcing, and Substitution Strategy Analysis
 

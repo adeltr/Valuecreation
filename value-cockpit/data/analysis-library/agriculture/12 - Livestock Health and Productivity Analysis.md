@@ -6,7 +6,7 @@ kind: analysis
 id: agriculture-12
 part: B
 partLabel: Livestock Management & Animal Health
-quant: []
+quant: [LIVESTOCK_MORTALITY_RATE]
 causes: [OPERATIONAL]
 levers: [COST_OPS]
 ---

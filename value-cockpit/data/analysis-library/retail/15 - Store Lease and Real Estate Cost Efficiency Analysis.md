@@ -6,9 +6,9 @@ kind: analysis
 id: retail-15
 part: B
 partLabel: Operations
-quant: []
+quant: [OCCUPANCY_COST_RATE, SALES_PER_SQ_FT]
 causes: [FINANCIAL]
-levers: [COST_OPS, WC_DIO]
+levers: [COST_OPS, WC_DIO, STORE_PORTFOLIO]
 ---
 # 15 · Store Lease and Real Estate Cost Efficiency Analysis
 

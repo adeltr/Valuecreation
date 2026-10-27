@@ -7,8 +7,8 @@ id: retail-12
 part: B
 partLabel: Operations
 quant: []
-causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
-levers: [COST_OPS, WC_DIO]
+causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, ECOMMERCE_SHIFT]
+levers: [COST_OPS, WC_DIO, OMNICHANNEL]
 ---
 # 12 · E-commerce Fulfillment Efficiency and Cost Analysis
 

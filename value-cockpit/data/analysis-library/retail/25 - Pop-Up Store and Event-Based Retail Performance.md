@@ -6,7 +6,7 @@ kind: analysis
 id: retail-25
 part: C
 partLabel: Marketing
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, CONVERSION_RATE, AVERAGE_TRANSACTION_VALUE]
 causes: [COMMERCIAL]
 levers: []
 ---

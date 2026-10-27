@@ -8,7 +8,7 @@ part: D
 partLabel: Sales & Marketing
 quant: [EBITDA_MARGIN, REVENUE_GROWTH]
 causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING, MIX]
+levers: [PRICING, MIX, SPECIALTY_MIX_SHIFT]
 ---
 # 24 · Product Portfolio Profitability by Chemical Type
 
