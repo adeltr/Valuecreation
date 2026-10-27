@@ -1,9 +1,11 @@
 // @vitest-environment jsdom
 import { describe, it, expect, afterEach, beforeAll, beforeEach, vi } from 'vitest';
-import { render, screen, cleanup, fireEvent, within } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent, within, waitFor } from '@testing-library/react';
 import { App } from './App';
 import { initialState, reducer } from './state/store';
 import { toDossier } from '../dossier/format';
+import { LocalDossierRepository, type KeyValueStore } from './state/library';
+import type { DossierRepository } from '../dossier/repository';
 
 beforeAll(() => {
   // React Flow measures its container.
@@ -97,82 +99,129 @@ describe('App', () => {
 });
 
 describe('App – dossiers', () => {
-  beforeEach(() => localStorage.clear());
+  const memory = (): KeyValueStore => { const m = new Map<string, string>(); return { getItem: (k) => m.get(k) ?? null, setItem: (k, v) => { m.set(k, v); } }; };
+  let repo: DossierRepository;
+  beforeEach(() => { repo = new LocalDossierRepository(memory()); });
+  afterEach(() => vi.restoreAllMocks());
 
+  /** Renders the app on `repo` and waits until the dossier bar is connected. */
+  const start = async (where: 'server' | 'browser' = 'browser') => {
+    render(<App connect={async () => ({ repo, where })} />);
+    await screen.findByText(where === 'server' ? /serveur partagé/ : /ce navigateur/);
+  };
   const bar = () => within(screen.getByRole('region', { name: 'Dossier' }));
   const typeSelect = () => screen.getByLabelText(/Type d'entreprise/) as HTMLSelectElement;
+  const nameInput = () => bar().getByLabelText('Nom du dossier') as HTMLInputElement;
   const loadFactor = () => within(screen.getByRole('region', { name: 'Entreprise' })).getByLabelText('LOAD_FACTOR') as HTMLInputElement;
+  const click = (name: string) => fireEvent.click(bar().getByRole('button', { name }));
+  const saveAs = async (name: string) => {
+    fireEvent.change(nameInput(), { target: { value: name } });
+    click('Enregistrer');
+    await bar().findByText(/Enregistré/);
+  };
+  const choose = async (name: string) => {
+    await bar().findByRole('option', { name: new RegExp(name) });
+    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: name } });
+  };
   const importFile = (content: string) => fireEvent.change(bar().getByLabelText(/Importer/), {
     target: { files: [new File([content], 'dossier.json', { type: 'application/json' })] },
   });
 
-  it('saves a named case in the browser and reopens it later', () => {
-    render(<App />);
-    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
-    fireEvent.change(loadFactor(), { target: { value: '0.7' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
-    expect(bar().getByText(/Enregistré/)).toBeTruthy();
-
-    fireEvent.change(typeSelect(), { target: { value: 'cpg' } });
-    expect((bar().getByLabelText('Nom du dossier') as HTMLInputElement).value).toBe('');
-
-    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Ouvrir' }));
-    expect(typeSelect().value).toBe('airline');
-    expect(loadFactor().value).toBe('0.7');
-    expect((bar().getByLabelText('Nom du dossier') as HTMLInputElement).value).toBe('Air X');
+  it('shows where dossiers are kept', async () => {
+    await start('server');
+    expect(bar().getByText(/serveur partagé/)).toBeTruthy();
   });
 
-  it('asks before replacing unsaved work, and keeps it on cancel', () => {
-    render(<App />);
-    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
+  it('saves a named case and reopens it later', async () => {
+    await start();
+    fireEvent.change(loadFactor(), { target: { value: '0.7' } });
+    await saveAs('Air X');
+    fireEvent.change(typeSelect(), { target: { value: 'cpg' } });
+    expect(nameInput().value).toBe('');
+    await choose('Air X');
+    click('Ouvrir');
+    await waitFor(() => expect(typeSelect().value).toBe('airline'));
+    expect(loadFactor().value).toBe('0.7');
+    expect(nameInput().value).toBe('Air X');
+  });
+
+  it('saving again updates the same dossier (next revision)', async () => {
+    await start();
+    await saveAs('Air X');
+    fireEvent.change(loadFactor(), { target: { value: '0.7' } });
+    click('Enregistrer');
+    await waitFor(async () => expect((await repo.read('Air X')).revision).toBe(2));
+  });
+
+  it('someone else saved meanwhile: asks before overwriting, keeps their version on cancel', async () => {
+    await start('server');
+    await saveAs('Air X');
+    const theirs = await repo.read('Air X');
+    await repo.save({ ...theirs.file, savedAt: 'later' }, 1);   // another analyst
+    const confirm = vi.spyOn(window, 'confirm').mockReturnValue(false);
+    fireEvent.change(loadFactor(), { target: { value: '0.6' } });
+    click('Enregistrer');
+    await waitFor(() => expect(confirm).toHaveBeenCalledWith(expect.stringMatching(/modifié depuis son ouverture/)));
+    expect((await repo.read('Air X')).revision).toBe(2);
+    expect(screen.getByRole('alert').textContent).toMatch(/pas été enregistré/);
+    expect(bar().queryByRole('status')).toBeNull();
+  });
+
+  it('saving a new case under an existing name asks before replacing it', async () => {
+    await start();
+    await saveAs('Air X');
+    fireEvent.change(typeSelect(), { target: { value: 'cpg' } });
+    const confirm = vi.spyOn(window, 'confirm').mockReturnValue(true);
+    await saveAs('Air X');
+    expect(confirm).toHaveBeenCalledWith(expect.stringMatching(/existe déjà/));
+    expect((await repo.read('Air X')).file.archetype).toBe('cpg');
+  });
+
+  it('asks before replacing unsaved work, and keeps it on cancel', async () => {
+    await start();
+    await saveAs('Air X');
     fireEvent.change(loadFactor(), { target: { value: '0.6' } });
     const confirm = vi.spyOn(window, 'confirm').mockReturnValue(false);
-    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Ouvrir' }));
+    await choose('Air X');
+    click('Ouvrir');
     expect(confirm).toHaveBeenCalledWith(expect.stringMatching(/non enregistrées/));
     expect(loadFactor().value).toBe('0.6');
-    vi.restoreAllMocks();
   });
 
-  it('switching company type also asks before discarding unsaved work', () => {
+  it('switching company type also asks before discarding unsaved work', async () => {
     const confirm = vi.spyOn(window, 'confirm').mockReturnValue(false);
-    render(<App />);
+    await start();
     fireEvent.change(loadFactor(), { target: { value: '0.6' } });
     fireEvent.change(typeSelect(), { target: { value: 'cpg' } });
     expect(confirm).toHaveBeenCalled();
     expect(typeSelect().value).toBe('airline');
-    vi.restoreAllMocks();
   });
 
-  it('does not ask when the current case is saved', () => {
+  it('does not ask when the current case is saved', async () => {
     const confirm = vi.spyOn(window, 'confirm');
-    render(<App />);
-    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
-    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Ouvrir' }));
+    await start();
+    await saveAs('Air X');
+    await choose('Air X');
+    click('Ouvrir');
+    await waitFor(() => expect(nameInput().value).toBe('Air X'));
     expect(confirm).not.toHaveBeenCalled();
-    vi.restoreAllMocks();
   });
 
-  it('refuses to save a case without a name', () => {
-    render(<App />);
-    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
-    expect(screen.getByRole('alert').textContent).toMatch(/nom/i);
-    expect(localStorage.length).toBe(0);
+  it('refuses to save a case without a name', async () => {
+    await start();
+    click('Enregistrer');
+    expect((await screen.findByRole('alert')).textContent).toMatch(/nom/i);
+    expect(await repo.list()).toEqual([]);
   });
 
-  it('deletes a saved dossier after confirmation', () => {
+  it('deletes a saved dossier after confirmation', async () => {
     vi.spyOn(window, 'confirm').mockReturnValue(true);
-    render(<App />);
-    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Enregistrer' }));
-    fireEvent.change(bar().getByLabelText('Dossiers enregistrés'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Supprimer' }));
-    expect(bar().queryByRole('option', { name: /Air X/ })).toBeNull();
-    vi.restoreAllMocks();
+    await start();
+    await saveAs('Air X');
+    await choose('Air X');
+    click('Supprimer');
+    await waitFor(() => expect(bar().queryByRole('option', { name: /Air X/ })).toBeNull());
+    expect(await repo.list()).toEqual([]);
   });
 
   it('exports the case as a JSON dossier file', async () => {
@@ -180,33 +229,30 @@ describe('App – dossiers', () => {
     URL.createObjectURL = vi.fn((b: Blob) => { blob = b; return 'blob:x'; });
     URL.revokeObjectURL = vi.fn();
     vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => {});
-    render(<App />);
-    fireEvent.click(bar().getByRole('button', { name: 'Exporter' }));
+    await start();
+    click('Exporter');
     expect(screen.getByRole('alert').textContent).toMatch(/nom/i);
-    fireEvent.change(bar().getByLabelText('Nom du dossier'), { target: { value: 'Air X' } });
-    fireEvent.click(bar().getByRole('button', { name: 'Exporter' }));
+    fireEvent.change(nameInput(), { target: { value: 'Air X' } });
+    click('Exporter');
     const text = await new Promise<string>((resolve) => {
       const r = new FileReader(); r.onload = () => resolve(String(r.result)); r.readAsText(blob!);
     });
-    const file = JSON.parse(text);
-    expect(file).toMatchObject({ format: 'value-cockpit-dossier', name: 'Air X', archetype: 'airline' });
+    expect(JSON.parse(text)).toMatchObject({ format: 'value-cockpit-dossier', name: 'Air X', archetype: 'airline' });
     expect(screen.queryByRole('alert')).toBeNull();
-    vi.restoreAllMocks();
   });
 
   it('imports a dossier file', async () => {
     const saved = reducer(reducer(initialState('cpg'), { type: 'setName', name: 'Brand Co' }), { type: 'setInput', code: 'GROSS_MARGIN', value: 0.5 });
-    render(<App />);
+    await start();
     importFile(JSON.stringify(toDossier(saved, 't')));
     expect(await bar().findByDisplayValue('Brand Co')).toBeTruthy();
     expect(typeSelect().value).toBe('cpg');
   });
 
   it('refuses an invalid dossier file and keeps the current case', async () => {
-    render(<App />);
+    await start();
     importFile('{"format":"nope"}');
     expect((await screen.findByRole('alert')).textContent).toMatch(/Dossier refusé/);
     expect(typeSelect().value).toBe('airline');
   });
 });
-

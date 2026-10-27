@@ -1,4 +1,8 @@
-import type { DossierFile } from '../../dossier/format';
+import { parseDossier, type DossierFile } from '../../dossier/format';
+import {
+  DossierNotFound, RevisionConflict,
+  type DossierRepository, type DossierSummary, type StoredDossier,
+} from '../../dossier/repository';
 
 /** The subset of the Web Storage API the library needs (window.localStorage in the app). */
 export interface KeyValueStore {
@@ -8,36 +12,52 @@ export interface KeyValueStore {
 
 export const LIBRARY_KEY = 'value-cockpit.dossiers';
 
-export interface DossierSummary { name: string; archetype: string; savedAt: string }
+/** Dossiers kept in this browser only; same revision rules as the shared server. */
+export class LocalDossierRepository implements DossierRepository {
+  constructor(private readonly store: KeyValueStore) {}
 
-// Files are stored as written and re-validated by parseDossier when opened.
-function readAll(store: KeyValueStore): Record<string, DossierFile> {
-  const raw = store.getItem(LIBRARY_KEY);
-  if (raw === null) return {};
-  try {
-    const all = JSON.parse(raw);
-    if (all && typeof all === 'object' && !Array.isArray(all)) return all;
-  } catch { /* reported below */ }
-  throw new Error('Bibliothèque de dossiers illisible dans ce navigateur : rien n\'a été écrasé');
-}
+  private readAll(): Record<string, StoredDossier> {
+    const raw = this.store.getItem(LIBRARY_KEY);
+    if (raw === null) return {};
+    let all: unknown;
+    try { all = JSON.parse(raw); } catch { /* reported below */ }
+    if (!all || typeof all !== 'object' || Array.isArray(all)) {
+      throw new Error('Bibliothèque de dossiers illisible dans ce navigateur : rien n\'a été écrasé');
+    }
+    // The first version stored bare files, without a revision.
+    return Object.fromEntries(Object.entries(all as Record<string, StoredDossier | DossierFile>)
+      .map(([k, v]) => [k, 'format' in v ? { file: v, revision: 1 } : v]));
+  }
 
-export function listDossiers(store: KeyValueStore): DossierSummary[] {
-  return Object.values(readAll(store))
-    .map(({ name, archetype, savedAt }) => ({ name, archetype, savedAt }))
-    .sort((a, b) => b.savedAt.localeCompare(a.savedAt));
-}
+  private current(name: string): number | null {
+    return this.readAll()[name]?.revision ?? null;
+  }
 
-export function saveDossier(store: KeyValueStore, file: DossierFile): void {
-  store.setItem(LIBRARY_KEY, JSON.stringify({ ...readAll(store), [file.name]: file }));
-}
+  async list(): Promise<DossierSummary[]> {
+    return Object.values(this.readAll())
+      .map(({ file: { name, archetype, savedAt }, revision }) => ({ name, archetype, savedAt, revision }))
+      .sort((a, b) => b.savedAt.localeCompare(a.savedAt));
+  }
 
-export function readDossier(store: KeyValueStore, name: string): DossierFile {
-  const file = readAll(store)[name];
-  if (!file) throw new Error(`Dossier introuvable : ${name}`);
-  return file;
-}
+  async read(name: string): Promise<StoredDossier> {
+    const stored = this.readAll()[name];
+    if (!stored) throw new DossierNotFound(name);
+    return stored;
+  }
 
-export function deleteDossier(store: KeyValueStore, name: string): void {
-  const { [name]: _removed, ...rest } = readAll(store);
-  store.setItem(LIBRARY_KEY, JSON.stringify(rest));
+  async save(file: DossierFile, baseRevision: number | null): Promise<number> {
+    parseDossier(file);
+    const all = this.readAll();
+    const current = this.current(file.name);
+    if (current !== baseRevision) throw new RevisionConflict(file.name, current);
+    const revision = (current ?? 0) + 1;
+    this.store.setItem(LIBRARY_KEY, JSON.stringify({ ...all, [file.name]: { file, revision } }));
+    return revision;
+  }
+
+  async remove(name: string, revision: number): Promise<void> {
+    const { [name]: removed, ...rest } = this.readAll();
+    if ((removed?.revision ?? null) !== revision) throw new RevisionConflict(name, removed?.revision ?? null);
+    this.store.setItem(LIBRARY_KEY, JSON.stringify(rest));
+  }
 }

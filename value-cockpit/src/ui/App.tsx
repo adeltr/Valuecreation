@@ -1,4 +1,4 @@
-import { useMemo, useReducer, useState } from 'react';
+import { useEffect, useMemo, useReducer, useState } from 'react';
 import { initialState, reducer, selectBaseline, selectMetrics, selectScenario } from './state/store';
 import { TEMPLATES } from '../templates';
 import { getCatalog } from '../catalog';
@@ -8,16 +8,26 @@ import { CompanyView } from './components/CompanyView';
 import { CopilotPanel } from './components/CopilotPanel';
 import { SimulationPanel } from './components/SimulationPanel';
 import { HundredDayPlan } from './components/HundredDayPlan';
-import { DossierBar } from './components/DossierBar';
-import type { KeyValueStore } from './state/library';
+import { DossierBar, type SavedRef } from './components/DossierBar';
+import type { DossierRepository } from '../dossier/repository';
+import { connectRepository, type DossierLocation } from './state/httpRepository';
 import { hasUnsavedWork } from './state/unsaved';
 
-export function App({ storage = window.localStorage }: { storage?: KeyValueStore } = {}) {
+type Connect = () => Promise<{ repo: DossierRepository; where: DossierLocation }>;
+const defaultConnect: Connect = () => connectRepository((...a) => fetch(...a), window.localStorage);
+
+export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
   const [state, dispatch] = useReducer(reducer, 'airline' as SectorArchetype, initialState);
   const metrics = useMemo(() => selectMetrics(state), [state]);
   const catalog = getCatalog(state.archetype);
-  const [clean, setClean] = useState<string | null>(null);
-  const mayReplace = () => !hasUnsavedWork(state, clean)
+  const [store, setStore] = useState<Awaited<ReturnType<Connect>> | null>(null);
+  useEffect(() => {
+    let live = true;
+    void connect().then((s) => { if (live) setStore(s); });
+    return () => { live = false; };
+  }, [connect]);
+  const [saved, setSaved] = useState<SavedRef | null>(null);
+  const mayReplace = () => !hasUnsavedWork(state, saved?.fingerprint ?? null)
     || window.confirm('Les modifications non enregistrées du dossier en cours seront perdues. Continuer ?');
 
   // The engine may refuse an input set (e.g. a division by zero while typing): show it, never guess.
@@ -38,7 +48,11 @@ export function App({ storage = window.localStorage }: { storage?: KeyValueStore
         <label>
           Type d'entreprise{' '}
           <select value={state.archetype}
-            onChange={(e) => mayReplace() && dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype })}>
+            onChange={(e) => {
+              if (!mayReplace()) return;
+              setSaved(null);
+              dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype });
+            }}>
             {([2, 1] as const).map((level) => {
               const entries = Object.entries(TEMPLATES).filter(([, t]) => t!.level === level);
               return entries.length === 0 ? null : (
@@ -51,7 +65,8 @@ export function App({ storage = window.localStorage }: { storage?: KeyValueStore
           </select>
         </label>
       </header>
-      <DossierBar state={state} dispatch={dispatch} storage={storage} mayReplace={mayReplace} markClean={setClean} />
+      {store && <DossierBar state={state} dispatch={dispatch} repo={store.repo} where={store.where}
+        mayReplace={mayReplace} saved={saved} onSaved={setSaved} />}
       {state.error && (
         <div role="alert" className="banner">
           {state.error} <button type="button" className="secondary" onClick={() => dispatch({ type: 'clearError' })}>×</button>

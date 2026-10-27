@@ -15,6 +15,9 @@ body { margin: 0; background: var(--bg); }
 .dossier-bar input:not([type=file]) { width: 220px; }
 .dossier-bar select { max-width: 320px; }
 .dossier-bar .spacer { flex: 1; }
+.dossier-bar .where { font-size: 12px; padding: 2px 8px; border-radius: 999px; }
+.dossier-bar .where.server { background: var(--ok-soft); color: var(--ok); }
+.dossier-bar .where.browser { background: var(--warn-soft); color: var(--warn); }
 .dossier-bar .file { position: relative; padding: 5px 12px; border: 1px solid var(--line); border-radius: 6px;
   color: var(--ink); font-size: 14px; cursor: pointer; }
 .dossier-bar .file input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
