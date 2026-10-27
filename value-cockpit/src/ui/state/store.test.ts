@@ -129,5 +129,12 @@ describe('cockpit store', () => {
     const volume = selectScenario(s).find((r) => r.metricCode === 'VOLUME_GROWTH')!.value;
     expect(volume).toBeCloseTo(s.inputs.VOLUME_GROWTH + s.inputs.PRICE_ELASTICITY * 0.01, 12);
   });
+
+  it('plan decisions merge per workstream; switching type clears them', () => {
+    let s = reducer(airline(), { type: 'setPlanItem', id: 'f-kpi', patch: { owner: 'CFO' } });
+    s = reducer(s, { type: 'setPlanItem', id: 'f-kpi', patch: { status: 'done' } });
+    expect(s.plan).toEqual({ 'f-kpi': { owner: 'CFO', status: 'done' } });
+    expect(reducer(s, { type: 'selectArchetype', archetype: 'cpg' }).plan).toEqual({});
+  });
 });
 

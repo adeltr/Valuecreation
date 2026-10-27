@@ -5,10 +5,10 @@ import type { BridgeFamily } from '../../ontology/families';
 import { FAMILY_BRIDGE } from '../../templates/build';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
+import { FOUNDATION_IDS, type PlanOverride, type PlanStatus } from '../../dossier/format';
 
-export const PLAN_STATUSES = ['todo', 'in_progress', 'done', 'blocked'] as const;
-export type PlanStatus = (typeof PLAN_STATUSES)[number];
-export interface PlanOverride { owner?: string; status?: PlanStatus; note?: string }
+
+export type { PlanOverride, PlanStatus };
 
 export type Phase = 'diagnose' | 'design' | 'execute';
 export interface Bar { phase: Phase; from: number; to: number }
@@ -79,6 +79,7 @@ function foundations(family: BridgeFamily, overrides: Record<string, PlanOverrid
     ]],
     ['f-comms', 'Communication', [{ day: 7, label: 'Communication interne et aux clients clés' }]],
   ];
+  if (base.map(([id]) => id).join() !== FOUNDATION_IDS.join()) throw new Error('foundation ids out of sync with the dossier format');
   return base.map(([id, title, milestones]) => ({
     id, title, milestones,
     owner: overrides[id]?.owner || UNASSIGNED, status: overrides[id]?.status ?? 'todo', note: overrides[id]?.note ?? '',

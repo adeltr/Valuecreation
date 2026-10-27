@@ -6,7 +6,7 @@ import { sanitizeProposal } from '../../copilot/proposal';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
-import { parseDossier, type DossierCase } from '../../dossier/format';
+import { parseDossier, type DossierCase, type PlanOverride } from '../../dossier/format';
 
 export type { AssumptionCode } from '../../dossier/format';
 
@@ -17,6 +17,7 @@ export interface CockpitState extends DossierCase {
 export type Action =
   | { type: 'selectArchetype'; archetype: SectorArchetype }
   | { type: 'setName'; name: string }
+  | { type: 'setPlanItem'; id: string; patch: PlanOverride }
   | { type: 'loadDossier'; raw: unknown }
   | { type: 'setInput'; code: string; value: number }
   | { type: 'ingestProposal'; raw: unknown; today: string }
@@ -41,6 +42,7 @@ export function initialState(archetype: SectorArchetype): CockpitState {
     inputs: { ...template(archetype).demoInputs },
     levers: [], rootCauses: [],
     scenario: { leverIds: [], applied: {}, assumptions: {} },
+    plan: {},
     nextId: 1, error: null,
   };
 }
@@ -61,6 +63,9 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
 
     case 'setName':
       return { ...state, name: action.name };
+
+    case 'setPlanItem':
+      return { ...state, plan: { ...state.plan, [action.id]: { ...state.plan[action.id], ...action.patch } } };
 
     case 'loadDossier':
       try {

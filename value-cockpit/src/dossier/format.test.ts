@@ -22,7 +22,9 @@ function workedCase(): CockpitState {
   s = reducer(s, { type: 'validateLever', id });
   s = reducer(s, { type: 'toggleScenarioLever', id });
   s = reducer(s, { type: 'setAppliedDelta', id, value: -0.001 });
-  return reducer(s, { type: 'setAssumption', code: 'EXIT_MULTIPLE', value: 7 });
+  s = reducer(s, { type: 'setAssumption', code: 'EXIT_MULTIPLE', value: 7 });
+  s = reducer(s, { type: 'setPlanItem', id, patch: { owner: 'COO', status: 'in_progress' } });
+  return reducer(s, { type: 'setPlanItem', id: 'f-governance', patch: { owner: 'CFO', note: 'PMO interne' } });
 }
 
 const roundTrip = (s: CockpitState) => parseDossier(JSON.parse(JSON.stringify(toDossier(s, '2026-10-27T10:00:00Z'))));
@@ -93,4 +95,21 @@ describe('dossier file', () => {
     const ids = [...s.levers, ...s.rootCauses].map((x) => x.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
+
+  it('stores the 100-day plan decisions of the analyst (owner, status, note)', () => {
+    const back = roundTrip(workedCase());
+    expect(back.plan).toEqual({ h1: { owner: 'COO', status: 'in_progress' }, 'f-governance': { owner: 'CFO', note: 'PMO interne' } });
+  });
+
+  it('opens a version-1 dossier (before the plan) with an empty plan', () => {
+    const { plan: _plan, ...v1 } = toDossier(workedCase(), 't');
+    expect(parseDossier({ ...v1, version: 1 }).plan).toEqual({});
+  });
+
+  it('rejects a plan entry for an unknown workstream or with an unknown status', () => {
+    const file = toDossier(workedCase(), 't');
+    expect(() => parseDossier({ ...file, plan: { h99: { owner: 'x' } } })).toThrow(/h99/);
+    expect(() => parseDossier({ ...file, plan: { h1: { status: 'finished' } } })).toThrow(/status/);
+  });
 });
+
