@@ -1,8 +1,9 @@
-# 11 · PROPOSITION — archétypes = types d'entreprise · priorité Airline
+# 11 · Archétypes = types d'entreprise · priorité Airline
 
-> Statut : **à valider**. Rien de ce document n'est implémenté. Chaque terme
-> listé ici est un CANDIDAT (invariant 4 appliqué à la connaissance) : il
-> n'entre dans l'ontologie qu'après ton arbitrage.
+> Statut : **validé par l'analyste**. D1, D3 et Airline sont implémentés
+> (voir docs/12) ; D2 (familles de bridge non-EBITDA) reste en phase 3 ; D4
+> s'applique à chaque nouvel archétype. La section « brouillon Airline »
+> ci-dessous est historique : la version retenue est dans docs/12.
 
 ## Constats (vault Umbrex, index reçus)
 

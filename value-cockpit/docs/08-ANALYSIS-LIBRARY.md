@@ -76,6 +76,20 @@ de candidats (code, unité, benchmark, formule éventuelle) que tu arbitres en
 trois piles : input relié par formule / métrique de diagnostic benchmarkée /
 hors périmètre v1. Seule la première pile touche `templates/aero.ts`.
 
+## Catalogue v2 (docs/11 D3)
+
+- `AnalysisRef` porte `archetype` et `partLabel` (les lettres de partie
+  changent de sens d'un archétype à l'autre) ; id = `<archetype>-NN`.
+- Frontmatter : ajouter `partLabel: <libellé>` aux champs ci-dessus.
+- Tables de curation : `data/analysis-library/<archetype>/_curation.md`
+  (ignoré par le build), jamais dans les fichiers sources.
+- Import d'analyses brutes du vault : `tsx scripts/import-analyses.ts <src>
+  <archetype> <tag> "<Index title>"` (reflow sans réécriture).
+- Génération : `npm run catalog:build -- <archetype>` ; logique testée dans
+  `src/catalog/build.ts`.
+- Curation à l'échelle (D4) : un archétype entier pré-rempli dans
+  `_curation.md`, une revue analyste, puis application.
+
 ## Pour une nouvelle industrie
 Même pipeline : `data/analysis-library/<secteur>/` → frontmatters → curation
 par lots → extension `sectors/<secteur>.ts` + `templates/<secteur>.ts` +

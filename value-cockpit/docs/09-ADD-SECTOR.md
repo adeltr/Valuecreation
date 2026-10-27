@@ -1,8 +1,8 @@
 # 09 · Ajouter un secteur — checklist & prompt
 
 Un secteur = une extension d'ontologie + un template de formules + un
-catalogue (si fichiers sources). Pattern identique à SaaS (docs/04) et A&D
-(docs/05). Durée typique : 1 session Claude Code + tes arbitrages.
+catalogue (si fichiers sources). Pattern identique à SaaS (docs/04), A&D
+(docs/05) et Airline (docs/12, l'exemple le plus complet). Durée typique : 1 session Claude Code + tes arbitrages.
 
 ## Pré-requis : TES arbitrages avant de coder (30 min de réflexion)
 

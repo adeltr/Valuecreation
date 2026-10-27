@@ -18,7 +18,8 @@ docs/
   08-ANALYSIS-LIBRARY.md            ← ingestion des fichiers d'industrie (2 types) → catalogue
   09-ADD-SECTOR.md                  ← checklist + prompt pour ajouter un secteur
   10-KICKOFF-PROMPT.md              ← prompt de démarrage d'une session Claude Code
-  11-ARCHETYPES-PROPOSAL.md         ← PROPOSITION (à valider) : archétypes = types d'entreprise, Airline
+  11-ARCHETYPES-PROPOSAL.md         ← décisions D1–D4 (validées) : archétype = type d'entreprise, catalogue v2
+  12-SECTOR-AIRLINE.md              ← extension Airline + catalogue des 40 analyses
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
 data/analysis-library/<secteur>/    ← fichiers sources des frameworks sectoriels (.md) + _curation.md
@@ -42,6 +43,8 @@ scripts/import-analyses.ts          ← import d'analyses brutes du vault → fo
 | 11–13 (copilot + proxy) | 07, 03 §registry |
 | 14 (extension + template A&D) | 05, 03, 06 |
 | 15 (catalogue d'analyses A&D) | 08, 05 §catalogue |
+| Airline (extension, template, catalogue) | 12, 08 |
+| Nouvel archétype | 09, 11, 12 (exemple le plus récent) |
 
 Règle : ne JAMAIS charger 01 (vision) pendant l'implémentation — c'est du
 contexte de cadrage, pas de spec exécutable. Le relire seulement si une
