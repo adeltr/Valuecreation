@@ -96,7 +96,11 @@ hors périmètre v1. Seule la première pile touche `templates/aero.ts`.
 - Curation à l'échelle (D4) : un archétype entier pré-rempli dans
   `_curation.md` (`tsx scripts/prefill-curation.ts <archetype>` — règles par mots-clés
   testées dans `src/catalog/prefill.ts`, mot déclencheur affiché), une revue analyste,
-  puis application. Le script n'écrase jamais une table existante.
+  puis application : `tsx scripts/apply-curation.ts <archetype>` (idempotent) et
+  `npm run catalog:build -- <archetype>`. Le script de pré-remplissage n'écrase
+  jamais une table existante.
+- État : 19 catalogues curés (aero, airline, saas + 16 types niveau 1), 833
+  analyses ; chaque catalogue couvre toute sa bibliothèque (test).
 
 ## Pour une nouvelle industrie
 Même pipeline : `data/analysis-library/<secteur>/` → frontmatters → curation

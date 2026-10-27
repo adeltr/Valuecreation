@@ -43,8 +43,8 @@ Leviers : `NETWORK_OPTIMIZATION` (LF, capacité) · `REVENUE_MANAGEMENT` (yield)
 (CASK hors carburant) · `FUEL_EFFICIENCY` (fuel CASK) · `FLEET_FINANCING`
 (qualitatif v1 : la dette nette n'est pas une cible de levier) · `ALLIANCES`.
 
-Causes ajoutées : `REGULATORY` (#7, #30, #32) · `FUEL_PRICE` (#10, #33, #36 —
-exogène, jamais un levier) · `LABOR` (#12, #17).
+Causes ajoutées : `FUEL_PRICE` (#10, #33, #36 —
+exogène, jamais un levier) · `LABOR` (#12, #17). `REGULATORY` (#7, #30, #32) vient de la base.
 
 ## Catalogue
 

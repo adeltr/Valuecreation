@@ -60,8 +60,8 @@ une revue (tableau). Les lots de 5–6 restent pour A&D, déjà engagé.
   agriculture, chemical, cosmetics, cpg, electricity-generation, healthcare-provider,
   hospitality, manufacturing, media, medical-device, metals-mining, pharma, retail,
   third-party-logistics, waste-management, wine-spirits. Tables de curation pré-remplies
-  par mots-clés (`scripts/prefill-curation.ts`) dans `data/analysis-library/<type>/_curation.md`,
-  en attente de revue analyste.
+  par mots-clés (`scripts/prefill-curation.ts`), appliquées telles quelles (décision
+  analyste) → catalogues générés ; corrections possibles à tout moment dans `_curation.md`.
 - **Hors EBITDA (phase 3)** — auto/life/P&C insurance, commercial/retail bank, health
   payor, biotech : analyses importées, pas d'archétype tant que leur bridge n'existe pas.
 - Priorités niveau 2 : CPG, Manufacturing, Retail.
