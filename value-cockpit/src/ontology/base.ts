@@ -19,15 +19,19 @@ export const BASE_CAUSE_CATEGORIES = [
   'COMMERCIAL', 'OPERATIONAL', 'FINANCIAL', 'ORGANIZATIONAL', 'MARKET',
 ] as const;
 
+// Two-point bridge (layer L1 of the driver tree)
+export const BRIDGE_METRIC_CODES = [
+  'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS',
+  'NET_DEBT_ENTRY', 'NET_DEBT_EXIT',
+  'EBITDA_EXIT', 'EQUITY_ENTRY', 'EQUITY_EXIT', 'MOIC',
+] as const;
+
 export const BASE_METRIC_CODES = [
   // P&L (entry-period)
   'REVENUE', 'COGS', 'GROSS_PROFIT', 'OPEX', 'EBITDA_ENTRY', 'EBITDA_MARGIN',
   // Working capital & cash
   'DSO', 'DIO', 'DPO', 'WORKING_CAPITAL', 'CAPEX', 'FCF_ANNUAL',
-  // Two-point bridge
-  'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS',
-  'NET_DEBT_ENTRY', 'NET_DEBT_EXIT',
-  'EBITDA_EXIT', 'EQUITY_ENTRY', 'EQUITY_EXIT', 'MOIC',
+  ...BRIDGE_METRIC_CODES,
 ] as const;
 
 // Deal-structure codes: set by the analyst (entry facts or scenario assumptions),
