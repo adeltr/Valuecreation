@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-14
 part: C
 partLabel: Financial and Market Strategy
-quant: []
+quant: [REALIZED_POWER_PRICE]
 causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, COMMERCIAL_OPTIMIZATION]
 ---
 # 14 · Capacity Payment and Ancillary Services Analysis
 

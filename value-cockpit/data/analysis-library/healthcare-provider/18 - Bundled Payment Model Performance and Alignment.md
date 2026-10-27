@@ -8,7 +8,7 @@ part: C
 partLabel: Financial Performance and Revenue Management
 quant: []
 causes: [FINANCIAL]
-levers: []
+levers: [CDI_PAYER_MIX]
 ---
 # 18 · Bundled Payment Model Performance and Alignment Assessment
 

@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-04
 part: A
 partLabel: Operational Performance and Efficiency
-quant: []
+quant: [CAPACITY_FACTOR, FORCED_OUTAGE_RATE]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, AVAILABILITY_IMPROVEMENT]
 ---
 # 4 · Capacity Factor and Forced Outage Rate Analysis
 

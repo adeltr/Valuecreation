@@ -6,9 +6,9 @@ kind: analysis
 id: cosmetics-29
 part: C
 partLabel: Sales and Distribution
-quant: []
+quant: [VOLUME_GROWTH]
 causes: [COMMERCIAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, CHANNEL_EXPANSION]
 ---
 # 29 · Distribution Channel Performance and Reach Analysis
 

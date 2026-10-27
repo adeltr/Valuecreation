@@ -6,9 +6,9 @@ kind: analysis
 id: cosmetics-03
 part: A
 partLabel: Product and Research & Development (R&D)
-quant: []
+quant: [GROSS_MARGIN]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, FORMULATION_COST]
 ---
 # 3 · Formulation Cost Efficiency Analysis
 

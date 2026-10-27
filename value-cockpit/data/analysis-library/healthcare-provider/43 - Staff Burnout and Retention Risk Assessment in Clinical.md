@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-43
 part: I
 partLabel: Staffing and Workforce Optimization
-quant: []
-causes: [ORGANIZATIONAL]
-levers: [VOLUME, COST_OPS]
+quant: [STAFF_TURNOVER_RATE]
+causes: [ORGANIZATIONAL, LABOR]
+levers: [VOLUME, COST_OPS, WORKFORCE_PRODUCTIVITY]
 ---
 # 43 · Staff Burnout and Retention Risk Assessment in Clinical Settings
 

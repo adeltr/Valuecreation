@@ -7,8 +7,8 @@ id: cosmetics-31
 part: C
 partLabel: Sales and Distribution
 quant: []
-causes: [COMMERCIAL, MARKET]
-levers: [PRICING, VOLUME]
+causes: [COMMERCIAL, MARKET, RETAILER_POWER]
+levers: [PRICING, VOLUME, CHANNEL_EXPANSION]
 ---
 # 31 · Shelf Space and In-Store Visibility Study
 

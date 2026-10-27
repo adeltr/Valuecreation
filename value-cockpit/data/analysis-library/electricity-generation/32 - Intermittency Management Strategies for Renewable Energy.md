@@ -7,7 +7,7 @@ id: electricity-generation-32
 part: G
 partLabel: Renewable Energy and Sustainability
 quant: []
-causes: [OPERATIONAL, FINANCIAL]
+causes: [OPERATIONAL, FINANCIAL, WEATHER_CLIMATE]
 levers: [COST_OPS]
 ---
 # 32 · Intermittency Management Strategies for Renewable Energy Sources

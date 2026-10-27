@@ -6,8 +6,8 @@ kind: analysis
 id: electricity-generation-29
 part: F
 partLabel: Risk Management and Resilience
-quant: [EBITDA_MARGIN]
-causes: [COMMERCIAL, FINANCIAL]
+quant: [EBITDA_MARGIN, FUEL_COST_PER_GJ, HEDGE_COVERAGE]
+causes: [COMMERCIAL, FINANCIAL, FUEL_PRICE]
 levers: [PRICING, COST_PROCUREMENT, COST_OPS]
 ---
 # 29 · Fuel Price Volatility Risk Management

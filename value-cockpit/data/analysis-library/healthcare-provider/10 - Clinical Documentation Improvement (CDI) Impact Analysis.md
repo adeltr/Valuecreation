@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-10
 part: B
 partLabel: Operational Efficiency and Resource
-quant: []
+quant: [REIMBURSEMENT_GROWTH, CASE_MIX_INDEX]
 causes: [REGULATORY]
-levers: []
+levers: [CDI_PAYER_MIX]
 ---
 # 10 · Clinical Documentation Improvement (CDI) Impact Analysis
 

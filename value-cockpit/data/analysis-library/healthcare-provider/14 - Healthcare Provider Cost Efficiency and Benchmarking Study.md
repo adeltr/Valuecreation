@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-14
 part: C
 partLabel: Financial Performance and Revenue Management
-quant: []
+quant: [SUPPLY_COST_RATE]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, SUPPLY_STANDARDIZATION]
 ---
 # 14 · Healthcare Provider Cost Efficiency and Benchmarking Study
 

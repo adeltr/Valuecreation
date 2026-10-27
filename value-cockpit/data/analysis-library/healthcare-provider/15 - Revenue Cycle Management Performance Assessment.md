@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-15
 part: C
 partLabel: Financial Performance and Revenue Management
-quant: [DSO]
+quant: [DSO, REVENUE_LEAKAGE_RATE, DAYS_IN_AR]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS, WC_DSO]
+levers: [COST_OPS, WC_DSO, REVENUE_CYCLE]
 ---
 # 15 · Revenue Cycle Management Performance Assessment
 

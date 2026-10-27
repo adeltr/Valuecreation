@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-17
 part: C
 partLabel: Financial Performance and Revenue Management
-quant: []
-causes: [OPERATIONAL, FINANCIAL]
-levers: [VOLUME]
+quant: [REVENUE_LEAKAGE_RATE]
+causes: [OPERATIONAL, FINANCIAL, REIMBURSEMENT_PRESSURE]
+levers: [VOLUME, REVENUE_CYCLE]
 ---
 # 17 · Charity Care and Uncompensated Care Impact Analysis
 

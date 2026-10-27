@@ -6,7 +6,7 @@ kind: analysis
 id: healthcare-provider-21
 part: D
 partLabel: Patient Experience and Access
-quant: []
+quant: [NO_SHOW_RATE]
 causes: [OPERATIONAL]
 levers: [VOLUME, COST_OPS]
 ---

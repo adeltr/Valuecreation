@@ -8,7 +8,7 @@ part: B
 partLabel: Fuel and Energy Resource Management
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, FUEL_PROCUREMENT]
 ---
 # 9 · Fuel Switching Feasibility Study
 

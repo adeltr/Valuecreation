@@ -8,7 +8,7 @@ part: J
 partLabel: Community Impact and Health Equity
 quant: [CAPEX]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 45 · Capital Investment and Facility Modernization Feasibility Analysis
 

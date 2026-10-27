@@ -6,7 +6,7 @@ kind: analysis
 id: healthcare-provider-36
 part: H
 partLabel: Specialty Services and Market Expansion
-quant: []
+quant: [NO_SHOW_RATE]
 causes: [FINANCIAL]
 levers: [VOLUME, COST_OPS]
 ---

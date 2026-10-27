@@ -6,9 +6,9 @@ kind: analysis
 id: cosmetics-01
 part: A
 partLabel: Product and Research & Development (R&D)
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, GROSS_MARGIN, DIO]
 causes: [COMMERCIAL, MARKET]
-levers: [PRICING, MIX]
+levers: [PRICING, MIX, WC_DIO]
 ---
 # 1 · Product Portfolio Performance Analysis
 

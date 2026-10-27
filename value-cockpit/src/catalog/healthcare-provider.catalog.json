@@ -6,14 +6,16 @@
     "part": "A",
     "partLabel": "Clinical Performance and Quality",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "MARKET"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "SERVICE_LINE_GROWTH"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/01 - Patient Volume and Service Line Performance Analysis.md"
   },
@@ -38,7 +40,9 @@
     "title": "Hospital Readmission Rates and Avoidable Admissions Study",
     "part": "A",
     "partLabel": "Clinical Performance and Quality",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "READMISSION_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
@@ -68,11 +72,17 @@
     "title": "Length of Stay (LOS) Optimization and Discharge Planning Review",
     "part": "A",
     "partLabel": "Clinical Performance and Quality",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "BED_OCCUPANCY_RATE",
+      "AVERAGE_LENGTH_OF_STAY",
+      "READMISSION_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LOS_OPTIMIZATION"
+    ],
     "sourcePath": "data/analysis-library/healthcare-provider/05 - Length of Stay (LOS) Optimization and Discharge Planning.md"
   },
   {
@@ -86,7 +96,9 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "LOS_OPTIMIZATION",
+      "SUPPLY_STANDARDIZATION"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/06 - Care Pathway Standardization and Variation Reduction.md"
   },
@@ -112,7 +124,9 @@
     "title": "Operating Room Utilization and Surgical Throughput Analysis",
     "part": "B",
     "partLabel": "Operational Efficiency and Resource",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "OR_UTILIZATION"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -138,11 +152,16 @@
     "title": "Clinical Documentation Improvement (CDI) Impact Analysis",
     "part": "B",
     "partLabel": "Operational Efficiency and Resource",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REIMBURSEMENT_GROWTH",
+      "CASE_MIX_INDEX"
+    ],
     "relatedCauseCategories": [
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CDI_PAYER_MIX"
+    ],
     "sourcePath": "data/analysis-library/healthcare-provider/10 - Clinical Documentation Improvement (CDI) Impact Analysis.md"
   },
   {
@@ -167,11 +186,15 @@
     "title": "Post-Acute Care Integration and Outcomes Evaluation",
     "part": "B",
     "partLabel": "Operational Efficiency and Resource",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "READMISSION_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LOS_OPTIMIZATION"
+    ],
     "sourcePath": "data/analysis-library/healthcare-provider/12 - Post-Acute Care Integration and Outcomes Evaluation.md"
   },
   {
@@ -180,11 +203,15 @@
     "title": "Advanced Imaging and Diagnostic Services Utilization Optimization",
     "part": "B",
     "partLabel": "Operational Efficiency and Resource",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SUPPLY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "SUPPLY_STANDARDIZATION"
+    ],
     "sourcePath": "data/analysis-library/healthcare-provider/13 - Advanced Imaging and Diagnostic Services Utilization.md"
   },
   {
@@ -193,7 +220,9 @@
     "title": "Healthcare Provider Cost Efficiency and Benchmarking Study",
     "part": "C",
     "partLabel": "Financial Performance and Revenue Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SUPPLY_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -201,7 +230,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "SUPPLY_STANDARDIZATION"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/14 - Healthcare Provider Cost Efficiency and Benchmarking Study.md"
   },
@@ -212,7 +242,9 @@
     "part": "C",
     "partLabel": "Financial Performance and Revenue Management",
     "relatedMetricCodes": [
-      "DSO"
+      "DSO",
+      "REVENUE_LEAKAGE_RATE",
+      "DAYS_IN_AR"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -220,7 +252,8 @@
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DSO"
+      "WC_DSO",
+      "REVENUE_CYCLE"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/15 - Revenue Cycle Management Performance Assessment.md"
   },
@@ -231,15 +264,18 @@
     "part": "C",
     "partLabel": "Financial Performance and Revenue Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "REIMBURSEMENT_GROWTH"
     ],
     "relatedCauseCategories": [
-      "FINANCIAL"
+      "FINANCIAL",
+      "REIMBURSEMENT_PRESSURE"
     ],
     "relatedLeverCategories": [
       "VOLUME",
       "MIX",
-      "WC_DSO"
+      "WC_DSO",
+      "CDI_PAYER_MIX"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/16 - Payer Mix and Reimbursement Rate Optimization Analysis.md"
   },
@@ -249,13 +285,17 @@
     "title": "Charity Care and Uncompensated Care Impact Analysis",
     "part": "C",
     "partLabel": "Financial Performance and Revenue Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REVENUE_LEAKAGE_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "REIMBURSEMENT_PRESSURE"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "REVENUE_CYCLE"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/17 - Charity Care and Uncompensated Care Impact Analysis.md"
   },
@@ -269,7 +309,9 @@
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CDI_PAYER_MIX"
+    ],
     "sourcePath": "data/analysis-library/healthcare-provider/18 - Bundled Payment Model Performance and Alignment.md"
   },
   {
@@ -281,9 +323,12 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "REIMBURSEMENT_PRESSURE"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CDI_PAYER_MIX"
+    ],
     "sourcePath": "data/analysis-library/healthcare-provider/19 - Value-Based Care Contract Performance Evaluation.md"
   },
   {
@@ -305,7 +350,9 @@
     "title": "Patient Access and Scheduling Efficiency Analysis",
     "part": "D",
     "partLabel": "Patient Experience and Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "NO_SHOW_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
@@ -326,7 +373,8 @@
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "SERVICE_LINE_GROWTH"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/22 - Referral Leakage and Patient Retention Analysis.md"
   },
@@ -362,7 +410,9 @@
     "title": "Behavioral Health Services Access and Utilization Study",
     "part": "D",
     "partLabel": "Patient Experience and Access",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "NO_SHOW_RATE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "VOLUME",
@@ -437,11 +487,14 @@
     "title": "Advanced Practice Provider (APP) Role Utilization and Effectiveness Analysis",
     "part": "F",
     "partLabel": "Technology Utilization and Digital Engagement",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LABOR_COST_RATE"
+    ],
     "relatedCauseCategories": [],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "WORKFORCE_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/30 - Advanced Practice Provider (APP) Role Utilization and.md"
   },
@@ -492,7 +545,9 @@
     "title": "Physician Alignment and Engagement Strategy Assessment",
     "part": "G",
     "partLabel": "Population Health and Care Coordination",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "STAFF_TURNOVER_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "ORGANIZATIONAL"
@@ -525,7 +580,9 @@
     "title": "Ambulatory Care Center Performance and Utilization Analysis",
     "part": "H",
     "partLabel": "Specialty Services and Market Expansion",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "NO_SHOW_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
@@ -556,14 +613,16 @@
     "part": "H",
     "partLabel": "Specialty Services and Market Expansion",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "MARKET"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "SERVICE_LINE_GROWTH"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/38 - Specialized Service Line Development and Growth Potential.md"
   },
@@ -575,7 +634,8 @@
     "partLabel": "Specialty Services and Market Expansion",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "FINANCIAL",
@@ -584,7 +644,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "SERVICE_LINE_GROWTH"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/39 - Outpatient Service Expansion and Market Demand Analysis.md"
   },
@@ -631,13 +692,18 @@
     "title": "Physician and Nursing Staff Productivity and Workforce Optimization",
     "part": "I",
     "partLabel": "Staffing and Workforce Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "LABOR_COST_RATE",
+      "STAFF_TURNOVER_RATE"
+    ],
     "relatedCauseCategories": [
-      "ORGANIZATIONAL"
+      "ORGANIZATIONAL",
+      "LABOR"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "WORKFORCE_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/42 - Physician and Nursing Staff Productivity and Workforce.md"
   },
@@ -647,13 +713,17 @@
     "title": "Staff Burnout and Retention Risk Assessment in Clinical Settings",
     "part": "I",
     "partLabel": "Staffing and Workforce Optimization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "STAFF_TURNOVER_RATE"
+    ],
     "relatedCauseCategories": [
-      "ORGANIZATIONAL"
+      "ORGANIZATIONAL",
+      "LABOR"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "WORKFORCE_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/43 - Staff Burnout and Retention Risk Assessment in Clinical.md"
   },
@@ -687,7 +757,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/45 - Capital Investment and Facility Modernization Feasibility.md"
   },
@@ -697,12 +768,15 @@
     "title": "Critical Care Resource Allocation and ICU Performance Analysis",
     "part": "J",
     "partLabel": "Community Impact and Health Equity",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "BED_OCCUPANCY_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "LOS_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/healthcare-provider/46 - Critical Care Resource Allocation and ICU Performance.md"
   },

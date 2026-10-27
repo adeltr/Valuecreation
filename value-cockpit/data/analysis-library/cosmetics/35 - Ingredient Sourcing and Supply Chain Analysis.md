@@ -8,7 +8,7 @@ part: D
 partLabel: Operations and Supply Chain
 quant: [COGS]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [COST_PROCUREMENT, WC_DIO]
+levers: [COST_PROCUREMENT, WC_DIO, FORMULATION_COST]
 ---
 # 35 · Ingredient Sourcing and Supply Chain Analysis
 

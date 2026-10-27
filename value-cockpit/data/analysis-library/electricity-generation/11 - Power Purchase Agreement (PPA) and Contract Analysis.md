@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-11
 part: C
 partLabel: Financial and Market Strategy
-quant: []
+quant: [REALIZED_POWER_PRICE]
 causes: [FINANCIAL, MARKET, REGULATORY]
-levers: [PRICING]
+levers: [PRICING, COMMERCIAL_OPTIMIZATION]
 ---
 # 11 · Power Purchase Agreement (PPA) and Contract Analysis
 

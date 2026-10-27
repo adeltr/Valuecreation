@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-06
 part: A
 partLabel: Operational Performance and Efficiency
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, OM_COST_PER_MWH]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [COST_OPS]
+levers: [COST_OPS, OM_EFFICIENCY]
 ---
 # 6 · Reserve Shutdown and Start-up Cost Analysis
 

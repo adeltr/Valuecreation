@@ -6,7 +6,7 @@ kind: analysis
 id: electricity-generation-12
 part: C
 partLabel: Financial and Market Strategy
-quant: []
+quant: [OM_COST_PER_MWH]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
 levers: [COST_PROCUREMENT, COST_OPS, CAPEX_DISCIPLINE]
 ---

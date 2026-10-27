@@ -7,8 +7,8 @@ id: healthcare-provider-19
 part: C
 partLabel: Financial Performance and Revenue Management
 quant: []
-causes: [OPERATIONAL, FINANCIAL]
-levers: []
+causes: [OPERATIONAL, FINANCIAL, REIMBURSEMENT_PRESSURE]
+levers: [CDI_PAYER_MIX]
 ---
 # 19 · Value-Based Care Contract Performance Evaluation
 

@@ -8,7 +8,7 @@ part: D
 partLabel: Patient Experience and Access
 quant: []
 causes: [OPERATIONAL]
-levers: [VOLUME]
+levers: [VOLUME, SERVICE_LINE_GROWTH]
 ---
 # 22 · Referral Leakage and Patient Retention Analysis
 

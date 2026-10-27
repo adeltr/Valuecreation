@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-01
 part: A
 partLabel: Operational Performance and Efficiency
-quant: []
+quant: [INSTALLED_CAPACITY_GW, CAPACITY_FACTOR]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, AVAILABILITY_IMPROVEMENT]
 ---
 # 1 · Generation Capacity and Utilization Analysis
 

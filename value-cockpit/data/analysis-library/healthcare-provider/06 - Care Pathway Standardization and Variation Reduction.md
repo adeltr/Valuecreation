@@ -8,7 +8,7 @@ part: A
 partLabel: Clinical Performance and Quality
 quant: []
 causes: [FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, LOS_OPTIMIZATION, SUPPLY_STANDARDIZATION]
 ---
 # 6 · Care Pathway Standardization and Variation Reduction Analysis
 

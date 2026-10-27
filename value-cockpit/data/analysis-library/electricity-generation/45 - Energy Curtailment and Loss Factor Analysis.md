@@ -6,7 +6,7 @@ kind: analysis
 id: electricity-generation-45
 part: J
 partLabel: Lifecycle and Asset Management
-quant: []
+quant: [CURTAILMENT_RATE]
 causes: [FINANCIAL]
 levers: [VOLUME, COST_OPS]
 ---

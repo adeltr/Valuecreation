@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-01
 part: A
 partLabel: Clinical Performance and Quality
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, VOLUME_GROWTH]
 causes: [MARKET]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, SERVICE_LINE_GROWTH]
 ---
 # 1 · Patient Volume and Service Line Performance Analysis
 

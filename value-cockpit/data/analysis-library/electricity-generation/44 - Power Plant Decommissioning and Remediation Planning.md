@@ -8,7 +8,7 @@ part: J
 partLabel: Lifecycle and Asset Management
 quant: []
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
-levers: []
+levers: [CAPEX_DISCIPLINE]
 ---
 # 44 · Power Plant Decommissioning and Remediation Planning
 

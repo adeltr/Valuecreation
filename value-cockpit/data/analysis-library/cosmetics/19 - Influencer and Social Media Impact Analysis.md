@@ -6,9 +6,9 @@ kind: analysis
 id: cosmetics-19
 part: B
 partLabel: Marketing and Consumer Insights
-quant: []
+quant: [AP_RATE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: []
+levers: [INFLUENCER_DIGITAL]
 ---
 # 19 · Influencer and Social Media Impact Analysis
 

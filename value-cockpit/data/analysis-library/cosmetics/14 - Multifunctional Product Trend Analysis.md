@@ -8,7 +8,7 @@ part: A
 partLabel: Product and Research & Development (R&D)
 quant: [REVENUE_GROWTH]
 causes: [COMMERCIAL, MARKET]
-levers: [VOLUME]
+levers: [VOLUME, RD_PRODUCTIVITY]
 ---
 # 14 · Multifunctional Product Trend Analysis
 

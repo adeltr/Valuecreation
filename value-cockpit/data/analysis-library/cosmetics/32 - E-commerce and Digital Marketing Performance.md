@@ -6,9 +6,9 @@ kind: analysis
 id: cosmetics-32
 part: C
 partLabel: Sales and Distribution
-quant: []
+quant: [VOLUME_GROWTH, AP_RATE, ONLINE_SALES_SHARE]
 causes: [COMMERCIAL, FINANCIAL]
-levers: [VOLUME]
+levers: [VOLUME, INFLUENCER_DIGITAL]
 ---
 # 32 · E-commerce and Digital Marketing Performance
 

@@ -6,7 +6,7 @@ kind: analysis
 id: electricity-generation-40
 part: I
 partLabel: Capacity Planning and Utilization
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, RESERVE_MARGIN]
 causes: [OPERATIONAL, FINANCIAL, MARKET, REGULATORY]
 levers: [COST_OPS]
 ---

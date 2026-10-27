@@ -8,7 +8,7 @@ part: J
 partLabel: Lifecycle and Asset Management
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS, WC_DIO]
+levers: [COST_OPS, WC_DIO, OM_EFFICIENCY, CAPEX_DISCIPLINE]
 ---
 # 43 · Asset Age Profile and Lifecycle Analysis
 

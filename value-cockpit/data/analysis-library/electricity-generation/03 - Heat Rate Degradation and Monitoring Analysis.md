@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-03
 part: A
 partLabel: Operational Performance and Efficiency
-quant: []
+quant: [HEAT_RATE]
 causes: [FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, HEAT_RATE_IMPROVEMENT]
 ---
 # 3 · Heat Rate Degradation and Monitoring Analysis
 

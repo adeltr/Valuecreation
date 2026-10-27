@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-16
 part: C
 partLabel: Financial Performance and Revenue Management
-quant: [EBITDA_MARGIN]
-causes: [FINANCIAL]
-levers: [VOLUME, MIX, WC_DSO]
+quant: [EBITDA_MARGIN, REIMBURSEMENT_GROWTH]
+causes: [FINANCIAL, REIMBURSEMENT_PRESSURE]
+levers: [VOLUME, MIX, WC_DSO, CDI_PAYER_MIX]
 ---
 # 16 · Payer Mix and Reimbursement Rate Optimization Analysis
 

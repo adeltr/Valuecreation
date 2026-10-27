@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-36
 part: H
 partLabel: Technological Innovation and Modernization
-quant: []
+quant: [CAPACITY_GROWTH]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, RENEWABLE_BUILDOUT]
 ---
 # 36 · Energy Storage Feasibility and Lifecycle Cost Assessment
 

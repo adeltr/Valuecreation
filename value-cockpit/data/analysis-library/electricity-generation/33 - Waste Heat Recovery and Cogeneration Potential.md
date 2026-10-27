@@ -8,7 +8,7 @@ part: G
 partLabel: Renewable Energy and Sustainability
 quant: [OPEX]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, HEAT_RATE_IMPROVEMENT]
 ---
 # 33 · Waste Heat Recovery and Cogeneration Potential
 

@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-42
 part: I
 partLabel: Staffing and Workforce Optimization
-quant: []
-causes: [ORGANIZATIONAL]
-levers: [VOLUME, COST_OPS]
+quant: [LABOR_COST_RATE, STAFF_TURNOVER_RATE]
+causes: [ORGANIZATIONAL, LABOR]
+levers: [VOLUME, COST_OPS, WORKFORCE_PRODUCTIVITY]
 ---
 # 42 · Physician and Nursing Staff Productivity and Workforce Optimization
 

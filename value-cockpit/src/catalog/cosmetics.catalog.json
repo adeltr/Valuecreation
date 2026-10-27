@@ -6,7 +6,9 @@
     "part": "A",
     "partLabel": "Product and Research & Development (R&D)",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "GROSS_MARGIN",
+      "DIO"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -14,7 +16,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "MIX"
+      "MIX",
+      "WC_DIO"
     ],
     "sourcePath": "data/analysis-library/cosmetics/01 - Product Portfolio Performance Analysis.md"
   },
@@ -24,14 +27,19 @@
     "title": "Innovation Pipeline and R&D Efficiency Analysis",
     "part": "A",
     "partLabel": "Product and Research & Development (R&D)",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "RD_RATE",
+      "NEW_PRODUCT_SUCCESS_RATE",
+      "TIME_TO_MARKET"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "RD_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/cosmetics/02 - Innovation Pipeline and R&D Efficiency Analysis.md"
   },
@@ -41,7 +49,9 @@
     "title": "Formulation Cost Efficiency Analysis",
     "part": "A",
     "partLabel": "Product and Research & Development (R&D)",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -49,7 +59,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "FORMULATION_COST"
     ],
     "sourcePath": "data/analysis-library/cosmetics/03 - Formulation Cost Efficiency Analysis.md"
   },
@@ -161,7 +172,9 @@
       "COMMERCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "RD_PRODUCTIVITY"
+    ],
     "sourcePath": "data/analysis-library/cosmetics/11 - Waterless Beauty Product Innovation Analysis.md"
   },
   {
@@ -206,7 +219,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "RD_PRODUCTIVITY"
     ],
     "sourcePath": "data/analysis-library/cosmetics/14 - Multifunctional Product Trend Analysis.md"
   },
@@ -256,13 +270,17 @@
     "title": "Brand Perception and Consumer Sentiment Analysis",
     "part": "B",
     "partLabel": "Marketing and Consumer Insights",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AP_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "INFLUENCER_DIGITAL"
+    ],
     "sourcePath": "data/analysis-library/cosmetics/18 - Brand Perception and Consumer Sentiment Analysis.md"
   },
   {
@@ -271,12 +289,16 @@
     "title": "Influencer and Social Media Impact Analysis",
     "part": "B",
     "partLabel": "Marketing and Consumer Insights",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "AP_RATE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "INFLUENCER_DIGITAL"
+    ],
     "sourcePath": "data/analysis-library/cosmetics/19 - Influencer and Social Media Impact Analysis.md"
   },
   {
@@ -286,14 +308,17 @@
     "part": "B",
     "partLabel": "Marketing and Consumer Insights",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "VOLUME_GROWTH",
+      "CUSTOMER_RETENTION_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "LOYALTY_SUBSCRIPTION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/20 - Customer Loyalty and Retention Program Effectiveness.md"
   },
@@ -309,7 +334,8 @@
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET",
-      "REGULATORY"
+      "REGULATORY",
+      "CLEAN_BEAUTY_TRENDS"
     ],
     "relatedLeverCategories": [
       "VOLUME"
@@ -330,7 +356,8 @@
     ],
     "relatedLeverCategories": [
       "MIX",
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "CHANNEL_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/22 - Global vs. Local Market Adaptation Strategy.md"
   },
@@ -374,7 +401,8 @@
     "partLabel": "Marketing and Consumer Insights",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "COMMERCIAL"
+      "COMMERCIAL",
+      "CLEAN_BEAUTY_TRENDS"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
@@ -391,7 +419,9 @@
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "PREMIUMIZATION"
+    ],
     "sourcePath": "data/analysis-library/cosmetics/26 - Packaging Innovation and Consumer Appeal Analysis.md"
   },
   {
@@ -401,13 +431,15 @@
     "part": "B",
     "partLabel": "Marketing and Consumer Insights",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "PRICE_MIX_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "PREMIUMIZATION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/27 - Seasonal and Limited Edition Product Performance Evaluation.md"
   },
@@ -417,7 +449,9 @@
     "title": "Luxury vs. Mass-Market Positioning Assessment",
     "part": "B",
     "partLabel": "Marketing and Consumer Insights",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PRICE_MIX_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET"
@@ -425,7 +459,8 @@
     "relatedLeverCategories": [
       "PRICING",
       "VOLUME",
-      "MIX"
+      "MIX",
+      "PREMIUMIZATION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/28 - Luxury vs. Mass-Market Positioning Assessment.md"
   },
@@ -435,13 +470,16 @@
     "title": "Distribution Channel Performance and Reach Analysis",
     "part": "C",
     "partLabel": "Sales and Distribution",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "VOLUME_GROWTH"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "CHANNEL_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/29 - Distribution Channel Performance and Reach Analysis.md"
   },
@@ -458,11 +496,13 @@
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "RETAILER_POWER"
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "WC_DIO"
+      "WC_DIO",
+      "CHANNEL_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/30 - Retailer and Distributor Relationships Assessment.md"
   },
@@ -475,11 +515,13 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
       "COMMERCIAL",
-      "MARKET"
+      "MARKET",
+      "RETAILER_POWER"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "CHANNEL_EXPANSION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/31 - Shelf Space and In-Store Visibility Study.md"
   },
@@ -489,13 +531,18 @@
     "title": "E-commerce and Digital Marketing Performance",
     "part": "C",
     "partLabel": "Sales and Distribution",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "VOLUME_GROWTH",
+      "AP_RATE",
+      "ONLINE_SALES_SHARE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "INFLUENCER_DIGITAL"
     ],
     "sourcePath": "data/analysis-library/cosmetics/32 - E-commerce and Digital Marketing Performance.md"
   },
@@ -506,7 +553,8 @@
     "part": "C",
     "partLabel": "Sales and Distribution",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "CUSTOMER_RETENTION_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -515,7 +563,8 @@
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "VOLUME"
+      "VOLUME",
+      "LOYALTY_SUBSCRIPTION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/33 - Beauty Subscription Model Feasibility and Growth Analysis.md"
   },
@@ -526,14 +575,16 @@
     "part": "C",
     "partLabel": "Sales and Distribution",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "AP_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "VOLUME"
+      "VOLUME",
+      "LOYALTY_SUBSCRIPTION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/34 - Customer Sampling Program Effectiveness.md"
   },
@@ -554,7 +605,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "WC_DIO"
+      "WC_DIO",
+      "FORMULATION_COST"
     ],
     "sourcePath": "data/analysis-library/cosmetics/35 - Ingredient Sourcing and Supply Chain Analysis.md"
   },
@@ -706,7 +758,8 @@
     "part": "F",
     "partLabel": "Finance and Intellectual Property",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "PRICE_MIX_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -714,7 +767,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "PREMIUMIZATION"
     ],
     "sourcePath": "data/analysis-library/cosmetics/44 - Pricing and Promotional Strategy Benchmarking.md"
   },
@@ -725,7 +779,8 @@
     "part": "F",
     "partLabel": "Finance and Intellectual Property",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "RD_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",

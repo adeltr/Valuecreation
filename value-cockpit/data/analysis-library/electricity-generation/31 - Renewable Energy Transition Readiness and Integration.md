@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-31
 part: G
 partLabel: Renewable Energy and Sustainability
-quant: []
+quant: [CAPACITY_GROWTH, RENEWABLE_SHARE]
 causes: [OPERATIONAL, FINANCIAL, REGULATORY]
-levers: [COST_OPS]
+levers: [COST_OPS, RENEWABLE_BUILDOUT]
 ---
 # 31 · Renewable Energy Transition Readiness and Integration Strategy Assessment
 

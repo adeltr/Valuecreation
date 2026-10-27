@@ -7,8 +7,8 @@ id: cosmetics-30
 part: C
 partLabel: Sales and Distribution
 quant: [EBITDA_MARGIN, REVENUE_GROWTH]
-causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [VOLUME, WC_DIO]
+causes: [COMMERCIAL, FINANCIAL, MARKET, RETAILER_POWER]
+levers: [VOLUME, WC_DIO, CHANNEL_EXPANSION]
 ---
 # 30 · Retailer and Distributor Relationships Assessment
 

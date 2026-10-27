@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-38
 part: H
 partLabel: Specialty Services and Market Expansion
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, VOLUME_GROWTH]
 causes: [MARKET]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, SERVICE_LINE_GROWTH]
 ---
 # 38 · Specialized Service Line Development and Growth Potential Analysis
 

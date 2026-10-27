@@ -8,7 +8,7 @@ part: A
 partLabel: Product and Research & Development (R&D)
 quant: []
 causes: [COMMERCIAL, MARKET]
-levers: []
+levers: [RD_PRODUCTIVITY]
 ---
 # 11 · Waterless Beauty Product Innovation Analysis
 

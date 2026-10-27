@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-12
 part: B
 partLabel: Operational Efficiency and Resource
-quant: []
+quant: [READMISSION_RATE]
 causes: [FINANCIAL]
-levers: []
+levers: [LOS_OPTIMIZATION]
 ---
 # 12 · Post-Acute Care Integration and Outcomes Evaluation
 

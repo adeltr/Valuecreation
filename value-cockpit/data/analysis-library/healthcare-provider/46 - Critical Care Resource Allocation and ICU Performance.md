@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-46
 part: J
 partLabel: Community Impact and Health Equity
-quant: []
+quant: [BED_OCCUPANCY_RATE]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, LOS_OPTIMIZATION]
 ---
 # 46 · Critical Care Resource Allocation and ICU Performance Analysis
 

@@ -8,7 +8,7 @@ part: B
 partLabel: Marketing and Consumer Insights
 quant: []
 causes: [COMMERCIAL, MARKET, REGULATORY]
-levers: [MIX, COST_PROCUREMENT]
+levers: [MIX, COST_PROCUREMENT, CHANNEL_EXPANSION]
 ---
 # 22 · Global vs. Local Market Adaptation Strategy
 

@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-39
 part: H
 partLabel: Specialty Services and Market Expansion
-quant: [EBITDA_MARGIN, REVENUE_GROWTH]
+quant: [EBITDA_MARGIN, REVENUE_GROWTH, VOLUME_GROWTH]
 causes: [FINANCIAL, ORGANIZATIONAL, MARKET]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, SERVICE_LINE_GROWTH]
 ---
 # 39 · Outpatient Service Expansion and Market Demand Analysis
 

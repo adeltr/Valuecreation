@@ -6,7 +6,7 @@ kind: analysis
 id: cosmetics-45
 part: F
 partLabel: Finance and Intellectual Property
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, RD_RATE]
 causes: [COMMERCIAL, FINANCIAL, MARKET, REGULATORY]
 levers: [VOLUME]
 ---

@@ -6,7 +6,7 @@ kind: analysis
 id: healthcare-provider-08
 part: B
 partLabel: Operational Efficiency and Resource
-quant: []
+quant: [OR_UTILIZATION]
 causes: []
 levers: [COST_OPS]
 ---

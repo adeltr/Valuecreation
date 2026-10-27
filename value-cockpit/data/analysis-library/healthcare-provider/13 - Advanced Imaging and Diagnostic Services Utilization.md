@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-13
 part: B
 partLabel: Operational Efficiency and Resource
-quant: []
+quant: [SUPPLY_COST_RATE]
 causes: [FINANCIAL]
-levers: []
+levers: [SUPPLY_STANDARDIZATION]
 ---
 # 13 · Advanced Imaging and Diagnostic Services Utilization Optimization
 

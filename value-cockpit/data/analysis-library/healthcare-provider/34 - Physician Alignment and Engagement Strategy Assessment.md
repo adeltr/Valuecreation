@@ -6,7 +6,7 @@ kind: analysis
 id: healthcare-provider-34
 part: G
 partLabel: Population Health and Care Coordination
-quant: []
+quant: [STAFF_TURNOVER_RATE]
 causes: [OPERATIONAL, ORGANIZATIONAL]
 levers: [VOLUME, COST_OPS]
 ---

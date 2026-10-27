@@ -6,7 +6,7 @@ kind: analysis
 id: electricity-generation-22
 part: D
 partLabel: Regulatory and Environmental Compliance
-quant: []
+quant: [CARBON_INTENSITY]
 causes: [OPERATIONAL, REGULATORY]
 levers: [COST_OPS]
 ---

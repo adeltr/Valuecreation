@@ -5,12 +5,16 @@
     "title": "Generation Capacity and Utilization Analysis",
     "part": "A",
     "partLabel": "Operational Performance and Efficiency",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "INSTALLED_CAPACITY_GW",
+      "CAPACITY_FACTOR"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "AVAILABILITY_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/01 - Generation Capacity and Utilization Analysis.md"
   },
@@ -20,14 +24,17 @@
     "title": "Power Plant Performance and Efficiency Evaluation",
     "part": "A",
     "partLabel": "Operational Performance and Efficiency",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "HEAT_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "HEAT_RATE_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/02 - Power Plant Performance and Efficiency Evaluation.md"
   },
@@ -37,12 +44,15 @@
     "title": "Heat Rate Degradation and Monitoring Analysis",
     "part": "A",
     "partLabel": "Operational Performance and Efficiency",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "HEAT_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "HEAT_RATE_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/03 - Heat Rate Degradation and Monitoring Analysis.md"
   },
@@ -52,12 +62,16 @@
     "title": "Capacity Factor and Forced Outage Rate Analysis",
     "part": "A",
     "partLabel": "Operational Performance and Efficiency",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPACITY_FACTOR",
+      "FORCED_OUTAGE_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "AVAILABILITY_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/04 - Capacity Factor and Forced Outage Rate Analysis.md"
   },
@@ -89,7 +103,8 @@
     "part": "A",
     "partLabel": "Operational Performance and Efficiency",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "OM_COST_PER_MWH"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -97,7 +112,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "OM_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/06 - Reserve Shutdown and Start-up Cost Analysis.md"
   },
@@ -107,7 +123,9 @@
     "title": "Fuel Mix and Diversification Assessment",
     "part": "B",
     "partLabel": "Fuel and Energy Resource Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "FUEL_COST_PER_GJ"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
@@ -115,7 +133,8 @@
     "relatedLeverCategories": [
       "MIX",
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "FUEL_PROCUREMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/07 - Fuel Mix and Diversification Assessment.md"
   },
@@ -125,13 +144,17 @@
     "title": "Fuel Supply Chain Reliability and Cost Analysis",
     "part": "B",
     "partLabel": "Fuel and Energy Resource Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "FUEL_COST_PER_GJ"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "FUEL_PRICE"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "FUEL_PROCUREMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/08 - Fuel Supply Chain Reliability and Cost Analysis.md"
   },
@@ -148,7 +171,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "FUEL_PROCUREMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/09 - Fuel Switching Feasibility Study.md"
   },
@@ -175,14 +199,17 @@
     "title": "Power Purchase Agreement (PPA) and Contract Analysis",
     "part": "C",
     "partLabel": "Financial and Market Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL",
       "MARKET",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "COMMERCIAL_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/11 - Power Purchase Agreement (PPA) and Contract Analysis.md"
   },
@@ -192,7 +219,9 @@
     "title": "Levelized Cost of Electricity (LCOE) Comparison",
     "part": "C",
     "partLabel": "Financial and Market Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "OM_COST_PER_MWH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -211,14 +240,19 @@
     "title": "Market Price Exposure and Hedging Strategy Evaluation",
     "part": "C",
     "partLabel": "Financial and Market Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE",
+      "HEDGE_COVERAGE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "POWER_MARKET_PRICES"
     ],
     "relatedLeverCategories": [
-      "PRICING"
+      "PRICING",
+      "COMMERCIAL_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/13 - Market Price Exposure and Hedging Strategy Evaluation.md"
   },
@@ -228,7 +262,9 @@
     "title": "Capacity Payment and Ancillary Services Analysis",
     "part": "C",
     "partLabel": "Financial and Market Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -237,7 +273,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "COMMERCIAL_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/14 - Capacity Payment and Ancillary Services Analysis.md"
   },
@@ -276,7 +313,8 @@
     "relatedLeverCategories": [
       "PRICING",
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "COMMERCIAL_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/16 - Energy Market Participation Strategy and Revenue.md"
   },
@@ -286,16 +324,20 @@
     "title": "Electricity Spot Price Forecasting and Impact Assessment",
     "part": "C",
     "partLabel": "Financial and Market Strategy",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "POWER_MARKET_PRICES"
     ],
     "relatedLeverCategories": [
       "PRICING",
-      "MIX"
+      "MIX",
+      "COMMERCIAL_OPTIMIZATION"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/17 - Electricity Spot Price Forecasting and Impact Assessment.md"
   },
@@ -305,7 +347,9 @@
     "title": "Emissions and Environmental Compliance Analysis",
     "part": "D",
     "partLabel": "Regulatory and Environmental Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CARBON_INTENSITY"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
@@ -371,7 +415,9 @@
     "title": "Carbon Intensity and Decarbonization Strategy",
     "part": "D",
     "partLabel": "Regulatory and Environmental Compliance",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CARBON_INTENSITY"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "REGULATORY"
@@ -470,7 +516,8 @@
     "partLabel": "Risk Management and Resilience",
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
-      "OPERATIONAL"
+      "OPERATIONAL",
+      "WEATHER_CLIMATE"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -484,11 +531,14 @@
     "part": "F",
     "partLabel": "Risk Management and Resilience",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "FUEL_COST_PER_GJ",
+      "HEDGE_COVERAGE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "FUEL_PRICE"
     ],
     "relatedLeverCategories": [
       "PRICING",
@@ -519,14 +569,18 @@
     "title": "Renewable Energy Transition Readiness and Integration Strategy Assessment",
     "part": "G",
     "partLabel": "Renewable Energy and Sustainability",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPACITY_GROWTH",
+      "RENEWABLE_SHARE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "RENEWABLE_BUILDOUT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/31 - Renewable Energy Transition Readiness and Integration.md"
   },
@@ -539,7 +593,8 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "WEATHER_CLIMATE"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -561,7 +616,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "HEAT_RATE_IMPROVEMENT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/33 - Waste Heat Recovery and Cogeneration Potential.md"
   },
@@ -602,13 +658,16 @@
     "title": "Energy Storage Feasibility and Lifecycle Cost Assessment",
     "part": "H",
     "partLabel": "Technological Innovation and Modernization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPACITY_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "RENEWABLE_BUILDOUT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/36 - Energy Storage Feasibility and Lifecycle Cost Assessment.md"
   },
@@ -618,13 +677,16 @@
     "title": "Distributed Generation Impact Assessment",
     "part": "H",
     "partLabel": "Technological Innovation and Modernization",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPACITY_GROWTH"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "RENEWABLE_BUILDOUT"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/37 - Distributed Generation Impact Assessment.md"
   },
@@ -654,7 +716,8 @@
     "part": "I",
     "partLabel": "Capacity Planning and Utilization",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "RESERVE_MARGIN"
     ],
     "relatedCauseCategories": [
       "MARKET"
@@ -672,7 +735,8 @@
     "partLabel": "Capacity Planning and Utilization",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "RESERVE_MARGIN"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -711,7 +775,8 @@
     "part": "J",
     "partLabel": "Lifecycle and Asset Management",
     "relatedMetricCodes": [
-      "CAPEX"
+      "CAPEX",
+      "OM_COST_PER_MWH"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -719,7 +784,9 @@
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "CAPEX_DISCIPLINE"
+      "CAPEX_DISCIPLINE",
+      "AVAILABILITY_IMPROVEMENT",
+      "OM_EFFICIENCY"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/42 - Capital Expenditure (CapEx) and Maintenance Planning.md"
   },
@@ -736,7 +803,9 @@
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "OM_EFFICIENCY",
+      "CAPEX_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/electricity-generation/43 - Asset Age Profile and Lifecycle Analysis.md"
   },
@@ -752,7 +821,9 @@
       "FINANCIAL",
       "REGULATORY"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CAPEX_DISCIPLINE"
+    ],
     "sourcePath": "data/analysis-library/electricity-generation/44 - Power Plant Decommissioning and Remediation Planning.md"
   },
   {
@@ -761,7 +832,9 @@
     "title": "Energy Curtailment and Loss Factor Analysis",
     "part": "J",
     "partLabel": "Lifecycle and Asset Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CURTAILMENT_RATE"
+    ],
     "relatedCauseCategories": [
       "FINANCIAL"
     ],

@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-13
 part: C
 partLabel: Financial and Market Strategy
-quant: []
-causes: [COMMERCIAL, FINANCIAL, MARKET]
-levers: [PRICING]
+quant: [REALIZED_POWER_PRICE, HEDGE_COVERAGE]
+causes: [COMMERCIAL, FINANCIAL, MARKET, POWER_MARKET_PRICES]
+levers: [PRICING, COMMERCIAL_OPTIMIZATION]
 ---
 # 13 · Market Price Exposure and Hedging Strategy Evaluation
 

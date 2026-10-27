@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-08
 part: B
 partLabel: Fuel and Energy Resource Management
-quant: []
-causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT]
+quant: [FUEL_COST_PER_GJ]
+causes: [OPERATIONAL, FINANCIAL, FUEL_PRICE]
+levers: [COST_PROCUREMENT, FUEL_PROCUREMENT]
 ---
 # 8 · Fuel Supply Chain Reliability and Cost Analysis
 

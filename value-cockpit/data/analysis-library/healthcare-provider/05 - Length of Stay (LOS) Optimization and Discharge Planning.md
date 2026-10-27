@@ -6,9 +6,9 @@ kind: analysis
 id: healthcare-provider-05
 part: A
 partLabel: Clinical Performance and Quality
-quant: []
+quant: [BED_OCCUPANCY_RATE, AVERAGE_LENGTH_OF_STAY, READMISSION_RATE]
 causes: [FINANCIAL]
-levers: []
+levers: [LOS_OPTIMIZATION]
 ---
 # 5 · Length of Stay (LOS) Optimization and Discharge Planning Review
 

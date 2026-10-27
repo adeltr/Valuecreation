@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-07
 part: B
 partLabel: Fuel and Energy Resource Management
-quant: []
+quant: [FUEL_COST_PER_GJ]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [MIX, COST_PROCUREMENT, COST_OPS]
+levers: [MIX, COST_PROCUREMENT, COST_OPS, FUEL_PROCUREMENT]
 ---
 # 7 · Fuel Mix and Diversification Assessment
 

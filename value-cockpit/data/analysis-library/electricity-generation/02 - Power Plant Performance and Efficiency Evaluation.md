@@ -6,9 +6,9 @@ kind: analysis
 id: electricity-generation-02
 part: A
 partLabel: Operational Performance and Efficiency
-quant: []
+quant: [HEAT_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, HEAT_RATE_IMPROVEMENT]
 ---
 # 2 · Power Plant Performance and Efficiency Evaluation
 

@@ -8,7 +8,7 @@ part: B
 partLabel: Marketing and Consumer Insights
 quant: []
 causes: [COMMERCIAL]
-levers: []
+levers: [PREMIUMIZATION]
 ---
 # 26 · Packaging Innovation and Consumer Appeal Analysis
 

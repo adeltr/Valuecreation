@@ -6,9 +6,9 @@ kind: analysis
 id: cosmetics-02
 part: A
 partLabel: Product and Research & Development (R&D)
-quant: []
+quant: [RD_RATE, NEW_PRODUCT_SUCCESS_RATE, TIME_TO_MARKET]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [COST_OPS]
+levers: [COST_OPS, RD_PRODUCTIVITY]
 ---
 # 2 · Innovation Pipeline and R&D Efficiency Analysis
 

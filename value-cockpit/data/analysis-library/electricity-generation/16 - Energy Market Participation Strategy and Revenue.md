@@ -8,7 +8,7 @@ part: C
 partLabel: Financial and Market Strategy
 quant: [EBITDA_MARGIN]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
-levers: [PRICING, COST_PROCUREMENT, COST_OPS]
+levers: [PRICING, COST_PROCUREMENT, COST_OPS, COMMERCIAL_OPTIMIZATION]
 ---
 # 16 · Energy Market Participation Strategy and Revenue Optimization
 

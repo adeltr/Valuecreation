@@ -6,7 +6,7 @@ kind: analysis
 id: healthcare-provider-03
 part: A
 partLabel: Clinical Performance and Quality
-quant: []
+quant: [READMISSION_RATE]
 causes: [FINANCIAL]
 levers: [VOLUME]
 ---

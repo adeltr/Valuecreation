@@ -18,11 +18,11 @@ import {
 
 // Level 2 — sector extension + dedicated template.
 // Level 2 defined by a sector spec (src/sectors, docs/14).
-export const SPEC_ARCHETYPES = ['manufacturing', 'retail', 'chemical', 'agriculture'] as const;
+export const SPEC_ARCHETYPES = ['manufacturing', 'retail', 'chemical', 'agriculture', 'cosmetics', 'electricity-generation', 'healthcare-provider'] as const;
 export const EXTENDED_ARCHETYPES = ['saas', 'aero', 'airline', 'cpg', ...SPEC_ARCHETYPES] as const;
 // Level 1 — EBITDA-family company types on the base vocabulary + generic template (docs/11).
 // 15 types; cpg moved to level 2.
-export const BASE_ARCHETYPES = [ 'cosmetics', 'electricity-generation', 'healthcare-provider',
+export const BASE_ARCHETYPES = [
   'hospitality', 'media', 'medical-device', 'metals-mining', 'pharma',
   'third-party-logistics', 'waste-management', 'wine-spirits',
 ] as const;

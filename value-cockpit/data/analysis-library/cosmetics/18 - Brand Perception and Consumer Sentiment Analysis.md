@@ -6,9 +6,9 @@ kind: analysis
 id: cosmetics-18
 part: B
 partLabel: Marketing and Consumer Insights
-quant: []
+quant: [AP_RATE]
 causes: [COMMERCIAL, OPERATIONAL, MARKET]
-levers: []
+levers: [INFLUENCER_DIGITAL]
 ---
 # 18 · Brand Perception and Consumer Sentiment Analysis
 

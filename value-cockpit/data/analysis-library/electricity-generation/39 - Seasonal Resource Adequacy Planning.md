@@ -6,7 +6,7 @@ kind: analysis
 id: electricity-generation-39
 part: I
 partLabel: Capacity Planning and Utilization
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, RESERVE_MARGIN]
 causes: [MARKET]
 levers: [COST_OPS]
 ---
