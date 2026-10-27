@@ -32,3 +32,14 @@ describe('proxy – archetype guard', () => {
     await expect(handleProposal('aviation' as never, 'x', fakeCall)).rejects.toThrow(/unknown archetype/i);
   });
 });
+
+describe('proxy – analysis catalog in prompt (docs/07)', () => {
+  it('injects the archetype catalog (ids + titles) and asks to cite ids in evidence', () => {
+    const p = buildSystemPrompt('airline');
+    expect(p).toMatch(/airline-13: Load Factor and Capacity Management Analysis/);
+    expect(p).toMatch(/evidence/i);
+  });
+  it('injects no catalog for an archetype without one', () => {
+    expect(buildSystemPrompt('saas')).not.toMatch(/airline-13|aero-/);
+  });
+});

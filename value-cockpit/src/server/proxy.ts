@@ -1,6 +1,7 @@
 import express from 'express';
 import { sanitizeProposal, type CopilotProposal } from '../copilot/proposal';
 import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
+import { getCatalog } from '../catalog';
 
 export function buildSystemPrompt(archetype: SectorArchetype): string {
   const v = getActiveVocabulary(archetype);
@@ -12,7 +13,17 @@ export function buildSystemPrompt(archetype: SectorArchetype): string {
     `impactMetricCode MUST be one of: ${v.metricCodes.filter(v.isLeverTarget).join(', ')}.`,
     "Every lever MUST include deltaKind ('absolute' or 'percent') and a non-empty confidenceBasis.",
     'NEVER output computed figures, scenario results, exit multiples, or assumptions — the engine and the analyst own those.',
+    ...catalogSection(archetype),
   ].join('\n');
+}
+
+function catalogSection(archetype: SectorArchetype): string[] {
+  const catalog = getCatalog(archetype);
+  if (catalog.length === 0) return [];
+  return [
+    `Analysis protocols available for this company type — cite the id in a root cause "evidence" (e.g. "cf. ${catalog[0].id}"):`,
+    ...catalog.map((a) => `${a.id}: ${a.title}`),
+  ];
 }
 
 export async function handleProposal(
