@@ -84,6 +84,26 @@ describe('App', () => {
     expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);
   });
 
+  it('a lever card explains the lever: path to the MOIC, sensitivity, impact after validation, analyses', () => {
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    expect(screen.queryByRole('region', { name: 'Fiche levier' })).toBeNull();
+    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
+
+    const card = screen.getByRole('region', { name: 'Fiche levier' });
+    expect(within(card).getByText(/FUEL_CASK → OPERATING_COSTS_EXIT → EBITDA_EXIT → EQUITY_EXIT → MOIC/)).toBeTruthy();
+    expect(within(card).getByText(/Sensibilité du modèle/)).toBeTruthy();
+    expect(within(card).getByText(/après validation/)).toBeTruthy();
+    expect(within(card).getByText('Fuel Efficiency per Aircraft Type Analysis')).toBeTruthy();
+
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    expect(within(card).getByText(/Impact du levier/)).toBeTruthy();
+    fireEvent.click(within(card).getByRole('button', { name: 'Fermer' }));
+    expect(screen.queryByRole('region', { name: 'Fiche levier' })).toBeNull();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });

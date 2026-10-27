@@ -26,10 +26,10 @@ body { margin: 0; background: var(--bg); }
   display: flex; justify-content: space-between; align-items: center; }
 .grid { display: grid; gap: 16px; padding: 16px 24px 32px;
   grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
-  grid-template-areas: 'graph company' 'copilot simulation' 'plan simulation'; }
+  grid-template-areas: 'graph company' 'copilot simulation' 'card simulation' 'plan simulation'; }
 .graph { grid-area: graph; } .company { grid-area: company; } .copilot { grid-area: copilot; }
-.simulation { grid-area: simulation; } .plan { grid-area: plan; }
-@media (max-width: 960px) { .grid { grid-template-columns: 1fr; grid-template-areas: 'graph' 'company' 'copilot' 'simulation' 'plan'; } }
+.simulation { grid-area: simulation; } .plan { grid-area: plan; } .card { grid-area: card; }
+@media (max-width: 960px) { .grid { grid-template-columns: 1fr; grid-template-areas: 'graph' 'company' 'copilot' 'card' 'simulation' 'plan'; } }
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
 .panel h2 { margin: 0 0 12px; font-size: 15px; }
 .panel h3 { margin: 16px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
@@ -79,3 +79,9 @@ details { margin: 8px 0; } summary { cursor: pointer; color: var(--muted); font-
 .bridge tr.moic th, .bridge tr.moic td { font-weight: 700; font-size: 15px; border-bottom: 0; }
 .footnote { font-size: 11px; color: var(--muted); margin-top: 12px; }
 .error { color: var(--bad); }
+
+.card-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.card-head p { margin: 4px 0 0; }
+.card .path { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 6px 8px; border-radius: 6px; overflow-wrap: anywhere; }
+.card .formulas code { font-size: 11px; color: var(--muted); overflow-wrap: anywhere; }
+button.link { background: none; color: var(--accent); padding: 0; border: 0; text-decoration: underline; font-size: 12px; }

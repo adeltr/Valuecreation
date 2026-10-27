@@ -10,6 +10,7 @@ import { CopilotPanel } from './components/CopilotPanel';
 import { SimulationPanel } from './components/SimulationPanel';
 import { HundredDayPlan } from './components/HundredDayPlan';
 import { DossierBar, type SavedRef } from './components/DossierBar';
+import { LeverCardPanel } from './components/LeverCardPanel';
 import type { DossierRepository } from '../dossier/repository';
 import { connectRepository, type DossierLocation } from './state/httpRepository';
 import { hasUnsavedWork } from './state/unsaved';
@@ -28,6 +29,8 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
     return () => { live = false; };
   }, [connect]);
   const [saved, setSaved] = useState<SavedRef | null>(null);
+  const [cardLeverId, setCardLeverId] = useState<string | null>(null);
+  const cardLever = state.levers.find((l) => l.id === cardLeverId);
   const mayReplace = () => !hasUnsavedWork(state, saved?.fingerprint ?? null)
     || window.confirm('Les modifications non enregistrées du dossier en cours seront perdues. Continuer ?');
 
@@ -52,6 +55,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
             onChange={(e) => {
               if (!mayReplace()) return;
               setSaved(null);
+              setCardLeverId(null);
               dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype });
             }}>
             {([2, 1] as const).map((level) => {
@@ -76,7 +80,11 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
       <main className="grid">
         <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} />
         <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} />
-        <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} />
+        <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId} />
+        {cardLever && (
+          <LeverCardPanel lever={cardLever} metrics={metrics} catalog={catalog}
+            interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)} />
+        )}
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
           interactions={TEMPLATES[state.archetype]!.interactions}
           bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}

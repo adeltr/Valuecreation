@@ -7,9 +7,12 @@ import { Panel } from './Panel';
 const STATUS_LABEL: Record<Lever['status'], string> = { hypothesis: 'hypothèse', validated: 'validé', rejected: 'rejeté' };
 const today = () => new Date().toISOString().slice(0, 10);
 
-interface Props { archetype: SectorArchetype; levers: Lever[]; rootCauses: RootCause[]; dispatch: Dispatch<Action> }
+interface Props {
+  archetype: SectorArchetype; levers: Lever[]; rootCauses: RootCause[]; dispatch: Dispatch<Action>;
+  onOpenCard: (leverId: string) => void;
+}
 
-export function CopilotPanel({ archetype, levers, rootCauses, dispatch }: Props) {
+export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCard }: Props) {
   const [message, setMessage] = useState('');
   const [raw, setRaw] = useState('');
   const [pending, setPending] = useState(false);
@@ -74,6 +77,7 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch }: Props)
               <span className="tag">{l.category}</span> → {l.impactMetricCode} {l.expectedDelta > 0 ? '+' : ''}{l.expectedDelta} ({l.deltaKind})
             </div>
             <div className="muted">Confiance {l.confidence} — base : {l.confidenceBasis}</div>
+            <button type="button" className="link" onClick={() => onOpenCard(l.id)} aria-label={`Fiche du levier ${l.label}`}>Fiche</button>
             {l.status === 'hypothesis' && (
               <div className="actions">
                 <button type="button" onClick={() => dispatch({ type: 'validateLever', id: l.id })}>Valider</button>
