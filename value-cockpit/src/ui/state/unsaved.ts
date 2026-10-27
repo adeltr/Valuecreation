@@ -1,6 +1,6 @@
 import { initialState, type CockpitState } from './store';
 
-export type CaseContent = Pick<CockpitState, 'name' | 'archetype' | 'inputs' | 'levers' | 'rootCauses' | 'scenario' | 'plan'>;
+export type CaseContent = Pick<CockpitState, 'name' | 'archetype' | 'inputs' | 'levers' | 'rootCauses' | 'scenario' | 'plan' | 'observations'>;
 
 const canon = (v: unknown): unknown => Array.isArray(v) ? v.map(canon)
   : v && typeof v === 'object'
@@ -8,8 +8,8 @@ const canon = (v: unknown): unknown => Array.isArray(v) ? v.map(canon)
     : v;
 
 /** Key-order-independent fingerprint of what a dossier stores (no error, no id counter). */
-export function fingerprint({ name, archetype, inputs, levers, rootCauses, scenario, plan }: CaseContent): string {
-  return JSON.stringify(canon({ name, archetype, inputs, levers, rootCauses, scenario, plan: plan ?? {} }));
+export function fingerprint({ name, archetype, inputs, levers, rootCauses, scenario, plan, observations }: CaseContent): string {
+  return JSON.stringify(canon({ name, archetype, inputs, levers, rootCauses, scenario, plan: plan ?? {}, observations: observations ?? [] }));
 }
 
 /** True unless the case is an untouched demo or exactly the one last saved / opened (`clean`). */

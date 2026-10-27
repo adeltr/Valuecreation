@@ -1,6 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { initialState, reducer, type CockpitState } from '../ui/state/store';
 import { toDossier, parseDossier, DOSSIER_FORMAT } from './format';
+import { getCatalog } from '../catalog';
+import { findFormula } from '../workshop/observations';
 
 const proposal = {
   levers: [{
@@ -24,7 +26,10 @@ function workedCase(): CockpitState {
   s = reducer(s, { type: 'setAppliedDelta', id, value: -0.001 });
   s = reducer(s, { type: 'setAssumption', code: 'EXIT_MULTIPLE', value: 7 });
   s = reducer(s, { type: 'setPlanItem', id, patch: { owner: 'COO', status: 'in_progress' } });
-  return reducer(s, { type: 'setPlanItem', id: 'f-governance', patch: { owner: 'CFO', note: 'PMO interne' } });
+  s = reducer(s, { type: 'setPlanItem', id: 'f-governance', patch: { owner: 'CFO', note: 'PMO interne' } });
+  const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
+  const vars = findFormula(getCatalog('airline'), lf.id, 'Load Factor')!.variables;
+  return reducer(s, { type: 'addObservation', analysisId: lf.id, formula: 'Load Factor', values: { [vars[0]]: 80, [vars[1]]: 100 }, metricCode: 'LOAD_FACTOR', note: '', today: '2026-10-27' });
 }
 
 const roundTrip = (s: CockpitState) => parseDossier(JSON.parse(JSON.stringify(toDossier(s, '2026-10-27T10:00:00Z'))));
@@ -110,6 +115,20 @@ describe('dossier file', () => {
     const file = toDossier(workedCase(), 't');
     expect(() => parseDossier({ ...file, plan: { h99: { owner: 'x' } } })).toThrow(/h99/);
     expect(() => parseDossier({ ...file, plan: { h1: { status: 'finished' } } })).toThrow(/status/);
+  });
+
+  it('stores workshop observations as analyst data only, and checks them on load', () => {
+    const file = toDossier(workedCase(), 't');
+    expect(file.observations).toHaveLength(1);
+    expect(JSON.stringify(file.observations)).not.toMatch(/"value"/);
+    expect(roundTrip(workedCase()).observations).toEqual(workedCase().observations);
+    expect(() => parseDossier({ ...file, observations: [{ ...file.observations[0], analysisId: 'airline-99' }] })).toThrow(/airline-99/);
+    expect(() => parseDossier({ ...file, observations: [{ ...file.observations[0], metricCode: 'BOOK_TO_BILL' }] })).toThrow(/BOOK_TO_BILL/);
+  });
+
+  it('opens a version-2 dossier (before the workshop) with no observation', () => {
+    const { observations: _o, ...v2 } = toDossier(workedCase(), 't');
+    expect(parseDossier({ ...v2, version: 2 }).observations).toEqual([]);
   });
 });
 

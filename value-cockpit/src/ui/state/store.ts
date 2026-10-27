@@ -6,7 +6,9 @@ import { sanitizeProposal } from '../../copilot/proposal';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
-import { parseDossier, type DossierCase, type PlanOverride } from '../../dossier/format';
+import { checkObservation, parseDossier, type DossierCase, type PlanOverride } from '../../dossier/format';
+import { getCatalog } from '../../catalog';
+import { toMetricValue, type Observation } from '../../workshop/observations';
 
 export type { AssumptionCode } from '../../dossier/format';
 
@@ -18,6 +20,9 @@ export type Action =
   | { type: 'selectArchetype'; archetype: SectorArchetype }
   | { type: 'setName'; name: string }
   | { type: 'setPlanItem'; id: string; patch: PlanOverride }
+  | { type: 'addObservation'; analysisId: string; formula: string; values: Record<string, number>; metricCode: string | null; note: string; today: string }
+  | { type: 'applyObservation'; id: string }
+  | { type: 'removeObservation'; id: string }
   | { type: 'loadDossier'; raw: unknown }
   | { type: 'setInput'; code: string; value: number }
   | { type: 'ingestProposal'; raw: unknown; today: string }
@@ -43,6 +48,7 @@ export function initialState(archetype: SectorArchetype): CockpitState {
     levers: [], rootCauses: [],
     scenario: { leverIds: [], applied: {}, assumptions: {} },
     plan: {},
+    observations: [],
     nextId: 1, error: null,
   };
 }
@@ -69,6 +75,37 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
 
     case 'setName':
       return { ...state, name: action.name };
+
+    case 'addObservation': {
+      const o: Observation = {
+        id: `o${state.nextId}`, analysisId: action.analysisId, formula: action.formula, values: action.values,
+        metricCode: action.metricCode, date: action.today, note: action.note, applied: false,
+      };
+      try {
+        checkObservation(o, state.archetype);
+      } catch (e) {
+        return { ...state, error: `Observation refusée : ${(e as Error).message}` };
+      }
+      return { ...state, observations: [...state.observations, o], nextId: state.nextId + 1, error: null };
+    }
+
+    case 'applyObservation': {
+      const o = state.observations.find((x) => x.id === action.id);
+      if (!o) return state;
+      if (!o.metricCode || !(o.metricCode in state.inputs)) {
+        return { ...state, error: `${o.metricCode ?? 'Cette observation'} n'est pas un input du modèle : elle reste un diagnostic` };
+      }
+      const unit = getActiveVocabulary(state.archetype).metricMeta[o.metricCode].unit;
+      return {
+        ...state,
+        inputs: { ...state.inputs, [o.metricCode]: toMetricValue(o, getCatalog(state.archetype), unit) },
+        observations: state.observations.map((x) => (x.id === o.id ? { ...x, applied: true } : x)),
+        error: null,
+      };
+    }
+
+    case 'removeObservation':
+      return { ...state, observations: state.observations.filter((x) => x.id !== action.id) };
 
     case 'setPlanItem':
       return { ...state, plan: { ...state.plan, [action.id]: { ...state.plan[action.id], ...action.patch } } };

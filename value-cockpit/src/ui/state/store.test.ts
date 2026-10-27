@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { toDossier } from '../../dossier/format';
+import { getCatalog } from '../../catalog';
+import { findFormula } from '../../workshop/observations';
 import { initialState, reducer, selectBaseline, selectScenario, type CockpitState } from './store';
 
 const proposal = {
@@ -142,6 +144,43 @@ describe('cockpit store', () => {
     const after = ingest(airline(), { levers: [noNode] });
     expect(after.error).toMatch(/levers\.0\.nodeId/);
     expect(after.error).not.toMatch(/\[\s*\{/);
+  });
+
+  describe('workshop observations', () => {
+    const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
+    const vars = findFormula(getCatalog('airline'), lf.id, 'Load Factor')!.variables;
+    const add = (s: CockpitState, values: Record<string, number>, metricCode: string | null = 'LOAD_FACTOR') =>
+      reducer(s, { type: 'addObservation', analysisId: lf.id, formula: 'Load Factor', values, metricCode, note: 'données S1', today: '2026-10-27' });
+    const good = { [vars[0]]: 78, [vars[1]]: 100 };
+
+    it('records the analyst data (never the result) with an id', () => {
+      const s = add(airline(), good);
+      expect(s.observations).toEqual([{ id: 'o1', analysisId: lf.id, formula: 'Load Factor', values: good, metricCode: 'LOAD_FACTOR', date: '2026-10-27', note: 'données S1', applied: false }]);
+      expect(s.nextId).toBe(2);
+    });
+
+    it('refuses missing data, a result the engine cannot compute, or a metric outside the vocabulary', () => {
+      expect(add(airline(), { [vars[0]]: 78 }).error).toMatch(/manquante/);
+      expect(add(airline(), { [vars[0]]: 78, [vars[1]]: 0 }).error).toMatch(/finite/);
+      expect(add(airline(), good, 'BOOK_TO_BILL').error).toMatch(/BOOK_TO_BILL/);
+    });
+
+    it('applying an observation sets the company input in the metric unit (78 % → 0.78)', () => {
+      let s = add(airline(), good);
+      s = reducer(s, { type: 'applyObservation', id: 'o1' });
+      expect(s.inputs.LOAD_FACTOR).toBeCloseTo(0.78, 12);
+      expect(s.observations[0].applied).toBe(true);
+    });
+
+    it('an observation of a metric that is not a model input cannot be applied', () => {
+      const s = reducer(add(airline(), good, 'MARKET_SHARE'), { type: 'applyObservation', id: 'o1' });
+      expect(s.error).toMatch(/input/);
+      expect(s.observations[0].applied).toBe(false);
+    });
+
+    it('removes an observation', () => {
+      expect(reducer(add(airline(), good), { type: 'removeObservation', id: 'o1' }).observations).toEqual([]);
+    });
   });
 });
 

@@ -4,6 +4,8 @@ import { SCENARIO_ASSUMPTION_CODES } from '../ontology/base';
 import { makeLeverSchema, makeRootCauseSchema } from '../domain/schemas';
 import type { Lever, RootCause } from '../domain/types';
 import { TEMPLATES } from '../templates';
+import { getCatalog } from '../catalog';
+import { findFormula, observationValue, type Observation } from '../workshop/observations';
 
 export type AssumptionCode = (typeof SCENARIO_ASSUMPTION_CODES)[number];
 
@@ -26,11 +28,25 @@ export interface DossierCase {
     assumptions: Partial<Record<AssumptionCode, number>>;
   };
   plan: Record<string, PlanOverride>;
+  observations: Observation[];
   nextId: number;
 }
 
+/** An observation must point to a formula of the archetype's catalog, cover its variables and be computable. */
+export function checkObservation(o: Observation, archetype: SectorArchetype): void {
+  const catalog = getCatalog(archetype);
+  const f = findFormula(catalog, o.analysisId, o.formula);
+  if (!f) throw new Error(`Observation ${o.id} : formule « ${o.formula} » introuvable dans ${o.analysisId}`);
+  if (o.metricCode !== null && !getActiveVocabulary(archetype).isMetricCode(o.metricCode)) {
+    throw new Error(`Observation ${o.id} : ${o.metricCode} n'est pas une métrique du vocabulaire ${archetype}`);
+  }
+  const extra = Object.keys(o.values).filter((k) => !f.variables.includes(k));
+  if (extra.length) throw new Error(`Observation ${o.id} : variables inconnues ${extra.join(', ')}`);
+  observationValue(o, catalog); // missing data or a non-finite result throws
+}
+
 export const DOSSIER_FORMAT = 'value-cockpit-dossier';
-export const DOSSIER_VERSION = 2; // 2: + plan (version 1 files open with an empty plan)
+export const DOSSIER_VERSION = 3; // 2: + plan, 3: + observations (older files open with them empty)
 
 /**
  * A saved company case. It holds what the analyst entered or decided — inputs, levers and
@@ -48,6 +64,7 @@ export interface DossierFile {
   rootCauses: RootCause[];
   scenario: DossierCase['scenario'];
   plan: DossierCase['plan'];
+  observations: Observation[];
   nextId: number;
 }
 
@@ -58,13 +75,13 @@ export function toDossier(state: DossierCase, savedAt: string): DossierFile {
     format: DOSSIER_FORMAT, version: DOSSIER_VERSION, name, savedAt,
     archetype: state.archetype,
     inputs: state.inputs, levers: state.levers, rootCauses: state.rootCauses,
-    scenario: state.scenario, plan: state.plan, nextId: state.nextId,
+    scenario: state.scenario, plan: state.plan, observations: state.observations, nextId: state.nextId,
   };
 }
 
 const envelope = z.object({
   format: z.literal(DOSSIER_FORMAT),
-  version: z.union([z.literal(1), z.literal(DOSSIER_VERSION)]),
+  version: z.union([z.literal(1), z.literal(2), z.literal(DOSSIER_VERSION)]),
   name: z.string().min(1),
   savedAt: z.string(),
   archetype: z.string(),
@@ -79,6 +96,10 @@ const envelope = z.object({
   plan: z.record(z.object({
     owner: z.string().optional(), status: z.enum(PLAN_STATUSES).optional(), note: z.string().optional(),
   }).strict()).default({}),
+  observations: z.array(z.object({
+    id: z.string(), analysisId: z.string(), formula: z.string(), values: z.record(z.number().finite()),
+    metricCode: z.string().nullable(), date: z.string(), note: z.string(), applied: z.boolean(),
+  }).strict()).default([]),
   nextId: z.number().int().min(1),
 });
 
@@ -136,12 +157,14 @@ export function parseDossier(raw: unknown): DossierCase {
     }
   }
 
-  // Ids are h<n>: the next one must be past every id already in the file, whatever nextId says.
-  const used = [...levers, ...rootCauses].map((x) => Number(/^h(\d+)$/.exec(x.id)?.[1] ?? 0));
+  for (const o of file.observations) checkObservation(o, archetype);
+
+  // Ids are h<n> / o<n>: the next one must be past every id already in the file, whatever nextId says.
+  const used = [...levers, ...rootCauses, ...file.observations].map((x) => Number(/^[ho](\d+)$/.exec(x.id)?.[1] ?? 0));
   const nextId = Math.max(file.nextId, ...used.map((n) => n + 1));
 
   return {
     name: file.name, archetype, inputs: file.inputs, levers, rootCauses,
-    scenario: { leverIds, applied, assumptions }, plan: file.plan, nextId,
+    scenario: { leverIds, applied, assumptions }, plan: file.plan, observations: file.observations, nextId,
   };
 }
