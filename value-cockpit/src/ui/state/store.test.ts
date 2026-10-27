@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { toDossier } from './dossier';
+import { toDossier } from '../../dossier/format';
 import { initialState, reducer, selectBaseline, selectScenario, type CockpitState } from './store';
 
 const proposal = {

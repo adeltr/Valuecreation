@@ -3,7 +3,7 @@ import { describe, it, expect, afterEach, beforeAll, beforeEach, vi } from 'vite
 import { render, screen, cleanup, fireEvent, within } from '@testing-library/react';
 import { App } from './App';
 import { initialState, reducer } from './state/store';
-import { toDossier } from './state/dossier';
+import { toDossier } from '../dossier/format';
 
 beforeAll(() => {
   // React Flow measures its container.

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { initialState, reducer } from './store';
-import { toDossier } from './dossier';
+import { toDossier } from '../../dossier/format';
 import { listDossiers, saveDossier, readDossier, deleteDossier, LIBRARY_KEY, type KeyValueStore } from './library';
 
 function memory(): KeyValueStore & { data: Map<string, string> } {

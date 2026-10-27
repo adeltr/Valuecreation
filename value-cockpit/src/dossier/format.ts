@@ -1,10 +1,26 @@
 import { z } from 'zod';
-import { getActiveVocabulary, SECTOR_ARCHETYPES, type SectorArchetype } from '../../ontology/registry';
-import { SCENARIO_ASSUMPTION_CODES } from '../../ontology/base';
-import { makeLeverSchema, makeRootCauseSchema } from '../../domain/schemas';
-import type { Lever, RootCause } from '../../domain/types';
-import { TEMPLATES } from '../../templates';
-import type { CockpitState } from './store';
+import { getActiveVocabulary, SECTOR_ARCHETYPES, type SectorArchetype } from '../ontology/registry';
+import { SCENARIO_ASSUMPTION_CODES } from '../ontology/base';
+import { makeLeverSchema, makeRootCauseSchema } from '../domain/schemas';
+import type { Lever, RootCause } from '../domain/types';
+import { TEMPLATES } from '../templates';
+
+export type AssumptionCode = (typeof SCENARIO_ASSUMPTION_CODES)[number];
+
+/** A company case as the analyst works it: what a dossier stores, plus the next id to hand out. */
+export interface DossierCase {
+  name: string;
+  archetype: SectorArchetype;
+  inputs: Record<string, number>;
+  levers: Lever[];
+  rootCauses: RootCause[];
+  scenario: {
+    leverIds: string[];
+    applied: Record<string, number>;
+    assumptions: Partial<Record<AssumptionCode, number>>;
+  };
+  nextId: number;
+}
 
 export const DOSSIER_FORMAT = 'value-cockpit-dossier';
 export const DOSSIER_VERSION = 1;
@@ -23,11 +39,11 @@ export interface DossierFile {
   inputs: Record<string, number>;
   levers: Lever[];
   rootCauses: RootCause[];
-  scenario: CockpitState['scenario'];
+  scenario: DossierCase['scenario'];
   nextId: number;
 }
 
-export function toDossier(state: CockpitState, savedAt: string): DossierFile {
+export function toDossier(state: DossierCase, savedAt: string): DossierFile {
   const name = state.name.trim();
   if (!name) throw new Error('Donne un nom au dossier avant de l\'enregistrer ou de l\'exporter');
   return {
@@ -64,7 +80,7 @@ function parseWith<T>(schema: z.ZodType<T>, value: unknown, what: string): T {
 }
 
 /** Validates an untrusted dossier file against the current templates and vocabulary. Throws, never guesses. */
-export function parseDossier(raw: unknown): CockpitState {
+export function parseDossier(raw: unknown): DossierCase {
   const head = envelope.safeParse(raw);
   if (!head.success) throw new Error(`Fichier de dossier invalide — ${issues(head.error)}`);
   const file = head.data;
@@ -109,6 +125,6 @@ export function parseDossier(raw: unknown): CockpitState {
 
   return {
     name: file.name, archetype, inputs: file.inputs, levers, rootCauses,
-    scenario: { leverIds, applied, assumptions }, nextId, error: null,
+    scenario: { leverIds, applied, assumptions }, nextId,
   };
 }

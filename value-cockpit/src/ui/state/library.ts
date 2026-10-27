@@ -1,4 +1,4 @@
-import type { DossierFile } from './dossier';
+import type { DossierFile } from '../../dossier/format';
 
 /** The subset of the Web Storage API the library needs (window.localStorage in the app). */
 export interface KeyValueStore {

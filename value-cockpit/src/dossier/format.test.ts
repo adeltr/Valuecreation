@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { initialState, reducer, type CockpitState } from './store';
-import { toDossier, parseDossier, DOSSIER_FORMAT } from './dossier';
+import { initialState, reducer, type CockpitState } from '../ui/state/store';
+import { toDossier, parseDossier, DOSSIER_FORMAT } from './format';
 
 const proposal = {
   levers: [{
@@ -30,8 +30,9 @@ const roundTrip = (s: CockpitState) => parseDossier(JSON.parse(JSON.stringify(to
 describe('dossier file', () => {
   it('round-trips a worked case: inputs, levers, causes, scenario', () => {
     const s = workedCase();
+    const { error: _error, ...content } = s;
     const back = roundTrip(s);
-    expect(back).toEqual({ ...s, error: null });
+    expect(back).toEqual(content);
     expect(back.name).toBe('Air X');
   });
 
@@ -88,7 +89,7 @@ describe('dossier file', () => {
   it('never reuses an existing lever id after loading', () => {
     const file = toDossier(workedCase(), 't');
     const back = parseDossier({ ...file, nextId: 1 });
-    const s = reducer(back, { type: 'ingestProposal', raw: proposal, today: '2026-10-28' });
+    const s = reducer({ ...back, error: null }, { type: 'ingestProposal', raw: proposal, today: '2026-10-28' });
     const ids = [...s.levers, ...s.rootCauses].map((x) => x.id);
     expect(new Set(ids).size).toBe(ids.length);
   });

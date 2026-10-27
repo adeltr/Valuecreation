@@ -1,4 +1,4 @@
-import type { Lever, Metric, RootCause, ScenarioResult } from '../../domain/types';
+import type { Lever, Metric, ScenarioResult } from '../../domain/types';
 import { getActiveVocabulary, type SectorArchetype } from '../../ontology/registry';
 import { SCENARIO_ASSUMPTION_CODES } from '../../ontology/base';
 import { TEMPLATES } from '../../templates';
@@ -6,22 +6,11 @@ import { sanitizeProposal } from '../../copilot/proposal';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
-import { parseDossier } from './dossier';
+import { parseDossier, type DossierCase } from '../../dossier/format';
 
-export type AssumptionCode = (typeof SCENARIO_ASSUMPTION_CODES)[number];
+export type { AssumptionCode } from '../../dossier/format';
 
-export interface CockpitState {
-  name: string;
-  archetype: SectorArchetype;
-  inputs: Record<string, number>;
-  levers: Lever[];
-  rootCauses: RootCause[];
-  scenario: {
-    leverIds: string[];
-    applied: Record<string, number>;
-    assumptions: Partial<Record<AssumptionCode, number>>;
-  };
-  nextId: number;
+export interface CockpitState extends DossierCase {
   error: string | null;
 }
 
@@ -75,7 +64,7 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
 
     case 'loadDossier':
       try {
-        return parseDossier(action.raw);
+        return { ...parseDossier(action.raw), error: null };
       } catch (e) {
         return { ...state, error: `Dossier refusé : ${(e as Error).message}` };
       }

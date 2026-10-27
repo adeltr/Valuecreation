@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent, type Dispatch } from 'react';
 import type { Action, CockpitState } from '../state/store';
 import { fingerprint, type CaseContent } from '../state/unsaved';
-import { toDossier } from '../state/dossier';
+import { toDossier } from '../../dossier/format';
 import { deleteDossier, listDossiers, readDossier, saveDossier, type DossierSummary, type KeyValueStore } from '../state/library';
 import { TEMPLATES } from '../../templates';
 import type { SectorArchetype } from '../../ontology/registry';
