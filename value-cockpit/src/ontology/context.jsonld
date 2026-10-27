@@ -111,6 +111,24 @@
     "SUSTAINMENT_COST": "vcc:SustainmentCost",
     "WORKFORCE_TURNOVER": "vcc:WorkforceTurnover",
     "RD_PORTFOLIO": "vcc:lever/RdPortfolio",
-    "CYBER": "vcc:cause/Cyber"
+    "CYBER": "vcc:cause/Cyber",
+    "VOLUME_GROWTH": "vcc:VolumeGrowth",
+    "PRICE_MIX_GROWTH": "vcc:PriceMixGrowth",
+    "GROSS_MARGIN": "vcc:GrossMargin",
+    "TRADE_SPEND_RATE": "vcc:TradeSpendRate",
+    "AP_RATE": "vcc:ApRate",
+    "OVERHEAD_RATE": "vcc:OverheadRate",
+    "OUT_OF_STOCK_RATE": "vcc:OutOfStockRate",
+    "PRIVATE_LABEL_SHARE": "vcc:PrivateLabelShare",
+    "RETAILER_CONCENTRATION": "vcc:RetailerConcentration",
+    "NEW_PRODUCT_SUCCESS_RATE": "vcc:NewProductSuccessRate",
+    "PROMO_ROI": "vcc:PromoRoi",
+    "TRADE_SPEND_OPTIMIZATION": "vcc:lever/TradeSpendOptimization",
+    "MARKETING_EFFECTIVENESS": "vcc:lever/MarketingEffectiveness",
+    "ROUTE_TO_MARKET": "vcc:lever/RouteToMarket",
+    "IN_STORE_EXECUTION": "vcc:lever/InStoreExecution",
+    "INNOVATION_NPD": "vcc:lever/InnovationNpd",
+    "RETAILER_POWER": "vcc:cause/RetailerPower",
+    "COMMODITY_PRICES": "vcc:cause/CommodityPrices"
   }
 }

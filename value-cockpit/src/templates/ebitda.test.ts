@@ -18,7 +18,7 @@ const lever = (category: string, code: string, delta: number): Lever => ({
 const run = (l: Lever) => new Map(runScenario('s', metrics, [l],
   [{ scenarioId: 's', leverId: 'l', appliedDelta: l.expectedDelta, deltaKind: 'absolute' }], []).map((r) => [r.metricCode, r.value]));
 
-const metrics = instantiateEbitdaTemplate('c', INPUTS, 'cpg');
+const metrics = instantiateEbitdaTemplate('c', INPUTS, 'retail');
 
 describe('generic EBITDA template', () => {
   it('REVENUE × (1+g)^n × margin → EBITDA_EXIT → MOIC', () => {

@@ -8,15 +8,19 @@ import {
   AERO_LEVER_CATEGORIES, AERO_CAUSE_CATEGORIES,
 } from './sectors/aero';
 import {
+  CPG_METRIC_CODES, CPG_METRIC_META, CPG_LEVER_CATEGORIES, CPG_CAUSE_CATEGORIES,
+} from './sectors/cpg';
+import {
   AIRLINE_METRIC_CODES, AIRLINE_METRIC_META,
   AIRLINE_LEVER_CATEGORIES, AIRLINE_CAUSE_CATEGORIES,
 } from './sectors/airline';
 
 // Level 2 — sector extension + dedicated template.
-export const EXTENDED_ARCHETYPES = ['saas', 'aero', 'airline'] as const;
+export const EXTENDED_ARCHETYPES = ['saas', 'aero', 'airline', 'cpg'] as const;
 // Level 1 — EBITDA-family company types on the base vocabulary + generic template (docs/11).
+// 15 types; cpg moved to level 2.
 export const BASE_ARCHETYPES = [
-  'agriculture', 'chemical', 'cosmetics', 'cpg', 'electricity-generation', 'healthcare-provider',
+  'agriculture', 'chemical', 'cosmetics', 'electricity-generation', 'healthcare-provider',
   'hospitality', 'manufacturing', 'media', 'medical-device', 'metals-mining', 'pharma', 'retail',
   'third-party-logistics', 'waste-management', 'wine-spirits',
 ] as const;
@@ -44,6 +48,7 @@ const EXTENSIONS: Partial<Record<SectorArchetype, {
 }>> = {
   saas: { codes: SAAS_METRIC_CODES, meta: SAAS_METRIC_META, levers: SAAS_LEVER_CATEGORIES },
   aero: { codes: AERO_METRIC_CODES, meta: AERO_METRIC_META, levers: AERO_LEVER_CATEGORIES, causes: AERO_CAUSE_CATEGORIES },
+  cpg: { codes: CPG_METRIC_CODES, meta: CPG_METRIC_META, levers: CPG_LEVER_CATEGORIES, causes: CPG_CAUSE_CATEGORIES },
   airline: { codes: AIRLINE_METRIC_CODES, meta: AIRLINE_METRIC_META, levers: AIRLINE_LEVER_CATEGORIES, causes: AIRLINE_CAUSE_CATEGORIES },
 };
 

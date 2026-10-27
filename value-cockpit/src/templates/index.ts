@@ -4,6 +4,7 @@ import { instantiateSaasTemplate, type SaasInputs } from './saas';
 import { instantiateAeroTemplate, type AeroInputs } from './aero';
 import { instantiateAirlineTemplate, type AirlineInputs } from './airline';
 import { instantiateEbitdaTemplate, type EbitdaInputs } from './ebitda';
+import { instantiateCpgTemplate, type CpgInputs } from './cpg';
 
 export interface TemplateEntry {
   label: string;
@@ -15,7 +16,7 @@ export interface TemplateEntry {
 }
 
 const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = {
-  agriculture: 'Agriculture', chemical: 'Chemical', cosmetics: 'Cosmetics', cpg: 'Consumer Packaged Goods',
+  agriculture: 'Agriculture', chemical: 'Chemical', cosmetics: 'Cosmetics',
   'electricity-generation': 'Electricity Generation', 'healthcare-provider': 'Healthcare Provider',
   hospitality: 'Hospitality', manufacturing: 'Manufacturing', media: 'Media & Entertainment',
   'medical-device': 'Medical Device', 'metals-mining': 'Metals & Mining', pharma: 'Pharmaceutical',
@@ -56,6 +57,16 @@ export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
       REVENUE: 500, EBITDA_MARGIN: 0.12, BOOK_TO_BILL: 1.06, FIXED_PRICE_SHARE: 0.60,
       COST_OVERRUN_RATE: 0.03, ENTRY_MULTIPLE: 9, EXIT_MULTIPLE: 9, HOLD_YEARS: 5,
       NET_DEBT_ENTRY: 300, FCF_ANNUAL: 25,
+    },
+  },
+  cpg: {
+    label: 'Consumer Packaged Goods',
+    level: 2,
+    instantiate: (id, i) => instantiateCpgTemplate(id, i as CpgInputs),
+    demoInputs: {
+      REVENUE: 1000, VOLUME_GROWTH: 0.03, PRICE_MIX_GROWTH: 0.02, GROSS_MARGIN: 0.45,
+      TRADE_SPEND_RATE: 0.12, AP_RATE: 0.08, OVERHEAD_RATE: 0.10, EBITDA_ENTRY: 150,
+      ENTRY_MULTIPLE: 10, EXIT_MULTIPLE: 10, HOLD_YEARS: 5, NET_DEBT_ENTRY: 600, FCF_ANNUAL: 60,
     },
   },
   airline: {

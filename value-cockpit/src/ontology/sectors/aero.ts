@@ -20,9 +20,8 @@ export const AERO_DIAGNOSTIC_CODES = [
 ] as const;
 
 // Calculated metrics added by this extension
-export const AERO_CALCULATED_CODES = [
-  'EBITDA_MARGIN_EXIT',
-] as const;
+// (REVENUE_EXIT and EBITDA_MARGIN_EXIT are base codes; the aero template computes them.)
+export const AERO_CALCULATED_CODES = [] as const;
 
 export const AERO_METRIC_CODES = [
   ...AERO_FORMULA_INPUT_CODES,
@@ -47,7 +46,6 @@ export const AERO_METRIC_META: Record<(typeof AERO_METRIC_CODES)[number], Metric
   SPARE_PARTS_AVAILABILITY: { unit: 'percent' },
   SUSTAINMENT_COST:         { unit: 'currency' },
   WORKFORCE_TURNOVER:       { unit: 'percent' },
-  EBITDA_MARGIN_EXIT: { unit: 'percent' },
 };
 
 // "Steps to improve" lever categories (doc 05, analyses #1, #3, #5, #9, #10, #11, #12, #16)

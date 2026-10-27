@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getActiveVocabulary, SECTOR_ARCHETYPES, type SectorArchetype } from './registry';
+import { getActiveVocabulary, SECTOR_ARCHETYPES, EXTENDED_ARCHETYPES, BASE_ARCHETYPES, type SectorArchetype } from './registry';
 
 describe('ontology registry', () => {
   const saas = getActiveVocabulary('saas');
@@ -81,7 +81,7 @@ describe('ontology registry – archetypes', () => {
     expect(SECTOR_ARCHETYPES).toContain('cpg');
   });
   it('a level-1 archetype has exactly the base vocabulary', () => {
-    expect(getActiveVocabulary('cpg').metricCodes).toEqual(getActiveVocabulary('generic').metricCodes);
+    expect(getActiveVocabulary('retail').metricCodes).toEqual(getActiveVocabulary('generic').metricCodes);
   });
 });
 
@@ -141,5 +141,28 @@ describe('ontology registry – aero candidates validated (aero/_curation.md §C
     }
     expect(aero.isLeverCategory('RD_PORTFOLIO')).toBe(true);
     expect(aero.isCauseCategory('CYBER')).toBe(true);
+  });
+});
+
+describe('ontology registry – cpg extension (level 2)', () => {
+  const cpg = getActiveVocabulary('cpg');
+  it('cpg is an extended archetype, no longer level 1', () => {
+    expect(EXTENDED_ARCHETYPES).toContain('cpg');
+    expect(BASE_ARCHETYPES).not.toContain('cpg');
+  });
+  it('adds the validated drivers, diagnostics, levers and causes (cpg/_level2.md)', () => {
+    for (const c of ['VOLUME_GROWTH', 'PRICE_MIX_GROWTH', 'GROSS_MARGIN', 'TRADE_SPEND_RATE', 'AP_RATE', 'OVERHEAD_RATE',
+                     'MARKET_SHARE', 'OUT_OF_STOCK_RATE', 'PRIVATE_LABEL_SHARE', 'RETAILER_CONCENTRATION',
+                     'NEW_PRODUCT_SUCCESS_RATE', 'PROMO_ROI', 'EBITDA_MARGIN_EXIT']) {
+      expect(cpg.isMetricCode(c), c).toBe(true);
+    }
+    for (const c of ['TRADE_SPEND_OPTIMIZATION', 'MARKETING_EFFECTIVENESS', 'ROUTE_TO_MARKET', 'IN_STORE_EXECUTION', 'INNOVATION_NPD']) {
+      expect(cpg.isLeverCategory(c), c).toBe(true);
+    }
+    expect(cpg.isCauseCategory('RETAILER_POWER')).toBe(true);
+    expect(cpg.isCauseCategory('COMMODITY_PRICES')).toBe(true);
+  });
+  it('EBITDA_MARGIN_EXIT is a base code shared by aero and cpg', () => {
+    expect(getActiveVocabulary('retail').isMetricCode('EBITDA_MARGIN_EXIT')).toBe(true);
   });
 });

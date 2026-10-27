@@ -72,10 +72,17 @@ describe('App', () => {
 
   it('a level-1 company type uses the generic EBITDA template', () => {
     render(<App />);
-    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'retail' } });
     const company = screen.getByRole('region', { name: 'Entreprise' });
     expect(within(company).getByLabelText('REVENUE_GROWTH')).toBeTruthy();
     expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);
+  });
+
+  it('cpg uses its level-2 template (volume × price-mix, gross-to-net margin)', () => {
+    render(<App />);
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    expect(within(company).getByLabelText('TRADE_SPEND_RATE')).toBeTruthy();
   });
 
   it('exploration: clicking a driver lists the analyses to run', () => {
