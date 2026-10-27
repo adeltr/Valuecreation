@@ -6,7 +6,7 @@ kind: analysis
 id: manufacturing-04
 part: A
 partLabel: Operations
-quant: []
+quant: [MANUFACTURING_LEAD_TIME]
 causes: [OPERATIONAL]
 levers: [COST_PROCUREMENT, COST_OPS]
 ---

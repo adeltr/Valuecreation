@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-01
 part: A
 partLabel: Operations
-quant: []
+quant: [PLANT_UTILIZATION]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, CAPACITY_DEBOTTLENECKING]
 ---
 # 1 · Capacity Utilization Analysis
 

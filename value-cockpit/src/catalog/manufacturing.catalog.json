@@ -5,12 +5,15 @@
     "title": "Capacity Utilization Analysis",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "PLANT_UTILIZATION"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/manufacturing/01 - Capacity Utilization Analysis.md"
   },
@@ -20,11 +23,16 @@
     "title": "Operational Efficiency (OEE) Analysis",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONVERSION_COST_RATE",
+      "OEE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LEAN_OEE"
+    ],
     "sourcePath": "data/analysis-library/manufacturing/02 - Operational Efficiency (OEE) Analysis.md"
   },
   {
@@ -53,7 +61,9 @@
     "title": "Production Lead Time Analysis",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MANUFACTURING_LEAD_TIME"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
@@ -69,13 +79,16 @@
     "title": "Lean Manufacturing and Waste Reduction Assessment",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONVERSION_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "LEAN_OEE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/05 - Lean Manufacturing and Waste Reduction Assessment.md"
   },
@@ -104,14 +117,18 @@
     "title": "Quality Control and Defect Rate Analysis",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SCRAP_RATE",
+      "FIRST_PASS_YIELD"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "QUALITY_YIELD"
     ],
     "sourcePath": "data/analysis-library/manufacturing/07 - Quality Control and Defect Rate Analysis.md"
   },
@@ -122,14 +139,18 @@
     "part": "A",
     "partLabel": "Operations",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "PLANT_UTILIZATION",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "MARKET"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "CAPACITY_DEBOTTLENECKING"
+    ],
     "sourcePath": "data/analysis-library/manufacturing/08 - Capacity Expansion and Flexibility Assessment.md"
   },
   {
@@ -138,13 +159,17 @@
     "title": "Maintenance Strategy and Downtime Analysis",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE",
+      "MACHINE_DOWNTIME_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "PREDICTIVE_MAINTENANCE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/09 - Maintenance Strategy and Downtime Analysis.md"
   },
@@ -154,14 +179,17 @@
     "title": "Factory Layout and Process Flow Optimization",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CONVERSION_COST_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "LEAN_OEE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/10 - Factory Layout and Process Flow Optimization.md"
   },
@@ -171,12 +199,15 @@
     "title": "Throughput and Bottleneck Identification",
     "part": "A",
     "partLabel": "Operations",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "OEE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "LEAN_OEE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/11 - Throughput and Bottleneck Identification.md"
   },
@@ -188,7 +219,8 @@
     "partLabel": "Operations",
     "relatedMetricCodes": [
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -209,7 +241,9 @@
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "LEAN_OEE"
+    ],
     "sourcePath": "data/analysis-library/manufacturing/13 - Process Standardization and Replication Across Plants.md"
   },
   {
@@ -225,7 +259,9 @@
       "OPERATIONAL",
       "FINANCIAL"
     ],
-    "relatedLeverCategories": [],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
     "sourcePath": "data/analysis-library/manufacturing/14 - Work-in-Progress (WIP) Inventory Management.md"
   },
   {
@@ -273,7 +309,9 @@
     "partLabel": "Operations",
     "relatedMetricCodes": [
       "REVENUE_GROWTH",
-      "DIO"
+      "DIO",
+      "PLANT_UTILIZATION",
+      "VOLUME_GROWTH"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -281,7 +319,8 @@
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
-      "COST_OPS"
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/manufacturing/17 - Capacity Buffers and Flexibility in Response to Demand.md"
   },
@@ -293,7 +332,8 @@
     "partLabel": "Supply Chain and Procurement",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "COGS"
+      "COGS",
+      "MATERIAL_COST_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -314,10 +354,13 @@
     "title": "Supplier Risk and Dependency Analysis",
     "part": "B",
     "partLabel": "Supply Chain and Procurement",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "SUPPLIER_ON_TIME_DELIVERY"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "SUPPLIER_RISK"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT"
@@ -330,14 +373,18 @@
     "title": "Supplier Quality Management",
     "part": "B",
     "partLabel": "Supply Chain and Procurement",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "FIRST_PASS_YIELD",
+      "SUPPLIER_ON_TIME_DELIVERY"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
       "REGULATORY"
     ],
     "relatedLeverCategories": [
-      "COST_PROCUREMENT"
+      "COST_PROCUREMENT",
+      "QUALITY_YIELD"
     ],
     "sourcePath": "data/analysis-library/manufacturing/20 - Supplier Quality Management.md"
   },
@@ -348,11 +395,14 @@
     "part": "B",
     "partLabel": "Supply Chain and Procurement",
     "relatedMetricCodes": [
-      "COGS"
+      "COGS",
+      "MATERIAL_COST_RATE",
+      "SUPPLIER_ON_TIME_DELIVERY"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "SUPPLIER_RISK"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
@@ -394,7 +444,8 @@
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "MARKET"
+      "MARKET",
+      "SUPPLIER_RISK"
     ],
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
@@ -414,7 +465,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "AUTOMATION"
     ],
     "sourcePath": "data/analysis-library/manufacturing/24 - Automation and Technology Integration Analysis.md"
   },
@@ -432,7 +484,8 @@
     ],
     "relatedLeverCategories": [
       "VOLUME",
-      "COST_OPS"
+      "COST_OPS",
+      "AUTOMATION"
     ],
     "sourcePath": "data/analysis-library/manufacturing/25 - Factory Automation Level and Robotics Utilization.md"
   },
@@ -448,7 +501,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "AUTOMATION"
     ],
     "sourcePath": "data/analysis-library/manufacturing/26 - Tooling and Machine Setup Time Optimization.md"
   },
@@ -458,13 +512,17 @@
     "title": "Equipment Downtime Tracking and Root Cause Analysis",
     "part": "C",
     "partLabel": "Technology and Automation",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE",
+      "MACHINE_DOWNTIME_RATE"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL"
     ],
     "relatedLeverCategories": [
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "PREDICTIVE_MAINTENANCE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/27 - Equipment Downtime Tracking and Root Cause Analysis.md"
   },
@@ -475,7 +533,8 @@
     "part": "C",
     "partLabel": "Technology and Automation",
     "relatedMetricCodes": [
-      "DIO"
+      "DIO",
+      "MAINTENANCE_COST_RATE"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -484,7 +543,8 @@
     "relatedLeverCategories": [
       "COST_PROCUREMENT",
       "COST_OPS",
-      "WC_DIO"
+      "WC_DIO",
+      "PREDICTIVE_MAINTENANCE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/28 - Spare Parts Management and Predictive Maintenance.md"
   },
@@ -496,7 +556,9 @@
     "partLabel": "Technology and Automation",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "DIO"
+      "DIO",
+      "CONVERSION_COST_RATE",
+      "MANUFACTURING_LEAD_TIME"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -504,7 +566,8 @@
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "LEAN_OEE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/29 - Manufacturing Cycle Time Reduction.md"
   },
@@ -517,7 +580,8 @@
     "relatedMetricCodes": [],
     "relatedCauseCategories": [
       "OPERATIONAL",
-      "FINANCIAL"
+      "FINANCIAL",
+      "ENERGY_PRICES"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -551,7 +615,9 @@
     "partLabel": "Finance and Asset Management",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "COGS"
+      "COGS",
+      "CONVERSION_COST_RATE",
+      "MATERIAL_COST_RATE"
     ],
     "relatedCauseCategories": [
       "COMMERCIAL",
@@ -572,14 +638,17 @@
     "title": "Asset Utilization and Lifecycle Management",
     "part": "D",
     "partLabel": "Finance and Asset Management",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
       "ORGANIZATIONAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
     ],
     "sourcePath": "data/analysis-library/manufacturing/33 - Asset Utilization and Lifecycle Management.md"
   },
@@ -590,7 +659,8 @@
     "part": "D",
     "partLabel": "Finance and Asset Management",
     "relatedMetricCodes": [
-      "EBITDA_MARGIN"
+      "EBITDA_MARGIN",
+      "CAPEX"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -655,7 +725,9 @@
     "title": "New Product Introduction (NPI) and Time-to-Market Evaluation",
     "part": "E",
     "partLabel": "Product and Process Development",
-    "relatedMetricCodes": [],
+    "relatedMetricCodes": [
+      "MANUFACTURING_LEAD_TIME"
+    ],
     "relatedCauseCategories": [
       "COMMERCIAL",
       "OPERATIONAL",
@@ -697,14 +769,17 @@
     "partLabel": "Product and Process Development",
     "relatedMetricCodes": [
       "EBITDA_MARGIN",
-      "COGS"
+      "COGS",
+      "SCRAP_RATE",
+      "FIRST_PASS_YIELD"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL"
     ],
     "relatedLeverCategories": [
-      "COST_OPS"
+      "COST_OPS",
+      "QUALITY_YIELD"
     ],
     "sourcePath": "data/analysis-library/manufacturing/39 - Product Yield and Scrap Rate Analysis.md"
   },
@@ -760,7 +835,8 @@
     "relatedCauseCategories": [
       "OPERATIONAL",
       "FINANCIAL",
-      "REGULATORY"
+      "REGULATORY",
+      "ENERGY_PRICES"
     ],
     "relatedLeverCategories": [
       "COST_OPS"
@@ -826,7 +902,8 @@
     "part": "G",
     "partLabel": "Logistics and Aftermarket Services",
     "relatedMetricCodes": [
-      "REVENUE_GROWTH"
+      "REVENUE_GROWTH",
+      "PLANT_UTILIZATION"
     ],
     "relatedCauseCategories": [
       "OPERATIONAL",
@@ -834,7 +911,8 @@
       "MARKET"
     ],
     "relatedLeverCategories": [
-      "WC_DIO"
+      "WC_DIO",
+      "CAPACITY_DEBOTTLENECKING"
     ],
     "sourcePath": "data/analysis-library/manufacturing/46 - Multi-Site Manufacturing Network Optimization.md"
   },

@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-08
 part: A
 partLabel: Operations
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, PLANT_UTILIZATION, VOLUME_GROWTH]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: []
+levers: [CAPACITY_DEBOTTLENECKING]
 ---
 # 8 · Capacity Expansion and Flexibility Assessment
 

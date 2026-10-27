@@ -7,7 +7,7 @@ id: manufacturing-23
 part: B
 partLabel: Supply Chain and Procurement
 quant: []
-causes: [OPERATIONAL, FINANCIAL, MARKET]
+causes: [OPERATIONAL, FINANCIAL, MARKET, SUPPLIER_RISK]
 levers: [COST_PROCUREMENT, COST_OPS]
 ---
 # 23 · In-house Production vs. Outsourcing Feasibility

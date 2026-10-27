@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-09
 part: A
 partLabel: Operations
-quant: []
+quant: [MAINTENANCE_COST_RATE, MACHINE_DOWNTIME_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, PREDICTIVE_MAINTENANCE]
 ---
 # 9 · Maintenance Strategy and Downtime Analysis
 

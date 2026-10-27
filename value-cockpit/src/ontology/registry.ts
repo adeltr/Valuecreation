@@ -7,6 +7,7 @@ import {
   AERO_METRIC_CODES, AERO_METRIC_META,
   AERO_LEVER_CATEGORIES, AERO_CAUSE_CATEGORIES,
 } from './sectors/aero';
+import { SPECS } from '../sectors';
 import {
   CPG_METRIC_CODES, CPG_METRIC_META, CPG_LEVER_CATEGORIES, CPG_CAUSE_CATEGORIES,
 } from './sectors/cpg';
@@ -16,12 +17,14 @@ import {
 } from './sectors/airline';
 
 // Level 2 — sector extension + dedicated template.
-export const EXTENDED_ARCHETYPES = ['saas', 'aero', 'airline', 'cpg'] as const;
+// Level 2 defined by a sector spec (src/sectors, docs/14).
+export const SPEC_ARCHETYPES = ['manufacturing'] as const;
+export const EXTENDED_ARCHETYPES = ['saas', 'aero', 'airline', 'cpg', ...SPEC_ARCHETYPES] as const;
 // Level 1 — EBITDA-family company types on the base vocabulary + generic template (docs/11).
 // 15 types; cpg moved to level 2.
 export const BASE_ARCHETYPES = [
   'agriculture', 'chemical', 'cosmetics', 'electricity-generation', 'healthcare-provider',
-  'hospitality', 'manufacturing', 'media', 'medical-device', 'metals-mining', 'pharma', 'retail',
+  'hospitality', 'media', 'medical-device', 'metals-mining', 'pharma', 'retail',
   'third-party-logistics', 'waste-management', 'wine-spirits',
 ] as const;
 export const SECTOR_ARCHETYPES = ['generic', ...EXTENDED_ARCHETYPES, ...BASE_ARCHETYPES] as const;
@@ -48,6 +51,12 @@ const EXTENSIONS: Partial<Record<SectorArchetype, {
 }>> = {
   saas: { codes: SAAS_METRIC_CODES, meta: SAAS_METRIC_META, levers: SAAS_LEVER_CATEGORIES },
   aero: { codes: AERO_METRIC_CODES, meta: AERO_METRIC_META, levers: AERO_LEVER_CATEGORIES, causes: AERO_CAUSE_CATEGORIES },
+  ...Object.fromEntries(Object.values(SPECS).map((spec) => [spec.archetype, {
+    codes: [...spec.inputs, ...spec.diagnostics, ...spec.calculated].map((t) => t.code),
+    meta: Object.fromEntries([...spec.inputs, ...spec.diagnostics, ...spec.calculated].map((t) => [t.code, { unit: t.unit }])),
+    levers: spec.levers.map((l) => l.category),
+    causes: spec.causes.map((c) => c.category),
+  }])),
   cpg: { codes: CPG_METRIC_CODES, meta: CPG_METRIC_META, levers: CPG_LEVER_CATEGORIES, causes: CPG_CAUSE_CATEGORIES },
   airline: { codes: AIRLINE_METRIC_CODES, meta: AIRLINE_METRIC_META, levers: AIRLINE_LEVER_CATEGORIES, causes: AIRLINE_CAUSE_CATEGORIES },
 };

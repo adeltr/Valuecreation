@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-27
 part: C
 partLabel: Technology and Automation
-quant: []
+quant: [MAINTENANCE_COST_RATE, MACHINE_DOWNTIME_RATE]
 causes: [OPERATIONAL]
-levers: [COST_OPS, WC_DIO]
+levers: [COST_OPS, WC_DIO, PREDICTIVE_MAINTENANCE]
 ---
 # 27 · Equipment Downtime Tracking and Root Cause Analysis
 

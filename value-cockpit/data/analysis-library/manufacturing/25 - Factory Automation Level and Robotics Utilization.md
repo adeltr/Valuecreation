@@ -8,7 +8,7 @@ part: C
 partLabel: Technology and Automation
 quant: []
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [VOLUME, COST_OPS]
+levers: [VOLUME, COST_OPS, AUTOMATION]
 ---
 # 25 · Factory Automation Level and Robotics Utilization
 

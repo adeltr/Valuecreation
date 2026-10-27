@@ -26,3 +26,21 @@ export function applyFrontmatter(content: string, row: CurationRow, archetype: s
   ];
   return `---\n${[...kept, ...vcc].join('\n')}\n---\n${content.slice(fm[0].length)}`;
 }
+
+const COLUMNS = { quant: 0, levers: 1, causes: 2 } as const;
+
+/** Adds `term` to one column of the given analysis rows (union, order kept). */
+export function addTerm(md: string, column: keyof typeof COLUMNS, term: string, nums: number[]): string {
+  let out = md;
+  for (const n of nums) {
+    const num = String(n).padStart(2, '0');
+    const re = new RegExp(`^\\| ${num} \\| ([A-Z]) \\| ([^|]*) \\| ([^|]*) \\| ([^|]*) \\|`, 'm');
+    const m = out.match(re);
+    if (!m) throw new Error(`no curation row ${num}`);
+    const cells = [m[2], m[3], m[4]].map(cell);
+    if (!cells[COLUMNS[column]].includes(term)) cells[COLUMNS[column]].push(term);
+    const row = `| ${num} | ${m[1]} | ${cells.map((c) => (c.length ? c.join(', ') : '—')).join(' | ')} |`;
+    out = out.replace(re, row);
+  }
+  return out;
+}

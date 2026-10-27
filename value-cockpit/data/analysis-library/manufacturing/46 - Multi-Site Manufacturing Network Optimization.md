@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-46
 part: G
 partLabel: Logistics and Aftermarket Services
-quant: [REVENUE_GROWTH]
+quant: [REVENUE_GROWTH, PLANT_UTILIZATION]
 causes: [OPERATIONAL, FINANCIAL, MARKET]
-levers: [WC_DIO]
+levers: [WC_DIO, CAPACITY_DEBOTTLENECKING]
 ---
 # 46 · Multi-Site Manufacturing Network Optimization
 

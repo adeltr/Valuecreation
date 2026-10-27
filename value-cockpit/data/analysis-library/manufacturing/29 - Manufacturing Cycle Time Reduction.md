@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-29
 part: C
 partLabel: Technology and Automation
-quant: [EBITDA_MARGIN, DIO]
+quant: [EBITDA_MARGIN, DIO, CONVERSION_COST_RATE, MANUFACTURING_LEAD_TIME]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, LEAN_OEE]
 ---
 # 29 · Manufacturing Cycle Time Reduction
 

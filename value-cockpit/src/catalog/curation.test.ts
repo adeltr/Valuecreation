@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { parseCurationTable, applyFrontmatter } from './curation';
+import { parseCurationTable, applyFrontmatter, addTerm } from './curation';
 
 const table = `# Curation
 | # | Partie | quant | levers | causes | indices |
@@ -48,5 +48,21 @@ describe('applyFrontmatter', () => {
 
   it('refuses a row whose part disagrees with the file', () => {
     expect(() => applyFrontmatter(file, { ...row, part: 'C' }, 'cpg')).toThrow(/part/i);
+  });
+});
+
+describe('addTerm', () => {
+  it('adds a term to a column of the given rows, once, keeping the other cells', () => {
+    let md = addTerm(table, 'quant', 'GROSS_MARGIN', [1, 2]);
+    md = addTerm(md, 'quant', 'GROSS_MARGIN', [1]);
+    md = addTerm(md, 'causes', 'RETAILER_POWER', [2]);
+    expect(parseCurationTable(md)).toEqual([
+      { num: '01', part: 'A', quant: ['REVENUE_GROWTH', 'EBITDA_MARGIN', 'GROSS_MARGIN'], levers: ['VOLUME'], causes: ['COMMERCIAL', 'MARKET'] },
+      { num: '02', part: 'B', quant: ['GROSS_MARGIN'], levers: [], causes: ['REGULATORY', 'RETAILER_POWER'] },
+    ]);
+    expect(md).toContain('VOLUME←expand');
+  });
+  it('fails loudly on a missing row', () => {
+    expect(() => addTerm(table, 'quant', 'X', [7])).toThrow(/row 07/);
   });
 });

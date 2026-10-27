@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-10
 part: A
 partLabel: Operations
-quant: []
+quant: [CONVERSION_COST_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS, WC_DIO]
+levers: [COST_OPS, WC_DIO, LEAN_OEE]
 ---
 # 10 · Factory Layout and Process Flow Optimization
 

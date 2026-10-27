@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-07
 part: A
 partLabel: Operations
-quant: []
+quant: [SCRAP_RATE, FIRST_PASS_YIELD]
 causes: [COMMERCIAL, OPERATIONAL]
-levers: [COST_PROCUREMENT, COST_OPS]
+levers: [COST_PROCUREMENT, COST_OPS, QUALITY_YIELD]
 ---
 # 7 · Quality Control and Defect Rate Analysis
 

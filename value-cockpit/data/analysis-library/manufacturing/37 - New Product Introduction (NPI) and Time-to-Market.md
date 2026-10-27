@@ -6,7 +6,7 @@ kind: analysis
 id: manufacturing-37
 part: E
 partLabel: Product and Process Development
-quant: []
+quant: [MANUFACTURING_LEAD_TIME]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL, MARKET]
 levers: [COST_OPS]
 ---

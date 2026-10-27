@@ -7,7 +7,7 @@ id: manufacturing-30
 part: C
 partLabel: Technology and Automation
 quant: []
-causes: [OPERATIONAL, FINANCIAL]
+causes: [OPERATIONAL, FINANCIAL, ENERGY_PRICES]
 levers: [COST_OPS]
 ---
 # 30 · Energy Consumption and Efficiency Analysis

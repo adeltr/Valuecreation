@@ -129,6 +129,26 @@
     "IN_STORE_EXECUTION": "vcc:lever/InStoreExecution",
     "INNOVATION_NPD": "vcc:lever/InnovationNpd",
     "RETAILER_POWER": "vcc:cause/RetailerPower",
-    "COMMODITY_PRICES": "vcc:cause/CommodityPrices"
+    "COMMODITY_PRICES": "vcc:cause/CommodityPrices",
+    "PRICE_GROWTH": "vcc:PriceGrowth",
+    "MATERIAL_COST_RATE": "vcc:MaterialCostRate",
+    "SCRAP_RATE": "vcc:ScrapRate",
+    "CONVERSION_COST_RATE": "vcc:ConversionCostRate",
+    "MAINTENANCE_COST_RATE": "vcc:MaintenanceCostRate",
+    "SGA_RATE": "vcc:SgaRate",
+    "OEE": "vcc:Oee",
+    "FIRST_PASS_YIELD": "vcc:FirstPassYield",
+    "SUPPLIER_ON_TIME_DELIVERY": "vcc:SupplierOnTimeDelivery",
+    "MANUFACTURING_LEAD_TIME": "vcc:ManufacturingLeadTime",
+    "MACHINE_DOWNTIME_RATE": "vcc:MachineDowntimeRate",
+    "VOLUME_INDEX_EXIT": "vcc:VolumeIndexExit",
+    "LEAN_OEE": "vcc:lever/LeanOee",
+    "QUALITY_YIELD": "vcc:lever/QualityYield",
+    "PREDICTIVE_MAINTENANCE": "vcc:lever/PredictiveMaintenance",
+    "AUTOMATION": "vcc:lever/Automation",
+    "CAPACITY_DEBOTTLENECKING": "vcc:lever/CapacityDebottlenecking",
+    "SUPPLIER_RISK": "vcc:cause/SupplierRisk",
+    "ENERGY_PRICES": "vcc:cause/EnergyPrices",
+    "PLANT_UTILIZATION": "vcc:PlantUtilization"
   }
 }

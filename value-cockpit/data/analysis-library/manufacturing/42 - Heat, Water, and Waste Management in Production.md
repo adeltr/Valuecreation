@@ -7,7 +7,7 @@ id: manufacturing-42
 part: F
 partLabel: Environmental and Sustainability
 quant: []
-causes: [OPERATIONAL, FINANCIAL, REGULATORY]
+causes: [OPERATIONAL, FINANCIAL, REGULATORY, ENERGY_PRICES]
 levers: [COST_OPS]
 ---
 # 42 · Heat, Water, and Waste Management in Production

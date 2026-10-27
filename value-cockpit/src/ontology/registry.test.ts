@@ -166,3 +166,11 @@ describe('ontology registry – cpg extension (level 2)', () => {
     expect(getActiveVocabulary('retail').isMetricCode('EBITDA_MARGIN_EXIT')).toBe(true);
   });
 });
+
+describe('ontology registry – one term, one concept', () => {
+  it('no code is both a metric and a lever/cause category, in any archetype', () => {
+    const metrics = new Set(SECTOR_ARCHETYPES.flatMap((a) => getActiveVocabulary(a).metricCodes));
+    const categories = SECTOR_ARCHETYPES.flatMap((a) => [...getActiveVocabulary(a).leverCategories, ...getActiveVocabulary(a).causeCategories]);
+    expect(categories.filter((c) => metrics.has(c))).toEqual([]);
+  });
+});

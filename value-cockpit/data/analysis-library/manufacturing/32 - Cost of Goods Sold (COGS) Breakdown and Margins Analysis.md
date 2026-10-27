@@ -6,7 +6,7 @@ kind: analysis
 id: manufacturing-32
 part: D
 partLabel: Finance and Asset Management
-quant: [EBITDA_MARGIN, COGS]
+quant: [EBITDA_MARGIN, COGS, CONVERSION_COST_RATE, MATERIAL_COST_RATE]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
 levers: [PRICING, COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---

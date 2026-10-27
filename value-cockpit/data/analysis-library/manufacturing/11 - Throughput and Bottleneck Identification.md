@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-11
 part: A
 partLabel: Operations
-quant: []
+quant: [OEE]
 causes: [OPERATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, LEAN_OEE]
 ---
 # 11 · Throughput and Bottleneck Identification
 

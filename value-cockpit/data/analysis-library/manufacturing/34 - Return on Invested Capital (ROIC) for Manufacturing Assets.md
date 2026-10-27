@@ -6,7 +6,7 @@ kind: analysis
 id: manufacturing-34
 part: D
 partLabel: Finance and Asset Management
-quant: [EBITDA_MARGIN]
+quant: [EBITDA_MARGIN, CAPEX]
 causes: [OPERATIONAL, FINANCIAL]
 levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---

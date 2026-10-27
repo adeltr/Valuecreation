@@ -6,7 +6,7 @@ kind: analysis
 id: manufacturing-18
 part: B
 partLabel: Supply Chain and Procurement
-quant: [EBITDA_MARGIN, COGS]
+quant: [EBITDA_MARGIN, COGS, MATERIAL_COST_RATE]
 causes: [COMMERCIAL, OPERATIONAL, FINANCIAL]
 levers: [PRICING, COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---

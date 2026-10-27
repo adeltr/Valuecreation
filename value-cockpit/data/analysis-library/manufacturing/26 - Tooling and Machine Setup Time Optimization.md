@@ -8,7 +8,7 @@ part: C
 partLabel: Technology and Automation
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, AUTOMATION]
 ---
 # 26 · Tooling and Machine Setup Time Optimization
 

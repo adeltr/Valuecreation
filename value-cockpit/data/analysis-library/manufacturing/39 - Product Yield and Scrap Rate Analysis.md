@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-39
 part: E
 partLabel: Product and Process Development
-quant: [EBITDA_MARGIN, COGS]
+quant: [EBITDA_MARGIN, COGS, SCRAP_RATE, FIRST_PASS_YIELD]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, QUALITY_YIELD]
 ---
 # 39 · Product Yield and Scrap Rate Analysis
 

@@ -6,8 +6,8 @@ kind: analysis
 id: manufacturing-21
 part: B
 partLabel: Supply Chain and Procurement
-quant: [COGS]
-causes: [OPERATIONAL, FINANCIAL]
+quant: [COGS, MATERIAL_COST_RATE, SUPPLIER_ON_TIME_DELIVERY]
+causes: [OPERATIONAL, FINANCIAL, SUPPLIER_RISK]
 levers: [COST_PROCUREMENT, COST_OPS, WC_DIO]
 ---
 # 21 · Raw Material Sourcing and Procurement Efficiency

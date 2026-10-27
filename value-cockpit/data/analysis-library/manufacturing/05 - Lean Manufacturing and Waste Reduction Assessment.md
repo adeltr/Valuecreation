@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-05
 part: A
 partLabel: Operations
-quant: []
+quant: [CONVERSION_COST_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_OPS]
+levers: [COST_OPS, LEAN_OEE]
 ---
 # 5 · Lean Manufacturing and Waste Reduction Assessment
 

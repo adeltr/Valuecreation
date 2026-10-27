@@ -6,8 +6,8 @@ kind: analysis
 id: manufacturing-19
 part: B
 partLabel: Supply Chain and Procurement
-quant: []
-causes: [OPERATIONAL, FINANCIAL]
+quant: [SUPPLIER_ON_TIME_DELIVERY]
+causes: [OPERATIONAL, FINANCIAL, SUPPLIER_RISK]
 levers: [COST_PROCUREMENT]
 ---
 # 19 · Supplier Risk and Dependency Analysis

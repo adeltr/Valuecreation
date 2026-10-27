@@ -8,7 +8,7 @@ part: A
 partLabel: Operations
 quant: []
 causes: [OPERATIONAL, FINANCIAL]
-levers: []
+levers: [LEAN_OEE]
 ---
 # 13 · Process Standardization and Replication Across Plants
 

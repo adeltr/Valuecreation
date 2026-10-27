@@ -8,7 +8,7 @@ part: A
 partLabel: Operations
 quant: [DIO]
 causes: [OPERATIONAL, FINANCIAL]
-levers: []
+levers: [WC_DIO]
 ---
 # 14 · Work-in-Progress (WIP) Inventory Management
 

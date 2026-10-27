@@ -1,5 +1,7 @@
 import type { Metric } from '../domain/types';
 import { BASE_ARCHETYPES, type SectorArchetype } from '../ontology/registry';
+import { SPECS } from '../sectors';
+import { makeTemplate, BRIDGE_FORMULAS } from './build';
 import { instantiateSaasTemplate, type SaasInputs } from './saas';
 import { instantiateAeroTemplate, type AeroInputs } from './aero';
 import { instantiateAirlineTemplate, type AirlineInputs } from './airline';
@@ -18,7 +20,7 @@ export interface TemplateEntry {
 const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = {
   agriculture: 'Agriculture', chemical: 'Chemical', cosmetics: 'Cosmetics',
   'electricity-generation': 'Electricity Generation', 'healthcare-provider': 'Healthcare Provider',
-  hospitality: 'Hospitality', manufacturing: 'Manufacturing', media: 'Media & Entertainment',
+  hospitality: 'Hospitality', media: 'Media & Entertainment',
   'medical-device': 'Medical Device', 'metals-mining': 'Metals & Mining', pharma: 'Pharmaceutical',
   retail: 'Retail', 'third-party-logistics': 'Third Party Logistics', 'waste-management': 'Waste Management',
   'wine-spirits': 'Wine, Beer & Spirits',
@@ -38,8 +40,17 @@ const LEVEL1: Partial<Record<SectorArchetype, TemplateEntry>> = Object.fromEntri
   } satisfies TemplateEntry]),
 );
 
+const LEVEL2_SPECS: Partial<Record<SectorArchetype, TemplateEntry>> = Object.fromEntries(
+  Object.values(SPECS).map((spec) => [spec.archetype, {
+    label: spec.label, level: 2,
+    instantiate: makeTemplate(spec.archetype as SectorArchetype, { ...spec.formulas, ...BRIDGE_FORMULAS }),
+    demoInputs: { ...spec.demoInputs },
+  } satisfies TemplateEntry]),
+);
+
 export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
   ...LEVEL1,
+  ...LEVEL2_SPECS,
   saas: {
     label: 'SaaS',
     level: 2,

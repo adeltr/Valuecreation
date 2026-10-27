@@ -6,7 +6,7 @@ kind: analysis
 id: manufacturing-12
 part: A
 partLabel: Operations
-quant: [REVENUE_GROWTH, DIO]
+quant: [REVENUE_GROWTH, DIO, VOLUME_GROWTH]
 causes: [COMMERCIAL, OPERATIONAL, MARKET]
 levers: []
 ---

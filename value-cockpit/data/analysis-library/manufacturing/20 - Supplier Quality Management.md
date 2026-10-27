@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-20
 part: B
 partLabel: Supply Chain and Procurement
-quant: []
+quant: [FIRST_PASS_YIELD, SUPPLIER_ON_TIME_DELIVERY]
 causes: [COMMERCIAL, OPERATIONAL, REGULATORY]
-levers: [COST_PROCUREMENT]
+levers: [COST_PROCUREMENT, QUALITY_YIELD]
 ---
 # 20 · Supplier Quality Management
 

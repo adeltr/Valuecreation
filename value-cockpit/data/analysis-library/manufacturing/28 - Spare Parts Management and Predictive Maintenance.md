@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-28
 part: C
 partLabel: Technology and Automation
-quant: [DIO]
+quant: [DIO, MAINTENANCE_COST_RATE]
 causes: [OPERATIONAL, FINANCIAL]
-levers: [COST_PROCUREMENT, COST_OPS, WC_DIO]
+levers: [COST_PROCUREMENT, COST_OPS, WC_DIO, PREDICTIVE_MAINTENANCE]
 ---
 # 28 · Spare Parts Management and Predictive Maintenance Systems
 

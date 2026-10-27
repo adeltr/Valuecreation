@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-02
 part: A
 partLabel: Operations
-quant: []
+quant: [CONVERSION_COST_RATE, OEE]
 causes: [OPERATIONAL]
-levers: []
+levers: [LEAN_OEE]
 ---
 # 2 · Operational Efficiency (OEE) Analysis
 

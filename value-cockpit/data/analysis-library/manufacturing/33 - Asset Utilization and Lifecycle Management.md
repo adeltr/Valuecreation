@@ -6,9 +6,9 @@ kind: analysis
 id: manufacturing-33
 part: D
 partLabel: Finance and Asset Management
-quant: []
+quant: [CAPEX]
 causes: [OPERATIONAL, FINANCIAL, ORGANIZATIONAL]
-levers: [COST_OPS]
+levers: [COST_OPS, CAPEX_DISCIPLINE]
 ---
 # 33 · Asset Utilization and Lifecycle Management
 
