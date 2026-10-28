@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "server": "tsx src/server/main.ts",
+    "empirical:import": "tsx scripts/empirical-import.ts",
     "build": "tsc && vite build",
     "test": "vitest run",
     "test:watch": "vitest",
