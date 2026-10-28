@@ -26,10 +26,10 @@ body { margin: 0; background: var(--bg); }
   display: flex; justify-content: space-between; align-items: center; }
 .grid { display: grid; gap: 16px; padding: 16px 24px 32px;
   grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
-  grid-template-areas: 'graph company' 'copilot simulation' 'card simulation' 'workshop workshop' 'plan plan'; }
+  grid-template-areas: 'graph company' 'copilot simulation' 'card simulation' 'empirical empirical' 'workshop workshop' 'plan plan'; }
 .graph { grid-area: graph; } .company { grid-area: company; } .copilot { grid-area: copilot; }
-.simulation { grid-area: simulation; } .plan { grid-area: plan; } .card { grid-area: card; } .workshop { grid-area: workshop; }
-@media (max-width: 960px) { .grid { grid-template-columns: 1fr; grid-template-areas: 'graph' 'company' 'copilot' 'card' 'simulation' 'workshop' 'plan'; } }
+.simulation { grid-area: simulation; } .plan { grid-area: plan; } .card { grid-area: card; } .workshop { grid-area: workshop; } .empirical { grid-area: empirical; }
+@media (max-width: 960px) { .grid { grid-template-columns: 1fr; grid-template-areas: 'graph' 'company' 'copilot' 'card' 'simulation' 'empirical' 'workshop' 'plan'; } }
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
 .panel h2 { margin: 0 0 12px; font-size: 15px; }
 .panel h3 { margin: 16px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
@@ -124,3 +124,8 @@ button.link { background: none; color: var(--accent); padding: 0; border: 0; tex
 .calc-grid label { display: flex; flex-direction: column; gap: 2px; }
 .calc-save { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; }
 .calc-save label { display: flex; flex-direction: column; gap: 2px; }
+
+.emp-filters { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 6px 0 10px; }
+.emp-filters fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 8px; align-items: center; font-size: 12px; }
+.emp-filters legend { float: left; margin-right: 6px; color: var(--muted); font-size: 12px; }
+.warn { color: var(--warn); }

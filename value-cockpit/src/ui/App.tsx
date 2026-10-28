@@ -14,6 +14,8 @@ import { buildSlideModel, renderPlanSlide } from './export/planSlide';
 import { DossierBar, type SavedRef } from './components/DossierBar';
 import { LeverCardPanel } from './components/LeverCardPanel';
 import { WorkshopPanel } from './components/WorkshopPanel';
+import { EmpiricalPanel } from './components/EmpiricalPanel';
+import { impliedTrajectory } from '../empirical/realism';
 import type { DossierRepository } from '../dossier/repository';
 import { connectRepository, type DossierLocation } from './state/httpRepository';
 import { hasUnsavedWork } from './state/unsaved';
@@ -42,6 +44,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
   let baseline = new Map<string, number>();
   let scenario = null;
   let plan = null;
+  let trajectory = null;
   let engineError: string | null = null;
   try {
     baseline = selectBaseline(state);
@@ -50,6 +53,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
       levers: state.levers, rootCauses: state.rootCauses, metrics, catalog,
       rules: TEMPLATES[state.archetype]!.interactions, family: getBridgeFamily(state.archetype), overrides: state.plan,
     });
+    trajectory = impliedTrajectory(metrics, state.levers, TEMPLATES[state.archetype]!.interactions);
   } catch (e) {
     engineError = (e as Error).message;
   }
@@ -96,6 +100,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
             interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)}
             observations={state.observations} onOpenAnalysis={setWorkshopId} />
         )}
+        <EmpiricalPanel archetype={state.archetype} trajectory={trajectory} />
         <WorkshopPanel state={state} metrics={metrics} catalog={catalog} vocab={getActiveVocabulary(state.archetype)}
           analysisId={workshopId} onSelect={setWorkshopId} dispatch={dispatch} />
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}

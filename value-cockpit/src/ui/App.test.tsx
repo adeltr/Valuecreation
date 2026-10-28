@@ -387,3 +387,48 @@ describe('App – dossiers', () => {
     expect(typeSelect().value).toBe('airline');
   });
 });
+
+describe('App – empirical benchmarks', () => {
+  afterEach(() => vi.unstubAllGlobals());
+  const q = (n: number, base: number) => ({ n, p10: base - 0.02, p25: base - 0.01, p50: base, p75: base + 0.01, p90: base + 0.02 });
+
+  function stub(available: boolean) {
+    const calls: string[] = [];
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      calls.push(url);
+      if (!url.startsWith('/api/empirical')) return new Response('{}', { status: 404 });
+      if (!available) return new Response(JSON.stringify({ error: 'Base empirique absente : lancer « npm run empirical:import »' }), { status: 404 });
+      if (url.startsWith('/api/empirical/meta')) {
+        return new Response(JSON.stringify({ source: 'SEC EDGAR', generatedAt: '2026-10-28T00:00:00Z', years: [3, 5], companies: 42,
+          countries: [{ value: 'United States', n: 40 }, { value: 'Canada', n: 2 }], sizes: [{ value: '1–5B', n: 30 }, { value: '>5B', n: 12 }] }));
+      }
+      return new Response(JSON.stringify({ metrics: { EBITDA_MARGIN: q(40, 0.01), REVENUE_GROWTH: q(40, 0.04), DSO: null, DIO: null, DPO: null },
+        values: { EBITDA_MARGIN: Array.from({ length: 40 }, (_, i) => -0.02 + i * 0.001), REVENUE_GROWTH: Array.from({ length: 40 }, (_, i) => i * 0.002), DSO: [], DIO: [], DPO: [] } }));
+    }));
+    return calls;
+  }
+
+  it('shows the public distributions for the company type, with source and sample size, and filters them', async () => {
+    const calls = stub(true);
+    render(<App connect={async () => ({ repo: new LocalDossierRepository({ getItem: () => null, setItem: () => {} }), where: 'browser' })} />);
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
+    const panel = screen.getByRole('region', { name: 'Repères empiriques' });
+    expect(await within(panel).findByText(/SEC EDGAR · 42 sociétés/)).toBeTruthy();
+    expect(await within(panel).findByText('Δ marge d\'EBITDA (pts)')).toBeTruthy();
+    expect(within(panel).getByText(/Réalisme du plan/)).toBeTruthy();
+    expect(within(panel).getAllByText(/e percentile/).length).toBe(2);
+
+    fireEvent.change(within(panel).getByLabelText('Pays'), { target: { value: 'Canada' } });
+    fireEvent.click(within(panel).getByLabelText('>5B'));
+    await waitFor(() => expect(calls.some((u) => u.includes('countries=Canada') && u.includes('sizes=%3E5B'))).toBe(true));
+    expect(calls.some((u) => u.includes('archetype=cpg') && u.includes('years=5'))).toBe(true);
+  });
+
+  it('says how to build the base when nothing was imported', async () => {
+    stub(false);
+    render(<App connect={async () => ({ repo: new LocalDossierRepository({ getItem: () => null, setItem: () => {} }), where: 'browser' })} />);
+    const panel = screen.getByRole('region', { name: 'Repères empiriques' });
+    expect(await within(panel).findByText(/npm run empirical:import/)).toBeTruthy();
+  });
+});
+
