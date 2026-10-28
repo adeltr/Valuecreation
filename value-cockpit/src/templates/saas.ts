@@ -1,5 +1,5 @@
 import type { Metric } from '../domain/types';
-import { getActiveVocabulary } from '../ontology/registry';
+import { makeTemplate } from './build';
 
 export type SaasInputs = {
   ARR: number; GROSS_CHURN: number; EXPANSION_RATE: number; EBITDA_MARGIN: number;
@@ -19,18 +19,8 @@ const FORMULAS: Record<string, string> = {
   MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
 };
 
+const build = makeTemplate('saas', FORMULAS);
+
 export function instantiateSaasTemplate(companyId: string, inputs: SaasInputs): Metric[] {
-  const vocab = getActiveVocabulary('saas');
-  const make = (code: string, value: number | null, formula: string | null): Metric => {
-    if (!vocab.isMetricCode(code)) throw new Error(`Template emits unknown code: ${code}`);
-    return {
-      id: `${companyId}:${code}`, companyId, code, label: code,
-      unit: vocab.metricMeta[code].unit, isCalculated: formula !== null, formula,
-      currentValue: value, benchmarkValue: null, benchmarkSource: null,
-    };
-  };
-  return [
-    ...Object.entries(inputs).map(([code, value]) => make(code, value, null)),
-    ...Object.entries(FORMULAS).map(([code, formula]) => make(code, null, formula)),
-  ];
+  return build(companyId, inputs);
 }

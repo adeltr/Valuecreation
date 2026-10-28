@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-40
+part: E
+partLabel: Finance & Program Management
+quant: [COST_OVERRUN_RATE, ON_TIME_DELIVERY, FIXED_PRICE_SHARE]
+causes: [PROGRAM]
+levers: [PROGRAM_EXECUTION, CONTRACT_MIX, SUPPLY_CHAIN_CONTROL]
 ---
 # 40 · Defense Program Delays and Cost Overrun Analysis
 

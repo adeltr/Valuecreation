@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/C
+kind: analysis
+id: aero-17
+part: C
+partLabel: Research & Development and Innovation
+quant: [RD_INTENSITY]
+causes: [MARKET, ORGANIZATIONAL]
+levers: [RD_PORTFOLIO]
 ---
 # 17 · Research & Development in Defense Technologies
 

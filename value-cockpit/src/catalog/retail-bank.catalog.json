@@ -1,0 +1,2917 @@
+[
+  {
+    "id": "retail-bank-01",
+    "archetype": "retail-bank",
+    "title": "Customer Segmentation and Product Penetration Opportunities Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "CUSTOMERS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/01 - Customer Segmentation and Product Penetration Opportunities.md",
+    "goal": "To identify distinct customer segments within the retail bank's customer base and assess the penetration of specific banking products across these segments, enabling targeted marketing strategies and improved cross-selling opportunities.",
+    "dataRequired": [
+      "Customer demographics (age, income, occupation, education level, etc.).",
+      "Account information (account types, balances, transaction frequency).",
+      "Product usage data (loan products, credit cards, savings accounts, investment products).",
+      "Transaction data (spending patterns, average transaction size).",
+      "Behavioral data (digital banking usage, engagement with offers, customer service interactions)."
+    ],
+    "improve": [
+      "Develop tailored marketing campaigns for low-penetration segments, emphasizing the benefits of underutilized products.",
+      "Design product bundles appealing to specific segments (e.g., credit cards and savings accounts for \"Young Professionals\").",
+      "Train relationship managers to cross-sell and upsell effectively by understanding segment-specific needs.",
+      "Leverage digital channels to promote products to tech-savvy segments, using personalized offers.",
+      "",
+      "Continuously refine segmentation and strategies using updated data and advanced analytics tools.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Penetration Rate",
+        "variables": [
+          "Number of Customers Using Product",
+          "Total Customers in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-02",
+    "archetype": "retail-bank",
+    "title": "Customer Satisfaction and Net Promoter Score (NPS) Evaluation",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "NET_PROMOTER_SCORE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/02 - Customer Satisfaction and Net Promoter Score (NPS).md",
+    "goal": "To assess customer satisfaction levels and loyalty by measuring the likelihood of customers recommending the bank to others.",
+    "dataRequired": [
+      "**Customer survey responses, including:** ○ NPS question: \"How likely are you to recommend this bank to a friend or colleague?\" (Scale: 0 to 10). ○ Additional satisfaction questions covering service quality, product offerings, digital experience, and branch interactions.",
+      "Customer demographics and account details to segment responses.",
+      "Historical NPS data for trend analysis."
+    ],
+    "improve": [
+      "Address top pain points identified in customer feedback (e.g., improve mobile app functionality, reduce service wait times).",
+      "Enhance training programs for frontline staff to improve customer interactions.",
+      "Introduce loyalty programs or benefits for Promoters to encourage continued advocacy.",
+      "Regularly monitor NPS to track the effectiveness of initiatives and make adjustments.",
+      "",
+      "Personalize customer engagement strategies based on segment-specific needs and preferences.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "retail-bank-03",
+    "archetype": "retail-bank",
+    "title": "Cross-Selling and Up-Selling Effectiveness Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "CROSS_SELL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/03 - Cross-Selling and Up-Selling Effectiveness Analysis.md",
+    "goal": "To evaluate the effectiveness of cross-selling and up-selling efforts, identify which products and services are successfully being sold to existing customers, and determine opportunities to increase revenue per customer through better-targeted sales strategies.",
+    "dataRequired": [
+      "Customer account details, including product ownership (e.g., loans, credit cards, savings accounts).",
+      "Transaction data showing product usage and purchase patterns.",
+      "Sales data related to cross-sold and up-sold products (e.g., campaigns and success rates).",
+      "Customer demographics and segmentation information.",
+      "Marketing and outreach data, including response and conversion rates for offers."
+    ],
+    "improve": [
+      "Leverage predictive analytics to recommend relevant products based on customer data and behavior.",
+      "Train relationship managers and sales teams to identify and pitch up-sell opportunities effectively.",
+      "Offer incentives or rewards for customers to adopt additional products (e.g., bundled discounts).",
+      "",
+      "Personalize marketing campaigns based on customer preferences and past behaviors.",
+      "Invest in digital sales channels to improve accessibility and convenience for cross-selling and up-selling.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Cross-Sell Ratio",
+        "variables": [
+          "Number of Products Owned",
+          "Number of Customers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Cross-Sell Ratio = (Number of Products Owned / Number of Customers)",
+        "step": null
+      },
+      {
+        "output": "Up-Sell Success Rate",
+        "variables": [
+          "Number of Successful Up-Sells",
+          "Number of Up-Sell Offers Made"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Up-Sell Success Rate = (Number of Successful Up-Sells / Number of Up-Sell Offers Made) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-04",
+    "archetype": "retail-bank",
+    "title": "Customer Lifetime Value (CLV) and Acquisition Cost Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "REVENUE_PER_CUSTOMER",
+      "COST_TO_SERVE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/04 - Customer Lifetime Value (CLV) and Acquisition Cost Analysis.md",
+    "goal": "To calculate the long-term value a customer brings to the bank and assess the cost-effectiveness of acquiring new customers.",
+    "dataRequired": [
+      "Revenue per customer per year (including interest income, fees, and other charges).",
+      "Cost of servicing customers (e.g., operational costs, branch costs, digital platform maintenance).",
+      "Customer retention rate (percentage of customers retained year over year).",
+      "Discount rate (to account for the time value of money).",
+      "Marketing and acquisition costs (e.g., advertising, promotions, onboarding)."
+    ],
+    "improve": [
+      "Increase customer retention by enhancing loyalty programs, improving customer service, and addressing pain points.",
+      "Optimize acquisition costs by focusing on high-value, low-cost segments and using data-driven marketing strategies.",
+      "",
+      "Cross-sell and up-sell additional products to increase annual revenue per customer.",
+      "Reduce servicing costs by promoting digital channels and streamlining operations.",
+      "Continuously monitor and refine retention and acquisition strategies to improve CLV and CAC over time.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "CLV",
+        "variables": [
+          "Annual Revenue per Customer",
+          "Annual Cost to Serve",
+          "Retention Rate",
+          "Discount Rate"
+        ],
+        "expression": "( v0 - v1 ) * ( v2 / ( 1 + v3 - v2 ) )",
+        "percentOutput": false,
+        "source": "CLV = (Annual Revenue per Customer - Annual Cost to Serve) x (Retention Rate / (1 + Discount Rate - Retention Rate))",
+        "step": null
+      },
+      {
+        "output": "CAC",
+        "variables": [
+          "Total Acquisition Costs",
+          "Number of New Customers Acquired"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CAC = Total Acquisition Costs / Number of New Customers Acquired",
+        "step": null
+      },
+      {
+        "output": "CLV-to-CAC Ratio",
+        "variables": [
+          "CLV",
+          "CAC"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CLV-to-CAC Ratio = CLV / CAC",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-05",
+    "archetype": "retail-bank",
+    "title": "Customer Journey Mapping and Experience Optimization Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/05 - Customer Journey Mapping and Experience Optimization.md",
+    "goal": "To map the end-to-end customer journey, identifying touchpoints and pain points across different channels, and develop actionable strategies to optimize the customer experience, improve satisfaction, and enhance loyalty.",
+    "dataRequired": [
+      "Customer interaction data (e.g., branch visits, mobile app logins, call center interactions).",
+      "Transaction data to identify service patterns (e.g., deposits, withdrawals, payments).",
+      "Survey and feedback data on customer satisfaction with specific interactions.",
+      "Digital analytics data (e.g., website and app navigation behavior).",
+      "Key customer demographics and segment information."
+    ],
+    "improve": [
+      "Enhance digital platforms for seamless navigation and quick transactions.",
+      "Provide training for frontline staff to improve in-branch and call center interactions.",
+      "Implement personalization across channels using AI to recommend relevant products and services.",
+      "Use omnichannel strategies to ensure consistency across touchpoints.",
+      "Regularly solicit and act on customer feedback to iterate improvements.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "retail-bank-06",
+    "archetype": "retail-bank",
+    "title": "Customer Demographics and Financial Behavior Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/06 - Customer Demographics and Financial Behavior Analysis.md",
+    "goal": "To understand the demographic characteristics and financial behaviors of the bank’s customer base, enabling tailored product offerings, marketing strategies, and improved customer retention.",
+    "dataRequired": [
+      "Demographic data (age, gender, income, education, marital status, location).",
+      "Account information (product ownership, account balances, tenure with the bank).",
+      "Transaction data (frequency, volume, types of transactions).",
+      "Behavioral data (channel preferences, digital banking usage, response to promotions).",
+      "Credit data (loan amounts, repayment patterns, credit utilization)."
+    ],
+    "improve": [
+      "Tailor product development and marketing campaigns to align with the preferences of key segments (e.g., investment tools for high-income customers).",
+      "Enhance engagement with low-activity segments through personalized outreach and incentives.",
+      "Promote financial literacy programs to encourage better credit and financial management in high-risk segments.",
+      "Develop region-specific strategies based on geographic variations in customer behavior.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average account balance",
+        "variables": [
+          "Total Balance in Segment",
+          "Number of Customers in Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average account balance = Total Balance in Segment / Number of Customers in Segment",
+        "step": "Analyze Financial Behavior by Segment"
+      },
+      {
+        "output": "Transaction frequency",
+        "variables": [
+          "Total Transactions in Segment",
+          "Number of Customers in Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Transaction frequency = Total Transactions in Segment / Number of Customers in Segment",
+        "step": "Analyze Financial Behavior by Segment"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-07",
+    "archetype": "retail-bank",
+    "title": "Personal Financial Management Tool Engagement Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "DIGITAL_ADOPTION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "FINTECH_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/07 - Personal Financial Management Tool Engagement Analysis.md",
+    "goal": "To assess customer usage and engagement with the bank’s personal financial management (PFM) tools, identify the features driving engagement, and determine opportunities to enhance functionality and adoption.",
+    "dataRequired": [
+      "PFM tool usage metrics (e.g., logins, session durations, features accessed).",
+      "Customer demographics and segmentation data (age, income, digital adoption levels).",
+      "Feedback and satisfaction ratings specific to the PFM tool.",
+      "Cross-channel activity data (e.g., overlap with mobile app or website usage).",
+      "Conversion metrics (e.g., tool usage leading to new product adoption or transactions)."
+    ],
+    "improve": [
+      "",
+      "Invest in user experience (UX) improvements to enhance navigation and functionality.",
+      "Introduce gamification elements (e.g., rewards for achieving financial goals) to boost engagement.",
+      "Provide educational content or tutorials to demonstrate the tool’s features and benefits.",
+      "Target low-adoption segments with personalized marketing campaigns promoting specific use cases.",
+      "Regularly update and expand the tool’s features based on user feedback and emerging customer needs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Feature Engagement Rate",
+        "variables": [
+          "Number of Sessions Using Feature",
+          "Total Sessions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Feature Engagement Rate = (Number of Sessions Using Feature / Total Sessions) x 100",
+        "step": null
+      },
+      {
+        "output": "Adoption Rate",
+        "variables": [
+          "Number of PFM Tool Users",
+          "Total Eligible Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Adoption Rate = (Number of PFM Tool Users / Total Eligible Customers) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-08",
+    "archetype": "retail-bank",
+    "title": "Customer Financial Health and Credit Utilization Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/08 - Customer Financial Health and Credit Utilization Analysis.md",
+    "goal": "To evaluate the financial health of customers by analyzing their income, savings, debt, and spending patterns, and to assess credit utilization levels to identify risks, opportunities for product recommendations, and strategies for improved financial well-being.",
+    "dataRequired": [
+      "Customer income data (if available or estimated based on segment profiles).",
+      "Savings and investment account balances.",
+      "Credit card and loan balances.",
+      "Credit limits and utilization data.",
+      "Transaction and spending data (e.g., discretionary vs. non-discretionary spending).",
+      "Demographic information to segment results."
+    ],
+    "improve": [
+      "Introduce financial wellness programs tailored to vulnerable segments, focusing on budgeting and debt management.",
+      "Proactively offer savings accounts, investment products, or debt consolidation options to improve financial health.",
+      "Provide personalized alerts for customers nearing high credit utilization thresholds.",
+      "Use predictive analytics to identify at-risk customers and recommend targeted interventions.",
+      "Regularly update financial health scoring models to reflect changing customer behaviors and economic conditions.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Credit Utilization Rate",
+        "variables": [
+          "Total Credit Used",
+          "Total Credit Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Credit Utilization Rate = (Total Credit Used / Total Credit Available) x 100",
+        "step": null
+      },
+      {
+        "output": "Savings-to-Income Ratio",
+        "variables": [
+          "Total Savings",
+          "Estimated Annual Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Savings-to-Income Ratio = (Total Savings / Estimated Annual Income) x 100",
+        "step": null
+      },
+      {
+        "output": "Discretionary Spending Ratio",
+        "variables": [
+          "Discretionary Spending",
+          "Total Spending"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Discretionary Spending Ratio = (Discretionary Spending / Total Spending)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-09",
+    "archetype": "retail-bank",
+    "title": "Customer Segment Profitability and Risk Assessment",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "REVENUE_PER_CUSTOMER",
+      "COST_TO_SERVE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/09 - Customer Segment Profitability and Risk Assessment.md",
+    "goal": "To evaluate the profitability and associated risks of different customer segments, enabling the bank to focus on high-profit, low-risk segments and develop strategies to mitigate risks in less profitable segments.",
+    "dataRequired": [
+      "Revenue data by customer segment (e.g., fees, interest income, product margins).",
+      "Cost-to-serve data by segment (e.g., operational, acquisition, and servicing costs).",
+      "Loan and credit risk data (e.g., default rates, credit scores, overdue payments).",
+      "Segment demographics and behaviors (e.g., income, product usage, engagement levels).",
+      "Historical data on segment performance over time."
+    ],
+    "improve": [
+      "Develop tailored products and services to increase revenue from high-potential segments.",
+      "Implement stricter credit criteria or risk-based pricing for high-risk segments.",
+      "Optimize cost-to-serve by promoting digital channels for low-profit segments.",
+      "Offer financial counseling or risk-mitigation products (e.g., insurance, debt consolidation) to vulnerable segments.",
+      "",
+      "Continuously monitor segment profitability and risk metrics to refine strategies and adapt to market changes."
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Customer",
+        "variables": [
+          "Total Revenue from Segment",
+          "Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Customer = Total Revenue from Segment / Number of",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Serve per Customer",
+        "variables": [
+          "Total Costs for Segment",
+          "Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost-to-Serve per Customer = Total Costs for Segment / Number of",
+        "step": null
+      },
+      {
+        "output": "Net Profitability",
+        "variables": [
+          "Revenue per Customer",
+          "Cost-to-Serve per Customer"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Profitability = Revenue per Customer - Cost-to-Serve per Customer",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulting Customers in Segment",
+          "Total Customers in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulting Customers in Segment / Total Customers in Segment) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-10",
+    "archetype": "retail-bank",
+    "title": "Customer Retention and Dormant Account Reactivation Strategy Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [
+      "CUSTOMER_ATTRITION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "ATTRITION_REDUCTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/10 - Customer Retention and Dormant Account Reactivation.md",
+    "goal": "To evaluate retention rates and identify strategies to reduce customer churn.",
+    "dataRequired": [
+      "Historical customer data, including account tenure and product usage patterns.",
+      "**Retention rates:** percentage of customers retained year over year.",
+      "**Dormant account data:** accounts with no activity for a specified period (e.g., 6 months).",
+      "Transaction history and engagement data (e.g., frequency of branch visits, online logins).",
+      "Customer demographics and segmentation data.",
+      "Feedback or survey data from dormant and churned customers."
+    ],
+    "improve": [
+      "Implement proactive retention strategies, such as personalized check-ins or offers for at-risk customers.",
+      "Develop targeted campaigns for dormant accounts with attractive reactivation incentives.",
+      "Improve customer satisfaction by addressing common pain points (e.g., high fees, complex processes).",
+      "Promote account activity through gamification or reward programs for frequent transactions.",
+      "Regularly monitor churn and dormancy trends to identify emerging risks and adjust strategies accordingly.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Reactivation Rate",
+        "variables": [
+          "Number of Reactivated Accounts",
+          "Total Dormant Accounts Targeted"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Reactivation Rate = (Number of Reactivated Accounts / Total Dormant Accounts Targeted) x 100",
+        "step": "Develop Retention and Reactivation Strategies"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-11",
+    "archetype": "retail-bank",
+    "title": "Debit and Credit Card Rewards Program Engagement Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/11 - Debit and Credit Card Rewards Program Engagement.md",
+    "goal": "To evaluate customer engagement with debit and credit card rewards programs, identify usage patterns and preferences, and develop strategies to enhance program effectiveness, customer satisfaction, and loyalty.",
+    "dataRequired": [
+      "Transaction data tied to reward-earning activities (e.g., purchases, referrals).",
+      "Redemption data (e.g., types of rewards redeemed, frequency of redemption).",
+      "Customer demographics (age, income, geographic location).",
+      "Program participation rates (e.g., percentage of cardholders enrolled in rewards programs).",
+      "Cost and revenue data for the rewards program (e.g., cost per point, customer lifetime value impact).",
+      "Feedback and satisfaction survey data specific to the rewards program."
+    ],
+    "improve": [
+      "Simplify redemption processes to encourage higher usage of rewards.",
+      "Expand rewards options to cater to diverse customer preferences.",
+      "Introduce tiered rewards structures to incentivize increased spending.",
+      "",
+      "Market the benefits of the rewards program to under-enrolled or low-engagement segments.",
+      "Regularly review program costs and adjust structures to maximize ROI while maintaining customer satisfaction.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Enrollment Rate",
+        "variables": [
+          "Number of Enrolled Customers",
+          "Total Eligible Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Enrollment Rate = (Number of Enrolled Customers / Total Eligible Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Redemption Rate",
+        "variables": [
+          "Number of Rewards Redeemed",
+          "Total Rewards Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Redemption Rate = (Number of Rewards Redeemed / Total Rewards Available) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-12",
+    "archetype": "retail-bank",
+    "title": "Customer Support and Resolution Time Efficiency Analysis",
+    "part": "A",
+    "partLabel": "Customer Behavior and Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/12 - Customer Support and Resolution Time Efficiency Analysis.md",
+    "goal": "To measure the efficiency and effectiveness of customer support services by analyzing resolution times, customer satisfaction, and support channel performance.",
+    "dataRequired": [
+      "Customer support interaction logs (e.g., tickets, chat sessions, calls).",
+      "Time-to-resolution data for support requests.",
+      "Categorization of issues by type and severity.",
+      "Customer satisfaction scores (CSAT) or Net Promoter Score (NPS) post-interaction.",
+      "Support channel data (e.g., call centers, online chat, email, social media).",
+      "Staff productivity metrics (e.g., cases handled per representative)."
+    ],
+    "improve": [
+      "Implement knowledge bases and automated solutions (e.g., chatbots) to resolve common issues quickly.",
+      "Train support staff to improve problem-solving skills and reduce escalations.",
+      "Optimize workflows for routing and prioritizing cases based on issue severity.",
+      "Monitor and adjust staffing levels to handle peak support volumes efficiently.",
+      "Regularly solicit and act on customer feedback to refine support processes and tools.",
+      "B. Product and Portfolio Performance"
+    ],
+    "formulas": [
+      {
+        "output": "Average Resolution Time",
+        "variables": [
+          "Sum of Time to Resolve All Cases",
+          "Total Number of Cases"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Resolution Time = (Sum of Time to Resolve All Cases / Total Number of Cases)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-13",
+    "archetype": "retail-bank",
+    "title": "Retail Deposit and Loan Portfolio Performance and Health Assessment",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "LOANS_PER_CUSTOMER",
+      "DEPOSIT_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/13 - Retail Deposit and Loan Portfolio Performance and Health.md",
+    "goal": "To evaluate the performance and financial health of the bank’s retail deposit and loan portfolios by analyzing growth trends, profitability, credit quality, and customer behavior.",
+    "dataRequired": [
+      "Portfolio balances for deposits and loans over time.",
+      "Deposit product details (e.g., savings accounts, fixed deposits, current accounts).",
+      "Loan product details (e.g., mortgages, personal loans, auto loans).",
+      "Interest income from loans and interest expense on deposits.",
+      "Non-interest income (fees, penalties).",
+      "Credit quality metrics (delinquency rates, non-performing assets).",
+      "Customer demographics and segmentation data.",
+      "Historical trends in deposit and loan growth."
+    ],
+    "improve": [
+      "Strengthen risk management practices for loan products by refining credit criteria and monitoring high-risk segments.",
+      "Develop targeted marketing campaigns to attract long-term, high-value deposits.",
+      "Optimize pricing strategies for loan and deposit products to balance growth and profitability.",
+      "Promote digital channels to increase convenience and attract tech-savvy customers.",
+      "Regularly review and adjust product offerings to align with changing customer needs and market trends.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Deposit Growth Rate",
+        "variables": [
+          "Current Period Deposit Balance",
+          "Previous Period Deposit Balance"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "NIM",
+        "variables": [
+          "Net Interest Income",
+          "Average Earning Assets"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NIM = (Net Interest Income / Average Earning Assets) x 100",
+        "step": null
+      },
+      {
+        "output": "Loan Growth Rate",
+        "variables": [
+          "Current Period Loan Balance",
+          "Previous Period Loan Balance"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loan Growth Rate = ((Current Period Loan Balance - Previous Period Loan Balance) / Previous Period Loan Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Loan Yield",
+        "variables": [
+          "Interest Income from Loans",
+          "Average Loan Balance"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loan Yield = (Interest Income from Loans / Average Loan Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Delinquent Loans",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Delinquent Loans / Total Loan Portfolio) x 100",
+        "step": "Evaluate Credit Quality"
+      },
+      {
+        "output": "NPA Ratio",
+        "variables": [
+          "Non-Performing Assets",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NPA Ratio = (Non-Performing Assets / Total Loan Portfolio) x 100",
+        "step": "Evaluate Credit Quality"
+      },
+      {
+        "output": "Net Contribution",
+        "variables": [
+          "Interest Income",
+          "Interest Expense",
+          "Loan Loss Provisions",
+          "Total Portfolio Balance"
+        ],
+        "expression": "( v0 - v1 - v2 ) / v3",
+        "percentOutput": false,
+        "source": "Net Contribution = (Interest Income - Interest Expense - Loan Loss Provisions) / Total Portfolio Balance",
+        "step": "Evaluate Credit Quality"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-14",
+    "archetype": "retail-bank",
+    "title": "Mortgage Portfolio Risk and Valuation Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "LOANS_PER_CUSTOMER"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/14 - Mortgage Portfolio Risk and Valuation Analysis.md",
+    "goal": "To assess the risk and valuation of the bank’s mortgage portfolio by analyzing factors such as loan-to-value (LTV) ratios, delinquency rates, market trends, and overall portfolio composition.",
+    "dataRequired": [
+      "Mortgage portfolio details (loan amounts, interest rates, terms, origination dates).",
+      "Loan-to-value (LTV) ratios at origination and current LTV based on updated property valuations.",
+      "Delinquency and default rates.",
+      "Market data for property values and trends in key regions.",
+      "Loan repayment patterns (e.g., prepayments, late payments).",
+      "Credit scores and income details of borrowers.",
+      "Historical performance data of the mortgage portfolio."
+    ],
+    "improve": [
+      "Implement stricter underwriting criteria for high-LTV loans in volatile property markets.",
+      "Introduce targeted refinancing offers to incentivize borrowers to lower LTV ratios.",
+      "Conduct regular portfolio reviews to identify and address emerging risks.",
+      "Diversify the geographic composition of the portfolio to reduce exposure to regional market fluctuations.",
+      "Leverage predictive analytics to monitor borrower behavior and proactively mitigate delinquency risks.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Current LTV",
+        "variables": [
+          "Outstanding Loan Balance",
+          "Current Property Value"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Current LTV = (Outstanding Loan Balance / Current Property Value) x 100",
+        "step": null
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Number of Delinquent Mortgages",
+          "Total Mortgages"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Delinquency Rate = (Number of Delinquent Mortgages / Total Mortgages)",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulted Mortgages",
+          "Total Mortgages"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulted Mortgages / Total Mortgages) x 100",
+        "step": null
+      },
+      {
+        "output": "Prepayment Rate",
+        "variables": [
+          "Number of Prepaid Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Prepayment Rate = (Number of Prepaid Loans / Total Loans) x 100",
+        "step": "Perform Valuation Analysis"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-15",
+    "archetype": "retail-bank",
+    "title": "Savings and Investment Account Tenure Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "ATTRITION_REDUCTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/15 - Savings and Investment Account Tenure Analysis.md",
+    "goal": "To analyze the tenure of savings and investment accounts, assess customer retention, and identify factors influencing account longevity.",
+    "dataRequired": [
+      "Account opening and closing dates for savings and investment accounts.",
+      "Customer demographics (age, income, location, etc.).",
+      "Account activity data (e.g., deposits, withdrawals, transaction frequency).",
+      "Balances over time for savings and investment accounts.",
+      "Product features (e.g., interest rates, investment options).",
+      "Customer satisfaction or feedback data."
+    ],
+    "improve": [
+      "Introduce rewards or benefits for customers maintaining accounts beyond key milestones (e.g., 1 year, 5 years).",
+      "Regularly communicate account value and performance updates to keep customers engaged.",
+      "Offer incentives for customers to increase account activity (e.g., higher interest rates for regular deposits).",
+      "Improve onboarding processes to ensure a smooth start for new accounts.",
+      "Use predictive analytics to identify customers at risk of closure and proactively offer personalized retention offers.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Tenure",
+        "variables": [
+          "Sum of All Account Durations",
+          "Total Number of Accounts"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Average Tenure = (Sum of All Account Durations) / (Total Number of Accounts)",
+        "step": null
+      },
+      {
+        "output": "Retention Rate",
+        "variables": [
+          "Number of Accounts Retained at Year-End",
+          "Total Accounts at Start of Year"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Retention Rate = (Number of Accounts Retained at Year-End / Total Accounts at Start of Year) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-16",
+    "archetype": "retail-bank",
+    "title": "Loan Portfolio Diversification and Sectoral Risk Exposure Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "NPL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "CREDIT_CYCLE"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/16 - Loan Portfolio Diversification and Sectoral Risk Exposure.md",
+    "goal": "To evaluate the diversification of the bank’s loan portfolio across sectors and assess the risk exposure associated with each sector.",
+    "dataRequired": [
+      "Loan portfolio data categorized by sector (e.g., residential mortgages, commercial real estate, retail, agriculture).",
+      "Loan amounts, interest rates, and terms by sector.",
+      "Credit quality metrics (e.g., delinquency rates, non-performing loans) by sector.",
+      "Geographic distribution of loans.",
+      "Market and economic indicators affecting sectoral performance."
+    ],
+    "improve": [
+      "Diversify the loan portfolio by increasing exposure to underrepresented, low-risk sectors.",
+      "Monitor economic and market trends affecting high-concentration sectors and proactively adjust lending criteria.",
+      "Enhance credit risk assessment models to improve loan quality in high-risk sectors.",
+      "Explore geographic expansion to mitigate regional risks within sectors.",
+      "",
+      "Regularly review portfolio allocation and credit quality metrics to adapt to changing market conditions.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Sector Share",
+        "variables": [
+          "Total Loan Amount in Sector",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Sector Share = (Total Loan Amount in Sector / Total Loan Portfolio) x 100",
+        "step": null
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Delinquent Loans in Sector",
+          "Total Loans in Sector"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Delinquent Loans in Sector / Total Loans in Sector) x 100",
+        "step": null
+      },
+      {
+        "output": "NPL Ratio",
+        "variables": [
+          "Non-Performing Loans in Sector",
+          "Total Loans in Sector"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NPL Ratio = (Non-Performing Loans in Sector / Total Loans in Sector) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-17",
+    "archetype": "retail-bank",
+    "title": "Mortgage Loan-to-Value (LTV) and Debt-to-Income (DTI) Ratio Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/17 - Mortgage Loan-to-Value (LTV) and Debt-to-Income (DTI).md",
+    "goal": "To assess the risk profile of the mortgage portfolio by analyzing Loan-to-Value (LTV) and Debt-to-Income (DTI) ratios.",
+    "dataRequired": [
+      "Mortgage loan data (loan amount, property value at origination, outstanding balance).",
+      "Updated property valuations.",
+      "Borrower income data.",
+      "Loan repayment history (e.g., delinquency or default rates).",
+      "Portfolio segmentation data (e.g., geographic location, loan type)."
+    ],
+    "improve": [
+      "Tighten lending criteria for high-risk borrowers, such as reducing maximum allowable LTV and DTI thresholds.",
+      "Monitor property valuations regularly and adjust risk profiles accordingly.",
+      "Offer refinancing or restructuring options to borrowers with high DTI ratios to improve repayment capacity.",
+      "Introduce loan insurance products to mitigate risks associated with high LTV loans.",
+      "Use predictive analytics to proactively identify loans at risk of default based on LTV and DTI trends.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Current LTV",
+        "variables": [
+          "Outstanding Loan Balance",
+          "Current Property Value"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Current LTV = (Outstanding Loan Balance / Current Property Value) x 100",
+        "step": null
+      },
+      {
+        "output": "DTI",
+        "variables": [
+          "Total Monthly Debt Payments",
+          "Monthly Gross Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "DTI = (Total Monthly Debt Payments / Monthly Gross Income) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-18",
+    "archetype": "retail-bank",
+    "title": "Debt Consolidation Product Demand and Risk Analysis",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/18 - Debt Consolidation Product Demand and Risk Analysis.md",
+    "goal": "To assess the demand for debt consolidation products and evaluate associated risks, including customer repayment capacity and credit quality.",
+    "dataRequired": [
+      "Customer credit data (credit scores, existing debts, and repayment history).",
+      "Debt consolidation product uptake and performance data.",
+      "Borrower income data and debt-to-income (DTI) ratios.",
+      "Loan terms and interest rates for consolidated debts.",
+      "Delinquency and default rates for debt consolidation loans.",
+      "Competitor benchmarks for debt consolidation products."
+    ],
+    "improve": [
+      "Refine borrower selection criteria to target low-risk, high-potential candidates for consolidation.",
+      "Offer flexible repayment plans to improve borrower affordability and retention.",
+      "Educate customers about the benefits of debt consolidation to drive uptake.",
+      "Regularly review and update product features to remain competitive (e.g., lower interest rates, streamlined application processes).",
+      "Monitor repayment patterns closely to proactively identify at-risk borrowers and mitigate defaults.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Consolidation Candidate Rate",
+        "variables": [
+          "Number of Eligible Customers",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Consolidation Candidate Rate = (Number of Eligible Customers / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulted Consolidation Loans",
+          "Total Consolidation Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulted Consolidation Loans / Total Consolidation Loans) x 100",
+        "step": null
+      },
+      {
+        "output": "Post-Consolidation DTI",
+        "variables": [
+          "Monthly Debt Payment Post-Consolidation",
+          "Monthly Gross Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Post-Consolidation DTI = (Monthly Debt Payment Post-Consolidation / Monthly Gross Income) x 100",
+        "step": "Assess Borrower Repayment Capacity"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-19",
+    "archetype": "retail-bank",
+    "title": "Loan Repayment Behavior and Default Management Strategy Assessment",
+    "part": "B",
+    "partLabel": "Product and Portfolio Performance",
+    "relatedMetricCodes": [
+      "COST_OF_RISK"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "CREDIT_CYCLE"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/19 - Loan Repayment Behavior and Default Management Strategy.md",
+    "goal": "To analyze customer repayment behavior, identify patterns and risk factors associated with defaults, and develop strategies to mitigate defaults while improving overall portfolio health.",
+    "dataRequired": [
+      "Loan portfolio data, including loan type, term, interest rate, and repayment schedules.",
+      "Historical repayment records (e.g., payment frequency, overdue payments).",
+      "Delinquency and default rates segmented by loan type and customer demographics.",
+      "Customer financial data (e.g., income, credit score, debt-to-income ratio).",
+      "Economic indicators impacting repayment capacity (e.g., unemployment rates, inflation)."
+    ],
+    "improve": [
+      "Implement advanced predictive analytics to identify at-risk borrowers early.",
+      "Offer loan restructuring or payment holidays to borrowers in temporary financial distress.",
+      "Enhance borrower education on the importance of timely repayments.",
+      "Optimize collection processes with a focus on maintaining customer relationships.",
+      "Continuously monitor repayment behavior and adjust credit policies to adapt to market conditions.",
+      "C. Operational Efficiency and Risk Management"
+    ],
+    "formulas": [
+      {
+        "output": "Repayment Category Percentage",
+        "variables": [
+          "Number of Loans in Category",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Repayment Category Percentage = (Number of Loans in Category / Total Loans) x 100",
+        "step": "Analyze Repayment Behavior"
+      },
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Delinquent Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Delinquent Loans / Total Loans) x 100",
+        "step": "Calculate Key Metrics"
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Defaulted Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Defaulted Loans / Total Loans) x 100",
+        "step": "Calculate Key Metrics"
+      },
+      {
+        "output": "Recovery Rate",
+        "variables": [
+          "Recovered Amount from Defaults",
+          "Total Default Amount"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate = (Recovered Amount from Defaults / Total Default Amount) x 100",
+        "step": "Calculate Key Metrics"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-20",
+    "archetype": "retail-bank",
+    "title": "Risk and Compliance Adherence for Retail Banking Operations",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/20 - Risk and Compliance Adherence for Retail Banking.md",
+    "goal": "To evaluate the bank’s adherence to risk management frameworks and regulatory compliance requirements.",
+    "dataRequired": [
+      "Regulatory requirements applicable to retail banking operations (e.g., AML, KYC, Basel III).",
+      "Internal risk management policies and compliance frameworks.",
+      "Incident logs for non-compliance events or risk breaches.",
+      "Audit reports and findings from regulatory bodies.",
+      "Employee training records on risk and compliance.",
+      "Customer onboarding and transaction data for compliance checks."
+    ],
+    "improve": [
+      "Automate compliance processes using advanced technologies (e.g., AI-driven fraud detection, automated KYC checks).",
+      "Conduct regular internal audits to identify and address compliance gaps proactively.",
+      "Strengthen employee training programs to increase awareness of evolving regulatory requirements.",
+      "Enhance transaction monitoring systems to detect suspicious activities more effectively.",
+      "Establish a robust governance structure to oversee risk and compliance adherence, with clear accountability.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "retail-bank-21",
+    "archetype": "retail-bank",
+    "title": "Credit Quality and Loan Loss Provisioning Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [
+      "COST_OF_RISK",
+      "NPL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/21 - Credit Quality and Loan Loss Provisioning Analysis.md",
+    "goal": "To assess the credit quality of the loan portfolio and evaluate the adequacy of loan loss provisioning.",
+    "dataRequired": [
+      "Loan portfolio data segmented by type (e.g., mortgages, personal loans, commercial loans).",
+      "Credit risk metrics (e.g., delinquency rates, default rates, credit scores).",
+      "Historical loan loss data and provisioning levels.",
+      "Economic indicators affecting borrower risk (e.g., unemployment rates, interest rates).",
+      "Regulatory requirements for loan loss provisions (e.g., IFRS 9, CECL).",
+      "Recovery rates on defaulted loans."
+    ],
+    "improve": [
+      "Strengthen credit underwriting criteria to reduce the risk of future defaults.",
+      "",
+      "Regularly update loan loss provisioning models to incorporate current economic conditions.",
+      "Enhance recovery processes for defaulted loans to improve recovery rates.",
+      "Conduct periodic stress tests to evaluate portfolio resilience under various scenarios.",
+      "Use advanced analytics to identify high-risk loans early and take proactive measures.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Delinquency Rate",
+        "variables": [
+          "Number of Delinquent Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Delinquency Rate = (Number of Delinquent Loans / Total Loans) x 100",
+        "step": null
+      },
+      {
+        "output": "NPL Ratio",
+        "variables": [
+          "Non-Performing Loans",
+          "Total Loan Portfolio"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "NPL Ratio = (Non-Performing Loans / Total Loan Portfolio) x 100",
+        "step": null
+      },
+      {
+        "output": "Default Rate",
+        "variables": [
+          "Number of Defaulted Loans",
+          "Total Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Default Rate = (Number of Defaulted Loans / Total Loans) x 100",
+        "step": null
+      },
+      {
+        "output": "Recovery Rate",
+        "variables": [
+          "Recovered Amount",
+          "Total Defaulted Loan Amount"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate = (Recovered Amount / Total Defaulted Loan Amount) x 100",
+        "step": null
+      },
+      {
+        "output": "Loan Loss Coverage Ratio",
+        "variables": [
+          "Loan Loss Provisions",
+          "Non-Performing Loans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Loan Loss Coverage Ratio = (Loan Loss Provisions / Non-Performing Loans) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-22",
+    "archetype": "retail-bank",
+    "title": "Fraud Detection and Prevention Effectiveness Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FRAUD_PREVENTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/22 - Fraud Detection and Prevention Effectiveness Analysis.md",
+    "goal": "To assess the bank's ability to detect, prevent, and mitigate fraudulent activities across all operations.",
+    "dataRequired": [
+      "Fraud incident logs (e.g., types, frequency, monetary impact).",
+      "Transaction data flagged as potentially fraudulent.",
+      "False positive rates (e.g., flagged transactions later deemed legitimate).",
+      "Historical fraud detection rates and resolution times.",
+      "Customer demographics and behavior patterns.",
+      "Performance metrics for fraud detection tools (e.g., AI systems, manual reviews).",
+      "Industry benchmarks for fraud rates and prevention success."
+    ],
+    "improve": [
+      "",
+      "Enhance fraud detection algorithms using machine learning to improve accuracy and reduce false positives.",
+      "Invest in real-time transaction monitoring systems to flag suspicious activity instantly.",
+      "Regularly update fraud prevention systems to address emerging threats and techniques.",
+      "Provide customer education on fraud awareness to minimize susceptibility to scams.",
+      "Conduct routine audits of fraud detection and prevention processes to identify and rectify weaknesses.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Fraud Detection Rate",
+        "variables": [
+          "Number of Detected Fraudulent Transactions",
+          "Total Fraudulent Transactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fraud Detection Rate = (Number of Detected Fraudulent Transactions / Total Fraudulent Transactions) x 100",
+        "step": null
+      },
+      {
+        "output": "False Positive Rate",
+        "variables": [
+          "Number of Legitimate Transactions Flagged as Fraud",
+          "Total Flagged Transactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "False Positive Rate = (Number of Legitimate Transactions Flagged as Fraud / Total Flagged Transactions) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Resolution Time",
+        "variables": [
+          "Sum of Resolution Times for All Cases",
+          "Total Number of Cases"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Resolution Time = (Sum of Resolution Times for All Cases / Total Number of Cases)",
+        "step": null
+      },
+      {
+        "output": "Fraud Prevention Rate",
+        "variables": [
+          "Value of Prevented Fraud",
+          "Total Value of Attempted Fraud"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fraud Prevention Rate = (Value of Prevented Fraud / Total Value of Attempted Fraud) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-23",
+    "archetype": "retail-bank",
+    "title": "Loan Origination and Underwriting Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CREDIT_RISK_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/23 - Loan Origination and Underwriting Efficiency Analysis.md",
+    "goal": "To evaluate the efficiency and effectiveness of the loan origination and underwriting process.",
+    "dataRequired": [
+      "Loan application data (e.g., application dates, approval dates, rejection rates).",
+      "Underwriting metrics (e.g., credit evaluation times, average underwriting costs).",
+      "Approval and rejection rates segmented by loan type.",
+      "Customer demographics and profiles.",
+      "Productivity metrics for underwriting teams (e.g., loans processed per underwriter).",
+      "Customer feedback on the loan application process."
+    ],
+    "improve": [
+      "Implement automated loan origination systems to streamline document collection and verification.",
+      "Provide training programs to enhance underwriters' efficiency and decision-making skills.",
+      "Regularly review and refine underwriting criteria to align with market demands and reduce unnecessary rejections.",
+      "Monitor customer feedback to identify pain points and improve the application experience.",
+      "Use predictive analytics to prioritize low-risk applications for faster processing.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Processing Time",
+        "variables": [
+          "Total Time for All Applications",
+          "Total Number of Applications"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Processing Time = (Total Time for All Applications / Total Number of Applications)",
+        "step": null
+      },
+      {
+        "output": "Average Underwriting Time",
+        "variables": [
+          "Total Underwriting Time",
+          "Total Loans Processed"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Underwriting Time = (Total Underwriting Time / Total Loans Processed)",
+        "step": null
+      },
+      {
+        "output": "Underwriter Productivity",
+        "variables": [
+          "Number of Loans Processed",
+          "Number of Underwriters"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Underwriter Productivity = (Number of Loans Processed / Number of Underwriters)",
+        "step": null
+      },
+      {
+        "output": "Approval Rate",
+        "variables": [
+          "Number of Approved Loans",
+          "Total Applications"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Approval Rate = (Number of Approved Loans / Total Applications) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Origination Cost",
+        "variables": [
+          "Total Origination Costs",
+          "Total Loans Processed"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Origination Cost = (Total Origination Costs / Total Loans Processed)",
+        "step": "Assess Cost Efficiency"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-24",
+    "archetype": "retail-bank",
+    "title": "Operational Efficiency and Cost-to-Income Ratio Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [
+      "COST_TO_SERVE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/24 - Operational Efficiency and Cost-to-Income Ratio Analysis.md",
+    "goal": "To assess the operational efficiency of the bank by analyzing its cost-to-income (C/I) ratio and identifying key areas where costs can be optimized and income generation can be enhanced.",
+    "dataRequired": [
+      "Financial data on operating expenses (e.g., personnel, IT, branch costs).",
+      "Income data segmented by revenue streams (e.g., interest income, fees, commissions).",
+      "Cost breakdown by functional area (e.g., branches, digital channels, back-office operations).",
+      "Productivity metrics (e.g., revenue per employee, transactions per branch).",
+      "Historical C/I ratio data for trend analysis.",
+      "Industry benchmarks for operational efficiency and C/I ratios."
+    ],
+    "improve": [
+      "Automate repetitive tasks and invest in digital banking platforms to reduce back-office costs.",
+      "Optimize branch networks by consolidating underperforming branches and focusing on high-value locations.",
+      "Enhance cross-selling and up-selling strategies to boost income per customer.",
+      "Implement performance-based incentives to increase employee productivity.",
+      "Continuously benchmark against industry peers to identify areas where the bank can improve efficiency.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost-to-Income Ratio",
+        "variables": [
+          "Operating Expenses",
+          "Operating Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue per Employee",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Employees"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Employee = Total Revenue / Total Number of Employees.",
+        "step": "Assess Productivity Metrics"
+      },
+      {
+        "output": "Transactions per Branch",
+        "variables": [
+          "Total Transactions",
+          "Total Branches"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Transactions per Branch = Total Transactions / Total Branches.",
+        "step": "Assess Productivity Metrics"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-25",
+    "archetype": "retail-bank",
+    "title": "Regulatory Compliance Cost Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/25 - Regulatory Compliance Cost Analysis.md",
+    "goal": "To evaluate the costs associated with meeting regulatory compliance requirements in retail banking operations, identify cost drivers, and recommend strategies to optimize compliance-related spending while maintaining adherence to legal and regulatory standards.",
+    "dataRequired": [
+      "Direct compliance costs (e.g., staff salaries, training programs, software for compliance).",
+      "Indirect compliance costs (e.g., time spent by non-compliance staff on regulatory activities).",
+      "Fines, penalties, or remediation costs incurred due to non-compliance.",
+      "Costs related to regulatory audits and reporting.",
+      "Investments in compliance technology (e.g., AML/KYC systems).",
+      "External consultant or legal advisory fees.",
+      "Industry benchmarks for compliance costs."
+    ],
+    "improve": [
+      "Invest in automated compliance tools (e.g., AI-powered KYC/AML systems) to reduce manual costs.",
+      "Outsource specific compliance functions to third-party providers to lower fixed costs.",
+      "Conduct regular cost-benefit analyses of compliance activities to identify inefficiencies.",
+      "Enhance staff training to reduce reliance on external consultants and improve internal capabilities.",
+      "Monitor regulatory changes proactively to minimize last-minute implementation costs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Compliance Cost Ratio",
+        "variables": [
+          "Total Compliance Costs",
+          "Total Operating Expenses"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Compliance Cost Ratio = (Total Compliance Costs / Total Operating Expenses) x 100",
+        "step": null
+      },
+      {
+        "output": "Compliance Cost-to-Revenue Ratio",
+        "variables": [
+          "Total Compliance Costs",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Compliance Cost-to-Revenue Ratio = (Total Compliance Costs / Total Revenue) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-26",
+    "archetype": "retail-bank",
+    "title": "Regulatory Capital Adequacy and Stress Testing Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency and Risk Management",
+    "relatedMetricCodes": [
+      "CET1_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/26 - Regulatory Capital Adequacy and Stress Testing Analysis.md",
+    "goal": "To evaluate the bank’s capital adequacy in meeting regulatory requirements and assess its ability to withstand adverse economic scenarios through stress testing.",
+    "dataRequired": [
+      "Current capital structure (Tier 1, Tier 2, and total regulatory capital).",
+      "Risk-weighted assets (RWAs) by category (e.g., credit, market, operational risk).",
+      "Historical stress testing results and scenario parameters.",
+      "Economic indicators for stress scenarios (e.g., GDP decline, unemployment, market shocks).",
+      "Loan and investment portfolio details (e.g., exposures, default rates).",
+      "Regulatory requirements for capital adequacy (e.g., Basel III guidelines)."
+    ],
+    "improve": [
+      "Build capital buffers by retaining earnings or issuing additional equity.",
+      "Diversify the loan and investment portfolios to reduce risk concentration.",
+      "Enhance risk management practices to lower RWAs, particularly in high-risk categories.",
+      "Conduct regular stress testing to proactively identify and address vulnerabilities.",
+      "Align internal capital targets with evolving regulatory standards and market conditions.",
+      "D. Branch and Channel Performance"
+    ],
+    "formulas": [
+      {
+        "output": "CET1 Ratio",
+        "variables": [
+          "CET1 Capital",
+          "Risk-Weighted Assets"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "CET1 Ratio = (CET1 Capital / Risk-Weighted Assets) x 100",
+        "step": "Calculate Capital Adequacy Ratios"
+      },
+      {
+        "output": "Tier 1 Capital Ratio",
+        "variables": [
+          "Tier 1 Capital",
+          "Risk-Weighted Assets"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Tier 1 Capital Ratio = (Tier 1 Capital / Risk-Weighted Assets) x 100",
+        "step": "Calculate Capital Adequacy Ratios"
+      },
+      {
+        "output": "Post-Stress Capital Ratio",
+        "variables": [
+          "Post-Stress Capital",
+          "Post-Stress RWAs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Post-Stress Capital Ratio = (Post-Stress Capital / Post-Stress RWAs) x 100",
+        "step": "Develop Stress Testing Scenarios"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-27",
+    "archetype": "retail-bank",
+    "title": "Branch Network Performance and Profitability Analysis",
+    "part": "D",
+    "partLabel": "Branch and Channel Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "BRANCH_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/27 - Branch Network Performance and Profitability Analysis.md",
+    "goal": "To evaluate the performance and profitability of the bank’s branch network by analyzing financial metrics, customer engagement, and operational efficiency.",
+    "dataRequired": [
+      "Revenue data for each branch (e.g., fees, interest income, product sales).",
+      "Operating expenses by branch (e.g., staff salaries, rent, utilities, maintenance).",
+      "Transaction volume and types (e.g., deposits, withdrawals, account openings).",
+      "Customer demographics and footfall data by branch location.",
+      "Productivity metrics (e.g., revenue per employee, transactions per employee).",
+      "Historical performance trends by branch.",
+      "Competitor data (if available) for branch network benchmarking."
+    ],
+    "improve": [
+      "Optimize branch operations by automating routine transactions and focusing on high-value services.",
+      "Relocate or consolidate underperforming branches in low-traffic areas.",
+      "Enhance marketing and outreach efforts to attract customers in underserved regions.",
+      "Use digital tools to complement physical branch services, reducing dependency on high-cost locations.",
+      "Regularly review and adjust branch network strategies to align with customer behavior and market conditions.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Profit",
+        "variables": [
+          "Total Revenue",
+          "Total Operating Expenses"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Profit = Total Revenue - Total Operating Expenses",
+        "step": null
+      },
+      {
+        "output": "Profitability Ratio",
+        "variables": [
+          "Net Profit",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Profitability Ratio = (Net Profit / Total Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Income Ratio",
+        "variables": [
+          "Operating Expenses",
+          "Operating Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Income Ratio = (Operating Expenses / Operating Income) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-28",
+    "archetype": "retail-bank",
+    "title": "Channel Performance Analysis",
+    "part": "D",
+    "partLabel": "Branch and Channel Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/28 - Channel Performance Analysis.md",
+    "goal": "To evaluate the performance and effectiveness of the bank's various service delivery channels—branches, online banking, mobile banking, and ATMs—by analyzing customer usage, cost efficiency, and revenue generation.",
+    "dataRequired": [
+      "Customer transaction data segmented by channel (e.g., branches, online, mobile, ATMs).",
+      "Revenue generated by each channel (e.g., fees, product sales).",
+      "Operating costs associated with each channel (e.g., branch overhead, IT costs).",
+      "Customer satisfaction and engagement metrics for each channel.",
+      "Transaction types and volume by channel (e.g., deposits, withdrawals, account openings).",
+      "Demographic and geographic data on channel users."
+    ],
+    "improve": [
+      "Promote digital channels through targeted campaigns to reduce dependency on cost-intensive physical branches.",
+      "Optimize ATM placement and functionality to enhance accessibility and cost-effectiveness.",
+      "Invest in user-friendly online and mobile banking interfaces to improve customer satisfaction and engagement.",
+      "Tailor channel strategies based on demographic and geographic preferences.",
+      "Continuously monitor channel metrics to adapt strategies to evolving customer needs and technological advancements.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Revenue by Channel",
+        "variables": [
+          "Total Revenue from Channel",
+          "Total Revenue Across All Channels"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue by Channel = (Total Revenue from Channel / Total Revenue Across All Channels) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Revenue Ratio",
+        "variables": [
+          "Operating Costs for Channel",
+          "Revenue from Channel"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Revenue Ratio = (Operating Costs for Channel / Revenue from Channel) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-29",
+    "archetype": "retail-bank",
+    "title": "ATM Network Optimization and Cost-Benefit Analysis",
+    "part": "D",
+    "partLabel": "Branch and Channel Performance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "BRANCH_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/29 - ATM Network Optimization and Cost-Benefit Analysis.md",
+    "goal": "To evaluate the performance and cost-effectiveness of the ATM network by analyzing usage patterns, operational costs, and revenue generation.",
+    "dataRequired": [
+      "Transaction volume and type for each ATM (e.g., cash withdrawals, deposits, balance inquiries).",
+      "Operating costs per ATM (e.g., maintenance, cash replenishment, electricity, rent).",
+      "Revenue generated through ATM fees and related charges.",
+      "Geographic location of ATMs and proximity to competing ATMs.",
+      "Customer demographics and usage patterns.",
+      "Service downtime data (e.g., frequency and duration of outages)."
+    ],
+    "improve": [
+      "Relocate or consolidate underperforming ATMs in areas with low transaction volumes or high costs.",
+      "",
+      "Enhance ATM functionality (e.g., cash deposits, bill payments) to increase usage and revenue.",
+      "Invest in predictive maintenance systems to reduce downtime and operational disruptions.",
+      "Use customer demographic and geographic data to optimize ATM placement and accessibility.",
+      "Monitor and adjust ATM network strategies regularly to align with evolving customer needs and market conditions.",
+      "E. Digital and Technological Capabilities"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per ATM",
+        "variables": [
+          "Total Fees Collected from Transactions",
+          "Total"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per ATM = Total Fees Collected from Transactions / Total",
+        "step": null
+      },
+      {
+        "output": "Utilization Rate",
+        "variables": [
+          "Number of Transactions at ATM",
+          "Maximum Capacity of ATM"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate = (Number of Transactions at ATM / Maximum Capacity of ATM) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Operating Cost",
+        "variables": [
+          "Total Operating Costs",
+          "Total Number of ATMs"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Operating Cost = Total Operating Costs / Total Number of ATMs",
+        "step": null
+      },
+      {
+        "output": "ATM Profitability",
+        "variables": [
+          "Revenue per ATM",
+          "Operating Cost per ATM"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "ATM Profitability = Revenue per ATM - Operating Cost per ATM",
+        "step": null
+      },
+      {
+        "output": "Downtime Rate",
+        "variables": [
+          "Total Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-30",
+    "archetype": "retail-bank",
+    "title": "Digital Banking Adoption and Usage Analysis",
+    "part": "E",
+    "partLabel": "Digital and Technological Capabilities",
+    "relatedMetricCodes": [
+      "DIGITAL_ADOPTION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINTECH_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/30 - Digital Banking Adoption and Usage Analysis.md",
+    "goal": "To evaluate the adoption and usage patterns of the bank’s digital banking platforms (web and mobile), identify customer preferences, and develop strategies to increase engagement and optimize platform performance.",
+    "dataRequired": [
+      "User registration data for digital banking platforms.",
+      "Usage metrics (e.g., login frequency, session duration, transactions performed).",
+      "Transaction data segmented by type (e.g., fund transfers, bill payments, account inquiries).",
+      "Customer demographics (age, income, geographic location).",
+      "Feedback and satisfaction ratings for digital banking services.",
+      "Technical performance metrics (e.g., page load times, app crashes).",
+      "Industry benchmarks for digital banking adoption and usage."
+    ],
+    "improve": [
+      "Launch targeted campaigns to promote digital banking among low-adoption customer segments.",
+      "Enhance user experience with intuitive navigation, faster load times, and robust security features.",
+      "Introduce gamification or rewards for frequent usage to boost engagement.",
+      "Continuously monitor platform performance to address technical issues proactively.",
+      "Regularly update digital platforms with new features to meet evolving customer needs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Adoption Rate",
+        "variables": [
+          "Number of Digital Banking Users",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Adoption Rate = (Number of Digital Banking Users / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Average Logins per User",
+        "variables": [
+          "Total Logins",
+          "Total Digital Banking Users"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Logins per User = Total Logins / Total Digital Banking Users",
+        "step": null
+      },
+      {
+        "output": "Downtime Rate",
+        "variables": [
+          "Total Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100",
+        "step": "Analyze Customer Demographics and Preferences"
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-31",
+    "archetype": "retail-bank",
+    "title": "Mobile Banking Security and Authentication Effectiveness Analysis",
+    "part": "E",
+    "partLabel": "Digital and Technological Capabilities",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/31 - Mobile Banking Security and Authentication Effectiveness.md",
+    "goal": "To evaluate the security and authentication measures of the mobile banking platform, identify potential vulnerabilities, and ensure a robust system that protects user data while maintaining usability.",
+    "dataRequired": [
+      "User authentication data (e.g., successful logins, failed login attempts).",
+      "Security incident logs (e.g., account breaches, fraud attempts).",
+      "Feedback on user experience with authentication processes (e.g., ease of use, satisfaction).",
+      "Data on multi-factor authentication (MFA) adoption and usage.",
+      "Metrics on mobile app security (e.g., penetration testing results, vulnerability reports).",
+      "Industry benchmarks for mobile banking security and authentication."
+    ],
+    "improve": [
+      "Promote MFA enrollment through awareness campaigns and simplified onboarding processes.",
+      "Regularly conduct penetration testing and vulnerability assessments to identify and address weaknesses.",
+      "Implement advanced security features such as biometric authentication and behavioral analytics.",
+      "Optimize the balance between security and usability by continuously gathering and acting on user feedback.",
+      "Stay updated on evolving security standards and threats to proactively adapt authentication protocols.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Authentication Success Rate",
+        "variables": [
+          "Successful Logins",
+          "Total Login Attempts"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Authentication Success Rate = (Successful Logins / Total Login Attempts)",
+        "step": null
+      },
+      {
+        "output": "MFA Adoption Rate",
+        "variables": [
+          "Number of Users with MFA Enabled",
+          "Total Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "MFA Adoption Rate = (Number of Users with MFA Enabled / Total Users) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-32",
+    "archetype": "retail-bank",
+    "title": "Core Banking System Efficiency and Scalability Analysis",
+    "part": "E",
+    "partLabel": "Digital and Technological Capabilities",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/32 - Core Banking System Efficiency and Scalability Analysis.md",
+    "goal": "To evaluate the efficiency and scalability of the core banking system by analyzing performance metrics, operational costs, and its ability to handle growth and innovation.",
+    "dataRequired": [
+      "System performance metrics (e.g., transaction processing speed, downtime rates).",
+      "Operational costs related to the core banking system (e.g., maintenance, upgrades, staff).",
+      "Transaction volume data and peak load analysis.",
+      "Scalability metrics (e.g., capacity utilization, system load handling).",
+      "Feedback from users (e.g., IT staff, front-line employees, customers).",
+      "Incident logs (e.g., outages, failures, error rates).",
+      "Industry benchmarks for core banking system performance and scalability."
+    ],
+    "improve": [
+      "Invest in cloud-based or modular core banking systems to enhance scalability and flexibility.",
+      "Regularly update infrastructure to handle increasing transaction volumes and complexity.",
+      "Implement advanced monitoring tools to detect and resolve system issues proactively.",
+      "Optimize costs through vendor negotiations and transitioning to more cost-efficient technologies.",
+      "Conduct periodic scalability testing to ensure the system meets future growth requirements.",
+      "F. Financial Performance and Revenue Management"
+    ],
+    "formulas": [
+      {
+        "output": "Average Processing Time",
+        "variables": [
+          "Total Processing Time",
+          "Number of Transactions"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Processing Time = (Total Processing Time / Number of Transactions)",
+        "step": null
+      },
+      {
+        "output": "Downtime Rate",
+        "variables": [
+          "Total Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Rate = (Total Downtime Hours / Total Operational Hours) x 100",
+        "step": null
+      },
+      {
+        "output": "Error Rate",
+        "variables": [
+          "Number of Failed Transactions",
+          "Total Transactions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Error Rate = (Number of Failed Transactions / Total Transactions) x 100",
+        "step": null
+      },
+      {
+        "output": "System Utilization Rate",
+        "variables": [
+          "Current System Load",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "System Utilization Rate = (Current System Load / Maximum Capacity) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-33",
+    "archetype": "retail-bank",
+    "title": "Interest Rate Sensitivity and Net Interest Margin Analysis",
+    "part": "F",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "DEPOSIT_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/33 - Interest Rate Sensitivity and Net Interest Margin Analysis.md",
+    "goal": "To assess the bank’s sensitivity to interest rate changes and evaluate its Net Interest Margin (NIM) performance.",
+    "dataRequired": [
+      "Loan portfolio data (e.g., interest rates, terms, balances).",
+      "Deposit portfolio data (e.g., deposit types, interest rates, balances).",
+      "Historical NIM data.",
+      "Market interest rate trends (e.g., federal funds rate, LIBOR).",
+      "Income and expense data (e.g., interest income from loans, interest expense on deposits).",
+      "Asset and liability maturity data to assess repricing gaps."
+    ],
+    "improve": [
+      "",
+      "Rebalance the asset and liability portfolio to reduce repricing mismatches.",
+      "Implement hedging strategies (e.g., interest rate swaps) to mitigate risks from rate changes.",
+      "Adjust pricing strategies for loans and deposits to align with market trends and optimize NIM.",
+      "Regularly monitor market interest rates and their potential impact on profitability.",
+      "Use advanced analytics to model interest rate scenarios and guide strategic decision-making.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "NIM",
+        "variables": [
+          "Interest Income",
+          "Interest Expense",
+          "Average Earning Assets"
+        ],
+        "expression": "( ( v0 - v1 ) / v2 ) * 100",
+        "percentOutput": true,
+        "source": "NIM = ((Interest Income - Interest Expense) / Average Earning Assets) x 100",
+        "step": null
+      },
+      {
+        "output": "Repricing Gap",
+        "variables": [
+          "RSAs",
+          "RSLs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Repricing Gap = RSAs - RSLs",
+        "step": null
+      },
+      {
+        "output": "Change in NII",
+        "variables": [
+          "Repricing Gap",
+          "Change in Interest Rate"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Change in NII = Repricing Gap x Change in Interest Rate",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-34",
+    "archetype": "retail-bank",
+    "title": "Interest Rate Spread and Pricing Strategy Analysis",
+    "part": "F",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "DEPOSIT_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/34 - Interest Rate Spread and Pricing Strategy Analysis.md",
+    "goal": "To evaluate the interest rate spread—the difference between interest earned on assets and interest paid on liabilities—and assess the effectiveness of pricing strategies for loans and deposits.",
+    "dataRequired": [
+      "Interest rates on earning assets (e.g., loans, investments).",
+      "Interest rates on funding liabilities (e.g., deposits, borrowings).",
+      "Asset and liability balances.",
+      "Competitive pricing data (e.g., industry averages for loan and deposit rates).",
+      "Historical interest rate spreads and profitability metrics.",
+      "Customer segmentation data for pricing analysis."
+    ],
+    "improve": [
+      "Adjust loan and deposit rates to align with market conditions while protecting profitability.",
+      "",
+      "Introduce tiered pricing strategies to target high-value customer segments with competitive rates.",
+      "Optimize the balance sheet by promoting higher-yield assets and reducing the cost of liabilities.",
+      "Use predictive analytics to anticipate rate changes and adjust pricing strategies proactively.",
+      "Regularly review competitor pricing to ensure the bank remains competitive without sacrificing margins.",
+      "G. Market Penetration and Strategic Growth Opportunities"
+    ],
+    "formulas": [
+      {
+        "output": "Interest Rate Spread",
+        "variables": [
+          "Weighted Average Interest Rate on Assets",
+          "Weighted Average Interest Rate on Liabilities"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Interest Rate Spread = Weighted Average Interest Rate on Assets - Weighted Average Interest Rate on Liabilities",
+        "step": null
+      },
+      {
+        "output": "Contribution to NII",
+        "variables": [
+          "Interest Rate Spread",
+          "Average Balance of Earning"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Contribution to NII = Interest Rate Spread x Average Balance of Earning",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-35",
+    "archetype": "retail-bank",
+    "title": "Financial Inclusion and Market Penetration Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CUSTOMERS",
+      "CUSTOMER_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/35 - Financial Inclusion and Market Penetration Analysis.md",
+    "goal": "To evaluate the bank’s success in reaching underserved and unbanked populations while analyzing its market penetration in key customer segments.",
+    "dataRequired": [
+      "Demographic data (e.g., age, income, geographic location, occupation).",
+      "Account ownership rates in underserved segments (e.g., low-income, rural populations).",
+      "Product penetration data (e.g., loans, savings accounts, digital banking).",
+      "Competitor data on market presence in underserved areas.",
+      "Financial literacy and accessibility data for target demographics.",
+      "Economic indicators of underserved regions (e.g., income levels, population density)."
+    ],
+    "improve": [
+      "Partner with community organizations to promote financial literacy and trust in underserved regions.",
+      "Develop tailored products for low-income or rural customers (e.g., microloans, simplified savings accounts).",
+      "Expand digital banking infrastructure to improve accessibility in remote areas.",
+      "Reduce barriers to entry, such as high fees or complex application processes, for new customers.",
+      "Continuously monitor progress and adjust strategies to meet evolving inclusion and penetration goals.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Market Penetration Rate",
+        "variables": [
+          "Number of Customers in Target Segment",
+          "Total Population in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Penetration Rate = (Number of Customers in Target Segment / Total Population in Segment) x 100",
+        "step": null
+      },
+      {
+        "output": "Product Penetration Rate",
+        "variables": [
+          "Number of Customers Using Product",
+          "Total Customers in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Penetration Rate = (Number of Customers Using Product / Total Customers in Segment) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-36",
+    "archetype": "retail-bank",
+    "title": "Deposit Growth and Stability Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DEPOSIT_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "DEPOSIT_PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/36 - Deposit Growth and Stability Analysis.md",
+    "goal": "To assess the growth and stability of the bank’s deposit base by analyzing trends, customer behavior, and the composition of deposits.",
+    "dataRequired": [
+      "Deposit balances by account type (e.g., savings, checking, term deposits).",
+      "Customer demographics (e.g., age, income, location).",
+      "Deposit growth rates over time (e.g., monthly, yearly).",
+      "Deposit attrition rates (e.g., accounts closed or significant withdrawals).",
+      "Interest expense on deposits.",
+      "Economic indicators affecting deposit behavior (e.g., interest rates, inflation)."
+    ],
+    "improve": [
+      "Introduce competitive interest rates or promotional offers to attract new deposits.",
+      "Launch loyalty programs or tiered benefits to retain high-value customers.",
+      "Diversify deposit sources by targeting underrepresented customer segments or regions.",
+      "Enhance customer engagement and satisfaction through personalized communication and services.",
+      "Regularly review and optimize deposit products to align with market conditions and customer needs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Deposit Growth Rate",
+        "variables": [
+          "Current Period Deposit Balance",
+          "Previous Period Deposit Balance"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Deposit Growth Rate = ((Current Period Deposit Balance - Previous Period Deposit Balance) / Previous Period Deposit Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Deposit Turnover Ratio",
+        "variables": [
+          "Withdrawals",
+          "Total Deposit Balance"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Deposit Turnover Ratio = (Withdrawals / Total Deposit Balance) x 100",
+        "step": null
+      },
+      {
+        "output": "Attrition Rate",
+        "variables": [
+          "Number of Closed Accounts",
+          "Total Accounts"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Attrition Rate = (Number of Closed Accounts / Total Accounts) x 100",
+        "step": null
+      },
+      {
+        "output": "Deposit Composition",
+        "variables": [
+          "Balance of Deposit Type",
+          "Total Deposit Balance"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Deposit Composition = (Balance of Deposit Type / Total Deposit Balance)",
+        "step": null
+      },
+      {
+        "output": "WACD",
+        "variables": [
+          "Total Interest Expense on Deposits",
+          "Average Deposit Balance"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "WACD = (Total Interest Expense on Deposits / Average Deposit Balance)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-37",
+    "archetype": "retail-bank",
+    "title": "Wealth Management and Investment Product Penetration Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/37 - Wealth Management and Investment Product Penetration.md",
+    "goal": "To evaluate the penetration of wealth management and investment products among the bank’s customers, assess cross-selling opportunities, and identify strategies to increase engagement and revenue in this segment.",
+    "dataRequired": [
+      "Customer segmentation data (e.g., high-net-worth individuals (HNWIs), mass affluent, retail).",
+      "Product adoption rates for wealth management and investment services (e.g., mutual funds, brokerage accounts).",
+      "Customer demographics (e.g., age, income, geographic location).",
+      "Revenue generated by wealth management and investment products.",
+      "Customer financial behavior data (e.g., savings patterns, risk tolerance).",
+      "Competitor data on wealth management offerings and penetration rates (if available)."
+    ],
+    "improve": [
+      "Introduce tiered wealth management services to cater to different customer segments.",
+      "Leverage data analytics to identify high-potential customers for cross-selling and upselling opportunities.",
+      "Enhance digital platforms to make wealth management services more accessible and user-friendly.",
+      "Conduct financial literacy programs to educate customers about investment opportunities and benefits.",
+      "Regularly review and adjust product offerings to align with customer needs and market trends.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Penetration Rate",
+        "variables": [
+          "Number of Customers Using Product",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Penetration Rate = (Number of Customers Using Product / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue per Product",
+        "variables": [
+          "Total Revenue from Product",
+          "Total Revenue from Wealth Management"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue per Product = (Total Revenue from Product / Total Revenue from Wealth Management) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-38",
+    "archetype": "retail-bank",
+    "title": "Fee Income and Revenue Dependency Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/38 - Fee Income and Revenue Dependency Analysis.md",
+    "goal": "To evaluate the bank’s reliance on fee-based income and assess the sustainability of revenue streams.",
+    "dataRequired": [
+      "Breakdown of fee income by category (e.g., account maintenance, overdrafts, ATM fees, investment services).",
+      "Total revenue and proportion contributed by fee income.",
+      "Customer segmentation data (e.g., demographics, product usage).",
+      "Historical trends in fee income and total revenue.",
+      "Competitor benchmarks for fee income composition.",
+      "Feedback from customers regarding fee satisfaction and perceived value."
+    ],
+    "improve": [
+      "",
+      "Diversify revenue streams by expanding non-fee income sources, such as lending or investment services.",
+      "Adjust fee structures to reflect customer preferences and market conditions while maintaining profitability.",
+      "Enhance transparency around fees to improve customer satisfaction and reduce complaints.",
+      "Introduce value-added services to justify premium fees, such as exclusive account benefits or financial planning tools.",
+      "Monitor regulatory trends to proactively adapt fee strategies and minimize potential impacts.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Fee Income Contribution",
+        "variables": [
+          "Fee Income",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fee Income Contribution = (Fee Income / Total Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Fee Income Growth Rate",
+        "variables": [
+          "Current Period Fee Income",
+          "Previous Period Fee Income"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fee Income Growth Rate = ((Current Period Fee Income - Previous Period Fee Income) / Previous Period Fee Income) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue Dependency Ratio",
+        "variables": [
+          "Fee Income",
+          "Non-Fee Income"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Dependency Ratio = (Fee Income / Non-Fee Income) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-39",
+    "archetype": "retail-bank",
+    "title": "Payment Services Usage and Revenue Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "DIGITAL_MIGRATION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/39 - Payment Services Usage and Revenue Analysis.md",
+    "goal": "To evaluate the usage patterns and revenue generation of payment services, such as card transactions, electronic fund transfers, and bill payments.",
+    "dataRequired": [
+      "Transaction data for payment services (e.g., volume, frequency, and value).",
+      "Revenue data by payment service type (e.g., interchange fees, service fees, merchant fees).",
+      "Customer demographics and segmentation data.",
+      "Operating costs associated with payment services (e.g., infrastructure, compliance).",
+      "Competitor benchmarks for payment service usage and revenue.",
+      "Trends in digital and traditional payment adoption."
+    ],
+    "improve": [
+      "Enhance digital payment infrastructure to support increased adoption and improve user experience.",
+      "Partner with merchants to expand acceptance of the bank’s payment services and drive transaction volumes.",
+      "Introduce targeted incentives, such as cashback or fee waivers, to boost customer engagement in underutilized services.",
+      "Regularly review and adjust pricing strategies to maintain competitiveness while optimizing revenue.",
+      "Monitor regulatory changes to adapt quickly and minimize impacts on fee structures.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Revenue by Service",
+        "variables": [
+          "Fees and Charges from Service",
+          "Total Payment Services Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue by Service = (Fees and Charges from Service / Total Payment Services Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost-to-Revenue Ratio",
+        "variables": [
+          "Operating Costs for Service",
+          "Revenue from Service"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost-to-Revenue Ratio = (Operating Costs for Service / Revenue from Service) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-40",
+    "archetype": "retail-bank",
+    "title": "Personalized Banking Services Uptake and Impact Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/40 - Personalized Banking Services Uptake and Impact Analysis.md",
+    "goal": "To evaluate the adoption of personalized banking services, such as tailored financial advice, customized loan products, or exclusive account features, and assess their impact on customer engagement, satisfaction, and revenue.",
+    "dataRequired": [
+      "Uptake rates for personalized banking services (e.g., number of users, frequency of usage).",
+      "Customer segmentation data (e.g., income level, demographic profile).",
+      "Revenue generated from personalized services (e.g., fees, cross-sell/up-sell income).",
+      "Customer satisfaction scores and feedback related to personalized services.",
+      "Historical data on customer engagement metrics (e.g., retention rates, transaction activity).",
+      "Competitor benchmarks for personalized service adoption and impact."
+    ],
+    "improve": [
+      "Use data analytics to identify and target high-potential customers with tailored service offers.",
+      "Enhance service personalization by leveraging AI and machine learning to better predict customer needs.",
+      "Introduce tiered or bundled services to increase adoption across customer segments.",
+      "Invest in training staff to provide high-quality, personalized advice and support.",
+      "Continuously gather and act on customer feedback to refine and improve service offerings.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Uptake Rate",
+        "variables": [
+          "Number of Customers Using Personalized Services",
+          "Total Customers"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Uptake Rate = (Number of Customers Using Personalized Services / Total Customers) x 100",
+        "step": null
+      },
+      {
+        "output": "Revenue Contribution",
+        "variables": [
+          "Revenue from Personalized Services",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Contribution = (Revenue from Personalized Services / Total Revenue) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-41",
+    "archetype": "retail-bank",
+    "title": "Household-Level Financial Product Cross-Holdings Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_PER_CUSTOMER",
+      "CROSS_SELL_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "CROSS_SELL"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/41 - Household-Level Financial Product Cross-Holdings Analysis.md",
+    "goal": "To evaluate the extent of financial product cross-holdings within households, identify patterns in product bundling, and assess opportunities to enhance product penetration and customer loyalty.",
+    "dataRequired": [
+      "Household-level data linking multiple customer accounts (e.g., primary account holder and family members).",
+      "Product ownership data (e.g., savings accounts, loans, credit cards, investment accounts) per household.",
+      "Demographic data for households (e.g., income, age, geographic location).",
+      "Revenue contribution of each product per household.",
+      "Cross-selling and up-selling success rates by product type.",
+      "Customer feedback on bundled offerings and service satisfaction."
+    ],
+    "improve": [
+      "Introduce incentives for households to adopt multiple products, such as bundled discounts or loyalty programs.",
+      "Leverage data analytics to identify households with high potential for cross-selling or up-selling.",
+      "Develop targeted marketing campaigns focusing on underpenetrated segments or regions.",
+      "Simplify the onboarding process for additional products to encourage multi-product adoption.",
+      "Regularly review cross-selling strategies and adjust based on customer feedback and market trends.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Cross-Holdings",
+        "variables": [
+          "Total Number of Products Held by Households",
+          "Total Number of Households"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Cross-Holdings = (Total Number of Products Held by Households / Total Number of Households)",
+        "step": null
+      },
+      {
+        "output": "Cross-Selling Rate",
+        "variables": [
+          "Number of Additional Products Sold to Existing Customers",
+          "Total Customers Targeted"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cross-Selling Rate = (Number of Additional Products Sold to Existing Customers / Total Customers Targeted) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-42",
+    "archetype": "retail-bank",
+    "title": "Retail Banking Product Lifecycle and Attrition Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "CUSTOMER_ATTRITION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "ATTRITION_REDUCTION"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/42 - Retail Banking Product Lifecycle and Attrition Analysis.md",
+    "goal": "To evaluate the lifecycle of retail banking products from acquisition to attrition, identify trends in product usage, and assess factors contributing to customer retention or product churn.",
+    "dataRequired": [
+      "Product lifecycle data (e.g., customer acquisition dates, usage frequency, churn dates).",
+      "Customer demographics and segmentation (e.g., age, income, geographic location).",
+      "Transaction and engagement metrics for each product.",
+      "Attrition rates by product type.",
+      "Feedback or survey data on reasons for product discontinuation.",
+      "Competitor benchmarks for product lifecycle duration and attrition rates."
+    ],
+    "improve": [
+      "Enhance onboarding experiences to build early customer engagement and satisfaction.",
+      "",
+      "Introduce loyalty programs or incentives to retain customers during the maturity stage.",
+      "Regularly update product features to stay competitive and meet evolving customer needs.",
+      "Use predictive analytics to identify at-risk customers and implement timely retention measures.",
+      "Continuously gather and act on customer feedback to address pain points and reduce attrition.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Attrition Rate",
+        "variables": [
+          "Number of Customers Who Discontinued the Product",
+          "Total Customers at Start of Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Attrition Rate = (Number of Customers Who Discontinued the Product / Total Customers at Start of Period) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-43",
+    "archetype": "retail-bank",
+    "title": "Loan Prepayment and Refinance Behavior Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "INTEREST_RATES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/43 - Loan Prepayment and Refinance Behavior Analysis.md",
+    "goal": "To evaluate customer behavior regarding loan prepayments and refinancing, identify patterns and drivers of these activities, and assess their impact on the bank’s interest income and risk exposure.",
+    "dataRequired": [
+      "Loan portfolio data, including loan types (e.g., mortgages, personal loans), terms, and interest rates.",
+      "Historical prepayment and refinance data by loan type.",
+      "Customer demographics and segmentation (e.g., income, age, geographic location).",
+      "Economic factors influencing prepayment (e.g., interest rate trends, inflation).",
+      "Competitor offerings for refinancing.",
+      "Revenue impact of prepayments (e.g., lost interest income, penalties)."
+    ],
+    "improve": [
+      "Offer competitive refinancing options to retain customers within the bank.",
+      "Introduce tiered prepayment penalties that balance revenue protection with customer flexibility.",
+      "Use data analytics to proactively target customers likely to refinance with personalized offers.",
+      "Regularly review loan terms and pricing strategies to align with market trends and customer needs.",
+      "Monitor external economic conditions to anticipate spikes in prepayment or refinance activity and adjust strategies accordingly.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "retail-bank-44",
+    "archetype": "retail-bank",
+    "title": "Household Wealth Accumulation Trends Analysis",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/retail-bank/44 - Household Wealth Accumulation Trends Analysis.md",
+    "goal": "To evaluate the trends in household wealth accumulation across different customer segments, understand the factors driving wealth growth, and identify opportunities to align financial products and services with customer needs.",
+    "dataRequired": [
+      "Household financial data (e.g., income, savings, investments, debt levels).",
+      "Asset allocation data (e.g., cash, property, equities, fixed income).",
+      "Demographic data (e.g., age, geographic location, occupation).",
+      "Historical trends in household balances across accounts and investments.",
+      "Economic indicators affecting wealth accumulation (e.g., inflation, interest rates, GDP growth).",
+      "Customer behavior data related to saving, spending, and investing."
+    ],
+    "improve": [
+      "",
+      "Offer tailored financial advisory services to help customers optimize savings, investments, and debt repayment strategies.",
+      "Introduce products designed to accelerate wealth accumulation, such as tax-advantaged accounts or investment bundles.",
+      "Educate customers on the importance of diversification and long-term financial planning through seminars or digital content.",
+      "Develop specific campaigns targeting underserved or slow-growth segments to promote wealth-building behaviors.",
+      "Monitor external economic factors affecting wealth trends and proactively adjust strategies to align with market conditions.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Household Wealth",
+        "variables": [
+          "Total Wealth of All Households",
+          "Total Number of Households"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Average Household Wealth = (Total Wealth of All Households / Total Number of Households)",
+        "step": null
+      },
+      {
+        "output": "Wealth Accumulation Rate",
+        "variables": [
+          "Current Wealth",
+          "Previous Wealth"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Wealth Accumulation Rate = ((Current Wealth - Previous Wealth) / Previous Wealth) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "retail-bank-45",
+    "archetype": "retail-bank",
+    "title": "Strategic Growth and Market Expansion Planning",
+    "part": "G",
+    "partLabel": "Market Penetration and Strategic Growth",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CUSTOMERS",
+      "CUSTOMER_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "FINTECH_COMPETITION"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/retail-bank/45 - Strategic Growth and Market Expansion Planning.md",
+    "goal": "To identify opportunities for expanding the bank’s presence in new markets or deepening penetration in existing markets, evaluate strategic growth areas, and develop actionable plans to achieve sustainable market growth.",
+    "dataRequired": [
+      "Market data (e.g., population demographics, income levels, financial product adoption rates).",
+      "Competitor analysis (e.g., market share, service offerings, pricing strategies).",
+      "Bank performance data by region or segment (e.g., revenue, customer growth, product uptake).",
+      "Economic indicators of target markets (e.g., GDP growth, employment rates, digital adoption trends).",
+      "Regulatory requirements and risks in potential expansion markets.",
+      "Historical growth trends in the bank’s customer base and revenue."
+    ],
+    "improve": [
+      "Invest in data-driven market research to continuously identify growth opportunities.",
+      "Develop tailored offerings to meet the unique needs of target segments or regions.",
+      "Expand digital infrastructure to capture growth in mobile and online banking markets.",
+      "Strengthen partnerships with local entities to ease market entry and build trust.",
+      "Regularly review and adjust growth strategies based on performance and evolving market conditions.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Market Share",
+        "variables": [
+          "Bank’s Revenue in Market",
+          "Total Market Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Share = (Bank’s Revenue in Market / Total Market Revenue) x 100",
+        "step": null
+      }
+    ]
+  }
+]

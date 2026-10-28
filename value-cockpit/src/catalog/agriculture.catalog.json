@@ -1,0 +1,1477 @@
+[
+  {
+    "id": "agriculture-01",
+    "archetype": "agriculture",
+    "title": "Crop Yield and Farm Productivity Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "CROP_YIELD_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "PRECISION_AGRONOMY"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/01 - Crop Yield and Farm Productivity Analysis.md",
+    "goal": "Determine the overall efficiency of crop production and identify key drivers of yield improvement to enhance farm profitability and sustainability.",
+    "dataRequired": [
+      "Historical crop yield data (per hectare or acre)",
+      "Planted area for each crop",
+      "Input usage (fertilizers, seeds, labor hours, machinery hours, irrigation)",
+      "Soil fertility and nutrient data",
+      "Weather and climate data (rainfall, temperature, growing degree days)",
+      "Crop variety information"
+    ],
+    "improve": [
+      "Adopt improved seed varieties suited to local conditions.",
+      "Optimize fertilizer application based on regular soil testing.",
+      "Improve irrigation efficiency (e.g., drip irrigation, scheduling) and water management.",
+      "Implement integrated pest management (IPM) to reduce yield losses.",
+      "Enhance farm mechanization and precision agriculture techniques for better input control.",
+      "Regularly monitor weather and adjust planting or harvesting schedules accordingly.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Step 2: Calculate average crop yield. Use the formula: Average Crop Yield",
+        "variables": [
+          "Total Harvested Volume",
+          "Planted Area"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Step 2: Calculate average crop yield. Use the formula: Average Crop Yield = (Total Harvested Volume / Planted Area). Perform this calculation per crop variety and compare results across multiple growing seasons.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "agriculture-02",
+    "archetype": "agriculture",
+    "title": "Soil Health and Fertility Assessment",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE",
+      "SOIL_ORGANIC_MATTER"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRECISION_AGRONOMY"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/02 - Soil Health and Fertility Assessment.md",
+    "goal": "Evaluate the biological, chemical, and physical properties of soil to optimize crop production, ensure long-term sustainability, and maintain healthy ecosystems.",
+    "dataRequired": [
+      "Soil pH, nutrient levels (N, P, K, micronutrients)",
+      "Soil organic matter content",
+      "Soil texture and structure data",
+      "Historical land-use and crop rotation records",
+      "Local environmental conditions (rainfall, temperature)",
+      "Soil compaction and bulk density measurements"
+    ],
+    "improve": [
+      "Adjust pH with lime or sulfur, as recommended by soil tests.",
+      "Apply balanced fertilizers tailored to nutrient deficits.",
+      "Incorporate cover crops or crop residues to enhance organic matter.",
+      "Implement reduced or no-till practices to maintain soil structure.",
+      "Use crop rotations that include legumes to fix nitrogen and improve soil biology.",
+      "Add organic amendments (compost, manure) to boost microbial activity and nutrient availability.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-03",
+    "archetype": "agriculture",
+    "title": "Pest and Disease Risk Management Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "PESTS_DISEASE"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "PRECISION_AGRONOMY"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/03 - Pest and Disease Risk Management Evaluation.md",
+    "goal": "Assess the likelihood of pest and disease outbreaks, evaluate current prevention and control methods, and develop strategic approaches to minimize crop losses and ensure sustainable production.",
+    "dataRequired": [
+      "Historical pest and disease incidence records",
+      "Types and usage of pesticides, fungicides, and biocontrol measures",
+      "Crop varieties planted and their resistance/tolerance levels",
+      "Climate and weather data (temperature, humidity, rainfall patterns)",
+      "Farm hygiene and biosecurity protocols",
+      "Integrated Pest Management (IPM) program documentation"
+    ],
+    "improve": [
+      "Implement regular field scouting and pest monitoring to detect problems early.",
+      "Diversify pest control methods (biological, cultural, chemical) to prevent resistance buildup.",
+      "Rotate pesticides with different modes of action to minimize resistance.",
+      "Adopt pest-resistant or disease-tolerant crop varieties where possible.",
+      "Enhance biosecurity protocols, including equipment sterilization and isolation of infected plants.",
+      "Provide ongoing training for farm staff on IPM best practices.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-04",
+    "archetype": "agriculture",
+    "title": "Crop Rotation and Diversification Strategy Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "AREA_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "LAND_EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/04 - Crop Rotation and Diversification Strategy Evaluation.md",
+    "goal": "Determine optimal cropping patterns to improve soil health, reduce pest and disease pressure, and enhance farm resilience and profitability through a well-structured rotation and diversification plan.",
+    "dataRequired": [
+      "Historical crop rotation records",
+      "Yield data for each crop in previous rotations",
+      "Soil fertility data and soil health indicators",
+      "Pest and disease occurrence data",
+      "Market demand and price trends for potential crops",
+      "Regional and climatic considerations (rainfall, temperature)"
+    ],
+    "improve": [
+      "Introduce nitrogen-fixing legumes or cover crops to replenish soil nutrients.",
+      "Rotate crops with different root structures to enhance soil structure and minimize erosion.",
+      "Use pest- and disease-resistant crop varieties to break cycles of infestation.",
+      "Incorporate livestock grazing (where feasible) to diversify farm income and improve soil fertility.",
+      "Conduct regular economic evaluations to ensure that the rotation plan remains profitable.",
+      "Work with agronomists or extension services to update rotation strategies as soil conditions and market demands evolve.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-05",
+    "archetype": "agriculture",
+    "title": "Agrochemical Usage Optimization and Compliance Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "INPUT_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/05 - Agrochemical Usage Optimization and Compliance Analysis.md",
+    "goal": "Evaluate the utilization patterns of agrochemicals (e.g., fertilizers, pesticides, herbicides, fungicides) to ensure regulatory compliance, minimize environmental impact, optimize costs, and maintain crop productivity.",
+    "dataRequired": [
+      "Inventory of agrochemicals in use",
+      "Application rates, frequencies, and timing for each agrochemical",
+      "Field logs detailing which products were applied and when",
+      "Regulatory guidelines and permissible residue levels",
+      "Costs associated with purchasing and applying agrochemicals",
+      "Records of any past violations or warnings related to chemical use"
+    ],
+    "improve": [
+      "Adopt integrated pest management (IPM) techniques to reduce reliance on chemical controls.",
+      "Improve precision in application (e.g., calibrated sprayers, drone-assisted spraying).",
+      "Regularly train staff on safe handling and correct dosages of agrochemicals.",
+      "Rotate chemicals with different modes of action to prevent resistance.",
+      "Explore biological alternatives, such as biopesticides or beneficial insects, where feasible.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-06",
+    "archetype": "agriculture",
+    "title": "Pollination Management and Bee Health Impact Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "PESTS_DISEASE"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/06 - Pollination Management and Bee Health Impact Analysis.md",
+    "goal": "Evaluate pollination strategies, assess bee population health, and ensure effective pollination for yield optimization and ecosystem stability.",
+    "dataRequired": [
+      "List of crops requiring insect pollination",
+      "Hive location and bee population data (in-house or contracted beehives)",
+      "Records of pesticide usage and application timing",
+      "Flowering periods and pollination window for each crop",
+      "Weather data (temperature, precipitation, wind) during bloom periods",
+      "Bee health metrics (colony loss rates, prevalence of parasites/diseases)"
+    ],
+    "improve": [
+      "Schedule pesticide applications outside of peak foraging periods or when crops are not in bloom.",
+      "Provide bee-friendly habitats and foraging resources (wildflowers, hedgerows, buffer strips).",
+      "Regularly monitor hive health and collaborate with beekeepers to address diseases or parasites promptly.",
+      "Optimize hive placement based on field layout and bloom periods to maximize pollination coverage.",
+      "Consider using alternative pollinators (e.g., native bees) to reduce dependence on a single species.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-07",
+    "archetype": "agriculture",
+    "title": "Agroforestry Potential and Land-Use Diversification Assessment",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "AREA_GROWTH"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "LAND_EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/07 - Agroforestry Potential and Land-Use Diversification.md",
+    "goal": "Determine the feasibility and benefits of integrating trees, shrubs, and other perennial species into farming systems to improve soil health, biodiversity, and economic resilience.",
+    "dataRequired": [
+      "Current land-use maps and zoning information",
+      "Soil health and nutrient data",
+      "Local climate data (rainfall, temperature, prevailing wind patterns)",
+      "Existing crop and livestock operations information",
+      "Tree species suitability and market value (timber, fruit, nuts, fodder)",
+      "Regional regulations or incentives for agroforestry practices"
+    ],
+    "improve": [
+      "Select high-value or well-adapted tree and shrub species that complement existing farming operations.",
+      "Implement silvopasture or alley cropping to diversify revenue streams (timber, fodder, fruits) while maintaining existing crops or livestock.",
+      "Use tree rows or windbreaks to protect crops, reduce soil erosion, and enhance microclimatic conditions.",
+      "Apply regenerative practices (cover crops, minimal tillage) to maximize synergies between trees and annual crops.",
+      "Participate in government or NGO agroforestry programs for technical support and financial incentives.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-08",
+    "archetype": "agriculture",
+    "title": "Soil Conservation and Erosion Control Measures Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "SOIL_ORGANIC_MATTER"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/08 - Soil Conservation and Erosion Control Measures Evaluation.md",
+    "goal": "Assess the effectiveness of current soil conservation practices, identify erosion risks, and recommend strategies to protect and enhance long-term soil productivity.",
+    "dataRequired": [
+      "Topographic maps and slope data",
+      "Historical soil loss or erosion incidence records",
+      "Rainfall intensity and weather data",
+      "Soil type and texture information (sand, silt, clay)",
+      "Existing conservation practices (terraces, contour farming, cover crops)",
+      "Vegetative cover data and crop rotation records"
+    ],
+    "improve": [
+      "Implement contour farming or strip cropping to slow water runoff on sloping fields.",
+      "Establish permanent grass waterways or buffer strips in areas with frequent water flow.",
+      "Adopt cover cropping to protect soil surface and enhance organic matter.",
+      "Adjust tillage practices (reduced till or no-till) to maintain soil structure and reduce runoff.",
+      "Construct or repair terraces, diversions, or retaining walls where slopes are steep.",
+      "Conduct regular soil testing and on-farm audits to track erosion rates and adjust strategies as needed.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-09",
+    "archetype": "agriculture",
+    "title": "Orchard and Vineyard Management Efficiency Analysis",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "CROP_YIELD_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/09 - Orchard and Vineyard Management Efficiency Analysis.md",
+    "goal": "Evaluate overall orchard and vineyard operations—covering layout, pruning, irrigation, pest control, and yield—to optimize production efficiency and crop quality.",
+    "dataRequired": [
+      "Orchard or vineyard layout maps and planting densities",
+      "Yield data (per tree or vine, per hectare/acre)",
+      "Pruning schedules and methods",
+      "Irrigation schedules and water usage",
+      "Pest and disease control logs",
+      "Labor and equipment usage records",
+      "Soil and leaf tissue analysis results"
+    ],
+    "improve": [
+      "Refine pruning techniques and schedules to balance vegetative growth with optimal fruit load.",
+      "Implement precise irrigation management, potentially using soil moisture sensors or drip irrigation systems.",
+      "Adopt integrated pest management (IPM) approaches to reduce chemical reliance and improve pest control efficacy.",
+      "Streamline orchard or vineyard layout to facilitate efficient machinery movement and minimize labor time.",
+      "Use regular leaf tissue or sap analysis to fine-tune fertilization and address nutrient deficiencies.",
+      "Employ technology (e.g., drones, sensors) for real-time monitoring of crop health, canopy density, and irrigation needs.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-10",
+    "archetype": "agriculture",
+    "title": "Trace Minerals and Micronutrient Management for Crop Optimization",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "INPUT_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "PRECISION_AGRONOMY"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/10 - Trace Minerals and Micronutrient Management for Crop.md",
+    "goal": "Identify deficiencies and imbalances in trace minerals (e.g., iron, zinc, manganese, copper, boron) to ensure optimal crop growth, yield, and quality, while maintaining soil health.",
+    "dataRequired": [
+      "Soil test results for micronutrients (Fe, Zn, Mn, Cu, B, Mo, etc.)",
+      "Leaf or tissue analysis data",
+      "Crop type and growth stage requirements for specific micronutrients",
+      "Historical fertilization records and amendments used",
+      "pH and organic matter levels from soil analyses",
+      "Local climate and irrigation water quality data"
+    ],
+    "improve": [
+      "Conduct regular soil and tissue testing to track changes in micronutrient levels over time.",
+      "Apply amendments or fertilizers based on specific deficiencies (e.g., iron chelates for iron chlorosis).",
+      "Adjust soil pH through liming or acidifying agents to enhance micronutrient availability.",
+      "Incorporate organic matter (compost, manure) to improve nutrient retention and release.",
+      "Use foliar feeding strategies when soil applications are less effective due to pH or soil type constraints.",
+      "Train field staff to recognize early signs of micronutrient deficiencies and take prompt action.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-11",
+    "archetype": "agriculture",
+    "title": "Biostimulants and Biological Crop Protection Product Evaluation",
+    "part": "A",
+    "partLabel": "Crop Management & Soil Health",
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "PRECISION_AGRONOMY",
+      "INPUT_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/11 - Biostimulants and Biological Crop Protection Product.md",
+    "goal": "Assess the effectiveness, cost-efficiency, and regulatory compliance of biostimulant and biological crop protection products in enhancing crop health and reducing reliance on conventional agrochemicals.",
+    "dataRequired": [
+      "List of biostimulants or biological products currently used or under consideration",
+      "Application rates, timings, and methods for each product",
+      "Crop yield and quality data before and after product usage",
+      "Soil health indicators (pH, organic matter, nutrient levels)",
+      "Weather and environmental conditions during application periods",
+      "Cost data (purchase, storage, application)",
+      "Records of any regulatory guidelines or certifications related to biological products"
+    ],
+    "improve": [
+      "Test multiple biostimulant and biological product options on small trial plots before full-scale adoption.",
+      "Integrate these products into an integrated pest management (IPM) strategy to maximize synergy and reduce chemical inputs.",
+      "Monitor soil and plant health regularly to track benefits and adjust application rates as needed.",
+      "Train farm staff on proper handling, storage, and usage of biological products to maintain viability.",
+      "Work with suppliers or agronomists to stay updated on the latest research and product innovations.",
+      "B. Livestock Management & Animal Health"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-12",
+    "archetype": "agriculture",
+    "title": "Livestock Health and Productivity Analysis",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [
+      "LIVESTOCK_MORTALITY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/12 - Livestock Health and Productivity Analysis.md",
+    "goal": "Evaluate the overall health status, productivity, and economic performance of livestock operations to identify bottlenecks and opportunities for improvement.",
+    "dataRequired": [
+      "Animal inventory (species, breed, age, gender)",
+      "Health records (vaccination schedules, disease incidence, veterinary treatments)",
+      "Productivity metrics (milk yield, egg production, weight gain, reproduction rates)",
+      "Feed intake and feed conversion ratios",
+      "Mortality and culling rates",
+      "Environmental conditions (housing, stocking density, ventilation, temperature)",
+      "Economic data (cost of feed, veterinary expenses, revenue from livestock products)"
+    ],
+    "improve": [
+      "Implement regular veterinary check-ups and vaccination programs to prevent common diseases.",
+      "Optimize feed formulations and feeding schedules based on species-specific nutritional requirements.",
+      "Improve housing conditions (ventilation, flooring, space) to reduce stress and disease spread.",
+      "Track and benchmark feed conversion ratios to identify opportunities for cost savings.",
+      "Use selective breeding programs to enhance disease resistance and improve productivity traits.",
+      "Provide ongoing training for farm staff on animal handling, hygiene, and health monitoring best practices.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-13",
+    "archetype": "agriculture",
+    "title": "Livestock Waste Management and Circular Economy Opportunities",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "INPUT_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/13 - Livestock Waste Management and Circular Economy.md",
+    "goal": "Assess current livestock waste handling methods, identify compliance issues, and explore circular economy solutions—such as composting, biogas, or nutrient recycling—to reduce environmental impact and capture additional revenue streams.",
+    "dataRequired": [
+      "Livestock inventory (species, numbers, housing systems)",
+      "Volume and composition of manure, bedding materials, and other organic waste",
+      "Current waste handling practices (storage, treatment, disposal)",
+      "Regulatory requirements for waste disposal and environmental protection",
+      "Soil fertility needs or crop nutrient demands",
+      "Capital and operational costs for potential waste-to-value technologies (e.g., anaerobic digesters)",
+      "Potential markets or on-farm uses for compost or biogas"
+    ],
+    "improve": [
+      "Invest in proper manure storage facilities (e.g., lagoons, covered pits) to manage odors and nutrient runoff.",
+      "Conduct nutrient testing to optimize manure application rates and reduce synthetic fertilizer costs.",
+      "Consider composting operations to create value-added products for on-farm use or sale.",
+      "Evaluate the feasibility of anaerobic digesters to produce biogas for heating or electricity.",
+      "Seek partnerships or grants to fund infrastructure improvements for sustainable waste management.",
+      "Implement regular training and audits to ensure ongoing compliance and operational efficiency in waste handling practices.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-14",
+    "archetype": "agriculture",
+    "title": "Livestock Feed Sourcing and Nutrition Analysis",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [
+      "INPUT_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "INPUT_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/14 - Livestock Feed Sourcing and Nutrition Analysis.md",
+    "goal": "Ensure animals receive a balanced and cost-effective diet by reviewing feed composition, sourcing strategies, and nutritional adequacy in alignment with species-specific requirements.",
+    "dataRequired": [
+      "Current feed formulations and ration recipes",
+      "Feed ingredient costs and suppliers",
+      "Animal nutritional requirements (species, age, production stage)",
+      "Historical production data (milk yield, weight gain, egg output)",
+      "Quality test results for feed ingredients (moisture, protein, fat, fiber, mineral content)",
+      "Records of feed-related animal health issues (bloat, vitamin deficiencies, metabolic disorders)"
+    ],
+    "improve": [
+      "Regularly update rations based on seasonal changes in feed quality and availability.",
+      "Use feed formulation software or consult a nutritionist to balance rations accurately.",
+      "Employ strategic sourcing (bulk purchasing, local suppliers) to reduce costs and improve consistency.",
+      "Test feed ingredients for nutrient content and contaminants on a routine basis.",
+      "Monitor animal performance closely and adjust feed formulations as needed.",
+      "Implement on-farm trials with new feed ingredients to compare productivity and cost outcomes.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-15",
+    "archetype": "agriculture",
+    "title": "Crop–Livestock Integration Synergy Review",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/15 - Crop#U2013Livestock Integration Synergy Review.md",
+    "goal": "Examine the interactions between crop and livestock operations to maximize resource efficiency, enhance soil fertility, and improve overall farm profitability and sustainability.",
+    "dataRequired": [
+      "Crop production records (yields, crop rotations, fertilizer applications)",
+      "Livestock inventory and productivity data (milk yield, weight gain, etc.)",
+      "Manure output volumes and nutrient composition",
+      "Grazing area and stocking rates",
+      "Feed requirements and feeding practices",
+      "Soil fertility and soil health indicators (organic matter, nutrient content)",
+      "Economic data on costs and revenues from both crop and livestock segments"
+    ],
+    "improve": [
+      "Develop a rotational grazing plan that aligns with crop growth cycles and soil recovery needs.",
+      "Use cover crops or forage crops that can serve both soil health objectives and livestock feed.",
+      "Coordinate manure application timing to match crop nutrient demands and reduce fertilizer costs.",
+      "Analyze feed rations to incorporate crop residues where possible, decreasing reliance on external feed inputs.",
+      "Monitor soil health metrics and livestock productivity to assess the ongoing benefits of integration.",
+      "Explore partnerships with external farms or neighbors if on-site crops and livestock cannot be fully integrated.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-16",
+    "archetype": "agriculture",
+    "title": "Aquaculture Development and Sustainability Analysis",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/16 - Aquaculture Development and Sustainability Analysis.md",
+    "goal": "Evaluate the economic viability, environmental impact, and operational efficiency of aquaculture systems to guide sustainable expansion and ensure long-term profitability.",
+    "dataRequired": [
+      "Species selection and stocking density details",
+      "Water quality parameters (pH, dissolved oxygen, temperature, ammonia, etc.)",
+      "Feed composition, feeding rates, and feed conversion ratios",
+      "Growth rates and survival rates of cultured species",
+      "Infrastructure and equipment information (ponds, tanks, cages, aeration systems)",
+      "Regulatory requirements and environmental impact assessments",
+      "Economic data (operational costs, feed expenses, revenue from fish or seafood sales)"
+    ],
+    "improve": [
+      "Adopt more efficient feed formulations and feeding strategies to reduce waste and improve FCR.",
+      "Enhance water quality monitoring through regular testing and automation (sensors, IoT-enabled devices).",
+      "Incorporate recirculating systems or improved filtration to minimize water usage and effluent discharge.",
+      "Diversify species (e.g., polyculture) to optimize resource use and reduce disease risk.",
+      "",
+      "Strengthen biosecurity measures (quarantine protocols, vaccination programs) to reduce mortality and disease spread.",
+      "Seek certifications (e.g., ASC, Global GAP) or meet sustainable aquaculture standards to access premium markets.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-17",
+    "archetype": "agriculture",
+    "title": "Holistic Grazing and Rangeland Management Evaluation",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/17 - Holistic Grazing and Rangeland Management Evaluation.md",
+    "goal": "Assess the sustainability, productivity, and ecological benefits of grazing systems.",
+    "dataRequired": [
+      "Pasture or rangeland acreage and carrying capacity",
+      "Grazing patterns or rotational schedules",
+      "Forage species composition and quality",
+      "Livestock stocking rates and production goals",
+      "Soil health indicators (organic matter, infiltration rates, compaction)",
+      "Climatic data (rainfall, temperature)",
+      "Historical grazing records and land-use changes",
+      "Economic data (operational costs, revenue from livestock)"
+    ],
+    "improve": [
+      "Implement rotational or adaptive grazing strategies to ensure adequate rest periods for pastures.",
+      "Monitor forage growth stages and adjust grazing intervals to optimize plant recovery and nutritional value.",
+      "Incorporate diverse forage species, including legumes, to improve soil health and grazing efficiency.",
+      "Invest in fencing and water points to manage livestock distribution more effectively.",
+      "Conduct regular soil tests and pasture assessments to track improvements and adjust management practices.",
+      "Educate and train farm staff on holistic grazing principles, record-keeping, and continuous monitoring.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-18",
+    "archetype": "agriculture",
+    "title": "Biosecurity Protocol and Disease Containment Strategy",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [
+      "LIVESTOCK_MORTALITY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY",
+      "PESTS_DISEASE"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/18 - Biosecurity Protocol and Disease Containment Strategy.md",
+    "goal": "Assess current biosecurity measures to prevent, detect, and control disease outbreaks in livestock operations, ensuring animal health, minimizing economic losses, and maintaining regulatory compliance.",
+    "dataRequired": [
+      "Existing biosecurity protocols (written guidelines, SOPs)",
+      "Record of disease outbreaks or suspicious cases, including dates and affected species",
+      "Vaccination schedules and veterinary records",
+      "Farm layout and traffic flow (people, vehicles, animals)",
+      "Sanitation practices (cleaning, disinfection routines)",
+      "Quarantine and isolation procedures",
+      "Regulatory requirements for disease reporting and containment"
+    ],
+    "improve": [
+      "Implement controlled entry points with disinfection stations for all vehicles and visitors.",
+      "Separate high-risk areas (e.g., sick pens, quarantine areas) from healthy livestock zones.",
+      "Strengthen disease surveillance by training staff to recognize symptoms early and report promptly.",
+      "Review and update vaccination programs regularly, accounting for emerging diseases or local outbreaks.",
+      "Enforce strict cleaning and disinfection protocols for equipment, housing, and feed storage areas.",
+      "Conduct regular biosecurity audits and refresher training sessions for all personnel.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-19",
+    "archetype": "agriculture",
+    "title": "Sustainable Forage and Pasture Improvement Strategy",
+    "part": "B",
+    "partLabel": "Livestock Management & Animal Health",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/19 - Sustainable Forage and Pasture Improvement Strategy.md",
+    "goal": "Develop a long-term plan to enhance pasture productivity, improve forage quality, and maintain ecological balance, thereby supporting healthy livestock and reducing feed costs.",
+    "dataRequired": [
+      "Current pasture inventory (acreage, forage species, stocking rates)",
+      "Soil tests (pH, nutrient levels, organic matter)",
+      "Climate and rainfall patterns",
+      "Historical grazing intensity and rotations",
+      "Forage yield and quality assessments",
+      "Livestock nutritional requirements and stocking density",
+      "Costs associated with pasture renovation and maintenance"
+    ],
+    "improve": [
+      "Test soil regularly and apply targeted amendments (lime, fertilizers) to correct pH and nutrient deficiencies.",
+      "Select forage species suited to local conditions and livestock nutritional needs.",
+      "Implement rotational grazing strategies to prevent overgrazing and allow time for pasture recovery.",
+      "Use cover crops or legumes to enrich the soil, fix nitrogen, and improve forage diversity.",
+      "Invest in infrastructure (fencing, water points) to manage livestock movement effectively.",
+      "Monitor forage quality and adjust stocking rates or supplementary feed as needed.",
+      "C. Environmental Sustainability & Resource Efficiency"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-20",
+    "archetype": "agriculture",
+    "title": "Water Resource Management and Irrigation Efficiency Review",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [
+      "WATER_ENERGY_COST_RATE",
+      "IRRIGATION_EFFICIENCY"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WATER_ENERGY_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/20 - Water Resource Management and Irrigation Efficiency Review.md",
+    "goal": "Evaluate on-farm water usage, infrastructure, and irrigation practices to optimize water resource management, minimize waste, and enhance crop yields and sustainability.",
+    "dataRequired": [
+      "Current irrigation methods (drip, sprinkler, flood, etc.)",
+      "Water sources (groundwater, surface water, rainwater harvesting)",
+      "Historical water usage data (volumes, timing)",
+      "Crop water requirements based on species and growth stages",
+      "Soil moisture and infiltration rates",
+      "Local climate and rainfall patterns",
+      "Irrigation equipment performance and maintenance records",
+      "Costs associated with water access and irrigation infrastructure"
+    ],
+    "improve": [
+      "Conduct regular leak detection and repair to prevent water loss.",
+      "Upgrade to drip or micro-sprinkler systems in areas prone to over-irrigation.",
+      "Employ soil moisture sensors or digital tools for data-driven irrigation scheduling.",
+      "Optimize field layout (e.g., leveling, zoning) to improve water distribution.",
+      "Recycle or reuse water where feasible (tailwater recovery systems, rainwater harvesting).",
+      "Provide training to staff on efficient watering techniques and equipment upkeep.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-21",
+    "archetype": "agriculture",
+    "title": "Agronomic Climate Resilience and Extreme Weather Scenario Evaluation",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "WEATHER_CLIMATE"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/21 - Agronomic Climate Resilience and Extreme Weather Scenario.md",
+    "goal": "Assess the farm’s susceptibility to climate variability and extreme weather events, identify vulnerabilities in cropping systems, and develop strategies to strengthen resilience and minimize losses.",
+    "dataRequired": [
+      "Historical climate data (temperature, rainfall, drought/flood frequency)",
+      "Crop performance records under various weather conditions",
+      "Soil characteristics (drainage capacity, organic matter, erosion risk)",
+      "Irrigation infrastructure and water availability",
+      "Local or regional climate projections (short- and long-term)",
+      "Existing risk mitigation measures (e.g., shelterbelts, water storage)",
+      "Economic data related to weather-induced losses (yield drops, replanting costs)"
+    ],
+    "improve": [
+      "Diversify crop choices or varieties to reduce the risk of total failure from a single extreme event.",
+      "Increase soil organic matter through cover crops, compost, or reduced tillage to enhance water retention and soil structure.",
+      "Invest in water conservation and irrigation infrastructure (e.g., drip systems, rainwater harvesting) for drought resilience.",
+      "Implement early warning systems (weather stations, forecast alerts) and develop rapid response protocols.",
+      "Explore insurance products or government programs that provide financial buffers against extreme weather.",
+      "Pursue agroforestry or shelterbelt planting to protect fields from wind damage and help stabilize microclimates.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-22",
+    "archetype": "agriculture",
+    "title": "On-Farm Energy Usage and Renewable Integration Analysis",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [
+      "WATER_ENERGY_COST_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WATER_ENERGY_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/22 - On-Farm Energy Usage and Renewable Integration Analysis.md",
+    "goal": "Evaluate current energy consumption patterns, identify opportunities for efficiency improvements, and assess the feasibility and potential benefits of integrating renewable energy systems on the farm.",
+    "dataRequired": [
+      "Records of on-farm energy usage (electricity, diesel, propane, etc.)",
+      "Equipment and machinery inventory (age, horsepower, typical operation hours)",
+      "Utility bills or invoices detailing costs and usage patterns",
+      "Local climate data (sunlight hours, wind speed) for renewable potential",
+      "Any existing on-farm renewable energy systems and their performance data",
+      "Regulatory or incentive programs (tax credits, grants) relevant to renewable installations"
+    ],
+    "improve": [
+      "Install energy meters on key equipment to track consumption and pinpoint efficiency gaps.",
+      "Update or retrofit legacy machinery with more efficient motors or controls.",
+      "Explore solar or wind power installations for partial or full farm load offsets.",
+      "Investigate biogas from manure or organic waste if livestock operations produce sufficient feedstock.",
+      "Leverage government grants, loans, or tax incentives to reduce upfront costs of renewable systems.",
+      "Train staff on energy-saving practices, such as operating machinery during off-peak hours.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-23",
+    "archetype": "agriculture",
+    "title": "Carbon Credits and Regenerative Agriculture Sequestration Opportunity",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/23 - Carbon Credits and Regenerative Agriculture Sequestration.md",
+    "goal": "Determine the farm’s potential to sequester carbon through regenerative practices and assess opportunities to monetize these efforts via carbon credits or related environmental markets.",
+    "dataRequired": [
+      "Historical land-use and farming practices",
+      "Soil organic carbon (SOC) baseline measurements",
+      "Current and planned regenerative practices (cover crops, reduced tillage, agroforestry)",
+      "Climate data (temperature, precipitation)",
+      "Crop and pasture yields",
+      "Carbon credit program or market requirements (verification protocols, methodologies)",
+      "Economic data (costs of implementing regenerative practices, potential credit revenue)"
+    ],
+    "improve": [
+      "Begin a rigorous soil sampling and record-keeping program to establish and maintain SOC baselines.",
+      "Expand regenerative practices (cover crops, reduced tillage, compost applications) that have proven carbon sequestration potential.",
+      "Engage with reputable carbon credit verifiers to understand documentation, auditing, and reporting requirements.",
+      "",
+      "Use modeling tools to continuously update and refine carbon sequestration projections as practices evolve.",
+      "Explore grant funding or cost-sharing opportunities to offset upfront investment in regenerative methods.",
+      "Collaborate with industry peers or cooperatives to share best practices and reduce verification costs.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-24",
+    "archetype": "agriculture",
+    "title": "Nutrient Runoff Compliance and Watershed Protection Review",
+    "part": "C",
+    "partLabel": "Environmental Sustainability & Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/24 - Nutrient Runoff Compliance and Watershed Protection.md",
+    "goal": "Evaluate the farm’s potential impact on water quality through nutrient runoff, ensure alignment with regulatory requirements, and recommend best practices to protect local watersheds.",
+    "dataRequired": [
+      "Fertilizer application records (rates, timing, methods)",
+      "Soil test results (nutrient levels, pH, organic matter)",
+      "Water quality data from nearby streams, ponds, or wells (N, P concentrations)",
+      "Farm layout and drainage patterns",
+      "Local or regional nutrient runoff regulations (e.g., Total Maximum Daily Loads)",
+      "Records of cover crops or buffer strips",
+      "Historical weather data (rainfall intensity, frequency)"
+    ],
+    "improve": [
+      "Adjust fertilizer application rates and schedules to align with crop uptake patterns and weather forecasts.",
+      "Establish or expand vegetative buffer strips and riparian zones to trap sediment and nutrients.",
+      "Adopt conservation tillage or no-till practices to reduce soil erosion.",
+      "Implement cover crops to enhance soil structure and nutrient retention during off-season periods.",
+      "Conduct regular soil and water testing to track trends and refine management decisions.",
+      "",
+      "Engage in local watershed initiatives or training programs to stay updated on regulations and best practices.",
+      "D. Technology & Innovation in Agriculture"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-25",
+    "archetype": "agriculture",
+    "title": "Adoption of Agricultural Technology Evaluation",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [
+      "LABOR_MACHINERY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "PRECISION_AGRONOMY",
+      "MECHANIZATION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/25 - Adoption of Agricultural Technology Evaluation.md",
+    "goal": "Assess the current level of technology use on the farm, identify gaps in digital or mechanized solutions, and determine the return on investment and feasibility of adopting new agricultural technologies.",
+    "dataRequired": [
+      "Current inventory of agricultural technologies (machinery, software, sensors, drones, etc.)",
+      "Farm operational metrics (crop yields, labor costs, input costs)",
+      "Existing infrastructure and connectivity (internet access, power supply)",
+      "Budget constraints and investment capacity",
+      "Staff skill levels and training requirements",
+      "Performance benchmarks or industry standards for comparable technologies"
+    ],
+    "improve": [
+      "Audit and update existing equipment to ensure compatibility with new technologies.",
+      "Provide technical training and support for employees to boost technology adoption success.",
+      "Partner with vendors or research institutions for pilot projects and ongoing support.",
+      "Seek financial incentives (loans, grants, tax credits) to offset upfront investment costs.",
+      "Integrate new technologies into a unified farm management system for seamless data sharing.",
+      "",
+      "Continuously measure performance post-adoption and adjust usage or configurations as needed.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-26",
+    "archetype": "agriculture",
+    "title": "Seed Portfolio and Breeding Program Assessment",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [
+      "CROP_YIELD_GROWTH"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/26 - Seed Portfolio and Breeding Program Assessment.md",
+    "goal": "Evaluate the performance and strategic fit of the farm’s seed varieties and breeding initiatives, ensuring robust genetic diversity, high yields, and resilience to pests and environmental stresses.",
+    "dataRequired": [
+      "Historical performance data of different seed varieties (yield, quality, disease resistance)",
+      "Breeding program details (parent lines, breeding objectives, selection criteria)",
+      "Environmental and climatic data for the region",
+      "Input costs and ROI metrics for various seed varieties",
+      "Market trends and consumer preferences (e.g., non-GMO, organic)",
+      "Regulatory requirements for seed production and intellectual property"
+    ],
+    "improve": [
+      "Conduct regular, small-scale field trials to evaluate new or experimental varieties.",
+      "Collaborate with research institutions or seed companies to access cutting-edge breeding technologies.",
+      "Diversify the seed portfolio to reduce risk and meet shifting consumer preferences.",
+      "Invest in seed storage and handling infrastructure to maintain quality and viability.",
+      "Ensure breeding objectives align with projected climate scenarios and market demands.",
+      "Maintain proper records on breeding lines to safeguard intellectual property and compliance.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-27",
+    "archetype": "agriculture",
+    "title": "Agricultural R&D Pipeline and Innovation Investment Assessment",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/27 - Agricultural R&D Pipeline and Innovation Investment.md",
+    "goal": "Examine the research and development initiatives within the agricultural sector, evaluate their potential for commercial success, and determine how to allocate investment for maximum return and strategic advantage.",
+    "dataRequired": [
+      "Overview of current R&D projects (objectives, timelines, expected outcomes)",
+      "Historical R&D spending and ROI data",
+      "Market trends and consumer needs analyses",
+      "Patent and intellectual property status of any innovations",
+      "Competitor R&D pipelines or notable innovations in the sector",
+      "Resource availability (funding, talent, infrastructure)",
+      "Collaboration or partnership agreements (universities, research institutes, technology providers)"
+    ],
+    "improve": [
+      "Regularly review the R&D portfolio to ensure alignment with evolving market trends and strategic goals.",
+      "Foster cross-functional collaboration (R&D, marketing, finance) to refine project objectives and feasibility.",
+      "Leverage partnerships with universities, tech startups, or government programs to share costs and expertise.",
+      "Implement robust project management and milestone tracking tools to maintain accountability and transparency.",
+      "Develop a clear path to commercialization, including pilot testing and go-to-market strategies.",
+      "Allocate resources dynamically based on ongoing project performance, adjusting investment levels when new data emerges.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-28",
+    "archetype": "agriculture",
+    "title": "Agricultural Machinery and Equipment Utilization Review",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [
+      "LABOR_MACHINERY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "MECHANIZATION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/28 - Agricultural Machinery and Equipment Utilization Review.md",
+    "goal": "Evaluate the performance, efficiency, and return on investment of machinery and equipment on the farm.",
+    "dataRequired": [
+      "Current inventory of machinery and equipment (type, age, capacity)",
+      "Utilization data (hours of operation, idle times, maintenance logs)",
+      "Fuel consumption records and associated costs",
+      "Labor hours linked to equipment operation",
+      "Historical yield and production data correlated with equipment usage",
+      "Rental or custom farming service costs (if applicable)",
+      "Purchase and depreciation records of machinery"
+    ],
+    "improve": [
+      "Implement a regular preventive maintenance schedule to reduce breakdowns and extend machinery life.",
+      "Use telematics or GPS tracking to monitor usage, fuel consumption, and idle times in real time.",
+      "Right-size equipment by considering smaller or larger machines that better match field sizes and cropping practices.",
+      "Train operators on efficient operating techniques and basic maintenance tasks.",
+      "Explore leasing or co-op arrangements for machinery that is only needed seasonally or intermittently.",
+      "Conduct regular utilization reviews to reassess machinery alignment with evolving farm needs and technologies.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-29",
+    "archetype": "agriculture",
+    "title": "Greenhouse-Hydroponic Conversion Feasibility and Cultivation Methods Review",
+    "part": "D",
+    "partLabel": "Technology & Innovation in Agriculture",
+    "relatedMetricCodes": [
+      "AREA_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "LAND_EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/29 - Greenhouse-Hydroponic Conversion Feasibility and.md",
+    "goal": "Determine the economic viability, technical requirements, and potential benefits of transitioning to or expanding greenhouse and hydroponic systems for year-round production, improved yields, and resource efficiency.",
+    "dataRequired": [
+      "Current crop portfolio and seasonality",
+      "Climate data (temperature ranges, sunshine hours, frost dates)",
+      "Existing greenhouse structures (if any) and production methods",
+      "Hydroponic system options (NFT, DWC, aeroponics, etc.)",
+      "Capital and operational cost estimates (construction, energy, labor)",
+      "Local or regional market demand for high-value crops",
+      "Water availability and quality",
+      "Historical yield and revenue data for field crops or open-field operations"
+    ],
+    "improve": [
+      "Start with a small-scale pilot to validate cost, yield, and market assumptions before broader rollout.",
+      "Use energy-efficient technologies (LED lights, insulated greenhouse materials) to reduce utility costs.",
+      "Invest in staff training or partner with experienced growers to ensure proper nutrient and climate management.",
+      "Explore high-value specialty crops or year-round varieties that command premium prices.",
+      "",
+      "Consider automation (sensors, climate control systems) for real-time monitoring and reduced labor demands.",
+      "Diversify marketing channels (local produce boxes, restaurants, farmers’ markets) to maximize revenue potential.",
+      "E. Market Positioning & Value Chain"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-30",
+    "archetype": "agriculture",
+    "title": "Supply Chain and Post-Harvest Logistics Review",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/30 - Supply Chain and Post-Harvest Logistics Review.md",
+    "goal": "Evaluate the efficiency, reliability, and cost-effectiveness of the farm’s post-harvest handling processes and supply chain arrangements, ensuring product quality, minimizing waste, and maximizing market opportunities.",
+    "dataRequired": [
+      "Harvest schedules and volumes for each crop",
+      "Storage facilities and conditions (temperature, humidity, capacity)",
+      "Transportation options and associated costs",
+      "Post-harvest processing steps (washing, grading, packaging)",
+      "Time-in-transit data for delivering produce to buyers",
+      "Quality and spoilage rates at different stages of the supply chain",
+      "Agreements or contracts with distributors, wholesalers, and retailers"
+    ],
+    "improve": [
+      "Upgrade storage facilities (e.g., temperature-controlled systems) to extend product shelf life.",
+      "Implement standardized quality checks at each stage of handling to reduce losses.",
+      "Optimize delivery routes and schedules to minimize transit time and costs.",
+      "Negotiate or renegotiate contracts with logistics partners for better rates or service-level agreements.",
+      "Use digital tracking systems (RFID, barcodes) for real-time visibility of inventory and shipments.",
+      "Provide staff training on proper post-harvest handling to reduce damage and ensure consistency.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-31",
+    "archetype": "agriculture",
+    "title": "Organic and Specialty Crop Market Opportunity Analysis",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "PRICE_GROWTH",
+      "ORGANIC_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "PREMIUM_CHANNELS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/31 - Organic and Specialty Crop Market Opportunity Analysis.md",
+    "goal": "Determine the viability and profitability of transitioning to—or expanding—organic and specialty crop production, focusing on market demand, premium pricing opportunities, and compliance with certification requirements.",
+    "dataRequired": [
+      "Market research on consumer demand and pricing for organic or niche crops",
+      "Farm’s current crop portfolio and production capacity",
+      "Certification requirements for organic or specialty labeling (e.g., USDA Organic, Fair Trade)",
+      "Costs associated with transitioning to organic production (inputs, certification fees, infrastructure)",
+      "Historical yield and revenue data for comparison",
+      "Soil health and land-use history to assess readiness for organic compliance",
+      "Potential distribution channels (direct-to-consumer, wholesalers, online)"
+    ],
+    "improve": [
+      "Conduct small-scale trials of promising specialty or organic crops before large-scale adoption.",
+      "Network with local buyers (grocers, restaurants, co-ops) to secure purchase agreements or forward contracts.",
+      "Collaborate with certification bodies or consultants to streamline the organic transition process.",
+      "",
+      "Diversify sales channels (online platforms, farmers’ markets) to reduce reliance on a single buyer.",
+      "Invest in staff training on organic farming principles and specialty crop handling.",
+      "Continuously monitor consumer trends to identify emerging niches or product categories.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-32",
+    "archetype": "agriculture",
+    "title": "Farm-to-Fork Traceability and Food Safety Compliance Review",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/32 - Farm-to-Fork Traceability and Food Safety Compliance.md",
+    "goal": "Ensure that all products are traceable throughout the supply chain—from production to final sale—while meeting or exceeding food safety standards to protect consumers and uphold brand integrity.",
+    "dataRequired": [
+      "Existing traceability systems or documentation processes",
+      "Batch or lot tracking records for each product",
+      "Relevant food safety regulations and certification requirements (e.g., HACCP, Global GAP)",
+      "Inspection or audit reports from regulators or third-party certifiers",
+      "Processing, packaging, and storage procedures and records",
+      "Supply chain partner information (distributors, transporters, retailers)",
+      "Consumer feedback or recall incident history (if any)"
+    ],
+    "improve": [
+      "Implement or upgrade digital traceability software that captures data in real time.",
+      "Standardize labeling and batch coding to align with regulatory guidelines and industry best practices.",
+      "Train staff on correct data entry, documentation procedures, and food safety protocols.",
+      "Conduct regular internal audits and mock recalls to ensure system effectiveness and readiness.",
+      "Use sensor technologies (e.g., temperature loggers) during transport to maintain product quality.",
+      "",
+      "Collaborate closely with supply chain partners to share data and improve overall transparency.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-33",
+    "archetype": "agriculture",
+    "title": "Contract Farming and Outgrower Network Assessment",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DSO",
+      "PREMIUM_CHANNELS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/33 - Contract Farming and Outgrower Network Assessment.md",
+    "goal": "Evaluate the effectiveness, fairness, and profitability of contract farming arrangements or outgrower schemes.",
+    "dataRequired": [
+      "Existing contract terms (pricing, delivery schedule, input provision, quality standards)",
+      "Farmer profiles (land size, productivity levels, location)",
+      "Historical yield and payment data under contract arrangements",
+      "Input costs (seeds, fertilizers, technical support) provided by the contracting firm",
+      "Default or dispute records (late deliveries, quality rejections, payment delays)",
+      "Training and extension service records (frequency, topics covered)",
+      "Market conditions and price trends for contracted crops"
+    ],
+    "improve": [
+      "Update contracts with clear pricing formulas (including bonuses for quality or volume).",
+      "Provide timely inputs (seeds, fertilizers) under fair credit terms or cost-sharing models.",
+      "Offer regular training and extension services on agronomic best practices to boost yields.",
+      "Strengthen logistics by coordinating collection schedules and improving storage or transport facilities.",
+      "Conduct periodic contract reviews with farmer representatives to address grievances and build trust.",
+      "Incorporate digital tools for tracking deliveries, payments, and input usage to enhance transparency.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-34",
+    "archetype": "agriculture",
+    "title": "Agribusiness Branding and Certification Review",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [
+      "ORGANIC_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "PREMIUM_CHANNELS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/34 - Agribusiness Branding and Certification Review.md",
+    "goal": "Evaluate the strength of an agribusiness’s brand identity, market positioning, and certification credentials to enhance reputation, differentiate products, and ensure compliance with relevant standards or labels.",
+    "dataRequired": [
+      "Existing brand guidelines and marketing materials",
+      "Current certifications or quality labels (Organic, Fair Trade, Global GAP, etc.)",
+      "Competitor brand analysis and market positioning data",
+      "Customer feedback or perception surveys",
+      "Certification audit reports or inspection records",
+      "Any relevant branding assets (logo, packaging designs, website)",
+      "Compliance requirements and renewal timelines for existing certifications"
+    ],
+    "improve": [
+      "Update or refine brand guidelines to ensure cohesive messaging across all channels.",
+      "Pursue additional certifications relevant to market demand (e.g., sustainability, fair labor) if financially and operationally feasible.",
+      "Develop transparent storytelling around sourcing, production methods, and environmental impact to bolster brand credibility.",
+      "Implement a streamlined process for maintaining certification compliance, including routine internal audits.",
+      "Use regular consumer and stakeholder feedback sessions to adapt brand positioning to evolving preferences.",
+      "Train staff on brand standards and certification requirements, ensuring consistent execution at every stage.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-35",
+    "archetype": "agriculture",
+    "title": "Agrotourism and Direct-to-Consumer Engagement Feasibility",
+    "part": "E",
+    "partLabel": "Market Positioning & Value Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "PREMIUM_CHANNELS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/35 - Agrotourism and Direct-to-Consumer Engagement Feasibility.md",
+    "goal": "Determine whether establishing or expanding agritourism activities (farm tours, on-site events) and direct-to-consumer channels (farm stands, CSAs, online sales) is financially and operationally viable.",
+    "dataRequired": [
+      "Farm location, accessibility, and proximity to population centers or tourist attractions",
+      "Current farm infrastructure (parking, restrooms, event spaces, farm store)",
+      "Local or regional tourism data (visitor numbers, demographics, seasonal trends)",
+      "Competitor offerings or existing agrotourism activities in the region",
+      "Regulatory and liability requirements for hosting visitors (zoning, permits, insurance)",
+      "Estimated costs for facility upgrades, marketing, staffing, and insurance",
+      "Consumer demand indicators (online surveys, local interest, social media engagement)"
+    ],
+    "improve": [
+      "Develop signature attractions or events (e.g., harvest festivals, farm-to-table dinners) that highlight the farm’s unique strengths.",
+      "",
+      "Collaborate with local tourism boards, hotels, and travel agencies to market agrotourism packages.",
+      "Ensure compliance with health and safety regulations (liability insurance, signage, staff training) to reduce legal risks.",
+      "Build or enhance direct-to-consumer channels (farm shop, CSA, online store) to capture additional revenue streams.",
+      "Start with small-scale pilot offerings to gauge consumer interest and refine the visitor experience before committing larger investments.",
+      "Continuously gather visitor feedback and monitor financial metrics to guide ongoing improvements and expansion plans.",
+      "F. Regulatory Compliance & Risk Management"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-36",
+    "archetype": "agriculture",
+    "title": "Regulatory Compliance and Agricultural Subsidies Analysis",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/36 - Regulatory Compliance and Agricultural Subsidies Analysis.md",
+    "goal": "Assess the farm’s adherence to agricultural regulations and identify opportunities to leverage subsidies or incentive programs to enhance financial performance, reduce risk, and support sustainable practices.",
+    "dataRequired": [
+      "Applicable local, regional, or national agricultural regulations (environmental, labor, land-use, food safety)",
+      "Records of current compliance measures, permits, and certifications",
+      "Subsidy or grant programs relevant to the farm’s crops, livestock, or conservation efforts",
+      "Application histories and outcomes for past subsidy or grant requests",
+      "Documentation of any regulatory violations, fines, or warnings",
+      "Farm financials (revenue, expenses) to analyze potential benefit from subsidies"
+    ],
+    "improve": [
+      "Maintain a regulatory calendar noting all permit renewals, audits, and key deadlines.",
+      "Implement regular internal compliance audits to detect issues early and avoid penalties.",
+      "Engage with local extension services or agricultural consultants for guidance on subsidy applications.",
+      "Document all farm processes (fertilizer use, waste management) to streamline reporting and demonstrate compliance.",
+      "",
+      "Leverage technology (compliance management software) to track ongoing requirements and file applications efficiently.",
+      "Collaborate with industry associations or advocacy groups that can provide updates on evolving regulations and funding programs.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-37",
+    "archetype": "agriculture",
+    "title": "Crop Insurance and Risk Mitigation Strategy Review",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [
+      "CROP_INSURANCE_COVERAGE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "WEATHER_CLIMATE",
+      "COMMODITY_PRICES"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/agriculture/37 - Crop Insurance and Risk Mitigation Strategy Review.md",
+    "goal": "Examine current insurance policies and risk management practices to safeguard against potential crop losses caused by weather events, pests, price fluctuations, or other unforeseen disruptions.",
+    "dataRequired": [
+      "Current crop insurance policies (coverage details, premiums, claims history)",
+      "Historical yield and revenue data",
+      "Weather and climate records, including extreme events (droughts, floods, storms)",
+      "Existing on-farm risk mitigation practices (irrigation systems, pest control measures, diversification)",
+      "Crop budgets and cost of production data",
+      "Market price trends and volatility records",
+      "Government or private sector risk mitigation programs (subsidized insurance, disaster relief)"
+    ],
+    "improve": [
+      "Conduct annual risk assessments to update insurance coverage in line with changing weather patterns or crop portfolios.",
+      "Diversify crops to spread risk across different varieties or planting schedules.",
+      "Incorporate precision agriculture technologies (soil moisture sensors, weather forecasting tools) for proactive risk management.",
+      "Negotiate policy terms or shop for competing insurers to obtain the most cost-effective coverage.",
+      "Enroll in government cost-sharing or subsidy programs to lower premium expenses.",
+      "",
+      "Develop a robust record-keeping system to streamline claims processes and support accurate loss assessments.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-38",
+    "archetype": "agriculture",
+    "title": "GMO Compliance and Strategic Positioning Analysis",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/38 - GMO Compliance and Strategic Positioning Analysis.md",
+    "goal": "Assess the farm’s use of genetically modified organisms (GMOs) or GMO-derived inputs, ensure alignment with relevant regulations, and develop a strategic position that reflects consumer, market, and environmental considerations.",
+    "dataRequired": [
+      "Current seed varieties or livestock genetics in use (GMO vs. non-GMO)",
+      "Regulatory frameworks for GMO cultivation, labeling, and trade (domestic and export markets)",
+      "Customer or retailer requirements (non-GMO certifications, labeling standards)",
+      "Performance data of GMO vs. non-GMO varieties (yields, input usage, profitability)",
+      "Contracts and supplier agreements (seed suppliers, buyers)",
+      "Market trends and consumer sentiment regarding GMOs",
+      "Potential liability or coexistence measures (buffer zones, cross-contamination protocols)"
+    ],
+    "improve": [
+      "Implement robust traceability systems (lot numbers, batch tracking) to segregate GMO and non-GMO produce.",
+      "Conduct regular training on best practices to avoid cross-contamination or regulatory non-compliance.",
+      "Engage with customers and suppliers to clarify GMO requirements and potential certifications (non-GMO Project, etc.).",
+      "",
+      "Monitor evolving consumer trends and regulatory changes to adjust GMO strategy proactively.",
+      "Evaluate potential for premium pricing or niche markets if transitioning to non-GMO or organic production.",
+      "Collaborate with seed suppliers, extension services, or industry groups to stay updated on GMO technology improvements and compliance guidelines.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "agriculture-39",
+    "archetype": "agriculture",
+    "title": "Seed Licensing and Intellectual Property Positioning",
+    "part": "F",
+    "partLabel": "Regulatory Compliance & Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/agriculture/39 - Seed Licensing and Intellectual Property Positioning.md",
+    "goal": "Review and optimize the farm’s or agribusiness’s approach to seed licensing agreements, patents, trademarks, or plant variety protections.",
+    "dataRequired": [
+      "Existing seed licensing agreements and associated terms (royalties, exclusivity clauses)",
+      "Current intellectual property (IP) assets (patents, plant breeders’ rights, trademarks)",
+      "Breeding program details (parent lines, novel traits)",
+      "Regulatory and legal frameworks governing seed IP in relevant markets",
+      "Royalty payment history or licensing fee structure",
+      "Competitive landscape (key players, technological trends, IP strategies)",
+      "Revenue and sales data linked to proprietary seed varieties"
+    ],
+    "improve": [
+      "Conduct periodic IP audits to track licensing agreements, renewals, and patent coverage deadlines.",
+      "Explore collaborations or joint ventures to share R&D costs and expand IP portfolios.",
+      "Negotiate flexible contract terms that align royalty payments with performance or market realities.",
+      "Strengthen in-house breeding programs or research capabilities to reduce reliance on external licenses.",
+      "",
+      "Regularly monitor competitor patents and licensing strategies to identify emerging risks or opportunities.",
+      "Seek legal counsel to ensure compliance with seed laws, patent regulations, and international treaties (e.g., UPOV).",
+      ""
+    ],
+    "formulas": []
+  }
+]

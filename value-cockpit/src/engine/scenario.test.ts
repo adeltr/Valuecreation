@@ -48,4 +48,9 @@ describe('runScenario', () => {
     expect(moicAt(7)).toBeLessThan(moicAt(8));
     expect(moicAt(8)).toBeLessThan(moicAt(9));
   });
+  it('REFUSES a scenario deltaKind that differs from the validated lever', () => {
+    const slMismatch: ScenarioLever[] = [{ scenarioId: 's1', leverId: 'lev-churn', appliedDelta: -0.02, deltaKind: 'percent' }];
+    expect(() => runScenario('s1', metrics, [churnLever('validated')], slMismatch, []))
+      .toThrow(/deltaKind/i);
+  });
 });

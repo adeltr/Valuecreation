@@ -76,6 +76,32 @@ de candidats (code, unité, benchmark, formule éventuelle) que tu arbitres en
 trois piles : input relié par formule / métrique de diagnostic benchmarkée /
 hors périmètre v1. Seule la première pile touche `templates/aero.ts`.
 
+## Catalogue v2 (docs/11 D3)
+
+- `AnalysisRef` porte `archetype` et `partLabel` (les lettres de partie
+  changent de sens d'un archétype à l'autre) ; id = `<archetype>-NN`.
+- Frontmatter : ajouter `partLabel: <libellé>` aux champs ci-dessus.
+- Tables de curation : `data/analysis-library/<archetype>/_curation.md`
+  (ignoré par le build), jamais dans les fichiers sources.
+- Import d'analyses brutes du vault : `tsx scripts/import-analyses.ts <src>
+  <archetype> <tag> "<Index title>"` (reflow sans réécriture). Gère les variantes
+  des guides : titre « Detailed step-by-step instruction… » en ligne simple, Goal
+  sans titre, fin de titre coupée par l'extraction. Contrôle : comparaison mot à
+  mot source ↔ import (0 écart sur les 26 types importés).
+- Bibliothèque : 26 types d'entreprise, 1 105 analyses (Telecommunications manquant).
+  Correction de source : health-payor #08 contenait aussi l'analyse #9 (« Episode-Based
+  Bundled Payments Performance Analysis »), absente de l'index du vault — séparée.
+- Génération : `npm run catalog:build -- <archetype>` ; logique testée dans
+  `src/catalog/build.ts`.
+- Curation à l'échelle (D4) : un archétype entier pré-rempli dans
+  `_curation.md` (`tsx scripts/prefill-curation.ts <archetype>` — règles par mots-clés
+  testées dans `src/catalog/prefill.ts`, mot déclencheur affiché), une revue analyste,
+  puis application : `tsx scripts/apply-curation.ts <archetype>` (idempotent) et
+  `npm run catalog:build -- <archetype>`. Le script de pré-remplissage n'écrase
+  jamais une table existante.
+- État : 26 catalogues curés (aero, airline, saas, cpg + 22 types issus des fiches, docs/14 et 16), 1 105
+  analyses ; chaque catalogue couvre toute sa bibliothèque (test).
+
 ## Pour une nouvelle industrie
 Même pipeline : `data/analysis-library/<secteur>/` → frontmatters → curation
 par lots → extension `sectors/<secteur>.ts` + `templates/<secteur>.ts` +

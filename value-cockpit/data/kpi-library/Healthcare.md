@@ -1,0 +1,69 @@
+---
+tags: [umbrex, kpi, kpi-industrie]
+---
+# KPI — Healthcare
+
+**Secteur (comprendre) :** [[Healthcare & Life Sciences]]
+**Analyses d'entreprise liées :** [[Healthcare Provider - Analyse]], [[Health Payor - Analyse]]
+
+54 indicateurs clés pour ce secteur (source : Umbrex Library of Industry-specific KPIs).
+
+| KPI | Description |
+|---|---|
+| Average Length of Stay | For hospitals and inpatient care centers, this KPI measures the average number of days that patients stay in the facility. A lower length of stay can indicate more efficient care but may also reflect patient case mix. |
+| Average Length of Stay (ALOS) | For hospitals and other inpatient facilities, this measures the average number of days a patient stays. Lower ALOS can indicate efficient operations and strong patient outcomes, while higher ALOS may indicate potential inefficiencies or more complex patient cases. |
+| Average Patient Wait Time | For healthcare providers, this KPI measures the average time a patient waits from their appointment time until they see a healthcare professional. Lower wait times can contribute to higher patient satisfaction. |
+| Average Revenue per Inpatient Day | For hospitals, this KPI measures the average revenue generated for each day a patient spends in the hospital. It can provide insight into the hospital's pricing strategy and payer mix. |
+| Bed Occupancy Rate (BOR) | This KPI is applicable mainly to hospitals and in-patient care facilities. It represents the percentage of hospital beds occupied by patients at a given time. Higher BORs may indicate strong demand, but overly high rates might also signal capacity constraints or potential quality of care issues. |
+| Case Mix Index (CMI) | For hospitals, this represents the average diagnosis-related group (DRG) relative weight for a hospital. A higher CMI suggests a hospital is treating more complex (and generally more expensive) patient cases. |
+| Case Mix Index (CMI) | For hospitals, this KPI measures the relative complexity of treating the hospital's patient population. A higher CMI suggests that a hospital treats a higher proportion of complex cases. |
+| Claim Denial Rate | For health insurance companies, the rate at which claims are denied can indicate operational efficiency and potential future liability. A lower denial rate can indicate a better relationship with customers and healthcare providers. |
+| Clinical Staff Turnover Rate | For healthcare providers, this measures the rate at which clinical staff (nurses, physicians, etc.) leave the organization. High turnover can indicate organizational issues and impact the quality of care. |
+| Clinical Trial Enrollment Rate | For pharmaceutical and biotech companies, this measures the speed and efficiency at which a company can enroll patients in clinical trials. Faster rates can indicate more efficient R&D processes and shorter time to market. |
+| Days in Accounts Receivable (DAR) | This measures the average number of days it takes a healthcare provider to collect payment after a patient is discharged. Lower DAR indicates efficient billing and collections processes. |
+| Diagnostic Imaging Efficiency | For radiology departments and imaging centers, this KPI measures the efficiency of diagnostic imaging processes, often calculated as the number of scans completed per machine per day. |
+| Drug Approval Success Rate | Also applicable to pharmaceuticals and biotech, this KPI tracks the number of drugs successfully approved by regulatory bodies (like the FDA in the U.S.) as a percentage of all drugs brought to these bodies for approval. A higher rate may signal strong R&D capabilities and future revenue potential. |
+| Drug Development Cycle Time | For pharmaceutical companies, this KPI measures the time it takes to develop a new drug from initial discovery to market launch. Shorter cycles could indicate more efficient R&D processes. |
+| Drug Sales by Therapeutic Category | For pharmaceutical companies, this KPI measures the revenue contribution of different therapeutic categories. It helps to understand a company's diversification and dependency on specific drug types. |
+| Emergency Department (ED) Throughput | For hospitals, this KPI tracks the average amount of time patients spend in the ED from arrival to discharge. A lower throughput time could indicate more efficient patient care. |
+| Equipment Utilization Rate | For medical device companies and healthcare providers, this KPI measures the percentage of time that medical equipment is being used. Higher rates can indicate more efficient use of expensive equipment. |
+| First Pass Claim Acceptance Rate | For healthcare providers, this measures the percentage of claims paid on the first submission to the insurance company. A higher rate suggests effective coding and billing practices. |
+| Health Technology Adoption Rate | For health technology firms, this measures the percentage of potential users (either healthcare professionals or patients) who actually use the technology. Higher adoption rates can signal a successful product that meets user needs. |
+| Healthcare-Associated Infections (HAIs) Rate | For hospitals and other inpatient facilities, this measures the occurrence of infections that patients acquire while receiving healthcare for other conditions. Lower rates suggest better patient safety practices. |
+| Home Health Care Recertification Rate | For home healthcare providers, this measures the rate at which home healthcare services are recertified by a physician. High recertification rates can indicate ongoing demand for services. |
+| Medical Cost Ratio (MCR) or Medical Loss Ratio (MLR) | For health insurers, this is the percentage of insurance premiums spent on healthcare and quality improvement activities. Regulated by the Affordable Care Act in the U.S., a lower ratio may indicate higher profitability but too low can result in regulatory issues. |
+| Mortality Rate | This measures the number of deaths in a hospital or other care facility relative to the number of patients treated. It can be a broad indicator of the quality of care, although it must be interpreted in the context of patient demographics and disease severity. |
+| Net Patient Revenue (NPR) per Adjusted Patient Day | This adjusts the net patient revenue for outpatient services, providing a more accurate view of revenue generation across all services. |
+| Number of Clinical Trials in Progress | For pharmaceutical and biotech companies, this KPI measures the number of clinical trials currently in progress. This can indicate the robustness of a company's R&D pipeline. |
+| Number of New Patients | For healthcare providers like clinics, practices, or hospitals, this KPI measures the number of new patients acquired within a certain period, indicating the organization's growth and the effectiveness of its marketing efforts. |
+| Number of Procedures Performed | For surgical centers, dental practices, and similar settings, this measures the total number of procedures done. It's a basic measure of productivity and demand. |
+| Operating Room Utilization Rate | For hospitals and surgical centers, this measures the percentage of available operating room time that is actually used. Higher rates can indicate more efficient use of resources. |
+| Out-of-Pocket Expenditure as Percentage of Total Revenue | This applies to healthcare providers and measures the proportion of revenue that comes directly from patients rather than insurance providers. Higher levels may indicate a riskier revenue profile, given the potential for patient default. |
+| Patient Acquisition Cost | For healthcare providers and especially digital health platforms, this measures the cost to acquire a new patient, typically via marketing and advertising. Lower costs can signal effective marketing and growth potential. |
+| Patient Engagement Rate | For digital health platforms and patient portals, this KPI measures the level of patient interaction with digital resources, such as appointment scheduling, health record access, or communication with providers. |
+| Patient No-Show Rate | For healthcare providers, this measures the rate at which patients fail to attend their scheduled appointments. High no-show rates can disrupt scheduling, reduce revenue, and delay patient care. |
+| Patient Satisfaction Score | For many healthcare providers, patient satisfaction scores provide insight into the quality of care and services provided. These scores can affect reimbursement rates, especially under value-based reimbursement models. |
+| Patient Satisfaction Score | For all healthcare providers, this KPI measures patient satisfaction levels based on surveys. Higher scores are usually associated with better care quality and can affect a provider's reputation and demand for services. |
+| Payer Mix | For healthcare providers, the payer mix refers to the distribution of revenue from private insurance, government insurance (Medicare/Medicaid), and out-of-pocket payments. This can have a significant impact on profitability due to the varying reimbursement rates. |
+| Percentage of Appointments Scheduled Online | For digital health platforms and modern healthcare providers, this KPI measures the proportion of appointments scheduled via online platforms. A higher percentage can indicate more successful digital engagement strategies. |
+| Percentage of Claims Denied | For healthcare providers, this KPI measures the percentage of claims denied by insurance companies. A high rate of denied claims could indicate issues with the billing process or contract management. |
+| Percentage of Emergency Admissions | For hospitals, this KPI measures the proportion of admissions that come from the emergency department. A high percentage might indicate a reliance on emergency care for revenue. |
+| Percentage of Outpatient Surgeries | For hospitals and surgery centers, this KPI measures the proportion of surgeries performed on an outpatient basis. An increasing percentage could indicate successful efforts to reduce costs and improve patient convenience. |
+| Percentage of Services Billed vs Collected | For healthcare providers, this KPI measures the percentage of billed services that are actually collected. A high percentage suggests effective revenue cycle management. |
+| Pharmaceutical R&D as a Percentage of Sales | For pharmaceutical and biotech companies, this measures how much of the company's revenue is reinvested in research and development. Higher ratios may suggest a company is heavily invested in developing new products, but may also indicate less current profitability. |
+| Pharmacy Cost per Prescription | For pharmacy and pharmaceutical companies, this measures the cost incurred per prescription filled. It can help gauge the efficiency and cost control of the company's pharmacy operations. |
+| Prescription Renewal Rates | For pharmaceutical companies and pharmacies, this measures the rate at which prescriptions are renewed. Higher rates may indicate efficacy and patient compliance. |
+| Preventable Hospitalization Rate | For healthcare systems and public health entities, this KPI measures the rate of hospitalizations that could have been prevented through timely and effective outpatient care. |
+| Rate of Hospital-Acquired Conditions (HACs) | For hospitals and in-patient facilities, this measures the incidence of conditions acquired by patients during their stay, such as infections. Lower rates can indicate better infection control and overall patient care. |
+| Rate of Patient Falls | For hospitals, long-term care facilities, and other inpatient settings, this KPI measures the incidence of patient falls. A lower rate can indicate better patient safety procedures. |
+| Readmission Rate | This measures the percentage of patients who are readmitted to a hospital or other care facility within a certain period (often 30 days) following discharge. Lower readmission rates can signal high-quality care and effective patient treatment, while higher rates may suggest the opposite. |
+| Revenue Cycle Time | For healthcare providers, this KPI measures the average time from patient admission to the receipt of payment. Shorter cycle times can indicate efficient revenue collection processes. |
+| Revenue per Physician | For healthcare groups or clinics, this measures the average revenue generated per physician. It's a good measure of productivity, but it can also reflect patient complexity and treatment cost. |
+| Staff-to-Patient Ratio | For healthcare providers, this measures the number of healthcare professionals (doctors, nurses, etc.) relative to the number of patients. It can be an indicator of potential quality of care and workload management. |
+| Telemedicine Utilization Rate | For digital healthcare providers, this KPI measures the percentage of patients or providers who use telemedicine services. An increase in this rate may indicate adoption and acceptance of the telehealth platform. |
+| Therapeutic Success Rate | For pharmaceutical and biotech companies, this KPI measures the success rate of drugs in each therapeutic category. A higher rate can indicate effective R&D strategies. |
+| Time to Treatment | For emergency departments and urgent care facilities, this KPI measures the time from a patient's arrival to when they receive treatment. Faster times can indicate more efficient care delivery. |
+| Value-Based Purchasing (VBP) Score | For healthcare providers in the U.S., this KPI measures performance under Medicare's VBP program, which adjusts payments based on the quality of care hospitals provide. Higher scores can lead to higher reimbursement rates. |
+
+---
+Voir aussi : [[04 - KPI par fonction|KPI par fonction (transverses)]]

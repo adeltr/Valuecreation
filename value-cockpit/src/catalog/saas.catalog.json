@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "saas-01",
+    "archetype": "saas",
+    "title": "Cost of Goods Sold (COGS) Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/01 - Cost of Goods Sold (COGS) Analysis.md",
+    "goal": "The goal of a Cost of Goods Sold (COGS) analysis is to determine the direct costs associated with delivering a SaaS product to customers.",
+    "dataRequired": [
+      "Hosting and infrastructure costs (e.g., cloud services, servers)",
+      "Customer support costs (e.g., salaries, support software)",
+      "Software licenses or third-party integrations (e.g., APIs, payment gateways)",
+      "Data storage and bandwidth costs",
+      "Direct labor costs (e.g., salaries of technical support or operations staW)"
+    ],
+    "improve": [
+      "Optimize hosting and infrastructure costs",
+      "Improve customer support eKiciency",
+      "Negotiate better rates with third-party providers",
+      "Optimize data storage and bandwidth usage",
+      "Review direct labor eKiciency",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "saas-02",
+    "archetype": "saas",
+    "title": "Monthly Recurring Revenue (MRR) Growth Rate",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "ARR"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/02 - Monthly Recurring Revenue (MRR) Growth Rate.md",
+    "goal": "The goal of Monthly Recurring Revenue (MRR) Growth Rate analysis is to measure the percentage increase (or decrease) in MRR over a period of time.",
+    "dataRequired": [
+      "MRR at the start of the month",
+      "MRR at the end of the month",
+      "MRR from new customers acquired during the month",
+      "MRR lost from churned customers",
+      "MRR expansion from existing customers (e.g., upgrades or cross-sells)",
+      "MRR contraction from existing customers (e.g., downgrades)"
+    ],
+    "improve": [
+      "Increase customer acquisition eKorts",
+      "Improve customer retention",
+      "",
+      "Encourage upsells and cross-sells",
+      "Reduce customer downgrades",
+      "Monitor customer feedback",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "saas-03",
+    "archetype": "saas",
+    "title": "Annual Contract Value (ACV) Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/03 - Annual Contract Value (ACV) Analysis.md",
+    "goal": "The goal of Annual Contract Value (ACV) analysis is to determine the average annual revenue generated per customer contract.",
+    "dataRequired": [
+      "Total contract value for each customer over the contract duration",
+      "Length of each customer contract (in years)",
+      "Number of customers or contracts being analyzed"
+    ],
+    "improve": [
+      "Upsell and cross-sell opportunities",
+      "Move customers to higher-priced plans",
+      "OKer longer contract terms",
+      "",
+      "Tailor pricing to enterprise customers",
+      "Bundle services",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ACV",
+        "variables": [
+          "Total Contract Value",
+          "Contract Length (in years)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ACV = Total Contract Value / Contract Length (in years)",
+        "step": "Calculate ACV for each contract"
+      }
+    ]
+  },
+  {
+    "id": "saas-04",
+    "archetype": "saas",
+    "title": "Average Revenue Per User (ARPU) Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "EXPANSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/04 - Average Revenue Per User (ARPU) Analysis.md",
+    "goal": "The goal of Average Revenue Per User (ARPU) analysis is to measure the average monthly revenue generated from each customer.",
+    "dataRequired": [
+      "Total revenue for the selected period (typically monthly or quarterly)",
+      "Total number of active users (customers) during that period"
+    ],
+    "improve": [
+      "Introduce premium plans",
+      "Upsell additional features or services",
+      "Encourage cross-sells",
+      "Implement usage-based pricing",
+      "Improve customer segmentation",
+      "Provide discounts for annual plans",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ARPU",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Active Users"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ARPU = Total Revenue / Total Number of Active Users",
+        "step": "Calculate ARPU"
+      }
+    ]
+  },
+  {
+    "id": "saas-05",
+    "archetype": "saas",
+    "title": "Deferred Revenue Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/05 - Deferred Revenue Analysis.md",
+    "goal": "The goal of Deferred Revenue Analysis is to assess the revenue that a SaaS company has received in advance for services it has not yet delivered.",
+    "dataRequired": [
+      "Customer payments received in advance for subscriptions or services",
+      "Length of the subscription period (monthly, quarterly, annually)",
+      "Revenue recognized over time for those subscriptions",
+      "Start and end dates of each contract"
+    ],
+    "improve": [
+      "Encourage longer-term contracts",
+      "Automate revenue recognition",
+      "Monitor cash ﬂow vs. deferred revenue",
+      "",
+      "Align sales and ﬁnance teams",
+      "OKer ﬂexible payment options",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Deferred Revenue",
+        "variables": [
+          "Total Payment Received",
+          "Revenue Recognized to Date"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Deferred Revenue = Total Payment Received - Revenue Recognized to Date",
+        "step": "Calculate Deferred Revenue for each customer"
+      }
+    ]
+  },
+  {
+    "id": "saas-06",
+    "archetype": "saas",
+    "title": "Expansion Revenue Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "EXPANSION_RATE",
+      "LTV"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/06 - Expansion Revenue Analysis.md",
+    "goal": "The goal of Expansion Revenue Analysis is to measure the additional revenue generated from existing customers through upsells, cross-sells, or upgrades over a speciﬁc period.",
+    "dataRequired": [
+      "Total Monthly Recurring Revenue (MRR) or Annual Recurring Revenue (ARR) from existing customers at the start of the period",
+      "Revenue added through upsells, cross-sells, or plan upgrades during the period",
+      "Number of customers who upgraded or expanded their services",
+      "**Optional:** Breakdowns by customer segment, product, or service"
+    ],
+    "improve": [
+      "Create targeted upsell campaigns",
+      "OKer tiered pricing and premium features",
+      "Introduce usage-based pricing",
+      "",
+      "Engage with customer success teams",
+      "Track product usage and engagement",
+      "Provide incentives for upgrades",
+      "Improve product onboarding",
+      "Develop add-on services",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Expansion Revenue (%)",
+        "variables": [
+          "Revenue from Expansions",
+          "Revenue at Start of Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Expansion Revenue (%) = (Revenue from Expansions / Revenue at Start of Period) x 100",
+        "step": "Calculate the percentage of expansion revenue"
+      }
+    ]
+  },
+  {
+    "id": "saas-07",
+    "archetype": "saas",
+    "title": "Revenue Backlog",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/07 - Revenue Backlog.md",
+    "goal": "The goal of the Revenue Backlog analysis is to quantify the committed but unrecognized revenue that a SaaS company has secured from customers, typically through long-term contracts or multi- year subscriptions.",
+    "dataRequired": [
+      "**Total contracted revenue:** The total value of all active contracts or subscriptions that are yet to be fully recognized as revenue.",
+      "**Revenue recognized to date:** The portion of contracted revenue that has already been recognized as revenue.",
+      "**Remaining contract duration:** The time remaining on active customer contracts, which helps estimate when the backlog will be recognized.",
+      "**Customer segmentation (optional):** Data on backlog by customer segment or contract size to identify concentration risks or growth opportunities."
+    ],
+    "improve": [
+      "Focus on securing long-term contracts",
+      "Expand upsell and cross-sell opportunities",
+      "Improve renewal rates",
+      "Diversify the customer base",
+      "Track backlog trends over time",
+      "Align sales and customer success teams",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Revenue Backlog",
+        "variables": [
+          "Total Contracted Revenue",
+          "Revenue Recognized to Date"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Revenue Backlog = Total Contracted Revenue - Revenue Recognized to Date",
+        "step": null
+      },
+      {
+        "output": "o    If relevant, use the formula: Revenue Backlog per Period",
+        "variables": [
+          "Total Revenue Backlog",
+          "Number of Remaining Periods"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    If relevant, use the formula: Revenue Backlog per Period = Total Revenue Backlog / Number of Remaining Periods",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-08",
+    "archetype": "saas",
+    "title": "Revenue Concentration",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/saas/08 - Revenue Concentration.md",
+    "goal": "The goal of the Revenue Concentration analysis is to determine how dependent a SaaS company is on its top customers for revenue generation.",
+    "dataRequired": [
+      "**Total revenue:** The total revenue generated by the company during a speciﬁc period (e.g., monthly or annually).",
+      "**Revenue per customer:** The revenue generated from each individual customer or account during the same period.",
+      "**Top customers:** The number or percentage of customers contributing the most revenue (e.g., top 5, top 10, or top 20 customers)."
+    ],
+    "improve": [
+      "Diversify the customer base",
+      "Increase revenue from smaller customers",
+      "Monitor key customer health closely",
+      "Develop long-term contracts or subscription commitments",
+      "Expand into new market segments",
+      "OKer tiered pricing models",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Concentration (%)",
+        "variables": [
+          "Revenue from Top Customers",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Concentration (%) = (Revenue from Top Customers / Total Revenue) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-09",
+    "archetype": "saas",
+    "title": "Revenue Forecasting Accuracy",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DSO",
+      "RETENTION",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/09 - Revenue Forecasting Accuracy.md",
+    "goal": "The goal of the Revenue Forecasting Accuracy analysis is to measure how closely a SaaS company’s actual revenue aligns with its forecasted revenue.",
+    "dataRequired": [
+      "**Forecasted revenue:** The revenue that was predicted or forecasted for a given period (e.g., monthly, quarterly, or annually).",
+      "**Actual revenue:** The revenue that was actually generated during the same period.",
+      "**Historical revenue forecasts and actuals:** Historical data on revenue forecasts and actual results to compare and evaluate trends over time.",
+      "**Segmentation data (optional):** Segmented forecasts and actuals by product, region, or customer type to assess forecasting accuracy across different business areas."
+    ],
+    "improve": [
+      "Reﬁne forecasting models",
+      "Enhance data collection",
+      "Use scenario-based forecasting",
+      "Track sales pipeline performance",
+      "Account for churn and customer retention rates",
+      "",
+      "Implement rolling forecasts",
+      "Improve cross-functional collaboration",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Forecasting Error",
+        "variables": [
+          "Actual Revenue",
+          "Forecasted Revenue"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Forecasting Error = Actual Revenue - Forecasted Revenue",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-10",
+    "archetype": "saas",
+    "title": "Discount Rate Impact",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/saas/10 - Discount Rate Impact.md",
+    "goal": "The goal of the Discount Rate Impact analysis is to evaluate how discounting affects a SaaS company's overall revenue, proﬁtability, and customer acquisition efforts.",
+    "dataRequired": [
+      "**Total revenue:** The total revenue generated over a speciﬁc period (e.g., monthly, quarterly, or annually).",
+      "**Revenue from discounted deals:** The revenue generated from customers who received a discount during the same period.",
+      "**Average discount rate:** The average percentage discount applied to deals during the period.",
+      "**Customer acquisition and retention data:** The number of customers acquired or retained through discounted offers.",
+      "**Gross margin:** The gross margin percentage to evaluate the proﬁtability impact of discounts."
+    ],
+    "improve": [
+      "Limit discount depth and frequency",
+      "Focus on value-based pricing",
+      "OKer discounts with conditions",
+      "",
+      "Target discounts strategically",
+      "Monitor discount eKectiveness",
+      "Test diKerent discount structures",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Average Discount Rate (%)",
+        "variables": [
+          "Total Discount Amount",
+          "Total Original Contract Value"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Average Discount Rate (%) = (Total Discount Amount / Total Original Contract Value) x 100",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Revenue Loss",
+        "variables": [
+          "Total Original Contract Value",
+          "Revenue from Discounted Deals"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Revenue Loss = Total Original Contract Value - Revenue from Discounted Deals",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Adjusted Gross Proﬁt",
+        "variables": [
+          "Revenue from Discounted Deals",
+          "Gross Margin"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Adjusted Gross Proﬁt = Revenue from Discounted Deals x Gross Margin",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Customer Acquisition/Retention via Discounts (%)",
+        "variables": [
+          "Number of Customers Acquired",
+          "Retained via Discounts",
+          "Total Number of Customers Acquired",
+          "Retained"
+        ],
+        "expression": "( v0 / v1 / v2 / v3 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Customer Acquisition/Retention via Discounts (%) = (Number of Customers Acquired/Retained via Discounts / Total Number of Customers Acquired/Retained) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-11",
+    "archetype": "saas",
+    "title": "Revenue per Employee Analysis",
+    "part": "A",
+    "partLabel": "Finance & Revenue",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/11 - Revenue per Employee Analysis.md",
+    "goal": "The goal of Revenue per Employee analysis is to measure the efficiency and productivity of a SaaS company by calculating how much revenue is generated for every employee.",
+    "dataRequired": [
+      "Total revenue for the period (e.g., annual or quarterly revenue)",
+      "Total number of full-time equivalent (FTE) employees during the same period"
+    ],
+    "improve": [
+      "Optimize employee productivity",
+      "Align hiring with revenue growth",
+      "Focus on customer success and retention",
+      "Increase pricing or upsell opportunities",
+      "Improve sales eKiciency",
+      "Reduce churn",
+      "Scale operational processes",
+      "B. Sales & Marketing"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Employee",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Employees"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Employee = Total Revenue / Total Number of Employees",
+        "step": "Calculate Revenue per Employee"
+      }
+    ]
+  },
+  {
+    "id": "saas-12",
+    "archetype": "saas",
+    "title": "Freemium to Paid Conversion Rate Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RETENTION",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/12 - Freemium to Paid Conversion Rate Analysis.md",
+    "goal": "The goal of Freemium to Paid Conversion Rate analysis is to measure the percentage of users who move from the free (freemium) version of a SaaS product to a paid subscription.",
+    "dataRequired": [
+      "Total number of freemium users during the period",
+      "Number of freemium users who converted to paid plans during the period",
+      "Timeframe for conversion (e.g., monthly or quarterly)"
+    ],
+    "improve": [
+      "Reﬁne the freemium oKering",
+      "Enhance product onboarding",
+      "Use in-app prompts and notiﬁcations",
+      "OKer time-limited discounts or promotions",
+      "Analyze user behavior",
+      "Provide customer support for freemium users",
+      "Segment users and tailor conversion strategies",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Freemium to Paid Conversion Rate (%)",
+        "variables": [
+          "Number of Users Converted to Paid Plans",
+          "Total Number of Freemium Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Freemium to Paid Conversion Rate (%) = (Number of Users Converted to Paid Plans / Total Number of Freemium Users) x 100",
+        "step": "Calculate the Freemium to Paid Conversion Rate"
+      }
+    ]
+  },
+  {
+    "id": "saas-13",
+    "archetype": "saas",
+    "title": "Lead-to-Customer Conversion Rate Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/13 - Lead-to-Customer Conversion Rate Analysis.md",
+    "goal": "The goal of Lead-to-Customer Conversion Rate analysis is to measure the percentage of leads that successfully convert into paying customers.",
+    "dataRequired": [
+      "Total number of leads generated during the period (e.g., month, quarter)",
+      "Number of leads that converted into paying customers during the same period",
+      "Timeframe for conversion (e.g., monthly or quarterly)"
+    ],
+    "improve": [
+      "Enhance lead qualiﬁcation",
+      "Reﬁne messaging and value proposition",
+      "Improve lead nurturing strategies",
+      "Shorten the sales cycle",
+      "Use targeted content",
+      "OKer time-limited promotions or incentives",
+      "Align marketing and sales teams",
+      "Analyze conversion by source",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Lead-to-Customer Conversion Rate (%)",
+        "variables": [
+          "Number of Leads Converted to Customers",
+          "Total Number of Leads"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Lead-to-Customer Conversion Rate (%) = (Number of Leads Converted to Customers / Total Number of Leads) x 100",
+        "step": "Calculate the Lead-to-Customer Conversion Rate"
+      }
+    ]
+  },
+  {
+    "id": "saas-14",
+    "archetype": "saas",
+    "title": "Customer Acquisition Cost (CAC) Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CAC"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/14 - Customer Acquisition Cost (CAC) Analysis.md",
+    "goal": "The goal of Customer Acquisition Cost (CAC) analysis is to determine the average cost incurred by a SaaS company to acquire a new customer.",
+    "dataRequired": [
+      "Total sales and marketing expenses for a given period (e.g., monthly or quarterly)",
+      "Number of new customers acquired during the same period"
+    ],
+    "improve": [
+      "Optimize marketing targeting",
+      "Enhance the sales process",
+      "Invest in organic growth",
+      "Leverage referral programs",
+      "Improve conversion rates",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "CAC",
+        "variables": [
+          "Total Sales and Marketing Expenses",
+          "Number of New Customers Acquired"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CAC = Total Sales and Marketing Expenses / Number of New Customers Acquired",
+        "step": "Calculate CAC"
+      }
+    ]
+  },
+  {
+    "id": "saas-15",
+    "archetype": "saas",
+    "title": "Sales Cycle Length Analysis",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/15 - Sales Cycle Length Analysis.md",
+    "goal": "The goal of Sales Cycle Length analysis is to determine the average time it takes for a lead to progress from initial contact to becoming a paying customer.",
+    "dataRequired": [
+      "Date of ﬁrst contact with the lead (or when the lead entered the pipeline)",
+      "Date the lead converted to a paying customer",
+      "Number of leads and closed deals during the analysis period"
+    ],
+    "improve": [
+      "Improve lead qualiﬁcation",
+      "Streamline the sales process",
+      "OKer time-limited incentives",
+      "Provide better sales collateral",
+      "Use automated follow-up sequences",
+      "Shorten free trials or demo periods",
+      "Collaborate with the marketing team",
+      "Analyze and address objections",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Sales Cycle Length",
+        "variables": [
+          "Date of Conversion",
+          "Date of First Contact"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Sales Cycle Length = Date of Conversion - Date of First Contact",
+        "step": "Calculate the sales cycle length for each deal"
+      },
+      {
+        "output": "Average Sales Cycle Length",
+        "variables": [
+          "Sum of Sales Cycle Lengths for All Deals",
+          "Number of Deals Closed"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Average Sales Cycle Length = (Sum of Sales Cycle Lengths for All Deals) / (Number of Deals Closed)",
+        "step": "Calculate the average sales cycle length"
+      }
+    ]
+  },
+  {
+    "id": "saas-16",
+    "archetype": "saas",
+    "title": "Sales Efficiency Ratio",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/16 - Sales Efficiency Ratio.md",
+    "goal": "The goal of the Sales Efficiency Ratio, often referred to as the Magic Number in the SaaS industry, is to assess the effectiveness of a company's sales and marketing spend by measuring how much incremental revenue is generated for every dollar invested in acquiring customers.",
+    "dataRequired": [
+      "**Previous quarter’s revenue (ARR):** The annual recurring revenue (ARR) at the start of the period being measured.",
+      "**Current quarter’s revenue (ARR):** The ARR at the end of the period.",
+      "**Sales and marketing expenses:** Total amount spent on sales and marketing during the period (typically quarterly)."
+    ],
+    "improve": [
+      "Optimize sales and marketing spend",
+      "Increase sales conversion rates",
+      "Shorten the sales cycle",
+      "Focus on higher-value customers",
+      "Improve product-market ﬁt",
+      "Leverage automation and technology",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "saas-17",
+    "archetype": "saas",
+    "title": "Payback Period on Customer Acquisition Cost (CAC)",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CAC"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RETENTION",
+      "SALES_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/saas/17 - Payback Period on Customer Acquisition Cost (CAC).md",
+    "goal": "The goal of the Payback Period on CAC analysis is to determine the amount of time it takes for a SaaS company to recover the costs associated with acquiring a new customer.",
+    "dataRequired": [
+      "**Customer Acquisition Cost (CAC):** The total cost of acquiring a customer, including sales, marketing, and onboarding expenses.",
+      "**Average Revenue Per User (ARPU):** The average amount of revenue generated per customer in a speciﬁc period (e.g., monthly or annually).",
+      "**Gross margin percentage:** To account for the costs associated with delivering the service and ensure that only proﬁts contribute to covering CAC."
+    ],
+    "improve": [
+      "Reduce CAC",
+      "Increase ARPU",
+      "Improve gross margin",
+      "Target high-value customers",
+      "Improve customer retention",
+      "Optimize pricing models",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: CAC",
+        "variables": [
+          "Total Sales and Marketing Expenses",
+          "Number of New Customers Acquired"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: CAC = Total Sales and Marketing Expenses / Number of New Customers Acquired",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: ARPU",
+        "variables": [
+          "Total Revenue",
+          "Total Number of Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: ARPU = Total Revenue / Total Number of Customers",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Gross Margin-Adjusted ARPU",
+        "variables": [
+          "ARPU",
+          "Gross Margin"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Gross Margin-Adjusted ARPU = ARPU x Gross Margin",
+        "step": null
+      },
+      {
+        "output": "o    Payback Period (months)",
+        "variables": [
+          "CAC",
+          "Gross Margin-Adjusted ARPU"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Payback Period (months) = CAC / Gross Margin-Adjusted ARPU",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-18",
+    "archetype": "saas",
+    "title": "Engagement-to-Subscription Rate",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/saas/18 - Engagement-to-Subscription Rate.md",
+    "goal": "The goal of the Engagement-to-Subscription Rate analysis is to measure how effectively a SaaS company is converting engaged users (e.g., free trial users or freemium customers) into paying subscribers.",
+    "dataRequired": [
+      "**Number of engaged users:** The total number of users who actively engage with the product during a given period (e.g., free trial users, freemium users).",
+      "**Number of users who convert to a paid subscription:** The total number of users who subscribe to a paid plan during the same period.",
+      "**User engagement metrics (optional):** Detailed engagement data such as frequency of use, feature adoption, or time spent on the platform to better understand patterns that drive conversions."
+    ],
+    "improve": [
+      "Enhance the free trial or freemium experience",
+      "Optimize pricing and plans",
+      "Improve user engagement during the free period",
+      "Use data to identify high-intent users",
+      "OKer targeted incentives to convert",
+      "Address user objections",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Engagement-to-Subscription Rate (%)",
+        "variables": [
+          "Number of Users Who Convert to Paid Subscription",
+          "Number of Engaged Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Engagement-to-Subscription Rate (%) = (Number of Users Who Convert to Paid Subscription / Number of Engaged Users) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-19",
+    "archetype": "saas",
+    "title": "Partner Ecosystem Contribution",
+    "part": "B",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/19 - Partner Ecosystem Contribution.md",
+    "goal": "The goal of the Partner Ecosystem Contribution analysis is to measure the extent to which a SaaS company’s partners (e.g., resellers, consultants, systems integrators, and technology partners) contribute to the company’s overall revenue and growth.",
+    "dataRequired": [
+      "**Total revenue:** The total revenue generated by the company over a speciﬁc period (e.g., monthly, quarterly, or annually).",
+      "**Revenue from partners:** The total revenue generated through partners, broken down by partner type (e.g., resellers, systems integrators) and individual partners, if available.",
+      "**Number of customers acquired through partners:** The number of customers brought in by the partner network.",
+      "**Partner-related costs (optional):** Costs associated with managing the partner ecosystem, including commissions, incentives, and marketing spend."
+    ],
+    "improve": [
+      "Expand the partner ecosystem",
+      "Enhance partner enablement",
+      "OKer better partner incentives",
+      "Improve collaboration with partners",
+      "Monitor and optimize partner performance",
+      "Focus on strategic partners",
+      "C. Customer Retention & Success"
+    ],
+    "formulas": [
+      {
+        "output": "Partner Revenue Contribution (%)",
+        "variables": [
+          "Revenue from Partners",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Partner Revenue Contribution (%) = (Revenue from Partners / Total Revenue) x 100",
+        "step": null
+      },
+      {
+        "output": "Partner Customer Acquisition Rate (%)",
+        "variables": [
+          "Number of Customers Acquired via Partners",
+          "Total Number of Customers Acquired"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Partner Customer Acquisition Rate (%) = (Number of Customers Acquired via Partners / Total Number of Customers Acquired) x 100",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Partner Proﬁt",
+        "variables": [
+          "Revenue from Partners",
+          "Partner-Related Costs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Partner Proﬁt = Revenue from Partners - Partner-Related Costs",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-20",
+    "archetype": "saas",
+    "title": "Customer Segmentation Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/20 - Customer Segmentation Analysis.md",
+    "goal": "The goal of Customer Segmentation Analysis is to divide a SaaS company's customer base into distinct groups based on shared characteristics, behaviors, or needs.",
+    "dataRequired": [
+      "Customer demographic data (e.g., company size, industry, geography)",
+      "Behavioral data (e.g., product usage frequency, feature adoption)",
+      "Financial data (e.g., Average Revenue Per User (ARPU), Customer Lifetime Value (CLV))",
+      "Customer satisfaction data (e.g., Net Promoter Score (NPS), support interactions)",
+      "Sales and marketing data (e.g., lead source, customer acquisition cost)"
+    ],
+    "improve": [
+      "Personalize marketing and messaging",
+      "Optimize product features for diKerent segments",
+      "Develop segment-speciﬁc pricing strategies",
+      "Improve customer success eKorts",
+      "Create targeted upsell and cross-sell campaigns",
+      "",
+      "Monitor segment-speciﬁc churn drivers",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Average Revenue Per User (ARPU) per segment: ARPU",
+        "variables": [
+          "Total Revenue from Segment",
+          "Number of Customers in Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Average Revenue Per User (ARPU) per segment: ARPU = Total Revenue from Segment / Number of Customers in Segment",
+        "step": "Calculate metrics for each segment"
+      },
+      {
+        "output": "o    Churn rate per segment: Churn Rate",
+        "variables": [
+          "Number of Customers Lost in Segment",
+          "Number of Customers at Start of Period in Segment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Churn rate per segment: Churn Rate = (Number of Customers Lost in Segment / Number of Customers at Start of Period in Segment) x 100",
+        "step": "Calculate metrics for each segment"
+      }
+    ]
+  },
+  {
+    "id": "saas-21",
+    "archetype": "saas",
+    "title": "Contract Renewal Rate Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/21 - Contract Renewal Rate Analysis.md",
+    "goal": "The goal of Contract Renewal Rate analysis is to measure the percentage of customers who renew their contracts at the end of their subscription period.",
+    "dataRequired": [
+      "Number of contracts up for renewal during a speciﬁc period",
+      "Number of contracts that were successfully renewed during the same period",
+      "Total number of customers at the start of the period",
+      "Total number of contracts expiring (for customers not renewing)"
+    ],
+    "improve": [
+      "Enhance customer success eKorts",
+      "Analyze reasons for non-renewals",
+      "OKer ﬂexible renewal terms",
+      "Monitor customer usage and engagement",
+      "Improve product onboarding and training",
+      "Tailor communication around renewal time",
+      "Conduct regular health checks",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Contract Renewal Rate (%)",
+        "variables": [
+          "Number of Contracts Renewed",
+          "Total Number of Contracts Up for Renewal"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Contract Renewal Rate (%) = (Number of Contracts Renewed / Total Number of Contracts Up for Renewal) x 100",
+        "step": "Calculate the Contract Renewal Rate"
+      }
+    ]
+  },
+  {
+    "id": "saas-22",
+    "archetype": "saas",
+    "title": "Net Revenue Retention (NRR) Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "GROSS_CHURN",
+      "NRR",
+      "EXPANSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/22 - Net Revenue Retention (NRR) Analysis.md",
+    "goal": "The goal of Net Revenue Retention (NRR) analysis is to measure the total revenue retained from existing customers over a speciﬁc period, accounting for customer expansion, downgrades, and churn.",
+    "dataRequired": [
+      "Total Monthly Recurring Revenue (MRR) or Annual Recurring Revenue (ARR) from existing customers at the start of the period",
+      "Revenue added from customer expansions (upsells, cross-sells) during the period",
+      "Revenue lost from customer downgrades during the period",
+      "Revenue lost due to customer churn (cancellations) during the period"
+    ],
+    "improve": [
+      "Focus on customer success and product adoption",
+      "OKer tiered pricing and value-added features",
+      "Improve retention strategies",
+      "Analyze reasons for downgrades and churn",
+      "Automate expansion opportunities",
+      "Segment customers based on value and potential",
+      "Regularly monitor and adjust pricing",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "saas-23",
+    "archetype": "saas",
+    "title": "Churn Rate Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/23 - Churn Rate Analysis.md",
+    "goal": "The goal of Churn Rate Analysis is to measure the rate at which customers or revenue are being lost over a speciﬁc period of time.",
+    "dataRequired": [
+      "Number of customers at the start of the period",
+      "Number of customers lost during the period",
+      "Total revenue at the start of the period",
+      "Total revenue lost due to churned customers or downgrades during the period",
+      "Total revenue expansion from upgrades or cross-sells during the period (for net revenue churn)"
+    ],
+    "improve": [
+      "Improve customer onboarding and education",
+      "Enhance customer support and success",
+      "Collect and act on customer feedback",
+      "OKer incentives for long-term commitments",
+      "Create customer engagement strategies",
+      "Identify churn risk early",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Customer Churn Rate (%)",
+        "variables": [
+          "Number of Customers Lost During the Period",
+          "Number of Customers at the Start of the Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Customer Churn Rate (%) = (Number of Customers Lost During the Period / Number of Customers at the Start of the Period) x 100",
+        "step": "Calculate the Customer Churn Rate"
+      },
+      {
+        "output": "Revenue Churn Rate (%)",
+        "variables": [
+          "Revenue Lost During the Period",
+          "Total Revenue at the Start of the Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Revenue Churn Rate (%) = (Revenue Lost During the Period / Total Revenue at the Start of the Period) x 100",
+        "step": "Calculate the Revenue Churn Rate"
+      }
+    ]
+  },
+  {
+    "id": "saas-24",
+    "archetype": "saas",
+    "title": "Customer Lifetime Value (CLV) Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CAC",
+      "LTV"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RETENTION",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/24 - Customer Lifetime Value (CLV) Analysis.md",
+    "goal": "The goal of Customer Lifetime Value (CLV) analysis is to estimate the total revenue a SaaS company can expect to generate from a single customer over the entire duration of their relationship.",
+    "dataRequired": [
+      "Average Revenue Per User (ARPU)",
+      "Average customer lifespan (how long a customer remains active, in months or years)",
+      "Customer retention rate (optional)",
+      "Gross margin percentage (optional for more reﬁned CLV calculation)"
+    ],
+    "improve": [
+      "",
+      "Improve customer retention",
+      "Enhance upsell and cross-sell opportunities",
+      "Reduce churn",
+      "Optimize pricing strategies",
+      "Increase customer satisfaction and product usage",
+      "Monitor customer segmentation",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ARPU",
+        "variables": [
+          "Total Revenue from Customers",
+          "Total Number of Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ARPU = Total Revenue from Customers / Total Number of Customers",
+        "step": "Calculate the Average Revenue Per User (ARPU)"
+      },
+      {
+        "output": "Average Customer Lifespan",
+        "variables": [
+          "Monthly Churn Rate"
+        ],
+        "expression": "1 / v0",
+        "percentOutput": false,
+        "source": "Average Customer Lifespan = 1 / Monthly Churn Rate",
+        "step": "Determine the average customer lifespan"
+      },
+      {
+        "output": "CLV",
+        "variables": [
+          "ARPU",
+          "Average Customer Lifespan"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "CLV = ARPU x Average Customer Lifespan",
+        "step": "Calculate Customer Lifetime Value (CLV)"
+      },
+      {
+        "output": "CLV",
+        "variables": [
+          "ARPU",
+          "Average Customer Lifespan",
+          "Gross Margin"
+        ],
+        "expression": "( v0 * v1 ) * v2",
+        "percentOutput": false,
+        "source": "CLV = (ARPU x Average Customer Lifespan) x Gross Margin",
+        "step": "Reﬁne the CLV by incorporating gross margin (optional)"
+      }
+    ]
+  },
+  {
+    "id": "saas-25",
+    "archetype": "saas",
+    "title": "First Contact Resolution (FCR) Rate",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/saas/25 - First Contact Resolution (FCR) Rate.md",
+    "goal": "The goal of the First Contact Resolution (FCR) Rate analysis is to measure the percentage of customer support issues resolved during the initial interaction with the support team.",
+    "dataRequired": [
+      "**Total number of customer support cases:** The total number of cases or tickets handled by the support team during a speciﬁed time period (e.g., monthly or quarterly).",
+      "**Number of cases resolved on ﬁrst contact:** The number of support cases resolved during the initial interaction without requiring follow-up communication.",
+      "**Customer feedback (optional):** Data on customer satisfaction or feedback regarding whether the issue was fully resolved during the ﬁrst contact, if available."
+    ],
+    "improve": [
+      "Enhance agent training",
+      "",
+      "Improve internal knowledge resources",
+      "Empower support agents with the right tools",
+      "Encourage collaboration between teams",
+      "Implement feedback loops",
+      "Monitor and reﬁne common issue workﬂows",
+      "OKer proactive support",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the following formula to calculate the FCR rate: FCR Rate (%)",
+        "variables": [
+          "Number of Cases Resolved on First Contact",
+          "Total Number of Customer Support Cases"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the following formula to calculate the FCR rate: FCR Rate (%) = (Number of Cases Resolved on First Contact / Total Number of Customer Support Cases) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-26",
+    "archetype": "saas",
+    "title": "Customer Advocacy or Net Promoter Score (NPS)",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/saas/26 - Customer Advocacy or Net Promoter Score (NPS).md",
+    "goal": "The goal of the Customer Advocacy or Net Promoter Score (NPS) analysis is to measure customer satisfaction and loyalty by determining how likely customers are to recommend a SaaS company’s product or service to others.",
+    "dataRequired": [
+      "**NPS survey responses:** Responses to the NPS question: “On a scale of 0 to 10, how likely are you to recommend our product to a friend or colleague?”",
+      "**Total number of respondents:** The number of customers who participated in the NPS survey.",
+      "**Customer segmentation (optional):** Segment NPS scores by customer type (e.g., small business, enterprise), product, or region to analyze advocacy across different groups."
+    ],
+    "improve": [
+      "Address detractor feedback",
+      "Engage with promoters",
+      "Turn passives into promoters",
+      "Improve customer experience and support",
+      "Monitor and track NPS over time",
+      "Segment and personalize outreach",
+      "Enhance product features",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: NPS",
+        "variables": [
+          "Promoter Percentage",
+          "Detractor Percentage"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: NPS = Promoter Percentage - Detractor Percentage",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-27",
+    "archetype": "saas",
+    "title": "Customer Success Team Efficiency",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/27 - Customer Success Team Efficiency.md",
+    "goal": "The goal of the Customer Success Team Efficiency analysis is to measure the workload and effectiveness of the customer success team, typically by analyzing the ratio of customers to each Customer Success Manager (CSM).",
+    "dataRequired": [
+      "**Total number of customers:** The number of active customers that the customer success team is currently managing.",
+      "**Number of Customer Success Managers (CSMs):** The total number of CSMs on the team.",
+      "**Customer segmentation (optional):** Customer data by segment (e.g., small business, enterprise) to calculate efficiency for different customer types, as workload may vary by customer segment.",
+      "**Customer satisfaction (optional):** Data on customer satisfaction or Net Promoter Score (NPS) to evaluate the quality of support provided by CSMs."
+    ],
+    "improve": [
+      "Optimize the customer-to-CSM ratio",
+      "Leverage technology for low-touch customers",
+      "Improve customer segmentation",
+      "Monitor customer satisfaction and churn",
+      "Invest in CSM training and resources",
+      "Expand the team as the customer base grows",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Customers per CSM",
+        "variables": [
+          "Total Number of Customers",
+          "Number of CSMs"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Customers per CSM = Total Number of Customers / Number of CSMs",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Customers per CSM by Segment",
+        "variables": [
+          "Total Number of Customers in Segment",
+          "Number of CSMs Assigned to that Segment"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Customers per CSM by Segment = Total Number of Customers in Segment / Number of CSMs Assigned to that Segment",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-28",
+    "archetype": "saas",
+    "title": "Customer Support Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Customer Retention & Success",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/saas/28 - Customer Support Efficiency Analysis.md",
+    "goal": "The goal of Customer Support Efficiency analysis is to assess how effectively a SaaS company’s customer support team resolves customer issues.",
+    "dataRequired": [
+      "Total number of support tickets opened during a speciﬁc period",
+      "Number of unique customers served during the same period",
+      "Average time taken to resolve support tickets (resolution time)",
+      "Number of support agents (optional, for staffing analysis)",
+      "Customer satisfaction data (optional, e.g., CSAT or NPS scores post-resolution)"
+    ],
+    "improve": [
+      "",
+      "Invest in self-service options",
+      "Optimize support processes",
+      "OKer customer education",
+      "Improve staKing and training",
+      "Analyze recurring issues",
+      "Monitor customer satisfaction",
+      "Automate repetitive tasks",
+      "D. Product & Engagement"
+    ],
+    "formulas": [
+      {
+        "output": "Tickets per Customer",
+        "variables": [
+          "Total Number of Tickets",
+          "Total Number of Unique Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Tickets per Customer = Total Number of Tickets / Total Number of Unique Customers",
+        "step": "Calculate Tickets per Customer"
+      },
+      {
+        "output": "Average Resolution Time",
+        "variables": [
+          "Total Time to Resolve All Tickets",
+          "Total Number of Tickets Resolved"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Resolution Time = Total Time to Resolve All Tickets / Total Number of Tickets Resolved",
+        "step": "Calculate the average resolution time"
+      }
+    ]
+  },
+  {
+    "id": "saas-29",
+    "archetype": "saas",
+    "title": "Platform and Ecosystem Integration Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/saas/29 - Platform and Ecosystem Integration Analysis.md",
+    "goal": "The goal of Platform and Ecosystem Integration Analysis is to evaluate how well a SaaS product integrates with other software platforms and tools within a customer's technology ecosystem.",
+    "dataRequired": [
+      "Number of integrations used by customers",
+      "Types of platforms and tools the SaaS product integrates with (e.g., CRM, ERP, collaboration tools)",
+      "Usage data for each integration (e.g., how frequently the integrations are used)",
+      "Customer feedback on integration satisfaction and ease of use",
+      "Performance metrics for integrations (e.g., uptime, error rates)"
+    ],
+    "improve": [
+      "Expand integration oKerings",
+      "Enhance API capabilities",
+      "Promote existing integrations",
+      "Improve integration ease of use",
+      "Monitor integration performance",
+      "Leverage partnerships for integrations",
+      "Encourage customer feedback and involvement",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Number of Integrations per Customer",
+        "variables": [
+          "Total Number of Integrations Used",
+          "Total Number"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Number of Integrations per Customer = Total Number of Integrations Used / Total Number",
+        "step": "Analyze the number of integrations per customer"
+      }
+    ]
+  },
+  {
+    "id": "saas-30",
+    "archetype": "saas",
+    "title": "Time to First Value Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/30 - Time to First Value Analysis.md",
+    "goal": "The goal of Time to First Value (TTFV) analysis is to measure how long it takes for a new customer to realize their ﬁrst meaningful success with a SaaS product.",
+    "dataRequired": [
+      "Customer sign-up date or start date",
+      "Date when the customer ﬁrst achieves a key success metric or milestone (e.g., completing a setup, launching their ﬁrst campaign, or reaching a usage goal)",
+      "Total number of customers during the analysis period",
+      "Deﬁnition of \"ﬁrst value\" (based on product-speciﬁc metrics or goals)",
+      "**Optional:** Segmentation by customer size, industry, or product usage"
+    ],
+    "improve": [
+      "Optimize onboarding processes",
+      "Provide personalized customer success support",
+      "Enhance product training and education",
+      "Segment customers for tailored onboarding",
+      "Track product usage and identify friction points",
+      "Automate onboarding with triggered events",
+      "OKer onboarding incentives",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Time to First Value (TTFV)",
+        "variables": [
+          "Date of First Value",
+          "Customer Sign-up Date"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Time to First Value (TTFV) = Date of First Value - Customer Sign-up Date",
+        "step": "Calculate the Time to First Value (TTFV) for each customer"
+      },
+      {
+        "output": "Average TTFV",
+        "variables": [
+          "Total TTFV for All Customers",
+          "Total Number of Customers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average TTFV = Total TTFV for All Customers / Total Number of Customers",
+        "step": "Calculate the average TTFV"
+      }
+    ]
+  },
+  {
+    "id": "saas-31",
+    "archetype": "saas",
+    "title": "User Onboarding Efficiency",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/31 - User Onboarding Efficiency.md",
+    "goal": "The goal of User Onboarding Efficiency analysis is to measure how effectively a SaaS company guides new users through the onboarding process, ensuring they reach key milestones that demonstrate the value of the product.",
+    "dataRequired": [
+      "**Number of users starting the onboarding process:** The total number of users who begin the onboarding process.",
+      "**Number of users completing the onboarding process:** The total number of users who complete the onboarding steps and reach activation.",
+      "**Time to activation:** The average time taken for a user to complete onboarding and begin using the product effectively.",
+      "**Milestones or key actions:** Speciﬁc actions or features that users must engage with to be considered fully onboarded (e.g., completing a setup tutorial, sending their ﬁrst email, or uploading their ﬁrst ﬁle).",
+      "**Churn during onboarding:** The number of users who churn during the onboarding process."
+    ],
+    "improve": [
+      "Simplify the onboarding process",
+      "Enhance user guidance",
+      "Optimize time to activation",
+      "Monitor onboarding funnel and ﬁx drop-oK points",
+      "Use incentives to complete onboarding",
+      "Leverage user feedback",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: Onboarding Completion Rate (%)",
+        "variables": [
+          "Number of Users Completing Onboarding",
+          "Number of Users Starting Onboarding"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Onboarding Completion Rate (%) = (Number of Users Completing Onboarding / Number of Users Starting Onboarding) x 100",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Average Time to Activation",
+        "variables": [
+          "Total Time Taken for All Users to Activate",
+          "Number of Users Activated"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: Average Time to Activation = Total Time Taken for All Users to Activate / Number of Users Activated",
+        "step": null
+      },
+      {
+        "output": "o    Use the formula: Onboarding Churn Rate (%)",
+        "variables": [
+          "Number of Users Who Churn During Onboarding",
+          "Number of Users Starting Onboarding"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula: Onboarding Churn Rate (%) = (Number of Users Who Churn During Onboarding / Number of Users Starting Onboarding) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-32",
+    "archetype": "saas",
+    "title": "Product Usage by Tier or Plan",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "EXPANSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "EXPANSION"
+    ],
+    "sourcePath": "data/analysis-library/saas/32 - Product Usage by Tier or Plan.md",
+    "goal": "The goal of the Product Usage by Tier or Plan analysis is to evaluate how users across different pricing tiers or subscription plans engage with a SaaS product.",
+    "dataRequired": [
+      "**Number of users by tier or plan:** Total number of users subscribed to each pricing tier (e.g., Basic, Pro, Enterprise).",
+      "**Product usage data per tier:** Metrics on how users within each tier are engaging with product features (e.g., number of sessions, feature usage, or time spent).",
+      "**Feature availability by tier:** A list of features available in each pricing tier to compare feature utilization against access.",
+      "**Revenue per tier:** Total revenue generated by each tier, if relevant to assess revenue contribution versus usage."
+    ],
+    "improve": [
+      "Improve feature education",
+      "",
+      "Enhance feature diKerentiation by tier",
+      "Run upsell campaigns",
+      "Monitor underutilized features",
+      "Optimize pricing strategies",
+      "Personalize engagement based on tier",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula for each tier: Feature Usage by Tier (%)",
+        "variables": [
+          "Number of Features Used by Tier",
+          "Number of Available Features in Tier"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "o    Use the formula for each tier: Feature Usage by Tier (%) = (Number of Features Used by Tier / Number of Available Features in Tier) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "saas-33",
+    "archetype": "saas",
+    "title": "Usage and Engagement Metrics Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/33 - Usage and Engagement Metrics Analysis.md",
+    "goal": "The goal of Usage and Engagement Metrics analysis is to measure how often and how deeply customers are using a SaaS product.",
+    "dataRequired": [
+      "Number of active users (daily, weekly, or monthly)",
+      "Number of logins or sessions per user",
+      "Key product feature usage frequency (e.g., how often users access core features)",
+      "Duration of each session",
+      "Number of actions performed during each session (e.g., number of tasks completed, messages sent)",
+      "User segmentation (optional) to analyze behavior across different customer segments"
+    ],
+    "improve": [
+      "Increase product onboarding eKectiveness",
+      "Implement user engagement campaigns",
+      "Introduce product tutorials and resources",
+      "Analyze and enhance core features",
+      "Monitor and address churn risk",
+      "",
+      "Gamify user engagement",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "DAU/MAU Ratio",
+        "variables": [
+          "Daily Active Users",
+          "Monthly Active Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "DAU/MAU Ratio = (Daily Active Users / Monthly Active Users) x 100",
+        "step": "Calculate DAU/MAU ratio"
+      },
+      {
+        "output": "Average Sessions per User",
+        "variables": [
+          "Total Number of Sessions",
+          "Number of Active Users"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Sessions per User = Total Number of Sessions / Number of Active Users",
+        "step": "Analyze session frequency and duration"
+      }
+    ]
+  },
+  {
+    "id": "saas-34",
+    "archetype": "saas",
+    "title": "Product Stickiness and Retention Rate Analysis",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/34 - Product Stickiness and Retention Rate Analysis.md",
+    "goal": "The goal of Product Stickiness and Retention Rate analysis is to measure how frequently customers use a SaaS product and how likely they are to stay as paying customers over time.",
+    "dataRequired": [
+      "Daily Active Users (DAU)",
+      "Monthly Active Users (MAU)",
+      "Number of customers at the start and end of a period",
+      "Number of customers lost (churned) during the period",
+      "Usage frequency data (e.g., login activity, feature engagement)"
+    ],
+    "improve": [
+      "Improve onboarding and user education",
+      "Promote feature adoption",
+      "Segment users for personalized engagement",
+      "OKer incentives for retention",
+      "Improve customer support and success eKorts",
+      "Gather feedback and address pain points",
+      "Launch new features or updates based on user needs",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Product Stickiness (%)",
+        "variables": [
+          "DAU",
+          "MAU"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Stickiness (%) = (DAU / MAU) x 100",
+        "step": "Calculate Product Stickiness"
+      },
+      {
+        "output": "Retention Rate (%)",
+        "variables": [
+          "Number of Customers at End of Period",
+          "Number of Customers at Start of Period"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Retention Rate (%) = (Number of Customers at End of Period / Number of Customers at Start of Period) x 100",
+        "step": "Calculate the Retention Rate"
+      }
+    ]
+  },
+  {
+    "id": "saas-35",
+    "archetype": "saas",
+    "title": "Time to Value (TTV) for Customers",
+    "part": "D",
+    "partLabel": "Product & Engagement",
+    "relatedMetricCodes": [
+      "GROSS_CHURN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "RETENTION"
+    ],
+    "sourcePath": "data/analysis-library/saas/35 - Time to Value (TTV) for Customers.md",
+    "goal": "The goal of the Time to Value (TTV) analysis is to measure the time it takes for new customers to realize the core value of a SaaS product after they ﬁrst start using it.",
+    "dataRequired": [
+      "**Start date of customer onboarding:** The date when the customer starts using the product (e.g., when they sign up or complete onboarding).",
+      "**Milestone for value realization:** A key action or milestone that indicates the customer has realized the product’s core value (e.g., completing a setup, achieving a speciﬁc result, or using a core feature).",
+      "**Date of value realization:** The date when the customer reaches the deﬁned milestone.",
+      "**Customer segments (optional):** Segmentation data for different types of customers (e.g., small business, enterprise) to compare TTV across segments."
+    ],
+    "improve": [
+      "Simplify the onboarding process",
+      "Use product tours and in-app guidance",
+      "Improve customer education and support",
+      "OKer quick wins",
+      "Monitor and reﬁne key milestones",
+      "Segment onboarding for diKerent customer types",
+      "Track and address bottlenecks",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "o    Use the formula: TTV (in days)",
+        "variables": [
+          "Date of Value Realization",
+          "Date of Onboarding Start"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "o    Use the formula: TTV (in days) = Date of Value Realization - Date of Onboarding Start",
+        "step": null
+      }
+    ]
+  }
+]

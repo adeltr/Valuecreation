@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-41
+part: E
+partLabel: Finance & Program Management
+quant: [CLASSIFIED_REVENUE_SHARE]
+causes: [REGULATORY, GEOPOLITICAL]
+levers: []
 ---
 # 41 · Classified Program Revenue Contribution and Risk
 

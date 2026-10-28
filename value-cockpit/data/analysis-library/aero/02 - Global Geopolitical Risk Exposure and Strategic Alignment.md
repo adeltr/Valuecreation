@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-02
+part: A
+partLabel: Strategy & Market Position
+quant: []
+causes: [GEOPOLITICAL, MARKET]
+levers: [EXPORT_FMS]
 ---
 # 2 · Global Geopolitical Risk Exposure and Strategic Alignment
 

@@ -1,0 +1,1801 @@
+[
+  {
+    "id": "medical-device-01",
+    "archetype": "medical-device",
+    "title": "Regulatory Pathway Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE",
+      "TIME_TO_MARKET"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/01 - Regulatory Pathway Analysis.md",
+    "goal": "Determine the appropriate regulatory classification and approval/clearance route (for example, 510(k), PMA, De Novo in the US; MDR classification in the EU) for a medical device.",
+    "dataRequired": [
+      "Device intended use and indications for use",
+      "Device technological characteristics, including materials and design",
+      "Risk classification (for example, Class I, II, or III in the US; Class I, IIa, IIb, or III in the EU)",
+      "Predicate devices or similar products on the market",
+      "Market-specific regulatory guidelines (FDA, EMA, TGA, PMDA, etc.)",
+      "Clinical and preclinical data, as applicable"
+    ],
+    "improve": [
+      "Conduct early regulatory engagement (for example, pre-submission meetings) to clarify requirements.",
+      "Maintain a robust Quality Management System (for example, ISO 13485) that meets global standards.",
+      "Continuously monitor changes in regulatory guidelines and adapt strategies accordingly.",
+      "",
+      "Strengthen internal regulatory affairs expertise or partner with external consultants.",
+      "Perform ongoing gap analyses to identify missing documentation, data, or testing needs prior to submission.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-02",
+    "archetype": "medical-device",
+    "title": "Regulatory Compliance and Quality Management Systems Review",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/02 - Regulatory Compliance and Quality Management Systems.md",
+    "goal": "Evaluate a medical device company’s adherence to applicable regulations and standards (for example, ISO 13485, 21 CFR Part 820, EU MDR) and assess the effectiveness of its Quality Management System (QMS).",
+    "dataRequired": [
+      "Current QMS documentation (policies, procedures, work instructions)",
+      "Audit reports (internal, external, and third-party)",
+      "Records of nonconformities, corrective and preventive actions (CAPAs)",
+      "Management review records",
+      "Personnel training records",
+      "Regulatory inspection findings and certification status"
+    ],
+    "improve": [
+      "Establish a strong quality culture by ensuring management commitment and employee ownership of QMS processes.",
+      "Perform regular internal audits and address findings promptly to foster continuous improvement.",
+      "Invest in robust training and competency programs for staff at all levels.",
+      "Streamline documentation and ensure that procedures match actual practices on the production floor or in service delivery.",
+      "Conduct periodic gap assessments to stay current with evolving regulations and standards (for example, EU MDR, MDSAP).",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-03",
+    "archetype": "medical-device",
+    "title": "Labeling and Unique Device Identification (UDI) Compliance Assessment",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/03 - Labeling and Unique Device Identification (UDI) Compliance.md",
+    "goal": "Ensure that all labeling meets applicable regulatory requirements, and confirm that Unique Device Identification (UDI) systems are properly implemented for each device.",
+    "dataRequired": [
+      "Current labeling artwork, product packaging, and instructions for use (IFU)",
+      "Applicable regulatory guidelines (for example, FDA’s UDI Rule, EU MDR requirements)",
+      "List of device product codes and device identifiers (DI)",
+      "Label control procedures and records of label revisions",
+      "UDI assignment records and database submission details (for example, GUDID in the US)",
+      "Any known complaints or post-market feedback related to labeling issues"
+    ],
+    "improve": [
+      "Establish a clear labeling SOP that addresses all regulatory requirements and includes a robust change control process.",
+      "Provide regular training to ensure teams understand evolving UDI and labeling regulations across global markets.",
+      "Implement software solutions for label design, version control, and UDI database submissions to reduce manual errors.",
+      "Conduct periodic internal audits to verify the accuracy and compliance of labeling and UDI submissions.",
+      "Collaborate with cross-functional teams (for example, regulatory, manufacturing, logistics) to maintain synchronized updates.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-04",
+    "archetype": "medical-device",
+    "title": "Device Classification and Product Code Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "TIME_TO_MARKET"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/04 - Device Classification and Product Code Analysis.md",
+    "goal": "Determine the correct regulatory classification and product code for a medical device based on its intended use, risk profile, and applicable regulations.",
+    "dataRequired": [
+      "Detailed device description and intended use statements",
+      "List of predicate or similar devices already on the market, if available",
+      "Applicable regulatory frameworks for target markets (for example, US FDA, EU MDR)",
+      "Current product codes and classification references (for example, FDA Product Classification Database)",
+      "Design specifications, technological characteristics, and indications for use"
+    ],
+    "improve": [
+      "Maintain updated knowledge of regulatory guidelines, classification rules, and product code databases.",
+      "Conduct pre-submission meetings or seek guidance from regulatory agencies if classification is unclear.",
+      "Compare proposed device features thoroughly with existing products to identify the most appropriate classification.",
+      "Implement a robust internal process for classifying new devices, involving cross-functional teams (for example, R&D, regulatory affairs).",
+      "Review classifications regularly as product features evolve or new regulatory interpretations emerge.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-05",
+    "archetype": "medical-device",
+    "title": "Combination Product Regulatory Strategy",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "REGULATORY_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/05 - Combination Product Regulatory Strategy.md",
+    "goal": "Develop a clear regulatory approach for products that combine drugs, devices, or biologics.",
+    "dataRequired": [
+      "Detailed description of each constituent part (device, drug, biologic)",
+      "Intended use and indications for use of the combination product",
+      "Primary mode of action (PMOA) and secondary modes of action",
+      "Existing regulatory classifications for each constituent component, if available",
+      "Clinical data or scientific rationale for combining the components",
+      "Relevant regulatory guidance documents (for example, FDA Guidance on Combination Products)"
+    ],
+    "improve": [
+      "Engage early with regulatory agencies, such as requesting a designation letter or holding pre-submission meetings.",
+      "Build cross-functional teams (regulatory, clinical, manufacturing) to address combination product complexities.",
+      "Keep up to date with emerging combination product guidelines and evolving regulatory expectations.",
+      "Establish robust risk management processes that integrate both device and drug/biologic components.",
+      "Continuously refine the submission strategy based on feedback from regulatory authorities and updated guidance.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-06",
+    "archetype": "medical-device",
+    "title": "EU MDR-IVDR Compliance Gap Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "REGULATORY_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/06 - EU MDR-IVDR Compliance Gap Analysis.md",
+    "goal": "Identify and evaluate any discrepancies between a company’s current medical device or in vitro diagnostic (IVD) compliance status and the requirements set forth by the EU Medical Device Regulation (MDR 2017/745) or In Vitro Diagnostic Regulation (IVDR 2017/746).",
+    "dataRequired": [
+      "Current technical documentation, including device description, design data, risk management, and clinical evidence",
+      "Existing conformity assessment documentation under previous directives (for example, MDD or IVDD)",
+      "Post-market surveillance (PMS) plans and reports",
+      "Labeling and instructions for use (IFU), including UDI details",
+      "Quality Management System (for example, ISO 13485) documentation",
+      "Contracts and agreements with Notified Bodies, if applicable",
+      "Device classification according to MDR or IVDR rules"
+    ],
+    "improve": [
+      "Invest in expert regulatory resources or external consultants with EU MDR/IVDR experience.",
+      "Enhance clinical evidence and post-market surveillance programs to meet stricter requirements.",
+      "Implement a robust Quality Management System that aligns with ISO 13485 and MDR/IVDR guidelines.",
+      "Establish ongoing training programs to ensure staff understand evolving MDR/IVDR obligations.",
+      "Maintain close communication with Notified Bodies to clarify expectations, submission timelines, and ongoing compliance requirements.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-07",
+    "archetype": "medical-device",
+    "title": "MDSAP (Medical Device Single Audit Program) Readiness and Gap Analysis",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "REGULATORY_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/07 - MDSAP (Medical Device Single Audit Program) Readiness and.md",
+    "goal": "Evaluate a company’s Quality Management System (QMS) and processes against MDSAP requirements.",
+    "dataRequired": [
+      "Existing QMS documentation (for example, quality manual, standard operating procedures, work instructions)",
+      "Recent internal and external audit reports",
+      "CAPA records, management reviews, and training logs",
+      "Regulatory inspection or audit findings from participating MDSAP authorities (if available)",
+      "Current documentation mappings to standards like ISO 13485 and local regulatory requirements"
+    ],
+    "improve": [
+      "Train staff on MDSAP audit structure and expectations, emphasizing roles and responsibilities.",
+      "Strengthen internal auditing practices to align with MDSAP’s process-based approach.",
+      "Address systemic issues promptly by initiating CAPA processes for repeated or high-risk findings.",
+      "Engage with MDSAP-recognized Auditing Organizations early to clarify any ambiguities.",
+      "Maintain a continuous improvement mindset, using feedback from all audits to refine QMS procedures and documentation.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-08",
+    "archetype": "medical-device",
+    "title": "OTC vs. Prescription Device Classification Feasibility",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/08 - OTC vs. Prescription Device Classification Feasibility.md",
+    "goal": "Determine whether a medical device can be safely and effectively used by the general public without a prescription, or if it requires professional oversight.",
+    "dataRequired": [
+      "Detailed device description, including intended use and indications for use",
+      "Current regulatory classification (if any) and comparable predicate devices",
+      "Risk assessment data on potential harms or misuse",
+      "Clinical and usability data, including human factors studies",
+      "Labeling and marketing materials",
+      "Target user population and environment of use (for example, home-use vs. clinical setting)",
+      "Relevant regulatory guidelines and precedents (for example, FDA OTC vs. Rx classification rules)"
+    ],
+    "improve": [
+      "Conduct robust human factors and usability testing to minimize user error and establish safety for an OTC environment.",
+      "Engage with regulatory agencies through pre-submission meetings to clarify classification requirements.",
+      "Strengthen labeling and instructions for use, incorporating clear language, graphics, and warnings.",
+      "Plan for post-market surveillance strategies (for example, complaint tracking) to quickly identify any issues if the device is marketed OTC.",
+      "Invest in additional risk mitigation features (for example, alarms, error-prevention design) to support safe and effective use by non-professionals.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-09",
+    "archetype": "medical-device",
+    "title": "Reprocessing and Re-Manufacturing Compliance Assessment",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/09 - Reprocessing and Re-Manufacturing Compliance Assessment.md",
+    "goal": "Evaluate the procedures and controls for reprocessing and re-manufacturing of medical devices to ensure compliance with regulatory standards, maintain product safety and efficacy, and minimize risks of contamination or device malfunction.",
+    "dataRequired": [
+      "Current reprocessing protocols (for example, cleaning, sterilization, and testing procedures)",
+      "Device design specifications, including materials and components",
+      "Quality Management System documentation relevant to reprocessing or re-manufacturing activities",
+      "Validation reports and records of reprocessing cycles (for example, biological indicator test results)",
+      "Regulatory guidance documents (for example, FDA guidance on reprocessing, ISO standards for sterilization)",
+      "Records of complaints, adverse events, or nonconformities related to reprocessed or re-manufactured devices"
+    ],
+    "improve": [
+      "Update reprocessing SOPs and validation protocols to meet the latest regulatory expectations.",
+      "Implement training programs focused on best practices for cleaning, sterilization, and re-manufacturing.",
+      "Invest in advanced reprocessing technologies and monitoring systems to ensure repeatable and verifiable processes.",
+      "Conduct regular internal audits to identify deviations and drive continuous improvement.",
+      "Collaborate with device designers to incorporate features that facilitate effective reprocessing and reduce contamination risk.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-10",
+    "archetype": "medical-device",
+    "title": "Software Update Lifecycle (IEC 62304) Compliance Review",
+    "part": "A",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/10 - Software Update Lifecycle (IEC 62304) Compliance Review.md",
+    "goal": "Assess and ensure that a medical device’s software update process complies with IEC 62304 standards.",
+    "dataRequired": [
+      "Current software development and maintenance procedures",
+      "Software configuration management records",
+      "Risk management documentation (for example, ISO 14971 risk files) related to software changes",
+      "Revision history and release notes for previous software updates",
+      "Testing protocols, validation reports, and bug tracking logs",
+      "IEC 62304 compliance documentation or gap assessments if previously conducted"
+    ],
+    "improve": [
+      "Integrate a robust software development lifecycle model that addresses IEC 62304 requirements from initial design through retirement.",
+      "Strengthen change control and configuration management by using reliable version control tools and strict approval workflows.",
+      "Enhance cross-functional collaboration (for example, software engineering, regulatory, quality) to address risks and ensure seamless updates.",
+      "Conduct regular internal audits or mock external audits focusing on software lifecycle compliance.",
+      "Provide ongoing training for software development teams on IEC 62304 standards and best practices.",
+      "B. Clinical & Post-Market"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-11",
+    "archetype": "medical-device",
+    "title": "Clinical Evidence Review",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [
+      "CLINICAL_TRIAL_SUCCESS_RATE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/11 - Clinical Evidence Review.md",
+    "goal": "Evaluate the clinical data supporting the safety and efficacy of a medical device.",
+    "dataRequired": [
+      "Clinical study protocols and reports (for example, feasibility, pivotal, post-market studies)",
+      "Ethical approvals, informed consent forms, and institutional review board (IRB) documentation",
+      "Study design details (endpoints, inclusion/exclusion criteria, statistical methods)",
+      "Patient population demographics and baseline characteristics",
+      "Adverse event and complication rates",
+      "Published literature or real-world evidence supporting device use",
+      "Device risk-benefit profile and competitor benchmarking data"
+    ],
+    "improve": [
+      "Design robust clinical studies early, incorporating input from regulatory agencies and key opinion leaders.",
+      "Strengthen post-market surveillance programs to collect real-world evidence and address open questions.",
+      "Update risk management files continuously as new clinical data becomes available.",
+      "Partner with contract research organizations (CROs) or academic centers for rigorous study design and data analysis.",
+      "",
+      "Leverage systematic reviews of published literature to complement internal clinical data and support regulatory submissions.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-12",
+    "archetype": "medical-device",
+    "title": "Post-Market Surveillance and Vigilance",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE",
+      "RECALL_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY",
+      "PRODUCT_QUALITY_RISK"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/12 - Post-Market Surveillance and Vigilance.md",
+    "goal": "Assess a medical device company’s processes for monitoring and reporting device performance, safety, and quality after market release.",
+    "dataRequired": [
+      "Post-market surveillance (PMS) plans and procedures",
+      "Adverse event reporting records and vigilance submissions",
+      "Complaint handling procedures and records",
+      "Data on device-related incidents or failures, including corrective actions taken",
+      "Trends analysis of returned product data",
+      "Post-market clinical follow-up (PMCF) or post-market performance follow-up (PMPF) studies, if applicable",
+      "Regulatory authority correspondence or audit findings related to PMS and vigilance"
+    ],
+    "improve": [
+      "Implement automated tools and standardized forms for complaint handling and adverse event tracking.",
+      "Train employees and distributors on identifying, recording, and escalating post-market issues.",
+      "Perform regular reviews of PMS data, using trend analysis to detect emerging risks early.",
+      "Strengthen documentation practices and maintain a thorough audit trail for all vigilance activities.",
+      "",
+      "Engage with regulatory bodies or external experts to clarify evolving post-market requirements and incorporate best practices.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-13",
+    "archetype": "medical-device",
+    "title": "CRO and Clinical Site Management Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [
+      "CLINICAL_TRIAL_SUCCESS_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/13 - CRO and Clinical Site Management Efficiency Analysis.md",
+    "goal": "Assess the performance and cost-effectiveness of Contract Research Organizations (CROs) and clinical sites in supporting clinical trials for medical devices.",
+    "dataRequired": [
+      "Current contracts and budgets with CROs and clinical sites",
+      "Key performance indicators (KPIs) such as enrollment rates, data query resolution time, protocol adherence, and on-time deliverables",
+      "Historical data on study milestones (for example, First Patient In (FPI), Last Patient Out (LPO), database lock dates)",
+      "Metrics on monitoring visits, site training, and site communications",
+      "Feedback from clinical investigators, study coordinators, and CRO staff",
+      "Adverse event reporting timelines and any relevant audit findings"
+    ],
+    "improve": [
+      "Strengthen contract negotiation and performance-based compensation to align CRO/site incentives with study goals.",
+      "Implement real-time dashboards to monitor site performance and swiftly address delays or data quality concerns.",
+      "Provide ongoing training and support to clinical site staff, including clear communication channels and escalation procedures.",
+      "Conduct regular reviews and audits of CRO processes and site practices, sharing best practices among all sites.",
+      "Establish collaborative partnerships with CROs and site teams to encourage transparency, trust, and continuous improvement.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-14",
+    "archetype": "medical-device",
+    "title": "Real-World Evidence Generation Strategy for Device Performance",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/14 - Real-World Evidence Generation Strategy for Device.md",
+    "goal": "Develop a structured approach to collect, analyze, and leverage real-world data (RWD) that demonstrates a medical device’s safety, effectiveness, and value in everyday clinical settings.",
+    "dataRequired": [
+      "Existing post-market surveillance data and complaint records",
+      "Electronic health records (EHR) or claims data relevant to the device’s indication",
+      "Patient registries and observational study datasets",
+      "Device usage and performance metrics (for example, remote monitoring data)",
+      "Demographic and outcomes data from real-world use (including quality-of-life measures, clinical endpoints)",
+      "Regulatory guidelines on RWE acceptance (for example, FDA, EMA, and other regional bodies)"
+    ],
+    "improve": [
+      "Partner with healthcare institutions, payers, and patient advocacy groups to access more comprehensive and diverse data sources.",
+      "Employ advanced analytics and data management tools to improve the reliability and depth of RWE insights.",
+      "Develop cross-functional teams (for example, clinical, regulatory, health economics) to design RWE studies that address both scientific and commercial objectives.",
+      "",
+      "Maintain transparency with regulators about methodologies, limitations, and the real-world applicability of outcomes.",
+      "Continuously update and refine RWE approaches based on new data sources, evolving technologies, and shifting regulatory landscapes.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-15",
+    "archetype": "medical-device",
+    "title": "Clinical Evidence Gap Analysis",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [
+      "CLINICAL_TRIAL_SUCCESS_RATE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/15 - Clinical Evidence Gap Analysis.md",
+    "goal": "Identify discrepancies between existing clinical data and the evidence required to support a medical device’s safety and efficacy claims.",
+    "dataRequired": [
+      "Current clinical study reports (including protocols, endpoints, and statistical methods)",
+      "Post-market surveillance findings, complaint logs, and adverse event data",
+      "Literature reviews and meta-analyses relevant to the device’s therapeutic area",
+      "Benchmarks or comparative data from similar or competing devices",
+      "Regulatory guidelines defining minimum clinical evidence thresholds for device approval or reimbursement",
+      "Internal risk assessments (for example, risk management files, FMEAs)"
+    ],
+    "improve": [
+      "Engage with regulatory bodies early to clarify evidence expectations and reduce the risk of misaligned study designs.",
+      "Conduct strategic literature reviews and meta-analyses to fill minor evidence gaps and build a stronger case.",
+      "Leverage real-world data and post-market surveillance programs to supplement or strengthen existing clinical findings.",
+      "Allocate resources to well-designed clinical trials that focus on high-priority endpoints and underserved patient populations.",
+      "Implement ongoing, iterative reviews of clinical evidence to proactively identify and address future gaps.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-16",
+    "archetype": "medical-device",
+    "title": "Comparative Efficacy and Safety Benchmarking vs. Standard of Care",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/16 - Comparative Efficacy and Safety Benchmarking vs. Standard.md",
+    "goal": "Evaluate how a medical device’s clinical outcomes compare with existing standards of care or competitor devices.",
+    "dataRequired": [
+      "Published clinical trial data or real-world evidence on the standard of care",
+      "Internal clinical study reports, including safety and efficacy endpoints",
+      "Adverse event profiles and complication rates",
+      "Patient populations, demographics, and comorbid conditions for both the device and the comparator",
+      "Relevant guidelines or consensus statements defining the standard of care in the therapeutic area"
+    ],
+    "improve": [
+      "Design clinical trials that directly compare the device against the current standard of care to generate high-quality head-to-head data.",
+      "Conduct subgroup analyses to understand performance in specific patient segments, enhancing targeted marketing and reimbursement arguments.",
+      "Engage with key opinion leaders to validate clinical relevance and support evidence-based messaging.",
+      "Regularly monitor evolving standards of care and update benchmarking analyses to maintain a competitive edge.",
+      "Explore real-world data to complement clinical trials, providing additional insights into device performance across diverse settings.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-17",
+    "archetype": "medical-device",
+    "title": "Field Safety Corrective Action and Recall Readiness Evaluation",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [
+      "QUALITY_REGULATORY_COST_RATE",
+      "RECALL_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY",
+      "PRODUCT_QUALITY_RISK"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/17 - Field Safety Corrective Action and Recall Readiness.md",
+    "goal": "Assess a medical device company’s preparedness to execute field safety corrective actions (FSCAs), including product recalls, when device-related safety risks or regulatory noncompliances emerge.",
+    "dataRequired": [
+      "Current standard operating procedures (SOPs) for field safety notices, corrective actions, and recalls",
+      "Past recall or FSCA documentation, including root cause analyses and corrective/preventive actions (CAPAs)",
+      "Complaint handling records and adverse event reports that may have triggered past recalls or near-miss situations",
+      "Quality Management System (QMS) documentation related to risk management, product traceability, and communication plans",
+      "Regulatory guidelines or notifications regarding product safety and recall requirements (for example, FDA 21 CFR Part 7, EU MDR obligations)"
+    ],
+    "improve": [
+      "Implement an integrated tracking system to enhance product traceability and reduce time to identify affected units.",
+      "Conduct regular training and scenario-based drills to ensure staff understand recall procedures and responsibilities.",
+      "Maintain a predefined communication plan to rapidly notify regulators, healthcare providers, and patients when a safety issue arises.",
+      "Continuously monitor complaint data, adverse events, and emerging product risks to catch potential recall triggers early.",
+      "Engage in periodic third-party audits to validate the efficacy of FSCA and recall processes, incorporating external best practices.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-18",
+    "archetype": "medical-device",
+    "title": "Patient Engagement and Compliance Tracking for Home-Use Devices",
+    "part": "B",
+    "partLabel": "Clinical & Post-Market",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/18 - Patient Engagement and Compliance Tracking for Home-Use.md",
+    "goal": "Evaluate how effectively patients use and adhere to prescribed home-use medical devices.",
+    "dataRequired": [
+      "Information on device functionality, instructions for use, and any accompanying mobile or web applications",
+      "Patient demographic and adherence data (for example, usage frequency, missed doses, device error logs)",
+      "Patient feedback (surveys, interviews, or focus groups) regarding ease of use and satisfaction",
+      "Data from remote monitoring systems or connectivity features (if applicable)",
+      "Clinical outcomes or key performance indicators linked to device adherence (for example, symptom improvement)",
+      "Relevant regulatory guidance on home-use devices and patient engagement"
+    ],
+    "improve": [
+      "Enhance the device interface and instructions for use, making them more intuitive and patient-friendly.",
+      "Integrate remote monitoring and reminder features (for example, push notifications, wearable integrations) to encourage continuous usage.",
+      "Provide robust patient support channels (for example, hotlines, chatbots) to address questions and resolve issues promptly.",
+      "Collaborate with healthcare providers and patient advocacy groups to refine educational materials and engagement programs.",
+      "Continuously collect and analyze real-world usage data to update and optimize patient engagement strategies.",
+      "C. Reimbursement & Market Access"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-19",
+    "archetype": "medical-device",
+    "title": "Reimbursement and Coding Assessment",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [
+      "ASP_GROWTH",
+      "REIMBURSEMENT_COVERAGE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REIMBURSEMENT_PRESSURE"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO",
+      "MARKET_ACCESS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/19 - Reimbursement and Coding Assessment.md",
+    "goal": "Evaluate how a medical device will be covered, coded, and reimbursed by payers (for example, Medicare, private insurers, national health systems).",
+    "dataRequired": [
+      "Current procedural terminology (CPT), Healthcare Common Procedure Coding System (HCPCS), or other relevant coding structures",
+      "Payer policies, coverage guidelines, and local coverage determinations (LCDs)",
+      "Medicare fee schedules or national healthcare system reimbursement schedules",
+      "Competitor or predicate device reimbursement data for comparison",
+      "Clinical and economic evidence supporting device use",
+      "Documentation requirements (for example, prior authorization forms, medical necessity guidelines)"
+    ],
+    "improve": [
+      "Engage with payers early to understand coverage expectations and gather feedback on clinical/economic evidence needs.",
+      "Invest in robust health economics and outcomes research (HEOR) to demonstrate cost-effectiveness and justify favorable reimbursement.",
+      "Provide clear coding guidance to providers, including billing templates and medical necessity documentation checklists.",
+      "Monitor ongoing policy changes at both national and local levels, updating internal reimbursement strategies accordingly.",
+      "Collaborate with industry associations, patient advocacy groups, or professional societies to advocate for new or revised codes.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-20",
+    "archetype": "medical-device",
+    "title": "Health Economics and Outcomes Research",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [
+      "ASP_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MARKET_ACCESS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/20 - Health Economics and Outcomes Research.md",
+    "goal": "Investigate and quantify the economic and clinical value of a medical device.",
+    "dataRequired": [
+      "Clinical trial data and real-world evidence showing device efficacy and safety",
+      "Healthcare cost data (for example, hospital costs, outpatient care, medication use)",
+      "Quality-of-life metrics (for example, patient-reported outcomes, utility scores)",
+      "Relevant comparator data (standard of care or alternative treatments)",
+      "Epidemiological data on the target patient population",
+      "Payer policies and reimbursement rates",
+      "Existing health economic models or published literature in the therapeutic area"
+    ],
+    "improve": [
+      "Gather robust, high-quality clinical and economic data, both in trials and real-world settings, to strengthen model credibility.",
+      "Collaborate with payers and health economics experts early to shape relevant endpoints and study designs.",
+      "Update the model as new data emerges or as market conditions shift (for example, price changes, new competitor entries).",
+      "Provide training and explanatory materials to stakeholders (for example, hospital administrators, insurers) to help them understand and apply model insights.",
+      "Employ continuous feedback loops, refining health economic models in partnership with external research organizations and key opinion leaders.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-21",
+    "archetype": "medical-device",
+    "title": "Hospital Purchasing and Procurement Process Evaluation",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [
+      "SALES_MARKETING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COMMERCIAL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/21 - Hospital Purchasing and Procurement Process Evaluation.md",
+    "goal": "Assess how hospitals identify, evaluate, and purchase medical devices.",
+    "dataRequired": [
+      "Hospital procurement policies and standard operating procedures (for example, tender processes, value analysis committee guidelines)",
+      "Vendor qualification and supplier performance records",
+      "Hospital purchasing history and spend data (for example, volume, frequency, average purchase price)",
+      "Budget cycles and capital expenditure schedules",
+      "Feedback from hospital procurement teams, clinicians, and supply chain managers",
+      "Competitor pricing and contracting strategies"
+    ],
+    "improve": [
+      "Develop targeted value propositions and cost-justification materials for the hospital’s procurement and clinical stakeholders.",
+      "Offer flexible contracting models (for example, volume discounts, lease-to-own) to accommodate varying budget constraints.",
+      "Strengthen relationships with value analysis committees by providing clinical data, real-world evidence, or training that demonstrates the device’s advantages.",
+      "Train sales teams on navigating hospital procurement protocols and understanding the roles of key influencers.",
+      "Regularly review market feedback and purchasing data to refine pricing strategies and align with hospital priorities.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-22",
+    "archetype": "medical-device",
+    "title": "Global Market Entry and Distribution Strategy",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [
+      "PROCEDURE_VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COMMERCIAL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/22 - Global Market Entry and Distribution Strategy.md",
+    "goal": "Develop a structured plan for expanding a medical device company’s presence into international markets.",
+    "dataRequired": [
+      "Market research reports and healthcare statistics for target countries (for example, disease prevalence, healthcare expenditure)",
+      "Regulatory requirements for each region (for example, FDA, EU MDR, TGA, PMDA)",
+      "Distribution network options (for example, direct vs. distributor partnerships) and potential partners’ capabilities",
+      "Pricing and reimbursement landscapes in target markets",
+      "Competitive environment, including local and global players",
+      "Shipping, logistics, and supply chain considerations (for example, temperature control, customs regulations)"
+    ],
+    "improve": [
+      "Engage local regulatory experts or consultants in each market to navigate approval processes and compliance.",
+      "Build relationships with key opinion leaders (KOLs) and healthcare providers to validate the device’s clinical and economic benefits.",
+      "Develop tiered or flexible pricing models to accommodate different reimbursement levels and market segments.",
+      "Invest in robust logistics and post-market service infrastructure to maintain product quality and customer satisfaction.",
+      "",
+      "Regularly reassess global market performance, using data-driven insights to refine and expand the market entry strategy.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-23",
+    "archetype": "medical-device",
+    "title": "Bundled Payment and Value-Based Care Program Impact Analysis",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [
+      "ASP_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REIMBURSEMENT_PRESSURE"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MARKET_ACCESS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/23 - Bundled Payment and Value-Based Care Program Impact.md",
+    "goal": "Assess how participation in bundled payment or value-based care programs will affect a medical device’s adoption, reimbursement, and overall market viability.",
+    "dataRequired": [
+      "Information about specific bundled payment initiatives or value-based care models (for example, CMS Bundled Payments for Care Improvement (BPCI), accountable care organizations (ACOs))",
+      "Relevant reimbursement rates and payment structures tied to episodes of care",
+      "Clinical outcomes data and real-world evidence demonstrating cost savings or improved patient outcomes",
+      "Hospital and physician practice patterns, including utilization data of similar devices under bundled arrangements",
+      "Device pricing, including total cost of ownership or per-episode cost",
+      "Feedback from payers, providers, and healthcare administrators on the perceived value of the device"
+    ],
+    "improve": [
+      "Generate robust clinical and economic evidence that demonstrates the device’s cost-effectiveness within an episode of care.",
+      "Collaborate with payers and healthcare systems to pilot the device in a value-based setting, gathering real-world data to support broader adoption.",
+      "Adjust pricing and contracting strategies (for example, risk-sharing agreements) to align with bundled payment structures.",
+      "Provide education and support to providers on how the device can help meet or exceed quality measures within a value-based care environment.",
+      "",
+      "Continuously monitor and update economic models to reflect changes in reimbursement rules and evolving clinical best practices.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-24",
+    "archetype": "medical-device",
+    "title": "Health Technology Assessment (HTA) Dossier Development",
+    "part": "C",
+    "partLabel": "Reimbursement & Market Access",
+    "relatedMetricCodes": [
+      "REIMBURSEMENT_COVERAGE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO",
+      "MARKET_ACCESS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/24 - Health Technology Assessment (HTA) Dossier Development.md",
+    "goal": "Prepare a comprehensive dossier that demonstrates the clinical, economic, and societal value of a medical device for submission to Health Technology Assessment agencies (for example, NICE in the UK, HAS in France, IQffiG in Germany) and payers.",
+    "dataRequired": [
+      "Clinical evidence (randomized controlled trials, observational studies, meta-analyses)",
+      "Economic evaluations (cost-effectiveness analyses, budget impact models)",
+      "Patient-reported outcomes (quality-of-life data, utility scores)",
+      "Epidemiological and disease burden data",
+      "Competitor or comparator information (current standard of care)",
+      "Real-world evidence (claims data, registries, or post-market surveillance findings)",
+      "Regulatory approvals and device labeling details"
+    ],
+    "improve": [
+      "Engage early with HTA agencies or local payers to clarify evidence expectations and reduce uncertainties.",
+      "Build multidisciplinary teams (clinical, health economics, regulatory) to ensure a comprehensive approach to dossier development.",
+      "Conduct robust data collection strategies, including real-world evidence initiatives, to strengthen the clinical and economic narrative.",
+      "Update and refine the dossier as new data emerges or HTA requirements change, maintaining ongoing compliance and relevance.",
+      "Foster relationships with key opinion leaders and patient advocacy groups to support the device’s value story and real-world applicability.",
+      "D. Product Development & Lifecycle"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-25",
+    "archetype": "medical-device",
+    "title": "Product Pipeline and R&D Portfolio Assessment",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [
+      "RD_RATE",
+      "TIME_TO_MARKET",
+      "NEW_PRODUCT_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "PORTFOLIO_LIFECYCLE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/25 - Product Pipeline and R&D Portfolio Assessment.md",
+    "goal": "Evaluate the current pipeline of medical device products under research and development.",
+    "dataRequired": [
+      "List of current and planned R&D projects, including timelines and budgets",
+      "Market research data on target indications and competitor product pipelines",
+      "Regulatory landscape and potential pathways for each product",
+      "Technical feasibility assessments and proof-of-concept studies",
+      "Financial projections and net present value (NPV) or internal rate of return (IRR) estimates for each project",
+      "Resource availability (for example, R&D staff expertise, manufacturing capabilities, partnerships)"
+    ],
+    "improve": [
+      "Regularly update and review the R&D portfolio, incorporating new market insights and technological advances.",
+      "Encourage cross-functional collaboration between marketing, clinical, regulatory, and R&D teams to ensure comprehensive project evaluations.",
+      "Implement rigorous stage-gate processes or milestone-based funding to manage risk and resource allocation.",
+      "Seek strategic partnerships or acquisitions to fill high-value gaps and complement internal R&D capabilities.",
+      "Cultivate an innovation culture that balances near-term returns with longer-term breakthrough opportunities.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-26",
+    "archetype": "medical-device",
+    "title": "Lifecycle Management for Legacy Devices",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "NEW_PRODUCT_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "PORTFOLIO_LIFECYCLE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/26 - Lifecycle Management for Legacy Devices.md",
+    "goal": "Ensure that older or established medical devices remain compliant, competitive, and profitable.",
+    "dataRequired": [
+      "Current device history file (DHF), including design documentation and manufacturing processes",
+      "Post-market surveillance (PMS) data (complaints, adverse events, recalls)",
+      "Sales and market share trends for the legacy device",
+      "Regulatory requirements (for example, new standards like EU MDR/IVDR, updates to ISO 13485)",
+      "Cost structure and profit margins for the device",
+      "Competitor products and emerging technologies",
+      "Customer feedback and clinical performance data"
+    ],
+    "improve": [
+      "Regularly re-assess legacy devices against new regulations and standards to avoid compliance lapses or costly redesigns.",
+      "Implement a proactive product monitoring strategy to capture real-world usage data and identify opportunities for incremental improvements.",
+      "Cultivate strong customer relationships, gathering feedback on desired upgrades or unresolved clinical needs.",
+      "Explore strategic partnerships or acquisitions to bring new technologies into older product lines.",
+      "Maintain a clear roadmap that includes critical milestones for updating or phasing out products, ensuring clear communication with regulators and customers.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-27",
+    "archetype": "medical-device",
+    "title": "Packaging Validation and Shelf-Life Testing",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/27 - Packaging Validation and Shelf-Life Testing.md",
+    "goal": "Confirm that the packaging system for a medical device maintains its integrity, sterility (if applicable), and functionality over the intended shelf life.",
+    "dataRequired": [
+      "Packaging materials specifications (for example, films, trays, pouches)",
+      "Device design information, including dimensions and sensitivity to environmental factors",
+      "Regulatory requirements and industry standards (for example, ISO 11607 for packaging validation)",
+      "Environmental test conditions (temperature, humidity, vibration, drop tests)",
+      "Sterility data and microbial barrier performance (if applicable)",
+      "Labeling and expiration dating information",
+      "Historical data on packaging failures, complaints, or returns"
+    ],
+    "improve": [
+      "Align packaging validation activities with recognized standards (for example, ISO 11607) and regulatory guidelines to streamline approvals.",
+      "Invest in reliable testing equipment and maintain thorough documentation of each test to support regulatory submissions.",
+      "Implement regular quality checks, post-market surveillance, and trending analyses to detect real-world packaging issues early.",
+      "Conduct periodic reviews of packaging materials as new, more advanced or cost-effective options become available.",
+      "",
+      "Collaborate with supply chain partners to ensure handling and storage conditions align with validated packaging requirements.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-28",
+    "archetype": "medical-device",
+    "title": "Evaluation of 3D Printing and Additive Manufacturing Feasibility",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "CAPEX_DISCIPLINE",
+      "MANUFACTURING_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/28 - Evaluation of 3D Printing and Additive Manufacturing.md",
+    "goal": "Determine whether 3D printing or additive manufacturing (AM) technologies are suitable for producing a given medical device or component.",
+    "dataRequired": [
+      "Product specifications, functional requirements, and design files (for example, CAD models)",
+      "Material properties, including biocompatibility, mechanical strength, and sterilization requirements",
+      "Applicable regulatory guidelines (for example, FDA guidance on medical device additive manufacturing)",
+      "Current manufacturing processes and costs (for comparison with proposed AM approach)",
+      "Production volume forecasts and inventory management data",
+      "Quality standards and risk management files (for example, ISO 13485, ISO 14971)",
+      "Feedback from end-users or clinical stakeholders on design customization needs"
+    ],
+    "improve": [
+      "Invest in in-house AM expertise, training, and equipment to streamline prototyping and testing cycles.",
+      "",
+      "Collaborate with specialized 3D printing service bureaus to access advanced technologies without high initial capital expenditure.",
+      "Develop rigorous validation and quality control protocols tailored to additive manufacturing processes.",
+      "Stay current with emerging standards, guidelines, and material innovations in the 3D printing space.",
+      "Engage healthcare providers and end-users early to incorporate customization and design feedback into the AM product strategy.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-29",
+    "archetype": "medical-device",
+    "title": "Co-Development Analysis for Companion Diagnostics",
+    "part": "D",
+    "partLabel": "Product Development & Lifecycle",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PORTFOLIO_LIFECYCLE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/29 - Co-Development Analysis for Companion Diagnostics.md",
+    "goal": "Determine the feasibility, strategic fit, and regulatory pathway for developing a diagnostic test in parallel with a therapeutic product.",
+    "dataRequired": [
+      "Information on the therapeutic product’s mechanism of action, target patient population, and clinical trial designs",
+      "Biomarkers or relevant biological targets that correlate with therapeutic response",
+      "Preliminary or existing clinical data supporting the use of the diagnostic for patient stratification or therapy monitoring",
+      "Regulatory guidelines for companion diagnostics (for example, FDA, EMA, PMDA)",
+      "Market research on the prevalence of targeted conditions, competitive landscape, and reimbursement perspectives for diagnostic tests",
+      "Intellectual property (IP) status of biomarkers or diagnostic technologies"
+    ],
+    "improve": [
+      "Engage early with regulatory authorities (for example, through pre-submission meetings) to clarify co-development requirements and coordinate review pathways.",
+      "Collaborate with academic or biotech partners who have expertise in biomarker discovery and assay development.",
+      "Secure robust clinical evidence by designing trials that clearly demonstrate how the diagnostic improves treatment selection or outcomes.",
+      "",
+      "Develop a comprehensive reimbursement strategy, detailing the clinical and economic value of the companion diagnostic to payers and providers.",
+      "Continuously update the co-development plan as clinical, regulatory, or market dynamics evolve to maintain alignment and mitigate risks.",
+      "E. Operations & Supply Chain"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-30",
+    "archetype": "medical-device",
+    "title": "Manufacturing Scalability and Technology Transfer Analysis",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "GROSS_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "MANUFACTURING_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/30 - Manufacturing Scalability and Technology Transfer Analysis.md",
+    "goal": "Evaluate the feasibility of scaling up production of a medical device from prototype or low-volume manufacturing to full-scale commercial operations.",
+    "dataRequired": [
+      "Current manufacturing process flowcharts, including assembly steps and in-process controls",
+      "Equipment and tooling specifications, including capacity limits and operational parameters",
+      "Production volume forecasts (short-term and long-term)",
+      "Quality and regulatory requirements (for example, FDA’s Quality System Regulation, ISO 13485)",
+      "Cost breakdown for materials, labor, overhead, and capital expenditures",
+      "Existing process validation reports and performance metrics (for example, yield, cycle time, scrap rates)",
+      "Supplier agreements, lead times, and materials availability"
+    ],
+    "improve": [
+      "Implement lean manufacturing principles and continuous improvement programs to streamline production and reduce waste.",
+      "Establish strong partnerships with contract manufacturers and suppliers, ensuring clear communication and reliable capacity.",
+      "",
+      "Invest in process automation or advanced manufacturing technologies to boost throughput and minimize human error.",
+      "Train operators and quality staff to manage new equipment, processes, and higher production demands effectively.",
+      "Regularly re-evaluate production forecasts, adjusting capacity plans and investment strategies as market conditions evolve.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-31",
+    "archetype": "medical-device",
+    "title": "Vendor Qualification and Supply Chain Integrity Assessment",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/31 - Vendor Qualification and Supply Chain Integrity Assessment.md",
+    "goal": "Evaluate a medical device company’s supplier network to ensure vendors meet quality, regulatory, and performance standards.",
+    "dataRequired": [
+      "Current list of approved vendors and supplier categories (for example, raw materials, components, contract manufacturers)",
+      "Supplier contracts, service level agreements (SLAs), and performance metrics",
+      "Regulatory requirements (for example, 21 CFR Part 820, ISO 13485) related to supplier management",
+      "Audit reports (internal or third-party) of vendors’ facilities and quality systems",
+      "Historical data on supplier performance (delivery times, quality issues, cost variances)",
+      "Risk assessments (for example, FMEA) focusing on supplier-related failures"
+    ],
+    "improve": [
+      "Implement standardized scoring systems for vendor selection, including quality, cost, and delivery reliability factors.",
+      "Establish long-term partnerships with strategic suppliers, enabling mutual collaboration on process improvements and cost efficiencies.",
+      "Perform periodic audits of high-risk or critical suppliers, addressing nonconformities promptly with corrective/preventive actions.",
+      "Maintain a backup supply strategy, either through multiple approved vendors or internal manufacturing capabilities.",
+      "Use digital supply chain management tools for real-time performance monitoring, transparency, and more accurate forecasting.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-32",
+    "archetype": "medical-device",
+    "title": "Environmental Monitoring and Control Strategy in Manufacturing",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/32 - Environmental Monitoring and Control Strategy in.md",
+    "goal": "Ensure that manufacturing environments (for example, cleanrooms, controlled areas) meet the strict requirements necessary to produce safe and effective medical devices.",
+    "dataRequired": [
+      "Facility layout and classification details (for example, ISO class designations for cleanrooms)",
+      "Regulatory and standard requirements (for example, ISO 14644 for cleanrooms, GMP guidelines)",
+      "Historical environmental monitoring records (for example, particle counts, microbial samples, temperature/humidity logs)",
+      "Current standard operating procedures (SOPs) for cleaning, gowning, and environmental control",
+      "Equipment calibration data for monitoring instruments (for example, particle counters, temperature sensors)",
+      "Manufacturing process flow details (to identify critical control points)",
+      "Records of nonconformities or deviations related to environmental conditions"
+    ],
+    "improve": [
+      "Update and enforce SOPs for cleaning, gowning, and maintenance, ensuring all staff receive regular training.",
+      "Implement real-time monitoring systems that provide alerts for environmental parameter excursions.",
+      "Optimize HVAC and filtration systems to maintain consistent airflow and pressure differentials.",
+      "Conduct regular audits of environmental monitoring data, using trend analysis to proactively address emerging issues.",
+      "Continuously invest in new technologies (for example, advanced air handling units, automated monitoring systems) to enhance contamination control.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-33",
+    "archetype": "medical-device",
+    "title": "Instrument Set Standardization and Workflow Efficiency Analysis",
+    "part": "E",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO",
+      "MANUFACTURING_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/33 - Instrument Set Standardization and Workflow Efficiency.md",
+    "goal": "Evaluate the current composition and management of surgical or procedural instrument sets.",
+    "dataRequired": [
+      "Detailed list of all instruments currently included in each set",
+      "Procedure volume data (frequency of use, case mix)",
+      "Time and motion studies or workflow observations in the operating room (OR) or procedural suite",
+      "Reprocessing records, including sterilization logs and turnaround times",
+      "Surgical team feedback regarding ease of use, instrument preference, and setup complexity",
+      "Cost information related to instrument procurement, reprocessing, and maintenance"
+    ],
+    "improve": [
+      "Involve multidisciplinary teams (surgeons, nurses, sterile processing staff) early in the review process to incorporate diverse perspectives.",
+      "Provide clear documentation and visual aids for revised sets, including standardized layout and labeling.",
+      "Implement continuous feedback loops, allowing staff to suggest further refinements as procedures evolve.",
+      "Leverage tracking systems (for example, RFID or barcode scanning) to monitor instrument usage and automate inventory management.",
+      "Conduct periodic audits to ensure that instrument sets remain relevant and efficient as surgical techniques and technologies advance.",
+      "F. Risk Management & Quality"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-34",
+    "archetype": "medical-device",
+    "title": "Failure Mode and Effects Analysis (FMEA)",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "ORGANIZATIONAL",
+      "PRODUCT_QUALITY_RISK"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/34 - Failure Mode and Effects Analysis (FMEA).md",
+    "goal": "Proactively identify potential failure modes in a medical device’s design or processes, assess their effects and causes, and prioritize corrective actions to reduce risk to patients, users, and the organization.",
+    "dataRequired": [
+      "Detailed process maps or device design specifications",
+      "Historical data on failures, complaints, and service records (if available)",
+      "Risk management files (for example, ISO 14971 documentation)",
+      "Cross-functional team input (engineering, quality, manufacturing, clinical)",
+      "Severity, occurrence, and detection criteria tailored to the device or process",
+      "Any relevant standards or regulatory guidance for risk analysis"
+    ],
+    "improve": [
+      "Standardize rating criteria (severity, occurrence, detection) to maintain consistency across projects and teams.",
+      "Involve cross-functional experts early, ensuring comprehensive coverage of potential failure modes.",
+      "Integrate FMEA outcomes into the broader risk management and quality system (for example, CAPA, design controls).",
+      "Conduct periodic training so all team members understand FMEA concepts and remain engaged in ongoing risk reduction efforts.",
+      "Update FMEA documents whenever there are changes to the design, materials, or manufacturing process to keep the risk profile current.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate Risk Priority Number (RPN). RPN",
+        "variables": [
+          "Severity",
+          "Occurrence",
+          "Detection"
+        ],
+        "expression": "v0 * v1 * v2",
+        "percentOutput": false,
+        "source": "Calculate Risk Priority Number (RPN). RPN = Severity x Occurrence x Detection. A high RPN indicates a higher-priority failure mode that needs immediate attention.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "medical-device-35",
+    "archetype": "medical-device",
+    "title": "Sterilization and Biocompatibility Assessment",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/35 - Sterilization and Biocompatibility Assessment.md",
+    "goal": "Evaluate a medical device’s sterilization process and materials to ensure the device remains safe and effective throughout its lifecycle.",
+    "dataRequired": [
+      "Device design specifications, including materials, coatings, and component interfaces",
+      "Chosen sterilization method details (for example, ethylene oxide (EtO), gamma irradiation, steam sterilization)",
+      "Validation protocols and reports for sterilization processes (for example, sterility assurance level calculations)",
+      "Biocompatibility test data (for example, cytotoxicity, sensitization, irritation studies)",
+      "ISO 10993 guidelines or equivalent regulatory standards",
+      "Historical data on device performance related to sterilization or biocompatibility complaints/returns"
+    ],
+    "improve": [
+      "Select materials and sterilization methods early in the design phase to minimize the risk of late-stage failures.",
+      "Maintain close collaboration with testing laboratories and sterilization service providers to ensure protocols align with regulatory expectations.",
+      "Perform ongoing risk assessments and re-evaluations, especially if product design, manufacturing, or sterilization processes are altered.",
+      "Stay current with updates to ISO 10993, AAMI, and other standards or guidelines related to sterilization and biocompatibility.",
+      "",
+      "Document all validation and testing thoroughly to support regulatory submissions and future audits.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-36",
+    "archetype": "medical-device",
+    "title": "Risk-Benefit Assessment for Label Expansion",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PORTFOLIO_LIFECYCLE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/36 - Risk-Benefit Assessment for Label Expansion.md",
+    "goal": "Determine if the medical device’s clinical benefits, safety profile, and supporting evidence justify expanding its intended use or indications.",
+    "dataRequired": [
+      "Existing labeling details, including current indications for use",
+      "Clinical trial data, post-market evidence, and real-world outcomes in both the approved and proposed new settings",
+      "Safety data (for example, adverse events, device-related complications) and historical risk assessments",
+      "Benchmark or competitor data on similar devices with comparable label claims",
+      "Regulatory guidance on data requirements for label expansions (for example, additional clinical trials, bridging studies)",
+      "Expert opinions from key opinion leaders and relevant clinical stakeholders"
+    ],
+    "improve": [
+      "Engage regulatory bodies early (for example, pre-submission meetings) to clarify data requirements and reduce uncertainty.",
+      "Conduct well-designed additional clinical trials or post-market studies to fill evidence gaps identified in the risk-benefit review.",
+      "Collaborate with key opinion leaders to validate the clinical relevance and need for the proposed label expansion.",
+      "Implement ongoing risk management plans that track new safety signals as the device is introduced to broader populations.",
+      "Continuously update internal risk-benefit documentation as real-world data emerges, ensuring timely and evidence-based submissions.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-37",
+    "archetype": "medical-device",
+    "title": "Quality-by-Design (QbD) Implementation",
+    "part": "F",
+    "partLabel": "Risk Management & Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "MANUFACTURING_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/37 - Quality-by-Design (QbD) Implementation.md",
+    "goal": "Embed Quality-by-Design principles into medical device development and manufacturing processes.",
+    "dataRequired": [
+      "Current product design specifications and requirements",
+      "Historical process data and performance metrics (for example, yield, defect rates)",
+      "Risk management documentation (FMEAs, hazard analyses)",
+      "Regulatory guidelines emphasizing QbD principles (for example, FDA guidance on QbD, ICH guidelines adapted for devices)",
+      "Process flow charts and existing control strategies",
+      "Feedback from cross-functional teams (design, manufacturing, quality, regulatory)"
+    ],
+    "improve": [
+      "Promote cross-functional collaboration (R&D, manufacturing, quality) to ensure comprehensive identification of CQAs and CPPs.",
+      "Invest in analytical and process monitoring tools (for example, in-line sensors, statistical process control) to continuously gather quality data.",
+      "Conduct training on QbD principles for all relevant staff to foster a culture of proactive quality management.",
+      "Use data-driven decision-making to refine processes over time, focusing resources on areas that most impact quality.",
+      "Continuously align QbD strategies with evolving regulatory expectations, ensuring devices remain compliant and competitive.",
+      "G. Commercial Strategy & Marketing"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-38",
+    "archetype": "medical-device",
+    "title": "Healthcare Provider Adoption Analysis",
+    "part": "G",
+    "partLabel": "Commercial Strategy & Marketing",
+    "relatedMetricCodes": [
+      "PROCEDURE_VOLUME_GROWTH",
+      "SALES_MARKETING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/38 - Healthcare Provider Adoption Analysis.md",
+    "goal": "Understand the drivers, barriers, and decision-making processes influencing how healthcare providers (for example, hospitals, clinics, physicians) adopt a new medical device.",
+    "dataRequired": [
+      "Market research on provider preferences, priorities, and pain points",
+      "Clinical evidence or case studies showing the device’s efficacy and safety profile",
+      "Economic and cost data (for example, ROI, total cost of ownership) from the provider perspective",
+      "Provider feedback via surveys, interviews, or focus groups",
+      "Usage metrics, if the device is already in limited use (for example, pilot adoption data)",
+      "Competitive landscape information, including comparable devices and their adoption rates"
+    ],
+    "improve": [
+      "Develop targeted messaging highlighting clinical and economic value, tailored to specific provider segments.",
+      "Offer robust implementation support (for example, on-site training, technical support) to minimize workflow disruptions.",
+      "Collaborate with early adopter sites to generate case studies or pilot data demonstrating real-world success.",
+      "Continuously refine product features based on user feedback and evolving clinical needs.",
+      "",
+      "Engage in ongoing provider education and relationship-building (for example, webinars, user groups) to foster trust and sustained adoption.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-39",
+    "archetype": "medical-device",
+    "title": "Key Opinion Leader Engagement Strategy",
+    "part": "G",
+    "partLabel": "Commercial Strategy & Marketing",
+    "relatedMetricCodes": [
+      "SALES_MARKETING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/39 - Key Opinion Leader Engagement Strategy.md",
+    "goal": "Identify and collaborate with influential healthcare professionals and thought leaders (Key Opinion Leaders) to support the adoption, clinical validation, and market success of a medical device.",
+    "dataRequired": [
+      "Clinical specialty and therapeutic area details relevant to the device",
+      "Profiles of potential KOLs (publication history, conference presentations, research interests)",
+      "Past or ongoing collaborations with KOLs in the same or related fields",
+      "The company’s marketing and clinical objectives (for example, generating clinical evidence, speaking engagements)",
+      "Budget and resource allocation for KOL programs (for example, honoraria, travel, research grants)",
+      "Local and international regulations or guidelines regarding physician-industry collaborations"
+    ],
+    "improve": [
+      "Continually update KOL lists and engagement strategies based on new clinical data, market feedback, and emerging industry trends.",
+      "Provide transparent communication regarding collaboration goals, potential conflicts of interest, and compliance obligations.",
+      "Create a supportive environment for KOLs by offering technical resources, peer-to-peer networking opportunities, and recognition of their contributions.",
+      "Use digital platforms and virtual events to maintain regular dialogue, especially for geographically dispersed KOLs.",
+      "",
+      "Track the impact of each KOL collaboration (for example, new clinical evidence, improved product features) to demonstrate mutual benefit and guide future partnerships.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-40",
+    "archetype": "medical-device",
+    "title": "Physician Training and Education Program Evaluation",
+    "part": "G",
+    "partLabel": "Commercial Strategy & Marketing",
+    "relatedMetricCodes": [
+      "SALES_MARKETING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/40 - Physician Training and Education Program Evaluation.md",
+    "goal": "Assess the effectiveness of training and educational programs provided to physicians who use a medical device.",
+    "dataRequired": [
+      "Current training curricula, materials, and modalities (for example, in-person workshops, online modules)",
+      "Records of physician attendance, completion rates, and certifications achieved",
+      "Feedback from trained physicians (surveys, interviews, or focus groups)",
+      "Device usage metrics post-training (for example, error rates, procedure times)",
+      "Adverse event or complaint data that may be linked to user error or insufficient training",
+      "Comparison of competitor or industry best practices in physician training"
+    ],
+    "improve": [
+      "Tailor training sessions to different physician skill levels and specialties, offering advanced, intermediate, and beginner tracks.",
+      "Incorporate interactive methods (for example, virtual reality or simulation) for hands-on learning in a risk-free environment.",
+      "Provide ongoing support post-training, such as refresher courses, online troubleshooting resources, or on-demand webinars.",
+      "Foster peer-to-peer knowledge exchange, encouraging experienced users to mentor new adopters.",
+      "Continuously measure and refine the program by tracking physician performance metrics, gathering feedback, and aligning with emerging clinical guidelines.",
+      "H. Technology & Innovation"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-41",
+    "archetype": "medical-device",
+    "title": "Software as a Medical Device (SaMD) and Cybersecurity Risk Assessment",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/41 - Software as a Medical Device (SaMD) and Cybersecurity Risk.md",
+    "goal": "Determine whether a software product qualifies as a medical device under relevant regulations and evaluate cybersecurity vulnerabilities that could impact patient safety, data integrity, or device functionality.",
+    "dataRequired": [
+      "Software functionality and intended use statements",
+      "Regulatory definitions of Software as a Medical Device for target markets (for example, FDA, EU MDR)",
+      "Software architecture and design documentation",
+      "Network and communication protocols used by the software (for example, Wi-Fi, Bluetooth, cloud connectivity)",
+      "Current cybersecurity measures (for example, encryption, authentication, secure boot)",
+      "Risk management documentation (FMEAs, hazard analyses) and known cybersecurity frameworks (for example, NIST Cybersecurity Framework)",
+      "Records of previous cybersecurity incidents or vulnerabilities"
+    ],
+    "improve": [
+      "Engage cybersecurity experts and conduct regular penetration testing to uncover vulnerabilities.",
+      "Adopt secure development life cycle (SDLC) practices, including code reviews, threat modeling, and automated security testing.",
+      "Implement robust user authentication, encryption, and secure data transfer protocols.",
+      "Collaborate with external partners (for example, cloud service providers) to ensure all integrated systems meet cybersecurity requirements.",
+      "Maintain a continuous post-market surveillance program to address new threats, patch vulnerabilities promptly, and communicate risks to stakeholders.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-42",
+    "archetype": "medical-device",
+    "title": "Device Tracking and Traceability Program Analysis",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/42 - Device Tracking and Traceability Program Analysis.md",
+    "goal": "Evaluate the processes and systems in place for tracing medical devices throughout their lifecycle—from manufacturing through distribution and post-market surveillance.",
+    "dataRequired": [
+      "Current device tracking procedures, including SOPs and system documentation",
+      "Unique Device Identification (UDI) records, labeling, and registration details",
+      "Manufacturing batch or lot records, including serial numbers and production dates",
+      "Distribution records (ship-to locations, dates, quantities)",
+      "Return or recall logs and any associated root cause documentation",
+      "IT systems and software used for device tracking (for example, ERP, MES, or specialized track-and-trace platforms)"
+    ],
+    "improve": [
+      "Implement integrated IT solutions (for example, ERP/MES) that automatically track and update device data in real-time.",
+      "Regularly audit device labeling and data entry processes to catch inconsistencies or incomplete entries early.",
+      "Conduct training sessions to ensure all relevant personnel understand UDI requirements and data integrity practices.",
+      "Develop and test recall readiness exercises periodically to confirm rapid device identification and retrieval capability.",
+      "Stay current with evolving regulations on device tracking in different markets, updating internal procedures and systems as needed.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-43",
+    "archetype": "medical-device",
+    "title": "Human Factors Engineering and Usability Evaluation",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PHYSICIAN_ADOPTION"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/43 - Human Factors Engineering and Usability Evaluation.md",
+    "goal": "Ensure that a medical device’s design, instructions, and interface minimize user error and optimize safety, effectiveness, and patient experience.",
+    "dataRequired": [
+      "Device design specifications and user interface details",
+      "User profiles (for example, healthcare professionals, patients, caregivers) and use environment descriptions",
+      "Previous usability data or complaints related to device use",
+      "Risk management documentation identifying critical tasks and potential user-related hazards",
+      "Prototypes or final production units for testing",
+      "Applicable standards and guidelines (for example, IEC 62366, FDA human factors guidance)"
+    ],
+    "improve": [
+      "Involve representative end-users early in the design process to capture authentic needs and expectations.",
+      "Iterate rapidly, using formative evaluations to catch user interface flaws before costly design freeze points.",
+      "Align risk management processes with human factors findings, ensuring that usability issues with high potential harm are addressed first.",
+      "Provide comprehensive user training materials (e.g., videos, quick-start guides) and gather feedback continuously after product launch.",
+      "",
+      "Maintain a living usability file to inform design updates, post-market surveillance, and future device generations.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-44",
+    "archetype": "medical-device",
+    "title": "Material Compatibility and Biomaterial Selection Analysis",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/44 - Material Compatibility and Biomaterial Selection Analysis.md",
+    "goal": "Determine the most suitable materials for a medical device based on factors such as biocompatibility, mechanical properties, manufacturing feasibility, and regulatory compliance.",
+    "dataRequired": [
+      "Device design specifications, including functional requirements (for example, load-bearing, flexibility) and intended use (internal/external, short/long duration)",
+      "Material properties data (for example, tensile strength, thermal stability, chemical resistance)",
+      "Biocompatibility test results aligned with ISO 10993 or other relevant standards",
+      "Manufacturing process constraints (for example, injection molding, machining, additive manufacturing)",
+      "Regulatory requirements or guidance documents related to material selection",
+      "Historical device performance and any documented material failures or complaints",
+      "Environmental factors affecting device use (for example, sterilization, UV exposure, repeated cleaning cycles)"
+    ],
+    "improve": [
+      "Engage cross-functional teams (design, quality, regulatory, manufacturing) early to align on material requirements.",
+      "Conduct ongoing material research and testing to keep pace with emerging biomaterials or improved formulations.",
+      "",
+      "Collaborate with material suppliers and external labs to address any uncertainties in chemical, mechanical, or biological performance.",
+      "Integrate material considerations into early design stages to minimize downstream changes or delays.",
+      "Update risk management files (for example, FMEA) whenever material changes or updates occur in the device’s lifecycle.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-45",
+    "archetype": "medical-device",
+    "title": "Clinical Data Integration with Wearables and IoT Devices",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/45 - Clinical Data Integration with Wearables and IoT Devices.md",
+    "goal": "Enable seamless data collection, transmission, and analysis from wearable sensors and Internet of Things (IoT) medical devices to enhance patient monitoring, support real-time clinical decision-making, and improve overall healthcare outcomes.",
+    "dataRequired": [
+      "Specifications of the wearable/IoT devices (sensors, data formats, connectivity protocols)",
+      "Patient demographic and clinical data management requirements",
+      "Regulatory standards for data privacy and security (for example, HIPAA, GDPR)",
+      "Network infrastructure details (for example, hospital Wi-Fi, cellular, Bluetooth, cloud)",
+      "Interoperability guidelines (for example, HL7 FHIR, DICOM)",
+      "Existing electronic health record (EHR) integration processes",
+      "Any relevant device performance metrics (battery life, data transmission rates)"
+    ],
+    "improve": [
+      "Collaborate with standards organizations and healthcare IT vendors to stay current on evolving interoperability protocols.",
+      "Invest in rigorous testing environments (for example, simulation labs) to replicate real-world conditions and address connectivity or device performance issues early.",
+      "Provide user-friendly interfaces and clear instructions for patients and clinicians, ensuring high engagement and adherence.",
+      "Implement advanced analytics or machine learning algorithms to derive actionable insights from large volumes of wearable-generated data.",
+      "",
+      "Establish ongoing governance processes to review data quality, security controls, and user feedback, adapting integration strategies as technologies evolve.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-46",
+    "archetype": "medical-device",
+    "title": "Calibration and Maintenance Program for Reusable Devices",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/46 - Calibration and Maintenance Program for Reusable Devices.md",
+    "goal": "Ensure that reusable medical devices are consistently calibrated and maintained to meet their performance specifications over multiple uses.",
+    "dataRequired": [
+      "Inventory of all reusable devices, including serial numbers and model information",
+      "Manufacturer recommendations for calibration intervals and maintenance procedures",
+      "Historical maintenance and calibration records (dates, outcomes, any corrective actions)",
+      "Device-specific performance specifications and tolerances",
+      "Applicable regulatory or quality system requirements related to device calibration and maintenance",
+      "Usage data (frequency of use, environment of use, stress factors)"
+    ],
+    "improve": [
+      "Centralize all calibration and maintenance documentation in an accessible system, ensuring traceability and compliance with regulatory audits.",
+      "Establish tiered maintenance schedules aligned with device criticality, focusing the most resources on high-risk or life-support devices.",
+      "Offer ongoing training to technicians and end-users to reinforce correct calibration techniques and prompt reporting of device anomalies.",
+      "Periodically review manufacturer updates or service bulletins to keep calibration protocols current.",
+      "Implement continuous quality improvement by leveraging data analytics on maintenance frequency, repair costs, and device performance trends.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-47",
+    "archetype": "medical-device",
+    "title": "In-Vitro Diagnostic (IVD) Connectivity with Laboratory Information Systems (LIS) Workflow Analysis",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/47 - In-Vitro Diagnostic (IVD) Connectivity with Laboratory.md",
+    "goal": "Evaluate how effectively an in-vitro diagnostic (IVD) device exchanges data with a Laboratory Information System (LIS), ensuring seamless sample management, result reporting, and quality control tracking.",
+    "dataRequired": [
+      "Current LIS capabilities and configuration details (for example, supported communication protocols, data standards)",
+      "IVD device interface specifications (for example, HL7, ASTM, or proprietary protocols)",
+      "Workflow documentation for sample processing, testing, and result reporting",
+      "Network infrastructure and IT security requirements",
+      "Historical data on interface errors, delayed or lost results, and user complaints",
+      "Regulatory guidelines on data traceability and electronic records (for example, CLIA, CAP, ISO 15189)"
+    ],
+    "improve": [
+      "Align the IVD interface with widely adopted data exchange standards (for example, HL7, ASTM), reducing the need for custom integrations.",
+      "Deploy middleware solutions or lab automation systems that can bridge protocol gaps and streamline data validation.",
+      "Provide regular training for lab and IT personnel on device connectivity features, troubleshooting, and best practices.",
+      "",
+      "Perform periodic interface audits to track error rates, network latency, and system updates, maintaining continuous alignment with evolving standards.",
+      "Collaborate with LIS and IVD device vendors to share feedback, request feature enhancements, and ensure coordinated support for future upgrades.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-48",
+    "archetype": "medical-device",
+    "title": "Remote Servicing and Maintenance Approach for Connected Medical Devices",
+    "part": "H",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/48 - Remote Servicing and Maintenance Approach for Connected.md",
+    "goal": "Establish a reliable and secure method for providing remote updates, diagnostics, and troubleshooting for connected medical devices.",
+    "dataRequired": [
+      "Current device connectivity capabilities (for example, Wi-Fi, cellular, Ethernet)",
+      "Software architecture and remote access protocols (for example, VPN, secure cloud platform)",
+      "Existing maintenance procedures, including firmware update schedules and service logs",
+      "Regulatory requirements for software updates, cybersecurity, and data privacy (for example, FDA, EU MDR, HIPAA, GDPR)",
+      "Network infrastructure and security measures (firewalls, encryption, authentication)",
+      "Records of service incidents, device error logs, and user complaints related to maintenance",
+      "Cost analysis of field service visits vs. remote troubleshooting"
+    ],
+    "improve": [
+      "Adopt secure software lifecycle practices, including encryption, code signing, and regular vulnerability assessments.",
+      "Provide training for technical support teams and device operators on initiating remote sessions and troubleshooting.",
+      "",
+      "Collaborate with IT and cybersecurity experts to integrate best-in-class network protection, threat detection, and incident response.",
+      "Develop clear escalation procedures for issues that cannot be resolved remotely, ensuring a seamless handoff to on-site support.",
+      "Continuously monitor performance metrics (for example, remote fix rates, update success rates) to refine and expand remote servicing capabilities.",
+      "I. Intellectual Property"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-49",
+    "archetype": "medical-device",
+    "title": "Intellectual Property and Patent Landscape",
+    "part": "I",
+    "partLabel": "Intellectual Property",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/medical-device/49 - Intellectual Property and Patent Landscape.md",
+    "goal": "Determine the existing intellectual property (IP) and patent environment related to a medical device or technology.",
+    "dataRequired": [
+      "Technical details of the medical device (design, materials, functionality)",
+      "Existing patent filings by the company (pending or granted)",
+      "Public patent databases and commercial IP search platforms (for example, USPTO, EPO, WIPO databases)",
+      "Competitor product information and known patents in the relevant technology space",
+      "Patent litigation history or legal precedents related to similar devices",
+      "IP licensing and collaboration agreements in the target industry"
+    ],
+    "improve": [
+      "Conduct regular patent watches to monitor new filings and competitor activities in relevant technology areas.",
+      "Partner with experienced patent attorneys to navigate complex FTO issues and draft robust patent claims.",
+      "File provisional patents early in the R&D process to secure priority dates while refining device designs.",
+      "Leverage defensive publishing to prevent competitors from patenting incremental innovations.",
+      "Collaborate with universities or research institutions for joint IP development, leveraging complementary expertise and access to cutting-edge research.",
+      "J. Sustainability & Environmental Impact"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "medical-device-50",
+    "archetype": "medical-device",
+    "title": "Sustainability and Environmental Impact Assessment for Single-Use Devices",
+    "part": "J",
+    "partLabel": "Sustainability & Environmental Impact",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/medical-device/50 - Sustainability and Environmental Impact Assessment for.md",
+    "goal": "Evaluate the environmental footprint of single-use medical devices, from raw material sourcing to end-of-life disposal.",
+    "dataRequired": [
+      "Bill of materials for the single-use device (including polymer, metal, and packaging components)",
+      "Manufacturing processes (energy consumption, water usage, waste outputs)",
+      "Logistics and distribution details (transport modes, distances, packaging materials)",
+      "End-of-life handling methods (incineration, landfill, recycling, reprocessing)",
+      "Regulatory or certification requirements related to environmental impact (for example, ISO 14001)",
+      "Hospital or healthcare facility sustainability policies and targets",
+      "Cost analysis of material choices, disposal methods, and potential recycling options"
+    ],
+    "improve": [
+      "Consider switching to bio-based or recyclable materials that still meet device performance standards.",
+      "Collaborate with suppliers to implement green manufacturing practices, such as waste reduction and energy efficiency.",
+      "",
+      "Design packaging with minimal materials and explore reusability or recyclability.",
+      "Encourage healthcare facilities to adopt best practices for disposal, including recycling or regulated reprocessing.",
+      "Regularly update the environmental impact assessment as technologies evolve, new materials emerge, or regulatory requirements change.",
+      ""
+    ],
+    "formulas": []
+  }
+]

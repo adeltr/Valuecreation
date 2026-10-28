@@ -1,0 +1,2253 @@
+[
+  {
+    "id": "waste-management-01",
+    "archetype": "waste-management",
+    "title": "Landfill Capacity and Closure-Post-Closure Liability Analysis",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [
+      "REMAINING_LANDFILL_LIFE",
+      "LANDFILL_CLOSURE_LIABILITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/01 - Landfill Capacity and Closure-Post-Closure Liability Analysis.md",
+    "goal": "To determine the remaining usable life of a landfill, estimate closure and post-closure liabilities, and plan the financial and operational requirements for ensuring regulatory compliance and environmental protection.",
+    "dataRequired": [
+      "Permitted landfill capacity (cubic yards)",
+      "Historical and current fill rate (tons or cubic yards per year)",
+      "Average compaction rates or density factors",
+      "Regulatory requirements for closure and post-closure (monitoring, maintenance, etc.)",
+      "Cost estimates for closure components (final cover, gas management, leachate systems)",
+      "Cost estimates for post-closure care (monitoring, maintenance, reporting)",
+      "Discount rate or financial assumptions (for Net Present Value calculations)"
+    ],
+    "improve": [
+      "Enhance compaction processes or introduce new landfill operating technologies to optimize airspace usage and extend landfill life.",
+      "Evaluate potential for landfill expansion or alternative disposal sites to delay closure.",
+      "Reduce waste inflow through recycling, diversion programs, or partnerships with local municipalities.",
+      "",
+      "Establish robust financial assurance funds or insurance instruments to manage closure/post-closure liabilities.",
+      "Integrate renewable energy projects (e.g., landfill gas-to-energy) to offset some closure costs and improve sustainability outcomes.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Remaining Landfill Life (years)",
+        "variables": [
+          "Remaining Airspace (cubic yards)",
+          "Annual Disposal Volume (cubic yards per year)"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Remaining Landfill Life (years) = (Remaining Airspace (cubic yards) / Annual Disposal Volume (cubic yards per year))",
+        "step": "Calculate remaining landfill life"
+      }
+    ]
+  },
+  {
+    "id": "waste-management-02",
+    "archetype": "waste-management",
+    "title": "Leachate Management and Groundwater Protection Compliance",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/02 - Leachate Management and Groundwater Protection.md",
+    "goal": "To assess the effectiveness of leachate management practices, ensure compliance with groundwater protection standards, and minimize environmental risk and regulatory liabilities.",
+    "dataRequired": [
+      "Leachate flow rates (gallons per day or cubic meters per day)",
+      "Leachate composition and contaminant levels (e.g., heavy metals, organic compounds, ammonia)",
+      "Groundwater monitoring well data (contaminant levels, water table depth)",
+      "Baseline groundwater quality data for comparison",
+      "Historical precipitation and site hydrology data",
+      "Landfill design specifications (liner types, leachate collection system details)",
+      "Regulatory standards for leachate discharge and groundwater quality",
+      "Cost data for leachate treatment and disposal"
+    ],
+    "improve": [
+      "Improve landfill cover systems to reduce infiltration and subsequent leachate generation.",
+      "Upgrade or optimize leachate collection and treatment systems to increase contaminant removal efficiency.",
+      "",
+      "Enhance monitoring and maintenance protocols (e.g., more frequent inspections, quicker repair times) to prevent leaks and overflows.",
+      "Implement pretreatment options (e.g., aeration, biological treatment) to lower contaminant loads.",
+      "Investigate alternative leachate disposal or beneficial reuse strategies, such as recirculation in bioreactor landfills or industrial reuse.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-03",
+    "archetype": "waste-management",
+    "title": "Residuals Disposal and Processing Cost Analysis",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [
+      "DISPOSAL_COST_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "DISPOSAL_INTERNALIZATION"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/03 - Residuals Disposal and Processing Cost Analysis.md",
+    "goal": "To quantify and optimize the costs associated with disposing of or processing residual waste streams (e.g., non-recyclable materials, ash from incineration, or residues from sorting processes) and to identify opportunities for cost savings and operational improvements.",
+    "dataRequired": [
+      "Types and quantities of residuals generated (tons per year or cubic yards per year)",
+      "Composition of residuals (e.g., moisture content, calorific value, contaminants)",
+      "Existing disposal/processing methods (e.g., landfill, incineration, further sorting)",
+      "Tipping fees, hauling costs, and gate fees at disposal or processing facilities",
+      "Operational costs for processing (labor, utilities, maintenance)",
+      "Regulatory requirements or restrictions related to residual handling",
+      "Market data for potential reuse or alternative processing (e.g., refuse-derived fuel)"
+    ],
+    "improve": [
+      "Enhance upstream sorting technologies and procedures to reduce the volume of residuals.",
+      "Negotiate more favorable disposal or processing contracts to lower tipping or gate fees.",
+      "Consider on-site processing options (e.g., refuse-derived fuel production) to reduce transportation and external disposal costs.",
+      "Explore partnerships or technologies that enable further material recovery from residuals.",
+      "",
+      "Implement continuous monitoring and reporting systems to track residual volumes and costs in real time, enabling proactive adjustments.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-04",
+    "archetype": "waste-management",
+    "title": "Municipal Solid Waste (MSW) Composition Trend Forecasting for Long-Term Capacity Planning",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [
+      "TONS_COLLECTED_MT",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/04 - Municipal Solid Waste (MSW) Composition Trend Forecasting.md",
+    "goal": "To predict future MSW composition and volumes to support strategic decisions related to landfill capacity, recycling infrastructure, and waste diversion programs, ensuring long-term operational viability and environmental compliance.",
+    "dataRequired": [
+      "Historical MSW tonnage data by material category (e.g., paper, plastics, organics, metals)",
+      "Population demographics and growth projections",
+      "Economic indicators (GDP, consumer spending) that may influence waste generation",
+      "Local or regional recycling and diversion policies (e.g., bans on certain materials)",
+      "Technological innovations that affect product packaging or consumption patterns",
+      "Seasonal or event-based variations in waste streams"
+    ],
+    "improve": [
+      "Invest in regular waste audits and composition studies to keep data current and accurate.",
+      "Collaborate with local governments and stakeholders to obtain timely economic and demographic data for refined forecasting.",
+      "Monitor emerging technologies and packaging trends that could significantly alter waste composition.",
+      "Explore partnerships with producers and retailers to encourage upstream waste reduction (e.g., reduced packaging).",
+      "Develop flexible waste management infrastructure that can adapt to evolving waste streams (e.g., modular MRFs, scalable composting facilities).",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Annual Growth Rate (%)",
+        "variables": [
+          "Current Year Volume",
+          "Previous Year Volume"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Annual Growth Rate (%) = ((Current Year Volume - Previous Year Volume) / Previous Year Volume) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-05",
+    "archetype": "waste-management",
+    "title": "Closed Landfill Redevelopment Feasibility",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/05 - Closed Landfill Redevelopment Feasibility.md",
+    "goal": "To determine the viability of repurposing a closed landfill site for alternative uses (e.g., solar farm, recreational space, commercial development) by assessing technical, financial, environmental, and regulatory factors.",
+    "dataRequired": [
+      "Site-specific data (location, size, topography, soil stability)",
+      "Historical landfill records (closure date, cap design, monitoring data)",
+      "Environmental monitoring results (gas emissions, groundwater quality)",
+      "Local zoning and land-use regulations",
+      "Cost estimates for site remediation or infrastructure improvements",
+      "Market demand or community interest in proposed redevelopment uses",
+      "Potential revenue sources (e.g., lease income from solar projects, park concessions)"
+    ],
+    "improve": [
+      "Conduct thorough environmental due diligence to minimize unforeseen remediation expenses.",
+      "Engage with community stakeholders early to build support and gather feedback on preferred site uses.",
+      "Explore public-private partnerships or grants to offset redevelopment costs.",
+      "Invest in ongoing site monitoring and maintenance to preserve cap integrity and ensure long-term project sustainability.",
+      "Diversify redevelopment options (e.g., mixed-use concepts) to spread risk and maximize potential revenue.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-06",
+    "archetype": "waste-management",
+    "title": "Landfill Mining and Resource Recovery Feasibility",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/06 - Landfill Mining and Resource Recovery Feasibility.md",
+    "goal": "To evaluate whether reclaiming buried materials (e.g., metals, plastics, organics) and recovering landfill space through landfill mining is financially and technically viable, and to determine potential environmental benefits or risks associated with such operations.",
+    "dataRequired": [
+      "Historical records of landfill composition (e.g., average metal content, recyclable plastics)",
+      "Current and projected market prices for recoverable materials",
+      "Estimated costs for excavation, separation, and processing (equipment, labor, disposal of unrecoverable residues)",
+      "Permitting requirements and potential regulatory barriers",
+      "Geotechnical data (stability of landfill slopes, soil cover, moisture content)",
+      "Environmental impact data (possible odor, dust, or leachate issues during mining)",
+      "Potential revenue from recovered airspace or from reselling reclaimed materials"
+    ],
+    "improve": [
+      "Conduct more precise waste sampling to reduce uncertainty about recoverable materials and contamination levels.",
+      "",
+      "Explore advanced sorting technologies or partnerships to maximize recovery rates for high-value commodities.",
+      "Negotiate long-term contracts or hedges for recovered materials to mitigate market price volatility.",
+      "Investigate potential funding or incentives from government agencies that support circular economy initiatives.",
+      "Develop robust environmental management plans to address emissions, odors, and potential public concerns during excavation.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Economic Value (USD)",
+        "variables": [
+          "Revenue from Recovered Materials",
+          "Value of Reclaimed Airspace",
+          "Excavation and Processing Costs",
+          "Disposal of Residue"
+        ],
+        "expression": "( v0 + v1 ) - ( v2 + v3 )",
+        "percentOutput": false,
+        "source": "Net Economic Value (USD) = (Revenue from Recovered Materials + Value of Reclaimed Airspace) - (Excavation and Processing Costs + Disposal of Residue)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-07",
+    "archetype": "waste-management",
+    "title": "Bioreactor Landfill Operation Performance",
+    "part": "A",
+    "partLabel": "Landfill Management & Operations",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO",
+      "WASTE_TO_ENERGY"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/07 - Bioreactor Landfill Operation Performance.md",
+    "goal": "To evaluate the efficiency of a bioreactor landfill’s enhanced decomposition process and optimize factors such as moisture content, leachate recirculation, and gas collection, ultimately improving waste stabilization rates and energy recovery potential.",
+    "dataRequired": [
+      "Daily or monthly landfill gas production data (methane and CO2 volumes)",
+      "Waste tonnage and composition records",
+      "Leachate generation volume and recirculation rates",
+      "Operational parameters (moisture content, temperature, oxygen levels)",
+      "Biodegradation rate indicators (volatile solids, biochemical methane potential)",
+      "Regulatory requirements for bioreactor landfills (liner systems, monitoring protocols)",
+      "Historical performance benchmarks or similar facility comparisons"
+    ],
+    "improve": [
+      "Optimize leachate recirculation systems or add supplemental liquids to maintain ideal moisture content.",
+      "Enhance landfill gas collection infrastructure (e.g., well spacing, vacuum control) to capture a higher percentage of generated gas.",
+      "Monitor and adjust operational parameters (pH, temperature, and nutrient levels) to foster microbial activity.",
+      "Evaluate the addition of co-digestion feedstocks (e.g., biosolids) that may accelerate decomposition and boost methane yields.",
+      "Conduct regular maintenance and audits of the liners, piping, and well systems to prevent leaks and maintain efficient operations.",
+      "B. Recycling & Materials Recovery"
+    ],
+    "formulas": [
+      {
+        "output": "Methane Yield (cubic meters CH4 per tonne of waste)",
+        "variables": [
+          "Total Methane Collected Over a Period",
+          "Total Waste Landfilled Over the Same Period"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Methane Yield (cubic meters CH4 per tonne of waste) = (Total Methane Collected Over a Period) / (Total Waste Landfilled Over the Same Period)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-08",
+    "archetype": "waste-management",
+    "title": "Material Recovery Facility (MRF) Throughput and Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "RECYCLING_RATE",
+      "MRF_RECOVERY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "RECYCLING_VALUE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/08 - Material Recovery Facility (MRF) Throughput and Efficiency.md",
+    "goal": "To evaluate the operational performance of a Material Recovery Facility (MRF), measure throughput and recovery efficiency, and identify opportunities to optimize processing, reduce contamination, and increase revenue from recovered materials.",
+    "dataRequired": [
+      "Incoming material tonnages (daily or weekly)",
+      "Processed tonnages by material type (paper, plastics, metals, etc.)",
+      "Facility operating hours and staffing levels",
+      "Contamination rates and residue disposal records",
+      "Equipment specifications (throughput capacity, downtime records)",
+      "Commodity market prices for recovered materials",
+      "Operational costs (labor, energy, maintenance)"
+    ],
+    "improve": [
+      "Upgrade or maintain sorting equipment (e.g., optical sorters, screens) to reduce contamination and increase processing speed.",
+      "Provide ongoing training for staff to ensure effective material recognition and reduce mis-sorts.",
+      "Introduce preventative maintenance schedules to minimize unplanned downtime and prolong equipment life.",
+      "Collaborate with municipalities or suppliers to improve inbound material quality and reduce contamination.",
+      "Monitor commodity market trends and adjust the material mix or processing focus to maximize revenue opportunities.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Throughput (tons/hour)",
+        "variables": [
+          "Total Tons Processed in a Period",
+          "Total Operating Hours in the Same Period"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Throughput (tons/hour) = (Total Tons Processed in a Period) / (Total Operating Hours in the Same Period)",
+        "step": null
+      },
+      {
+        "output": "Recovery Rate (%)",
+        "variables": [
+          "Marketable Recovered Materials",
+          "Inbound Recyclables"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Recovery Rate (%) = ((Marketable Recovered Materials) / (Inbound Recyclables)) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-09",
+    "archetype": "waste-management",
+    "title": "Waste Composition and Recycling Rate Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "RECYCLING_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "WC_DSO",
+      "RECYCLING_VALUE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/09 - Waste Composition and Recycling Rate Analysis.md",
+    "goal": "To determine the composition of the overall waste stream, measure current recycling rates, and identify opportunities to increase the diversion of recyclable materials from landfill disposal.",
+    "dataRequired": [
+      "Total waste generation data (tons, pounds, or cubic yards)",
+      "Composition breakdown by material category (e.g., paper, plastics, metals, organics)",
+      "Amount of each material type that is recycled, composted, or diverted",
+      "Collection methods (single-stream vs. multi-stream) and participation rates",
+      "Demographic or regional data (population size, urban/rural factors)",
+      "Historical data on recycling and disposal trends"
+    ],
+    "improve": [
+      "Enhance collection infrastructure (e.g., more convenient recycling bins, clear labeling) to reduce contamination and increase participation.",
+      "Launch targeted education campaigns to address specific high-value or high-volume materials that are not being recycled.",
+      "Implement policies or incentives (e.g., pay-as-you-throw, deposit systems) to encourage waste reduction and diversion.",
+      "Evaluate and upgrade sorting technologies (e.g., optical sorters) to improve material capture rates.",
+      "Collaborate with local stakeholders, including municipalities and recyclers, to expand markets for recovered materials and secure more stable commodity pricing.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Recycling Rate (%)",
+        "variables": [
+          "Total Recycled Material",
+          "Total Waste Generated"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Recycling Rate (%) = ((Total Recycled Material) / (Total Waste Generated)) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-10",
+    "archetype": "waste-management",
+    "title": "Commodity Price Fluctuation and Recycling Revenue Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "COMMODITY_PRICE_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "COMMODITY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "MIX",
+      "WC_DIO",
+      "RECYCLING_VALUE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/10 - Commodity Price Fluctuation and Recycling Revenue.md",
+    "goal": "To evaluate how fluctuations in commodity prices (e.g., metals, plastics, paper) affect recycling revenue and to develop strategies that stabilize or optimize earnings over time.",
+    "dataRequired": [
+      "Historical commodity price data for each recycled material (e.g., USD per ton)",
+      "Sales volumes by material type and associated revenue",
+      "Contract details (e.g., fixed-price vs. spot-price agreements, duration, penalty clauses)",
+      "Operational costs (processing, transportation, storage)",
+      "Market forecasts or industry reports on commodity price trends",
+      "Hedging options or financial instruments (if applicable)"
+    ],
+    "improve": [
+      "Diversify the portfolio of recovered materials to reduce dependency on any single commodity’s market volatility.",
+      "Explore long-term or floor-price contracts to protect against sudden price drops.",
+      "Investigate hedging tools or forward contracts for high-volume or high-value commodities.",
+      "Regularly monitor and forecast commodity prices using reputable market intelligence to adjust sales timing or inventory strategies.",
+      "Invest in improving material quality (e.g., reducing contamination) to secure better prices and expand potential buyers.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-11",
+    "archetype": "waste-management",
+    "title": "Plastic Credits and Recycled Plastic Feedstock Procurement Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "COMMODITY_PRICE_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "COMMODITY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/11 - Plastic Credits and Recycled Plastic Feedstock Procurement.md",
+    "goal": "To evaluate the financial and operational feasibility of purchasing plastic credits and procuring recycled plastic feedstock, ensuring that sustainability targets are met while maintaining cost-effectiveness and supply chain reliability.",
+    "dataRequired": [
+      "Current and projected plastic usage (by resin type and volume)",
+      "Market prices for recycled plastic feedstock (e.g., rPET, rHDPE)",
+      "Availability of plastic credits, including their price and validation standards (e.g., Verra, Gold Standard)",
+      "Sustainability or ESG commitments related to plastic usage and recycling targets",
+      "Regulatory requirements (e.g., minimum recycled content mandates)",
+      "Supplier qualifications and production capacities for recycled plastics"
+    ],
+    "improve": [
+      "Develop long-term contracts or partnerships with reputable recyclers to secure stable pricing and supply for recycled resin.",
+      "Invest in R&D or product redesign to accommodate higher recycled content without compromising functionality or quality.",
+      "Explore blending recycled and virgin plastic to gradually increase recycled content while managing cost and quality constraints.",
+      "Engage in industry coalitions or circular economy initiatives to expand the overall market for high-quality recycled plastics.",
+      "Implement robust tracking and reporting tools to document plastic credit purchases and recycled content usage, ensuring transparency and credibility.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-12",
+    "archetype": "waste-management",
+    "title": "Resource Recovery Park Master Planning and Integrated Facility Design",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "DISPOSAL_INTERNALIZATION",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/12 - Resource Recovery Park Master Planning and Integrated.md",
+    "goal": "To develop a comprehensive plan for a Resource Recovery Park (RRP) that integrates multiple waste processing and recycling facilities into one cohesive site, optimizing material recovery, minimizing environmental impact, and supporting local economic development.",
+    "dataRequired": [
+      "Projected waste streams (volume, composition) from the region",
+      "Available land area, site topography, and zoning restrictions",
+      "Capital and operational cost estimates for each facility type (e.g., MRF, composting, WTE)",
+      "Utility and infrastructure requirements (water, power, roads)",
+      "Regulatory requirements (environmental permits, zoning approvals)",
+      "Market demand for recovered materials or byproducts (e.g., compost, recycled plastic pellets)",
+      "Community and stakeholder input regarding facility aesthetics, traffic, and environmental concerns"
+    ],
+    "improve": [
+      "Engage with local authorities and community groups early in the planning process to address concerns and gain support.",
+      "Incorporate flexibility in design to adapt to evolving waste streams or policy changes (e.g., new recycling mandates).",
+      "Explore partnerships with technology providers or other businesses to share capital costs and risks.",
+      "Integrate renewable energy components (solar, biogas utilization) to reduce the facility’s environmental footprint and operating costs.",
+      "Implement robust monitoring systems for material flow and performance metrics, enabling continuous optimization of operations.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-13",
+    "archetype": "waste-management",
+    "title": "Construction & Demolition (C&D) Waste Diversion and Recycling Efficiency",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "RECYCLING_RATE",
+      "DIVERSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/13 - Construction & Demolition (C&D) Waste Diversion and.md",
+    "goal": "To assess the effectiveness of C&D waste diversion programs, measure recycling efficiency, and identify strategies to reduce landfill disposal costs while capitalizing on the value of recoverable materials such as metals, wood, concrete, and drywall.",
+    "dataRequired": [
+      "C&D waste generation data (tons or cubic yards)",
+      "C&D waste composition by material type (wood, concrete, metals, drywall, etc.)",
+      "Information on local recycling or diversion facilities (capacity, material acceptance, tipping fees)",
+      "Transportation and handling costs for each waste stream",
+      "Historical or benchmark diversion rates for C&D projects",
+      "Applicable regulations or green building standards (e.g., LEED requirements)"
+    ],
+    "improve": [
+      "Implement on-site sorting or source separation to reduce contamination and increase material recovery value.",
+      "Establish partnerships with specialized recyclers or reuse organizations for materials like wood, concrete, and metals.",
+      "Provide ongoing training or incentives for contractors and subcontractors to prioritize waste reduction and recycling.",
+      "Incorporate diversion requirements into project bids and contracts to ensure accountability throughout the supply chain.",
+      "",
+      "Leverage green building certifications and local regulations to secure funding, tax benefits, or recognition for high diversion performance.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Diversion Rate (%)",
+        "variables": [
+          "C&D Waste Diverted",
+          "Total C&D Waste Generated"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Diversion Rate (%) = ((C&D Waste Diverted) / (Total C&D Waste Generated)) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-14",
+    "archetype": "waste-management",
+    "title": "Recyclable Market Development and End-Use Demand Analysis",
+    "part": "B",
+    "partLabel": "Recycling & Materials Recovery",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "COMMODITY_PRICE_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO",
+      "RECYCLING_VALUE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/14 - Recyclable Market Development and End-Use Demand.md",
+    "goal": "To understand current and potential markets for recyclable materials, evaluate end-use demand trends, and identify opportunities to expand or diversify the outlets for recovered commodities, ultimately strengthening the economic viability of recycling operations.",
+    "dataRequired": [
+      "Historical and current volumes of each recyclable material (e.g., paper grades, plastics, metals)",
+      "Market pricing data and trends for each material",
+      "Existing and potential end-use industries or manufacturers (e.g., plastic processors, paper mills)",
+      "Local, regional, and global demand forecasts for recycled commodities",
+      "Quality specifications and acceptance criteria for end users",
+      "Policy or regulatory drivers influencing market development (e.g., recycled content mandates)",
+      "Transportation and logistics considerations (distance to end markets, freight costs)"
+    ],
+    "improve": [
+      "Enhance material quality through better collection, sorting, or contamination reduction to meet higher-grade market requirements.",
+      "",
+      "Pursue partnerships with manufacturers or downstream processors to secure off-take agreements and stabilize revenue.",
+      "Explore new product development or value-added processing (e.g., pelletizing plastics, de-inking paper) to access premium markets.",
+      "Advocate for supportive policies (e.g., minimum recycled content legislation) to spur end-market demand.",
+      "Invest in market intelligence and regular communication with buyers to anticipate demand shifts and adapt quickly.",
+      "C. Organics & Composting"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-15",
+    "archetype": "waste-management",
+    "title": "Organics Recycling and Composting Facility Operational Review",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/15 - Organics Recycling and Composting Facility Operational.md",
+    "goal": "To evaluate the performance, efficiency, and compliance of an organics recycling and composting facility, identifying ways to optimize operations, reduce costs, and produce high-quality compost or soil amendments.",
+    "dataRequired": [
+      "Incoming feedstock quantities and types (e.g., yard waste, food waste, biosolids)",
+      "Moisture content, carbon-to-nitrogen (C:N) ratio, and other key feedstock parameters",
+      "Processing capacity of composting methods (windrow, in-vessel, aerated static pile)",
+      "Operational data (retention time, turning frequency, temperature records)",
+      "Product quality metrics (compost maturity, nutrient content)",
+      "Operational costs (labor, equipment, energy, maintenance)",
+      "Applicable regulatory requirements (pathogen reduction, vector control, odor management)",
+      "Market demand and pricing for finished compost or soil amendments"
+    ],
+    "improve": [
+      "Optimize feedstock mix and C",
+      "Improve aeration techniques (e.g., forced aeration, more frequent windrow turning) to maintain ideal temperatures and oxygen levels.",
+      "Invest in effective contaminant removal processes at the start to produce a higher-quality compost with stronger market appeal.",
+      "Implement rigorous monitoring protocols (temperature, moisture, odor) and adjust operations promptly to address issues.",
+      "Explore new markets or value-added products (e.g., bagged compost, specialty soil blends) to increase revenue and justify process enhancements.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Mass Reduction (%)",
+        "variables": [
+          "Incoming Feedstock Mass",
+          "Outgoing Compost Mass"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Mass Reduction (%) = ((Incoming Feedstock Mass - Outgoing Compost Mass) / Incoming Feedstock Mass) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-16",
+    "archetype": "waste-management",
+    "title": "In-Vessel vs. Windrow Composting Operational Efficiency Comparison",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/16 - In-Vessel vs. Windrow Composting Operational Efficiency.md",
+    "goal": "To compare the operational efficiency, cost-effectiveness, and performance outcomes of in-vessel composting systems versus windrow composting methods, helping decision-makers choose the most suitable technology for their facility or region.",
+    "dataRequired": [
+      "Feedstock characteristics (e.g., moisture content, carbon-to-nitrogen ratio, particle size)",
+      "Processing capacity (tons per day or week) and footprint requirements for both in-vessel and windrow systems",
+      "Capital expenditures (equipment, site preparation)",
+      "Operational costs (labor, energy, maintenance)",
+      "Retention times and throughput rates for each composting method",
+      "Finished compost quality parameters (nutrient levels, contaminant levels, maturity indicators)",
+      "Compliance or permit requirements for each system (e.g., odor control, vector attraction, pathogen reduction)"
+    ],
+    "improve": [
+      "Pilot smaller-scale trials of each method to gather facility-specific performance and cost data.",
+      "Adjust feedstock preparation (e.g., grinding, moisture control) to optimize results in either system.",
+      "Evaluate hybrid approaches (e.g., initial in-vessel phase followed by windrow curing) if space and budgets allow.",
+      "Collaborate with technology vendors or peers to share best practices on odor control, aeration, and monitoring.",
+      "",
+      "Continuously monitor compost quality and operational metrics to refine processes and maximize efficiency.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-17",
+    "archetype": "waste-management",
+    "title": "Mechanical Biological Treatment (MBT) Facility Performance and Throughput Analysis",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [
+      "DIVERSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/17 - Mechanical Biological Treatment (MBT) Facility Performance.md",
+    "goal": "To measure and optimize the operational performance of a Mechanical Biological Treatment (MBT) facility by assessing material throughput, recovery rates, and the efficiency of the biological treatment process, thereby maximizing resource recovery and minimizing residual waste.",
+    "dataRequired": [
+      "Incoming waste quantities (tons per day or week) and composition (organics, recyclables, residuals)",
+      "Facility design capacity for both mechanical (sorting) and biological (composting or anaerobic digestion) stages",
+      "Operational parameters (retention time, temperature, aeration for biological process)",
+      "Equipment performance data (downtime, throughput rates of sorting lines)",
+      "Output quantities and quality (e.g., recovered recyclables, compost-like output, refuse-derived fuel)",
+      "Residual disposal volumes and costs",
+      "Energy consumption and generation data (if anaerobic digestion is used)",
+      "Regulatory requirements related to process outputs (e.g., compost standards, emissions)"
+    ],
+    "improve": [
+      "Upgrade or regularly maintain mechanical sorting equipment to improve separation efficiency and throughput.",
+      "Optimize biological treatment parameters (e.g., aeration, temperature, or retention time) to achieve higher stabilization rates.",
+      "Conduct regular waste audits to adapt processes to changes in the incoming waste composition.",
+      "Explore additional end markets or refine outputs (e.g., high-quality compost, RDF) to increase revenue streams.",
+      "Implement continuous monitoring and advanced control systems to proactively address process variations and reduce downtime.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Diversion Rate (%)",
+        "variables": [
+          "Amount of Recovered",
+          "Processed Material",
+          "Total Incoming Waste"
+        ],
+        "expression": "( ( v0 / v1 ) / ( v2 ) ) * 100",
+        "percentOutput": true,
+        "source": "Diversion Rate (%) = ((Amount of Recovered/Processed Material) / (Total Incoming Waste)) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-18",
+    "archetype": "waste-management",
+    "title": "Biosolids and Soil Amendment Land Application Strategy and Compliance Review",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/18 - Biosolids and Soil Amendment Land Application Strategy and.md",
+    "goal": "To evaluate the feasibility, regulatory compliance, and agronomic benefits of applying biosolids or similar soil amendments to land, ensuring environmental protection and sustainable resource utilization.",
+    "dataRequired": [
+      "Characteristics of the biosolids or soil amendment (nutrient content, pathogen levels, heavy metals)",
+      "Applicable regulations for land application (local, state, federal)",
+      "Soil properties of target land (pH, nutrient levels, organic matter)",
+      "Application rates recommended by agronomic guidelines",
+      "Monitoring data from previous applications (if available)",
+      "Operational costs (transportation, spreading equipment, labor)",
+      "Stakeholder or community concerns (odor, health risks, public perception)"
+    ],
+    "improve": [
+      "Conduct frequent biosolids testing to maintain compliance and track any changes in quality.",
+      "Implement best management practices for storage and handling to minimize odor or runoff issues.",
+      "Explore advanced treatment methods (e.g., anaerobic digestion) to enhance biosolids quality and reduce pathogen levels.",
+      "Collaborate with local farmers or landowners to establish long-term land application partnerships and data-sharing.",
+      "",
+      "Develop a public outreach strategy to educate the community on the benefits and safety measures associated with biosolids use.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-19",
+    "archetype": "waste-management",
+    "title": "Sludge Co-Digestion with MSW for Enhanced Biogas Production",
+    "part": "C",
+    "partLabel": "Organics & Composting",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WASTE_TO_ENERGY"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/19 - Sludge Co-Digestion with MSW for Enhanced Biogas.md",
+    "goal": "To determine the operational and financial feasibility of co-digesting sewage sludge with municipal solid waste (MSW) in anaerobic digesters, aiming to increase biogas production, reduce residual disposal, and enhance resource recovery.",
+    "dataRequired": [
+      "Composition and characteristics of sludge (moisture content, volatile solids, nutrient balance)",
+      "Composition and volume of MSW feedstock suitable for digestion (e.g., food waste, organics)",
+      "Existing digester capacity and operational parameters (hydraulic retention time, temperature, mixing)",
+      "Historical biogas production rates (if available)",
+      "Pre-treatment requirements (e.g., grinding, screening)",
+      "Regulatory standards for biosolids quality and disposal",
+      "Cost data for sludge handling, MSW collection, and digester operations"
+    ],
+    "improve": [
+      "Implement careful feedstock monitoring and control to maintain optimal digestion conditions (pH, temperature, loading rates).",
+      "",
+      "Pre-treat MSW to remove contaminants and improve biodegradability (e.g., depackaging, grinding).",
+      "Utilize continuous monitoring systems (real-time gas flow, ammonia, volatile fatty acids) to detect process upsets early.",
+      "Explore beneficial uses or markets for high-quality digestate (e.g., land application, soil amendments).",
+      "Collaborate with local waste collectors or municipalities to ensure a consistent supply of organic-rich MSW.",
+      "D. Waste-to-Energy & Thermal Treatment"
+    ],
+    "formulas": [
+      {
+        "output": "Daily Biogas Yield (cubic meters/day)",
+        "variables": [
+          "Total Biogas Produced in a Period",
+          "Number of Days in the Same Period"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Daily Biogas Yield (cubic meters/day) = (Total Biogas Produced in a Period) / (Number of Days in the Same Period)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-20",
+    "archetype": "waste-management",
+    "title": "Landfill Gas Capture and Bioenergy Potential Evaluation",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [
+      "DISPOSAL_COST_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WC_DSO",
+      "WASTE_TO_ENERGY"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/20 - Landfill Gas Capture and Bioenergy Potential Evaluation.md",
+    "goal": "To assess the quantity and quality of landfill gas (LFG) produced, determine the technical and economic feasibility of capturing the gas, and evaluate opportunities to convert it into a viable energy resource (e.g., electricity, compressed natural gas).",
+    "dataRequired": [
+      "Landfill characteristics (waste composition, age, compaction, moisture content)",
+      "Historical and current LFG flow rate and methane concentration data (if available)",
+      "Layout and condition of existing gas collection infrastructure (wells, piping, flares)",
+      "Regulatory requirements for gas collection and emission controls",
+      "Market and price data for potential energy outputs (e.g., electricity rates, fuel credits)",
+      "Projected landfill closure timeline and post-closure maintenance",
+      "Capital and operational costs for gas collection, treatment, and energy conversion systems"
+    ],
+    "improve": [
+      "Optimize wellfield operations by adjusting vacuum pressures, sealing leaks, and monitoring well performance regularly.",
+      "",
+      "Upgrade or expand gas collection infrastructure to maximize capture rates, particularly in areas of high methane generation.",
+      "Evaluate partnering with energy developers or utilities for project financing and revenue-sharing arrangements.",
+      "Pursue opportunities to secure renewable energy credits, carbon offsets, or grants that enhance project profitability.",
+      "Implement ongoing performance monitoring (e.g., SCADA systems) to fine-tune operations and adapt to changing landfill conditions.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Simple Payback (years)",
+        "variables": [
+          "Total Capital Investment",
+          "Annual Net Revenue"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Simple Payback (years) = (Total Capital Investment) / (Annual Net Revenue)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-21",
+    "archetype": "waste-management",
+    "title": "Waste-to-Energy (WTE) Plant Performance and Efficiency Review",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [
+      "DISPOSAL_COST_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WASTE_TO_ENERGY"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/21 - Waste-to-Energy (WTE) Plant Performance and Efficiency.md",
+    "goal": "To assess the operational efficiency, energy recovery performance, and environmental compliance of a Waste-to-Energy (WTE) plant, identifying areas for optimization in combustion, heat recovery, and emissions control.",
+    "dataRequired": [
+      "Waste composition and calorific value (BTU/lb or MJ/kg)",
+      "Daily or monthly throughput (tons of waste processed)",
+      "Boiler and turbine performance data (steam production, turbine output)",
+      "Fuel feed rates, auxiliary fuel usage (if applicable)",
+      "Emissions data (CO2, NOx, SO2, particulate matter)",
+      "Plant operating hours, downtime logs, and maintenance records",
+      "Operational costs (labor, maintenance, consumables)",
+      "Revenue data (electricity or steam sales, potential renewable energy credits)"
+    ],
+    "improve": [
+      "Implement advanced combustion controls (e.g., automatic grate speed and air flow adjustments) to maintain optimal burn conditions.",
+      "Upgrade heat exchange surfaces or cleaning systems to reduce fouling and improve boiler efficiency.",
+      "Enhance flue gas cleaning technology (e.g., selective catalytic reduction, improved scrubbers) to meet stricter emission standards and potentially raise energy recovery efficiency.",
+      "",
+      "Conduct regular predictive and preventive maintenance to minimize unplanned downtime and extend equipment life.",
+      "Explore co-firing with complementary fuels or feedstocks (e.g., biomass) to boost calorific input and further optimize plant output.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Plant Efficiency (%)",
+        "variables": [
+          "Net Electrical Output (kffh)",
+          "Energy Input from Waste (kffh)"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Net Plant Efficiency (%) = ((Net Electrical Output (kffh)) / (Energy Input from Waste (kffh))) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-22",
+    "archetype": "waste-management",
+    "title": "Gasification or Pyrolysis Technology Feasibility for High-Calorific Residual Waste",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/22 - Gasification or Pyrolysis Technology Feasibility for.md",
+    "goal": "To determine whether gasification or pyrolysis is a technically and economically viable solution for converting high-calorific residual waste into valuable energy products (e.g., syngas, biochar, oils), thereby reducing landfill disposal and potentially generating revenue.",
+    "dataRequired": [
+      "Composition and calorific value of the residual waste (e.g., moisture content, ash content, volatile matter)",
+      "Potential contaminants in the feedstock (e.g., heavy metals, halogens)",
+      "Throughput requirements (tons per day or year)",
+      "Regulatory environment and permitting requirements for advanced thermal processes",
+      "Capital, operating, and maintenance cost estimates for gasification or pyrolysis systems",
+      "Market data for potential outputs (e.g., syngas sales, power generation, char utilization)",
+      "Local energy and commodity pricing (electricity, natural gas, biochar markets)"
+    ],
+    "improve": [
+      "Conduct pilot-scale tests or partner with technology suppliers who can validate the process with actual feedstock samples.",
+      "",
+      "Improve feedstock preparation (e.g., drying, contaminant removal) to enhance process efficiency and end-product quality.",
+      "Seek policy incentives, grants, or renewable energy credits that can offset capital or operating costs.",
+      "Engage with potential off-takers (e.g., local utilities, industrial users) early to secure long-term contracts for syngas or power purchase.",
+      "Integrate robust monitoring and control systems to maintain optimal process conditions and ensure consistent product quality.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-23",
+    "archetype": "waste-management",
+    "title": "Incinerator Bottom Ash Metals Recovery Potential and Market Valuation",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/23 - Incinerator Bottom Ash Metals Recovery Potential and Market.md",
+    "goal": "To determine the economic viability and technical feasibility of recovering valuable metals (e.g., ferrous and non-ferrous) from incinerator bottom ash (IBA), estimate market prices for these metals, and evaluate the potential revenue against processing costs.",
+    "dataRequired": [
+      "Composition and quantity of incinerator bottom ash (tons per year)",
+      "Metallurgical analysis of the ash (ferrous, aluminum, copper, other non-ferrous content)",
+      "Characteristics of the ash (particle size distribution, moisture content)",
+      "Operational parameters of existing or planned metals recovery equipment (eddy current separators, magnetic separators, etc.)",
+      "Current and projected market prices for recovered metals",
+      "Processing costs (equipment, labor, power consumption, maintenance)",
+      "Regulatory requirements for handling and disposing of residual ash after metals extraction"
+    ],
+    "improve": [
+      "Invest in advanced separation technologies to achieve higher recovery rates and capture smaller particle sizes.",
+      "",
+      "Negotiate favorable metal sale agreements or partnerships to secure stable outlets for recovered materials.",
+      "Consider preprocessing steps (e.g., drying, screening) to improve separation efficiency and reduce equipment wear.",
+      "Implement ongoing testing and quality control to ensure consistent metal purity and maintain competitiveness in the metals market.",
+      "Review and optimize incineration parameters (e.g., combustion temperature, residence time) to improve ash quality and facilitate metal recovery.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-24",
+    "archetype": "waste-management",
+    "title": "Thermal Desorption or Incineration Feasibility for Contaminated Soil Treatment",
+    "part": "D",
+    "partLabel": "Waste-to-Energy & Thermal Treatment",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/24 - Thermal Desorption or Incineration Feasibility for.md",
+    "goal": "To evaluate whether thermal desorption or incineration is a viable and cost-effective option for treating contaminated soils, thereby reducing or eliminating hazardous contaminants and enabling potential reuse or compliant disposal of the treated material.",
+    "dataRequired": [
+      "Soil contamination profile (types of contaminants, concentration levels, presence of volatile vs. semi-volatile compounds)",
+      "Soil characteristics (moisture content, particle size distribution, organic matter)",
+      "Regulatory standards or clean-up thresholds for soil reuse or disposal",
+      "Throughput requirements (volume of soil to be treated)",
+      "Capital and operational costs for thermal treatment equipment (fuel, utilities, labor, maintenance)",
+      "Availability of off-site treatment facilities vs. on-site treatment options",
+      "Emissions control requirements and permitting constraints"
+    ],
+    "improve": [
+      "Conduct small-scale or bench-scale tests to validate contaminant removal rates under controlled thermal conditions.",
+      "Explore opportunities to reduce fuel consumption (e.g., waste heat recovery, pre-drying soil) to lower operating costs.",
+      "Strengthen emissions control measures (e.g., scrubbers, filters) to meet stringent air quality standards and maintain community acceptance.",
+      "",
+      "Investigate combining thermal treatment with complementary methods (e.g., soil washing for metals) for more comprehensive remediation.",
+      "Engage with regulators early to streamline permitting, secure approvals, and confirm acceptable post-treatment soil uses or disposal options.",
+      "E. Fleet & Collection Optimization"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-25",
+    "archetype": "waste-management",
+    "title": "Route Density and Fleet Utilization Analysis",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO",
+      "TONS_COLLECTED_MT",
+      "COLLECTION_COST_PER_TON",
+      "ROUTE_DENSITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ROUTE_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/25 - Route Density and Fleet Utilization Analysis.md",
+    "goal": "To evaluate the efficiency of waste collection routes, gauge the utilization of the vehicle fleet, and identify opportunities to reduce operational costs, improve service levels, and minimize environmental impacts.",
+    "dataRequired": [
+      "Fleet information (number of vehicles, capacity, fuel type, maintenance records)",
+      "Daily or weekly route data (mileage, stops, total waste collected)",
+      "GPS tracking or telematics data (vehicle locations, idle times, driving speeds)",
+      "Operational costs (fuel, labor, vehicle maintenance)",
+      "Customer density and service area maps",
+      "Historical service times and on-time collection rates",
+      "Local traffic patterns and constraints (road closures, congestion hotspots)"
+    ],
+    "improve": [
+      "Implement route optimization tools (or work with specialists) to redesign inefficient routes and consolidate low-density service areas.",
+      "Adjust fleet size and vehicle types to match actual service requirements, considering factors such as urban vs. rural routes.",
+      "",
+      "Utilize telematics data to monitor driver behavior, idle times, and adherence to planned routes.",
+      "Provide driver training on efficient driving techniques and proper vehicle operation to reduce fuel consumption and maintenance costs.",
+      "Schedule periodic reviews of routes and fleet performance, allowing for adjustments as population densities or customer demands change.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Route Density (tons/mile)",
+        "variables": [
+          "Total Waste Collected on Route (tons)",
+          "Total Miles Driven on Route"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Route Density (tons/mile) = (Total Waste Collected on Route (tons)) / (Total Miles Driven on Route)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-26",
+    "archetype": "waste-management",
+    "title": "Transfer Station Siting and Network Optimization",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO",
+      "COLLECTION_COST_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO",
+      "ROUTE_OPTIMIZATION",
+      "DISPOSAL_INTERNALIZATION"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/26 - Transfer Station Siting and Network Optimization.md",
+    "goal": "To determine optimal locations and configurations for transfer stations within a waste management network, minimizing transportation costs, improving service efficiency, and ensuring convenient access for both collection fleets and long-haul disposal or processing facilities.",
+    "dataRequired": [
+      "Current waste generation data by region or service area (tons/year)",
+      "Locations of existing transfer stations, landfills, MRFs, or other disposal/processing sites",
+      "Transportation routes and costs (fuel, labor, vehicle maintenance)",
+      "Road network information (distances, travel times, traffic patterns)",
+      "Land availability and zoning constraints for potential new transfer station sites",
+      "Capital and operational cost estimates for building or upgrading transfer stations",
+      "Environmental and community considerations (noise, odor, proximity to residential areas)"
+    ],
+    "improve": [
+      "Regularly update waste generation forecasts and traffic data to keep route optimization models accurate.",
+      "Engage with local authorities and communities to address concerns (e.g., traffic congestion, environmental impact) early in the site selection process.",
+      "Consider scalability in site design, ensuring that transfer stations can accommodate future volume increases or service expansions.",
+      "Explore public-private partnerships or cost-sharing models to reduce upfront capital expenses.",
+      "Continuously refine operational strategies (e.g., scheduling collection routes to align with transfer station hours) to maximize the benefits of an optimized network.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Transport Cost (USD/year)",
+        "variables": [
+          "Annual Tonnage",
+          "Average Distance Traveled",
+          "Cost per Mile"
+        ],
+        "expression": "( v0 * v1 * v2 )",
+        "percentOutput": false,
+        "source": "Transport Cost (USD/year) = (Annual Tonnage x Average Distance Traveled x Cost per Mile)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-27",
+    "archetype": "waste-management",
+    "title": "Fleet Electrification or Alternative Fuel Conversion Feasibility Study",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO",
+      "COLLECTION_COST_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "FLEET_CONVERSION"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/27 - Fleet Electrification or Alternative Fuel Conversion Feasibility.md",
+    "goal": "To assess the technical, economic, and environmental viability of converting a waste collection fleet from traditional fossil fuels to electric or alternative fuels (e.g., CNG, RNG, hydrogen), ultimately reducing operational costs, emissions, and dependence on conventional diesel.",
+    "dataRequired": [
+      "Current fleet composition (vehicle models, ages, fuel consumption)",
+      "Operational profiles (daily mileage, route lengths, payload requirements)",
+      "Fuel consumption and maintenance cost records",
+      "Available charging or fueling infrastructure (existing and potential sites)",
+      "Cost of alternative fuel or electricity (including peak/off-peak rates, if relevant)",
+      "Vehicle technology options and associated capital costs (purchase or retrofit)",
+      "Government incentives or grants for low-emission vehicle adoption",
+      "Emissions data (CO2, NOx, PM) under current operations vs. projected reductions"
+    ],
+    "improve": [
+      "Engage with utility providers or fuel suppliers early to assess site readiness and secure favorable energy rates.",
+      "Explore grants, loans, or tax incentives specific to clean vehicles and charging/fueling infrastructure.",
+      "Implement training programs for drivers and maintenance staff to ensure smooth integration of new vehicle technologies.",
+      "Use telematics and real-time monitoring to optimize routes and maximize the operational benefits of alternative fuel vehicles.",
+      "Continuously track and evaluate vehicle performance, adjusting the fleet conversion strategy as technologies evolve and cost structures change.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "TCO (USD)",
+        "variables": [
+          "Capital Cost",
+          "Annual Operating Cost",
+          "Vehicle Lifespan",
+          "Incentives",
+          "Grants"
+        ],
+        "expression": "v0 + ( v1 * v2 ) - v3 / v4",
+        "percentOutput": false,
+        "source": "TCO (USD) = Capital Cost + (Annual Operating Cost x Vehicle Lifespan) - Incentives/Grants",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-28",
+    "archetype": "waste-management",
+    "title": "Bulky Waste Collection and Diversion Efficiency",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO",
+      "DIVERSION_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/28 - Bulky Waste Collection and Diversion Efficiency.md",
+    "goal": "To evaluate how effectively bulky waste (e.g., furniture, appliances, mattresses) is being collected and diverted from landfill, identify inefficiencies or gaps in the current system, and develop strategies to improve diversion rates and service levels.",
+    "dataRequired": [
+      "Volume and types of bulky items collected (e.g., furniture, white goods, electronics)",
+      "Current collection methods (scheduled pickups, drop-off centers, on-demand pickups)",
+      "Transportation and handling costs (fuel, labor, maintenance)",
+      "Disposal or processing fees (landfill, recycling, refurbishment costs)",
+      "Existing diversion outlets (reuse organizations, recycling facilities, refurbishers)",
+      "Customer service metrics (collection frequency, response time, complaints)",
+      "Any relevant local regulations or guidance on bulky waste handling"
+    ],
+    "improve": [
+      "Strengthen collaborations with local refurbishers, donation centers, or recyclers to expand end markets for bulky items.",
+      "Implement dedicated bulky waste pickup days or seasonal collection events to streamline routes and reduce on-demand scheduling costs.",
+      "",
+      "Provide public education on proper bulky waste disposal and available diversion options (e.g., donation or repair).",
+      "Consider establishing a central drop-off facility with sorting and triage for repair, recycling, or reuse channels.",
+      "Monitor key metrics (cost per pickup, diversion rate, customer satisfaction) regularly to refine the program and target the greatest impact.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Bulky Waste Diversion Rate (%)",
+        "variables": [
+          "Diverted Bulky Waste",
+          "Total Bulky Waste Collected"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Bulky Waste Diversion Rate (%) = ((Diverted Bulky Waste) / (Total Bulky Waste Collected)) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-29",
+    "archetype": "waste-management",
+    "title": "Multi-Stream Curbside Collection Program Assessment",
+    "part": "E",
+    "partLabel": "Fleet & Collection Optimization",
+    "relatedMetricCodes": [
+      "DSO",
+      "TONS_COLLECTED_MT"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO",
+      "ROUTE_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/29 - Multi-Stream Curbside Collection Program Assessment.md",
+    "goal": "To evaluate the effectiveness and efficiency of a multi-stream curbside collection program (where recyclables, organics, and waste are separated at the source), identify opportunities to improve collection processes, and increase overall diversion rates.",
+    "dataRequired": [
+      "Collection data (tonnage, frequency) for each stream (e.g., paper, plastics, organics, general waste)",
+      "Participation rates and set-out rates (how many households properly sort their waste)",
+      "Contamination levels by stream (e.g., non-recyclables in recycling bin)",
+      "Operational costs (labor, fuel, vehicle types, maintenance)",
+      "Route details (mileage, number of stops, time per stop)",
+      "Disposal and processing costs (landfill tipping fees, recycling facility gate fees, composting charges)",
+      "Commodity prices or market values for each recyclable stream"
+    ],
+    "improve": [
+      "Strengthen community outreach with clear labeling, consistent messaging, and feedback on proper sorting practices.",
+      "",
+      "Employ route optimization tools to minimize travel distances and streamline separate collections for each stream.",
+      "Adjust bin sizes or collection frequencies to match the volume of each stream, ensuring efficient use of vehicle capacity.",
+      "Conduct regular audits and feedback loops (e.g., tagging bins with errors) to reduce contamination over time.",
+      "Explore incentive or reward systems (e.g., pay-as-you-throw, recycling rebates) to encourage better source separation and higher participation.",
+      "F. Hazardous & Specialized Waste Handling"
+    ],
+    "formulas": [
+      {
+        "output": "Capture Rate (%)",
+        "variables": [
+          "Amount of Targeted Material Correctly Collected",
+          "Total Amount of Targeted Material in Waste Stream"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capture Rate (%) = ((Amount of Targeted Material Correctly Collected) / (Total Amount of Targeted Material in Waste Stream)) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-30",
+    "archetype": "waste-management",
+    "title": "Hazardous Waste Handling and Specialized Disposal Analysis",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/30 - Hazardous Waste Handling and Specialized Disposal Analysis.md",
+    "goal": "To evaluate the handling, transportation, and final disposal methods for hazardous waste streams, ensure compliance with applicable regulations, and identify opportunities to optimize costs and reduce environmental risk.",
+    "dataRequired": [
+      "Types and volumes of hazardous waste generated (e.g., chemicals, solvents, lab packs)",
+      "Safety data sheets (SDS) or material data for each hazardous substance",
+      "Applicable regulations (local, state, federal) and permit requirements",
+      "Current handling and storage practices (container types, labeling, storage time)",
+      "Transportation records (routes, authorized haulers, costs)",
+      "Disposal or treatment methods (incineration, stabilization, hazardous landfill) and associated fees",
+      "Incident or spill records and any corrective actions taken"
+    ],
+    "improve": [
+      "Implement a robust hazardous waste minimization program, exploring source reduction and safer chemical substitutions.",
+      "",
+      "Strengthen employee training on proper labeling, segregation, and spill response to reduce compliance risks.",
+      "Evaluate bundling transportation or negotiating more favorable rates with hazardous waste haulers.",
+      "Investigate opportunities for onsite treatment or recycling (e.g., solvent recovery systems) where regulations permit.",
+      "Conduct regular audits and inspections, updating procedures and documentation to maintain continuous compliance.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Hazardous Waste Cost (USD)",
+        "variables": [
+          "Collection and Packaging Costs",
+          "Transport Costs",
+          "Disposal",
+          "Treatment Fees"
+        ],
+        "expression": "( v0 + v1 + v2 / v3 )",
+        "percentOutput": false,
+        "source": "Total Hazardous Waste Cost (USD) = (Collection and Packaging Costs + Transport Costs + Disposal/Treatment Fees)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-31",
+    "archetype": "waste-management",
+    "title": "Electronic Waste (E-waste) Collection and Processing Strategy",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/31 - Electronic Waste (E-waste) Collection and Processing.md",
+    "goal": "To develop a cost-effective, compliant, and environmentally responsible strategy for collecting and processing electronic waste (e-waste), maximizing material recovery (e.g., precious metals, plastics) while minimizing hazardous exposure and disposal.",
+    "dataRequired": [
+      "Types and volumes of e-waste generated (e.g., computers, mobile devices, appliances)",
+      "Collection methods and infrastructure (drop-off centers, curbside, special events)",
+      "Regulatory requirements for e-waste handling, transport, and disposal",
+      "Processing technologies and capabilities (manual disassembly, shredding, specialized metal recovery)",
+      "Potential markets or buyers for recovered components/materials (precious metals, plastics, circuit boards)",
+      "Historical data on collection costs, revenues from recovered materials, and disposal fees",
+      "Consumer or corporate participation rates (if relevant)"
+    ],
+    "improve": [
+      "Establish convenient, user-friendly drop-off locations or collection events to boost participation.",
+      "Partner with certified e-waste recyclers to ensure responsible handling and higher-value material recovery.",
+      "Launch consumer awareness campaigns emphasizing data security and environmental benefits of proper e-waste disposal.",
+      "Explore extended producer responsibility (EPR) or manufacturer take-back programs to share costs and logistical burdens.",
+      "Integrate robust tracking and reporting tools to measure collection volumes, recycling rates, and revenue trends, enabling ongoing optimization.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Program Cost (or Revenue) (USD)",
+        "variables": [
+          "Collection",
+          "Transportation",
+          "Processing Costs",
+          "Revenue from Recovered Materials"
+        ],
+        "expression": "( v0 + v1 + v2 ) - ( v3 )",
+        "percentOutput": false,
+        "source": "Net Program Cost (or Revenue) (USD) = (Collection + Transportation + Processing Costs) - (Revenue from Recovered Materials)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-32",
+    "archetype": "waste-management",
+    "title": "Special Waste Streams Handling and Compliance Analysis",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/32 - Special Waste Streams Handling and Compliance Analysis.md",
+    "goal": "To identify, manage, and properly dispose of unique or atypical waste streams (e.g., asbestos, medical waste, contaminated soils, industrial byproducts) that require specialized handling or treatment, ensuring full regulatory compliance and mitigating health and environmental risks.",
+    "dataRequired": [
+      "Types and quantities of special wastes generated (e.g., asbestos-containing material, biomedical waste, industrial sludges)",
+      "Applicable regulations or guidelines (federal, state, local) for each waste type",
+      "Current handling and storage practices (container requirements, labeling, time limits)",
+      "Transportation procedures and hauler certifications",
+      "Disposal or treatment options (licensed landfills, incinerators, autoclaves, specialized recycling)",
+      "Costs associated with specialized packaging, treatment, and disposal",
+      "Incident or inspection records related to special waste handling"
+    ],
+    "improve": [
+      "Develop clear standard operating procedures (SOPs) for each special waste type, including labeling, containment, and storage guidelines.",
+      "",
+      "Provide targeted training to employees handling special wastes, ensuring they understand both safety and regulatory requirements.",
+      "Periodically audit third-party transporters and disposal facilities for proper certifications, performance history, and regulatory compliance.",
+      "Evaluate alternative treatment or recycling options that may reduce disposal costs and environmental impact.",
+      "Maintain comprehensive records, including waste manifests and disposal certificates, to demonstrate ongoing compliance and support internal tracking.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Special Waste Management Cost (USD)",
+        "variables": [
+          "Packaging and Container Costs",
+          "Transport Fees",
+          "Disposal or Treatment Fees"
+        ],
+        "expression": "( v0 + v1 + v2 )",
+        "percentOutput": false,
+        "source": "Total Special Waste Management Cost (USD) = (Packaging and Container Costs + Transport Fees + Disposal or Treatment Fees)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-33",
+    "archetype": "waste-management",
+    "title": "Household Hazardous Waste (HHW) Collection Program Effectiveness",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/33 - Household Hazardous Waste (HHW) Collection Program.md",
+    "goal": "To evaluate how effectively a Household Hazardous Waste (HHW) collection program captures and safely manages hazardous items from residential sources, ensuring environmental protection, regulatory compliance, and optimal use of program resources.",
+    "dataRequired": [
+      "Types and volumes of HHW collected (e.g., paints, solvents, pesticides, electronics, batteries)",
+      "Participation rates (number of households served, frequency of drop-offs)",
+      "Collection methods (one-day events, permanent collection sites, curbside programs)",
+      "Program costs (staff, disposal fees, transportation, advertising)",
+      "Regulatory guidelines (federal, state, local) for HHW handling and disposal",
+      "Public outreach efforts (advertising, educational materials, community partnerships)",
+      "Historical data on HHW volumes, costs, and participation rates (if available)"
+    ],
+    "improve": [
+      "Introduce or expand permanent HHW drop-off sites and align operating hours with community needs.",
+      "",
+      "Collaborate with local retailers (hardware stores, paint suppliers) for take-back programs or collection events.",
+      "Enhance public education efforts, including social media campaigns, mailers, and clear signage at collection sites.",
+      "Offer incentives or rewards (e.g., discount coupons) for households that responsibly dispose of HHW.",
+      "Regularly review and update contractor agreements to ensure competitive pricing for disposal and treatment services.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Capture Rate (%)",
+        "variables": [
+          "HHW Collected",
+          "Estimated Total HHW Generated"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capture Rate (%) = ((HHW Collected) / (Estimated Total HHW Generated)) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-34",
+    "archetype": "waste-management",
+    "title": "Mercury-Containing Lamps and Devices Recycling Compliance",
+    "part": "F",
+    "partLabel": "Hazardous & Specialized Waste Handling",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/34 - Mercury-Containing Lamps and Devices Recycling.md",
+    "goal": "To ensure that mercury-containing lamps (e.g., fluorescent, compact fluorescent) and devices (e.g., thermostats, switches) are collected, handled, and recycled in a manner that meets regulatory requirements and minimizes environmental and health risks associated with mercury release.",
+    "dataRequired": [
+      "Types and volumes of mercury-containing lamps and devices generated or collected",
+      "Current collection processes (drop-off sites, mail-back programs, pickup services)",
+      "Applicable regulations (federal, state, local) regarding mercury-containing products",
+      "Existing contracts and costs for recycling or disposal services",
+      "Employee training records or standard operating procedures related to mercury handling",
+      "Incident or spill records for any past breakage of mercury-containing items",
+      "Public or customer awareness and participation rates in collection programs"
+    ],
+    "improve": [
+      "Establish or expand designated collection points with secure, mercury-safe containers to minimize breakage.",
+      "",
+      "Partner with certified recyclers that specialize in mercury recovery and can provide documentation of proper handling.",
+      "Develop or update staff training on safe handling, labeling, and spill response, especially for higher-risk areas (maintenance shops, large facilities).",
+      "Promote recycling options to employees or customers, highlighting the health and environmental risks of improper disposal.",
+      "Maintain detailed records of volumes collected, recycling manifests, and any incidents for ongoing compliance and continuous improvement.",
+      "G. Regulatory Compliance & Environmental Impact"
+    ],
+    "formulas": [
+      {
+        "output": "Total Program Cost (USD)",
+        "variables": [
+          "Collection Containers",
+          "Transport",
+          "Shipping Fees",
+          "Recycling",
+          "Disposal Charges"
+        ],
+        "expression": "( v0 + v1 / v2 + v3 / v4 )",
+        "percentOutput": false,
+        "source": "Total Program Cost (USD) = (Collection Containers + Transport/Shipping Fees + Recycling/Disposal Charges)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-35",
+    "archetype": "waste-management",
+    "title": "Regulatory Compliance and Environmental Impact Assessment",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/35 - Regulatory Compliance and Environmental Impact.md",
+    "goal": "To ensure that waste management operations meet all applicable environmental regulations and to assess the potential impacts on air, water, soil, and local communities, enabling proactive mitigation strategies and continuous compliance.",
+    "dataRequired": [
+      "Applicable regulations and permit conditions (federal, state, local)",
+      "Facility operating parameters (throughput, emissions, effluent discharges)",
+      "Monitoring data (air emissions, groundwater testing, noise levels, odor complaints)",
+      "Historical compliance records (inspection reports, violation notices, penalties)",
+      "Community feedback or public hearing documents (if applicable)",
+      "Baseline environmental data (local ecology, water quality, soil conditions)",
+      "Operational procedures and staff training records related to environmental compliance"
+    ],
+    "improve": [
+      "Establish a formal Environmental Management System (EMS) aligned with recognized standards (e.g., ISO 14001).",
+      "Implement real-time monitoring and early warning systems to catch potential issues before they lead to violations.",
+      "Train staff regularly on regulatory requirements, spill response, and best practices for waste handling.",
+      "Engage in open communication with local stakeholders, addressing concerns proactively and building community trust.",
+      "Conduct periodic internal audits and invite third-party assessors to verify compliance and recommend continuous improvements.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-36",
+    "archetype": "waste-management",
+    "title": "Decommissioning and Site Remediation Liability Analysis",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [
+      "LANDFILL_CLOSURE_LIABILITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/36 - Decommissioning and Site Remediation Liability Analysis.md",
+    "goal": "To assess the financial and operational liabilities associated with decommissioning a waste management site (e.g., landfill, processing facility) and restoring it to regulatory and community standards, ensuring that sufficient funds and plans are in place to mitigate environmental risks.",
+    "dataRequired": [
+      "Facility closure requirements outlined in permits or regulations",
+      "Historical site data (geotechnical, hydrogeological, environmental monitoring)",
+      "Current infrastructure and equipment inventories",
+      "Estimated costs for dismantling structures and equipment, removing or repurposing assets",
+      "Projected soil or groundwater remediation expenses",
+      "Financial instruments or insurance policies earmarked for site remediation (bonds, trust funds)",
+      "Timeline estimates for the decommissioning and post-closure monitoring period"
+    ],
+    "improve": [
+      "Update decommissioning and remediation cost estimates regularly to account for inflation, regulatory changes, and site conditions.",
+      "Secure or increase financial assurance instruments (e.g., bonds, insurance) to cover potential cost overruns.",
+      "Engage environmental engineering experts to refine remediation strategies and ensure realistic scheduling.",
+      "",
+      "Involve community stakeholders early to address concerns about post-closure land use or potential environmental impacts.",
+      "Implement robust recordkeeping and monitoring during facility operations to reduce uncertainty and surprises at closure time.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-37",
+    "archetype": "waste-management",
+    "title": "Odor Control Management and Mitigation Strategies",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/37 - Odor Control Management and Mitigation Strategies.md",
+    "goal": "To evaluate sources of odors at waste management facilities (e.g., landfills, composting sites, transfer stations) and develop effective strategies to prevent, minimize, or treat these odors, ensuring regulatory compliance and maintaining good relations with surrounding communities.",
+    "dataRequired": [
+      "Odor complaint logs (dates, frequency, nature of complaints)",
+      "Facility process data (waste types, processing volumes, storage times)",
+      "Weather and wind patterns (temperature, humidity, wind speed/direction)",
+      "Existing odor control measures (biofilters, chemical scrubbers, covers)",
+      "Regulatory standards or guidelines for odor monitoring",
+      "Odor monitoring equipment data (field olfactometry, continuous sensors)",
+      "Maintenance and operational records for key odor-generating processes"
+    ],
+    "improve": [
+      "Implement real-time monitoring systems to rapidly detect and address odor spikes before complaints arise.",
+      "Upgrade landfill covers or compost covers (e.g., impermeable geosynthetics, bio-covers) to reduce off-site odor emissions.",
+      "Optimize collection and handling practices (e.g., reducing stockpile times, better containment of odorous materials).",
+      "Invest in staff training on odor management, emphasizing quick responses to complaints and proactive checks on high-risk areas.",
+      "",
+      "Engage the local community, providing channels for immediate odor reporting and demonstrating the facility’s commitment to timely mitigation.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-38",
+    "archetype": "waste-management",
+    "title": "Extended Producer Responsibility (EPR) Program Implementation Evaluation",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [
+      "RECYCLING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/38 - Extended Producer Responsibility (EPR) Program.md",
+    "goal": "To assess the effectiveness, financial viability, and stakeholder engagement of an Extended Producer Responsibility (EPR) program, where producers assume responsibility for the end-of-life management of their products or packaging, thereby reducing waste and improving resource recovery.",
+    "dataRequired": [
+      "Scope of EPR program (targeted products or packaging types)",
+      "Current waste generation and collection data for those products/packaging",
+      "Producer participation levels and financial contributions (fees or cost-sharing arrangements)",
+      "Collection and recycling rates specific to the EPR-covered materials",
+      "Administrative and operational costs of running the EPR program (compliance monitoring, logistics, outreach)",
+      "Regulatory frameworks or policies governing EPR obligations",
+      "Feedback from producers, consumers, and waste management stakeholders"
+    ],
+    "improve": [
+      "Refine fee structures to better align with actual costs, ensuring that producers’ contributions adequately fund collection and recycling.",
+      "Strengthen enforcement against non-participating (free-rider) producers, possibly through penalties or public disclosure.",
+      "Enhance consumer education efforts, making it easier for the public to return and recycle covered products.",
+      "Foster partnerships with recyclers and municipal waste managers to improve logistical efficiency and lower processing costs.",
+      "Conduct regular audits and public reporting to maintain transparency and drive continuous improvement of the EPR program.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Recycling Rate Change (%)",
+        "variables": [
+          "Current EPR Recycling Rate",
+          "Baseline Recycling Rate"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Recycling Rate Change (%) = ((Current EPR Recycling Rate - Baseline Recycling Rate) / Baseline Recycling Rate) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-39",
+    "archetype": "waste-management",
+    "title": "PFAS and Emerging Contaminants Monitoring and Treatment Strategy",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY",
+      "ENVIRONMENTAL_LIABILITY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/39 - PFAS and Emerging Contaminants Monitoring and Treatment.md",
+    "goal": "To identify, monitor, and manage per- and polyfluoroalkyl substances (PFAS) and other emerging contaminants in waste management operations (landfills, leachate treatment, wastewater, or soil remediation) and develop effective treatment and mitigation strategies that comply with evolving regulatory standards.",
+    "dataRequired": [
+      "Baseline sampling data for PFAS (e.g., PFOA, PFOS) and other emerging contaminants in leachate, groundwater, or wastewater",
+      "Regulatory limits or guidelines for PFAS and similar compounds (federal, state, or local)",
+      "Existing treatment processes and their performance (e.g., activated carbon, membrane filtration)",
+      "Operational parameters (flow rates, hydraulic loading, treatment system capacity)",
+      "Cost estimates for advanced treatment technologies or upgrades",
+      "Historical records of any PFAS-related incidents or notices of violation",
+      "Community or stakeholder concerns regarding emerging contaminants"
+    ],
+    "improve": [
+      "Keep abreast of evolving regulations and research on PFAS and other emerging contaminants to anticipate stricter standards.",
+      "",
+      "Pilot-test promising treatment technologies at a smaller scale before committing to full-scale implementation.",
+      "Enhance source control by identifying and reducing upstream contributors of PFAS or other contaminants.",
+      "Invest in staff training on sampling protocols, treatment system operations, and emergency response procedures.",
+      "Maintain open communication channels with regulatory agencies and the public to build trust and demonstrate proactive environmental stewardship.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-40",
+    "archetype": "waste-management",
+    "title": "Climate Resilience and Stormwater Management for Landfills",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/40 - Climate Resilience and Stormwater Management for Landfills.md",
+    "goal": "To evaluate a landfill’s vulnerability to increasing weather extremes (e.g., heavy rainfall, storms) and develop strategies for managing stormwater and other climate-related risks, ensuring long-term site stability and regulatory compliance.",
+    "dataRequired": [
+      "Historical precipitation and storm event data (rainfall intensity, duration, frequency)",
+      "Landfill design and drainage system specifications (liners, berms, leachate collection, stormwater channels)",
+      "Topography and soil characteristics of the landfill and surrounding area",
+      "Climate projections or future weather scenarios (e.g., 100-year storm events)",
+      "Current stormwater management practices (detention ponds, perimeter drainage, pumps)",
+      "Regulatory requirements for stormwater discharge or flood protection",
+      "Maintenance and inspection records for drainage infrastructure"
+    ],
+    "improve": [
+      "Update landfill design criteria to include more frequent storm events or higher rainfall intensities based on emerging climate models.",
+      "Implement real-time monitoring of stormwater pond levels, drainage flows, and leachate levels to detect potential issues quickly.",
+      "",
+      "Establish routine inspections and maintenance protocols, especially before and after forecasted severe storms.",
+      "Explore nature-based solutions (e.g., constructed wetlands, vegetated swales) to enhance infiltration and reduce runoff loads.",
+      "Collaborate with local authorities and community stakeholders to address broader flood risks and integrate landfill resilience into regional stormwater management plans.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-41",
+    "archetype": "waste-management",
+    "title": "Franchise Fee and Flow Control Policy Compliance and Optimization",
+    "part": "G",
+    "partLabel": "Regulatory Compliance & Environmental Impact",
+    "relatedMetricCodes": [
+      "DSO",
+      "PRICE_PER_TON"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO",
+      "PRICING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/41 - Franchise Fee and Flow Control Policy Compliance and.md",
+    "goal": "To ensure that waste collection and disposal operations comply with local franchise fee and flow control regulations, and to optimize these policies to balance revenue generation, cost management, and service efficiency.",
+    "dataRequired": [
+      "Applicable franchise agreements and flow control ordinances (terms, fees, designated disposal sites)",
+      "Waste volume or tonnage data by service area",
+      "Current fee structures (rate per ton, per household, or other)",
+      "Collection and disposal cost data (transport, tipping fees, administrative expenses)",
+      "Revenue data from franchise fees or flow control arrangements",
+      "Contract details with local governments or municipalities (service obligations, exclusivity, performance requirements)",
+      "Historical compliance records (e.g., fines, citations)"
+    ],
+    "improve": [
+      "Maintain up-to-date records of tonnages and fees, creating clear audit trails to reduce disputes and ensure accurate payments.",
+      "Engage local authorities in open dialogue to address any barriers in the policy or contract terms (e.g., inflexible fee schedules, insufficient disposal capacity).",
+      "Seek opportunities to bundle services (recycling, composting) within franchise agreements, potentially negotiating reduced fees or shared revenue from recovered materials.",
+      "Implement operational efficiencies (route optimization, technology for billing accuracy) to mitigate the financial impact of franchise fees.",
+      "Periodically benchmark against neighboring jurisdictions or industry standards to advocate for reasonable fee structures that reflect actual market conditions.",
+      "H. Financial & Contractual Structuring"
+    ],
+    "formulas": [
+      {
+        "output": "Net Margin Under Franchise (USD)",
+        "variables": [
+          "Total Revenue from Collection",
+          "Operating Costs",
+          "Franchise Fees"
+        ],
+        "expression": "( v0 - v1 - v2 )",
+        "percentOutput": false,
+        "source": "Net Margin Under Franchise (USD) = (Total Revenue from Collection - Operating Costs - Franchise Fees)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-42",
+    "archetype": "waste-management",
+    "title": "Municipal and Commercial Contract Structuring and Profitability Analysis",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "PRICE_PER_TON",
+      "PRICE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "WC_DSO",
+      "PRICING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/42 - Municipal and Commercial Contract Structuring and.md",
+    "goal": "To evaluate the terms, pricing, and service requirements in municipal and commercial waste contracts, ensuring that each agreement is structured for profitability while meeting regulatory and customer service expectations.",
+    "dataRequired": [
+      "Current contract documents for municipal and commercial clients (terms, scope of services, pricing)",
+      "Waste volume or tonnage data by contract, along with service frequency",
+      "Operational cost breakdowns (labor, equipment, fuel, disposal fees)",
+      "Historical profitability data or margins by customer type",
+      "Regulatory or franchise requirements affecting service provisions or fee structures",
+      "Customer satisfaction metrics (complaints, service level compliance)",
+      "Competitive market rates and benchmarks for similar services"
+    ],
+    "improve": [
+      "Renegotiate or rebid loss-making contracts, presenting cost-based justifications for pricing changes or adjusted service terms.",
+      "Streamline operations (e.g., route consolidation) to reduce operational costs for marginally profitable contracts.",
+      "Pursue upselling or cross-selling opportunities (e.g., adding recycling, organics collection) to increase contract value.",
+      "Implement performance tracking to proactively address service issues and avoid penalties, improving contract profitability.",
+      "Use market intelligence and competitor pricing data to set more accurate rates and avoid undercutting the market.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Profit (or Loss) per Contract (USD)",
+        "variables": [
+          "Total Revenue",
+          "Direct Operating Costs",
+          "Allocated Overhead"
+        ],
+        "expression": "( v0 ) - ( v1 ) - ( v2 )",
+        "percentOutput": false,
+        "source": "Profit (or Loss) per Contract (USD) = (Total Revenue) - (Direct Operating Costs) - (Allocated Overhead)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-43",
+    "archetype": "waste-management",
+    "title": "Waste Stream Segmentation and Profitability Analysis",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS",
+      "PRICING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/43 - Waste Stream Segmentation and Profitability Analysis.md",
+    "goal": "To categorize and analyze different waste streams (e.g., residential MSW, commercial waste, organics, recyclables, construction & demolition) in order to understand their individual cost drivers, revenue potential, and overall profitability, guiding resource allocation and operational strategies.",
+    "dataRequired": [
+      "Waste volume data by stream (tons, cubic yards, or percentage of total waste)",
+      "Collection and processing costs by stream (labor, hauling, tipping fees, sorting expenses)",
+      "Revenue data for each stream (e.g., tipping fees, material sales, recycling credits)",
+      "Operational details (route density, processing facility capacity, contamination levels)",
+      "Historical trends or seasonality factors (peak vs. off-peak generation)",
+      "Any relevant policy mandates or incentives (e.g., organics diversion targets, recycling subsidies)"
+    ],
+    "improve": [
+      "Streamline operations in lower-margin streams by optimizing routes, improving processing efficiency, or reducing contamination.",
+      "Strengthen relationships with buyers of recovered materials to lock in stable pricing and reduce market volatility risks.",
+      "",
+      "Explore policy incentives or rebates for targeted waste streams (e.g., organics diversion grants, extended producer responsibility fees) to enhance margins.",
+      "Adjust pricing structures or contract terms to better reflect the true costs and value of each segment.",
+      "Regularly review and update segmentation criteria as waste streams evolve (e.g., shifts in packaging materials, changes in local regulations).",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Net Margin (USD)",
+        "variables": [
+          "Stream Revenue",
+          "Stream-Allocated Costs"
+        ],
+        "expression": "( v0 ) - ( v1 )",
+        "percentOutput": false,
+        "source": "Net Margin (USD) = (Stream Revenue) - (Stream-Allocated Costs)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-44",
+    "archetype": "waste-management",
+    "title": "Synergistic Acquisitions and Geographic Coverage Optimization",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "TUCK_IN_ACQUISITIONS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/44 - Synergistic Acquisitions and Geographic Coverage.md",
+    "goal": "To identify and evaluate potential acquisitions or geographic expansions that create operational synergies, enhance market coverage, and improve profitability in waste management services.",
+    "dataRequired": [
+      "Current service area maps and route density data",
+      "Market share and competitive landscape within target regions",
+      "Financial statements and operational metrics of potential acquisition targets (revenue, EBITDA, cost structure)",
+      "Synergy estimates (route overlap, facility utilization, shared overhead)",
+      "Historical acquisition outcomes (if any) and lessons learned",
+      "Regulatory or contractual constraints (franchise agreements, permits)",
+      "Capital availability and financing options"
+    ],
+    "improve": [
+      "Establish clear strategic criteria for evaluating potential targets, ensuring acquisitions align with long-term objectives.",
+      "Use robust due diligence processes, including site visits and stakeholder interviews, to validate synergy assumptions.",
+      "Engage experienced advisers (legal, financial, operational) to navigate regulatory challenges and structure deals effectively.",
+      "Develop a detailed integration roadmap with milestones and accountability to secure cost savings and revenue enhancements quickly.",
+      "Continuously monitor and refine post-acquisition operations, addressing issues early to maximize long-term value from the transaction.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Synergy Value (USD)",
+        "variables": [
+          "Projected Cost Reductions",
+          "Incremental Revenue",
+          "Integration Expenses"
+        ],
+        "expression": "( v0 + v1 ) - ( v2 )",
+        "percentOutput": false,
+        "source": "Synergy Value (USD) = (Projected Cost Reductions + Incremental Revenue) - (Integration Expenses)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "waste-management-45",
+    "archetype": "waste-management",
+    "title": "Tipping Fee Benchmarking and Optimization Study",
+    "part": "H",
+    "partLabel": "Financial & Contractual Structuring",
+    "relatedMetricCodes": [
+      "PRICE_PER_TON",
+      "PRICE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "PRICING_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/45 - Tipping Fee Benchmarking and Optimization Study.md",
+    "goal": "To compare current tipping fees against industry benchmarks and regional competitors, identify factors driving tipping fee levels, and develop strategies to optimize pricing for sustainable revenue and market competitiveness.",
+    "dataRequired": [
+      "Current tipping fee schedules (by waste type, e.g., MSW, C&D, green waste)",
+      "Historical tipping fee rates and changes over time",
+      "Operational costs (landfill or facility operating expenses, labor, maintenance, overhead)",
+      "Regional competitor fee structures (published rates or market intelligence)",
+      "Waste volume data (tons, cubic yards) and customer breakdown (municipal, commercial, industrial)",
+      "Market demand indicators (waste generation trends, economic activity)",
+      "Regulatory or permit constraints that influence allowable fees"
+    ],
+    "improve": [
+      "Revisit and adjust tipping fees periodically to reflect changes in operational costs, market demand, and competitor rates.",
+      "Implement a tiered or volume-based pricing model that incentivizes large-volume customers and supports waste diversion goals.",
+      "Enhance facility services (e.g., faster turnaround times, better customer service) to justify premium rates if aiming to be above market average.",
+      "Communicate clearly with stakeholders (e.g., municipalities, commercial haulers) about fee changes, ensuring transparency and rationales are well understood.",
+      "Continuously monitor market trends and competitor actions to adapt pricing strategies as conditions evolve.",
+      "I. Sustainability & ESG"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-46",
+    "archetype": "waste-management",
+    "title": "Corporate Sustainability and ESG Impact Assessment",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/46 - Corporate Sustainability and ESG Impact Assessment.md",
+    "goal": "To evaluate a waste management company’s performance in Environmental, Social, and Governance (ESG) areas, align corporate sustainability goals with operational practices, and identify opportunities for improvement that enhance stakeholder trust and long-term business value.",
+    "dataRequired": [
+      "Current sustainability targets and commitments (e.g., carbon neutrality pledges, recycling benchmarks)",
+      "Operational data on energy consumption, greenhouse gas emissions, water use, and waste diversion",
+      "Social impact metrics (employee health and safety statistics, workforce diversity, community engagement activities)",
+      "Governance structures (board composition, executive compensation linked to sustainability, risk management policies)",
+      "Industry-specific ESG reporting frameworks and standards (e.g., GRI, SASB)",
+      "Stakeholder feedback (customer surveys, investor inquiries, community concerns)",
+      "Third-party ESG ratings or assessments (if available)"
+    ],
+    "improve": [
+      "Integrate ESG objectives into core strategic planning, ensuring senior leadership accountability for sustainability outcomes.",
+      "Invest in data collection and management systems that provide reliable, real-time insights into environmental and social performance.",
+      "Engage employees and the broader community through training, workshops, and partnerships that align daily operations with ESG goals.",
+      "Regularly review and update ESG targets in response to evolving industry standards, technology advancements, and stakeholder expectations.",
+      "Seek external assurance or third-party verification of ESG data to enhance credibility and demonstrate commitment to transparency.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-47",
+    "archetype": "waste-management",
+    "title": "Community Engagement and Public Relations Strategy Review",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/waste-management/47 - Community Engagement and Public Relations Strategy.md",
+    "goal": "To evaluate how effectively a waste management company engages with local communities, addresses public concerns, and fosters a positive brand image, ensuring that residents, stakeholders, and regulatory bodies perceive the company as a responsible and responsive partner.",
+    "dataRequired": [
+      "Records of past community outreach events, public meetings, and open houses",
+      "Media coverage and social media mentions (positive, negative, or neutral)",
+      "Complaint logs and response times (odor, noise, traffic, service issues)",
+      "Surveys or feedback forms from local residents and stakeholders",
+      "Company policies or guidelines on communication and issue escalation",
+      "Demographic and cultural information about the communities served",
+      "Relevant local regulations or expectations for public consultations"
+    ],
+    "improve": [
+      "Create a clear community engagement policy, outlining how often and in what formats the company will communicate with residents.",
+      "Develop a robust complaint resolution process with defined response times and accountability for follow-up.",
+      "Utilize social media and local events to share updates on operational changes, environmental performance, and community investments.",
+      "",
+      "Establish a community advisory panel or stakeholder group to gather ongoing feedback and collaborate on solutions.",
+      "Regularly measure public sentiment (through surveys or social media monitoring) and adapt engagement tactics to address evolving concerns.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-48",
+    "archetype": "waste-management",
+    "title": "Circular Economy Partnerships and Upstream Collaboration Analysis",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/48 - Circular Economy Partnerships and Upstream Collaboration.md",
+    "goal": "To identify and evaluate opportunities for collaboration with suppliers, manufacturers, and other stakeholders in the product life cycle that advance circular economy principles (e.g., waste reduction, material reuse, product redesign), thereby creating shared value and reducing the overall environmental impact.",
+    "dataRequired": [
+      "Current supply chain and materials flow (from raw materials to product end-of-life)",
+      "List of potential or existing partners across the value chain (e.g., suppliers, manufacturers, distributors, recyclers)",
+      "Lifecycle assessments or material flow analyses indicating where waste or inefficiencies occur",
+      "Financial data on costs or revenues associated with recovery, reuse, or recycling initiatives",
+      "Corporate sustainability goals or targets related to resource efficiency, waste minimization, or closed-loop models",
+      "Policy and regulatory drivers that incentivize or mandate circular economy practices",
+      "Feedback from stakeholders (employees, customers, industry partners) on collaboration potential"
+    ],
+    "improve": [
+      "Integrate circular economy goals into procurement processes, incentivizing suppliers to adopt sustainable packaging or design-for-recyclability.",
+      "",
+      "Co-develop take-back, refurbishment, or recycling programs with manufacturers or recyclers to capture value from end-of-life products.",
+      "Invest in joint R&D efforts that focus on material innovation, reusable packaging, or product redesign for easy disassembly.",
+      "Build industry coalitions or consortiums to share best practices, scale impact, and pool investment in advanced recycling technologies.",
+      "Set measurable targets (e.g., material recovery rates, carbon footprint reductions) to track and communicate progress to stakeholders.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-49",
+    "archetype": "waste-management",
+    "title": "Carbon Offsetting and Emissions Trading Potential from Waste Operations",
+    "part": "I",
+    "partLabel": "Sustainability & ESG",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/49 - Carbon Offsetting and Emissions Trading Potential from.md",
+    "goal": "To explore how waste management operations—such as landfill gas capture, composting, and waste-to-energy—can generate carbon offsets or participate in emissions trading schemes, thereby creating additional revenue streams while reducing greenhouse gas (GHG) emissions.",
+    "dataRequired": [
+      "Current GHG emissions inventory (e.g., methane from landfills, CO2 from fleet operations)",
+      "Details on existing or planned emissions reduction projects (landfill gas capture, composting, WTE, etc.)",
+      "Relevant carbon offset standards or protocols (e.g., Gold Standard, Verra, regional emissions trading schemes)",
+      "Potential buyers or markets for carbon credits (compliance vs. voluntary markets)",
+      "Projected GHG reductions (tonnes of CO2e) from each initiative",
+      "Financial data on project implementation costs, potential revenue from offset sales, and transaction fees",
+      "Regulatory frameworks and eligibility criteria for offset generation and emissions trading participation"
+    ],
+    "improve": [
+      "Conduct pilot projects (e.g., small-scale LFG-to-energy, enhanced composting) to validate GHG reductions and offset potential before scaling up.",
+      "Partner with established offset registries or consultants for expertise in project design, monitoring, and certification.",
+      "Engage in voluntary or compliance carbon markets where demand for waste-sector credits is strong, capitalizing on sustainable branding.",
+      "Diversify emissions reduction efforts to lower overall risk; for instance, combine landfill gas capture with organics diversion.",
+      "Monitor policy developments and carbon price trends, adjusting project investments or credit selling strategies accordingly.",
+      "J. Technology & Innovation"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "waste-management-50",
+    "archetype": "waste-management",
+    "title": "Automated Sorting Technology Investment Assessment",
+    "part": "J",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "RECYCLING_VALUE",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/waste-management/50 - Automated Sorting Technology Investment Assessment.md",
+    "goal": "To determine whether investing in automated sorting technologies (e.g., optical sorters, AI-powered robotics) will improve material recovery rates, reduce labor costs, and increase revenue from recycled commodities, ultimately enhancing the profitability and efficiency of a recycling or materials processing facility.",
+    "dataRequired": [
+      "Current facility throughput (tons per hour or day)",
+      "Composition and contamination levels of incoming materials",
+      "Existing equipment performance (throughput capacity, downtime, recovery rates)",
+      "Operational costs (labor, maintenance, energy) and commodity sales revenue",
+      "Capital expenditures and installation costs for automated sorting solutions",
+      "Vendor proposals or quotes detailing system capabilities and ROI projections",
+      "Market price data for recovered materials (paper grades, plastics, metals)"
+    ],
+    "improve": [
+      "Prioritize which material streams will benefit most from automation (e.g., high-value plastics or paper with frequent contamination issues).",
+      "",
+      "Negotiate performance guarantees or pay-per-performance contracts with vendors to mitigate technology risk.",
+      "Train staff on operating and maintaining new equipment, ensuring minimal downtime and optimal throughput.",
+      "Continuously monitor sorting performance post-installation, using data analytics or real-time dashboards to fine-tune operations.",
+      "Explore ongoing partnerships or service agreements with technology providers for software updates, parts replacement, and system optimization.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Annual Net Benefit from Automated Sorting",
+          "Initial Investment"
+        ],
+        "expression": "( ( v0 ) / ( v1 ) ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Annual Net Benefit from Automated Sorting) / (Initial Investment)) x 100",
+        "step": null
+      }
+    ]
+  }
+]

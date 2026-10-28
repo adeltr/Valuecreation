@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-44
+part: E
+partLabel: Finance & Program Management
+quant: []
+causes: [REGULATORY]
+levers: []
 ---
 # 44 · Arms Control and Export Regulation Compliance
 

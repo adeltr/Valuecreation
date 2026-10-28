@@ -13,7 +13,7 @@ export function makeLeverSchema(vocab: ActiveVocabulary) {
     label: z.string().min(1),
     mechanism: z.string().min(1),
     category: inVocab(vocab.isLeverCategory, 'lever category'),
-    impactMetricCode: inVocab(vocab.isMetricCode, 'metric code'),
+    impactMetricCode: inVocab(vocab.isLeverTarget, 'lever target metric code'),
     expectedDelta: z.number(),
     deltaKind: z.enum(DELTA_KINDS),
     timeToImpactDays: z.number().int().nonnegative(),

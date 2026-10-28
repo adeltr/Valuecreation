@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-06
+part: A
+partLabel: Strategy & Market Position
+quant: []
+causes: [REGULATORY, GEOPOLITICAL]
+levers: [EXPORT_FMS]
 ---
 # 6 · Global Defense Technology Export Strategy
 

@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-35
+part: D
+partLabel: Technology & Cybersecurity
+quant: []
+causes: [REGULATORY, CYBER]
+levers: []
 ---
 # 35 · Defense Cybersecurity Standards Compliance
 

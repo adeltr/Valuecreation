@@ -1,0 +1,1392 @@
+[
+  {
+    "id": "media-01",
+    "archetype": "media",
+    "title": "Content Portfolio & ROI Analysis",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "CONTENT_INVESTMENT",
+      "CONTENT_INVESTMENT_GROWTH",
+      "REVENUE_PER_CONTENT_DOLLAR",
+      "HIT_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "SLATE_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/media/01 - Content Portfolio & ROI Analysis.md",
+    "goal": "Evaluate the performance and profitability of a company’s content library, determine which projects drive the highest ROI, and guide decisions on future investments and divestments within the portfolio.",
+    "dataRequired": [
+      "Historical production costs and marketing spend for each piece of content",
+      "Revenue breakdown (box office, streaming, syndication, licensing, merchandise, etc.)",
+      "Engagement metrics (viewership, time spent, social media traction)",
+      "Demographic information of the audience for each content piece",
+      "Competitive benchmarks and industry standards for ROI"
+    ],
+    "improve": [
+      "Optimize content budgets by reallocating spend to projects or franchises with consistently high ROI",
+      "Develop a targeted marketing approach based on the audience segments most likely to engage with each content category",
+      "Invest in analytics and data-driven decision-making to forecast profitability and reduce risk",
+      "Diversify the content slate to reach different demographics and mitigate the risk of reliance on one genre or audience segment",
+      "Explore additional monetization opportunities such as merchandise, spin-offs, and licensing deals to extend the content lifecycle.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Total Revenue",
+          "Total Costs"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Total Revenue - Total Costs) / Total Costs x 100. This calculation should incorporate production, distribution, and marketing spend.",
+        "step": "Calculate ROI for each piece of content. Use a standard formula such as"
+      }
+    ]
+  },
+  {
+    "id": "media-02",
+    "archetype": "media",
+    "title": "Windowing Strategy & Release Calendar Optimization",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "REVENUE_PER_CONTENT_DOLLAR"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WINDOWING_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/media/02 - Windowing Strategy & Release Calendar Optimization.md",
+    "goal": "Determine the optimal sequence and timing of content release windows (theatrical, home entertainment, streaming, TV, etc.) to maximize overall revenue, audience reach, and brand impact.",
+    "dataRequired": [
+      "Historical performance data for similar titles across different release windows",
+      "Audience behavior and preference data (cinema attendance trends, streaming usage patterns)",
+      "Market intelligence on competitor release calendars",
+      "Revenue share and margin structure in each distribution channel",
+      "Seasonal and event-based trends (holidays, award seasons, sporting events)"
+    ],
+    "improve": [
+      "Negotiate more flexible agreements with distribution partners to adapt release windows in response to market changes",
+      "Invest in robust predictive analytics tools to better forecast performance under different windowing scenarios",
+      "Coordinate marketing campaigns around key calendar events or competitor releases to maximize audience attention",
+      "Pilot alternative windowing strategies, such as shorter theatrical windows or day-and-date streaming releases, and measure impact on overall ROI.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-03",
+    "archetype": "media",
+    "title": "IP Library Valuation & Franchise Development Potential",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "CONTENT_LIBRARY_SIZE",
+      "FRANCHISE_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "FRANCHISE_MERCH"
+    ],
+    "sourcePath": "data/analysis-library/media/03 - IP Library Valuation & Franchise Development Potential.md",
+    "goal": "Evaluate the current and potential value of intellectual property (IP) in the company’s library, and identify growth opportunities through sequels, spin-offs, licensing, and other strategies that extend and strengthen the franchise portfolio.",
+    "dataRequired": [
+      "Inventory of IP assets (film, television, characters, etc.)",
+      "Historical financial performance (box office, licensing, merchandising, syndication)",
+      "Audience engagement metrics (social media following, fan communities, brand loyalty scores)",
+      "Competitive and market comparable data on recent IP valuations and transactions",
+      "Legal or licensing constraints on IP usage or expansion"
+    ],
+    "improve": [
+      "Launch market research initiatives to identify audience demand for new installments, reboots, or spin-offs",
+      "Strengthen licensing partnerships to extend the IP’s reach into merchandise, gaming, and other ancillary markets",
+      "Invest in multi-platform storytelling (film, TV, digital, live events) to deepen fan engagement and brand loyalty",
+      "Explore co-production or collaboration with external studios for global reach and shared investment risk",
+      "Continually reassess portfolio performance and adjust strategies to capitalize on emerging trends or technologies.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-04",
+    "archetype": "media",
+    "title": "Cross-Franchise Synergy & Universe-Building Analysis",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "FRANCHISE_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "FRANCHISE_MERCH"
+    ],
+    "sourcePath": "data/analysis-library/media/04 - Cross-Franchise Synergy & Universe-Building Analysis.md",
+    "goal": "Identify opportunities to integrate or connect multiple franchises within a single shared universe or overarching narrative, thereby driving higher engagement, extended monetization, and a more cohesive brand identity.",
+    "dataRequired": [
+      "Catalog of existing franchises, including key characters, storylines, and target demographics",
+      "Revenue and engagement data per franchise (box office, streaming, licensing, merchandise)",
+      "Audience overlap metrics (fan communities, social media sentiment, survey data)",
+      "Historical performance of crossovers or collaborative events (if any)",
+      "Creative and legal constraints for each franchise"
+    ],
+    "improve": [
+      "Foster collaboration between franchise teams to brainstorm and develop cohesive narratives and shared storylines",
+      "Engage fans early through marketing campaigns, teasers, or pilot crossovers to gauge enthusiasm before fully committing",
+      "Continuously monitor fan reactions, critical reception, and financial returns to iterate on the universe-building strategy",
+      "Establish brand guidelines for cross-franchise integration to maintain consistency and prevent brand dilution",
+      "Explore licensing or co-production agreements with external partners for franchises that can enhance and expand the shared universe.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-05",
+    "archetype": "media",
+    "title": "Award Campaign Strategy & Prestige Project ROI",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "DISTRIBUTION_MARKETING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "SLATE_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/media/05 - Award Campaign Strategy & Prestige Project ROI.md",
+    "goal": "Evaluate the potential return on investment (ROI) from running award campaigns (e.g., Oscars, Emmys, Golden Globes).",
+    "dataRequired": [
+      "Production budget, marketing spend, and existing financials for the project",
+      "Historical award campaign costs and outcomes (nominations, wins)",
+      "Incremental revenue or viewership upticks linked to nominations or wins (theatrical re-release gains, streaming spikes, home entertainment sales)",
+      "Competitor award campaigns and spending levels (where available)",
+      "Qualitative data on brand perception shifts or talent relationships tied to awards recognition"
+    ],
+    "improve": [
+      "Refine targeting by focusing on categories or awards bodies where the project has the strongest chance of success",
+      "Leverage high-profile talent to boost publicity, interviews, and social media traction during campaign season",
+      "Coordinate with distribution partners to re-promote or expand release windows if nominations or wins occur",
+      "Utilize data analytics tools to closely track audience sentiment and real-time ROI on campaign spending",
+      "Build long-term relationships with awards voters, guilds, and influencers for sustained recognition over future projects.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Incremental Revenue from Awards",
+          "Campaign Cost"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Incremental Revenue from Awards - Campaign Cost) / Campaign Cost x 100. Adjust for intangible factors like talent relationships and studio prestige if necessary.",
+        "step": "Conduct ROI modeling. Use a formula such as"
+      }
+    ]
+  },
+  {
+    "id": "media-06",
+    "archetype": "media",
+    "title": "Franchise Refresh & Reboot Potential",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "FRANCHISE_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "FRANCHISE_MERCH"
+    ],
+    "sourcePath": "data/analysis-library/media/06 - Franchise Refresh & Reboot Potential.md",
+    "goal": "Determine whether reviving or reinventing a dormant or underperforming franchise could yield profitable returns and renewed audience engagement, and identify the best creative and marketing approaches for execution.",
+    "dataRequired": [
+      "Historical performance data (box office, streaming, licensing, merchandise)",
+      "Brand awareness and audience sentiment (survey data, social media listening, fan communities)",
+      "Competitive landscape (recent successful or failed reboots)",
+      "Potential creative directions and budget estimates for refresh or reboot",
+      "Market and industry trends (genre popularity, nostalgia cycles, technology shifts)"
+    ],
+    "improve": [
+      "Engage with original fans early for feedback on reboot concepts, building grassroots support",
+      "Invest in updated production values or modern themes to attract new demographics without alienating existing fans",
+      "Collaborate with established creative talent or influencers to generate buzz and credibility",
+      "Stage a phased rollout, beginning with teasers or limited-scale content to gauge audience reaction before committing to full-scale production",
+      "Continuously monitor fan response throughout development and adjust marketing and storytelling strategies as needed.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-07",
+    "archetype": "media",
+    "title": "Scripted vs. Unscripted Content Mix Analysis",
+    "part": "A",
+    "partLabel": "Content Strategy & Portfolio",
+    "relatedMetricCodes": [
+      "CONTENT_INVESTMENT_GROWTH"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "SLATE_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/media/07 - Scripted vs. Unscripted Content Mix Analysis.md",
+    "goal": "Determine the optimal balance between scripted (e.g., dramas, comedies, feature films) and unscripted (e.g., reality TV, documentaries, talk shows) content in order to maximize audience appeal, budget efficiency, and overall ROI.",
+    "dataRequired": [
+      "Current content library classified into scripted vs. unscripted",
+      "Production costs and marketing spend for each type of content",
+      "Revenue and engagement metrics (ratings, viewership, streaming hours, ad revenue)",
+      "Audience demographic data and preferences",
+      "Competitive programming schedules for relevant markets"
+    ],
+    "improve": [
+      "Refine content development pipelines, ensuring both scripted and unscripted projects have clearly defined audience targets",
+      "Adjust marketing strategies to effectively promote each type of content to its most responsive demographic group",
+      "Explore co-production or talent partnerships in unscripted formats if production costs are consistently lower and ROI is favorable",
+      "Regularly review competitor schedules and consumer trends to identify emerging unscripted sub-genres or niche scripted storytelling opportunities",
+      "Continuously track performance data, adapting the content mix to shifting audience preferences and market conditions.",
+      "B. Rights, Licensing & Distribution"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-08",
+    "archetype": "media",
+    "title": "Intellectual Property & Licensing Monetization Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "LICENSING_ANCILLARY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "IP_LICENSING"
+    ],
+    "sourcePath": "data/analysis-library/media/08 - Intellectual Property & Licensing Monetization Strategy.md",
+    "goal": "Identify the most profitable ways to monetize existing intellectual property (IP) through various licensing deals, partnerships, and product categories, while ensuring brand consistency and maximizing long-term revenue potential.",
+    "dataRequired": [
+      "Comprehensive list of IP assets (films, TV shows, characters, trademarks)",
+      "Current licensing agreements, terms, and expiration dates",
+      "Revenue and profitability data from existing licensing deals",
+      "Market data on licensing opportunities in different categories (toys, apparel, publishing, gaming, theme parks)",
+      "Competitive benchmarking on licensing strategies and royalty rates"
+    ],
+    "improve": [
+      "Negotiate more favorable royalty rates or revenue-share arrangements based on proven IP popularity",
+      "Expand licensing activities into growing sectors (digital collectibles, metaverse applications, etc.)",
+      "Enforce strict brand guidelines to ensure licensees maintain quality and consistency across products",
+      "Develop co-marketing opportunities that align with both the IP’s image and the licensee’s brand positioning",
+      "Continuously monitor market trends and competitor moves to adjust licensing strategies and uncover new opportunities.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-09",
+    "archetype": "media",
+    "title": "Digital Rights & Royalties Management",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "IP_LICENSING"
+    ],
+    "sourcePath": "data/analysis-library/media/09 - Digital Rights & Royalties Management.md",
+    "goal": "Ensure accurate tracking of digital content usage, proper calculation and distribution of royalties, and maximization of revenue streams across various digital platforms.",
+    "dataRequired": [
+      "Inventory of digital distribution agreements and licenses",
+      "Usage reports and analytics from streaming platforms, download services, and other digital channels",
+      "Contractual royalty rates, payment terms, and revenue-share structures",
+      "Historical royalty payments and discrepancies (if any)",
+      "Metadata regarding content ownership, rights availability, and territorial restrictions"
+    ],
+    "improve": [
+      "Invest in automated rights and royalties management software to reduce manual errors and speed up calculations",
+      "Conduct regular audits of platform usage reports to catch discrepancies early",
+      "Renegotiate existing agreements with clearer definitions of usage metrics and improved royalty rates where possible",
+      "Maintain comprehensive metadata and rights databases to quickly identify licensing gaps and new opportunities",
+      "Develop best-practice guidelines for structuring digital distribution contracts, including standardized reporting formats and clear payment timelines.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-10",
+    "archetype": "media",
+    "title": "Rights Acquisition & Window Negotiation Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "REVENUE_PER_CONTENT_DOLLAR"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "WINDOWING_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/media/10 - Rights Acquisition & Window Negotiation Strategy.md",
+    "goal": "Optimize the process of securing rights for content distribution and negotiate release windows that maximize revenue and audience reach across various platforms and territories.",
+    "dataRequired": [
+      "Current and prospective rights deals, including terms and expiration dates",
+      "Historical performance and revenue metrics by distribution window (theatrical, streaming, TV, etc.)",
+      "Competitive intelligence on market rates for rights and typical windowing arrangements",
+      "Audience demographics and consumption preferences by window and region",
+      "Legal or regulatory considerations impacting rights acquisition (territorial restrictions, exclusivity clauses)"
+    ],
+    "improve": [
+      "Build a specialized rights management team to centralize and standardize acquisition and negotiation processes",
+      "Use data analytics to forecast optimal release windows based on past performance and competitor activity",
+      "Negotiate flexible clauses that allow for changes in release timing or exclusivity as market conditions evolve",
+      "Maintain strong relationships with key distributors, platforms, and content creators to access privileged deal opportunities",
+      "Conduct regular market intelligence updates to stay informed on rights pricing trends and emerging distribution platforms.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-11",
+    "archetype": "media",
+    "title": "Global Format Licensing & Adaptation Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "IP_LICENSING"
+    ],
+    "sourcePath": "data/analysis-library/media/11 - Global Format Licensing & Adaptation Strategy.md",
+    "goal": "Identify opportunities to license or adapt content formats (TV show concepts, reality competition frameworks, etc.) for international markets, maximizing revenue while ensuring localized relevance and maintaining brand integrity.",
+    "dataRequired": [
+      "Inventory of existing show formats, including key creative elements and proven audience appeal",
+      "Current licensing deals and territories (if any), plus expiration dates or renewal clauses",
+      "Market research on audience preferences and cultural nuances in target regions",
+      "Historical performance data of similar licensed formats in comparable markets",
+      "Local production and distribution partners’ capabilities and track records"
+    ],
+    "improve": [
+      "Conduct continuous market research to stay current on evolving audience trends and emerging entertainment formats",
+      "Use pilot adaptations or test runs in select markets to gauge reception before scaling globally",
+      "Invest in a robust network of regional production partners who understand local tastes and regulations",
+      "Negotiate favorable licensing terms that include performance-based incentives and enforce strict brand guidelines",
+      "Gather post-launch performance data to refine adaptation strategies and strengthen future deal terms.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-12",
+    "archetype": "media",
+    "title": "Piracy Risk & Content Protection Strategies",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "PIRACY_LOSS_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "PIRACY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/12 - Piracy Risk & Content Protection Strategies.md",
+    "goal": "Identify vulnerabilities in the content distribution chain, assess the potential financial impact of piracy, and develop protective measures to safeguard intellectual property and revenue.",
+    "dataRequired": [
+      "Content distribution channels and release timelines (theatrical, streaming, physical media)",
+      "Historical instances of piracy or leaked content, including types (camcord, torrent, streaming sites)",
+      "Estimated revenue losses associated with piracy, if available",
+      "Existing digital rights management (DRM) protocols and enforcement actions",
+      "Legal and technological resources (anti-piracy vendors, law enforcement partnerships)"
+    ],
+    "improve": [
+      "Invest in advanced DRM and watermarking technologies that can trace leaks to their source",
+      "Strengthen relationships with government agencies, ISPs, and industry coalitions to improve detection and expedite takedown processes",
+      "Educate internal teams and partners (production, distribution) about security protocols and leak prevention",
+      "Consider alternative release strategies (simultaneous or shortened windows) to reduce demand for pirated copies",
+      "Perform periodic audits of the end-to-end content supply chain to stay ahead of evolving piracy tactics.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Estimated Revenue Loss",
+        "variables": [
+          "Number of Illegal Downloads or Streams",
+          "Average Potential Sale Value"
+        ],
+        "expression": "( v0 ) * ( v1 )",
+        "percentOutput": false,
+        "source": "Estimated Revenue Loss = (Number of Illegal Downloads or Streams) x (Average Potential Sale Value). Adjust for variables like repeat viewership or differential pricing.",
+        "step": "Quantify potential piracy losses. Use a formula such as"
+      }
+    ]
+  },
+  {
+    "id": "media-13",
+    "archetype": "media",
+    "title": "Syndication & Re-run Monetization Potential",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "LICENSING_ANCILLARY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "IP_LICENSING"
+    ],
+    "sourcePath": "data/analysis-library/media/13 - Syndication & Re-run Monetization Potential.md",
+    "goal": "Assess the revenue opportunities and strategic benefits of selling or licensing content for syndication and re-runs on various platforms (linear TV, cable channels, streaming services) to maximize long-term profitability and audience reach.",
+    "dataRequired": [
+      "Historical performance metrics of the content (ratings, streaming view counts, demographic breakdowns)",
+      "Existing syndication or secondary licensing deals, including contract terms and expiration dates",
+      "Ad revenue, subscription fees, or other monetization data from previous syndication windows",
+      "Competitive benchmarks for syndication deals, including typical per-episode fees or library package rates",
+      "Audience data for target syndication platforms or markets"
+    ],
+    "improve": [
+      "Bundle multiple shows or episodes to incentivize broader licensing deals and increase total revenue",
+      "Negotiate flexible terms allowing the company to reclaim rights if performance on a specific platform is underwhelming",
+      "Track audience engagement data for re-runs to refine scheduling and platform selection in future negotiations",
+      "Consider re-editing or repackaging older content (e.g., highlight compilations) to appeal to new audiences",
+      "Maintain relationships with broadcast and streaming partners to stay updated on shifts in platform strategies and audience preferences.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-14",
+    "archetype": "media",
+    "title": "Music Streaming Partnerships & Catalog Management",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "IP_LICENSING"
+    ],
+    "sourcePath": "data/analysis-library/media/14 - Music Streaming Partnerships & Catalog Management.md",
+    "goal": "Maximize revenue and audience reach by effectively managing music catalogs (soundtracks, artist deals, original scores) and forming strategic partnerships with music streaming platforms.",
+    "dataRequired": [
+      "Full inventory of music catalog assets (soundtracks, original scores, artist licensing agreements)",
+      "Current deals with music streaming services, including royalty rates, licensing terms, and promotional agreements",
+      "Historical revenue data from music streams, downloads, and physical album sales",
+      "Audience engagement data (stream counts, playlist features, social media traction)",
+      "Competitive benchmarks of royalty structures and streaming platform partnerships in the market"
+    ],
+    "improve": [
+      "Negotiate favorable royalty rates by leveraging proven hits or exclusive music assets",
+      "Explore direct partnerships with platforms that offer promotional support or exclusive playlist placements",
+      "Launch marketing campaigns or social media activations around iconic soundtracks, anniversaries, or trending genres",
+      "Utilize data analytics to forecast streaming patterns and align music releases with audience preferences or high-traffic periods",
+      "Continuously audit music assets to identify opportunities for remastering, re-releasing, or bundling soundtracks with other media assets.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-15",
+    "archetype": "media",
+    "title": "Physical Media Sell-Through & Retail Channel Strategy",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/media/15 - Physical Media Sell-Through & Retail Channel Strategy.md",
+    "goal": "Maximize revenue and profit margins from physical media (DVDs, Blu-rays, 4K discs, CDs) by identifying the most lucrative retail channels, optimal pricing strategies, and consumer purchase behaviors.",
+    "dataRequired": [
+      "Current portfolio of physical media products (titles, formats, SKUs)",
+      "Historical sales data and inventory turnover rates by retailer (brick-and-mortar, online)",
+      "Wholesale pricing agreements, distribution fees, and margin structures across retailers",
+      "Consumer purchase demographics and trends (e.g., collectors, gift-givers, niche market segments)",
+      "Competitor pricing and promotional strategies"
+    ],
+    "improve": [
+      "Negotiate better margin terms or promotional placements with top-performing retailers",
+      "Experiment with premium packaging or limited-edition releases to attract collectors and enhance perceived value",
+      "Use targeted marketing and cross-promotions tied to digital releases, theatrical openings, or anniversaries to drive physical sales",
+      "Optimize inventory management by aligning production runs more closely with demand forecasts and sell-through patterns",
+      "Regularly review competitor pricing and promotional strategies to maintain a competitive edge.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-16",
+    "archetype": "media",
+    "title": "Retransmission Consent & Carriage Fee Negotiation Analysis",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/16 - Retransmission Consent & Carriage Fee Negotiation Analysis.md",
+    "goal": "Ensure fair market value for content distribution on cable, satellite, and other pay TV platforms.",
+    "dataRequired": [
+      "Current retransmission consent or carriage agreements, including fee structures and expiration dates",
+      "Historical carriage fees, subscriber counts, and viewership metrics across platforms",
+      "Competitive benchmarks on carriage fees and channel lineups",
+      "Ratings or audience share data, including demographic breakouts",
+      "Marketing and promotional commitments from distributors"
+    ],
+    "improve": [
+      "Maintain high-value programming or exclusive content that significantly boosts negotiations leverage",
+      "Develop and nurture relationships with distributor stakeholders to streamline discussions and foster goodwill",
+      "Use audience analytics and marketing support commitments as part of the negotiation package to demonstrate mutual benefit",
+      "Explore alternative distribution (streaming partnerships, direct-to-consumer options) to reduce over-reliance on any single distributor",
+      "Stay vigilant about market trends (cord-cutting, streaming migrations) and adjust fee structures to stay competitive and future-proof.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-17",
+    "archetype": "media",
+    "title": "FAST (Free Ad-Supported Streaming TV) Channel Strategy & Monetization",
+    "part": "B",
+    "partLabel": "Rights, Licensing & Distribution",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "CONTENT_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/media/17 - FAST (Free Ad-Supported Streaming TV) Channel Strategy &.md",
+    "goal": "Assess how to structure and launch FAST channels to maximize ad revenues, extend audience reach, and strengthen brand visibility across free, ad-supported streaming platforms.",
+    "dataRequired": [
+      "Catalog of available content (licensed or owned) suitable for ad-supported streaming",
+      "Audience segmentation data, including demographics and viewing habits",
+      "Ad inventory and rate card benchmarks (CPM, fill rates)",
+      "Projected operational costs (content preparation, platform fees, ad sales)",
+      "Competitor insights on existing FAST channels, content lineups, and viewership"
+    ],
+    "improve": [
+      "Optimize content selection and scheduling based on real-time data about viewer engagement",
+      "Negotiate favorable ad splits or exclusivity clauses with FAST platforms in exchange for premium content",
+      "Develop targeted promotional campaigns (social media, cross-platform announcements) to drive awareness and boost initial tune-in",
+      "Consider bundling your FAST channel offerings with additional services or exclusive content to differentiate from competitors",
+      "Continuously monitor market trends and emerging FAST platforms to remain agile and capture new audiences.",
+      "C. Live & Experiential Entertainment"
+    ],
+    "formulas": [
+      {
+        "output": "Ad Revenue",
+        "variables": [
+          "Ad Inventory",
+          "CPM",
+          "Impressions",
+          "Revenue Share with Platform"
+        ],
+        "expression": "( v0 * v1 * v2 ) - v3",
+        "percentOutput": false,
+        "source": "Ad Revenue = (Ad Inventory x CPM x Impressions) - Revenue Share with Platform. Adjust for average fill rates and possible seasonal fluctuations.",
+        "step": "Model ad revenue potential. Estimate revenue using an equation such as"
+      }
+    ]
+  },
+  {
+    "id": "media-18",
+    "archetype": "media",
+    "title": "Live Events, Concerts & Experiential Marketing Evaluation",
+    "part": "C",
+    "partLabel": "Live & Experiential Entertainment",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "CONTENT_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/media/18 - Live Events, Concerts & Experiential Marketing Evaluation.md",
+    "goal": "Determine the viability, profitability, and brand impact of hosting or sponsoring live events and experiential activations (e.g., concerts, fan conventions, immersive pop-ups).",
+    "dataRequired": [
+      "Historical attendance figures and ticket sales for previous live events",
+      "Production costs, marketing budgets, and operational expenses",
+      "Revenue streams (ticketing, sponsorships, merchandise, concessions)",
+      "Audience demographics, satisfaction surveys, and repeat attendance metrics",
+      "Competitive landscape (similar events, regional or seasonal factors)"
+    ],
+    "improve": [
+      "Collaborate with influencers or local cultural figures to broaden the event’s reach and credibility",
+      "Offer tiered ticket pricing (VIP experiences, early access) to increase revenue and cater to different audience segments",
+      "Enhance the attendee experience (interactive zones, exclusive merchandise) to encourage word-of-mouth marketing and repeat attendance",
+      "Negotiate deeper partnership deals with sponsors, focusing on innovative on-site activations that enhance brand visibility",
+      "Leverage post-event analytics to refine future strategies, including scheduling, venue selection, and cross-promotional opportunities.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-19",
+    "archetype": "media",
+    "title": "Alternative Theatrical Content & Premium Exhibition Strategy",
+    "part": "C",
+    "partLabel": "Live & Experiential Entertainment",
+    "relatedMetricCodes": [
+      "REVENUE_PER_CONTENT_DOLLAR"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "WINDOWING_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/media/19 - Alternative Theatrical Content & Premium Exhibition Strategy.md",
+    "goal": "Identify opportunities to showcase non-traditional movie content (e.g., concerts, sports events, gaming tournaments, special anniversary screenings) in theaters.",
+    "dataRequired": [
+      "Historical attendance and revenue data from alternative theatrical events (live concert screenings, opera transmissions, special event films)",
+      "Demographic and behavioral insights on target audiences (music fans, gamers, cinephiles)",
+      "Pricing structures for premium exhibition formats (IMAX, 4DX, luxury theaters)",
+      "Competitive analysis of alternative content offerings and premium experiences in local or regional markets",
+      "Marketing and promotional costs, plus distribution or content acquisition fees"
+    ],
+    "improve": [
+      "Partner with content creators and distributors who specialize in high-profile or niche events to ensure diverse offerings",
+      "Enhance the in-theater experience with themed concessions, interactive elements, or post-event discussions to entice audiences",
+      "Collaborate with local groups or fan communities to leverage grassroots marketing for targeted events (anime clubs, sports fan clubs)",
+      "Adjust pricing tiers and seat configurations to optimize revenue and cater to different audience preferences",
+      "Continuously evaluate performance metrics and audience feedback to refine content mix, scheduling, and promotional tactics.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-20",
+    "archetype": "media",
+    "title": "Theme Park & Location-Based Entertainment Expansion Analysis",
+    "part": "C",
+    "partLabel": "Live & Experiential Entertainment",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/20 - Theme Park & Location-Based Entertainment Expansion.md",
+    "goal": "Evaluate the potential for expanding into or enhancing theme parks, branded attractions, and other location-based entertainment offerings.",
+    "dataRequired": [
+      "Existing theme park or location-based entertainment assets (attendance figures, revenue, operating costs)",
+      "Market research on tourism trends, competitor attractions, and consumer behavior",
+      "Demographic data on target audiences (families, thrill-seekers, cultural tourists)",
+      "Potential site locations, infrastructure costs, and regulatory considerations (zoning, permits)",
+      "Brand/IP portfolio suitability for rides, immersive experiences, and themed environments"
+    ],
+    "improve": [
+      "Partner with established park operators or regional developers to leverage their expertise in construction, operations, and local regulations",
+      "Bundle experiences (hotel stays, VIP tours, themed dining) to increase guest spending and enhance brand immersion",
+      "Diversify attractions to cater to multiple demographics (families, thrill-seekers, pop-culture fans) and spread visitation across different seasons",
+      "Offer compelling annual pass programs and loyalty incentives to encourage repeat visits and stable cash flow",
+      "Continuously evolve the experience with seasonal events, new ride technology, and IP-based refreshes to maintain excitement and drive return traffic.",
+      "D. Sports & Gaming"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-21",
+    "archetype": "media",
+    "title": "Gaming & eSports Integration & Monetization Strategy",
+    "part": "D",
+    "partLabel": "Sports & Gaming",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "CONTENT_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/media/21 - Gaming & eSports Integration & Monetization Strategy.md",
+    "goal": "Determine how to effectively enter or expand within the gaming and eSports markets, leveraging partnerships, brand integrations, and original gaming content to drive new revenue streams and audience engagement.",
+    "dataRequired": [
+      "Overview of existing gaming-related assets or partnerships (licensing deals, game IPs, eSports teams/events)",
+      "Market research on gaming and eSports trends, audience demographics, and spending patterns",
+      "Competitive benchmarking of other media companies’ gaming strategies and success metrics",
+      "Potential monetization models (in-game purchases, sponsorships, broadcast rights, merchandising)",
+      "Historical data on viewership, streaming metrics, and community engagement for any gaming or eSports content produced so far"
+    ],
+    "improve": [
+      "Foster relationships with major game developers, streaming platforms, and eSports organizers for co-branded projects and exclusive content deals",
+      "Invest in data analytics to understand gamer behavior, market trends, and the impact of marketing campaigns on user acquisition and retention",
+      "Align brand IP with game genres and formats that resonate most with core fan bases, ensuring authenticity and community support",
+      "Explore cross-platform synergies, such as in-game events tied to film or TV releases, to attract and engage fans across mediums",
+      "Encourage grassroots community-building (fan tournaments, social media engagement) to develop a loyal player and viewer base over time.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Total Costs"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Projected Revenue - Total Costs) / Total Costs x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "media-22",
+    "archetype": "media",
+    "title": "Sports Broadcasting Rights & League Partnership Strategy",
+    "part": "D",
+    "partLabel": "Sports & Gaming",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "CONTENT_SCALE"
+    ],
+    "sourcePath": "data/analysis-library/media/22 - Sports Broadcasting Rights & League Partnership Strategy.md",
+    "goal": "Determine the value and strategic benefits of acquiring or renewing sports broadcasting rights, and develop partnerships with sports leagues that maximize audience engagement, brand visibility, and long-term profitability.",
+    "dataRequired": [
+      "Current and upcoming sports broadcasting rights contracts, including costs, duration, and exclusivity clauses",
+      "Historical viewership and ratings for sports content, broken down by platform and demographic",
+      "Advertising and sponsorship revenue associated with sports broadcasts",
+      "Competitive intelligence on rival networks or streaming platforms holding similar or complementary rights",
+      "Audience preference data for specific sports, leagues, and event types"
+    ],
+    "improve": [
+      "Strengthen relationships with leagues and governing bodies to secure favorable terms or early negotiation opportunities",
+      "Invest in tailored marketing campaigns targeting relevant sports fan segments for enhanced viewership and ad revenue",
+      "Explore new digital distribution channels (direct-to-consumer apps, social media streaming) to reach younger or tech-savvy audiences",
+      "Combine sports content with interactive elements (betting, fantasy sports, real-time polls) to increase engagement and diversify revenue",
+      "Monitor audience trends and periodically reassess the value proposition of each set of rights before renewal deadlines.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Rights Acquisition Cost"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = (Projected Revenue - Rights Acquisition Cost) / Rights Acquisition Cost x 100. Factor in production expenses, distribution fees, and potential subscriber or advertising revenue.",
+        "step": "Forecast financial impact. Use a formula like"
+      }
+    ]
+  },
+  {
+    "id": "media-23",
+    "archetype": "media",
+    "title": "Betting & Sportsbook Integration Partnerships Analysis",
+    "part": "D",
+    "partLabel": "Sports & Gaming",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/23 - Betting & Sportsbook Integration Partnerships Analysis.md",
+    "goal": "Determine the potential benefits and risks of integrating betting or sportsbook partnerships into media and entertainment offerings, with a focus on increasing audience engagement, creating new revenue streams, and maintaining brand integrity.",
+    "dataRequired": [
+      "Current and projected legal landscape for sports betting across relevant markets",
+      "Audience demographics, especially the subset interested in sports betting or interactive gambling opportunities",
+      "Historical engagement and viewership data tied to sports events, including any existing betting-related segments",
+      "Financial models for potential revenue from betting partnerships (affiliate fees, revenue share, sponsorships)",
+      "Competitive analysis of other media properties’ sportsbook integrations, including user adoption rates and brand impact"
+    ],
+    "improve": [
+      "Establish dedicated compliance and legal functions to track changes in gambling regulations and ensure responsible gaming practices",
+      "Pilot betting integrations in select markets or smaller-scale events to measure user engagement and refine the offering",
+      "Negotiate revenue-sharing agreements that incentivize partners to invest in marketing support and technology enhancements",
+      "Implement robust responsible gambling tools, including spending limits and self-exclusion options, to protect users and preserve brand reputation",
+      "Continuously gather user feedback and engagement data to optimize betting features and target marketing to receptive segments.",
+      "E. Technology & Innovation"
+    ],
+    "formulas": [
+      {
+        "output": "Net Partnership Revenue",
+        "variables": [
+          "Total Betting Volume",
+          "Commission Rate",
+          "Any Fixed Fees or Costs, adjusting for different adoption rates and retention scenarios"
+        ],
+        "expression": "( v0 * v1 ) - v2",
+        "percentOutput": false,
+        "source": "Net Partnership Revenue = (Total Betting Volume x Commission Rate) - Any Fixed Fees or Costs, adjusting for different adoption rates and retention scenarios.",
+        "step": "Model financial outcomes. Use formulas such as"
+      }
+    ]
+  },
+  {
+    "id": "media-24",
+    "archetype": "media",
+    "title": "Virtual & Augmented Reality Content Opportunities",
+    "part": "E",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/24 - Virtual & Augmented Reality Content Opportunities.md",
+    "goal": "Explore the feasibility and potential benefits of producing or partnering on VR/AR experiences to enhance audience engagement, diversify revenue streams, and strengthen the company’s position in emerging immersive media markets.",
+    "dataRequired": [
+      "Existing VR/AR content initiatives or proofs-of-concept, including user engagement or pilot feedback",
+      "Market research on consumer adoption rates, device penetration (headsets, smartphones), and demographic usage patterns",
+      "Competitive analysis of other companies’ VR/AR offerings, including production value, user reviews, and monetization models",
+      "Estimated production costs, technology requirements, and any specialized personnel or partnerships needed",
+      "Potential revenue streams (licensing, branded sponsorships, premium downloads, subscription add-ons)",
+      "Technical constraints and platform distribution capabilities (gaming consoles, PC-based VR, mobile AR platforms)"
+    ],
+    "improve": [
+      "Forge technology and platform partnerships with VR/AR hardware providers or major distribution channels to share development costs, secure promotional placements, and stay updated on evolving tech standards.",
+      "",
+      "Enhance user onboarding and marketing efforts by creating educational content that highlights the unique benefits of VR/AR experiences, addressing potential barriers like motion sickness or complex setup.",
+      "Leverage existing IP for immersive storytelling, building brand loyalty and cross-promotional opportunities (e.g., tie-in VR experiences for popular film or TV franchises).",
+      "Experiment with monetization models, such as subscription add-ons, digital merchandise, or branded sponsorship, to identify the most profitable approach for your audience.",
+      "Continuously track emerging VR/AR technologies (lighter headsets, mobile-based AR advancements) to keep experiences accessible and maintain a competitive edge.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Projected VR/AR Revenue",
+        "variables": [
+          "Expected User Base",
+          "Average Revenue per User",
+          "Production and Distribution 52 Costs"
+        ],
+        "expression": "( v0 * v1 ) - v2",
+        "percentOutput": false,
+        "source": "Projected VR/AR Revenue = (Expected User Base x Average Revenue per User) - Production and Distribution 52 Costs. Consider additional income from brand sponsorships, premium in-app purchases, or licensing deals.",
+        "step": "Model potential revenue. Use a formula such as"
+      }
+    ]
+  },
+  {
+    "id": "media-25",
+    "archetype": "media",
+    "title": "Archive Digitization & Remaster Monetization Strategy",
+    "part": "E",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO",
+      "CONTENT_LIBRARY_SIZE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "IP_LICENSING"
+    ],
+    "sourcePath": "data/analysis-library/media/25 - Archive Digitization & Remaster Monetization Strategy.md",
+    "goal": "Leverage the company’s archived content by digitizing and remastering legacy titles (films, TV shows, audio recordings, etc.) to extend their commercial life, reach modern audiences, and unlock new revenue streams.",
+    "dataRequired": [
+      "Catalog of archive materials (including format, condition, and ownership rights)",
+      "Historical performance data for these assets (original box office, ratings, prior home video sales)",
+      "Cost estimates for digitization, restoration, and potential upscaling (4K, HDR, etc.)",
+      "Licensing agreements or distribution rights availability",
+      "Audience demand data (search trends, social media mentions, fan communities)",
+      "Potential distribution outlets (streaming platforms, special collector’s editions, linear re-runs)"
+    ],
+    "improve": [
+      "Collaborate with restoration experts who specialize in advanced techniques (4K, HDR, Dolby Atmos) to deliver high-quality remasters that attract collectors and enthusiasts",
+      "Engage fan communities early by teasing restoration updates and special features, generating anticipation and word-of-mouth marketing",
+      "Bundle remastered titles with new releases or related franchise expansions to cross-promote and revitalize older IP",
+      "Secure platform exclusives or marquee placements on streaming services to capture additional promotional support and audience traffic",
+      "Monitor emerging technologies (AI-driven upscaling, next-gen audio formats) to continuously enhance remaster quality while controlling costs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Potential Revenue",
+        "variables": [
+          "Digital Sales",
+          "Streaming Licensing",
+          "Physical Re-release Sales",
+          "Restoration Costs"
+        ],
+        "expression": "( v0 + v1 + v2 ) - v3",
+        "percentOutput": false,
+        "source": "Potential Revenue = (Digital Sales + Streaming Licensing + Physical Re-release Sales) - Restoration Costs. Adjust for distribution fees or platform revenue shares.",
+        "step": "Project potential revenue. Use a formula such as"
+      }
+    ]
+  },
+  {
+    "id": "media-26",
+    "archetype": "media",
+    "title": "Blockchain & Web3-based Content Strategies",
+    "part": "E",
+    "partLabel": "Technology & Innovation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/media/26 - Blockchain & Web3-based Content Strategies.md",
+    "goal": "Explore how blockchain and Web3 technologies (NFTs, decentralized finance, tokenized communities) can open new revenue streams, enhance fan engagement, and protect IP within media and entertainment.",
+    "dataRequired": [
+      "Inventory of content or IP assets that can be tokenized or benefit from blockchain infrastructure",
+      "Understanding of regulatory frameworks for cryptocurrencies, NFTs, and tokenized platforms in relevant markets",
+      "Competitive intelligence on existing Web3 initiatives within media (NFT drops, fan tokens, decentralized streaming)",
+      "Audience demographic and psychographic data to gauge interest in crypto-related offerings",
+      "Potential partnerships (blockchain platforms, NFT marketplaces, wallet providers) and associated fee structures",
+      "Past experiments or pilot programs involving blockchain technology (if applicable), plus user feedback and results"
+    ],
+    "improve": [
+      "Educate and onboard fans by creating accessible explanations, user-friendly crypto wallets, and step-by-step purchase guides",
+      "Seek reputable blockchain partners who can offer technical support, marketing collaborations, and user-friendly platforms",
+      "Develop exclusive or utility-based offerings, such as NFTs that grant special access to premieres, behind-the-scenes content, or community events",
+      "Integrate Web3 strategies into broader marketing campaigns, connecting NFT drops or token launches with major releases or fan celebrations",
+      "Stay adaptive to evolving regulations, ensuring compliance while exploring creative new approaches to decentralized ownership and digital collectibles.",
+      "F. Financing & Partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-27",
+    "archetype": "media",
+    "title": "Exclusive Talent & Content Deals Evaluation",
+    "part": "F",
+    "partLabel": "Financing & Partnerships",
+    "relatedMetricCodes": [
+      "CONTENT_INVESTMENT"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "TALENT_COSTS"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/27 - Exclusive Talent & Content Deals Evaluation.md",
+    "goal": "Determine the value and strategic benefits of entering into exclusive deals with top-tier talent (e.g., directors, writers, actors) or securing exclusive rights to sought-after IP (intellectual property).",
+    "dataRequired": [
+      "List of potential talent or IP candidates (including track records, fan bases, and recent performance metrics)",
+      "Historical performance data for similar talent or content deals (box office, streaming performance, brand partnerships)",
+      "Current market benchmarks (industry norms for upfront fees, backend points, exclusivity clauses)",
+      "Audience data (demographics, sentiment, fan loyalty) relevant to the talent or IP",
+      "Financial projections for exclusive deals vs. non-exclusive or alternative agreements",
+      "Competitor activity around similar talent or IP acquisitions"
+    ],
+    "improve": [
+      "Continuously track industry trends to spot rising stars or emerging IP before competitor interest escalates costs",
+      "Negotiate performance-based contracts (e.g., box office thresholds, viewership milestones) to align talent/IP compensation with project success",
+      "Mitigate risk through diversification, spreading investments across multiple exclusive deals or strategic partnerships rather than concentrating on a single blockbuster talent/IP",
+      "Leverage cross-platform synergies, incorporating the exclusive talent/IP across films, TV series, streaming content, or live events to maximize brand impact 60",
+      "Implement renewal clauses that allow for renegotiation if the partnership exceeds or fails to meet performance expectations, safeguarding both creative and financial interests.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-28",
+    "archetype": "media",
+    "title": "Co-production & Financing Partnerships Analysis",
+    "part": "F",
+    "partLabel": "Financing & Partnerships",
+    "relatedMetricCodes": [
+      "CONTENT_INVESTMENT"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/media/28 - Co-production & Financing Partnerships Analysis.md",
+    "goal": "Determine the strategic and financial viability of partnering with external studios, production companies, or investors to co-finance and/or co-produce content.",
+    "dataRequired": [
+      "Pipeline of upcoming projects or ideas requiring funding or collaborative production resources",
+      "Potential partners’ track records (past co-productions, financial stability, creative strengths)",
+      "Budget estimates for each project (development, production, marketing)",
+      "Market research on audience demand and competitive positioning of the proposed content",
+      "Existing deal structures and precedent terms (revenue splits, creative control, distribution rights)",
+      "Historical performance of comparable co-financed or co-produced projects in similar genres"
+    ],
+    "improve": [
+      "Build a diverse network of potential partners, ensuring access to different pools of capital, creative expertise, and market channels",
+      "Negotiate flexible deal structures that allow for scaling production budgets based on preliminary reception or performance milestones",
+      "Implement robust project management to coordinate timelines and responsibilities among co-producers, reducing friction and creative disputes",
+      "Leverage data-driven insights (audience research, competitive intelligence) to validate project potential and strengthen negotiation positions",
+      "Regularly review partnership performance, using post-mortems and lessons learned to refine future co-production and financing strategies.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-29",
+    "archetype": "media",
+    "title": "M&A Strategy & Integration for Media Enterprises",
+    "part": "F",
+    "partLabel": "Financing & Partnerships",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/media/29 - M&A Strategy & Integration for Media Enterprises.md",
+    "goal": "Evaluate the strategic rationale, financial feasibility, and post-merger integration approach for acquiring or merging with another media or entertainment company.",
+    "dataRequired": [
+      "Financial statements, valuations, and key performance metrics of the target company (revenue, EBITDA, cash flow)",
+      "Strategic fit assessment (content synergies, distribution overlap, technology or platform integration potential)",
+      "Cultural and operational compatibility data (company culture, management structures, workflow processes)",
+      "Market and competitive analysis (similar recent deals, competitor strategies, regulatory landscape)",
+      "Due diligence findings (legal, HR, IT, IP assets, liabilities)",
+      "Post-merger integration cost estimates and timeline"
+    ],
+    "improve": [
+      "Establish a cross-functional M&A task force to manage due diligence, valuation, and integration planning",
+      "Conduct early cultural audits to identify potential human capital or cultural alignment issues",
+      "Secure robust executive sponsorship to guide and champion the integration process at all levels",
+      "Use a phased approach for technology and process integration to minimize operational disruptions",
+      "Continuously refine valuation and synergy models with real-time data as new information emerges during negotiations and due diligence.",
+      "G. Regulatory, Compliance & Guilds"
+    ],
+    "formulas": [
+      {
+        "output": "Net Synergy Value",
+        "variables": [
+          "Synergy Benefits",
+          "Integration Costs"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Net Synergy Value = (Synergy Benefits - Integration Costs).",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "media-30",
+    "archetype": "media",
+    "title": "Industry Guild, Residuals & Global Compliance Analysis",
+    "part": "G",
+    "partLabel": "Regulatory, Compliance & Guilds",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY",
+      "TALENT_COSTS"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/media/30 - Industry Guild, Residuals & Global Compliance Analysis.md",
+    "goal": "Ensure full compliance with guild and union regulations (e.g., WGA, DGA, SAG-AFTRA), accurately calculate and distribute residuals, and meet global legal requirements for content production and distribution.",
+    "dataRequired": [
+      "Contracts with guilds, unions, and individual talent (writers, directors, actors)",
+      "Payment schedules, historical payment records, and residuals calculation formulas",
+      "Global labor and employment regulations for relevant production locations",
+      "Production budgets and revenue breakdowns (theatrical, streaming, TV, foreign markets)",
+      "Guild or union rules regarding credits, working conditions, and collective bargaining agreements"
+    ],
+    "improve": [
+      "Automate residual calculations through specialized software or integrated accounting systems",
+      "Maintain ongoing communication with guild representatives and legal counsel to keep up with changing regulations",
+      "Consolidate global compliance tasks under a dedicated team or compliance officer to coordinate international labor law adherence",
+      "Negotiate contract terms that clarify revenue-sharing and guild obligations across various distribution windows",
+      "Conduct periodic training for finance, legal, and production staff on evolving guild rules and local labor regulations.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-31",
+    "archetype": "media",
+    "title": "Children’s & Family Programming Compliance & Monetization Strategy",
+    "part": "G",
+    "partLabel": "Regulatory, Compliance & Guilds",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/media/31 - Children#U2019s & Family Programming Compliance & Monetization.md",
+    "goal": "Ensure that children’s and family-oriented content meets all legal and regulatory requirements (including advertising restrictions, educational standards, and content guidelines) while optimizing revenue through appropriate distribution and marketing channels.",
+    "dataRequired": [
+      "Catalog of children’s and family programming, including target age groups and content ratings",
+      "Regulations and compliance guidelines (e.g., FCC rules, COPPA, Ofcom guidelines) relevant to each market where the content is distributed",
+      "Historical performance data (viewership, streaming metrics, licensing revenue) for kids and family content",
+      "Advertising and sponsorship agreements, including any restrictions on marketing to minors",
+      "Potential merchandising and licensing opportunities, especially for characters or franchises popular with younger audiences",
+      "Audience demographic research and parental feedback, focusing on educational or developmental value"
+    ],
+    "improve": [
+      "Invest in ongoing staff training to keep producers, marketers, and legal teams informed of evolving children’s content regulations",
+      "Develop clear brand and content guidelines ensuring consistent adherence to age-appropriate standards",
+      "Forge alliances with educational experts or child development specialists to enhance content credibility and parental approval",
+      "Pursue co-branded merchandise or educational product lines featuring popular show characters to expand revenue streams 69",
+      "Continuously collect and review parental and viewer feedback, using insights to update content and strengthen engagement strategies.",
+      "H. Merchandising & Ancillary Revenue"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-32",
+    "archetype": "media",
+    "title": "Merchandising & Ancillary Revenue Stream Strategy",
+    "part": "H",
+    "partLabel": "Merchandising & Ancillary Revenue",
+    "relatedMetricCodes": [
+      "LICENSING_ANCILLARY_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO",
+      "FRANCHISE_MERCH"
+    ],
+    "sourcePath": "data/analysis-library/media/32 - Merchandising & Ancillary Revenue Stream Strategy.md",
+    "goal": "Identify and optimize opportunities to extend the brand and monetize content beyond primary channels (theatrical, TV, streaming) through branded merchandise, licensing, experiential tie-ins, and other ancillary revenue streams.",
+    "dataRequired": [
+      "Catalog of IP assets (films, characters, shows) with merchandising potential",
+      "Historical and current merchandising sales data (if applicable)",
+      "Audience demographics, fan community size, and engagement levels",
+      "Existing licensing agreements and royalty structures",
+      "Competitive benchmarking of merchandise lines, brand collaborations, and ancillary product strategies",
+      "Potential partnerships with retailers, e-commerce platforms, or third-party manufacturers"
+    ],
+    "improve": [
+      "Diversify product categories by expanding into new or emerging niches (digital collectibles, live interactive events, themed subscription boxes)",
+      "Partner with reputable manufacturers and retailers that can handle large volumes, maintain quality, and provide broad market access",
+      "Integrate merchandising efforts with content release schedules to capitalize on consumer excitement and brand buzz",
+      "Create premium, limited-edition items that appeal to collectors and superfans, thereby driving word-of-mouth marketing and higher margins 72",
+      "Leverage data analytics (sales trends, consumer insights) to continuously optimize product portfolios and minimize inventory risks.",
+      "I. Audience Engagement & Monetization"
+    ],
+    "formulas": [
+      {
+        "output": "Merchandise Profit",
+        "variables": [
+          "Units Sold",
+          "Unit Price",
+          "Manufacturing",
+          "Distribution",
+          "Marketing Costs"
+        ],
+        "expression": "( v0 * v1 ) - ( v2 + v3 + v4 )",
+        "percentOutput": false,
+        "source": "Merchandise Profit = (Units Sold x Unit Price) - (Manufacturing + Distribution + Marketing Costs).",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "media-33",
+    "archetype": "media",
+    "title": "Pay-Per-View & Direct-to-Fan Engagement Models",
+    "part": "I",
+    "partLabel": "Audience Engagement & Monetization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "AUDIENCE_TARGETING"
+    ],
+    "sourcePath": "data/analysis-library/media/33 - Pay-Per-View & Direct-to-Fan Engagement Models.md",
+    "goal": "Evaluate the potential and profitability of offering pay-per-view events (live streams, special releases) and direct-to-fan models (crowdfunding, fan clubs, exclusive online portals) that bypass traditional distribution channels to maximize revenue and deepen audience relationships.",
+    "dataRequired": [
+      "Audience demographic and psychographic profiles, including willingness to pay for premium or exclusive content",
+      "Historical performance data for any existing pay-per-view or direct-to-fan initiatives (sales, conversions, engagement metrics)",
+      "Competitive intelligence on similar direct-to-fan platforms or PPV events within the industry or genre",
+      "Marketing and production cost estimates for hosting or creating exclusive PPV events",
+      "Platform or technology partner data (transaction fees, streaming capacity, user experience)",
+      "Customer feedback and social media sentiment regarding exclusive or premium content offerings"
+    ],
+    "improve": [
+      "Tailor exclusive content (director’s cuts, behind-the-scenes footage, interactive Q&A sessions) to meet or exceed fan expectations",
+      "Invest in an intuitive user experience, ensuring seamless payments, reliable streaming, and accessible tech support",
+      "Use targeted marketing campaigns that highlight the uniqueness or rarity of the content (limited-time access, collector’s item branding)",
+      "Incentivize loyalty and community-building via perks like early access to future PPV events, discounts on merchandise, or exclusive fan club interactions 75",
+      "Continuously gather fan feedback to refine content offers, pricing strategies, and promotional messaging for improved retention and revenue.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Projected Revenue",
+        "variables": [
+          "Number of Paying Viewers or Subscribers",
+          "Fee per Event or Subscription",
+          "Platform",
+          "Marketing Costs"
+        ],
+        "expression": "( v0 ) * ( v1 ) - ( v2 / v3 )",
+        "percentOutput": false,
+        "source": "Projected Revenue = (Number of Paying Viewers or Subscribers) x (Fee per Event or Subscription) - (Platform/Marketing Costs). Adjust for potential churn or tech overhead.",
+        "step": "Forecast revenue potential. Apply a formula like"
+      }
+    ]
+  },
+  {
+    "id": "media-34",
+    "archetype": "media",
+    "title": "In-Show Brand Integration & Sponsorship Effectiveness Analysis",
+    "part": "I",
+    "partLabel": "Audience Engagement & Monetization",
+    "relatedMetricCodes": [
+      "DISTRIBUTION_MARKETING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "AUDIENCE_TARGETING"
+    ],
+    "sourcePath": "data/analysis-library/media/34 - In-Show Brand Integration & Sponsorship Effectiveness.md",
+    "goal": "Evaluate how effectively brands and sponsors are integrated into media content (TV shows, films, streaming programs), measure the impact on both viewer engagement and advertiser ROI, and refine strategies to maximize sponsor satisfaction and audience enjoyment.",
+    "dataRequired": [
+      "A list of all current or recent brand integrations and sponsorships, along with brief details of their placement (type of integration, duration, frequency)",
+      "Audience engagement metrics such as viewership, social media sentiment, and time spent viewing specific segments",
+      "Advertiser or sponsor feedback, including stated objectives (brand awareness, sales lift, brand sentiment) and campaign ROI data (if available)",
+      "Production costs or incremental fees associated with integrating sponsors (creative adjustments, legal approvals)",
+      "Comparable industry benchmarks or case studies on effective product placement and sponsorship deals",
+      "Viewer or focus group feedback regarding brand presence and perceived authenticity"
+    ],
+    "improve": [
+      "Focus on authentic integrations that align naturally with the show’s setting and characters, reducing the risk of jarring, forced placements",
+      "Collaborate closely with brand partners on storytelling to ensure the product’s role feels organic and enhances the viewer experience",
+      "Leverage data-driven insights (e.g., demographic match, purchase behavior) to identify which brands resonate most with the show’s audience 78",
+      "Negotiate performance-based deals tying sponsor fees to specific metrics (viewership, sales upticks, online traffic) to share risk and reward",
+      "Solicit real-time viewer feedback via social media or in-show engagement polls, adjusting integration strategies when evidence of fatigue or negative perception arises.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "media-35",
+    "archetype": "media",
+    "title": "Audience Analytics & Personalization Strategy",
+    "part": "I",
+    "partLabel": "Audience Engagement & Monetization",
+    "relatedMetricCodes": [
+      "DISTRIBUTION_MARKETING_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "AUDIENCE_TARGETING"
+    ],
+    "sourcePath": "data/analysis-library/media/35 - Audience Analytics & Personalization Strategy.md",
+    "goal": "Leverage viewer data and audience insights to tailor content recommendations, marketing messages, and user experiences, thereby boosting engagement, retention, and overall customer satisfaction.",
+    "dataRequired": [
+      "User profiles (demographics, location, device usage)",
+      "Consumption patterns (viewing history, watch time, completion rates)",
+      "Behavior data (search queries, click-through rates, browsing paths)",
+      "Content metadata (genres, themes, cast/crew, run time)",
+      "Platform analytics (peak usage times, session frequency, churn rates)",
+      "Social media interactions and sentiment data (if available)"
+    ],
+    "improve": [
+      "Invest in advanced analytics tools (machine learning platforms, real-time data pipelines) to handle large-scale user data and deliver timely recommendations",
+      "Enhance content metadata through tagging and categorization, improving the system’s ability to match user preferences with relevant titles",
+      "Adopt continuous testing to validate new features, user interface changes, and personalization strategies",
+      "Incorporate feedback loops so users can refine or correct their recommendations (e.g., “thumbs up/down” systems)",
+      "Expand data sources by integrating social media sentiment or third-party data to uncover deeper behavioral insights and refine audience segmentation.",
+      ""
+    ],
+    "formulas": []
+  }
+]

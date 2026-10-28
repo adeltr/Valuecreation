@@ -1,6 +1,11 @@
 import express from 'express';
 import { sanitizeProposal, type CopilotProposal } from '../copilot/proposal';
 import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
+import { getCatalog } from '../catalog';
+import type { DossierRepository } from '../dossier/repository';
+import { dossierRoutes } from './dossierRoutes';
+import { empiricalRoutes } from './empiricalRoutes';
+import type { EmpiricalDataset } from '../empirical/importer';
 
 export function buildSystemPrompt(archetype: SectorArchetype): string {
   const v = getActiveVocabulary(archetype);
@@ -9,10 +14,20 @@ export function buildSystemPrompt(archetype: SectorArchetype): string {
     'Return ONLY a JSON object: { "rootCauses": [...], "levers": [...] }. No prose, no markdown.',
     `Lever.category MUST be one of: ${v.leverCategories.join(', ')}.`,
     `RootCause.category MUST be one of: ${v.causeCategories.join(', ')}.`,
-    `impactMetricCode MUST be one of: ${v.metricCodes.join(', ')}.`,
+    `impactMetricCode MUST be one of: ${v.metricCodes.filter(v.isLeverTarget).join(', ')}.`,
     "Every lever MUST include deltaKind ('absolute' or 'percent') and a non-empty confidenceBasis.",
     'NEVER output computed figures, scenario results, exit multiples, or assumptions — the engine and the analyst own those.',
+    ...catalogSection(archetype),
   ].join('\n');
+}
+
+function catalogSection(archetype: SectorArchetype): string[] {
+  const catalog = getCatalog(archetype);
+  if (catalog.length === 0) return [];
+  return [
+    `Analysis protocols available for this company type — cite the id in a root cause "evidence" (e.g. "cf. ${catalog[0].id}"):`,
+    ...catalog.map((a) => `${a.id}: ${a.title}`),
+  ];
 }
 
 export async function handleProposal(
@@ -25,8 +40,13 @@ export async function handleProposal(
   return sanitizeProposal(JSON.parse(cleaned), getActiveVocabulary(archetype));
 }
 
-export function createServer(callModel: (s: string, u: string) => Promise<string>) {
+export function createServer(
+  callModel: (s: string, u: string) => Promise<string>,
+  options: { dossiers?: DossierRepository; empirical?: () => EmpiricalDataset | null } = {},
+) {
   const app = express();
+  if (options.dossiers) app.use('/api/dossiers', dossierRoutes(options.dossiers));
+  if (options.empirical) app.use('/api/empirical', empiricalRoutes(options.empirical));
   app.use(express.json());
   app.post('/api/propose', async (req, res) => {
     try {

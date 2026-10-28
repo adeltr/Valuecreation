@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-36
+part: E
+partLabel: Finance & Program Management
+quant: [TOP5_CONTRACT_SHARE, DEFENSE_REVENUE_SHARE]
+causes: [MARKET, GEOPOLITICAL]
+levers: [COMMERCIAL_PIPELINE]
 ---
 # 36 · Defense Budget Dependency and Risk Assessment
 

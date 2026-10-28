@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-13
+part: B
+partLabel: Operations & Supply Chain
+quant: [ON_TIME_DELIVERY]
+causes: [REGULATORY, OPERATIONAL]
+levers: [SUPPLY_CHAIN_CONTROL]
 ---
 # 13 · Defense Contractor Vetting Analysis
 

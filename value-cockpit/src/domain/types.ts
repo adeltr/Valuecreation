@@ -56,4 +56,11 @@ export interface ScenarioLever { scenarioId: UUID; leverId: UUID; appliedDelta: 
 /** Analyst-set exogenous override (EXIT_MULTIPLE, HOLD_YEARS). Never copilot-proposed. */
 export interface ScenarioAssumption { scenarioId: UUID; metricCode: string; value: number }
 
+/**
+ * Analyst-set interaction between two inputs (docs/06): after the levers, the target moves by
+ * coefficient × (source after levers − source before levers). E.g. price-mix → volume through
+ * an elasticity. Defined by the sector template, never proposed by the copilot.
+ */
+export interface InteractionRule { sourceCode: string; targetCode: string; coefficientCode: string }
+
 export interface ScenarioResult { scenarioId: UUID; metricCode: string; value: number; computedBy: 'engine' }

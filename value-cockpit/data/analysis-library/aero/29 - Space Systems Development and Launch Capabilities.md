@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-29
+part: D
+partLabel: Technology & Cybersecurity
+quant: [RD_INTENSITY]
+causes: [MARKET, REGULATORY]
+levers: [RD_PORTFOLIO]
 ---
 # 29 · Space Systems Development and Launch Capabilities
 

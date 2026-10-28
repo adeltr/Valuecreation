@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/C
+kind: analysis
+id: aero-19
+part: C
+partLabel: Research & Development and Innovation
+quant: [RD_INTENSITY]
+causes: [MARKET, REGULATORY]
+levers: [RD_PORTFOLIO]
 ---
 # 19 · Unmanned Systems and Autonomous Defense Technologies Development
 
