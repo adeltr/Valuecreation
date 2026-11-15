@@ -10,7 +10,9 @@ const INPUTS = {
   REVENUE: 1000, VOLUME_GROWTH: 0.03, PRICE_MIX_GROWTH: 0.02,
   GROSS_MARGIN: 0.45, TRADE_SPEND_RATE: 0.12, AP_RATE: 0.08, OVERHEAD_RATE: 0.10,
   EBITDA_ENTRY: 150, ENTRY_MULTIPLE: 10, EXIT_MULTIPLE: 10, HOLD_YEARS: 5,
-  NET_DEBT_ENTRY: 600, FCF_ANNUAL: 60,
+  NET_DEBT_ENTRY: 600, PRICE_ELASTICITY: -0.8,
+  // no working capital in this case: cash = 5 × (average EBITDA × 0.6 − 30)
+  CASH_CONVERSION: 0.6, CAPEX: 30, DSO: 0, DIO: 0, DPO: 0, COGS_RATIO: 0.5, WORKING_CAPITAL: 0, PLAN_ONE_OFF_COSTS: 0,
 };
 const revExit = (vg: number, pm: number) => 1000 * ((1 + vg) * (1 + pm)) ** 5;
 const metrics = instantiateCpgTemplate('c', INPUTS);
@@ -29,7 +31,10 @@ describe('cpg template', () => {
     expect(v.get('REVENUE_EXIT')).toBeCloseTo(revExit(0.03, 0.02), 6);
     expect(v.get('EBITDA_MARGIN_EXIT')).toBeCloseTo(0.45 - 0.12 - 0.08 - 0.10, 10);
     expect(v.get('EBITDA_EXIT')).toBeCloseTo(revExit(0.03, 0.02) * 0.15, 6);
-    expect(v.get('MOIC')).toBeCloseTo((revExit(0.03, 0.02) * 0.15 * 10 - (600 - 60 * 5)) / (150 * 10 - 600), 6);
+    const ebitdaExit = revExit(0.03, 0.02) * 0.15;
+    const cash = 5 * ((150 + ebitdaExit) / 2 * 0.6 - 30);
+    expect(v.get('CUMULATIVE_FCF')).toBeCloseTo(cash, 6);
+    expect(v.get('MOIC')).toBeCloseTo((ebitdaExit * 10 - (600 - cash)) / (150 * 10 - 600), 6);
   });
 
   it('every instantiated code belongs to the cpg vocabulary', () => {

@@ -1,17 +1,11 @@
 import type { Metric } from '../domain/types';
 import type { SectorArchetype } from '../ontology/registry';
-import { makeTemplate, BRIDGE_FORMULAS } from './build';
+import { makeTemplate, BRIDGE_FORMULAS, type EbitdaBridgeInputs } from './build';
 
-export type EbitdaInputs = {
+export type EbitdaInputs = EbitdaBridgeInputs & {
   REVENUE: number;
   REVENUE_GROWTH: number;
   EBITDA_MARGIN: number;
-  EBITDA_ENTRY: number;
-  ENTRY_MULTIPLE: number;
-  EXIT_MULTIPLE: number;
-  HOLD_YEARS: number;
-  NET_DEBT_ENTRY: number;
-  FCF_ANNUAL: number;
 };
 
 // Generic two-point bridge on base codes only (docs/11 level 1): any EBITDA-family

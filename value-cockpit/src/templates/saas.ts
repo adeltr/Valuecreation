@@ -1,22 +1,19 @@
 import type { Metric } from '../domain/types';
-import { makeTemplate } from './build';
+import { makeTemplate, BRIDGE_FORMULAS, type EbitdaBridgeInputs } from './build';
 
-export type SaasInputs = {
+export type SaasInputs = EbitdaBridgeInputs & {
   ARR: number; GROSS_CHURN: number; EXPANSION_RATE: number; EBITDA_MARGIN: number;
-  ENTRY_MULTIPLE: number; EXIT_MULTIPLE: number; HOLD_YEARS: number;
-  NET_DEBT_ENTRY: number; FCF_ANNUAL: number;
 };
+
+// EBITDA_ENTRY is the historical figure, an input: a lever on the margin never moves the entry price.
 
 const FORMULAS: Record<string, string> = {
   NRR: '1 + EXPANSION_RATE - GROSS_CHURN',
   ARR_EXIT: 'ARR * NRR ^ HOLD_YEARS',
   REVENUE: 'ARR',
-  EBITDA_ENTRY: 'ARR * EBITDA_MARGIN',
+  REVENUE_EXIT: 'ARR_EXIT',
   EBITDA_EXIT: 'ARR_EXIT * EBITDA_MARGIN',
-  EQUITY_ENTRY: 'EBITDA_ENTRY * ENTRY_MULTIPLE - NET_DEBT_ENTRY',
-  NET_DEBT_EXIT: 'NET_DEBT_ENTRY - FCF_ANNUAL * HOLD_YEARS',
-  EQUITY_EXIT: 'EBITDA_EXIT * EXIT_MULTIPLE - NET_DEBT_EXIT',
-  MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
+  ...BRIDGE_FORMULAS,
 };
 
 const build = makeTemplate('saas', FORMULAS);

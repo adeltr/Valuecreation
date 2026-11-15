@@ -22,7 +22,7 @@ export function impliedTrajectory(metrics: Metric[], levers: Lever[], rules: Int
   let revenue0: number;
   try {
     revenue0 = has('REVENUE') ? base.get('REVENUE')!
-      : resolveMetrics(metrics.map((m) => (m.code === 'HOLD_YEARS' ? { ...m, currentValue: 0 } : m))).get('REVENUE_EXIT')!;
+      : resolveMetrics(metrics.map((m) => (m.code === 'HOLD_YEARS' ? { ...m, currentValue: 0 } : m)), ['REVENUE_EXIT']).get('REVENUE_EXIT')!;
   } catch {
     return null; // the model cannot be read at year 0: no comparison rather than a guess
   }

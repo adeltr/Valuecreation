@@ -538,6 +538,12 @@
     "BIOMARKER_SELECTION": "vcc:lever/BiomarkerSelection",
     "CASH_DISCIPLINE": "vcc:lever/CashDiscipline",
     "CLINICAL_FAILURE": "vcc:cause/ClinicalFailure",
-    "FUNDING_MARKET": "vcc:cause/FundingMarket"
+    "FUNDING_MARKET": "vcc:cause/FundingMarket",
+    "COGS_RATIO": "vcc:CogsRatio",
+    "WORKING_CAPITAL_EXIT": "vcc:WorkingCapitalExit",
+    "CASH_CONVERSION": "vcc:CashConversion",
+    "CUMULATIVE_FCF": "vcc:CumulativeFcf",
+    "IRR": "vcc:Irr",
+    "PLAN_ONE_OFF_COSTS": "vcc:PlanOneOffCosts"
   }
 }

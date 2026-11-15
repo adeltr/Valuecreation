@@ -6,7 +6,8 @@ import type { Lever, ScenarioLever, ScenarioAssumption } from '../domain/types';
 const metrics = instantiateSaasTemplate('c1', {
   ARR: 100, GROSS_CHURN: 0.10, EXPANSION_RATE: 0.12, EBITDA_MARGIN: 0.20,
   ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 4,
-  NET_DEBT_ENTRY: 60, FCF_ANNUAL: 8,
+  NET_DEBT_ENTRY: 60, EBITDA_ENTRY: 20,
+  CASH_CONVERSION: 0.6, CAPEX: 4, DSO: 0, DIO: 0, DPO: 0, COGS_RATIO: 0.5, WORKING_CAPITAL: 0, PLAN_ONE_OFF_COSTS: 0,
 });
 
 const churnLever = (status: Lever['status']): Lever => ({

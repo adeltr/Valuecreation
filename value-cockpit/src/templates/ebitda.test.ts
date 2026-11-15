@@ -6,7 +6,8 @@ import type { Lever } from '../domain/types';
 
 const INPUTS = {
   REVENUE: 400, REVENUE_GROWTH: 0.05, EBITDA_MARGIN: 0.15, EBITDA_ENTRY: 60,
-  ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 5, NET_DEBT_ENTRY: 200, FCF_ANNUAL: 20,
+  ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 5, NET_DEBT_ENTRY: 200,
+  CASH_CONVERSION: 0.6, CAPEX: 15, DSO: 0, DIO: 0, DPO: 0, COGS_RATIO: 0.5, WORKING_CAPITAL: 0, PLAN_ONE_OFF_COSTS: 0,
 };
 const revExit = (g: number) => 400 * (1 + g) ** 5;
 
@@ -25,7 +26,10 @@ describe('generic EBITDA template', () => {
     const v = resolveMetrics(metrics);
     expect(v.get('REVENUE_EXIT')).toBeCloseTo(revExit(0.05), 6);
     expect(v.get('EBITDA_EXIT')).toBeCloseTo(revExit(0.05) * 0.15, 6);
-    expect(v.get('MOIC')).toBeCloseTo((revExit(0.05) * 0.15 * 8 - (200 - 20 * 5)) / (60 * 8 - 200), 6);
+    const ebitdaExit = revExit(0.05) * 0.15;
+    const cash = 5 * ((60 + ebitdaExit) / 2 * 0.6 - 15);
+    expect(v.get('MOIC')).toBeCloseTo((ebitdaExit * 8 - (200 - cash)) / (60 * 8 - 200), 6);
+    expect(v.get('IRR')).toBeCloseTo(v.get('MOIC')! ** (1 / 5) - 1, 12);
   });
 
   it('COST_OPS lever: margin +1 pt moves exit only (entry price untouched)', () => {

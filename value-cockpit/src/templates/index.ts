@@ -26,7 +26,8 @@ const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = {
 // Illustrative inputs shared by every level-1 archetype until the analyst enters the company's own.
 const EBITDA_DEMO: EbitdaInputs = {
   REVENUE: 400, REVENUE_GROWTH: 0.05, EBITDA_MARGIN: 0.15, EBITDA_ENTRY: 60,
-  ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 5, NET_DEBT_ENTRY: 200, FCF_ANNUAL: 20,
+  ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 5, NET_DEBT_ENTRY: 200,
+  CASH_CONVERSION: 0.65, CAPEX: 20, DSO: 45, DIO: 60, DPO: 45, COGS_RATIO: 0.65, WORKING_CAPITAL: 60, PLAN_ONE_OFF_COSTS: 0,
 };
 
 const LEVEL1: Partial<Record<SectorArchetype, TemplateEntry>> = Object.fromEntries(
@@ -56,7 +57,8 @@ export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
     instantiate: (id, i) => instantiateSaasTemplate(id, i as SaasInputs),
     demoInputs: {
       ARR: 100, GROSS_CHURN: 0.10, EXPANSION_RATE: 0.12, EBITDA_MARGIN: 0.20,
-      ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 4, NET_DEBT_ENTRY: 60, FCF_ANNUAL: 8,
+      ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 4, NET_DEBT_ENTRY: 60, EBITDA_ENTRY: 20, CASH_CONVERSION: 0.65, CAPEX: 5.2, DSO: 60, DIO: 0, DPO: 30,
+      COGS_RATIO: 0.25, WORKING_CAPITAL: 14.4, PLAN_ONE_OFF_COSTS: 0,
     },
     interactions: [],
   },
@@ -67,7 +69,8 @@ export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
     demoInputs: {
       REVENUE: 500, EBITDA_MARGIN: 0.12, BOOK_TO_BILL: 1.06, FIXED_PRICE_SHARE: 0.60,
       COST_OVERRUN_RATE: 0.03, ENTRY_MULTIPLE: 9, EXIT_MULTIPLE: 9, HOLD_YEARS: 5,
-      NET_DEBT_ENTRY: 300, FCF_ANNUAL: 25,
+      NET_DEBT_ENTRY: 300, EBITDA_ENTRY: 60, CASH_CONVERSION: 0.65, CAPEX: 7, DSO: 60, DIO: 120, DPO: 60,
+      COGS_RATIO: 0.75, WORKING_CAPITAL: 144, PLAN_ONE_OFF_COSTS: 0,
     },
     interactions: [],
   },
@@ -78,7 +81,8 @@ export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
     demoInputs: {
       REVENUE: 1000, VOLUME_GROWTH: 0.03, PRICE_MIX_GROWTH: 0.02, GROSS_MARGIN: 0.45,
       TRADE_SPEND_RATE: 0.12, AP_RATE: 0.08, OVERHEAD_RATE: 0.10, EBITDA_ENTRY: 150,
-      ENTRY_MULTIPLE: 10, EXIT_MULTIPLE: 10, HOLD_YEARS: 5, NET_DEBT_ENTRY: 600, FCF_ANNUAL: 60,
+      ENTRY_MULTIPLE: 10, EXIT_MULTIPLE: 10, HOLD_YEARS: 5, NET_DEBT_ENTRY: 600, CASH_CONVERSION: 0.65, CAPEX: 46, DSO: 35, DIO: 55, DPO: 60,
+      COGS_RATIO: 0.55, WORKING_CAPITAL: 88.4, PLAN_ONE_OFF_COSTS: 0,
       PRICE_ELASTICITY: -0.8, // analyst choice; #21 price-pack (Price Elasticity) to calibrate
     },
     interactions: [{ sourceCode: 'PRICE_MIX_GROWTH', targetCode: 'VOLUME_GROWTH', coefficientCode: 'PRICE_ELASTICITY' }],
@@ -90,7 +94,8 @@ export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
     demoInputs: {
       ASK: 10_000, LOAD_FACTOR: 0.82, YIELD: 0.09, ANCILLARY_PER_PAX: 15, AVG_TRIP_KM: 1_500,
       CASK_EX_FUEL: 0.045, FUEL_CASK: 0.022, CAPACITY_GROWTH: 0.04, EBITDA_ENTRY: 150,
-      ENTRY_MULTIPLE: 6, EXIT_MULTIPLE: 6, HOLD_YEARS: 5, NET_DEBT_ENTRY: 400, FCF_ANNUAL: 40,
+      ENTRY_MULTIPLE: 6, EXIT_MULTIPLE: 6, HOLD_YEARS: 5, NET_DEBT_ENTRY: 400, CASH_CONVERSION: 0.65, CAPEX: 68, DSO: 15, DIO: 10, DPO: 30,
+      COGS_RATIO: 0.8, WORKING_CAPITAL: -2.25, PLAN_ONE_OFF_COSTS: 0,
     },
     interactions: [],
   },

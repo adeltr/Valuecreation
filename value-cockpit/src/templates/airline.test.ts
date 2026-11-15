@@ -10,7 +10,8 @@ const BASE_INPUTS = {
   ASK: 10_000, LOAD_FACTOR: 0.82, YIELD: 0.09, ANCILLARY_PER_PAX: 15, AVG_TRIP_KM: 1_500,
   CASK_EX_FUEL: 0.045, FUEL_CASK: 0.022, CAPACITY_GROWTH: 0.04,
   EBITDA_ENTRY: 150, ENTRY_MULTIPLE: 6, EXIT_MULTIPLE: 6, HOLD_YEARS: 5,
-  NET_DEBT_ENTRY: 400, FCF_ANNUAL: 40,
+  NET_DEBT_ENTRY: 400,
+  CASH_CONVERSION: 0.6, CAPEX: 60, DSO: 0, DIO: 0, DPO: 0, COGS_RATIO: 0.5, WORKING_CAPITAL: 0, PLAN_ONE_OFF_COSTS: 0,
 };
 
 const lever = (id: string, category: string, impactMetricCode: string, delta: number): Lever => ({
@@ -37,7 +38,7 @@ describe('airline template', () => {
     expect(v.get('PASSENGERS_EXIT')).toBeCloseTo(askExit * 0.82 / 1_500, 6);
     expect(v.get('EBITDA_EXIT')).toBeCloseTo(ebitdaExit(0.82, 0.022), 6);
     const equityEntry = 150 * 6 - 400;
-    const netDebtExit = 400 - 40 * 5;
+    const netDebtExit = 400 - 5 * ((150 + ebitdaExit(0.82, 0.022)) / 2 * 0.6 - 60);
     expect(v.get('MOIC')).toBeCloseTo((ebitdaExit(0.82, 0.022) * 6 - netDebtExit) / equityEntry, 6);
   });
 

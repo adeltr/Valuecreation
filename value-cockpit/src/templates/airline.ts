@@ -1,7 +1,7 @@
 import type { Metric } from '../domain/types';
-import { makeTemplate } from './build';
+import { makeTemplate, BRIDGE_FORMULAS, type EbitdaBridgeInputs } from './build';
 
-export type AirlineInputs = {
+export type AirlineInputs = EbitdaBridgeInputs & {
   ASK: number;
   LOAD_FACTOR: number;
   YIELD: number;
@@ -10,12 +10,6 @@ export type AirlineInputs = {
   CASK_EX_FUEL: number;
   FUEL_CASK: number;
   CAPACITY_GROWTH: number;
-  EBITDA_ENTRY: number;
-  ENTRY_MULTIPLE: number;
-  EXIT_MULTIPLE: number;
-  HOLD_YEARS: number;
-  NET_DEBT_ENTRY: number;
-  FCF_ANNUAL: number;
 };
 
 // Linkage formulas validated in data/analysis-library/airline/_curation.md.
@@ -33,10 +27,7 @@ const FORMULAS: Record<string, string> = {
   REVENUE_EXIT: 'RPK_EXIT * YIELD + PASSENGERS_EXIT * ANCILLARY_PER_PAX', // #3 yield, #23 ancillary
   OPERATING_COSTS_EXIT: 'ASK_EXIT * (CASK_EX_FUEL + FUEL_CASK)',   // #8 CASK, #33 fuel CASM
   EBITDA_EXIT: 'REVENUE_EXIT - OPERATING_COSTS_EXIT',
-  EQUITY_ENTRY: 'EBITDA_ENTRY * ENTRY_MULTIPLE - NET_DEBT_ENTRY',
-  NET_DEBT_EXIT: 'NET_DEBT_ENTRY - FCF_ANNUAL * HOLD_YEARS',
-  EQUITY_EXIT: 'EBITDA_EXIT * EXIT_MULTIPLE - NET_DEBT_EXIT',
-  MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
+  ...BRIDGE_FORMULAS,
 };
 
 const build = makeTemplate('airline', FORMULAS);

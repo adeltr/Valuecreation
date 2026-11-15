@@ -24,13 +24,31 @@ export function makeTemplate(archetype: SectorArchetype, formulas: Record<string
   };
 }
 
-/** The two-point bridge shared by every EBITDA-family template (docs/01). */
+const IRR = 'max(MOIC, 0) ^ (1 / HOLD_YEARS) - 1'; // equity wiped out ⇒ −100 %
+
+/**
+ * The two-point bridge shared by every EBITDA-family template (docs/01, docs/20). Cash over the
+ * hold: EBITDA (straight line from entry to exit) converted at CASH_CONVERSION, less capex, less
+ * the build-up of working capital, less the one-off costs of the plan.
+ */
 export const BRIDGE_FORMULAS: Record<string, string> = {
   EQUITY_ENTRY: 'EBITDA_ENTRY * ENTRY_MULTIPLE - NET_DEBT_ENTRY',
-  NET_DEBT_EXIT: 'NET_DEBT_ENTRY - FCF_ANNUAL * HOLD_YEARS',
+  WORKING_CAPITAL_EXIT: 'REVENUE_EXIT * (DSO + (DIO - DPO) * COGS_RATIO) / 365',
+  CUMULATIVE_FCF: 'HOLD_YEARS * ((EBITDA_ENTRY + EBITDA_EXIT) / 2 * CASH_CONVERSION - CAPEX) - (WORKING_CAPITAL_EXIT - WORKING_CAPITAL) - PLAN_ONE_OFF_COSTS',
+  FCF_ANNUAL: 'CUMULATIVE_FCF / HOLD_YEARS',
+  NET_DEBT_EXIT: 'NET_DEBT_ENTRY - CUMULATIVE_FCF',
   EQUITY_EXIT: 'EBITDA_EXIT * EXIT_MULTIPLE - NET_DEBT_EXIT',
   MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
+  IRR,
 };
+
+/** Analyst inputs of the EBITDA bridge, besides the sector drivers. */
+export type EbitdaBridgeInputs = Record<
+  'EBITDA_ENTRY' | 'ENTRY_MULTIPLE' | 'EXIT_MULTIPLE' | 'HOLD_YEARS' | 'NET_DEBT_ENTRY' | 'CASH_CONVERSION' | 'CAPEX'
+  | 'DSO' | 'DIO' | 'DPO' | 'COGS_RATIO' | 'WORKING_CAPITAL' | 'PLAN_ONE_OFF_COSTS', number>;
+
+/** Engine options every scenario of the cockpit runs with (docs/06). */
+export const SCENARIO_OPTIONS = { horizonYearsCode: 'HOLD_YEARS', costCode: 'PLAN_ONE_OFF_COSTS' } as const;
 
 export interface FamilyBridge {
   /** Exit metric the sector formulas must define; the family bridge reads it. */
@@ -50,37 +68,40 @@ export interface FamilyBridge {
 export const FAMILY_BRIDGE: Record<BridgeFamily, FamilyBridge> = {
   ebitda: {
     anchor: 'EBITDA_EXIT',
-    inputs: ['EBITDA_ENTRY', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY', 'FCF_ANNUAL'],
+    inputs: ['EBITDA_ENTRY', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY', 'CASH_CONVERSION', 'CAPEX',
+      'DSO', 'DIO', 'DPO', 'COGS_RATIO', 'WORKING_CAPITAL', 'PLAN_ONE_OFF_COSTS'],
     formulas: BRIDGE_FORMULAS,
-    summaryRows: ['EBITDA_ENTRY', 'EQUITY_ENTRY', 'EBITDA_EXIT', 'NET_DEBT_EXIT', 'EQUITY_EXIT', 'MOIC'],
+    summaryRows: ['EBITDA_ENTRY', 'EQUITY_ENTRY', 'EBITDA_EXIT', 'CUMULATIVE_FCF', 'NET_DEBT_EXIT', 'EQUITY_EXIT', 'MOIC', 'IRR'],
     multipleLabel: 'EV/EBITDA',
   },
   book_value: {
     anchor: 'NET_INCOME_EXIT',
-    inputs: ['BOOK_VALUE_ENTRY', 'NET_INCOME_ENTRY', 'PAYOUT_RATIO', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS'],
+    inputs: ['BOOK_VALUE_ENTRY', 'NET_INCOME_ENTRY', 'PAYOUT_RATIO', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'PLAN_ONE_OFF_COSTS'],
     formulas: {
       CUMULATIVE_NET_INCOME: 'HOLD_YEARS * (NET_INCOME_ENTRY + NET_INCOME_EXIT) / 2',
-      BOOK_VALUE_EXIT: 'BOOK_VALUE_ENTRY + CUMULATIVE_NET_INCOME * (1 - PAYOUT_RATIO)',
+      BOOK_VALUE_EXIT: 'BOOK_VALUE_ENTRY + CUMULATIVE_NET_INCOME * (1 - PAYOUT_RATIO) - PLAN_ONE_OFF_COSTS',
       DIVIDENDS_CUMULATIVE: 'CUMULATIVE_NET_INCOME * PAYOUT_RATIO',
       ROE_EXIT: 'NET_INCOME_EXIT / BOOK_VALUE_EXIT',
       EQUITY_ENTRY: 'BOOK_VALUE_ENTRY * ENTRY_MULTIPLE',
       EQUITY_EXIT: 'BOOK_VALUE_EXIT * EXIT_MULTIPLE',
       MOIC: '(EQUITY_EXIT + DIVIDENDS_CUMULATIVE) / EQUITY_ENTRY',
+      IRR, // dividends counted at exit: a conservative approximation
     },
-    summaryRows: ['BOOK_VALUE_ENTRY', 'EQUITY_ENTRY', 'NET_INCOME_EXIT', 'BOOK_VALUE_EXIT', 'DIVIDENDS_CUMULATIVE', 'EQUITY_EXIT', 'MOIC'],
+    summaryRows: ['BOOK_VALUE_ENTRY', 'EQUITY_ENTRY', 'NET_INCOME_EXIT', 'BOOK_VALUE_EXIT', 'DIVIDENDS_CUMULATIVE', 'EQUITY_EXIT', 'MOIC', 'IRR'],
     multipleLabel: 'P/BV',
   },
   rnpv: {
     anchor: 'RNPV_EXIT',
-    inputs: ['RNPV_ENTRY', 'CASH_ENTRY', 'ANNUAL_BURN', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS'],
+    inputs: ['RNPV_ENTRY', 'CASH_ENTRY', 'ANNUAL_BURN', 'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'PLAN_ONE_OFF_COSTS'],
     formulas: {
-      CASH_EXIT: 'CASH_ENTRY - ANNUAL_BURN * HOLD_YEARS',
+      CASH_EXIT: 'CASH_ENTRY - ANNUAL_BURN * HOLD_YEARS - PLAN_ONE_OFF_COSTS',
       RUNWAY_YEARS: 'CASH_ENTRY / ANNUAL_BURN',
       EQUITY_ENTRY: 'RNPV_ENTRY * ENTRY_MULTIPLE + CASH_ENTRY',
       EQUITY_EXIT: 'RNPV_EXIT * EXIT_MULTIPLE + CASH_EXIT',
       MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
+      IRR,
     },
-    summaryRows: ['RNPV_ENTRY', 'EQUITY_ENTRY', 'RNPV_EXIT', 'CASH_EXIT', 'RUNWAY_YEARS', 'EQUITY_EXIT', 'MOIC'],
+    summaryRows: ['RNPV_ENTRY', 'EQUITY_ENTRY', 'RNPV_EXIT', 'CASH_EXIT', 'RUNWAY_YEARS', 'EQUITY_EXIT', 'MOIC', 'IRR'],
     multipleLabel: '× rNPV',
   },
 };

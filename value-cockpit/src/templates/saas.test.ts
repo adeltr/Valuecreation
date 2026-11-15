@@ -6,7 +6,8 @@ describe('saas template', () => {
   const metrics = instantiateSaasTemplate('c1', {
     ARR: 100, GROSS_CHURN: 0.10, EXPANSION_RATE: 0.12, EBITDA_MARGIN: 0.20,
     ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 4,
-    NET_DEBT_ENTRY: 60, FCF_ANNUAL: 8,
+    NET_DEBT_ENTRY: 60, EBITDA_ENTRY: 20,
+    CASH_CONVERSION: 0.6, CAPEX: 4, DSO: 0, DIO: 0, DPO: 0, COGS_RATIO: 0.5, WORKING_CAPITAL: 0, PLAN_ONE_OFF_COSTS: 0,
   });
   it('resolves the full chain churn -> NRR -> ARR_EXIT -> EBITDA_EXIT -> MOIC', () => {
     const v = resolveMetrics(metrics);
@@ -15,7 +16,8 @@ describe('saas template', () => {
     expect(v.get('EBITDA_EXIT')).toBeCloseTo(v.get('ARR_EXIT')! * 0.2, 6);
     const equityEntry = 100 * 0.2 * 8 - 60;
     expect(v.get('EQUITY_ENTRY')).toBeCloseTo(equityEntry, 6);
-    const netDebtExit = 60 - 8 * 4;
+    const netDebtExit = 60 - 4 * ((20 + v.get('EBITDA_EXIT')!) / 2 * 0.6 - 4);
+    expect(v.get('REVENUE_EXIT')).toBe(v.get('ARR_EXIT'));
     expect(v.get('MOIC')).toBeCloseTo((v.get('EBITDA_EXIT')! * 8 - netDebtExit) / equityEntry, 6);
   });
   it('every instantiated code belongs to the saas active vocabulary', async () => {

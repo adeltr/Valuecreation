@@ -1,7 +1,7 @@
 import type { Metric } from '../domain/types';
-import { makeTemplate, BRIDGE_FORMULAS } from './build';
+import { makeTemplate, BRIDGE_FORMULAS, type EbitdaBridgeInputs } from './build';
 
-export type CpgInputs = {
+export type CpgInputs = EbitdaBridgeInputs & {
   REVENUE: number;
   VOLUME_GROWTH: number;
   PRICE_MIX_GROWTH: number;
@@ -9,12 +9,7 @@ export type CpgInputs = {
   TRADE_SPEND_RATE: number;
   AP_RATE: number;
   OVERHEAD_RATE: number;
-  EBITDA_ENTRY: number;
-  ENTRY_MULTIPLE: number;
-  EXIT_MULTIPLE: number;
-  HOLD_YEARS: number;
-  NET_DEBT_ENTRY: number;
-  FCF_ANNUAL: number;
+  PRICE_ELASTICITY: number;
 };
 
 // Linkage formulas from data/analysis-library/cpg/_level2.md (analyst defaults: REVENUE = gross sales).

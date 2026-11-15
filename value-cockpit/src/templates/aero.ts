@@ -1,17 +1,12 @@
 import type { Metric } from '../domain/types';
-import { makeTemplate } from './build';
+import { makeTemplate, BRIDGE_FORMULAS, type EbitdaBridgeInputs } from './build';
 
-export type AeroInputs = {
+export type AeroInputs = EbitdaBridgeInputs & {
   REVENUE: number;
   EBITDA_MARGIN: number;
   BOOK_TO_BILL: number;
   FIXED_PRICE_SHARE: number;
   COST_OVERRUN_RATE: number;
-  ENTRY_MULTIPLE: number;
-  EXIT_MULTIPLE: number;
-  HOLD_YEARS: number;
-  NET_DEBT_ENTRY: number;
-  FCF_ANNUAL: number;
 };
 
 // Formulas encode the key insight from analysis #1:
@@ -21,12 +16,9 @@ export type AeroInputs = {
 const FORMULAS: Record<string, string> = {
   REVENUE_EXIT: 'REVENUE * BOOK_TO_BILL ^ HOLD_YEARS',
   EBITDA_MARGIN_EXIT: 'EBITDA_MARGIN - COST_OVERRUN_RATE * FIXED_PRICE_SHARE',
-  EBITDA_ENTRY: 'REVENUE * EBITDA_MARGIN',
+  // EBITDA_ENTRY is the historical figure, an input: levers only move the exit year.
   EBITDA_EXIT: 'REVENUE_EXIT * EBITDA_MARGIN_EXIT',
-  EQUITY_ENTRY: 'EBITDA_ENTRY * ENTRY_MULTIPLE - NET_DEBT_ENTRY',
-  NET_DEBT_EXIT: 'NET_DEBT_ENTRY - FCF_ANNUAL * HOLD_YEARS',
-  EQUITY_EXIT: 'EBITDA_EXIT * EXIT_MULTIPLE - NET_DEBT_EXIT',
-  MOIC: 'EQUITY_EXIT / EQUITY_ENTRY',
+  ...BRIDGE_FORMULAS,
 };
 
 const build = makeTemplate('aero', FORMULAS);

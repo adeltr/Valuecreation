@@ -24,7 +24,9 @@ export const BASE_CAUSE_CATEGORIES = [
 export const BRIDGE_METRIC_CODES = [
   'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS',
   'NET_DEBT_ENTRY', 'NET_DEBT_EXIT',
-  'EBITDA_EXIT', 'EQUITY_ENTRY', 'EQUITY_EXIT', 'MOIC',
+  'EBITDA_EXIT', 'EQUITY_ENTRY', 'EQUITY_EXIT', 'MOIC', 'IRR',
+  // One-off cost of the plan: analyst input, to which the engine adds the cost of the scenario levers
+  'PLAN_ONE_OFF_COSTS',
 ] as const;
 
 export const BASE_METRIC_CODES = [
@@ -33,7 +35,9 @@ export const BASE_METRIC_CODES = [
   // Growth to exit (generic EBITDA template; sector templates compute REVENUE_EXIT their own way)
   'REVENUE_GROWTH', 'REVENUE_EXIT', 'EBITDA_MARGIN_EXIT',
   // Working capital & cash
-  'DSO', 'DIO', 'DPO', 'WORKING_CAPITAL', 'CAPEX', 'FCF_ANNUAL',
+  // WORKING_CAPITAL and CAPEX are entry-period facts / run-rates; FCF_ANNUAL is the average over the hold
+  'DSO', 'DIO', 'DPO', 'COGS_RATIO', 'WORKING_CAPITAL', 'WORKING_CAPITAL_EXIT', 'CAPEX',
+  'CASH_CONVERSION', 'CUMULATIVE_FCF', 'FCF_ANNUAL',
   // Analyst-set interaction coefficient (docs/06): Δ volume growth per point of price growth
   'PRICE_ELASTICITY',
   ...BRIDGE_METRIC_CODES,
@@ -42,7 +46,12 @@ export const BASE_METRIC_CODES = [
 // Deal-structure codes: set by the analyst (entry facts or scenario assumptions),
 // never the target of a lever — multiple expansion is largely exogenous.
 // PRICE_ELASTICITY is an analyst estimate that couples two drivers, not something a plan moves.
-export const NON_LEVER_CODES = ['ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY', 'PRICE_ELASTICITY'] as const;
+// CASH_CONVERSION and COGS_RATIO are analyst estimates of the cash bridge; WORKING_CAPITAL is the
+// entry balance; PLAN_ONE_OFF_COSTS is fed by the levers' own cost, not targeted by them.
+export const NON_LEVER_CODES = [
+  'ENTRY_MULTIPLE', 'EXIT_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY', 'PRICE_ELASTICITY',
+  'CASH_CONVERSION', 'COGS_RATIO', 'WORKING_CAPITAL', 'PLAN_ONE_OFF_COSTS',
+] as const;
 
 // The only inputs an analyst may override as a scenario assumption (docs/06).
 export const SCENARIO_ASSUMPTION_CODES = ['EXIT_MULTIPLE', 'HOLD_YEARS'] as const;
@@ -65,6 +74,12 @@ export const BASE_METRIC_META: Record<(typeof BASE_METRIC_CODES)[number], Metric
   WORKING_CAPITAL: { unit: 'currency', fiboRef: 'fibo-fnd-acc-cur:WorkingCapital' },
   CAPEX: { unit: 'currency' },
   FCF_ANNUAL: { unit: 'currency' },
+  COGS_RATIO: { unit: 'percent' },
+  WORKING_CAPITAL_EXIT: { unit: 'currency' },
+  CASH_CONVERSION: { unit: 'percent' },
+  CUMULATIVE_FCF: { unit: 'currency' },
+  IRR: { unit: 'percent' },
+  PLAN_ONE_OFF_COSTS: { unit: 'currency' },
   PRICE_ELASTICITY: { unit: 'ratio' },
   ENTRY_MULTIPLE: { unit: 'ratio' },
   EXIT_MULTIPLE: { unit: 'ratio' },
