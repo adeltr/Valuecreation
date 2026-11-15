@@ -12,7 +12,7 @@ const rec = (i: number, over: Partial<WindowRecord> = {}): WindowRecord => ({
 });
 const dataset: EmpiricalDataset = {
   source: 'SEC EDGAR', generatedAt: '2026-10-28T00:00:00Z', years: [3, 5], companies: 12, skipped: [],
-  records: [...Array.from({ length: 10 }, (_, i) => rec(i + 1)), rec(50, { country: 'United Kingdom' }), rec(60, { archetype: 'cpg' })],
+  records: [...Array.from({ length: 10 }, (_, i) => rec(i + 1)), rec(50, { country: 'United Kingdom' }), rec(60, { archetype: 'cpg' }), rec(70, { country: 'Ontario, Canada' })],
 };
 
 let server: Server | null = null;
@@ -28,9 +28,9 @@ describe('empirical routes', () => {
   it('meta: source, date, and the filters available for an archetype with their sample sizes', async () => {
     const base = await start(() => dataset);
     const m = await (await fetch(`${base}/meta?archetype=airline`)).json();
-    expect(m).toMatchObject({ source: 'SEC EDGAR', generatedAt: '2026-10-28T00:00:00Z', companies: 11 });
-    expect(m.countries).toEqual([{ value: 'United States', n: 10 }, { value: 'United Kingdom', n: 1 }]);
-    expect(m.sizes).toEqual([{ value: '1–5B', n: 11 }]);
+    expect(m).toMatchObject({ source: 'SEC EDGAR', generatedAt: '2026-10-28T00:00:00Z', companies: 12 });
+    expect(m.countries).toEqual([{ value: 'United States', n: 10 }, { value: 'United Kingdom', n: 1 }, { value: 'Canada', n: 1 }]);
+    expect(m.sizes).toEqual([{ value: '1–5B', n: 12 }]);
   });
 
   it('benchmark: quantiles per metric and the values for a percentile rank, filters applied', async () => {

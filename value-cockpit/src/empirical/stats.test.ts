@@ -9,7 +9,7 @@ const rec = (i: number, over: Partial<WindowRecord> = {}): WindowRecord => ({
 
 describe('empirical statistics', () => {
   it('quantiles with linear interpolation', () => {
-    expect(quantiles([1, 2, 3, 4, 5])).toEqual({ n: 5, p10: 1.4, p25: 2, p50: 3, p75: 4, p90: 4.6 });
+    expect(quantiles([1, 2, 3, 4, 5])).toEqual({ n: 5, companies: 5, p10: 1.4, p25: 2, p50: 3, p75: 4, p90: 4.6 });
   });
 
   it('benchmark filters by archetype, window, size, country and deal flag', () => {
@@ -24,6 +24,13 @@ describe('empirical statistics', () => {
     expect(benchmark(data, 'EBITDA_MARGIN', { archetype: 'airline', years: 3 })!.n).toBe(20);
     expect(benchmark(data, 'EBITDA_MARGIN', { archetype: 'airline', years: 3, sizes: ['<50M'] })).toBeNull();
     expect(benchmark(data, 'EBITDA_MARGIN', { archetype: 'airline', years: 3, deals: 'with' })).toBeNull();
+  });
+
+  it('the minimum sample counts distinct companies, not overlapping windows of the same company', () => {
+    const sameCompany = Array.from({ length: 20 }, (_, i) => rec(1, { startYear: 2000 + i, endYear: 2003 + i }));
+    expect(benchmark(sameCompany, 'EBITDA_MARGIN', { archetype: 'airline', years: 3 })).toBeNull();
+    const b = benchmark([...sameCompany, ...Array.from({ length: 7 }, (_, i) => rec(10 + i))], 'EBITDA_MARGIN', { archetype: 'airline', years: 3 })!;
+    expect(b).toMatchObject({ n: 27, companies: 8 });
   });
 
   it('refuses a statistic on a sample below the minimum', () => {

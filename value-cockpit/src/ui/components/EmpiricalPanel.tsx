@@ -98,7 +98,7 @@ export function EmpiricalPanel({ archetype, trajectory, fetchImpl = (...a) => fe
       )}
       {bench && (
         <table className="plan-table">
-          <thead><tr><th>Mesure</th><th className="num">n</th><th className="num">p10</th><th className="num">p25</th><th className="num">médiane</th><th className="num">p75</th><th className="num">p90</th></tr></thead>
+          <thead><tr><th>Mesure</th><th className="num">sociétés (fenêtres)</th><th className="num">p10</th><th className="num">p25</th><th className="num">médiane</th><th className="num">p75</th><th className="num">p90</th></tr></thead>
           <tbody>
             {ROWS.map(([m, label, unit]) => {
               const q = bench.metrics[m];
@@ -106,7 +106,7 @@ export function EmpiricalPanel({ archetype, trajectory, fetchImpl = (...a) => fe
                 <tr key={m}>
                   <td>{label}</td>
                   {q ? (<>
-                    <td className="num">{q.n}</td>
+                    <td className="num">{`${q.companies} (${q.n})`}</td>
                     {[q.p10, q.p25, q.p50, q.p75, q.p90].map((v, i) => <td key={i} className="num">{fmt(v, unit)}</td>)}
                   </>) : <td colSpan={6} className="muted">échantillon insuffisant (moins de 8 sociétés)</td>}
                 </tr>

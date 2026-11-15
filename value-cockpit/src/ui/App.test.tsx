@@ -390,7 +390,7 @@ describe('App – dossiers', () => {
 
 describe('App – empirical benchmarks', () => {
   afterEach(() => vi.unstubAllGlobals());
-  const q = (n: number, base: number) => ({ n, p10: base - 0.02, p25: base - 0.01, p50: base, p75: base + 0.01, p90: base + 0.02 });
+  const q = (n: number, base: number) => ({ n, companies: n / 4, p10: base - 0.02, p25: base - 0.01, p50: base, p75: base + 0.01, p90: base + 0.02 });
 
   function stub(available: boolean) {
     const calls: string[] = [];
@@ -415,6 +415,7 @@ describe('App – empirical benchmarks', () => {
     const panel = screen.getByRole('region', { name: 'Repères empiriques' });
     expect(await within(panel).findByText(/SEC EDGAR · 42 sociétés/)).toBeTruthy();
     expect(await within(panel).findByText('Δ marge d\'EBITDA (pts)')).toBeTruthy();
+    expect(within(panel).getAllByText('10 (40)').length).toBe(2);
     expect(within(panel).getByText(/Réalisme du plan/)).toBeTruthy();
     expect(within(panel).getAllByText(/e percentile/).length).toBe(2);
 

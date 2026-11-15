@@ -33,6 +33,16 @@ describe('implied trajectory of the plan (engine) — compared with public bench
     expect(impliedTrajectory(short, [], cpg.interactions)!.years).toBe(3);
   });
 
+  it('without a revenue input, entry revenue is the model run at year 0 (airline: ASK × load factor × yield…)', () => {
+    const a = TEMPLATES.airline!;
+    const t = impliedTrajectory(a.instantiate('c', a.demoInputs), [], a.interactions)!;
+    const i = a.demoInputs;
+    const revenue0 = i.ASK * i.LOAD_FACTOR * i.YIELD + (i.ASK * i.LOAD_FACTOR / i.AVG_TRIP_KM) * i.ANCILLARY_PER_PAX;
+    const revenueExit = revenue0 * (1 + i.CAPACITY_GROWTH) ** i.HOLD_YEARS;
+    expect(t.revenueCagr.base).toBeCloseTo((revenueExit / revenue0) ** (1 / i.HOLD_YEARS) - 1, 12);
+    expect(t.marginDelta.base).toBeCloseTo((revenueExit - i.ASK * (1 + i.CAPACITY_GROWTH) ** i.HOLD_YEARS * (i.CASK_EX_FUEL + i.FUEL_CASK)) / revenueExit - i.EBITDA_ENTRY / revenue0, 12);
+  });
+
   it('not computable without revenue at entry and exit (e.g. book-value or rNPV companies)', () => {
     const bank = TEMPLATES['commercial-bank']!;
     expect(impliedTrajectory(bank.instantiate('c', bank.demoInputs), [], [])).toBeNull();

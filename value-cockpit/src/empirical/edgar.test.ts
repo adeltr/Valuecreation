@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { annualSeries, companyProfile, sicToArchetype, yearMetrics, acquisitionYears, windowRecords, sizeBucket } from './edgar';
+import { annualSeries, companyProfile, sicToArchetype, yearMetrics, acquisitionYears, windowRecords, sizeBucket, normalizeCountry } from './edgar';
 
 // Excerpts in the documented shape of data.sec.gov (companyfacts / submissions) — test fixtures only.
 const fy = (y: number, val: number, extra: object = {}) => ({ start: `${y}-01-01`, end: `${y}-12-31`, val, fy: y, fp: 'FY', form: '10-K', filed: `${y + 1}-02-15`, ...extra });
@@ -57,6 +57,7 @@ describe('EDGAR parsing', () => {
     expect(at({ isForeignLocation: 1, stateOrCountry: 'X0', stateOrCountryDescription: 'United Kingdom' })).toBe('United Kingdom');
     expect(at({ isForeignLocation: 1, stateOrCountry: 'X0' }, { isForeignLocation: 1, country: 'IRELAND' })).toBe('Ireland');
     expect(at({ isForeignLocation: 1, countryCode: 'DE' })).toBe('DE');
+    expect(at({ isForeignLocation: 1, stateOrCountry: 'A1', stateOrCountryDescription: 'British Columbia, Canada' })).toBe('Canada');
     expect(at({}, { isForeignLocation: 0, stateOrCountry: 'NY' })).toBe('United States');
   });
 
@@ -69,6 +70,12 @@ describe('EDGAR parsing', () => {
       AccountsReceivableNetCurrent: { units: { USD: [inst(2018, 60e6)] } }, // DSO 1 095 days: dropped
     } } };
     expect(yearMetrics(wild)[2018]).toEqual({ REVENUE: 20e6, DIO: (60 / 600) * 365, DPO: (50 / 600) * 365 });
+  });
+
+  it('a province or state suffix collapses to the country (datasets imported before the fix included)', () => {
+    expect(normalizeCountry('Ontario, Canada')).toBe('Canada');
+    expect(normalizeCountry('Korea, Republic Of')).toBe('Korea, Republic Of');
+    expect(normalizeCountry('United Kingdom')).toBe('United Kingdom');
   });
 
   it('deal history: years with a completed acquisition (8-K item 2.01)', () => {

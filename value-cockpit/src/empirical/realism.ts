@@ -11,13 +11,21 @@ export interface Trajectory {
 
 /**
  * What the model implies from entry to exit — the same measures as the public benchmarks.
- * Engine-computed; the plan includes validated levers only. Null when the template has no
- * entry revenue, entry EBITDA and exit revenue (book-value and rNPV families).
+ * Engine-computed; the plan includes validated levers only. Null without entry EBITDA and exit
+ * revenue (book-value and rNPV families, SaaS on ARR).
  */
 export function impliedTrajectory(metrics: Metric[], levers: Lever[], rules: InteractionRule[]): Trajectory | null {
   const has = (c: string) => metrics.some((m) => m.code === c);
-  if (!['REVENUE', 'EBITDA_ENTRY', 'REVENUE_EXIT', 'EBITDA_EXIT', 'HOLD_YEARS'].every(has)) return null;
+  if (!['EBITDA_ENTRY', 'REVENUE_EXIT', 'EBITDA_EXIT', 'HOLD_YEARS'].every(has)) return null;
   const base = resolveMetrics(metrics);
+  // Entry revenue: the input when the template has one, otherwise the model run at year 0.
+  let revenue0: number;
+  try {
+    revenue0 = has('REVENUE') ? base.get('REVENUE')!
+      : resolveMetrics(metrics.map((m) => (m.code === 'HOLD_YEARS' ? { ...m, currentValue: 0 } : m))).get('REVENUE_EXIT')!;
+  } catch {
+    return null; // the model cannot be read at year 0: no comparison rather than a guess
+  }
   const validated = levers.filter((l) => l.status === 'validated'
     && metrics.some((m) => m.code === l.impactMetricCode && !m.isCalculated));
   const plan = validated.length
@@ -26,9 +34,9 @@ export function impliedTrajectory(metrics: Metric[], levers: Lever[], rules: Int
     })), [], rules).map((r) => [r.metricCode, r.value]))
     : base;
   const hold = base.get('HOLD_YEARS')!;
-  const entryMargin = base.get('EBITDA_ENTRY')! / base.get('REVENUE')!;
+  const entryMargin = base.get('EBITDA_ENTRY')! / revenue0;
   const margin = (v: Map<string, number>) => v.get('EBITDA_EXIT')! / v.get('REVENUE_EXIT')! - entryMargin;
-  const cagr = (v: Map<string, number>) => (v.get('REVENUE_EXIT')! / base.get('REVENUE')!) ** (1 / hold) - 1;
+  const cagr = (v: Map<string, number>) => (v.get('REVENUE_EXIT')! / revenue0) ** (1 / hold) - 1;
   return {
     years: hold <= 4 ? 3 : 5,
     marginDelta: { base: margin(base), plan: margin(plan) },

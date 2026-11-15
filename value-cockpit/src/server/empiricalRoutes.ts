@@ -2,7 +2,7 @@ import express, { type Router } from 'express';
 import { readFileSync, statSync } from 'node:fs';
 import { SECTOR_ARCHETYPES, type SectorArchetype } from '../ontology/registry';
 import { benchmark, select, type BenchmarkFilter, type DeltaMetric } from '../empirical/stats';
-import { SIZE_BUCKETS, type SizeBucket } from '../empirical/edgar';
+import { SIZE_BUCKETS, normalizeCountry, type SizeBucket } from '../empirical/edgar';
 import type { EmpiricalDataset } from '../empirical/importer';
 
 const METRICS: DeltaMetric[] = ['EBITDA_MARGIN', 'REVENUE_GROWTH', 'DSO', 'DIO', 'DPO'];
@@ -23,8 +23,16 @@ export function datasetFile(path: string): () => EmpiricalDataset | null {
 }
 
 /** Public-filings benchmarks (docs/19). Distributions only, with their sample size and source. */
-export function empiricalRoutes(load: () => EmpiricalDataset | null): Router {
+export function empiricalRoutes(loadRaw: () => EmpiricalDataset | null): Router {
   const r = express.Router();
+  // Datasets imported before country normalization still carry "Ontario, Canada": fix on read.
+  const normalized = new WeakMap<EmpiricalDataset, EmpiricalDataset>();
+  const load = () => {
+    const raw = loadRaw();
+    if (!raw) return null;
+    if (!normalized.has(raw)) normalized.set(raw, { ...raw, records: raw.records.map((x) => ({ ...x, country: normalizeCountry(x.country) })) });
+    return normalized.get(raw)!;
+  };
   const missing = { error: 'Base empirique absente : lancer « npm run empirical:import » (docs/19).' };
 
   r.get('/meta', (req, res) => {

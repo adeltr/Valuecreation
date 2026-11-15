@@ -95,6 +95,13 @@ export function sicToArchetype(sic: number): SectorArchetype | null {
 
 export interface CompanyProfile { cik: number; name: string; sic: number; archetype: SectorArchetype | null; country: string }
 
+// EDGAR describes Canadian and Australian filers by province or state: "Ontario, Canada".
+const SUBDIVIDED = ['Canada', 'Australia', 'China', 'Mexico', 'United Kingdom'];
+export function normalizeCountry(name: string): string {
+  const tail = name.split(',').pop()!.trim();
+  return name.includes(',') && SUBDIVIDED.includes(tail) ? tail : name;
+}
+
 const titleCase = (s: string) => s.toLowerCase().replace(/\b\p{L}/gu, (c) => c.toUpperCase());
 
 /** Country of the business address (mailing as fallback): full name when the filing gives one. */
@@ -102,9 +109,9 @@ function countryOf(addresses: Submissions['addresses']): string {
   const all = [addresses?.business, addresses?.mailing].filter((a): a is Address => !!a);
   const foreign = all.filter((a) => a.isForeignLocation === 1);
   if (all.length && foreign.length === 0) return 'United States';
-  for (const a of foreign) if (a.country) return titleCase(a.country);
+  for (const a of foreign) if (a.country) return normalizeCountry(titleCase(a.country));
   // A description equal to the 2-character EDGAR code (e.g. "X0") is not a country name.
-  for (const a of foreign) if (a.stateOrCountryDescription && a.stateOrCountryDescription !== a.stateOrCountry) return a.stateOrCountryDescription;
+  for (const a of foreign) if (a.stateOrCountryDescription && a.stateOrCountryDescription !== a.stateOrCountry) return normalizeCountry(a.stateOrCountryDescription);
   for (const a of foreign) if (a.countryCode) return a.countryCode;
   return 'Inconnu';
 }
