@@ -16,6 +16,7 @@ import { LeverCardPanel } from './components/LeverCardPanel';
 import { WorkshopPanel } from './components/WorkshopPanel';
 import { EmpiricalPanel } from './components/EmpiricalPanel';
 import { impliedTrajectory } from '../empirical/realism';
+import { entryChecks } from './model/entryChecks';
 import type { DossierRepository } from '../dossier/repository';
 import { connectRepository, type DossierLocation } from './state/httpRepository';
 import { hasUnsavedWork } from './state/unsaved';
@@ -94,7 +95,8 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
       <main className="grid">
         <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} archetype={state.archetype} />
         <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} archetype={state.archetype}
-          bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} />
+          bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} context={state.context}
+          checks={entryChecks(metrics, getBridgeFamily(state.archetype))} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
           inputCodes={Object.keys(state.inputs)} />
         {cardLever && (

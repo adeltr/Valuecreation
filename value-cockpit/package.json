@@ -10,7 +10,8 @@
     "build": "tsc && vite build",
     "test": "vitest run",
     "test:watch": "vitest",
-    "catalog:build": "tsx scripts/build-catalog.ts"
+    "catalog:build": "tsx scripts/build-catalog.ts",
+    "labels:build": "tsx scripts/build-labels.ts"
   },
   "dependencies": {
     "@xyflow/react": "^12.12.0",

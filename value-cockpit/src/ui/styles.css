@@ -139,3 +139,7 @@ button.link { background: none; color: var(--accent); padding: 0; border: 0; tex
   padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
 .lever-form label { display: flex; flex-direction: column; gap: 2px; }
 .lever-form .actions { grid-column: 1 / -1; display: flex; gap: 8px; }
+
+.context { display: flex; flex-wrap: wrap; gap: 8px 12px; margin-bottom: 8px; }
+.context .wide { flex: 1 1 100%; }
+.context textarea { margin: 2px 0 0; }

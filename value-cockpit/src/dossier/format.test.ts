@@ -139,5 +139,13 @@ describe('dossier file', () => {
     const qualitative = { ...file, levers: [{ ...file.levers[0], impactMetricCode: 'ON_TIME_PERFORMANCE' }], scenario: { ...rest, leverIds: [], applied: {} }, plan: {} };
     expect(parseDossier(qualitative).levers[0].impactMetricCode).toBe('ON_TIME_PERFORMANCE');
   });
+
+  it('stores the company context (currency, scale, thesis); older files open with the default one', () => {
+    const s = reducer(workedCase(), { type: 'setContext', patch: { currency: 'USD', scale: 'k', thesis: 'Consolidation régionale' } });
+    expect(roundTrip(s).context).toEqual({ currency: 'USD', scale: 'k', thesis: 'Consolidation régionale' });
+    const { context: _c, ...v3 } = toDossier(workedCase(), 't');
+    expect(parseDossier({ ...v3, version: 3 }).context).toEqual({ currency: 'EUR', scale: 'M', thesis: '' });
+    expect(() => parseDossier({ ...toDossier(s, 't'), context: { currency: 'dollars', scale: 'M', thesis: '' } })).toThrow(/currency/);
+  });
 });
 

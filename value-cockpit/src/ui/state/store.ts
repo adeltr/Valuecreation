@@ -9,7 +9,7 @@ import { makeLeverSchema } from '../../domain/schemas';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
-import { checkObservation, parseDossier, type DossierCase, type PlanOverride } from '../../dossier/format';
+import { checkObservation, parseDossier, DEFAULT_CONTEXT, type CompanyContext, type DossierCase, type PlanOverride } from '../../dossier/format';
 import { getCatalog } from '../../catalog';
 import { toMetricValue, type Observation } from '../../workshop/observations';
 
@@ -31,6 +31,7 @@ function checkLever(lever: Lever, archetype: SectorArchetype): Lever {
 export type Action =
   | { type: 'selectArchetype'; archetype: SectorArchetype }
   | { type: 'setName'; name: string }
+  | { type: 'setContext'; patch: Partial<CompanyContext> }
   | { type: 'setPlanItem'; id: string; patch: PlanOverride }
   | { type: 'addObservation'; analysisId: string; formula: string; values: Record<string, number>; metricCode: string | null; note: string; today: string }
   | { type: 'applyObservation'; id: string }
@@ -58,6 +59,7 @@ export function initialState(archetype: SectorArchetype): CockpitState {
   return {
     name: '',
     archetype,
+    context: { ...DEFAULT_CONTEXT },
     inputs: { ...template(archetype).demoInputs },
     levers: [], rootCauses: [],
     scenario: { leverIds: [], applied: {}, assumptions: {} },
@@ -89,6 +91,9 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
 
     case 'setName':
       return { ...state, name: action.name };
+
+    case 'setContext':
+      return { ...state, context: { ...state.context, ...action.patch } };
 
     case 'addObservation': {
       const o: Observation = {

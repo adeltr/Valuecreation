@@ -16,10 +16,16 @@ export type PlanStatus = (typeof PLAN_STATUSES)[number];
 export interface PlanOverride { owner?: string; status?: PlanStatus; note?: string }
 export const FOUNDATION_IDS = ['f-governance', 'f-kpi', 'f-cash', 'f-people', 'f-comms'] as const;
 
+export const SCALES = ['k', 'M', 'Md'] as const;
+/** How to read the amounts of the case, and why the deal is done. */
+export interface CompanyContext { currency: string; scale: (typeof SCALES)[number]; thesis: string }
+export const DEFAULT_CONTEXT: CompanyContext = { currency: 'EUR', scale: 'M', thesis: '' };
+
 /** A company case as the analyst works it: what a dossier stores, plus the next id to hand out. */
 export interface DossierCase {
   name: string;
   archetype: SectorArchetype;
+  context: CompanyContext;
   inputs: Record<string, number>;
   levers: Lever[];
   rootCauses: RootCause[];
@@ -47,7 +53,7 @@ export function checkObservation(o: Observation, archetype: SectorArchetype): vo
 }
 
 export const DOSSIER_FORMAT = 'value-cockpit-dossier';
-export const DOSSIER_VERSION = 3; // 2: + plan, 3: + observations (older files open with them empty)
+export const DOSSIER_VERSION = 4; // 2: + plan, 3: + observations, 4: + context (older files open with the defaults)
 
 /**
  * A saved company case. It holds what the analyst entered or decided — inputs, levers and
@@ -60,6 +66,7 @@ export interface DossierFile {
   name: string;
   savedAt: string;
   archetype: SectorArchetype;
+  context: CompanyContext;
   inputs: Record<string, number>;
   levers: Lever[];
   rootCauses: RootCause[];
@@ -74,7 +81,7 @@ export function toDossier(state: DossierCase, savedAt: string): DossierFile {
   if (!name) throw new Error('Donne un nom au dossier avant de l\'enregistrer ou de l\'exporter');
   return {
     format: DOSSIER_FORMAT, version: DOSSIER_VERSION, name, savedAt,
-    archetype: state.archetype,
+    archetype: state.archetype, context: state.context,
     inputs: state.inputs, levers: state.levers, rootCauses: state.rootCauses,
     scenario: state.scenario, plan: state.plan, observations: state.observations, nextId: state.nextId,
   };
@@ -82,10 +89,14 @@ export function toDossier(state: DossierCase, savedAt: string): DossierFile {
 
 const envelope = z.object({
   format: z.literal(DOSSIER_FORMAT),
-  version: z.union([z.literal(1), z.literal(2), z.literal(DOSSIER_VERSION)]),
+  version: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(DOSSIER_VERSION)]),
   name: z.string().min(1),
   savedAt: z.string(),
   archetype: z.string(),
+  context: z.object({
+    currency: z.string().regex(/^[A-Z]{3}$/, 'currency: code ISO à 3 lettres attendu (EUR, USD…)'),
+    scale: z.enum(SCALES), thesis: z.string(),
+  }).strict().default(DEFAULT_CONTEXT),
   inputs: z.record(z.number().finite()),
   levers: z.array(z.unknown()),
   rootCauses: z.array(z.unknown()),
@@ -169,7 +180,7 @@ export function parseDossier(raw: unknown): DossierCase {
   const nextId = Math.max(file.nextId, ...used.map((n) => n + 1));
 
   return {
-    name: file.name, archetype, inputs: file.inputs, levers, rootCauses,
+    name: file.name, archetype, context: file.context, inputs: file.inputs, levers, rootCauses,
     scenario: { leverIds, applied, assumptions }, plan: file.plan, observations: file.observations, nextId,
   };
 }

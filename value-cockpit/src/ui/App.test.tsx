@@ -287,6 +287,27 @@ describe('App', () => {
     expect(within(copilot).getByRole('form', { name: 'Nouveau levier' })).toBeTruthy(); // the form stays open
   });
 
+  it('company context: currency and scale label every amount; the thesis is kept', () => {
+    render(<App />);
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    expect(within(company).getAllByText('M EUR').length).toBeGreaterThan(0);
+    fireEvent.change(within(company).getByLabelText('Devise'), { target: { value: 'USD' } });
+    fireEvent.change(within(company).getByLabelText('Échelle'), { target: { value: 'k' } });
+    expect(within(company).getAllByText('k USD').length).toBeGreaterThan(0);
+    const thesis = within(company).getByLabelText('Thèse d\'investissement') as HTMLTextAreaElement;
+    fireEvent.change(thesis, { target: { value: 'Redressement des marges' } });
+    expect(thesis.value).toBe('Redressement des marges');
+  });
+
+  it('warns when an entry fact disagrees with the drivers at year 0', () => {
+    render(<App />);
+    fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    expect(within(company).queryByText(/Incohérence à l'entrée/)).toBeNull();
+    fireEvent.change(within(company).getByLabelText(byCode('EBITDA_ENTRY')), { target: { value: '120' } });
+    expect(within(company).getByText(/Incohérence à l'entrée.*EBITDA_ENTRY.*120.*150/)).toBeTruthy();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
