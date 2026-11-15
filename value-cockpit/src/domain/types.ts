@@ -49,6 +49,8 @@ export interface Lever {
   confidence: number;
   confidenceBasis: string;
   source: GeneratedSource; status: LeverStatus;
+  /** One-off cost of implementing the lever (currency). Set by the analyst only, never by the copilot. */
+  implementationCost?: number;
 }
 
 export interface ScenarioLever { scenarioId: UUID; leverId: UUID; appliedDelta: number; deltaKind: DeltaKind }
@@ -62,5 +64,13 @@ export interface ScenarioAssumption { scenarioId: UUID; metricCode: string; valu
  * an elasticity. Defined by the sector template, never proposed by the copilot.
  */
 export interface InteractionRule { sourceCode: string; targetCode: string; coefficientCode: string }
+
+/** Optional behaviours of the scenario engine; each names the input it reads or feeds. */
+export interface ScenarioOptions {
+  /** Holding period in years: a lever whose first impact comes later does not move the exit. */
+  horizonYearsCode?: string;
+  /** Cost input the implementation costs of the scenario levers are added to. */
+  costCode?: string;
+}
 
 export interface ScenarioResult { scenarioId: UUID; metricCode: string; value: number; computedBy: 'engine' }

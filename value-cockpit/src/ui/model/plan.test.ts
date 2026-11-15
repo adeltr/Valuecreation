@@ -88,6 +88,16 @@ describe('100-day plan (PE best practice: diagnose J0–30, design J30–60, exe
     expect(plan.risks).toEqual(['Flotte vieillissante (OPERATIONAL)']);
   });
 
+  it('a lever landing after the exit is worth nothing at exit and is flagged; its cost still weighs', () => {
+    const late = { ...fuel, id: 'late', timeToImpactDays: 6 * 365 };
+    const p = buildPlan(input({ levers: [late] }));
+    expect(p.workstreams[0]).toMatchObject({ beyondExit: true });
+    expect(p.workstreams[0].value!.moic).toBe(0);
+    const costly = buildPlan(input({ levers: [{ ...fuel, implementationCost: 50 }] })).workstreams[0];
+    expect(costly.value!.moic).toBeLessThan(ws('fuel').value!.moic);
+    expect(costly.cost).toBe(50);
+  });
+
   it('an empty plan still has its foundations', () => {
     const p = buildPlan(input({ levers: [] }));
     expect(p.workstreams).toEqual([]);

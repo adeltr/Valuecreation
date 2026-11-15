@@ -1,4 +1,4 @@
-import type { Metric, Lever, ScenarioLever, ScenarioAssumption, ScenarioResult, InteractionRule } from '../domain/types';
+import type { Metric, Lever, ScenarioLever, ScenarioAssumption, ScenarioResult, InteractionRule, ScenarioOptions } from '../domain/types';
 import { resolveMetrics } from './resolver';
 
 export function runScenario(
@@ -8,6 +8,7 @@ export function runScenario(
   scenarioLevers: ScenarioLever[],
   assumptions: ScenarioAssumption[],
   rules: InteractionRule[] = [],
+  options: ScenarioOptions = {},
 ): ScenarioResult[] {
   const leverById = new Map(levers.map((l) => [l.id, l]));
   const perturbed = metrics.map((x) => ({ ...x }));
@@ -32,6 +33,9 @@ export function runScenario(
   // order-independent: (base + Σ absolute) × Π(1 + percent).
   const absolute = new Map<string, number>();
   const factor = new Map<string, number>();
+  // Read after the assumptions: an analyst override of the holding period moves the horizon.
+  const horizonDays = options.horizonYearsCode ? (input(options.horizonYearsCode, 'Horizon').currentValue ?? 0) * 365 : Infinity;
+  let cost = 0;
   for (const sl of scenarioLevers) {
     const lever = leverById.get(sl.leverId);
     if (!lever) throw new Error(`Unknown lever: ${sl.leverId}`);
@@ -42,6 +46,9 @@ export function runScenario(
       throw new Error(`deltaKind mismatch on "${lever.label}": scenario ${sl.deltaKind}, lever ${lever.deltaKind}`);
     }
     const code = input(lever.impactMetricCode, 'Lever').code;
+    if ((lever.implementationCost ?? 0) < 0) throw new Error(`Negative implementation cost on "${lever.label}"`);
+    cost += lever.implementationCost ?? 0; // spent whether or not the impact lands before the exit
+    if (lever.timeToImpactDays > horizonDays) continue;
     if (sl.deltaKind === 'percent') factor.set(code, (factor.get(code) ?? 1) * (1 + sl.appliedDelta));
     else absolute.set(code, (absolute.get(code) ?? 0) + sl.appliedDelta);
   }
@@ -49,6 +56,12 @@ export function runScenario(
   for (const code of new Set([...absolute.keys(), ...factor.keys()])) {
     const t = byCode.get(code)!;
     t.currentValue = ((t.currentValue ?? 0) + (absolute.get(code) ?? 0)) * (factor.get(code) ?? 1);
+  }
+
+  if (cost > 0) {
+    if (!options.costCode) throw new Error('Levers carry an implementation cost but the scenario names no cost input');
+    const t = input(options.costCode, 'Implementation cost');
+    t.currentValue = (t.currentValue ?? 0) + cost;
   }
 
   // Interaction rules — one step, computed on the lever-induced change of each source.

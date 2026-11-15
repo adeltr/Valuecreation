@@ -70,6 +70,7 @@ scénario (reducer) et au chargement d'un dossier.
   via `PRICE_ELASTICITY` pour chemical, cosmetics, cpg, manufacturing, 3PL,
   waste-management, wine-spirits ; élasticités par défaut = choix d'analyste à
   calibrer). Pas de cannibalisation entre leviers au-delà de ces règles.
-- `NET_DEBT_EXIT = NET_DEBT_ENTRY − FCF_ANNUAL × HOLD_YEARS` : FCF constant,
-  pas de cash sweep ni d'échéancier de dette.
+- Cash : EBITDA en ligne droite, conversion et capex constants, pas de cash sweep ni
+  d'échéancier de dette (docs/20).
+- Horizon et coût des leviers : options `horizonYearsCode` et `costCode` (docs/20).
 - Pas de période intermédiaire : deux points, entry/exit.

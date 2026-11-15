@@ -210,6 +210,22 @@ describe('App', () => {
     expect(screen.queryByRole('alert')).toBeNull();
   });
 
+  it('the bridge shows cash and IRR; a lever landing after the exit is flagged everywhere', () => {
+    render(<App />);
+    const sim = screen.getByRole('region', { name: 'Simulation' });
+    expect(within(sim).getByText('CUMULATIVE_FCF')).toBeTruthy();
+    expect(within(sim).getByText('IRR')).toBeTruthy();
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal.replace('"timeToImpactDays":60', '"timeToImpactDays":3000') } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    expect(within(sim).getByRole('checkbox', { name: /Renouvellement de flotte.*après la sortie/ })).toBeTruthy();
+    const plan = screen.getByRole('region', { name: 'Plan 100 jours' });
+    expect(within(plan).getByText(/après la sortie : sans effet/)).toBeTruthy();
+    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
+    expect(within(screen.getByRole('region', { name: 'Fiche levier' })).getByText(/après la sortie/)).toBeTruthy();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });

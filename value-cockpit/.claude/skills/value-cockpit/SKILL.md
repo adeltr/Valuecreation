@@ -50,3 +50,7 @@ if all tests pass.
   ONLY as template-declared rules (`InteractionRule`, coefficient set by the
   analyst, e.g. PRICE_ELASTICITY — never a lever target). Any synthesis must
   say which rules applied and that other interactions are not modelled.
+- A lever is simulated only on a MODEL INPUT (`modelTargets`): a computed metric is
+  never a target; a vocabulary metric outside the model makes a qualitative lever.
+- Every scenario runs with `SCENARIO_OPTIONS`: a lever landing after the holding
+  period does not move the exit; `implementationCost` is analyst-set only.

@@ -28,6 +28,7 @@ export function makeLeverSchema(vocab: ActiveVocabulary, calculated: readonly st
     confidenceBasis: z.string().min(1, 'confidenceBasis is required'),
     source: z.enum(['claude', 'analyst']),
     status: z.enum(['hypothesis', 'validated', 'rejected']),
+    implementationCost: z.number().finite().nonnegative().optional(),
   });
 }
 

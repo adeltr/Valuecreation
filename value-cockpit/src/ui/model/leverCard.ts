@@ -4,6 +4,7 @@ import type { Unit } from '../../ontology/base';
 import { extractDependencies } from '../../engine/formula';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
+import { SCENARIO_OPTIONS } from '../../templates/build';
 
 export interface PathStep { code: string; formula: string | null }
 
@@ -15,6 +16,8 @@ export interface LeverCard {
   sensitivity: { step: { kind: 'absolute' | 'percent'; value: number }; moicDelta: number } | null;
   /** The lever's own impact — only once validated by the analyst (invariant 4). */
   impact: { moicBefore: number; moicAfter: number } | null;
+  /** First impact after the holding period: nothing at exit (docs/06). */
+  beyondExit: boolean;
   interactions: InteractionRule[];
   analyses: AnalysisRef[];
   dataToCollect: string[];
@@ -51,13 +54,13 @@ export function buildLeverCard(lever: Lever, metrics: Metric[], catalog: Analysi
   const moic = (r: { metricCode: string; value: number }[]) => r.find((x) => x.metricCode === 'MOIC')!.value;
   const run = (l: Lever, delta: number) => moic(runScenario('card', metrics, [l], [
     { scenarioId: 'card', leverId: l.id, appliedDelta: delta, deltaKind: l.deltaKind },
-  ], [], rules));
+  ], [], rules, SCENARIO_OPTIONS));
 
   let sensitivity: LeverCard['sensitivity'] = null;
   if (target && !target.isCalculated) {
     const step = target.unit === 'percent' ? { kind: 'absolute' as const, value: 0.01 } : { kind: 'percent' as const, value: 0.01 };
     // A probe of the model, not of the lever: an analyst-owned synthetic lever of fixed size.
-    const probe: Lever = { ...lever, id: '__probe', status: 'validated', source: 'analyst', deltaKind: step.kind };
+    const probe: Lever = { ...lever, id: '__probe', status: 'validated', source: 'analyst', deltaKind: step.kind, timeToImpactDays: 0, implementationCost: 0 };
     sensitivity = { step, moicDelta: run(probe, step.value) - base.get('MOIC')! };
   }
 
@@ -74,6 +77,7 @@ export function buildLeverCard(lever: Lever, metrics: Metric[], catalog: Analysi
     target: { code: lever.impactMetricCode, unit: target?.unit ?? 'ratio', current: target?.currentValue ?? null },
     path: causalPath(metrics, lever.impactMetricCode),
     sensitivity, impact,
+    beyondExit: lever.timeToImpactDays > (base.get(SCENARIO_OPTIONS.horizonYearsCode) ?? Infinity) * 365,
     interactions: rules.filter((r) => r.sourceCode === lever.impactMetricCode),
     analyses,
     dataToCollect: unique(analyses.slice(0, 3).flatMap((a) => a.dataRequired)),

@@ -1,6 +1,7 @@
 import type { InteractionRule, Lever, Metric } from '../domain/types';
 import { resolveMetrics } from '../engine/resolver';
 import { runScenario } from '../engine/scenario';
+import { SCENARIO_OPTIONS } from '../templates/build';
 
 export interface Trajectory {
   /** Benchmark window matching the holding period: 3 or 5 years. */
@@ -31,7 +32,7 @@ export function impliedTrajectory(metrics: Metric[], levers: Lever[], rules: Int
   const plan = validated.length
     ? new Map(runScenario('realism', metrics, validated, validated.map((l) => ({
       scenarioId: 'realism', leverId: l.id, appliedDelta: l.expectedDelta, deltaKind: l.deltaKind,
-    })), [], rules).map((r) => [r.metricCode, r.value]))
+    })), [], rules, SCENARIO_OPTIONS).map((r) => [r.metricCode, r.value]))
     : base;
   const hold = base.get('HOLD_YEARS')!;
   const entryMargin = base.get('EBITDA_ENTRY')! / revenue0;

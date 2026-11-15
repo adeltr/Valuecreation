@@ -166,6 +166,20 @@ describe('cockpit store', () => {
     });
   });
 
+  it('the scenario runs with the cockpit options: horizon = holding period, lever costs hit the cash', () => {
+    let s = ingest(airline());
+    const id = s.levers[0].id;
+    s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
+    const moic = (x: CockpitState) => selectScenario(x).find((r) => r.metricCode === 'MOIC')!.value;
+    const base = selectBaseline(s).get('MOIC')!;
+    expect(moic(s)).toBeGreaterThan(base);
+    const late = { ...s, levers: s.levers.map((l) => ({ ...l, timeToImpactDays: 10 * 365 })) };
+    expect(moic(late)).toBeCloseTo(base, 12);
+    const costly = { ...s, levers: s.levers.map((l) => ({ ...l, implementationCost: 30 })) };
+    expect(moic(costly)).toBeLessThan(moic(s));
+    expect(selectScenario(costly).find((r) => r.metricCode === 'PLAN_ONE_OFF_COSTS')!.value).toBe(30);
+  });
+
   describe('workshop observations', () => {
     const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
     const vars = findFormula(getCatalog('airline'), lf.id, 'Load Factor')!.variables;

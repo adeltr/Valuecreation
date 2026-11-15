@@ -2,7 +2,7 @@ import type { InteractionRule, Lever, Metric, RootCause } from '../../domain/typ
 import type { AnalysisRef } from '../../catalog/types';
 import type { Unit } from '../../ontology/base';
 import type { BridgeFamily } from '../../ontology/families';
-import { FAMILY_BRIDGE } from '../../templates/build';
+import { FAMILY_BRIDGE, SCENARIO_OPTIONS } from '../../templates/build';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
 import { FOUNDATION_IDS, type PlanOverride, type PlanStatus } from '../../dossier/format';
@@ -19,6 +19,10 @@ export interface Workstream {
   id: string; title: string; category: string;
   owner: string; status: PlanStatus; note: string;
   bars: Bar[]; milestones: Milestone[]; beyond100: boolean; impactDay: number;
+  /** First impact after the holding period: nothing at exit. */
+  beyondExit: boolean;
+  /** One-off implementation cost set by the analyst (0 when none). */
+  cost: number;
   kpi: { code: string; unit: Unit; baseline: number; target: number } | null;
   /** Engine-computed, this lever alone: MOIC change and change of the family anchor. */
   value: { moic: number; anchorDelta: number } | null;
@@ -93,7 +97,7 @@ export function buildPlan({ levers, rootCauses, metrics, catalog, rules, family,
   const anchorCode = FAMILY_BRIDGE[family].anchor;
   const base = resolveMetrics(metrics);
   const run = (ls: Lever[]) => {
-    const r = runScenario('plan', metrics, ls, ls.map((l) => ({ scenarioId: 'plan', leverId: l.id, appliedDelta: l.expectedDelta, deltaKind: l.deltaKind })), [], rules);
+    const r = runScenario('plan', metrics, ls, ls.map((l) => ({ scenarioId: 'plan', leverId: l.id, appliedDelta: l.expectedDelta, deltaKind: l.deltaKind })), [], rules, SCENARIO_OPTIONS);
     return new Map(r.map((x) => [x.metricCode, x.value]));
   };
   const byCode = new Map(metrics.map((m) => [m.code, m]));
@@ -112,6 +116,7 @@ export function buildPlan({ levers, rootCauses, metrics, catalog, rules, family,
       id: l.id, title: l.label, category: l.category,
       owner: overrides[l.id]?.owner || UNASSIGNED, status: overrides[l.id]?.status ?? 'todo', note: overrides[l.id]?.note ?? '',
       bars, beyond100: t > HORIZON, impactDay: t,
+      beyondExit: t > (base.get(SCENARIO_OPTIONS.horizonYearsCode) ?? Infinity) * 365, cost: l.implementationCost ?? 0,
       milestones: [
         { day: bars[0].to, label: `Diagnostic validé${analyses.length ? ` (${analyses.map((a) => a.id).join(', ')})` : ''}` },
         { day: bars[1].to, label: 'Business case et plan détaillé validés' },

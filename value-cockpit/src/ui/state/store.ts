@@ -2,6 +2,7 @@ import type { Lever, Metric, ScenarioResult } from '../../domain/types';
 import { getActiveVocabulary, type SectorArchetype } from '../../ontology/registry';
 import { SCENARIO_ASSUMPTION_CODES } from '../../ontology/base';
 import { TEMPLATES } from '../../templates';
+import { SCENARIO_OPTIONS } from '../../templates/build';
 import { modelTargets } from '../../templates/targets';
 import { sanitizeProposal } from '../../copilot/proposal';
 import { ingestProposal } from '../../copilot/ingest';
@@ -194,5 +195,5 @@ export function selectScenario(state: CockpitState): ScenarioResult[] {
   }));
   const assumptions = Object.entries(state.scenario.assumptions)
     .map(([metricCode, value]) => ({ scenarioId: 'ui', metricCode, value: value! }));
-  return runScenario('ui', selectMetrics(state), state.levers, scenarioLevers, assumptions, template(state.archetype).interactions);
+  return runScenario('ui', selectMetrics(state), state.levers, scenarioLevers, assumptions, template(state.archetype).interactions, SCENARIO_OPTIONS);
 }

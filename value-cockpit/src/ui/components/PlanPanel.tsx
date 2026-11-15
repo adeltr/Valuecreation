@@ -100,7 +100,8 @@ export function PlanPanel({ plan, engineError, dispatch, onExportSlide }: {
             <tbody>
               {plan.workstreams.map((w) => (
                 <tr key={w.id}>
-                  <td>{w.title}<div className="muted">{w.category} · effort {w.effort}</div></td>
+                  <td>{w.title}<div className="muted">{w.category} · effort {w.effort}{w.cost > 0 && ` · coût ${formatValue(w.cost, 'currency')}`}</div>
+                    {w.beyondExit && <div className="warn">Impact après la sortie : sans effet sur le MOIC</div>}</td>
                   <td>{w.kpi ? `${w.kpi.code} : ${formatValue(w.kpi.baseline, w.kpi.unit)} → ${formatValue(w.kpi.target, w.kpi.unit)}` : '—'}</td>
                   <td className="num">{w.value ? signed(w.value.anchorDelta, 'currency') : '—'}</td>
                   <td className="num">{w.value ? signed(w.value.moic, 'ratio') : '—'}</td>

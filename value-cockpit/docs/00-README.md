@@ -27,6 +27,7 @@ docs/
   17-LEVER-CARD-AND-PLAN.md         ← fiche levier, plan 100 jours (chantiers, jalons, valeur moteur) et slide de restitution
   18-WORKSHOP.md                    ← atelier : formules des analyses exécutables, observations typées par l'ontologie
   19-EMPIRICAL.md                   ← repères empiriques SEC EDGAR : import, distributions filtrables, réalisme du plan
+  20-FINANCIAL-MODEL.md             ← cash (BFR, capex, conversion), TRI, horizon et coût des leviers
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
     2026-10-27-value-cockpit-ui-phase2.md ← plan phase 2 (UI React, 3+1 panneaux)
@@ -62,6 +63,7 @@ scripts/import-analyses.ts          ← import d'analyses brutes du vault → fo
 | Fiche levier, plan 100 jours, slide | 17, 02 |
 | Atelier d'analyse, observations | 18, 02 |
 | Repères empiriques (SEC) | 19, 02 |
+| Modèle financier (cash, TRI, horizon, coûts) | 20, 06 |
 
 Règle : ne JAMAIS charger 01 (vision) pendant l'implémentation — c'est du
 contexte de cadrage, pas de spec exécutable. Le relire seulement si une

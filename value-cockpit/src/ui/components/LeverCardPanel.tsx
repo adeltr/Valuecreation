@@ -66,7 +66,8 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose,
       {c.impact
         ? <p><strong>{`Impact du levier (validé) : MOIC ${formatValue(c.impact.moicBefore, 'ratio')} → ${formatValue(c.impact.moicAfter, 'ratio')}`}</strong></p>
         : <p className="muted">L'impact propre du levier est calculé par le moteur après validation par l'analyste.</p>}
-      <p className="muted">{`Délai J+${lever.timeToImpactDays} · effort ${lever.effort} · confiance ${lever.confidence} — ${lever.confidenceBasis}`}</p>
+      {c.beyondExit && <p className="warn">Premier impact à J+{lever.timeToImpactDays}, après la sortie : ce levier ne compte pas dans le MOIC.</p>}
+      <p className="muted">{`Délai J+${lever.timeToImpactDays}${lever.implementationCost ? ` · coût ${formatValue(lever.implementationCost, 'currency')}` : ''} · effort ${lever.effort} · confiance ${lever.confidence} — ${lever.confidenceBasis}`}</p>
 
       {(() => {
         const measured = observations.filter((o) => o.metricCode === c.target.code);

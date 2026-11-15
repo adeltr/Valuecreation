@@ -28,7 +28,7 @@ Un MOIC compare l'entrée et la sortie ; mono-période impossible.
 ```
 EQUITY_ENTRY  = EBITDA_ENTRY × ENTRY_MULTIPLE − NET_DEBT_ENTRY
 EBITDA_EXIT   = f(drivers, HOLD_YEARS)                  ← fourni par le template sectoriel
-NET_DEBT_EXIT = NET_DEBT_ENTRY − FCF_ANNUAL × HOLD_YEARS   (approx. v1)
+NET_DEBT_EXIT = NET_DEBT_ENTRY − CUMULATIVE_FCF           (cash : docs/20)
 EQUITY_EXIT   = EBITDA_EXIT × EXIT_MULTIPLE − NET_DEBT_EXIT
 MOIC          = EQUITY_EXIT / EQUITY_ENTRY
 ```

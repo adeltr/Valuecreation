@@ -19,6 +19,7 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
   const quantified = (l: Lever) => l.impactMetricCode in state.inputs;
   const selectable = (l: Lever) => l.status === 'validated' && quantified(l);
   const exitMultiple = state.scenario.assumptions.EXIT_MULTIPLE ?? state.inputs.EXIT_MULTIPLE;
+  const holdDays = (state.scenario.assumptions.HOLD_YEARS ?? state.inputs.HOLD_YEARS) * 365;
 
   return (
     <Panel title="Simulation" className="simulation">
@@ -33,6 +34,7 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
                 <input type="checkbox" checked={on} disabled={!selectable(l)}
                   onChange={() => dispatch({ type: 'toggleScenarioLever', id: l.id })} />
                 {' '}{l.label}{!quantified(l) ? ' (qualitatif, non simulé)' : l.status !== 'validated' && ' (à valider)'}
+                {l.timeToImpactDays > holdDays && ` (J+${l.timeToImpactDays} : après la sortie, sans effet sur le MOIC)`}
               </label>
               {on && (
                 <input aria-label={`Delta appliqué ${l.label}`} type="number" step="any" className="delta"
@@ -75,7 +77,8 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
       )}
       <p className="footnote">
         Chiffres calculés par le moteur (computedBy = engine), jamais par le copilote. Plusieurs leviers sur une
-        même métrique se composent : (valeur + Σ deltas absolus) × Π(1 + deltas relatifs).
+        même métrique se composent : (valeur + Σ deltas absolus) × Π(1 + deltas relatifs). Un levier dont le
+        premier impact arrive après la sortie ne compte pas ; son coût de mise en œuvre, lui, est déduit du cash.
       </p>
     </Panel>
   );

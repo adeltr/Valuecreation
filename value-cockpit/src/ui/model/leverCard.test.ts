@@ -52,6 +52,13 @@ describe('buildLeverCard', () => {
     expect(v.moicAfter).toBeGreaterThan(v.moicBefore);
   });
 
+  it('the impact uses the cockpit options: nothing at exit when the lever lands after the holding period', () => {
+    const v = card(lever({ status: 'validated', timeToImpactDays: 10 * 365 })).impact!;
+    expect(v.moicAfter).toBeCloseTo(v.moicBefore, 12);
+    expect(card(lever({ status: 'validated', timeToImpactDays: 10 * 365 })).beyondExit).toBe(true);
+    expect(card(lever()).beyondExit).toBe(false);
+  });
+
   it('lists the analyses that diagnose it — lever matches first — with what to collect and how to improve', () => {
     const c = card(lever());
     expect(c.analyses[0].relatedLeverCategories).toContain('FUEL_EFFICIENCY');
