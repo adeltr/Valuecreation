@@ -2,6 +2,7 @@ import type { Dispatch } from 'react';
 import type { InteractionRule, Lever, Metric, ScenarioResult } from '../../domain/types';
 import type { Action, CockpitState } from '../state/store';
 import { formatValue } from '../model/format';
+import { MetricName } from './MetricName';
 import { Panel } from './Panel';
 
 interface Props {
@@ -11,9 +12,10 @@ interface Props {
   /** The bridge of the archetype's family (docs/16): table rows (MOIC last) and multiple label. */
   bridgeRows: string[];
   multipleLabel: string;
+  archetype: string;
 }
 
-export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows, multipleLabel }: Props) {
+export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows, multipleLabel, archetype }: Props) {
   const unit = (code: string) => metrics.find((m) => m.code === code)?.unit ?? 'currency';
   const scen = new Map(scenario?.map((r) => [r.metricCode, r.value]));
   const quantified = (l: Lever) => l.impactMetricCode in state.inputs;
@@ -54,7 +56,7 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
         <tbody>
           {bridgeRows.map((code) => (
             <tr key={code} className={code === 'MOIC' ? 'moic' : ''}>
-              <th>{code}</th>
+              <th><MetricName code={code} archetype={archetype} /></th>
               <td className="num">{formatValue(baseline.get(code), unit(code))}</td>
               <td className="num" data-testid={code === 'MOIC' ? 'moic-scenario' : undefined}>{formatValue(scen.get(code), unit(code))}</td>
             </tr>

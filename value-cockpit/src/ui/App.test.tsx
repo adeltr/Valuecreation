@@ -28,6 +28,9 @@ const proposal = JSON.stringify({
   }],
 });
 
+/** A metric field is labelled « readable name CODE »: match on the code. */
+const byCode = (code: string) => new RegExp(`(^|\\W)${code}$`);
+
 const moic = () => within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent;
 
 describe('App', () => {
@@ -79,7 +82,7 @@ describe('App', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'aero' } });
     const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByLabelText('BOOK_TO_BILL')).toBeTruthy();
+    expect(within(company).getByLabelText(byCode('BOOK_TO_BILL'))).toBeTruthy();
   });
 
   it('wine-spirits uses its level-2 template; no empty generic group in the picker', () => {
@@ -87,7 +90,7 @@ describe('App', () => {
     expect(screen.queryByRole('group', { name: 'Modèle EBITDA générique' })).toBeNull();
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'wine-spirits' } });
     const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByLabelText('EXCISE_TAX_RATE')).toBeTruthy();
+    expect(within(company).getByLabelText(byCode('EXCISE_TAX_RATE'))).toBeTruthy();
     expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);
   });
 
@@ -147,7 +150,7 @@ describe('App', () => {
     fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
     fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
     fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
-    fireEvent.change(within(company).getByLabelText('AVG_TRIP_KM'), { target: { value: '0' } });
+    fireEvent.change(within(company).getByLabelText(byCode('AVG_TRIP_KM')), { target: { value: '0' } });
     expect(screen.getByRole('region', { name: 'Plan 100 jours' })).toBeTruthy();
     expect(within(screen.getByRole('region', { name: 'Fiche levier' })).getByText(/finite number/)).toBeTruthy();
     expect(screen.getAllByText(/finite number/).length).toBeGreaterThan(0);
@@ -172,7 +175,7 @@ describe('App', () => {
     expect(within(list).getByText(/LOAD_FACTOR/)).toBeTruthy();
     fireEvent.click(within(list).getByRole('button', { name: /Appliquer à l'entreprise/ }));
     const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect((within(company).getByLabelText('LOAD_FACTOR') as HTMLInputElement).value).toBe('0.78');
+    expect((within(company).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement).value).toBe('0.78');
     expect(within(list).getByText(/appliquée/)).toBeTruthy();
 
     const copilot = screen.getByRole('region', { name: 'Copilote' });
@@ -226,6 +229,18 @@ describe('App', () => {
     expect(within(screen.getByRole('region', { name: 'Fiche levier' })).getByText(/après la sortie/)).toBeTruthy();
   });
 
+  it('metrics are shown with a readable name, their code and a definition; inputs are grouped', () => {
+    render(<App />);
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    expect(within(company).getByRole('heading', { name: 'Drivers du secteur' })).toBeTruthy();
+    expect(within(company).getByRole('heading', { name: 'Deal et cash' })).toBeTruthy();
+    expect(within(company).getByText('EBITDA d\'entrée').getAttribute('title')).toMatch(/prix d'entrée/);
+    expect(within(company).getByText('Load Factor').getAttribute('title')).toMatch(/seating capacity/);
+    expect(within(company).getByLabelText(byCode('LOAD_FACTOR'))).toBeTruthy();
+    const sim = screen.getByRole('region', { name: 'Simulation' });
+    expect(within(sim).getByText('TRI')).toBeTruthy();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
@@ -248,7 +263,7 @@ describe('App', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
     const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByLabelText('TRADE_SPEND_RATE')).toBeTruthy();
+    expect(within(company).getByLabelText(byCode('TRADE_SPEND_RATE'))).toBeTruthy();
   });
 
   it('exploration: clicking a driver lists the analyses to run', () => {
@@ -273,7 +288,7 @@ describe('App – dossiers', () => {
   const bar = () => within(screen.getByRole('region', { name: 'Dossier' }));
   const typeSelect = () => screen.getByLabelText(/Type d'entreprise/) as HTMLSelectElement;
   const nameInput = () => bar().getByLabelText('Nom du dossier') as HTMLInputElement;
-  const loadFactor = () => within(screen.getByRole('region', { name: 'Entreprise' })).getByLabelText('LOAD_FACTOR') as HTMLInputElement;
+  const loadFactor = () => within(screen.getByRole('region', { name: 'Entreprise' })).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement;
   const click = (name: string) => fireEvent.click(bar().getByRole('button', { name }));
   const saveAs = async (name: string) => {
     fireEvent.change(nameInput(), { target: { value: name } });

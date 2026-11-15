@@ -6,13 +6,15 @@ import type { AnalysisRef } from '../../catalog/types';
 import { buildDriverGraph, type Layer } from '../model/graph';
 import { analysesForMetric } from '../model/hundredDay';
 import { formatValue } from '../model/format';
+import { MetricName } from './MetricName';
+import { describeMetric } from '../../ontology/labels';
 import { Panel } from './Panel';
 
 const LAYER_LABEL: Record<Layer, string> = { L3: 'L3 · opérationnel', L2: 'L2 · financier', L1: 'L1 · bridge' };
 
-interface Props { metrics: Metric[]; baseline: Map<string, number>; catalog: AnalysisRef[] }
+interface Props { metrics: Metric[]; baseline: Map<string, number>; catalog: AnalysisRef[]; archetype: string }
 
-export function DriverGraph({ metrics, baseline, catalog }: Props) {
+export function DriverGraph({ metrics, baseline, catalog, archetype }: Props) {
   const [selected, setSelected] = useState<string | null>(null);
   const graph = useMemo(() => buildDriverGraph(metrics), [metrics]);
   const byCode = useMemo(() => new Map(metrics.map((m) => [m.code, m])), [metrics]);
@@ -51,7 +53,8 @@ export function DriverGraph({ metrics, baseline, catalog }: Props) {
           ))}
           {sel && (
             <div className="explore-detail">
-              <h3>{sel.code}</h3>
+              <h3><MetricName code={sel.code} archetype={archetype} /></h3>
+              {describeMetric(sel.code, archetype).definition && <p className="muted">{describeMetric(sel.code, archetype).definition}</p>}
               <p className="num">{formatValue(baseline.get(sel.code), sel.unit)}</p>
               {sel.formula && <code>{sel.formula}</code>}
               <h4>Analyses à mener</h4>

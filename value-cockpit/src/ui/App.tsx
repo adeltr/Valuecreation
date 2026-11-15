@@ -92,8 +92,9 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         </div>
       )}
       <main className="grid">
-        <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} />
-        <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} />
+        <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} archetype={state.archetype} />
+        <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} archetype={state.archetype}
+          bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
           inputCodes={Object.keys(state.inputs)} />
         {cardLever && (
@@ -107,7 +108,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
           interactions={TEMPLATES[state.archetype]!.interactions}
           bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}
-          multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} />
+          multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} archetype={state.archetype} />
         <PlanPanel dispatch={dispatch} plan={plan} engineError={engineError} onExportSlide={() => {
           if (!plan) return;
           const model = buildSlideModel(plan, {

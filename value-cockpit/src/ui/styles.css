@@ -129,3 +129,8 @@ button.link { background: none; color: var(--accent); padding: 0; border: 0; tex
 .emp-filters fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 8px; align-items: center; font-size: 12px; }
 .emp-filters legend { float: left; margin-right: 6px; color: var(--muted); font-size: 12px; }
 .warn { color: var(--warn); }
+
+.metric-name.has-def { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
+.metric-code { font-size: 10px; color: var(--muted); letter-spacing: .02em; }
+.kv th label { font-size: 12px; color: var(--ink); }
+.kv th { white-space: normal; }
