@@ -69,7 +69,8 @@ export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
     demoInputs: {
       REVENUE: 500, EBITDA_MARGIN: 0.12, BOOK_TO_BILL: 1.06, FIXED_PRICE_SHARE: 0.60,
       COST_OVERRUN_RATE: 0.03, ENTRY_MULTIPLE: 9, EXIT_MULTIPLE: 9, HOLD_YEARS: 5,
-      NET_DEBT_ENTRY: 300, EBITDA_ENTRY: 60, CASH_CONVERSION: 0.65, CAPEX: 7, DSO: 60, DIO: 120, DPO: 60,
+      // EBITDA_ENTRY = 500 × (12 % − 3 % × 60 %): margin net of overruns on fixed-price contracts
+      NET_DEBT_ENTRY: 300, EBITDA_ENTRY: 51, CASH_CONVERSION: 0.65, CAPEX: 7, DSO: 60, DIO: 120, DPO: 60,
       COGS_RATIO: 0.75, WORKING_CAPITAL: 144, PLAN_ONE_OFF_COSTS: 0,
     },
     interactions: [],
