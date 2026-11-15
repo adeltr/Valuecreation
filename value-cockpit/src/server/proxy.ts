@@ -1,4 +1,5 @@
 import express from 'express';
+import Anthropic from '@anthropic-ai/sdk';
 import { sanitizeProposal, type CopilotProposal } from '../copilot/proposal';
 import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
 import { getCatalog } from '../catalog';
@@ -68,7 +69,18 @@ export function createServer(
       const archetype = (req.body?.archetype ?? 'generic') as SectorArchetype;
       res.json(await handleProposal(archetype, String(req.body?.message ?? ''), callModel, req.body?.company));
     } catch (e) {
-      res.status(422).json({ error: (e as Error).message });
+      // Most specific first: credentials, rate limit, model overload, then anything else from the API.
+      if (e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError) {
+        res.status(502).json({ error: 'Clé API Anthropic refusée : vérifiez ANTHROPIC_API_KEY sur le serveur' });
+      } else if (e instanceof Anthropic.RateLimitError) {
+        res.status(429).json({ error: 'Limite de débit de l\'API atteinte : réessayez dans un instant' });
+      } else if (e instanceof Anthropic.APIConnectionError) {
+        res.status(502).json({ error: 'API Anthropic injoignable depuis le serveur' });
+      } else if (e instanceof Anthropic.APIError) {
+        res.status(502).json({ error: `Erreur de l'API Anthropic (${e.status ?? '?'}) : ${e.message}` });
+      } else {
+        res.status(422).json({ error: (e as Error).message });
+      }
     }
   });
   return app;

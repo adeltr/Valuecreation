@@ -46,3 +46,28 @@ Injecté dynamiquement depuis le registry :
 
 Tout champ supplémentaire est supprimé ou rejeté (`.strict()`). Une réponse
 malformée ⇒ 422, jamais de retour partiel au client.
+
+
+## Appel réel et données de l'entreprise (étape 4)
+
+- `src/server/anthropic.ts` : appel par le SDK officiel au modèle `claude-opus-5-5`, en streaming,
+  effort `high`, prompt système mis en cache, bascule côté serveur en cas de refus de sécurité.
+  Un refus, une réponse tronquée ou vide donne une erreur explicite, jamais une proposition
+  partielle.
+- La clé reste sur le serveur : `ANTHROPIC_API_KEY` dans l'environnement de `npm run server`.
+  Sans clé, le serveur démarre en mode hors ligne et le panneau garde la saisie manuelle.
+- La question part avec l'entreprise (`src/copilot/brief.ts`) : le client envoie le cas au format
+  dossier, le serveur le **revalide** (`parseDossier`) et **recalcule** les sorties avec le
+  moteur. Le bloc transmis contient la thèse, les inputs, les sorties de base, les incohérences
+  d'entrée, les observations de l'atelier et les leviers déjà présents. Il est marqué comme
+  donnée, pas comme instruction.
+- Rien ne change en aval : la réponse passe par `sanitizeProposal`, arrive en hypothèse et
+  attend la validation de l'analyste.
+
+```
+export ANTHROPIC_API_KEY="sk-ant-…"   # dans le terminal du serveur, jamais dans le dépôt
+npm run server
+```
+
+L'appel réel n'a pas été exécuté dans l'environnement de développement (pas de clé) : il est
+couvert par des tests avec un client simulé.
