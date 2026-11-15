@@ -1,7 +1,8 @@
-import { useState, type Dispatch } from 'react';
+import { useEffect, useState, type Dispatch } from 'react';
 import type { Lever, RootCause } from '../../domain/types';
 import type { SectorArchetype } from '../../ontology/registry';
 import type { Action } from '../state/store';
+import { LeverForm } from './LeverForm';
 import { Panel } from './Panel';
 
 const STATUS_LABEL: Record<Lever['status'], string> = { hypothesis: 'hypothèse', validated: 'validé', rejected: 'rejeté' };
@@ -18,6 +19,9 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
   const [message, setMessage] = useState('');
   const [raw, setRaw] = useState('');
   const [pending, setPending] = useState(false);
+  // 'new', a lever id, or null. The store returns a new lever list only when it accepted the form.
+  const [editing, setEditing] = useState<string | null>(null);
+  useEffect(() => setEditing(null), [levers]);
 
   const ingest = (value: unknown) => dispatch({ type: 'ingestProposal', raw: value, today: today() });
 
@@ -70,6 +74,10 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
         </>
       )}
       <h3>Leviers</h3>
+      {editing === null && <button type="button" className="secondary" onClick={() => setEditing('new')}>Ajouter un levier</button>}
+      {editing === 'new' && (
+        <LeverForm archetype={archetype} onCancel={() => setEditing(null)} onSubmit={(draft) => dispatch({ type: 'addLever', draft })} />
+      )}
       {levers.length === 0 && <p className="muted">Aucun levier pour l'instant.</p>}
       <ul className="list">
         {levers.map((l) => (
@@ -80,7 +88,12 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
               {!inputCodes.includes(l.impactMetricCode) && <span className="tag" title="Cette métrique n'est pas un input du modèle : le levier n'est pas simulé"> qualitatif</span>}
             </div>
             <div className="muted">Confiance {l.confidence} — base : {l.confidenceBasis}</div>
-            <button type="button" className="link" onClick={() => onOpenCard(l.id)} aria-label={`Fiche du levier ${l.label}`}>Fiche</button>
+            <button type="button" className="link" onClick={() => onOpenCard(l.id)} aria-label={`Fiche du levier ${l.label}`}>Fiche</button>{' '}
+            <button type="button" className="link" onClick={() => setEditing(l.id)} aria-label={`Modifier le levier ${l.label}`}>Modifier</button>
+            {editing === l.id && (
+              <LeverForm archetype={archetype} lever={l} onCancel={() => setEditing(null)}
+                onSubmit={(patch) => dispatch({ type: 'updateLever', id: l.id, patch })} />
+            )}
             {l.status === 'hypothesis' && (
               <div className="actions">
                 <button type="button" onClick={() => dispatch({ type: 'validateLever', id: l.id })}>Valider</button>

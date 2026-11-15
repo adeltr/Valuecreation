@@ -241,6 +241,52 @@ describe('App', () => {
     expect(within(sim).getByText('TRI')).toBeTruthy();
   });
 
+  it('the analyst writes a lever in a form, validates it, simulates it, then edits it — no JSON', () => {
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ajouter un levier' }));
+    const form = within(copilot).getByRole('form', { name: 'Nouveau levier' });
+    const set = (label: string | RegExp, value: string) => fireEvent.change(within(form).getByLabelText(label), { target: { value } });
+    set('Libellé', 'Recouvrement clients');
+    set('Mécanisme', 'relances automatisées');
+    set('Catégorie', 'WC_DSO');
+    set('Métrique cible', 'DSO');
+    expect(within(form).getByText(/en jours/)).toBeTruthy();
+    set(/^Variation attendue/, '-5');
+    set('Délai du premier impact (jours)', '90');
+    set(/^Confiance/, '0.7');
+    set('Base de la confiance', 'balance âgée analysée');
+    set(/^Coût de mise en œuvre/, '2');
+    fireEvent.click(within(form).getByRole('button', { name: 'Ajouter' }));
+
+    expect(within(copilot).queryByRole('form')).toBeNull();
+    expect(within(copilot).getByText('Recouvrement clients')).toBeTruthy();
+    expect(within(copilot).getByText('hypothèse')).toBeTruthy();
+    const before = moic();
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    fireEvent.click(within(screen.getByRole('region', { name: 'Simulation' })).getByRole('checkbox', { name: /Recouvrement clients/ }));
+    const withLever = moic();
+    expect(withLever).not.toBe(before);
+
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Modifier le levier Recouvrement clients' }));
+    const edit = within(copilot).getByRole('form', { name: 'Modifier le levier' });
+    expect((within(edit).getByLabelText('Libellé') as HTMLInputElement).value).toBe('Recouvrement clients');
+    fireEvent.change(within(edit).getByLabelText(/^Variation attendue/), { target: { value: '-30' } });
+    fireEvent.click(within(edit).getByRole('button', { name: 'Enregistrer' }));
+    expect(moic()).not.toBe(withLever);
+  });
+
+  it('the lever form refuses an incomplete lever and says why', () => {
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ajouter un levier' }));
+    const form = within(copilot).getByRole('form', { name: 'Nouveau levier' });
+    fireEvent.change(within(form).getByLabelText('Libellé'), { target: { value: 'Sans base' } });
+    fireEvent.click(within(form).getByRole('button', { name: 'Ajouter' }));
+    expect(screen.getByRole('alert').textContent).toMatch(/Levier refusé/);
+    expect(within(copilot).getByRole('form', { name: 'Nouveau levier' })).toBeTruthy(); // the form stays open
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
