@@ -34,10 +34,20 @@ Pour chaque société et chaque fenêtre de 3 ou 5 ans :
 | Croissance annuelle du CA | (CA fin / CA début)^(1/n) − 1 |
 | Δ DSO, DIO, DPO | créances / CA × 365 ; stocks et fournisseurs / coût des ventes × 365 |
 
+**Filtres de plausibilité.** Ils écartent les valeurs dues à un chiffre d'affaires quasi nul ou
+à une erreur de balisage XBRL, observées au premier import :
+- une fenêtre dont le CA de départ est inférieur à 10 M$ est exclue (micro-caps et sociétés
+  pré-revenu) ;
+- un niveau hors bornes n'est pas retenu : marge d'EBITDA hors de [−100 %, +100 %], DSO ou DPO
+  hors de [0, 365] jours, DIO hors de [0, 730] jours.
+
 Chaque fenêtre est rattachée à :
 - son **secteur**, de SIC vers archétype. Auto insurance n'a pas de SIC propre : elle est
   comptée en P&C (6331).
-- son **pays**, celui de l'adresse « business » ; une adresse aux États-Unis donne United States.
+- son **pays** : celui de l'adresse « business », ou à défaut celle de correspondance ; une adresse
+  aux États-Unis donne United States. Pour une société étrangère, l'app prend le nom du pays
+  quand le dépôt le donne, sinon sa description, sinon le code ISO, jamais le code d'État EDGAR
+  (« X0 »…).
 - sa **taille**, le CA en début de fenêtre : <50M, 50–250M, 250M–1B, 1–5B, >5B USD.
 - un **historique de deals** : la fenêtre contient-elle un 8-K item 2.01 (acquisition ou cession
   réalisée) ?
@@ -57,10 +67,25 @@ Chaque fenêtre garde l'URL de sa source.
 - Ce contrôle n'est pas calculable pour les familles P/BV et rNPV : leur modèle n'a ni CA ni
   EBITDA d'entrée.
 
+## Premier import réel (15/11/2026, avant les filtres de plausibilité)
+
+- 2 125 sociétés retenues, 20 907 fenêtres, exercices de 2007 à 2026, 89 sociétés sans données
+  XBRL.
+- Au moins 70 sociétés par secteur pour manufacturing, pharma, retail, mines, logiciel, medical
+  device, chimie, banque commerciale, biotech et healthcare provider.
+- Échantillons trop petits pour wine-spirits (3), waste et health payor (10). Auto insurance n'a
+  pas de SIC propre.
+- Deux corrections ont suivi : le pays des émetteurs étrangers sortait « Inconnu », et des
+  valeurs aberrantes venaient de micro-sociétés. Il faut relancer l'import ; les réponses sont
+  en cache, la relance est rapide.
+
 ## Limites
 
 - Ce sont des sociétés cotées, pas des cibles de LBO : il faut lire les résultats comme un ordre
   de grandeur.
+- L'échantillon est surtout américain : les émetteurs étrangers (20-F, 40-F) n'en représentent
+  qu'une petite partie.
+- Le SIC 7372 (« prepackaged software ») sert de proxy au SaaS et inclut des éditeurs non-SaaS.
 - L'EBITDA est reconstitué à partir des comptes publiés, sans retraitement.
 - Les KPI opérationnels propres à un secteur (load factor, CASK…) n'existent pas en XBRL
   standard. Ils viennent des observations de l'atelier (docs/18).

@@ -35,12 +35,12 @@ export async function importCompanies(
   for (const [i, cik] of ciks.entries()) {
     try {
       const subs = await sec.submissions(cik);
+      if (i % 100 === 0) log(`${i}/${ciks.length} sociétés lues, ${companies} retenues`);
       const profile = companyProfile(subs);
       if (!profile.archetype || !opts.archetypes.includes(profile.archetype)) continue;
       const metrics = yearMetrics(await sec.companyFacts(cik));
       const rows = opts.years.flatMap((y) => windowRecords(profile, metrics, acquisitionYears(subs), y));
       if (rows.length) { companies++; records.push(...rows); }
-      if (i % 100 === 0) log(`${i}/${ciks.length} sociétés lues, ${companies} retenues`);
     } catch (e) {
       skipped.push({ cik, reason: (e as Error).message });
     }

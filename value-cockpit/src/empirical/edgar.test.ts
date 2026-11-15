@@ -7,15 +7,15 @@ const inst = (y: number, val: number) => ({ end: `${y}-12-31`, val, fy: y, fp: '
 const facts = {
   cik: 1, entityName: 'Air Test Inc.',
   facts: { 'us-gaap': {
-    Revenues: { units: { USD: [fy(2018, 1000), fy(2019, 1100), fy(2020, 1210), fy(2021, 1331),
-      { start: '2021-10-01', end: '2021-12-31', val: 400, fy: 2021, fp: 'Q4', form: '10-K', filed: '2022-02-15' },  // quarter: ignored
-      fy(2020, 1200, { form: '10-K/A', filed: '2021-06-01' })] } },                                                     // amendment: latest filing wins
-    OperatingIncomeLoss: { units: { USD: [fy(2018, 80), fy(2019, 99), fy(2020, 120), fy(2021, 160)] } },
-    DepreciationDepletionAndAmortization: { units: { USD: [fy(2018, 20), fy(2019, 22), fy(2020, 24), fy(2021, 26)] } },
-    AccountsReceivableNetCurrent: { units: { USD: [inst(2018, 100), inst(2021, 73)] } },
-    CostOfRevenue: { units: { USD: [fy(2018, 600), fy(2021, 800)] } },
-    InventoryNet: { units: { USD: [inst(2018, 60), inst(2021, 40)] } },
-    AccountsPayableCurrent: { units: { USD: [inst(2018, 50), inst(2021, 88)] } },
+    Revenues: { units: { USD: [fy(2018, 1000e6), fy(2019, 1100e6), fy(2020, 1210e6), fy(2021, 1331e6),
+      { start: '2021-10-01', end: '2021-12-31', val: 400e6, fy: 2021, fp: 'Q4', form: '10-K', filed: '2022-02-15' },  // quarter: ignored
+      fy(2020, 1200e6, { form: '10-K/A', filed: '2021-06-01' })] } },                                                     // amendment: latest filing wins
+    OperatingIncomeLoss: { units: { USD: [fy(2018, 80e6), fy(2019, 99e6), fy(2020, 120e6), fy(2021, 160e6)] } },
+    DepreciationDepletionAndAmortization: { units: { USD: [fy(2018, 20e6), fy(2019, 22e6), fy(2020, 24e6), fy(2021, 26e6)] } },
+    AccountsReceivableNetCurrent: { units: { USD: [inst(2018, 100e6), inst(2021, 73e6)] } },
+    CostOfRevenue: { units: { USD: [fy(2018, 600e6), fy(2021, 800e6)] } },
+    InventoryNet: { units: { USD: [inst(2018, 60e6), inst(2021, 40e6)] } },
+    AccountsPayableCurrent: { units: { USD: [inst(2018, 50e6), inst(2021, 88e6)] } },
   } },
 };
 const submissions = {
@@ -26,18 +26,18 @@ const submissions = {
 
 describe('EDGAR parsing', () => {
   it('annual series: fiscal-year durations only, the latest filing of a year wins', () => {
-    expect(annualSeries(facts, ['Revenues'])).toEqual({ 2018: 1000, 2019: 1100, 2020: 1200, 2021: 1331 });
+    expect(annualSeries(facts, ['Revenues'])).toEqual({ 2018: 1000e6, 2019: 1100e6, 2020: 1200e6, 2021: 1331e6 });
   });
 
   it('falls back through concept aliases', () => {
     const alt = { ...facts, facts: { 'us-gaap': { RevenueFromContractWithCustomerExcludingAssessedTax: facts.facts['us-gaap'].Revenues } } };
-    expect(annualSeries(alt, ['Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax'])[2019]).toBe(1100);
+    expect(annualSeries(alt, ['Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax'])[2019]).toBe(1100e6);
   });
 
   it('per-year metrics in ontology terms: EBITDA margin, DSO, DIO, DPO', () => {
     const m = yearMetrics(facts);
-    expect(m[2018]).toEqual({ REVENUE: 1000, EBITDA_MARGIN: 0.1, DSO: 36.5, DIO: 36.5, DPO: (50 / 600) * 365 });
-    expect(m[2019]).toEqual({ REVENUE: 1100, EBITDA_MARGIN: 121 / 1100 });
+    expect(m[2018]).toEqual({ REVENUE: 1000e6, EBITDA_MARGIN: 0.1, DSO: 36.5, DIO: 36.5, DPO: (50 / 600) * 365 });
+    expect(m[2019]).toEqual({ REVENUE: 1100e6, EBITDA_MARGIN: 121 / 1100 });
   });
 
   it('profile: SIC → archetype, country, size bucket', () => {
@@ -51,13 +51,33 @@ describe('EDGAR parsing', () => {
     expect(sizeBucket(2e9)).toBe('1–5B');
   });
 
+  it('country of a foreign filer: country name first, then description, then mailing address, then ISO code — never an EDGAR state code', () => {
+    const at = (business: object, mailing: object = {}) => companyProfile({ ...submissions, addresses: { business, mailing } } as never).country;
+    expect(at({ isForeignLocation: 1, country: 'UNITED KINGDOM', countryCode: 'GB', stateOrCountry: 'X0', stateOrCountryDescription: null })).toBe('United Kingdom');
+    expect(at({ isForeignLocation: 1, stateOrCountry: 'X0', stateOrCountryDescription: 'United Kingdom' })).toBe('United Kingdom');
+    expect(at({ isForeignLocation: 1, stateOrCountry: 'X0' }, { isForeignLocation: 1, country: 'IRELAND' })).toBe('Ireland');
+    expect(at({ isForeignLocation: 1, countryCode: 'DE' })).toBe('DE');
+    expect(at({}, { isForeignLocation: 0, stateOrCountry: 'NY' })).toBe('United States');
+  });
+
+  it('plausibility: micro-revenue windows are excluded, impossible levels are dropped', () => {
+    const tiny = { ...facts, facts: { 'us-gaap': { ...facts.facts['us-gaap'], Revenues: { units: { USD: [fy(2018, 2e6), fy(2021, 3e6)] } } } } };
+    expect(windowRecords(companyProfile(submissions), yearMetrics(tiny), [], 3)).toEqual([]);
+    const wild = { ...facts, facts: { 'us-gaap': { ...facts.facts['us-gaap'],
+      Revenues: { units: { USD: [fy(2018, 20e6)] } },
+      OperatingIncomeLoss: { units: { USD: [fy(2018, -60e6)] } },          // margin −300 %: dropped
+      AccountsReceivableNetCurrent: { units: { USD: [inst(2018, 60e6)] } }, // DSO 1 095 days: dropped
+    } } };
+    expect(yearMetrics(wild)[2018]).toEqual({ REVENUE: 20e6, DIO: (60 / 600) * 365, DPO: (50 / 600) * 365 });
+  });
+
   it('deal history: years with a completed acquisition (8-K item 2.01)', () => {
     expect(acquisitionYears(submissions)).toEqual([2019]);
   });
 
   it('window records: change of each metric over n years, size at start, deal flag', () => {
     const [r] = windowRecords(companyProfile(submissions), yearMetrics(facts), acquisitionYears(submissions), 3);
-    expect(r).toMatchObject({ cik: 1, archetype: 'airline', country: 'United States', startYear: 2018, endYear: 2021, sizeBucket: '<50M', acquisition: true });
+    expect(r).toMatchObject({ cik: 1, archetype: 'airline', country: 'United States', startYear: 2018, endYear: 2021, sizeBucket: '1–5B', acquisition: true });
     expect(r.deltas.EBITDA_MARGIN).toBeCloseTo(186 / 1331 - 0.1, 12);
     expect(r.deltas.REVENUE_GROWTH).toBeCloseTo((1331 / 1000) ** (1 / 3) - 1, 12);
     expect(r.deltas.DSO).toBeCloseTo(73 / 1331 * 365 - 36.5, 12);

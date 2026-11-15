@@ -5,11 +5,15 @@ import type { SectorArchetype } from '../ontology/registry';
  * companyfacts and submissions APIs. Empirical figures are public filings data, never model output.
  */
 
+interface Address {
+  stateOrCountry?: string | null; stateOrCountryDescription?: string | null; isForeignLocation?: number | null;
+  country?: string | null; countryCode?: string | null;
+}
 interface Fact { start?: string; end: string; val: number; fy?: number; fp?: string; form?: string; filed?: string }
 export interface CompanyFacts { cik: number; entityName?: string; facts: Record<string, Record<string, { units: Record<string, Fact[]> }>> }
 export interface Submissions {
   cik: string | number; name: string; sic: string | number;
-  addresses?: { business?: { stateOrCountry?: string; stateOrCountryDescription?: string; isForeignLocation?: number } };
+  addresses?: Partial<Record<'business' | 'mailing', Address>>;
   filings?: { recent?: { form: string[]; items?: string[]; filingDate: string[] } };
 }
 
@@ -46,6 +50,15 @@ const CONCEPTS = {
 
 export type EmpiricalMetric = 'REVENUE' | 'EBITDA_MARGIN' | 'DSO' | 'DIO' | 'DPO';
 
+// Levels outside these bounds come from near-zero revenue or tagging errors, not from operations.
+const PLAUSIBLE: Record<EmpiricalMetric, (v: number) => boolean> = {
+  REVENUE: (v) => v > 0,
+  EBITDA_MARGIN: (v) => v >= -1 && v <= 1,
+  DSO: (v) => v >= 0 && v <= 365, DIO: (v) => v >= 0 && v <= 730, DPO: (v) => v >= 0 && v <= 365,
+};
+/** Windows starting below this revenue (micro-caps, pre-revenue) are left out of the benchmarks. */
+export const MIN_REVENUE_USD = 10e6;
+
 /** Per fiscal year, the ontology metrics computable from the filing (EBITDA = operating income + D&A). */
 export function yearMetrics(cf: CompanyFacts): Record<number, Partial<Record<EmpiricalMetric, number>>> {
   const s = Object.fromEntries(Object.entries(CONCEPTS).map(([k, c]) => [k, annualSeries(cf, c)])) as Record<keyof typeof CONCEPTS, Record<number, number>>;
@@ -54,10 +67,11 @@ export function yearMetrics(cf: CompanyFacts): Record<number, Partial<Record<Emp
     const rev = s.revenue[y];
     if (!(rev > 0)) continue;
     const m: Partial<Record<EmpiricalMetric, number>> = { REVENUE: rev };
-    if (s.operatingIncome[y] !== undefined && s.da[y] !== undefined) m.EBITDA_MARGIN = (s.operatingIncome[y] + s.da[y]) / rev;
-    if (s.receivables[y] !== undefined) m.DSO = (s.receivables[y] / rev) * 365;
-    if (s.cogs[y] > 0 && s.inventory[y] !== undefined) m.DIO = (s.inventory[y] / s.cogs[y]) * 365;
-    if (s.cogs[y] > 0 && s.payables[y] !== undefined) m.DPO = (s.payables[y] / s.cogs[y]) * 365;
+    const keep = (k: EmpiricalMetric, v: number) => { if (PLAUSIBLE[k](v)) m[k] = v; };
+    if (s.operatingIncome[y] !== undefined && s.da[y] !== undefined) keep('EBITDA_MARGIN', (s.operatingIncome[y] + s.da[y]) / rev);
+    if (s.receivables[y] !== undefined) keep('DSO', (s.receivables[y] / rev) * 365);
+    if (s.cogs[y] > 0 && s.inventory[y] !== undefined) keep('DIO', (s.inventory[y] / s.cogs[y]) * 365);
+    if (s.cogs[y] > 0 && s.payables[y] !== undefined) keep('DPO', (s.payables[y] / s.cogs[y]) * 365);
     out[y] = m;
   }
   return out;
@@ -81,13 +95,23 @@ export function sicToArchetype(sic: number): SectorArchetype | null {
 
 export interface CompanyProfile { cik: number; name: string; sic: number; archetype: SectorArchetype | null; country: string }
 
+const titleCase = (s: string) => s.toLowerCase().replace(/\b\p{L}/gu, (c) => c.toUpperCase());
+
+/** Country of the business address (mailing as fallback): full name when the filing gives one. */
+function countryOf(addresses: Submissions['addresses']): string {
+  const all = [addresses?.business, addresses?.mailing].filter((a): a is Address => !!a);
+  const foreign = all.filter((a) => a.isForeignLocation === 1);
+  if (all.length && foreign.length === 0) return 'United States';
+  for (const a of foreign) if (a.country) return titleCase(a.country);
+  // A description equal to the 2-character EDGAR code (e.g. "X0") is not a country name.
+  for (const a of foreign) if (a.stateOrCountryDescription && a.stateOrCountryDescription !== a.stateOrCountry) return a.stateOrCountryDescription;
+  for (const a of foreign) if (a.countryCode) return a.countryCode;
+  return 'Inconnu';
+}
+
 export function companyProfile(s: Submissions): CompanyProfile {
-  const b = s.addresses?.business;
   const sic = Number(s.sic);
-  return {
-    cik: Number(s.cik), name: s.name, sic, archetype: sicToArchetype(sic),
-    country: b?.isForeignLocation === 1 ? (b.stateOrCountryDescription ?? 'Inconnu') : 'United States',
-  };
+  return { cik: Number(s.cik), name: s.name, sic, archetype: sicToArchetype(sic), country: countryOf(s.addresses) };
 }
 
 /** Deal history from filings: years with a completed acquisition or disposition (8-K item 2.01). */
@@ -122,7 +146,7 @@ export function windowRecords(
   const out: WindowRecord[] = [];
   for (const start of Object.keys(metrics).map(Number).sort()) {
     const a = metrics[start], b = metrics[start + years];
-    if (!a?.REVENUE || !b?.REVENUE) continue;
+    if (!a?.REVENUE || !b?.REVENUE || a.REVENUE < MIN_REVENUE_USD) continue;
     const deltas: WindowRecord['deltas'] = { REVENUE_GROWTH: (b.REVENUE / a.REVENUE) ** (1 / years) - 1 };
     for (const k of ['EBITDA_MARGIN', 'DSO', 'DIO', 'DPO'] as const) {
       if (a[k] !== undefined && b[k] !== undefined) deltas[k] = b[k]! - a[k]!;

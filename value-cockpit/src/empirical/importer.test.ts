@@ -3,9 +3,9 @@ import { importCompanies, secUserAgent, type SecClient } from './importer';
 
 const fy = (y: number, val: number) => ({ start: `${y}-01-01`, end: `${y}-12-31`, val, fy: y, fp: 'FY', form: '10-K', filed: `${y + 1}-02-01` });
 const facts = (cik: number) => ({ cik, facts: { 'us-gaap': {
-  Revenues: { units: { USD: [2016, 2017, 2018, 2019, 2020, 2021].map((y, i) => fy(y, 1000 + 100 * i)) } },
-  OperatingIncomeLoss: { units: { USD: [2016, 2017, 2018, 2019, 2020, 2021].map((y) => fy(y, 100)) } },
-  DepreciationDepletionAndAmortization: { units: { USD: [2016, 2017, 2018, 2019, 2020, 2021].map((y) => fy(y, 10)) } },
+  Revenues: { units: { USD: [2016, 2017, 2018, 2019, 2020, 2021].map((y, i) => fy(y, (1000 + 100 * i) * 1e6)) } },
+  OperatingIncomeLoss: { units: { USD: [2016, 2017, 2018, 2019, 2020, 2021].map((y) => fy(y, 100e6)) } },
+  DepreciationDepletionAndAmortization: { units: { USD: [2016, 2017, 2018, 2019, 2020, 2021].map((y) => fy(y, 10e6)) } },
 } } });
 const subs = (cik: number, sic: string) => ({ cik: String(cik), name: `Co ${cik}`, sic, addresses: { business: { isForeignLocation: 0 } }, filings: { recent: { form: [], items: [], filingDate: [] } } });
 
