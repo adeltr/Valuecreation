@@ -196,6 +196,20 @@ describe('App', () => {
     expect((within(ws).getByLabelText('Analyse à mener') as HTMLSelectElement).value).toMatch(/^airline-\d\d$/);
   });
 
+  it('a lever on a metric outside the model is marked qualitative and cannot be simulated', () => {
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    const qualitative = proposal.replace(/FUEL_CASK/g, 'ON_TIME_PERFORMANCE').replace('FUEL_EFFICIENCY', 'AIRPORT_GROUND_COST');
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: qualitative } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    expect(within(copilot).getByText(/qualitatif/)).toBeTruthy();
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    const sim = screen.getByRole('region', { name: 'Simulation' });
+    const box = within(sim).getByRole('checkbox', { name: /Renouvellement de flotte.*qualitatif/ }) as HTMLInputElement;
+    expect(box.disabled).toBe(true);
+    expect(screen.queryByRole('alert')).toBeNull();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });

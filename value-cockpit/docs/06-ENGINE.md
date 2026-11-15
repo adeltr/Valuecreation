@@ -51,6 +51,20 @@ DSO, points pour un percent). `deltaKind='percent'` est toujours relatif à la
 valeur courante. Toute UI doit afficher l'unité résolue pour éviter l'ambiguïté
 « −20 ».
 
+## Cibles de leviers (`src/templates/targets.ts`)
+
+Le vocabulaire d'un archétype est plus large que son modèle. `modelTargets(archetype)` classe les
+cibles possibles d'un levier :
+
+| Classe | Définition | Traitement |
+|---|---|---|
+| chiffrée | input du template que le vocabulaire laisse bouger | simulée par le moteur |
+| diagnostic | métrique du vocabulaire absente du modèle | levier **qualitatif** : accepté, visible dans le plan, jamais simulé |
+| calculée | sortie du modèle (agrégats de sortie, equity, MOIC) | refusée à l'ingestion : un levier agit sur un input |
+
+Le prompt du copilote présente ces classes séparément. La règle s'applique à l'ingestion, au
+scénario (reducer) et au chargement d'un dossier.
+
 ## Limitations documentées (phase 3)
 - Interactions : seulement les règles déclarées par le template (prix → volume
   via `PRICE_ELASTICITY` pour chemical, cosmetics, cpg, manufacturing, 3PL,

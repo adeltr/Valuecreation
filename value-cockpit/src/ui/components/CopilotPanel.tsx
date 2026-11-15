@@ -10,9 +10,11 @@ const today = () => new Date().toISOString().slice(0, 10);
 interface Props {
   archetype: SectorArchetype; levers: Lever[]; rootCauses: RootCause[]; dispatch: Dispatch<Action>;
   onOpenCard: (leverId: string) => void;
+  /** Codes of the model inputs: a lever on any other metric is qualitative. */
+  inputCodes: string[];
 }
 
-export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCard }: Props) {
+export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCard, inputCodes }: Props) {
   const [message, setMessage] = useState('');
   const [raw, setRaw] = useState('');
   const [pending, setPending] = useState(false);
@@ -75,6 +77,7 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
             <div>
               <span className={`badge badge-${l.status}`}>{STATUS_LABEL[l.status]}</span> <strong>{l.label}</strong>
               <span className="tag">{l.category}</span> → {l.impactMetricCode} {l.expectedDelta > 0 ? '+' : ''}{l.expectedDelta} ({l.deltaKind})
+              {!inputCodes.includes(l.impactMetricCode) && <span className="tag" title="Cette métrique n'est pas un input du modèle : le levier n'est pas simulé"> qualitatif</span>}
             </div>
             <div className="muted">Confiance {l.confidence} — base : {l.confidenceBasis}</div>
             <button type="button" className="link" onClick={() => onOpenCard(l.id)} aria-label={`Fiche du levier ${l.label}`}>Fiche</button>

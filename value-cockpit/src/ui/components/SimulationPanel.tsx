@@ -16,7 +16,8 @@ interface Props {
 export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows, multipleLabel }: Props) {
   const unit = (code: string) => metrics.find((m) => m.code === code)?.unit ?? 'currency';
   const scen = new Map(scenario?.map((r) => [r.metricCode, r.value]));
-  const selectable = (l: Lever) => l.status === 'validated';
+  const quantified = (l: Lever) => l.impactMetricCode in state.inputs;
+  const selectable = (l: Lever) => l.status === 'validated' && quantified(l);
   const exitMultiple = state.scenario.assumptions.EXIT_MULTIPLE ?? state.inputs.EXIT_MULTIPLE;
 
   return (
@@ -31,7 +32,7 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
               <label className={selectable(l) ? '' : 'muted'}>
                 <input type="checkbox" checked={on} disabled={!selectable(l)}
                   onChange={() => dispatch({ type: 'toggleScenarioLever', id: l.id })} />
-                {' '}{l.label}{!selectable(l) && ' (à valider)'}
+                {' '}{l.label}{!quantified(l) ? ' (qualitatif, non simulé)' : l.status !== 'validated' && ' (à valider)'}
               </label>
               {on && (
                 <input aria-label={`Delta appliqué ${l.label}`} type="number" step="any" className="delta"

@@ -4,6 +4,7 @@ import { SCENARIO_ASSUMPTION_CODES } from '../ontology/base';
 import { makeLeverSchema, makeRootCauseSchema } from '../domain/schemas';
 import type { Lever, RootCause } from '../domain/types';
 import { TEMPLATES } from '../templates';
+import { modelTargets } from '../templates/targets';
 import { getCatalog } from '../catalog';
 import { findFormula, observationValue, type Observation } from '../workshop/observations';
 
@@ -132,13 +133,17 @@ export function parseDossier(raw: unknown): DossierCase {
   }
 
   const vocab = getActiveVocabulary(archetype);
-  const levers = parseWith(z.array(makeLeverSchema(vocab)), file.levers, 'Levier') as Lever[];
+  const levers = parseWith(z.array(makeLeverSchema(vocab, modelTargets(archetype).calculated)), file.levers, 'Levier') as Lever[];
   const rootCauses = parseWith(z.array(makeRootCauseSchema(vocab)), file.rootCauses, 'Cause') as RootCause[];
 
   const { leverIds, applied, assumptions } = file.scenario;
   for (const id of leverIds) {
-    if (levers.find((l) => l.id === id)?.status !== 'validated') {
+    const lever = levers.find((l) => l.id === id);
+    if (lever?.status !== 'validated') {
       throw new Error(`Scénario invalide : le levier ${id} n'est pas validé par l'analyste`);
+    }
+    if (!expected.includes(lever.impactMetricCode)) {
+      throw new Error(`Scénario invalide : le levier ${id} est qualitatif (${lever.impactMetricCode} n'est pas un input du modèle)`);
     }
   }
   const appliedKeys = Object.keys(applied);

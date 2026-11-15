@@ -2,6 +2,7 @@ import express from 'express';
 import { sanitizeProposal, type CopilotProposal } from '../copilot/proposal';
 import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
 import { getCatalog } from '../catalog';
+import { modelTargets } from '../templates/targets';
 import type { DossierRepository } from '../dossier/repository';
 import { dossierRoutes } from './dossierRoutes';
 import { empiricalRoutes } from './empiricalRoutes';
@@ -9,12 +10,15 @@ import type { EmpiricalDataset } from '../empirical/importer';
 
 export function buildSystemPrompt(archetype: SectorArchetype): string {
   const v = getActiveVocabulary(archetype);
+  const targets = modelTargets(archetype);
   return [
     'You propose root causes and levers for a PE value driver tree.',
     'Return ONLY a JSON object: { "rootCauses": [...], "levers": [...] }. No prose, no markdown.',
     `Lever.category MUST be one of: ${v.leverCategories.join(', ')}.`,
     `RootCause.category MUST be one of: ${v.causeCategories.join(', ')}.`,
-    `impactMetricCode MUST be one of: ${v.metricCodes.filter(v.isLeverTarget).join(', ')}.`,
+    ...(targets.quantified.length ? [`impactMetricCode MUST preferably be one of the model inputs, whose impact the engine computes: ${targets.quantified.join(', ')}.`] : []),
+    `impactMetricCode MAY otherwise be one of these diagnostic metrics — the lever is then qualitative and is not simulated: ${targets.diagnostic.join(', ')}.`,
+    'NEVER target a metric the model computes (exit aggregates, equity, MOIC): a lever acts on an input.',
     "Every lever MUST include deltaKind ('absolute' or 'percent') and a non-empty confidenceBasis.",
     'NEVER output computed figures, scenario results, exit multiples, or assumptions — the engine and the analyst own those.',
     ...catalogSection(archetype),
@@ -37,7 +41,7 @@ export async function handleProposal(
 ): Promise<CopilotProposal> {
   const text = await callModel(buildSystemPrompt(archetype), userMessage);
   const cleaned = text.replace(/```json|```/g, '').trim();
-  return sanitizeProposal(JSON.parse(cleaned), getActiveVocabulary(archetype));
+  return sanitizeProposal(JSON.parse(cleaned), getActiveVocabulary(archetype), modelTargets(archetype).calculated);
 }
 
 export function createServer(

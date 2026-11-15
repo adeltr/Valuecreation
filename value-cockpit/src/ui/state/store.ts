@@ -2,6 +2,7 @@ import type { Lever, Metric, ScenarioResult } from '../../domain/types';
 import { getActiveVocabulary, type SectorArchetype } from '../../ontology/registry';
 import { SCENARIO_ASSUMPTION_CODES } from '../../ontology/base';
 import { TEMPLATES } from '../../templates';
+import { modelTargets } from '../../templates/targets';
 import { sanitizeProposal } from '../../copilot/proposal';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
@@ -122,7 +123,7 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
 
     case 'ingestProposal': {
       try {
-        const clean = sanitizeProposal(action.raw, getActiveVocabulary(state.archetype));
+        const clean = sanitizeProposal(action.raw, getActiveVocabulary(state.archetype), modelTargets(state.archetype).calculated);
         let n = state.nextId;
         const { levers, rootCauses } = ingestProposal(clean, () => `h${n++}`, () => action.today);
         return { ...state, levers: [...state.levers, ...levers], rootCauses: [...state.rootCauses, ...rootCauses], nextId: n, error: null };
@@ -142,6 +143,9 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
       const lever = state.levers.find((l) => l.id === action.id);
       if (!lever || lever.status !== 'validated') {
         return { ...state, error: 'Seul un levier validé par l\'analyste peut entrer dans un scénario.' };
+      }
+      if (!(lever.impactMetricCode in state.inputs)) {
+        return { ...state, error: `Levier qualitatif : ${lever.impactMetricCode} n'est pas un input du modèle, son impact n'est pas simulé.` };
       }
       return {
         ...state,

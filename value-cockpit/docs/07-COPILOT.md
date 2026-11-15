@@ -20,7 +20,9 @@ prompt système (vocabulaire actif + catalogue d'analyses injectés, JSON-only)
 
 ## Prompt système (construit par archétype)
 Injecté dynamiquement depuis le registry :
-- catégories de leviers et de causes actives, codes de métriques actifs ;
+- catégories de leviers et de causes actives ;
+- cibles de leviers en deux listes : inputs du modèle (chiffrés par le moteur) et métriques de
+  diagnostic (levier qualitatif) ; les métriques calculées ne sont jamais des cibles (docs/06) ;
 - exigences : JSON pur, `deltaKind` obligatoire, `confidenceBasis` non vide ;
 - interdictions : chiffres calculés, multiples, résultats de scénario ;
 - **catalogue d'analyses de l'archétype** (ids + titres + liens) : le copilote

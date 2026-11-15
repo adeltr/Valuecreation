@@ -130,5 +130,14 @@ describe('dossier file', () => {
     const { observations: _o, ...v2 } = toDossier(workedCase(), 't');
     expect(parseDossier({ ...v2, version: 2 }).observations).toEqual([]);
   });
+
+  it('rejects a lever on a computed metric, and a scenario lever the model cannot quantify', () => {
+    const file = toDossier(workedCase(), 't');
+    expect(() => parseDossier({ ...file, levers: [{ ...file.levers[0], impactMetricCode: 'EBITDA_EXIT' }] })).toThrow(/EBITDA_EXIT/);
+    expect(() => parseDossier({ ...file, levers: [{ ...file.levers[0], impactMetricCode: 'ON_TIME_PERFORMANCE' }] })).toThrow(/qualitatif/);
+    const { leverIds: _l, applied: _a, ...rest } = file.scenario;
+    const qualitative = { ...file, levers: [{ ...file.levers[0], impactMetricCode: 'ON_TIME_PERFORMANCE' }], scenario: { ...rest, leverIds: [], applied: {} }, plan: {} };
+    expect(parseDossier(qualitative).levers[0].impactMetricCode).toBe('ON_TIME_PERFORMANCE');
+  });
 });
 

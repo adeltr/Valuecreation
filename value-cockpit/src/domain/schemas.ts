@@ -5,7 +5,13 @@ import { DELTA_KINDS } from '../ontology/base';
 const inVocab = (check: (v: unknown) => boolean, what: string) =>
   z.string().refine(check, { message: `not in active vocabulary: ${what}` });
 
-export function makeLeverSchema(vocab: ActiveVocabulary) {
+/** A lever target: in the active vocabulary, and never a metric the model computes. */
+export function leverTarget(vocab: ActiveVocabulary, calculated: readonly string[]) {
+  return inVocab(vocab.isLeverTarget, 'lever target metric code')
+    .refine((c) => !calculated.includes(c), (c) => ({ message: `${c} est calculé par le modèle : un levier agit sur un input` }));
+}
+
+export function makeLeverSchema(vocab: ActiveVocabulary, calculated: readonly string[] = []) {
   return z.object({
     id: z.string(),
     nodeId: z.string(),
@@ -13,7 +19,7 @@ export function makeLeverSchema(vocab: ActiveVocabulary) {
     label: z.string().min(1),
     mechanism: z.string().min(1),
     category: inVocab(vocab.isLeverCategory, 'lever category'),
-    impactMetricCode: inVocab(vocab.isLeverTarget, 'lever target metric code'),
+    impactMetricCode: leverTarget(vocab, calculated),
     expectedDelta: z.number(),
     deltaKind: z.enum(DELTA_KINDS),
     timeToImpactDays: z.number().int().nonnegative(),

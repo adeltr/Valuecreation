@@ -94,7 +94,8 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
       <main className="grid">
         <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} />
         <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} />
-        <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId} />
+        <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
+          inputCodes={Object.keys(state.inputs)} />
         {cardLever && (
           <LeverCardPanel lever={cardLever} metrics={metrics} catalog={catalog}
             interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)}

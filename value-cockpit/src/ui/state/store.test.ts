@@ -146,6 +146,26 @@ describe('cockpit store', () => {
     expect(after.error).not.toMatch(/\[\s*\{/);
   });
 
+  describe('lever targets the model cannot compute', () => {
+    const on = (code: string, category = 'FUEL_EFFICIENCY') => ({ levers: [{ ...proposal.levers[0], impactMetricCode: code, nodeId: code, category }] });
+
+    it('refuses a lever on a metric the model computes (a lever acts on an input)', () => {
+      const s = ingest(airline(), on('EBITDA_EXIT'));
+      expect(s.levers).toEqual([]);
+      expect(s.error).toMatch(/EBITDA_EXIT.*calcul/);
+    });
+
+    it('accepts a lever on a diagnostic metric as qualitative, but never simulates it', () => {
+      let s = ingest(airline(), on('ON_TIME_PERFORMANCE', 'AIRPORT_GROUND_COST'));
+      expect(s.levers).toHaveLength(1);
+      const id = s.levers[0].id;
+      s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
+      expect(s.scenario.leverIds).toEqual([]);
+      expect(s.error).toMatch(/qualitatif/);
+      expect(() => selectScenario(s)).not.toThrow();
+    });
+  });
+
   describe('workshop observations', () => {
     const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
     const vars = findFormula(getCatalog('airline'), lf.id, 'Load Factor')!.variables;
