@@ -13,9 +13,11 @@ interface Props {
   onOpenCard: (leverId: string) => void;
   /** Codes of the model inputs: a lever on any other metric is qualitative. */
   inputCodes: string[];
+  /** The current case as a dossier file, sent with the question so the copilot reasons on the company. */
+  company: () => unknown;
 }
 
-export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCard, inputCodes }: Props) {
+export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCard, inputCodes, company }: Props) {
   const [message, setMessage] = useState('');
   const [raw, setRaw] = useState('');
   const [pending, setPending] = useState(false);
@@ -30,7 +32,7 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
     try {
       const res = await fetch('/api/propose', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ archetype, message }),
+        body: JSON.stringify({ archetype, message, company: company() }),
       });
       const body = await res.json();
       if (!res.ok) throw new Error(body.error ?? res.statusText);

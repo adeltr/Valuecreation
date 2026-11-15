@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { buildSystemPrompt, handleProposal } from './proxy';
+import { toDossier } from '../dossier/format';
+import { initialState, reducer } from '../ui/state/store';
 
 describe('proxy', () => {
   it('system prompt injects the ACTIVE vocabulary for the archetype', () => {
@@ -62,6 +64,30 @@ describe('proxy – model inputs vs diagnostics', () => {
       expectedDelta: 10, deltaKind: 'absolute', timeToImpactDays: 30, effort: 'low', confidence: 0.5, confidenceBasis: 'b',
     }] });
     await expect(handleProposal('airline', 'x', async () => reply)).rejects.toThrow(/EBITDA_EXIT/);
+  });
+});
+
+describe('proxy – company data', () => {
+  const company = () => toDossier(reducer(initialState('airline'), { type: 'setName', name: 'Air X' }), 't');
+
+  it('adds the validated company brief to the question sent to the model', async () => {
+    let seen = '';
+    await handleProposal('airline', 'Pourquoi la marge baisse ?', async (_s, user) => { seen = user; return '{}'; }, company());
+    expect(seen).toMatch(/Pourquoi la marge baisse \?/);
+    expect(seen).toMatch(/COMPANY DATA/);
+    expect(seen).toMatch(/LOAD_FACTOR \(Load Factor\): 0\.82/);
+  });
+
+  it('refuses company data that is not a valid dossier, or is for another company type', async () => {
+    const call = async () => '{}';
+    await expect(handleProposal('airline', 'x', call, { ...company(), inputs: { MOIC: 9 } })).rejects.toThrow(/Inputs incompatibles/);
+    await expect(handleProposal('cpg', 'x', call, company())).rejects.toThrow(/airline/);
+  });
+
+  it('works without company data (question only)', async () => {
+    let seen = '';
+    await handleProposal('airline', 'x', async (_s, user) => { seen = user; return '{}'; });
+    expect(seen).toBe('x');
   });
 });
 

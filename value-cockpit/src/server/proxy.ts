@@ -3,6 +3,8 @@ import { sanitizeProposal, type CopilotProposal } from '../copilot/proposal';
 import { getActiveVocabulary, type SectorArchetype } from '../ontology/registry';
 import { getCatalog } from '../catalog';
 import { modelTargets } from '../templates/targets';
+import { parseDossier } from '../dossier/format';
+import { buildCompanyBrief } from '../copilot/brief';
 import type { DossierRepository } from '../dossier/repository';
 import { dossierRoutes } from './dossierRoutes';
 import { empiricalRoutes } from './empiricalRoutes';
@@ -21,6 +23,7 @@ export function buildSystemPrompt(archetype: SectorArchetype): string {
     'NEVER target a metric the model computes (exit aggregates, equity, MOIC): a lever acts on an input.',
     "Every lever MUST include deltaKind ('absolute' or 'percent') and a non-empty confidenceBasis.",
     'NEVER output computed figures, scenario results, exit multiples, or assumptions — the engine and the analyst own those.',
+    'The user message may end with a COMPANY DATA block: ground your causes and levers in it (cite the input or observation in "evidence" or "confidenceBasis"), size expectedDelta against the current value of the target, and do not repeat levers already on file.',
     ...catalogSection(archetype),
   ].join('\n');
 }
@@ -38,8 +41,16 @@ export async function handleProposal(
   archetype: SectorArchetype,
   userMessage: string,
   callModel: (system: string, user: string) => Promise<string>,
+  company?: unknown,
 ): Promise<CopilotProposal> {
-  const text = await callModel(buildSystemPrompt(archetype), userMessage);
+  let user = userMessage;
+  if (company !== undefined && company !== null) {
+    // Untrusted client data: validated as a dossier, figures recomputed by the engine in the brief.
+    const dossier = parseDossier(company);
+    if (dossier.archetype !== archetype) throw new Error(`Les données de l'entreprise sont de type ${dossier.archetype}, pas ${archetype}`);
+    user = `${userMessage}\n\n${buildCompanyBrief(dossier)}`;
+  }
+  const text = await callModel(buildSystemPrompt(archetype), user);
   const cleaned = text.replace(/```json|```/g, '').trim();
   return sanitizeProposal(JSON.parse(cleaned), getActiveVocabulary(archetype), modelTargets(archetype).calculated);
 }
@@ -51,11 +62,11 @@ export function createServer(
   const app = express();
   if (options.dossiers) app.use('/api/dossiers', dossierRoutes(options.dossiers));
   if (options.empirical) app.use('/api/empirical', empiricalRoutes(options.empirical));
-  app.use(express.json());
+  app.use(express.json({ limit: '2mb' }));
   app.post('/api/propose', async (req, res) => {
     try {
       const archetype = (req.body?.archetype ?? 'generic') as SectorArchetype;
-      res.json(await handleProposal(archetype, String(req.body?.message ?? ''), callModel));
+      res.json(await handleProposal(archetype, String(req.body?.message ?? ''), callModel, req.body?.company));
     } catch (e) {
       res.status(422).json({ error: (e as Error).message });
     }

@@ -17,6 +17,7 @@ import { WorkshopPanel } from './components/WorkshopPanel';
 import { EmpiricalPanel } from './components/EmpiricalPanel';
 import { impliedTrajectory } from '../empirical/realism';
 import { entryChecks } from './model/entryChecks';
+import { toDossier } from '../dossier/format';
 import type { DossierRepository } from '../dossier/repository';
 import { connectRepository, type DossierLocation } from './state/httpRepository';
 import { hasUnsavedWork } from './state/unsaved';
@@ -98,7 +99,8 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
           bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} context={state.context}
           checks={entryChecks(metrics, getBridgeFamily(state.archetype))} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
-          inputCodes={Object.keys(state.inputs)} />
+          inputCodes={Object.keys(state.inputs)}
+          company={() => toDossier({ ...state, name: state.name.trim() || 'Dossier sans nom' }, new Date().toISOString())} />
         {cardLever && (
           <LeverCardPanel lever={cardLever} metrics={metrics} catalog={catalog}
             interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)}
