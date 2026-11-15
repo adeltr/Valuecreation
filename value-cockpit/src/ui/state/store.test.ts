@@ -180,6 +180,50 @@ describe('cockpit store', () => {
     expect(selectScenario(costly).find((r) => r.metricCode === 'PLAN_ONE_OFF_COSTS')!.value).toBe(30);
   });
 
+  describe('levers written by the analyst', () => {
+    const draft = {
+      label: 'Recouvrement clients', mechanism: 'relances automatisées', category: 'WC_DSO', impactMetricCode: 'DSO',
+      expectedDelta: -5, deltaKind: 'absolute' as const, timeToImpactDays: 90, effort: 'low' as const,
+      confidence: 0.7, confidenceBasis: 'balance âgée analysée', implementationCost: 2,
+    };
+    const add = (s: CockpitState, d: object = draft) => reducer(s, { type: 'addLever', draft: d as typeof draft });
+
+    it('adds an analyst lever as a hypothesis: the gate is the same for everyone (invariant 4)', () => {
+      const s = add(airline());
+      expect(s.levers[0]).toMatchObject({ ...draft, id: 'h1', source: 'analyst', status: 'hypothesis', nodeId: 'DSO', causeId: null });
+      expect(s.nextId).toBe(2);
+    });
+
+    it('applies the same rules as the copilot: vocabulary, model inputs, confidence basis', () => {
+      expect(add(airline(), { ...draft, category: 'BOOK_TO_BILL' }).error).toMatch(/Levier refusé.*category/);
+      expect(add(airline(), { ...draft, impactMetricCode: 'EBITDA_EXIT' }).error).toMatch(/calculé/);
+      expect(add(airline(), { ...draft, confidenceBasis: '' }).error).toMatch(/confidenceBasis/);
+      expect(add(airline(), { ...draft, implementationCost: -1 }).error).toMatch(/implementationCost/);
+      expect(add(airline(), { ...draft, label: '' }).levers).toEqual([]);
+    });
+
+    it('once validated it is simulated: 5 days of DSO are worth cash, the cost is deducted', () => {
+      let s = add(airline());
+      s = reducer(reducer(s, { type: 'validateLever', id: 'h1' }), { type: 'toggleScenarioLever', id: 'h1' });
+      const r = new Map(selectScenario(s).map((x) => [x.metricCode, x.value]));
+      const base = selectBaseline(s);
+      expect(r.get('CUMULATIVE_FCF')! - base.get('CUMULATIVE_FCF')!).toBeCloseTo(base.get('REVENUE_EXIT')! * 5 / 365 - 2, 8);
+    });
+
+    it('editing a lever re-validates it and keeps the scenario consistent', () => {
+      let s = add(airline());
+      s = reducer(reducer(s, { type: 'validateLever', id: 'h1' }), { type: 'toggleScenarioLever', id: 'h1' });
+      s = reducer(s, { type: 'updateLever', id: 'h1', patch: { expectedDelta: -8, implementationCost: 0 } });
+      expect(s.levers[0]).toMatchObject({ expectedDelta: -8, implementationCost: 0, status: 'validated' });
+      expect(s.scenario.applied.h1).toBe(-8);
+      const bad = reducer(s, { type: 'updateLever', id: 'h1', patch: { impactMetricCode: 'MOIC' } });
+      expect(bad.error).toMatch(/calculé/);
+      expect(bad.levers[0].impactMetricCode).toBe('DSO');
+      const qualitative = reducer(s, { type: 'updateLever', id: 'h1', patch: { impactMetricCode: 'ON_TIME_PERFORMANCE' } });
+      expect(qualitative.scenario.leverIds).toEqual([]);
+    });
+  });
+
   describe('workshop observations', () => {
     const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
     const vars = findFormula(getCatalog('airline'), lf.id, 'Load Factor')!.variables;

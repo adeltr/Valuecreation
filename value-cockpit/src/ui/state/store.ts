@@ -5,6 +5,7 @@ import { TEMPLATES } from '../../templates';
 import { SCENARIO_OPTIONS } from '../../templates/build';
 import { modelTargets } from '../../templates/targets';
 import { sanitizeProposal } from '../../copilot/proposal';
+import { makeLeverSchema } from '../../domain/schemas';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
@@ -18,6 +19,15 @@ export interface CockpitState extends DossierCase {
   error: string | null;
 }
 
+/** What the analyst fills in for a lever; ids, source and status are set by the store. */
+export type LeverDraft = Pick<Lever, 'label' | 'mechanism' | 'category' | 'impactMetricCode' | 'expectedDelta' | 'deltaKind'
+  | 'timeToImpactDays' | 'effort' | 'confidence' | 'confidenceBasis' | 'implementationCost'>;
+
+/** Same rules as a copilot proposal: vocabulary, model inputs, confidence basis (docs/02). */
+function checkLever(lever: Lever, archetype: SectorArchetype): Lever {
+  return makeLeverSchema(getActiveVocabulary(archetype), modelTargets(archetype).calculated).parse(lever) as Lever;
+}
+
 export type Action =
   | { type: 'selectArchetype'; archetype: SectorArchetype }
   | { type: 'setName'; name: string }
@@ -28,6 +38,8 @@ export type Action =
   | { type: 'loadDossier'; raw: unknown }
   | { type: 'setInput'; code: string; value: number }
   | { type: 'ingestProposal'; raw: unknown; today: string }
+  | { type: 'addLever'; draft: LeverDraft }
+  | { type: 'updateLever'; id: string; patch: Partial<LeverDraft> }
   | { type: 'validateLever'; id: string }
   | { type: 'rejectLever'; id: string }
   | { type: 'toggleScenarioLever'; id: string }
@@ -130,6 +142,35 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
         return { ...state, levers: [...state.levers, ...levers], rootCauses: [...state.rootCauses, ...rootCauses], nextId: n, error: null };
       } catch (e) {
         return { ...state, error: `Proposition rejetée : ${readable(e)}` };
+      }
+    }
+
+    case 'addLever': {
+      try {
+        const lever = checkLever({
+          ...action.draft, id: `h${state.nextId}`, nodeId: action.draft.impactMetricCode, causeId: null,
+          source: 'analyst', status: 'hypothesis',
+        }, state.archetype);
+        return { ...state, levers: [...state.levers, lever], nextId: state.nextId + 1, error: null };
+      } catch (e) {
+        return { ...state, error: `Levier refusé : ${readable(e)}` };
+      }
+    }
+
+    case 'updateLever': {
+      const current = state.levers.find((l) => l.id === action.id);
+      if (!current) return state;
+      try {
+        const lever = checkLever({ ...current, ...action.patch, nodeId: action.patch.impactMetricCode ?? current.nodeId }, state.archetype);
+        const levers = state.levers.map((l) => (l.id === lever.id ? lever : l));
+        if (!state.scenario.leverIds.includes(lever.id)) return { ...state, levers, error: null };
+        // In the scenario: a qualitative target leaves it; a new delta replaces the applied one.
+        const scenario = lever.impactMetricCode in state.inputs
+          ? { ...state.scenario, applied: { ...state.scenario.applied, [lever.id]: lever.expectedDelta } }
+          : withoutLever(state.scenario, lever.id);
+        return { ...state, levers, scenario, error: null };
+      } catch (e) {
+        return { ...state, error: `Levier refusé : ${readable(e)}` };
       }
     }
 
