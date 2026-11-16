@@ -1,7 +1,7 @@
 import { initialState, type CockpitState } from './store';
 import { DEFAULT_CONTEXT } from '../../dossier/format';
 
-export type CaseContent = Pick<CockpitState, 'name' | 'archetype' | 'inputs' | 'levers' | 'rootCauses' | 'scenario' | 'plan' | 'observations' | 'context' | 'provenance'>;
+export type CaseContent = Pick<CockpitState, 'name' | 'archetype' | 'inputs' | 'levers' | 'rootCauses' | 'scenario' | 'plan' | 'observations' | 'context' | 'provenance' | 'savedScenarios'>;
 
 const canon = (v: unknown): unknown => Array.isArray(v) ? v.map(canon)
   : v && typeof v === 'object'
@@ -9,8 +9,8 @@ const canon = (v: unknown): unknown => Array.isArray(v) ? v.map(canon)
     : v;
 
 /** Key-order-independent fingerprint of what a dossier stores (no error, no id counter). */
-export function fingerprint({ name, archetype, inputs, levers, rootCauses, scenario, plan, observations, context, provenance }: CaseContent): string {
-  return JSON.stringify(canon({ name, archetype, context: context ?? DEFAULT_CONTEXT, provenance: provenance ?? {}, inputs, levers, rootCauses, scenario, plan: plan ?? {}, observations: observations ?? [] }));
+export function fingerprint({ name, archetype, inputs, levers, rootCauses, scenario, plan, observations, context, provenance, savedScenarios }: CaseContent): string {
+  return JSON.stringify(canon({ name, archetype, context: context ?? DEFAULT_CONTEXT, provenance: provenance ?? {}, inputs, levers, rootCauses, scenario, savedScenarios: savedScenarios ?? {}, plan: plan ?? {}, observations: observations ?? [] }));
 }
 
 /** True unless the case is an untouched demo or exactly the one last saved / opened (`clean`). */

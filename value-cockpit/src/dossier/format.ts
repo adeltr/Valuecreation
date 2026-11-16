@@ -48,6 +48,8 @@ export interface DossierCase {
     applied: Record<string, number>;
     assumptions: Partial<Record<AssumptionCode, number>>;
   };
+  /** Scenarios kept under a name (base, prudent, ambitious…), same shape and rules as `scenario`. */
+  savedScenarios: Record<string, DossierCase['scenario']>;
   plan: Record<string, PlanOverride>;
   observations: Observation[];
   nextId: number;
@@ -67,7 +69,7 @@ export function checkObservation(o: Observation, archetype: SectorArchetype): vo
 }
 
 export const DOSSIER_FORMAT = 'value-cockpit-dossier';
-export const DOSSIER_VERSION = 5; // 2: + plan, 3: + observations, 4: + context, 5: + provenance (older files open with the defaults)
+export const DOSSIER_VERSION = 6; // 2: + plan, 3: + observations, 4: + context, 5: + provenance, 6: + savedScenarios (older files open with the defaults)
 
 /**
  * A saved company case. It holds what the analyst entered or decided — inputs, levers and
@@ -86,6 +88,7 @@ export interface DossierFile {
   levers: Lever[];
   rootCauses: RootCause[];
   scenario: DossierCase['scenario'];
+  savedScenarios: DossierCase['savedScenarios'];
   plan: DossierCase['plan'];
   observations: Observation[];
   nextId: number;
@@ -98,13 +101,19 @@ export function toDossier(state: DossierCase, savedAt: string): DossierFile {
     format: DOSSIER_FORMAT, version: DOSSIER_VERSION, name, savedAt,
     archetype: state.archetype, context: state.context,
     inputs: state.inputs, provenance: state.provenance, levers: state.levers, rootCauses: state.rootCauses,
-    scenario: state.scenario, plan: state.plan, observations: state.observations, nextId: state.nextId,
+    scenario: state.scenario, savedScenarios: state.savedScenarios, plan: state.plan, observations: state.observations, nextId: state.nextId,
   };
 }
 
+const scenarioSchema = z.object({
+  leverIds: z.array(z.string()),
+  applied: z.record(z.number().finite()),
+  assumptions: z.record(z.number().finite()),
+});
+
 const envelope = z.object({
   format: z.literal(DOSSIER_FORMAT),
-  version: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(DOSSIER_VERSION)]),
+  version: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5), z.literal(DOSSIER_VERSION)]),
   name: z.string().min(1),
   savedAt: z.string(),
   archetype: z.string(),
@@ -118,11 +127,8 @@ const envelope = z.object({
   }).strict()).default({}),
   levers: z.array(z.unknown()),
   rootCauses: z.array(z.unknown()),
-  scenario: z.object({
-    leverIds: z.array(z.string()),
-    applied: z.record(z.number().finite()),
-    assumptions: z.record(z.number().finite()),
-  }),
+  scenario: scenarioSchema,
+  savedScenarios: z.record(scenarioSchema).default({}),
   plan: z.record(z.object({
     owner: z.string().optional(), status: z.enum(PLAN_STATUSES).optional(), note: z.string().optional(),
   }).strict()).default({}),
@@ -168,25 +174,28 @@ export function parseDossier(raw: unknown): DossierCase {
   const levers = parseWith(z.array(makeLeverSchema(vocab, modelTargets(archetype).calculated)), file.levers, 'Levier') as Lever[];
   const rootCauses = parseWith(z.array(makeRootCauseSchema(vocab)), file.rootCauses, 'Cause') as RootCause[];
 
+  // The current scenario and every saved one obey the same rules (analyst gate, model inputs, assumptions).
+  const checkScenario = ({ leverIds, applied, assumptions }: z.infer<typeof scenarioSchema>, what: string) => {
+    for (const id of leverIds) {
+      const lever = levers.find((l) => l.id === id);
+      if (lever?.status !== 'validated') throw new Error(`${what} invalide : le levier ${id} n'est pas validé par l'analyste`);
+      if (!expected.includes(lever.impactMetricCode)) {
+        throw new Error(`${what} invalide : le levier ${id} est qualitatif (${lever.impactMetricCode} n'est pas un input du modèle)`);
+      }
+    }
+    const appliedKeys = Object.keys(applied);
+    if (appliedKeys.length !== leverIds.length || appliedKeys.some((k) => !leverIds.includes(k))) {
+      throw new Error(`${what} invalide : les deltas appliqués ne correspondent pas aux leviers du scénario`);
+    }
+    for (const code of Object.keys(assumptions)) {
+      if (!(SCENARIO_ASSUMPTION_CODES as readonly string[]).includes(code)) {
+        throw new Error(`Hypothèse non autorisée : ${code} (assumption limitée à ${SCENARIO_ASSUMPTION_CODES.join(', ')})`);
+      }
+    }
+  };
+  checkScenario(file.scenario, 'Scénario');
+  for (const [name, sc] of Object.entries(file.savedScenarios)) checkScenario(sc, `Scénario « ${name} »`);
   const { leverIds, applied, assumptions } = file.scenario;
-  for (const id of leverIds) {
-    const lever = levers.find((l) => l.id === id);
-    if (lever?.status !== 'validated') {
-      throw new Error(`Scénario invalide : le levier ${id} n'est pas validé par l'analyste`);
-    }
-    if (!expected.includes(lever.impactMetricCode)) {
-      throw new Error(`Scénario invalide : le levier ${id} est qualitatif (${lever.impactMetricCode} n'est pas un input du modèle)`);
-    }
-  }
-  const appliedKeys = Object.keys(applied);
-  if (appliedKeys.length !== leverIds.length || appliedKeys.some((k) => !leverIds.includes(k))) {
-    throw new Error('Scénario invalide : les deltas appliqués ne correspondent pas aux leviers du scénario');
-  }
-  for (const code of Object.keys(assumptions)) {
-    if (!(SCENARIO_ASSUMPTION_CODES as readonly string[]).includes(code)) {
-      throw new Error(`Hypothèse non autorisée : ${code} (assumption limitée à ${SCENARIO_ASSUMPTION_CODES.join(', ')})`);
-    }
-  }
 
   for (const id of Object.keys(file.plan)) {
     if (!levers.some((l) => l.id === id) && !(FOUNDATION_IDS as readonly string[]).includes(id)) {
@@ -202,6 +211,6 @@ export function parseDossier(raw: unknown): DossierCase {
 
   return {
     name: file.name, archetype, context: file.context, inputs: file.inputs, provenance: file.provenance, levers, rootCauses,
-    scenario: { leverIds, applied, assumptions }, plan: file.plan, observations: file.observations, nextId,
+    scenario: { leverIds, applied, assumptions }, savedScenarios: file.savedScenarios, plan: file.plan, observations: file.observations, nextId,
   };
 }

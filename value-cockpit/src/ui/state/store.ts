@@ -49,6 +49,9 @@ export type Action =
   | { type: 'toggleScenarioLever'; id: string }
   | { type: 'setAppliedDelta'; id: string; value: number }
   | { type: 'setAssumption'; code: string; value: number }
+  | { type: 'saveScenario'; name: string }
+  | { type: 'loadScenario'; name: string }
+  | { type: 'deleteScenario'; name: string }
   | { type: 'reportError'; message: string }
   | { type: 'clearError' };
 
@@ -67,6 +70,7 @@ export function initialState(archetype: SectorArchetype): CockpitState {
     provenance: {},
     levers: [], rootCauses: [],
     scenario: { leverIds: [], applied: {}, assumptions: {} },
+    savedScenarios: {},
     plan: {},
     observations: [],
     nextId: 1, error: null,
@@ -86,6 +90,17 @@ function readable(e: unknown): string {
 
 /** Pure reducer. Every gate of docs/02 that the UI can reach is enforced here. */
 export function reducer(state: CockpitState, action: Action): CockpitState {
+  const next = reduce(state, action);
+  if (next.levers === state.levers || Object.keys(next.savedScenarios).length === 0) return next;
+  // Levers changed: a saved scenario never keeps a lever that is no longer validated or quantified.
+  const eligible = (id: string) => next.levers.some((l) => l.id === id && l.status === 'validated' && l.impactMetricCode in next.inputs);
+  const savedScenarios = Object.fromEntries(Object.entries(next.savedScenarios).map(([name, sc]) => [
+    name, sc.leverIds.reduce((acc, id) => (eligible(id) ? acc : withoutLever(acc, id)), sc),
+  ]));
+  return { ...next, savedScenarios };
+}
+
+function reduce(state: CockpitState, action: Action): CockpitState {
   switch (action.type) {
     case 'selectArchetype':
       return initialState(action.archetype);
@@ -248,6 +263,20 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
       }
       return { ...state, scenario: { ...state.scenario, assumptions: { ...state.scenario.assumptions, [action.code]: action.value } } };
 
+    case 'saveScenario': {
+      const name = action.name.trim();
+      if (!name) return { ...state, error: 'Donnez un nom au scénario avant de l\'enregistrer' };
+      return { ...state, savedScenarios: { ...state.savedScenarios, [name]: state.scenario }, error: null };
+    }
+
+    case 'loadScenario':
+      return state.savedScenarios[action.name] ? { ...state, scenario: state.savedScenarios[action.name], error: null } : state;
+
+    case 'deleteScenario': {
+      const { [action.name]: _removed, ...savedScenarios } = state.savedScenarios;
+      return { ...state, savedScenarios };
+    }
+
     case 'reportError':
       return { ...state, error: action.message };
 
@@ -265,14 +294,19 @@ export function selectBaseline(state: CockpitState): Map<string, number> {
   return resolveMetrics(selectMetrics(state));
 }
 
-/** Scenario: always computed by the engine (computedBy = 'engine'). */
-export function selectScenario(state: CockpitState): ScenarioResult[] {
-  const scenarioLevers = state.scenario.leverIds.map((id) => ({
+/** Any scenario of the case, always computed by the engine (computedBy = 'engine'). */
+export function runCaseScenario(state: CockpitState, scenario: CockpitState['scenario']): ScenarioResult[] {
+  const scenarioLevers = scenario.leverIds.map((id) => ({
     scenarioId: 'ui', leverId: id,
-    appliedDelta: state.scenario.applied[id],
+    appliedDelta: scenario.applied[id],
     deltaKind: state.levers.find((l) => l.id === id)!.deltaKind,
   }));
-  const assumptions = Object.entries(state.scenario.assumptions)
+  const assumptions = Object.entries(scenario.assumptions)
     .map(([metricCode, value]) => ({ scenarioId: 'ui', metricCode, value: value! }));
   return runScenario('ui', selectMetrics(state), state.levers, scenarioLevers, assumptions, template(state.archetype).interactions, SCENARIO_OPTIONS);
+}
+
+/** The scenario being edited. */
+export function selectScenario(state: CockpitState): ScenarioResult[] {
+  return runCaseScenario(state, state.scenario);
 }

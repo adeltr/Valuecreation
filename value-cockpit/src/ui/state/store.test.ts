@@ -3,6 +3,7 @@ import { toDossier } from '../../dossier/format';
 import { getCatalog } from '../../catalog';
 import { findFormula } from '../../workshop/observations';
 import { reliability } from './provenance';
+import { compareScenarios, sensitivityGrid } from './scenarios';
 import { initialState, reducer, selectBaseline, selectScenario, type CockpitState } from './store';
 
 const proposal = {
@@ -283,6 +284,56 @@ describe('cockpit store', () => {
     it('switching company type starts again from illustrative values', () => {
       const s = reducer(airline(), { type: 'setInput', code: 'LOAD_FACTOR', value: 0.8, by: 'Léa', at: 'd' });
       expect(reducer(s, { type: 'selectArchetype', archetype: 'cpg' }).provenance).toEqual({});
+    });
+  });
+
+  describe('named scenarios and sensitivity', () => {
+    const withLever = () => {
+      let s = ingest(airline());
+      const id = s.levers[0].id;
+      s = reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' });
+      return reducer(s, { type: 'toggleScenarioLever', id });
+    };
+    const moicOf = (rows: { name: string; MOIC: number }[], name: string) => rows.find((r) => r.name === name)!.MOIC;
+
+    it('saves the current scenario under a name, and compares the saved ones with the base case (engine)', () => {
+      let s = reducer(withLever(), { type: 'saveScenario', name: 'Plan' });
+      s = reducer(s, { type: 'setAssumption', code: 'EXIT_MULTIPLE', value: 5 });
+      s = reducer(s, { type: 'saveScenario', name: 'Prudent' });
+      expect(Object.keys(s.savedScenarios)).toEqual(['Plan', 'Prudent']);
+      const rows = compareScenarios(s);
+      expect(rows.map((r) => r.name)).toEqual(['Base (sans levier)', 'Plan', 'Prudent']);
+      expect(moicOf(rows, 'Plan')).toBeGreaterThan(moicOf(rows, 'Base (sans levier)'));
+      expect(moicOf(rows, 'Prudent')).toBeLessThan(moicOf(rows, 'Plan'));
+      expect(rows[1].IRR).toBeCloseTo(rows[1].MOIC ** (1 / 5) - 1, 12);
+    });
+
+    it('loads a saved scenario back, replaces one saved under the same name, deletes one', () => {
+      let s = reducer(withLever(), { type: 'saveScenario', name: 'Plan' });
+      s = reducer(s, { type: 'toggleScenarioLever', id: s.levers[0].id });
+      expect(s.scenario.leverIds).toEqual([]);
+      s = reducer(s, { type: 'loadScenario', name: 'Plan' });
+      expect(s.scenario.leverIds).toEqual([s.levers[0].id]);
+      s = reducer(reducer(s, { type: 'setAssumption', code: 'EXIT_MULTIPLE', value: 7 }), { type: 'saveScenario', name: 'Plan' });
+      expect(s.savedScenarios.Plan.assumptions.EXIT_MULTIPLE).toBe(7);
+      expect(reducer(s, { type: 'deleteScenario', name: 'Plan' }).savedScenarios).toEqual({});
+      expect(reducer(s, { type: 'saveScenario', name: '  ' }).error).toMatch(/nom/i);
+    });
+
+    it('a saved scenario drops a lever that was rejected or became qualitative since (analyst gate holds)', () => {
+      let s = reducer(withLever(), { type: 'saveScenario', name: 'Plan' });
+      s = reducer(s, { type: 'rejectLever', id: s.levers[0].id, by: 'Léa', at: 'd' });
+      expect(s.savedScenarios.Plan.leverIds).toEqual([]);
+      expect(() => compareScenarios(s)).not.toThrow();
+    });
+
+    it('sensitivity: MOIC of the current scenario across exit multiples and holding periods', () => {
+      const g = sensitivityGrid(withLever());
+      expect(g.multiples).toEqual([4, 5, 6, 7, 8]);
+      expect(g.years).toEqual([4, 5, 6]);
+      expect(g.moic[2][1]!).toBeCloseTo(selectScenario(withLever()).find((r) => r.metricCode === 'MOIC')!.value, 12);
+      expect(g.moic[4][1]!).toBeGreaterThan(g.moic[0][1]!);
+      expect(g.moic.flat().every((v) => v === null || Number.isFinite(v))).toBe(true);
     });
   });
 

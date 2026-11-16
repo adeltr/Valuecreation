@@ -157,5 +157,14 @@ describe('dossier file', () => {
     const { provenance: _p, ...v4 } = file;
     expect(parseDossier({ ...v4, version: 4 }).provenance).toEqual({});
   });
+
+  it('stores named scenarios; rejects one that holds a non-validated lever; older files open with none', () => {
+    const s = reducer(workedCase(), { type: 'saveScenario', name: 'Plan' });
+    expect(roundTrip(s).savedScenarios).toEqual(s.savedScenarios);
+    const file = toDossier(s, 't');
+    expect(() => parseDossier({ ...file, savedScenarios: { Plan: { ...file.savedScenarios.Plan, leverIds: ['h99'], applied: { h99: 1 } } } })).toThrow(/Plan/);
+    const { savedScenarios: _s, ...v5 } = file;
+    expect(parseDossier({ ...v5, version: 5 }).savedScenarios).toEqual({});
+  });
 });
 
