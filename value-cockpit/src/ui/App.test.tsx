@@ -18,7 +18,8 @@ beforeAll(() => {
   // React Flow measures its container.
   globalThis.ResizeObserver ??= class { observe() {} unobserve() {} disconnect() {} } as never;
 });
-afterEach(cleanup);
+beforeEach(() => localStorage.setItem('value-cockpit.analyst', 'Léa Martin'));
+afterEach(() => { cleanup(); localStorage.clear(); sessionStorage.clear(); });
 
 const proposal = JSON.stringify({
   levers: [{
@@ -308,6 +309,22 @@ describe('App', () => {
     expect(within(company).getByText(/Incohérence à l'entrée.*EBITDA_ENTRY.*120.*150/)).toBeTruthy();
   });
 
+  it('decisions are signed: the analyst name is asked once, kept, and shown on the lever', () => {
+    localStorage.clear();
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    expect(screen.getByRole('alert').textContent).toMatch(/nom d'analyste/);
+    expect(within(copilot).getByText('hypothèse')).toBeTruthy();
+
+    fireEvent.change(screen.getByLabelText('Analyste'), { target: { value: 'Léa Martin' } });
+    expect(localStorage.getItem('value-cockpit.analyst')).toBe('Léa Martin');
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    expect(within(copilot).getByText(/validé par Léa Martin/)).toBeTruthy();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
@@ -542,6 +559,27 @@ describe('App – empirical benchmarks', () => {
     render(<App connect={async () => ({ repo: new LocalDossierRepository({ getItem: () => null, setItem: () => {} }), where: 'browser' })} />);
     const panel = screen.getByRole('region', { name: 'Repères empiriques' });
     expect(await within(panel).findByText(/npm run empirical:import/)).toBeTruthy();
+  });
+});
+
+describe('App – shared password', () => {
+  afterEach(() => vi.unstubAllGlobals());
+
+  it('asks for the shared password when the server is locked, then sends it', async () => {
+    const seen: (string | undefined)[] = [];
+    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
+      const password = (init?.headers as Record<string, string> | undefined)?.['X-VCC-Password'];
+      if (url === '/api/session') return new Response(JSON.stringify({ passwordRequired: true }));
+      if (url === '/api/dossiers') { seen.push(password); return new Response(JSON.stringify(password === 's3cret' ? [] : { error: 'x' }), { status: password === 's3cret' ? 200 : 401 }); }
+      return new Response('{}', { status: 404 });
+    }));
+    render(<App />);
+    expect(await screen.findByText(/Serveur verrouillé/)).toBeTruthy();
+    fireEvent.change(screen.getByLabelText('Mot de passe partagé'), { target: { value: 's3cret' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Déverrouiller' }));
+    expect(await screen.findByText(/serveur partagé/)).toBeTruthy();
+    expect(seen).toContain('s3cret');
+    expect(localStorage.getItem('value-cockpit.password')).toBeNull(); // never persisted beyond the tab
   });
 });
 

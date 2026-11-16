@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useReducer, useState } from 'react';
+import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { initialState, reducer, selectBaseline, selectMetrics, selectScenario } from './state/store';
 import { TEMPLATES } from '../templates';
 import { getCatalog } from '../catalog';
@@ -21,20 +21,27 @@ import { toDossier } from '../dossier/format';
 import type { DossierRepository } from '../dossier/repository';
 import { connectRepository, type DossierLocation } from './state/httpRepository';
 import { hasUnsavedWork } from './state/unsaved';
+import { authFetch, loadSession, saveAnalyst, savePassword, type Session } from './state/session';
 
-type Connect = () => Promise<{ repo: DossierRepository; where: DossierLocation }>;
-const defaultConnect: Connect = () => connectRepository((...a) => fetch(...a), window.localStorage);
+type Connect = (fetchImpl: typeof fetch) => Promise<{ repo: DossierRepository; where: DossierLocation }>;
+const defaultConnect: Connect = (fetchImpl) => connectRepository(fetchImpl, window.localStorage);
 
 export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
   const [state, dispatch] = useReducer(reducer, 'airline' as SectorArchetype, initialState);
+  // Who is working, and the team's shared password: every server call carries both (docs/22).
+  const [session, setSession] = useState<Session>(loadSession);
+  const [passwordDraft, setPasswordDraft] = useState('');
+  const sessionRef = useRef(session);
+  sessionRef.current = session;
+  const api = useMemo(() => authFetch((...a) => fetch(...a), () => sessionRef.current), []);
   const metrics = useMemo(() => selectMetrics(state), [state]);
   const catalog = getCatalog(state.archetype);
   const [store, setStore] = useState<Awaited<ReturnType<Connect>> | null>(null);
   useEffect(() => {
     let live = true;
-    void connect().then((s) => { if (live) setStore(s); });
+    void connect(api).then((s) => { if (live) setStore(s); });
     return () => { live = false; };
-  }, [connect]);
+  }, [connect, api, session.password]);
   const [saved, setSaved] = useState<SavedRef | null>(null);
   const [cardLeverId, setCardLeverId] = useState<string | null>(null);
   const cardLever = state.levers.find((l) => l.id === cardLeverId);
@@ -65,6 +72,11 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
       <header className="app-header">
         <h1>Value Creation Cockpit</h1>
         <label>
+          Analyste{' '}
+          <input aria-label="Analyste" value={session.analyst} placeholder="Votre nom" size={16}
+            onChange={(e) => { saveAnalyst(e.target.value); setSession({ ...session, analyst: e.target.value }); }} />
+        </label>
+        <label>
           Type d'entreprise{' '}
           <select value={state.archetype}
             onChange={(e) => {
@@ -87,7 +99,17 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         </label>
       </header>
       {store && <DossierBar state={state} dispatch={dispatch} repo={store.repo} where={store.where}
-        mayReplace={mayReplace} saved={saved} onSaved={setSaved} />}
+        mayReplace={mayReplace} saved={saved} onSaved={setSaved} analyst={session.analyst} />}
+      {store?.where === 'locked' && (
+        <form className="banner locked" onSubmit={(e) => { e.preventDefault(); savePassword(passwordDraft); setSession({ ...session, password: passwordDraft }); }}>
+          <span>Serveur verrouillé : ce serveur demande le mot de passe partagé de l'équipe.{session.password && ' Le mot de passe saisi a été refusé.'}</span>
+          <span>
+            <input aria-label="Mot de passe partagé" type="password" autoComplete="current-password" value={passwordDraft}
+              onChange={(e) => setPasswordDraft(e.target.value)} />{' '}
+            <button type="submit">Déverrouiller</button>
+          </span>
+        </form>
+      )}
       {state.error && (
         <div role="alert" className="banner">
           {state.error} <button type="button" className="secondary" onClick={() => dispatch({ type: 'clearError' })}>×</button>
@@ -99,14 +121,14 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
           bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} context={state.context}
           checks={entryChecks(metrics, getBridgeFamily(state.archetype))} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
-          inputCodes={Object.keys(state.inputs)}
+          inputCodes={Object.keys(state.inputs)} analyst={session.analyst} fetchImpl={api}
           company={() => toDossier({ ...state, name: state.name.trim() || 'Dossier sans nom' }, new Date().toISOString())} />
         {cardLever && (
           <LeverCardPanel lever={cardLever} metrics={metrics} catalog={catalog}
             interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)}
             observations={state.observations} onOpenAnalysis={setWorkshopId} />
         )}
-        <EmpiricalPanel archetype={state.archetype} trajectory={trajectory} />
+        <EmpiricalPanel archetype={state.archetype} trajectory={trajectory} fetchImpl={api} />
         <WorkshopPanel state={state} metrics={metrics} catalog={catalog} vocab={getActiveVocabulary(state.archetype)}
           analysisId={workshopId} onSelect={setWorkshopId} dispatch={dispatch} />
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}

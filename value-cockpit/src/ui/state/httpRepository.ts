@@ -6,6 +6,7 @@ import {
 import { LocalDossierRepository, type KeyValueStore } from './library';
 
 type Fetch = typeof fetch;
+const LOCKED_MESSAGE = 'Mot de passe partagé refusé par le serveur';
 
 /** The shared dossier store served by `npm run server` (src/server/dossierRoutes.ts). */
 export class HttpDossierRepository implements DossierRepository {
@@ -18,6 +19,7 @@ export class HttpDossierRepository implements DossierRepository {
     if (res.status === 204) return undefined as T;
     const body = await res.json().catch(() => ({}));
     if (res.ok) return body as T;
+    if (res.status === 401) throw new Error(LOCKED_MESSAGE);
     if (res.status === 409) throw new RevisionConflict(name, body.current ?? null);
     if (res.status === 404) throw new DossierNotFound(name);
     throw new Error(body.error ?? `Serveur de dossiers : erreur ${res.status}`);
@@ -44,14 +46,24 @@ export class HttpDossierRepository implements DossierRepository {
   }
 }
 
-export type DossierLocation = 'server' | 'browser';
+export type DossierLocation = 'server' | 'browser' | 'locked';
 
-/** The shared server when it answers, otherwise this browser's own library. */
+const LOCKED = 'Serveur verrouillé : saisissez le mot de passe partagé';
+/** The server exists but refused the password: nothing is read or written anywhere. */
+const lockedRepository: DossierRepository = {
+  list: async () => { throw new Error(LOCKED); },
+  read: async () => { throw new Error(LOCKED); },
+  save: async () => { throw new Error(LOCKED); },
+  remove: async () => { throw new Error(LOCKED); },
+};
+
+/** The shared server when it answers (locked if it refuses the password), otherwise this browser's own library. */
 export async function connectRepository(
   fetchImpl: Fetch, store: KeyValueStore, base = '/api/dossiers',
 ): Promise<{ repo: DossierRepository; where: DossierLocation }> {
   try {
     const res = await fetchImpl(base);
+    if (res.status === 401) return { repo: lockedRepository, where: 'locked' };
     if (res.ok && Array.isArray(await res.json())) return { repo: new HttpDossierRepository(base, fetchImpl), where: 'server' };
   } catch { /* server down: fall back */ }
   return { repo: new LocalDossierRepository(store), where: 'browser' };

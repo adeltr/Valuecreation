@@ -15,9 +15,11 @@ interface Props {
   inputCodes: string[];
   /** The current case as a dossier file, sent with the question so the copilot reasons on the company. */
   company: () => unknown;
+  analyst: string;
+  fetchImpl: typeof fetch;
 }
 
-export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCard, inputCodes, company }: Props) {
+export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCard, inputCodes, company, analyst, fetchImpl }: Props) {
   const [message, setMessage] = useState('');
   const [raw, setRaw] = useState('');
   const [pending, setPending] = useState(false);
@@ -30,7 +32,7 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
   const ask = async () => {
     setPending(true);
     try {
-      const res = await fetch('/api/propose', {
+      const res = await fetchImpl('/api/propose', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ archetype, message, company: company() }),
       });
@@ -78,14 +80,14 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
       <h3>Leviers</h3>
       {editing === null && <button type="button" className="secondary" onClick={() => setEditing('new')}>Ajouter un levier</button>}
       {editing === 'new' && (
-        <LeverForm archetype={archetype} onCancel={() => setEditing(null)} onSubmit={(draft) => dispatch({ type: 'addLever', draft })} />
+        <LeverForm archetype={archetype} onCancel={() => setEditing(null)} onSubmit={(draft) => dispatch({ type: 'addLever', draft, by: analyst })} />
       )}
       {levers.length === 0 && <p className="muted">Aucun levier pour l'instant.</p>}
       <ul className="list">
         {levers.map((l) => (
           <li key={l.id} className={`lever lever-${l.status}`}>
             <div>
-              <span className={`badge badge-${l.status}`}>{STATUS_LABEL[l.status]}</span> <strong>{l.label}</strong>
+              <span className={`badge badge-${l.status}`}>{STATUS_LABEL[l.status]}{l.decision && ` par ${l.decision.by}, ${l.decision.at}`}</span> <strong>{l.label}</strong>
               <span className="tag">{l.category}</span> → {l.impactMetricCode} {l.expectedDelta > 0 ? '+' : ''}{l.expectedDelta} ({l.deltaKind})
               {!inputCodes.includes(l.impactMetricCode) && <span className="tag" title="Cette métrique n'est pas un input du modèle : le levier n'est pas simulé"> qualitatif</span>}
             </div>
@@ -98,8 +100,8 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
             )}
             {l.status === 'hypothesis' && (
               <div className="actions">
-                <button type="button" onClick={() => dispatch({ type: 'validateLever', id: l.id })}>Valider</button>
-                <button type="button" className="secondary" onClick={() => dispatch({ type: 'rejectLever', id: l.id })}>Rejeter</button>
+                <button type="button" onClick={() => dispatch({ type: 'validateLever', id: l.id, by: analyst, at: today() })}>Valider</button>
+                <button type="button" className="secondary" onClick={() => dispatch({ type: 'rejectLever', id: l.id, by: analyst, at: today() })}>Rejeter</button>
               </div>
             )}
           </li>

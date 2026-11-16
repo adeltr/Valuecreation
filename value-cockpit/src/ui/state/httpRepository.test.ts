@@ -1,5 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { HttpDossierRepository, connectRepository } from './httpRepository';
+import { authFetch } from './session';
 import { LocalDossierRepository, type KeyValueStore } from './library';
 import { RevisionConflict, DossierNotFound } from '../../dossier/repository';
 import { toDossier } from '../../dossier/format';
@@ -51,3 +52,19 @@ describe('connectRepository', () => {
     }
   });
 });
+
+describe('session: shared password and analyst name', () => {
+  it('authFetch adds the password and the URL-encoded analyst name to every call', async () => {
+    const base = vi.fn(async () => json(200, []));
+    await authFetch(base, () => ({ analyst: 'Léa Martin', password: 's3cret' }))('/api/dossiers', { method: 'GET', headers: { Accept: 'x' } });
+    expect(base).toHaveBeenCalledWith('/api/dossiers', { method: 'GET', headers: { Accept: 'x', 'X-VCC-Password': 's3cret', 'X-VCC-Analyst': 'L%C3%A9a%20Martin' } });
+  });
+
+  it('a server that refuses the password is reported as locked — never a silent fallback to the browser', async () => {
+    const f = async (url: string) => (url.endsWith('/session') ? json(200, { passwordRequired: true }) : json(401, { error: 'x' }));
+    const r = await connectRepository(f as typeof fetch, memory());
+    expect(r.where).toBe('locked');
+    await expect(r.repo.list()).rejects.toThrow(/mot de passe/i);
+  });
+});
+

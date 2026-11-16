@@ -51,6 +51,10 @@ export interface Lever {
   source: GeneratedSource; status: LeverStatus;
   /** One-off cost of implementing the lever (currency). Set by the analyst only, never by the copilot. */
   implementationCost?: number;
+  /** Who validated or rejected it, and when (audit trail, docs/22). */
+  decision?: { by: string; at: ISODate };
+  /** The analyst who wrote it, for a lever not proposed by the copilot. */
+  createdBy?: string;
 }
 
 export interface ScenarioLever { scenarioId: UUID; leverId: UUID; appliedDelta: number; deltaKind: DeltaKind }

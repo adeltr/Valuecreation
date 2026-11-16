@@ -21,7 +21,7 @@ function workedCase(): CockpitState {
   s = reducer(s, { type: 'setInput', code: 'LOAD_FACTOR', value: 0.8 });
   s = reducer(s, { type: 'ingestProposal', raw: proposal, today: '2026-10-27' });
   const id = s.levers[0].id;
-  s = reducer(s, { type: 'validateLever', id });
+  s = reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' });
   s = reducer(s, { type: 'toggleScenarioLever', id });
   s = reducer(s, { type: 'setAppliedDelta', id, value: -0.001 });
   s = reducer(s, { type: 'setAssumption', code: 'EXIT_MULTIPLE', value: 7 });

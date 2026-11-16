@@ -143,3 +143,6 @@ button.link { background: none; color: var(--accent); padding: 0; border: 0; tex
 .context { display: flex; flex-wrap: wrap; gap: 8px 12px; margin-bottom: 8px; }
 .context .wide { flex: 1 1 100%; }
 .context textarea { margin: 2px 0 0; }
+
+.banner.locked { background: var(--warn-soft); color: var(--warn); }
+.app-header label { white-space: nowrap; }

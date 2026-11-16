@@ -39,10 +39,10 @@ export type Action =
   | { type: 'loadDossier'; raw: unknown }
   | { type: 'setInput'; code: string; value: number }
   | { type: 'ingestProposal'; raw: unknown; today: string }
-  | { type: 'addLever'; draft: LeverDraft }
+  | { type: 'addLever'; draft: LeverDraft; by?: string }
   | { type: 'updateLever'; id: string; patch: Partial<LeverDraft> }
-  | { type: 'validateLever'; id: string }
-  | { type: 'rejectLever'; id: string }
+  | { type: 'validateLever'; id: string; by: string; at: string }
+  | { type: 'rejectLever'; id: string; by: string; at: string }
   | { type: 'toggleScenarioLever'; id: string }
   | { type: 'setAppliedDelta'; id: string; value: number }
   | { type: 'setAssumption'; code: string; value: number }
@@ -73,9 +73,6 @@ const withoutLever = (s: CockpitState['scenario'], id: string): CockpitState['sc
   const { [id]: _removed, ...applied } = s.applied;
   return { ...s, leverIds: s.leverIds.filter((x) => x !== id), applied };
 };
-
-const setStatus = (levers: Lever[], id: string, status: Lever['status']) =>
-  levers.map((l) => (l.id === id ? { ...l, status } : l));
 
 /** A validation error as `path: message; …` rather than the raw issue list. */
 function readable(e: unknown): string {
@@ -154,7 +151,7 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
       try {
         const lever = checkLever({
           ...action.draft, id: `h${state.nextId}`, nodeId: action.draft.impactMetricCode, causeId: null,
-          source: 'analyst', status: 'hypothesis',
+          source: 'analyst', status: 'hypothesis', ...(action.by?.trim() ? { createdBy: action.by.trim() } : {}),
         }, state.archetype);
         return { ...state, levers: [...state.levers, lever], nextId: state.nextId + 1, error: null };
       } catch (e) {
@@ -180,10 +177,16 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
     }
 
     case 'validateLever':
-      return { ...state, levers: setStatus(state.levers, action.id, 'validated') };
-
-    case 'rejectLever':
-      return { ...state, levers: setStatus(state.levers, action.id, 'rejected'), scenario: withoutLever(state.scenario, action.id) };
+    case 'rejectLever': {
+      const by = action.by.trim();
+      if (!by) return { ...state, error: 'Indiquez votre nom d\'analyste (en haut de l\'écran) : une décision sur un levier est toujours signée.' };
+      const status = action.type === 'validateLever' ? 'validated' as const : 'rejected' as const;
+      const levers = state.levers.map((l) => (l.id === action.id ? { ...l, status, decision: { by, at: action.at } } : l));
+      return {
+        ...state, levers, error: null,
+        scenario: status === 'rejected' ? withoutLever(state.scenario, action.id) : state.scenario,
+      };
+    }
 
     case 'toggleScenarioLever': {
       if (state.scenario.leverIds.includes(action.id)) return { ...state, scenario: withoutLever(state.scenario, action.id) };

@@ -17,11 +17,14 @@ interface Props {
   mayReplace: () => boolean;
   saved: SavedRef | null;
   onSaved: (ref: SavedRef | null) => void;
+  /** Recorded on each revision saved (the server takes it from the signed request). */
+  analyst: string;
 }
 
 const WHERE_LABEL: Record<DossierLocation, string> = {
   server: 'Stockage : serveur partagé',
   browser: 'Stockage : ce navigateur uniquement',
+  locked: 'Stockage : serveur verrouillé',
 };
 
 const typeLabel = (a: string) => TEMPLATES[a as SectorArchetype]?.label ?? a;
@@ -44,7 +47,7 @@ function conflictQuestion(c: RevisionConflict, base: number | null): string {
 }
 
 /** Save / open / export / import of a company case. Only analyst inputs and decisions are stored. */
-export function DossierBar({ state, dispatch, repo, where, mayReplace, saved, onSaved }: Props) {
+export function DossierBar({ state, dispatch, repo, where, mayReplace, saved, onSaved, analyst }: Props) {
   const fail = useCallback((e: unknown) => dispatch({ type: 'reportError', message: (e as Error).message }), [dispatch]);
   const [list, setList] = useState<DossierSummary[]>([]);
   const [selected, setSelected] = useState('');
@@ -67,14 +70,14 @@ export function DossierBar({ state, dispatch, repo, where, mayReplace, saved, on
     let base = saved?.name === file.name ? saved.revision : null;
     let revision: number;
     try {
-      revision = await repo.save(file, base);
+      revision = await repo.save(file, base, analyst.trim() || undefined);
     } catch (e) {
       if (!(e instanceof RevisionConflict)) throw e;
       if (!window.confirm(conflictQuestion(e, base))) {
         throw new Error(`« ${file.name} » n'a pas été enregistré : ouvre la dernière version ou enregistre sous un autre nom`);
       }
       base = e.current;
-      revision = await repo.save(file, base);
+      revision = await repo.save(file, base, analyst.trim() || undefined);
     }
     onSaved({ name: file.name, revision, fingerprint: fingerprint(state) });
     setStatus(`Enregistré : ${file.name}, révision ${revision}, ${when(file.savedAt)}`);
@@ -150,7 +153,7 @@ export function DossierBar({ state, dispatch, repo, where, mayReplace, saved, on
         Dossiers enregistrés{' '}
         <select value={selected} onChange={(e) => setSelected(e.target.value)} disabled={list.length === 0}>
           <option value="">{list.length ? 'Choisir…' : 'aucun'}</option>
-          {list.map((d) => <option key={d.name} value={d.name}>{`${d.name} · ${typeLabel(d.archetype)} · ${when(d.savedAt)}`}</option>)}
+          {list.map((d) => <option key={d.name} value={d.name}>{`${d.name} · ${typeLabel(d.archetype)} · ${when(d.savedAt)}${d.savedBy ? ` · ${d.savedBy}` : ''}`}</option>)}
         </select>
       </label>
       <button type="button" className="secondary" onClick={open} disabled={!selected || busy}>Ouvrir</button>

@@ -49,7 +49,7 @@ describe('cockpit store', () => {
   it('a validated lever can enter the scenario and moves the engine MOIC', () => {
     let s = ingest(airline());
     const id = s.levers[0].id;
-    s = reducer(s, { type: 'validateLever', id });
+    s = reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' });
     s = reducer(s, { type: 'toggleScenarioLever', id });
     expect(s.scenario.leverIds).toEqual([id]);
     const base = selectBaseline(s).get('MOIC')!;
@@ -61,8 +61,8 @@ describe('cockpit store', () => {
   it('rejecting a lever removes it from the scenario', () => {
     let s = ingest(airline());
     const id = s.levers[0].id;
-    s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
-    s = reducer(s, { type: 'rejectLever', id });
+    s = reducer(reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' }), { type: 'toggleScenarioLever', id });
+    s = reducer(s, { type: 'rejectLever', id, by: 'Léa', at: '2026-11-16' });
     expect(s.levers[0].status).toBe('rejected');
     expect(s.scenario.leverIds).toEqual([]);
   });
@@ -70,7 +70,7 @@ describe('cockpit store', () => {
   it('applied delta defaults to the expected delta and can be edited', () => {
     let s = ingest(airline());
     const id = s.levers[0].id;
-    s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
+    s = reducer(reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' }), { type: 'toggleScenarioLever', id });
     expect(s.scenario.applied[id]).toBe(-0.002);
     s = reducer(s, { type: 'setAppliedDelta', id, value: -0.004 });
     expect(s.scenario.applied[id]).toBe(-0.004);
@@ -127,7 +127,7 @@ describe('cockpit store', () => {
     };
     let s = reducer(initialState('cpg'), { type: 'ingestProposal', raw: premium, today: '2026-10-27' });
     const id = s.levers[0].id;
-    s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
+    s = reducer(reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' }), { type: 'toggleScenarioLever', id });
     const volume = selectScenario(s).find((r) => r.metricCode === 'VOLUME_GROWTH')!.value;
     expect(volume).toBeCloseTo(s.inputs.VOLUME_GROWTH + s.inputs.PRICE_ELASTICITY * 0.01, 12);
   });
@@ -159,7 +159,7 @@ describe('cockpit store', () => {
       let s = ingest(airline(), on('ON_TIME_PERFORMANCE', 'AIRPORT_GROUND_COST'));
       expect(s.levers).toHaveLength(1);
       const id = s.levers[0].id;
-      s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
+      s = reducer(reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' }), { type: 'toggleScenarioLever', id });
       expect(s.scenario.leverIds).toEqual([]);
       expect(s.error).toMatch(/qualitatif/);
       expect(() => selectScenario(s)).not.toThrow();
@@ -169,7 +169,7 @@ describe('cockpit store', () => {
   it('the scenario runs with the cockpit options: horizon = holding period, lever costs hit the cash', () => {
     let s = ingest(airline());
     const id = s.levers[0].id;
-    s = reducer(reducer(s, { type: 'validateLever', id }), { type: 'toggleScenarioLever', id });
+    s = reducer(reducer(s, { type: 'validateLever', id, by: 'Léa', at: '2026-11-16' }), { type: 'toggleScenarioLever', id });
     const moic = (x: CockpitState) => selectScenario(x).find((r) => r.metricCode === 'MOIC')!.value;
     const base = selectBaseline(s).get('MOIC')!;
     expect(moic(s)).toBeGreaterThan(base);
@@ -204,7 +204,7 @@ describe('cockpit store', () => {
 
     it('once validated it is simulated: 5 days of DSO are worth cash, the cost is deducted', () => {
       let s = add(airline());
-      s = reducer(reducer(s, { type: 'validateLever', id: 'h1' }), { type: 'toggleScenarioLever', id: 'h1' });
+      s = reducer(reducer(s, { type: 'validateLever', id: 'h1', by: 'Léa', at: '2026-11-16' }), { type: 'toggleScenarioLever', id: 'h1' });
       const r = new Map(selectScenario(s).map((x) => [x.metricCode, x.value]));
       const base = selectBaseline(s);
       expect(r.get('CUMULATIVE_FCF')! - base.get('CUMULATIVE_FCF')!).toBeCloseTo(base.get('REVENUE_EXIT')! * 5 / 365 - 2, 8);
@@ -212,7 +212,7 @@ describe('cockpit store', () => {
 
     it('editing a lever re-validates it and keeps the scenario consistent', () => {
       let s = add(airline());
-      s = reducer(reducer(s, { type: 'validateLever', id: 'h1' }), { type: 'toggleScenarioLever', id: 'h1' });
+      s = reducer(reducer(s, { type: 'validateLever', id: 'h1', by: 'Léa', at: '2026-11-16' }), { type: 'toggleScenarioLever', id: 'h1' });
       s = reducer(s, { type: 'updateLever', id: 'h1', patch: { expectedDelta: -8, implementationCost: 0 } });
       expect(s.levers[0]).toMatchObject({ expectedDelta: -8, implementationCost: 0, status: 'validated' });
       expect(s.scenario.applied.h1).toBe(-8);
@@ -221,6 +221,32 @@ describe('cockpit store', () => {
       expect(bad.levers[0].impactMetricCode).toBe('DSO');
       const qualitative = reducer(s, { type: 'updateLever', id: 'h1', patch: { impactMetricCode: 'ON_TIME_PERFORMANCE' } });
       expect(qualitative.scenario.leverIds).toEqual([]);
+    });
+  });
+
+  describe('audit trail of analyst decisions', () => {
+    it('validating or rejecting a lever records who decided and when', () => {
+      let s = ingest(airline());
+      const id = s.levers[0].id;
+      s = reducer(s, { type: 'validateLever', id, by: 'Léa Martin', at: '2026-11-16' });
+      expect(s.levers[0]).toMatchObject({ status: 'validated', decision: { by: 'Léa Martin', at: '2026-11-16' } });
+      s = reducer(s, { type: 'rejectLever', id, by: 'Tom', at: '2026-11-17' });
+      expect(s.levers[0]).toMatchObject({ status: 'rejected', decision: { by: 'Tom', at: '2026-11-17' } });
+    });
+
+    it('refuses an anonymous decision: the gate needs a named analyst (invariant 4)', () => {
+      const s = ingest(airline());
+      const after = reducer(s, { type: 'validateLever', id: s.levers[0].id, by: '  ', at: '2026-11-16' });
+      expect(after.levers[0].status).toBe('hypothesis');
+      expect(after.error).toMatch(/nom d'analyste/);
+    });
+
+    it('a lever written by an analyst carries its author', () => {
+      const s = reducer(airline(), { type: 'addLever', by: 'Léa Martin', draft: {
+        label: 'l', mechanism: 'm', category: 'WC_DSO', impactMetricCode: 'DSO', expectedDelta: -5, deltaKind: 'absolute',
+        timeToImpactDays: 90, effort: 'low', confidence: 0.7, confidenceBasis: 'b',
+      } });
+      expect(s.levers[0].createdBy).toBe('Léa Martin');
     });
   });
 

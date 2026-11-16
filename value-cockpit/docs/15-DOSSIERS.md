@@ -61,9 +61,7 @@ Les ids des nouveaux leviers reprennent toujours après le plus grand id du fich
 
 ## Limites v1
 
-- **Pas d'authentification** : le serveur n'écoute que sur `127.0.0.1`. Pour l'ouvrir à une équipe,
-  il faut le placer derrière un reverse proxy qui authentifie. Les révisions ne disent pas encore
-  qui a enregistré.
+- Accès par mot de passe partagé et nom d'analyste déclaré, sans comptes individuels (docs/22).
 - Le verrou de révision vaut pour un seul processus serveur : pas de multi-instance.
 - Le serveur et le navigateur ne se synchronisent pas entre eux. Pour passer de l'un à l'autre,
   exporter puis importer.
