@@ -35,7 +35,7 @@ export class LocalDossierRepository implements DossierRepository {
 
   async list(): Promise<DossierSummary[]> {
     return Object.values(this.readAll())
-      .map(({ file: { name, archetype, savedAt }, revision }) => ({ name, archetype, savedAt, revision }))
+      .map(({ file: { name, archetype, savedAt }, revision, savedBy }) => ({ name, archetype, savedAt, revision, ...(savedBy ? { savedBy } : {}) }))
       .sort((a, b) => b.savedAt.localeCompare(a.savedAt));
   }
 
@@ -45,13 +45,13 @@ export class LocalDossierRepository implements DossierRepository {
     return stored;
   }
 
-  async save(file: DossierFile, baseRevision: number | null): Promise<number> {
+  async save(file: DossierFile, baseRevision: number | null, savedBy?: string): Promise<number> {
     parseDossier(file);
     const all = this.readAll();
     const current = this.current(file.name);
     if (current !== baseRevision) throw new RevisionConflict(file.name, current);
     const revision = (current ?? 0) + 1;
-    this.store.setItem(LIBRARY_KEY, JSON.stringify({ ...all, [file.name]: { file, revision } }));
+    this.store.setItem(LIBRARY_KEY, JSON.stringify({ ...all, [file.name]: { file, revision, ...(savedBy ? { savedBy } : {}) } }));
     return revision;
   }
 

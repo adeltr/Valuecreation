@@ -8,6 +8,7 @@ import { parseDossier } from '../dossier/format';
 import { buildCompanyBrief } from '../copilot/brief';
 import type { DossierRepository } from '../dossier/repository';
 import { dossierRoutes } from './dossierRoutes';
+import { requirePassword, type AuthOptions } from './auth';
 import { empiricalRoutes } from './empiricalRoutes';
 import type { EmpiricalDataset } from '../empirical/importer';
 
@@ -58,10 +59,12 @@ export async function handleProposal(
 
 export function createServer(
   callModel: (s: string, u: string) => Promise<string>,
-  options: { dossiers?: DossierRepository; empirical?: () => EmpiricalDataset | null } = {},
+  options: { dossiers?: DossierRepository; empirical?: () => EmpiricalDataset | null; auth?: AuthOptions } = {},
 ) {
   const app = express();
-  if (options.dossiers) app.use('/api/dossiers', dossierRoutes(options.dossiers));
+  app.get('/api/session', (_req, res) => { res.json({ passwordRequired: Boolean(options.auth?.password) }); });
+  app.use('/api', requirePassword(options.auth?.password));
+  if (options.dossiers) app.use('/api/dossiers', dossierRoutes(options.dossiers, options.auth?.auditFile));
   if (options.empirical) app.use('/api/empirical', empiricalRoutes(options.empirical));
   app.use(express.json({ limit: '2mb' }));
   app.post('/api/propose', async (req, res) => {

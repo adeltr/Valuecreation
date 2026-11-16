@@ -41,8 +41,8 @@ export class FileDossierRepository implements DossierRepository {
     const out: DossierSummary[] = [];
     for (const f of (await readdir(this.dir)).filter((x) => /^[0-9a-f]{64}\.json$/.test(x))) {
       try {
-        const { file, revision } = JSON.parse(await readFile(join(this.dir, f), 'utf8')) as StoredDossier;
-        out.push({ name: file.name, archetype: file.archetype, savedAt: file.savedAt, revision });
+        const { file, revision, savedBy } = JSON.parse(await readFile(join(this.dir, f), 'utf8')) as StoredDossier;
+        out.push({ name: file.name, archetype: file.archetype, savedAt: file.savedAt, revision, ...(savedBy ? { savedBy } : {}) });
       } catch {
         console.warn(`[dossiers] fichier illisible ignoré : ${f}`);
       }
@@ -56,7 +56,7 @@ export class FileDossierRepository implements DossierRepository {
     return stored;
   }
 
-  async save(file: DossierFile, baseRevision: number | null): Promise<number> {
+  async save(file: DossierFile, baseRevision: number | null, savedBy?: string): Promise<number> {
     parseDossier(file); // throws on an invalid dossier: nothing invalid is ever stored
     return this.exclusive(async () => {
       const current = (await this.load(file.name))?.revision ?? null;
@@ -64,7 +64,7 @@ export class FileDossierRepository implements DossierRepository {
       const revision = (current ?? 0) + 1;
       await mkdir(this.dir, { recursive: true });
       const tmp = join(this.dir, `.${randomUUID()}.tmp`);
-      await writeFile(tmp, JSON.stringify({ file, revision } satisfies StoredDossier, null, 2));
+      await writeFile(tmp, JSON.stringify({ file, revision, ...(savedBy ? { savedBy } : {}) } satisfies StoredDossier, null, 2));
       await rename(tmp, this.path(file.name));
       return revision;
     });

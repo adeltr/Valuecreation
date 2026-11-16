@@ -28,7 +28,7 @@ afterEach(async () => {
 
 const url = (name: string) => `${base}/${encodeURIComponent(name)}`;
 const put = (name: string, body: unknown) =>
-  fetch(url(name), { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  fetch(url(name), { method: 'PUT', headers: { 'Content-Type': 'application/json', 'X-VCC-Analyst': 'Test' }, body: JSON.stringify(body) });
 
 describe('dossier routes', () => {
   it('PUT creates, GET reads, the list shows it', async () => {
@@ -36,7 +36,7 @@ describe('dossier routes', () => {
     expect(res.status).toBe(200);
     expect(await res.json()).toEqual({ revision: 1 });
     const got = await fetch(url('Air X / DD'));
-    expect(await got.json()).toEqual({ file: file('Air X / DD'), revision: 1 });
+    expect(await got.json()).toEqual({ file: file('Air X / DD'), revision: 1, savedBy: 'Test' });
     expect((await (await fetch(base)).json()).map((d: { name: string }) => d.name)).toEqual(['Air X / DD']);
   });
 
@@ -59,9 +59,9 @@ describe('dossier routes', () => {
 
   it('DELETE needs the current revision', async () => {
     await put('Air X', { file: file('Air X'), baseRevision: null });
-    expect((await fetch(`${url('Air X')}?revision=2`, { method: 'DELETE' })).status).toBe(409);
-    expect((await fetch(`${url('Air X')}?revision=x`, { method: 'DELETE' })).status).toBe(400);
-    expect((await fetch(`${url('Air X')}?revision=1`, { method: 'DELETE' })).status).toBe(204);
+    expect((await fetch(`${url('Air X')}?revision=2`, { method: 'DELETE', headers: { 'X-VCC-Analyst': 'Test' } })).status).toBe(409);
+    expect((await fetch(`${url('Air X')}?revision=x`, { method: 'DELETE', headers: { 'X-VCC-Analyst': 'Test' } })).status).toBe(400);
+    expect((await fetch(`${url('Air X')}?revision=1`, { method: 'DELETE', headers: { 'X-VCC-Analyst': 'Test' } })).status).toBe(204);
     expect((await fetch(url('Air X'))).status).toBe(404);
   });
 

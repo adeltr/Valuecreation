@@ -1,9 +1,10 @@
 import express, { type Router } from 'express';
 import type { DossierFile } from '../dossier/format';
 import { DossierNotFound, RevisionConflict, type DossierRepository } from '../dossier/repository';
+import { analystOf, audit } from './auth';
 
 /** REST access to the dossier repository. The repository validates every dossier it stores. */
-export function dossierRoutes(repo: DossierRepository): Router {
+export function dossierRoutes(repo: DossierRepository, auditFile?: string): Router {
   const r = express.Router();
   r.use(express.json({ limit: '2mb' }));
 
@@ -25,13 +26,25 @@ export function dossierRoutes(repo: DossierRepository): Router {
     const { file, baseRevision } = (req.body ?? {}) as { file?: DossierFile; baseRevision?: number | null };
     if (file?.name !== req.params.name) return res.status(400).json({ error: 'Le nom du dossier ne correspond pas à l\'URL' });
     if (baseRevision !== null && !Number.isInteger(baseRevision)) return res.status(400).json({ error: 'baseRevision manquante' });
-    try { res.json({ revision: await repo.save(file, baseRevision ?? null) }); } catch (e) { fail(res, e); }
+    const analyst = analystOf(req);
+    if (!analyst) return res.status(400).json({ error: 'Nom d\'analyste manquant : indiquez-le en haut de l\'écran avant d\'enregistrer' });
+    try {
+      const revision = await repo.save(file, baseRevision ?? null, analyst);
+      await audit(auditFile, { analyst, action: 'save', dossier: file.name, revision });
+      res.json({ revision });
+    } catch (e) { fail(res, e); }
   });
 
   r.delete('/:name', async (req, res) => {
     const revision = Number(req.query.revision);
     if (!Number.isInteger(revision)) return res.status(400).json({ error: 'revision manquante' });
-    try { await repo.remove(req.params.name, revision); res.status(204).end(); } catch (e) { fail(res, e); }
+    const analyst = analystOf(req);
+    if (!analyst) return res.status(400).json({ error: 'Nom d\'analyste manquant : indiquez-le en haut de l\'écran avant de supprimer' });
+    try {
+      await repo.remove(req.params.name, revision);
+      await audit(auditFile, { analyst, action: 'delete', dossier: req.params.name, revision });
+      res.status(204).end();
+    } catch (e) { fail(res, e); }
   });
 
   return r;
