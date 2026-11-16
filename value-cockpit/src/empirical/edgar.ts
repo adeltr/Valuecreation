@@ -167,3 +167,30 @@ export function windowRecords(
   }
   return out;
 }
+
+const ENTRY_CODES = ['EBITDA_ENTRY', 'CAPEX', 'COGS_RATIO', 'DSO', 'DIO', 'DPO', 'WORKING_CAPITAL'] as const;
+
+/**
+ * The latest annual filing as entry facts of a dossier (docs/23), in filing currency units.
+ * Only what the filing states: a fact that cannot be computed is listed in `missing`, never
+ * estimated. Net debt is left to the analyst (too many debt concepts to read reliably).
+ */
+export function entryFacts(cf: CompanyFacts): { fiscalYear: number; values: Record<string, number>; missing: string[] } | null {
+  const s = Object.fromEntries(Object.entries(CONCEPTS).map(([k, c]) => [k, annualSeries(cf, c)])) as Record<keyof typeof CONCEPTS, Record<number, number>>;
+  const capex = annualSeries(cf, ['PaymentsToAcquirePropertyPlantAndEquipment', 'PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities']);
+  const years = Object.keys(s.revenue).map(Number).filter((y) => s.revenue[y] > 0);
+  if (!years.length) return null;
+  const y = Math.max(...years);
+  const rev = s.revenue[y], cogs = s.cogs[y];
+  const values: Record<string, number> = { REVENUE: rev };
+  if (s.operatingIncome[y] !== undefined && s.da[y] !== undefined) values.EBITDA_ENTRY = s.operatingIncome[y] + s.da[y];
+  if (capex[y] !== undefined) values.CAPEX = capex[y];
+  if (cogs > 0) values.COGS_RATIO = cogs / rev;
+  if (s.receivables[y] !== undefined) values.DSO = (s.receivables[y] / rev) * 365;
+  if (cogs > 0 && s.inventory[y] !== undefined) values.DIO = (s.inventory[y] / cogs) * 365;
+  if (cogs > 0 && s.payables[y] !== undefined) values.DPO = (s.payables[y] / cogs) * 365;
+  if (s.receivables[y] !== undefined && s.inventory[y] !== undefined && s.payables[y] !== undefined) {
+    values.WORKING_CAPITAL = s.receivables[y] + s.inventory[y] - s.payables[y];
+  }
+  return { fiscalYear: y, values, missing: ENTRY_CODES.filter((c) => !(c in values)) };
+}

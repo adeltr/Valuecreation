@@ -120,7 +120,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} archetype={state.archetype} />
         <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} archetype={state.archetype}
           bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} context={state.context}
-          checks={entryChecks(metrics, getBridgeFamily(state.archetype))} provenance={state.provenance} analyst={session.analyst} />
+          checks={entryChecks(metrics, getBridgeFamily(state.archetype))} provenance={state.provenance} analyst={session.analyst} fetchImpl={api} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
           inputCodes={Object.keys(state.inputs)} analyst={session.analyst} fetchImpl={api}
           company={() => toDossier({ ...state, name: state.name.trim() || 'Dossier sans nom' }, new Date().toISOString())} />

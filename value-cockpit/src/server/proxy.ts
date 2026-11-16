@@ -10,6 +10,7 @@ import type { DossierRepository } from '../dossier/repository';
 import { dossierRoutes } from './dossierRoutes';
 import { requirePassword, type AuthOptions } from './auth';
 import { empiricalRoutes } from './empiricalRoutes';
+import { filingsRoutes, type FilingsClient } from './filingsRoutes';
 import type { EmpiricalDataset } from '../empirical/importer';
 
 export function buildSystemPrompt(archetype: SectorArchetype): string {
@@ -59,13 +60,14 @@ export async function handleProposal(
 
 export function createServer(
   callModel: (s: string, u: string) => Promise<string>,
-  options: { dossiers?: DossierRepository; empirical?: () => EmpiricalDataset | null; auth?: AuthOptions } = {},
+  options: { dossiers?: DossierRepository; empirical?: () => EmpiricalDataset | null; auth?: AuthOptions; filings?: () => FilingsClient | null } = {},
 ) {
   const app = express();
   app.get('/api/session', (_req, res) => { res.json({ passwordRequired: Boolean(options.auth?.password) }); });
   app.use('/api', requirePassword(options.auth?.password));
   if (options.dossiers) app.use('/api/dossiers', dossierRoutes(options.dossiers, options.auth?.auditFile));
   if (options.empirical) app.use('/api/empirical', empiricalRoutes(options.empirical));
+  if (options.filings) app.use('/api/filings', filingsRoutes(options.filings));
   app.use(express.json({ limit: '2mb' }));
   app.post('/api/propose', async (req, res) => {
     try {

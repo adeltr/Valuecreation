@@ -3,6 +3,8 @@ import { createServer } from './proxy';
 import { FileDossierRepository } from './fileRepository';
 import { datasetFile } from './empiricalRoutes';
 import { checkExposure } from './auth';
+import { makeSecClient } from './secClient';
+import { secUserAgent } from '../empirical/importer';
 import { COPILOT_MODEL, hasAnthropicCredentials, makeCallModel } from './anthropic';
 
 // `npm run server` — dossier storage + copilot proxy behind Vite's /api proxy (vite.config.ts).
@@ -17,15 +19,22 @@ const offline = async (): Promise<string> => {
 };
 const password = process.env.VCC_PASSWORD || undefined;
 try { checkExposure(host, password); } catch (e) { console.error(`✗ ${(e as Error).message}`); process.exit(1); }
+// Public filings need the SEC contact (same variable as the empirical import); answers are cached a week.
+let sec: ReturnType<typeof makeSecClient> | null = null;
+try {
+  sec = makeSecClient({ userAgent: secUserAgent(process.env), cacheDir: resolve('data/empirical/cache'), maxAgeMs: 7 * 86_400_000 });
+} catch { /* no SEC_USER_AGENT: the lookup answers 503 with the instruction */ }
 const connected = hasAnthropicCredentials(process.env);
 const callModel = connected ? makeCallModel() : offline;
 
 createServer(callModel, {
   dossiers: new FileDossierRepository(dir),
   auth: { password, auditFile: join(dir, 'audit.log') },
+  filings: () => sec,
   empirical: datasetFile(resolve(process.env.VCC_EMPIRICAL_FILE ?? 'data/empirical/sec-windows.json')),
 }).listen(port, host, () => {
   console.log(`value-cockpit server on http://${host}:${port} — dossiers in ${dir}`);
   console.log(password ? 'accès : mot de passe partagé requis' : 'accès : sans mot de passe (cette machine uniquement)');
+  console.log(sec ? 'comptes publics SEC : activés' : 'comptes publics SEC : désactivés (SEC_USER_AGENT absent)');
   console.log(connected ? `copilote : ${COPILOT_MODEL}` : 'copilote : hors ligne (ANTHROPIC_API_KEY absent)');
 });

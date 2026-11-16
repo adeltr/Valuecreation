@@ -30,6 +30,7 @@ docs/
   20-FINANCIAL-MODEL.md             ← cash (BFR, capex, conversion), TRI, horizon et coût des leviers
   21-ANALYST-WORKFLOW.md            ← leviers saisis à la main, libellés et définitions, contexte, contrôles d'entrée
   22-ACCESS-AND-AUDIT.md            ← mot de passe partagé, nom d'analyste, piste d'audit
+  23-DATA-RELIABILITY.md            ← provenance de chaque input, comptes publics SEC, import CSV, où trouver des données fiables
   superpowers/plans/
     2026-06-11-value-cockpit-core-v2.md   ← plan d'implémentation phase 1 (format writing-plans)
     2026-10-27-value-cockpit-ui-phase2.md ← plan phase 2 (UI React, 3+1 panneaux)

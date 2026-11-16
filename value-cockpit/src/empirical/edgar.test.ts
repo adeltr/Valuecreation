@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { annualSeries, companyProfile, sicToArchetype, yearMetrics, acquisitionYears, windowRecords, sizeBucket, normalizeCountry } from './edgar';
+import { annualSeries, companyProfile, sicToArchetype, yearMetrics, acquisitionYears, windowRecords, sizeBucket, normalizeCountry, entryFacts } from './edgar';
 
 // Excerpts in the documented shape of data.sec.gov (companyfacts / submissions) — test fixtures only.
 const fy = (y: number, val: number, extra: object = {}) => ({ start: `${y}-01-01`, end: `${y}-12-31`, val, fy: y, fp: 'FY', form: '10-K', filed: `${y + 1}-02-15`, ...extra });
@@ -90,4 +90,21 @@ describe('EDGAR parsing', () => {
     expect(r.deltas.DSO).toBeCloseTo(73 / 1331 * 365 - 36.5, 12);
     expect(r.source).toBe('https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json');
   });
+
+  it('entry facts of the latest fiscal year, in the cockpit\'s input codes, with what could not be read', () => {
+    const withCapex = { ...facts, facts: { 'us-gaap': { ...facts.facts['us-gaap'],
+      PaymentsToAcquirePropertyPlantAndEquipment: { units: { USD: [fy(2021, 90e6)] } } } } };
+    const e = entryFacts(withCapex)!;
+    expect(e.fiscalYear).toBe(2021);
+    expect(e.values).toEqual({
+      REVENUE: 1331e6, EBITDA_ENTRY: 186e6, CAPEX: 90e6, COGS_RATIO: 800 / 1331,
+      DSO: (73 / 1331) * 365, DIO: (40 / 800) * 365, DPO: (88 / 800) * 365, WORKING_CAPITAL: (73 + 40 - 88) * 1e6,
+    });
+    expect(e.missing).toEqual([]);
+    const bare = entryFacts({ cik: 1, facts: { 'us-gaap': { Revenues: facts.facts['us-gaap'].Revenues } } })!;
+    expect(bare.values).toEqual({ REVENUE: 1331e6 });
+    expect(bare.missing).toEqual(['EBITDA_ENTRY', 'CAPEX', 'COGS_RATIO', 'DSO', 'DIO', 'DPO', 'WORKING_CAPITAL']);
+    expect(entryFacts({ cik: 1, facts: {} })).toBeNull();
+  });
 });
+

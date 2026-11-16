@@ -4,6 +4,7 @@ import type { Unit } from '../../ontology/base';
 import type { Action } from '../state/store';
 import { formatValue } from '../model/format';
 import { MetricName } from './MetricName';
+import { FilingsLookup } from './FilingsLookup';
 import { SCALES, type CompanyContext, type Provenance } from '../../dossier/format';
 import type { EntryCheck } from '../model/entryChecks';
 import { inputsTemplateCsv, parseInputsCsv } from '../model/inputsCsv';
@@ -18,6 +19,7 @@ interface Props {
   checks: EntryCheck[];
   provenance: Record<string, Provenance>;
   analyst: string;
+  fetchImpl: typeof fetch;
 }
 
 const today = () => new Date().toISOString().slice(0, 10);
@@ -31,7 +33,7 @@ const UNIT_HINT: Record<Unit, string> = {
   currency: 'montant', percent: 'fraction (0,05 = 5 %)', days: 'jours', years: 'ans', ratio: 'ratio', count: 'nombre',
 };
 
-export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInputs, context, checks, provenance, analyst }: Props) {
+export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInputs, context, checks, provenance, analyst, fetchImpl }: Props) {
   const sourced = inputs0(metrics).filter((m) => provenance[m.code]).length;
   const total = inputs0(metrics).length;
   const money = `${context.scale} ${context.currency}`;
@@ -91,6 +93,8 @@ export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInpu
           <input type="file" accept=".csv,text/csv" onChange={(e) => importCsv(e.target.files?.[0], e.target)} />
         </label>
       </div>
+      <FilingsLookup inputUnits={Object.fromEntries(inputs.map((m) => [m.code, m.unit]))} context={context}
+        analyst={analyst} fetchImpl={fetchImpl} dispatch={dispatch} />
       {checks.filter((c) => !c.ok).map((c) => (
         <p key={c.entryCode} className="warn" role="status">
           {`Incohérence à l'entrée : ${c.entryCode} saisi ${formatValue(c.entered, 'currency')}, alors que les drivers donnent ${formatValue(c.model, 'currency')} à l'année 0 (${c.modelCode}). Vérifiez la donnée d'entrée ou les drivers.`}

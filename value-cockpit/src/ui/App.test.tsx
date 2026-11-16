@@ -616,3 +616,35 @@ describe('App – shared password', () => {
   });
 });
 
+describe('App – public filings (SEC)', () => {
+  afterEach(() => vi.unstubAllGlobals());
+
+  it('looks a listed company up, previews its filed figures in the dossier scale, and applies them with the filing as source', async () => {
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      if (url.startsWith('/api/filings')) {
+        return new Response(JSON.stringify({ ticker: 'AIRX', name: 'Air X Inc.', archetype: 'airline', fiscalYear: 2025, currency: 'USD',
+          values: { REVENUE: 1000e6, EBITDA_ENTRY: 150e6, CAPEX: 70e6, DSO: 14.6 }, missing: ['DIO'], source: 'https://data.sec.gov/x.json' }));
+      }
+      return new Response('{}', { status: 404 });
+    }));
+    render(<App connect={async () => ({ repo: new LocalDossierRepository({ getItem: () => null, setItem: () => {} }), where: 'browser' })} />);
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    fireEvent.change(within(company).getByLabelText('Ticker (société cotée aux États-Unis)'), { target: { value: 'airx' } });
+    fireEvent.click(within(company).getByRole('button', { name: 'Chercher les comptes publics' }));
+
+    const preview = await within(company).findByRole('group', { name: /Air X Inc\./ });
+    expect(within(preview).getByText(/exercice 2025/)).toBeTruthy();
+    expect(within(preview).getByText(/EBITDA_ENTRY : 150/)).toBeTruthy();
+    expect(within(preview).getByText(/REVENUE.*pas un input de ce modèle/)).toBeTruthy();
+    expect(within(preview).getByText(/Non lus dans le dépôt : DIO/)).toBeTruthy();
+    expect(within(preview).getByText(/dossier est en EUR/)).toBeTruthy();
+
+    fireEvent.click(within(preview).getByRole('button', { name: /Appliquer 3 valeurs/ }));
+    expect((within(company).getByLabelText(byCode('EBITDA_ENTRY')) as HTMLInputElement).value).toBe('150');
+    expect((within(company).getByLabelText(byCode('DSO')) as HTMLInputElement).value).toBe('14.6');
+    const row = within(company).getByLabelText(byCode('CAPEX')).closest('tr')!;
+    expect(within(row).getByText(/comptes publics par Léa Martin/)).toBeTruthy();
+    expect((within(row).getByLabelText('CAPEX : référence de la source') as HTMLInputElement).value).toMatch(/SEC, exercice 2025 — https:\/\/data\.sec\.gov/);
+  });
+});
+
