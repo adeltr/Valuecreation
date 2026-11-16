@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-42
+part: E
+partLabel: Finance & Program Management
+quant: []
+causes: [REGULATORY, GEOPOLITICAL]
+levers: []
 ---
 # 42 · Intellectual Property and Technology Transfer Agreements
 

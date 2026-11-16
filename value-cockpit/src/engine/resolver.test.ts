@@ -23,3 +23,15 @@ describe('resolveMetrics', () => {
       .toThrow(/missing value/i);
   });
 });
+
+describe('resolveMetrics – only what a target needs', () => {
+  const m = (code: string, formula: string | null, v: number | null = null) => ({
+    id: code, companyId: 'c', code, label: code, unit: 'ratio' as const, isCalculated: formula !== null,
+    formula, currentValue: v, benchmarkValue: null, benchmarkSource: null,
+  });
+  it('resolves the dependency closure of the requested codes and ignores the rest', () => {
+    const metrics = [m('A', null, 2), m('B', 'A * 3'), m('ZERO', null, 0), m('BROKEN', '1 / ZERO')];
+    expect(() => resolveMetrics(metrics)).toThrow(/finite/);
+    expect([...resolveMetrics(metrics, ['B'])]).toEqual([['A', 2], ['B', 6]]);
+  });
+});

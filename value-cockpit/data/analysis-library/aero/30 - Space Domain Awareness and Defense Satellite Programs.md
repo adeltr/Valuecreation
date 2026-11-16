@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-30
+part: D
+partLabel: Technology & Cybersecurity
+quant: [RD_INTENSITY]
+causes: [MARKET, REGULATORY]
+levers: [RD_PORTFOLIO]
 ---
 # 30 · Space Domain Awareness and Defense Satellite Programs
 

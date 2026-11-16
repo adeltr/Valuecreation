@@ -8,7 +8,8 @@ const BASE_INPUTS = {
   REVENUE: 500, EBITDA_MARGIN: 0.12,
   BOOK_TO_BILL: 1.06, FIXED_PRICE_SHARE: 0.60, COST_OVERRUN_RATE: 0.03,
   ENTRY_MULTIPLE: 9, EXIT_MULTIPLE: 9, HOLD_YEARS: 5,
-  NET_DEBT_ENTRY: 300, FCF_ANNUAL: 25,
+  NET_DEBT_ENTRY: 300, EBITDA_ENTRY: 60,
+  CASH_CONVERSION: 0.6, CAPEX: 10, DSO: 0, DIO: 0, DPO: 0, COGS_RATIO: 0.5, WORKING_CAPITAL: 0, PLAN_ONE_OFF_COSTS: 0,
 };
 
 describe('aero template', () => {
@@ -25,7 +26,7 @@ describe('aero template', () => {
     expect(v.get('EBITDA_EXIT')).toBeCloseTo(ebitdaExit, 4);
     const equityEntry = 500 * 0.12 * 9 - 300; // 60*9-300 = 240
     expect(v.get('EQUITY_ENTRY')).toBeCloseTo(equityEntry, 6);
-    const netDebtExit = 300 - 25 * 5; // 175
+    const netDebtExit = 300 - 5 * ((60 + ebitdaExit) / 2 * 0.6 - 10);
     const moic = (ebitdaExit * 9 - netDebtExit) / equityEntry;
     expect(v.get('MOIC')).toBeCloseTo(moic, 4);
   });

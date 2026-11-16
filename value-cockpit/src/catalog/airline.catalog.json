@@ -1,0 +1,2111 @@
+[
+  {
+    "id": "airline-01",
+    "archetype": "airline",
+    "title": "Route Network and Hub Optimization Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "ALLIANCES"
+    ],
+    "sourcePath": "data/analysis-library/airline/01 - Route Network and Hub Optimization Analysis.md",
+    "goal": "The goal of the Route Network and Hub Optimization Analysis is to evaluate the efficiency, profitability, and strategic alignment of an airline's route network and hub locations.",
+    "dataRequired": [
+      "Route performance data (load factor, revenue, cost per route)",
+      "Passenger demand by origin and destination (O&D) pairs",
+      "Connection time and transit passenger data at hubs",
+      "Competitor route information and hub locations",
+      "Airport and airspace congestion levels",
+      "Regional economic and demographic data",
+      "Operational data, including flight frequencies, aircraft types, and on-time performance"
+    ],
+    "improve": [
+      "Restructure Unprofitable Routes",
+      "Enhance Hub Efficiency",
+      "Expand into Underserved Markets",
+      "Strategic Alliances and Code-Shares",
+      "Optimize Load Factor"
+    ],
+    "formulas": [
+      {
+        "output": "Route Profitability",
+        "variables": [
+          "Route Revenue",
+          "Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Route Profitability = (Route Revenue - Route Cost) / Route Revenue x 100",
+        "step": "Evaluate Route Profitability"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "Revenue Passenger Kilometers (RPK)",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (Revenue Passenger Kilometers (RPK) / Available Seat Kilometers (ASK)) x 100",
+        "step": "Analyze Market Demand and Load Factors"
+      }
+    ]
+  },
+  {
+    "id": "airline-02",
+    "archetype": "airline",
+    "title": "Hub Connectivity and Spoke Development Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/02 - Hub Connectivity and Spoke Development Analysis.md",
+    "goal": "The goal of the Hub Connectivity and Spoke Development Analysis is to enhance the efficiency and reach of an airline’s network by optimizing hub connectivity.",
+    "dataRequired": [
+      "Flight schedules, including departure and arrival times for each hub and spoke",
+      "Passenger connection patterns and transit volumes at hubs",
+      "Load factors for each route, especially on connecting spokes",
+      "Route profitability data",
+      "Competitor hub and spoke networks in relevant markets",
+      "Geographic and demographic data for potential new spoke destinations",
+      "Regional regulatory data impacting new route development"
+    ],
+    "improve": [
+      "Realign Scheduling",
+      "Enhance Underperforming Spokes",
+      "Develop High-Potential Spokes",
+      "Strengthen Competitive Positioning",
+      "Streamline Operations at Hubs"
+    ],
+    "formulas": [
+      {
+        "output": "Spoke Profitability",
+        "variables": [
+          "Spoke Route Revenue",
+          "Spoke Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Spoke Profitability = (Spoke Route Revenue - Spoke Route Cost) / Spoke Route Revenue x 100",
+        "step": "Analyze Spoke Performance"
+      }
+    ]
+  },
+  {
+    "id": "airline-03",
+    "archetype": "airline",
+    "title": "Route Profitability and Market Share Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "YIELD",
+      "MARKET_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/03 - Route Profitability and Market Share Analysis.md",
+    "goal": "The goal of the Route Profitability and Market Share Analysis is to assess the financial performance of each route and determine the airline’s competitive positioning in key markets.",
+    "dataRequired": [
+      "Revenue and cost data per route, including variable costs such as fuel, labor, and landing fees",
+      "Load factor and yield data for each route",
+      "Competitor market share data and route frequencies",
+      "Average fare pricing on each route and competitive pricing trends",
+      "Passenger demographics and demand patterns by route",
+      "Seasonal demand fluctuations and their impact on load factors and profitability",
+      "Airport charges, landing fees, and operational costs specific to each route",
+      "Regulatory restrictions that may impact pricing or capacity on certain routes"
+    ],
+    "improve": [
+      "Adjust Capacity on Low-Demand Routes",
+      "Implement Targeted Pricing Strategies",
+      "Increase Presence in Key Markets",
+      "Cost Reduction Initiatives",
+      "Optimize Aircraft Allocation"
+    ],
+    "formulas": [
+      {
+        "output": "Route Profitability",
+        "variables": [
+          "Route Revenue",
+          "Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Route Profitability = (Route Revenue - Route Cost) / Route Revenue x 100",
+        "step": "Calculate Route Profitability"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "Revenue Passenger Kilometers (RPK)",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (Revenue Passenger Kilometers (RPK) / Available Seat Kilometers (ASK)) x 100",
+        "step": "Analyze Load Factor and Yield"
+      },
+      {
+        "output": "Yield",
+        "variables": [
+          "Total Passenger Revenue",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Yield = Total Passenger Revenue / RPK",
+        "step": "Analyze Load Factor and Yield"
+      },
+      {
+        "output": "Market Share",
+        "variables": [
+          "Total Passengers on Airline Route",
+          "Total Passengers in Market"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Share = (Total Passengers on Airline Route / Total Passengers in Market) x 100",
+        "step": "Market Share Analysis"
+      }
+    ]
+  },
+  {
+    "id": "airline-04",
+    "archetype": "airline",
+    "title": "Seasonal Demand and Network Flexibility Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/04 - Seasonal Demand and Network Flexibility Analysis.md",
+    "goal": "The goal of the Seasonal Demand and Network Flexibility Analysis is to understand fluctuations in passenger demand across different seasons and evaluate the airline’s ability to adjust its network to align with these variations.",
+    "dataRequired": [
+      "Historical passenger load data by route and season (monthly or quarterly)",
+      "Load factors and revenue per route by season",
+      "Regional holiday and event calendars that impact travel demand",
+      "Aircraft availability and utilization data",
+      "Competitor schedules and route frequency adjustments by season",
+      "Cost data related to operational adjustments, including crew and fuel costs",
+      "Route-level profitability metrics for each season"
+    ],
+    "improve": [
+      "Optimize Capacity in Off-Peak Periods",
+      "Increase Capacity During Peak Seasons",
+      "Adjust Pricing Strategies Seasonally",
+      "Introduce Seasonal Routes",
+      "Enhance Operational Flexibility"
+    ],
+    "formulas": [
+      {
+        "output": "Seasonal Load Factor",
+        "variables": [
+          "RPK in Season",
+          "ASK in Season"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Seasonal Load Factor = (RPK in Season / ASK in Season) x 100",
+        "step": "Calculate Seasonal Load Factors"
+      }
+    ]
+  },
+  {
+    "id": "airline-05",
+    "archetype": "airline",
+    "title": "Market Entry and Route Launch Feasibility Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/05 - Market Entry and Route Launch Feasibility Analysis.md",
+    "goal": "The goal of the Market Entry and Route Launch Feasibility Analysis is to evaluate the potential success of entering a new market or launching a new route.",
+    "dataRequired": [
+      "Passenger demand forecasts for the target route or market",
+      "Demographic and economic data for the target region",
+      "Competitor presence, including frequencies, market share, and pricing on similar routes",
+      "Regulatory environment and any restrictions on route rights",
+      "Cost estimates for operating the route, including fuel, crew, airport fees, and maintenance",
+      "Aircraft availability and suitable fleet options",
+      "Historical data on similar routes (if available) for performance benchmarking"
+    ],
+    "improve": [
+      "Optimize Marketing Strategies",
+      "Negotiate Airport and Landing Fees",
+      "Leverage Partnerships",
+      "Adjust Capacity Based on Demand",
+      "Monitor Competitor and Regulatory Shifts"
+    ],
+    "formulas": [
+      {
+        "output": "Projected Profitability",
+        "variables": [
+          "Projected Route Revenue",
+          "Projected Route Cost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Projected Profitability = (Projected Route Revenue - Projected Route Cost) / Projected Route Revenue x 100",
+        "step": "Estimate Route Profitability"
+      }
+    ]
+  },
+  {
+    "id": "airline-06",
+    "archetype": "airline",
+    "title": "Competitor Route Overlap and Market Penetration Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "YIELD",
+      "MARKET_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT",
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/06 - Competitor Route Overlap and Market Penetration Analysis.md",
+    "goal": "The goal of the Competitor Route Overlap and Market Penetration Analysis is to understand the level of competition on existing routes and assess the airline’s market share relative to competitors.",
+    "dataRequired": [
+      "Competitor flight schedules, frequencies, and aircraft types on overlapping routes",
+      "Market share data by route, indicating passenger volume for each airline",
+      "Average fare prices and pricing trends across competing routes",
+      "Load factors and yield data for each route",
+      "Seasonal demand variations and peak travel periods",
+      "Customer demographics and loyalty data by route (if available)",
+      "Historical data on competitor entry or exit from routes"
+    ],
+    "improve": [
+      "Enhance Competitive Pricing",
+      "Increase Marketing and Loyalty Efforts",
+      "Optimize Capacity and Frequency",
+      "Differentiate In-Flight Services",
+      "Monitor Competitor Movements"
+    ],
+    "formulas": [
+      {
+        "output": "Market Share",
+        "variables": [
+          "Airline Passengers on Route",
+          "Total Market Passengers on Route"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Market Share = (Airline Passengers on Route / Total Market Passengers on Route) x 100",
+        "step": "Calculate Market Share on Overlapping Routes"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "RPK",
+          "ASK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (RPK / ASK) x 100",
+        "step": "Analyze Load Factors and Yield on Competitive Routes"
+      },
+      {
+        "output": "Yield",
+        "variables": [
+          "Total Revenue",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Yield = Total Revenue / RPK",
+        "step": "Analyze Load Factors and Yield on Competitive Routes"
+      }
+    ]
+  },
+  {
+    "id": "airline-07",
+    "archetype": "airline",
+    "title": "Regulatory Route Rights and Open Skies Impact Analysis",
+    "part": "A",
+    "partLabel": "Network and Route Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/07 - Regulatory Route Rights and Open Skies Impact Analysis.md",
+    "goal": "The goal of the Regulatory Route Rights and Open Skies Impact Analysis is to evaluate the regulatory landscape affecting route rights and international market access.",
+    "dataRequired": [
+      "Bilateral air service agreements between countries",
+      "Open Skies agreements and specific terms for relevant markets",
+      "Regulatory restrictions on route frequency, capacity, and pricing",
+      "Historical data on route approvals or denials for the target markets",
+      "Competitor access and frequencies on regulated routes",
+      "Traffic rights (e.g., Fifth Freedom rights) for each market",
+      "Passenger demand and load factor data on impacted routes",
+      "Information on government-imposed restrictions or conditions (e.g., slot controls)"
+    ],
+    "improve": [
+      "Leverage Traffic Rights for Market Expansion",
+      "Engage in Lobbying Efforts",
+      "Optimize Slot Utilization",
+      "Adjust Operational Strategy for Compliance",
+      "Monitor Regulatory Changes",
+      "B. Fleet and Asset Optimization"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "airline-08",
+    "archetype": "airline",
+    "title": "Fleet Utilization and Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [
+      "FLEET_UTILIZATION",
+      "AIRCRAFT_DOWNTIME",
+      "CASK_EX_FUEL"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY",
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/08 - Fleet Utilization and Efficiency Analysis.md",
+    "goal": "The goal of the Fleet Utilization and Efficiency Analysis is to optimize the use of an airline’s aircraft fleet by analyzing utilization rates, fuel efficiency, and operational performance.",
+    "dataRequired": [
+      "Flight hours and cycles (takeoff and landing) per aircraft type",
+      "Fuel consumption and efficiency metrics per aircraft type and route",
+      "Maintenance schedules and downtime for each aircraft",
+      "Operational costs per aircraft, including crew, fuel, and maintenance",
+      "Route demand data and load factors",
+      "Aircraft lease or purchase costs and lease expiry dates",
+      "Benchmarking data for industry utilization standards"
+    ],
+    "improve": [
+      "Increase Utilization of Underused Aircraft",
+      "Improve Fuel Efficiency",
+      "Optimize Maintenance Schedules",
+      "Match Fleet to Demand",
+      "Reduce High CASK Routes"
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate",
+        "variables": [
+          "Total Flight Hours",
+          "Total Days in Operation"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Utilization Rate = (Total Flight Hours / Total Days in Operation)",
+        "step": "Calculate Aircraft Utilization Rates"
+      },
+      {
+        "output": "Fuel Efficiency",
+        "variables": [
+          "Total Fuel Consumed",
+          "Total Passenger Kilometers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Fuel Efficiency = (Total Fuel Consumed / Total Passenger Kilometers)",
+        "step": "Analyze Fuel Efficiency by Aircraft Type"
+      },
+      {
+        "output": "Downtime Percentage",
+        "variables": [
+          "Total Days Out of Service",
+          "Total Days in Operation"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Percentage = (Total Days Out of Service / Total Days in Operation) x 100",
+        "step": "Evaluate Maintenance Downtime"
+      },
+      {
+        "output": "CASK",
+        "variables": [
+          "Total Operating Costs",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CASK = Total Operating Costs / Available Seat Kilometers (ASK)",
+        "step": "Match Aircraft Types to Route Demand"
+      }
+    ]
+  },
+  {
+    "id": "airline-09",
+    "archetype": "airline",
+    "title": "Aircraft Leasing Strategy and Buy vs. Lease Evaluation",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_FINANCING"
+    ],
+    "sourcePath": "data/analysis-library/airline/09 - Aircraft Leasing Strategy and Buy vs. Lease Evaluation.md",
+    "goal": "The goal of the Aircraft Leasing Strategy and Buy vs.",
+    "dataRequired": [
+      "**Current fleet composition:** owned vs. leased aircraft",
+      "Lease terms and conditions, including lease duration, renewal options, and costs",
+      "Purchase costs for new and used aircraft, including financing rates",
+      "Estimated residual value of owned aircraft over time",
+      "Maintenance and operating costs for leased vs. owned aircraft",
+      "Aircraft depreciation rates and associated tax benefits",
+      "Demand forecasts to determine long-term fleet requirements",
+      "Cash flow forecasts and capital availability"
+    ],
+    "improve": [
+      "Optimize Fleet Mix",
+      "Leverage Purchase Options in Lease Agreements",
+      "Prioritize High-Residual-Value Aircraft for Ownership",
+      "Negotiate Lease Terms",
+      "Monitor Market Conditions"
+    ],
+    "formulas": [
+      {
+        "output": "TCO",
+        "variables": [
+          "Purchase Price",
+          "Total Maintenance Costs",
+          "Depreciation",
+          "Residual Value"
+        ],
+        "expression": "v0 + ( v1 + v2 - v3 )",
+        "percentOutput": false,
+        "source": "TCO = Purchase Price + (Total Maintenance Costs + Depreciation - Residual Value)",
+        "step": "Analyze Current Fleet Composition"
+      },
+      {
+        "output": "Total Lease Cost",
+        "variables": [
+          "Monthly Lease Payment",
+          "Lease Term",
+          "Maintenance Costs"
+        ],
+        "expression": "v0 * v1 + v2",
+        "percentOutput": false,
+        "source": "Total Lease Cost = Monthly Lease Payment x Lease Term + Maintenance Costs",
+        "step": "Calculate Total Cost of Leasing"
+      }
+    ]
+  },
+  {
+    "id": "airline-10",
+    "archetype": "airline",
+    "title": "Fuel Efficiency per Aircraft Type Analysis",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/10 - Fuel Efficiency per Aircraft Type Analysis.md",
+    "goal": "The goal of the Fuel Efficiency per Aircraft Type Analysis is to evaluate and compare the fuel consumption and efficiency of each aircraft type in the airline’s fleet.",
+    "dataRequired": [
+      "Fuel consumption data per aircraft type on various routes",
+      "Revenue passenger kilometers (RPK) and available seat kilometers (ASK) per aircraft type",
+      "Average load factors per aircraft type and route",
+      "Operational costs associated with fuel per route",
+      "Route distance and flight duration data",
+      "Fuel price fluctuations and historical data on fuel costs"
+    ],
+    "improve": [
+      "Optimize Fleet Allocation by Route",
+      "Enhance Load Factors",
+      "Invest in Fuel-Efficient Aircraft",
+      "Optimize Flight Operations",
+      "Monitor Fuel Price Trends"
+    ],
+    "formulas": [
+      {
+        "output": "Fuel Efficiency (RPK)",
+        "variables": [
+          "Total Fuel Consumed",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Fuel Efficiency (RPK) = Total Fuel Consumed / RPK.",
+        "step": "Calculate Fuel Efficiency Metrics"
+      },
+      {
+        "output": "Fuel Efficiency (ASK)",
+        "variables": [
+          "Total Fuel Consumed",
+          "ASK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Fuel Efficiency (ASK) = Total Fuel Consumed / ASK.",
+        "step": "Calculate Fuel Efficiency Metrics"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "RPK",
+          "ASK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (RPK / ASK) x 100",
+        "step": "Assess Impact of Load Factors"
+      },
+      {
+        "output": "Fuel Cost Impact",
+        "variables": [
+          "Fuel Efficiency (ASK or RPK)",
+          "Fuel Price"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Fuel Cost Impact = Fuel Efficiency (ASK or RPK) x Fuel Price",
+        "step": "Evaluate Financial Impact of Fuel Efficiency"
+      }
+    ]
+  },
+  {
+    "id": "airline-11",
+    "archetype": "airline",
+    "title": "Aircraft Maintenance Planning and Downtime Reduction",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [
+      "AIRCRAFT_DOWNTIME"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/11 - Aircraft Maintenance Planning and Downtime Reduction.md",
+    "goal": "The goal of the Aircraft Maintenance Planning and Downtime Reduction analysis is to optimize maintenance schedules and reduce aircraft downtime, thereby increasing fleet availability and operational efficiency.",
+    "dataRequired": [
+      "Maintenance schedules, including line maintenance, A-checks, C-checks, and heavy maintenance intervals",
+      "Historical data on unplanned maintenance incidents and delays",
+      "Average downtime per maintenance event by aircraft type",
+      "Costs associated with maintenance (labor, parts, equipment)",
+      "Fleet utilization and operational schedule data",
+      "Industry benchmarks for downtime and maintenance intervals"
+    ],
+    "improve": [
+      "Increase Use of Predictive Maintenance",
+      "Optimize Maintenance Scheduling",
+      "Improve Parts Availability and Inventory Management",
+      "Implement Condition-Based Maintenance",
+      "Benchmark and Adjust Maintenance Intervals"
+    ],
+    "formulas": [
+      {
+        "output": "Average Downtime",
+        "variables": [
+          "Total Downtime for Maintenance Type",
+          "Number of Maintenance Events"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Downtime = Total Downtime for Maintenance Type / Number of Maintenance Events",
+        "step": "Calculate Average Downtime per Maintenance Event"
+      }
+    ]
+  },
+  {
+    "id": "airline-12",
+    "archetype": "airline",
+    "title": "Pilot Training and Simulator Utilization Analysis",
+    "part": "B",
+    "partLabel": "Fleet and Asset Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "LABOR"
+    ],
+    "relatedLeverCategories": [
+      "CREW_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/12 - Pilot Training and Simulator Utilization Analysis.md",
+    "goal": "The goal of the Pilot Training and Simulator Utilization Analysis is to optimize the scheduling, utilization, and effectiveness of pilot training programs and simulator sessions.",
+    "dataRequired": [
+      "Training schedule for pilots, including initial, recurrent, and type-rating training",
+      "Simulator availability and utilization data (hours of use per day/week/month)",
+      "Pilot flight hours, currency requirements, and upcoming license renewal dates",
+      "Training costs, including simulator rental fees, instructor fees, and travel expenses",
+      "Historical data on simulator downtime or maintenance needs",
+      "Regulatory requirements for pilot training frequency and proficiency"
+    ],
+    "improve": [
+      "Increase Off-Peak Simulator Usage",
+      "Consolidate Training Sessions",
+      "Reduce Simulator Downtime",
+      "Expand Cross-Training Programs",
+      "Leverage Data-Driven Scheduling",
+      "C. Operational Efficiency"
+    ],
+    "formulas": [
+      {
+        "output": "Simulator Utilization Rate",
+        "variables": [
+          "Total Simulator Hours Used",
+          "Total Available Simulator Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Simulator Utilization Rate = (Total Simulator Hours Used / Total Available Simulator Hours) x 100",
+        "step": "Assess Current Simulator Utilization"
+      }
+    ]
+  },
+  {
+    "id": "airline-13",
+    "archetype": "airline",
+    "title": "Load Factor and Capacity Management Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "ASK"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "NETWORK_OPTIMIZATION",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/13 - Load Factor and Capacity Management Analysis.md",
+    "goal": "The goal of the Load Factor and Capacity Management Analysis is to optimize the airline’s ability to match seat capacity with passenger demand.",
+    "dataRequired": [
+      "Load factor data by route and aircraft type",
+      "Revenue passenger kilometers (RPK) and available seat kilometers (ASK) per route and aircraft",
+      "Seasonal demand patterns and forecasted demand by route",
+      "Competitor capacity and load factors on overlapping routes",
+      "Cost data per available seat kilometer (CASK) for each route",
+      "Historical data on route-level profitability",
+      "Pricing and yield data per route and time period"
+    ],
+    "improve": [
+      "Optimize Capacity on Low-Demand Routes",
+      "Increase Capacity on High-Demand Routes",
+      "Enhance Pricing Strategies",
+      "Align Seasonal Capacity with Demand Patterns",
+      "Monitor Competitor Actions"
+    ],
+    "formulas": [
+      {
+        "output": "Load Factor",
+        "variables": [
+          "RPK",
+          "ASK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (RPK / ASK) x 100",
+        "step": "Calculate Current Load Factor"
+      },
+      {
+        "output": "Route Profitability",
+        "variables": [
+          "Total Route Revenue",
+          "Total Route Costs"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Route Profitability = (Total Route Revenue - Total Route Costs) / Total Route Revenue x 100",
+        "step": "Assess Route Profitability in Relation to Load Factor"
+      }
+    ]
+  },
+  {
+    "id": "airline-14",
+    "archetype": "airline",
+    "title": "Maintenance, Repair, and Overhaul (MRO) Cost Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "AIRCRAFT_DOWNTIME"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/14 - Maintenance, Repair, and Overhaul (MRO) Cost Analysis.md",
+    "goal": "The goal of the Maintenance, Repair, and Overhaul (MRO) Cost Analysis is to assess and control the costs associated with maintaining, repairing, and overhauling aircraft.",
+    "dataRequired": [
+      "Detailed breakdown of MRO costs by category (labor, parts, third-party services)",
+      "Maintenance schedules and frequency by aircraft type and maintenance type (line, heavy, engine overhaul)",
+      "Historical data on unplanned maintenance and AOG (Aircraft on Ground) events",
+      "Downtime associated with each maintenance event",
+      "Labor and equipment costs for in-house maintenance vs. third-party maintenance",
+      "Benchmark data on industry-standard MRO costs",
+      "Fleet utilization rates and operational schedules"
+    ],
+    "improve": [
+      "Increase Preventive Maintenance",
+      "Optimize In-House and Outsourced Maintenance Mix",
+      "Negotiate Supplier Contracts",
+      "Streamline Maintenance Schedules",
+      "Implement Predictive Maintenance Technologies"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Event",
+        "variables": [
+          "Total Cost for Maintenance Type",
+          "Number of Events"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Event = Total Cost for Maintenance Type / Number of Events",
+        "step": "Analyze Maintenance Frequency and Cost per Event"
+      },
+      {
+        "output": "Downtime Cost",
+        "variables": [
+          "Downtime Hours",
+          "Revenue Lost per Hour"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Downtime Cost = Downtime Hours x Revenue Lost per Hour",
+        "step": "Analyze Downtime Impact on Costs"
+      }
+    ]
+  },
+  {
+    "id": "airline-15",
+    "archetype": "airline",
+    "title": "On-Time Performance and Operational Reliability Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "ON_TIME_PERFORMANCE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST",
+      "CREW_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/15 - On-Time Performance and Operational Reliability Analysis.md",
+    "goal": "The goal of the On-Time Performance and Operational Reliability Analysis is to evaluate the airline’s ability to maintain punctuality and consistent operations.",
+    "dataRequired": [
+      "Historical on-time performance data (departure and arrival times)",
+      "Delay and disruption causes (e.g., weather, maintenance, air traffic control, crew availability)",
+      "Aircraft turnaround times by route and airport",
+      "Flight schedule data, including block times and buffer periods",
+      "Competitor on-time performance benchmarks for comparison",
+      "Passenger compensation costs related to delays",
+      "Maintenance-related delay data, including frequency and duration"
+    ],
+    "improve": [
+      "Increase Ground Staff Efficiency",
+      "Implement Predictive Maintenance",
+      "Adjust Buffer Times Strategically",
+      "Enhance Crew Scheduling Flexibility",
+      "Monitor and Adjust for External Factors"
+    ],
+    "formulas": [
+      {
+        "output": "On-Time Performance",
+        "variables": [
+          "Number of On-Time Flights",
+          "Total Flights"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "On-Time Performance = (Number of On-Time Flights / Total Flights) x 100",
+        "step": "Calculate On-Time Performance Metrics"
+      }
+    ]
+  },
+  {
+    "id": "airline-16",
+    "archetype": "airline",
+    "title": "Airport Resource Optimization and Cost Management Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/16 - Airport Resource Optimization and Cost Management.md",
+    "goal": "The goal of the Airport Resource Optimization and Cost Management Analysis is to minimize costs associated with airport operations and maximize the efficient use of airport resources.",
+    "dataRequired": [
+      "Ground handling costs, including baggage handling, refueling, and aircraft cleaning",
+      "Gate and terminal usage fees and scheduling data",
+      "Passenger flow data, including peak times and congestion points",
+      "Turnaround times per aircraft and route",
+      "Costs associated with airport services (e.g., de-icing, pushback)",
+      "Staff scheduling and labor costs for airport operations",
+      "Benchmark data for industry-standard airport operational costs"
+    ],
+    "improve": [
+      "Optimize Gate and Terminal Allocation",
+      "Streamline Turnaround Processes",
+      "Adjust Staff Schedules for Demand",
+      "Renegotiate Contracts for Airport Services",
+      "Introduce Self-Service Options"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Flight",
+        "variables": [
+          "Total Operational Costs",
+          "Total Flights"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Flight = Total Operational Costs / Total Flights",
+        "step": "Break Down Airport Operational Costs"
+      }
+    ]
+  },
+  {
+    "id": "airline-17",
+    "archetype": "airline",
+    "title": "Crew Scheduling and Labor Cost Optimization",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "LABOR_COST_PER_FLIGHT"
+    ],
+    "relatedCauseCategories": [
+      "LABOR"
+    ],
+    "relatedLeverCategories": [
+      "CREW_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/airline/17 - Crew Scheduling and Labor Cost Optimization.md",
+    "goal": "The goal of the Crew Scheduling and Labor Cost Optimization analysis is to ensure that crew resources are utilized efficiently while minimizing labor costs and maintaining operational reliability.",
+    "dataRequired": [
+      "Crew roster and flight schedules",
+      "Labor costs, including hourly wages, overtime, and per diems",
+      "Crew availability and contractual limitations (e.g., maximum duty hours, rest requirements)",
+      "Historical data on crew-related delays and cancellations",
+      "Staffing levels and crew ratios per flight and aircraft type",
+      "Competitor benchmarks for labor costs and crew productivity",
+      "Seasonal and route-specific demand variations"
+    ],
+    "improve": [
+      "Optimize Crew Rosters to Reduce Overtime",
+      "Introduce Flexible and Dynamic Scheduling",
+      "Enhance Compliance with Rest Regulations",
+      "Develop an On-Call Reserve Pool",
+      "Benchmark and Adjust Labor Costs"
+    ],
+    "formulas": [
+      {
+        "output": "Labor Cost per Flight",
+        "variables": [
+          "Crew Wages",
+          "Overtime",
+          "Per Diem",
+          "Total Flights"
+        ],
+        "expression": "( v0 + v1 + v2 ) / v3",
+        "percentOutput": false,
+        "source": "Labor Cost per Flight = (Crew Wages + Overtime + Per Diem) / Total Flights",
+        "step": "Calculate Labor Cost per Flight and Route"
+      }
+    ]
+  },
+  {
+    "id": "airline-18",
+    "archetype": "airline",
+    "title": "Cabin Configuration and Seat Density Optimization",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_PRODUCTIVITY",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/18 - Cabin Configuration and Seat Density Optimization.md",
+    "goal": "The goal of the Cabin Configuration and Seat Density Optimization analysis is to evaluate and optimize the configuration of aircraft cabins to maximize revenue per flight.",
+    "dataRequired": [
+      "Current cabin layout and seat density by aircraft type",
+      "Revenue per seat and load factors by cabin class (economy, premium economy, business, first)",
+      "Route demand and demographic data, including customer segmentation and preferences",
+      "Competitive benchmarking of seat density and configuration in similar aircraft by other airlines",
+      "Cost data for reconfiguration, including labor, materials, and potential downtime",
+      "Passenger satisfaction data, including feedback on comfort and preferences",
+      "Yield and profitability per cabin class and route"
+    ],
+    "improve": [
+      "Increase Seat Density on High-Demand Routes",
+      "Adjust Cabin Layouts for Premium Demand",
+      "Balance Comfort with Density",
+      "Implement Flexible Configurations",
+      "Optimize Based on Benchmarking"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Seat",
+        "variables": [
+          "Total Revenue for Cabin Class",
+          "Number of Seats in Class"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Seat = Total Revenue for Cabin Class / Number of Seats in Class",
+        "step": "Analyze Revenue per Seat and Load Factor by Cabin Class"
+      }
+    ]
+  },
+  {
+    "id": "airline-19",
+    "archetype": "airline",
+    "title": "Ground Operations Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [
+      "TURNAROUND_MINUTES"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/19 - Ground Operations Efficiency Analysis.md",
+    "goal": "The goal of the Ground Operations Efficiency Analysis is to optimize the processes involved in ground handling, reduce turnaround times, and minimize costs associated with ground operations.",
+    "dataRequired": [
+      "Turnaround time data per aircraft type and route",
+      "Costs associated with ground operations, including baggage handling, refueling, cleaning, catering, and boarding",
+      "Staffing levels and schedules for ground crew and equipment usage data",
+      "Frequency and duration of ground delays and their causes (e.g., baggage delays, fueling issues)",
+      "Benchmark turnaround times and ground operation costs from similar airlines",
+      "Passenger boarding and deplaning times, segmented by aircraft type and boarding method",
+      "On-time performance data for flights impacted by ground operations"
+    ],
+    "improve": [
+      "Optimize Staffing and Scheduling",
+      "Implement Task Automation",
+      "Streamline Boarding and Deplaning Procedures",
+      "Regularly Maintain Ground Equipment",
+      "Establish Real-Time Communication Protocols"
+    ],
+    "formulas": [
+      {
+        "output": "Average Turnaround Time",
+        "variables": [
+          "Total Turnaround Time",
+          "Number of Flights"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Turnaround Time = Total Turnaround Time / Number of Flights",
+        "step": "Calculate Average Turnaround Times by Aircraft Type and Route"
+      }
+    ]
+  },
+  {
+    "id": "airline-20",
+    "archetype": "airline",
+    "title": "Airport and Ground Handling Cost Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/20 - Airport and Ground Handling Cost Efficiency Analysis.md",
+    "goal": "The goal of the Airport and Ground Handling Cost Efficiency Analysis is to minimize costs associated with airport services and ground handling operations, without compromising service quality or operational efficiency.",
+    "dataRequired": [
+      "Ground handling costs, including baggage handling, refueling, cleaning, catering, and boarding per flight",
+      "Airport fees, including landing, parking, and gate fees by airport and route",
+      "Aircraft turnaround times and associated costs per airport",
+      "Contractual terms with ground handling service providers",
+      "Seasonal and peak-period demand data for each airport",
+      "Staffing costs related to ground operations, including overtime expenses",
+      "Industry benchmarks for ground handling and airport costs"
+    ],
+    "improve": [
+      "Negotiate Lower Airport and Service Fees",
+      "Reduce Turnaround Times",
+      "Optimize Staffing and Resource Allocation",
+      "Consolidate Service Provider Contracts",
+      "Adjust Flight Schedules at High-Cost Airports"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Flight",
+        "variables": [
+          "Total Ground Handling and Airport Costs",
+          "Total Flights"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Flight = Total Ground Handling and Airport Costs / Total Flights",
+        "step": "Categorize Airport and Ground Handling Costs"
+      }
+    ]
+  },
+  {
+    "id": "airline-21",
+    "archetype": "airline",
+    "title": "Passenger Flow and Boarding Process Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/21 - Passenger Flow and Boarding Process Efficiency Analysis.md",
+    "goal": "The goal of the Passenger Flow and Boarding Process Efficiency Analysis is to streamline passenger movement from check-in to boarding, minimize delays, and optimize boarding procedures.",
+    "dataRequired": [
+      "Passenger check-in and security screening times",
+      "Boarding time by group or zone and boarding method used (e.g., back-to-front, zonal)",
+      "Average deplaning times by aircraft type",
+      "Passenger load factor data per flight and route",
+      "Bottleneck data, including congestion points (e.g., boarding gate, jet bridge)",
+      "Passenger satisfaction data related to boarding and waiting times",
+      "Industry benchmarks for boarding times and efficiency"
+    ],
+    "improve": [
+      "Implement the Most Efficient Boarding Method",
+      "Optimize Queue Management",
+      "Align Boarding Procedures with Load Factors",
+      "Enhance Communication with Passengers",
+      "Introduce Technology-Driven Solutions",
+      "D. Revenue and Yield Maximization"
+    ],
+    "formulas": [
+      {
+        "output": "Average Boarding Time",
+        "variables": [
+          "Total Time from First Boarding Call to Last Passenger Seated",
+          "Total Passengers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Boarding Time = Total Time from First Boarding Call to Last Passenger Seated / Total Passengers",
+        "step": "Calculate Average Boarding Time per Flight"
+      }
+    ]
+  },
+  {
+    "id": "airline-22",
+    "archetype": "airline",
+    "title": "Core Services Revenue and Dynamic Pricing Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "LOAD_FACTOR",
+      "YIELD"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/22 - Core Services Revenue and Dynamic Pricing Analysis.md",
+    "goal": "The goal of the Core Services Revenue and Dynamic Pricing Analysis is to maximize revenue from an airline’s primary services—such as ticket sales for various cabin classes and core amenities—by utilizing dynamic pricing strategies.",
+    "dataRequired": [
+      "Revenue data by cabin class (economy, premium economy, business, first)",
+      "Historical ticket pricing data by route and season",
+      "Demand and load factors by route, cabin class, and time of day",
+      "Competitor pricing information on overlapping routes",
+      "Historical data on booking patterns and lead times",
+      "Customer segmentation and purchasing behavior data",
+      "Cost data per available seat kilometer (CASK) by cabin class"
+    ],
+    "improve": [
+      "Adopt Real-Time Dynamic Pricing",
+      "Introduce Demand-Based Promotions",
+      "Personalize Pricing for Customer Segments",
+      "Monitor Competitor Pricing Regularly",
+      "Refine Seasonal and Peak-Time Pricing"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Seat",
+        "variables": [
+          "Total Revenue from Cabin Class",
+          "Number of Seats in Class"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Seat = Total Revenue from Cabin Class / Number of Seats in Class",
+        "step": "Analyze Current Revenue and Pricing Structure"
+      },
+      {
+        "output": "Load Factor",
+        "variables": [
+          "Revenue Passenger Kilometers (RPK)",
+          "Available Seat Kilometers (ASK)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Factor = (Revenue Passenger Kilometers (RPK) / Available Seat Kilometers (ASK)) x 100",
+        "step": "Evaluate Load Factors and Yield Performance by Route"
+      },
+      {
+        "output": "Yield",
+        "variables": [
+          "Total Revenue from Route",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Yield = Total Revenue from Route / RPK",
+        "step": "Evaluate Load Factors and Yield Performance by Route"
+      }
+    ]
+  },
+  {
+    "id": "airline-23",
+    "archetype": "airline",
+    "title": "Ancillary Revenue and Additional Services Yield Management",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "ANCILLARY_PER_PAX"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/23 - Ancillary Revenue and Additional Services Yield Management.md",
+    "goal": "The goal of the Ancillary Revenue and Additional Services Yield Management analysis is to maximize revenue from non-ticket sources, such as baggage fees, seat selection, in-flight purchases, and other add-ons.",
+    "dataRequired": [
+      "Revenue data for each ancillary service (e.g., baggage fees, seat selection, meals, Wi-Fi)",
+      "Usage rates for ancillary services by route, cabin class, and passenger type",
+      "Customer segmentation data, including demographics and purchase behaviors",
+      "Seasonal and route-specific demand patterns for ancillary services",
+      "Pricing history and competitor pricing for similar services",
+      "Cost data for providing ancillary services (e.g., catering costs, Wi-Fi infrastructure)",
+      "Passenger satisfaction data related to ancillary offerings"
+    ],
+    "improve": [
+      "Optimize Pricing for High-Demand Services",
+      "Introduce Targeted Bundling Offers",
+      "Reduce Costs on High-Expense Services",
+      "Promote Ancillary Services Pre-Flight",
+      "Personalize Offers Based on Customer Segmentation"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Service",
+        "variables": [
+          "Total Revenue from Service",
+          "Total Passengers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Service = Total Revenue from Service / Total Passengers",
+        "step": "Categorize Ancillary Services by Revenue Contribution"
+      },
+      {
+        "output": "Profitability per Service",
+        "variables": [
+          "Revenue per Service",
+          "Cost per Service"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Profitability per Service = (Revenue per Service - Cost per Service) / Revenue per Service x 100",
+        "step": "Determine Cost and Profitability per Ancillary Service"
+      }
+    ]
+  },
+  {
+    "id": "airline-24",
+    "archetype": "airline",
+    "title": "Cargo Revenue and Capacity Utilization Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/airline/24 - Cargo Revenue and Capacity Utilization Analysis.md",
+    "goal": "The goal of the Cargo Revenue and Capacity Utilization Analysis is to maximize the profitability of an airline’s cargo operations by optimizing cargo capacity and improving revenue per available cargo tonne-kilometer (ACTK).",
+    "dataRequired": [
+      "Revenue data from cargo operations by route and weight class",
+      "Available cargo capacity (in tonnes) and load factors by route",
+      "Average revenue per cargo tonne-kilometer (RTK) and available cargo tonne-kilometer (ACTK)",
+      "Historical demand data and seasonality trends for cargo",
+      "Competitor cargo rates and capacity on similar routes",
+      "Cost data specific to cargo operations, including handling, storage, and fuel allocation",
+      "Customer segmentation and cargo type (e.g., perishables, electronics) preferences"
+    ],
+    "improve": [
+      "Optimize Capacity Allocation",
+      "Adjust Pricing Dynamically",
+      "Streamline Cargo Handling and Storage Costs",
+      "Offer Priority and Value-Added Services",
+      "Align Capacity with Seasonal Demand"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per RTK",
+        "variables": [
+          "Total Cargo Revenue",
+          "Total RTK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per RTK = Total Cargo Revenue / Total RTK",
+        "step": "Calculate Cargo Revenue Metrics"
+      },
+      {
+        "output": "Cargo Load Factor",
+        "variables": [
+          "Total RTK",
+          "Total ACTK"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cargo Load Factor = (Total RTK / Total ACTK) x 100",
+        "step": "Assess Cargo Load Factor by Route"
+      },
+      {
+        "output": "Cargo Profitability",
+        "variables": [
+          "Cargo Revenue",
+          "Cargo Costs"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Cargo Profitability = (Cargo Revenue - Cargo Costs) / Cargo Revenue x 100",
+        "step": "Determine Cargo-Specific Costs and Profitability per Route"
+      }
+    ]
+  },
+  {
+    "id": "airline-25",
+    "archetype": "airline",
+    "title": "Passenger Yield and Demographic Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "YIELD"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/airline/25 - Passenger Yield and Demographic Analysis.md",
+    "goal": "The goal of the Passenger Yield and Demographic Analysis is to optimize revenue per passenger by understanding and leveraging demographic trends and passenger yield data across routes.",
+    "dataRequired": [
+      "Passenger yield data by route, cabin class, and fare type",
+      "Revenue passenger kilometers (RPK) and total revenue per route",
+      "Demographic data on passengers (age, gender, purpose of travel, frequent flyer status, etc.)",
+      "Seasonal demand trends and load factors by route and cabin class",
+      "Competitor pricing and fare class distribution on similar routes",
+      "Cost data per available seat kilometer (CASK) by route and cabin class",
+      "Customer feedback or satisfaction data by demographic segment"
+    ],
+    "improve": [
+      "Implement Targeted Pricing Strategies",
+      "Enhance Service Offerings Based on Demographics",
+      "Optimize Seasonal Pricing",
+      "Differentiate Based on Competitor Insights",
+      "Market to High-Yield Segments"
+    ],
+    "formulas": [
+      {
+        "output": "Passenger Yield",
+        "variables": [
+          "Total Revenue",
+          "RPK"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Passenger Yield = Total Revenue / RPK",
+        "step": "Calculate Passenger Yield by Route and Cabin Class"
+      }
+    ]
+  },
+  {
+    "id": "airline-26",
+    "archetype": "airline",
+    "title": "In-Flight Service and Product Differentiation Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "ANCILLARY_PER_PAX"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/26 - In-Flight Service and Product Differentiation Analysis.md",
+    "goal": "The goal of the In-Flight Service and Product Differentiation Analysis is to enhance passenger satisfaction, increase brand loyalty, and generate additional revenue by offering unique in-flight services and products tailored to passenger preferences.",
+    "dataRequired": [
+      "Passenger satisfaction data and feedback on current in-flight services (e.g., meals, entertainment, seating comfort)",
+      "Revenue data for in-flight purchases (e.g., food, drinks, duty-free products, Wi-Fi)",
+      "Cost data for providing in-flight services, segmented by cabin class and route",
+      "Customer segmentation data, including demographics and preferences by cabin class",
+      "Competitor analysis of in-flight offerings on similar routes",
+      "Survey data on passenger preferences for in-flight amenities and services",
+      "Seasonal and route-specific data on passenger preferences and demand"
+    ],
+    "improve": [
+      "Introduce Differentiated Offerings Based on Demographics",
+      "Optimize High-Margin Services",
+      "Enhance Customer Experience with Unique Offerings",
+      "Regularly Benchmark and Update Services",
+      "Leverage Technology for Personalized Service"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue per Service",
+        "variables": [
+          "Total Revenue from Service",
+          "Number of Passengers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Service = Total Revenue from Service / Number of Passengers",
+        "step": "Evaluate Revenue and Costs for In-Flight Purchases"
+      }
+    ]
+  },
+  {
+    "id": "airline-27",
+    "archetype": "airline",
+    "title": "Loyalty Program Redemption Cost and Breakage Rate Analysis",
+    "part": "D",
+    "partLabel": "Revenue and Yield Maximization",
+    "relatedMetricCodes": [
+      "LOYALTY_BREAKAGE_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/27 - Loyalty Program Redemption Cost and Breakage Rate.md",
+    "goal": "The goal of the Loyalty Program Redemption Cost and Breakage Rate Analysis is to understand the financial impact of loyalty program redemptions, manage costs associated with reward redemptions, and optimize breakage rates (the percentage of unredeemed rewards).",
+    "dataRequired": [
+      "Total loyalty points issued and redeemed by tier or membership level",
+      "Redemption costs (e.g., ticket costs, fees for non-flight rewards)",
+      "Revenue generated from loyalty program members, segmented by tier",
+      "Historical breakage rates (percentage of points not redeemed)",
+      "Competitive benchmarking data on loyalty program redemption and breakage rates",
+      "Customer satisfaction and feedback data on reward options",
+      "Seasonal and demographic data on redemption patterns"
+    ],
+    "improve": [
+      "Optimize Redemption Costs by Adjusting Reward Mix",
+      "Encourage Redemption in Low-Demand Periods",
+      "Monitor and Adjust Breakage Rates",
+      "Enhance Reward Options Based on Member Feedback",
+      "Implement Tier-Based Reward Strategies",
+      "E. Customer Experience and Loyalty"
+    ],
+    "formulas": [
+      {
+        "output": "Redemption Cost per Point",
+        "variables": [
+          "Total Redemption Costs",
+          "Total Points Redeemed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Redemption Cost per Point = Total Redemption Costs / Total Points Redeemed",
+        "step": "Calculate Redemption Cost per Point"
+      },
+      {
+        "output": "Breakage Rate",
+        "variables": [
+          "Total Points Issued",
+          "Total Points Redeemed"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Breakage Rate = (Total Points Issued - Total Points Redeemed) / Total Points Issued x 100",
+        "step": "Determine Breakage Rate"
+      }
+    ]
+  },
+  {
+    "id": "airline-28",
+    "archetype": "airline",
+    "title": "Passenger Experience and Service Differentiation Analysis",
+    "part": "E",
+    "partLabel": "Customer Experience and Loyalty",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/28 - Passenger Experience and Service Differentiation Analysis.md",
+    "goal": "The goal of the Passenger Experience and Service Differentiation Analysis is to assess and enhance the quality of the airline’s passenger experience across all stages of the travel journey, from booking to in-flight service.",
+    "dataRequired": [
+      "Passenger satisfaction scores and feedback from surveys and reviews across all journey stages (booking, check-in, boarding, in-flight, post-flight)",
+      "Net Promoter Score (NPS) and other loyalty metrics by customer segment",
+      "Service offerings by cabin class (e.g., economy, business, first) and route",
+      "Demographic data on passenger preferences and behaviors",
+      "Competitor analysis on in-flight and ground services",
+      "Cost data for current service offerings, segmented by service type and cabin class",
+      "Feedback data on recent service changes or new offerings"
+    ],
+    "improve": [
+      "Enhance High-Impact Touchpoints",
+      "Personalize Offerings Based on Passenger Preferences",
+      "Optimize High-Cost, Low-Value Services",
+      "Differentiate Through Unique Offerings",
+      "Regularly Review and Update Offerings"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "airline-29",
+    "archetype": "airline",
+    "title": "Customer Satisfaction Analysis of Airline Loyalty Programs",
+    "part": "E",
+    "partLabel": "Customer Experience and Loyalty",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ANCILLARY"
+    ],
+    "sourcePath": "data/analysis-library/airline/29 - Customer Satisfaction Analysis of Airline Loyalty Programs.md",
+    "goal": "The goal of the Customer Satisfaction Analysis of Airline Loyalty Programs is to assess the effectiveness and appeal of the airline’s loyalty program from the perspective of its members.",
+    "dataRequired": [
+      "Customer satisfaction scores and feedback on loyalty program elements (e.g., rewards, ease of redemption, tier benefits)",
+      "Enrollment and active member data by loyalty tier (basic, silver, gold, etc.)",
+      "Redemption rates and frequency of reward usage by loyalty tier",
+      "Competitive benchmarking data on loyalty program features and satisfaction",
+      "Customer feedback from surveys, reviews, and direct interactions regarding loyalty program experiences",
+      "Churn and retention rates among loyalty program members by tier",
+      "Loyalty program engagement metrics, including point accumulation, redemption, and frequency of member flights"
+    ],
+    "improve": [
+      "Enhance Reward Attractiveness and Availability",
+      "Streamline the Redemption Process",
+      "Introduce Tier-Specific Benefits",
+      "Address Common Pain Points",
+      "Regularly Benchmark and Update Program Offerings",
+      "F. Regulatory and Environmental Compliance"
+    ],
+    "formulas": [
+      {
+        "output": "Retention Rate",
+        "variables": [
+          "Total Members",
+          "Members Lost"
+        ],
+        "expression": "( v0 - v1 ) / v0 * 100",
+        "percentOutput": true,
+        "source": "Retention Rate = (Total Members - Members Lost) / Total Members x 100",
+        "step": "Calculate Retention and Churn Rates by Tier"
+      }
+    ]
+  },
+  {
+    "id": "airline-30",
+    "archetype": "airline",
+    "title": "Environmental Compliance and Sustainability Strategy",
+    "part": "F",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/30 - Environmental Compliance and Sustainability Strategy.md",
+    "goal": "The goal of the Environmental Compliance and Sustainability Strategy analysis is to ensure the airline meets or exceeds regulatory environmental requirements while actively contributing to sustainability goals.",
+    "dataRequired": [
+      "Current emissions data (e.g., CO₂, NOx) by aircraft type and route",
+      "Fuel consumption and efficiency metrics for the fleet",
+      "Regulatory requirements for emissions, waste management, and noise pollution by region",
+      "Cost data for sustainability initiatives, such as fuel-efficient technologies and carbon offsets",
+      "Industry benchmarks on emissions and sustainability efforts",
+      "Customer and stakeholder feedback on sustainability efforts",
+      "Available renewable energy options and sustainable fuel sources",
+      "Waste generation and recycling data across ground and in-flight operations"
+    ],
+    "improve": [
+      "Implement Fuel Efficiency and Emissions Reduction Measures",
+      "Transition to Sustainable Aviation Fuels",
+      "Enhance Waste Reduction and Recycling Programs",
+      "Invest in Carbon Offsetting Programs",
+      "Regularly Benchmark and Update Sustainability Efforts"
+    ],
+    "formulas": [
+      {
+        "output": "Emissions per Flight",
+        "variables": [
+          "Total Fuel Consumption",
+          "Emission Factor"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Emissions per Flight = Total Fuel Consumption x Emission Factor",
+        "step": "Calculate Emissions and Fuel Efficiency by Aircraft and Route"
+      }
+    ]
+  },
+  {
+    "id": "airline-31",
+    "archetype": "airline",
+    "title": "De-icing and Weather Contingency Cost Analysis",
+    "part": "F",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST"
+    ],
+    "sourcePath": "data/analysis-library/airline/31 - De-icing and Weather Contingency Cost Analysis.md",
+    "goal": "The goal of the De-icing and Weather Contingency Cost Analysis is to evaluate and manage the costs associated with de-icing operations and weather-related disruptions.",
+    "dataRequired": [
+      "Historical de-icing costs by airport, aircraft type, and season",
+      "Average frequency of de-icing events by location and time of year",
+      "Delay and cancellation costs associated with weather disruptions",
+      "Fuel consumption during extended taxiing, idling, or delays due to weather",
+      "Staff and labor costs for de-icing operations",
+      "Costs associated with passenger compensation, rebooking, and accommodations for weather-related delays",
+      "Industry benchmarks on de-icing costs and weather contingency expenses"
+    ],
+    "improve": [
+      "Invest in Efficient De-icing Equipment",
+      "Optimize Flight Scheduling Around Weather Patterns",
+      "Enhance Coordination with Airport De-icing Services",
+      "Implement Real-Time Weather Monitoring and Alerts",
+      "Improve Passenger Handling for Weather Delays"
+    ],
+    "formulas": [
+      {
+        "output": "Average De-icing Cost per Event",
+        "variables": [
+          "Total De-icing Costs",
+          "Number of De-icing Events"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average De-icing Cost per Event = Total De-icing Costs / Number of De-icing Events",
+        "step": "Calculate Historical De-icing Costs by Airport and Season"
+      }
+    ]
+  },
+  {
+    "id": "airline-32",
+    "archetype": "airline",
+    "title": "Safety and Incident Reporting Compliance Analysis",
+    "part": "F",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/airline/32 - Safety and Incident Reporting Compliance Analysis.md",
+    "goal": "The goal of the Safety and Incident Reporting Compliance Analysis is to ensure that the airline meets regulatory requirements for safety and incident reporting.",
+    "dataRequired": [
+      "Incident and accident reports categorized by type, severity, and cause",
+      "Safety compliance metrics, including adherence to safety protocols and audit results",
+      "Regulatory requirements for safety and incident reporting by region",
+      "Staff training records and safety certification statuses",
+      "Industry benchmarks on safety incidents and compliance practices",
+      "Customer feedback and satisfaction data related to safety perceptions",
+      "Cost data related to incident handling, including investigation, reporting, and remediation costs"
+    ],
+    "improve": [
+      "Strengthen Incident Reporting Protocols",
+      "Increase Safety Training Frequency",
+      "Enhance Compliance Audits and Follow-Up",
+      "Adopt Real-Time Safety Monitoring",
+      "Communicate Safety Improvements to Passengers",
+      "G. Cost Management and Financial Strategy"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "airline-33",
+    "archetype": "airline",
+    "title": "Fuel Cost and Hedging Strategy Analysis",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/33 - Fuel Cost and Hedging Strategy Analysis.md",
+    "goal": "The goal of the Fuel Cost and Hedging Strategy Analysis is to optimize fuel cost management by assessing current fuel spending, understanding market fluctuations, and implementing hedging strategies to mitigate risks associated with fuel price volatility.",
+    "dataRequired": [
+      "Historical fuel consumption and cost data by route and aircraft type",
+      "Current fuel price trends and historical price volatility data",
+      "Existing fuel hedging contracts, including contract terms, hedged volumes, and expiration dates",
+      "Financial market data on fuel derivatives and forward contracts",
+      "Industry benchmarks on fuel costs and hedging strategies",
+      "Forecasted fuel requirements based on route schedules and fleet usage",
+      "Cost data for different fuel hedging instruments (e.g., futures, swaps, options)"
+    ],
+    "improve": [
+      "Adjust Hedge Ratios Based on Market Conditions",
+      "Diversify Hedging Instruments",
+      "Focus on Fuel Efficiency Initiatives",
+      "Benchmark and Regularly Review Hedging Strategy",
+      "Forecast Fuel Needs and Plan for Seasonal Variability"
+    ],
+    "formulas": [
+      {
+        "output": "CASM (Fuel)",
+        "variables": [
+          "Total Fuel Cost",
+          "Available Seat Miles (ASM)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CASM (Fuel) = Total Fuel Cost / Available Seat Miles (ASM)",
+        "step": "Analyze Historical Fuel Costs and Consumption"
+      }
+    ]
+  },
+  {
+    "id": "airline-34",
+    "archetype": "airline",
+    "title": "Debt Structure and Lease Obligations Review",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "FLEET_FINANCING"
+    ],
+    "sourcePath": "data/analysis-library/airline/34 - Debt Structure and Lease Obligations Review.md",
+    "goal": "The goal of the Debt Structure and Lease Obligations Review is to assess the airline’s debt obligations and lease structure to manage cash flow, minimize financial risks, and optimize capital efficiency.",
+    "dataRequired": [
+      "Debt structure details, including principal amounts, interest rates, maturities, and payment schedules for all loans and bonds",
+      "Lease obligations by aircraft type and location, including payment terms, residual value commitments, and expiration dates",
+      "Debt covenants and restrictions attached to loans and leases",
+      "Cash flow data segmented by operating cash flow and debt/lease servicing costs",
+      "Industry benchmarks on debt structure, average lease terms, and financing costs",
+      "Credit rating and risk assessment for the airline, if available",
+      "Historical interest rate trends and forecasts"
+    ],
+    "improve": [
+      "Refinance High-Interest Debt",
+      "Renegotiate Lease Terms",
+      "Monitor and Adjust Debt Covenants",
+      "Consider Alternative Financing Options",
+      "Optimize Lease-to-Buy Decisions"
+    ],
+    "formulas": [
+      {
+        "output": "Annual Debt Servicing Cost",
+        "variables": [
+          "Principal",
+          "Interest Rate",
+          "Scheduled Repayments"
+        ],
+        "expression": "v0 * v1 + v2",
+        "percentOutput": false,
+        "source": "Annual Debt Servicing Cost = Principal x Interest Rate + Scheduled Repayments",
+        "step": "Review Debt Structure and Terms"
+      },
+      {
+        "output": "Debt/Lease Servicing Ratio",
+        "variables": [
+          "Debt Servicing Cost",
+          "Lease Payments",
+          "Operating Cash Flow"
+        ],
+        "expression": "( v0 + v1 ) / v2 * 100",
+        "percentOutput": true,
+        "source": "Debt/Lease Servicing Ratio = (Debt Servicing Cost + Lease Payments) / Operating Cash Flow x 100",
+        "step": "Assess Cash Flow Impacts of Debt and Lease Servicing"
+      }
+    ]
+  },
+  {
+    "id": "airline-35",
+    "archetype": "airline",
+    "title": "Airport and Route-Level Cost Structure Analysis",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [
+      "CASK_EX_FUEL"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "AIRPORT_GROUND_COST",
+      "NETWORK_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/airline/35 - Airport and Route-Level Cost Structure Analysis.md",
+    "goal": "The goal of the Airport and Route-Level Cost Structure Analysis is to evaluate and manage the costs associated with specific airports and routes, enabling the airline to identify high-cost areas and implement cost-saving measures.",
+    "dataRequired": [
+      "Operating costs by airport and route, including landing fees, parking fees, gate fees, and terminal usage fees",
+      "Variable costs by route, such as fuel, crew costs, maintenance, and ground handling",
+      "Passenger-related costs, including security, baggage handling, and customer service by airport",
+      "Revenue data by route and load factors per route and cabin class",
+      "Seasonal and demand-based cost fluctuations for each airport",
+      "Competitor data on costs and pricing on similar routes",
+      "Historical data on delays, cancellations, and other route-specific operational disruptions"
+    ],
+    "improve": [
+      "Negotiate Lower Fees at High-Cost Airports",
+      "Adjust Flight Schedules to Avoid Peak Costs",
+      "Reduce Frequency or Capacity on Low-Demand Routes",
+      "Optimize CASM with Efficient Fleet Utilization",
+      "Explore Alternative Airports"
+    ],
+    "formulas": [
+      {
+        "output": "Total Operating Cost per Route",
+        "variables": [
+          "Landing Fees",
+          "Gate Fees",
+          "Fuel"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Operating Cost per Route = Landing Fees + Gate Fees + Fuel",
+        "step": "Calculate Operating Costs by Airport and Route"
+      },
+      {
+        "output": "CASM",
+        "variables": [
+          "Total Operating Cost per Route",
+          "Available Seat Miles (ASM)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CASM = Total Operating Cost per Route / Available Seat Miles (ASM)",
+        "step": "Evaluate Cost per Available Seat Mile (CASM) by Route and Airport\\"
+      }
+    ]
+  },
+  {
+    "id": "airline-36",
+    "archetype": "airline",
+    "title": "Fuel Tankering Strategy and Cost-Benefit Analysis",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [
+      "FUEL_CASK"
+    ],
+    "relatedCauseCategories": [
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "FUEL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/airline/36 - Fuel Tankering Strategy and Cost-Benefit Analysis.md",
+    "goal": "The goal of the Fuel Tankering Strategy and Cost-Benefit Analysis is to evaluate the financial benefits and operational implications of carrying extra fuel on specific flights to avoid purchasing fuel at higher-cost airports.",
+    "dataRequired": [
+      "Fuel prices at departure and destination airports for each route",
+      "Fuel consumption rates by aircraft type, including extra fuel burn associated with tankering",
+      "Distance and average duration for each route",
+      "Aircraft fuel capacity and maximum takeoff weight",
+      "Additional costs associated with tankering, such as increased fuel burn due to added weight",
+      "Weather and seasonal data that may impact fuel burn (e.g., headwinds)",
+      "Industry benchmarks on fuel tankering practices and cost savings"
+    ],
+    "improve": [
+      "Implement Selective Tankering on High-Savings Routes",
+      "Monitor Fuel Price Fluctuations and Adjust Tankering Accordingly",
+      "Optimize Tankering by Season",
+      "Use Partial Tankering for Balanced Savings",
+      "Benchmark and Refine Tankering Strategy"
+    ],
+    "formulas": [
+      {
+        "output": "Fuel Price Differential",
+        "variables": [
+          "Price at Destination",
+          "Price at Departure"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Fuel Price Differential = Price at Destination - Price at Departure",
+        "step": "Calculate Fuel Price Differential by Route"
+      },
+      {
+        "output": "Cost Savings per Flight",
+        "variables": [
+          "Fuel Price Differential",
+          "Tankered Fuel Quantity",
+          "Additional Fuel Burn",
+          "Fuel Price at Departure"
+        ],
+        "expression": "( v0 * v1 ) - ( v2 * v3 )",
+        "percentOutput": false,
+        "source": "Cost Savings per Flight = (Fuel Price Differential x Tankered Fuel Quantity) - (Additional Fuel Burn x Fuel Price at Departure)",
+        "step": "Calculate Potential Cost Savings per Flight"
+      }
+    ]
+  },
+  {
+    "id": "airline-37",
+    "archetype": "airline",
+    "title": "Revenue Protection and Fraud Detection in Ticketing",
+    "part": "G",
+    "partLabel": "Cost Management and Financial Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/airline/37 - Revenue Protection and Fraud Detection in Ticketing.md",
+    "goal": "The goal of the Revenue Protection and Fraud Detection in Ticketing analysis is to identify, mitigate, and prevent revenue loss caused by fraudulent activities and ticketing abuse.",
+    "dataRequired": [
+      "Ticketing data, including purchase details (date, time, payment method) and transaction locations",
+      "Passenger data (e.g., frequent flyer numbers, ticket class, itinerary details)",
+      "Refund and chargeback records, segmented by route and ticket class",
+      "Historical records of fraud and abuse incidents (e.g., fake bookings, chargebacks, ticket cloning)",
+      "Industry benchmarks on fraud detection and prevention best practices",
+      "Data on booking channels (e.g., website, travel agencies, mobile app) and usage rates",
+      "Audit logs and records of policy violations, such as unauthorized refunds or double bookings"
+    ],
+    "improve": [
+      "Implement Real-Time Fraud Detection Tools",
+      "Strengthen Verification on High-Risk Transactions",
+      "Enhance Booking Channel Security",
+      "Adjust Refund and Cancellation Policies for High-Risk Routes",
+      "Regularly Review and Update Fraud Prevention Rules",
+      "H. Alliance and Partnership Strategy"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Loss from Fraud",
+        "variables": [
+          "Total Lost Revenue",
+          "Chargeback Fees",
+          "Refund Abuses"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Revenue Loss from Fraud = Total Lost Revenue + Chargeback Fees + Refund Abuses",
+        "step": "Calculate Revenue Loss from Fraud Incidents"
+      }
+    ]
+  },
+  {
+    "id": "airline-38",
+    "archetype": "airline",
+    "title": "Alliance and Codeshare Partnership Evaluation",
+    "part": "H",
+    "partLabel": "Alliance and Partnership Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ALLIANCES"
+    ],
+    "sourcePath": "data/analysis-library/airline/38 - Alliance and Codeshare Partnership Evaluation.md",
+    "goal": "The goal of the Alliance and Codeshare Partnership Evaluation is to assess the financial and strategic benefits of existing and potential partnerships.",
+    "dataRequired": [
+      "Revenue contribution from each alliance and codeshare partnership by route",
+      "Traffic flow and load factor data on shared routes",
+      "Customer data, including loyalty program impact and passenger satisfaction for codeshare flights",
+      "Cost-sharing and revenue-sharing agreements for each partnership",
+      "Market share and competitive positioning on routes served through alliances",
+      "Industry benchmarks on codeshare and alliance revenue generation",
+      "Operational data, such as scheduling compatibility and shared resources, for partnership routes"
+    ],
+    "improve": [
+      "Focus on High-Contributing Partnerships",
+      "Renegotiate Cost and Revenue Sharing Terms",
+      "Enhance Customer Experience Through Loyalty Integration",
+      "Expand Alliances in Strategic Markets",
+      "Regularly Benchmark Partnerships Against Industry Standards"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Contribution per Partnership",
+        "variables": [
+          "Total Revenue from Partner Routes",
+          "Total Airline Revenue"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue Contribution per Partnership = Total Revenue from Partner Routes / Total Airline Revenue",
+        "step": "Calculate Revenue Contribution by Partnership"
+      }
+    ]
+  },
+  {
+    "id": "airline-39",
+    "archetype": "airline",
+    "title": "Alliance Contribution and Revenue Synergy Analysis",
+    "part": "H",
+    "partLabel": "Alliance and Partnership Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "ALLIANCES"
+    ],
+    "sourcePath": "data/analysis-library/airline/39 - Alliance Contribution and Revenue Synergy Analysis.md",
+    "goal": "The goal of the Alliance Contribution and Revenue Synergy Analysis is to quantify the financial benefits and synergies generated from airline alliances, focusing on revenue growth, operational efficiencies, and network expansion.",
+    "dataRequired": [
+      "Revenue data by route and alliance partnership, including codeshare and joint venture agreements",
+      "Passenger load factor and traffic flow data for alliance routes",
+      "Cost-sharing arrangements and synergy savings from operational efficiencies (e.g., shared ground services, joint purchasing)",
+      "Customer loyalty data, including cross-alliance loyalty program utilization and membership growth",
+      "Industry benchmarks on alliance performance and revenue contribution",
+      "Market share data on alliance routes relative to non-alliance routes",
+      "Competitive data on overlapping routes with non-alliance airlines"
+    ],
+    "improve": [
+      "Expand High-Revenue Alliance Routes",
+      "Enhance Synergy Savings Through Deeper Cost-Sharing",
+      "Leverage Loyalty Program Synergies",
+      "Strengthen Competitive Positioning on Overlapping Routes",
+      "Regularly Benchmark and Optimize Alliance Contributions",
+      "I. Technology and Digital Transformation"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Contribution from Alliance",
+        "variables": [
+          "Total Revenue from Alliance Routes",
+          "Total Airline Revenue"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue Contribution from Alliance = Total Revenue from Alliance Routes / Total Airline Revenue",
+        "step": "Quantify Revenue Contribution from Alliances by Route"
+      }
+    ]
+  },
+  {
+    "id": "airline-40",
+    "archetype": "airline",
+    "title": "IT and Digital Transformation Capability Assessment",
+    "part": "I",
+    "partLabel": "Technology and Digital Transformation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/airline/40 - IT and Digital Transformation Capability Assessment.md",
+    "goal": "The goal of the IT and Digital Transformation Capability Assessment is to evaluate the airline’s digital infrastructure, technology capabilities, and readiness to adopt innovative solutions.",
+    "dataRequired": [
+      "Current IT infrastructure details, including software, hardware, and network capabilities",
+      "Inventory of digital platforms and tools used across departments (e.g., customer service, operations, marketing)",
+      "Budget allocation and spending on IT and digital transformation projects",
+      "Data on system reliability, downtime, and security incidents",
+      "Employee proficiency and training levels in digital tools and systems",
+      "Customer feedback on digital interactions and services (e.g., website, mobile app, digital check-in)",
+      "Industry benchmarks for IT and digital capabilities in the airline industry"
+    ],
+    "improve": [
+      "Upgrade or Integrate Outdated IT Systems",
+      "Enhance System Reliability and Security",
+      "Invest in High-Impact Digital Tools for Key Functions",
+      "Improve Data Management and Analytics",
+      "Focus on Employee Training for Digital Proficiency",
+      "Adopt Benchmarking Best Practices and Innovate"
+    ],
+    "formulas": [
+      {
+        "output": "System Downtime Impact",
+        "variables": [
+          "Total Downtime Hours",
+          "Operational Cost per Hour"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "System Downtime Impact = (Total Downtime Hours x Operational Cost per Hour)",
+        "step": "Evaluate System Reliability and Security"
+      }
+    ]
+  }
+]

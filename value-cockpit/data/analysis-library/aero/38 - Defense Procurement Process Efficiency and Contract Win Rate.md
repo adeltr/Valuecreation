@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-38
+part: E
+partLabel: Finance & Program Management
+quant: [WIN_RATE, FIXED_PRICE_SHARE]
+causes: [COMMERCIAL]
+levers: [COMMERCIAL_PIPELINE, PRICING]
 ---
 # 38 · Defense Procurement Process Efficiency and Contract Win Rate
 

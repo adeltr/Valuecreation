@@ -1,0 +1,51 @@
+import express, { type Router } from 'express';
+import type { DossierFile } from '../dossier/format';
+import { DossierNotFound, RevisionConflict, type DossierRepository } from '../dossier/repository';
+import { analystOf, audit } from './auth';
+
+/** REST access to the dossier repository. The repository validates every dossier it stores. */
+export function dossierRoutes(repo: DossierRepository, auditFile?: string): Router {
+  const r = express.Router();
+  r.use(express.json({ limit: '2mb' }));
+
+  const fail = (res: express.Response, e: unknown) => {
+    if (e instanceof RevisionConflict) return res.status(409).json({ error: e.message, current: e.current });
+    if (e instanceof DossierNotFound) return res.status(404).json({ error: e.message });
+    return res.status(422).json({ error: (e as Error).message });
+  };
+
+  r.get('/', async (_req, res) => {
+    try { res.json(await repo.list()); } catch (e) { res.status(500).json({ error: (e as Error).message }); }
+  });
+
+  r.get('/:name', async (req, res) => {
+    try { res.json(await repo.read(req.params.name)); } catch (e) { fail(res, e); }
+  });
+
+  r.put('/:name', async (req, res) => {
+    const { file, baseRevision } = (req.body ?? {}) as { file?: DossierFile; baseRevision?: number | null };
+    if (file?.name !== req.params.name) return res.status(400).json({ error: 'Le nom du dossier ne correspond pas à l\'URL' });
+    if (baseRevision !== null && !Number.isInteger(baseRevision)) return res.status(400).json({ error: 'baseRevision manquante' });
+    const analyst = analystOf(req);
+    if (!analyst) return res.status(400).json({ error: 'Nom d\'analyste manquant : indiquez-le en haut de l\'écran avant d\'enregistrer' });
+    try {
+      const revision = await repo.save(file, baseRevision ?? null, analyst);
+      await audit(auditFile, { analyst, action: 'save', dossier: file.name, revision });
+      res.json({ revision });
+    } catch (e) { fail(res, e); }
+  });
+
+  r.delete('/:name', async (req, res) => {
+    const revision = Number(req.query.revision);
+    if (!Number.isInteger(revision)) return res.status(400).json({ error: 'revision manquante' });
+    const analyst = analystOf(req);
+    if (!analyst) return res.status(400).json({ error: 'Nom d\'analyste manquant : indiquez-le en haut de l\'écran avant de supprimer' });
+    try {
+      await repo.remove(req.params.name, revision);
+      await audit(auditFile, { analyst, action: 'delete', dossier: req.params.name, revision });
+      res.status(204).end();
+    } catch (e) { fail(res, e); }
+  });
+
+  return r;
+}

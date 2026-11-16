@@ -1,0 +1,1619 @@
+[
+  {
+    "id": "auto-insurance-01",
+    "archetype": "auto-insurance",
+    "title": "Rate Adequacy & Pricing Factor Assessment",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [
+      "AVERAGE_PREMIUM"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/01 - Rate Adequacy & Pricing Factor Assessment.md",
+    "goal": "Determine if current premiums accurately reflect underlying risk and costs, and identify whether pricing factors (e.g., driver age, vehicle type, region) are appropriately weighted.",
+    "dataRequired": [
+      "Historical claims data (loss frequency, loss severity, payouts)",
+      "Premium and exposure data (written premium, earned premium, in-force policies)",
+      "Key rating attributes (driver demographics, driving history, vehicle types, territories)",
+      "Competitor rate filings or market benchmarking data",
+      "External cost drivers (medical inflation, parts inflation, legal environment)"
+    ],
+    "improve": [
+      "Conduct regular (e.g., quarterly or annual) pricing reviews to stay ahead of claim cost trends.",
+      "Use advanced predictive analytics to refine rating models and capture emerging risk patterns.",
+      "Monitor competitor filings and benchmark data to maintain competitive positioning.",
+      "Collaborate closely with underwriting and claims departments to gather insights on evolving risks.",
+      "Maintain clear documentation and rationale for rate changes to satisfy regulatory requirements.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Loss Ratio = (Incurred Losses + Loss Adjustment Expenses) / Earned Premium. Perform this calculation for each relevant rating segment (e.g., age group, territory).",
+        "step": "Calculate overall loss ratio using the formula"
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-02",
+    "archetype": "auto-insurance",
+    "title": "Uninsured-Underinsured Motorist Coverage Utilization Trends",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/02 - Uninsured-Underinsured Motorist Coverage Utilization Trends.md",
+    "goal": "Understand how frequently insureds opt for UM/UIM coverage, identify trends in coverage utilization, and evaluate the impact on loss experience and premium adequacy.",
+    "dataRequired": [
+      "Policy-level data indicating whether UM/UIM coverage was selected",
+      "Written premium and earned premium for UM/UIM coverage",
+      "Claims data specific to UM/UIM claims (frequency, severity, total incurred losses)",
+      "State regulatory requirements for minimum coverage",
+      "Market or competitor benchmarks on UM/UIM adoption rates"
+    ],
+    "improve": [
+      "Engage in customer education campaigns highlighting the value of UM/UIM coverage.",
+      "Consider segment-based discounts or bundling strategies to boost adoption in desirable risk categories.",
+      "Periodically update pricing and underwriting guidelines to maintain profitability and compliance with regulations.",
+      "Benchmark against competitors to ensure rates and offerings remain competitive in the market.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the UM/UIM segment loss ratio using Loss Ratio",
+        "variables": [
+          "UM",
+          "UIM Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium for UM",
+          "UIM"
+        ],
+        "expression": "( v0 / v1 + v2 ) / v3 / v4",
+        "percentOutput": false,
+        "source": "Calculate the UM/UIM segment loss ratio using Loss Ratio = (UM/UIM Incurred Losses + Loss Adjustment Expenses) / Earned Premium for UM/UIM. Determine if the segment is profitable, breaking even, or underpriced.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-03",
+    "archetype": "auto-insurance",
+    "title": "GAP Insurance Performance Evaluation",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/03 - GAP Insurance Performance Evaluation.md",
+    "goal": "Determine the profitability and utilization of Guaranteed Asset Protection (GAP) coverage, and assess whether current pricing and underwriting practices align with actual claim costs and customer needs.",
+    "dataRequired": [
+      "Historical GAP policies in force (written premium, earned premium)",
+      "GAP coverage claims (frequency, severity, total incurred losses)",
+      "Vehicle financing data (loan-to-value ratios, term lengths)",
+      "Loss adjustment expenses associated with GAP claims",
+      "Competitor or market benchmark data for GAP coverage rates and loss trends"
+    ],
+    "improve": [
+      "Refine pricing models to account for vehicle financing characteristics and historical total-loss likelihood.",
+      "Enhance underwriting guidelines to exclude or surcharge high-risk segments with excessive loan-to-value ratios.",
+      "Collaborate with auto dealerships or finance companies to ensure informed GAP coverage sales and better data collection.",
+      "Conduct regular market benchmarking to maintain a competitive edge and align with evolving industry practices.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine the GAP-specific loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred GAP Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the GAP-specific loss ratio using Loss Ratio = (Incurred GAP Losses + Loss Adjustment Expenses) / Earned Premium. Evaluate whether the loss ratio meets target profitability levels.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-04",
+    "archetype": "auto-insurance",
+    "title": "Rental Reimbursement Coverage Usage & Cost Trends",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/04 - Rental Reimbursement Coverage Usage & Cost Trends.md",
+    "goal": "Evaluate how frequently and effectively rental reimbursement coverage is utilized, and determine whether its pricing and terms are aligned with actual usage patterns and costs.",
+    "dataRequired": [
+      "Policy-level data indicating rental reimbursement coverage election",
+      "Historical rental reimbursement claims (frequency, severity, duration)",
+      "Incurred rental costs and loss adjustment expenses",
+      "Breakdown of claims requiring vehicle rentals vs. total claims",
+      "Competitor or market benchmarks for rental coverage usage and costs"
+    ],
+    "improve": [
+      "Refine underwriting criteria to ensure coverage is offered to segments less prone to lengthy repairs or high-cost rentals.",
+      "Adjust rental coverage limits and daily allowances to reflect actual market prices and avoid out-of-pocket surprises for customers.",
+      "Partner with rental agencies or repair shops to control costs and speed up turnaround times.",
+      "Educate policyholders on coverage parameters to reduce misunderstandings and improve satisfaction.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-05",
+    "archetype": "auto-insurance",
+    "title": "Glass Coverage & Zero-Deductible Claim Impact",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/05 - Glass Coverage & Zero-Deductible Claim Impact.md",
+    "goal": "Evaluate the frequency, severity, and financial impact of glass coverage claims—especially those with zero deductible—and determine if existing rates and coverage terms are appropriately aligned with actual loss experience.",
+    "dataRequired": [
+      "Policy-level data indicating glass coverage election and deductible structure",
+      "Historical glass claims (frequency, severity, total incurred losses)",
+      "Repair vs. replacement breakdown (e.g., windshield chip repair vs. full windshield replacement)",
+      "Relevant loss adjustment expenses",
+      "State regulations or mandates (in some jurisdictions, zero-deductible glass coverage may be required)"
+    ],
+    "improve": [
+      "Encourage chip repairs over full replacements through claim process design, educational materials, or incentives.",
+      "Adjust pricing or deductibles for glass coverage to align with actual loss costs and market conditions.",
+      "Partner with preferred glass repair vendors to obtain favorable rates and streamline the claim process.",
+      "Monitor state regulations closely to ensure compliance while optimizing product offerings and profitability.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-06",
+    "archetype": "auto-insurance",
+    "title": "Defensive Driving Discount Efficacy",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/06 - Defensive Driving Discount Efficacy.md",
+    "goal": "Evaluate the impact of defensive driving discounts on loss experience and retention, and determine if this discount effectively rewards safer drivers or if it results in adverse selection.",
+    "dataRequired": [
+      "Policy-level data indicating which insureds have completed a defensive driving course",
+      "Claim frequency and severity data for those with and without the discount",
+      "Discount amounts and associated rate tables",
+      "Renewal and retention data for discount recipients",
+      "Industry benchmarks on defensive driving discount utilization"
+    ],
+    "improve": [
+      "Regularly validate defensive driving course credentials to maintain the discount’s integrity.",
+      "Refine discount amounts or eligibility criteria based on actual observed risk improvements post-training.",
+      "Promote the discount through targeted marketing to attract genuinely safety-conscious drivers.",
+      "Work with recognized defensive driving course providers to ensure consistent quality and to gather post-course performance data.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-07",
+    "archetype": "auto-insurance",
+    "title": "Territorial Rating Factor Fine-Tuning",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [
+      "AVERAGE_PREMIUM"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/07 - Territorial Rating Factor Fine-Tuning.md",
+    "goal": "Refine the geographic rating factors used in pricing auto insurance policies so that premiums accurately reflect the risk levels associated with different territories.",
+    "dataRequired": [
+      "Geographic boundaries or ZIP codes used for rating",
+      "Claims data (frequency, severity, incurred losses, loss adjustment expenses) by territory",
+      "Premium and exposure data (earned premium, number of policies, insured vehicles) by territory",
+      "External data such as crime rates, population density, traffic congestion, and road infrastructure",
+      "Competitor or market benchmark data for territorial rating (if available)"
+    ],
+    "improve": [
+      "Regularly review territory definitions and update based on emerging risk patterns, demographic shifts, or infrastructure changes.",
+      "Use advanced statistical models or machine learning to detect hidden geographic factors influencing claim costs.",
+      "Collaborate with local authorities or other data providers to track changes in crime rates, traffic patterns, or road improvements.",
+      "Maintain open communication with regulators to ensure territorial rate changes comply with filing requirements and do not raise unfair discrimination concerns.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-08",
+    "archetype": "auto-insurance",
+    "title": "Pay-Per-Mile Insurance Adoption & Loss Results",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "POLICY_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "TELEMATICS_UBI",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/08 - Pay-Per-Mile Insurance Adoption & Loss Results.md",
+    "goal": "Evaluate the adoption rate, usage patterns, and profitability of pay-per-mile insurance policies to determine if mileage-based pricing accurately reflects risk and fosters sustainable growth.",
+    "dataRequired": [
+      "Policy-level data on pay-per-mile adoption",
+      "Earned premium, incurred losses, and total miles driven for pay-per-mile policies",
+      "Policy retention rates and renewal data specific to pay-per-mile customers",
+      "Market or competitor benchmarks on pay-per-mile adoption and loss trends"
+    ],
+    "improve": [
+      "Refine mileage-based rate tiers to better match usage segments and reduce adverse selection.",
+      "Introduce or enhance telematics solutions that more accurately capture driving patterns.",
+      "Offer incentives or discounts for consistently low-mileage or safe-driving customers.",
+      "Periodically review competitor offerings and market data to keep pricing and coverage options competitive and aligned with real-world risk.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the adoption rate by using Adoption Rate",
+        "variables": [
+          "Number of Pay-Per-Mile Policies",
+          "Total Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the adoption rate by using Adoption Rate = (Number of Pay-Per-Mile Policies / Total Policies) x 100. Compare this rate over time to understand growth trends.",
+        "step": null
+      },
+      {
+        "output": "Calculate a pay-per-mile loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium for pay-per-mile policies"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate a pay-per-mile loss ratio using Loss Ratio = (Incurred Losses + Loss Adjustment Expenses) / Earned Premium for pay-per-mile policies. Compare against traditional auto policies to gauge profitability differences.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-09",
+    "archetype": "auto-insurance",
+    "title": "Non-Owned Auto Coverage & Borrowed Vehicle Liabilities Analysis",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/09 - Non-Owned Auto Coverage & Borrowed Vehicle Liabilities.md",
+    "goal": "Evaluate the exposure, claim frequency, and severity of non-owned auto (borrowed or rented vehicle) coverage to ensure appropriate underwriting, pricing, and liability protection.",
+    "dataRequired": [
+      "Policies indicating non-owned auto coverage endorsements",
+      "Claims data involving borrowed vehicles, including frequency, severity, and total incurred losses",
+      "Underwriting guidelines and procedures specific to non-owned auto exposures",
+      "Legal and regulatory requirements regarding non-owned vehicle liability",
+      "Market or competitor benchmarks related to non-owned auto coverage"
+    ],
+    "improve": [
+      "Tighten eligibility criteria for borrowers to reduce adverse selection and align coverage more closely with risk profiles.",
+      "Refine pricing or implement usage limitations for non-owned auto coverage, ensuring premiums reflect potential liability exposures.",
+      "Regularly benchmark against competitors to maintain competitive yet profitable coverage offerings.",
+      "Stay current with regulatory changes and legal precedents that could affect non-owned auto liability.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the non-owned auto coverage loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE for Non-Owned Auto",
+          "Earned Premium for Non-Owned Auto"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate the non-owned auto coverage loss ratio using Loss Ratio = (Incurred Losses + LAE for Non-Owned Auto) / Earned Premium for Non-Owned Auto. Compare these results to standard auto coverage to identify any abnormal patterns.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-10",
+    "archetype": "auto-insurance",
+    "title": "Roadside Assistance Utilization & Cost Analysis",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/10 - Roadside Assistance Utilization & Cost Analysis.md",
+    "goal": "Determine how often policyholders use roadside assistance benefits, evaluate the cost implications of these services, and identify opportunities to optimize pricing and service delivery.",
+    "dataRequired": [
+      "Policy-level data showing who has elected roadside assistance coverage",
+      "Historical roadside assistance usage records (frequency, type of service, provider details)",
+      "Costs associated with each service call, including towing, on-site repairs, or other services",
+      "Renewal and retention data for customers who frequently use roadside assistance",
+      "Competitor or industry benchmarks on roadside service usage rates and average costs"
+    ],
+    "improve": [
+      "Negotiate better rates with towing companies and service providers or consider creating a preferred vendor network to reduce average call costs.",
+      "Refine underwriting criteria for roadside assistance to limit coverage for high-frequency claimants or older vehicles in poor condition.",
+      "Offer proactive maintenance programs or discounts to policyholders who get regular vehicle check-ups, thereby reducing roadside incidents.",
+      "Periodically review and update coverage terms, such as maximum towing distance, to align with actual usage and cost trends.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Roadside Assistance Frequency",
+        "variables": [
+          "Number of Roadside Assistance Calls",
+          "Number of Policies with Coverage"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Roadside Assistance Frequency = (Number of Roadside Assistance Calls / Number of Policies with Coverage) x 100. Compare across different segments (e.g., vehicle age, driver age, location) to pinpoint high-usage groups.",
+        "step": "Calculate usage frequency by using the formula"
+      },
+      {
+        "output": "Compute the roadside assistance coverage loss ratio using Loss Ratio",
+        "variables": [
+          "Total Roadside Assistance Costs",
+          "Related Expenses",
+          "Earned Premium for the coverage"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Compute the roadside assistance coverage loss ratio using Loss Ratio = (Total Roadside Assistance Costs + Related Expenses) / Earned Premium for the coverage. Assess whether the program remains profitable or if costs exceed collected premiums.",
+        "step": "Calculate usage frequency by using the formula"
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-11",
+    "archetype": "auto-insurance",
+    "title": "License Points Surcharge Program Evaluation",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/11 - License Points Surcharge Program Evaluation.md",
+    "goal": "Assess the effectiveness of the license points surcharge program in reflecting driver risk and maintaining profitability, while evaluating the impact on policyholder behavior and retention.",
+    "dataRequired": [
+      "Driver license point records for current policyholders (including surcharges applied)",
+      "Historical loss data (frequency, severity, total incurred losses) segmented by license point levels",
+      "Premium and exposure data (written premium, earned premium, number of policies) for surcharged and non-surcharged drivers",
+      "Retention and renewal data segmented by point levels and surcharge status",
+      "Regulatory guidelines on point-based surcharges (if applicable)"
+    ],
+    "improve": [
+      "Introduce driver education programs or discounts that encourage improved driving behaviors, potentially reducing points.",
+      "Adjust surcharge amounts or thresholds to more accurately reflect the relationship between points and claims risk.",
+      "Consider flexible programs, such as point forgiveness after a period of safe driving, to retain customers while still managing risk.",
+      "Communicate surcharge rationale and potential benefits of safe driving to policyholders, enhancing transparency and retention.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine the surcharge program loss ratio by applying Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "Loss Adjustment Expenses",
+          "Earned Premium for surcharged drivers"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the surcharge program loss ratio by applying Loss Ratio = (Incurred Losses + Loss Adjustment Expenses) / Earned Premium for surcharged drivers. Compare to non-surcharged drivers to identify whether the surcharge appropriately offsets higher risk.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-12",
+    "archetype": "auto-insurance",
+    "title": "Accident Forgiveness Program Profitability Assessment",
+    "part": "A",
+    "partLabel": "Pricing & Product Strategy",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/12 - Accident Forgiveness Program Profitability Assessment.md",
+    "goal": "Evaluate whether accident forgiveness offerings enhance customer retention and loyalty without compromising overall profitability, and determine if forgiven claims are adequately offset by premiums or other cost-saving measures.",
+    "dataRequired": [
+      "Policies indicating accident forgiveness enrollment",
+      "Claims data (frequency, severity, total incurred losses) for forgiven vs. non-forgiven accidents",
+      "Premium and exposure data (earned premium, number of policies) split by accident forgiveness status",
+      "Renewal and retention data categorized by accident history and forgiveness usage",
+      "Competitor or market benchmarking data on accident forgiveness trends (if available)"
+    ],
+    "improve": [
+      "Refine eligibility criteria for accident forgiveness to ensure it targets safer drivers and prevents abuse.",
+      "Adjust premium contributions or surcharges to offset the financial impact of forgiven claims.",
+      "Incorporate driver education or safe driving incentives alongside accident forgiveness to reduce moral hazard.",
+      "Regularly track and benchmark program metrics against market norms to stay competitive and profitable.",
+      "B. Underwriting & Risk Segmentation"
+    ],
+    "formulas": [
+      {
+        "output": "Assess overall loss ratio by using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium for accident forgiveness policies"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Assess overall loss ratio by using Loss Ratio = (Incurred Losses + LAE) / Earned Premium for accident forgiveness policies. Compare these results against non-forgiveness policies to see if profitability is affected.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-13",
+    "archetype": "auto-insurance",
+    "title": "Telematics & Usage-Based Insurance Performance",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "POLICY_GROWTH",
+      "TELEMATICS_PENETRATION"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "TELEMATICS_UBI"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/13 - Telematics & Usage-Based Insurance Performance.md",
+    "goal": "Evaluate how effectively telematics programs capture and price risk based on real-world driving behaviors, and determine whether usage-based insurance (UBI) leads to improved loss ratios and driver safety.",
+    "dataRequired": [
+      "Telematics data from in-vehicle devices or mobile apps (mileage, speed patterns, braking, cornering)",
+      "Claims data (frequency, severity, total incurred losses) for telematics vs. non-telematics policies",
+      "Premium and exposure data (written premium, earned premium, number of policies)",
+      "Retention, renewal, and customer satisfaction metrics for telematics users",
+      "Market/competitor benchmarks on telematics adoption and performance (if available)"
+    ],
+    "improve": [
+      "Refine telematics scoring algorithms to better differentiate high-risk from low-risk driving behaviors.",
+      "Provide real-time feedback or rewards to encourage safer driving habits and reinforce the value of UBI participation.",
+      "Regularly review and update pricing structures to ensure fair discounts or surcharges based on observed driving data.",
+      "Collaborate with technology vendors or in-house IT teams to enhance data accuracy, reduce costs, and streamline user experience.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-14",
+    "archetype": "auto-insurance",
+    "title": "Premium Leakage & Under-Reported Exposure Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "AVERAGE_PREMIUM"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "LEAKAGE_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/14 - Premium Leakage & Under-Reported Exposure Analysis.md",
+    "goal": "Identify areas where policyholders or agents may under-report driver information, vehicle usage, or other risk factors leading to inadequate premium collection, and determine strategies to recapture lost revenue and align premiums with actual exposure.",
+    "dataRequired": [
+      "Policy information detailing driver counts, vehicle usage (personal, commercial, rideshare), and annual mileage",
+      "Claims data segmented by discrepancies in reported vs. actual exposure (e.g., undisclosed drivers, misrepresented garaging address)",
+      "Third-party data sources (DMV records, credit checks, telematics, vehicle registration databases)",
+      "Audit or inspection reports highlighting inconsistencies between reported and actual exposure",
+      "Industry or competitor benchmarks on typical leakage rates and detection methods"
+    ],
+    "improve": [
+      "Implement automated data cross-checks, pulling from public or private databases (e.g., driver’s license records, telematics).",
+      "Strengthen agent training and incentives to ensure thorough risk disclosure and reduce intentional misrepresentation.",
+      "Conduct periodic audits or inspections of policies flagged for potential under-reporting based on predictive analytics.",
+      "",
+      "Introduce policyholder self-service tools allowing easy updates of vehicle usage or driver information, reducing accidental misreporting.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the frequency of discrepancies by using Discrepancy Rate",
+        "variables": [
+          "Number of Policies with Under-Reported Exposures",
+          "Total Policies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the frequency of discrepancies by using Discrepancy Rate = (Number of Policies with Under-Reported Exposures / Total Policies) x 100. Categorize discrepancies by type (e.g., unreported drivers, incorrect mileage, false address).",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-15",
+    "archetype": "auto-insurance",
+    "title": "Residual Market & Assigned Risk Pool Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/15 - Residual Market & Assigned Risk Pool Analysis.md",
+    "goal": "Evaluate the composition, performance, and financial impact of policies placed in residual or assigned risk pools, and determine whether current underwriting, pricing, and servicing strategies effectively manage this often higher-risk segment.",
+    "dataRequired": [
+      "Policies categorized under residual market or assigned risk pools (written premium, earned premium, number of policies)",
+      "Claims data (frequency, severity, incurred losses, loss adjustment expenses) for these high-risk segments",
+      "Underwriting guidelines and acceptance criteria for standard vs. residual market placements",
+      "Historical loss ratios and claim trends specific to assigned risk business",
+      "Industry or competitor benchmarks on residual market share and profitability"
+    ],
+    "improve": [
+      "Strengthen underwriting protocols to ensure that only truly uninsurable or extremely high-risk drivers end up in assigned risk pools.",
+      "Use targeted driver improvement programs or telematics for assigned risk customers to reduce claim frequency and facilitate eventual migration to standard coverage.",
+      "Collaborate with regulators to align assigned risk rates and policy structures with actual loss experience.",
+      "Continuously monitor the size and performance of the assigned risk segment and make data-driven adjustments to underwriting and pricing practices.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine the loss ratio for assigned risk policies using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the loss ratio for assigned risk policies using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Assess whether the pool’s profitability (or lack thereof) aligns with internal targets and industry norms.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-16",
+    "archetype": "auto-insurance",
+    "title": "SR-22 & High-Risk Driver Segment Performance",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/16 - SR-22 & High-Risk Driver Segment Performance.md",
+    "goal": "Evaluate the profitability and claims experience of SR-22 and other high-risk driver segments, and determine if underwriting and pricing strategies appropriately reflect their elevated risk profiles.",
+    "dataRequired": [
+      "List of SR-22 and high-risk driver policies (written premium, earned premium, in-force policies)",
+      "Claims data (frequency, severity, incurred losses) segmented by SR-22/high-risk vs. standard drivers",
+      "Underwriting guidelines for SR-22 and high-risk designations",
+      "Loss ratio, renewal, and retention data for high-risk segments",
+      "Benchmark data on typical SR-22 driver performance from industry sources"
+    ],
+    "improve": [
+      "Refine underwriting models and surcharges for SR-22/high-risk drivers based on deeper analysis of driving behavior or telematics data.",
+      "Offer driver rehabilitation courses or coaching programs to encourage safer driving and reduce future claim costs.",
+      "Monitor competitor rates to remain competitive while maintaining actuarially sound pricing for high-risk segments.",
+      "Implement tiered pricing or phased renewal approaches to reward proven risk improvement among SR-22/high-risk customers.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine segment-level loss ratios using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine segment-level loss ratios using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Assess whether SR-22/high-risk premiums align with actual claims experience and profitability goals.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-17",
+    "archetype": "auto-insurance",
+    "title": "Non-Standard Auto Market & Subprime Segment Evaluation",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "POLICIES_IN_FORCE",
+      "POLICY_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/17 - Non-Standard Auto Market & Subprime Segment Evaluation.md",
+    "goal": "Assess the profitability, growth potential, and underwriting effectiveness within the non-standard auto market and subprime driver segment to ensure accurate pricing and sustainable portfolio expansion.",
+    "dataRequired": [
+      "Non-standard auto policies (written premium, earned premium, policy count)",
+      "Driver profiles indicating credit scores, prior coverage lapses, and violation history",
+      "Claims data (frequency, severity, incurred losses) specific to subprime segments",
+      "Renewal and retention metrics broken out by credit tiers or subprime indicators",
+      "Benchmark or industry data on non-standard auto rates, losses, and growth trends"
+    ],
+    "improve": [
+      "Implement tiered pricing or telematics solutions specifically for subprime drivers, rewarding safer driving behaviors.",
+      "Offer flexible payment plans or incentive programs to improve retention among subprime segments without sacrificing underwriting rigor.",
+      "Periodically review and adjust credit score thresholds to reflect actual loss outcomes rather than broad assumptions.",
+      "Monitor competitor strategies to maintain a competitive yet profitable presence in the non-standard auto market.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-18",
+    "archetype": "auto-insurance",
+    "title": "Driver Monitoring & Scoring Model Validation",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "TELEMATICS_UBI"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/18 - Driver Monitoring & Scoring Model Validation.md",
+    "goal": "Evaluate the accuracy and predictive power of driver monitoring programs (e.g., telematics, on-board cameras) and scoring models in classifying driver risk and supporting underwriting decisions.",
+    "dataRequired": [
+      "Driver monitoring data (e.g., telematics records, camera-based event logs)",
+      "Existing scoring model outputs and assigned risk tiers",
+      "Claims data (frequency, severity, incurred losses) mapped to driver scores",
+      "Historical changes in driver scores over time",
+      "Benchmark or industry data on telematics scoring model performance (if available)"
+    ],
+    "improve": [
+      "Refine scoring models using advanced analytics (e.g., machine learning) to capture additional driving behaviors or contextual data.",
+      "Continuously update, back-test, and recalibrate scores based on new claim outcomes to maintain model relevance.",
+      "Provide feedback loops to drivers, encouraging improved habits and thus lowering future risk.",
+      "Integrate multiple data sources (e.g., telematics, claims, and external records) to build a more comprehensive view of driver behavior and risk.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-19",
+    "archetype": "auto-insurance",
+    "title": "Street-Level Risk & Traffic Pattern Underwriting",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "RATING_SOPHISTICATION"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/19 - Street-Level Risk & Traffic Pattern Underwriting.md",
+    "goal": "Determine how localized traffic conditions, road infrastructure, and neighborhood-specific factors affect auto insurance risk, enabling more precise underwriting and pricing decisions.",
+    "dataRequired": [
+      "Local traffic accident records (crash frequency, severity, hot spots)",
+      "GIS or mapping data showing road infrastructure, traffic volumes, intersection density",
+      "Policyholder garaging addresses and daily commuting routes",
+      "External data on neighborhood-level crime rates, road maintenance, and congestion patterns",
+      "Current underwriting guidelines and rating factors"
+    ],
+    "improve": [
+      "Incorporate real-time data feeds or telematics to capture ongoing traffic patterns and adapt underwriting rules dynamically.",
+      "Work with local governments or civic organizations to stay informed of infrastructure changes that could affect risk (e.g., new traffic lights, road expansions).",
+      "Continuously refine mapping and data analytics to evolve your underwriting segmentation as neighborhoods shift and traffic flows change.",
+      "Educate agents and policyholders about higher-risk routes and potential discounts for alternative commuting options or low-mileage usage.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-20",
+    "archetype": "auto-insurance",
+    "title": "After-Market Vehicle Modifications Coverage Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/20 - After-Market Vehicle Modifications Coverage Analysis.md",
+    "goal": "Assess how after-market modifications (e.g., performance enhancements, appearance upgrades) affect a vehicle’s risk profile, and determine whether current coverage terms, underwriting guidelines, and pricing accurately reflect the associated exposure.",
+    "dataRequired": [
+      "Vehicle details showing type and extent of after-market modifications",
+      "Claims data (frequency, severity, total incurred losses) for modified vs. stock vehicles",
+      "Premium and exposure data (written premium, earned premium) broken down by modification category",
+      "Underwriting guidelines outlining acceptable vs. restricted modifications",
+      "Benchmark or industry data on claims and pricing for modified vehicles"
+    ],
+    "improve": [
+      "Refine underwriting questionnaires and inspection protocols to capture all modifications accurately.",
+      "Implement tiered pricing or surcharges based on modification categories and demonstrated claim risk.",
+      "Use third-party data sources or partnerships with specialty garages to verify modifications and reduce fraud.",
+      "Review and update guidelines regularly to keep pace with emerging modification trends and technologies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the loss ratio for the modified vehicle segment using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate the loss ratio for the modified vehicle segment using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Benchmark these results against the standard vehicle portfolio to measure profitability gaps.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-21",
+    "archetype": "auto-insurance",
+    "title": "Fleet Usage Segmentation Analysis",
+    "part": "B",
+    "partLabel": "Underwriting & Risk Segmentation",
+    "relatedMetricCodes": [
+      "POLICIES_IN_FORCE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/21 - Fleet Usage Segmentation Analysis.md",
+    "goal": "Understand how different types of fleet usage (e.g., commercial deliveries, ride-sharing, employee shuttles) affect claim frequency, severity, and profitability, and determine optimal segmentation strategies to underwrite each fleet segment accurately.",
+    "dataRequired": [
+      "Policy and fleet details (number of vehicles, vehicle classes, primary usage)",
+      "Historical claims data (frequency, severity, total incurred losses) segmented by fleet usage type",
+      "Exposure data (written premium, earned premium, in-force policies) for each fleet category",
+      "Telematics or operational data (mileage, driving hours, routes) when available",
+      "Competitor or industry benchmarks for fleet performance across different usage segments"
+    ],
+    "improve": [
+      "Refine segmentation criteria based on actual driving patterns, vehicle types, and usage intensities to more accurately match premium to risk.",
+      "Leverage telematics solutions for real-time or near-real-time monitoring, adjusting underwriting practices based on data-driven insights.",
+      "Introduce targeted safety programs or driver training for high-risk fleet segments to reduce claim frequency and severity.",
+      "Regularly benchmark fleet data against industry norms and update pricing strategies to remain both competitive and profitable.",
+      "C. Claims & Loss Management"
+    ],
+    "formulas": [
+      {
+        "output": "Determine the fleet usage loss ratio using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Determine the fleet usage loss ratio using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Track these ratios over multiple years to observe trends or fluctuations in segment performance.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-22",
+    "archetype": "auto-insurance",
+    "title": "Claims Frequency & Severity Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIM_FREQUENCY",
+      "CLAIM_SEVERITY"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/22 - Claims Frequency & Severity Analysis.md",
+    "goal": "Measure how often claims occur (frequency) and how costly they are on average (severity), in order to identify trends, evaluate risk, and guide pricing and underwriting decisions.",
+    "dataRequired": [
+      "Historical claims data (dates, causes, incurred amounts)",
+      "Exposure and premium data (written premium, earned premium, policy counts)",
+      "Claim payment details (reserves, paid amounts, allocated loss adjustment expenses)",
+      "External data on inflation, repair costs, or legal environment affecting claims",
+      "Demographic and vehicle-specific details for segmentation (age, vehicle model, location)"
+    ],
+    "improve": [
+      "Implement predictive analytics to identify early indicators of rising claim frequency or severity.",
+      "Adjust underwriting criteria or pricing models to reflect identified risk factors more accurately.",
+      "Work with preferred repair networks or negotiate favorable rates to manage repair costs and reduce severity.",
+      "Continuously monitor external factors (economic, legal, technological) and update strategies accordingly.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate claim frequency by using Frequency",
+        "variables": [
+          "Number of Claims",
+          "Number of Exposures"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate claim frequency by using Frequency = (Number of Claims / Number of Exposures) x 100. Break down by relevant segments such as driver age, coverage type, or region.",
+        "step": null
+      },
+      {
+        "output": "Compute claim severity by using Severity",
+        "variables": [
+          "Total Incurred Losses",
+          "Number of Claims"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Compute claim severity by using Severity = (Total Incurred Losses / Number of Claims). Compare severity across segments to spot unusually high-cost categories.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-23",
+    "archetype": "auto-insurance",
+    "title": "Claim Settlement Speed",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIMS_SETTLEMENT_DAYS"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/23 - Claim Settlement Speed.md",
+    "goal": "Measure how quickly claims progress from first notice of loss (FNOL) to final settlement, understand factors influencing settlement duration, and develop strategies to accelerate claims closure.",
+    "dataRequired": [
+      "Historical claims data (date of FNOL, date of settlement, type of claim)",
+      "Cycle time metrics for each stage of the claims process (e.g., investigation, documentation, approval)",
+      "Complexity indicators (type of damage, number of parties involved)",
+      "Claims adjuster caseload data",
+      "Internal service-level agreements (SLAs) or benchmarks for claim closure"
+    ],
+    "improve": [
+      "Automate repetitive tasks (e.g., digital document submission, AI-powered claim triage) to accelerate early claim stages.",
+      "Optimize adjuster workloads, ensuring balanced case assignments and specialized training for complex claims.",
+      "Introduce or refine service-level agreements with third parties (repair facilities, medical providers) to reduce external delays.",
+      "Provide policyholders with transparent updates and self-service tools, alleviating call center loads and building trust during the claim process.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-24",
+    "archetype": "auto-insurance",
+    "title": "Subrogation & Salvage Recovery Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "SUBROGATION_RECOVERY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "RECOVERY_SALVAGE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/24 - Subrogation & Salvage Recovery Analysis.md",
+    "goal": "Identify opportunities to maximize financial recoveries through effective subrogation and salvage processes, thereby reducing net claim costs and improving overall profitability.",
+    "dataRequired": [
+      "Claims data (paid amounts, liability determinations, settlement details)",
+      "Subrogation files (open, closed, and pending) including recovery amounts and timelines",
+      "Salvage records detailing the sale of damaged vehicles or parts",
+      "Vendor or auction house data on salvage sales and associated fees",
+      "Internal process metrics (average recovery timeline, success rate, staff workload)"
+    ],
+    "improve": [
+      "Implement automated workflows that flag subrogation opportunities earlier and track progress in real time.",
+      "Negotiate better contracts or performance metrics with salvage vendors to optimize returns.",
+      "Provide dedicated training for claims adjusters and subrogation specialists to sharpen negotiation and legal knowledge.",
+      "Regularly review and refine subrogation and salvage policies to align with emerging market trends and regulatory environments.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate subrogation success rates by using Subrogation Success Rate",
+        "variables": [
+          "Number of Successful Recoveries",
+          "Total Subrogation Attempts"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate subrogation success rates by using Subrogation Success Rate = (Number of Successful Recoveries / Total Subrogation Attempts) x 100. Compare across different lines of business or claim types to see which areas yield higher or lower success.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-25",
+    "archetype": "auto-insurance",
+    "title": "Vehicle Repair Cost Inflation & Parts Availability Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIM_SEVERITY"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REPAIR_COST_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/25 - Vehicle Repair Cost Inflation & Parts Availability Analysis.md",
+    "goal": "Evaluate how escalating repair costs and fluctuating parts availability affect claim severity, turnaround times, and overall profitability, and determine strategies to mitigate these impacts.",
+    "dataRequired": [
+      "Historical vehicle repair cost data (labor rates, parts prices, average repair times)",
+      "Parts availability metrics (backorder rates, delivery times)",
+      "Claims data (frequency, severity, incurred losses)",
+      "Supplier or vendor agreements detailing pricing and service-level expectations",
+      "Industry or competitor benchmarks on repair costs and supply chain trends"
+    ],
+    "improve": [
+      "Diversify supplier networks and cultivate strategic partnerships to reduce dependency on a single vendor or region.",
+      "Explore alternative solutions like certified aftermarket parts and mobile repair services to lower costs and speed up turnaround times.",
+      "Continuously monitor repair cost indices and global supply chain trends to anticipate and plan for inflationary pressures.",
+      "Revisit underwriting and rating strategies for vehicle models or segments known to have ongoing parts supply issues.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-26",
+    "archetype": "auto-insurance",
+    "title": "Collision Repair Network & Direct Repair Program Effectiveness",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "CLAIM_SEVERITY",
+      "DIRECT_REPAIR_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/26 - Collision Repair Network & Direct Repair Program.md",
+    "goal": "Assess how effectively the company’s preferred collision repair network or direct repair program (DRP) manages repair quality, turnaround times, and cost control, thereby impacting overall customer satisfaction and claim severity.",
+    "dataRequired": [
+      "List of collision repair partners in the network, including their contractual terms (labor rates, service-level agreements)",
+      "Claims data indicating whether repairs were completed within the direct repair network vs. external shops",
+      "Repair cost details (total repair bills, parts vs. labor breakdown) and average turnaround times",
+      "Customer satisfaction or net promoter scores related to the repair process",
+      "Industry or competitor benchmarks for DRP participation rates, cycle times, and cost metrics"
+    ],
+    "improve": [
+      "Strengthen DRP agreements with clear performance metrics and incentives for timely, cost-effective repairs.",
+      "Conduct ongoing quality inspections or audits at DRP facilities to maintain consistent repair standards.",
+      "Implement transparent tracking and reporting for repair status updates, enhancing policyholder experience.",
+      "Offer incentives or seamless referral processes to encourage customers to choose DRP shops for their repairs.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-27",
+    "archetype": "auto-insurance",
+    "title": "OEM vs. Aftermarket Parts Usage & Cost Analysis",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REPAIR_COST_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_PROCUREMENT",
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/27 - OEM vs. Aftermarket Parts Usage & Cost Analysis.md",
+    "goal": "Determine the cost impact, quality implications, and customer satisfaction effects of using Original Equipment Manufacturer (OEM) parts versus aftermarket parts in auto repairs, and align parts usage strategies with claim severity and service objectives.",
+    "dataRequired": [
+      "Claims records specifying whether OEM or aftermarket parts were used",
+      "Parts cost data (unit prices, shipping costs, discounts) broken down by OEM and aftermarket categories",
+      "Repair duration metrics (turnaround times, rework rates) for both parts types",
+      "Customer satisfaction or feedback related to repair outcomes",
+      "Repair vendor contracts and labor rate agreements"
+    ],
+    "improve": [
+      "Establish clear guidelines for when OEM parts are mandatory (e.g., safety components) versus when aftermarket parts are permissible.",
+      "Negotiate volume discounts or service-level agreements with both OEM and reputable aftermarket suppliers.",
+      "Incorporate customer preference data and offer tiered coverage options, allowing policyholders to choose OEM vs. aftermarket parts.",
+      "Monitor technological advancements (e.g., 3D-printed parts) that may further expand cost-effective and high-quality repair options.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Evaluate rework rates by calculating Rework Rate",
+        "variables": [
+          "Number of Repairs Requiring Follow-up",
+          "Total Repairs in Category"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Evaluate rework rates by calculating Rework Rate = (Number of Repairs Requiring Follow-up / Total Repairs in Category) x 100. Determine if aftermarket parts show higher rework or warranty issues than OEM parts.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-28",
+    "archetype": "auto-insurance",
+    "title": "Stolen Vehicle Rate & Recovery Effectiveness",
+    "part": "C",
+    "partLabel": "Claims & Loss Management",
+    "relatedMetricCodes": [
+      "THEFT_RECOVERY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "RECOVERY_SALVAGE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/28 - Stolen Vehicle Rate & Recovery Effectiveness.md",
+    "goal": "Determine the frequency of vehicle thefts within the portfolio, analyze recovery rates and associated claim costs, and identify strategies to reduce theft incidents and improve stolen vehicle recovery outcomes.",
+    "dataRequired": [
+      "Historical claims data for stolen vehicles, including final loss amounts",
+      "Vehicle recovery records indicating which vehicles were found, condition, and recovery timelines",
+      "Policy information (vehicle make/model/year, location, security features)",
+      "Law enforcement or external databases on theft rates by region",
+      "Costs associated with vehicle recovery efforts (e.g., private investigators, GPS technology)"
+    ],
+    "improve": [
+      "Offer or mandate enhanced security measures (e.g., GPS trackers, immobilizers) in high-theft regions or for frequently targeted vehicle models.",
+      "Provide policyholder education on safe parking practices, anti-theft device usage, and timely reporting of theft incidents.",
+      "Collaborate with law enforcement and vehicle tracking services to streamline the recovery process.",
+      "Adjust underwriting and rating strategies to reflect theft risk, incentivizing safer vehicle choices and adoption of security features.",
+      "D. Financial Performance & Reserving"
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the stolen vehicle rate using Stolen Vehicle Rate",
+        "variables": [
+          "Number of Stolen Vehicle Claims",
+          "Total Insured Vehicles"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the stolen vehicle rate using Stolen Vehicle Rate = (Number of Stolen Vehicle Claims / Total Insured Vehicles) x 100. Segment these results by factors like vehicle make/model, geographic region, and presence of anti-theft devices.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-29",
+    "archetype": "auto-insurance",
+    "title": "Loss Ratio Trends by Product Segment",
+    "part": "D",
+    "partLabel": "Financial Performance & Reserving",
+    "relatedMetricCodes": [
+      "CLAIM_FREQUENCY",
+      "LOSS_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/29 - Loss Ratio Trends by Product Segment.md",
+    "goal": "Determine how different auto insurance product segments (e.g., liability, collision, comprehensive) perform over time in terms of loss ratios, and identify where adjustments in pricing, underwriting, or coverage might be necessary to maintain profitability.",
+    "dataRequired": [
+      "Historical earned premium and incurred losses (including LAE) by product segment",
+      "Policy count and exposure data (to calculate frequency)",
+      "External cost drivers (e.g., inflation, parts costs, medical expense indices)",
+      "Competitor or industry benchmark data for comparison"
+    ],
+    "improve": [
+      "Conduct periodic (e.g., quarterly or semi-annual) product performance reviews to stay ahead of emerging loss trends.",
+      "Adjust segment-level rates promptly when data shows a persistent climb in loss ratios.",
+      "Collaborate with claims and underwriting teams to refine selection criteria and reduce adverse risk accumulation.",
+      "Leverage predictive analytics to anticipate shifts in claim severity or frequency, informing proactive pricing and coverage strategies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the loss ratio for each segment using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Calculate the loss ratio for each segment using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Compare these ratios across multiple years to detect upward or downward trends.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-30",
+    "archetype": "auto-insurance",
+    "title": "Reserve Adequacy & Reserving Methodologies",
+    "part": "D",
+    "partLabel": "Financial Performance & Reserving",
+    "relatedMetricCodes": [
+      "FLOAT_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "RESERVE_RISK"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/auto-insurance/30 - Reserve Adequacy & Reserving Methodologies.md",
+    "goal": "Evaluate whether existing reserves are sufficient to cover future claim obligations and assess the effectiveness of current actuarial methodologies (e.g., chain-ladder, Bornhuetter-Ferguson) used to determine those reserves.",
+    "dataRequired": [
+      "Historical claims data (paid and incurred losses, loss adjustment expenses)",
+      "Exposure data (earned premium, policy counts)",
+      "Run-off triangles for various lines of business (accident year, development period)",
+      "External factors (inflation rates, legal environment changes)",
+      "Current reserve levels by line of business"
+    ],
+    "improve": [
+      "Implement regular reserve reviews using multiple actuarial methods to gain a comprehensive view of potential outcomes.",
+      "Enhance data quality and granularity, including segmentation by coverage type, to produce more refined projections.",
+      "Incorporate robust scenario testing (e.g., economic downturns, inflation spikes) to assess reserve adequacy under stress conditions.",
+      "Continuously update models to reflect legal, technological, and economic changes that may alter claim patterns.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-31",
+    "archetype": "auto-insurance",
+    "title": "Reinsurance Optimization & Ceded Risk Evaluation",
+    "part": "D",
+    "partLabel": "Financial Performance & Reserving",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/31 - Reinsurance Optimization & Ceded Risk Evaluation.md",
+    "goal": "Determine whether current reinsurance programs effectively balance retained vs.",
+    "dataRequired": [
+      "Historical loss data (frequency, severity, large-loss indicators)",
+      "Current and past reinsurance contracts, including coverage terms, limits, attachment points, and premium costs",
+      "Exposure data by line of business (earned premium, policy counts, geographic concentration)",
+      "Catastrophe modeling outputs (if applicable)",
+      "Industry benchmarks or competitor data on reinsurance structures and pricing"
+    ],
+    "improve": [
+      "Regularly reassess loss trends and catastrophe models to ensure attachment points and limits remain appropriate.",
+      "Negotiate more favorable contract terms or explore alternative reinsurance solutions (e.g., collateralized reinsurance, ILS).",
+      "Align reinsurance strategy with capital management objectives, potentially retaining more risk if capital levels permit.",
+      "Use dynamic scenario testing to adapt reinsurance structures in response to emerging risks or market changes.",
+      "E. Technology, Mobility & Operational Efficiency"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-32",
+    "archetype": "auto-insurance",
+    "title": "Electric & Advanced Driver-Assistance Systems Vehicle Impact Assessment",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "REPAIR_COST_INFLATION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/32 - Electric & Advanced Driver-Assistance Systems Vehicle.md",
+    "goal": "Evaluate how electric vehicles (EVs) and vehicles equipped with advanced driver-assistance systems (ADAS) influence claims frequency, severity, and profitability, and determine if current underwriting and pricing strategies accurately capture these emerging risks.",
+    "dataRequired": [
+      "Policy and vehicle data specifying electric vs. internal combustion engine (ICE) vehicles, plus ADAS features (e.g., lane assist, automatic emergency braking)",
+      "Claims records (frequency, severity, total incurred losses) segregated by EV/ADAS vs. traditional vehicles",
+      "Repair cost data (parts availability, specialized labor rates) for EVs and ADAS components",
+      "Telematics or usage data indicating how ADAS features are utilized",
+      "Industry/competitor benchmarks on EV/ADAS adoption rates and loss trends"
+    ],
+    "improve": [
+      "Refine rating models to account for the higher repair costs of ADAS sensors and EV battery components, potentially coupling discounts for safety features with appropriate surcharges for replacement complexities.",
+      "Partner with certified repair shops or OEM networks that specialize in EV/ADAS to manage costs and reduce claim duration.",
+      "Use telematics data to offer behavior-based incentives, rewarding policyholders who consistently leverage ADAS safely.",
+      "",
+      "Continuously update policy language and coverage options (e.g., specialized roadside assistance for EVs) to align with evolving EV/ADAS technology and driver needs.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-33",
+    "archetype": "auto-insurance",
+    "title": "Emerging Mobility Coverage Analysis",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/33 - Emerging Mobility Coverage Analysis.md",
+    "goal": "Identify and evaluate new mobility trends—such as car-sharing platforms, micro-mobility solutions (e-scooters, e-bikes), and subscription-based vehicle services—and assess whether current coverage offerings and underwriting practices adequately address these evolving risks.",
+    "dataRequired": [
+      "Policies or endorsements currently covering emerging mobility risks (car-sharing, e-scooter, e-bike, etc.)",
+      "Claims data (frequency, severity, total incurred losses) linked to emerging mobility exposures",
+      "Usage data and demographic information for policyholders engaging in new mobility services",
+      "Competitor or industry benchmarks on emerging mobility coverage offerings, claim rates, and pricing",
+      "Relevant local or national regulations impacting coverage requirements for alternative mobility options"
+    ],
+    "improve": [
+      "Expand coverage options tailored to specific mobility modes, such as daily or hourly car-sharing, e-scooter use, or ride subscriptions.",
+      "Collaborate with mobility providers to integrate telematics or real-time usage data into underwriting decisions.",
+      "",
+      "Update policy language to address complex ownership and liability scenarios commonly arising in shared mobility models.",
+      "Track and adapt quickly to new regulations or consumer demands in the rapidly evolving mobility landscape.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-34",
+    "archetype": "auto-insurance",
+    "title": "Rideshare Gap Coverage & TNC Endorsement Performance",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/34 - Rideshare Gap Coverage & TNC Endorsement Performance.md",
+    "goal": "Evaluate how effectively the rideshare gap coverage and Transportation Network Company (TNC) endorsements address rideshare-related exposures, ensure profitability, and meet both driver and regulatory requirements.",
+    "dataRequired": [
+      "Policies that include rideshare gap coverage or TNC endorsements, including premium and coverage limits",
+      "Claims data specific to rideshare incidents (frequency, severity, incurred losses)",
+      "Trip data or usage patterns from TNC partners (if available)",
+      "Regulatory guidelines for TNC coverage and rideshare operations",
+      "Benchmark or competitor data on TNC endorsement adoption rates and claims experience"
+    ],
+    "improve": [
+      "Collaborate closely with TNCs to access trip data and driver profiles, enhancing risk segmentation and rating accuracy.",
+      "Offer tiered endorsements that cater to drivers with varying levels of rideshare activity (e.g., occasional vs. full-time).",
+      "Provide driver education on TNC coverage triggers and policy conditions to reduce coverage misunderstandings and potential disputes.",
+      "Continuously monitor regulatory developments, adjusting coverage forms and pricing to remain compliant and competitive.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Assess net profitability using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium for TNC-related coverage"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Assess net profitability using Loss Ratio = (Incurred Losses + LAE) / Earned Premium for TNC-related coverage. Identify segments or geographic regions with elevated risk or loss patterns that may require targeted rate adjustments.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-35",
+    "archetype": "auto-insurance",
+    "title": "Distracted Driving & Crash Avoidance Technology Impact Analysis",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "TELEMATICS_UBI"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/35 - Distracted Driving & Crash Avoidance Technology Impact.md",
+    "goal": "Identify how driver distractions (e.g., mobile phone use) influence claim frequency and severity, and determine if crash avoidance systems (e.g., automatic emergency braking, lane departure alerts) effectively mitigate those risks.",
+    "dataRequired": [
+      "Historical claims data noting cause of accident (e.g., confirmed or suspected distracted driving)",
+      "Vehicle feature data specifying presence of crash avoidance technology",
+      "Telematics or usage data capturing phone usage, abrupt braking, or lane departures",
+      "Premium, exposure, and loss ratio details segmented by vehicles with vs. without crash avoidance features",
+      "External reports or studies on distracted driving trends and technology effectiveness"
+    ],
+    "improve": [
+      "Offer premium incentives or discounts for vehicles equipped with effective crash avoidance systems and verify operational status.",
+      "Implement or expand telematics programs to identify high-risk distracted driving behavior, providing feedback or surcharges when warranted.",
+      "Work with regulatory bodies and industry groups to strengthen distracted driving legislation or awareness campaigns.",
+      "Refine underwriting and marketing to attract safer drivers who value and properly use crash avoidance technology.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate distracted driving claim frequency using Claim Frequency",
+        "variables": [
+          "Number of Distracted Driving Claims",
+          "Total Claims"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate distracted driving claim frequency using Claim Frequency = (Number of Distracted Driving Claims / Total Claims) x 100. Compare to overall claim frequency and note variations by geography or vehicle type. Identify which vehicles are equipped with crash avoidance features to see if these systems reduce claim occurrences.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-36",
+    "archetype": "auto-insurance",
+    "title": "Commercial Auto Fleet Telematics & Performance Review",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [
+      "TELEMATICS_PENETRATION"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "SEGMENT_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/36 - Commercial Auto Fleet Telematics & Performance Review.md",
+    "goal": "Determine how commercial fleet telematics programs affect claim frequency, severity, and overall fleet performance, and identify whether current underwriting and pricing practices align with actual telematics-driven risk insights.",
+    "dataRequired": [
+      "Commercial fleet policies and associated telematics data (e.g., driver behavior scores, mileage, routes)",
+      "Claims data (frequency, severity, incurred losses) mapped to telematics-equipped vehicles",
+      "Fleet demographics (number of vehicles, vehicle types, industry category)",
+      "Maintenance and operational records (e.g., service intervals, compliance checks)",
+      "Competitor or market benchmarks on fleet telematics adoption and outcomes"
+    ],
+    "improve": [
+      "Integrate telematics insights into underwriting guidelines, rewarding fleets that demonstrate consistent safe driving scores and prompt vehicle maintenance.",
+      "Collaborate with fleet managers to provide feedback loops and driver coaching programs based on telematics analytics.",
+      "Offer tiered insurance products that incentivize telematics adoption and continuous improvement in driver behavior metrics.",
+      "Continuously update modeling techniques to account for new telematics features and advanced analytics (e.g., AI-based driver risk scoring).",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate telematics-equipped fleet claim frequency with Claim Frequency",
+        "variables": [
+          "Number of Claims",
+          "Number of Telematics-Equipped Vehicles"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate telematics-equipped fleet claim frequency with Claim Frequency = (Number of Claims / Number of Telematics-Equipped Vehicles) x 100. Compare to non-telematics fleets in similar industries or vehicle classes.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "auto-insurance-37",
+    "archetype": "auto-insurance",
+    "title": "AI-Driven Image-Based Collision Damage Estimation",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "REPAIR_NETWORK",
+      "CLAIMS_EXCELLENCE"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/37 - AI-Driven Image-Based Collision Damage Estimation.md",
+    "goal": "Determine how effectively AI-based image recognition tools can evaluate vehicle collision damage, streamline claims handling, and reduce both cycle times and inspection costs—ultimately improving operational efficiency and customer satisfaction.",
+    "dataRequired": [
+      "Historical collision claims data (including image sets of damaged vehicles)",
+      "Repair and inspection records to compare AI estimates vs. actual repair costs",
+      "Cycle time metrics for traditional vs. AI-enabled damage assessments",
+      "Customer satisfaction or feedback concerning claim speed and accuracy",
+      "Operational cost data related to staff appraisers, inspection overhead, and technology investments"
+    ],
+    "improve": [
+      "Expand the image dataset to include diverse vehicle types, environmental conditions, and damage scenarios, enhancing AI model robustness.",
+      "Implement a feedback loop for repair shops and adjusters, feeding ground-truth data back into AI systems for continuous learning.",
+      "Offer training or guidelines for customers and adjusters on capturing clear, high-quality images, improving estimation accuracy.",
+      "Consider hybrid workflows where complex claims automatically trigger manual reviews while straightforward cases are finalized by AI.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-38",
+    "archetype": "auto-insurance",
+    "title": "OEM-Certified Repair Partnership Impact Study",
+    "part": "E",
+    "partLabel": "Technology, Mobility & Operational Efficiency",
+    "relatedMetricCodes": [
+      "DIRECT_REPAIR_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "REPAIR_NETWORK"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/38 - OEM-Certified Repair Partnership Impact Study.md",
+    "goal": "Evaluate how partnerships with OEM-certified repair facilities influence claim severity, repair quality, and customer satisfaction, and determine if these relationships adequately balance cost and service advantages.",
+    "dataRequired": [
+      "List of claims involving OEM-certified repair shops vs. non-certified shops",
+      "Repair cost data (average invoice, labor rates, parts usage)",
+      "Cycle times (time from vehicle drop-off to completion)",
+      "Customer satisfaction scores or feedback related to repairs",
+      "Contractual or negotiated terms with OEM-certified facilities (e.g., discounts, guaranteed turnaround times)"
+    ],
+    "improve": [
+      "Standardize metrics and SLAs for OEM-certified partners, conducting regular performance reviews to ensure compliance.",
+      "Offer incentives or tiered referrals to top-performing OEM-certified facilities, channeling more volume to them and negotiating favorable pricing in return.",
+      "Integrate digital platforms or telematics data to streamline repair scheduling, parts ordering, and real-time status updates for policyholders.",
+      "Educate policyholders on the benefits of OEM-certified repairs, including quality guarantees and potential impacts on vehicle resale value.",
+      "I. Specialty & Niche Segments"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "auto-insurance-39",
+    "archetype": "auto-insurance",
+    "title": "Classic-Collector Vehicle Segment Profitability",
+    "part": "I",
+    "partLabel": "Specialty & Niche Segments",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/auto-insurance/39 - Classic-Collector Vehicle Segment Profitability.md",
+    "goal": "Evaluate how profitably the company is underwriting classic and collector vehicles, identify specific cost drivers or unique risks, and determine adjustments to underwriting or pricing to enhance margin in this niche.",
+    "dataRequired": [
+      "List of in-force classic/collector vehicle policies (written premium, earned premium, policy count)",
+      "Claims data specific to classic/collector vehicles (loss frequency, severity, total incurred losses)",
+      "Vehicle valuation data (agreed value vs. stated value vs. market value)",
+      "Underwriting and eligibility guidelines (storage requirements, usage limitations)",
+      "Benchmark or competitor data on collector car premiums and loss ratios"
+    ],
+    "improve": [
+      "Refine underwriting rules around storage conditions, driver qualifications, and permissible vehicle usage to reduce loss exposure.",
+      "Introduce or adjust premium surcharges or discounts based on verified secure storage, alarm systems, and limited-use agreements.",
+      "Collaborate with specialty appraisers or vintage car associations to establish accurate valuations and reduce claims disputes.",
+      "Conduct regular reviews of competitor rates and industry trends, ensuring the product remains competitive yet profitable.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Compute the loss ratio for the segment using Loss Ratio",
+        "variables": [
+          "Incurred Losses",
+          "LAE",
+          "Earned Premium"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Compute the loss ratio for the segment using Loss Ratio = (Incurred Losses + LAE) / Earned Premium. Analyze trends over several policy terms (e.g., 3–5 years) to see if profitability is improving or declining.",
+        "step": null
+      }
+    ]
+  }
+]

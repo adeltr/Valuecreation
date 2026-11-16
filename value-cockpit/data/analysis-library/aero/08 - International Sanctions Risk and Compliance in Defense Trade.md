@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-08
+part: A
+partLabel: Strategy & Market Position
+quant: []
+causes: [REGULATORY, GEOPOLITICAL]
+levers: []
 ---
 # 8 · International Sanctions Risk and Compliance in Defense Trade
 

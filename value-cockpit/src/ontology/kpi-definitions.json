@@ -1,0 +1,240 @@
+{
+  "aero": {
+    "OPERATIONAL_AVAILABILITY": {
+      "label": "Operational Availability",
+      "definition": "This measures the availability of a system to perform its function when needed, often used for defense systems where operational readiness is critical."
+    },
+    "SPARE_PARTS_AVAILABILITY": {
+      "label": "Spare Parts Availability",
+      "definition": "This KPI measures the availability of spare parts for maintenance and repairs, which can impact downtime and customer satisfaction."
+    }
+  },
+  "airline": {
+    "LOAD_FACTOR": {
+      "label": "Load Factor",
+      "definition": "This is a key metric for airlines that indicates the percentage of available seating capacity that is filled with passengers. A higher load factor means that more seats are filled, implying better efficiency and potentially higher revenues."
+    },
+    "YIELD": {
+      "label": "Yield",
+      "definition": "In the airline industry, yield refers to the average fare paid per kilometer, per passenger. It's a crucial measure of profitability and pricing power, particularly for cargo airlines and freight forwarding."
+    },
+    "ON_TIME_PERFORMANCE": {
+      "label": "On-Time Performance",
+      "definition": "This is crucial for both airlines and logistics companies. For airlines, it measures the percentage of flights departing or arriving within 15 minutes of the scheduled time. For logistics companies, it's the percentage of deliveries made on time. It is a direct indicator of operational efficiency and service quality."
+    },
+    "MARKET_SHARE": {
+      "label": "Market Share",
+      "definition": "Important to manage global carrier relations, as well as comparison to other freight forwarding companies."
+    },
+    "BREAKEVEN_LOAD_FACTOR": {
+      "label": "Breakeven Load Factor",
+      "definition": "This is crucial for airlines and indicates the minimum passenger load factor an airline needs to cover its costs. It gives an idea about the company's cost structure and efficiency."
+    }
+  },
+  "cpg": {
+    "OUT_OF_STOCK_RATE": {
+      "label": "Out-of-Stock Rate",
+      "definition": "This rate measures the frequency at which a product is not available for purchase when a customer tries to buy it. A high out-of-stock rate could indicate demand forecasting errors, supply chain inefficiencies, or a popular product."
+    },
+    "PRIVATE_LABEL_SHARE": {
+      "label": "Private Label Share",
+      "definition": "This metric indicates the percentage of a company's sales coming from its private (or house) brand versus branded goods. It provides insight into the company's pricing power and competition level within the industry."
+    },
+    "NEW_PRODUCT_SUCCESS_RATE": {
+      "label": "New Product Success Rate",
+      "definition": "This metric tracks the percentage of new products that meet or exceed their initial sales targets. It provides insight into a company's innovation capabilities and market acceptance of new products."
+    }
+  },
+  "manufacturing": {
+    "SCRAP_RATE": {
+      "label": "Scrap Rate",
+      "definition": "This measures the percentage of produced items that do not meet the required standards and hence become waste. A high scrap rate can indicate quality control issues, inefficiencies in the manufacturing process, or issues with raw materials."
+    },
+    "FIRST_PASS_YIELD": {
+      "label": "First Pass Yield",
+      "definition": "This measures the effectiveness of the production process by calculating the percentage of products manufactured correctly without requiring any rework. High FPY indicates an efficient and well-managed production process, which contributes to higher margins."
+    },
+    "MANUFACTURING_LEAD_TIME": {
+      "label": "Manufacturing Lead Time",
+      "definition": "This measures the time taken from the start of the production process to the completion of the final product. A shorter lead time can indicate better efficiency and faster time-to-market."
+    },
+    "MACHINE_DOWNTIME_RATE": {
+      "label": "Machine Downtime Rate",
+      "definition": "This indicates the percentage of time that a machine is not operational during scheduled production times. High rates can signify maintenance issues or machine inefficiency, negatively impacting production."
+    }
+  },
+  "retail": {
+    "SHRINKAGE_RATE": {
+      "label": "Shrinkage Rate",
+      "definition": "This KPI calculates the percentage of inventory lost due to errors, theft, or damage. High shrinkage rates can significantly impact a retailer's bottom line and suggest issues with loss prevention or inventory management."
+    },
+    "AVERAGE_TRANSACTION_VALUE": {
+      "label": "Average Transaction Value",
+      "definition": "This KPI represents the average amount spent by customers per transaction. An increasing ATV suggests customers are purchasing more items or higher-priced items, which can signify effective marketing or sales strategies."
+    }
+  },
+  "chemical": {
+    "PROCESS_SAFETY_INCIDENTS": {
+      "label": "Process Safety Incidents",
+      "definition": "These measure the number of incidents that could have, or did, result in the release of a hazardous substance. This is a critical KPI given the potential consequences of such incidents in the chemicals industry."
+    }
+  },
+  "agriculture": {
+    "IRRIGATION_EFFICIENCY": {
+      "label": "Irrigation Efficiency",
+      "definition": "This KPI measures the ratio of the amount of water used for irrigation that is effectively taken up by crops versus the total water applied. Higher efficiency reduces water waste, lowers costs, and improves sustainability."
+    },
+    "CROP_INSURANCE_COVERAGE": {
+      "label": "Crop Insurance Coverage",
+      "definition": "The percentage of crops or livestock insured against weather events or other losses can provide insight into a farming operation's risk management strategies."
+    }
+  },
+  "electricity-generation": {
+    "CAPACITY_FACTOR": {
+      "label": "Capacity Factor",
+      "definition": "This measures the actual electrical output of a power plant over a period of time compared to its maximum potential output. A higher capacity factor indicates a more efficient use of infrastructure."
+    },
+    "HEAT_RATE": {
+      "label": "Heat Rate",
+      "definition": "This is a measure of efficiency for power plants that use thermal energy. It represents the amount of thermal energy (usually measured in BTU) required to generate one kilowatt-hour (kWh) of electricity. A lower heat rate indicates a more efficient power plant."
+    },
+    "CARBON_INTENSITY": {
+      "label": "Carbon Intensity",
+      "definition": "Given the increasing focus on climate change and the energy transition, the amount of carbon dioxide (CO2) emitted per unit of energy produced is becoming a crucial KPI. Lower carbon intensity can indicate a company's progress toward cleaner operations and its resilience in a decarbonizing world."
+    }
+  },
+  "healthcare-provider": {
+    "BED_OCCUPANCY_RATE": {
+      "label": "Bed Occupancy Rate",
+      "definition": "This KPI is applicable mainly to hospitals and in-patient care facilities. It represents the percentage of hospital beds occupied by patients at a given time. Higher BORs may indicate strong demand, but overly high rates might also signal capacity constraints or potential quality of care issues."
+    },
+    "AVERAGE_LENGTH_OF_STAY": {
+      "label": "Average Length of Stay",
+      "definition": "For hospitals and inpatient care centers, this KPI measures the average number of days that patients stay in the facility. A lower length of stay can indicate more efficient care but may also reflect patient case mix."
+    },
+    "READMISSION_RATE": {
+      "label": "Readmission Rate",
+      "definition": "This measures the percentage of patients who are readmitted to a hospital or other care facility within a certain period (often 30 days) following discharge. Lower readmission rates can signal high-quality care and effective patient treatment, while higher rates may suggest the opposite."
+    },
+    "CASE_MIX_INDEX": {
+      "label": "Case Mix Index",
+      "definition": "For hospitals, this represents the average diagnosis-related group (DRG) relative weight for a hospital. A higher CMI suggests a hospital is treating more complex (and generally more expensive) patient cases."
+    }
+  },
+  "medical-device": {
+    "CLINICAL_TRIAL_SUCCESS_RATE": {
+      "label": "Clinical Trial Success Rate",
+      "definition": "Clinical trials are a necessary part of bringing new medical devices to market. A company with a high success rate in these trials may be more likely to introduce successful new products in the future."
+    },
+    "RECALL_RATE": {
+      "label": "Recall Rate",
+      "definition": "The frequency and severity of product recalls can indicate the quality of a company's products and its regulatory compliance. Frequent recalls might suggest underlying issues with manufacturing processes or quality control."
+    }
+  },
+  "metals-mining": {
+    "RECOVERY_RATE": {
+      "label": "Recovery Rate",
+      "definition": "This is the percentage of valuable metal in the ore that is recovered in the processing of the ore. A higher recovery rate indicates greater efficiency in the processing operations."
+    },
+    "ROYALTY_RATE": {
+      "label": "Royalty Rate",
+      "definition": "The percentage of revenue or profit paid to the land or mineral rights owner. High royalty rates can impact profitability."
+    },
+    "STRIPPING_RATIO": {
+      "label": "Stripping Ratio",
+      "definition": "This is the ratio of the volume of overburden (or waste material) required to be handled to extract a ton of ore. The lower the ratio, the less waste material needs to be moved, hence, the operation is more efficient."
+    },
+    "MINE_LIFE": {
+      "label": "Mine Life",
+      "definition": "The estimated number of years a mine can continue operations at the current rate of extraction."
+    }
+  },
+  "waste-management": {
+    "RECYCLING_RATE": {
+      "label": "Recycling Rate",
+      "definition": "This is the percentage of total waste that is recycled. A higher recycling rate can mean greater revenue from selling recyclables and potentially less reliance on landfilling, which can be costly and environmentally damaging."
+    }
+  },
+  "health-payor": {
+    "READMISSION_RATE": {
+      "label": "Readmission Rate",
+      "definition": "This measures the percentage of patients who are readmitted to a hospital or other care facility within a certain period (often 30 days) following discharge. Lower readmission rates can signal high-quality care and effective patient treatment, while higher rates may suggest the opposite."
+    }
+  },
+  "pc-insurance": {
+    "LOSS_RATIO": {
+      "label": "Loss Ratio",
+      "definition": "This ratio indicates the percentage of premiums paid out as claims. A high loss ratio can indicate either underpricing of policies or higher claims frequency. On the other hand, a lower loss ratio suggests a better control on claims payout and potentially effective underwriting."
+    },
+    "EXPENSE_RATIO": {
+      "label": "Expense Ratio",
+      "definition": "This represents the company's operational costs relative to its earned premium. It shows how much it costs to write each policy. A lower expense ratio generally indicates more efficient operations."
+    },
+    "INVESTMENT_YIELD": {
+      "label": "Investment Yield",
+      "definition": "Insurers hold significant investment portfolios that generate returns and offset underwriting risks. Higher yields can offset underwriting losses, but might indicate higher risk investments."
+    },
+    "CATASTROPHE_LOSS_RATIO": {
+      "label": "Catastrophe Loss Ratio",
+      "definition": "This is the ratio of losses from catastrophic events (like hurricanes or earthquakes) to earned premiums. A high ratio could significantly impact an insurer's profitability."
+    },
+    "SOLVENCY_RATIO": {
+      "label": "Solvency Ratio",
+      "definition": "This measures the company's ability to meet its long-term financial obligations. Regulators typically require insurance companies to maintain a solvency ratio above a certain threshold to ensure they can pay claims in adverse scenarios."
+    },
+    "COMBINED_RATIO": {
+      "label": "Combined Ratio",
+      "definition": "The combined ratio is the sum of the loss ratio and the expense ratio. If it’s over 100%, the company is paying out more in claims and expenses than it’s earning from premiums."
+    }
+  },
+  "auto-insurance": {
+    "CLAIM_FREQUENCY": {
+      "label": "Claim Frequency",
+      "definition": "The number of claims filed per policy issued. High claim frequency can indicate riskier portfolio segments or potentially fraudulent activities."
+    },
+    "CLAIM_SEVERITY": {
+      "label": "Claim Severity",
+      "definition": "The average payout for each claim filed. High claim severity can be an indicator of riskier policies, inflation, or inadequate pricing."
+    },
+    "EXPENSE_RATIO": {
+      "label": "Expense Ratio",
+      "definition": "This represents the company's operational costs relative to its earned premium. It shows how much it costs to write each policy. A lower expense ratio generally indicates more efficient operations."
+    },
+    "INVESTMENT_YIELD": {
+      "label": "Investment Yield",
+      "definition": "Insurers hold significant investment portfolios that generate returns and offset underwriting risks. Higher yields can offset underwriting losses, but might indicate higher risk investments."
+    },
+    "LOSS_RATIO": {
+      "label": "Loss Ratio",
+      "definition": "This ratio indicates the percentage of premiums paid out as claims. A high loss ratio can indicate either underpricing of policies or higher claims frequency. On the other hand, a lower loss ratio suggests a better control on claims payout and potentially effective underwriting."
+    }
+  },
+  "life-insurance": {
+    "BENEFITS_RATIO": {
+      "label": "Benefits Ratio",
+      "definition": "This ratio compares benefits and claims paid to policyholders to the company's earnings. It helps assess the profitability of an insurance company."
+    },
+    "EXPENSE_RATIO": {
+      "label": "Expense Ratio",
+      "definition": "This represents the company's operational costs relative to its earned premium. It shows how much it costs to write each policy. A lower expense ratio generally indicates more efficient operations."
+    },
+    "SOLVENCY_RATIO": {
+      "label": "Solvency Ratio",
+      "definition": "This measures the company's ability to meet its long-term financial obligations. Regulators typically require insurance companies to maintain a solvency ratio above a certain threshold to ensure they can pay claims in adverse scenarios."
+    }
+  },
+  "commercial-bank": {
+    "NET_INTEREST_MARGIN": {
+      "label": "Net Interest Margin",
+      "definition": "Net interest margin is the difference between the interest income generated by banks and the amount of interest paid out to their lenders, relative to the amount of their interest-earning assets."
+    },
+    "LOAN_TO_DEPOSIT_RATIO": {
+      "label": "Loan-to-Deposit Ratio",
+      "definition": "This ratio compares a bank's total loans to its total deposits, which can give investors an indication of a bank's liquidity and ability to cover any sudden runs."
+    },
+    "LIQUIDITY_COVERAGE_RATIO": {
+      "label": "Liquidity Coverage Ratio",
+      "definition": "This KPI is specific to banking. It measures a bank's ability to meet its short-term liquidity needs in a 30-day stress scenario. The ratio is calculated by dividing high-quality liquid assets by total net cash outflows over a 30-day period."
+    }
+  }
+}

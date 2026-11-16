@@ -1,0 +1,103 @@
+import type { Metric } from '../domain/types';
+import { BASE_ARCHETYPES, type SectorArchetype } from '../ontology/registry';
+import { SPECS } from '../sectors';
+import { makeTemplate, FAMILY_BRIDGE } from './build';
+import type { InteractionRule } from '../domain/types';
+import { instantiateSaasTemplate, type SaasInputs } from './saas';
+import { instantiateAeroTemplate, type AeroInputs } from './aero';
+import { instantiateAirlineTemplate, type AirlineInputs } from './airline';
+import { instantiateEbitdaTemplate, type EbitdaInputs } from './ebitda';
+import { instantiateCpgTemplate, type CpgInputs } from './cpg';
+
+export interface TemplateEntry {
+  label: string;
+  /** 2 = sector extension + dedicated template; 1 = base vocabulary + generic EBITDA template. */
+  level: 1 | 2;
+  instantiate(companyId: string, inputs: Record<string, number>): Metric[];
+  /** Illustrative inputs (the reference cases of each template's tests), editable in the UI. */
+  demoInputs: Record<string, number>;
+  /** Analyst-set interaction rules applied by the scenario engine (docs/06). */
+  interactions: InteractionRule[];
+}
+
+const LEVEL1_LABELS: Record<(typeof BASE_ARCHETYPES)[number], string> = {
+};
+
+// Illustrative inputs shared by every level-1 archetype until the analyst enters the company's own.
+const EBITDA_DEMO: EbitdaInputs = {
+  REVENUE: 400, REVENUE_GROWTH: 0.05, EBITDA_MARGIN: 0.15, EBITDA_ENTRY: 60,
+  ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 5, NET_DEBT_ENTRY: 200,
+  CASH_CONVERSION: 0.65, CAPEX: 20, DSO: 45, DIO: 60, DPO: 45, COGS_RATIO: 0.65, WORKING_CAPITAL: 60, PLAN_ONE_OFF_COSTS: 0,
+};
+
+const LEVEL1: Partial<Record<SectorArchetype, TemplateEntry>> = Object.fromEntries(
+  BASE_ARCHETYPES.map((a) => [a, {
+    label: LEVEL1_LABELS[a], level: 1,
+    instantiate: (id: string, i: Record<string, number>) => instantiateEbitdaTemplate(id, i as EbitdaInputs, a),
+    demoInputs: { ...EBITDA_DEMO },
+    interactions: [],
+  } satisfies TemplateEntry]),
+);
+
+const LEVEL2_SPECS: Partial<Record<SectorArchetype, TemplateEntry>> = Object.fromEntries(
+  Object.values(SPECS).map((spec) => [spec.archetype, {
+    label: spec.label, level: 2,
+    instantiate: makeTemplate(spec.archetype as SectorArchetype, { ...spec.formulas, ...FAMILY_BRIDGE[spec.family ?? 'ebitda'].formulas }),
+    demoInputs: { ...spec.demoInputs },
+    interactions: (spec.interactions ?? []).map((r) => ({ sourceCode: r.source, targetCode: r.target, coefficientCode: r.coefficient })),
+  } satisfies TemplateEntry]),
+);
+
+export const TEMPLATES: Partial<Record<SectorArchetype, TemplateEntry>> = {
+  ...LEVEL1,
+  ...LEVEL2_SPECS,
+  saas: {
+    label: 'SaaS',
+    level: 2,
+    instantiate: (id, i) => instantiateSaasTemplate(id, i as SaasInputs),
+    demoInputs: {
+      ARR: 100, GROSS_CHURN: 0.10, EXPANSION_RATE: 0.12, EBITDA_MARGIN: 0.20,
+      ENTRY_MULTIPLE: 8, EXIT_MULTIPLE: 8, HOLD_YEARS: 4, NET_DEBT_ENTRY: 60, EBITDA_ENTRY: 20, CASH_CONVERSION: 0.65, CAPEX: 5.2, DSO: 60, DIO: 0, DPO: 30,
+      COGS_RATIO: 0.25, WORKING_CAPITAL: 14.4, PLAN_ONE_OFF_COSTS: 0,
+    },
+    interactions: [],
+  },
+  aero: {
+    label: 'Aerospace & Defense',
+    level: 2,
+    instantiate: (id, i) => instantiateAeroTemplate(id, i as AeroInputs),
+    demoInputs: {
+      REVENUE: 500, EBITDA_MARGIN: 0.12, BOOK_TO_BILL: 1.06, FIXED_PRICE_SHARE: 0.60,
+      COST_OVERRUN_RATE: 0.03, ENTRY_MULTIPLE: 9, EXIT_MULTIPLE: 9, HOLD_YEARS: 5,
+      // EBITDA_ENTRY = 500 × (12 % − 3 % × 60 %): margin net of overruns on fixed-price contracts
+      NET_DEBT_ENTRY: 300, EBITDA_ENTRY: 51, CASH_CONVERSION: 0.65, CAPEX: 7, DSO: 60, DIO: 120, DPO: 60,
+      COGS_RATIO: 0.75, WORKING_CAPITAL: 144, PLAN_ONE_OFF_COSTS: 0,
+    },
+    interactions: [],
+  },
+  cpg: {
+    label: 'Consumer Packaged Goods',
+    level: 2,
+    instantiate: (id, i) => instantiateCpgTemplate(id, i as CpgInputs),
+    demoInputs: {
+      REVENUE: 1000, VOLUME_GROWTH: 0.03, PRICE_MIX_GROWTH: 0.02, GROSS_MARGIN: 0.45,
+      TRADE_SPEND_RATE: 0.12, AP_RATE: 0.08, OVERHEAD_RATE: 0.10, EBITDA_ENTRY: 150,
+      ENTRY_MULTIPLE: 10, EXIT_MULTIPLE: 10, HOLD_YEARS: 5, NET_DEBT_ENTRY: 600, CASH_CONVERSION: 0.65, CAPEX: 46, DSO: 35, DIO: 55, DPO: 60,
+      COGS_RATIO: 0.55, WORKING_CAPITAL: 88.4, PLAN_ONE_OFF_COSTS: 0,
+      PRICE_ELASTICITY: -0.8, // analyst choice; #21 price-pack (Price Elasticity) to calibrate
+    },
+    interactions: [{ sourceCode: 'PRICE_MIX_GROWTH', targetCode: 'VOLUME_GROWTH', coefficientCode: 'PRICE_ELASTICITY' }],
+  },
+  airline: {
+    label: 'Airline',
+    level: 2,
+    instantiate: (id, i) => instantiateAirlineTemplate(id, i as AirlineInputs),
+    demoInputs: {
+      ASK: 10_000, LOAD_FACTOR: 0.82, YIELD: 0.09, ANCILLARY_PER_PAX: 15, AVG_TRIP_KM: 1_500,
+      CASK_EX_FUEL: 0.045, FUEL_CASK: 0.022, CAPACITY_GROWTH: 0.04, EBITDA_ENTRY: 150,
+      ENTRY_MULTIPLE: 6, EXIT_MULTIPLE: 6, HOLD_YEARS: 5, NET_DEBT_ENTRY: 400, CASH_CONVERSION: 0.65, CAPEX: 68, DSO: 15, DIO: 10, DPO: 30,
+      COGS_RATIO: 0.8, WORKING_CAPITAL: -2.25, PLAN_ONE_OFF_COSTS: 0,
+    },
+    interactions: [],
+  },
+};

@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-16
+part: B
+partLabel: Operations & Supply Chain
+quant: []
+causes: [REGULATORY, GEOPOLITICAL]
+levers: [OFFSET_STRATEGY]
 ---
 # 16 · Offset Obligations and Industrial Participation Strategy
 

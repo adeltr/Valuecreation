@@ -14,7 +14,9 @@ Toute violation = échec de tâche, même si les tests passent.
   (zod `min(1)`). Ne pas assouplir. Vaut pour tout artefact scoré futur.
 
 ## Invariant 3 — L'ontologie contraint la génération
-- Levier : `category` ∈ vocabulaire actif, `impactMetricCode` ∈ codes actifs.
+- Levier : `category` ∈ vocabulaire actif, `impactMetricCode` ∈ codes actifs
+  hors `NON_LEVER_CODES` (ENTRY/EXIT_MULTIPLE, HOLD_YEARS, NET_DEBT_ENTRY —
+  structure du deal, posée par l'analyste).
 - Cause : `category` ∈ catégories actives.
 - Le sanitizer rejette tout terme hors vocabulaire actif.
 - Ajouter un terme = l'ajouter dans l'ontologie (base ou extension) ET son IRI

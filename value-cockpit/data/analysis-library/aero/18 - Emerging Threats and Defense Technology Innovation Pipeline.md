@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/C
+kind: analysis
+id: aero-18
+part: C
+partLabel: Research & Development and Innovation
+quant: [RD_INTENSITY]
+causes: [MARKET]
+levers: [RD_PORTFOLIO]
 ---
 # 18 · Emerging Threats and Defense Technology Innovation Pipeline
 

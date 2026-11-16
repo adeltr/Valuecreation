@@ -1,1 +1,1774 @@
-[]
+[
+  {
+    "id": "aero-01",
+    "archetype": "aero",
+    "title": "Defense Contracting Portfolio Analysis",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "FIXED_PRICE_SHARE",
+      "COST_OVERRUN_RATE",
+      "ON_TIME_DELIVERY",
+      "WIN_RATE",
+      "TOP5_CONTRACT_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM",
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CONTRACT_MIX",
+      "COMMERCIAL_PIPELINE",
+      "PROGRAM_EXECUTION"
+    ],
+    "sourcePath": "data/analysis-library/aero/01 - Defense Contracting Portfolio Analysis.md",
+    "goal": "The goal of the Defense Contracting Portfolio Analysis is to assess the breadth and depth of a company’s defense contracts, evaluate diversification across contract types and clients (government or commercial), and identify key dependencies or risks related to over-reliance on specific contracts or defense programs.",
+    "dataRequired": [
+      "List of all active and past defense contracts, including contract value, duration, and type (fixed-price, cost-plus, time-and-materials, etc.)",
+      "Breakdown of government vs. commercial clients",
+      "Contract categories (e.g., air, land, sea, space, cyber defense)",
+      "Revenue contribution from each contract or program",
+      "Contract performance metrics (on-time delivery, cost overruns, penalties, etc.)",
+      "Historical data on contract wins/losses",
+      "Competitor contract data (if available)"
+    ],
+    "improve": [
+      "Diversify contracts",
+      "Improve contract performance",
+      "Strengthen client relationships",
+      "Expand into new markets",
+      "Enhance competitive intelligence"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-02",
+    "archetype": "aero",
+    "title": "Global Geopolitical Risk Exposure and Strategic Alignment",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "GEOPOLITICAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/02 - Global Geopolitical Risk Exposure and Strategic Alignment.md",
+    "goal": "The goal of the Global Geopolitical Risk Exposure and Strategic Alignment analysis is to assess a company's exposure to geopolitical risks, such as regional conflicts, changing alliances, and economic sanctions.",
+    "dataRequired": [
+      "Geographic distribution of defense contracts (by country/region)",
+      "Historical and current geopolitical risks in regions of contract operation",
+      "List of countries under international sanctions or embargoes",
+      "Defense spending trends by region",
+      "International relations and defense alliances (e.g., NATO, ASEAN)",
+      "Global defense export policies and regulations",
+      "Political stability indices and conflict zone maps",
+      "Impact of tariffs and trade restrictions on defense operations"
+    ],
+    "improve": [
+      "Diversify geographically",
+      "Strengthen compliance efforts",
+      "Enhance scenario planning",
+      "Deepen alliances with key partners",
+      "Monitor international defense spending trends"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-03",
+    "archetype": "aero",
+    "title": "International Defense Sales and Foreign Military Sales (FMS) Performance",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "ON_TIME_DELIVERY",
+      "COST_OVERRUN_RATE",
+      "WIN_RATE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "EXPORT_FMS",
+      "PROGRAM_EXECUTION"
+    ],
+    "sourcePath": "data/analysis-library/aero/03 - International Defense Sales and Foreign Military Sales (FMS) Performance.md",
+    "goal": "The goal of the International Defense Sales and Foreign Military Sales (FMS) Performance analysis is to evaluate a company’s effectiveness in securing and executing international defense sales contracts, particularly through government-led FMS programs.",
+    "dataRequired": [
+      "List of international defense contracts and FMS agreements, including values, clients, and timelines",
+      "Breakdown of FMS contracts by country/region",
+      "Contract performance data (on-time delivery, cost overruns, penalties)",
+      "FMS-specific compliance data (export licenses, ITAR compliance, FMS procedures)",
+      "Historical trends in international defense sales (number of contracts won, contract values, regions)",
+      "Competitor performance in international defense markets (if available)",
+      "Data on foreign defense budgets and priorities",
+      "Client satisfaction metrics or feedback (if applicable)"
+    ],
+    "improve": [
+      "Strengthen FMS compliance",
+      "Improve contract performance",
+      "Expand market presence",
+      "Enhance government relationships",
+      "Competitor benchmarking"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-04",
+    "archetype": "aero",
+    "title": "Defense Industry Consolidation and Merger Synergies",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "REVENUE",
+      "EBITDA_MARGIN",
+      "OPEX"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/aero/04 - Defense Industry Consolidation and Merger Synergies.md",
+    "goal": "The goal of the Defense Industry Consolidation and Merger Synergies analysis is to assess the impact of mergers and acquisitions (M&A) in the defense sector.",
+    "dataRequired": [
+      "List of recent and historical mergers, acquisitions, and joint ventures in the defense sector",
+      "Company’s M&A activity history, including post-merger integration performance",
+      "**Financial data:** pre- and post-merger revenue, operating expenses, profit margins",
+      "Cost-saving estimates from integration of operations, supply chains, and overhead",
+      "Overlap of product lines or services (pre- and post-merger)",
+      "Market share and competitive landscape data pre- and post-consolidation",
+      "Employee headcount and organizational structure changes post-merger",
+      "Customer feedback or contract renewal rates after mergers",
+      "Regulatory considerations and antitrust rulings (if applicable)"
+    ],
+    "improve": [
+      "Optimize post-merger integration",
+      "Focus on operational efficiency gains",
+      "Enhance regulatory compliance",
+      "Pursue strategic M&A opportunities",
+      "Monitor market share shifts"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-05",
+    "archetype": "aero",
+    "title": "Defense Export Financing and Risk Mitigation Strategies",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [
+      "DSO"
+    ],
+    "relatedCauseCategories": [
+      "GEOPOLITICAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_MILESTONES",
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/05 - Defense Export Financing and Risk Mitigation Strategies.md",
+    "goal": "The goal of the Defense Export Financing and Risk Mitigation Strategies analysis is to evaluate how a company manages financial risks and secures funding for defense export activities.",
+    "dataRequired": [
+      "List of international defense export contracts and their values",
+      "Financing methods used for these contracts (e.g., self-financed, bank loans, government export credit agencies)",
+      "Foreign exchange rates and fluctuations in key markets",
+      "Political risk data for the countries where exports are made",
+      "Details on government-backed financing programs (e.g., U.S. EXIM Bank, Export Credit Guarantees)",
+      "Payment terms and conditions for each contract (e.g., milestone payments, letters of credit, etc.)",
+      "Historical data on payment defaults or contract cancellations due to geopolitical risks",
+      "Insurance coverage for defense exports (e.g., political risk insurance)"
+    ],
+    "improve": [
+      "Leverage more government-backed financing",
+      "Expand hedging strategies",
+      "Increase insurance coverage",
+      "Diversify export markets",
+      "Negotiate better payment terms",
+      "Monitor competitors' financing approaches"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-06",
+    "archetype": "aero",
+    "title": "Global Defense Technology Export Strategy",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/06 - Global Defense Technology Export Strategy.md",
+    "goal": "The goal of the Global Defense Technology Export Strategy analysis is to assess a company’s approach to exporting advanced defense technologies globally.",
+    "dataRequired": [
+      "List of defense technologies developed or manufactured by the company",
+      "Current and potential export markets, including their defense budgets and technology needs",
+      "Regulatory requirements for exporting defense technologies (e.g., ITAR, EAR, local export regulations)",
+      "List of approved export licenses and denied applications",
+      "Historical data on defense technology exports, including revenues, client countries, and contract details",
+      "Competitor data on technology exports (if available)",
+      "Geopolitical risk ratings for countries where defense technologies are exported",
+      "Intellectual property (IP) protection agreements and any instances of IP violations",
+      "Data on government-to-government agreements, Foreign Military Sales (FMS), or Direct Commercial Sales (DCS)"
+    ],
+    "improve": [
+      "Strengthen export control compliance",
+      "Enhance IP protection strategies",
+      "Target high-growth markets",
+      "Form strategic partnerships",
+      "Develop government relations",
+      "Monitor global defense spending"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-07",
+    "archetype": "aero",
+    "title": "Air and Missile Defense Program Effectiveness and Global Demand",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "COMMERCIAL_PIPELINE",
+      "EXPORT_FMS"
+    ],
+    "sourcePath": "data/analysis-library/aero/07 - Air and Missile Defense Program Effectiveness and Global Demand.md",
+    "goal": "The goal of the Air and Missile Defense Program Effectiveness and Global Demand analysis is to evaluate the effectiveness of a company’s air and missile defense systems and to assess global demand for these technologies.",
+    "dataRequired": [
+      "Performance metrics of the company’s air and missile defense systems (e.g., range, accuracy, reliability, cost)",
+      "Global defense budget data, focusing on air and missile defense allocations",
+      "Threat assessments and intelligence reports (e.g., missile threats, aerial attack capabilities, drone warfare trends)",
+      "Existing contracts and pending bids for air and missile defense systems",
+      "Competitor data and performance comparisons in the air and missile defense market",
+      "Historical sales data of air and missile defense systems by region",
+      "Export regulations and restrictions on air and missile defense technologies",
+      "Geopolitical risk assessments for regions investing in air and missile defense systems"
+    ],
+    "improve": [
+      "Enhance system performance",
+      "Target high-growth regions",
+      "Improve regulatory compliance",
+      "Develop strategic partnerships",
+      "Increase focus on emerging threats",
+      "Benchmark regularly against competitors"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-08",
+    "archetype": "aero",
+    "title": "International Sanctions Risk and Compliance in Defense Trade",
+    "part": "A",
+    "partLabel": "Strategy & Market Position",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/08 - International Sanctions Risk and Compliance in Defense Trade.md",
+    "goal": "The goal of the International Sanctions Risk and Compliance in Defense Trade analysis is to assess the company’s exposure to international sanctions risks and evaluate its compliance mechanisms in the context of defense trade.",
+    "dataRequired": [
+      "List of current international defense contracts and target markets",
+      "Applicable sanctions lists (e.g., U.S. OFAC, EU, UN, country-specific sanctions)",
+      "Historical data on violations, fines, or penalties related to sanctions compliance",
+      "Export licenses and approvals for restricted markets",
+      "Sanctions screening processes and internal compliance procedures",
+      "Data on third-party partners and their sanctions status (e.g., suppliers, contractors)",
+      "Geopolitical risk assessments for regions with potential or existing sanctions",
+      "Legal guidance on defense export sanctions (ITAR, EAR, etc.)",
+      "Government advisories on trade with sanctioned countries or entities"
+    ],
+    "improve": [
+      "Strengthen sanctions compliance",
+      "Enhance third-party due diligence",
+      "Monitor geopolitical changes",
+      "Develop exit strategies for high-risk markets",
+      "Engage legal experts"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-09",
+    "archetype": "aero",
+    "title": "Military and Civilian Aircraft Manufacturing Capacity Assessment",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "FACILITY_UTILIZATION"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "CAPACITY_UTILIZATION",
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/09 - Military and Civilian Aircraft Manufacturing Capacity Assessment.md",
+    "goal": "The goal of the Military and Civilian Aircraft Manufacturing Capacity Assessment is to evaluate the company's ability to meet current and future production demands for both military and civilian aircraft.",
+    "dataRequired": [
+      "Current production output for military and civilian aircraft (units produced per year)",
+      "Maximum manufacturing capacity (units per year)",
+      "Production timelines and cycle times for different aircraft models",
+      "Facility utilization rates (percentage of capacity used)",
+      "Resource availability (labor, raw materials, components)",
+      "Manufacturing equipment and technology capabilities (e.g., automation, precision tools)",
+      "Forecasted demand for military and civilian aircraft",
+      "Bottlenecks in production (e.g., supply chain delays, labor shortages)",
+      "Downtime data for facilities and equipment",
+      "Comparative analysis of manufacturing capacity with competitors (if available)"
+    ],
+    "improve": [
+      "Increase facility utilization",
+      "Invest in advanced manufacturing technologies",
+      "Address supply chain inefficiencies",
+      "Expand labor force",
+      "Prepare for future demand",
+      "Improve production planning"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-10",
+    "archetype": "aero",
+    "title": "Supply Chain Security and Export Control Compliance",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/10 - Supply Chain Security and Export Control Compliance.md",
+    "goal": "The goal of the Supply Chain Security and Export Control Compliance analysis is to ensure that the company’s supply chain is secure from vulnerabilities and threats (e.g., cyberattacks, counterfeit components) and fully compliant with international export control regulations (e.g., ITAR, EAR).",
+    "dataRequired": [
+      "List of suppliers, contractors, and third-party partners involved in the supply chain",
+      "Supply chain security protocols, including cybersecurity measures and physical security practices",
+      "Export control requirements for each country where the company operates or sells defense-related products (e.g., ITAR, EAR, EU dual-use regulations)",
+      "Compliance records, including export licenses, approvals, and denials",
+      "Data on past incidents involving security breaches, counterfeit components, or supply chain disruptions",
+      "Supplier certifications related to security (e.g., CMMC, ISO/IEC 27001)",
+      "Government advisories on export restrictions or sanctions for specific countries or technologies",
+      "Internal audit reports on compliance with export control regulations",
+      "Training records for employees responsible for supply chain management and export control compliance"
+    ],
+    "improve": [
+      "Strengthen supplier vetting",
+      "Improve cybersecurity protocols",
+      "Diversify the supplier base",
+      "Regularly audit export control compliance",
+      "Increase training for employees",
+      "Monitor geopolitical risks"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-11",
+    "archetype": "aero",
+    "title": "Defense Logistics and Maintenance, Repair, Overhaul (MRO) Capabilities",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "MRO_CYCLE_DAYS",
+      "OPERATIONAL_AVAILABILITY",
+      "SPARE_PARTS_AVAILABILITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "MRO_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/aero/11 - Defense Logistics and Maintenance, Repair, Overhaul (MRO) Capabilities.md",
+    "goal": "The goal of the Defense Logistics and Maintenance, Repair, Overhaul (MRO) Capabilities analysis is to assess the company’s ability to efficiently manage the logistics, maintenance, repair, and overhaul of defense assets.",
+    "dataRequired": [
+      "List of defense assets (aircraft, vehicles, naval vessels, etc.) requiring MRO services",
+      "MRO facility locations and capabilities (including tools, equipment, and technology used)",
+      "Current and historical MRO cycle times (e.g., average time for repair and overhaul)",
+      "Availability of spare parts and inventory management data",
+      "Workforce data (technicians, engineers, and skilled labor available for MRO)",
+      "Contractual obligations for defense MRO services (e.g., service-level agreements)",
+      "Maintenance schedules and historical maintenance logs for defense platforms",
+      "Data on operational readiness and availability rates",
+      "Costs associated with MRO services (labor, parts, facilities)",
+      "Benchmark data on industry MRO standards and competitor performance"
+    ],
+    "improve": [
+      "Upgrade MRO facilities and technology",
+      "Enhance workforce training and capacity",
+      "Optimize spare parts inventory management",
+      "Reduce MRO cycle times",
+      "Monitor and benchmark MRO performance"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-12",
+    "archetype": "aero",
+    "title": "Vertical Integration of Defense Manufacturing and Supply Chain Control",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "COGS",
+      "ON_TIME_DELIVERY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "SUPPLY_CHAIN_CONTROL",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/aero/12 - Vertical Integration of Defense Manufacturing and Supply Chain Control.md",
+    "goal": "The goal of the Vertical Integration of Defense Manufacturing and Supply Chain Control analysis is to evaluate the extent to which the company has integrated its manufacturing operations and supply chain under its control.",
+    "dataRequired": [
+      "List of in-house manufacturing capabilities versus outsourced components or services",
+      "Cost breakdown of in-house production versus outsourced supply chain elements",
+      "Supplier data, including key third-party suppliers and subcontractors",
+      "Supply chain performance metrics (e.g., delivery times, quality, reliability)",
+      "Production timelines and bottlenecks caused by outsourced suppliers",
+      "Data on supply chain disruptions, including causes (e.g., geopolitical, logistical)",
+      "Quality control metrics for in-house versus outsourced components",
+      "Historical data on operational costs related to vertical integration (e.g., investment in machinery, facilities, labor)",
+      "Competitor analysis regarding vertical integration levels in the defense sector",
+      "Regulatory and compliance considerations for producing sensitive technologies in-house"
+    ],
+    "improve": [
+      "Expand in-house production for critical components",
+      "Reduce reliance on high-risk suppliers",
+      "Invest in advanced manufacturing technologies",
+      "Improve quality control through vertical integration",
+      "Develop strategic partnerships where vertical integration is not feasible",
+      "Monitor regulatory and compliance requirements"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-13",
+    "archetype": "aero",
+    "title": "Defense Contractor Vetting Analysis",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [
+      "ON_TIME_DELIVERY"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/13 - Defense Contractor Vetting Analysis.md",
+    "goal": "The goal of the Defense Contractor Vetting Analysis is to evaluate the company’s process for selecting and assessing contractors, subcontractors, and suppliers in the defense sector.",
+    "dataRequired": [
+      "List of current contractors, subcontractors, and suppliers",
+      "Contractor performance data (e.g., on-time delivery rates, quality control issues)",
+      "Compliance records (e.g., ITAR, EAR, CMMC certifications, and security clearances)",
+      "Contractor financial health and stability reports",
+      "Historical incidents of contractor-related supply chain disruptions or security breaches",
+      "Security and background checks on contractors",
+      "Government or defense agency recommendations and certifications",
+      "Contractor relationship history (e.g., contract renewal rates, disputes)",
+      "Contractor capabilities and capacity to meet future demand",
+      "Risk assessments for contractors (e.g., geopolitical risk, reliance on high-risk regions)"
+    ],
+    "improve": [
+      "Strengthen contractor compliance requirements",
+      "Improve performance monitoring",
+      "Diversify the contractor base",
+      "Enhance security vetting",
+      "Develop contingency plans",
+      "Foster long-term relationships with trusted contractors"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-14",
+    "archetype": "aero",
+    "title": "Environmental and Sustainability Compliance in Defense Manufacturing",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/14 - Environmental and Sustainability Compliance in Defense Manufacturing.md",
+    "goal": "The goal of the Environmental and Sustainability Compliance in Defense Manufacturing analysis is to assess how well the company adheres to environmental regulations and sustainability practices in its defense manufacturing operations.",
+    "dataRequired": [
+      "List of environmental regulations applicable to defense manufacturing (e.g., EPA regulations, EU environmental directives, international treaties)",
+      "Company’s environmental and sustainability policies",
+      "Carbon emissions data for manufacturing plants and facilities",
+      "Energy consumption and water usage data in production processes",
+      "Waste management practices, including hazardous material disposal",
+      "Compliance records, including environmental audits, violations, and fines",
+      "Sustainability certifications (e.g., ISO 14001, LEED certifications)",
+      "Supply chain sustainability performance (e.g., sustainable sourcing, supplier environmental policies)",
+      "Green technology investments and renewable energy initiatives",
+      "Historical data on environmental incidents or spills in production facilities"
+    ],
+    "improve": [
+      "Invest in renewable energy",
+      "Implement water conservation practices",
+      "Enhance waste management practices",
+      "Strengthen supplier sustainability requirements",
+      "Pursue environmental certifications",
+      "Monitor and reduce emissions",
+      "Develop a sustainability roadmap"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-15",
+    "archetype": "aero",
+    "title": "Government Contract Compliance and Audit Readiness",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/15 - Government Contract Compliance and Audit Readiness.md",
+    "goal": "The goal of the Government Contract Compliance and Audit Readiness analysis is to ensure that the company adheres to the legal, regulatory, and operational requirements outlined in government contracts, particularly under the Federal Acquisition Regulation (FAR) and the Defense Federal Acquisition Regulation Supplement (DFARS).",
+    "dataRequired": [
+      "List of government contracts and their specific FAR and DFARS clauses",
+      "Compliance policies and procedures related to FAR and DFARS requirements",
+      "Internal audit reports and past government audit findings (if applicable)",
+      "Training records for employees on FAR, DFARS, and government contracting requirements",
+      "Subcontractor compliance data (including flow-down clauses)",
+      "Document retention policies and practices",
+      "Cost accounting standards (CAS) compliance records",
+      "Ethics and compliance program documentation, including whistleblower protections",
+      "Data on any past compliance violations, penalties, or disputes with government agencies",
+      "Risk assessments and mitigation plans related to contract compliance"
+    ],
+    "improve": [
+      "Strengthen compliance policies and training programs",
+      "Enhance audit readiness",
+      "Improve document retention practices",
+      "Ensure subcontractor compliance",
+      "Review cost accounting practices",
+      "Enhance whistleblower protections and ethics programs"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-16",
+    "archetype": "aero",
+    "title": "Offset Obligations and Industrial Participation Strategy",
+    "part": "B",
+    "partLabel": "Operations & Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "OFFSET_STRATEGY"
+    ],
+    "sourcePath": "data/analysis-library/aero/16 - Offset Obligations and Industrial Participation Strategy.md",
+    "goal": "The goal of the Offset Obligations and Industrial Participation Strategy analysis is to evaluate the company’s ability to meet offset requirements in international defense contracts.",
+    "dataRequired": [
+      "Current international defense contracts with offset obligations",
+      "Details of offset agreements, including value, terms, and duration",
+      "Host country requirements for industrial participation, job creation, and technology transfer",
+      "Historical performance in fulfilling offset obligations",
+      "Investment data related to local industrial participation (e.g., partnerships with local companies, joint ventures, technology transfer)",
+      "Data on technology transfer initiatives, including intellectual property considerations",
+      "Legal and regulatory requirements for offset programs in specific countries",
+      "Reports on job creation and local economic impact from offset programs",
+      "Costs associated with fulfilling offset obligations",
+      "Competitor strategies and performance in fulfilling similar offset obligations",
+      "Government feedback or audit reports related to offset compliance"
+    ],
+    "improve": [
+      "Enhance local partnerships",
+      "Optimize technology transfer",
+      "Focus on sustainable job creation",
+      "Reduce costs through smarter investments",
+      "Monitor regulatory changes",
+      "Benchmark against competitors"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-17",
+    "archetype": "aero",
+    "title": "Research & Development in Defense Technologies",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/17 - Research & Development in Defense Technologies.md",
+    "goal": "The goal of the Research & Development (R&D) in Defense Technologies analysis is to evaluate the company’s efforts in developing cutting-edge defense technologies such as hypersonics, artificial intelligence (AI), and cybersecurity.",
+    "dataRequired": [
+      "Current R&D projects in defense technologies (e.g., hypersonics, AI, cybersecurity)",
+      "R&D budget allocation and spending trends",
+      "Milestones and timelines for technology development",
+      "Patent filings and intellectual property (IP) protection for defense technologies",
+      "Partnerships with universities, research institutions, and government agencies",
+      "Workforce expertise in emerging defense technologies",
+      "Defense contracts related to R&D and technology development",
+      "Competitor analysis in key technology areas (e.g., hypersonics, AI, cybersecurity)",
+      "Regulatory and compliance considerations for developing sensitive technologies",
+      "Market demand and forecast data for advanced defense technologies",
+      "Historical performance of R&D projects (e.g., innovations brought to market, project completion rates)"
+    ],
+    "improve": [
+      "Increase investment in key technologies",
+      "Expand strategic partnerships",
+      "Enhance workforce capabilities",
+      "Strengthen intellectual property protection",
+      "Monitor and adapt to market trends",
+      "Focus on compliance"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-18",
+    "archetype": "aero",
+    "title": "Emerging Threats and Defense Technology Innovation Pipeline",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/18 - Emerging Threats and Defense Technology Innovation Pipeline.md",
+    "goal": "The goal of the Emerging Threats and Defense Technology Innovation Pipeline analysis is to assess how well the company’s R&D efforts and technology development are aligned with emerging global security threats.",
+    "dataRequired": [
+      "Global threat assessments from defense agencies and intelligence reports (e.g., cyber threats, missile advancements, autonomous systems, drone warfare)",
+      "Current R&D projects and technologies under development in response to emerging threats",
+      "R&D budget allocation for specific threat areas (e.g., cybersecurity, hypersonics, AI-driven systems)",
+      "Timeline and milestones for new technology development and deployment",
+      "Defense technology market trends and demand forecasts (e.g., cybersecurity, drone defense systems)",
+      "Partnership data with defense organizations, research institutions, or government agencies focused on addressing emerging threats",
+      "Data on historical response to emerging threats and technological adaptations (e.g., past projects addressing evolving threats like cyber warfare or autonomous weapons)",
+      "Patent filings and intellectual property protection for innovative technologies",
+      "Competitor analysis focused on their R&D pipeline addressing emerging threats",
+      "Regulatory considerations, including compliance with defense-specific export controls and technology-sharing regulations (e.g., ITAR, EAR)"
+    ],
+    "improve": [
+      "Increase investment in high-priority areas",
+      "Expand strategic partnerships",
+      "Accelerate the innovation timeline",
+      "Enhance workforce expertise",
+      "Secure intellectual property",
+      "Monitor regulatory changes"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-19",
+    "archetype": "aero",
+    "title": "Unmanned Systems and Autonomous Defense Technologies Development",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/19 - Unmanned Systems and Autonomous Defense Technologies Development.md",
+    "goal": "The goal of the Unmanned Systems and Autonomous Defense Technologies Development analysis is to evaluate the company’s efforts in designing, developing, and deploying unmanned systems and autonomous technologies for defense applications.",
+    "dataRequired": [
+      "List of ongoing R&D projects focused on unmanned and autonomous systems (UAVs, UGVs, maritime, etc.)",
+      "R&D budget allocation for unmanned systems and AI-driven technologies",
+      "Market demand forecasts for autonomous defense systems",
+      "Technological milestones and timelines for current projects",
+      "Historical performance in developing unmanned systems (e.g., past contracts, successful deployments)",
+      "Partnerships with research institutions, defense agencies, and other defense contractors in the field of autonomy and unmanned systems",
+      "Intellectual property (IP) data related to autonomous technologies (e.g., patents, proprietary software)",
+      "Competitor analysis in the development of unmanned systems and autonomous defense platforms",
+      "Data on regulatory challenges and compliance with international regulations (e.g., ITAR, export controls for unmanned systems)",
+      "Cybersecurity and data protection measures for AI-driven autonomous systems"
+    ],
+    "improve": [
+      "Increase R&D investment in priority areas",
+      "Enhance strategic partnerships",
+      "Accelerate technology development",
+      "Expand intellectual property protection",
+      "Strengthen cybersecurity measures",
+      "Monitor and adapt to regulatory changes"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-20",
+    "archetype": "aero",
+    "title": "Hypersonic Weapons Development and Competitiveness",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/20 - Hypersonic Weapons Development and Competitiveness.md",
+    "goal": "The goal of the Hypersonic Weapons Development and Competitiveness analysis is to evaluate the company’s efforts in designing, developing, and deploying hypersonic weapons and assess its competitive position in the global defense market.",
+    "dataRequired": [
+      "List of current hypersonic weapons development projects, including project timelines and milestones",
+      "R&D budget allocation for hypersonic technologies",
+      "Technological capabilities in hypersonics, including propulsion, materials, guidance systems, and warhead development",
+      "Market demand and forecasts for hypersonic weapons",
+      "Competitor analysis, including key players and their advancements in hypersonic technologies",
+      "Intellectual property (IP) portfolio related to hypersonic technologies (e.g., patents, proprietary technologies)",
+      "Partnerships and collaborations with defense agencies, research institutions, and other defense contractors",
+      "Regulatory compliance data, including ITAR, EAR, and export control considerations",
+      "Historical performance and success in developing missile systems and advanced weapons",
+      "Cybersecurity measures for protecting hypersonic technology and ensuring system integrity",
+      "Government contracts and defense agreements specific to hypersonic weapons"
+    ],
+    "improve": [
+      "Increase R&D investment in hypersonic technologies",
+      "Strengthen partnerships",
+      "Accelerate project timelines",
+      "Enhance cybersecurity measures",
+      "Monitor regulatory changes",
+      "Expand intellectual property protection"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-21",
+    "archetype": "aero",
+    "title": "Next-Generation Fighter Jet Program Development",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/21 - Next-Generation Fighter Jet Program Development.md",
+    "goal": "The goal of the Next-Generation Fighter Jet Program Development analysis is to assess the company’s efforts in designing, developing, and bringing to market advanced fighter jet systems.",
+    "dataRequired": [
+      "List of current fighter jet development projects and key milestones",
+      "R&D budget allocation for fighter jet technologies (e.g., propulsion, avionics, stealth capabilities)",
+      "Technological advancements in aerodynamics, materials, propulsion, and avionics systems",
+      "Market demand forecasts for next-generation fighter jets",
+      "Competitor analysis, including advancements in next-gen fighter jet programs by other defense contractors",
+      "Intellectual property (IP) portfolio for proprietary fighter jet technologies (e.g., stealth technology, radar systems)",
+      "Government contracts and defense agreements related to fighter jet development",
+      "Partnerships with defense agencies, research institutions, and subcontractors",
+      "Regulatory compliance data, including ITAR, EAR, and export control considerations for fighter jets",
+      "Historical performance in fighter jet development and deployment",
+      "Cybersecurity measures for protecting fighter jet designs and critical systems",
+      "Environmental and sustainability considerations for next-generation aircraft design (e.g., fuel efficiency, emissions reduction)"
+    ],
+    "improve": [
+      "Increase R&D investment in critical technologies",
+      "Strengthen partnerships",
+      "Accelerate technology development timelines",
+      "Expand intellectual property protection",
+      "Enhance cybersecurity measures",
+      "Incorporate sustainability into design"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-22",
+    "archetype": "aero",
+    "title": "Advanced Materials and Additive Manufacturing Adoption in Defense Platforms",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/22 - Advanced Materials and Additive Manufacturing Adoption in Defense Platforms.md",
+    "goal": "The goal of the Advanced Materials and Additive Manufacturing Adoption in Defense Platforms analysis is to assess how well the company integrates cutting-edge materials and additive manufacturing technologies into defense platforms.",
+    "dataRequired": [
+      "List of defense platforms (aircraft, vehicles, naval vessels, etc.) utilizing advanced materials and additive manufacturing",
+      "R&D budget allocation for advanced materials research (e.g., composites, alloys, lightweight metals) and additive manufacturing technologies (e.g., 3D printing)",
+      "Performance data comparing traditional manufacturing methods with additive manufacturing (e.g., cost savings, time reductions, material efficiency)",
+      "Market demand forecasts for defense systems incorporating advanced materials and additive manufacturing",
+      "Competitor analysis of advanced material and additive manufacturing adoption in defense platforms",
+      "Intellectual property (IP) portfolio related to advanced materials and manufacturing techniques",
+      "Partnerships with research institutions, defense contractors, and technology firms specializing in advanced materials and additive manufacturing",
+      "Regulatory and compliance considerations (e.g., materials sourcing, environmental regulations)",
+      "Historical data on successful deployment of additive manufacturing in defense projects",
+      "Cybersecurity measures for protecting sensitive additive manufacturing data and designs",
+      "Data on sustainability and environmental benefits of advanced materials and additive manufacturing (e.g., reduction in waste, energy savings)"
+    ],
+    "improve": [
+      "Increase R&D investment in advanced materials and additive manufacturing",
+      "Leverage partnerships for technological advancements",
+      "Expand intellectual property protection",
+      "Enhance sustainability efforts",
+      "Scale the use of additive manufacturing"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-23",
+    "archetype": "aero",
+    "title": "Advanced Avionics and Electronic Systems Development",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/23 - Advanced Avionics and Electronic Systems Development.md",
+    "goal": "The goal of the Advanced Avionics and Electronic Systems Development analysis is to assess the company’s efforts in designing and developing advanced avionics and electronic systems for defense platforms.",
+    "dataRequired": [
+      "List of current R&D projects focused on avionics and electronic systems development",
+      "R&D budget allocation for avionics and electronic system technologies",
+      "Technological capabilities in key areas such as radar, sensors, communications, and electronic warfare systems",
+      "Integration capabilities of avionics with advanced sensors, AI, and autonomous systems",
+      "Performance metrics for avionics systems currently in development or deployed",
+      "Market demand forecasts for advanced avionics in defense platforms (e.g., fighter jets, UAVs, helicopters)",
+      "Competitor analysis for avionics and electronic systems development",
+      "Intellectual property (IP) portfolio related to avionics technologies (e.g., sensor fusion, communication systems)",
+      "Regulatory and export control considerations for avionics systems (e.g., ITAR, EAR)",
+      "Historical performance in avionics system deployment and integration",
+      "Data on cybersecurity measures for protecting avionics and electronic systems from cyber threats"
+    ],
+    "improve": [
+      "Increase R&D investment in key avionics areas",
+      "Strengthen system integration capabilities",
+      "Enhance cybersecurity protocols",
+      "Expand intellectual property protection",
+      "Focus on emerging technologies",
+      "Leverage strategic partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-24",
+    "archetype": "aero",
+    "title": "Advanced Sensor and Electronic Warfare Systems Integration",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/24 - Advanced Sensor and Electronic Warfare Systems Integration.md",
+    "goal": "The goal of the Advanced Sensor and Electronic Warfare Systems Integration analysis is to evaluate the company’s efforts in integrating advanced sensor technologies with electronic warfare (EW) systems to enhance situational awareness, defense capabilities, and battlefield superiority.",
+    "dataRequired": [
+      "List of current projects focused on sensor and electronic warfare system integration",
+      "R&D budget allocation for sensor technologies and electronic warfare systems",
+      "Technological capabilities in sensors (e.g., radar, infrared, electro-optical) and electronic warfare (e.g., jamming, signal disruption, cyberwarfare)",
+      "Integration capabilities of sensors and EW systems in defense platforms (e.g., aircraft, naval vessels, UAVs)",
+      "Performance metrics of integrated sensor and EW systems (e.g., detection accuracy, jamming effectiveness, response time)",
+      "Market demand forecasts for integrated sensor and EW systems",
+      "Competitor analysis in the development of sensor and electronic warfare integration",
+      "Intellectual property (IP) portfolio related to sensor technologies and EW systems",
+      "Historical performance in deploying sensor and EW systems integration",
+      "Partnerships with defense contractors, research institutions, and technology firms",
+      "Regulatory and export control considerations (e.g., ITAR, EAR, export licenses)",
+      "Cybersecurity measures for protecting sensor and EW systems from cyber threats"
+    ],
+    "improve": [
+      "Increase R&D investment in key sensor and EW technologies",
+      "Enhance integration capabilities",
+      "Expand intellectual property protection",
+      "Improve cybersecurity measures",
+      "Leverage strategic partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-25",
+    "archetype": "aero",
+    "title": "Artificial Intelligence and Machine Learning in Defense Operations",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/25 - Artificial Intelligence and Machine Learning in Defense Operations.md",
+    "goal": "The goal of the Artificial Intelligence (AI) and Machine Learning (ML) in Defense Operations analysis is to assess the company’s efforts in developing and deploying AI and ML technologies to enhance defense operations.",
+    "dataRequired": [
+      "List of current AI and ML projects in defense operations (e.g., autonomous systems, decision-making tools)",
+      "R&D budget allocation for AI and ML technologies",
+      "Technological capabilities in AI/ML applications (e.g., threat detection, predictive analytics, autonomous decision-making)",
+      "Integration capabilities of AI/ML with existing defense platforms (e.g., UAVs, surveillance systems, cybersecurity tools)",
+      "Performance metrics for AI/ML systems in military operations (e.g., accuracy, response time, operational efficiency)",
+      "Market demand forecasts for AI/ML technologies in defense",
+      "Competitor analysis in AI and ML defense technology development",
+      "Intellectual property (IP) portfolio related to AI/ML systems and algorithms",
+      "Regulatory and ethical considerations for AI/ML in defense operations (e.g., autonomous weapons, data privacy)",
+      "Historical performance in AI/ML deployment in defense projects",
+      "Partnerships with research institutions, defense agencies, and AI/ML technology firms",
+      "Cybersecurity measures for protecting AI-driven defense systems from attacks or data manipulation"
+    ],
+    "improve": [
+      "Increase R&D investment in AI/ML technologies",
+      "Strengthen AI/ML system integration",
+      "Expand intellectual property protection",
+      "Enhance cybersecurity measures for AI systems",
+      "Focus on ethical and regulatory compliance",
+      "Leverage partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-26",
+    "archetype": "aero",
+    "title": "Tactical and Strategic Weapons Systems Innovation Capability",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/26 - Tactical and Strategic Weapons Systems Innovation Capability.md",
+    "goal": "The goal of the Tactical and Strategic Weapons Systems Innovation Capability analysis is to assess the company’s efforts in designing and developing cutting-edge tactical and strategic weapons systems.",
+    "dataRequired": [
+      "List of current R&D projects focused on tactical and strategic weapons systems (e.g., missile systems, precision-guided munitions)",
+      "R&D budget allocation for weapons systems development",
+      "Technological capabilities in key areas such as missile guidance, propulsion, long-range strike, and nuclear deterrence systems",
+      "Integration capabilities of weapons systems with defense platforms (e.g., aircraft, naval vessels, missile defense systems)",
+      "Performance metrics for tactical and strategic weapons systems in development or deployment (e.g., range, accuracy, warhead effectiveness)",
+      "Market demand forecasts for advanced weapons systems, including strategic deterrents and tactical strike capabilities",
+      "Competitor analysis in the development of tactical and strategic weapons systems",
+      "Intellectual property (IP) portfolio related to weapons technologies (e.g., propulsion, guidance systems)",
+      "Regulatory and export control considerations (e.g., ITAR, EAR, export licenses for missile technologies)",
+      "Historical performance in developing and deploying advanced weapons systems",
+      "Partnerships with defense contractors, research institutions, and technology firms",
+      "Cybersecurity measures for protecting sensitive weapons system designs and technologies"
+    ],
+    "improve": [
+      "Increase R&D investment in key weapons technologies",
+      "Focus on seamless integration with defense platforms",
+      "Expand intellectual property protection",
+      "Enhance cybersecurity measures",
+      "Strengthen partnerships",
+      "Monitor regulatory compliance"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-27",
+    "archetype": "aero",
+    "title": "Nuclear Deterrence and Strategic Defense Systems",
+    "part": "C",
+    "partLabel": "Research & Development and Innovation",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/27 - Nuclear Deterrence and Strategic Defense Systems.md",
+    "goal": "The goal of the Nuclear Deterrence and Strategic Defense Systems analysis is to assess the company’s capabilities in developing and maintaining nuclear deterrence and strategic defense systems.",
+    "dataRequired": [
+      "List of current R&D projects related to nuclear deterrence and strategic defense systems (e.g., missile defense, command and control systems)",
+      "R&D budget allocation for nuclear deterrence and strategic defense systems",
+      "Technological capabilities in key areas such as nuclear weapons platforms, missile defense, and command, control, and communications (C3) systems",
+      "Integration capabilities of nuclear deterrence systems with strategic platforms (e.g., submarines, aircraft, ground-based silos)",
+      "Performance metrics for strategic defense systems, including missile defense effectiveness and nuclear deterrence readiness",
+      "Market demand forecasts for strategic defense systems, including nuclear platforms and missile defense technologies",
+      "Competitor analysis in nuclear deterrence and missile defense systems",
+      "Intellectual property (IP) portfolio related to strategic defense technologies",
+      "Regulatory and export control considerations for nuclear-related technologies (e.g., ITAR, EAR, NPT compliance)",
+      "Historical performance in developing and deploying nuclear deterrence platforms and strategic defense systems",
+      "Partnerships with government agencies, defense contractors, and research institutions in nuclear and missile defense",
+      "Cybersecurity measures for protecting sensitive nuclear systems and strategic defense infrastructure from cyberattacks"
+    ],
+    "improve": [
+      "Increase R&D investment in key strategic defense areas",
+      "Strengthen integration capabilities",
+      "Expand intellectual property protection",
+      "Enhance cybersecurity measures",
+      "Collaborate with strategic partners",
+      "Ensure regulatory compliance"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-28",
+    "archetype": "aero",
+    "title": "Missile Defense and Strategic Deterrence Program Assessment",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/28 - Missile Defense and Strategic Deterrence Program Assessment.md",
+    "goal": "The goal of the Missile Defense and Strategic Deterrence Program Assessment is to evaluate the company’s efforts in developing and maintaining missile defense systems and strategic deterrence capabilities.",
+    "dataRequired": [
+      "List of current missile defense and strategic deterrence programs, including key milestones",
+      "R&D budget allocation for missile defense and deterrence technologies",
+      "Technological capabilities in areas such as missile interception, radar systems, early-warning systems, and nuclear deterrents",
+      "Integration capabilities of missile defense systems with existing defense platforms (e.g., ground-based, air, and sea-based systems)",
+      "Performance metrics for missile defense systems (e.g., interception success rate, response time, detection range)",
+      "Market demand forecasts for missile defense and strategic deterrence systems",
+      "Competitor analysis for missile defense and deterrence capabilities",
+      "Intellectual property (IP) portfolio related to missile defense technologies (e.g., interceptors, guidance systems)",
+      "Regulatory and export control considerations for missile defense technologies (e.g., ITAR, EAR)",
+      "Historical performance in developing and deploying missile defense and deterrence systems",
+      "Partnerships with defense agencies, research institutions, and technology firms",
+      "Cybersecurity measures for protecting missile defense systems from cyberattacks"
+    ],
+    "improve": [
+      "Increase R&D investment in missile defense and strategic deterrence technologies",
+      "Improve integration capabilities",
+      "Expand intellectual property protection",
+      "Strengthen cybersecurity measures",
+      "Leverage partnerships",
+      "Ensure regulatory compliance"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-29",
+    "archetype": "aero",
+    "title": "Space Systems Development and Launch Capabilities",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/29 - Space Systems Development and Launch Capabilities.md",
+    "goal": "The goal of the Space Systems Development and Launch Capabilities analysis is to assess the company’s efforts in designing, developing, and launching space-based defense systems.",
+    "dataRequired": [
+      "List of current space systems and launch development programs, including key milestones",
+      "R&D budget allocation for space systems and launch capabilities",
+      "Technological capabilities in key areas such as satellite design, space-based sensors, launch vehicles, and space communications infrastructure",
+      "Performance metrics for space systems, including satellite endurance, data transmission capabilities, and launch success rates",
+      "Integration capabilities of space systems with existing defense infrastructure (e.g., missile defense, intelligence, surveillance, and reconnaissance systems)",
+      "Market demand forecasts for space-based defense systems and launch services",
+      "Competitor analysis in space systems development and launch capabilities",
+      "Intellectual property (IP) portfolio related to space technologies and launch vehicles",
+      "Regulatory and export control considerations for space systems (e.g., ITAR, EAR, international space treaties)",
+      "Historical performance in developing and deploying space-based defense platforms and launch services",
+      "Partnerships with defense agencies, commercial space firms, and research institutions",
+      "Cybersecurity measures for protecting space-based assets from cyberattacks or interference"
+    ],
+    "improve": [
+      "Increase R&D investment in key space technologies",
+      "Improve launch vehicle reliability and capability",
+      "Expand intellectual property protection",
+      "Strengthen integration with defense platforms",
+      "Enhance cybersecurity measures",
+      "Leverage strategic partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-30",
+    "archetype": "aero",
+    "title": "Space Domain Awareness and Defense Satellite Programs",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/30 - Space Domain Awareness and Defense Satellite Programs.md",
+    "goal": "The goal of the Space Domain Awareness (SDA) and Defense Satellite Programs analysis is to assess the company’s efforts in enhancing space situational awareness and developing defense satellite capabilities.",
+    "dataRequired": [
+      "List of current space domain awareness (SDA) and defense satellite development programs, including key milestones",
+      "R&D budget allocation for SDA technologies and defense satellite programs",
+      "Technological capabilities in key areas such as space-based radar, optical sensors, missile detection, and satellite communications",
+      "Performance metrics for SDA and defense satellite systems (e.g., detection accuracy, tracking capabilities, data transmission rates)",
+      "Integration capabilities of SDA and satellite systems with existing defense infrastructure (e.g., missile defense, ISR platforms)",
+      "Market demand forecasts for SDA systems and defense satellites",
+      "Competitor analysis in SDA technologies and defense satellite programs",
+      "Intellectual property (IP) portfolio related to SDA technologies and defense satellites",
+      "Regulatory and export control considerations for space systems (e.g., ITAR, EAR, international space treaties)",
+      "Historical performance in developing and deploying SDA and defense satellite platforms",
+      "Partnerships with defense agencies, commercial space firms, and research institutions",
+      "Cybersecurity measures for protecting SDA and defense satellite systems from cyberattacks or interference"
+    ],
+    "improve": [
+      "Increase R&D investment in key SDA and satellite technologies",
+      "Enhance integration with defense platforms",
+      "Expand intellectual property protection",
+      "Strengthen cybersecurity protocols",
+      "Leverage strategic partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-31",
+    "archetype": "aero",
+    "title": "Space Warfare Capabilities and Investment in Defensive Systems",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [
+      "RD_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "RD_PORTFOLIO"
+    ],
+    "sourcePath": "data/analysis-library/aero/31 - Space Warfare Capabilities and Investment in Defensive Systems.md",
+    "goal": "The goal of the Space Warfare Capabilities and Investment in Defensive Systems analysis is to assess the company’s efforts in developing technologies and systems designed for space warfare and defense.",
+    "dataRequired": [
+      "List of current R&D projects focused on space warfare capabilities and defensive systems",
+      "R&D budget allocation for space warfare and space defense systems",
+      "Technological capabilities in areas such as satellite protection, space-based weapons systems, and space situational awareness",
+      "Integration capabilities of space warfare technologies with existing military platforms (e.g., missile defense, ISR systems)",
+      "Performance metrics for space defense systems (e.g., threat detection, asset protection, countermeasure effectiveness)",
+      "Market demand forecasts for space warfare technologies and space-based defense systems",
+      "Competitor analysis in space warfare technologies and defensive systems",
+      "Intellectual property (IP) portfolio related to space defense systems and space warfare technologies",
+      "Regulatory and export control considerations for space warfare systems (e.g., ITAR, EAR, international space treaties)",
+      "Historical performance in developing and deploying space defense technologies",
+      "Partnerships with defense agencies, commercial space firms, and research institutions",
+      "Cybersecurity measures for protecting space-based military assets from cyber threats"
+    ],
+    "improve": [
+      "Increase R&D investment in space warfare technologies",
+      "Improve integration with defense platforms",
+      "Expand intellectual property protection",
+      "Strengthen cybersecurity protocols",
+      "Leverage strategic partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-32",
+    "archetype": "aero",
+    "title": "Defense Electronics and Communications Systems for Battlefield Integration",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/32 - Defense Electronics and Communications Systems for Battlefield Integration.md",
+    "goal": "The goal of the Defense Electronics and Communications Systems for Battlefield Integration analysis is to evaluate the company’s efforts in developing and integrating advanced electronics and communications systems for military operations.",
+    "dataRequired": [
+      "List of current R&D projects focused on battlefield electronics and communication systems integration",
+      "R&D budget allocation for defense electronics and communication systems",
+      "Technological capabilities in key areas such as secure communications, real-time data transmission, electronic warfare (EW), and command and control (C2) systems",
+      "Integration capabilities of communication systems with existing defense platforms (e.g., aircraft, ground vehicles, naval systems)",
+      "Performance metrics for communication systems, including data transmission speed, reliability, encryption, and operational range",
+      "Market demand forecasts for battlefield communications and defense electronics systems",
+      "Competitor analysis in the development of battlefield communication systems and electronics",
+      "Intellectual property (IP) portfolio related to communications systems and defense electronics",
+      "Regulatory and export control considerations for military communication systems (e.g., ITAR, EAR)",
+      "Historical performance in developing and deploying battlefield communication systems",
+      "Partnerships with defense agencies, technology firms, and research institutions",
+      "Cybersecurity measures for protecting communications systems from cyberattacks or signal interference"
+    ],
+    "improve": [
+      "Increase R&D investment in battlefield communications systems",
+      "Enhance integration with defense platforms",
+      "Expand intellectual property protection",
+      "Strengthen cybersecurity protocols",
+      "Leverage strategic partnerships"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-33",
+    "archetype": "aero",
+    "title": "Classified and Sensitive Information Management Compliance",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "CYBER"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/33 - Classified and Sensitive Information Management Compliance.md",
+    "goal": "The goal of the Classified and Sensitive Information Management Compliance analysis is to evaluate the company’s ability to handle, store, and protect classified and sensitive information in line with national security regulations.",
+    "dataRequired": [
+      "List of current classified and sensitive information management programs and policies",
+      "Compliance requirements for handling classified and sensitive information (e.g., NISP, DFARS, ITAR, export controls)",
+      "R&D budget allocation for cybersecurity and compliance efforts",
+      "Technological capabilities for securing classified data (e.g., encryption, access control, audit trails)",
+      "Performance metrics for compliance efforts (e.g., number of incidents, audit success rate, system vulnerabilities)",
+      "Competitor analysis for classified information handling and compliance programs",
+      "Intellectual property (IP) protection strategies related to sensitive defense technologies",
+      "Employee training programs focused on classified information handling and cybersecurity",
+      "Regulatory and audit reports on compliance with classified data management (e.g., compliance audits, security incidents)",
+      "Partnerships with government agencies for information security and compliance",
+      "Cybersecurity measures for protecting classified and sensitive data from unauthorized access or breaches"
+    ],
+    "improve": [
+      "Increase investment in cybersecurity and compliance technologies",
+      "Enhance employee training programs",
+      "Strengthen partnerships with government agencies",
+      "Expand intellectual property protection",
+      "Improve cybersecurity measures",
+      "Conduct regular audits and assessments"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-34",
+    "archetype": "aero",
+    "title": "Cybersecurity Risk and Resilience in Defense Systems",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "OPERATIONAL",
+      "CYBER"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/34 - Cybersecurity Risk and Resilience in Defense Systems.md",
+    "goal": "The goal of the Cybersecurity Risk and Resilience in Defense Systems analysis is to evaluate the company’s ability to protect its defense systems from cyberattacks and enhance its cybersecurity resilience.",
+    "dataRequired": [
+      "List of current defense systems and cybersecurity programs, including key milestones",
+      "R&D budget allocation for cybersecurity efforts in defense systems",
+      "Technological capabilities for securing defense systems (e.g., encryption, intrusion detection systems, access controls)",
+      "Performance metrics for cybersecurity (e.g., system vulnerabilities, incident response times, penetration testing results)",
+      "Market demand forecasts for cybersecurity solutions in the defense sector",
+      "Competitor analysis for cybersecurity resilience in defense systems",
+      "Intellectual property (IP) protection strategies related to cybersecurity technologies",
+      "Regulatory and compliance requirements for defense cybersecurity (e.g., DFARS, NIST, CMMC)",
+      "Historical performance in cybersecurity incident management and risk mitigation",
+      "Partnerships with cybersecurity firms, government agencies, and defense contractors",
+      "Cybersecurity measures for protecting critical defense systems from hacking, ransomware, and malware"
+    ],
+    "improve": [
+      "Increase R&D investment in advanced cybersecurity solutions",
+      "Enhance incident response capabilities",
+      "Strengthen cybersecurity partnerships",
+      "Expand intellectual property protection",
+      "Ensure regulatory compliance",
+      "Improve cybersecurity training"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-35",
+    "archetype": "aero",
+    "title": "Defense Cybersecurity Standards Compliance",
+    "part": "D",
+    "partLabel": "Technology & Cybersecurity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "CYBER"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/35 - Defense Cybersecurity Standards Compliance.md",
+    "goal": "The goal of the Cybersecurity Risk and Resilience in Defense Systems analysis is to evaluate the company’s ability to protect its defense systems from cyberattacks and enhance its cybersecurity resilience.",
+    "dataRequired": [
+      "List of current defense systems and cybersecurity programs, including key milestones",
+      "R&D budget allocation for cybersecurity efforts in defense systems",
+      "Technological capabilities for securing defense systems (e.g., encryption, intrusion detection systems, access controls)",
+      "Performance metrics for cybersecurity (e.g., system vulnerabilities, incident response times, penetration testing results)",
+      "Market demand forecasts for cybersecurity solutions in the defense sector",
+      "Competitor analysis for cybersecurity resilience in defense systems",
+      "Intellectual property (IP) protection strategies related to cybersecurity technologies",
+      "Regulatory and compliance requirements for defense cybersecurity (e.g., DFARS, NIST, CMMC)",
+      "Historical performance in cybersecurity incident management and risk mitigation",
+      "Partnerships with cybersecurity firms, government agencies, and defense contractors",
+      "Cybersecurity measures for protecting critical defense systems from hacking, ransomware, and malware"
+    ],
+    "improve": [
+      "Increase R&D investment in advanced cybersecurity solutions",
+      "Enhance incident response capabilities",
+      "Strengthen cybersecurity partnerships",
+      "Expand intellectual property protection",
+      "Ensure regulatory compliance",
+      "Improve cybersecurity training"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-36",
+    "archetype": "aero",
+    "title": "Defense Budget Dependency and Risk Assessment",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "TOP5_CONTRACT_SHARE",
+      "DEFENSE_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [
+      "COMMERCIAL_PIPELINE"
+    ],
+    "sourcePath": "data/analysis-library/aero/36 - Defense Budget Dependency and Risk Assessment.md",
+    "goal": "The goal of the Defense Budget Dependency and Risk Assessment analysis is to evaluate the company’s reliance on defense contracts and government defense spending, and to identify potential risks associated with fluctuations in defense budgets.",
+    "dataRequired": [
+      "Percentage of total revenue derived from defense contracts",
+      "Breakdown of defense contracts by country and government agency",
+      "Historical defense spending trends (domestic and international) relevant to the company’s business",
+      "Dependency on specific defense programs and platforms (e.g., missile systems, aircraft development, naval contracts)",
+      "Competitor analysis for defense budget dependency",
+      "Financial impact of past defense budget cuts or sequestration events",
+      "Market demand forecasts for defense technologies and platforms",
+      "R&D budget allocation for defense-related projects",
+      "Contracts pipeline (including pending or anticipated contracts) and its reliance on defense funding",
+      "Risk factors associated with potential geopolitical changes (e.g., international military alliances, political shifts affecting defense budgets)",
+      "Revenue streams from non-defense sectors (if applicable)",
+      "Strategic partnerships with defense contractors or government agencies",
+      "Historical performance during defense budget fluctuations or spending cuts"
+    ],
+    "improve": [
+      "Diversify revenue streams beyond defense contracts",
+      "Develop contingency plans for defense budget cuts",
+      "Strengthen partnerships with defense contractors and agencies",
+      "Expand global presence in defense markets",
+      "Increase R&D investments in dual-use technologies",
+      "Monitor geopolitical developments and budget forecasts"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-37",
+    "archetype": "aero",
+    "title": "Weapons Systems Lifecycle and Sustainment Cost Analysis",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "FIXED_PRICE_SHARE",
+      "COST_OVERRUN_RATE",
+      "SUSTAINMENT_COST"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM"
+    ],
+    "relatedLeverCategories": [
+      "MRO_EFFICIENCY",
+      "CONTRACT_MIX"
+    ],
+    "sourcePath": "data/analysis-library/aero/37 - Weapons Systems Lifecycle and Sustainment Cost Analysis.md",
+    "goal": "The goal of the Weapons Systems Lifecycle and Sustainment Cost Analysis is to evaluate the total cost of ownership of weapons systems, from development through production, deployment, maintenance, and eventual retirement or disposal.",
+    "dataRequired": [
+      "Initial development and production costs for each weapons system",
+      "Projected and historical sustainment costs (e.g., maintenance, repair, and overhaul (MRO), logistics, parts replacement)",
+      "Lifecycle stages (development, production, deployment, sustainment, disposal) and their associated costs",
+      "Contract terms and cost structures for sustainment (e.g., cost-plus, fixed-price contracts)",
+      "System usage data (e.g., operational tempo, flight hours, deployment frequency)",
+      "Market forecasts for sustainment services and associated costs (e.g., spare parts availability, inflation)",
+      "Competitor analysis for lifecycle and sustainment cost management practices",
+      "Historical performance in managing weapons system sustainment costs",
+      "Technological advancements that affect sustainment (e.g., predictive maintenance, additive manufacturing)",
+      "R&D budget allocation for sustainment-related innovation (e.g., improving durability, logistics efficiency)",
+      "Potential risks related to parts obsolescence, repair delays, or cost overruns",
+      "Partnerships with suppliers and logistics firms for sustainment operations",
+      "Environmental or regulatory considerations for system disposal or decommissioning"
+    ],
+    "improve": [
+      "Invest in predictive maintenance technologies",
+      "Use additive manufacturing for spare parts",
+      "Standardize parts and components",
+      "Enhance partnerships with suppliers",
+      "Improve contract structures for sustainment",
+      "Incorporate lifecycle cost management into R&D"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-38",
+    "archetype": "aero",
+    "title": "Defense Procurement Process Efficiency and Contract Win Rate",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "WIN_RATE",
+      "FIXED_PRICE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COMMERCIAL_PIPELINE",
+      "PRICING"
+    ],
+    "sourcePath": "data/analysis-library/aero/38 - Defense Procurement Process Efficiency and Contract Win Rate.md",
+    "goal": "The goal of the Defense Procurement Process Efficiency and Contract Win Rate analysis is to assess how effectively the company participates in and manages the defense procurement process and to evaluate its success rate in securing defense contracts.",
+    "dataRequired": [
+      "Historical contract win rate (percentage of bids won out of total bids submitted)",
+      "Breakdown of types of contracts won (e.g., cost-plus, fixed-price, indefinite delivery/indefinite quantity (IDIQ), performance-based)",
+      "Historical contract loss data, including reasons for losses",
+      "Key performance indicators (KPIs) for procurement process efficiency (e.g., time to bid submission, internal review processes, compliance with RFP requirements)",
+      "R&D budget allocation for proposal development and bid management",
+      "Competitor analysis for contract win rate and procurement process efficiency",
+      "Data on the company’s success with small versus large contracts",
+      "Breakdown of contract opportunities by geography and defense sector (e.g., aerospace, cybersecurity, missile defense)",
+      "Market demand forecasts for defense contracts in key sectors",
+      "Factors that contribute to procurement delays or inefficiencies (e.g., regulatory compliance, internal bottlenecks, resource constraints)",
+      "Performance metrics for bid team effectiveness (e.g., response time to RFPs, proposal quality, resource allocation)",
+      "Partnerships with subcontractors or teaming agreements that impact the procurement process",
+      "Success rate in key markets (e.g., U.S. Department of Defense, NATO, international defense ministries)",
+      "Competitive pricing strategies and how they compare to industry benchmarks",
+      "Use of digital tools or technologies to streamline the procurement process (e.g., automated bid tracking, compliance software)"
+    ],
+    "improve": [
+      "Enhance proposal development processes",
+      "Leverage digital tools to streamline procurement",
+      "Refine pricing strategies",
+      "Strengthen subcontractor relationships",
+      "Focus on high-win sectors and geographies",
+      "Streamline internal workflows"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-39",
+    "archetype": "aero",
+    "title": "Advanced Munitions and Precision-Guided Weapons Development",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "COST_OVERRUN_RATE"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "CAPACITY_UTILIZATION"
+    ],
+    "sourcePath": "data/analysis-library/aero/39 - Advanced Munitions and Precision-Guided Weapons Development.md",
+    "goal": "The goal of the Advanced Munitions and Precision-Guided Weapons Development analysis is to assess the company’s capabilities in designing, developing, and delivering next-generation munitions and precision-guided weapons.",
+    "dataRequired": [
+      "List of current R&D projects focused on advanced munitions and precision-guided weapons",
+      "R&D budget allocation for munitions and precision-guided weapons development",
+      "Technological capabilities in key areas such as guidance systems, propulsion, warhead design, and targeting systems",
+      "Historical performance metrics for precision-guided weapons (e.g., accuracy, reliability, range, and strike effectiveness)",
+      "Competitor analysis for munitions and precision-guided weapons development",
+      "Market demand forecasts for advanced munitions and precision-guided weapons",
+      "Cost of production and scaling capabilities for advanced munitions",
+      "Integration capabilities with existing defense platforms (e.g., aircraft, naval vessels, UAVs, ground vehicles)",
+      "Intellectual property (IP) portfolio related to munitions and guidance technologies",
+      "Regulatory and export control considerations for munitions (e.g., ITAR, EAR)",
+      "Historical performance in munitions contracts and market share in the defense sector",
+      "Strategic partnerships with defense contractors, research institutions, and technology firms",
+      "Potential risks associated with production delays, technological challenges, or cost overruns",
+      "Environmental and regulatory considerations for munitions testing and deployment"
+    ],
+    "improve": [
+      "Invest in next-generation guidance systems",
+      "Optimize production scalability",
+      "Strengthen integration with defense platforms",
+      "Expand intellectual property protection",
+      "Enhance regulatory compliance measures",
+      "Focus on emerging markets"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-40",
+    "archetype": "aero",
+    "title": "Defense Program Delays and Cost Overrun Analysis",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "COST_OVERRUN_RATE",
+      "ON_TIME_DELIVERY",
+      "FIXED_PRICE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "PROGRAM"
+    ],
+    "relatedLeverCategories": [
+      "PROGRAM_EXECUTION",
+      "CONTRACT_MIX",
+      "SUPPLY_CHAIN_CONTROL"
+    ],
+    "sourcePath": "data/analysis-library/aero/40 - Defense Program Delays and Cost Overrun Analysis.md",
+    "goal": "The goal of the Defense Program Delays and Cost Overrun Analysis is to evaluate the factors that contribute to delays and cost overruns in defense programs.",
+    "dataRequired": [
+      "List of current and past defense programs that experienced delays and cost overruns",
+      "Original and revised budgets for each program",
+      "Original and revised timelines for each program, including key milestones",
+      "Causes of delays (e.g., technical challenges, supply chain disruptions, regulatory issues)",
+      "Breakdown of cost overruns (e.g., labor, materials, technology development, testing, subcontractor delays)",
+      "Competitor benchmarking on program delivery performance and cost control",
+      "Financial impact of delays and cost overruns (e.g., lost revenue, penalties, customer dissatisfaction)",
+      "Risk management strategies in place for ongoing and future programs",
+      "Key performance indicators (KPIs) for program management (e.g., on-time delivery rate, budget variance)",
+      "Internal processes for program management and decision-making (e.g., approval workflows, communication strategies)",
+      "Contract structures (e.g., fixed-price, cost-plus, time and materials) and how they influence cost overruns",
+      "Data on subcontractor performance and its impact on program delays",
+      "Market demand forecasts for defense programs and how delays impact market share",
+      "Technological challenges (e.g., R&D setbacks, system integration issues) that lead to delays or cost increases",
+      "Lessons learned from past program delays and cost overruns"
+    ],
+    "improve": [
+      "Improve project management processes",
+      "Strengthen risk mitigation strategies",
+      "Invest in project tracking and forecasting tools",
+      "Improve subcontractor selection and oversight",
+      "Refine contract structures",
+      "Focus on scalable technology development"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-41",
+    "archetype": "aero",
+    "title": "Classified Program Revenue Contribution and Risk",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "CLASSIFIED_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/41 - Classified Program Revenue Contribution and Risk.md",
+    "goal": "The goal of the Classified Program Revenue Contribution and Risk analysis is to assess the company's reliance on classified defense programs for revenue, as well as the associated risks of managing and delivering on these programs.",
+    "dataRequired": [
+      "Percentage of total revenue derived from classified programs",
+      "Breakdown of classified contracts by client (e.g., U.S. Department of Defense, intelligence agencies, international defense ministries)",
+      "Historical revenue trends from classified programs",
+      "Contract structures for classified programs (e.g., fixed-price, cost-plus, performance-based)",
+      "Risks associated with classified program management (e.g., compliance breaches, security incidents, project delays, subcontractor management)",
+      "Regulatory and compliance requirements for classified programs (e.g., NISP, ITAR, DFARS, CMMC)",
+      "Cost of compliance with security and regulatory requirements",
+      "Historical performance metrics for classified programs (e.g., delivery timelines, contract renewals, customer satisfaction)",
+      "Competitor analysis for classified program involvement and market share",
+      "R&D budget allocation for classified program-related technologies",
+      "Partnership and subcontractor performance in classified program management",
+      "Risk of geopolitical changes affecting classified program contracts (e.g., government policy shifts, budget cuts, international tensions)",
+      "Cybersecurity measures for protecting classified data and communications",
+      "Historical incidents of security breaches or compliance issues",
+      "Impact of classified program dependency on overall financial health and risk profile"
+    ],
+    "improve": [
+      "Strengthen cybersecurity and compliance protocols",
+      "Diversify revenue streams",
+      "Enhance project management for classified programs",
+      "Expand partnerships in the classified sector",
+      "Monitor geopolitical and policy risks"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-42",
+    "archetype": "aero",
+    "title": "Intellectual Property and Technology Transfer Agreements",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY",
+      "GEOPOLITICAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/42 - Intellectual Property and Technology Transfer Agreements.md",
+    "goal": "The goal of the Intellectual Property (IP) and Technology Transfer Agreements analysis is to assess the company’s strategy for protecting its proprietary technologies and managing the transfer of critical defense-related technologies to partners, subcontractors, and foreign entities.",
+    "dataRequired": [
+      "Inventory of the company’s intellectual property (patents, trademarks, copyrights) related to defense technologies",
+      "Current and historical technology transfer agreements, including partner countries and entities",
+      "Regulatory compliance requirements (e.g., ITAR, EAR, Wassenaar Arrangement) for technology transfer",
+      "Legal frameworks governing IP protection in defense contracts (e.g., DFARS clauses on technical data rights)",
+      "R&D investments allocated to developing proprietary technologies",
+      "Risk factors associated with technology transfer agreements (e.g., loss of competitive edge, IP theft, geopolitical risks)",
+      "Market demand for the company’s defense-related technologies",
+      "Competitor analysis of IP portfolios and technology transfer agreements",
+      "Historical performance in managing technology transfer agreements (e.g., successful partnerships, disputes, IP theft)",
+      "Contracts with government agencies related to IP and technology transfer",
+      "Financial impact of licensing or transferring technologies to partners and foreign entities",
+      "Strategic partnerships with research institutions, universities, or international firms that impact technology transfer",
+      "Historical disputes or litigation related to IP infringement or technology transfer violations",
+      "Cybersecurity measures for protecting proprietary technologies during transfers",
+      "Risk of technology proliferation or misuse when transferred to foreign entities"
+    ],
+    "improve": [
+      "Strengthen IP protection through legal and technical measures",
+      "Enhance cybersecurity protocols",
+      "Optimize technology transfer agreements",
+      "Expand R&D investments",
+      "Diversify partnerships carefully",
+      "Monitor geopolitical risks"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-43",
+    "archetype": "aero",
+    "title": "Workforce Expertise in Classified and Technical Defense Programs",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [
+      "WORKFORCE_TURNOVER"
+    ],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/43 - Workforce Expertise in Classified and Technical Defense Programs.md",
+    "goal": "The goal of the Workforce Expertise in Classified and Technical Defense Programs analysis is to assess the company’s ability to attract, develop, and retain a skilled workforce capable of handling classified and technically advanced defense programs.",
+    "dataRequired": [
+      "Current workforce composition involved in classified and technical defense programs, including levels of security clearance (e.g., Confidential, Secret, Top Secret)",
+      "Breakdown of workforce expertise by technical discipline (e.g., software engineering, aerospace engineering, cybersecurity, systems integration)",
+      "Historical turnover rates for employees working on classified programs",
+      "Recruitment and retention metrics for classified defense roles (e.g., time to hire, offer acceptance rates, retention rates)",
+      "Training and certification programs for technical skills and classified program requirements (e.g., security clearance training, advanced technical certifications)",
+      "Competitor benchmarking for workforce expertise in classified programs",
+      "Regulatory and compliance requirements related to personnel handling classified information (e.g., NISPOM, DoD 8570)",
+      "Challenges in recruiting and retaining talent for classified and technical roles (e.g., competition, geographic location, compensation packages)",
+      "Subcontractor workforce expertise and their role in classified programs",
+      "Impact of workforce expertise on program performance (e.g., delivery timelines, project success rates)",
+      "Strategic partnerships with universities, technical schools, or government agencies for talent development",
+      "Historical performance in workforce training and development programs",
+      "Cybersecurity and data protection measures for personnel handling sensitive information",
+      "Succession planning and risk mitigation strategies for key classified program roles"
+    ],
+    "improve": [
+      "Enhance recruitment strategies for classified roles",
+      "Improve retention through training and career development",
+      "Strengthen partnerships with universities and technical schools",
+      "Improve cybersecurity and data protection for personnel",
+      "Expand subcontractor oversight",
+      "Develop succession planning for key roles"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "aero-44",
+    "archetype": "aero",
+    "title": "Arms Control and Export Regulation Compliance",
+    "part": "E",
+    "partLabel": "Finance & Program Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/aero/44 - Arms Control and Export Regulation Compliance.md",
+    "goal": "The goal of the Arms Control and Export Regulation Compliance analysis is to evaluate the company’s adherence to key regulatory frameworks, such as the International Traffic in Arms Regulations (ITAR), Export Administration Regulations (EAR), and other relevant international arms control treaties.",
+    "dataRequired": [
+      "List of defense-related products, technologies, and services subject to ITAR, EAR, or other export control regulations",
+      "Historical compliance records (e.g., audits, regulatory reviews, violations)",
+      "Internal export compliance procedures, including documentation, approvals, and processes for international sales",
+      "Regulatory compliance requirements (e.g., ITAR, EAR, Wassenaar Arrangement) specific to defense products and technologies",
+      "Employee training programs focused on ITAR, EAR, and arms control compliance",
+      "Competitor benchmarking for export compliance and adherence to arms control regulations",
+      "Cybersecurity measures to safeguard export-controlled data and intellectual property",
+      "Subcontractor compliance management and oversight in relation to export-controlled items",
+      "Risk factors associated with violations of ITAR, EAR, or other arms control treaties (e.g., geopolitical risks, unauthorized transfers, improper documentation)",
+      "Strategic partnerships or international sales that involve the transfer of controlled technologies or products",
+      "Key performance indicators (KPIs) for compliance management (e.g., audit success rates, export license processing times, incident response times)",
+      "Records of export licenses granted or denied and reasons for denials (if applicable)",
+      "External legal and regulatory counsel involvement in compliance reviews or disputes",
+      "Past penalties, fines, or sanctions related to non-compliance with ITAR, EAR, or other regulations",
+      "Technological solutions in use for tracking and managing export compliance (e.g., automated compliance software, data encryption tools)"
+    ],
+    "improve": [
+      "Strengthen internal compliance processes",
+      "Enhance employee training programs",
+      "Leverage technology for compliance management",
+      "Improve subcontractor oversight",
+      "Expand cybersecurity protocols",
+      "Develop a risk management plan for export violations",
+      "Engage external legal counsel for high-risk transactions"
+    ],
+    "formulas": []
+  }
+]

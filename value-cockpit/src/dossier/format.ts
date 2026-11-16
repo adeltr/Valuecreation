@@ -1,0 +1,216 @@
+import { z } from 'zod';
+import { getActiveVocabulary, SECTOR_ARCHETYPES, type SectorArchetype } from '../ontology/registry';
+import { SCENARIO_ASSUMPTION_CODES } from '../ontology/base';
+import { makeLeverSchema, makeRootCauseSchema } from '../domain/schemas';
+import type { Lever, RootCause } from '../domain/types';
+import { TEMPLATES } from '../templates';
+import { modelTargets } from '../templates/targets';
+import { getCatalog } from '../catalog';
+import { findFormula, observationValue, type Observation } from '../workshop/observations';
+
+export type AssumptionCode = (typeof SCENARIO_ASSUMPTION_CODES)[number];
+
+/** 100-day plan decisions of the analyst, per workstream (a lever id or a cross-cutting foundation). */
+export const PLAN_STATUSES = ['todo', 'in_progress', 'done', 'blocked'] as const;
+export type PlanStatus = (typeof PLAN_STATUSES)[number];
+export interface PlanOverride { owner?: string; status?: PlanStatus; note?: string }
+export const FOUNDATION_IDS = ['f-governance', 'f-kpi', 'f-cash', 'f-people', 'f-comms'] as const;
+
+export const SCALES = ['k', 'M', 'Md'] as const;
+/** How to read the amounts of the case, and why the deal is done. */
+export interface CompanyContext { currency: string; scale: (typeof SCALES)[number]; thesis: string }
+export const DEFAULT_CONTEXT: CompanyContext = { currency: 'EUR', scale: 'M', thesis: '' };
+
+/**
+ * Where an input value comes from (docs/23). An input without provenance still holds the
+ * template's illustrative value: results that depend on it are indicative only.
+ */
+export const INPUT_SOURCES = ['manual', 'observation', 'import', 'filing'] as const;
+export interface Provenance {
+  source: (typeof INPUT_SOURCES)[number];
+  /** Document, page, file, analysis or filing URL the value was read from. */
+  ref: string;
+  by: string;
+  at: string;
+}
+
+/** A company case as the analyst works it: what a dossier stores, plus the next id to hand out. */
+export interface DossierCase {
+  name: string;
+  archetype: SectorArchetype;
+  context: CompanyContext;
+  inputs: Record<string, number>;
+  provenance: Record<string, Provenance>;
+  levers: Lever[];
+  rootCauses: RootCause[];
+  scenario: {
+    leverIds: string[];
+    applied: Record<string, number>;
+    assumptions: Partial<Record<AssumptionCode, number>>;
+  };
+  /** Scenarios kept under a name (base, prudent, ambitious…), same shape and rules as `scenario`. */
+  savedScenarios: Record<string, DossierCase['scenario']>;
+  plan: Record<string, PlanOverride>;
+  observations: Observation[];
+  nextId: number;
+}
+
+/** An observation must point to a formula of the archetype's catalog, cover its variables and be computable. */
+export function checkObservation(o: Observation, archetype: SectorArchetype): void {
+  const catalog = getCatalog(archetype);
+  const f = findFormula(catalog, o.analysisId, o.formula);
+  if (!f) throw new Error(`Observation ${o.id} : formule « ${o.formula} » introuvable dans ${o.analysisId}`);
+  if (o.metricCode !== null && !getActiveVocabulary(archetype).isMetricCode(o.metricCode)) {
+    throw new Error(`Observation ${o.id} : ${o.metricCode} n'est pas une métrique du vocabulaire ${archetype}`);
+  }
+  const extra = Object.keys(o.values).filter((k) => !f.variables.includes(k));
+  if (extra.length) throw new Error(`Observation ${o.id} : variables inconnues ${extra.join(', ')}`);
+  observationValue(o, catalog); // missing data or a non-finite result throws
+}
+
+export const DOSSIER_FORMAT = 'value-cockpit-dossier';
+export const DOSSIER_VERSION = 6; // 2: + plan, 3: + observations, 4: + context, 5: + provenance, 6: + savedScenarios (older files open with the defaults)
+
+/**
+ * A saved company case. It holds what the analyst entered or decided — inputs, levers and
+ * their status, causes, scenario choices — and never an engine output: every figure is
+ * recomputed by the engine on load (invariant 1).
+ */
+export interface DossierFile {
+  format: typeof DOSSIER_FORMAT;
+  version: typeof DOSSIER_VERSION;
+  name: string;
+  savedAt: string;
+  archetype: SectorArchetype;
+  context: CompanyContext;
+  inputs: Record<string, number>;
+  provenance: DossierCase['provenance'];
+  levers: Lever[];
+  rootCauses: RootCause[];
+  scenario: DossierCase['scenario'];
+  savedScenarios: DossierCase['savedScenarios'];
+  plan: DossierCase['plan'];
+  observations: Observation[];
+  nextId: number;
+}
+
+export function toDossier(state: DossierCase, savedAt: string): DossierFile {
+  const name = state.name.trim();
+  if (!name) throw new Error('Donne un nom au dossier avant de l\'enregistrer ou de l\'exporter');
+  return {
+    format: DOSSIER_FORMAT, version: DOSSIER_VERSION, name, savedAt,
+    archetype: state.archetype, context: state.context,
+    inputs: state.inputs, provenance: state.provenance, levers: state.levers, rootCauses: state.rootCauses,
+    scenario: state.scenario, savedScenarios: state.savedScenarios, plan: state.plan, observations: state.observations, nextId: state.nextId,
+  };
+}
+
+const scenarioSchema = z.object({
+  leverIds: z.array(z.string()),
+  applied: z.record(z.number().finite()),
+  assumptions: z.record(z.number().finite()),
+});
+
+const envelope = z.object({
+  format: z.literal(DOSSIER_FORMAT),
+  version: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5), z.literal(DOSSIER_VERSION)]),
+  name: z.string().min(1),
+  savedAt: z.string(),
+  archetype: z.string(),
+  context: z.object({
+    currency: z.string().regex(/^[A-Z]{3}$/, 'currency: code ISO à 3 lettres attendu (EUR, USD…)'),
+    scale: z.enum(SCALES), thesis: z.string(),
+  }).strict().default(DEFAULT_CONTEXT),
+  inputs: z.record(z.number().finite()),
+  provenance: z.record(z.object({
+    source: z.enum(INPUT_SOURCES), ref: z.string(), by: z.string(), at: z.string(),
+  }).strict()).default({}),
+  levers: z.array(z.unknown()),
+  rootCauses: z.array(z.unknown()),
+  scenario: scenarioSchema,
+  savedScenarios: z.record(scenarioSchema).default({}),
+  plan: z.record(z.object({
+    owner: z.string().optional(), status: z.enum(PLAN_STATUSES).optional(), note: z.string().optional(),
+  }).strict()).default({}),
+  observations: z.array(z.object({
+    id: z.string(), analysisId: z.string(), formula: z.string(), values: z.record(z.number().finite()),
+    metricCode: z.string().nullable(), date: z.string(), note: z.string(), applied: z.boolean(),
+  }).strict()).default([]),
+  nextId: z.number().int().min(1),
+});
+
+const issues = (e: z.ZodError) => e.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ');
+
+function parseWith<T>(schema: z.ZodType<T>, value: unknown, what: string): T {
+  const r = schema.safeParse(value);
+  if (!r.success) throw new Error(`${what} invalide — ${issues(r.error)}`);
+  return r.data;
+}
+
+/** Validates an untrusted dossier file against the current templates and vocabulary. Throws, never guesses. */
+export function parseDossier(raw: unknown): DossierCase {
+  const head = envelope.safeParse(raw);
+  if (!head.success) throw new Error(`Fichier de dossier invalide — ${issues(head.error)}`);
+  const file = head.data;
+
+  if (!(SECTOR_ARCHETYPES as readonly string[]).includes(file.archetype) || !TEMPLATES[file.archetype as SectorArchetype]) {
+    throw new Error(`Type d'entreprise inconnu : ${file.archetype}`);
+  }
+  const archetype = file.archetype as SectorArchetype;
+
+  const expected = Object.keys(TEMPLATES[archetype]!.demoInputs);
+  const missing = expected.filter((c) => !(c in file.inputs));
+  const unknown = Object.keys(file.inputs).filter((c) => !expected.includes(c));
+  if (missing.length || unknown.length) {
+    throw new Error(`Inputs incompatibles avec le modèle ${archetype}`
+      + (missing.length ? ` — manquants : ${missing.join(', ')}` : '')
+      + (unknown.length ? ` — inconnus : ${unknown.join(', ')}` : ''));
+  }
+
+  const strays = Object.keys(file.provenance).filter((c) => !expected.includes(c));
+  if (strays.length) throw new Error(`Provenance sur des inputs inconnus : ${strays.join(', ')}`);
+
+  const vocab = getActiveVocabulary(archetype);
+  const levers = parseWith(z.array(makeLeverSchema(vocab, modelTargets(archetype).calculated)), file.levers, 'Levier') as Lever[];
+  const rootCauses = parseWith(z.array(makeRootCauseSchema(vocab)), file.rootCauses, 'Cause') as RootCause[];
+
+  // The current scenario and every saved one obey the same rules (analyst gate, model inputs, assumptions).
+  const checkScenario = ({ leverIds, applied, assumptions }: z.infer<typeof scenarioSchema>, what: string) => {
+    for (const id of leverIds) {
+      const lever = levers.find((l) => l.id === id);
+      if (lever?.status !== 'validated') throw new Error(`${what} invalide : le levier ${id} n'est pas validé par l'analyste`);
+      if (!expected.includes(lever.impactMetricCode)) {
+        throw new Error(`${what} invalide : le levier ${id} est qualitatif (${lever.impactMetricCode} n'est pas un input du modèle)`);
+      }
+    }
+    const appliedKeys = Object.keys(applied);
+    if (appliedKeys.length !== leverIds.length || appliedKeys.some((k) => !leverIds.includes(k))) {
+      throw new Error(`${what} invalide : les deltas appliqués ne correspondent pas aux leviers du scénario`);
+    }
+    for (const code of Object.keys(assumptions)) {
+      if (!(SCENARIO_ASSUMPTION_CODES as readonly string[]).includes(code)) {
+        throw new Error(`Hypothèse non autorisée : ${code} (assumption limitée à ${SCENARIO_ASSUMPTION_CODES.join(', ')})`);
+      }
+    }
+  };
+  checkScenario(file.scenario, 'Scénario');
+  for (const [name, sc] of Object.entries(file.savedScenarios)) checkScenario(sc, `Scénario « ${name} »`);
+  const { leverIds, applied, assumptions } = file.scenario;
+
+  for (const id of Object.keys(file.plan)) {
+    if (!levers.some((l) => l.id === id) && !(FOUNDATION_IDS as readonly string[]).includes(id)) {
+      throw new Error(`Plan invalide : chantier inconnu ${id}`);
+    }
+  }
+
+  for (const o of file.observations) checkObservation(o, archetype);
+
+  // Ids are h<n> / o<n>: the next one must be past every id already in the file, whatever nextId says.
+  const used = [...levers, ...rootCauses, ...file.observations].map((x) => Number(/^[ho](\d+)$/.exec(x.id)?.[1] ?? 0));
+  const nextId = Math.max(file.nextId, ...used.map((n) => n + 1));
+
+  return {
+    name: file.name, archetype, context: file.context, inputs: file.inputs, provenance: file.provenance, levers, rootCauses,
+    scenario: { leverIds, applied, assumptions }, savedScenarios: file.savedScenarios, plan: file.plan, observations: file.observations, nextId,
+  };
+}

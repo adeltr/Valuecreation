@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-01
+part: A
+partLabel: Strategy & Market Position
+quant: [FIXED_PRICE_SHARE, COST_OVERRUN_RATE, ON_TIME_DELIVERY, WIN_RATE, TOP5_CONTRACT_SHARE]
+causes: [PROGRAM, COMMERCIAL]
+levers: [CONTRACT_MIX, COMMERCIAL_PIPELINE, PROGRAM_EXECUTION]
 ---
 # 1 · Defense Contracting Portfolio Analysis
 

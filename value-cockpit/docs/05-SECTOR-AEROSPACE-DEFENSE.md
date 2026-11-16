@@ -70,8 +70,16 @@ overruns ; pas de modélisation des pénalités de retard (diagnostic v1).
 | WC_MILESTONES | DSO ↓ (base) | jalons de paiement, avances clients (#5) |
 
 ## Catégories de causes ajoutées par l'extension
-`GEOPOLITICAL` (#2, #8) · `REGULATORY` (#8, #15 — ITAR/EAR/FAR/DFARS) ·
-`PROGRAM` (dérives d'exécution propres aux programmes longs).
+`GEOPOLITICAL` (#2, #8) · `PROGRAM` (dérives d'exécution propres aux programmes
+longs) · `CYBER` (#33–#35). `REGULATORY` (#8, #15 — ITAR/EAR/FAR/DFARS) est
+désormais une cause de la base.
+
+## Ajouts validés depuis la curation (aero/_curation.md §C)
+Diagnostics benchmarkés : `DEFENSE_REVENUE_SHARE` (#36), `CLASSIFIED_REVENUE_SHARE`
+(#41), `RD_INTENSITY` (#17–#31), `OPERATIONAL_AVAILABILITY` et
+`SPARE_PARTS_AVAILABILITY` (#11), `SUSTAINMENT_COST` (#37), `WORKFORCE_TURNOVER`
+(#43). Levier qualitatif `RD_PORTFOLIO` (#17–#31). `BOOK_TO_BILL` et `BACKLOG`
+restent des choix d'analyste : aucune source Umbrex ne les cite.
 
 Ces analyses de risque alimentent le **contexte de diagnostic du copilote** ET
 le **catalogue d'analyses** ci-dessous : le copilote peut invoquer
@@ -110,8 +118,8 @@ Rôle dans chaque mode :
 
 Impact ontologie : `NODE_TYPES` gagne `'analysis'` ; le graphe relie
 `analysis → metric/cause/lever` par des arêtes de type `informs`. Le catalogue
-A&D vit dans `src/catalog/aero.catalog.json`, validé par un test d'intégrité
-référentielle (tout code référencé ∈ vocabulaire actif). Voir doc 08 pour le
+A&D vit dans `src/catalog/aero.catalog.json` (44 analyses curées), validé par un
+test d'intégrité référentielle (tout code référencé ∈ vocabulaire actif). Voir doc 08 pour le
 pipeline d'ingestion des fichiers sources.
 
 ## Addendum au plan — Tâche 14 (même pattern que les tâches 2 et 9)

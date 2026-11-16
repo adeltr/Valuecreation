@@ -19,3 +19,11 @@ describe('base vocabulary', () => {
     expect(DELTA_KINDS).toEqual(['absolute', 'percent']);
   });
 });
+
+describe('base vocabulary – generic EBITDA bridge', () => {
+  it('holds REVENUE_GROWTH (input) and REVENUE_EXIT (calculated) for every archetype', () => {
+    expect(BASE_METRIC_CODES).toContain('REVENUE_GROWTH');
+    expect(BASE_METRIC_CODES).toContain('REVENUE_EXIT');
+    expect(BASE_METRIC_META.REVENUE_GROWTH.unit).toBe('percent');
+  });
+});

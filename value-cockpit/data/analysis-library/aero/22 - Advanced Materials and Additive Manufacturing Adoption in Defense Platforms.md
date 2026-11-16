@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/C
+kind: analysis
+id: aero-22
+part: C
+partLabel: Research & Development and Innovation
+quant: [RD_INTENSITY]
+causes: [MARKET]
+levers: [COST_OPS, RD_PORTFOLIO]
 ---
 # 22 · Advanced Materials and Additive Manufacturing Adoption in Defense Platforms
 

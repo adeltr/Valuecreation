@@ -1,0 +1,152 @@
+import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
+import { initialState, reducer, selectBaseline, selectMetrics, selectScenario } from './state/store';
+import { TEMPLATES } from '../templates';
+import { getCatalog } from '../catalog';
+import { getActiveVocabulary, getBridgeFamily, type SectorArchetype } from '../ontology/registry';
+import { FAMILY_BRIDGE } from '../templates/build';
+import { DriverGraph } from './components/DriverGraph';
+import { CompanyView } from './components/CompanyView';
+import { CopilotPanel } from './components/CopilotPanel';
+import { SimulationPanel } from './components/SimulationPanel';
+import { PlanPanel } from './components/PlanPanel';
+import { buildPlan } from './model/plan';
+import { buildSlideModel, renderPlanSlide } from './export/planSlide';
+import { DossierBar, type SavedRef } from './components/DossierBar';
+import { LeverCardPanel } from './components/LeverCardPanel';
+import { WorkshopPanel } from './components/WorkshopPanel';
+import { EmpiricalPanel } from './components/EmpiricalPanel';
+import { impliedTrajectory } from '../empirical/realism';
+import { entryChecks } from './model/entryChecks';
+import { reliability } from './state/provenance';
+import { toDossier } from '../dossier/format';
+import type { DossierRepository } from '../dossier/repository';
+import { connectRepository, type DossierLocation } from './state/httpRepository';
+import { hasUnsavedWork } from './state/unsaved';
+import { authFetch, loadSession, saveAnalyst, savePassword, type Session } from './state/session';
+
+type Connect = (fetchImpl: typeof fetch) => Promise<{ repo: DossierRepository; where: DossierLocation }>;
+const defaultConnect: Connect = (fetchImpl) => connectRepository(fetchImpl, window.localStorage);
+
+export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
+  const [state, dispatch] = useReducer(reducer, 'airline' as SectorArchetype, initialState);
+  // Who is working, and the team's shared password: every server call carries both (docs/22).
+  const [session, setSession] = useState<Session>(loadSession);
+  const [passwordDraft, setPasswordDraft] = useState('');
+  const sessionRef = useRef(session);
+  sessionRef.current = session;
+  const api = useMemo(() => authFetch((...a) => fetch(...a), () => sessionRef.current), []);
+  const metrics = useMemo(() => selectMetrics(state), [state]);
+  const catalog = getCatalog(state.archetype);
+  const [store, setStore] = useState<Awaited<ReturnType<Connect>> | null>(null);
+  useEffect(() => {
+    let live = true;
+    void connect(api).then((s) => { if (live) setStore(s); });
+    return () => { live = false; };
+  }, [connect, api, session.password]);
+  const [saved, setSaved] = useState<SavedRef | null>(null);
+  const [cardLeverId, setCardLeverId] = useState<string | null>(null);
+  const cardLever = state.levers.find((l) => l.id === cardLeverId);
+  const [workshopId, setWorkshopId] = useState<string | null>(null);
+  const mayReplace = () => !hasUnsavedWork(state, saved?.fingerprint ?? null)
+    || window.confirm('Les modifications non enregistrées du dossier en cours seront perdues. Continuer ?');
+
+  // The engine may refuse an input set (e.g. a division by zero while typing): show it, never guess.
+  let baseline = new Map<string, number>();
+  let scenario = null;
+  let plan = null;
+  let trajectory = null;
+  let engineError: string | null = null;
+  try {
+    baseline = selectBaseline(state);
+    scenario = selectScenario(state);
+    plan = buildPlan({
+      levers: state.levers, rootCauses: state.rootCauses, metrics, catalog,
+      rules: TEMPLATES[state.archetype]!.interactions, family: getBridgeFamily(state.archetype), overrides: state.plan,
+    });
+    trajectory = impliedTrajectory(metrics, state.levers, TEMPLATES[state.archetype]!.interactions);
+  } catch (e) {
+    engineError = (e as Error).message;
+  }
+
+  return (
+    <div className="app">
+      <header className="app-header">
+        <h1>Value Creation Cockpit</h1>
+        <label>
+          Analyste{' '}
+          <input aria-label="Analyste" value={session.analyst} placeholder="Votre nom" size={16}
+            onChange={(e) => { saveAnalyst(e.target.value); setSession({ ...session, analyst: e.target.value }); }} />
+        </label>
+        <label>
+          Type d'entreprise{' '}
+          <select value={state.archetype}
+            onChange={(e) => {
+              if (!mayReplace()) return;
+              setSaved(null);
+              setCardLeverId(null);
+              setWorkshopId(null);
+              dispatch({ type: 'selectArchetype', archetype: e.target.value as SectorArchetype });
+            }}>
+            {([2, 1] as const).map((level) => {
+              const entries = Object.entries(TEMPLATES).filter(([, t]) => t!.level === level);
+              return entries.length === 0 ? null : (
+                <optgroup key={level} label={level === 2 ? 'Modèle sectoriel complet' : 'Modèle EBITDA générique'}>
+                  {entries.sort(([, a], [, b]) => a!.label.localeCompare(b!.label))
+                    .map(([a, t]) => <option key={a} value={a}>{t!.label}</option>)}
+                </optgroup>
+              );
+            })}
+          </select>
+        </label>
+      </header>
+      {store && <DossierBar state={state} dispatch={dispatch} repo={store.repo} where={store.where}
+        mayReplace={mayReplace} saved={saved} onSaved={setSaved} analyst={session.analyst} />}
+      {store?.where === 'locked' && (
+        <form className="banner locked" onSubmit={(e) => { e.preventDefault(); savePassword(passwordDraft); setSession({ ...session, password: passwordDraft }); }}>
+          <span>Serveur verrouillé : ce serveur demande le mot de passe partagé de l'équipe.{session.password && ' Le mot de passe saisi a été refusé.'}</span>
+          <span>
+            <input aria-label="Mot de passe partagé" type="password" autoComplete="current-password" value={passwordDraft}
+              onChange={(e) => setPasswordDraft(e.target.value)} />{' '}
+            <button type="submit">Déverrouiller</button>
+          </span>
+        </form>
+      )}
+      {state.error && (
+        <div role="alert" className="banner">
+          {state.error} <button type="button" className="secondary" onClick={() => dispatch({ type: 'clearError' })}>×</button>
+        </div>
+      )}
+      <main className="grid">
+        <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} archetype={state.archetype} />
+        <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} archetype={state.archetype}
+          bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} context={state.context}
+          checks={entryChecks(metrics, getBridgeFamily(state.archetype))} provenance={state.provenance} analyst={session.analyst} fetchImpl={api} />
+        <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
+          inputCodes={Object.keys(state.inputs)} analyst={session.analyst} fetchImpl={api}
+          company={() => toDossier({ ...state, name: state.name.trim() || 'Dossier sans nom' }, new Date().toISOString())} />
+        {cardLever && (
+          <LeverCardPanel lever={cardLever} metrics={metrics} catalog={catalog}
+            interactions={TEMPLATES[state.archetype]!.interactions} onClose={() => setCardLeverId(null)}
+            observations={state.observations} onOpenAnalysis={setWorkshopId} />
+        )}
+        <EmpiricalPanel archetype={state.archetype} trajectory={trajectory} fetchImpl={api} />
+        <WorkshopPanel state={state} metrics={metrics} catalog={catalog} vocab={getActiveVocabulary(state.archetype)}
+          analysisId={workshopId} onSelect={setWorkshopId} dispatch={dispatch} />
+        <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
+          interactions={TEMPLATES[state.archetype]!.interactions}
+          bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}
+          multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} archetype={state.archetype}
+          demoInputs={reliability(state).demo.length} />
+        <PlanPanel dispatch={dispatch} plan={plan} engineError={engineError} onExportSlide={() => {
+          if (!plan) return;
+          const model = buildSlideModel(plan, {
+            company: state.name, archetypeLabel: TEMPLATES[state.archetype]!.label, date: new Date().toLocaleDateString('fr-FR'), demoInputs: reliability(state).demo.length,
+          });
+          const file = `${(state.name.trim() || 'plan').replace(/[\\/:*?"<>|]/g, '-')}-100-jours.pptx`;
+          renderPlanSlide(model, 'download', file)
+            .catch((e) => dispatch({ type: 'reportError', message: `Export du slide impossible : ${(e as Error).message}` }));
+        }} />
+      </main>
+    </div>
+  );
+}

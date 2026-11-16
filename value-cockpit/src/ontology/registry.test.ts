@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getActiveVocabulary, type SectorArchetype } from './registry';
+import { getActiveVocabulary, getBridgeFamily, SECTOR_ARCHETYPES, EXTENDED_ARCHETYPES, BASE_ARCHETYPES, type SectorArchetype } from './registry';
 
 describe('ontology registry', () => {
   const saas = getActiveVocabulary('saas');
@@ -57,5 +57,130 @@ describe('ontology registry – aero extension', () => {
     for (const code of aero.metricCodes) {
       expect(aero.metricMeta[code]?.unit, code).toBeTypeOf('string');
     }
+  });
+});
+
+describe('ontology registry – lever targets', () => {
+  const v = getActiveVocabulary('aero');
+  it('excludes deal-structure codes from lever targets', () => {
+    for (const code of ['EXIT_MULTIPLE', 'ENTRY_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY']) {
+      expect(v.isMetricCode(code)).toBe(true);
+      expect(v.isLeverTarget(code), code).toBe(false);
+    }
+  });
+  it('accepts operational inputs as lever targets', () => {
+    expect(v.isLeverTarget('COST_OVERRUN_RATE')).toBe(true);
+    expect(v.isLeverTarget('NOT_A_CODE')).toBe(false);
+  });
+});
+
+describe('ontology registry – archetypes', () => {
+  it('lists generic, then every company type at level 2 — the 26 Umbrex types but Telecommunications', () => {
+    expect(SECTOR_ARCHETYPES.slice(0, 4)).toEqual(['generic', 'saas', 'aero', 'airline']);
+    expect(SECTOR_ARCHETYPES).toHaveLength(27);
+    expect(SECTOR_ARCHETYPES).toContain('cpg');
+  });
+  it('insurers and banks are valued on book value, biotech on rNPV, the rest on EBITDA (docs/16)', () => {
+    for (const a of ['pc-insurance', 'auto-insurance', 'life-insurance', 'commercial-bank', 'retail-bank'] as const) {
+      expect(getBridgeFamily(a), a).toBe('book_value');
+    }
+    expect(getBridgeFamily('biotech')).toBe('rnpv');
+    expect(getBridgeFamily('health-payor')).toBe('ebitda');
+    expect(SECTOR_ARCHETYPES.filter((a) => getBridgeFamily(a) === 'ebitda')).toHaveLength(21);
+  });
+  it('no company type is left at level 1: every EBITDA type has its own extension', () => {
+    expect(BASE_ARCHETYPES).toEqual([]);
+    expect(getActiveVocabulary('wine-spirits').metricCodes).toContain('EXCISE_TAX_RATE');
+    expect(getActiveVocabulary('generic').metricCodes).not.toContain('EXCISE_TAX_RATE');
+  });
+});
+
+describe('ontology registry – airline extension', () => {
+  const airline = getActiveVocabulary('airline');
+
+  it('airline vocabulary = base ∪ airline extension', () => {
+    expect(airline.metricCodes).toContain('EBITDA_EXIT');
+    for (const code of ['ASK', 'LOAD_FACTOR', 'YIELD', 'ANCILLARY_PER_PAX', 'CASK_EX_FUEL',
+                        'FUEL_CASK', 'CAPACITY_GROWTH', 'AVG_TRIP_KM']) {
+      expect(airline.metricCodes, code).toContain(code);
+    }
+    expect(airline.leverCategories).toContain('PRICING');
+    for (const cat of ['NETWORK_OPTIMIZATION', 'REVENUE_MANAGEMENT', 'ANCILLARY', 'FLEET_PRODUCTIVITY',
+                       'FUEL_EFFICIENCY', 'CREW_PRODUCTIVITY', 'AIRPORT_GROUND_COST', 'FLEET_FINANCING', 'ALLIANCES']) {
+      expect(airline.leverCategories, cat).toContain(cat);
+    }
+  });
+
+  it('airline causes extend base with REGULATORY, FUEL_PRICE, LABOR', () => {
+    expect(airline.causeCategories).toContain('MARKET');
+    for (const c of ['REGULATORY', 'FUEL_PRICE', 'LABOR']) expect(airline.isCauseCategory(c), c).toBe(true);
+  });
+
+  it('cargo is out of scope v1 and aero terms do not leak', () => {
+    expect(airline.isMetricCode('CARGO_LOAD_FACTOR')).toBe(false);
+    expect(airline.isMetricCode('BOOK_TO_BILL')).toBe(false);
+    expect(getActiveVocabulary('aero').isMetricCode('LOAD_FACTOR')).toBe(false);
+  });
+
+  it('every airline metric code has meta with a unit', () => {
+    for (const code of airline.metricCodes) expect(airline.metricMeta[code]?.unit, code).toBeTypeOf('string');
+  });
+});
+
+describe('ontology registry – no duplicate codes', () => {
+  it.each(SECTOR_ARCHETYPES)('%s vocabulary lists every code once', (a) => {
+    const codes = getActiveVocabulary(a).metricCodes;
+    expect(new Set(codes).size).toBe(codes.length);
+  });
+});
+
+describe('ontology registry – REGULATORY is a base cause', () => {
+  it.each(SECTOR_ARCHETYPES)('%s has REGULATORY once', (a) => {
+    const causes = getActiveVocabulary(a).causeCategories;
+    expect(causes.filter((c) => c === 'REGULATORY')).toHaveLength(1);
+    expect(new Set(causes).size).toBe(causes.length);
+  });
+});
+
+describe('ontology registry – aero candidates validated (aero/_curation.md §C)', () => {
+  const aero = getActiveVocabulary('aero');
+  it('adds the 7 benchmarked diagnostics, RD_PORTFOLIO and CYBER', () => {
+    for (const c of ['DEFENSE_REVENUE_SHARE', 'CLASSIFIED_REVENUE_SHARE', 'RD_INTENSITY', 'OPERATIONAL_AVAILABILITY',
+                     'SPARE_PARTS_AVAILABILITY', 'SUSTAINMENT_COST', 'WORKFORCE_TURNOVER']) {
+      expect(aero.isMetricCode(c), c).toBe(true);
+    }
+    expect(aero.isLeverCategory('RD_PORTFOLIO')).toBe(true);
+    expect(aero.isCauseCategory('CYBER')).toBe(true);
+  });
+});
+
+describe('ontology registry – cpg extension (level 2)', () => {
+  const cpg = getActiveVocabulary('cpg');
+  it('cpg is an extended archetype, no longer level 1', () => {
+    expect(EXTENDED_ARCHETYPES).toContain('cpg');
+    expect(BASE_ARCHETYPES).not.toContain('cpg');
+  });
+  it('adds the validated drivers, diagnostics, levers and causes (cpg/_level2.md)', () => {
+    for (const c of ['VOLUME_GROWTH', 'PRICE_MIX_GROWTH', 'GROSS_MARGIN', 'TRADE_SPEND_RATE', 'AP_RATE', 'OVERHEAD_RATE',
+                     'MARKET_SHARE', 'OUT_OF_STOCK_RATE', 'PRIVATE_LABEL_SHARE', 'RETAILER_CONCENTRATION',
+                     'NEW_PRODUCT_SUCCESS_RATE', 'PROMO_ROI', 'EBITDA_MARGIN_EXIT']) {
+      expect(cpg.isMetricCode(c), c).toBe(true);
+    }
+    for (const c of ['TRADE_SPEND_OPTIMIZATION', 'MARKETING_EFFECTIVENESS', 'ROUTE_TO_MARKET', 'IN_STORE_EXECUTION', 'INNOVATION_NPD']) {
+      expect(cpg.isLeverCategory(c), c).toBe(true);
+    }
+    expect(cpg.isCauseCategory('RETAILER_POWER')).toBe(true);
+    expect(cpg.isCauseCategory('COMMODITY_PRICES')).toBe(true);
+  });
+  it('EBITDA_MARGIN_EXIT is a base code shared by aero and cpg', () => {
+    expect(getActiveVocabulary('retail').isMetricCode('EBITDA_MARGIN_EXIT')).toBe(true);
+  });
+});
+
+describe('ontology registry – one term, one concept', () => {
+  it('no code is both a metric and a lever/cause category, in any archetype', () => {
+    const metrics = new Set(SECTOR_ARCHETYPES.flatMap((a) => getActiveVocabulary(a).metricCodes));
+    const categories = SECTOR_ARCHETYPES.flatMap((a) => [...getActiveVocabulary(a).leverCategories, ...getActiveVocabulary(a).causeCategories]);
+    expect(categories.filter((c) => metrics.has(c))).toEqual([]);
   });
 });
