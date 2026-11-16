@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { toDossier } from '../../dossier/format';
 import { getCatalog } from '../../catalog';
 import { findFormula } from '../../workshop/observations';
+import { reliability } from './provenance';
 import { initialState, reducer, selectBaseline, selectScenario, type CockpitState } from './store';
 
 const proposal = {
@@ -250,6 +251,41 @@ describe('cockpit store', () => {
     });
   });
 
+  describe('provenance of every input', () => {
+    it('a new case holds illustrative values only: no input has a source yet', () => {
+      expect(airline().provenance).toEqual({});
+      expect(reliability(airline())).toMatchObject({ total: Object.keys(airline().inputs).length, sourced: 0 });
+    });
+
+    it('typing a value records who entered it, when, and an optional reference', () => {
+      const s = reducer(airline(), { type: 'setInput', code: 'LOAD_FACTOR', value: 0.8, by: 'Léa', at: '2026-11-16' });
+      expect(s.provenance.LOAD_FACTOR).toEqual({ source: 'manual', ref: '', by: 'Léa', at: '2026-11-16' });
+      const noted = reducer(s, { type: 'setProvenanceRef', code: 'LOAD_FACTOR', ref: 'Rapport annuel 2025, p. 12' });
+      expect(noted.provenance.LOAD_FACTOR.ref).toBe('Rapport annuel 2025, p. 12');
+      expect(reliability(noted).sourced).toBe(1);
+    });
+
+    it('confirming a demo value as real marks it without changing it', () => {
+      const s = reducer(airline(), { type: 'confirmInput', code: 'HOLD_YEARS', by: 'Léa', at: '2026-11-16' });
+      expect(s.inputs.HOLD_YEARS).toBe(airline().inputs.HOLD_YEARS);
+      expect(s.provenance.HOLD_YEARS.source).toBe('manual');
+    });
+
+    it('several inputs set from one source (file, public filing) carry that source', () => {
+      const s = reducer(airline(), { type: 'setInputs', values: { EBITDA_ENTRY: 140, CAPEX: 70 }, source: 'import', ref: 'comptes-2025.csv', by: 'Léa', at: '2026-11-16' });
+      expect(s.inputs).toMatchObject({ EBITDA_ENTRY: 140, CAPEX: 70 });
+      expect(s.provenance.CAPEX).toEqual({ source: 'import', ref: 'comptes-2025.csv', by: 'Léa', at: '2026-11-16' });
+      const bad = reducer(airline(), { type: 'setInputs', values: { MOIC: 3 }, source: 'import', ref: 'x', by: 'Léa', at: 'd' });
+      expect(bad.error).toMatch(/MOIC/);
+      expect(bad.inputs).toEqual(airline().inputs);
+    });
+
+    it('switching company type starts again from illustrative values', () => {
+      const s = reducer(airline(), { type: 'setInput', code: 'LOAD_FACTOR', value: 0.8, by: 'Léa', at: 'd' });
+      expect(reducer(s, { type: 'selectArchetype', archetype: 'cpg' }).provenance).toEqual({});
+    });
+  });
+
   describe('workshop observations', () => {
     const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
     const vars = findFormula(getCatalog('airline'), lf.id, 'Load Factor')!.variables;
@@ -274,6 +310,7 @@ describe('cockpit store', () => {
       s = reducer(s, { type: 'applyObservation', id: 'o1' });
       expect(s.inputs.LOAD_FACTOR).toBeCloseTo(0.78, 12);
       expect(s.observations[0].applied).toBe(true);
+      expect(s.provenance.LOAD_FACTOR).toMatchObject({ source: 'observation', ref: `${lf.id} — Load Factor` });
     });
 
     it('an observation of a metric that is not a model input cannot be applied', () => {

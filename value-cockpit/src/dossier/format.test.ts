@@ -147,5 +147,15 @@ describe('dossier file', () => {
     expect(parseDossier({ ...v3, version: 3 }).context).toEqual({ currency: 'EUR', scale: 'M', thesis: '' });
     expect(() => parseDossier({ ...toDossier(s, 't'), context: { currency: 'dollars', scale: 'M', thesis: '' } })).toThrow(/currency/);
   });
+
+  it('stores the provenance of the inputs; rejects a source on an unknown input or of an unknown kind', () => {
+    const s = reducer(workedCase(), { type: 'setInput', code: 'CAPEX', value: 70, by: 'Léa', at: '2026-11-16' });
+    expect(roundTrip(s).provenance).toEqual(s.provenance);
+    const file = toDossier(s, 't');
+    expect(() => parseDossier({ ...file, provenance: { MOIC: file.provenance.CAPEX } })).toThrow(/MOIC/);
+    expect(() => parseDossier({ ...file, provenance: { CAPEX: { ...file.provenance.CAPEX, source: 'guess' } } })).toThrow(/source/);
+    const { provenance: _p, ...v4 } = file;
+    expect(parseDossier({ ...v4, version: 4 }).provenance).toEqual({});
+  });
 });
 

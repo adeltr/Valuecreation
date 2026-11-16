@@ -9,7 +9,7 @@ import { makeLeverSchema } from '../../domain/schemas';
 import { ingestProposal } from '../../copilot/ingest';
 import { resolveMetrics } from '../../engine/resolver';
 import { runScenario } from '../../engine/scenario';
-import { checkObservation, parseDossier, DEFAULT_CONTEXT, type CompanyContext, type DossierCase, type PlanOverride } from '../../dossier/format';
+import { checkObservation, parseDossier, DEFAULT_CONTEXT, type CompanyContext, type DossierCase, type PlanOverride, type Provenance } from '../../dossier/format';
 import { getCatalog } from '../../catalog';
 import { toMetricValue, type Observation } from '../../workshop/observations';
 
@@ -37,7 +37,10 @@ export type Action =
   | { type: 'applyObservation'; id: string }
   | { type: 'removeObservation'; id: string }
   | { type: 'loadDossier'; raw: unknown }
-  | { type: 'setInput'; code: string; value: number }
+  | { type: 'setInput'; code: string; value: number; by?: string; at?: string }
+  | { type: 'confirmInput'; code: string; by: string; at: string }
+  | { type: 'setProvenanceRef'; code: string; ref: string }
+  | { type: 'setInputs'; values: Record<string, number>; source: Provenance['source']; ref: string; by: string; at: string }
   | { type: 'ingestProposal'; raw: unknown; today: string }
   | { type: 'addLever'; draft: LeverDraft; by?: string }
   | { type: 'updateLever'; id: string; patch: Partial<LeverDraft> }
@@ -61,6 +64,7 @@ export function initialState(archetype: SectorArchetype): CockpitState {
     archetype,
     context: { ...DEFAULT_CONTEXT },
     inputs: { ...template(archetype).demoInputs },
+    provenance: {},
     levers: [], rootCauses: [],
     scenario: { leverIds: [], applied: {}, assumptions: {} },
     plan: {},
@@ -115,6 +119,7 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
       return {
         ...state,
         inputs: { ...state.inputs, [o.metricCode]: toMetricValue(o, getCatalog(state.archetype), unit) },
+        provenance: { ...state.provenance, [o.metricCode]: { source: 'observation', ref: `${o.analysisId} — ${o.formula}`, by: '', at: o.date } },
         observations: state.observations.map((x) => (x.id === o.id ? { ...x, applied: true } : x)),
         error: null,
       };
@@ -134,7 +139,32 @@ export function reducer(state: CockpitState, action: Action): CockpitState {
       }
 
     case 'setInput':
-      return { ...state, inputs: { ...state.inputs, [action.code]: action.value } };
+      return {
+        ...state, inputs: { ...state.inputs, [action.code]: action.value },
+        // A typed value keeps the reference already noted for that input.
+        provenance: { ...state.provenance, [action.code]: { source: 'manual', ref: state.provenance[action.code]?.source === 'manual' ? state.provenance[action.code].ref : '', by: action.by ?? '', at: action.at ?? '' } },
+      };
+
+    case 'confirmInput':
+      if (!(action.code in state.inputs)) return state;
+      return { ...state, provenance: { ...state.provenance, [action.code]: { source: 'manual', ref: '', by: action.by, at: action.at } } };
+
+    case 'setProvenanceRef':
+      if (!state.provenance[action.code]) return state;
+      return { ...state, provenance: { ...state.provenance, [action.code]: { ...state.provenance[action.code], ref: action.ref } } };
+
+    case 'setInputs': {
+      const unknown = Object.keys(action.values).filter((c) => !(c in state.inputs));
+      const bad = Object.entries(action.values).filter(([, v]) => !Number.isFinite(v)).map(([c]) => c);
+      if (unknown.length || bad.length) {
+        return { ...state, error: `Import refusé — ${unknown.length ? `inputs inconnus du modèle : ${unknown.join(', ')}` : ''}${bad.length ? ` valeurs non numériques : ${bad.join(', ')}` : ''}` };
+      }
+      const mark = { source: action.source, ref: action.ref, by: action.by, at: action.at };
+      return {
+        ...state, error: null, inputs: { ...state.inputs, ...action.values },
+        provenance: { ...state.provenance, ...Object.fromEntries(Object.keys(action.values).map((c) => [c, mark])) },
+      };
+    }
 
     case 'ingestProposal': {
       try {

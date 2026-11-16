@@ -21,12 +21,26 @@ export const SCALES = ['k', 'M', 'Md'] as const;
 export interface CompanyContext { currency: string; scale: (typeof SCALES)[number]; thesis: string }
 export const DEFAULT_CONTEXT: CompanyContext = { currency: 'EUR', scale: 'M', thesis: '' };
 
+/**
+ * Where an input value comes from (docs/23). An input without provenance still holds the
+ * template's illustrative value: results that depend on it are indicative only.
+ */
+export const INPUT_SOURCES = ['manual', 'observation', 'import', 'filing'] as const;
+export interface Provenance {
+  source: (typeof INPUT_SOURCES)[number];
+  /** Document, page, file, analysis or filing URL the value was read from. */
+  ref: string;
+  by: string;
+  at: string;
+}
+
 /** A company case as the analyst works it: what a dossier stores, plus the next id to hand out. */
 export interface DossierCase {
   name: string;
   archetype: SectorArchetype;
   context: CompanyContext;
   inputs: Record<string, number>;
+  provenance: Record<string, Provenance>;
   levers: Lever[];
   rootCauses: RootCause[];
   scenario: {
@@ -53,7 +67,7 @@ export function checkObservation(o: Observation, archetype: SectorArchetype): vo
 }
 
 export const DOSSIER_FORMAT = 'value-cockpit-dossier';
-export const DOSSIER_VERSION = 4; // 2: + plan, 3: + observations, 4: + context (older files open with the defaults)
+export const DOSSIER_VERSION = 5; // 2: + plan, 3: + observations, 4: + context, 5: + provenance (older files open with the defaults)
 
 /**
  * A saved company case. It holds what the analyst entered or decided — inputs, levers and
@@ -68,6 +82,7 @@ export interface DossierFile {
   archetype: SectorArchetype;
   context: CompanyContext;
   inputs: Record<string, number>;
+  provenance: DossierCase['provenance'];
   levers: Lever[];
   rootCauses: RootCause[];
   scenario: DossierCase['scenario'];
@@ -82,14 +97,14 @@ export function toDossier(state: DossierCase, savedAt: string): DossierFile {
   return {
     format: DOSSIER_FORMAT, version: DOSSIER_VERSION, name, savedAt,
     archetype: state.archetype, context: state.context,
-    inputs: state.inputs, levers: state.levers, rootCauses: state.rootCauses,
+    inputs: state.inputs, provenance: state.provenance, levers: state.levers, rootCauses: state.rootCauses,
     scenario: state.scenario, plan: state.plan, observations: state.observations, nextId: state.nextId,
   };
 }
 
 const envelope = z.object({
   format: z.literal(DOSSIER_FORMAT),
-  version: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(DOSSIER_VERSION)]),
+  version: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(DOSSIER_VERSION)]),
   name: z.string().min(1),
   savedAt: z.string(),
   archetype: z.string(),
@@ -98,6 +113,9 @@ const envelope = z.object({
     scale: z.enum(SCALES), thesis: z.string(),
   }).strict().default(DEFAULT_CONTEXT),
   inputs: z.record(z.number().finite()),
+  provenance: z.record(z.object({
+    source: z.enum(INPUT_SOURCES), ref: z.string(), by: z.string(), at: z.string(),
+  }).strict()).default({}),
   levers: z.array(z.unknown()),
   rootCauses: z.array(z.unknown()),
   scenario: z.object({
@@ -143,6 +161,9 @@ export function parseDossier(raw: unknown): DossierCase {
       + (unknown.length ? ` — inconnus : ${unknown.join(', ')}` : ''));
   }
 
+  const strays = Object.keys(file.provenance).filter((c) => !expected.includes(c));
+  if (strays.length) throw new Error(`Provenance sur des inputs inconnus : ${strays.join(', ')}`);
+
   const vocab = getActiveVocabulary(archetype);
   const levers = parseWith(z.array(makeLeverSchema(vocab, modelTargets(archetype).calculated)), file.levers, 'Levier') as Lever[];
   const rootCauses = parseWith(z.array(makeRootCauseSchema(vocab)), file.rootCauses, 'Cause') as RootCause[];
@@ -180,7 +201,7 @@ export function parseDossier(raw: unknown): DossierCase {
   const nextId = Math.max(file.nextId, ...used.map((n) => n + 1));
 
   return {
-    name: file.name, archetype, context: file.context, inputs: file.inputs, levers, rootCauses,
+    name: file.name, archetype, context: file.context, inputs: file.inputs, provenance: file.provenance, levers, rootCauses,
     scenario: { leverIds, applied, assumptions }, plan: file.plan, observations: file.observations, nextId,
   };
 }
