@@ -18,10 +18,10 @@ body { margin: 0; background: var(--bg); }
 .dossier-bar .where { font-size: 12px; padding: 2px 8px; border-radius: 999px; }
 .dossier-bar .where.server { background: var(--ok-soft); color: var(--ok); }
 .dossier-bar .where.browser { background: var(--warn-soft); color: var(--warn); }
-.dossier-bar .file { position: relative; padding: 5px 12px; border: 1px solid var(--line); border-radius: 6px;
+.dossier-bar .file, .import .file { position: relative; padding: 5px 12px; border: 1px solid var(--line); border-radius: 6px;
   color: var(--ink); font-size: 14px; cursor: pointer; }
-.dossier-bar .file input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-.dossier-bar .file:focus-within { outline: 2px solid var(--accent); outline-offset: 1px; }
+.dossier-bar .file input, .import .file input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.dossier-bar .file:focus-within, .import .file:focus-within { outline: 2px solid var(--accent); outline-offset: 1px; }
 .banner { margin: 12px 24px 0; padding: 8px 12px; border-radius: 6px; background: var(--bad-soft); color: var(--bad);
   display: flex; justify-content: space-between; align-items: center; }
 .grid { display: grid; gap: 16px; padding: 16px 24px 32px;
@@ -151,3 +151,5 @@ button.link { background: none; color: var(--accent); padding: 0; border: 0; tex
 .kv td.source .ref { width: 130px; max-width: 130px; font-size: 11px; padding: 1px 4px; margin-left: 4px; }
 .src-ok { background: var(--ok-soft); color: var(--ok); }
 .src-demo { background: var(--warn-soft); color: var(--warn); }
+
+.import { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; align-items: center; }

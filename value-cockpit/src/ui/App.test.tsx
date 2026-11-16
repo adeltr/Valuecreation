@@ -345,6 +345,19 @@ describe('App', () => {
     expect(within(company).getByText(/2 inputs sur 21 ont une source/)).toBeTruthy();
   });
 
+  it('imports company data from a CSV: values applied with the file as their source, unusable lines reported', async () => {
+    render(<App />);
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    const csv = 'code;libellé;unité;valeur\nLOAD_FACTOR;Load Factor;percent;0,79\nEBITDA_ENTRY;x;currency;140\nMOIC;x;ratio;3';
+    fireEvent.change(within(company).getByLabelText(/Importer des données/), { target: { files: [new File([csv], 'comptes-2025.csv', { type: 'text/csv' })] } });
+    await waitFor(() => expect((within(company).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement).value).toBe('0.79'));
+    const row = within(company).getByLabelText(byCode('EBITDA_ENTRY')).closest('tr')!;
+    expect(within(row).getByText(/importé par Léa Martin/)).toBeTruthy();
+    expect((within(row).getByLabelText('EBITDA_ENTRY : référence de la source') as HTMLInputElement).value).toBe('comptes-2025.csv');
+    expect(screen.getByRole('alert').textContent).toMatch(/2 inputs importés.*ligne 4 : MOIC/);
+    expect(within(company).getByRole('button', { name: /Télécharger le modèle/ })).toBeTruthy();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });

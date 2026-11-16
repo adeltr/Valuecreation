@@ -6,6 +6,7 @@ import { formatValue } from '../model/format';
 import { MetricName } from './MetricName';
 import { SCALES, type CompanyContext, type Provenance } from '../../dossier/format';
 import type { EntryCheck } from '../model/entryChecks';
+import { inputsTemplateCsv, parseInputsCsv } from '../model/inputsCsv';
 import { Panel } from './Panel';
 
 interface Props {
@@ -36,6 +37,27 @@ export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInpu
   const money = `${context.scale} ${context.currency}`;
   const inputs = metrics.filter((m) => !m.isCalculated);
   const calculated = metrics.filter((m) => m.isCalculated);
+  const downloadTemplate = () => {
+    const url = URL.createObjectURL(new Blob([`\uFEFF${inputsTemplateCsv(metrics, archetype)}`], { type: 'text/csv;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = `modele-inputs-${archetype}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+  const importCsv = (file: File | undefined, input: HTMLInputElement) => {
+    input.value = '';
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const { values, errors } = parseInputsCsv(String(reader.result), inputs.map((m) => m.code));
+      const n = Object.keys(values).length;
+      if (n) dispatch({ type: 'setInputs', values, source: 'import', ref: file.name, by: analyst.trim(), at: today() });
+      if (errors.length || !n) {
+        dispatch({ type: 'reportError', message: `${n} input${n > 1 ? 's' : ''} importé${n > 1 ? 's' : ''} depuis ${file.name}. Lignes non utilisées — ${errors.join(' ; ') || 'aucune valeur trouvée'}` });
+      }
+    };
+    reader.readAsText(file);
+  };
   const groups: [string, Metric[]][] = [
     ['Drivers du secteur', inputs.filter((m) => !bridgeInputs.includes(m.code))],
     ['Deal et cash', inputs.filter((m) => bridgeInputs.includes(m.code))],
@@ -62,6 +84,13 @@ export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInpu
         {`${sourced} input${sourced > 1 ? 's' : ''} sur ${total} ${sourced > 1 ? 'ont' : 'a'} une source. `}
         {sourced < total && 'Les autres sont des valeurs de démo : remplacez-les ou confirmez-les.'}
       </p>
+      <div className="import">
+        <button type="button" className="secondary" onClick={downloadTemplate}>Télécharger le modèle (.csv)</button>
+        <label className="file">
+          Importer des données (.csv)
+          <input type="file" accept=".csv,text/csv" onChange={(e) => importCsv(e.target.files?.[0], e.target)} />
+        </label>
+      </div>
       {checks.filter((c) => !c.ok).map((c) => (
         <p key={c.entryCode} className="warn" role="status">
           {`Incohérence à l'entrée : ${c.entryCode} saisi ${formatValue(c.entered, 'currency')}, alors que les drivers donnent ${formatValue(c.model, 'currency')} à l'année 0 (${c.modelCode}). Vérifiez la donnée d'entrée ou les drivers.`}
