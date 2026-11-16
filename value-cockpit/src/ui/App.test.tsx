@@ -325,6 +325,26 @@ describe('App', () => {
     expect(within(copilot).getByText(/validé par Léa Martin/)).toBeTruthy();
   });
 
+  it('reliability: every input shows its source; results are flagged indicative while demo values remain', () => {
+    render(<App />);
+    const company = screen.getByRole('region', { name: 'Entreprise' });
+    const sim = screen.getByRole('region', { name: 'Simulation' });
+    expect(within(company).getByText(/0 input sur 21 a une source/)).toBeTruthy();
+    expect(within(sim).getByText(/Résultat indicatif : 21 inputs sont encore des valeurs de démo/)).toBeTruthy();
+
+    fireEvent.change(within(company).getByLabelText(byCode('LOAD_FACTOR')), { target: { value: '0.8' } });
+    expect(within(company).getByText(/1 input sur 21 a une source/)).toBeTruthy();
+    const row = within(company).getByLabelText(byCode('LOAD_FACTOR')).closest('tr')!;
+    expect(within(row).getByText(/saisi par Léa Martin/)).toBeTruthy();
+    fireEvent.change(within(row).getByLabelText('LOAD_FACTOR : référence de la source'), { target: { value: 'Rapport annuel p. 12' } });
+    expect((within(row).getByLabelText('LOAD_FACTOR : référence de la source') as HTMLInputElement).value).toBe('Rapport annuel p. 12');
+
+    const hold = within(company).getByLabelText(byCode('HOLD_YEARS')).closest('tr')!;
+    expect(within(hold).getByText('démo')).toBeTruthy();
+    fireEvent.click(within(hold).getByRole('button', { name: 'HOLD_YEARS : confirmer la valeur' }));
+    expect(within(company).getByText(/2 inputs sur 21 ont une source/)).toBeTruthy();
+  });
+
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });

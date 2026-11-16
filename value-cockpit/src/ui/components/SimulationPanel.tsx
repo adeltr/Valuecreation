@@ -13,9 +13,11 @@ interface Props {
   bridgeRows: string[];
   multipleLabel: string;
   archetype: string;
+  /** Inputs still holding the template's illustrative value. */
+  demoInputs: number;
 }
 
-export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows, multipleLabel, archetype }: Props) {
+export function SimulationPanel({ state, metrics, baseline, scenario, scenarioError, dispatch, interactions, bridgeRows, multipleLabel, archetype, demoInputs }: Props) {
   const unit = (code: string) => metrics.find((m) => m.code === code)?.unit ?? 'currency';
   const scen = new Map(scenario?.map((r) => [r.metricCode, r.value]));
   const quantified = (l: Lever) => l.impactMetricCode in state.inputs;
@@ -51,6 +53,11 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
       <input id="exit-multiple" type="number" step="0.5" value={exitMultiple}
         onChange={(e) => dispatch({ type: 'setAssumption', code: 'EXIT_MULTIPLE', value: Number(e.target.value) })} />
 
+      {demoInputs > 0 && (
+        <p className="warn" role="status">
+          {`Résultat indicatif : ${demoInputs} input${demoInputs > 1 ? 's sont' : ' est'} encore ${demoInputs > 1 ? 'des valeurs' : 'une valeur'} de démo (voir Entreprise).`}
+        </p>
+      )}
       <table className="bridge">
         <thead><tr><th>Bridge</th><th>Base</th><th>Scénario</th></tr></thead>
         <tbody>

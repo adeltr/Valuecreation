@@ -48,6 +48,8 @@ describe('100-day plan slide (consultant format)', () => {
     expect(m.risks).toEqual(['Flotte vieillissante (OPERATIONAL)']);
     expect(m.footnote).toMatch(/calculés par le moteur/);
     expect(m.footnote).toMatch(/validés par l'analyste/);
+    expect(m.footnote).not.toMatch(/démo/);
+    expect(buildSlideModel(plan(levers), { ...meta, demoInputs: 3 }).footnote).toMatch(/Indicatif : 3 inputs sont encore des valeurs de démo/);
   });
 
   it('caps the timeline at 7 value workstreams and says how many are left out', () => {

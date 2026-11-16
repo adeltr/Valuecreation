@@ -19,7 +19,7 @@ const MAX_LEVER_ROWS = 7;
 const signedRatio = (v: number) => `${v > 0 ? '+' : ''}${formatValue(v, 'ratio')}`;
 
 /** One consultant slide: action title, timeline, value at stake, governance and risks, source. */
-export function buildSlideModel(plan: HundredDayPlan, meta: { company: string; archetypeLabel: string; date: string }): SlideModel {
+export function buildSlideModel(plan: HundredDayPlan, meta: { company: string; archetypeLabel: string; date: string; demoInputs?: number }): SlideModel {
   const { totals } = plan;
   const n = plan.workstreams.length;
   const shown = plan.workstreams.slice(0, MAX_LEVER_ROWS);
@@ -51,7 +51,8 @@ export function buildSlideModel(plan: HundredDayPlan, meta: { company: string; a
     ],
     risks: plan.risks.slice(0, 4),
     footnote: 'Source : Value Creation Cockpit. Chiffres calculés par le moteur à partir des inputs de l\'entreprise et des leviers '
-      + 'validés par l\'analyste ; Δ par chantier calculés levier par levier, total avec les interactions du modèle.',
+      + 'validés par l\'analyste ; Δ par chantier calculés levier par levier, total avec les interactions du modèle.'
+      + (meta.demoInputs ? ` Indicatif : ${meta.demoInputs} input${meta.demoInputs > 1 ? 's sont' : ' est'} encore ${meta.demoInputs > 1 ? 'des valeurs' : 'une valeur'} de démo.` : ''),
   };
 }
 

@@ -4,7 +4,7 @@ import type { Unit } from '../../ontology/base';
 import type { Action } from '../state/store';
 import { formatValue } from '../model/format';
 import { MetricName } from './MetricName';
-import { SCALES, type CompanyContext } from '../../dossier/format';
+import { SCALES, type CompanyContext, type Provenance } from '../../dossier/format';
 import type { EntryCheck } from '../model/entryChecks';
 import { Panel } from './Panel';
 
@@ -15,13 +15,24 @@ interface Props {
   bridgeInputs: string[];
   context: CompanyContext;
   checks: EntryCheck[];
+  provenance: Record<string, Provenance>;
+  analyst: string;
 }
+
+const today = () => new Date().toISOString().slice(0, 10);
+const SOURCE_LABEL: Record<Provenance['source'], string> = {
+  manual: 'saisi', observation: 'mesuré en atelier', import: 'importé', filing: 'comptes publics',
+};
+
+const inputs0 = (metrics: Metric[]) => metrics.filter((m) => !m.isCalculated);
 
 const UNIT_HINT: Record<Unit, string> = {
   currency: 'montant', percent: 'fraction (0,05 = 5 %)', days: 'jours', years: 'ans', ratio: 'ratio', count: 'nombre',
 };
 
-export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInputs, context, checks }: Props) {
+export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInputs, context, checks, provenance, analyst }: Props) {
+  const sourced = inputs0(metrics).filter((m) => provenance[m.code]).length;
+  const total = inputs0(metrics).length;
   const money = `${context.scale} ${context.currency}`;
   const inputs = metrics.filter((m) => !m.isCalculated);
   const calculated = metrics.filter((m) => m.isCalculated);
@@ -47,6 +58,10 @@ export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInpu
             onChange={(e) => dispatch({ type: 'setContext', patch: { thesis: e.target.value } })} />
         </label>
       </div>
+      <p className={sourced === total ? 'muted' : 'warn'} role="status">
+        {`${sourced} input${sourced > 1 ? 's' : ''} sur ${total} ${sourced > 1 ? 'ont' : 'a'} une source. `}
+        {sourced < total && 'Les autres sont des valeurs de démo : remplacez-les ou confirmez-les.'}
+      </p>
       {checks.filter((c) => !c.ok).map((c) => (
         <p key={c.entryCode} className="warn" role="status">
           {`Incohérence à l'entrée : ${c.entryCode} saisi ${formatValue(c.entered, 'currency')}, alors que les drivers donnent ${formatValue(c.model, 'currency')} à l'année 0 (${c.modelCode}). Vérifiez la donnée d'entrée ou les drivers.`}
@@ -63,11 +78,26 @@ export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInpu
                   <td>
                     <input
                       id={`in-${m.code}`} type="number" step="any" value={m.currentValue ?? ''}
-                      onChange={(e) => dispatch({ type: 'setInput', code: m.code, value: Number(e.target.value) })}
+                      onChange={(e) => dispatch({ type: 'setInput', code: m.code, value: Number(e.target.value), by: analyst.trim(), at: today() })}
                     />
                   </td>
                   {/* Sector drivers in currency may be unit prices (yield, cost per seat-km): only deal and cash amounts carry the scale. */}
                   <td className="muted">{m.unit === 'currency' && bridgeInputs.includes(m.code) ? money : UNIT_HINT[m.unit]}</td>
+                  <td className="source">
+                    {provenance[m.code] ? (
+                      <>
+                        <span className="tag src-ok">{`${SOURCE_LABEL[provenance[m.code].source]}${provenance[m.code].by ? ` par ${provenance[m.code].by}` : ''}${provenance[m.code].at ? `, ${provenance[m.code].at}` : ''}`}</span>
+                        <input aria-label={`${m.code} : référence de la source`} className="ref" value={provenance[m.code].ref} placeholder="Document, page…"
+                          onChange={(e) => dispatch({ type: 'setProvenanceRef', code: m.code, ref: e.target.value })} />
+                      </>
+                    ) : (
+                      <>
+                        <span className="tag src-demo" title="Valeur illustrative du modèle : à remplacer ou à confirmer">démo</span>{' '}
+                        <button type="button" className="link" aria-label={`${m.code} : confirmer la valeur`}
+                          onClick={() => dispatch({ type: 'confirmInput', code: m.code, by: analyst.trim(), at: today() })}>confirmer</button>
+                      </>
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>

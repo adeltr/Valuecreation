@@ -146,3 +146,8 @@ button.link { background: none; color: var(--accent); padding: 0; border: 0; tex
 
 .banner.locked { background: var(--warn-soft); color: var(--warn); }
 .app-header label { white-space: nowrap; }
+
+.kv td.source { font-size: 11px; white-space: nowrap; padding-left: 6px; }
+.kv td.source .ref { width: 130px; max-width: 130px; font-size: 11px; padding: 1px 4px; margin-left: 4px; }
+.src-ok { background: var(--ok-soft); color: var(--ok); }
+.src-demo { background: var(--warn-soft); color: var(--warn); }

@@ -17,6 +17,7 @@ import { WorkshopPanel } from './components/WorkshopPanel';
 import { EmpiricalPanel } from './components/EmpiricalPanel';
 import { impliedTrajectory } from '../empirical/realism';
 import { entryChecks } from './model/entryChecks';
+import { reliability } from './state/provenance';
 import { toDossier } from '../dossier/format';
 import type { DossierRepository } from '../dossier/repository';
 import { connectRepository, type DossierLocation } from './state/httpRepository';
@@ -119,7 +120,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <DriverGraph metrics={metrics} baseline={baseline} catalog={catalog} archetype={state.archetype} />
         <CompanyView metrics={metrics} baseline={baseline} dispatch={dispatch} archetype={state.archetype}
           bridgeInputs={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].inputs} context={state.context}
-          checks={entryChecks(metrics, getBridgeFamily(state.archetype))} />
+          checks={entryChecks(metrics, getBridgeFamily(state.archetype))} provenance={state.provenance} analyst={session.analyst} />
         <CopilotPanel archetype={state.archetype} levers={state.levers} rootCauses={state.rootCauses} dispatch={dispatch} onOpenCard={setCardLeverId}
           inputCodes={Object.keys(state.inputs)} analyst={session.analyst} fetchImpl={api}
           company={() => toDossier({ ...state, name: state.name.trim() || 'Dossier sans nom' }, new Date().toISOString())} />
@@ -134,11 +135,12 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <SimulationPanel state={state} metrics={metrics} baseline={baseline} scenario={scenario} scenarioError={engineError} dispatch={dispatch}
           interactions={TEMPLATES[state.archetype]!.interactions}
           bridgeRows={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].summaryRows}
-          multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} archetype={state.archetype} />
+          multipleLabel={FAMILY_BRIDGE[getBridgeFamily(state.archetype)].multipleLabel} archetype={state.archetype}
+          demoInputs={reliability(state).demo.length} />
         <PlanPanel dispatch={dispatch} plan={plan} engineError={engineError} onExportSlide={() => {
           if (!plan) return;
           const model = buildSlideModel(plan, {
-            company: state.name, archetypeLabel: TEMPLATES[state.archetype]!.label, date: new Date().toLocaleDateString('fr-FR'),
+            company: state.name, archetypeLabel: TEMPLATES[state.archetype]!.label, date: new Date().toLocaleDateString('fr-FR'), demoInputs: reliability(state).demo.length,
           });
           const file = `${(state.name.trim() || 'plan').replace(/[\\/:*?"<>|]/g, '-')}-100-jours.pptx`;
           renderPlanSlide(model, 'download', file)

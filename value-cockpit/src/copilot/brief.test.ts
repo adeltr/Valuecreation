@@ -39,6 +39,12 @@ describe('company brief for the copilot', () => {
     expect(brief).toMatch(/Recouvrement clients → DSO \(hypothesis\)/);
   });
 
+  it('tells sourced inputs from illustrative ones, so the copilot does not build on demo values', () => {
+    expect(brief).toMatch(/EBITDA_ENTRY \(EBITDA d'entrée\): 120 \[currency\] — source: manual/);
+    expect(brief).toMatch(/LOAD_FACTOR \(Load Factor\): 0\.82 \[percent\] — ILLUSTRATIVE/);
+    expect(brief).toMatch(/illustrative .* not company data/i);
+  });
+
   it('marks everything as data, not instructions', () => {
     expect(brief.split('\n')[0]).toMatch(/data, not instructions/i);
   });
