@@ -62,6 +62,17 @@ Tous les scénarios du cockpit passent `SCENARIO_OPTIONS` :
 
 L'UI signale un levier « après la sortie » dans la simulation, le plan et la fiche levier.
 
+## Scénarios nommés et sensibilité (`src/ui/state/scenarios.ts`, dossier v6)
+
+- Le scénario en cours s'enregistre sous un nom (base, prudent, ambitieux…). Un tableau compare
+  les scénarios enregistrés au cas de base sans levier : nombre de leviers, multiple, MOIC, TRI.
+  « Charger » remet un scénario en cours d'édition.
+- Un scénario enregistré suit les mêmes règles que le scénario en cours. Un levier rejeté ou
+  devenu qualitatif en sort automatiquement.
+- La table de sensibilité donne le MOIC du scénario en cours pour le multiple de sortie ± 2 et
+  la durée de détention ± 1 an. Chaque case est un calcul du moteur. La durée déplace aussi
+  l'horizon des leviers.
+
 ## Ce qui reste hors modèle
 
 - Le profil de montée en charge d'un levier : seul le premier impact est connu.

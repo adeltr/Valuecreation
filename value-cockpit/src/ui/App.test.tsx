@@ -239,7 +239,7 @@ describe('App', () => {
     expect(within(company).getByText('Load Factor').getAttribute('title')).toMatch(/seating capacity/);
     expect(within(company).getByLabelText(byCode('LOAD_FACTOR'))).toBeTruthy();
     const sim = screen.getByRole('region', { name: 'Simulation' });
-    expect(within(sim).getByText('TRI')).toBeTruthy();
+    expect(within(sim).getAllByText('TRI').length).toBeGreaterThan(0);
   });
 
   it('the analyst writes a lever in a form, validates it, simulates it, then edits it — no JSON', () => {
@@ -356,6 +356,32 @@ describe('App', () => {
     expect((within(row).getByLabelText('EBITDA_ENTRY : référence de la source') as HTMLInputElement).value).toBe('comptes-2025.csv');
     expect(screen.getByRole('alert').textContent).toMatch(/2 inputs importés.*ligne 4 : MOIC/);
     expect(within(company).getByRole('button', { name: /Télécharger le modèle/ })).toBeTruthy();
+  });
+
+  it('scenarios: save the current one under a name, compare with the base case, reload it; sensitivity table', () => {
+    render(<App />);
+    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    const sim = screen.getByRole('region', { name: 'Simulation' });
+    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    const box = () => within(sim).getByRole('checkbox', { name: /Renouvellement de flotte/ }) as HTMLInputElement;
+    fireEvent.click(box());
+
+    fireEvent.change(within(sim).getByLabelText('Nom du scénario'), { target: { value: 'Plan' } });
+    fireEvent.click(within(sim).getByRole('button', { name: 'Enregistrer le scénario' }));
+    const table = within(sim).getByRole('table', { name: 'Comparaison des scénarios' });
+    expect(within(table).getByText('Base (sans levier)')).toBeTruthy();
+    expect(within(table).getByText('Plan')).toBeTruthy();
+
+    fireEvent.click(box());
+    expect(box().checked).toBe(false);
+    fireEvent.click(within(table).getByRole('button', { name: 'Charger le scénario Plan' }));
+    expect(box().checked).toBe(true);
+
+    const grid = within(sim).getByRole('table', { name: 'Sensibilité du MOIC' });
+    expect(within(grid).getAllByRole('row')).toHaveLength(6);          // header + 5 exit multiples
+    expect(within(grid).getByText('6,00x').closest('tr')!.className).toMatch(/current/);
   });
 
   it('the simulation lists the interaction rules of the template', () => {

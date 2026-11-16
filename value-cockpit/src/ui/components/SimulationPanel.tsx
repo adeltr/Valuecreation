@@ -1,8 +1,9 @@
-import type { Dispatch } from 'react';
+import { useState, type Dispatch } from 'react';
 import type { InteractionRule, Lever, Metric, ScenarioResult } from '../../domain/types';
 import type { Action, CockpitState } from '../state/store';
 import { formatValue } from '../model/format';
 import { MetricName } from './MetricName';
+import { compareScenarios, sensitivityGrid } from '../state/scenarios';
 import { Panel } from './Panel';
 
 interface Props {
@@ -23,6 +24,10 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
   const quantified = (l: Lever) => l.impactMetricCode in state.inputs;
   const selectable = (l: Lever) => l.status === 'validated' && quantified(l);
   const exitMultiple = state.scenario.assumptions.EXIT_MULTIPLE ?? state.inputs.EXIT_MULTIPLE;
+  const [scenarioName, setScenarioName] = useState('');
+  const comparison = compareScenarios(state);
+  const grid = sensitivityGrid(state);
+  const hold = state.scenario.assumptions.HOLD_YEARS ?? state.inputs.HOLD_YEARS;
   const holdDays = (state.scenario.assumptions.HOLD_YEARS ?? state.inputs.HOLD_YEARS) * 365;
 
   return (
@@ -71,6 +76,44 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
         </tbody>
       </table>
       {scenarioError && <p role="alert" className="error">{scenarioError}</p>}
+      <h3>Scénarios</h3>
+      <div className="scenario-save">
+        <input aria-label="Nom du scénario" value={scenarioName} placeholder="Base, prudent, ambitieux…" onChange={(e) => setScenarioName(e.target.value)} />
+        <button type="button" className="secondary" onClick={() => { dispatch({ type: 'saveScenario', name: scenarioName }); setScenarioName(''); }}>
+          Enregistrer le scénario
+        </button>
+      </div>
+      <table className="bridge" aria-label="Comparaison des scénarios">
+        <thead><tr><th>Scénario</th><th>Leviers</th><th>Multiple</th><th>MOIC</th><th>TRI</th><th /></tr></thead>
+        <tbody>
+          {comparison.map((r, i) => (
+            <tr key={r.name}>
+              <th>{r.name}</th>
+              <td className="num">{r.levers}</td>
+              <td className="num">{formatValue(r.exitMultiple, 'ratio')}</td>
+              <td className="num">{formatValue(r.MOIC, 'ratio')}</td>
+              <td className="num">{formatValue(r.IRR, 'percent')}</td>
+              <td>{i > 0 && (<>
+                <button type="button" className="link" aria-label={`Charger le scénario ${r.name}`} onClick={() => dispatch({ type: 'loadScenario', name: r.name })}>charger</button>{' '}
+                <button type="button" className="link" aria-label={`Supprimer le scénario ${r.name}`} onClick={() => dispatch({ type: 'deleteScenario', name: r.name })}>supprimer</button>
+              </>)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h3>Sensibilité du MOIC (scénario en cours)</h3>
+      <table className="bridge" aria-label="Sensibilité du MOIC">
+        <thead><tr><th>Multiple de sortie</th>{grid.years.map((y) => <th key={y} className={y === hold ? 'current' : ''}>{formatValue(y, 'years')}</th>)}</tr></thead>
+        <tbody>
+          {grid.multiples.map((m, i) => (
+            <tr key={m} className={m === exitMultiple ? 'current' : ''}>
+              <th>{formatValue(m, 'ratio')}</th>
+              {grid.moic[i].map((v, j) => <td key={grid.years[j]} className={`num ${grid.years[j] === hold ? 'current' : ''}`}>{v === null ? '—' : formatValue(v, 'ratio')}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
       {interactions.length > 0 && (
         <>
           <h3>Interactions appliquées par le moteur</h3>

@@ -155,3 +155,7 @@ button.link { background: none; color: var(--accent); padding: 0; border: 0; tex
 .import { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; align-items: center; }
 
 .filings { margin: 6px 0 10px; }
+
+.scenario-save { display: flex; gap: 8px; margin-bottom: 6px; }
+.scenario-save input { flex: 1; min-width: 0; }
+table.bridge tr.current > *, table.bridge .current { background: var(--accent-soft); }
