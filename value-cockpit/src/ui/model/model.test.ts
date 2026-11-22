@@ -44,6 +44,13 @@ describe('buildDriverGraph', () => {
     expect(x('LOAD_FACTOR')).toBeLessThan(x('REVENUE_EXIT'));
     expect(x('REVENUE_EXIT')).toBeLessThan(x('MOIC'));
   });
+
+  it('splits the bridge: deal and cash inputs in a column before the computed bridge', () => {
+    const x = (c: string) => g.nodes.find((n) => n.id === c)!.position.x;
+    expect(x('REVENUE_EXIT')).toBeLessThan(x('EXIT_MULTIPLE'));
+    expect(x('EXIT_MULTIPLE')).toBeLessThan(x('MOIC'));
+    expect(x('EBITDA_EXIT')).toBe(x('MOIC'));
+  });
 });
 
 describe('analysesForMetric', () => {

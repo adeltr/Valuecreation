@@ -41,7 +41,7 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose,
         <button type="button" className="secondary" onClick={onClose}>Fermer</button>
       </div>
 
-      <h3>Comment il agit</h3>
+      <h4>Comment il agit</h4>
       {c.path.length > 0
         ? <p className="path">{c.path.map((s) => s.code).join(' → ')}</p>
         : <p className="muted">{c.target.code} n'entre dans aucune formule du modèle : levier qualitatif ou diagnostic.</p>}
@@ -56,7 +56,7 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose,
         </p>
       ))}
 
-      <h3>Ce que ça vaut</h3>
+      <h4>Ce que ça vaut</h4>
       {c.sensitivity && step && (
         <p>
           {`Sensibilité du modèle : ${step.kind === 'absolute' ? '+1 pt' : '+1 %'} de ${c.target.code} `}
@@ -74,7 +74,7 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose,
         if (measured.length === 0) return null;
         return (
           <>
-            <h3>Mesures de l'atelier sur {c.target.code}</h3>
+            <h4>Mesures de l'atelier sur {c.target.code}</h4>
             <ul className="list">
               {measured.map((o) => {
                 let v: string;
@@ -86,7 +86,7 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose,
         );
       })()}
 
-      <h3>Analyses pour le diagnostiquer</h3>
+      <h4>Analyses pour le diagnostiquer</h4>
       {c.analyses.length === 0 && <p className="muted">Aucune analyse du catalogue n'est liée à ce levier.</p>}
       <ul className="list">
         {c.analyses.slice(0, 5).map((a) => (
@@ -107,7 +107,7 @@ export function LeverCardPanel({ lever, metrics, catalog, interactions, onClose,
       )}
       {c.improve.length > 0 && (
         <>
-          <h3>Pistes d'action (analyses Umbrex)</h3>
+          <h4>Pistes d'action (analyses Umbrex)</h4>
           <ul className="list">{c.improve.map((d) => <li key={d}>{d}</li>)}</ul>
         </>
       )}

@@ -5,6 +5,7 @@ import { RevisionConflict, type DossierRepository, type DossierSummary } from '.
 import type { DossierLocation } from '../state/httpRepository';
 import { fingerprint } from '../state/unsaved';
 import { TEMPLATES } from '../../templates';
+import { Icon } from './Icon';
 import type { SectorArchetype } from '../../ontology/registry';
 
 /** The stored dossier the current case comes from: what a save starts from. */
@@ -22,9 +23,9 @@ interface Props {
 }
 
 const WHERE_LABEL: Record<DossierLocation, string> = {
-  server: 'Stockage : serveur partagé',
-  browser: 'Stockage : ce navigateur uniquement',
-  locked: 'Stockage : serveur verrouillé',
+  server: 'Stocké sur le serveur partagé',
+  browser: 'Stocké dans ce navigateur uniquement',
+  locked: 'Serveur verrouillé',
 };
 
 const typeLabel = (a: string) => TEMPLATES[a as SectorArchetype]?.label ?? a;
@@ -143,30 +144,36 @@ export function DossierBar({ state, dispatch, repo, where, mayReplace, saved, on
 
   return (
     <section className="dossier-bar" aria-label="Dossier">
-      <label>
-        Nom du dossier{' '}
-        <input value={state.name} placeholder="ex. Air X — due diligence"
-          onChange={(e) => dispatch({ type: 'setName', name: e.target.value })} />
-      </label>
-      <button type="button" onClick={save} disabled={busy}>Enregistrer</button>
-      <label>
-        Dossiers enregistrés{' '}
-        <select value={selected} onChange={(e) => setSelected(e.target.value)} disabled={list.length === 0}>
-          <option value="">{list.length ? 'Choisir…' : 'aucun'}</option>
-          {list.map((d) => <option key={d.name} value={d.name}>{`${d.name} · ${typeLabel(d.archetype)} · ${when(d.savedAt)}${d.savedBy ? ` · ${d.savedBy}` : ''}`}</option>)}
-        </select>
-      </label>
-      <button type="button" className="secondary" onClick={open} disabled={!selected || busy}>Ouvrir</button>
-      <button type="button" className="secondary" onClick={remove} disabled={!selected || busy}>Supprimer</button>
-      <button type="button" className="secondary" onClick={() => void refresh()} aria-label="Rafraîchir la liste" title="Rafraîchir la liste">↻</button>
-      <span className={`where ${where}`}>{WHERE_LABEL[where]}</span>
-      <span className="spacer" />
-      <button type="button" className="secondary" onClick={exportFile}>Exporter</button>
-      <label className="file">
-        Importer (.json)
-        <input type="file" accept="application/json,.json" onChange={importFile} />
-      </label>
-      {status && <span className="muted" role="status">{status}</span>}
+      <div className="dossier-current">
+        <label className="dossier-name">
+          <span className="sr-only">Nom du dossier</span>
+          <input value={state.name} placeholder="Nom du dossier, ex. Air X — due diligence"
+            onChange={(e) => dispatch({ type: 'setName', name: e.target.value })} />
+        </label>
+        <button type="button" onClick={save} disabled={busy}>Enregistrer</button>
+        <span className={`where where-${where}`}>{WHERE_LABEL[where]}</span>
+        {status && <span className="dossier-status" role="status">{status}</span>}
+      </div>
+      <div className="dossier-library">
+        <label>
+          Dossiers enregistrés
+          <select value={selected} onChange={(e) => setSelected(e.target.value)} disabled={list.length === 0}>
+            <option value="">{list.length ? 'Choisir…' : 'aucun'}</option>
+            {list.map((d) => <option key={d.name} value={d.name}>{`${d.name} · ${typeLabel(d.archetype)} · ${when(d.savedAt)}${d.savedBy ? ` · ${d.savedBy}` : ''}`}</option>)}
+          </select>
+        </label>
+        <button type="button" className="secondary" onClick={open} disabled={!selected || busy}>Ouvrir</button>
+        <button type="button" className="secondary" onClick={remove} disabled={!selected || busy}>Supprimer</button>
+        <button type="button" className="icon-button" onClick={() => void refresh()} aria-label="Rafraîchir la liste" title="Rafraîchir la liste">
+          <Icon name="refresh" />
+        </button>
+        <span className="toolbar-sep" aria-hidden="true" />
+        <button type="button" className="secondary" onClick={exportFile}><Icon name="download" /> Exporter</button>
+        <label className="file">
+          <Icon name="upload" /> Importer (.json)
+          <input type="file" accept="application/json,.json" onChange={importFile} />
+        </label>
+      </div>
     </section>
   );
 }

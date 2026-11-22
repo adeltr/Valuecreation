@@ -93,7 +93,7 @@ export function WorkshopPanel({ state, metrics, catalog, vocab, analysisId, onSe
         </div>
       )}
 
-      <h3>Observations du dossier</h3>
+      <h4>Observations du dossier</h4>
       {state.observations.length === 0 && <p className="muted">Aucune mesure enregistrée.</p>}
       <ul className="list" aria-label="Observations">
         {state.observations.map((o) => {

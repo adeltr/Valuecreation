@@ -4,6 +4,7 @@ import { PLAN_STATUSES, type PlanStatus } from '../../dossier/format';
 import type { HundredDayPlan, Milestone, Phase, Quadrant } from '../model/plan';
 import { formatValue } from '../model/format';
 import { Panel } from './Panel';
+import { Icon } from './Icon';
 
 const STATUS_LABEL: Record<PlanStatus, string> = { todo: 'À lancer', in_progress: 'En cours', done: 'Fait', blocked: 'Bloqué' };
 const PHASE_LABEL: Record<Phase, string> = { diagnose: 'Diagnostic', design: 'Conception', execute: 'Exécution' };
@@ -44,24 +45,27 @@ export function PlanPanel({ plan, engineError, dispatch, onExportSlide }: {
 }) {
   if (!plan) {
     return (
-      <Panel title="Plan 100 jours" className="plan">
+      <Panel title="Plan 100 jours" className="plan" bare>
         <p role="alert" className="error">{`Plan indisponible : le moteur refuse les inputs actuels (${engineError ?? 'erreur'}).`}</p>
       </Panel>
     );
   }
   const { totals } = plan;
   return (
-    <Panel title="Plan 100 jours" className="plan">
-      <p>
-        {`${plan.workstreams.length} chantier(s) de valeur · MOIC ${formatValue(totals.moicBase, 'ratio')} → `}
-        <strong>{formatValue(totals.moicAll, 'ratio')}</strong>
-        {` avec tous les leviers validés, dont ${formatValue(totals.moicBy100, 'ratio')} captés d'ici J100 (moteur).`}
-      </p>
-      <button type="button" className="secondary" onClick={onExportSlide} disabled={plan.workstreams.length === 0}>
-        Exporter le slide de restitution (.pptx)
-      </button>
-      {plan.workstreams.length === 0 && <p className="muted">Validez des leviers dans le copilote : chacun devient un chantier.</p>}
+    <Panel title="Plan 100 jours" className="plan" bare>
+      <div className="sheet plan-toolbar">
+        <p className="plan-summary">
+          {`${plan.workstreams.length} chantier(s) de valeur · MOIC ${formatValue(totals.moicBase, 'ratio')} → `}
+          <strong>{formatValue(totals.moicAll, 'ratio')}</strong>
+          {` avec tous les leviers validés, dont ${formatValue(totals.moicBy100, 'ratio')} captés d'ici J100 (moteur).`}
+        </p>
+        <button type="button" className="secondary" onClick={onExportSlide} disabled={plan.workstreams.length === 0}>
+          <Icon name="download" /> Exporter le slide de restitution (.pptx)
+        </button>
+      </div>
+      {plan.workstreams.length === 0 && <p className="empty">Aucun chantier de valeur : validez des leviers à l'étape Leviers, chacun devient un chantier phasé ici.</p>}
 
+      <div className="sheet">
       <div className="gantt" role="table" aria-label="Calendrier">
         <div className="gantt-row gantt-head">
           <div className="gantt-label" />
@@ -91,10 +95,11 @@ export function PlanPanel({ plan, engineError, dispatch, onExportSlide }: {
           <span><span className="swatch milestone-swatch" />Jalon</span>
         </div>
       </div>
+      </div>
 
       {plan.workstreams.length > 0 && (
-        <>
-          <h3>Valeur, KPI et jalons</h3>
+        <div className="sheet">
+          <h4>Valeur, KPI et jalons <span className="mark mark-engine">moteur</span></h4>
           <table className="plan-table">
             <thead><tr><th>Chantier</th><th>KPI : actuel → cible</th><th className="num">{`Δ ${totals.anchorCode}`}</th><th className="num">Δ MOIC</th><th>Priorité</th><th>Jalons</th></tr></thead>
             <tbody>
@@ -112,13 +117,13 @@ export function PlanPanel({ plan, engineError, dispatch, onExportSlide }: {
             </tbody>
           </table>
           <p className="footnote">Δ calculés par le moteur, levier par levier ; l'ensemble tient compte des interactions déclarées par le modèle.</p>
-        </>
+        </div>
       )}
       {plan.risks.length > 0 && (
-        <>
-          <h3>Risques à suivre</h3>
+        <div className="sheet">
+          <h4>Risques à suivre</h4>
           <ul className="list">{plan.risks.map((r) => <li key={r}>{r}</li>)}</ul>
-        </>
+        </div>
       )}
     </Panel>
   );

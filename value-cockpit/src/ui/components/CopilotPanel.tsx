@@ -55,21 +55,25 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
 
   return (
     <Panel title="Copilote" className="copilot">
-      <p className="muted">Le copilote propose des causes et des leviers ; il ne produit jamais de chiffre. Tout arrive en hypothèse.</p>
-      <label htmlFor="copilot-msg">Question au copilote</label>
-      <textarea id="copilot-msg" rows={2} value={message} onChange={(e) => setMessage(e.target.value)}
-        placeholder="Pourquoi la marge de sortie est-elle sous le benchmark ?" />
-      <button type="button" disabled={!message || pending} onClick={ask}>{pending ? 'En cours…' : 'Demander au copilote'}</button>
-      <details>
-        <summary>Mode hors ligne</summary>
-        <label htmlFor="copilot-raw">Réponse JSON du copilote</label>
-        <textarea id="copilot-raw" rows={4} value={raw} onChange={(e) => setRaw(e.target.value)} />
-        <button type="button" disabled={!raw} onClick={ingestRaw}>Ingérer</button>
-      </details>
+      <div className="composer">
+        <label htmlFor="copilot-msg">Question au copilote</label>
+        <textarea id="copilot-msg" rows={2} value={message} onChange={(e) => setMessage(e.target.value)}
+          placeholder="Pourquoi la marge de sortie est-elle sous le benchmark ?" />
+        <div className="composer-foot">
+          <p className="muted">Le copilote propose des causes et des leviers ; il ne produit jamais de chiffre. Tout arrive en hypothèse.</p>
+          <button type="button" disabled={!message || pending} onClick={ask}>{pending ? 'En cours…' : 'Demander au copilote'}</button>
+        </div>
+        <details>
+          <summary>Mode hors ligne : coller une réponse JSON</summary>
+          <label htmlFor="copilot-raw">Réponse JSON du copilote</label>
+          <textarea id="copilot-raw" rows={4} value={raw} onChange={(e) => setRaw(e.target.value)} />
+          <button type="button" className="secondary" disabled={!raw} onClick={ingestRaw}>Ingérer</button>
+        </details>
+      </div>
 
       {rootCauses.length > 0 && (
         <>
-          <h3>Causes racines</h3>
+          <h4>Causes racines</h4>
           <ul className="list">
             {rootCauses.map((c) => (
               <li key={c.id}><span className="tag">{c.category}</span> {c.description}{c.evidence && <span className="muted"> — {c.evidence}</span>}</li>
@@ -77,32 +81,41 @@ export function CopilotPanel({ archetype, levers, rootCauses, dispatch, onOpenCa
           </ul>
         </>
       )}
-      <h3>Leviers</h3>
-      {editing === null && <button type="button" className="secondary" onClick={() => setEditing('new')}>Ajouter un levier</button>}
+      <div className="section-head">
+        <h4>Leviers</h4>
+        {editing === null && <button type="button" className="secondary" onClick={() => setEditing('new')}>Ajouter un levier</button>}
+      </div>
       {editing === 'new' && (
         <LeverForm archetype={archetype} onCancel={() => setEditing(null)} onSubmit={(draft) => dispatch({ type: 'addLever', draft, by: analyst })} />
       )}
-      {levers.length === 0 && <p className="muted">Aucun levier pour l'instant.</p>}
-      <ul className="list">
+      {levers.length === 0 && editing !== 'new' && (
+        <p className="empty">Aucun levier pour l'instant. Posez une question au copilote, ou ajoutez un levier à la main à partir de votre diagnostic.</p>
+      )}
+      <ul className="list levers">
         {levers.map((l) => (
           <li key={l.id} className={`lever lever-${l.status}`}>
-            <div>
-              <span className={`badge badge-${l.status}`}>{STATUS_LABEL[l.status]}{l.decision && ` par ${l.decision.by}, ${l.decision.at}`}</span> <strong>{l.label}</strong>
-              <span className="tag">{l.category}</span> → {l.impactMetricCode} {l.expectedDelta > 0 ? '+' : ''}{l.expectedDelta} ({l.deltaKind})
-              {!inputCodes.includes(l.impactMetricCode) && <span className="tag" title="Cette métrique n'est pas un input du modèle : le levier n'est pas simulé"> qualitatif</span>}
+            <div className="lever-head">
+              <strong className="lever-title">{l.label}</strong>
+              <span className={`badge badge-${l.status}`}>{STATUS_LABEL[l.status]}{l.decision && ` par ${l.decision.by}, ${l.decision.at}`}</span>
             </div>
-            <div className="muted">Confiance {l.confidence} — base : {l.confidenceBasis}</div>
-            <button type="button" className="link" onClick={() => onOpenCard(l.id)} aria-label={`Fiche du levier ${l.label}`}>Fiche</button>{' '}
-            <button type="button" className="link" onClick={() => setEditing(l.id)} aria-label={`Modifier le levier ${l.label}`}>Modifier</button>
+            <p className="lever-effect">
+              <span className="tag">{l.category}</span> → <code>{l.impactMetricCode}</code> {l.expectedDelta > 0 ? '+' : ''}{l.expectedDelta} ({l.deltaKind})
+              {!inputCodes.includes(l.impactMetricCode) && <span className="tag tag-quiet" title="Cette métrique n'est pas un input du modèle : le levier n'est pas simulé"> qualitatif</span>}
+            </p>
+            <p className="muted">Confiance {l.confidence} — base : {l.confidenceBasis}</p>
+            <div className="lever-actions">
+              {l.status === 'hypothesis' && (
+                <>
+                  <button type="button" onClick={() => dispatch({ type: 'validateLever', id: l.id, by: analyst, at: today() })}>Valider</button>
+                  <button type="button" className="secondary" onClick={() => dispatch({ type: 'rejectLever', id: l.id, by: analyst, at: today() })}>Rejeter</button>
+                </>
+              )}
+              <button type="button" className="link" onClick={() => onOpenCard(l.id)} aria-label={`Fiche du levier ${l.label}`}>Fiche</button>
+              <button type="button" className="link" onClick={() => setEditing(l.id)} aria-label={`Modifier le levier ${l.label}`}>Modifier</button>
+            </div>
             {editing === l.id && (
               <LeverForm archetype={archetype} lever={l} onCancel={() => setEditing(null)}
                 onSubmit={(patch) => dispatch({ type: 'updateLever', id: l.id, patch })} />
-            )}
-            {l.status === 'hypothesis' && (
-              <div className="actions">
-                <button type="button" onClick={() => dispatch({ type: 'validateLever', id: l.id, by: analyst, at: today() })}>Valider</button>
-                <button type="button" className="secondary" onClick={() => dispatch({ type: 'rejectLever', id: l.id, by: analyst, at: today() })}>Rejeter</button>
-              </div>
             )}
           </li>
         ))}

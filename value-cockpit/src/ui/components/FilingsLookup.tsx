@@ -42,14 +42,17 @@ export function FilingsLookup({ inputUnits, context, analyst, fetchImpl, dispatc
 
   return (
     <div className="filings">
-      <label>Ticker (société cotée aux États-Unis){' '}
-        <input aria-label="Ticker (société cotée aux États-Unis)" value={ticker} size={8} onChange={(e) => setTicker(e.target.value)} />
-      </label>{' '}
-      <button type="button" className="secondary" disabled={!ticker.trim() || pending} onClick={search}>
-        {pending ? 'Recherche…' : 'Chercher les comptes publics'}
-      </button>
+      <form className="filings-search" onSubmit={(e) => { e.preventDefault(); if (ticker.trim() && !pending) void search(); }}>
+        <span className="source-kind">Comptes publics</span>
+        <label>Ticker (société cotée aux États-Unis)
+          <input aria-label="Ticker (société cotée aux États-Unis)" value={ticker} size={8} placeholder="ex. DAL" onChange={(e) => setTicker(e.target.value)} />
+        </label>
+        <button type="submit" className="secondary" disabled={!ticker.trim() || pending}>
+          {pending ? 'Recherche…' : 'Chercher les comptes publics'}
+        </button>
+      </form>
       {filing && (
-        <fieldset className="calc" aria-label={`${filing.name} (${filing.ticker})`}>
+        <fieldset className="calc filing-preview" aria-label={`${filing.name} (${filing.ticker})`}>
           <legend>{`${filing.name} (${filing.ticker})`}</legend>
           <p className="muted">{`Dépôt annuel à la SEC, exercice ${filing.fiscalYear}, montants convertis en ${context.scale} ${filing.currency}.`}</p>
           {filing.currency !== context.currency && (

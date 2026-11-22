@@ -224,7 +224,7 @@ function reduce(state: CockpitState, action: Action): CockpitState {
     case 'validateLever':
     case 'rejectLever': {
       const by = action.by.trim();
-      if (!by) return { ...state, error: 'Indiquez votre nom d\'analyste (en haut de l\'écran) : une décision sur un levier est toujours signée.' };
+      if (!by) return { ...state, error: 'Indiquez votre nom d\'analyste (champ Analyste, colonne de gauche) : une décision sur un levier est toujours signée.' };
       const status = action.type === 'validateLever' ? 'validated' as const : 'rejected' as const;
       const levers = state.levers.map((l) => (l.id === action.id ? { ...l, status, decision: { by, at: action.at } } : l));
       return {

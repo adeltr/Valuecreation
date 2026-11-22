@@ -32,111 +32,156 @@ const proposal = JSON.stringify({
 /** A metric field is labelled « readable name CODE »: match on the code. */
 const byCode = (code: string) => new RegExp(`(^|\\W)${code}$`);
 
-const moic = () => within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent;
+/** The workspace shows one step at a time: open the step that holds the region, then return it. */
+const STEP_OF: Record<string, string> = {
+  Entreprise: 'Données', 'Arbre de valeur': 'Diagnostic', "Atelier d'analyse": 'Diagnostic',
+  Copilote: 'Leviers', 'Fiche levier': 'Leviers', Simulation: 'Valeur', 'Repères empiriques': 'Valeur',
+  'Plan 100 jours': 'Plan 100 jours',
+};
+const steps = () => within(screen.getByRole('navigation', { name: 'Étapes' }));
+const goTo = (step: string) => fireEvent.click(steps().getByRole('button', { name: new RegExp(`^${step}`) }));
+const region = (name: string) => {
+  if (STEP_OF[name]) goTo(STEP_OF[name]);
+  return screen.getByRole('region', { name });
+};
+
+const moic = () => within(region('Simulation')).getByTestId('moic-scenario').textContent;
 
 describe('App', () => {
-  it('renders the title and the 3+1 panels', () => {
+  it('renders the title and the five steps of the work, one at a time', () => {
     render(<App />);
     expect(screen.getByRole('heading', { level: 1 }).textContent).toMatch(/Value Creation Cockpit/);
+    const buttons = steps().getAllByRole('button');
+    expect(buttons.map((b) => b.textContent)).toEqual([
+      expect.stringMatching(/^Données/), expect.stringMatching(/^Diagnostic/), expect.stringMatching(/^Leviers/),
+      expect.stringMatching(/^Valeur/), expect.stringMatching(/^Plan 100 jours/),
+    ]);
+    // The first step is open; the panels of the others are out of the way.
+    expect(buttons[0].getAttribute('aria-current')).toBe('step');
+    expect(screen.getByRole('region', { name: 'Entreprise' })).toBeTruthy();
+    expect(screen.queryByRole('region', { name: 'Simulation' })).toBeNull();
     for (const name of ['Arbre de valeur', 'Entreprise', 'Copilote', 'Simulation', 'Plan 100 jours']) {
-      expect(screen.getByRole('region', { name })).toBeTruthy();
+      expect(region(name)).toBeTruthy();
     }
+    // Each step ends on the way to the next one.
+    goTo('Données');
+    fireEvent.click(screen.getByRole('button', { name: 'Étape suivante : Diagnostic' }));
+    expect(steps().getByRole('button', { name: /^Diagnostic/ }).getAttribute('aria-current')).toBe('step');
+    expect(screen.getByRole('region', { name: 'Arbre de valeur' })).toBeTruthy();
+  });
+
+  it('the step rail shows where the case stands, from the engine and the analyst decisions', () => {
+    render(<App />);
+    const step = (name: string) => steps().getByRole('button', { name: new RegExp(`^${name}`) }).textContent;
+    expect(step('Données')).toMatch(/0\/21 valeurs sourcées/);
+    expect(step('Leviers')).toMatch(/aucun levier/);
+    expect(step('Valeur')).toMatch(/MOIC 1,79x/);
+    expect(step('Plan 100 jours')).toMatch(/aucun chantier/);
+
+    fireEvent.change(within(region('Copilote')).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(region('Copilote')).getByRole('button', { name: 'Ingérer' }));
+    expect(step('Leviers')).toMatch(/1 à décider/);
+    fireEvent.click(within(region('Copilote')).getByRole('button', { name: /Valider/ }));
+    expect(step('Leviers')).toMatch(/1 validé/);
+    expect(step('Plan 100 jours')).toMatch(/1 chantier/);
+    fireEvent.click(within(region('Entreprise')).getByRole('button', { name: 'ASK : confirmer la valeur' }));
+    expect(step('Données')).toMatch(/1\/21 valeurs sourcées/);
   });
 
   it('a copilot hypothesis cannot be simulated until the analyst validates it', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
-    fireEvent.click(within(copilot).getByRole('button', { name: /Ingérer/ }));
-    expect(within(copilot).getByText('hypothèse')).toBeTruthy();
-    expect(within(copilot).getByText(/cf\. airline-10/)).toBeTruthy();
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Ingérer/ }));
+    expect(within(copilot()).getByText('hypothèse')).toBeTruthy();
+    expect(within(copilot()).getByText(/cf\. airline-10/)).toBeTruthy();
 
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    const box = within(sim).getByRole('checkbox', { name: /Renouvellement de flotte/ }) as HTMLInputElement;
+    const sim = () => region('Simulation');
+    const box = within(sim()).getByRole('checkbox', { name: /Renouvellement de flotte/ }) as HTMLInputElement;
     expect(box.disabled).toBe(true);
     const before = moic();
 
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
     expect(box.disabled).toBe(false);
     fireEvent.click(box);
     expect(moic()).not.toBe(before);
-    expect(within(sim).getByText(/calculés par le moteur/)).toBeTruthy();
-    expect(within(sim).getByText(/se composent/)).toBeTruthy();
-    expect(within(sim).queryByText(/Interactions/)).toBeNull(); // airline has no interaction rule
+    expect(within(sim()).getByText(/calculés par le moteur/)).toBeTruthy();
+    expect(within(sim()).getByText(/se composent/)).toBeTruthy();
+    expect(within(sim()).queryByText(/Interactions/)).toBeNull(); // airline has no interaction rule
 
-    const plan = screen.getByRole('region', { name: 'Plan 100 jours' });
-    expect(within(plan).getAllByText('Renouvellement de flotte').length).toBeGreaterThan(0);
-    expect(within(plan).getAllByText(/airline-10/).length).toBeGreaterThan(0);
+    const plan = () => region('Plan 100 jours');
+    expect(within(plan()).getAllByText('Renouvellement de flotte').length).toBeGreaterThan(0);
+    expect(within(plan()).getAllByText(/airline-10/).length).toBeGreaterThan(0);
   });
 
   it('an out-of-vocabulary proposal is rejected with a visible error', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), {
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), {
       target: { value: proposal.replace('FUEL_EFFICIENCY', 'MULTIPLE_EXPANSION') },
     });
-    fireEvent.click(within(copilot).getByRole('button', { name: /Ingérer/ }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Ingérer/ }));
     expect(screen.getByRole('alert').textContent).toMatch(/rejetée/);
   });
 
   it('switching archetype re-instantiates the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'aero' } });
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByLabelText(byCode('BOOK_TO_BILL'))).toBeTruthy();
+    const company = () => region('Entreprise');
+    expect(within(company()).getByLabelText(byCode('BOOK_TO_BILL'))).toBeTruthy();
   });
 
   it('wine-spirits uses its level-2 template; no empty generic group in the picker', () => {
     render(<App />);
     expect(screen.queryByRole('group', { name: 'Modèle EBITDA générique' })).toBeNull();
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'wine-spirits' } });
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByLabelText(byCode('EXCISE_TAX_RATE'))).toBeTruthy();
-    expect(within(screen.getByRole('region', { name: 'Simulation' })).getByTestId('moic-scenario').textContent).toMatch(/x$/);
+    const company = () => region('Entreprise');
+    expect(within(company()).getByLabelText(byCode('EXCISE_TAX_RATE'))).toBeTruthy();
+    expect(within(region('Simulation')).getByTestId('moic-scenario').textContent).toMatch(/x$/);
   });
 
   it('a lever card explains the lever: path to the MOIC, sensitivity, impact after validation, analyses', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
     expect(screen.queryByRole('region', { name: 'Fiche levier' })).toBeNull();
-    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Fiche/ }));
 
-    const card = screen.getByRole('region', { name: 'Fiche levier' });
-    expect(within(card).getByText(/FUEL_CASK → OPERATING_COSTS_EXIT → EBITDA_EXIT → EQUITY_EXIT → MOIC/)).toBeTruthy();
-    expect(within(card).getByText(/Sensibilité du modèle/)).toBeTruthy();
-    expect(within(card).getByText(/après validation/)).toBeTruthy();
-    expect(within(card).getByText('Fuel Efficiency per Aircraft Type Analysis')).toBeTruthy();
+    const card = () => region('Fiche levier');
+    expect(within(card()).getByText(/FUEL_CASK → OPERATING_COSTS_EXIT → EBITDA_EXIT → EQUITY_EXIT → MOIC/)).toBeTruthy();
+    expect(within(card()).getByText(/Sensibilité du modèle/)).toBeTruthy();
+    expect(within(card()).getByText(/après validation/)).toBeTruthy();
+    expect(within(card()).getByText('Fuel Efficiency per Aircraft Type Analysis')).toBeTruthy();
 
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
-    expect(within(card).getByText(/Impact du levier/)).toBeTruthy();
-    fireEvent.click(within(card).getByRole('button', { name: 'Fermer' }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
+    expect(within(card()).getByText(/Impact du levier/)).toBeTruthy();
+    fireEvent.click(within(card()).getByRole('button', { name: 'Fermer' }));
     expect(screen.queryByRole('region', { name: 'Fiche levier' })).toBeNull();
   });
 
   it('the 100-day plan: phased workstream with engine value, editable owner and status, foundations, slide export', async () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    const plan = screen.getByRole('region', { name: 'Plan 100 jours' });
-    expect(within(plan).queryByText('Renouvellement de flotte')).toBeNull(); // hypotheses stay out of the plan
-    expect(within(plan).getByText('Gouvernance et PMO')).toBeTruthy();
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    const plan = () => region('Plan 100 jours');
+    expect(within(plan()).queryByText('Renouvellement de flotte')).toBeNull(); // hypotheses stay out of the plan
+    expect(within(plan()).getByText('Gouvernance et PMO')).toBeTruthy();
 
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
-    expect(within(plan).getAllByText('Renouvellement de flotte').length).toBeGreaterThan(0);
-    expect(within(plan).getByText(/captés d'ici J100/)).toBeTruthy();
-    expect(within(plan).getByText(/Premier impact mesuré sur FUEL_CASK/)).toBeTruthy();
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
+    expect(within(plan()).getAllByText('Renouvellement de flotte').length).toBeGreaterThan(0);
+    expect(within(plan()).getByText(/captés d'ici J100/)).toBeTruthy();
+    expect(within(plan()).getByText(/Premier impact mesuré sur FUEL_CASK/)).toBeTruthy();
 
-    const owner = within(plan).getByLabelText('Responsable — Renouvellement de flotte') as HTMLInputElement;
+    const owner = within(plan()).getByLabelText('Responsable — Renouvellement de flotte') as HTMLInputElement;
     fireEvent.change(owner, { target: { value: 'Directeur des opérations' } });
     expect(owner.value).toBe('Directeur des opérations');
-    const status = within(plan).getByLabelText('Statut — Renouvellement de flotte') as HTMLSelectElement;
+    const status = within(plan()).getByLabelText('Statut — Renouvellement de flotte') as HTMLSelectElement;
     fireEvent.change(status, { target: { value: 'in_progress' } });
     expect(status.value).toBe('in_progress');
 
-    fireEvent.click(within(plan).getByRole('button', { name: /Exporter le slide/ }));
+    fireEvent.click(within(plan()).getByRole('button', { name: /Exporter le slide/ }));
     await waitFor(() => expect(renderPlanSlide).toHaveBeenCalled());
     const [model, output] = vi.mocked(renderPlanSlide).mock.calls[0];
     expect(output).toBe('download');
@@ -146,14 +191,14 @@ describe('App', () => {
 
   it('an input the engine cannot compute (division by zero) shows an error instead of crashing', () => {
     render(<App />);
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
-    fireEvent.change(within(company).getByLabelText(byCode('AVG_TRIP_KM')), { target: { value: '0' } });
-    expect(screen.getByRole('region', { name: 'Plan 100 jours' })).toBeTruthy();
-    expect(within(screen.getByRole('region', { name: 'Fiche levier' })).getByText(/finite number/)).toBeTruthy();
+    const company = () => region('Entreprise');
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Fiche/ }));
+    fireEvent.change(within(company()).getByLabelText(byCode('AVG_TRIP_KM')), { target: { value: '0' } });
+    expect(region('Plan 100 jours')).toBeTruthy();
+    expect(within(region('Fiche levier')).getByText(/finite number/)).toBeTruthy();
     expect(screen.getAllByText(/finite number/).length).toBeGreaterThan(0);
   });
 
@@ -161,92 +206,95 @@ describe('App', () => {
     render(<App />);
     const lf = getCatalog('airline').find((a) => a.formulas.some((f) => f.output === 'Load Factor'))!;
     const vars = lf.formulas.find((f) => f.output === 'Load Factor')!.variables;
-    const ws = screen.getByRole('region', { name: 'Atelier d\'analyse' });
-    fireEvent.change(within(ws).getByLabelText('Analyse à mener'), { target: { value: lf.id } });
-    expect(within(ws).getByText(lf.goal)).toBeTruthy();
+    const ws = () => region('Atelier d\'analyse');
+    fireEvent.change(within(ws()).getByLabelText('Analyse à mener'), { target: { value: lf.id } });
+    expect(within(ws()).getByText(lf.goal)).toBeTruthy();
 
-    const calc = within(ws).getByRole('group', { name: 'Load Factor' });
+    const calc = within(ws()).getByRole('group', { name: 'Load Factor' });
     fireEvent.change(within(calc).getByLabelText(vars[0]), { target: { value: '78' } });
     fireEvent.change(within(calc).getByLabelText(vars[1]), { target: { value: '100' } });
     expect(within(calc).getByTestId('result').textContent).toMatch(/78/);
     expect((within(calc).getByLabelText('Métrique mesurée') as HTMLSelectElement).value).toBe('LOAD_FACTOR');
     fireEvent.click(within(calc).getByRole('button', { name: 'Enregistrer l\'observation' }));
 
-    const list = within(ws).getByRole('list', { name: 'Observations' });
+    const list = within(ws()).getByRole('list', { name: 'Observations' });
     expect(within(list).getByText(/LOAD_FACTOR/)).toBeTruthy();
     fireEvent.click(within(list).getByRole('button', { name: /Appliquer à l'entreprise/ }));
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect((within(company).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement).value).toBe('0.78');
+    const company = () => region('Entreprise');
+    expect((within(company()).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement).value).toBe('0.78');
     expect(within(list).getByText(/appliquée/)).toBeTruthy();
 
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal.replace(/FUEL_CASK/g, 'LOAD_FACTOR').replace('FUEL_EFFICIENCY', 'NETWORK_OPTIMIZATION') } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
-    const card = screen.getByRole('region', { name: 'Fiche levier' });
-    expect(within(card).getByText(/Mesures de l'atelier sur LOAD_FACTOR/)).toBeTruthy();
-    expect(within(card).getByText(/78,0 %.*appliquée au modèle/)).toBeTruthy();
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal.replace(/FUEL_CASK/g, 'LOAD_FACTOR').replace('FUEL_EFFICIENCY', 'NETWORK_OPTIMIZATION') } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Fiche/ }));
+    const card = () => region('Fiche levier');
+    expect(within(card()).getByText(/Mesures de l'atelier sur LOAD_FACTOR/)).toBeTruthy();
+    expect(within(card()).getByText(/78,0 %.*appliquée au modèle/)).toBeTruthy();
   });
 
   it('the lever card opens its analyses in the workshop', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
-    const card = screen.getByRole('region', { name: 'Fiche levier' });
-    fireEvent.click(within(card).getAllByRole('button', { name: /Ouvrir dans l'atelier/ })[0]);
-    const ws = screen.getByRole('region', { name: 'Atelier d\'analyse' });
-    expect((within(ws).getByLabelText('Analyse à mener') as HTMLSelectElement).value).toMatch(/^airline-\d\d$/);
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Fiche/ }));
+    const card = () => region('Fiche levier');
+    fireEvent.click(within(card()).getAllByRole('button', { name: /Ouvrir dans l'atelier/ })[0]);
+    // Opening an analysis takes the analyst to the diagnostic step.
+    expect(steps().getByRole('button', { name: /^Diagnostic/ }).getAttribute('aria-current')).toBe('step');
+    expect(screen.getByRole('region', { name: "Atelier d'analyse" })).toBeTruthy();
+    const ws = () => region('Atelier d\'analyse');
+    expect((within(ws()).getByLabelText('Analyse à mener') as HTMLSelectElement).value).toMatch(/^airline-\d\d$/);
   });
 
   it('a lever on a metric outside the model is marked qualitative and cannot be simulated', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
+    const copilot = () => region('Copilote');
     const qualitative = proposal.replace(/FUEL_CASK/g, 'ON_TIME_PERFORMANCE').replace('FUEL_EFFICIENCY', 'AIRPORT_GROUND_COST');
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: qualitative } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    expect(within(copilot).getByText(/qualitatif/)).toBeTruthy();
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    const box = within(sim).getByRole('checkbox', { name: /Renouvellement de flotte.*qualitatif/ }) as HTMLInputElement;
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: qualitative } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    expect(within(copilot()).getByText(/qualitatif/)).toBeTruthy();
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
+    const sim = () => region('Simulation');
+    const box = within(sim()).getByRole('checkbox', { name: /Renouvellement de flotte.*qualitatif/ }) as HTMLInputElement;
     expect(box.disabled).toBe(true);
     expect(screen.queryByRole('alert')).toBeNull();
   });
 
   it('the bridge shows cash and IRR; a lever landing after the exit is flagged everywhere', () => {
     render(<App />);
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    expect(within(sim).getByText('CUMULATIVE_FCF')).toBeTruthy();
-    expect(within(sim).getByText('IRR')).toBeTruthy();
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal.replace('"timeToImpactDays":60', '"timeToImpactDays":3000') } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
-    expect(within(sim).getByRole('checkbox', { name: /Renouvellement de flotte.*après la sortie/ })).toBeTruthy();
-    const plan = screen.getByRole('region', { name: 'Plan 100 jours' });
-    expect(within(plan).getByText(/après la sortie : sans effet/)).toBeTruthy();
-    fireEvent.click(within(copilot).getByRole('button', { name: /Fiche/ }));
-    expect(within(screen.getByRole('region', { name: 'Fiche levier' })).getByText(/après la sortie/)).toBeTruthy();
+    const sim = () => region('Simulation');
+    expect(within(sim()).getByText('CUMULATIVE_FCF')).toBeTruthy();
+    expect(within(sim()).getByText('IRR')).toBeTruthy();
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal.replace('"timeToImpactDays":60', '"timeToImpactDays":3000') } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
+    expect(within(sim()).getByRole('checkbox', { name: /Renouvellement de flotte.*après la sortie/ })).toBeTruthy();
+    const plan = () => region('Plan 100 jours');
+    expect(within(plan()).getByText(/après la sortie : sans effet/)).toBeTruthy();
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Fiche/ }));
+    expect(within(region('Fiche levier')).getByText(/après la sortie/)).toBeTruthy();
   });
 
   it('metrics are shown with a readable name, their code and a definition; inputs are grouped', () => {
     render(<App />);
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByRole('heading', { name: 'Drivers du secteur' })).toBeTruthy();
-    expect(within(company).getByRole('heading', { name: 'Deal et cash' })).toBeTruthy();
-    expect(within(company).getByText('EBITDA d\'entrée').getAttribute('title')).toMatch(/prix d'entrée/);
-    expect(within(company).getByText('Load Factor').getAttribute('title')).toMatch(/seating capacity/);
-    expect(within(company).getByLabelText(byCode('LOAD_FACTOR'))).toBeTruthy();
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    expect(within(sim).getAllByText('TRI').length).toBeGreaterThan(0);
+    const company = () => region('Entreprise');
+    expect(within(company()).getByRole('heading', { name: 'Drivers du secteur' })).toBeTruthy();
+    expect(within(company()).getByRole('heading', { name: 'Deal et cash' })).toBeTruthy();
+    expect(within(company()).getByText('EBITDA d\'entrée').getAttribute('title')).toMatch(/prix d'entrée/);
+    expect(within(company()).getByText('Load Factor').getAttribute('title')).toMatch(/seating capacity/);
+    expect(within(company()).getByLabelText(byCode('LOAD_FACTOR'))).toBeTruthy();
+    const sim = () => region('Simulation');
+    expect(within(sim()).getAllByText('TRI').length).toBeGreaterThan(0);
   });
 
   it('the analyst writes a lever in a form, validates it, simulates it, then edits it — no JSON', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ajouter un levier' }));
-    const form = within(copilot).getByRole('form', { name: 'Nouveau levier' });
+    const copilot = () => region('Copilote');
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ajouter un levier' }));
+    const form = within(copilot()).getByRole('form', { name: 'Nouveau levier' });
     const set = (label: string | RegExp, value: string) => fireEvent.change(within(form).getByLabelText(label), { target: { value } });
     set('Libellé', 'Recouvrement clients');
     set('Mécanisme', 'relances automatisées');
@@ -260,17 +308,17 @@ describe('App', () => {
     set(/^Coût de mise en œuvre/, '2');
     fireEvent.click(within(form).getByRole('button', { name: 'Ajouter' }));
 
-    expect(within(copilot).queryByRole('form')).toBeNull();
-    expect(within(copilot).getByText('Recouvrement clients')).toBeTruthy();
-    expect(within(copilot).getByText('hypothèse')).toBeTruthy();
+    expect(within(copilot()).queryByRole('form')).toBeNull();
+    expect(within(copilot()).getByText('Recouvrement clients')).toBeTruthy();
+    expect(within(copilot()).getByText('hypothèse')).toBeTruthy();
     const before = moic();
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
-    fireEvent.click(within(screen.getByRole('region', { name: 'Simulation' })).getByRole('checkbox', { name: /Recouvrement clients/ }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
+    fireEvent.click(within(region('Simulation')).getByRole('checkbox', { name: /Recouvrement clients/ }));
     const withLever = moic();
     expect(withLever).not.toBe(before);
 
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Modifier le levier Recouvrement clients' }));
-    const edit = within(copilot).getByRole('form', { name: 'Modifier le levier' });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Modifier le levier Recouvrement clients' }));
+    const edit = within(copilot()).getByRole('form', { name: 'Modifier le levier' });
     expect((within(edit).getByLabelText('Libellé') as HTMLInputElement).value).toBe('Recouvrement clients');
     fireEvent.change(within(edit).getByLabelText(/^Variation attendue/), { target: { value: '-30' } });
     fireEvent.click(within(edit).getByRole('button', { name: 'Enregistrer' }));
@@ -279,23 +327,23 @@ describe('App', () => {
 
   it('the lever form refuses an incomplete lever and says why', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ajouter un levier' }));
-    const form = within(copilot).getByRole('form', { name: 'Nouveau levier' });
+    const copilot = () => region('Copilote');
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ajouter un levier' }));
+    const form = within(copilot()).getByRole('form', { name: 'Nouveau levier' });
     fireEvent.change(within(form).getByLabelText('Libellé'), { target: { value: 'Sans base' } });
     fireEvent.click(within(form).getByRole('button', { name: 'Ajouter' }));
     expect(screen.getByRole('alert').textContent).toMatch(/Levier refusé/);
-    expect(within(copilot).getByRole('form', { name: 'Nouveau levier' })).toBeTruthy(); // the form stays open
+    expect(within(copilot()).getByRole('form', { name: 'Nouveau levier' })).toBeTruthy(); // the form stays open
   });
 
   it('company context: currency and scale label every amount; the thesis is kept', () => {
     render(<App />);
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getAllByText('M EUR').length).toBeGreaterThan(0);
-    fireEvent.change(within(company).getByLabelText('Devise'), { target: { value: 'USD' } });
-    fireEvent.change(within(company).getByLabelText('Échelle'), { target: { value: 'k' } });
-    expect(within(company).getAllByText('k USD').length).toBeGreaterThan(0);
-    const thesis = within(company).getByLabelText('Thèse d\'investissement') as HTMLTextAreaElement;
+    const company = () => region('Entreprise');
+    expect(within(company()).getAllByText('M EUR').length).toBeGreaterThan(0);
+    fireEvent.change(within(company()).getByLabelText('Devise'), { target: { value: 'USD' } });
+    fireEvent.change(within(company()).getByLabelText('Échelle'), { target: { value: 'k' } });
+    expect(within(company()).getAllByText('k USD').length).toBeGreaterThan(0);
+    const thesis = within(company()).getByLabelText('Thèse d\'investissement') as HTMLTextAreaElement;
     fireEvent.change(thesis, { target: { value: 'Redressement des marges' } });
     expect(thesis.value).toBe('Redressement des marges');
   });
@@ -303,74 +351,74 @@ describe('App', () => {
   it('warns when an entry fact disagrees with the drivers at year 0', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).queryByText(/Incohérence à l'entrée/)).toBeNull();
-    fireEvent.change(within(company).getByLabelText(byCode('EBITDA_ENTRY')), { target: { value: '120' } });
-    expect(within(company).getByText(/Incohérence à l'entrée.*EBITDA_ENTRY.*120.*150/)).toBeTruthy();
+    const company = () => region('Entreprise');
+    expect(within(company()).queryByText(/Incohérence à l'entrée/)).toBeNull();
+    fireEvent.change(within(company()).getByLabelText(byCode('EBITDA_ENTRY')), { target: { value: '120' } });
+    expect(within(company()).getByText(/Incohérence à l'entrée.*EBITDA_ENTRY.*120.*150/)).toBeTruthy();
   });
 
   it('decisions are signed: the analyst name is asked once, kept, and shown on the lever', () => {
     localStorage.clear();
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
+    const copilot = () => region('Copilote');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
     expect(screen.getByRole('alert').textContent).toMatch(/nom d'analyste/);
-    expect(within(copilot).getByText('hypothèse')).toBeTruthy();
+    expect(within(copilot()).getByText('hypothèse')).toBeTruthy();
 
     fireEvent.change(screen.getByLabelText('Analyste'), { target: { value: 'Léa Martin' } });
     expect(localStorage.getItem('value-cockpit.analyst')).toBe('Léa Martin');
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
-    expect(within(copilot).getByText(/validé par Léa Martin/)).toBeTruthy();
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
+    expect(within(copilot()).getByText(/validé par Léa Martin/)).toBeTruthy();
   });
 
   it('reliability: every input shows its source; results are flagged indicative while demo values remain', () => {
     render(<App />);
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    expect(within(company).getByText(/0 input sur 21 a une source/)).toBeTruthy();
-    expect(within(sim).getByText(/Résultat indicatif : 21 inputs sont encore des valeurs de démo/)).toBeTruthy();
+    const company = () => region('Entreprise');
+    const sim = () => region('Simulation');
+    expect(within(company()).getByText(/0 input sur 21 a une source/)).toBeTruthy();
+    expect(within(sim()).getByText(/Résultat indicatif : 21 inputs sont encore des valeurs de démo/)).toBeTruthy();
 
-    fireEvent.change(within(company).getByLabelText(byCode('LOAD_FACTOR')), { target: { value: '0.8' } });
-    expect(within(company).getByText(/1 input sur 21 a une source/)).toBeTruthy();
-    const row = within(company).getByLabelText(byCode('LOAD_FACTOR')).closest('tr')!;
+    fireEvent.change(within(company()).getByLabelText(byCode('LOAD_FACTOR')), { target: { value: '0.8' } });
+    expect(within(company()).getByText(/1 input sur 21 a une source/)).toBeTruthy();
+    const row = within(company()).getByLabelText(byCode('LOAD_FACTOR')).closest('tr')!;
     expect(within(row).getByText(/saisi par Léa Martin/)).toBeTruthy();
     fireEvent.change(within(row).getByLabelText('LOAD_FACTOR : référence de la source'), { target: { value: 'Rapport annuel p. 12' } });
     expect((within(row).getByLabelText('LOAD_FACTOR : référence de la source') as HTMLInputElement).value).toBe('Rapport annuel p. 12');
 
-    const hold = within(company).getByLabelText(byCode('HOLD_YEARS')).closest('tr')!;
+    const hold = within(company()).getByLabelText(byCode('HOLD_YEARS')).closest('tr')!;
     expect(within(hold).getByText('démo')).toBeTruthy();
     fireEvent.click(within(hold).getByRole('button', { name: 'HOLD_YEARS : confirmer la valeur' }));
-    expect(within(company).getByText(/2 inputs sur 21 ont une source/)).toBeTruthy();
+    expect(within(company()).getByText(/2 inputs sur 21 ont une source/)).toBeTruthy();
   });
 
   it('imports company data from a CSV: values applied with the file as their source, unusable lines reported', async () => {
     render(<App />);
-    const company = screen.getByRole('region', { name: 'Entreprise' });
+    const company = () => region('Entreprise');
     const csv = 'code;libellé;unité;valeur\nLOAD_FACTOR;Load Factor;percent;0,79\nEBITDA_ENTRY;x;currency;140\nMOIC;x;ratio;3';
-    fireEvent.change(within(company).getByLabelText(/Importer des données/), { target: { files: [new File([csv], 'comptes-2025.csv', { type: 'text/csv' })] } });
-    await waitFor(() => expect((within(company).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement).value).toBe('0.79'));
-    const row = within(company).getByLabelText(byCode('EBITDA_ENTRY')).closest('tr')!;
+    fireEvent.change(within(company()).getByLabelText(/Importer des données/), { target: { files: [new File([csv], 'comptes-2025.csv', { type: 'text/csv' })] } });
+    await waitFor(() => expect((within(company()).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement).value).toBe('0.79'));
+    const row = within(company()).getByLabelText(byCode('EBITDA_ENTRY')).closest('tr')!;
     expect(within(row).getByText(/importé par Léa Martin/)).toBeTruthy();
     expect((within(row).getByLabelText('EBITDA_ENTRY : référence de la source') as HTMLInputElement).value).toBe('comptes-2025.csv');
     expect(screen.getByRole('alert').textContent).toMatch(/2 inputs importés.*ligne 4 : MOIC/);
-    expect(within(company).getByRole('button', { name: /Télécharger le modèle/ })).toBeTruthy();
+    expect(within(company()).getByRole('button', { name: /Télécharger le modèle/ })).toBeTruthy();
   });
 
   it('scenarios: save the current one under a name, compare with the base case, reload it; sensitivity table', () => {
     render(<App />);
-    const copilot = screen.getByRole('region', { name: 'Copilote' });
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    fireEvent.change(within(copilot).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
-    fireEvent.click(within(copilot).getByRole('button', { name: 'Ingérer' }));
-    fireEvent.click(within(copilot).getByRole('button', { name: /Valider/ }));
-    const box = () => within(sim).getByRole('checkbox', { name: /Renouvellement de flotte/ }) as HTMLInputElement;
+    const copilot = () => region('Copilote');
+    const sim = () => region('Simulation');
+    fireEvent.change(within(copilot()).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(copilot()).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(copilot()).getByRole('button', { name: /Valider/ }));
+    const box = () => within(sim()).getByRole('checkbox', { name: /Renouvellement de flotte/ }) as HTMLInputElement;
     fireEvent.click(box());
 
-    fireEvent.change(within(sim).getByLabelText('Nom du scénario'), { target: { value: 'Plan' } });
-    fireEvent.click(within(sim).getByRole('button', { name: 'Enregistrer le scénario' }));
-    const table = within(sim).getByRole('table', { name: 'Comparaison des scénarios' });
+    fireEvent.change(within(sim()).getByLabelText('Nom du scénario'), { target: { value: 'Plan' } });
+    fireEvent.click(within(sim()).getByRole('button', { name: 'Enregistrer le scénario' }));
+    const table = within(sim()).getByRole('table', { name: 'Comparaison des scénarios' });
     expect(within(table).getByText('Base (sans levier)')).toBeTruthy();
     expect(within(table).getByText('Plan')).toBeTruthy();
 
@@ -379,7 +427,7 @@ describe('App', () => {
     fireEvent.click(within(table).getByRole('button', { name: 'Charger le scénario Plan' }));
     expect(box().checked).toBe(true);
 
-    const grid = within(sim).getByRole('table', { name: 'Sensibilité du MOIC' });
+    const grid = within(sim()).getByRole('table', { name: 'Sensibilité du MOIC' });
     expect(within(grid).getAllByRole('row')).toHaveLength(6);          // header + 5 exit multiples
     expect(within(grid).getByText('6,00x').closest('tr')!.className).toMatch(/current/);
   });
@@ -387,33 +435,33 @@ describe('App', () => {
   it('the simulation lists the interaction rules of the template', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    expect(within(sim).getByText(/Interactions/)).toBeTruthy();
-    expect(within(sim).getByText(/PRICE_MIX_GROWTH → VOLUME_GROWTH/)).toBeTruthy();
-    expect(within(sim).getByText(/PRICE_ELASTICITY = -0,8/)).toBeTruthy();
+    const sim = () => region('Simulation');
+    expect(within(sim()).getByText(/Interactions/)).toBeTruthy();
+    expect(within(sim()).getByText(/PRICE_MIX_GROWTH → VOLUME_GROWTH/)).toBeTruthy();
+    expect(within(sim()).getByText(/PRICE_ELASTICITY = -0,8/)).toBeTruthy();
   });
 
   it('a bank is valued on book value: P/BV exit multiple, book-value bridge rows', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'commercial-bank' } });
-    const sim = screen.getByRole('region', { name: 'Simulation' });
-    expect(within(sim).getByLabelText(/Multiple de sortie \(P\/BV/)).toBeTruthy();
-    expect(within(sim).getByText('BOOK_VALUE_EXIT')).toBeTruthy();
-    expect(within(sim).queryByText('EBITDA_EXIT')).toBeNull();
+    const sim = () => region('Simulation');
+    expect(within(sim()).getByLabelText(/Multiple de sortie \(P\/BV/)).toBeTruthy();
+    expect(within(sim()).getByText('BOOK_VALUE_EXIT')).toBeTruthy();
+    expect(within(sim()).queryByText('EBITDA_EXIT')).toBeNull();
   });
 
   it('cpg uses its level-2 template (volume × price-mix, gross-to-net margin)', () => {
     render(<App />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    expect(within(company).getByLabelText(byCode('TRADE_SPEND_RATE'))).toBeTruthy();
+    const company = () => region('Entreprise');
+    expect(within(company()).getByLabelText(byCode('TRADE_SPEND_RATE'))).toBeTruthy();
   });
 
   it('exploration: clicking a driver lists the analyses to run', () => {
     render(<App />);
-    const graph = screen.getByRole('region', { name: 'Arbre de valeur' });
-    fireEvent.click(within(graph).getByRole('button', { name: 'Explorer LOAD_FACTOR' }));
-    expect(within(graph).getByText(/airline-13/)).toBeTruthy();
+    const graph = () => region('Arbre de valeur');
+    fireEvent.click(within(graph()).getByRole('button', { name: 'Explorer LOAD_FACTOR' }));
+    expect(within(graph()).getByText(/airline-13/)).toBeTruthy();
   });
 });
 
@@ -428,10 +476,10 @@ describe('App – dossiers', () => {
     render(<App connect={async () => ({ repo, where })} />);
     await screen.findByText(where === 'server' ? /serveur partagé/ : /ce navigateur/);
   };
-  const bar = () => within(screen.getByRole('region', { name: 'Dossier' }));
+  const bar = () => within(region('Dossier'));
   const typeSelect = () => screen.getByLabelText(/Type d'entreprise/) as HTMLSelectElement;
   const nameInput = () => bar().getByLabelText('Nom du dossier') as HTMLInputElement;
-  const loadFactor = () => within(screen.getByRole('region', { name: 'Entreprise' })).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement;
+  const loadFactor = () => within(region('Entreprise')).getByLabelText(byCode('LOAD_FACTOR')) as HTMLInputElement;
   const click = (name: string) => fireEvent.click(bar().getByRole('button', { name }));
   const saveAs = async (name: string) => {
     fireEvent.change(nameInput(), { target: { value: name } });
@@ -600,15 +648,15 @@ describe('App – empirical benchmarks', () => {
     const calls = stub(true);
     render(<App connect={async () => ({ repo: new LocalDossierRepository({ getItem: () => null, setItem: () => {} }), where: 'browser' })} />);
     fireEvent.change(screen.getByLabelText(/Type d'entreprise/), { target: { value: 'cpg' } });
-    const panel = screen.getByRole('region', { name: 'Repères empiriques' });
-    expect(await within(panel).findByText(/SEC EDGAR · 42 sociétés/)).toBeTruthy();
-    expect(await within(panel).findByText('Δ marge d\'EBITDA (pts)')).toBeTruthy();
-    expect(within(panel).getAllByText('10 (40)').length).toBe(2);
-    expect(within(panel).getByText(/Réalisme du plan/)).toBeTruthy();
-    expect(within(panel).getAllByText(/e percentile/).length).toBe(2);
+    const panel = () => region('Repères empiriques');
+    expect(await within(panel()).findByText(/SEC EDGAR · 42 sociétés/)).toBeTruthy();
+    expect(await within(panel()).findByText('Δ marge d\'EBITDA (pts)')).toBeTruthy();
+    expect(within(panel()).getAllByText('10 (40)').length).toBe(2);
+    expect(within(panel()).getByText(/Réalisme du plan/)).toBeTruthy();
+    expect(within(panel()).getAllByText(/e percentile/).length).toBe(2);
 
-    fireEvent.change(within(panel).getByLabelText('Pays'), { target: { value: 'Canada' } });
-    fireEvent.click(within(panel).getByLabelText('>5B'));
+    fireEvent.change(within(panel()).getByLabelText('Pays'), { target: { value: 'Canada' } });
+    fireEvent.click(within(panel()).getByLabelText('>5B'));
     await waitFor(() => expect(calls.some((u) => u.includes('countries=Canada') && u.includes('sizes=%3E5B'))).toBe(true));
     expect(calls.some((u) => u.includes('archetype=cpg') && u.includes('years=5'))).toBe(true);
   });
@@ -616,8 +664,8 @@ describe('App – empirical benchmarks', () => {
   it('says how to build the base when nothing was imported', async () => {
     stub(false);
     render(<App connect={async () => ({ repo: new LocalDossierRepository({ getItem: () => null, setItem: () => {} }), where: 'browser' })} />);
-    const panel = screen.getByRole('region', { name: 'Repères empiriques' });
-    expect(await within(panel).findByText(/npm run empirical:import/)).toBeTruthy();
+    const panel = () => region('Repères empiriques');
+    expect(await within(panel()).findByText(/npm run empirical:import/)).toBeTruthy();
   });
 });
 
@@ -654,11 +702,11 @@ describe('App – public filings (SEC)', () => {
       return new Response('{}', { status: 404 });
     }));
     render(<App connect={async () => ({ repo: new LocalDossierRepository({ getItem: () => null, setItem: () => {} }), where: 'browser' })} />);
-    const company = screen.getByRole('region', { name: 'Entreprise' });
-    fireEvent.change(within(company).getByLabelText('Ticker (société cotée aux États-Unis)'), { target: { value: 'airx' } });
-    fireEvent.click(within(company).getByRole('button', { name: 'Chercher les comptes publics' }));
+    const company = () => region('Entreprise');
+    fireEvent.change(within(company()).getByLabelText('Ticker (société cotée aux États-Unis)'), { target: { value: 'airx' } });
+    fireEvent.click(within(company()).getByRole('button', { name: 'Chercher les comptes publics' }));
 
-    const preview = await within(company).findByRole('group', { name: /Air X Inc\./ });
+    const preview = await within(company()).findByRole('group', { name: /Air X Inc\./ });
     expect(within(preview).getByText(/exercice 2025/)).toBeTruthy();
     expect(within(preview).getByText(/EBITDA_ENTRY : 150/)).toBeTruthy();
     expect(within(preview).getByText(/REVENUE.*pas un input de ce modèle/)).toBeTruthy();
@@ -666,9 +714,9 @@ describe('App – public filings (SEC)', () => {
     expect(within(preview).getByText(/dossier est en EUR/)).toBeTruthy();
 
     fireEvent.click(within(preview).getByRole('button', { name: /Appliquer 3 valeurs/ }));
-    expect((within(company).getByLabelText(byCode('EBITDA_ENTRY')) as HTMLInputElement).value).toBe('150');
-    expect((within(company).getByLabelText(byCode('DSO')) as HTMLInputElement).value).toBe('14.6');
-    const row = within(company).getByLabelText(byCode('CAPEX')).closest('tr')!;
+    expect((within(company()).getByLabelText(byCode('EBITDA_ENTRY')) as HTMLInputElement).value).toBe('150');
+    expect((within(company()).getByLabelText(byCode('DSO')) as HTMLInputElement).value).toBe('14.6');
+    const row = within(company()).getByLabelText(byCode('CAPEX')).closest('tr')!;
     expect(within(row).getByText(/comptes publics par Léa Martin/)).toBeTruthy();
     expect((within(row).getByLabelText('CAPEX : référence de la source') as HTMLInputElement).value).toMatch(/SEC, exercice 2025 — https:\/\/data\.sec\.gov/);
   });

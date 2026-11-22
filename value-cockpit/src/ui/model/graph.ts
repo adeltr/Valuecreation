@@ -28,15 +28,26 @@ export function layerOf(m: Metric): Layer {
   return 'L3';
 }
 
-const COLUMN_X: Record<Layer, number> = { L3: 0, L2: 320, L1: 640 };
+/** Columns, left to right: operational drivers, financial aggregates, deal and cash inputs, computed bridge. */
+type Column = 'L3' | 'L2' | 'L1in' | 'L1';
+const COLUMN_X: Record<Column, number> = { L3: 0, L2: 300, L1in: 600, L1: 900 };
 const ROW_H = 64;
+const columnOf = (m: Metric): Column => {
+  const layer = layerOf(m);
+  return layer === 'L1' && !m.isCalculated ? 'L1in' : layer;
+};
 
 /** Driver tree from template formulas: an edge per dependency, oriented cause → effect. */
 export function buildDriverGraph(metrics: Metric[]): { nodes: GraphNode[]; edges: GraphEdge[] } {
-  const rows: Record<Layer, number> = { L1: 0, L2: 0, L3: 0 };
+  const rows: Record<Column, number> = { L3: 0, L2: 0, L1in: 0, L1: 0 };
+  const counts: Record<Column, number> = { L3: 0, L2: 0, L1in: 0, L1: 0 };
+  for (const m of metrics) counts[columnOf(m)]++;
+  // Shorter columns are centred on the tallest one, so the tree reads left to right.
+  const tallest = Math.max(...Object.values(counts));
+  const top = (c: Column) => ((tallest - counts[c]) * ROW_H) / 2;
   const nodes = metrics.map((m) => {
-    const layer = layerOf(m);
-    return { id: m.code, layer, isCalculated: m.isCalculated, position: { x: COLUMN_X[layer], y: rows[layer]++ * ROW_H } };
+    const column = columnOf(m);
+    return { id: m.code, layer: layerOf(m), isCalculated: m.isCalculated, position: { x: COLUMN_X[column], y: top(column) + rows[column]++ * ROW_H } };
   });
   const edges = metrics.flatMap((m) =>
     m.isCalculated && m.formula

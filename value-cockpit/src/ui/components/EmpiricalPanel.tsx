@@ -69,7 +69,7 @@ export function EmpiricalPanel({ archetype, trajectory, fetchImpl = (...a) => fe
 
   return (
     <Panel title="Repères empiriques" className="empirical">
-      {error && <p className="muted">{error}</p>}
+      {error && <p className="empty">{`Repères indisponibles : ${error}. Ils viennent du serveur de l'application (npm run server) et de l'import SEC (npm run empirical:import).`}</p>}
       {meta && (
         <>
           <p className="muted">{`${meta.source} · ${meta.companies} sociétés cotées de ce type · import du ${new Date(meta.generatedAt).toLocaleDateString('fr-FR')} · fenêtre ${years} ans`}</p>
@@ -97,7 +97,7 @@ export function EmpiricalPanel({ archetype, trajectory, fetchImpl = (...a) => fe
         </>
       )}
       {bench && (
-        <table className="plan-table">
+        <table className="plan-table bench-table">
           <thead><tr><th>Mesure</th><th className="num">sociétés (fenêtres)</th><th className="num">p10</th><th className="num">p25</th><th className="num">médiane</th><th className="num">p75</th><th className="num">p90</th></tr></thead>
           <tbody>
             {ROWS.map(([m, label, unit]) => {
@@ -117,7 +117,7 @@ export function EmpiricalPanel({ archetype, trajectory, fetchImpl = (...a) => fe
       )}
       {bench && (
         <>
-          <h3>Réalisme du plan (moteur vs sociétés comparables)</h3>
+          <h4>Réalisme du plan (moteur vs sociétés comparables)</h4>
           {!trajectory && <p className="muted">Non calculable pour ce type d'entreprise (pas de CA et d'EBITDA d'entrée dans le modèle).</p>}
           <ul className="list">
             {realism.map(({ label, v, q, rank }) => (

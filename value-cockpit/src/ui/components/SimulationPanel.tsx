@@ -32,7 +32,9 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
 
   return (
     <Panel title="Simulation" className="simulation">
-      <h3>Leviers du scénario</h3>
+      <div className="sim-grid">
+      <div className="sim-inputs">
+      <h4>Leviers du scénario</h4>
       {state.levers.filter((l) => l.status !== 'rejected').length === 0 && <p className="muted">Validez un levier dans le copilote pour le simuler.</p>}
       <ul className="list">
         {state.levers.filter((l) => l.status !== 'rejected').map((l) => {
@@ -46,25 +48,30 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
                 {l.timeToImpactDays > holdDays && ` (J+${l.timeToImpactDays} : après la sortie, sans effet sur le MOIC)`}
               </label>
               {on && (
-                <input aria-label={`Delta appliqué ${l.label}`} type="number" step="any" className="delta"
+                <span className="applied"><span className="muted" aria-hidden="true">Δ appliqué</span><input aria-label={`Delta appliqué ${l.label}`} type="number" step="any" className="delta"
                   value={state.scenario.applied[l.id]}
-                  onChange={(e) => dispatch({ type: 'setAppliedDelta', id: l.id, value: Number(e.target.value) })} />
+                  onChange={(e) => dispatch({ type: 'setAppliedDelta', id: l.id, value: Number(e.target.value) })} /></span>
               )}
             </li>
           );
         })}
       </ul>
-      <label htmlFor="exit-multiple">{`Multiple de sortie (${multipleLabel}, hypothèse analyste)`}</label>
-      <input id="exit-multiple" type="number" step="0.5" value={exitMultiple}
-        onChange={(e) => dispatch({ type: 'setAssumption', code: 'EXIT_MULTIPLE', value: Number(e.target.value) })} />
+      <div className="field">
+        <label htmlFor="exit-multiple">{`Multiple de sortie (${multipleLabel}, hypothèse analyste)`}</label>
+        <input id="exit-multiple" type="number" step="0.5" value={exitMultiple}
+          onChange={(e) => dispatch({ type: 'setAssumption', code: 'EXIT_MULTIPLE', value: Number(e.target.value) })} />
+      </div>
+      </div>
+      <div className="sim-result">
+      <h4>Bridge de valeur <span className="mark mark-engine">moteur</span></h4>
 
       {demoInputs > 0 && (
-        <p className="warn" role="status">
+        <p className="notice notice-warn" role="status">
           {`Résultat indicatif : ${demoInputs} input${demoInputs > 1 ? 's sont' : ' est'} encore ${demoInputs > 1 ? 'des valeurs' : 'une valeur'} de démo (voir Entreprise).`}
         </p>
       )}
       <table className="bridge">
-        <thead><tr><th>Bridge</th><th>Base</th><th>Scénario</th></tr></thead>
+        <thead><tr><th>Poste</th><th>Base</th><th>Scénario</th></tr></thead>
         <tbody>
           {bridgeRows.map((code) => (
             <tr key={code} className={code === 'MOIC' ? 'moic' : ''}>
@@ -76,14 +83,18 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
         </tbody>
       </table>
       {scenarioError && <p role="alert" className="error">{scenarioError}</p>}
-      <h3>Scénarios</h3>
+      </div>
+      </div>
+      <div className="sim-grid sim-compare">
+      <div>
+      <h4>Scénarios</h4>
       <div className="scenario-save">
         <input aria-label="Nom du scénario" value={scenarioName} placeholder="Base, prudent, ambitieux…" onChange={(e) => setScenarioName(e.target.value)} />
         <button type="button" className="secondary" onClick={() => { dispatch({ type: 'saveScenario', name: scenarioName }); setScenarioName(''); }}>
           Enregistrer le scénario
         </button>
       </div>
-      <table className="bridge" aria-label="Comparaison des scénarios">
+      <table className="bridge compact" aria-label="Comparaison des scénarios">
         <thead><tr><th>Scénario</th><th>Leviers</th><th>Multiple</th><th>MOIC</th><th>TRI</th><th /></tr></thead>
         <tbody>
           {comparison.map((r, i) => (
@@ -102,8 +113,10 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
         </tbody>
       </table>
 
-      <h3>Sensibilité du MOIC (scénario en cours)</h3>
-      <table className="bridge" aria-label="Sensibilité du MOIC">
+      </div>
+      <div>
+      <h4>Sensibilité du MOIC (scénario en cours)</h4>
+      <table className="bridge compact sensitivity" aria-label="Sensibilité du MOIC">
         <thead><tr><th>Multiple de sortie</th>{grid.years.map((y) => <th key={y} className={y === hold ? 'current' : ''}>{formatValue(y, 'years')}</th>)}</tr></thead>
         <tbody>
           {grid.multiples.map((m, i) => (
@@ -114,9 +127,11 @@ export function SimulationPanel({ state, metrics, baseline, scenario, scenarioEr
           ))}
         </tbody>
       </table>
+      </div>
+      </div>
       {interactions.length > 0 && (
         <>
-          <h3>Interactions appliquées par le moteur</h3>
+          <h4>Interactions appliquées par le moteur</h4>
           <ul className="list">
             {interactions.map((r) => (
               <li key={`${r.sourceCode}-${r.targetCode}`}>
