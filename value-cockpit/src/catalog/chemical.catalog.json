@@ -1,0 +1,2077 @@
+[
+  {
+    "id": "chemical-01",
+    "archetype": "chemical",
+    "title": "Capacity Utilization and Efficiency Metrics",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "PLANT_UTILIZATION"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
+    ],
+    "sourcePath": "data/analysis-library/chemical/01 - Capacity Utilization and Efficiency Metrics.md",
+    "goal": "The goal of this analysis is to determine how efficiently a chemical production facility is utilizing its available capacity and resources.",
+    "dataRequired": [
+      "Maximum production capacity (tons or units per time period, e.g., per day, month, or year)",
+      "Actual production output (tons or units produced during the same time period)",
+      "Downtime data (planned and unplanned)",
+      "Operational hours available versus operational hours used"
+    ],
+    "improve": [
+      "Reduce Downtime through predictive and preventive maintenance programs, targeting both planned and unplanned downtime reduction.",
+      "Optimize Batch Sizes to better match production runs with demand, reducing overproduction and waste.",
+      "Improve Scheduling and Planning by using production planning software to manage capacity more dynamically.",
+      "Invest in Staff Training and Automation to reduce human error and improve process automation, which can increase output without additional capacity.",
+      "Consider Process Optimization and Innovation, such as using advanced catalysts or modifying production processes to boost reaction speeds or yields, thus increasing throughput without additional capacity.",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "CUR",
+        "variables": [
+          "Actual Production Output",
+          "Maximum Production Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "CUR = (Actual Production Output / Maximum Production Capacity) x 100",
+        "step": null
+      },
+      {
+        "output": "Downtime Impact (%)",
+        "variables": [
+          "Downtime Hours",
+          "Total Operational Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Downtime Impact (%) = (Downtime Hours / Total Operational Hours) x 100",
+        "step": null
+      },
+      {
+        "output": "How to Analyze a Chemicals Company For example, Energy Efficiency",
+        "variables": [
+          "Total Energy Consumed",
+          "Actual Production Output"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "How to Analyze a Chemicals Company For example, Energy Efficiency = (Total Energy Consumed / Actual Production Output)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-02",
+    "archetype": "chemical",
+    "title": "Energy Consumption and Cost Structure Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "ENERGY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ENERGY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ENERGY_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/chemical/02 - Energy Consumption and Cost Structure Analysis.md",
+    "goal": "The goal of this analysis is to assess energy consumption patterns within the production process and to evaluate the cost structure related to energy usage.",
+    "dataRequired": [
+      "Total energy consumed (kffh, GJ, or equivalent) during the production period",
+      "Energy costs (cost per kffh, GJ, etc.)",
+      "Breakdown of energy consumption by process (e.g., heating, cooling, machinery)",
+      "Production output during the same period (tons or units)",
+      "Operational hours during the period",
+      "Benchmark data on energy usage and costs for similar facilities or industry standards"
+    ],
+    "improve": [
+      "Upgrade to Energy-Efficient Equipment",
+      "Optimize Process Timing and Scheduling",
+      "Implement Energy Recovery Systems",
+      "Regularly Maintain and Calibrate Equipment",
+      "Explore Renewable Energy Sources",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Energy Consumption per Unit",
+        "variables": [
+          "Total Energy Consumed",
+          "Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Energy Consumption per Unit = Total Energy Consumed / Production Output",
+        "step": null
+      },
+      {
+        "output": "Energy Cost per Unit",
+        "variables": [
+          "Energy Consumption per Unit",
+          "Energy Cost per kffh"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Energy Cost per Unit = Energy Consumption per Unit x Energy Cost per kffh",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-03",
+    "archetype": "chemical",
+    "title": "Product Yield and Waste Minimization Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS",
+      "PRODUCT_YIELD"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "YIELD_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/03 - Product Yield and Waste Minimization Analysis.md",
+    "goal": "The goal of this analysis is to maximize product yield in the production process while minimizing waste.",
+    "dataRequired": [
+      "Total raw materials input (in weight or volume) for the production period",
+      "Total product output (in weight or volume) for the same period",
+      "Waste generated (in weight or volume), including unusable by-products or residuals",
+      "Material costs associated with raw inputs and waste disposal costs",
+      "Industry benchmarks or standard yield percentages for similar processes"
+    ],
+    "improve": [
+      "Optimize Raw Material Use",
+      "Invest in Process Improvements",
+      "Implement Real-Time Monitoring",
+      "Enhance Staff Training",
+      "Focus on Waste Reuse or Repurposing",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Product Yield (%)",
+        "variables": [
+          "Total Product Output",
+          "Total Raw Materials Input"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Product Yield (%) = (Total Product Output / Total Raw Materials Input) x 100",
+        "step": null
+      },
+      {
+        "output": "Waste Percentage",
+        "variables": [
+          "Total Waste Generated",
+          "Total Raw Materials Input"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Waste Percentage = (Total Waste Generated / Total Raw Materials Input) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost of Waste",
+        "variables": [
+          "Total Waste Generated",
+          "Material Cost per Ton",
+          "Waste Disposal Cost"
+        ],
+        "expression": "( v0 * v1 ) + v2",
+        "percentOutput": false,
+        "source": "Cost of Waste = (Total Waste Generated x Material Cost per Ton) + Waste Disposal Cost",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-04",
+    "archetype": "chemical",
+    "title": "Catalyst Efficiency and Lifecycle Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "COGS",
+      "CATALYST_EFFICIENCY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "YIELD_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/04 - Catalyst Efficiency and Lifecycle Analysis.md",
+    "goal": "The goal of this analysis is to assess the efficiency and longevity of catalysts used in the production process.",
+    "dataRequired": [
+      "Quantity and type of catalyst used in each production batch",
+      "Catalyst cost per unit",
+      "Reaction yield (output per unit of catalyst)",
+      "Catalyst degradation rate over time (based on reaction effectiveness or quality)",
+      "Industry benchmarks for catalyst performance and lifecycle",
+      "Catalyst disposal costs or recycling rates, if applicable"
+    ],
+    "improve": [
+      "Optimize Catalyst Quantity and Type",
+      "Implement Regular Catalyst Testing",
+      "Improve Catalyst Handling and Storage",
+      "How to Analyze a Chemicals Company",
+      "Explore Catalyst Recycling Options",
+      "Invest in Advanced Catalyst Technologies",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Catalyst Efficiency",
+        "variables": [
+          "Total Product Output",
+          "Total Catalyst Used"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Catalyst Efficiency = (Total Product Output / Total Catalyst Used)",
+        "step": null
+      },
+      {
+        "output": "Catalyst Cost per Unit",
+        "variables": [
+          "Total Catalyst Cost",
+          "Total Product Output"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Catalyst Cost per Unit = (Total Catalyst Cost / Total Product Output)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-05",
+    "archetype": "chemical",
+    "title": "Production Scale Flexibility and Batch Size Optimization",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO",
+      "PLANT_UTILIZATION"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
+    ],
+    "sourcePath": "data/analysis-library/chemical/05 - Production Scale Flexibility and Batch Size Optimization.md",
+    "goal": "The goal of this analysis is to assess the facility’s ability to adjust production scale and optimize batch sizes according to demand, cost efficiency, and operational capacity.",
+    "dataRequired": [
+      "Current batch sizes and production volumes",
+      "Setup time and costs for different batch sizes",
+      "Fixed and variable costs per batch",
+      "Demand fluctuations and forecast data",
+      "Minimum and maximum production capacities",
+      "Production cycle times and lead times"
+    ],
+    "improve": [
+      "Reduce Setup Time and Costs",
+      "Use Demand Forecasting for Batch Planning",
+      "How to Analyze a Chemicals Company",
+      "Implement Lean Manufacturing Techniques",
+      "Invest in Flexible Equipment",
+      "Increase Collaboration with Supply Chain",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Unit",
+        "variables": [
+          "Fixed Costs",
+          "Variable Costs",
+          "Batch Size"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Cost per Unit = (Fixed Costs + Variable Costs) / Batch Size",
+        "step": "Calculate Cost per Unit for Different Batch Sizes"
+      },
+      {
+        "output": "Setup Cost per Batch",
+        "variables": [
+          "Setup Time",
+          "Labor Cost per Hour",
+          "Setup Material Costs"
+        ],
+        "expression": "( v0 * v1 ) + v2",
+        "percentOutput": false,
+        "source": "Setup Cost per Batch = (Setup Time x Labor Cost per Hour) + Setup Material Costs",
+        "step": "Evaluate Setup Time and Costs for Each Batch Size"
+      }
+    ]
+  },
+  {
+    "id": "chemical-06",
+    "archetype": "chemical",
+    "title": "Asset Reliability and Maintenance Cost Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RELIABILITY_MAINTENANCE"
+    ],
+    "sourcePath": "data/analysis-library/chemical/06 - Asset Reliability and Maintenance Cost Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the reliability of key production assets and to assess maintenance costs associated with keeping these assets operational.",
+    "dataRequired": [
+      "Historical downtime data for each major asset",
+      "Maintenance costs (labor, parts, materials) for each asset",
+      "Asset age, usage hours, and maintenance history",
+      "Failure frequency and types of failures for each asset",
+      "Production output losses due to asset downtime",
+      "Industry benchmarks for asset reliability and maintenance costs"
+    ],
+    "improve": [
+      "Implement Predictive Maintenance",
+      "Enhance Preventive Maintenance Programs",
+      "Invest in Asset Upgrades or Replacements",
+      "Optimize Spare Parts Management",
+      "How to Analyze a Chemicals Company",
+      "Use Reliability-Centered Maintenance (RCM)",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "MTBF",
+        "variables": [
+          "Total Operating Time",
+          "Number of Failures"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "MTBF = Total Operating Time / Number of Failures",
+        "step": null
+      },
+      {
+        "output": "MTTR",
+        "variables": [
+          "Total Downtime",
+          "Number of Repairs"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "MTTR = Total Downtime / Number of Repairs",
+        "step": null
+      },
+      {
+        "output": "Maintenance Cost per Unit",
+        "variables": [
+          "Total Maintenance Cost",
+          "Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Maintenance Cost per Unit = Total Maintenance Cost / Production Output",
+        "step": null
+      },
+      {
+        "output": "Lost Output (tons)",
+        "variables": [
+          "Downtime Hours",
+          "Average Production Rate"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "Lost Output (tons) = (Downtime Hours x Average Production Rate)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-07",
+    "archetype": "chemical",
+    "title": "Wastewater Treatment and Disposal Cost Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/07 - Wastewater Treatment and Disposal Cost Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the costs associated with treating and disposing of wastewater generated during the production process.",
+    "dataRequired": [
+      "Volume of wastewater generated per production period",
+      "Cost of wastewater treatment per unit volume",
+      "Disposal costs, including transportation and any regulatory fees",
+      "Chemical composition and contamination levels of wastewater",
+      "Regulatory standards for treated wastewater discharge",
+      "Industry benchmarks for wastewater treatment and disposal costs"
+    ],
+    "improve": [
+      "Implement Water Recycling",
+      "Optimize Treatment Process",
+      "Reduce Contaminants at Source",
+      "Explore Alternative Disposal Methods",
+      "How to Analyze a Chemicals Company",
+      "Invest in Advanced Treatment Technology",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total Treatment Cost",
+        "variables": [
+          "Volume of Wastewater",
+          "Cost per Unit of Treatment"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Total Treatment Cost = Volume of Wastewater x Cost per Unit of Treatment",
+        "step": null
+      },
+      {
+        "output": "Total Disposal Cost",
+        "variables": [
+          "Transportation Cost",
+          "Disposal Fees",
+          "Regulatory Fees"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Disposal Cost = Transportation Cost + Disposal Fees + Regulatory Fees",
+        "step": null
+      },
+      {
+        "output": "Treatment and Disposal Cost per Unit",
+        "variables": [
+          "Total Treatment Cost",
+          "Total Disposal Cost",
+          "Production Output"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Treatment and Disposal Cost per Unit = (Total Treatment Cost + Total Disposal Cost) / Production Output",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-08",
+    "archetype": "chemical",
+    "title": "Chemical Reaction Yield and Optimization Study",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS",
+      "PRODUCT_YIELD"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "YIELD_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/08 - Chemical Reaction Yield and Optimization Study.md",
+    "goal": "The goal of this analysis is to assess the efficiency of chemical reactions in terms of product yield and to identify optimization opportunities.",
+    "dataRequired": [
+      "Quantity of reactants used in each reaction (input volume or mass)",
+      "Quantity of products produced (output volume or mass)",
+      "Reaction conditions (e.g., temperature, pressure, catalysts used)",
+      "Yield percentage for each reaction (product produced vs. theoretical yield)",
+      "Energy consumption during the reaction",
+      "Industry benchmarks for similar reactions or processes"
+    ],
+    "improve": [
+      "Optimize Reaction Conditions",
+      "Use High-Performance Catalysts",
+      "Implement Real-Time Monitoring",
+      "Improve Raw Material Quality",
+      "Reduce Energy Consumption",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Actual Yield",
+        "variables": [
+          "Mass or Volume of Product Produced",
+          "Theoretical Maximum Yield"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Actual Yield = (Mass or Volume of Product Produced / Theoretical Maximum Yield) x 100",
+        "step": null
+      },
+      {
+        "output": "Reaction Efficiency",
+        "variables": [
+          "Total Product Output",
+          "Total Reactants Used"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Reaction Efficiency = (Total Product Output / Total Reactants Used) x 100",
+        "step": null
+      },
+      {
+        "output": "Energy Consumption per Unit",
+        "variables": [
+          "Total Energy Consumed",
+          "Total Product Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Energy Consumption per Unit = Total Energy Consumed / Total Product Output",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-09",
+    "archetype": "chemical",
+    "title": "High-Temperature and High-Pressure Process Resilience Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RELIABILITY_MAINTENANCE"
+    ],
+    "sourcePath": "data/analysis-library/chemical/09 - High-Temperature and High-Pressure Process Resilience.md",
+    "goal": "The goal of this analysis is to assess the resilience and reliability of processes operating under high-temperature and high-pressure (HTHP) conditions.",
+    "dataRequired": [
+      "Operating temperature and pressure ranges for each HTHP process",
+      "Material specifications and tolerances of equipment used in HTHP conditions",
+      "Historical data on equipment failures and maintenance for HTHP processes",
+      "Stress and fatigue resistance data for materials at specified temperature and pressure",
+      "Downtime and repair costs associated with HTHP equipment",
+      "Industry benchmarks on HTHP resilience and best practices for maintenance"
+    ],
+    "improve": [
+      "Upgrade to High-Performance Materials",
+      "Implement Predictive Maintenance for HTHP Equipment",
+      "Optimize Cooling and Pressure Relief Systems",
+      "Regularly Inspect and Test HTHP Equipment",
+      "How to Analyze a Chemicals Company",
+      "Use Advanced Coatings and Treatments",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Failure Rate",
+        "variables": [
+          "Number of Failures",
+          "Total Operating Time"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Failure Rate = (Number of Failures / Total Operating Time) x 100",
+        "step": null
+      },
+      {
+        "output": "Cost Impact per Downtime Hour",
+        "variables": [
+          "Total Downtime Costs",
+          "Total Downtime Hours"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Cost Impact per Downtime Hour = (Total Downtime Costs / Total Downtime Hours)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "chemical-10",
+    "archetype": "chemical",
+    "title": "Polymerization Process Efficiency and Cost Analysis",
+    "part": "A",
+    "partLabel": "Production & Process Optimization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS",
+      "PRODUCT_YIELD",
+      "CATALYST_EFFICIENCY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "YIELD_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/10 - Polymerization Process Efficiency and Cost Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the efficiency and cost-effectiveness of the polymerization process.",
+    "dataRequired": [
+      "Input quantities of monomers and other raw materials used in polymerization",
+      "Total polymer product yield and waste by-products",
+      "Energy consumption specific to the polymerization process",
+      "Catalyst type and amount used (if applicable)",
+      "Process conditions, including temperature, pressure, and reaction time",
+      "Production costs, including raw material, energy, and labor costs",
+      "Industry benchmarks for polymerization yield and process costs"
+    ],
+    "improve": [
+      "Optimize Reaction Conditions",
+      "Improve Catalyst Selection and Usage",
+      "Reduce Raw Material Waste",
+      "Invest in Energy Efficiency",
+      "How to Analyze a Chemicals Company",
+      "Implement Real-Time Monitoring",
+      "How to Analyze a Chemicals Company B. Finance"
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Unit",
+        "variables": [
+          "Total Production Cost",
+          "Total Polymer Output"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Cost per Unit = (Total Production Cost) / (Total Polymer Output)",
+        "step": "Determine Cost per Unit of Polymer Produced"
+      },
+      {
+        "output": "Energy Consumption per Unit",
+        "variables": [
+          "Total Energy Consumed for Polymerization",
+          "Total Polymer Output"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Energy Consumption per Unit = (Total Energy Consumed for Polymerization) / (Total Polymer Output)",
+        "step": "Analyze Energy Consumption per Unit of Polymer"
+      },
+      {
+        "output": "Catalyst Efficiency",
+        "variables": [
+          "Polymer Yield per Unit of Catalyst",
+          "Catalyst Cost"
+        ],
+        "expression": "( v0 ) / v1",
+        "percentOutput": false,
+        "source": "Catalyst Efficiency = (Polymer Yield per Unit of Catalyst) / Catalyst Cost",
+        "step": "Analyze Energy Consumption per Unit of Polymer"
+      }
+    ]
+  },
+  {
+    "id": "chemical-11",
+    "archetype": "chemical",
+    "title": "Supply Chain, Inventory, and Working Capital Efficiency Analysis",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO",
+      "DSO",
+      "DPO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DSO",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/chemical/11 - Supply Chain, Inventory, and Working Capital Efficiency.md",
+    "goal": "The goal of this analysis is to assess the efficiency of the supply chain, inventory management, and working capital utilization.",
+    "dataRequired": [
+      "Inventory levels (raw materials, work-in-progress, finished goods)",
+      "Inventory turnover rate",
+      "Days inventory outstanding (DIO)",
+      "Supply chain lead times for key materials",
+      "Working capital metrics, including accounts payable (AP) and accounts receivable (AR)",
+      "Cost of capital and carrying costs for inventory",
+      "Industry benchmarks for inventory turnover and working capital ratios"
+    ],
+    "improve": [
+      "Optimize Inventory Levels",
+      "Negotiate Better Supplier Terms",
+      "Improve Receivables Management",
+      "Reduce Lead Times and Increase Supplier Reliability",
+      "Implement Just-in-Time (JIT) Inventory",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Inventory Turnover Rate",
+        "variables": [
+          "Cost of Goods Sold (COGS)",
+          "Average Inventory"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Inventory Turnover Rate = Cost of Goods Sold (COGS) / Average Inventory",
+        "step": "Calculate Inventory Turnover Rate"
+      },
+      {
+        "output": "DIO",
+        "variables": [
+          "Average Inventory",
+          "COGS"
+        ],
+        "expression": "( v0 / v1 ) * 365",
+        "percentOutput": false,
+        "source": "DIO = (Average Inventory / COGS) x 365",
+        "step": "Calculate Inventory Turnover Rate"
+      },
+      {
+        "output": "DPO",
+        "variables": [
+          "Accounts Payable",
+          "COGS"
+        ],
+        "expression": "( v0 / v1 ) * 365",
+        "percentOutput": false,
+        "source": "DPO = (Accounts Payable / COGS) x 365",
+        "step": "Analyze Working Capital Metrics"
+      },
+      {
+        "output": "DSO",
+        "variables": [
+          "Accounts Receivable",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 365",
+        "percentOutput": false,
+        "source": "DSO = (Accounts Receivable / Total Sales) x 365",
+        "step": "Analyze Working Capital Metrics"
+      },
+      {
+        "output": "CCC",
+        "variables": [
+          "DIO",
+          "DSO",
+          "DPO"
+        ],
+        "expression": "v0 + v1 - v2",
+        "percentOutput": false,
+        "source": "CCC = DIO + DSO - DPO",
+        "step": "Analyze Working Capital Metrics"
+      },
+      {
+        "output": "Inventory Carrying Cost",
+        "variables": [
+          "Average Inventory",
+          "Carrying Cost Rate"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Inventory Carrying Cost = Average Inventory x Carrying Cost Rate",
+        "step": "Calculate Cost of Inventory Carrying"
+      }
+    ]
+  },
+  {
+    "id": "chemical-12",
+    "archetype": "chemical",
+    "title": "Capital Intensity and Return on Investment (ROI) by Facility",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CAPACITY_DEBOTTLENECKING",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/chemical/12 - Capital Intensity and Return on Investment (ROI) by Facility.md",
+    "goal": "The goal of this analysis is to evaluate the capital intensity of each production facility and measure its return on investment (ROI).",
+    "dataRequired": [
+      "Total capital investment for each facility (initial and ongoing investments)",
+      "Annual operating costs per facility",
+      "Annual revenue generated by each facility",
+      "Depreciation and maintenance costs",
+      "Production output (in tons or units) by facility",
+      "Industry benchmarks for capital intensity and ROI"
+    ],
+    "improve": [
+      "Optimize Capital Allocation",
+      "Implement Cost-Saving Measures",
+      "Upgrade Equipment and Processes",
+      "Divest or Repurpose Underperforming Assets",
+      "How to Analyze a Chemicals Company",
+      "Track and Adjust Investments Regularly",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Capital Intensity",
+        "variables": [
+          "Total Capital Investment",
+          "Annual Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Capital Intensity = Total Capital Investment / Annual Production Output",
+        "step": "Calculate Capital Intensity for Each Facility"
+      },
+      {
+        "output": "Operating Cost per Unit",
+        "variables": [
+          "Annual Operating Costs",
+          "Annual Production Output"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Operating Cost per Unit = Annual Operating Costs / Annual Production Output",
+        "step": "Analyze Operating Efficiency and Maintenance Costs"
+      }
+    ]
+  },
+  {
+    "id": "chemical-13",
+    "archetype": "chemical",
+    "title": "Pricing Strategy and Margin Analysis by Chemical Segment",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "PRICE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "SPECIALTY_MIX_SHIFT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/13 - Pricing Strategy and Margin Analysis by Chemical Segment.md",
+    "goal": "The goal of this analysis is to evaluate pricing strategies and profit margins across different chemical segments.",
+    "dataRequired": [
+      "Revenue and sales volume by chemical segment",
+      "Cost of goods sold (COGS) by segment, including raw materials, production, and distribution costs",
+      "Current pricing strategy for each segment (e.g., cost-plus, value-based, competitive)",
+      "Market pricing and competitor pricing data for similar products",
+      "Customer demand elasticity and segment-specific value propositions",
+      "Industry benchmarks for margins in each chemical segment"
+    ],
+    "improve": [
+      "Adjust Pricing Strategies",
+      "Reduce Costs for Low-Margin Segments",
+      "Focus on High-Margin Segments",
+      "Implement Dynamic Pricing",
+      "Regularly Review Competitor Pricing",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-14",
+    "archetype": "chemical",
+    "title": "Raw Material Hedging and Risk Management Strategy",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "COMMODITY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "FEEDSTOCK_SOURCING"
+    ],
+    "sourcePath": "data/analysis-library/chemical/14 - Raw Material Hedging and Risk Management Strategy.md",
+    "goal": "The goal of this analysis is to assess and implement strategies to manage price volatility and supply risks associated with raw materials.",
+    "dataRequired": [
+      "Historical price data for key raw materials",
+      "Consumption volume forecasts for each raw material",
+      "Current raw material cost structure and impact on overall production cost",
+      "Supplier contracts and delivery terms",
+      "Cash flow impact and cost-benefit analysis of hedging options",
+      "Available financial instruments (e.g., futures, options, fixed-price contracts)",
+      "Industry benchmarks for raw material cost management strategies"
+    ],
+    "improve": [
+      "Optimize Hedging Portfolio",
+      "How to Analyze a Chemicals Company",
+      "Negotiate Favorable Supplier Contracts",
+      "Enhance Market Monitoring",
+      "Implement Risk Contingency Plans",
+      "Consider Alternative Materials",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Cost Exposure (%)",
+        "variables": [
+          "Raw Material Cost",
+          "Total Production Cost"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Exposure (%) = (Raw Material Cost / Total Production Cost) x 100",
+        "step": "Analyze Financial Exposure to Raw Material Costs"
+      }
+    ]
+  },
+  {
+    "id": "chemical-15",
+    "archetype": "chemical",
+    "title": "By-product Revenue and Waste Management Cost Analysis",
+    "part": "B",
+    "partLabel": "Finance",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/15 - By-product Revenue and Waste Management Cost Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the revenue potential of by-products generated during production and to assess costs associated with waste management.",
+    "dataRequired": [
+      "Types and quantities of by-products generated in each production process",
+      "Market value or selling price of each by-product",
+      "Total revenue from by-product sales",
+      "Waste generated, categorized by type and volume",
+      "Waste disposal and treatment costs (e.g., transportation, disposal fees, treatment expenses)",
+      "Environmental regulations affecting waste disposal and by-product sales",
+      "Industry benchmarks for by-product revenue and waste management costs"
+    ],
+    "improve": [
+      "Increase By-product Revenue",
+      "Optimize Waste Management Costs",
+      "How to Analyze a Chemicals Company",
+      "Minimize Waste Generation",
+      "Implement Recycling and Reuse Programs",
+      "Invest in Sustainable Disposal Options",
+      "How to Analyze a Chemicals Company C. Regulatory & Compliance"
+    ],
+    "formulas": [
+      {
+        "output": "By-product Revenue",
+        "variables": [
+          "Quantity of By-product",
+          "Selling Price per Unit"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "By-product Revenue = Quantity of By-product x Selling Price per Unit",
+        "step": "Calculate By-product Revenue"
+      },
+      {
+        "output": "Net Contribution",
+        "variables": [
+          "Total By-product Revenue",
+          "Total Waste Management Cost"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Contribution = Total By-product Revenue - Total Waste Management Cost",
+        "step": "Analyze Net Contribution from By-products and Waste Management"
+      }
+    ]
+  },
+  {
+    "id": "chemical-16",
+    "archetype": "chemical",
+    "title": "Environmental Impact and Decarbonization Assessment",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "CARBON_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY",
+      "ENERGY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "ENERGY_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/chemical/16 - Environmental Impact and Decarbonization Assessment.md",
+    "goal": "The goal of this analysis is to assess the environmental impact of production activities, focusing on greenhouse gas (GHG) emissions, waste generation, water usage, and overall energy consumption.",
+    "dataRequired": [
+      "Direct and indirect greenhouse gas emissions (Scope 1, Scope 2, and Scope 3 emissions, if possible)",
+      "Energy consumption by source (e.g., fossil fuels, electricity, renewables)",
+      "Water usage and wastewater generation data",
+      "Waste generation data, categorized by type (hazardous, non-hazardous)",
+      "Environmental regulatory limits and compliance data",
+      "Industry benchmarks for environmental impact and carbon intensity",
+      "Decarbonization costs and ROI for potential initiatives (e.g., renewable energy adoption, energy efficiency improvements)"
+    ],
+    "improve": [
+      "Increase Renewable Energy Use",
+      "Improve Process Efficiency",
+      "Implement Carbon Capture and Storage",
+      "Adopt Circular Economy Practices",
+      "Set Emission Reduction Targets",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total GHG Emissions (tons CO2e)",
+        "variables": [
+          "Scope 1 (direct emissions)",
+          "Scope 2 (indirect emissions from purchased energy)",
+          "Scope 3 (other indirect emissions)"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total GHG Emissions (tons CO2e) = Scope 1 (direct emissions) + Scope 2 (indirect emissions from purchased energy) + Scope 3 (other indirect emissions)",
+        "step": "Calculate Total Greenhouse Gas (GHG) Emissions"
+      },
+      {
+        "output": "Carbon Intensity",
+        "variables": [
+          "Total GHG Emissions",
+          "Production Output (tons or units)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Carbon Intensity = Total GHG Emissions / Production Output (tons or units)",
+        "step": "Determine Carbon Intensity per Unit of Production"
+      },
+      {
+        "output": "Renewable Energy Use (%)",
+        "variables": [
+          "Renewable Energy Consumption",
+          "Total Energy Consumption"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Renewable Energy Use (%) = (Renewable Energy Consumption / Total Energy Consumption) x 100",
+        "step": "Analyze Energy Consumption by Source"
+      }
+    ]
+  },
+  {
+    "id": "chemical-17",
+    "archetype": "chemical",
+    "title": "Regulatory Risk Assessment Across Key Markets",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/17 - Regulatory Risk Assessment Across Key Markets.md",
+    "goal": "The goal of this analysis is to evaluate regulatory risks across the company’s key markets, focusing on compliance with environmental, health, safety, and industry-specific regulations.",
+    "dataRequired": [
+      "Key regulations in each target market (e.g., environmental, safety, industry-specific)",
+      "Compliance status and history for each market",
+      "Regulatory trends and anticipated changes (e.g., tightening emissions limits, safety standards)",
+      "Cost of compliance for each regulation, including necessary certifications and audits",
+      "Risk of non-compliance (penalties, legal costs, reputational impact)",
+      "Industry benchmarks for regulatory compliance practices and costs"
+    ],
+    "improve": [
+      "Develop a Compliance Management System",
+      "Invest in Compliance Training",
+      "Establish a Cross-functional Compliance Team",
+      "Engage with Regulators and Industry Bodies",
+      "Optimize Compliance Efficiency",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-18",
+    "archetype": "chemical",
+    "title": "HSE and Process Safety Risk Analysis",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [
+      "PROCESS_SAFETY_INCIDENTS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/18 - HSE and Process Safety Risk Analysis.md",
+    "goal": "The goal of this analysis is to assess health, safety, and environmental (HSE) risks, as well as process safety hazards associated with production activities.",
+    "dataRequired": [
+      "Historical safety incident data (e.g., accidents, near misses)",
+      "Process hazard analysis (PHA) reports, including failure modes and effects analysis (FMEA) and hazard and operability studies (HAZOP)",
+      "Safety protocols and procedures in place",
+      "Equipment reliability and maintenance records",
+      "Employee training records on HSE and process safety",
+      "Regulatory requirements for HSE and process safety compliance",
+      "Industry benchmarks for safety performance metrics (e.g., incident rates)"
+    ],
+    "improve": [
+      "Enhance Safety Protocols and Controls",
+      "Strengthen Preventive Maintenance Programs",
+      "Increase Frequency and Quality of Safety Training",
+      "Improve Incident Reporting and Analysis",
+      "Engage in Continuous Safety Audits and Inspections",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-19",
+    "archetype": "chemical",
+    "title": "Environmental Remediation Liability Assessment",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/19 - Environmental Remediation Liability Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the company’s potential liabilities related to environmental remediation.",
+    "dataRequired": [
+      "Site contamination data (e.g., soil, water, and air contaminant levels)",
+      "Historical records of environmental incidents and spills",
+      "Regulatory requirements for remediation in relevant jurisdictions",
+      "Estimated remediation costs (e.g., site assessment, containment, clean-up)",
+      "Potential fines and penalties associated with non-compliance",
+      "Insurance coverage and policy terms for environmental liability",
+      "Industry benchmarks for remediation costs and liability provisions"
+    ],
+    "improve": [
+      "Prioritize High-Risk Sites for Remediation",
+      "Explore Alternative Remediation Techniques",
+      "How to Analyze a Chemicals Company",
+      "Increase Liability Insurance Coverage",
+      "Establish Environmental Reserves",
+      "Engage in Regular Environmental Audits",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-20",
+    "archetype": "chemical",
+    "title": "End-of-Life Product Stewardship and Disposal Costs",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/20 - End-of-Life Product Stewardship and Disposal Costs.md",
+    "goal": "The goal of this analysis is to evaluate the costs and responsibilities associated with the disposal and end-of-life management of products.",
+    "dataRequired": [
+      "Product lifecycle information, including expected end-of-life stage",
+      "Disposal and recycling costs per unit or product type",
+      "Regulatory requirements for end-of-life product management in each relevant market",
+      "Potential revenue from recycled materials (if applicable)",
+      "Transportation and logistics costs for product disposal or recycling",
+      "Industry benchmarks for end-of-life management and disposal costs"
+    ],
+    "improve": [
+      "Optimize Recycling Programs",
+      "Redesign Products for Easier Recycling",
+      "Enhance Take-Back Programs",
+      "How to Analyze a Chemicals Company",
+      "Seek Alternative Disposal Methods",
+      "Invest in Sustainable Materials",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total Disposal Cost",
+        "variables": [
+          "Collection",
+          "Transportation",
+          "Recycling",
+          "Disposal Fees"
+        ],
+        "expression": "v0 + v1 + v2 / v3",
+        "percentOutput": false,
+        "source": "Total Disposal Cost = Collection + Transportation + Recycling/Disposal Fees",
+        "step": "Determine Disposal and Recycling Costs"
+      },
+      {
+        "output": "Net Disposal Cost",
+        "variables": [
+          "Total Disposal Cost",
+          "Revenue from Recycled Materials"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Disposal Cost = Total Disposal Cost - Revenue from Recycled Materials",
+        "step": "Evaluate Potential Revenue from Recycled Materials"
+      }
+    ]
+  },
+  {
+    "id": "chemical-21",
+    "archetype": "chemical",
+    "title": "Chemical Product Registration and REACH Compliance",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/21 - Chemical Product Registration and REACH Compliance.md",
+    "goal": "The goal of this analysis is to assess the company’s compliance with chemical product registration requirements, particularly under the European Union’s REACH (Registration, Evaluation, Authorization, and Restriction of Chemicals) regulation.",
+    "dataRequired": [
+      "Comprehensive list of chemical products produced or imported",
+      "Product compositions, including all chemical substances and quantities",
+      "Registration status of each chemical substance under REACH or equivalent regulations in other jurisdictions",
+      "Safety data sheets (SDS) and hazard classification for each substance",
+      "Supplier compliance documentation (for substances sourced externally)",
+      "Costs associated with registration, testing, and compliance",
+      "Industry benchmarks for REACH compliance costs and processes"
+    ],
+    "improve": [
+      "Streamline Registration Processes",
+      "Enhance Supplier Compliance Audits",
+      "Invest in Safer Alternatives for SVHCs",
+      "How to Analyze a Chemicals Company",
+      "Implement a Compliance Management System",
+      "Reduce Compliance Costs Through In-House Testing",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Total Compliance Cost",
+        "variables": [
+          "Registration Fees",
+          "Testing Costs",
+          "Administrative Costs"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Compliance Cost = Registration Fees + Testing Costs + Administrative Costs",
+        "step": "Assess Cost of Registration and Compliance Activities"
+      }
+    ]
+  },
+  {
+    "id": "chemical-22",
+    "archetype": "chemical",
+    "title": "Transportation Hazard and Handling Cost Analysis",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/22 - Transportation Hazard and Handling Cost Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the costs and risks associated with transporting hazardous chemicals.",
+    "dataRequired": [
+      "Inventory of hazardous chemicals requiring transport",
+      "Transportation methods (e.g., rail, road, sea) and associated costs",
+      "Packaging and labeling requirements for hazardous materials",
+      "Regulatory compliance requirements (e.g., ADR, DOT, IMDG Code)",
+      "Incident history and risk data for hazardous material transport",
+      "Insurance costs and coverage details for hazardous shipments",
+      "Industry benchmarks for transportation and handling costs of hazardous materials"
+    ],
+    "improve": [
+      "Optimize Packaging and Labeling",
+      "How to Analyze a Chemicals Company",
+      "Consider Alternative Transportation Methods",
+      "Implement Risk Mitigation Measures",
+      "Negotiate with Carriers for Better Rates",
+      "Regularly Audit Compliance and Safety Protocols",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-23",
+    "archetype": "chemical",
+    "title": "End-user Certification and Compliance Requirements",
+    "part": "C",
+    "partLabel": "Regulatory & Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/23 - End-user Certification and Compliance Requirements.md",
+    "goal": "The goal of this analysis is to identify and ensure compliance with all certification and regulatory requirements for end-users of the company’s products.",
+    "dataRequired": [
+      "List of products and their specific end-user applications",
+      "Certification requirements for each market or industry (e.g., CE, UL, ISO standards)",
+      "Regulatory compliance requirements in each target market (e.g., FDA, RoHS, REACH)",
+      "Documentation and testing requirements for each certification",
+      "Cost of certification, testing, and compliance documentation",
+      "Industry benchmarks for end-user certification compliance costs"
+    ],
+    "improve": [
+      "Streamline Testing and Documentation Processes",
+      "Negotiate with Testing Providers",
+      "Implement a Certification Management System",
+      "How to Analyze a Chemicals Company",
+      "Engage in Pre-certification Audits",
+      "Explore Alternative Certification Programs",
+      "How to Analyze a Chemicals Company D. Sales & Marketing"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-24",
+    "archetype": "chemical",
+    "title": "Product Portfolio Profitability by Chemical Type",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "SPECIALTY_MIX_SHIFT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/24 - Product Portfolio Profitability by Chemical Type.md",
+    "goal": "The goal of this analysis is to evaluate the profitability of different chemical types within the company’s product portfolio.",
+    "dataRequired": [
+      "Revenue generated by each chemical type",
+      "Cost of goods sold (COGS) for each chemical type, including raw materials, production, and distribution costs",
+      "Operating expenses allocated to each chemical type (e.g., marketing, R&D, sales)",
+      "Sales volume data by chemical type",
+      "Gross margin and net margin calculations per chemical type",
+      "Industry benchmarks for profitability by chemical segment (if available)"
+    ],
+    "improve": [
+      "Optimize Pricing Strategy",
+      "Reduce Production Costs",
+      "Focus on High-Profit Chemical Types",
+      "Consider Portfolio Restructuring",
+      "Enhance Product Differentiation",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-25",
+    "archetype": "chemical",
+    "title": "End-market Demand and Customer Segmentation Analysis",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/25 - End-market Demand and Customer Segmentation Analysis.md",
+    "goal": "The goal of this analysis is to assess end-market demand for the company’s products and to segment customers based on purchasing behavior, industry needs, and other relevant factors.",
+    "dataRequired": [
+      "Sales data by product, customer, and end-market",
+      "Market demand projections and growth rates for each end-market",
+      "Customer purchase frequency, volume, and average order value",
+      "Customer demographic and firmographic data (e.g., industry, company size, geographic location)",
+      "Customer feedback and satisfaction data (if available)",
+      "Industry benchmarks for demand growth and customer segmentation"
+    ],
+    "improve": [
+      "Tailor Marketing Strategies by Segment",
+      "Focus on High-Growth End-markets",
+      "Enhance Customer Relationships in Key Segments",
+      "Refine Product Offerings Based on Segment Needs",
+      "Explore New Market Segments",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-26",
+    "archetype": "chemical",
+    "title": "Competitive Positioning in Specialty vs. Commodity Chemicals",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "PRICE_GROWTH",
+      "SPECIALTY_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "SPECIALTY_MIX_SHIFT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/26 - Competitive Positioning in Specialty vs. Commodity.md",
+    "goal": "The goal of this analysis is to evaluate the company’s market position and competitive strengths in the specialty and commodity chemical segments.",
+    "dataRequired": [
+      "Revenue and market share data for both specialty and commodity chemicals",
+      "Profit margins by product segment (specialty vs. commodity)",
+      "Competitor analysis (pricing, product differentiation, market share) in each segment",
+      "Customer value propositions for specialty and commodity products",
+      "Production costs, economies of scale, and pricing flexibility by segment",
+      "Industry growth projections and trends in specialty and commodity chemical markets",
+      "Customer demand and purchasing behavior data for each segment"
+    ],
+    "improve": [
+      "Differentiate Specialty Products",
+      "Optimize Costs for Commodity Chemicals",
+      "Tailor Sales and Marketing Strategies",
+      "Expand into High-Growth Specialty Markets",
+      "How to Analyze a Chemicals Company",
+      "Leverage Economies of Scale in Commodities",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-27",
+    "archetype": "chemical",
+    "title": "Market Entry and Expansion Feasibility by Region",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/27 - Market Entry and Expansion Feasibility by Region.md",
+    "goal": "The goal of this analysis is to assess the feasibility of entering new markets or expanding existing operations in specific regions.",
+    "dataRequired": [
+      "Target region's market demand and growth rate for relevant products",
+      "Competitive landscape, including key competitors, market share, and pricing strategies",
+      "Regulatory requirements (e.g., import/export restrictions, product standards)",
+      "Entry barriers (e.g., tariffs, local partnerships, supply chain needs)",
+      "Customer demographics and preferences in each region",
+      "Infrastructure availability (e.g., logistics, distribution networks)",
+      "Cost structure for production, distribution, and marketing by region",
+      "Industry benchmarks and projected growth for each region"
+    ],
+    "improve": [
+      "Develop Region-specific Market Entry Strategies",
+      "Establish Local Partnerships",
+      "Optimize Supply Chain and Logistics",
+      "Invest in Regulatory Expertise",
+      "How to Analyze a Chemicals Company",
+      "Focus on High-Growth Regions",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-28",
+    "archetype": "chemical",
+    "title": "Product Substitution and Competitive Threats Analysis",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/28 - Product Substitution and Competitive Threats Analysis.md",
+    "goal": "The goal of this analysis is to assess the risk of product substitution and identify competitive threats in the market.",
+    "dataRequired": [
+      "List of current products and their primary uses/applications",
+      "Alternative products and substitutes available in the market",
+      "Competitor data, including new entrants, pricing, market share, and product innovations",
+      "Customer feedback and preferences regarding potential substitutes",
+      "Industry trends influencing substitution risks (e.g., technology, regulatory changes, sustainability)",
+      "Cost and performance comparison between the company’s products and substitutes",
+      "Industry benchmarks and competitor analysis reports"
+    ],
+    "improve": [
+      "Enhance Product Differentiation",
+      "Develop a Customer Retention Strategy",
+      "Adjust Pricing or Cost Structures",
+      "Monitor and Adapt to Industry Trends",
+      "Expand into Complementary Markets",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-29",
+    "archetype": "chemical",
+    "title": "Customer Contract and Offtake Agreement Assessment",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/29 - Customer Contract and Offtake Agreement Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the terms, profitability, and risk factors associated with customer contracts and offtake agreements.",
+    "dataRequired": [
+      "List of current customer contracts and offtake agreements, including term length and volume commitments",
+      "Pricing terms and escalation clauses in each agreement",
+      "Performance requirements and penalties for non-compliance",
+      "Customer creditworthiness and historical payment records",
+      "Volume flexibility terms (e.g., minimum take-or-pay clauses)",
+      "Historical utilization rates and forecasting data for product demand",
+      "Industry benchmarks for contract terms and pricing structures"
+    ],
+    "improve": [
+      "Renegotiate High-Risk Contracts",
+      "Optimize Pricing and Escalation Clauses",
+      "Strengthen Customer Credit Evaluation",
+      "Align Production with Contracted Demand",
+      "Expand Options for Volume Flexibility",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-30",
+    "archetype": "chemical",
+    "title": "Patent Expiration Impact on Competitive Positioning",
+    "part": "D",
+    "partLabel": "Sales & Marketing",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/chemical/30 - Patent Expiration Impact on Competitive Positioning.md",
+    "goal": "The goal of this analysis is to assess the potential impact of patent expirations on the company’s competitive positioning.",
+    "dataRequired": [
+      "List of key patents nearing expiration, including expiration dates and product coverage",
+      "Revenue and market share data for products protected by each patent",
+      "Competitor activity related to similar products or technologies",
+      "R&D pipeline for next-generation products or improvements",
+      "Industry trends and customer demand changes that may affect post-expiration demand",
+      "Licensing agreements or royalties tied to each patent (if applicable)",
+      "Benchmark data on competitor responses to patent expirations in similar markets"
+    ],
+    "improve": [
+      "Accelerate R&D for Next-generation Products",
+      "Develop Licensing and Partnership Opportunities",
+      "Introduce Value-added Features or Premium Versions",
+      "Strengthen Brand Loyalty Through Marketing and Customer Engagement",
+      "How to Analyze a Chemicals Company",
+      "Monitor and Adjust Competitive Strategy Post-expiration",
+      "How to Analyze a Chemicals Company E. Technology"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-31",
+    "archetype": "chemical",
+    "title": "Process Technology Competitiveness",
+    "part": "E",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/31 - Process Technology Competitiveness.md",
+    "goal": "The goal of this analysis is to evaluate the company’s process technology in comparison to industry standards and competitors.",
+    "dataRequired": [
+      "Current process technology used in production (e.g., automation, energy efficiency, waste reduction capabilities)",
+      "Production costs, cycle times, and output rates associated with each technology",
+      "Competitor technology and efficiency data, where available",
+      "Industry benchmarks for process efficiency, energy use, and waste minimization",
+      "R&D investments in process technology improvements",
+      "Customer feedback related to product quality, consistency, and lead times (as affected by process technology)",
+      "Environmental and regulatory compliance requirements that influence process technology competitiveness"
+    ],
+    "improve": [
+      "Invest in Advanced Automation and Digitalization",
+      "Enhance Energy Efficiency",
+      "How to Analyze a Chemicals Company",
+      "Adopt Waste Reduction Technologies",
+      "Prioritize R&D in Process Innovation",
+      "Monitor and Adjust Based on Industry Standards",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-32",
+    "archetype": "chemical",
+    "title": "Process Automation and Digitalization Readiness",
+    "part": "E",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/32 - Process Automation and Digitalization Readiness.md",
+    "goal": "The goal of this analysis is to assess the company’s readiness for process automation and digitalization.",
+    "dataRequired": [
+      "Current state of process automation and digital tools in use (e.g., ERP systems, IoT sensors, data analytics platforms)",
+      "Workflow efficiency metrics (e.g., cycle times, error rates, production output) before and after any current automation",
+      "Workforce digital skills and training needs",
+      "Infrastructure readiness, including IT support, data storage, and cybersecurity measures",
+      "Industry benchmarks for automation and digital adoption levels",
+      "Potential ROI from digital and automation investments, including cost savings, productivity improvements, and quality gains",
+      "Regulatory requirements for data security and privacy in digitized processes"
+    ],
+    "improve": [
+      "Prioritize Automation in High-Impact Areas",
+      "Invest in Workforce Training",
+      "How to Analyze a Chemicals Company",
+      "Enhance IT Infrastructure and Cybersecurity",
+      "Adopt Data-Driven Decision-Making",
+      "Implement Gradual Automation and Pilot Programs",
+      "How to Analyze a Chemicals Company F. Research & Development (R&D)"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-33",
+    "archetype": "chemical",
+    "title": "Specialty Chemicals R&D and Innovation Pipeline Analysis",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "SPECIALTY_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "SPECIALTY_MIX_SHIFT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/33 - Specialty Chemicals R&D and Innovation Pipeline Analysis.md",
+    "goal": "The goal of this analysis is to assess the company’s research and development (R&D) efforts and innovation pipeline within the specialty chemicals segment.",
+    "dataRequired": [
+      "Current R&D projects and their development stages (e.g., concept, pilot testing, commercialization)",
+      "Projected market demand and revenue potential for each innovation",
+      "R&D budget allocation by project or product line",
+      "Competitor innovations in specialty chemicals and industry trends",
+      "Time-to-market estimates and project timelines",
+      "Patent status and intellectual property considerations for each project",
+      "Customer feedback and market validation data for specialty products (if available)",
+      "Industry benchmarks for R&D spending, innovation rate, and time-to-market"
+    ],
+    "improve": [
+      "Focus on High-Potential Projects",
+      "Enhance IP Protections",
+      "Invest in Customer and Market Validation",
+      "How to Analyze a Chemicals Company",
+      "Implement Agile R&D Practices",
+      "Monitor Competitor Innovations and Adapt Accordingly",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-34",
+    "archetype": "chemical",
+    "title": "Specialty Chemical Customization Capability Assessment",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "SPECIALTY_REVENUE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "WC_DIO",
+      "SPECIALTY_MIX_SHIFT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/34 - Specialty Chemical Customization Capability Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the company’s ability to customize specialty chemicals to meet specific customer requirements.",
+    "dataRequired": [
+      "Current customization capabilities by product line (e.g., formulation flexibility, batch size variations)",
+      "Customer demand data for customized vs. standard products",
+      "Production lead times and costs associated with customized orders",
+      "Competitor customization capabilities and lead times",
+      "Customer feedback and satisfaction data related to customization",
+      "R&D support for customization and innovation pipeline",
+      "Industry benchmarks for customization capabilities and lead times"
+    ],
+    "improve": [
+      "Streamline Customization Processes",
+      "Invest in R&D for Custom Solutions",
+      "Enhance Customer Engagement and Feedback Channels",
+      "Optimize Inventory and Batch Production",
+      "Benchmark Against Leaders in Customization",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-35",
+    "archetype": "chemical",
+    "title": "R&D Pipeline and Innovation Rate in Specialty Chemicals",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "INNOVATION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/chemical/35 - R&D Pipeline and Innovation Rate in Specialty Chemicals.md",
+    "goal": "The goal of this analysis is to evaluate the effectiveness of the R&D pipeline and the company’s innovation rate within the specialty chemicals segment.",
+    "dataRequired": [
+      "List of active R&D projects in specialty chemicals, including stage (e.g., concept, pilot, commercialization)",
+      "Time-to-market estimates for each project and historical data on time-to-market for past projects",
+      "Annual innovation rate (e.g., number of new products launched per year)",
+      "R&D budget allocation by project or product line",
+      "Revenue generated by recently launched specialty chemicals products",
+      "Customer demand and feedback for new product innovations",
+      "Industry benchmarks for innovation rate and time-to-market in specialty chemicals"
+    ],
+    "improve": [
+      "How to Analyze a Chemicals Company",
+      "Streamline Development Processes",
+      "Prioritize High-Impact Projects",
+      "Enhance Collaboration Between R&D and Marketing",
+      "Invest in Predictive Market Research",
+      "Benchmark R&D Processes Regularly",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": [
+      {
+        "output": "Innovation Rate",
+        "variables": [
+          "Number of New Product Launches",
+          "Year"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Innovation Rate = (Number of New Product Launches / Year)",
+        "step": "Calculate Annual Innovation Rate"
+      }
+    ]
+  },
+  {
+    "id": "chemical-36",
+    "archetype": "chemical",
+    "title": "Feedstock Dependency, Cost, Sourcing, and Substitution Strategy Analysis",
+    "part": "F",
+    "partLabel": "Research & Development (R&D)",
+    "relatedMetricCodes": [
+      "FEEDSTOCK_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY",
+      "COMMODITY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "FEEDSTOCK_SOURCING"
+    ],
+    "sourcePath": "data/analysis-library/chemical/36 - Feedstock Dependency, Cost, Sourcing, and Substitution.md",
+    "goal": "The goal of this analysis is to evaluate the company’s dependency on key feedstocks, assess feedstock costs and sourcing strategies, and explore substitution options.",
+    "dataRequired": [
+      "List of primary feedstocks, quantities used, and costs",
+      "Dependency levels for each feedstock, including single-sourced or multi-sourced materials",
+      "Historical and forecasted price data for feedstocks",
+      "Supplier contracts and terms, including exclusivity, pricing, and lead times",
+      "Alternative feedstock options and associated costs",
+      "Quality and performance implications of feedstock substitutions",
+      "Environmental and regulatory factors influencing feedstock selection",
+      "Industry benchmarks for feedstock costs, dependency levels, and substitution strategies"
+    ],
+    "improve": [
+      "Diversify Supplier Base",
+      "Implement Cost Hedging or Long-term Contracts",
+      "Invest in Feedstock Substitution R&D",
+      "How to Analyze a Chemicals Company",
+      "Develop a Sustainable Sourcing Strategy",
+      "Monitor and Adapt to Industry Trends in Feedstock Use",
+      "How to Analyze a Chemicals Company G. Supply Chain"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-37",
+    "archetype": "chemical",
+    "title": "Supply Chain Integration and Logistics Optimization",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/chemical/37 - Supply Chain Integration and Logistics Optimization.md",
+    "goal": "The goal of this analysis is to evaluate the integration of supply chain processes and optimize logistics to improve efficiency, reduce costs, and enhance responsiveness.",
+    "dataRequired": [
+      "Current supply chain workflow (from procurement to distribution) and key processes",
+      "Lead times, transit times, and order cycle times for each supply chain stage",
+      "Cost data for procurement, warehousing, and transportation",
+      "Inventory levels and turnover rates",
+      "Supplier reliability and on-time delivery rates",
+      "Customer demand variability and order patterns",
+      "Technology and digital tools in use for supply chain management (e.g., ERP, TMS, WMS)",
+      "Industry benchmarks for supply chain efficiency and logistics costs"
+    ],
+    "improve": [
+      "Improve Supplier Collaboration and Reliability",
+      "How to Analyze a Chemicals Company",
+      "Invest in Real-Time Supply Chain Visibility",
+      "Optimize Inventory Management",
+      "Reduce Transportation Costs Through Optimization",
+      "Streamline Order Fulfillment Processes",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-38",
+    "archetype": "chemical",
+    "title": "Supplier Dependence and Diversification Analysis",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "FEEDSTOCK_SOURCING"
+    ],
+    "sourcePath": "data/analysis-library/chemical/38 - Supplier Dependence and Diversification Analysis.md",
+    "goal": "The goal of this analysis is to evaluate the company’s dependence on key suppliers and assess diversification levels within the supply chain.",
+    "dataRequired": [
+      "List of key suppliers by product or material, including primary feedstocks and critical components",
+      "Spend allocation per supplier (percentage of total procurement spend)",
+      "Supplier performance metrics (e.g., on-time delivery rate, quality issues)",
+      "Geographic location of suppliers and associated geopolitical or environmental risks",
+      "Contract terms, including exclusivity clauses and lead times",
+      "Potential alternative suppliers and their capacity, quality, and costs",
+      "Industry benchmarks for supplier diversification and risk management"
+    ],
+    "improve": [
+      "Diversify Supplier Base for Critical Materials",
+      "Negotiate More Flexible Contract Terms",
+      "Implement a Supplier Performance Monitoring Program",
+      "Build Regional and Local Sourcing Options",
+      "How to Analyze a Chemicals Company",
+      "Invest in Supplier Development and Collaboration",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-39",
+    "archetype": "chemical",
+    "title": "Global Trade Flow Analysis for Raw Materials and Finished Products",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "COMMODITY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "FEEDSTOCK_SOURCING"
+    ],
+    "sourcePath": "data/analysis-library/chemical/39 - Global Trade Flow Analysis for Raw Materials and Finished.md",
+    "goal": "The goal of this analysis is to assess the flow of raw materials and finished products across global markets, identifying key trade routes, dependencies, and potential risks.",
+    "dataRequired": [
+      "Origin and destination data for raw materials and finished products",
+      "Trade routes and transportation modes used for each flow",
+      "Volume, frequency, and cost data associated with each trade route",
+      "Import/export tariffs, trade agreements, and regulatory requirements by country",
+      "Lead times and transit times for each route",
+      "Geopolitical risks and recent disruptions impacting trade routes",
+      "Industry benchmarks for trade flow efficiency and costs"
+    ],
+    "improve": [
+      "Optimize Transportation Modes and Consolidate Shipments",
+      "Leverage Trade Agreements and Duty-Free Zones",
+      "Establish Contingency Plans for High-Risk Routes",
+      "Invest in Just-in-Time Shipping",
+      "How to Analyze a Chemicals Company",
+      "Utilize Digital Tools for Real-Time Tracking",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-40",
+    "archetype": "chemical",
+    "title": "Supplier Quality and Consistency Impact Assessment",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/chemical/40 - Supplier Quality and Consistency Impact Assessment.md",
+    "goal": "The goal of this analysis is to evaluate the quality and consistency of materials provided by suppliers, assessing their impact on production efficiency, product quality, and customer satisfaction.",
+    "dataRequired": [
+      "Quality control metrics for each supplier, including defect rates and compliance with specifications",
+      "Frequency of quality issues or deviations in supplied materials",
+      "Historical data on production downtime or delays caused by supplier issues",
+      "Cost of quality issues (e.g., rework, scrap, warranty claims)",
+      "Customer complaints or returns linked to supplier-related quality issues",
+      "Supplier performance metrics, including on-time delivery and responsiveness",
+      "Industry benchmarks for supplier quality and consistency"
+    ],
+    "improve": [
+      "Implement Regular Quality Audits",
+      "Increase Quality Control Inspections for High-Risk Suppliers",
+      "Work Collaboratively with Suppliers on Quality Improvement Plans",
+      "How to Analyze a Chemicals Company",
+      "Establish Contingency Plans for Critical Components",
+      "Use Performance-based Contracts and Incentives",
+      "How to Analyze a Chemicals Company"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "chemical-41",
+    "archetype": "chemical",
+    "title": "Vertical Integration Opportunities and Value Chain Positioning",
+    "part": "G",
+    "partLabel": "Supply Chain",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/chemical/41 - Vertical Integration Opportunities and Value Chain Positioning.md",
+    "goal": "The goal of this analysis is to assess opportunities for vertical integration within the value chain to enhance control over inputs, reduce costs, improve product quality, and capture additional value.",
+    "dataRequired": [
+      "Current value chain map, detailing suppliers, production, distribution, and sales channels",
+      "Costs associated with sourcing, production, and distribution stages",
+      "Supplier performance data, including quality, cost consistency, and reliability",
+      "Market analysis for upstream (e.g., raw materials, components) and downstream (e.g., distribution, sales) integration opportunities",
+      "Competitor analysis on integration strategies and value chain positioning",
+      "Customer demand trends and preferences related to control over product quality, supply reliability, and sustainability",
+      "Capital investment requirements and potential ROI for integration initiatives",
+      "Regulatory and industry constraints or incentives for vertical integration"
+    ],
+    "improve": [
+      "Prioritize High-Impact Integration Opportunities",
+      "How to Analyze a Chemicals Company",
+      "Evaluate In-House Capabilities vs. Strategic Partnerships",
+      "Invest in Technologies for Process Efficiency",
+      "Explore Downstream Control for Enhanced Market Reach",
+      "Implement Supply Chain Transparency Initiatives"
+    ],
+    "formulas": []
+  }
+]

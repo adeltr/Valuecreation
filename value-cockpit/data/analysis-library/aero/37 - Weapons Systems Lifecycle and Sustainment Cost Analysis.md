@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-37
+part: E
+partLabel: Finance & Program Management
+quant: [FIXED_PRICE_SHARE, COST_OVERRUN_RATE, SUSTAINMENT_COST]
+causes: [PROGRAM]
+levers: [MRO_EFFICIENCY, CONTRACT_MIX]
 ---
 # 37 · Weapons Systems Lifecycle and Sustainment Cost Analysis
 

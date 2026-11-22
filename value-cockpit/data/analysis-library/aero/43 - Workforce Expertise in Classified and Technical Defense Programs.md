@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-43
+part: E
+partLabel: Finance & Program Management
+quant: [WORKFORCE_TURNOVER]
+causes: [ORGANIZATIONAL]
+levers: []
 ---
 # 43 · Workforce Expertise in Classified and Technical Defense Programs
 

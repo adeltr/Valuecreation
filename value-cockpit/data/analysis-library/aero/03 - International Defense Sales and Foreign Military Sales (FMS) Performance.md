@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/A
+kind: analysis
+id: aero-03
+part: A
+partLabel: Strategy & Market Position
+quant: [ON_TIME_DELIVERY, COST_OVERRUN_RATE, WIN_RATE]
+causes: [REGULATORY, GEOPOLITICAL]
+levers: [EXPORT_FMS, PROGRAM_EXECUTION]
 ---
 # 3 · International Defense Sales and Foreign Military Sales (FMS) Performance
 

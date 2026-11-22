@@ -1,0 +1,2373 @@
+[
+  {
+    "id": "electricity-generation-01",
+    "archetype": "electricity-generation",
+    "title": "Generation Capacity and Utilization Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "INSTALLED_CAPACITY_GW",
+      "CAPACITY_FACTOR"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "AVAILABILITY_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/01 - Generation Capacity and Utilization Analysis.md",
+    "goal": "To assess the operational efficiency and effectiveness of electricity generation assets by evaluating their capacity and utilization rates.",
+    "dataRequired": [
+      "Installed generation capacity (MW) for each power plant.",
+      "Actual power generated over a specific period (Mffh).",
+      "Plant availability and downtime data (scheduled and unscheduled).",
+      "Seasonal or hourly demand data (optional for deeper insights).",
+      "Industry benchmarks for capacity utilization."
+    ],
+    "improve": [
+      "Conduct a root cause analysis for plants with low capacity factors (e.g., maintenance issues, fuel supply constraints).",
+      "Optimize maintenance schedules to minimize downtime during peak demand periods.",
+      "Explore upgrades or retrofitting opportunities for underperforming plants to enhance efficiency.",
+      "Improve demand forecasting and load balancing to align generation with actual consumption.",
+      "Assess the feasibility of decommissioning chronically underutilized assets or replacing them with more flexible generation technologies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Factor (%)",
+        "variables": [
+          "Actual Power Generated (Mffh)",
+          "Installed Capacity (MW)",
+          "Hours in Period"
+        ],
+        "expression": "( v0 / ( v1 * v2 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Factor (%) = (Actual Power Generated (Mffh) / (Installed Capacity (MW) x Hours in Period)) x 100",
+        "step": "Calculate Capacity Factor"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-02",
+    "archetype": "electricity-generation",
+    "title": "Power Plant Performance and Efficiency Evaluation",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "HEAT_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "HEAT_RATE_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/02 - Power Plant Performance and Efficiency Evaluation.md",
+    "goal": "To evaluate the overall performance and efficiency of power plants by examining key operational metrics such as thermal efficiency, output reliability, and energy conversion effectiveness.",
+    "dataRequired": [
+      "Fuel input data (e.g., fuel type, quantity, and calorific value).",
+      "Electricity output data (e.g., net power generated in Mffh).",
+      "Heat rate data (if available).",
+      "Operational hours and downtime records.",
+      "Emission data (optional for advanced efficiency evaluations).",
+      "Industry benchmarks for similar power plant types."
+    ],
+    "improve": [
+      "Implement regular maintenance schedules to enhance reliability and minimize forced outages.",
+      "Upgrade older equipment or adopt advanced technologies to improve thermal efficiency and reduce heat rate.",
+      "Optimize fuel procurement strategies to ensure consistent fuel quality.",
+      "Use predictive analytics and real-time monitoring systems to proactively identify and address inefficiencies.",
+      "Conduct employee training programs to improve operational best practices and reduce performance variability.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Thermal Efficiency (%)",
+        "variables": [
+          "Net Electricity Output (Mffh)",
+          "Fuel Input in GJ"
+        ],
+        "expression": "( v0 * 3.6 ) / ( v1 ) * 100",
+        "percentOutput": true,
+        "source": "Thermal Efficiency (%) = (Net Electricity Output (Mffh) x 3.6) / (Fuel Input in GJ) x 100",
+        "step": "Calculate Thermal Efficiency"
+      },
+      {
+        "output": "Heat Rate (kJ/kffh)",
+        "variables": [
+          "Fuel Input (GJ)",
+          "Net Electricity Output (Mffh)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Heat Rate (kJ/kffh) = Fuel Input (GJ) / Net Electricity Output (Mffh)",
+        "step": "Evaluate Heat Rate"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-03",
+    "archetype": "electricity-generation",
+    "title": "Heat Rate Degradation and Monitoring Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "HEAT_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "HEAT_RATE_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/03 - Heat Rate Degradation and Monitoring Analysis.md",
+    "goal": "To assess and monitor changes in the heat rate of power plants over time, identify factors contributing to degradation, and propose strategies to maintain or improve efficiency.",
+    "dataRequired": [
+      "Historical heat rate data (kJ/kffh or BTU/kffh) for the power plant.",
+      "Fuel input data (quantity and calorific value).",
+      "Net electricity output (Mffh).",
+      "Maintenance and downtime records.",
+      "Ambient conditions data (e.g., temperature, humidity).",
+      "Plant age and operational history.",
+      "Industry benchmarks for heat rate by generation type and age."
+    ],
+    "improve": [
+      "Perform regular cleaning and maintenance of boilers, turbines, and heat exchangers to reduce fouling and improve efficiency.",
+      "Invest in advanced monitoring systems for real-time tracking of heat rate and operational anomalies.",
+      "Optimize operational practices, such as maintaining optimal load levels to avoid stress on equipment.",
+      "Upgrade aging equipment with energy-efficient alternatives to reduce heat rate degradation.",
+      "Implement predictive maintenance strategies to address potential issues before they affect performance.",
+      "Conduct periodic audits to ensure alignment with industry best practices and benchmarks.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Heat Rate (kJ/kffh)",
+        "variables": [
+          "Fuel Input (GJ)",
+          "Net Electricity Output (Mffh)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Heat Rate (kJ/kffh) = Fuel Input (GJ) / Net Electricity Output (Mffh).",
+        "step": "Collect Historical Heat Rate Data"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-04",
+    "archetype": "electricity-generation",
+    "title": "Capacity Factor and Forced Outage Rate Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "CAPACITY_FACTOR",
+      "FORCED_OUTAGE_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "AVAILABILITY_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/04 - Capacity Factor and Forced Outage Rate Analysis.md",
+    "goal": "To evaluate the efficiency and reliability of power plants by analyzing their capacity factor and forced outage rate.",
+    "dataRequired": [
+      "Installed capacity of each power plant (MW).",
+      "Actual electricity generated over a specified period (Mffh).",
+      "Total hours in the analysis period (e.g., year, month).",
+      "Total unplanned outage hours for each plant.",
+      "Industry benchmarks for capacity factors and forced outage rates by plant type."
+    ],
+    "improve": [
+      "Perform root cause analysis for plants with high forced outage rates to identify and address recurring issues.",
+      "Implement predictive maintenance programs to prevent unplanned outages.",
+      "Optimize plant scheduling to improve alignment with demand and increase capacity factor.",
+      "Upgrade aging or underperforming equipment to reduce forced outages and enhance reliability.",
+      "Train operations staff to detect early signs of equipment failure and improve response times during outages.",
+      "Use real-time monitoring and data analytics to track performance and proactively address inefficiencies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Factor (%)",
+        "variables": [
+          "Actual Electricity Generated (Mffh)",
+          "Installed Capacity (MW)",
+          "Total Hours in Period"
+        ],
+        "expression": "( v0 / ( v1 * v2 ) ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Factor (%) = (Actual Electricity Generated (Mffh) / (Installed Capacity (MW) x Total Hours in Period)) x 100",
+        "step": "Calculate Capacity Factor"
+      },
+      {
+        "output": "Forced Outage Rate (%)",
+        "variables": [
+          "Forced Outage Hours",
+          "Total Hours in Period"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Forced Outage Rate (%) = (Forced Outage Hours / Total Hours in Period)",
+        "step": "Calculate Forced Outage Rate"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-05",
+    "archetype": "electricity-generation",
+    "title": "Peaking Plant Profitability and Dispatch Optimization",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/05 - Peaking Plant Profitability and Dispatch Optimization.md",
+    "goal": "To evaluate the financial performance and operational efficiency of peaking power plants and optimize their dispatch strategies to maximize profitability while meeting peak demand requirements.",
+    "dataRequired": [
+      "Electricity market prices (hourly or interval-based).",
+      "Variable operating costs (fuel, maintenance, startup costs).",
+      "Fixed operating costs.",
+      "Historical dispatch data (generation output during peak demand periods).",
+      "Peak demand patterns (seasonal and hourly).",
+      "Industry benchmarks for peaking plant profitability and dispatch efficiency."
+    ],
+    "improve": [
+      "Implement advanced dispatch optimization tools that use real-time market data and predictive analytics to schedule generation during high-price periods.",
+      "Reduce variable operating costs through efficiency upgrades or renegotiation of fuel contracts.",
+      "Enhance flexibility by reducing startup times and costs, allowing for quicker response to market price spikes.",
+      "Collaborate with grid operators to anticipate peak demand patterns and secure favorable pricing opportunities.",
+      "Invest in energy storage solutions to complement peaking operations and capture additional revenue streams during off-peak periods.",
+      "Conduct regular profitability reviews and adjust dispatch strategies based on evolving market conditions and cost structures.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Costs ($)",
+        "variables": [
+          "Fuel Costs",
+          "Variable O&M Costs",
+          "Startup Costs",
+          "Dispatched Hours"
+        ],
+        "expression": "( v0 + v1 + v2 ) * v3",
+        "percentOutput": false,
+        "source": "Total Costs ($) = (Fuel Costs + Variable O&M Costs + Startup Costs) x Dispatched Hours",
+        "step": "Assess Operating Costs"
+      },
+      {
+        "output": "Net Profit ($)",
+        "variables": [
+          "Total Revenue",
+          "Total Operating Costs",
+          "Fixed Operating"
+        ],
+        "expression": "v0 - v1 - v2",
+        "percentOutput": false,
+        "source": "Net Profit ($) = Total Revenue - Total Operating Costs - Fixed Operating",
+        "step": "Determine Net Profitability"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-06",
+    "archetype": "electricity-generation",
+    "title": "Reserve Shutdown and Start-up Cost Analysis",
+    "part": "A",
+    "partLabel": "Operational Performance and Efficiency",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "OM_COST_PER_MWH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "OM_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/06 - Reserve Shutdown and Start-up Cost Analysis.md",
+    "goal": "To evaluate the financial and operational impacts of reserve shutdowns and startups, identifying cost drivers and optimization opportunities.",
+    "dataRequired": [
+      "Start-up costs (e.g., fuel usage, labor, wear-and-tear).",
+      "Shutdown costs (e.g., residual fuel, labor, maintenance preparation).",
+      "Start-up and shutdown times for each power plant.",
+      "Frequency of shutdowns and startups over the analysis period.",
+      "Historical generation schedules and grid demand patterns.",
+      "Fixed and variable operating costs.",
+      "Industry benchmarks for start-up and shutdown costs by plant type."
+    ],
+    "improve": [
+      "Invest in technology upgrades to reduce start-up times and costs, such as advanced controls or rapid ignition systems.",
+      "Optimize operational scheduling to minimize unnecessary shutdowns and startups, ensuring alignment with market demand.",
+      "Improve predictive maintenance practices to reduce the need for reactive shutdowns.",
+      "Explore fuel switching options to reduce start-up fuel costs.",
+      "Implement workforce training programs to enhance efficiency during start-up and shutdown processes.",
+      "Collaborate with grid operators to ensure better integration of reserve plants in dispatch strategies, minimizing start-up costs while maintaining grid reliability.",
+      "B. Fuel and Energy Resource Management"
+    ],
+    "formulas": [
+      {
+        "output": "Total Start-up Cost ($)",
+        "variables": [
+          "Fuel Cost",
+          "Labor Cost",
+          "Maintenance Cost"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Start-up Cost ($) = Fuel Cost + Labor Cost + Maintenance Cost",
+        "step": "Quantify Start-up and Shutdown Costs"
+      },
+      {
+        "output": "Total Shutdown Cost ($)",
+        "variables": [
+          "Residual Fuel Loss",
+          "Labor Cost",
+          "Preparation"
+        ],
+        "expression": "v0 + v1 + v2",
+        "percentOutput": false,
+        "source": "Total Shutdown Cost ($) = Residual Fuel Loss + Labor Cost + Preparation",
+        "step": "Quantify Start-up and Shutdown Costs"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-07",
+    "archetype": "electricity-generation",
+    "title": "Fuel Mix and Diversification Assessment",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [
+      "FUEL_COST_PER_GJ"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "FUEL_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/07 - Fuel Mix and Diversification Assessment.md",
+    "goal": "To evaluate the composition of a power generation company's fuel mix and assess its diversification to ensure energy security, operational flexibility, cost efficiency, and alignment with environmental goals.",
+    "dataRequired": [
+      "Current fuel mix by type (e.g., coal, natural gas, nuclear, renewables) as a percentage of total energy generated.",
+      "Fuel procurement costs and volatility data for each fuel type.",
+      "Historical generation data by fuel type.",
+      "Emissions data by fuel type (optional for environmental impact evaluation).",
+      "Supply chain reliability data (e.g., geographic sourcing, supplier diversity).",
+      "Policy and regulatory data regarding fuel types (e.g., subsidies, carbon taxes)."
+    ],
+    "improve": [
+      "Develop strategic partnerships to diversify fuel suppliers and reduce geographic risks.",
+      "Invest in renewable energy projects to lower emissions and reduce dependency on volatile fossil fuels.",
+      "Explore emerging technologies like carbon capture or green hydrogen to complement the existing mix.",
+      "Adjust procurement strategies to take advantage of long-term contracts or hedging for cost stability.",
+      "",
+      "Conduct regular reviews of policy and market trends to proactively adapt the fuel mix to changing conditions.",
+      "Engage with regulators and stakeholders to align fuel diversification goals with broader energy transition policies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Fuel Mix (%)",
+        "variables": [
+          "Energy Generated by Fuel Type (Mffh)",
+          "Total Energy Generated (Mffh)"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fuel Mix (%) = (Energy Generated by Fuel Type (Mffh) / Total Energy Generated (Mffh)) x 100",
+        "step": "Calculate Fuel Mix Composition"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-08",
+    "archetype": "electricity-generation",
+    "title": "Fuel Supply Chain Reliability and Cost Analysis",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [
+      "FUEL_COST_PER_GJ"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "FUEL_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/08 - Fuel Supply Chain Reliability and Cost Analysis.md",
+    "goal": "To assess the reliability, stability, and cost-efficiency of the fuel supply chain for electricity generation.",
+    "dataRequired": [
+      "Fuel procurement volumes and costs by type (e.g., coal, natural gas, oil, biomass).",
+      "Supplier data, including geographic locations and contract terms.",
+      "Transportation and logistics costs (e.g., shipping, rail, trucking).",
+      "Supply chain disruption history (e.g., delays, shortages).",
+      "Storage capacity and inventory data.",
+      "Regulatory and geopolitical risks associated with fuel sourcing.",
+      "Industry benchmarks for fuel costs and supply chain reliability."
+    ],
+    "improve": [
+      "Diversify fuel suppliers to reduce dependency on single sources or regions.",
+      "Negotiate long-term contracts with suppliers to lock in cost stability and ensure reliable delivery.",
+      "Invest in storage infrastructure to buffer against supply disruptions and capitalize on bulk procurement opportunities.",
+      "Optimize transportation routes and modes to lower logistics costs and improve delivery reliability.",
+      "Monitor geopolitical and regulatory developments to anticipate and mitigate risks associated with specific sourcing regions.",
+      "",
+      "Implement digital supply chain management tools for real-time tracking and predictive analytics to address potential disruptions proactively.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-09",
+    "archetype": "electricity-generation",
+    "title": "Fuel Switching Feasibility Study",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "FUEL_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/09 - Fuel Switching Feasibility Study.md",
+    "goal": "To evaluate the technical, operational, economic, and environmental feasibility of switching from the current fuel source to an alternative fuel for electricity generation.",
+    "dataRequired": [
+      "Current fuel type, cost, and availability.",
+      "Alternative fuel options, including cost, availability, and calorific value.",
+      "Equipment compatibility and required modifications for alternative fuels.",
+      "Emissions data for current and alternative fuels.",
+      "Regulatory requirements and incentives related to fuel use.",
+      "Historical and forecasted fuel price trends.",
+      "Industry benchmarks and case studies on similar transitions."
+    ],
+    "improve": [
+      "Conduct pilot programs to test alternative fuels on a small scale before full implementation.",
+      "Develop partnerships with alternative fuel suppliers to ensure long-term cost stability and reliability.",
+      "",
+      "Seek government grants or incentives to offset conversion costs and make fuel switching more financially attractive.",
+      "Invest in training for operational teams to manage the transition and maintain plant efficiency.",
+      "Continuously monitor market trends and emerging technologies to identify new fuel opportunities.",
+      "Create contingency plans to mitigate risks associated with switching, such as supply chain disruptions or unforeseen technical challenges.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-10",
+    "archetype": "electricity-generation",
+    "title": "Renewable Energy Credits (REC) and Carbon Offset Analysis",
+    "part": "B",
+    "partLabel": "Fuel and Energy Resource Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/10 - Renewable Energy Credits (REC) and Carbon Offset Analysis.md",
+    "goal": "To evaluate the procurement, utilization, and financial impact of Renewable Energy Credits (RECs) and carbon offsets in achieving sustainability goals, regulatory compliance, and cost management.",
+    "dataRequired": [
+      "Current renewable energy generation and REC procurement data (quantity and cost).",
+      "Total greenhouse gas (GHG) emissions from operations.",
+      "Carbon offset purchases and associated costs.",
+      "Regulatory requirements for RECs and carbon offsets.",
+      "Market price trends for RECs and carbon offsets.",
+      "Emission reduction goals or corporate sustainability targets."
+    ],
+    "improve": [
+      "Increase investments in owned renewable energy projects to reduce reliance on purchased RECs.",
+      "Optimize procurement strategies by locking in long-term contracts to stabilize costs.",
+      "",
+      "Leverage regional or industry-specific subsidies to lower the cost of RECs and offsets.",
+      "Continuously monitor market trends and regulatory changes to adapt procurement strategies.",
+      "Explore innovative offset projects, such as reforestation or community-based initiatives, to enhance sustainability impact and public perception.",
+      "Conduct regular audits of REC and offset usage to ensure alignment with evolving goals and compliance needs.",
+      "C. Financial and Market Strategy"
+    ],
+    "formulas": [
+      {
+        "output": "REC Coverage (%)",
+        "variables": [
+          "RECs Procured",
+          "Total Electricity Generated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "REC Coverage (%) = (RECs Procured / Total Electricity Generated) x 100",
+        "step": "Assess Current REC Utilization"
+      },
+      {
+        "output": "Offset Coverage (%)",
+        "variables": [
+          "Carbon Offsets Procured",
+          "Total GHG Emissions"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Offset Coverage (%) = (Carbon Offsets Procured / Total GHG Emissions)",
+        "step": "Quantify Carbon Offsets"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-11",
+    "archetype": "electricity-generation",
+    "title": "Power Purchase Agreement (PPA) and Contract Analysis",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COMMERCIAL_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/11 - Power Purchase Agreement (PPA) and Contract Analysis.md",
+    "goal": "To assess the structure, financial implications, and risk exposure of Power Purchase Agreements (PPAs) and other energy supply contracts.",
+    "dataRequired": [
+      "Contract terms for each PPA, including duration, pricing mechanisms (fixed, variable, indexed), and volume commitments.",
+      "Historical and forecasted electricity market prices.",
+      "Plant operational data (generation capacity, availability, and costs).",
+      "Counterparty creditworthiness and performance history.",
+      "Regulatory requirements and incentives associated with the contracts.",
+      "Industry benchmarks for PPA terms and pricing."
+    ],
+    "improve": [
+      "",
+      "Renegotiate contract terms to better align with operational capacity and market conditions.",
+      "Diversify PPA counterparties to reduce dependency on a single buyer and minimize counterparty risk.",
+      "Use hedging strategies to mitigate price volatility risks in variable or indexed contracts.",
+      "Leverage advanced market analytics to secure contracts during favorable market conditions.",
+      "Regularly review and update contracts to adapt to evolving market trends, regulatory changes, and operational shifts.",
+      "Invest in operational flexibility to meet PPA volume commitments more consistently, reducing penalties and maximizing revenue.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-12",
+    "archetype": "electricity-generation",
+    "title": "Levelized Cost of Electricity (LCOE) Comparison",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "OM_COST_PER_MWH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/12 - Levelized Cost of Electricity (LCOE) Comparison.md",
+    "goal": "To calculate and compare the Levelized Cost of Electricity (LCOE) for different generation technologies or plants.",
+    "dataRequired": [
+      "Capital expenditure (CapEx) for each generation type or plant.",
+      "Fixed and variable operational expenditure (OpEx).",
+      "Fuel costs by generation type (if applicable).",
+      "Annual electricity generation (Mffh).",
+      "Plant lifespan and annual operating hours.",
+      "Discount rate (used to calculate present value).",
+      "Decommissioning costs (if applicable)."
+    ],
+    "improve": [
+      "Invest in efficiency upgrades to reduce OpEx and fuel costs, lowering overall LCOE.",
+      "Optimize operational practices to increase annual electricity generation.",
+      "Evaluate opportunities to extend plant lifespan through retrofitting or advanced maintenance.",
+      "Consider renewable technologies with low variable costs to diversify and improve long-term cost efficiency.",
+      "Use strategic procurement strategies to minimize CapEx during plant construction or expansion phases.",
+      "Monitor market and regulatory trends to capitalize on incentives that reduce lifecycle costs, such as tax credits or subsidies for clean energy technologies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Lifecycle Costs",
+        "variables": [
+          "CapEx",
+          "Annual OpEx",
+          "Plant Lifespan",
+          "Decommissioning Costs"
+        ],
+        "expression": "v0 + ( v1 * v2 ) + v3",
+        "percentOutput": false,
+        "source": "Total Lifecycle Costs = CapEx + (Annual OpEx x Plant Lifespan) + Decommissioning Costs",
+        "step": "Calculate Total Lifecycle Costs"
+      },
+      {
+        "output": "Total Generation (Mffh)",
+        "variables": [
+          "Annual Electricity Generation (Mffh)",
+          "Plant"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Total Generation (Mffh) = Annual Electricity Generation (Mffh) x Plant",
+        "step": "Calculate Total Electricity Generation"
+      },
+      {
+        "output": "LCOE ($/Mffh)",
+        "variables": [
+          "Total Lifecycle Costs",
+          "Total Generation (Mffh)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "LCOE ($/Mffh) = Total Lifecycle Costs / Total Generation (Mffh)",
+        "step": "Calculate LCOE"
+      },
+      {
+        "output": "Discounted LCOE",
+        "variables": [
+          "Sum of Discounted Costs",
+          "Sum of Discounted Electricity Generation"
+        ],
+        "expression": "( v0 ) / ( v1 )",
+        "percentOutput": false,
+        "source": "Discounted LCOE = (Sum of Discounted Costs) / (Sum of Discounted Electricity Generation)",
+        "step": "Incorporate Discount Rate"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-13",
+    "archetype": "electricity-generation",
+    "title": "Market Price Exposure and Hedging Strategy Evaluation",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE",
+      "HEDGE_COVERAGE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET",
+      "POWER_MARKET_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COMMERCIAL_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/13 - Market Price Exposure and Hedging Strategy Evaluation.md",
+    "goal": "To assess the level of exposure to electricity market price volatility and evaluate the effectiveness of hedging strategies in mitigating financial risks.",
+    "dataRequired": [
+      "Historical and forecasted electricity market prices.",
+      "Electricity generation volumes (contracted and spot market sales).",
+      "Current hedging contracts (e.g., swaps, futures, options) and their terms.",
+      "Financial outcomes of existing hedges (e.g., costs, revenues, or savings).",
+      "Risk tolerance and revenue targets of the organization.",
+      "Industry benchmarks for hedging practices and performance."
+    ],
+    "improve": [
+      "Increase the use of hedging instruments like futures or options to limit exposure to adverse price movements.",
+      "Regularly review and adjust hedging strategies to align with market trends and organizational risk tolerance.",
+      "Diversify hedging instruments and contract durations to balance flexibility and stability.",
+      "Implement predictive analytics to anticipate market price trends and optimize hedging decisions.",
+      "Collaborate with financial advisors or consultants to develop customized hedging strategies that align with revenue targets and risk profiles.",
+      "Establish internal policies for hedging thresholds and periodic performance reviews to ensure continuous improvement.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Spot Market Exposure (%)",
+        "variables": [
+          "Spot Market Sales",
+          "Total Sales"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Spot Market Exposure (%) = (Spot Market Sales / Total Sales) x 100",
+        "step": "Analyze Market Price Exposure"
+      },
+      {
+        "output": "Hedging Coverage (%)",
+        "variables": [
+          "Hedged Volume",
+          "Total Generation Volume"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Hedging Coverage (%) = (Hedged Volume / Total Generation Volume) x 100",
+        "step": "Evaluate Hedging Coverage"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-14",
+    "archetype": "electricity-generation",
+    "title": "Capacity Payment and Ancillary Services Analysis",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "COMMERCIAL_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/14 - Capacity Payment and Ancillary Services Analysis.md",
+    "goal": "To evaluate the financial contributions of capacity payments and ancillary services to the overall revenue of a power generation company.",
+    "dataRequired": [
+      "Capacity payment agreements, including payment rates and terms.",
+      "Revenue from ancillary services (e.g., spinning reserves, frequency regulation, voltage support).",
+      "Operational data on the availability and performance of power plants for ancillary services.",
+      "Grid operator requirements and pricing mechanisms for capacity and ancillary services.",
+      "Historical and forecasted grid demand data.",
+      "Industry benchmarks for revenue contributions from capacity and ancillary services."
+    ],
+    "improve": [
+      "Enhance plant flexibility and reliability to meet grid operator requirements for ancillary services.",
+      "Negotiate favorable terms for capacity payments by demonstrating reliability and availability.",
+      "Invest in technology upgrades (e.g., fast response systems) to expand ancillary service capabilities.",
+      "",
+      "Collaborate with grid operators to understand evolving market needs and align service offerings.",
+      "Explore opportunities in emerging markets, such as energy storage, to provide high-value grid services.",
+      "Conduct regular performance reviews to identify and capitalize on underutilized revenue streams.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Payment Revenue ($)",
+        "variables": [
+          "Contracted Capacity (MW)",
+          "Payment"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Capacity Payment Revenue ($) = Contracted Capacity (MW) x Payment",
+        "step": "Assess Capacity Payments"
+      },
+      {
+        "output": "Ancillary Service Contribution (%)",
+        "variables": [
+          "Revenue from Service",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Ancillary Service Contribution (%) = (Revenue from Service / Total Revenue) x 100",
+        "step": "Evaluate Ancillary Service Revenue"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-15",
+    "archetype": "electricity-generation",
+    "title": "Return on Invested Capital (ROIC) by Generation Type",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/15 - Return on Invested Capital (ROIC) by Generation Type.md",
+    "goal": "To assess the profitability and capital efficiency of different electricity generation types by calculating their Return on Invested Capital (ROIC).",
+    "dataRequired": [
+      "Operating income (EBIT) for each generation type.",
+      "Invested capital for each generation type (e.g., fixed assets, working capital, and other investments).",
+      "Depreciation and amortization data (optional for refining operating income).",
+      "Historical and forecasted performance data for revenue and costs.",
+      "Industry benchmarks for ROIC by generation type."
+    ],
+    "improve": [
+      "Optimize operational efficiency to reduce costs and improve EBIT.",
+      "Reallocate capital from low-performing generation types to higher-performing ones.",
+      "Invest in technologies or practices that enhance the profitability of underperforming assets.",
+      "Evaluate opportunities to divest from generation types with consistently low ROIC.",
+      "Improve revenue streams by exploring higher-margin market opportunities (e.g., renewable energy incentives or premium markets).",
+      "Conduct regular reviews of capital deployment strategies to ensure alignment with market trends and organizational goals.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Invested Capital",
+        "variables": [
+          "Fixed Assets",
+          "Net Working Capital"
+        ],
+        "expression": "v0 + v1",
+        "percentOutput": false,
+        "source": "Invested Capital = Fixed Assets + Net Working Capital",
+        "step": "Determine Invested Capital"
+      },
+      {
+        "output": "ROIC (%)",
+        "variables": [
+          "EBIT",
+          "Invested Capital"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROIC (%) = (EBIT / Invested Capital) x 100",
+        "step": "Calculate ROIC"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-16",
+    "archetype": "electricity-generation",
+    "title": "Energy Market Participation Strategy and Revenue Optimization",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "COMMERCIAL_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/16 - Energy Market Participation Strategy and Revenue.md",
+    "goal": "To evaluate the effectiveness of a power generation company’s participation in energy markets and identify opportunities to optimize revenue by aligning generation output, market trends, and bidding strategies.",
+    "dataRequired": [
+      "Historical and forecasted market prices for energy and ancillary services.",
+      "Generation capacity and output data for each power plant.",
+      "Revenue data by market segment (e.g., spot market, forward contracts, ancillary services).",
+      "Bidding history and outcomes in day-ahead and real-time markets.",
+      "Regulatory requirements and incentives related to market participation.",
+      "Operational costs by plant and generation type.",
+      "Industry benchmarks for market participation strategies and revenue performance."
+    ],
+    "improve": [
+      "Optimize bidding strategies by using advanced analytics and real-time market data to maximize win rates and profitability.",
+      "Enhance plant flexibility to better align generation with market demand, such as investing in fast-start capabilities for peaking plants.",
+      "Increase participation in ancillary services by meeting operational requirements for high-value grid-support roles.",
+      "",
+      "Evaluate opportunities for long-term contracts or power purchase agreements (PPAs) to secure stable revenue streams.",
+      "Invest in energy storage systems to enable arbitrage and enhance participation in peak pricing periods.",
+      "Regularly review market trends, pricing, and regulatory developments to adapt strategies proactively.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-17",
+    "archetype": "electricity-generation",
+    "title": "Electricity Spot Price Forecasting and Impact Assessment",
+    "part": "C",
+    "partLabel": "Financial and Market Strategy",
+    "relatedMetricCodes": [
+      "REALIZED_POWER_PRICE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "POWER_MARKET_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "COMMERCIAL_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/17 - Electricity Spot Price Forecasting and Impact Assessment.md",
+    "goal": "To forecast electricity spot prices and assess their impact on revenue, cost structures, and risk management strategies for power generation companies.",
+    "dataRequired": [
+      "Historical electricity spot prices (hourly, daily, or monthly).",
+      "Supply-demand data (e.g., generation capacity, load forecasts, renewable generation inputs).",
+      "Fuel prices and availability (e.g., coal, natural gas).",
+      "Weather and climate data (e.g., temperature, precipitation, wind patterns).",
+      "Market rules and regulatory changes impacting electricity pricing.",
+      "Generation profiles and operational costs for each plant."
+    ],
+    "improve": [
+      "Invest in advanced forecasting tools and technologies, such as AI-based analytics, to improve price prediction accuracy.",
+      "Optimize plant operations to align generation schedules with peak price periods.",
+      "Enhance hedging strategies to mitigate risks from price volatility, including using futures or options contracts.",
+      "Diversify the generation portfolio to include renewable sources, which can benefit from high spot prices during low supply periods.",
+      "Collaborate with grid operators to access real-time market data and improve responsiveness to price signals.",
+      "",
+      "Regularly review and recalibrate forecasting models to adapt to changing market dynamics and emerging trends.",
+      "D. Regulatory and Environmental Compliance"
+    ],
+    "formulas": [
+      {
+        "output": "Revenue Impact ($)",
+        "variables": [
+          "Generation Output (Mffh)",
+          "Forecasted Spot Price"
+        ],
+        "expression": "v0 * v1",
+        "percentOutput": false,
+        "source": "Revenue Impact ($) = Generation Output (Mffh) x Forecasted Spot Price",
+        "step": "Incorporate Market Scenarios"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-18",
+    "archetype": "electricity-generation",
+    "title": "Emissions and Environmental Compliance Analysis",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [
+      "CARBON_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/18 - Emissions and Environmental Compliance Analysis.md",
+    "goal": "To assess the environmental impact of power generation operations by analyzing emissions data and ensuring compliance with local, national, and international regulations.",
+    "dataRequired": [
+      "Emissions data (e.g., CO₂, NOx, SO₂, particulate matter) by generation type or plant.",
+      "Generation output (Mffh) for each plant.",
+      "Regulatory emissions limits and compliance requirements.",
+      "Penalty structures for non-compliance.",
+      "Emission reduction technologies and associated costs.",
+      "Industry benchmarks for emissions by generation type."
+    ],
+    "improve": [
+      "Invest in emission control technologies to reduce pollutant levels and achieve compliance.",
+      "Implement fuel switching strategies to cleaner options, such as natural gas or renewables.",
+      "Optimize operational efficiency to reduce emissions intensity per unit of electricity generated.",
+      "Engage with regulators to understand upcoming standards and proactively align with future requirements.",
+      "",
+      "Participate in carbon offset or trading programs to manage emissions cost-effectively.",
+      "Conduct regular audits of emissions data to ensure accuracy and identify trends early.",
+      "Train operational staff on best practices for minimizing emissions and meeting compliance standards.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Emissions Intensity",
+        "variables": [
+          "Total Emissions (tons)",
+          "Total Electricity Generated"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Emissions Intensity = Total Emissions (tons) / Total Electricity Generated",
+        "step": "Collect Emissions Data"
+      },
+      {
+        "output": "Penalty Cost",
+        "variables": [
+          "Emissions Exceeding Limit",
+          "Penalty Rate"
+        ],
+        "expression": "( v0 ) * v1",
+        "percentOutput": false,
+        "source": "Penalty Cost = (Emissions Exceeding Limit) x Penalty Rate",
+        "step": "Assess Financial Implications"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-19",
+    "archetype": "electricity-generation",
+    "title": "Power Plant Emission Control Technology Evaluation",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/19 - Power Plant Emission Control Technology Evaluation.md",
+    "goal": "To assess the effectiveness, cost-efficiency, and scalability of emission control technologies deployed at power plants.",
+    "dataRequired": [
+      "Current emission levels (e.g., CO₂, NOx, SO₂, particulate matter) by plant.",
+      "Specifications and performance data for existing emission control technologies (e.g., scrubbers, selective catalytic reduction (SCR) systems, carbon capture).",
+      "Regulatory emissions limits for each pollutant.",
+      "Costs of implementing, operating, and maintaining emission control technologies.",
+      "Plant operating conditions (e.g., fuel type, output levels).",
+      "Industry benchmarks for emissions reduction efficiency and technology adoption."
+    ],
+    "improve": [
+      "Invest in advanced emission control technologies, such as carbon capture and storage (CCS) or flue gas desulfurization (FGD) systems, for pollutants where compliance is lacking.",
+      "Retrofit existing systems to improve efficiency and reduce operating costs.",
+      "Evaluate fuel switching strategies to reduce reliance on fuels that produce high levels of regulated pollutants.",
+      "Optimize plant operations to minimize emissions before treatment, reducing the load on control systems.",
+      "",
+      "Explore partnerships with technology providers to pilot innovative solutions at high-emission plants.",
+      "Regularly monitor and maintain emission control systems to sustain performance and avoid efficiency degradation.",
+      "Engage with industry groups and regulators to stay informed about emerging technologies and potential incentives for upgrades.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost Efficiency ($/ton)",
+        "variables": [
+          "Total Operating Cost",
+          "Pollutant Removed (tons)"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost Efficiency ($/ton) = Total Operating Cost / Pollutant Removed (tons)",
+        "step": "Assess Cost-Effectiveness"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-20",
+    "archetype": "electricity-generation",
+    "title": "Regulatory and Policy Compliance Review",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/20 - Regulatory and Policy Compliance Review.md",
+    "goal": "To ensure that power generation operations adhere to local, national, and international regulations and policies, minimizing legal risks, avoiding penalties, and maintaining operational credibility.",
+    "dataRequired": [
+      "List of applicable regulations and policies (local, national, international).",
+      "Plant-level compliance data, including historical and current adherence to emissions limits, safety standards, and reporting requirements.",
+      "Penalty structures for non-compliance.",
+      "Future regulatory trends and proposed policies affecting power generation.",
+      "Documentation of certifications, permits, and audit findings.",
+      "Industry benchmarks for regulatory adherence and compliance costs."
+    ],
+    "improve": [
+      "Conduct regular compliance audits and gap analyses to identify and address areas of non-compliance.",
+      "Invest in training programs to ensure staff are knowledgeable about regulatory requirements.",
+      "Upgrade systems and processes for accurate and timely reporting to regulatory bodies.",
+      "",
+      "Implement advanced monitoring technologies to ensure ongoing adherence to emissions and safety standards.",
+      "Collaborate with policymakers and industry groups to stay informed about regulatory changes and potential incentives.",
+      "Develop contingency plans for rapid adaptation to new regulations, minimizing operational disruptions.",
+      "Allocate a dedicated compliance team to oversee adherence efforts and coordinate with regulators.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-21",
+    "archetype": "electricity-generation",
+    "title": "Nuclear Plant Safety and Regulatory Compliance Evaluation",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/21 - Nuclear Plant Safety and Regulatory Compliance Evaluation.md",
+    "goal": "To assess the safety and regulatory compliance of nuclear power plants, ensuring adherence to strict safety standards, operational protocols, and legal requirements.",
+    "dataRequired": [
+      "Regulatory requirements for nuclear safety and operation (local, national, and international).",
+      "Plant safety records (e.g., incidents, near misses, and safety drills).",
+      "Inspection and audit reports from nuclear regulatory authorities.",
+      "Maintenance schedules and records for critical equipment.",
+      "Emergency preparedness and response plans.",
+      "Staff training records and certifications for nuclear operations.",
+      "Radiation monitoring data and waste management records.",
+      "Industry benchmarks for nuclear plant safety and compliance."
+    ],
+    "improve": [
+      "",
+      "Establish a robust compliance management system to track and monitor adherence to all regulatory requirements.",
+      "Implement a predictive maintenance program to prevent equipment failures and ensure timely inspections.",
+      "Enhance radiation monitoring systems with real-time data collection and automated alerts for deviations.",
+      "Conduct regular safety drills and emergency simulations to improve preparedness and coordination with local authorities.",
+      "Provide continuous training and certification programs for operational staff to maintain a skilled and knowledgeable workforce.",
+      "Engage with regulatory bodies to stay updated on evolving standards and proactively align operations with future requirements.",
+      "Allocate resources for periodic third-party audits to validate compliance and identify improvement areas.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-22",
+    "archetype": "electricity-generation",
+    "title": "Carbon Intensity and Decarbonization Strategy",
+    "part": "D",
+    "partLabel": "Regulatory and Environmental Compliance",
+    "relatedMetricCodes": [
+      "CARBON_INTENSITY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/22 - Carbon Intensity and Decarbonization Strategy.md",
+    "goal": "To measure the carbon intensity of power generation operations and develop a decarbonization strategy that aligns with corporate sustainability goals, regulatory requirements, and global climate targets.",
+    "dataRequired": [
+      "Total greenhouse gas (GHG) emissions (CO₂ equivalent) from all generation activities.",
+      "Electricity generation output (Mffh) by plant and fuel type.",
+      "Fuel type and consumption data.",
+      "Regulatory emissions targets and reporting requirements.",
+      "Emission reduction technologies and associated costs.",
+      "Industry benchmarks for carbon intensity and decarbonization strategies.",
+      "Renewable energy and alternative technology integration potential."
+    ],
+    "improve": [
+      "Invest in renewable energy projects to replace high-emission generation sources.",
+      "Implement carbon capture and storage (CCS) systems at high-emission plants.",
+      "Transition to low-carbon fuels, such as natural gas or green hydrogen.",
+      "Optimize plant operations and maintenance schedules to reduce emissions intensity.",
+      "Develop partnerships with technology providers and regulators to access incentives and emerging solutions.",
+      "",
+      "Regularly monitor emissions data to track progress toward decarbonization goals.",
+      "Engage stakeholders to align decarbonization efforts with broader corporate sustainability strategies and reporting requirements.",
+      "E. Grid Integration and Reliability"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-23",
+    "archetype": "electricity-generation",
+    "title": "Grid Interconnection, Transmission, and Congestion Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/23 - Grid Interconnection, Transmission, and Congestion Analysis.md",
+    "goal": "To evaluate the effectiveness and efficiency of grid interconnection and transmission systems while identifying bottlenecks and congestion issues.",
+    "dataRequired": [
+      "Transmission system layout, including grid interconnection points and capacity limits.",
+      "Electricity flow data, including peak and average transmission loads.",
+      "Congestion charges and costs from grid operators.",
+      "Outage and reliability records for transmission infrastructure.",
+      "Historical and forecasted electricity demand data.",
+      "Regulatory requirements and regional transmission policies.",
+      "Industry benchmarks for transmission efficiency and congestion metrics."
+    ],
+    "improve": [
+      "Invest in expanding or upgrading transmission lines to reduce congestion and improve capacity utilization.",
+      "",
+      "Deploy advanced grid technologies, such as dynamic line ratings and energy storage, to optimize electricity flows.",
+      "Collaborate with regional grid operators to enhance interconnection standards and reduce bottlenecks.",
+      "Implement demand response programs to shift load during peak periods and alleviate congestion.",
+      "Use predictive analytics to monitor grid performance and proactively address emerging bottlenecks.",
+      "Engage in long-term planning to align grid infrastructure with renewable energy integration and future demand growth.",
+      "Explore partnerships or funding opportunities to share the costs of large-scale transmission improvements with stakeholders.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Electricity Flow",
+          "Maximum Transmission Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Electricity Flow / Maximum Transmission Capacity) x 100",
+        "step": "Analyze Electricity Flows"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-24",
+    "archetype": "electricity-generation",
+    "title": "Grid Reliability, Stability, Balancing, and Frequency Regulation Assessment",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/24 - Grid Reliability, Stability, Balancing, and Frequency Regulation.md",
+    "goal": "To evaluate the ability of the grid to maintain reliability, stability, and balance under varying load conditions while ensuring compliance with frequency regulation standards.",
+    "dataRequired": [
+      "Grid reliability metrics (e.g., SAIDI - System Average Interruption Duration Index, SAIFI - System Average Interruption Frequency Index).",
+      "Real-time and historical frequency data (Hz).",
+      "Load and generation balance data, including peak and minimum loads.",
+      "Spinning reserve and contingency reserve data.",
+      "Grid operator protocols for balancing and frequency regulation.",
+      "Data on power plant ramping capabilities and response times.",
+      "Incident reports related to grid instability or outages.",
+      "Industry benchmarks for grid reliability and balancing performance."
+    ],
+    "improve": [
+      "Invest in advanced monitoring systems to detect and respond to frequency deviations in real time.",
+      "Upgrade generation assets to improve ramping capabilities and response times.",
+      "",
+      "Deploy energy storage solutions to provide rapid balancing and frequency regulation support.",
+      "Enhance grid automation and control systems to improve response efficiency during contingency events.",
+      "Collaborate with grid operators to optimize reserve requirements and ensure adequate spinning and contingency reserves.",
+      "Implement demand response programs to shift load during peak periods and improve grid balance.",
+      "Conduct regular training for operations teams to enhance performance during stability and balancing challenges.",
+      "Engage in long-term planning to integrate renewable energy sources while maintaining grid reliability and stability.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "SAIDI (minutes)",
+        "variables": [
+          "Total Duration of Customer Interruptions",
+          "Total Number of Customers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "SAIDI (minutes) = (Total Duration of Customer Interruptions / Total Number of Customers)",
+        "step": "Assess Grid Reliability Metrics"
+      },
+      {
+        "output": "SAIFI",
+        "variables": [
+          "Total Number of Customer Interruptions",
+          "Total Number of Customers"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "SAIFI = (Total Number of Customer Interruptions / Total Number of Customers)",
+        "step": "Assess Grid Reliability Metrics"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-25",
+    "archetype": "electricity-generation",
+    "title": "Frequency and Voltage Control Performance Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/25 - Frequency and Voltage Control Performance Analysis.md",
+    "goal": "To evaluate the grid’s ability to maintain stable frequency and voltage levels under varying operational conditions.",
+    "dataRequired": [
+      "Real-time and historical frequency data (Hz) and voltage levels (kV).",
+      "Frequency and voltage deviation thresholds as defined by grid operators.",
+      "Load and generation data, including ramping rates and response times.",
+      "Incident reports related to frequency or voltage excursions.",
+      "Reserve capacity data (spinning reserves, fast response systems).",
+      "Industry benchmarks for frequency and voltage stability.",
+      "Grid control system configurations and response capabilities."
+    ],
+    "improve": [
+      "Enhance Automatic Generation Control (AGC) systems to improve response times to frequency deviations.",
+      "Invest in voltage control technologies such as Static VAR Compensators (SVCs) or Flexible AC Transmission Systems (FACTS).",
+      "Increase spinning and fast-response reserves to provide rapid stabilization during deviations.",
+      "",
+      "Implement predictive analytics to forecast and proactively address potential instability events.",
+      "Optimize generation dispatch and load balancing to minimize the likelihood of frequency and voltage issues.",
+      "Collaborate with grid operators to improve coordination and enhance system-wide control capabilities.",
+      "Conduct training programs for operations teams to manage and mitigate frequency and voltage deviations more effectively.",
+      "Explore the integration of energy storage systems to support both frequency and voltage regulation.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-26",
+    "archetype": "electricity-generation",
+    "title": "Transmission Loss and Efficiency Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/26 - Transmission Loss and Efficiency Analysis.md",
+    "goal": "To evaluate electricity losses during transmission and identify opportunities to improve transmission efficiency.",
+    "dataRequired": [
+      "Total electricity generated (Mffh) at power plants.",
+      "Total electricity delivered (Mffh) to end-users or distribution systems.",
+      "Transmission line configurations (e.g., voltage levels, line lengths, conductor materials).",
+      "Real-time and historical load data.",
+      "Environmental factors affecting transmission (e.g., temperature, humidity).",
+      "Maintenance and reliability records for transmission infrastructure.",
+      "Industry benchmarks for transmission losses."
+    ],
+    "improve": [
+      "Upgrade transmission infrastructure, including replacing aging conductors with high-efficiency materials.",
+      "Optimize voltage levels to reduce losses, especially for long-distance transmission lines.",
+      "Deploy advanced monitoring systems to detect and address losses in real time.",
+      "Implement smart grid technologies to enhance load balancing and reduce stress on transmission lines.",
+      "Regularly inspect and maintain transmission infrastructure to prevent avoidable losses due to wear or damage.",
+      "",
+      "Address non-technical losses through improved metering, theft detection, and enforcement measures.",
+      "Engage in long-term planning to align transmission upgrades with renewable energy integration and future demand growth.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-27",
+    "archetype": "electricity-generation",
+    "title": "Emergency and Black Start Capability Analysis",
+    "part": "E",
+    "partLabel": "Grid Integration and Reliability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/27 - Emergency and Black Start Capability Analysis.md",
+    "goal": "To evaluate the readiness and effectiveness of power generation and grid systems in restoring operations after a blackout or major system failure.",
+    "dataRequired": [
+      "Black start capability data for power plants, including technical specifications and operational status.",
+      "Historical outage and recovery data, including time to restore operations.",
+      "Interconnection configurations and dependencies within the grid.",
+      "Testing and maintenance records for black start equipment.",
+      "Emergency response protocols and training schedules.",
+      "Regulatory requirements for black start capabilities.",
+      "Industry benchmarks for recovery time and black start success rates."
+    ],
+    "improve": [
+      "Upgrade or expand black start capabilities by investing in modern auxiliary equipment and backup systems.",
+      "Conduct regular testing of black start systems and ensure swift resolution of identified issues.",
+      "Enhance emergency response protocols with detailed recovery plans and robust coordination mechanisms.",
+      "Train operational staff through regular black start simulations to improve readiness.",
+      "",
+      "Deploy distributed energy resources, such as battery storage, to provide additional recovery options during blackouts.",
+      "Collaborate with grid operators and neighboring utilities to strengthen interconnection support and backup strategies.",
+      "Monitor regulatory requirements and align black start capabilities with updated compliance standards.",
+      "Implement predictive maintenance tools to ensure black start equipment remains operational during emergencies.",
+      "F. Risk Management and Resilience"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-28",
+    "archetype": "electricity-generation",
+    "title": "Weather-Related Vulnerability and Climate Resilience Analysis",
+    "part": "F",
+    "partLabel": "Risk Management and Resilience",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "WEATHER_CLIMATE"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/28 - Weather-Related Vulnerability and Climate Resilience.md",
+    "goal": "To evaluate the exposure of power generation and grid systems to weather-related risks and assess the resilience of operations against climate change impacts.",
+    "dataRequired": [
+      "Historical weather event data (e.g., storms, heatwaves, flooding, and droughts).",
+      "Incident records of weather-related outages, damage, and recovery times.",
+      "Geographic location and environmental conditions of power plants and transmission infrastructure.",
+      "Climate projections and extreme weather forecasts.",
+      "Maintenance and inspection records for weather-exposed assets.",
+      "Industry standards and best practices for climate resilience.",
+      "Costs associated with past weather-related damages and disruptions."
+    ],
+    "improve": [
+      "Invest in weather-resilient infrastructure, such as reinforced transmission towers, elevated substations, or cooling systems designed for extreme heat.",
+      "",
+      "Develop predictive maintenance programs to monitor and address vulnerabilities before extreme weather events occur.",
+      "Enhance emergency response protocols, including pre-event risk assessments and post-event recovery coordination.",
+      "Deploy distributed generation systems to provide localized power and reduce dependence on vulnerable centralized infrastructure.",
+      "Collaborate with meteorological agencies to improve forecasting and proactive risk management.",
+      "Engage in long-term planning to align infrastructure upgrades with projected climate trends and regulatory requirements.",
+      "Train operational staff to implement resilience measures effectively during and after weather events.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-29",
+    "archetype": "electricity-generation",
+    "title": "Fuel Price Volatility Risk Management",
+    "part": "F",
+    "partLabel": "Risk Management and Resilience",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "FUEL_COST_PER_GJ",
+      "HEDGE_COVERAGE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "FUEL_PRICE"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/29 - Fuel Price Volatility Risk Management.md",
+    "goal": "To evaluate exposure to fuel price volatility and develop strategies to mitigate financial risks associated with fluctuating fuel costs.",
+    "dataRequired": [
+      "Historical and forecasted prices for each fuel type used (e.g., coal, natural gas, oil, biomass).",
+      "Fuel consumption data by plant and generation type.",
+      "Fuel procurement contracts, including terms (e.g., fixed price, indexed price, or spot purchases).",
+      "Fuel hedging positions and financial instruments (e.g., futures, options, swaps).",
+      "Market trends and geopolitical factors influencing fuel prices.",
+      "Regulatory requirements or incentives related to fuel costs and volatility."
+    ],
+    "improve": [
+      "Increase the use of financial instruments, such as futures and swaps, to lock in predictable fuel costs.",
+      "Diversify fuel procurement by sourcing from multiple suppliers or regions to reduce geopolitical risk.",
+      "Negotiate long-term fixed-price contracts for a portion of fuel needs to mitigate spot market volatility.",
+      "Invest in renewable energy projects to reduce dependency on volatile fossil fuel markets.",
+      "",
+      "Implement advanced market analytics to anticipate price trends and optimize procurement decisions.",
+      "Develop partnerships with fuel suppliers to gain preferential terms and improve supply chain stability.",
+      "Conduct regular reviews of hedging strategies to ensure alignment with market conditions and organizational risk tolerance.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Price Volatility (%)",
+        "variables": [
+          "Standard Deviation of Prices",
+          "Average Price"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Price Volatility (%) = (Standard Deviation of Prices / Average Price) x 100",
+        "step": "Analyze Historical Fuel Price Volatility"
+      },
+      {
+        "output": "Fuel Cost Exposure (%)",
+        "variables": [
+          "Fuel Costs",
+          "Total Generation Costs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Fuel Cost Exposure (%) = (Fuel Costs / Total Generation Costs) x 100",
+        "step": "Assess Fuel Cost Exposure"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-30",
+    "archetype": "electricity-generation",
+    "title": "Operational Risk and Safety Performance Analysis",
+    "part": "F",
+    "partLabel": "Risk Management and Resilience",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/30 - Operational Risk and Safety Performance Analysis.md",
+    "goal": "To assess operational risks and evaluate the safety performance of power generation facilities, ensuring compliance with safety standards, reducing incidents, and improving operational reliability.",
+    "dataRequired": [
+      "Historical incident and accident reports (e.g., injuries, equipment failures).",
+      "Key safety performance indicators (e.g., Lost Time Injury Frequency Rate (LTIFR), Total Recordable Incident Rate (TRIR)).",
+      "Operational data on equipment performance, downtime, and maintenance history.",
+      "Safety audit and compliance records.",
+      "Employee training records for safety protocols.",
+      "Risk assessment documentation (e.g., hazard identification and risk mitigation plans).",
+      "Industry benchmarks for safety performance metrics."
+    ],
+    "improve": [
+      "Enhance safety training programs to address specific risks and ensure comprehensive employee knowledge.",
+      "Implement predictive maintenance systems to reduce equipment failures and associated risks.",
+      "Establish or strengthen hazard identification and risk assessment protocols to proactively address potential risks.",
+      "Increase the frequency of safety audits and ensure prompt resolution of identified issues.",
+      "",
+      "Invest in advanced safety technologies, such as automated monitoring systems or wearable safety devices.",
+      "Foster a culture of safety through leadership commitment, employee engagement, and recognition of safety best practices.",
+      "Collaborate with industry peers to adopt and implement proven safety innovations and methodologies.",
+      "G. Renewable Energy and Sustainability"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-31",
+    "archetype": "electricity-generation",
+    "title": "Renewable Energy Transition Readiness and Integration Strategy Assessment",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [
+      "CAPACITY_GROWTH",
+      "RENEWABLE_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RENEWABLE_BUILDOUT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/31 - Renewable Energy Transition Readiness and Integration.md",
+    "goal": "To evaluate the readiness of a power generation company to transition to renewable energy sources and develop a strategic roadmap for integrating renewables into the energy mix.",
+    "dataRequired": [
+      "Current generation mix, including the share of renewable and non-renewable sources.",
+      "Renewable energy resource potential (e.g., solar, wind, hydro, biomass) in relevant locations.",
+      "Grid capacity and infrastructure readiness for renewable energy integration.",
+      "Historical and forecasted electricity demand.",
+      "Capital expenditure (CapEx) and operational expenditure (OpEx) requirements for renewable projects.",
+      "Regulatory requirements, incentives, and policies supporting renewable energy.",
+      "Industry benchmarks for renewable energy transition and integration."
+    ],
+    "improve": [
+      "",
+      "Invest in renewable energy projects, prioritizing regions with high resource potential and favorable regulatory support.",
+      "Upgrade grid infrastructure, including transmission lines and storage systems, to support renewable integration.",
+      "Collaborate with regulators to leverage incentives and align with energy transition policies.",
+      "Develop partnerships with renewable technology providers to access innovative solutions and reduce implementation costs.",
+      "Implement advanced forecasting tools to optimize renewable energy dispatch and minimize grid disruptions.",
+      "Conduct workforce training programs to equip staff with the skills needed for operating and maintaining renewable systems.",
+      "Regularly review and update the renewable energy strategy to align with evolving market conditions, technology advancements, and policy changes.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Renewable Share (%)",
+        "variables": [
+          "Renewable Energy Output",
+          "Total Energy Output"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Renewable Share (%) = (Renewable Energy Output / Total Energy Output)",
+        "step": "Assess Current Energy Mix"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-32",
+    "archetype": "electricity-generation",
+    "title": "Intermittency Management Strategies for Renewable Energy Sources",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "WEATHER_CLIMATE"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/32 - Intermittency Management Strategies for Renewable Energy.md",
+    "goal": "To evaluate strategies for managing the variability and unpredictability of renewable energy sources, such as solar and wind, to ensure grid stability, reliability, and cost efficiency.",
+    "dataRequired": [
+      "Historical and forecasted generation profiles for intermittent renewables (solar, wind).",
+      "Load and demand data, including peak and off-peak variations.",
+      "Availability and performance of energy storage systems (e.g., batteries, pumped hydro).",
+      "Grid flexibility metrics, such as ramping capabilities and reserve margins.",
+      "Forecast accuracy for renewable energy production.",
+      "Industry benchmarks for managing renewable intermittency.",
+      "Costs and feasibility of potential technologies and operational solutions."
+    ],
+    "improve": [
+      "Invest in energy storage systems to store surplus renewable energy for use during low-generation periods.",
+      "Enhance grid flexibility through upgrades to transmission infrastructure, advanced control systems, and dynamic line ratings.",
+      "",
+      "Implement demand response programs to align electricity consumption with renewable generation availability.",
+      "Deploy hybrid renewable systems (e.g., solar with storage) to reduce reliance on single-source renewables.",
+      "Use advanced forecasting tools powered by AI and machine learning to improve renewable output predictions.",
+      "Collaborate with grid operators to integrate ancillary services, such as spinning reserves, into the renewable energy strategy.",
+      "Monitor and adapt intermittency management strategies to align with evolving grid conditions, renewable penetration levels, and market trends.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-33",
+    "archetype": "electricity-generation",
+    "title": "Waste Heat Recovery and Cogeneration Potential",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [
+      "OPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "HEAT_RATE_IMPROVEMENT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/33 - Waste Heat Recovery and Cogeneration Potential.md",
+    "goal": "To evaluate the potential for utilizing waste heat from power generation processes for additional energy production or heating purposes, and to assess the feasibility of implementing cogeneration (combined heat and power, CHP) systems.",
+    "dataRequired": [
+      "Heat loss data from power generation processes (e.g., exhaust gases, cooling systems).",
+      "Thermal and electrical efficiency of existing generation systems.",
+      "Local demand for heat or electricity that could be met by cogeneration.",
+      "Technical specifications and costs of waste heat recovery and cogeneration systems.",
+      "Regulatory incentives or subsidies for CHP systems.",
+      "Historical and forecasted electricity and heat demand data.",
+      "Industry benchmarks for waste heat recovery efficiency and cogeneration performance."
+    ],
+    "improve": [
+      "",
+      "Invest in waste heat recovery technologies, such as heat exchangers, steam turbines, or organic Rankine cycle systems.",
+      "Develop cogeneration systems in regions with strong local demand for heat or electricity.",
+      "Optimize existing generation processes to reduce waste heat and improve efficiency.",
+      "Explore partnerships with industrial or residential heat users to share infrastructure costs and expand heat distribution networks.",
+      "Leverage regulatory incentives or subsidies to lower upfront costs of recovery and cogeneration projects.",
+      "Monitor and evaluate system performance post-implementation to ensure expected efficiency gains and cost savings are realized.",
+      "Regularly review technological advancements in heat recovery and cogeneration to stay competitive and maintain operational efficiency.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Waste Heat (MW)",
+        "variables": [
+          "Heat Input (MW)",
+          "Useful Energy Output (MW)"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Total Waste Heat (MW) = Heat Input (MW) - Useful Energy Output (MW).",
+        "step": "Quantify Waste Heat Availability"
+      },
+      {
+        "output": "Overall Efficiency (%)",
+        "variables": [
+          "Electricity Output",
+          "Useful Heat Output",
+          "Total"
+        ],
+        "expression": "( v0 + v1 ) / v2",
+        "percentOutput": false,
+        "source": "Overall Efficiency (%) = (Electricity Output + Useful Heat Output) / Total",
+        "step": "Evaluate Cogeneration Feasibility"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-34",
+    "archetype": "electricity-generation",
+    "title": "Seasonal and Peak Load Flexibility Assessment",
+    "part": "G",
+    "partLabel": "Renewable Energy and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/34 - Seasonal and Peak Load Flexibility Assessment.md",
+    "goal": "To evaluate the ability of a power generation company to adapt to seasonal variations and peak load demands by assessing the flexibility of its generation portfolio, grid resources, and operational practices.",
+    "dataRequired": [
+      "Historical and forecasted electricity demand data (seasonal and daily variations).",
+      "Generation capacity and ramping capabilities by plant type.",
+      "Availability and performance of flexible resources (e.g., peaking plants, energy storage, demand response programs).",
+      "Fuel availability and procurement constraints during peak periods.",
+      "Grid interconnection data and regional power transfer capabilities.",
+      "Regulatory requirements for reliability during peak loads.",
+      "Industry benchmarks for load flexibility metrics."
+    ],
+    "improve": [
+      "Invest in fast-ramping generation resources, such as peaking plants or flexible gas turbines.",
+      "Expand energy storage systems to balance seasonal and peak demand variability.",
+      "",
+      "Enhance demand response programs to encourage load shifting and reduce peak pressures.",
+      "Upgrade grid infrastructure to improve interconnection capacity and leverage imports during peak periods.",
+      "Optimize renewable integration strategies to align output with peak demand through forecasting and storage.",
+      "Develop contingency plans to address fuel constraints and unexpected demand spikes.",
+      "Regularly review and update operational practices to ensure alignment with evolving demand patterns and regulatory requirements.",
+      "H. Technological Innovation and Modernization"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-35",
+    "archetype": "electricity-generation",
+    "title": "Grid Modernization and Smart Grid Integration Assessment",
+    "part": "H",
+    "partLabel": "Technological Innovation and Modernization",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/35 - Grid Modernization and Smart Grid Integration Assessment.md",
+    "goal": "To evaluate the readiness and implementation of grid modernization efforts, including the integration of smart grid technologies, to enhance operational efficiency, reliability, and the ability to support renewable energy and distributed generation.",
+    "dataRequired": [
+      "Current grid infrastructure details, including transmission and distribution network configurations.",
+      "Deployment status of smart grid technologies (e.g., smart meters, sensors, automated controls).",
+      "Historical grid performance data (e.g., outage frequencies, restoration times, energy losses).",
+      "Data on distributed energy resources (DERs) and renewable energy integration.",
+      "Cybersecurity measures and protocols for grid systems.",
+      "Regulatory requirements and incentives for grid modernization.",
+      "Cost and performance benchmarks for smart grid technologies."
+    ],
+    "improve": [
+      "Invest in smart grid technologies, including AMI, automated switches, and real-time monitoring systems.",
+      "",
+      "Upgrade grid infrastructure to support two-way power flows and DER integration.",
+      "Enhance cybersecurity measures to protect grid systems against evolving threats.",
+      "Collaborate with regulators and stakeholders to access incentives and funding for modernization initiatives.",
+      "Develop workforce training programs to build expertise in smart grid operations and maintenance.",
+      "Leverage advanced analytics and AI to optimize grid operations and improve forecasting capabilities.",
+      "Regularly assess and update the grid modernization strategy to align with emerging technologies and regulatory changes.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-36",
+    "archetype": "electricity-generation",
+    "title": "Energy Storage Feasibility and Lifecycle Cost Assessment",
+    "part": "H",
+    "partLabel": "Technological Innovation and Modernization",
+    "relatedMetricCodes": [
+      "CAPACITY_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RENEWABLE_BUILDOUT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/36 - Energy Storage Feasibility and Lifecycle Cost Assessment.md",
+    "goal": "To evaluate the technical, economic, and operational feasibility of implementing energy storage systems while assessing their lifecycle costs.",
+    "dataRequired": [
+      "Energy demand and generation profiles, including peak and off-peak periods.",
+      "Technical specifications and costs for storage technologies (e.g., lithium-ion batteries, pumped hydro, thermal storage).",
+      "Current and projected costs for installation, operation, maintenance, and replacement of storage systems.",
+      "Expected lifespan and degradation rates of storage technologies.",
+      "Regulatory requirements and incentives for energy storage.",
+      "Market prices for electricity during storage charge and discharge cycles.",
+      "Industry benchmarks for energy storage efficiency and costs."
+    ],
+    "improve": [
+      "Invest in the most suitable storage technologies based on use case and cost-benefit analysis.",
+      "Optimize storage system operations to align with peak demand and renewable generation patterns.",
+      "",
+      "Leverage incentives or subsidies to reduce upfront capital costs.",
+      "Collaborate with regulators and grid operators to ensure smooth integration and compliance.",
+      "Regularly review advancements in storage technology to adopt cost-effective and efficient solutions.",
+      "Train operational teams to manage and maintain storage systems effectively, ensuring long-term performance.",
+      "Use advanced forecasting tools to optimize charge and discharge cycles for maximum financial and operational benefits.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Round-Trip Efficiency (%)",
+        "variables": [
+          "Energy Discharged",
+          "Energy Charged"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Round-Trip Efficiency (%) = (Energy Discharged / Energy Charged) x 100",
+        "step": "Evaluate Storage Technologies"
+      },
+      {
+        "output": "Lifecycle Cost ($/Mffh)",
+        "variables": [
+          "CapEx",
+          "OpEx",
+          "Lifespan",
+          "Replacement Costs",
+          "Total Energy Stored (Mffh)"
+        ],
+        "expression": "( v0 + ( v1 * v2 ) + v3 ) / v4",
+        "percentOutput": false,
+        "source": "Lifecycle Cost ($/Mffh) = (CapEx + (OpEx x Lifespan) + Replacement Costs) / Total Energy Stored (Mffh)",
+        "step": "Calculate Lifecycle Costs"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-37",
+    "archetype": "electricity-generation",
+    "title": "Distributed Generation Impact Assessment",
+    "part": "H",
+    "partLabel": "Technological Innovation and Modernization",
+    "relatedMetricCodes": [
+      "CAPACITY_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "RENEWABLE_BUILDOUT"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/37 - Distributed Generation Impact Assessment.md",
+    "goal": "To evaluate the operational, financial, and environmental impacts of distributed generation (DG) systems on the grid and overall energy strategy.",
+    "dataRequired": [
+      "Installed capacity, generation profiles, and locations of DG systems.",
+      "Grid interconnection and infrastructure data, including voltage levels and capacity.",
+      "Historical and forecasted electricity demand.",
+      "Operational and maintenance costs of DG systems.",
+      "Regulatory policies and incentives for DG integration.",
+      "Reliability and stability metrics for grid-connected DG systems.",
+      "Environmental impact metrics, such as emissions reductions from DG.",
+      "Industry benchmarks for DG penetration and performance."
+    ],
+    "improve": [
+      "Invest in grid modernization, including advanced inverters and voltage regulation systems, to support DG integration.",
+      "",
+      "Pair DG systems with energy storage to mitigate variability and enhance reliability.",
+      "Implement demand response programs to align load with DG generation patterns.",
+      "Collaborate with regulators to develop supportive policies and incentives for DG expansion.",
+      "Use advanced forecasting tools to optimize the dispatch of DG systems and improve grid operations.",
+      "Train grid operators and planners on managing the unique challenges posed by DG systems.",
+      "Regularly assess and upgrade interconnection standards to ensure safe and efficient integration of DG sources.",
+      "I. Capacity Planning and Utilization"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-38",
+    "archetype": "electricity-generation",
+    "title": "Load Forecasting and Demand-Supply Alignment Analysis",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/38 - Load Forecasting and Demand-Supply Alignment Analysis.md",
+    "goal": "To accurately forecast electricity demand and align power generation capacity to meet both current and future needs.",
+    "dataRequired": [
+      "Historical electricity demand data (hourly, daily, seasonal, and annual).",
+      "Weather data, including temperature, humidity, and precipitation.",
+      "Economic indicators affecting electricity consumption (e.g., GDP growth, industrial activity).",
+      "Customer segmentation data (e.g., residential, commercial, industrial).",
+      "Planned generation capacity additions or retirements.",
+      "Renewable generation profiles and their variability.",
+      "Industry benchmarks for demand forecasting accuracy."
+    ],
+    "improve": [
+      "Invest in advanced forecasting tools that use AI and machine learning to enhance prediction accuracy.",
+      "Strengthen demand response programs to shift or reduce demand during peak periods.",
+      "Increase grid flexibility through energy storage systems and peaking plants to manage demand variability.",
+      "",
+      "Collaborate with customers to better understand and predict demand patterns, particularly in industrial and commercial segments.",
+      "Regularly update forecasting models with new data and emerging trends to maintain accuracy.",
+      "Develop contingency plans for scenarios of extreme demand, such as unexpected weather events or rapid economic changes.",
+      "Explore regional partnerships to balance demand and supply through grid interconnections and shared resources.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-39",
+    "archetype": "electricity-generation",
+    "title": "Seasonal Resource Adequacy Planning",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "RESERVE_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/39 - Seasonal Resource Adequacy Planning.md",
+    "goal": "To ensure that generation and grid resources are sufficient to meet electricity demand during seasonal peaks and troughs.",
+    "dataRequired": [
+      "Historical and forecasted seasonal electricity demand data.",
+      "Generation capacity and availability for each plant type, including renewables and peaking plants.",
+      "Reserve margin requirements set by regulators or grid operators.",
+      "Renewable resource availability (e.g., solar irradiance, wind speeds) by season.",
+      "Planned outages or maintenance schedules for generation assets.",
+      "Fuel availability and constraints during seasonal peaks.",
+      "Industry benchmarks for seasonal resource adequacy."
+    ],
+    "improve": [
+      "Increase capacity through investments in peaking plants or renewable energy projects to cover seasonal peaks.",
+      "Deploy energy storage solutions to smooth variability in renewable generation and shift energy to peak periods.",
+      "Enhance demand response programs to reduce peak demand and improve flexibility.",
+      "Optimize maintenance schedules to ensure maximum capacity availability during peak seasons.",
+      "",
+      "Collaborate with neighboring grids to strengthen interconnection agreements and leverage shared resources during critical periods.",
+      "Use advanced forecasting tools to refine seasonal demand and resource adequacy predictions.",
+      "Monitor regulatory requirements and update resource adequacy planning to align with evolving standards.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-40",
+    "archetype": "electricity-generation",
+    "title": "Capacity Reserve Margin Analysis",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "RESERVE_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/40 - Capacity Reserve Margin Analysis.md",
+    "goal": "To evaluate the adequacy of power generation resources to meet peak electricity demand while maintaining a buffer for unforeseen contingencies, such as outages or demand spikes.",
+    "dataRequired": [
+      "Total installed generation capacity by plant type (MW).",
+      "Peak demand data (historical and forecasted) for the analysis period.",
+      "Outage rates and maintenance schedules for generation assets.",
+      "Contribution of renewable energy sources during peak demand periods.",
+      "Reserve margin requirements specified by regulators or grid operators.",
+      "Industry benchmarks for reserve margins."
+    ],
+    "improve": [
+      "Invest in additional capacity, such as fast-ramping peaking plants or renewable energy projects, to increase available resources.",
+      "Optimize maintenance schedules to ensure high availability during peak demand periods.",
+      "Deploy energy storage systems to provide contingency support during demand spikes or outages.",
+      "",
+      "Enhance demand response programs to reduce demand during critical periods and improve flexibility.",
+      "Strengthen grid interconnections to leverage external resources during shortfalls.",
+      "Regularly update demand forecasts and capacity assessments to ensure reserve margins align with evolving conditions.",
+      "Collaborate with regulators to refine reserve margin requirements and integrate innovative solutions, such as virtual power plants.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-41",
+    "archetype": "electricity-generation",
+    "title": "Demand Response and Load Shifting Capabilities",
+    "part": "I",
+    "partLabel": "Capacity Planning and Utilization",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/41 - Demand Response and Load Shifting Capabilities.md",
+    "goal": "To evaluate the potential of demand response (DR) and load-shifting programs to reduce peak electricity demand, balance supply and demand, and enhance grid reliability.",
+    "dataRequired": [
+      "Historical and real-time electricity demand data by sector (e.g., residential, commercial, industrial).",
+      "Load profiles of participating and non-participating customers.",
+      "Program participation rates and potential response capacity (MW).",
+      "Pricing structures, such as time-of-use (TOU) rates or dynamic pricing schemes.",
+      "Operational data on DR program activations, performance, and outcomes.",
+      "Industry benchmarks for DR participation and load-shifting performance.",
+      "Regulatory policies and incentives for demand response initiatives."
+    ],
+    "improve": [
+      "Expand customer enrollment through targeted outreach, education, and financial incentives.",
+      "Implement advanced technologies, such as smart thermostats and automated load control systems, to simplify participation.",
+      "Enhance pricing structures to make load shifting more attractive, such as introducing higher peak-to-off-peak price differentials.",
+      "Partner with large industrial and commercial customers to design tailored DR programs that maximize their load-shifting potential.",
+      "",
+      "Use predictive analytics to optimize event timing and ensure maximum impact during critical periods.",
+      "Collaborate with regulators to access incentives or funding for DR program expansion.",
+      "Continuously monitor and evaluate program performance to identify and address gaps in effectiveness.",
+      "J. Lifecycle and Asset Management"
+    ],
+    "formulas": [
+      {
+        "output": "Load Reduction (%)",
+        "variables": [
+          "Demand Reduction During Event",
+          "Baseline Demand"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Load Reduction (%) = (Demand Reduction During Event / Baseline Demand) x 100",
+        "step": "Evaluate Program Effectiveness"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-42",
+    "archetype": "electricity-generation",
+    "title": "Capital Expenditure (CapEx) and Maintenance Planning Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [
+      "CAPEX",
+      "OM_COST_PER_MWH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE",
+      "AVAILABILITY_IMPROVEMENT",
+      "OM_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/42 - Capital Expenditure (CapEx) and Maintenance Planning.md",
+    "goal": "To evaluate capital expenditure and maintenance requirements for power generation assets to ensure optimal operational efficiency, reliability, and long-term cost-effectiveness.",
+    "dataRequired": [
+      "Historical and forecasted CapEx data by asset and project type (e.g., plant upgrades, grid expansions).",
+      "Maintenance records, including schedules, costs, and downtime.",
+      "Performance metrics of assets, such as efficiency, output reliability, and failure rates.",
+      "Asset age profiles and remaining useful life estimations.",
+      "Industry benchmarks for CapEx and maintenance costs by asset type.",
+      "Regulatory requirements for asset upgrades or replacements.",
+      "Market conditions influencing the costs of materials, labor, and technology."
+    ],
+    "improve": [
+      "Implement predictive maintenance technologies to minimize downtime and extend asset lifespans.",
+      "Reassess CapEx priorities to align with operational, regulatory, and market demands.",
+      "Invest in newer, more efficient technologies to reduce long-term maintenance costs and improve performance.",
+      "",
+      "Develop an integrated asset management system to monitor asset conditions and optimize investment decisions.",
+      "Collaborate with stakeholders to identify co-funding opportunities for large-scale infrastructure upgrades.",
+      "Regularly review market conditions to capitalize on cost savings for materials and labor.",
+      "Enhance workforce training to improve the effectiveness of maintenance activities and reduce repair time.",
+      "Monitor and adjust the long-term plan based on emerging trends, regulatory changes, and technological advancements.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-43",
+    "archetype": "electricity-generation",
+    "title": "Asset Age Profile and Lifecycle Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO",
+      "OM_EFFICIENCY",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/43 - Asset Age Profile and Lifecycle Analysis.md",
+    "goal": "To assess the age distribution of power generation and grid assets and evaluate their lifecycle stages to support strategic decisions on maintenance, upgrades, replacements, and investments.",
+    "dataRequired": [
+      "Inventory of all assets with installation dates, types, and specifications.",
+      "Asset performance data, including efficiency, output reliability, and failure rates.",
+      "Estimated useful life for each asset type and industry benchmarks for lifespan.",
+      "Historical and forecasted maintenance costs and downtime.",
+      "Replacement costs and upgrade options for aging assets.",
+      "Regulatory requirements for asset safety, emissions, and performance.",
+      "Market trends and advancements in asset technology."
+    ],
+    "improve": [
+      "Prioritize replacement or upgrades for critical assets that have surpassed their useful life or exhibit declining performance.",
+      "Implement predictive maintenance programs to extend the lifespan of assets and reduce unplanned downtime.",
+      "Invest in modern, efficient technologies to lower lifecycle costs and improve operational performance.",
+      "Develop a comprehensive asset management plan that integrates age profiles, performance data, and lifecycle costs.",
+      "",
+      "Monitor regulatory requirements to ensure timely compliance with safety and performance standards for aging assets.",
+      "Engage in long-term planning to balance short-term operational needs with strategic investments in asset renewal.",
+      "Regularly update the asset inventory and lifecycle analysis to align with evolving operational demands and market trends.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Asset Age (Years)",
+        "variables": [
+          "Current Year",
+          "Installation Year"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Asset Age (Years) = Current Year - Installation Year",
+        "step": "Determine Asset Age Profiles"
+      },
+      {
+        "output": "Remaining Life (Years)",
+        "variables": [
+          "Useful Life (Years)",
+          "Asset Age (Years)"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Remaining Life (Years) = Useful Life (Years) - Asset Age (Years)",
+        "step": "Assess Remaining Useful Life"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-44",
+    "archetype": "electricity-generation",
+    "title": "Power Plant Decommissioning and Remediation Planning",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/44 - Power Plant Decommissioning and Remediation Planning.md",
+    "goal": "To develop a structured and cost-effective plan for decommissioning aging or non-operational power plants, ensuring regulatory compliance and environmental remediation while minimizing financial and operational risks.",
+    "dataRequired": [
+      "Inventory of power plants slated for decommissioning, including location, capacity, and technology type.",
+      "Regulatory requirements for decommissioning and site remediation (local, national, and international).",
+      "Historical and forecasted decommissioning costs for similar plants.",
+      "Environmental impact assessments (e.g., contamination levels, land use).",
+      "Asset salvage or resale values for components and materials.",
+      "Workforce transition plans and associated costs.",
+      "Industry benchmarks for decommissioning timelines and costs."
+    ],
+    "improve": [
+      "",
+      "Optimize dismantling and salvage processes to maximize asset resale or recycling values.",
+      "Partner with environmental remediation specialists to ensure cost-effective and compliant site restoration.",
+      "Leverage regulatory incentives or funding opportunities for environmental cleanup projects.",
+      "Develop retraining programs to transition the workforce to other roles or industries.",
+      "Use advanced project management tools to streamline decommissioning activities and control costs.",
+      "Regularly update cost and timeline estimates based on lessons learned from ongoing and completed projects.",
+      "Collaborate with regulators and local communities to ensure transparency and alignment with expectations during the decommissioning process.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-45",
+    "archetype": "electricity-generation",
+    "title": "Energy Curtailment and Loss Factor Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [
+      "CURTAILMENT_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/45 - Energy Curtailment and Loss Factor Analysis.md",
+    "goal": "To evaluate the extent of energy curtailment and transmission losses in power generation and distribution systems, identify root causes, and develop strategies to minimize energy waste and improve efficiency.",
+    "dataRequired": [
+      "Historical and real-time energy production and delivery data by generation type and location.",
+      "Energy curtailment records (e.g., instances and volumes of curtailed energy).",
+      "Transmission and distribution loss data (e.g., line losses, step-up and step-down losses).",
+      "System constraints causing curtailment or losses (e.g., grid congestion, lack of storage).",
+      "Renewable energy generation profiles and variability data.",
+      "Industry benchmarks for curtailment rates and loss factors."
+    ],
+    "improve": [
+      "Upgrade grid infrastructure to alleviate congestion and enhance transmission efficiency.",
+      "Deploy energy storage solutions to capture surplus energy and reduce curtailment during periods of low demand.",
+      "Implement advanced dispatch optimization systems to prioritize the use of renewable energy.",
+      "",
+      "Use predictive analytics to improve load forecasting and align generation with demand more effectively.",
+      "Collaborate with regulators to update grid connection policies and incentivize flexibility solutions.",
+      "Conduct regular maintenance on transmission and distribution systems to minimize losses due to wear and inefficiencies.",
+      "Explore flexible interconnection agreements to export surplus energy and reduce curtailment.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Curtailment Rate (%)",
+        "variables": [
+          "Curtailment Energy",
+          "Total Potential Generation"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Curtailment Rate (%) = (Curtailment Energy / Total Potential Generation) x 100",
+        "step": "Collect and Analyze Curtailment Data"
+      }
+    ]
+  },
+  {
+    "id": "electricity-generation-46",
+    "archetype": "electricity-generation",
+    "title": "Cross-Border Energy Trade and Interconnection Analysis",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/46 - Cross-Border Energy Trade and Interconnection Analysis.md",
+    "goal": "To evaluate the opportunities and challenges associated with cross-border energy trade and grid interconnections, ensuring optimized energy flows, cost savings, and enhanced reliability across interconnected regions.",
+    "dataRequired": [
+      "Existing cross-border interconnection infrastructure and capacity.",
+      "Historical energy trade data, including import/export volumes, prices, and trade patterns.",
+      "Transmission losses and constraints in cross-border energy flows.",
+      "Regulatory and policy frameworks governing energy trade between regions.",
+      "Seasonal and real-time supply-demand variations across interconnected regions.",
+      "Cost of generation and energy price differentials between regions.",
+      "Industry benchmarks for cross-border energy trade efficiency and interconnection utilization."
+    ],
+    "improve": [
+      "",
+      "Invest in upgrading interconnection infrastructure to increase capacity and reduce transmission losses.",
+      "Collaborate with regulators and policymakers to align trade policies and reduce barriers to cross-border energy flows.",
+      "Develop predictive analytics tools to optimize energy flows based on real-time and forecasted supply-demand variations.",
+      "Explore flexible energy contracts or market mechanisms to maximize benefits from trade price differentials.",
+      "Partner with neighboring regions to co-fund and co-manage interconnection projects.",
+      "Enhance grid flexibility through advanced technologies, such as phase-shifting transformers or HVDC systems, to improve trade efficiency.",
+      "Regularly monitor and evaluate trade patterns and interconnection performance to adjust strategies based on evolving market dynamics.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "electricity-generation-47",
+    "archetype": "electricity-generation",
+    "title": "Water Usage and Cooling Technology Assessment",
+    "part": "J",
+    "partLabel": "Lifecycle and Asset Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/electricity-generation/47 - Water Usage and Cooling Technology Assessment.md",
+    "goal": "To evaluate the efficiency and sustainability of water usage and cooling technologies in power generation facilities.",
+    "dataRequired": [
+      "Water consumption data for cooling systems (e.g., volume of water used, source, and withdrawal points).",
+      "Cooling system types used at power plants (e.g., once-through, closed-loop, cooling towers).",
+      "Environmental impact data (e.g., thermal pollution, water temperature changes, aquatic ecosystem effects).",
+      "Regulatory standards and limits for water usage and thermal discharge.",
+      "Plant performance data, including efficiency metrics and cooling system reliability.",
+      "Cost of water, cooling system operation, and maintenance.",
+      "Local climate data (e.g., temperature, precipitation, and water availability).",
+      "Industry benchmarks for water usage in cooling processes."
+    ],
+    "improve": [
+      "Transition to more water-efficient cooling systems, such as closed-loop cooling, hybrid cooling, or dry cooling.",
+      "Invest in cooling system upgrades, such as better heat exchangers or evaporative cooling enhancements, to reduce water consumption.",
+      "Implement water recycling or reuse systems to minimize withdrawal from local water sources.",
+      "Optimize operational processes, such as improving heat load management or utilizing free cooling during cooler months, to reduce cooling demand.",
+      "Monitor and track water quality and cooling system performance to ensure compliance with environmental regulations.",
+      "Engage in water stewardship programs and collaborate with local authorities to manage water resources sustainably.",
+      "Regularly review and update cooling technologies to align with emerging trends, such as water-efficient cooling systems and renewable energy integration.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Water Intensity (gallons/Mffh)",
+        "variables": [
+          "Total Water Consumption (gallons)",
+          "Total"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Water Intensity (gallons/Mffh) = Total Water Consumption (gallons) / Total",
+        "step": "Assess Current Water Usage"
+      }
+    ]
+  }
+]

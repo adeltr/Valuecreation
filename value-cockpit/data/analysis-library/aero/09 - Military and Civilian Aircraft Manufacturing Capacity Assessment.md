@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-09
+part: B
+partLabel: Operations & Supply Chain
+quant: [FACILITY_UTILIZATION]
+causes: [OPERATIONAL]
+levers: [CAPACITY_UTILIZATION, SUPPLY_CHAIN_CONTROL]
 ---
 # 9 · Military and Civilian Aircraft Manufacturing Capacity Assessment
 

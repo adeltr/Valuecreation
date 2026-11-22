@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-11
+part: B
+partLabel: Operations & Supply Chain
+quant: [MRO_CYCLE_DAYS, OPERATIONAL_AVAILABILITY, SPARE_PARTS_AVAILABILITY]
+causes: [OPERATIONAL]
+levers: [MRO_EFFICIENCY]
 ---
 # 11 · Defense Logistics and Maintenance, Repair, Overhaul (MRO) Capabilities
 

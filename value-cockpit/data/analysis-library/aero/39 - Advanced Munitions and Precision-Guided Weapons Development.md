@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/E
+kind: analysis
+id: aero-39
+part: E
+partLabel: Finance & Program Management
+quant: [COST_OVERRUN_RATE]
+causes: [PROGRAM, MARKET]
+levers: [CAPACITY_UTILIZATION]
 ---
 # 39 · Advanced Munitions and Precision-Guided Weapons Development
 

@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/C
+kind: analysis
+id: aero-27
+part: C
+partLabel: Research & Development and Innovation
+quant: [RD_INTENSITY]
+causes: [MARKET, REGULATORY]
+levers: [RD_PORTFOLIO]
 ---
 # 27 · Nuclear Deterrence and Strategic Defense Systems
 

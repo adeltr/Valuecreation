@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/B
+kind: analysis
+id: aero-12
+part: B
+partLabel: Operations & Supply Chain
+quant: [COGS, ON_TIME_DELIVERY]
+causes: [OPERATIONAL, GEOPOLITICAL]
+levers: [SUPPLY_CHAIN_CONTROL, COST_PROCUREMENT]
 ---
 # 12 · Vertical Integration of Defense Manufacturing and Supply Chain Control
 

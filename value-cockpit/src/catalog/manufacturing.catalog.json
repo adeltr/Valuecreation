@@ -1,0 +1,2155 @@
+[
+  {
+    "id": "manufacturing-01",
+    "archetype": "manufacturing",
+    "title": "Capacity Utilization Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "PLANT_UTILIZATION"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/01 - Capacity Utilization Analysis.md",
+    "goal": "The goal of a Capacity Utilization Analysis is to measure how effectively a manufacturing company is using its production capacity.",
+    "dataRequired": [
+      "**Actual Production Output:** The number of units produced in a given period (e.g., day, week, month).",
+      "**Maximum Production Capacity:** The maximum number of units that could be produced with current equipment and resources in the same period.",
+      "**Time Period:** The specific time frame for the analysis (e.g., monthly, quarterly).",
+      "**Shift Schedules:** Total available work hours in a period based on labor and machine availability."
+    ],
+    "improve": [
+      "Increase Demand or Production Volume",
+      "Optimize Shift Schedules",
+      "Improve Operational Efficiency",
+      "Upgrade Equipment",
+      "Balance Workloads Across Production Lines",
+      "Reduce Downtime",
+      "○ Analyze the root causes of downtime and take corrective actions, such as optimizing maintenance schedules or speeding up changeovers.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-02",
+    "archetype": "manufacturing",
+    "title": "Operational Efficiency (OEE) Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "CONVERSION_COST_RATE",
+      "OEE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "LEAN_OEE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/02 - Operational Efficiency (OEE) Analysis.md",
+    "goal": "The goal of an Operational Efficiency (OEE) Analysis is to measure the overall performance of a manufacturing process.",
+    "dataRequired": [
+      "**Planned Production Time:** Total time that production is planned to be running.",
+      "**Downtime:** Time during which production was stopped (e.g., equipment failures, changeovers).",
+      "**Ideal Cycle Time:** The fastest time to produce one unit under optimal conditions.",
+      "**Actual Cycle Time:** The actual time it takes to produce one unit.",
+      "**Total Units Produced:** Total number of units produced during the analyzed period.",
+      "**Defective Units:** Number of units produced that do not meet quality standards."
+    ],
+    "improve": [
+      "Improve Availability",
+      "Enhance Performance",
+      "Increase Quality",
+      "Continuous Monitoring",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-03",
+    "archetype": "manufacturing",
+    "title": "Supply Chain and Logistics Optimization",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "COGS"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/03 - Supply Chain and Logistics Optimization.md",
+    "goal": "The goal of Supply Chain and Logistics Optimization is to improve the efficiency, cost-effectiveness, and reliability of the supply chain, from procurement of raw materials to delivery of finished goods.",
+    "dataRequired": [
+      "**Lead Times:** Time taken from order placement to delivery of raw materials and finished goods.",
+      "**Inventory Levels:** Current inventory for raw materials, work-in-progress (WIP), and finished goods.",
+      "**Logistics Costs:** Transportation, warehousing, and handling costs.",
+      "**Supplier Performance Data:** Supplier lead times, quality metrics, and reliability.",
+      "**Customer Demand Forecasts:** Expected demand for products over a given period.",
+      "**Stockouts and Excess Inventory:** Instances of running out of stock or carrying excess inventory."
+    ],
+    "improve": [
+      "Streamline Supplier Relationships",
+      "Implement Just-in-Time (JIT) Inventory",
+      "Optimize Transportation and Logistics",
+      "Use Advanced Analytics for Demand Forecasting",
+      "Invest in Warehouse Management Systems",
+      "Perform Regular Supply Chain Audits",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-04",
+    "archetype": "manufacturing",
+    "title": "Production Lead Time Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "MANUFACTURING_LEAD_TIME"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/04 - Production Lead Time Analysis.md",
+    "goal": "The goal of a Production Lead Time Analysis is to measure the time it takes from the start of the production process to the completion of finished goods.",
+    "dataRequired": [
+      "**Order Placement Date:** The date when the production order was placed.",
+      "**Start of Production Date:** The date when production for the order began.",
+      "**End of Production Date:** The date when production for the order was completed.",
+      "**Production Process Breakdown:** Data on each stage of production (e.g., preparation, assembly, quality control).",
+      "**Machine and Labor Availability:** Availability of machines and workers that might affect production speed.",
+      "**Downtime Data:** Time when machines were idle or down due to maintenance, setup, or changeovers."
+    ],
+    "improve": [
+      "Optimize Production Scheduling",
+      "",
+      "Implement Lean Manufacturing Practices",
+      "Automate Repetitive Processes",
+      "Improve Machine Maintenance",
+      "Streamline Changeovers",
+      "Enhance Workforce Training",
+      "Improve Supplier Coordination",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-05",
+    "archetype": "manufacturing",
+    "title": "Lean Manufacturing and Waste Reduction Assessment",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "CONVERSION_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "LEAN_OEE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/05 - Lean Manufacturing and Waste Reduction Assessment.md",
+    "goal": "The goal of a Lean Manufacturing and Waste Reduction Assessment is to identify inefficiencies and waste in the production process and apply lean principles to reduce or eliminate these wastes.",
+    "dataRequired": [
+      "**Production Process Mapping:** Detailed workflow of the entire production process from raw material to finished goods.",
+      "**Cycle Times:** The time taken to complete each stage of production.",
+      "**Inventory Levels:** Amount of raw materials, work-in-progress (WIP), and finished goods in stock.",
+      "**Defect Rates:** Data on the number of defective products or materials.",
+      "**Downtime Data:** Time lost due to equipment failure, maintenance, or changeovers.",
+      "**Employee Movement Data:** Information on the movement of workers, materials, and tools throughout the facility.",
+      "**Scrap and Rework Data:** Amount of material wasted and products reworked due to defects."
+    ],
+    "improve": [
+      "Implement Just-in-Time (JIT) Production",
+      "Apply 5S Methodology",
+      "Reduce Overproduction",
+      "Optimize Workflow and Factory Layout",
+      "Implement Continuous Improvement (Kaizen)",
+      "Improve Quality Control",
+      "○ Implement stricter quality control processes to reduce defects, rework, and scrap. Use root cause analysis to identify and correct sources of defects in the production process.",
+      "Minimize Downtime",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-06",
+    "archetype": "manufacturing",
+    "title": "Inventory Turnover and Management Efficiency",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_PROCUREMENT",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/06 - Inventory Turnover and Management Efficiency.md",
+    "goal": "The goal of the Inventory Turnover and Management Efficiency analysis is to assess how effectively a company is managing its inventory by measuring how often inventory is sold and replaced over a specific period.",
+    "dataRequired": [
+      "**Cost of Goods Sold (COGS):** The total cost of goods sold during the period.",
+      "**Average Inventory:** The average value of inventory over the period, calculated as (Beginning Inventory + Ending Inventory) / 2.",
+      "**Sales Data:** Total sales for the period, if turnover is measured relative to sales.",
+      "**Inventory Holding Costs:** Costs associated with storing and managing inventory, including warehousing and insurance.",
+      "**Inventory Categories:** Data on raw materials, work-in-progress (WIP), and finished goods."
+    ],
+    "improve": [
+      "Align Inventory Levels with Demand",
+      "Implement Just-in-Time (JIT) Inventory Systems",
+      "Reduce Overstock and Obsolete Inventory",
+      "Enhance Supplier Relationships",
+      "Improve Warehouse Management",
+      "Segment Inventory by Importance",
+      "Optimize Product Mix",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "calculated as: Days Inventory Outstanding (DIO)",
+        "variables": [
+          "Average Inventory",
+          "COGS",
+          "Number of Days in the Period"
+        ],
+        "expression": "( v0 / v1 ) * v2",
+        "percentOutput": false,
+        "source": "calculated as: Days Inventory Outstanding (DIO) = (Average Inventory / COGS) x Number of Days in the Period",
+        "step": "Calculate Days Inventory Outstanding (DIO)"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-07",
+    "archetype": "manufacturing",
+    "title": "Quality Control and Defect Rate Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "SCRAP_RATE",
+      "FIRST_PASS_YIELD"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "QUALITY_YIELD"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/07 - Quality Control and Defect Rate Analysis.md",
+    "goal": "The goal of a Quality Control and Defect Rate Analysis is to measure the effectiveness of a company’s quality control processes by analyzing the rate at which defects occur in production.",
+    "dataRequired": [
+      "**Total Units Produced:** The total number of units manufactured during the period being analyzed.",
+      "**Defective Units:** The number of units that did not meet quality standards.",
+      "**Scrap and Rework Data:** Data on the quantity of materials or products scrapped due to defects and the amount of rework required.",
+      "**Production Process Breakdown:** Data on specific production stages where defects occur.",
+      "**Inspection and Testing Results:** Records from quality inspections and tests conducted throughout the production process.",
+      "**Cost of Poor Quality (COPQ):** The cost associated with producing defective products, including rework, scrap, warranty claims, and returns."
+    ],
+    "improve": [
+      "Implement Statistical Process Control (SPC)",
+      "Enhance Employee Training",
+      "Improve Equipment Maintenance",
+      "Strengthen Incoming Material Inspection",
+      "Establish Root Cause Analysis Protocols",
+      "Reduce Variation in Production",
+      "Use Continuous Improvement (Kaizen)",
+      "Monitor Supplier Quality",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-08",
+    "archetype": "manufacturing",
+    "title": "Capacity Expansion and Flexibility Assessment",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "PLANT_UTILIZATION",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "CAPACITY_DEBOTTLENECKING"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/08 - Capacity Expansion and Flexibility Assessment.md",
+    "goal": "The goal of a Capacity Expansion and Flexibility Assessment is to evaluate the manufacturing company’s ability to increase production capacity in response to growing demand, as well as its flexibility to adapt to changes in production requirements.",
+    "dataRequired": [
+      "**Current Production Capacity:** Maximum number of units that can be produced with existing resources.",
+      "**Historical Production Data:** Past production levels, trends in demand, and utilization rates.",
+      "**Demand Forecast:** Predicted customer demand for the upcoming period (e.g., quarterly, yearly).",
+      "**Machine and Labor Availability:** Current availability and utilization of production machines and labor.",
+      "**Changeover Time Data:** Time required to switch between different product lines or configurations.",
+      "**Cost Data:** Costs associated with adding new capacity, including capital expenditure (CapEx) for equipment, facility expansion, and labor costs.",
+      "**Lead Time for Equipment and Infrastructure Expansion:** Time required to procure new equipment, set up production lines, or expand facilities."
+    ],
+    "improve": [
+      "Optimize Current Capacity",
+      "Implement Flexible Manufacturing Systems",
+      "Invest in Incremental Capacity Increases",
+      "Outsource Non-Core Production",
+      "Use Advanced Demand Forecasting",
+      "○ Use predictive analytics and advanced forecasting techniques to more accurately predict future demand. This will help avoid over-investing in capacity expansion or running into capacity constraints due to underestimating demand.",
+      "Plan for Future Flexibility",
+      "Monitor Utilization Regularly",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "that expansion is needed. Capacity Utilization (%)",
+        "variables": [
+          "Actual Output",
+          "Maximum Possible Output"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "that expansion is needed. Capacity Utilization (%) = (Actual Output / Maximum Possible Output) x 100",
+        "step": "Determine Current Capacity Utilization"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-09",
+    "archetype": "manufacturing",
+    "title": "Maintenance Strategy and Downtime Analysis",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE",
+      "MACHINE_DOWNTIME_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "PREDICTIVE_MAINTENANCE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/09 - Maintenance Strategy and Downtime Analysis.md",
+    "goal": "The goal of a Maintenance Strategy and Downtime Analysis is to assess the effectiveness of a company’s maintenance processes and the impact of equipment downtime on production.",
+    "dataRequired": [
+      "**Downtime Logs:** Data on machine or equipment downtime, including the duration and frequency of downtime events.",
+      "**Maintenance Records:** Information on scheduled maintenance activities, repairs, and breakdowns.",
+      "**Mean Time Between Failures (MTBF):** The average time between equipment failures.",
+      "**Mean Time to Repair (MTTR):** The average time taken to repair equipment after a failure.",
+      "**Production Output Data:** The amount of production lost due to downtime.",
+      "**Labor and Repair Costs:** Costs associated with maintenance activities, including labor, parts, and equipment replacements.",
+      "**Root Cause Analysis Data:** Records of the root causes of downtime events."
+    ],
+    "improve": [
+      "Implement Preventive Maintenance",
+      "Adopt Predictive Maintenance",
+      "Reduce MTTR by Improving Maintenance Response",
+      "Invest in New Equipment",
+      "Train Operators on Equipment Usage",
+      "Track Key Performance Indicators (KPIs)",
+      "Perform Root Cause Analysis on Major Downtime Events",
+      "○ For significant downtime events, perform a detailed root cause analysis to understand what went wrong and implement corrective actions to prevent recurrence.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "failure. The formula is: MTBF",
+        "variables": [
+          "Total Operating Time",
+          "Number of Failures"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "failure. The formula is: MTBF = Total Operating Time / Number of Failures",
+        "step": "Calculate MTBF (Mean Time Between Failures)"
+      },
+      {
+        "output": "failure. The formula is: MTTR",
+        "variables": [
+          "Total Downtime",
+          "Number of Failures"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "failure. The formula is: MTTR = Total Downtime / Number of Failures",
+        "step": "Calculate MTTR (Mean Time to Repair)"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-10",
+    "archetype": "manufacturing",
+    "title": "Factory Layout and Process Flow Optimization",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "CONVERSION_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO",
+      "LEAN_OEE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/10 - Factory Layout and Process Flow Optimization.md",
+    "goal": "The goal of a Factory Layout and Process Flow Optimization analysis is to evaluate the physical layout of the production floor and the flow of materials, equipment, and workers.",
+    "dataRequired": [
+      "**Current Factory Layout:** A detailed map or blueprint of the production floor, including workstations, equipment, storage areas, and material handling pathways.",
+      "**Material Flow Data:** Information on how raw materials, WIP (work-in-progress), and finished goods move through the factory.",
+      "**Cycle Times:** The time taken to complete each stage of the production process.",
+      "**Distance Data:** The distance materials, workers, and equipment must travel between production stages.",
+      "**Bottleneck Data:** Information on areas where production slows down or where inefficiencies exist.",
+      "**Labor Utilization:** Data on how workers are assigned to different tasks and how efficiently they move between workstations.",
+      "**Space Utilization:** The percentage of factory floor space being used for production, storage, or movement."
+    ],
+    "improve": [
+      "Use Lean Manufacturing Techniques",
+      "Implement Cellular Manufacturing",
+      "Invest in Automation",
+      "Optimize Storage Areas",
+      "○ Relocate storage areas closer to the production line, or introduce just-in-time (JIT) inventory management practices to reduce the amount of inventory stored on-site. This will free up valuable floor space for production activities.",
+      "Conduct Kaizen Events",
+      "Design for Flexibility",
+      "Track Key Performance Indicators (KPIs)",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-11",
+    "archetype": "manufacturing",
+    "title": "Throughput and Bottleneck Identification",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "OEE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "LEAN_OEE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/11 - Throughput and Bottleneck Identification.md",
+    "goal": "The goal of a Throughput and Bottleneck Identification analysis is to assess the rate at which a manufacturing process produces finished goods (throughput) and identify any bottlenecks that limit production capacity.",
+    "dataRequired": [
+      "**Cycle Times:** The time it takes to complete each stage of the production process.",
+      "**Work-in-Progress (WIP) Inventory:** Amount of WIP at various points in the production line.",
+      "**Production Output Data:** The number of units produced over a given time period.",
+      "**Machine Utilization Data:** How often and for how long machines are in use, including any downtime or idle periods.",
+      "**Labor Utilization Data:** Worker activity levels, including shifts, task assignments, and idle time.",
+      "**Capacity Data:** Maximum potential output for each machine or workstation.",
+      "**Queue Lengths:** The length of time materials or WIP wait at each production stage."
+    ],
+    "improve": [
+      "Increase Capacity at Bottleneck Points",
+      "Optimize Production Scheduling",
+      "Reduce Downtime at Bottlenecks",
+      "Reconfigure Factory Layout",
+      "Cross-Train Employees",
+      "○ Train workers to operate multiple machines or perform various tasks. This provides flexibility in staffing, allowing labor to be reallocated to bottleneck areas when needed.",
+      "Implement Automation",
+      "Use Buffer Stocks at Bottlenecks",
+      "Continuous Monitoring of Bottlenecks",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "finished goods. It can be measured as: Throughput",
+        "variables": [
+          "Total Units Produced",
+          "Total Time"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "finished goods. It can be measured as: Throughput = Total Units Produced / Total Time",
+        "step": "Measure Throughput"
+      },
+      {
+        "output": "Bottleneck Identification",
+        "variables": [
+          "Slowest Cycle Time",
+          "Average Cycle Time"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Bottleneck Identification = Slowest Cycle Time / Average Cycle Time",
+        "step": "Map the Production Process"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-12",
+    "archetype": "manufacturing",
+    "title": "Production Scheduling and Demand Alignment",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/manufacturing/12 - Production Scheduling and Demand Alignment.md",
+    "goal": "The goal of a Production Scheduling and Demand Alignment analysis is to synchronize the production schedule with actual customer demand to ensure that manufacturing processes are running efficiently while minimizing excess inventory and reducing the risk of stockouts.",
+    "dataRequired": [
+      "**Demand Forecasts:** Projected customer demand for products over a specific period (e.g., monthly, quarterly).",
+      "**Sales Orders:** Historical sales data and current customer orders.",
+      "**Production Capacity:** The maximum output that the manufacturing facility can produce within a given time frame.",
+      "**Lead Times:** Time required to produce and deliver products from start to finish.",
+      "**Inventory Levels:** Current levels of raw materials, WIP, and finished goods.",
+      "**Labor and Machine Availability:** Data on workforce shifts and machine operating times.",
+      "**Safety Stock Levels:** Buffer inventory maintained to prevent stockouts due to demand fluctuations or production delays."
+    ],
+    "improve": [
+      "Improve Demand Forecasting Accuracy",
+      "Implement Just-in-Time (JIT) Production",
+      "Adjust Production Capacity",
+      "Use Flexible Manufacturing Systems",
+      "Regularly Review and Adjust the Schedule",
+      "Increase Cross-Departmental Collaboration",
+      "Implement Advanced Planning and Scheduling (APS) Systems",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-13",
+    "archetype": "manufacturing",
+    "title": "Process Standardization and Replication Across Plants",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "LEAN_OEE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/13 - Process Standardization and Replication Across Plants.md",
+    "goal": "The goal of a Process Standardization and Replication Across Plants analysis is to ensure consistency in production processes and quality across multiple manufacturing facilities.",
+    "dataRequired": [
+      "**Process Documentation:** Detailed documentation of existing production processes, workflows, and best practices for each plant.",
+      "**Production Metrics:** Key performance indicators (KPIs) such as cycle times, yield rates, defect rates, and equipment utilization from each plant.",
+      "**Quality Control Data:** Data on product quality, including defect rates, rework, and customer feedback from each plant.",
+      "**Equipment and Technology Utilization:** Information on the machinery, tools, and technology used in each plant.",
+      "**Labor Skill Levels:** Data on employee training, certifications, and skill sets across different facilities.",
+      "**Cost Data:** Costs associated with production, labor, materials, and overhead at each facility."
+    ],
+    "improve": [
+      "Standardize Equipment and Tools",
+      "Enhance Employee Training",
+      "Implement Real-Time Performance Monitoring",
+      "Improve Change Management",
+      "○ When implementing standardized processes across multiple plants, use structured change management practices to ensure that all employees understand and accept the changes. This includes clear communication, stakeholder involvement, and providing resources for a smooth transition.",
+      "Conduct Regular Cross-Plant Audits",
+      "Encourage Continuous Improvement",
+      "Leverage Data Analytics",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-14",
+    "archetype": "manufacturing",
+    "title": "Work-in-Progress (WIP) Inventory Management",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/14 - Work-in-Progress (WIP) Inventory Management.md",
+    "goal": "The goal of a Work-in-Progress (WIP) Inventory Management analysis is to optimize the management of partially completed goods that are still in the production process.",
+    "dataRequired": [
+      "**WIP Inventory Levels:** Data on current WIP inventory at various stages of the production process.",
+      "**Cycle Times:** The time taken to complete each stage of production.",
+      "**Production Throughput:** The rate at which finished goods are produced.",
+      "**Demand Forecasts:** Predicted demand for the final products over a specific time period.",
+      "**Lead Times:** Time required to move WIP from one production stage to the next and time to complete the entire production process.",
+      "**Capacity Data:** Maximum capacity of production lines, including equipment, labor, and space.",
+      "**Cost of WIP Inventory:** Costs associated with holding WIP inventory, including labor, space, and capital tied up in incomplete goods.",
+      "**Bottleneck Data:** Information on where delays or slowdowns occur in the production process."
+    ],
+    "improve": [
+      "Implement Just-in-Time (JIT) Production",
+      "Use Kanban Systems",
+      "Improve Production Scheduling",
+      "○ Align production schedules with demand forecasts and available capacity to prevent overproduction and ensure that WIP levels remain balanced throughout the production process.",
+      "Reduce Cycle Times",
+      "Eliminate Bottlenecks",
+      "Enhance WIP Tracking and Monitoring",
+      "Conduct Regular WIP Audits",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "through the production process. It can be calculated as: WIP Turnover",
+        "variables": [
+          "Cost of Goods Manufactured",
+          "Average WIP Inventory"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "through the production process. It can be calculated as: WIP Turnover = Cost of Goods Manufactured / Average WIP Inventory",
+        "step": "Calculate WIP Turnover Rate"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-15",
+    "archetype": "manufacturing",
+    "title": "Material Handling and Internal Logistics Efficiency",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/15 - Material Handling and Internal Logistics Efficiency.md",
+    "goal": "The goal of a Material Handling and Internal Logistics Efficiency analysis is to evaluate the movement, storage, and flow of materials within a manufacturing facility to ensure that they are handled in the most efficient, cost-effective, and safe manner.",
+    "dataRequired": [
+      "**Material Flow Data:** Information on how materials move from receiving to production, storage, and final dispatch.",
+      "**Cycle Times:** The time it takes to move materials through various stages of the production process.",
+      "**Distance Data:** The distance materials travel within the facility between different workstations, storage areas, and production lines.",
+      "**Labor and Equipment Utilization:** Data on the usage of labor and material handling equipment, such as forklifts, conveyors, and carts.",
+      "**Storage Utilization:** Information on the layout and usage of storage areas for raw materials, WIP (work-in-progress), and finished goods.",
+      "**Material Handling Costs:** Costs associated with moving materials, including labor, equipment maintenance, and transportation within the facility.",
+      "**Handling Times and Delays:** Time taken for material handling activities and any delays or inefficiencies in the process."
+    ],
+    "improve": [
+      "Reorganize Facility Layout",
+      "Implement Automated Material Handling Systems",
+      "Introduce Lean Logistics Practices",
+      "○ Apply lean logistics principles, such as just-in-time (JIT) inventory management, to reduce the amount of material being handled and minimize the time spent moving materials between stages of production.",
+      "Improve Equipment Allocation and Scheduling",
+      "Optimize Storage Organization",
+      "Train Employees on Efficient Material Handling",
+      "Monitor and Track Performance",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-16",
+    "archetype": "manufacturing",
+    "title": "Finished Goods Storage and Warehousing Optimization",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/16 - Finished Goods Storage and Warehousing Optimization.md",
+    "goal": "The goal of a Finished Goods Storage and Warehousing Optimization analysis is to improve the efficiency, organization, and cost-effectiveness of storing finished goods in a warehouse.",
+    "dataRequired": [
+      "**Current Warehouse Layout:** A map or blueprint showing the current layout, including storage racks, aisles, loading docks, and staging areas.",
+      "**Inventory Levels:** Data on the quantity of finished goods stored in the warehouse, including seasonal or fluctuating inventory levels.",
+      "**Order Picking Data:** Information on how often items are picked for orders and how much time is spent retrieving them.",
+      "**Storage Capacity:** Total available storage space and its current utilization.",
+      "**Turnover Rates:** The rate at which finished goods are sold and moved out of the warehouse.",
+      "**Handling Times:** Time taken to store, retrieve, and load finished goods.",
+      "**Labor and Equipment Utilization:** Data on labor hours and the use of material handling equipment such as forklifts, pallet jacks, and conveyors.",
+      "**Storage Costs:** Costs associated with storing finished goods, including labor, utilities, space, and inventory carrying costs."
+    ],
+    "improve": [
+      "Optimize Warehouse Layout",
+      "Implement High-Density Storage Systems",
+      "Adopt Warehouse Management Systems (WMS)",
+      "Improve Order Picking Processes",
+      "Introduce Lean Warehousing Practices",
+      "Reduce Inventory Levels",
+      "Automate Material Handling",
+      "Conduct Regular Audits",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-17",
+    "archetype": "manufacturing",
+    "title": "Capacity Buffers and Flexibility in Response to Demand Fluctuations",
+    "part": "A",
+    "partLabel": "Operations",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO",
+      "PLANT_UTILIZATION",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "CAPACITY_DEBOTTLENECKING"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/17 - Capacity Buffers and Flexibility in Response to Demand.md",
+    "goal": "The goal of a Capacity Buffers and Flexibility in Response to Demand Fluctuations analysis is to ensure that a manufacturing company can handle variations in demand without overextending resources or causing production delays.",
+    "dataRequired": [
+      "**Historical Demand Data:** Historical sales and production data showing seasonal trends, demand peaks, and troughs.",
+      "**Forecasted Demand:** Projected customer demand for products over upcoming periods (e.g., weekly, monthly, quarterly).",
+      "**Current Production Capacity:** The maximum output that the facility can produce under normal conditions.",
+      "**Lead Times:** Time required to complete the production process, from order placement to delivery.",
+      "**Inventory Levels:** Data on current inventory of raw materials, WIP (work-in-progress), and finished goods.",
+      "**Labor and Machine Availability:** Availability of workers and machines, including current utilization rates and the potential for additional shifts or overtime.",
+      "**Production Cycle Times:** Time taken to complete each stage of the manufacturing process.",
+      "**Flexibility Measures:** Data on existing flexibility in production processes, such as quick changeover times, modular production setups, or cross-trained employees."
+    ],
+    "improve": [
+      "Increase Buffer Capacity",
+      "Implement Cross-Training for Employees",
+      "○ Cross-train employees to perform multiple roles so that labor resources can be flexibly reallocated to areas with the highest demand. This can reduce the need for hiring additional workers during peak times and increase labor flexibility.",
+      "Use Quick Changeover Techniques",
+      "Leverage Temporary Labor or Overtime",
+      "Adopt a Scalable Production Model",
+      "Use Real-Time Monitoring",
+      "Collaborate with Suppliers",
+      "B. Supply Chain and Procurement"
+    ],
+    "formulas": [
+      {
+        "output": "Capacity Utilization (%)",
+        "variables": [
+          "Actual Output",
+          "Maximum Output Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Capacity Utilization (%) = (Actual Output / Maximum Output Capacity) x 100",
+        "step": "Determine Current Capacity Utilization"
+      },
+      {
+        "output": "Buffer Capacity",
+        "variables": [
+          "Forecasted Peak Demand",
+          "Current Capacity"
+        ],
+        "expression": "( v0 - v1 ) / v1 * 100",
+        "percentOutput": true,
+        "source": "Buffer Capacity = (Forecasted Peak Demand - Current Capacity) / Current Capacity x 100",
+        "step": "Calculate Buffer Capacity Requirements"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-18",
+    "archetype": "manufacturing",
+    "title": "Bill of Materials (BOM) and Cost Structure Analysis",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS",
+      "MATERIAL_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/18 - Bill of Materials (BOM) and Cost Structure Analysis.md",
+    "goal": "The goal of a Bill of Materials (BOM) and Cost Structure Analysis is to assess the components, raw materials, sub-assemblies, and processes required to manufacture a product, along with their associated costs.",
+    "dataRequired": [
+      "**Bill of Materials (BOM):** A comprehensive list of all materials, components, sub-assemblies, and quantities required to manufacture the product.",
+      "**Material Costs:** The unit cost for each material and component listed in the BOM.",
+      "**Labor Costs:** The labor required for assembly or production, including hourly wages and the total labor time for each production step.",
+      "**Overhead Costs:** Indirect costs related to manufacturing, such as facility expenses, utilities, and machine depreciation.",
+      "**Supplier Information:** Data on suppliers for each material or component, including pricing, delivery times, and any volume discounts.",
+      "**Inventory Levels:** Current inventory data on raw materials and components.",
+      "**Waste and Scrap Rates:** The amount of material lost due to production inefficiencies or defects.",
+      "**Production Process Data:** Information on the production steps involved in assembling the final product, including cycle times and machine usage."
+    ],
+    "improve": [
+      "Optimize Material Sourcing",
+      "○ Negotiate with suppliers to secure better pricing or volume discounts for high-cost materials. Consider sourcing materials from alternative suppliers or regions where costs are lower. Also, explore opportunities for material substitution to reduce expenses without compromising quality.",
+      "Reduce Waste and Scrap",
+      "Automate Production Processes",
+      "Improve Inventory Management",
+      "Conduct Regular BOM Audits",
+      "Implement Continuous Improvement Initiatives",
+      "Analyze Make-or-Buy Decisions",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Cost per Unit",
+        "variables": [
+          "Total Material Costs",
+          "Total Labor Costs",
+          "Allocated Overhead Costs"
+        ],
+        "expression": "( v0 + v1 + v2 )",
+        "percentOutput": false,
+        "source": "Total Cost per Unit = (Total Material Costs + Total Labor Costs + Allocated Overhead Costs)",
+        "step": "Summarize the Total Cost Structure"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-19",
+    "archetype": "manufacturing",
+    "title": "Supplier Risk and Dependency Analysis",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "SUPPLIER_ON_TIME_DELIVERY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "SUPPLIER_RISK"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/19 - Supplier Risk and Dependency Analysis.md",
+    "goal": "The goal of a Supplier Risk and Dependency Analysis is to evaluate the risks associated with relying on external suppliers and assess the level of dependency on each supplier.",
+    "dataRequired": [
+      "**Supplier Portfolio:** A list of all current suppliers, their products, and the volume of goods or materials they supply.",
+      "**Supplier Performance Data:** Metrics on supplier performance, including on-time delivery rates, quality metrics (e.g., defect rates), and lead times.",
+      "**Supplier Financial Stability:** Data on the financial health of key suppliers, such as credit ratings, financial statements, and market reputation.",
+      "**Supplier Market Position:** The market share, reputation, and competitive position of each supplier.",
+      "**Supply Chain Dependency:** The percentage of raw materials, components, or finished goods sourced from each supplier.",
+      "**Geopolitical and Environmental Factors:** Data on the geopolitical, environmental, or regulatory risks associated with supplier locations.",
+      "**Alternative Supplier Availability:** Information on available alternative suppliers, including their capacity and ability to meet the company’s needs.",
+      "**Supply Chain Disruption History:** Historical data on past disruptions or issues with suppliers, including shortages, quality problems, or geopolitical factors."
+    ],
+    "improve": [
+      "Diversify Supplier Base",
+      "Establish Strong Supplier Relationships",
+      "Create Contingency Plans",
+      "Monitor Supplier Financial Health Regularly",
+      "Negotiate Flexible Contracts",
+      "Use Technology for Supply Chain Transparency",
+      "Conduct Regular Risk Audits",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Dependency (%)",
+        "variables": [
+          "Value of Supplies from a Supplier",
+          "Total Value of Supplies"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Dependency (%) = (Value of Supplies from a Supplier / Total Value of Supplies) x 100",
+        "step": "Measure Supply Chain Dependency"
+      }
+    ]
+  },
+  {
+    "id": "manufacturing-20",
+    "archetype": "manufacturing",
+    "title": "Supplier Quality Management",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "FIRST_PASS_YIELD",
+      "SUPPLIER_ON_TIME_DELIVERY"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "QUALITY_YIELD"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/20 - Supplier Quality Management.md",
+    "goal": "The goal of a Supplier Quality Management (SQM) analysis is to assess and ensure that suppliers meet the required quality standards for materials, components, and services provided to the company.",
+    "dataRequired": [
+      "**Supplier Performance Data:** Metrics on supplier performance, including defect rates, on-time delivery, and quality inspection pass rates.",
+      "**Supplier Quality Audit Reports:** Results from periodic audits conducted to assess supplier compliance with quality standards.",
+      "**Defect Rates:** The number of defective materials or components received from each supplier, expressed as a percentage of total items received.",
+      "**Cost of Poor Quality (COPQ):** Costs associated with poor-quality materials, including rework, scrap, warranty claims, and product recalls.",
+      "**Quality Control Inspection Data:** Data from incoming quality inspections, including rejection rates and non-conformances.",
+      "**Supplier Certifications:** Information on certifications held by suppliers, such as ISO 9001, which demonstrates their adherence to quality management standards.",
+      "**Corrective Action Reports (CARs):** Documentation of issues raised with suppliers, along with the corrective actions taken to address quality problems.",
+      "**Supplier Relationship Management (SRM) Data:** Information on collaboration with suppliers, including communication frequency, responsiveness to issues, and shared improvement initiatives."
+    ],
+    "improve": [
+      "Establish Supplier Quality Metrics and KPIs",
+      "○ Set clear quality metrics for each supplier, including acceptable defect rates, on-time delivery rates, and audit compliance scores. Suppliers should be held accountable for meeting these KPIs as part of their performance review.",
+      "Implement a Supplier Certification Program",
+      "Work Closely with Underperforming Suppliers",
+      "Negotiate Long-Term Supplier Agreements",
+      "Use Technology for Supplier Quality Tracking",
+      "Conduct Regular Supplier Audits",
+      "Develop a Supplier Quality Risk Matrix",
+      "Promote Supplier Collaboration",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-21",
+    "archetype": "manufacturing",
+    "title": "Raw Material Sourcing and Procurement Efficiency",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "COGS",
+      "MATERIAL_COST_RATE",
+      "SUPPLIER_ON_TIME_DELIVERY"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "SUPPLIER_RISK"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/21 - Raw Material Sourcing and Procurement Efficiency.md",
+    "goal": "The goal of a Raw Material Sourcing and Procurement Efficiency analysis is to optimize the process of acquiring raw materials to ensure cost-effectiveness, reliable supply, and alignment with production requirements.",
+    "dataRequired": [
+      "**Material Requirements:** The total amount and type of raw materials needed for production, based on the Bill of Materials (BOM) and production forecasts.",
+      "**Supplier Portfolio:** A list of suppliers for each raw material, including supplier performance data (e.g., on-time delivery, quality, and pricing).",
+      "**Lead Times:** The time it takes for suppliers to deliver raw materials once an order is placed.",
+      "**Procurement Costs:** The total cost of acquiring raw materials, including unit prices, transportation, taxes, and import duties.",
+      "**Inventory Levels:** Current stock levels of raw materials, including safety stock and reorder points.",
+      "**Order Quantities:** Data on typical order quantities and frequencies for raw material purchases.",
+      "**Supplier Payment Terms:** Terms negotiated with suppliers, including payment schedules, discounts for early payments, and credit terms.",
+      "**Supplier Risk Factors:** Information on the risk associated with sourcing from specific suppliers, such as geopolitical risks, financial stability, and environmental regulations.",
+      "**Alternative Supplier Availability:** Information on backup or secondary suppliers for critical raw materials."
+    ],
+    "improve": [
+      "Negotiate Better Supplier Terms",
+      "Diversify the Supplier Base",
+      "Optimize Inventory Management",
+      "Automate the Procurement Process",
+      "Implement Strategic Sourcing",
+      "Develop Supplier Collaboration",
+      "Monitor and Adjust Procurement Practices Regularly",
+      "Enhance Forecast Accuracy",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-22",
+    "archetype": "manufacturing",
+    "title": "Vendor-Managed Inventory (VMI) Program Evaluation",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/22 - Vendor-Managed Inventory (VMI) Program Evaluation.md",
+    "goal": "The goal of a Vendor-Managed Inventory (VMI) Program Evaluation is to assess the effectiveness and efficiency of a VMI system, where the supplier (vendor) takes responsibility for managing the inventory levels of materials or products at the customer’s location.",
+    "dataRequired": [
+      "**Inventory Levels:** Data on inventory levels before and after the implementation of the VMI program, including average stock levels and stockouts.",
+      "**Order Fulfillment Rates:** The percentage of customer orders fulfilled on time and in full by the vendor under the VMI program.",
+      "**Lead Times:** The time taken by the vendor to replenish stock and ensure inventory availability.",
+      "**Carrying Costs:** Costs associated with holding inventory, including storage, insurance, and capital costs.",
+      "**Stockout Data:** Frequency and duration of stockouts before and after the VMI program was implemented.",
+      "**Vendor Performance Metrics:** Key performance indicators (KPIs) for vendor performance, such as delivery reliability, responsiveness to changes in demand, and order accuracy.",
+      "**Inventory Turnover Rates:** The frequency at which inventory is replenished and sold within a specific period, indicating inventory efficiency.",
+      "**Vendor Agreements and Terms:** Details of the contractual agreements with vendors, including inventory replenishment rules, minimum stock levels, and penalties for underperformance.",
+      "**Communication and Collaboration Data:** Information on how well the vendor and customer collaborate and communicate to manage inventory effectively."
+    ],
+    "improve": [
+      "Enhance Vendor Communication",
+      "Optimize Inventory Levels",
+      "Improve Vendor Lead Times",
+      "Review and Update Vendor Contracts",
+      "Invest in Technology for Inventory Management",
+      "Expand VMI to Other Vendors or Product Categories",
+      "○ If the VMI program has proven successful with one vendor or product line, consider expanding it to other suppliers or product categories to achieve broader cost savings and efficiency gains across the supply chain.",
+      "Implement Continuous Improvement Initiatives",
+      "Monitor Customer Satisfaction",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-23",
+    "archetype": "manufacturing",
+    "title": "In-house Production vs. Outsourcing Feasibility",
+    "part": "B",
+    "partLabel": "Supply Chain and Procurement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET",
+      "SUPPLIER_RISK"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/23 - In-house Production vs. Outsourcing Feasibility.md",
+    "goal": "The goal of an In-house Production vs.",
+    "dataRequired": [
+      "**Current Production Costs:** A detailed breakdown of in-house production costs, including direct labor, raw materials, overhead, and equipment maintenance.",
+      "**Outsourcing Costs:** The estimated costs of outsourcing production, including vendor pricing, transportation, quality inspections, and administrative expenses.",
+      "**Capacity Utilization:** Data on current in-house production capacity, including equipment utilization rates, labor availability, and production bottlenecks.",
+      "**Quality Data:** Information on the quality standards of in-house production vs. potential outsourcing vendors, including defect rates, rework costs, and customer feedback.",
+      "**Lead Times:** Production and delivery lead times for both in-house and outsourced options.",
+      "**Risk Factors:** Risks associated with outsourcing, such as vendor reliability, geopolitical risks, intellectual property concerns, and supply chain disruptions.",
+      "**Strategic Importance:** The strategic importance of the product or service, including whether it is a core competency and how critical it is to the company’s long-term goals.",
+      "**Flexibility and Scalability:** The ability of both in-house production and outsourcing vendors to scale operations in response to changes in demand.",
+      "**Logistics and Supply Chain Costs:** Transportation, storage, and handling costs for both in-house production and outsourced production."
+    ],
+    "improve": [
+      "Negotiate with Outsourcing Vendors",
+      "Enhance In-house Efficiency",
+      "Consider Hybrid Models",
+      "Invest in Technology and Data Integration",
+      "Monitor Vendor Performance Continuously",
+      "",
+      "Develop Contingency Plans",
+      "Continuously Re-evaluate the Decision",
+      "C. Technology and Automation"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-24",
+    "archetype": "manufacturing",
+    "title": "Automation and Technology Integration Analysis",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/24 - Automation and Technology Integration Analysis.md",
+    "goal": "The goal of an Automation and Technology Integration Analysis is to evaluate the potential benefits, costs, and risks of integrating automation and advanced technologies into a company’s operations.",
+    "dataRequired": [
+      "**Current Process Efficiency:** Baseline data on existing processes, including cycle times, labor hours, throughput, and error rates.",
+      "**Automation Costs:** Initial investment and ongoing costs associated with purchasing, installing, and maintaining automation technologies (e.g., robotics, software, sensors).",
+      "**Labor Costs:** Current labor costs, including wages, benefits, and overtime, for tasks that could potentially be automated.",
+      "**Potential Productivity Gains:** Estimated improvements in speed, accuracy, and throughput from implementing automation.",
+      "**Technology Compatibility:** Data on the compatibility of proposed automation technologies with existing systems, including IT infrastructure and machinery.",
+      "**Quality Metrics:** Current quality control data, including defect rates, rework, and scrap, to assess how automation might impact product quality.",
+      "**Training and Workforce Impact:** Information on workforce skills, potential training needs, and the impact of automation on employment levels and labor allocation.",
+      "**Maintenance and Downtime Data:** Expected maintenance costs and potential downtime related to automation equipment, compared with the reliability of current processes.",
+      "**Change Management Factors:** The organization’s readiness for technology adoption, including cultural, procedural, and leadership considerations.",
+      "94",
+      "**ROI and Payback Period:** Calculations to estimate the financial returns from automation, including cost savings, productivity improvements, and the payback period."
+    ],
+    "improve": [
+      "Start with Pilot Projects",
+      "Optimize Current Processes Before Automation",
+      "Collaborate with Technology Providers",
+      "Develop Workforce Upskilling Programs",
+      "Implement Real-Time Monitoring Systems",
+      "Regularly Review and Optimize Automation",
+      "Ensure Cybersecurity and Data Protection",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-25",
+    "archetype": "manufacturing",
+    "title": "Factory Automation Level and Robotics Utilization",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/25 - Factory Automation Level and Robotics Utilization.md",
+    "goal": "The goal of a Factory Automation Level and Robotics Utilization analysis is to assess the current state of automation and the use of robotics in manufacturing operations.",
+    "dataRequired": [
+      "**Current Automation Level:** Data on the extent of automation within the factory, including processes currently automated, types of robotics used, and manual tasks remaining.",
+      "**Robotics Types and Applications:** Information on the types of robots deployed (e.g., industrial robots, collaborative robots), their applications, and how they contribute to production efficiency.",
+      "**Production Metrics:** Key performance indicators (KPIs) such as cycle times, production throughput, labor hours, and error rates for both manual and automated processes.",
+      "**Downtime and Maintenance Records:** Data on the frequency and causes of downtime for automated equipment and robotics, as well as maintenance costs and reliability.",
+      "**Automation and Robotics Costs:** Capital and operational costs associated with purchasing, installing, and maintaining automation systems and robotics, including labor for maintenance and training.",
+      "**Labor Costs:** Current labor costs for tasks that could potentially be automated or further optimized through robotics.",
+      "**Quality Metrics:** Quality control data, including defect rates, rework, and scrap, to assess how automation and robotics impact product quality.",
+      "**Safety and Ergonomics Data:** Data on workplace safety, ergonomic risks, and accident rates related to manual processes that could be automated for improved safety.",
+      "**Scalability and Flexibility:** Information on how scalable and flexible the current automation and robotics systems are in response to changing demand, production requirements, or product variations.",
+      "99",
+      "**Energy Consumption:** Data on the energy consumption of robotics and automated systems compared to manual processes."
+    ],
+    "improve": [
+      "Upgrade or Expand Automation",
+      "Enhance Predictive Maintenance",
+      "Improve Workforce Integration with Robotics",
+      "Increase Flexibility with Modular Robotics",
+      "Monitor and Optimize Energy Consumption",
+      "Focus on Continuous Improvement",
+      "Adopt Industry 4.0 and IoT Solutions",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-26",
+    "archetype": "manufacturing",
+    "title": "Tooling and Machine Setup Time Optimization",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "AUTOMATION"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/26 - Tooling and Machine Setup Time Optimization.md",
+    "goal": "The goal of Tooling and Machine Setup Time Optimization is to minimize the time and costs associated with changing tools and setting up machinery for different production runs.",
+    "dataRequired": [
+      "**Current Setup Time Data:** Records of how long it takes to complete machine setups and tool changes for various production runs.",
+      "**Production Downtime Data:** Information on how often and for how long machines are idle due to tooling and setup activities.",
+      "**Tooling and Equipment Data:** Details on the types of tooling and machinery in use, including the complexity of the setup process.",
+      "**Labor Costs:** The costs associated with labor during setup time, including the number of workers involved and their hourly wages.",
+      "**Production Schedules:** Data on how frequently setup changes occur and how they impact production flow.",
+      "**OEE Metrics:** Current metrics on overall equipment efficiency, including availability, performance, and quality. OEE measures how effectively equipment is utilized, accounting for downtime due to setup.",
+      "**Defect and Scrap Rates:** Data on product quality during and after setup changes, including scrap rates, rework, and first-pass yield.",
+      "**Changeover Procedures:** Documentation of existing procedures for tooling changes and machine setups, including setup steps, tools required, and workers involved.",
+      "**Operator Feedback:** Input from machine operators on pain points, delays, and inefficiencies during the setup process."
+    ],
+    "improve": [
+      "Standardize Setup Procedures",
+      "Invest in Quick-Change Tooling",
+      "Implement SMED Techniques",
+      "Use Pre-Staging for Setup Tasks",
+      "Automate Setup Processes",
+      "Organize Tools and Equipment",
+      "○ Implement a 5S workplace organization strategy to ensure that tools and equipment are stored in an organized manner, making them easy to find and use. This eliminates wasted time searching for tools during setup.",
+      "Conduct Regular Setup Audits",
+      "Monitor OEE Continuously",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-27",
+    "archetype": "manufacturing",
+    "title": "Equipment Downtime Tracking and Root Cause Analysis",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [
+      "MAINTENANCE_COST_RATE",
+      "MACHINE_DOWNTIME_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO",
+      "PREDICTIVE_MAINTENANCE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/27 - Equipment Downtime Tracking and Root Cause Analysis.md",
+    "goal": "The goal of Equipment Downtime Tracking and Root Cause Analysis is to systematically monitor and analyze instances of equipment downtime to identify the underlying causes.",
+    "dataRequired": [
+      "**Downtime Logs:** Detailed records of equipment downtime, including the start and end time of each downtime event, machine ID, and production line affected.",
+      "**Downtime Categories:** Classification of downtime by cause, such as mechanical failure, human error, setup/changeover, supply chain issues, or scheduled maintenance.",
+      "**Maintenance Records:** Historical data on maintenance activities, including preventive maintenance schedules, repairs, and replacement of parts.",
+      "**Production Schedules:** Data on production schedules, shifts, and the operational hours of each machine or production line.",
+      "**Operator Input:** Feedback from operators and technicians on machine performance, observed issues, and potential causes of downtime.",
+      "**Mean Time Between Failures (MTBF):** The average time between equipment failures, used to assess equipment reliability.",
+      "**Mean Time to Repair (MTTR):** The average time required to repair equipment and bring it back online.",
+      "**OEE Metrics:** Overall equipment effectiveness data, including availability, performance, and quality metrics to evaluate the impact of downtime on production.",
+      "**Root Cause Analysis (RCA) Tools:** Tools and techniques such as the 5 Whys method, fishbone diagrams, and Pareto analysis to identify the root causes of downtime."
+    ],
+    "improve": [
+      "Implement Predictive Maintenance",
+      "Standardize Downtime Tracking Procedures",
+      "Use Automation for Downtime Tracking",
+      "Optimize Preventive Maintenance Schedules",
+      "",
+      "Train Operators on Early Detection",
+      "Invest in Spare Parts and Inventory Management",
+      "Conduct Regular Root Cause Analysis Reviews",
+      "Benchmark Downtime Performance",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-28",
+    "archetype": "manufacturing",
+    "title": "Spare Parts Management and Predictive Maintenance Systems",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [
+      "DIO",
+      "MAINTENANCE_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO",
+      "PREDICTIVE_MAINTENANCE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/28 - Spare Parts Management and Predictive Maintenance.md",
+    "goal": "The goal of Spare Parts Management and Predictive Maintenance Systems analysis is to ensure the availability of critical spare parts while optimizing inventory levels and reducing downtime.",
+    "dataRequired": [
+      "**Equipment Maintenance Data:** Historical records of equipment maintenance, including breakdown frequency, parts replaced, and associated downtime.",
+      "**Spare Parts Inventory Levels:** Current inventory levels for all spare parts, including critical components and parts with long lead times.",
+      "**Part Usage Data:** Historical data on spare parts usage, including which parts are used most frequently, time between replacements, and parts that have not been used for extended periods.",
+      "**Maintenance Costs:** Data on the cost of maintaining equipment, including labor, parts, and downtime-related costs.",
+      "**Lead Times for Spare Parts:** Information on the time it takes for suppliers to deliver spare parts once ordered, especially for critical or custom parts.",
+      "**Predictive Maintenance System Data:** Sensor and monitoring data from equipment, including vibration, temperature, pressure, and other metrics used to predict failures.",
+      "**Failure Trends and Patterns:** Data from predictive maintenance systems that identify patterns or trends in equipment performance that indicate the likelihood of future failures.",
+      "**Supplier Data:** Information on suppliers of spare parts, including lead times, reliability, and pricing.",
+      "**Carrying Costs:** Costs associated with holding spare parts inventory, including storage, insurance, and capital costs.",
+      "**Equipment Criticality:** An assessment of which equipment is most critical to production and the corresponding spare parts required for these machines.",
+      "114"
+    ],
+    "improve": [
+      "Improve Predictive Maintenance Capabilities",
+      "Integrate Predictive Maintenance with CMMS",
+      "Balance Inventory Levels",
+      "Collaborate with Suppliers for Just-in-Time Delivery",
+      "○ Work with suppliers to implement just-in-time (JIT) delivery systems for non-critical parts. JIT reduces the need to hold large quantities of inventory while ensuring parts are available when needed.",
+      "Automate Spare Parts Reordering",
+      "Conduct Regular Spare Parts Audits",
+      "Focus on High-Criticality Parts",
+      "Continuously Refine Predictive Algorithms",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-29",
+    "archetype": "manufacturing",
+    "title": "Manufacturing Cycle Time Reduction",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "DIO",
+      "CONVERSION_COST_RATE",
+      "MANUFACTURING_LEAD_TIME"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "LEAN_OEE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/29 - Manufacturing Cycle Time Reduction.md",
+    "goal": "The goal of a Manufacturing Cycle Time Reduction analysis is to decrease the total time taken to produce a product from start to finish.",
+    "dataRequired": [
+      "**Current Cycle Time Data:** Detailed information on the time it takes for each step in the production process, from raw material input to finished goods output.",
+      "**Bottleneck Identification:** Data on production bottlenecks or stages where delays frequently occur, causing slowdowns in the manufacturing process.",
+      "**Work-in-Progress (WIP) Levels:** Information on the amount of WIP inventory at each stage of production, including storage times and movement between production phases.",
+      "**Labor Utilization Data:** Data on how labor is used across production steps, including idle time, task delays, and labor shortages.",
+      "**Machine and Equipment Utilization:** Information on the performance of machinery and equipment, including uptime, downtime, maintenance schedules, and breakdown frequencies.",
+      "**Setup and Changeover Times:** Data on the time it takes to set up machinery and change tooling for different production runs.",
+      "**Supplier and Material Lead Times:** Information on how long it takes for raw materials to be delivered and made available for production.",
+      "**Production Scheduling Data:** Current production schedules and order sequencing, including lead times for customer orders.",
+      "**Quality Control Metrics:** Defect rates, rework times, and scrap levels, which may contribute to longer cycle times."
+    ],
+    "improve": [
+      "Focus on Bottleneck Elimination",
+      "Reduce Non-Value-Added Activities",
+      "Implement Just-in-Time (JIT) Production",
+      "Use SMED to Reduce Setup Times",
+      "Enhance Cross-Training for Workers",
+      "Automate High-Cycle-Time Processes",
+      "Balance Production Lines",
+      "Regularly Review and Update Processes",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-30",
+    "archetype": "manufacturing",
+    "title": "Energy Consumption and Efficiency Analysis",
+    "part": "C",
+    "partLabel": "Technology and Automation",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ENERGY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/30 - Energy Consumption and Efficiency Analysis.md",
+    "goal": "The goal of an Energy Consumption and Efficiency Analysis is to evaluate how efficiently a manufacturing facility uses energy and identify opportunities for reducing energy costs, minimizing waste, and improving sustainability.",
+    "dataRequired": [
+      "**Current Energy Consumption Data:** Data on overall energy use in the facility, including electricity, natural gas, and other fuel sources, broken down by production line, machine, or process.",
+      "**Equipment Energy Use:** Detailed data on energy consumption by individual machines and equipment, including peak and average usage.",
+      "**Production Output Data:** Information on production volumes and output to correlate energy use with production efficiency (e.g., energy per unit produced).",
+      "**Energy Bills and Costs:** Historical data on energy bills, including electricity rates, peak demand charges, and energy consumption patterns over time.",
+      "**Operational Hours:** Data on the number of hours each machine or production line operates, including any differences in energy use between shifts (e.g., day vs. night).",
+      "**Energy-Efficient Equipment:** Information on any existing energy-efficient machines or systems in use, including motors, lighting, HVAC systems, and automated energy management systems.",
+      "**Energy Audit Results:** Past energy audits or assessments conducted at the facility, highlighting areas for energy savings and efficiency improvements.",
+      "**Environmental Factors:** External factors that influence energy use, such as seasonal temperature variations or facility layout, which can impact heating, cooling, and lighting needs."
+    ],
+    "improve": [
+      "Invest in Energy-Efficient Equipment",
+      "Optimize Production Schedules to Avoid Peak Demand",
+      "Implement Energy Management Systems",
+      "Regularly Maintain and Calibrate Equipment",
+      "Adopt Renewable Energy Sources",
+      "Engage Employees in Energy-Saving Practices",
+      "○ Educate employees on energy conservation techniques and encourage them to adopt energy-efficient behaviors, such as shutting down idle machines, turning off unnecessary lights, or optimizing thermostat settings.",
+      "Conduct Regular Energy Audits",
+      "Utilize Waste Heat Recovery",
+      "D. Finance and Asset Management"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-31",
+    "archetype": "manufacturing",
+    "title": "Capital Expenditure (CapEx) Effectiveness in Equipment and Technology",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/31 - Capital Expenditure (CapEx) Effectiveness in Equipment and.md",
+    "goal": "The goal of a Capital Expenditure (CapEx) Effectiveness analysis in Equipment and Technology is to assess whether the company’s investments in new equipment, machinery, and technology are delivering the expected returns and operational benefits.",
+    "dataRequired": [
+      "**CapEx Investment Data:** A breakdown of recent and planned capital expenditures on equipment, machinery, and technology, including initial purchase costs, installation, and related expenses.",
+      "**Expected ROI and Payback Period:** Projections for the return on investment (ROI) and payback period for each CapEx project, including cost savings, revenue improvements, or productivity gains.",
+      "**Operational Performance Metrics:** Data on how the new equipment or technology has affected production, including output volume, cycle times, efficiency improvements, and defect rates.",
+      "**Cost Savings Data:** Information on any reductions in labor, energy, maintenance, or operational costs as a result of CapEx investments.",
+      "**Depreciation Schedules:** The depreciation rates and remaining useful life of equipment and technology purchased through CapEx, as well as how depreciation affects financial reporting and tax liabilities.",
+      "**Maintenance and Downtime Costs:** Historical data on the maintenance costs, repair frequency, and downtime before and after implementing the new equipment or technology.",
+      "**Alternative Investment Opportunities:** Data on other potential uses of capital, including comparisons of projects that were prioritized versus those that were deferred.",
+      "129",
+      "**Asset Utilization Rates:** Information on how effectively the new equipment or technology is being utilized, including machine uptime, capacity utilization, and throughput improvements.",
+      "**Risk Factors and Contingencies:** An assessment of risks associated with CapEx projects, such as technology obsolescence, supply chain risks, or market volatility, which may affect the effectiveness of the investment."
+    ],
+    "improve": [
+      "Strengthen CapEx Planning and Forecasting",
+      "Increase Post-Implementation Reviews",
+      "○ Conduct regular post-implementation reviews to assess whether CapEx projects are meeting their objectives. These reviews help identify deviations from expected performance early, allowing for corrective actions.",
+      "Optimize Asset Utilization",
+      "Leverage Predictive Maintenance",
+      "Focus on Continuous Improvement",
+      "Consider Leasing or Outsourcing",
+      "Incorporate Sustainability into CapEx Decisions",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-32",
+    "archetype": "manufacturing",
+    "title": "Cost of Goods Sold (COGS) Breakdown and Margins Analysis",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS",
+      "CONVERSION_COST_RATE",
+      "MATERIAL_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/32 - Cost of Goods Sold (COGS) Breakdown and Margins Analysis.md",
+    "goal": "The goal of a Cost of Goods Sold (COGS) Breakdown and Margins Analysis is to provide a detailed understanding of the direct costs involved in producing goods or services and how these costs impact the company's profitability.",
+    "dataRequired": [
+      "**Direct Material Costs:** The cost of raw materials or components used in the production of goods, including any transportation or handling costs.",
+      "**Direct Labor Costs:** The wages and benefits paid to workers directly involved in the production process.",
+      "**Manufacturing Overhead:** Indirect production costs, such as utilities, depreciation of equipment, factory rent, and maintenance.",
+      "**Production Volume Data:** Information on the number of units produced over a given period.",
+      "**Supplier Pricing Data:** Data on the prices paid to suppliers for materials, including any fluctuations or bulk discounts.",
+      "**Inventory Levels:** Current levels of raw materials, work-in-progress (WIP), and finished goods to understand inventory carrying costs and their contribution to COGS.",
+      "**COGS Data:** Historical COGS data from financial statements, broken down by material, labor, and overhead categories.",
+      "**Sales Price and Revenue Data:** Information on the selling price of goods and services, as well as total revenue generated, to calculate gross margins.",
+      "**Gross Margin Targets:** Internal targets or industry benchmarks for gross margins, used to evaluate profitability performance.",
+      "**Seasonal or Market Variability:** Data on how seasonal demand or market conditions impact production costs and margins over time."
+    ],
+    "improve": [
+      "Negotiate Better Supplier Terms",
+      "Implement Lean Manufacturing Practices",
+      "Automate Labor-Intensive Processes",
+      "Optimize Inventory Management",
+      "Improve Overhead Cost Allocation",
+      "Monitor COGS and Margins Regularly",
+      "",
+      "Revisit Pricing Strategies",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-33",
+    "archetype": "manufacturing",
+    "title": "Asset Utilization and Lifecycle Management",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/33 - Asset Utilization and Lifecycle Management.md",
+    "goal": "The goal of Asset Utilization and Lifecycle Management is to assess how efficiently a company uses its physical assets, such as machinery, equipment, and facilities, and to optimize the lifecycle of these assets from acquisition to disposal.",
+    "dataRequired": [
+      "**Asset Inventory:** A detailed list of all physical assets, including purchase dates, acquisition costs, specifications, and current condition.",
+      "**Asset Utilization Data:** Information on how often and how effectively each asset is being used, including operating hours, downtime, and capacity utilization.",
+      "**Maintenance Records:** Historical data on maintenance activities, including preventive maintenance, repairs, and any unscheduled downtime due to equipment failure.",
+      "**Depreciation Schedules:** The depreciation rates and methods applied to each asset, as well as the remaining useful life.",
+      "**Production Output:** Data on the output generated by each asset, such as units produced or services delivered, to evaluate how well the asset contributes to the company’s overall performance.",
+      "**Operating Costs:** Information on the costs of operating each asset, including energy consumption, labor, and maintenance.",
+      "**Asset Replacement and Disposal Costs:** Data on the cost of replacing or disposing of assets that have reached the end of their useful life.",
+      "**Utilization Benchmarks:** Industry standards or internal benchmarks for optimal asset utilization, used to compare the company’s performance against best practices."
+    ],
+    "improve": [
+      "Implement Preventive Maintenance Programs",
+      "Reallocate Underutilized Assets",
+      "Upgrade or Replace Overutilized Assets",
+      "Track Real-Time Asset Performance",
+      "Optimize Capacity Planning",
+      "Consider Asset Leasing or Outsourcing",
+      "Develop an Asset Replacement Plan",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-34",
+    "archetype": "manufacturing",
+    "title": "Return on Invested Capital (ROIC) for Manufacturing Assets",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/34 - Return on Invested Capital (ROIC) for Manufacturing Assets.md",
+    "goal": "The goal of the Return on Invested Capital (ROIC) analysis for manufacturing assets is to assess the profitability generated from the company’s investment in its manufacturing assets, such as machinery, equipment, and facilities.",
+    "dataRequired": [
+      "**Net Operating Profit After Taxes (NOPAT):** The company’s operating profit after deducting taxes, excluding interest expenses.",
+      "**Invested Capital:** The total amount of capital invested in manufacturing assets, including machinery, equipment, facilities, and working capital. This can be calculated by adding equity and debt used to finance the assets.",
+      "**Asset Values:** The book value of manufacturing assets, including their acquisition cost, depreciation, and current value.",
+      "**Depreciation Data:** The depreciation schedules and accumulated depreciation for each manufacturing asset.",
+      "**Revenue from Manufacturing Operations:** The revenue generated specifically from the company’s manufacturing activities.",
+      "**Operating Costs:** Information on the operating expenses related to manufacturing, such as labor, raw materials, utilities, maintenance, and overhead.",
+      "**Capital Expenditure (CapEx):** Data on recent and historical investments in manufacturing assets, including machinery purchases, facility upgrades, and technology improvements.",
+      "**Working Capital:** Data on working capital, including inventory, accounts receivable, and accounts payable, related to the manufacturing assets."
+    ],
+    "improve": [
+      "Optimize Asset Utilization",
+      "Invest in Efficient Equipment",
+      "Monitor and Reduce Operating Costs",
+      "Enhance Preventive Maintenance Programs",
+      "Rationalize Capital Expenditures",
+      "Evaluate and Replace Aging Assets",
+      "Monitor ROIC Trends",
+      "○ Continuously track ROIC for manufacturing assets to identify changes in performance over time. Use this data to inform decisions about asset allocation, capital investment, and operational improvements.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-35",
+    "archetype": "manufacturing",
+    "title": "Working Capital Management in Manufacturing",
+    "part": "D",
+    "partLabel": "Finance and Asset Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "DIO",
+      "DSO",
+      "DPO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DSO",
+      "WC_DIO",
+      "WC_DPO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/35 - Working Capital Management in Manufacturing.md",
+    "goal": "The goal of Working Capital Management in Manufacturing is to optimize the company’s management of short-term assets and liabilities to ensure smooth operations while maintaining liquidity and minimizing costs.",
+    "dataRequired": [
+      "**Current Assets:** Data on the company’s short-term assets, including inventory (raw materials, work-in-progress, and finished goods), accounts receivable, and cash balances.",
+      "**Current Liabilities:** Data on short-term liabilities, including accounts payable and short-term loans or credit lines.",
+      "**Inventory Turnover Data:** Information on how quickly inventory is converted into sales, including average inventory levels, days in inventory, and stock turnover rates.",
+      "**Accounts Receivable Data:** Aging reports that track how long it takes customers to pay their invoices, including the average collection period (days sales outstanding).",
+      "**Accounts Payable Data:** Data on how long it takes the company to pay its suppliers, including the average payment period (days payable outstanding).",
+      "**Cash Conversion Cycle:** Information on the cash conversion cycle, which measures how long it takes to convert invested cash into cash received from customers.",
+      "**Supplier Payment Terms:** Data on supplier payment terms, including any discounts for early payment or penalties for late payment.",
+      "**Customer Payment Terms:** Information on the payment terms offered to customers, such as net 30 or net 60, and how these terms impact cash flow.",
+      "**Production Schedules:** Data on production volumes and lead times to ensure that working capital levels align with production demands.",
+      "**Forecasting and Demand Planning:** Sales forecasts and demand planning data to help align inventory levels with expected demand and prevent overstocking or understocking.",
+      "148"
+    ],
+    "improve": [
+      "Improve Inventory Turnover",
+      "Tighten Accounts Receivable Collections",
+      "Negotiate Better Supplier Payment Terms",
+      "Monitor and Forecast Working Capital Needs",
+      "Implement Automated Working Capital Management Tools",
+      "○ Consider implementing automated tools to track inventory, accounts receivable, and accounts payable in real-time. Automated systems provide better visibility into working capital and help prevent cash flow bottlenecks.",
+      "Align Production with Demand",
+      "Consider Financing for Seasonal Working Capital",
+      "E. Product and Process Development"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-36",
+    "archetype": "manufacturing",
+    "title": "Product Customization and Modularity Assessment",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/36 - Product Customization and Modularity Assessment.md",
+    "goal": "The goal of a Product Customization and Modularity Assessment is to evaluate the feasibility and effectiveness of offering customizable and modular product designs to meet varying customer demands while maintaining efficiency in production.",
+    "dataRequired": [
+      "**Customer Demand Data:** Information on customer preferences, demand for customizable features, and historical sales data for customized versus standard products.",
+      "**Product Design Specifications:** Detailed product design information, including which components or features are customizable and the degree of flexibility in design.",
+      "**Manufacturing Process Data:** Data on current manufacturing processes, including how customization impacts production lead times, costs, and efficiency.",
+      "**Supply Chain and Inventory Data:** Information on how modular or customizable components are sourced, including lead times, supplier relationships, and inventory management.",
+      "**Cost Data:** Detailed breakdowns of the costs associated with product customization, such as additional labor, specialized tooling, or longer production times. This should also include material costs for modular components.",
+      "**Production Lead Times:** Data on how long it takes to produce both standard and customized products, including any delays caused by customization requests.",
+      "**Quality Control Data:** Information on defect rates, rework, or warranty claims related to customized or modular products.",
+      "**Revenue and Profitability Data:** Sales data comparing the profitability of standard products versus customized or modular offerings."
+    ],
+    "improve": [
+      "Increase Modularity in Product Design",
+      "Streamline Customization Processes",
+      "Optimize Supply Chain for Customizable Components",
+      "Standardize Components Across Product Lines",
+      "Enhance Demand Forecasting for Customized Products",
+      "○ Improve forecasting and demand planning for customizable products to better align inventory levels and production capacity with customer demand. This helps prevent stockouts or overproduction of customizable parts.",
+      "Monitor Quality and Customer Feedback",
+      "Expand Customization as a Premium Offering",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-37",
+    "archetype": "manufacturing",
+    "title": "New Product Introduction (NPI) and Time-to-Market Evaluation",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [
+      "MANUFACTURING_LEAD_TIME"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/37 - New Product Introduction (NPI) and Time-to-Market.md",
+    "goal": "The goal of a New Product Introduction (NPI) and Time-to-Market Evaluation is to assess the effectiveness of the process through which new products are developed, launched, and brought to market.",
+    "dataRequired": [
+      "**Product Development Timeline:** Information on the time it takes to move a product from concept to market launch, including key milestones such as design, prototyping, testing, and production.",
+      "**Project Costs:** Data on the costs associated with developing and launching the product, including research and development (R&D), tooling, testing, marketing, and production setup.",
+      "**Cross-Functional Team Collaboration:** Data on collaboration between various departments (R&D, engineering, marketing, manufacturing, and supply chain) during the NPI process.",
+      "**Market Research and Customer Feedback:** Insights gathered from market research, customer feedback, and competitive analysis to align product features with market needs.",
+      "**Prototype and Testing Data:** Information on the number of prototypes developed, testing iterations, and any quality issues encountered during the development process.",
+      "**Supplier Lead Times and Supply Chain Data:** Data on supplier lead times, availability of materials, and how supply chain factors impact the time-to-market.",
+      "**Regulatory and Compliance Requirements:** Information on the regulatory approvals and compliance testing required before a product can be introduced to the market.",
+      "**Launch Strategy and Marketing Plan:** The marketing and sales strategy for the new product, including timelines for market launch, promotional activities, and product availability.",
+      "158",
+      "**Post-Launch Performance Metrics:** Sales data, customer feedback, and market penetration rates for the new product after its launch."
+    ],
+    "improve": [
+      "Streamline the Product Development Process",
+      "Enhance Cross-Functional Collaboration",
+      "",
+      "Improve Prototyping and Testing Cycles",
+      "Optimize Supply Chain Efficiency",
+      "Engage with Regulatory Bodies Early",
+      "Align Marketing and Launch Strategy with Production",
+      "Monitor and Adjust Based on Post-Launch Feedback",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-38",
+    "archetype": "manufacturing",
+    "title": "Custom Manufacturing vs. Mass Production Analysis",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/38 - Custom Manufacturing vs. Mass Production Analysis.md",
+    "goal": "The goal of a Custom Manufacturing vs.",
+    "dataRequired": [
+      "**Product Demand Data:** Information on customer preferences for custom versus standard products, including sales data and market demand for both product types.",
+      "**Production Costs:** Detailed cost breakdowns for custom manufacturing and mass production, including raw materials, labor, overhead, tooling, and setup costs.",
+      "**Production Lead Times:** Data on the time it takes to produce custom products compared to mass-produced items, including setup and changeover times for different production runs.",
+      "**Inventory and Supply Chain Data:** Information on how each production method impacts inventory management, including raw materials, work-in-progress (WIP), and finished goods.",
+      "**Manufacturing Capacity and Flexibility:** Data on the capacity and flexibility of manufacturing equipment and processes to handle custom orders versus mass production.",
+      "**Quality Control Data:** Information on defect rates, rework, and quality assurance challenges for custom products versus mass-produced items.",
+      "**Customer Feedback and Satisfaction:** Insights from customers regarding their preferences for custom versus standardized products and their willingness to pay for customization.",
+      "**Profit Margins:** Sales and profitability data for both custom and mass-produced products, including how each approach impacts gross margins and overall profitability.",
+      "163",
+      "**Technology and Automation:** Information on the use of automation, digital tools, or flexible manufacturing technologies to support both custom and mass production processes."
+    ],
+    "improve": [
+      "Adopt Mass Customization",
+      "Leverage Digital Design and Prototyping Tools",
+      "Improve Setup and Changeover Efficiency",
+      "Optimize Inventory for Custom Manufacturing",
+      "Invest in Flexible Manufacturing Systems",
+      "Maximize Economies of Scale in Mass Production",
+      "Explore Hybrid Production Models",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-39",
+    "archetype": "manufacturing",
+    "title": "Product Yield and Scrap Rate Analysis",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "COGS",
+      "SCRAP_RATE",
+      "FIRST_PASS_YIELD"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "QUALITY_YIELD"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/39 - Product Yield and Scrap Rate Analysis.md",
+    "goal": "The goal of a Product Yield and Scrap Rate Analysis is to assess the efficiency of the production process by measuring how much of the raw materials and components are successfully converted into finished products (yield) and how much is wasted (scrap).",
+    "dataRequired": [
+      "**Production Output Data:** Information on the number of finished products produced during a given time period.",
+      "**Raw Material Input Data:** The amount of raw materials or components used in the production process.",
+      "**Scrap Data:** Data on materials or products that are discarded, including reasons for scrapping (e.g., defects, damage, or excess material).",
+      "**Rework Data:** Information on products that were initially defective but later corrected through rework.",
+      "**Defect Rate Data:** Detailed records of defects and quality issues at various stages of the production process.",
+      "**Material Costs:** The cost of raw materials and components used in production, including the financial impact of scrapped materials.",
+      "**Process and Equipment Performance:** Data on machine performance, equipment settings, and production conditions that may contribute to variations in yield or scrap.",
+      "**Quality Control Metrics:** Results from quality control checks, including pass/fail rates, rework times, and scrap-related quality issues.",
+      "**Labor Costs:** Costs associated with labor used in rework or scrap handling processes."
+    ],
+    "improve": [
+      "Implement Process Improvements",
+      "Optimize Equipment and Machine Settings",
+      "Improve Material Handling and Storage",
+      "Enhance Quality Control Procedures",
+      "Train Employees on Best Practices",
+      "Use Higher-Quality Materials",
+      "Track and Monitor Yield and Scrap Metrics",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-40",
+    "archetype": "manufacturing",
+    "title": "Make-to-Stock vs. Make-to-Order Strategy Evaluation",
+    "part": "E",
+    "partLabel": "Product and Process Development",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/40 - Make-to-Stock vs. Make-to-Order Strategy Evaluation.md",
+    "goal": "The goal of a Make-to-Stock (MTS) vs.",
+    "dataRequired": [
+      "**Customer Demand Patterns:** Historical sales data, demand forecasts, and seasonal fluctuations to assess demand variability and predictability.",
+      "**Lead Time Data:** Information on lead times for both MTS and MTO production, including order processing, production, and delivery times.",
+      "**Inventory Levels and Costs:** Data on current inventory levels, carrying costs, stockouts, and excess inventory related to make-to-stock products.",
+      "**Production Capacity and Flexibility:** Information on the production line’s capacity and flexibility to switch between different products and accommodate custom orders.",
+      "**Raw Material Availability:** Data on the availability of raw materials or components and supplier lead times, particularly for MTO production, where timely procurement is crucial.",
+      "**Customer Satisfaction Metrics:** Insights from customer feedback on product availability, lead times, and satisfaction with MTO versus MTS products.",
+      "**Cost Data:** Detailed cost breakdowns for both MTS and MTO strategies, including production costs, inventory holding costs, and cost of lost sales due to stockouts or long lead times.",
+      "**Market Trends and Competitor Strategies:** Information on market trends, competitive positioning, and how competitors manage their production strategies.",
+      "**Product Lifecycle Data:** Insights into product lifecycles, including how frequently products are updated or replaced and how this impacts demand predictability."
+    ],
+    "improve": [
+      "Optimize Inventory Management for MTS",
+      "Increase Production Flexibility for MTO",
+      "Improve Supply Chain Agility",
+      "Adopt a Hybrid MTS-MTO Strategy",
+      "Enhance Demand Forecasting for MTS",
+      "Manage Customer Expectations for MTO",
+      "Leverage Technology for Both Strategies",
+      "F. Environmental and Sustainability"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-41",
+    "archetype": "manufacturing",
+    "title": "Sustainability and Environmental Impact Analysis",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/41 - Sustainability and Environmental Impact Analysis.md",
+    "goal": "The goal of a Sustainability and Environmental Impact Analysis is to evaluate a company’s environmental footprint across its operations, supply chain, and product lifecycle.",
+    "dataRequired": [
+      "**Carbon Emissions Data:** Information on direct and indirect greenhouse gas (GHG) emissions from the company’s operations, including Scope 1 (direct emissions), Scope 2 (indirect emissions from purchased energy), and Scope 3 (emissions from the supply chain and product lifecycle).",
+      "**Energy Consumption Data:** Details on energy usage across all facilities, including types of energy used (e.g., electricity, natural gas, renewable sources) and total consumption.",
+      "**Water Usage Data:** Information on water consumption across all operations, including production, cooling, and cleaning processes, and data on water recycling or reuse.",
+      "**Waste Generation and Management:** Data on waste produced during manufacturing or operations, including solid waste, hazardous waste, recycling rates, and disposal methods.",
+      "**Raw Material Sourcing:** Information on the environmental impact of sourcing raw materials, including deforestation, mining, and other extraction processes.",
+      "**Product Lifecycle Data:** Environmental impact of the entire product lifecycle, from raw material extraction and production to transportation, usage, and end-of-life disposal or recycling.",
+      "**Supply Chain Data:** Information on the environmental practices of suppliers, including their carbon emissions, energy use, water use, and waste management.",
+      "**Regulatory Compliance Data:** Information on environmental regulations that the company must comply with, including local, national, and international environmental standards.",
+      "178",
+      "**Sustainability Goals and Benchmarks:** The company’s internal sustainability targets, industry benchmarks, and global sustainability initiatives (e.g., Science-Based Targets, UN Sustainable Development Goals)."
+    ],
+    "improve": [
+      "Transition to Renewable Energy",
+      "Improve Energy Efficiency",
+      "○ Implement energy-efficient technologies and practices, such as upgrading to LED lighting, improving insulation, using energy-efficient machinery, and optimizing heating and cooling systems.",
+      "Adopt Water-Saving Technologies",
+      "Enhance Waste Reduction and Recycling",
+      "Source Materials Sustainably",
+      "Optimize Product Design for Sustainability",
+      "Engage with Suppliers on Sustainability",
+      "Implement Environmental Monitoring Systems",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-42",
+    "archetype": "manufacturing",
+    "title": "Heat, Water, and Waste Management in Production",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REGULATORY",
+      "ENERGY_PRICES"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/42 - Heat, Water, and Waste Management in Production.md",
+    "goal": "The goal of Heat, Water, and Waste Management in Production is to evaluate and optimize the use of heat, water, and waste management processes within a manufacturing facility.",
+    "dataRequired": [
+      "**Heat Usage Data:** Information on heat consumption across production processes, including sources of heat, the amount of energy used for heating, and thermal efficiency.",
+      "**Water Consumption Data:** Data on water usage within production processes, including cooling, cleaning, and processing. This should include the amount of water consumed, reused, and wasted.",
+      "**Waste Generation Data:** Details on waste generated by the production process, including solid, liquid, and hazardous waste. Track the volumes, types, and disposal methods of waste.",
+      "**Energy Efficiency Data:** Information on energy efficiency measures related to heat and water systems, including heat recovery systems, water recycling technologies, and energy-saving equipment.",
+      "**Regulatory Compliance Data:** Information on local and industry-specific regulations related to heat, water, and waste management, including waste disposal, emissions, and water use limits.",
+      "**Cost Data:** Detailed cost breakdowns for heat, water, and waste management, including costs for utilities, waste disposal, recycling programs, and any related operational expenses.",
+      "**Waste Treatment and Disposal Methods:** Data on how waste is treated and disposed of, including recycling rates, waste-to-energy processes, or landfill usage."
+    ],
+    "improve": [
+      "Invest in Energy-Efficient Heating Systems",
+      "Install Water Recycling Systems",
+      "Reduce Waste Generation at the Source",
+      "Improve Waste Segregation and Recycling",
+      "Monitor and Optimize Resource Usage",
+      "Comply with Environmental Regulations",
+      "Engage Employees in Sustainability Initiatives",
+      "Employee participation can lead to innovative solutions and a company-wide commitment to sustainability.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-43",
+    "archetype": "manufacturing",
+    "title": "Environmental Compliance and Emissions Reduction Strategies",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/43 - Environmental Compliance and Emissions Reduction.md",
+    "goal": "The goal of Environmental Compliance and Emissions Reduction Strategies is to ensure that a company meets all relevant environmental regulations while actively working to reduce its carbon emissions and other pollutants.",
+    "dataRequired": [
+      "**Regulatory Requirements:** Information on relevant local, national, and international environmental regulations (e.g., emissions limits, waste disposal regulations, water discharge standards, and air quality standards).",
+      "**Carbon Emissions Data:** Current levels of Scope 1 (direct), Scope 2 (indirect from purchased energy), and Scope 3 (supply chain) emissions, broken down by source (e.g., transportation, production processes, energy use).",
+      "**Energy Consumption Data:** Data on energy usage across facilities, including electricity, natural gas, diesel, and other fuel sources, as well as renewable energy use.",
+      "**Pollutant Emissions Data:** Detailed records of pollutant emissions (e.g., CO2, SO2, NOx, particulate matter, volatile organic compounds) from production processes, transportation, and other activities.",
+      "**Waste and Water Management Data:** Information on the company’s waste generation, hazardous waste disposal, water usage, and wastewater discharge.",
+      "**Emissions Reduction Technologies:** Data on technologies and best practices for emissions reduction, including carbon capture, energy-efficient equipment, renewable energy systems, and sustainable production processes.",
+      "**Compliance History:** Records of past compliance with environmental regulations, including any fines, violations, or corrective actions taken.",
+      "**Cost Data:** Detailed cost breakdowns for implementing emissions reduction strategies, including capital expenditures (CapEx) for new technologies, operational costs, and potential savings from improved efficiency or regulatory incentives."
+    ],
+    "improve": [
+      "Improve Energy Efficiency",
+      "Transition to Renewable Energy",
+      "",
+      "Adopt Carbon Capture and Cleaner Production Technologies",
+      "Optimize Transportation and Logistics",
+      "Improve Waste and Water Management",
+      "Engage with Stakeholders",
+      "Leverage Digital Tools for Monitoring",
+      "Participate in Carbon Offsetting",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-44",
+    "archetype": "manufacturing",
+    "title": "Reverse Logistics and Product Lifecycle Management",
+    "part": "F",
+    "partLabel": "Environmental and Sustainability",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/44 - Reverse Logistics and Product Lifecycle Management.md",
+    "goal": "The goal of Reverse Logistics and Product Lifecycle Management (PLM) analysis is to evaluate the processes for handling product returns, recycling, refurbishment, and disposal, as well as optimizing the product lifecycle from design to end-of-life.",
+    "dataRequired": [
+      "**Return Rates and Reasons:** Data on product return rates, including reasons for returns (e.g., defects, end-of-life, customer dissatisfaction).",
+      "**Returned Product Volume:** Information on the quantity of returned products, including items for refurbishment, recycling, or disposal.",
+      "**Logistics Costs:** Costs associated with reverse logistics, including transportation, labor, processing, and storage of returned products.",
+      "**Waste and Recycling Data:** Information on waste generated from returned products, including recycling rates, landfill use, and disposal methods.",
+      "**Product Lifecycles:** Data on the lifecycle of each product type, from design and production through usage, maintenance, and end-of-life disposal.",
+      "**Refurbishment and Remanufacturing Data:** Data on refurbishment and remanufacturing processes, including costs, timeframes, and the percentage of products that can be refurbished or remanufactured.",
+      "**Customer Feedback on Returns:** Insights from customer feedback regarding the return process, product quality, and overall satisfaction with reverse logistics services.",
+      "**Sustainability and Circular Economy Goals:** The company’s sustainability targets, such as waste reduction, recycling rates, or product recovery goals, and how these align with circular economy principles."
+    ],
+    "improve": [
+      "Improve Product Design for Circularity",
+      "Enhance Refurbishment and Remanufacturing Programs",
+      "Reduce Reverse Logistics Costs",
+      "Implement a Take-Back Program",
+      "Increase Recycling and Material Recovery",
+      "Train Staff on Reverse Logistics and PLM Best Practices",
+      "Leverage Digital Tools for Lifecycle and Reverse Logistics Tracking",
+      "○ Use digital tools, such as enterprise resource planning (ERP) systems or product lifecycle management (PLM) software, to track products throughout their lifecycle and manage reverse logistics more effectively.",
+      "Adopt Circular Economy Business Models",
+      "G. Logistics and Aftermarket Services"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-45",
+    "archetype": "manufacturing",
+    "title": "Aftermarket Services and Spare Parts Logistics",
+    "part": "G",
+    "partLabel": "Logistics and Aftermarket Services",
+    "relatedMetricCodes": [
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/45 - Aftermarket Services and Spare Parts Logistics.md",
+    "goal": "The goal of Aftermarket Services and Spare Parts Logistics analysis is to evaluate the efficiency and effectiveness of supporting customers post-sale, particularly with the delivery of spare parts and maintenance services.",
+    "dataRequired": [
+      "**Customer Demand Data for Spare Parts:** Information on the frequency of parts requests, popular spare parts, and demand forecasting to anticipate future needs.",
+      "**Spare Parts Inventory Levels:** Data on current inventory levels of spare parts, including fast-moving and slow-moving items, stockouts, and excess inventory.",
+      "**Lead Times for Spare Parts Delivery:** Information on lead times for delivering spare parts to customers, including order processing, shipping, and delivery times.",
+      "**Supplier Lead Times:** Data on how long it takes suppliers to deliver spare parts or components, which impacts overall spare parts availability.",
+      "**Maintenance and Repair Service Data:** Records of maintenance and repair service requests, including the types of services required, response times, and technician availability.",
+      "**Logistics Costs:** Detailed cost breakdowns for spare parts logistics, including storage, transportation, and handling costs.",
+      "**Return and Warranty Data:** Information on warranty claims, returns, and the costs associated with these activities, including handling defective parts and providing replacements.",
+      "**Customer Satisfaction and Feedback:** Customer feedback regarding the quality of aftermarket services, spare parts availability, and response times for repairs or part replacements.",
+      "198",
+      "**Service Contracts and Revenue:** Data on service contracts, including revenue generated from aftermarket services, spare parts sales, and maintenance agreements."
+    ],
+    "improve": [
+      "Optimize Spare Parts Inventory Management",
+      "Streamline Spare Parts Logistics",
+      "Improve Supplier Relationships",
+      "○ Work closely with suppliers to ensure that spare parts are delivered on time and at the required quality levels. Consider dual-sourcing or maintaining relationships with multiple suppliers to reduce the risk of delays.",
+      "Invest in Predictive Maintenance Tools",
+      "Enhance Service Technicians’ Capabilities",
+      "Monitor and Improve Customer Experience",
+      "Implement Real-Time Tracking Systems",
+      "Develop Aftermarket Service Contracts",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-46",
+    "archetype": "manufacturing",
+    "title": "Multi-Site Manufacturing Network Optimization",
+    "part": "G",
+    "partLabel": "Logistics and Aftermarket Services",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "PLANT_UTILIZATION"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "WC_DIO",
+      "CAPACITY_DEBOTTLENECKING"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/46 - Multi-Site Manufacturing Network Optimization.md",
+    "goal": "The goal of Multi-Site Manufacturing Network Optimization is to assess and optimize the production capabilities across multiple manufacturing sites, ensuring efficient use of resources, minimizing costs, reducing lead times, and maximizing production flexibility.",
+    "dataRequired": [
+      "**Production Capacity Data:** Information on the production capacity of each manufacturing site, including equipment, staffing levels, and shift patterns.",
+      "**Demand Forecasts:** Projected demand for products across different regions or customer segments, including seasonal or market-specific demand fluctuations.",
+      "**Transportation and Logistics Data:** Data on the transportation routes, shipping costs, lead times, and distances between manufacturing sites, suppliers, and customers.",
+      "**Cost Data:** A detailed breakdown of costs associated with operating each site, including labor, utilities, material costs, and fixed overheads.",
+      "**Inventory Data:** Information on inventory levels, warehouse capacity, and inventory carrying costs across all manufacturing sites.",
+      "**Supply Chain Data:** Information on supplier lead times, availability of materials, and procurement logistics across different sites.",
+      "**Product Mix and Specialization:** Data on the types of products produced at each site, including any site-specific specialization in certain products, components, or processes.",
+      "**Manufacturing Lead Times:** The time taken by each site to produce products, including time for setup, production runs, and changeovers between product types.",
+      "**Capacity Utilization Rates:** Current utilization rates for each site, indicating whether they are underutilized, overburdened, or balanced in terms of production load."
+    ],
+    "improve": [
+      "Balance Production Across Sites",
+      "Optimize Transportation and Logistics",
+      "Implement Site Specialization",
+      "Improve Supply Chain Coordination",
+      "Leverage Technology for Multi-Site Coordination",
+      "Reduce Inventory Carrying Costs",
+      "○ Implement just-in-time (JIT) inventory management or cross-site inventory sharing to reduce excess inventory levels while ensuring critical parts and materials are available when needed.",
+      "Monitor Key Performance Indicators (KPIs)",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "manufacturing-47",
+    "archetype": "manufacturing",
+    "title": "Safety and Compliance Audit",
+    "part": "G",
+    "partLabel": "Logistics and Aftermarket Services",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "ORGANIZATIONAL",
+      "MARKET",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/manufacturing/47 - Safety and Compliance Audit.md",
+    "goal": "The goal of a Safety and Compliance Audit is to evaluate and ensure that a company’s operations adhere to legal regulations, industry standards, and internal policies related to health, safety, and environmental compliance.",
+    "dataRequired": [
+      "**Workplace Safety Records:** Data on past workplace incidents, accidents, near misses, and occupational health issues.",
+      "**Compliance Documentation:** Information on permits, licenses, certifications, and compliance documentation required for regulatory adherence.",
+      "**Safety Procedures and Policies:** Copies of the company’s safety procedures, training programs, and emergency response plans.",
+      "**Inspection and Maintenance Records:** Data on equipment inspections, maintenance schedules, and any corrective actions taken to address equipment or facility-related hazards.",
+      "**Training Logs:** Records of safety training programs, employee attendance, and certifications, including training on fire safety, hazardous materials handling, and emergency response.",
+      "**Personal Protective Equipment (PPE) Records:** Information on the availability, use, and maintenance of PPE, including usage logs and compliance with PPE requirements.",
+      "**Environmental Compliance Data:** Data on environmental policies, emissions, waste management, water usage, and energy consumption to ensure compliance with environmental regulations.",
+      "**Emergency Response Plans:** Documentation of emergency preparedness, evacuation plans, and first-aid procedures.",
+      "**Audit Findings and Previous Non-Compliance Issues:** Results from previous audits or inspections, including any fines, violations, or corrective actions taken."
+    ],
+    "improve": [
+      "Address Non-Compliance Immediately",
+      "Update Safety Policies and Procedures",
+      "Enhance Employee Training Programs",
+      "Improve PPE Compliance and Maintenance",
+      "Increase Equipment Inspections and Maintenance",
+      "Implement Hazard Reporting Systems",
+      "○ Encourage employees to report potential hazards or safety concerns through anonymous reporting systems or safety committees. Address reported hazards promptly to prevent accidents.",
+      "Conduct Regular Environmental Audits",
+      "Improve Emergency Preparedness",
+      "Monitor KPIs for Safety and Compliance",
+      ""
+    ],
+    "formulas": []
+  }
+]

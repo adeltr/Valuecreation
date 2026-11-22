@@ -24,3 +24,12 @@ describe('sanitizeProposal', () => {
     expect(() => sanitizeProposal({ levers: [lever] }, getActiveVocabulary('generic'))).toThrow();
   });
 });
+
+describe('sanitizeProposal – deal-structure codes are never lever targets (invariant 3)', () => {
+  it.each(['EXIT_MULTIPLE', 'ENTRY_MULTIPLE', 'HOLD_YEARS', 'NET_DEBT_ENTRY'])(
+    'rejects a lever targeting %s', (code) => {
+      expect(() => sanitizeProposal({ levers: [{ ...lever, category: 'PRICING', impactMetricCode: code }] }, vocab))
+        .toThrow(/lever target/i);
+    },
+  );
+});

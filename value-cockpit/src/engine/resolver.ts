@@ -2,7 +2,9 @@ import type { Metric } from '../domain/types';
 import { evaluateFormula, extractDependencies } from './formula';
 import { topoSort } from './graph';
 
-export function resolveMetrics(metrics: Metric[]): Map<string, number> {
+/** Resolves every metric, or — with `only` — just those codes and what they depend on. */
+export function resolveMetrics(all: Metric[], only?: string[]): Map<string, number> {
+  const metrics = only ? closure(all, only) : all;
   const byCode = new Map(metrics.map((x) => [x.code, x]));
   const deps = new Map<string, string[]>();
   for (const x of metrics) {
@@ -26,4 +28,17 @@ export function resolveMetrics(metrics: Metric[]): Map<string, number> {
     }
   }
   return values;
+}
+
+function closure(metrics: Metric[], targets: string[]): Metric[] {
+  const byCode = new Map(metrics.map((x) => [x.code, x]));
+  const keep = new Set<string>();
+  const visit = (code: string) => {
+    const x = byCode.get(code);
+    if (!x || keep.has(code)) return;
+    keep.add(code);
+    if (x.isCalculated && x.formula) extractDependencies(x.formula).forEach(visit);
+  };
+  targets.forEach(visit);
+  return metrics.filter((x) => keep.has(x.code));
 }

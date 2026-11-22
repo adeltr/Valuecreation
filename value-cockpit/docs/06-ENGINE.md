@@ -31,11 +31,18 @@ runScenario(scenarioId, metrics, levers, scenarioLevers, assumptions):
   3. leviers : pour chaque scenarioLever
      a. lever.status ≠ 'validated' ⇒ ERREUR (invariant 4, gate analyste)
      b. cible calculée ⇒ erreur (on ne perturbe que des inputs)
-     c. application selon deltaKind :
-        absolute : valeur + delta        (DSO −20 jours, churn −2 pts)
-        percent  : valeur × (1 + delta)  (churn −50 % relatif)
-  4. resolveMetrics(perturbé)
-  5. un ScenarioResult par métrique, computedBy = 'engine' (littéral)
+     c. scenarioLever.deltaKind ≠ lever.deltaKind ⇒ erreur
+     d. composition, indépendante de l'ordre des leviers :
+        valeur = (base + Σ deltas absolute) × Π(1 + deltas percent)
+        absolute : DSO −20 jours, churn −2 pts ; percent : churn −50 % relatif
+  4. règles d'interaction du template (InteractionRule, une seule passe) :
+        cible += coefficient × (source après leviers − source avant leviers)
+     - source, cible, coefficient : des INPUTS ; le coefficient est saisi par
+       l'analyste (ex. PRICE_ELASTICITY, jamais cible de levier) ;
+     - une hypothèse (EXIT_MULTIPLE, HOLD_YEARS…) ne déclenche jamais de règle ;
+     - pas de chaîne : une cible ne peut pas être la source d'une autre règle.
+  5. resolveMetrics(perturbé)
+  6. un ScenarioResult par métrique, computedBy = 'engine' (littéral)
 ```
 
 ## Sémantique des deltas — règle de lecture
@@ -44,9 +51,26 @@ DSO, points pour un percent). `deltaKind='percent'` est toujours relatif à la
 valeur courante. Toute UI doit afficher l'unité résolue pour éviter l'ambiguïté
 « −20 ».
 
+## Cibles de leviers (`src/templates/targets.ts`)
+
+Le vocabulaire d'un archétype est plus large que son modèle. `modelTargets(archetype)` classe les
+cibles possibles d'un levier :
+
+| Classe | Définition | Traitement |
+|---|---|---|
+| chiffrée | input du template que le vocabulaire laisse bouger | simulée par le moteur |
+| diagnostic | métrique du vocabulaire absente du modèle | levier **qualitatif** : accepté, visible dans le plan, jamais simulé |
+| calculée | sortie du modèle (agrégats de sortie, equity, MOIC) | refusée à l'ingestion : un levier agit sur un input |
+
+Le prompt du copilote présente ces classes séparément. La règle s'applique à l'ingestion, au
+scénario (reducer) et au chargement d'un dossier.
+
 ## Limitations documentées (phase 3)
-- Deltas additifs sur une même métrique cible : pas d'interactions ni de
-  cannibalisation entre leviers.
-- `NET_DEBT_EXIT = NET_DEBT_ENTRY − FCF_ANNUAL × HOLD_YEARS` : FCF constant,
-  pas de cash sweep ni d'échéancier de dette.
+- Interactions : seulement les règles déclarées par le template (prix → volume
+  via `PRICE_ELASTICITY` pour chemical, cosmetics, cpg, manufacturing, 3PL,
+  waste-management, wine-spirits ; élasticités par défaut = choix d'analyste à
+  calibrer). Pas de cannibalisation entre leviers au-delà de ces règles.
+- Cash : EBITDA en ligne droite, conversion et capex constants, pas de cash sweep ni
+  d'échéancier de dette (docs/20).
+- Horizon et coût des leviers : options `horizonYearsCode` et `costCode` (docs/20).
 - Pas de période intermédiaire : deux points, entry/exit.

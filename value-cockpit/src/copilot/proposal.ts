@@ -1,8 +1,9 @@
 import { z } from 'zod';
 import type { ActiveVocabulary } from '../ontology/registry';
 import { DELTA_KINDS } from '../ontology/base';
+import { leverTarget } from '../domain/schemas';
 
-export function makeProposalSchema(vocab: ActiveVocabulary) {
+export function makeProposalSchema(vocab: ActiveVocabulary, calculated: readonly string[] = []) {
   const inVocab = (check: (v: unknown) => boolean, what: string) =>
     z.string().refine(check, { message: `not in active vocabulary: ${what}` });
 
@@ -12,7 +13,7 @@ export function makeProposalSchema(vocab: ActiveVocabulary) {
     label: z.string().min(1),
     mechanism: z.string().min(1),
     category: inVocab(vocab.isLeverCategory, 'lever category'),
-    impactMetricCode: inVocab(vocab.isMetricCode, 'metric code'),
+    impactMetricCode: leverTarget(vocab, calculated),
     expectedDelta: z.number(),
     deltaKind: z.enum(DELTA_KINDS),
     timeToImpactDays: z.number().int().nonnegative(),
@@ -37,7 +38,8 @@ export function makeProposalSchema(vocab: ActiveVocabulary) {
 
 export type CopilotProposal = z.infer<ReturnType<typeof makeProposalSchema>>;
 
-export function sanitizeProposal(raw: unknown, vocab: ActiveVocabulary): CopilotProposal {
+/** `calculated`: the codes the archetype's model computes (modelTargets) — never a lever target. */
+export function sanitizeProposal(raw: unknown, vocab: ActiveVocabulary, calculated: readonly string[] = []): CopilotProposal {
   const { scenarioResults: _sr, assumptions: _a, ...rest } = (raw ?? {}) as Record<string, unknown>;
-  return makeProposalSchema(vocab).parse(rest);
+  return makeProposalSchema(vocab, calculated).parse(rest);
 }

@@ -1,0 +1,2906 @@
+[
+  {
+    "id": "healthcare-provider-01",
+    "archetype": "healthcare-provider",
+    "title": "Patient Volume and Service Line Performance Analysis",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "SERVICE_LINE_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/01 - Patient Volume and Service Line Performance Analysis.md",
+    "goal": "To evaluate patient volume trends and the performance of individual service lines, identifying growth opportunities, inefficiencies, and areas requiring resource reallocation.",
+    "dataRequired": [
+      "Historical patient volume data (by service line, department, and facility).",
+      "Patient demographics (age, gender, location, insurance type).",
+      "Service line revenue and cost data.",
+      "Appointment and procedure data (scheduled, completed, no-shows).",
+      "Utilization rates of key resources (e.g., beds, staff, equipment).",
+      "Competitive benchmarks (optional, if available)."
+    ],
+    "improve": [
+      "Expand marketing efforts for high-potential service lines showing growth.",
+      "Reallocate resources (staff, equipment, or space) from underutilized to high-demand areas.",
+      "Introduce operational changes to address bottlenecks or inefficiencies in resource utilization.",
+      "Negotiate better reimbursement rates with insurers for profitable but high-cost service lines.",
+      "",
+      "Develop targeted outreach programs to attract underrepresented patient demographics.",
+      "Optimize scheduling systems to reduce no-show rates and maximize throughput.",
+      "Regularly monitor KPIs to identify and act on emerging trends promptly.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Growth Rate (%)",
+        "variables": [
+          "Current Period Volume",
+          "Previous Period Volume"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Growth Rate (%) = ((Current Period Volume - Previous Period Volume) / Previous Period Volume) x 100.",
+        "step": null
+      },
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Patient Load",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Patient Load / Maximum Capacity) x 100.",
+        "step": null
+      },
+      {
+        "output": "Profitability (%)",
+        "variables": [
+          "Revenue",
+          "Cost"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Profitability (%) = ((Revenue - Cost) / Revenue) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-02",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Outcomes and Quality of Care Assessment",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/02 - Clinical Outcomes and Quality of Care Assessment.md",
+    "goal": "To evaluate clinical outcomes and the quality of care delivered, ensuring adherence to clinical standards, improving patient health outcomes, and identifying areas for enhanced care delivery.",
+    "dataRequired": [
+      "Patient health outcome metrics (e.g., mortality rates, complication rates, infection rates).",
+      "Readmission rates within 30 days of discharge.",
+      "Patient-reported outcome measures (PROMs).",
+      "Adherence to clinical guidelines and protocols.",
+      "Benchmark data for clinical performance (national or regional averages).",
+      "Healthcare-associated infection (HAI) rates.",
+      "Data from patient satisfaction surveys.",
+      "Clinical staff performance evaluations."
+    ],
+    "improve": [
+      "Standardize care pathways and protocols to align with evidence-based guidelines.",
+      "Implement regular training programs to improve staff adherence to clinical standards.",
+      "Enhance infection control measures and monitor compliance with patient safety protocols.",
+      "",
+      "Invest in technologies like predictive analytics to identify high-risk patients and mitigate adverse outcomes.",
+      "Increase focus on patient engagement and communication to improve PROM scores.",
+      "Conduct root cause analyses for adverse outcomes and develop targeted improvement plans.",
+      "Collaborate with peer institutions to share best practices and improve benchmark comparisons.",
+      "Monitor and refine clinical performance metrics continuously for sustained improvement.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Mortality Rate (%)",
+        "variables": [
+          "Number of Deaths",
+          "Number of Patients Treated"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Mortality Rate (%) = (Number of Deaths / Number of Patients Treated) x 100.",
+        "step": null
+      },
+      {
+        "output": "Infection Rate (%)",
+        "variables": [
+          "Number of Infections",
+          "Total Patient Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Infection Rate (%) = (Number of Infections / Total Patient Days) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-03",
+    "archetype": "healthcare-provider",
+    "title": "Hospital Readmission Rates and Avoidable Admissions Study",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [
+      "READMISSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/03 - Hospital Readmission Rates and Avoidable Admissions Study.md",
+    "goal": "To evaluate hospital readmission rates and identify factors contributing to avoidable admissions, aiming to improve patient outcomes, reduce healthcare costs, and enhance care delivery.",
+    "dataRequired": [
+      "Readmission data within 30 days of discharge (by department, condition, and demographics).",
+      "Patient discharge summaries and follow-up care plans.",
+      "Clinical data on comorbidities and primary diagnoses.",
+      "Socioeconomic and demographic data (e.g., age, income, education level).",
+      "Data on follow-up appointments and adherence to care plans.",
+      "National or regional readmission benchmarks by condition.",
+      "Patient satisfaction and engagement survey results."
+    ],
+    "improve": [
+      "Develop comprehensive discharge planning protocols, including clear instructions and follow-up appointments.",
+      "Implement transitional care programs to ensure continuity of care post-discharge.",
+      "",
+      "Use predictive analytics to identify high-risk patients and deploy targeted interventions.",
+      "Expand patient education efforts to improve adherence to medications and care plans.",
+      "Partner with community organizations to address socioeconomic barriers, such as housing or transportation.",
+      "Monitor patient engagement using surveys and adjust care practices based on feedback.",
+      "Strengthen care coordination between hospitals, primary care providers, and specialists.",
+      "Regularly review readmission data and refine strategies based on evolving trends.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Readmission Rate (%)",
+        "variables": [
+          "Number of Readmissions Within 30 Days",
+          "Total Discharges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Readmission Rate (%) = (Number of Readmissions Within 30 Days / Total Discharges) x 100.",
+        "step": null
+      },
+      {
+        "output": "Follow-Up Rate (%)",
+        "variables": [
+          "Number of Patients with Follow-Up Visits",
+          "Total Discharges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Follow-Up Rate (%) = (Number of Patients with Follow-Up Visits / Total Discharges) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-04",
+    "archetype": "healthcare-provider",
+    "title": "Infection Control and Patient Safety Protocol Compliance Review",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/04 - Infection Control and Patient Safety Protocol Compliance.md",
+    "goal": "To assess adherence to infection control and patient safety protocols, identify gaps in compliance, and reduce the incidence of hospital-acquired infections (HAIs) and safety incidents.",
+    "dataRequired": [
+      "Infection rate data, including HAIs (e.g., catheter-associated infections, surgical site infections).",
+      "Safety incident reports (e.g., falls, medication errors).",
+      "Protocol adherence logs (e.g., hand hygiene compliance).",
+      "Staff training records for infection control and safety procedures.",
+      "Patient outcome data for infection-related cases.",
+      "Benchmark data for HAIs and safety metrics."
+    ],
+    "improve": [
+      "Conduct regular training sessions on infection control and patient safety protocols for all staff.",
+      "Implement real-time monitoring and reporting systems for protocol compliance.",
+      "Establish accountability measures, such as department-specific infection control champions.",
+      "",
+      "Enhance the frequency and thoroughness of environmental cleaning and equipment sterilization.",
+      "Use visual reminders and nudges (e.g., posters, alerts) to reinforce adherence to protocols like hand hygiene.",
+      "Analyze root causes of safety incidents and address systemic issues contributing to non-compliance.",
+      "Increase staffing or provide additional resources in high-risk areas to reduce the burden on existing teams.",
+      "Regularly review and update infection control and safety protocols to align with evolving best practices.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "HAI Rate (%)",
+        "variables": [
+          "Number of Hospital-Acquired Infections",
+          "Total Patient Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "HAI Rate (%) = (Number of Hospital-Acquired Infections / Total Patient Days) x 100.",
+        "step": null
+      },
+      {
+        "output": "Hand Hygiene Compliance (%)",
+        "variables": [
+          "Number of Compliant Observations",
+          "Total Observations"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Hand Hygiene Compliance (%) = (Number of Compliant Observations / Total Observations) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-05",
+    "archetype": "healthcare-provider",
+    "title": "Length of Stay (LOS) Optimization and Discharge Planning Review",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [
+      "BED_OCCUPANCY_RATE",
+      "AVERAGE_LENGTH_OF_STAY",
+      "READMISSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "LOS_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/05 - Length of Stay (LOS) Optimization and Discharge Planning.md",
+    "goal": "To evaluate and optimize the average length of stay (LOS) across departments while ensuring effective discharge planning, aiming to improve patient outcomes, reduce costs, and enhance hospital efficiency.",
+    "dataRequired": [
+      "LOS data by department, condition, and patient demographics.",
+      "Readmission rates within 30 days post-discharge.",
+      "Patient discharge plans and follow-up records.",
+      "Bed occupancy and turnover rates.",
+      "Staff schedules and resource availability.",
+      "Clinical protocols for discharge readiness.",
+      "Industry benchmarks for LOS by condition or service line."
+    ],
+    "improve": [
+      "Develop and standardize discharge readiness protocols to ensure timely and effective patient discharges.",
+      "",
+      "Implement daily discharge planning meetings to improve communication and coordination among care teams.",
+      "Use predictive analytics to identify patients ready for discharge and streamline discharge workflows.",
+      "Enhance post-discharge support, including follow-up calls, patient education, and coordination with post-acute care providers.",
+      "Introduce dedicated discharge coordinators to address delays and improve the overall discharge process.",
+      "Optimize scheduling and resource allocation to reduce bottlenecks in diagnostics, procedures, or care coordination.",
+      "Regularly monitor LOS and discharge metrics to identify trends and areas for targeted interventions.",
+      "Partner with community organizations to address barriers such as transportation or home care needs that delay discharges.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average LOS (days)",
+        "variables": [
+          "Total Patient Days",
+          "Number of Discharges"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average LOS (days) = Total Patient Days / Number of Discharges.",
+        "step": null
+      },
+      {
+        "output": "Readmission Rate (%)",
+        "variables": [
+          "Number of Readmissions Within 30 Days",
+          "Total Discharges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Readmission Rate (%) = (Number of Readmissions Within 30 Days / Total Discharges) x 100.",
+        "step": null
+      },
+      {
+        "output": "Bed Occupancy Rate (%)",
+        "variables": [
+          "Total Occupied Bed Days",
+          "Total Available Bed Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Bed Occupancy Rate (%) = (Total Occupied Bed Days / Total Available Bed Days) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-06",
+    "archetype": "healthcare-provider",
+    "title": "Care Pathway Standardization and Variation Reduction Analysis",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "LOS_OPTIMIZATION",
+      "SUPPLY_STANDARDIZATION"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/06 - Care Pathway Standardization and Variation Reduction.md",
+    "goal": "To standardize clinical care pathways, minimize unwarranted variations in care delivery, and improve patient outcomes, efficiency, and cost-effectiveness.",
+    "dataRequired": [
+      "Current care pathways for key clinical conditions or procedures.",
+      "Patient outcome metrics (e.g., recovery time, complications, readmission rates).",
+      "Cost data for treatments and procedures.",
+      "Staff compliance with established care pathways.",
+      "Benchmark data for best practices and outcomes.",
+      "Patient demographics and case complexity levels."
+    ],
+    "improve": [
+      "Develop evidence-based care pathways aligned with best practices for target conditions.",
+      "Implement training programs for clinical staff to ensure consistent adoption of standardized pathways.",
+      "Use clinical decision support tools in electronic health records (EHR) to guide adherence during patient care.",
+      "Establish regular reviews of pathway adherence and provide real-time feedback to clinicians.",
+      "",
+      "Conduct multidisciplinary reviews of complex cases to refine pathways and reduce variability.",
+      "Incentivize adherence to standardized pathways through performance metrics or recognition programs.",
+      "Continuously monitor patient outcomes and update care pathways based on new evidence or observed gaps.",
+      "Leverage technology, such as predictive analytics, to personalize pathways for high-risk or complex cases while maintaining standardization.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Variation Rate (%)",
+        "variables": [
+          "Number of Deviations from Pathway",
+          "Total Cases"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Variation Rate (%) = (Number of Deviations from Pathway / Total Cases) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-07",
+    "archetype": "healthcare-provider",
+    "title": "Hospital-Acquired Condition (HAC) Rate Analysis",
+    "part": "A",
+    "partLabel": "Clinical Performance and Quality",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/07 - Hospital-Acquired Condition (HAC) Rate Analysis.md",
+    "goal": "To assess and reduce the rates of hospital-acquired conditions (HACs) such as infections, falls, and pressure ulcers, ensuring patient safety, compliance with regulations, and minimizing financial penalties.",
+    "dataRequired": [
+      "HAC data (e.g., infection rates, falls, pressure ulcers) segmented by department and patient demographics.",
+      "Total patient days and admission data.",
+      "Clinical protocols for HAC prevention.",
+      "Staff training and compliance records related to HAC prevention practices.",
+      "Benchmarks for HAC rates from national or regional sources.",
+      "Incident reports detailing HAC occurrences and contributing factors."
+    ],
+    "improve": [
+      "Strengthen staff training on HAC prevention protocols, including hand hygiene, sterile procedures, and early risk identification.",
+      "Implement real-time HAC monitoring and reporting systems to enable prompt intervention.",
+      "Deploy infection prevention champions in high-risk departments to lead compliance efforts.",
+      "Invest in technology, such as antimicrobial equipment and electronic monitoring tools, to reduce HAC risks.",
+      "",
+      "Conduct regular HAC audits and feedback sessions to address non-compliance and reinforce best practices.",
+      "Enhance staffing levels and allocate resources to departments with high HAC rates or patient acuity.",
+      "Partner with external quality improvement organizations to access best practices and benchmarking tools.",
+      "Establish multidisciplinary HAC prevention teams to review incidents and recommend system-level changes.",
+      "B. Operational Efficiency and Resource Optimization"
+    ],
+    "formulas": [
+      {
+        "output": "HAC Rate (%)",
+        "variables": [
+          "Number of HAC Events",
+          "Total Patient Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "HAC Rate (%) = (Number of HAC Events / Total Patient Days) x 100.",
+        "step": null
+      },
+      {
+        "output": "Compliance Rate (%)",
+        "variables": [
+          "Number of Compliant Observations",
+          "Total Observations"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Compliance Rate (%) = (Number of Compliant Observations / Total Observations) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-08",
+    "archetype": "healthcare-provider",
+    "title": "Operating Room Utilization and Surgical Throughput Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [
+      "OR_UTILIZATION"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/08 - Operating Room Utilization and Surgical Throughput Analysis.md",
+    "goal": "To evaluate the efficiency of operating room (OR) utilization and surgical throughput, identifying bottlenecks, improving scheduling practices, and maximizing resource use without compromising patient safety.",
+    "dataRequired": [
+      "Operating room schedules (planned vs. actual usage).",
+      "Total available OR hours and total hours used.",
+      "Case duration data (average time per surgery).",
+      "Turnaround times between surgeries.",
+      "Cancellation and no-show rates for scheduled procedures.",
+      "Staffing schedules for surgical teams.",
+      "Equipment availability and maintenance logs.",
+      "Surgical throughput data (number of surgeries performed per day/week)."
+    ],
+    "improve": [
+      "Optimize surgical scheduling by prioritizing high-volume or time-sensitive cases and minimizing scheduling gaps.",
+      "Standardize turnaround procedures to reduce variability and improve efficiency.",
+      "",
+      "Invest in additional training for OR staff to streamline workflows and reduce delays.",
+      "Implement predictive analytics to forecast case durations and optimize scheduling accuracy.",
+      "Monitor and maintain OR equipment to prevent delays caused by technical issues.",
+      "Reduce cancellations and no-shows through improved preoperative communication and patient education.",
+      "Adjust staffing levels based on demand to ensure adequate coverage for peak OR utilization periods.",
+      "Regularly review performance metrics and benchmark against industry best practices to identify areas for ongoing improvement.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "OR Utilization Rate (%)",
+        "variables": [
+          "Total Hours Used",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "OR Utilization Rate (%) = (Total Hours Used / Total Available Hours) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Turnaround Time",
+        "variables": [
+          "Total Turnaround Time",
+          "Number of Surgeries"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Turnaround Time = Total Turnaround Time / Number of Surgeries.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-09",
+    "archetype": "healthcare-provider",
+    "title": "Emergency Department Throughput and Wait Time Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/09 - Emergency Department Throughput and Wait Time Analysis.md",
+    "goal": "To assess emergency department (ED) throughput and wait times, identify bottlenecks, and implement strategies to reduce delays, improve patient flow, and enhance patient satisfaction and outcomes.",
+    "dataRequired": [
+      "ED visit data (arrival times, triage levels, and discharge/admission times).",
+      "Patient demographics (age, gender, acuity levels).",
+      "ED staffing schedules (physicians, nurses, and support staff).",
+      "Bed availability and occupancy rates.",
+      "Time-stamped data for key ED stages (e.g., triage, physician assessment, testing, discharge/admission).",
+      "Data on patient outcomes (e.g., readmissions, length of stay).",
+      "Industry benchmarks for ED throughput and wait times."
+    ],
+    "improve": [
+      "Implement a fast-track system for low-acuity patients to free up resources for critical cases.",
+      "Optimize triage protocols to ensure high-acuity patients are assessed and treated promptly.",
+      "Use predictive analytics to forecast peak ED demand and align staffing accordingly.",
+      "",
+      "Streamline diagnostic and treatment workflows to reduce delays in testing and assessments.",
+      "Enhance discharge planning to expedite patient admissions or transfers, freeing up ED beds.",
+      "Introduce technology solutions, such as real-time tracking systems, to monitor patient flow and identify delays.",
+      "Partner with urgent care centers to redirect non-emergency cases and reduce ED congestion.",
+      "Regularly monitor and analyze ED performance metrics to identify trends and refine improvement strategies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Average Wait Time",
+        "variables": [
+          "Total Wait Time for All Patients",
+          "Number of Patients"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Wait Time = Total Wait Time for All Patients / Number of Patients.",
+        "step": null
+      },
+      {
+        "output": "ED Throughput",
+        "variables": [
+          "Total Patients Treated",
+          "Total Operating Hours"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "ED Throughput = Total Patients Treated / Total Operating Hours.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-10",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Documentation Improvement (CDI) Impact Analysis",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [
+      "REIMBURSEMENT_GROWTH",
+      "CASE_MIX_INDEX"
+    ],
+    "relatedCauseCategories": [
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "CDI_PAYER_MIX"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/10 - Clinical Documentation Improvement (CDI) Impact Analysis.md",
+    "goal": "To evaluate the impact of Clinical Documentation Improvement (CDI) initiatives on patient outcomes, reimbursement accuracy, and compliance, ensuring that clinical documentation reflects the true complexity of care delivered.",
+    "dataRequired": [
+      "Clinical documentation records (pre- and post-CDI implementation).",
+      "Case mix index (CMI) data.",
+      "Coding accuracy metrics (e.g., ICD-10 coding).",
+      "Financial data on reimbursement levels and denied claims.",
+      "Patient outcomes data (e.g., mortality rates, readmissions).",
+      "CDI team activity logs and audit findings.",
+      "Benchmark data for CMI and documentation compliance."
+    ],
+    "improve": [
+      "Provide ongoing training for physicians and CDI specialists on accurate documentation and coding standards.",
+      "Leverage advanced CDI tools, such as natural language processing (NLP) and AI, to identify documentation gaps.",
+      "",
+      "Conduct regular audits of clinical documentation and coding to maintain high accuracy levels.",
+      "Establish feedback loops where CDI specialists provide real-time guidance to clinicians during documentation.",
+      "Develop targeted improvement plans for departments or conditions with persistent documentation issues.",
+      "Monitor CMI and coding accuracy continuously to ensure sustained CDI program effectiveness.",
+      "Collaborate with coding teams to align CDI efforts with reimbursement and compliance requirements.",
+      "Benchmark CDI performance regularly against peer institutions to identify best practices and improvement opportunities.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "CMI",
+        "variables": [
+          "Total DRG Weights",
+          "Total Number of Cases"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "CMI = Total DRG Weights / Total Number of Cases.",
+        "step": null
+      },
+      {
+        "output": "Change (%)",
+        "variables": [
+          "Post-CDI Reimbursement",
+          "Pre-CDI Reimbursement"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Change (%) = ((Post-CDI Reimbursement - Pre-CDI Reimbursement) / Pre-CDI Reimbursement) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-11",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Equipment Utilization and Maintenance Efficiency Study",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/11 - Clinical Equipment Utilization and Maintenance Efficiency.md",
+    "goal": "To assess the utilization rates and maintenance efficiency of clinical equipment, ensuring optimal resource allocation, minimizing downtime, and reducing operational costs while maintaining patient care standards.",
+    "dataRequired": [
+      "Inventory of clinical equipment (e.g., type, quantity, and location).",
+      "Equipment utilization data (e.g., hours of operation, patient usage rates).",
+      "Maintenance logs (e.g., frequency, type of maintenance, and downtime).",
+      "Equipment downtime data.",
+      "Costs associated with maintenance and repairs.",
+      "Patient volume and procedure data linked to equipment usage.",
+      "Industry benchmarks for utilization and maintenance efficiency."
+    ],
+    "improve": [
+      "Implement predictive maintenance programs to reduce unplanned downtime and extend equipment lifespan.",
+      "Optimize scheduling systems to increase equipment utilization rates, balancing demand across available resources.",
+      "",
+      "Replace or upgrade outdated equipment with high maintenance costs or frequent downtime.",
+      "Conduct regular training sessions for staff to ensure proper operation and handling of clinical equipment.",
+      "Establish centralized tracking of equipment utilization and maintenance to enable real-time monitoring and data-driven decisions.",
+      "Introduce a tiered maintenance protocol to prioritize critical equipment for faster turnaround during repairs.",
+      "Benchmark equipment performance regularly to ensure alignment with industry standards and best practices.",
+      "Explore leasing or sharing options for underutilized equipment to reduce costs and improve access.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Hours Used",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Hours Used / Total Available Hours) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Downtime per Event",
+        "variables": [
+          "Total Downtime",
+          "Number of Maintenance"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Downtime per Event = Total Downtime / Number of Maintenance",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-12",
+    "archetype": "healthcare-provider",
+    "title": "Post-Acute Care Integration and Outcomes Evaluation",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [
+      "READMISSION_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "LOS_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/12 - Post-Acute Care Integration and Outcomes Evaluation.md",
+    "goal": "To assess the integration of post-acute care services and evaluate their impact on patient outcomes, healthcare costs, and readmission rates, ensuring a seamless transition from acute to post-acute settings.",
+    "dataRequired": [
+      "Patient transition data from acute to post-acute care (e.g., skilled nursing facilities, home health, rehabilitation centers).",
+      "Readmission rates within 30 days of discharge.",
+      "Patient outcomes data (e.g., functional improvements, quality of life scores).",
+      "Post-acute care provider performance metrics (e.g., adherence to care plans, patient satisfaction).",
+      "Costs associated with post-acute care services.",
+      "Care coordination logs and communication records.",
+      "Industry benchmarks for post-acute care outcomes and integration metrics."
+    ],
+    "improve": [
+      "Develop standardized protocols for transitioning patients to post-acute care to ensure seamless coordination.",
+      "Establish stronger partnerships with high-performing post-acute care providers and track their performance regularly.",
+      "Implement care navigation programs to support patients during the transition and monitor their adherence to care plans.",
+      "",
+      "Enhance communication between acute and post-acute care teams through shared electronic health records (EHRs).",
+      "Use predictive analytics to identify patients at high risk of readmission and tailor post-acute care plans accordingly.",
+      "Regularly train discharge planners and care coordinators to improve the quality of transition processes.",
+      "Introduce outcome-based incentives for post-acute care providers to ensure alignment with quality goals.",
+      "Continuously monitor patient outcomes and satisfaction to refine care strategies and improve service delivery.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Readmission Rate (%)",
+        "variables": [
+          "Number of Readmissions Within 30 Days",
+          "Total Post-Acute Care Transitions"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Readmission Rate (%) = (Number of Readmissions Within 30 Days / Total Post-Acute Care Transitions) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Positive Outcome",
+        "variables": [
+          "Total Post-Acute Care Costs",
+          "Number of Patients"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Positive Outcome = Total Post-Acute Care Costs / Number of Patients",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-13",
+    "archetype": "healthcare-provider",
+    "title": "Advanced Imaging and Diagnostic Services Utilization Optimization",
+    "part": "B",
+    "partLabel": "Operational Efficiency and Resource",
+    "relatedMetricCodes": [
+      "SUPPLY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "SUPPLY_STANDARDIZATION"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/13 - Advanced Imaging and Diagnostic Services Utilization.md",
+    "goal": "To assess and optimize the use of advanced imaging and diagnostic services (e.g., MRI, CT, PET scans), ensuring appropriate utilization, minimizing costs, and enhancing diagnostic accuracy and patient outcomes.",
+    "dataRequired": [
+      "Volume of imaging and diagnostic services performed (by type, department, and patient demographics).",
+      "Indication data for ordered imaging (e.g., clinical justifications).",
+      "Patient outcomes data linked to imaging results.",
+      "Imaging equipment utilization rates and availability.",
+      "Costs associated with imaging services (e.g., per scan, operational costs).",
+      "Referral and ordering patterns by physicians.",
+      "Industry benchmarks for imaging utilization by condition or patient population."
+    ],
+    "improve": [
+      "",
+      "Develop and enforce clinical guidelines for imaging orders to minimize unnecessary tests.",
+      "Provide training for physicians on evidence-based diagnostic pathways and appropriate imaging use.",
+      "Implement a preauthorization system for high-cost imaging procedures to ensure appropriateness.",
+      "Optimize scheduling processes to improve equipment availability and reduce wait times.",
+      "Use predictive analytics to identify patients most likely to benefit from advanced imaging.",
+      "Invest in centralizing imaging data and reporting systems to enhance coordination across departments.",
+      "Conduct regular audits of imaging orders to identify patterns of overuse or underuse.",
+      "Benchmark imaging utilization and outcomes against peer institutions to identify best practices and set improvement goals.",
+      "C. Financial Performance and Revenue Management"
+    ],
+    "formulas": [
+      {
+        "output": "Equipment Utilization Rate (%)",
+        "variables": [
+          "Actual Operating Hours",
+          "Total Available Hours"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Equipment Utilization Rate (%) = (Actual Operating Hours / Total Available Hours) x 100.",
+        "step": null
+      },
+      {
+        "output": "Inappropriate Utilization Rate (%)",
+        "variables": [
+          "Number of Unnecessary Scans",
+          "Total Scans"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Inappropriate Utilization Rate (%) = (Number of Unnecessary Scans / Total Scans) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Beneficial Outcome",
+        "variables": [
+          "Total Imaging Costs",
+          "Number of Beneficial"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Beneficial Outcome = Total Imaging Costs / Number of Beneficial",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-14",
+    "archetype": "healthcare-provider",
+    "title": "Healthcare Provider Cost Efficiency and Benchmarking Study",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [
+      "SUPPLY_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "SUPPLY_STANDARDIZATION"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/14 - Healthcare Provider Cost Efficiency and Benchmarking Study.md",
+    "goal": "To evaluate the cost efficiency of a healthcare provider by comparing costs with industry benchmarks, identifying areas of excess spending, and optimizing resource allocation to enhance financial performance without compromising care quality.",
+    "dataRequired": [
+      "Operating costs segmented by department and service line (e.g., labor, supplies, overhead).",
+      "Revenue data for each department or service line.",
+      "Patient volume and case mix index (CMI).",
+      "Cost-per-case or cost-per-patient metrics.",
+      "Industry benchmarks for cost efficiency (e.g., cost per discharge, cost per procedure).",
+      "Length of stay (LOS) and utilization rates for key resources (e.g., beds, equipment).",
+      "Quality and outcome data to correlate costs with patient outcomes."
+    ],
+    "improve": [
+      "Conduct process improvement initiatives to streamline workflows and reduce waste in high-cost departments.",
+      "",
+      "Optimize staffing levels and schedules to match patient demand and reduce labor costs.",
+      "Implement bulk purchasing or supplier negotiations to lower the cost of medical supplies.",
+      "Use predictive analytics to forecast demand and align resource allocation with patient volume.",
+      "Introduce value-based care models to incentivize cost efficiency while maintaining quality.",
+      "Benchmark cost efficiency metrics regularly against peer institutions to identify gaps and set performance targets.",
+      "Review and renegotiate contracts with third-party providers for outsourced services.",
+      "Invest in technologies like automation and digital tools to reduce administrative overhead and improve operational efficiency.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Discharge",
+        "variables": [
+          "Total Costs",
+          "Total Discharges"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Discharge = Total Costs / Total Discharges.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-15",
+    "archetype": "healthcare-provider",
+    "title": "Revenue Cycle Management Performance Assessment",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [
+      "DSO",
+      "REVENUE_LEAKAGE_RATE",
+      "DAYS_IN_AR"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO",
+      "REVENUE_CYCLE"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/15 - Revenue Cycle Management Performance Assessment.md",
+    "goal": "To evaluate the efficiency and effectiveness of the revenue cycle management (RCM) process, focusing on reducing delays, optimizing collections, and minimizing revenue leakage to improve financial performance.",
+    "dataRequired": [
+      "Accounts receivable (AR) aging reports segmented by payer type and service line.",
+      "Denial rates and reasons for claim denials.",
+      "Average days in accounts receivable (AR).",
+      "Collection rates (e.g., total billed vs. total collected).",
+      "Write-off data for uncollectible accounts.",
+      "Claim submission and payment data (e.g., timelines for submission, resubmission, and payment).",
+      "Industry benchmarks for RCM metrics (e.g., AR days, denial rates)."
+    ],
+    "improve": [
+      "Implement training programs for staff to improve coding accuracy and compliance with payer requirements.",
+      "Use automated tools for claim scrubbing to reduce errors and minimize denials.",
+      "Establish a robust denial management process to identify, address, and prevent recurring denial reasons.",
+      "",
+      "Optimize claim submission timelines to ensure faster payment cycles.",
+      "Negotiate better terms with payers to reduce delays and improve reimbursement rates.",
+      "Introduce patient-friendly billing systems to enhance collections and reduce patient confusion.",
+      "Monitor and track RCM metrics in real time using advanced analytics dashboards.",
+      "Benchmark RCM performance regularly to identify areas for improvement and set performance goals.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Days in AR",
+        "variables": [
+          "Total AR",
+          "Average Daily Revenue"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Days in AR = (Total AR / Average Daily Revenue).",
+        "step": null
+      },
+      {
+        "output": "Denial Rate (%)",
+        "variables": [
+          "Number of Denied Claims",
+          "Total Submitted Claims"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Denial Rate (%) = (Number of Denied Claims / Total Submitted Claims) x 100.",
+        "step": null
+      },
+      {
+        "output": "Collection Rate (%)",
+        "variables": [
+          "Total Collected Revenue",
+          "Total Billed Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Collection Rate (%) = (Total Collected Revenue / Total Billed Revenue) x 100.",
+        "step": null
+      },
+      {
+        "output": "Write-Off Rate (%)",
+        "variables": [
+          "Total Write-Offs",
+          "Total Billed Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Write-Off Rate (%) = (Total Write-Offs / Total Billed Revenue) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-16",
+    "archetype": "healthcare-provider",
+    "title": "Payer Mix and Reimbursement Rate Optimization Analysis",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REIMBURSEMENT_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "REIMBURSEMENT_PRESSURE"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "WC_DSO",
+      "CDI_PAYER_MIX"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/16 - Payer Mix and Reimbursement Rate Optimization Analysis.md",
+    "goal": "To evaluate the payer mix and optimize reimbursement rates by identifying high- and low-margin payer contracts, ensuring financial sustainability while maintaining patient access.",
+    "dataRequired": [
+      "Payer mix data (percentage of revenue by payer type, e.g., Medicare, Medicaid, private insurance, self-pay).",
+      "Reimbursement rates by payer for key services or procedures.",
+      "Cost-to-charge ratios by service line.",
+      "Denial and payment adjustment rates by payer.",
+      "Patient volume and demographic data by payer.",
+      "Contract terms with major payers.",
+      "Industry benchmarks for reimbursement rates and payer mix."
+    ],
+    "improve": [
+      "Negotiate improved reimbursement rates with payers offering below-benchmark rates, especially for high-cost procedures.",
+      "",
+      "Diversify the payer mix by expanding contracts with high-margin payers or targeting underserved patient populations.",
+      "Implement enhanced billing practices to reduce denial rates and improve payer relationships.",
+      "Conduct cost analyses for resource-intensive services to align reimbursement rates with service costs.",
+      "Leverage market data to benchmark and justify rate renegotiations with underperforming payers.",
+      "Introduce analytics tools to monitor payer performance in real time and identify trends requiring intervention.",
+      "Collaborate with payers on value-based care initiatives to align incentives and improve reimbursement.",
+      "Regularly review payer contracts to ensure they align with organizational financial goals and market conditions.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Payer Mix (%)",
+        "variables": [
+          "Revenue from Payer",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Payer Mix (%) = (Revenue from Payer / Total Revenue) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Reimbursement Rate",
+        "variables": [
+          "Total Reimbursement from Payer",
+          "Total Billed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Reimbursement Rate = Total Reimbursement from Payer / Total Billed",
+        "step": null
+      },
+      {
+        "output": "Profit Margin (%)",
+        "variables": [
+          "Reimbursement",
+          "Cost"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Profit Margin (%) = ((Reimbursement - Cost) / Reimbursement) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-17",
+    "archetype": "healthcare-provider",
+    "title": "Charity Care and Uncompensated Care Impact Analysis",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [
+      "REVENUE_LEAKAGE_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REIMBURSEMENT_PRESSURE"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "REVENUE_CYCLE"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/17 - Charity Care and Uncompensated Care Impact Analysis.md",
+    "goal": "To evaluate the financial and operational impact of charity care and uncompensated care on a healthcare provider, identifying strategies to manage costs while maintaining access for underserved populations.",
+    "dataRequired": [
+      "Total charity care costs (value of services provided at no charge to eligible patients).",
+      "Total uncompensated care costs (unpaid bills, including bad debt and charity care).",
+      "Patient demographics for charity care and uncompensated care recipients.",
+      "Revenue data segmented by payer type and service line.",
+      "Cost of care delivery for charity and uncompensated services.",
+      "Financial assistance program policies and eligibility criteria.",
+      "Industry benchmarks for charity and uncompensated care as a percentage of total revenue or expenses."
+    ],
+    "improve": [
+      "Strengthen financial screening processes to ensure eligible patients are enrolled in financial assistance programs.",
+      "",
+      "Expand outreach programs to connect patients with insurance options, such as Medicaid or ACA marketplace plans.",
+      "Develop partnerships with community organizations to address socioeconomic barriers affecting patient payment capacity.",
+      "Regularly review and update financial assistance policies to reflect changing community needs.",
+      "Implement predictive analytics to identify patients at risk of nonpayment and proactively offer financial counseling.",
+      "Negotiate with payers to improve reimbursement rates for low-margin services heavily used by underserved populations.",
+      "Monitor charity care and uncompensated care metrics in real time to ensure alignment with financial goals and regulatory requirements.",
+      "Leverage tax benefits or grants tied to charity care efforts to offset financial losses and sustain community support initiatives.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Charity Care Percentage (%)",
+        "variables": [
+          "Charity Care Costs",
+          "Total Revenue"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Charity Care Percentage (%) = (Charity Care Costs / Total Revenue) x 100.",
+        "step": null
+      },
+      {
+        "output": "Uncompensated Care Impact (%)",
+        "variables": [
+          "Uncompensated Care Costs",
+          "Total Operating Costs"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Uncompensated Care Impact (%) = (Uncompensated Care Costs / Total Operating Costs) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-18",
+    "archetype": "healthcare-provider",
+    "title": "Bundled Payment Model Performance and Alignment Assessment",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "CDI_PAYER_MIX"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/18 - Bundled Payment Model Performance and Alignment.md",
+    "goal": "To evaluate the performance of bundled payment models, identify areas of misalignment between costs and reimbursements, and optimize care delivery to improve financial outcomes and patient care under these models.",
+    "dataRequired": [
+      "Bundled payment contracts (terms, conditions, covered episodes of care).",
+      "Total cost of care for each episode (pre-acute, acute, and post-acute phases).",
+      "Reimbursement data for bundled episodes.",
+      "Patient outcomes and quality metrics (e.g., readmissions, complications).",
+      "Utilization data for services included in the bundle (e.g., imaging, surgeries, therapies).",
+      "Industry benchmarks for bundled payment performance metrics."
+    ],
+    "improve": [
+      "Standardize care pathways within bundles to minimize cost variability and improve consistency.",
+      "Engage clinicians in cost and quality discussions to align care practices with bundled payment goals.",
+      "Strengthen care coordination across pre-acute, acute, and post-acute phases to reduce inefficiencies.",
+      "",
+      "Use predictive analytics to identify high-risk patients and allocate resources proactively within the bundle.",
+      "Negotiate contract terms to address cost outliers and ensure fair reimbursement for complex cases.",
+      "Monitor bundled payment performance regularly to identify trends and refine strategies.",
+      "Leverage partnerships with post-acute care providers to align services with cost and quality expectations.",
+      "Benchmark internal performance against peer organizations to identify areas for competitive advantage or improvement.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Total Cost per Episode",
+        "variables": [
+          "Pre-Acute Costs",
+          "Acute Costs",
+          "Post-Acute Costs"
+        ],
+        "expression": "( v0 + v1 + v2 )",
+        "percentOutput": false,
+        "source": "Total Cost per Episode = (Pre-Acute Costs + Acute Costs + Post-Acute Costs).",
+        "step": null
+      },
+      {
+        "output": "Episode Margin (%)",
+        "variables": [
+          "Reimbursement",
+          "Total Cost"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Episode Margin (%) = ((Reimbursement - Total Cost) / Reimbursement) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-19",
+    "archetype": "healthcare-provider",
+    "title": "Value-Based Care Contract Performance Evaluation",
+    "part": "C",
+    "partLabel": "Financial Performance and Revenue Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "REIMBURSEMENT_PRESSURE"
+    ],
+    "relatedLeverCategories": [
+      "CDI_PAYER_MIX"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/19 - Value-Based Care Contract Performance Evaluation.md",
+    "goal": "To assess the financial and clinical performance of value-based care (VBC) contracts, identify alignment with quality and cost metrics, and optimize strategies to maximize shared savings, quality incentives, and patient outcomes.",
+    "dataRequired": [
+      "Value-based care contract terms (metrics, incentives, penalties, and shared savings models).",
+      "Quality performance data (e.g., patient satisfaction scores, clinical outcomes, care compliance).",
+      "Cost data for covered populations (e.g., total cost of care per patient).",
+      "Patient demographics and risk adjustment factors.",
+      "Utilization metrics (e.g., hospitalizations, emergency department visits, preventive care use).",
+      "Benchmark data for VBC performance (e.g., cost savings, quality thresholds)."
+    ],
+    "improve": [
+      "Develop care coordination programs to reduce hospitalizations, readmissions, and unnecessary ED visits.",
+      "Implement preventive care initiatives to address high-cost conditions early and avoid complications.",
+      "",
+      "Use data analytics to identify high-risk patients and allocate resources to manage their care proactively.",
+      "Strengthen partnerships with primary care providers to improve patient engagement and compliance with care plans.",
+      "Regularly train clinicians and care teams on VBC contract requirements and performance metrics.",
+      "Adjust workflows and resource allocation to align with cost and quality goals.",
+      "Negotiate contract terms that include realistic benchmarks and adequate risk adjustment factors.",
+      "Monitor VBC performance metrics continuously and adapt strategies to respond to trends or gaps in real time.",
+      "D. Patient Experience and Access"
+    ],
+    "formulas": [
+      {
+        "output": "TCOC per Patient",
+        "variables": [
+          "Total Healthcare Costs",
+          "Total Covered Lives"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "TCOC per Patient = Total Healthcare Costs / Total Covered Lives.",
+        "step": null
+      },
+      {
+        "output": "Cost Savings (%)",
+        "variables": [
+          "Target Costs",
+          "Actual Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Savings (%) = ((Target Costs - Actual Costs) / Target Costs) x 100.",
+        "step": null
+      },
+      {
+        "output": "Shared Savings",
+        "variables": [
+          "Cost Savings",
+          "Shared Savings Percentage"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "Shared Savings = (Cost Savings x Shared Savings Percentage).",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-20",
+    "archetype": "healthcare-provider",
+    "title": "Patient Experience and Satisfaction Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/20 - Patient Experience and Satisfaction Analysis.md",
+    "goal": "To evaluate patient experience and satisfaction levels, identify drivers of positive and negative feedback, and implement strategies to enhance overall patient satisfaction and loyalty.",
+    "dataRequired": [
+      "Patient satisfaction survey results (e.g., HCAHPS, Net Promoter Score (NPS)).",
+      "Patient demographics (age, gender, insurance type, location).",
+      "Feedback from open-ended survey questions or complaint logs.",
+      "Metrics related to care delivery (e.g., wait times, provider communication scores, discharge process ratings).",
+      "Comparative benchmarks for patient satisfaction scores.",
+      "Patient retention and repeat visit data."
+    ],
+    "improve": [
+      "Enhance provider-patient communication through training programs focused on empathy, clarity, and active listening.",
+      "Reduce wait times by optimizing scheduling processes and resource allocation.",
+      "Address recurring complaints by implementing targeted process improvements (e.g., improving cleanliness or discharge planning).",
+      "Develop personalized care initiatives for underserved demographics or frequent users.",
+      "Implement real-time feedback tools to capture patient insights during their care journey and address issues immediately.",
+      "Use predictive analytics to identify at-risk patient groups for dissatisfaction and proactively tailor interventions.",
+      "",
+      "Regularly review and update patient satisfaction surveys to align with changing expectations and industry standards.",
+      "Celebrate and share high-performing departments’ best practices to motivate staff and replicate success across the organization.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "healthcare-provider-21",
+    "archetype": "healthcare-provider",
+    "title": "Patient Access and Scheduling Efficiency Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [
+      "NO_SHOW_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/21 - Patient Access and Scheduling Efficiency Analysis.md",
+    "goal": "To evaluate the efficiency and accessibility of patient scheduling processes, identify bottlenecks in appointment availability, and improve access to care for enhanced patient satisfaction and operational performance.",
+    "dataRequired": [
+      "Appointment scheduling data (e.g., booking times, appointment lead times, no-shows, cancellations).",
+      "Patient demographics (age, location, insurance type, and care needs).",
+      "Provider availability schedules and workload data.",
+      "Average wait times for appointments by department or service line.",
+      "No-show and cancellation rates segmented by demographics and services.",
+      "Industry benchmarks for patient access and scheduling efficiency metrics."
+    ],
+    "improve": [
+      "Implement online scheduling tools to make appointment booking more accessible and user-friendly.",
+      "Introduce patient reminder systems (e.g., SMS, email) to reduce no-shows and late cancellations.",
+      "",
+      "Optimize provider schedules by aligning available slots with peak patient demand times.",
+      "Develop a patient prioritization system to ensure urgent cases receive timely appointments.",
+      "Use predictive analytics to identify patients at high risk of no-shows and take proactive measures (e.g., follow-up calls).",
+      "Expand telehealth services to reduce in-person scheduling bottlenecks and improve accessibility for remote patients.",
+      "Monitor and regularly review scheduling performance metrics to identify and resolve emerging inefficiencies.",
+      "Increase staffing or expand hours of operation in high-demand departments to address scheduling constraints.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Appointment Lead Time (days)",
+        "variables": [
+          "Appointment Date",
+          "Request Date"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Appointment Lead Time (days) = (Appointment Date - Request Date).",
+        "step": null
+      },
+      {
+        "output": "Average Wait Time (minutes)",
+        "variables": [
+          "Total Patient Wait Time",
+          "Total Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Wait Time (minutes) = Total Patient Wait Time / Total Number of",
+        "step": null
+      },
+      {
+        "output": "No-Show Rate (%)",
+        "variables": [
+          "Number of No-Show Appointments",
+          "Total Scheduled Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "No-Show Rate (%) = (Number of No-Show Appointments / Total Scheduled Appointments) x 100.",
+        "step": null
+      },
+      {
+        "output": "Provider Utilization Rate (%)",
+        "variables": [
+          "Time Booked",
+          "Total Available Time"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Provider Utilization Rate (%) = (Time Booked / Total Available Time) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-22",
+    "archetype": "healthcare-provider",
+    "title": "Referral Leakage and Patient Retention Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "SERVICE_LINE_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/22 - Referral Leakage and Patient Retention Analysis.md",
+    "goal": "To evaluate the extent of referral leakage, understand the reasons behind it, and develop strategies to improve patient retention by enhancing care coordination and internal referral processes.",
+    "dataRequired": [
+      "Referral data (internal vs. external referrals).",
+      "Patient demographics (age, gender, insurance type, location).",
+      "Referral completion rates (percentage of referred patients who complete care with the intended provider).",
+      "Revenue impact of referral leakage (e.g., potential revenue lost to external providers).",
+      "Provider network capacity and availability data.",
+      "Feedback from patients and referring providers about barriers to completing internal referrals.",
+      "Industry benchmarks for referral retention rates."
+    ],
+    "improve": [
+      "Develop a centralized referral management system to streamline and track internal referrals.",
+      "",
+      "Increase capacity in high-demand service lines or locations to reduce external referrals due to unavailability.",
+      "Improve communication between referring providers and specialists to ensure seamless handoffs.",
+      "Implement patient engagement initiatives, such as follow-up calls or reminders, to encourage internal referral completion.",
+      "Use predictive analytics to identify at-risk patients for leakage and proactively address barriers to retention.",
+      "Offer patient education about the benefits of staying within the network for continuity of care.",
+      "Strengthen provider-patient relationships by emphasizing personalized care and convenience in internal services.",
+      "Regularly monitor referral metrics and feedback to refine strategies and address emerging issues.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Referral Leakage Rate (%)",
+        "variables": [
+          "Number of External Referrals",
+          "Total Referrals"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Referral Leakage Rate (%) = (Number of External Referrals / Total Referrals) x 100.",
+        "step": null
+      },
+      {
+        "output": "Completion Rate (%)",
+        "variables": [
+          "Completed Internal Referrals",
+          "Total Internal Referrals"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Completion Rate (%) = (Completed Internal Referrals / Total Internal Referrals) x 100.",
+        "step": null
+      },
+      {
+        "output": "Lost Revenue",
+        "variables": [
+          "Referral Leakage Rate",
+          "Average Revenue per Referral",
+          "Total"
+        ],
+        "expression": "v0 * v1 * v2",
+        "percentOutput": false,
+        "source": "Lost Revenue = Referral Leakage Rate x Average Revenue per Referral x Total",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-23",
+    "archetype": "healthcare-provider",
+    "title": "Telemedicine Adoption and Virtual Care Delivery Performance Assessment",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/23 - Telemedicine Adoption and Virtual Care Delivery Performance.md",
+    "goal": "To evaluate the adoption rates, utilization, and performance of telemedicine services, ensuring virtual care delivery meets patient needs while maintaining high-quality care and operational efficiency.",
+    "dataRequired": [
+      "Number of telemedicine appointments (scheduled vs. completed).",
+      "Patient demographics (age, gender, location, insurance type).",
+      "Provider availability and telemedicine session data.",
+      "Patient satisfaction scores for telemedicine services.",
+      "Clinical outcomes and follow-up rates after virtual visits.",
+      "Revenue generated from telemedicine services.",
+      "Technology usage metrics (e.g., login rates, connectivity issues).",
+      "Industry benchmarks for telemedicine adoption and performance metrics."
+    ],
+    "improve": [
+      "Invest in robust telemedicine platforms to minimize technical issues and improve usability for patients and providers.",
+      "",
+      "Provide training for providers on best practices for delivering care via telemedicine.",
+      "Enhance patient education on using telemedicine tools and the benefits of virtual care.",
+      "Introduce proactive technical support for patients and providers to address connectivity or platform issues in real time.",
+      "Expand telemedicine services to underserved areas or populations to increase access to care.",
+      "Develop standardized protocols for virtual care delivery to ensure consistency in clinical outcomes.",
+      "Monitor and act on patient and provider feedback to continuously improve telemedicine services.",
+      "Benchmark telemedicine performance regularly against industry standards to identify areas for competitive advantage or improvement.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Telemedicine Adoption Rate (%)",
+        "variables": [
+          "Telemedicine Appointments",
+          "Total Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Telemedicine Adoption Rate (%) = (Telemedicine Appointments / Total Appointments) x 100.",
+        "step": null
+      },
+      {
+        "output": "Completion Rate (%)",
+        "variables": [
+          "Completed Telemedicine Visits",
+          "Scheduled Telemedicine Visits"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Completion Rate (%) = (Completed Telemedicine Visits / Scheduled Telemedicine Visits) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-24",
+    "archetype": "healthcare-provider",
+    "title": "Patient Portal Adoption and Digital Engagement Analysis",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/24 - Patient Portal Adoption and Digital Engagement Analysis.md",
+    "goal": "To assess the adoption rates and engagement levels of patient portals, identify barriers to usage, and optimize the digital experience to enhance patient convenience, satisfaction, and health outcomes.",
+    "dataRequired": [
+      "Patient portal registration data (e.g., number of registered users).",
+      "Login and usage statistics (e.g., frequency of portal access, features used).",
+      "Patient demographics (age, gender, insurance type, location).",
+      "Engagement metrics (e.g., appointment scheduling, prescription refill requests, message exchanges with providers).",
+      "Feedback from patients on portal usability and satisfaction.",
+      "Technical performance metrics (e.g., uptime, load times, error rates).",
+      "Industry benchmarks for patient portal adoption and engagement."
+    ],
+    "improve": [
+      "Simplify the registration process for patient portals to encourage more sign-ups.",
+      "Provide tutorials and training materials to educate patients on how to use portal features effectively.",
+      "Introduce mobile-friendly designs and apps to enhance accessibility and ease of use.",
+      "",
+      "Use targeted outreach to underrepresented groups, addressing specific barriers to portal use (e.g., language, technology access).",
+      "Optimize the portal’s technical performance by addressing slow load times or frequent errors.",
+      "Add or enhance popular features, such as virtual consultations, to increase engagement.",
+      "Regularly collect and act on patient feedback to improve the portal’s usability and satisfaction levels.",
+      "Integrate reminders and notifications into the portal to prompt engagement, such as test results availability or appointment scheduling reminders.",
+      "Monitor and benchmark portal performance continuously to ensure alignment with patient needs and industry standards.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Portal Adoption Rate (%)",
+        "variables": [
+          "Number of Registered Users",
+          "Total Eligible Patients"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "Portal Adoption Rate (%) = (Number of Registered Users / Total Eligible Patients)",
+        "step": null
+      },
+      {
+        "output": "Engagement Rate (%)",
+        "variables": [
+          "Number of Active Users",
+          "Total Registered Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Engagement Rate (%) = (Number of Active Users / Total Registered Users) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-25",
+    "archetype": "healthcare-provider",
+    "title": "Behavioral Health Services Access and Utilization Study",
+    "part": "D",
+    "partLabel": "Patient Experience and Access",
+    "relatedMetricCodes": [
+      "NO_SHOW_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/25 - Behavioral Health Services Access and Utilization Study.md",
+    "goal": "To evaluate patient access to and utilization of behavioral health services, identify barriers to care, and optimize resource allocation to improve service delivery and patient outcomes.",
+    "dataRequired": [
+      "Patient demographics (age, gender, insurance type, geographic location).",
+      "Behavioral health appointment data (scheduled, completed, and no-shows).",
+      "Provider availability and capacity data.",
+      "Wait times for behavioral health services.",
+      "Referral data (internal and external).",
+      "Utilization metrics (e.g., sessions per patient, treatment adherence rates).",
+      "Patient outcomes data (e.g., symptom improvement, hospitalizations).",
+      "Feedback from patients and providers about access and service barriers.",
+      "Industry benchmarks for behavioral health service access and utilization."
+    ],
+    "improve": [
+      "",
+      "Increase provider capacity by hiring additional staff or expanding telehealth options for behavioral health services.",
+      "Implement patient engagement initiatives, such as reminders and follow-ups, to reduce no-shows and cancellations.",
+      "Develop targeted outreach programs for underserved populations to address access barriers like stigma or transportation.",
+      "Streamline referral processes to ensure timely and seamless transitions to behavioral health services.",
+      "Use predictive analytics to identify patients at risk of unmet behavioral health needs and prioritize their care.",
+      "Enhance collaboration between primary care and behavioral health providers to improve care coordination.",
+      "Regularly train staff to address common barriers, such as stigma or patient reluctance, and improve patient-provider interactions.",
+      "Monitor and act on feedback from patients and providers to refine services and reduce barriers continuously.",
+      "E. Regulatory Compliance and Risk Management"
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Number of Patients Using Services",
+          "Total Eligible Population"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Number of Patients Using Services / Total Eligible Population) x 100.",
+        "step": null
+      },
+      {
+        "output": "Average Appointment Lead Time",
+        "variables": [
+          "Total Time from Request to Appointment",
+          "Total Appointments"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Appointment Lead Time = Total Time from Request to Appointment / Total Appointments.",
+        "step": null
+      },
+      {
+        "output": "No-Show Rate (%)",
+        "variables": [
+          "Number of Missed Appointments",
+          "Total Scheduled Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "No-Show Rate (%) = (Number of Missed Appointments / Total Scheduled Appointments) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-26",
+    "archetype": "healthcare-provider",
+    "title": "Regulatory Compliance and Accreditation Readiness Review",
+    "part": "E",
+    "partLabel": "Regulatory Compliance and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/26 - Regulatory Compliance and Accreditation Readiness Review.md",
+    "goal": "To assess the healthcare provider’s adherence to regulatory requirements and accreditation standards, identify compliance gaps, and ensure readiness for audits or accreditation evaluations to mitigate risks and maintain operational integrity.",
+    "dataRequired": [
+      "Regulatory requirements and accreditation standards applicable to the provider (e.g., CMS, Joint Commission, state health regulations).",
+      "Internal compliance audit reports.",
+      "Policies and procedures related to clinical and administrative operations.",
+      "Staff training and certification records.",
+      "Incident reports and corrective actions taken.",
+      "Patient safety and quality metrics (e.g., infection rates, adverse events).",
+      "Inspection or audit history and outcomes.",
+      "Industry benchmarks for compliance and accreditation performance."
+    ],
+    "improve": [
+      "Establish a compliance team to monitor regulatory changes and ensure ongoing adherence to requirements.",
+      "Conduct regular internal audits to identify and address compliance gaps before external evaluations.",
+      "Implement robust staff training programs to keep all personnel updated on regulatory and accreditation standards.",
+      "",
+      "Standardize documentation practices to ensure consistency and readiness for audits.",
+      "Use technology solutions, such as compliance tracking software, to streamline reporting and monitoring.",
+      "Create a culture of transparency and accountability to encourage proactive incident reporting and corrective actions.",
+      "Partner with consultants or peer organizations to conduct readiness reviews and share best practices.",
+      "Schedule periodic mock audits to prepare staff and systems for official regulatory or accreditation evaluations.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "healthcare-provider-27",
+    "archetype": "healthcare-provider",
+    "title": "Provider Credentialing and Privileging Efficiency Review",
+    "part": "E",
+    "partLabel": "Regulatory Compliance and Risk Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "REGULATORY"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "WC_DSO"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/27 - Provider Credentialing and Privileging Efficiency Review.md",
+    "goal": "To evaluate the efficiency of the provider credentialing and privileging processes, identify bottlenecks, and ensure compliance with regulatory requirements to support timely provider onboarding and service delivery.",
+    "dataRequired": [
+      "Credentialing and privileging process timelines (e.g., average time to complete).",
+      "Number of applications processed (successful, delayed, rejected).",
+      "Provider specialty, role, and demographic data.",
+      "Common reasons for delays or denials in credentialing and privileging.",
+      "Compliance data with accreditation standards (e.g., Joint Commission, NCQA).",
+      "Cost data associated with the credentialing and privileging process.",
+      "Feedback from providers and administrative staff regarding the process.",
+      "Industry benchmarks for credentialing timelines and efficiency metrics."
+    ],
+    "improve": [
+      "Implement automated credentialing software to streamline data collection, verification, and tracking.",
+      "",
+      "Establish clear guidelines and checklists for providers to ensure applications are complete before submission.",
+      "Outsource time-intensive verifications to third-party credentialing services to reduce administrative burden.",
+      "Standardize and document the credentialing and privileging workflow to improve consistency and accountability.",
+      "Train administrative staff on compliance requirements and process optimization techniques.",
+      "Introduce a tracking system to monitor application progress and proactively address delays.",
+      "Engage providers with regular updates and support during the credentialing process to reduce frustration.",
+      "Benchmark regularly against industry standards to identify performance gaps and opportunities for improvement.",
+      "F. Technology Utilization and Digital Engagement"
+    ],
+    "formulas": [
+      {
+        "output": "Average Processing Time",
+        "variables": [
+          "Total Time for All Applications",
+          "Number of"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Average Processing Time = Total Time for All Applications / Number of",
+        "step": null
+      },
+      {
+        "output": "Success Rate (%)",
+        "variables": [
+          "Number of Completed Applications",
+          "Total Applications"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Success Rate (%) = (Number of Completed Applications / Total Applications) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Credentialed Provider",
+        "variables": [
+          "Total Credentialing Costs",
+          "Number of Providers"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Credentialed Provider = Total Credentialing Costs / Number of Providers",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-28",
+    "archetype": "healthcare-provider",
+    "title": "Healthcare Technology and Electronic Health Record (EHR) Utilization Assessment",
+    "part": "F",
+    "partLabel": "Technology Utilization and Digital Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/28 - Healthcare Technology and Electronic Health Record (EHR).md",
+    "goal": "To evaluate the utilization and effectiveness of healthcare technology, particularly EHR systems, in streamlining workflows, improving patient outcomes, and supporting clinical decision-making.",
+    "dataRequired": [
+      "EHR usage metrics (e.g., log-in rates, time spent per user, feature utilization rates).",
+      "Clinical documentation completion rates (e.g., accuracy and timeliness).",
+      "Provider and staff satisfaction surveys regarding EHR usability.",
+      "Metrics on patient outcomes and care coordination influenced by EHR use.",
+      "Data on interoperability with other healthcare systems and external providers.",
+      "Costs associated with EHR implementation, maintenance, and training.",
+      "Industry benchmarks for EHR utilization and effectiveness."
+    ],
+    "improve": [
+      "Provide regular training programs for staff to enhance proficiency in using EHR features.",
+      "Optimize EHR workflows by customizing templates and reducing redundant data entry tasks.",
+      "Invest in interoperability solutions to improve data exchange with external systems and providers.",
+      "",
+      "Use analytics to identify and address bottlenecks in documentation or decision support processes.",
+      "Gather ongoing feedback from users to inform system upgrades and usability improvements.",
+      "Enhance cybersecurity measures to protect patient data and build trust in EHR systems.",
+      "Leverage advanced EHR features, such as predictive analytics and AI-driven clinical decision support, to enhance care delivery.",
+      "Benchmark regularly against peer organizations to ensure the EHR system remains competitive and aligned with industry standards.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "EHR Adoption Rate (%)",
+        "variables": [
+          "Active EHR Users",
+          "Total Eligible Users"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "EHR Adoption Rate (%) = (Active EHR Users / Total Eligible Users) x 100.",
+        "step": null
+      },
+      {
+        "output": "Documentation Timeliness (%)",
+        "variables": [
+          "Timely Completed Notes",
+          "Total Notes"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Documentation Timeliness (%) = (Timely Completed Notes / Total Notes) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-29",
+    "archetype": "healthcare-provider",
+    "title": "Health Information Exchange (HIE) Participation and Data Integration Review",
+    "part": "F",
+    "partLabel": "Technology Utilization and Digital Engagement",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/29 - Health Information Exchange (HIE) Participation and Data.md",
+    "goal": "To evaluate the effectiveness of Health Information Exchange (HIE) participation and data integration processes in supporting care coordination, reducing redundancies, and improving patient outcomes.",
+    "dataRequired": [
+      "HIE participation data (e.g., data submission frequency, number of transactions).",
+      "Metrics on data sharing (e.g., number of records exchanged with external providers).",
+      "Provider and staff satisfaction with data access and usability.",
+      "Interoperability metrics (e.g., system compatibility, data standardization rates).",
+      "Patient outcomes influenced by data integration (e.g., reduced duplication of tests, improved care transitions).",
+      "Costs associated with HIE participation and data integration technologies.",
+      "Industry benchmarks for HIE utilization and data-sharing effectiveness."
+    ],
+    "improve": [
+      "Upgrade EHR systems to enhance compatibility with HIE standards and data formats.",
+      "Train providers and staff on the importance of HIE participation and how to access and use data effectively.",
+      "Implement real-time data-sharing tools to reduce delays in exchanging critical information.",
+      "Collaborate with external providers and organizations to align on data-sharing protocols and standards.",
+      "",
+      "Monitor and address data quality issues, ensuring accuracy and completeness of shared records.",
+      "Use predictive analytics to leverage HIE data for proactive patient care and population health management.",
+      "Establish key performance indicators (KPIs) for HIE participation and monitor them regularly to identify improvement opportunities.",
+      "Advocate for regional or state-level initiatives to support broader HIE participation and interoperability across healthcare systems.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "HIE Participation Rate (%)",
+        "variables": [
+          "HIE Transactions",
+          "Total Eligible Data Exchanges"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "HIE Participation Rate (%) = (HIE Transactions / Total Eligible Data Exchanges) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-30",
+    "archetype": "healthcare-provider",
+    "title": "Advanced Practice Provider (APP) Role Utilization and Effectiveness Analysis",
+    "part": "F",
+    "partLabel": "Technology Utilization and Digital Engagement",
+    "relatedMetricCodes": [
+      "LABOR_COST_RATE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WORKFORCE_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/30 - Advanced Practice Provider (APP) Role Utilization and.md",
+    "goal": "To evaluate the utilization and effectiveness of Advanced Practice Providers (APPs), such as nurse practitioners (NPs) and physician assistants (PAs), in supporting care delivery, improving patient outcomes, and optimizing resource allocation.",
+    "dataRequired": [
+      "Number of APPs employed and their scope of practice.",
+      "APP workload metrics (e.g., number of patients seen, procedures performed).",
+      "Patient outcomes data (e.g., satisfaction scores, clinical improvement rates, readmission rates) linked to APP care.",
+      "Provider-to-patient ratios, including APPs and physicians.",
+      "Financial data (e.g., APP salary costs vs. revenue generated).",
+      "Metrics on care efficiency (e.g., appointment availability, wait times).",
+      "Patient demographics and case complexity managed by APPs.",
+      "Industry benchmarks for APP utilization and performance."
+    ],
+    "improve": [
+      "Clearly define APP scope of practice and align it with organizational goals and patient needs.",
+      "",
+      "Provide targeted training and professional development programs for APPs to enhance their skills and effectiveness.",
+      "Optimize workflows to ensure APPs are utilized at the top of their licensure, minimizing redundant or low-value tasks.",
+      "Increase collaboration between APPs and physicians to improve care coordination and outcomes.",
+      "Monitor and adjust patient assignments to ensure APPs are managing cases that match their expertise.",
+      "Use analytics to track APP performance and identify opportunities for efficiency or quality improvements.",
+      "Expand the use of APPs in underserved areas or high-demand specialties to address gaps in care.",
+      "Benchmark APP practices and outcomes against leading institutions to adopt best practices and maintain competitiveness.",
+      "G. Population Health and Care Coordination"
+    ],
+    "formulas": [
+      {
+        "output": "APP Utilization Rate (%)",
+        "variables": [
+          "Number of APP-Managed Encounters",
+          "Total Patient Encounters"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "APP Utilization Rate (%) = (Number of APP-Managed Encounters / Total Patient Encounters) x 100.",
+        "step": null
+      },
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Revenue Generated by APPs",
+          "APP Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Revenue Generated by APPs - APP Costs) / APP Costs) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-31",
+    "archetype": "healthcare-provider",
+    "title": "Population Health and Integrated Care Model Effectiveness Assessment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/31 - Population Health and Integrated Care Model Effectiveness.md",
+    "goal": "To evaluate the effectiveness of population health management strategies and integrated care models, focusing on care coordination, patient outcomes, and cost efficiency to address the health needs of diverse patient populations.",
+    "dataRequired": [
+      "Patient demographics and risk stratification data (e.g., age, gender, chronic conditions).",
+      "Clinical outcomes data (e.g., disease control rates, hospital readmissions, mortality rates).",
+      "Healthcare utilization metrics (e.g., ED visits, preventive care usage, hospitalization rates).",
+      "Cost data (e.g., per capita healthcare spending, program operational costs).",
+      "Care coordination metrics (e.g., referral completion rates, follow-up adherence).",
+      "Patient satisfaction and engagement survey results.",
+      "Industry benchmarks for population health outcomes and cost metrics."
+    ],
+    "improve": [
+      "Use predictive analytics to identify high-risk patients and proactively manage their care.",
+      "",
+      "Strengthen care coordination through enhanced communication tools and centralized care management teams.",
+      "Expand access to preventive services and patient education to reduce the need for acute care.",
+      "Partner with community organizations to address social determinants of health that impact population outcomes.",
+      "Regularly collect and act on patient feedback to improve program design and delivery.",
+      "Monitor program metrics continuously to adapt strategies and address emerging challenges.",
+      "Benchmark program performance regularly against peer organizations to stay competitive and adopt best practices.",
+      "Provide ongoing training for care teams to ensure alignment with integrated care best practices and protocols.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Cost per Patient",
+        "variables": [
+          "Total Program Costs",
+          "Number of Patients Managed"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Patient = Total Program Costs / Number of Patients Managed.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-32",
+    "archetype": "healthcare-provider",
+    "title": "Chronic Disease Management Program Effectiveness Assessment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [],
+    "sourcePath": "data/analysis-library/healthcare-provider/32 - Chronic Disease Management Program Effectiveness.md",
+    "goal": "To evaluate the effectiveness of chronic disease management programs in improving patient outcomes, reducing healthcare utilization, and lowering costs for patients with chronic conditions such as diabetes, hypertension, or heart disease.",
+    "dataRequired": [
+      "Patient demographics and clinical data (e.g., age, gender, condition, severity).",
+      "Enrollment and participation rates in chronic disease management programs.",
+      "Clinical outcomes metrics (e.g., HbA1c levels for diabetes, blood pressure control for hypertension).",
+      "Healthcare utilization data (e.g., hospitalizations, ED visits, follow-up appointments).",
+      "Cost data associated with managing chronic conditions (e.g., medication, outpatient visits, hospital stays).",
+      "Patient satisfaction and engagement data related to program participation.",
+      "Industry benchmarks for chronic disease management outcomes."
+    ],
+    "improve": [
+      "Strengthen patient outreach and education to increase enrollment and engagement in the program.",
+      "",
+      "Use predictive analytics to identify high-risk patients who would benefit most from the program.",
+      "Integrate telehealth services to improve access for patients in remote or underserved areas.",
+      "Provide regular feedback to patients on their progress to boost motivation and adherence to care plans.",
+      "Train care teams in evidence-based practices for chronic disease management to ensure consistent delivery.",
+      "Monitor and act on patient feedback to address barriers and improve program satisfaction.",
+      "Collaborate with community organizations to address social determinants of health that may affect chronic disease outcomes.",
+      "Regularly review program performance metrics to refine strategies and adapt to emerging patient needs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Participation Rate (%)",
+        "variables": [
+          "Enrolled Patients",
+          "Eligible Patients"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Participation Rate (%) = (Enrolled Patients / Eligible Patients) x 100.",
+        "step": null
+      },
+      {
+        "output": "Utilization Reduction (%)",
+        "variables": [
+          "Pre-Program Utilization",
+          "Post-Program Utilization"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Reduction (%) = ((Pre-Program Utilization - Post-Program Utilization) / Pre-Program Utilization) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost Reduction (%)",
+        "variables": [
+          "Pre-Program Costs",
+          "Post-Program Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Cost Reduction (%) = ((Pre-Program Costs - Post-Program Costs) / Pre-Program Costs) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-33",
+    "archetype": "healthcare-provider",
+    "title": "Community Health Needs Assessment (CHNA) and Strategic Alignment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/33 - Community Health Needs Assessment (CHNA) and Strategic.md",
+    "goal": "To evaluate the healthcare provider’s alignment with community health needs by conducting a CHNA, identifying priority health issues, and developing strategies to address gaps and improve population health outcomes.",
+    "dataRequired": [
+      "Community demographics (e.g., age, gender, income, education levels).",
+      "Health indicators (e.g., prevalence of chronic diseases, access to care, mortality rates).",
+      "Socioeconomic and environmental data (e.g., housing, transportation, food security).",
+      "Utilization metrics for healthcare services (e.g., ED visits, primary care access).",
+      "Stakeholder feedback (e.g., community surveys, focus groups, provider input).",
+      "Existing community health programs and initiatives.",
+      "Industry benchmarks for population health indicators."
+    ],
+    "improve": [
+      "Develop or expand community health programs targeting high-priority needs, such as chronic disease prevention or maternal health.",
+      "Strengthen partnerships with local organizations to address social determinants of health, such as housing, food security, and transportation.",
+      "Enhance preventive care services to reduce the burden on acute care systems and improve overall community health.",
+      "Implement targeted outreach campaigns to underserved populations to improve access to care and health literacy.",
+      "Monitor community health trends over time to adapt strategies and remain responsive to emerging needs.",
+      "",
+      "Use technology, such as GIS mapping, to visualize and address geographic disparities in health outcomes.",
+      "Regularly engage with community stakeholders to ensure ongoing alignment with health priorities and build trust.",
+      "Leverage funding opportunities, such as grants or public-private partnerships, to support community health initiatives.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "healthcare-provider-34",
+    "archetype": "healthcare-provider",
+    "title": "Physician Alignment and Engagement Strategy Assessment",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [
+      "STAFF_TURNOVER_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/34 - Physician Alignment and Engagement Strategy Assessment.md",
+    "goal": "To evaluate the effectiveness of strategies for aligning and engaging physicians with organizational goals, focusing on improving care coordination, patient outcomes, and operational efficiency.",
+    "dataRequired": [
+      "Physician engagement survey results (e.g., satisfaction, alignment with organizational goals, job satisfaction).",
+      "Metrics on physician productivity (e.g., patient volume, clinical outcomes).",
+      "Turnover rates and retention metrics for physicians.",
+      "Participation rates in organizational initiatives (e.g., quality improvement programs, leadership roles).",
+      "Feedback from physicians on communication, incentives, and support.",
+      "Compensation and incentive structure data.",
+      "Industry benchmarks for physician engagement and alignment metrics."
+    ],
+    "improve": [
+      "Strengthen communication channels to ensure physicians feel informed and involved in organizational decision-making.",
+      "Implement tailored incentive programs that reward quality care, patient satisfaction, and efficiency.",
+      "Provide leadership development opportunities for physicians to foster alignment with strategic goals.",
+      "Regularly review and adjust workload distribution to prevent burnout and improve job satisfaction.",
+      "",
+      "Use analytics to identify trends in engagement and develop targeted strategies for improvement.",
+      "Conduct regular engagement surveys and act on physician feedback to build trust and collaboration.",
+      "Foster a culture of recognition by celebrating physicians’ contributions to organizational success.",
+      "Benchmark engagement strategies against top-performing organizations to identify and adopt best practices.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Physician Turnover Rate (%)",
+        "variables": [
+          "Number of Physicians Leaving",
+          "Total Number of Physicians"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Physician Turnover Rate (%) = (Number of Physicians Leaving / Total Number of Physicians) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-35",
+    "archetype": "healthcare-provider",
+    "title": "Patient Population Risk Stratification and Resource Allocation Study",
+    "part": "G",
+    "partLabel": "Population Health and Care Coordination",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/35 - Patient Population Risk Stratification and Resource Allocation.md",
+    "goal": "To stratify the patient population by risk level, identify high-risk groups, and optimize the allocation of resources to improve care delivery, reduce costs, and enhance patient outcomes.",
+    "dataRequired": [
+      "Patient demographics (age, gender, socioeconomic status).",
+      "Clinical data (e.g., diagnoses, comorbidities, lab results).",
+      "Healthcare utilization data (e.g., hospitalizations, ED visits, preventive care).",
+      "Patient outcomes data (e.g., readmissions, mortality rates).",
+      "Social determinants of health (SDOH) data (e.g., housing stability, transportation access).",
+      "Resource allocation data (e.g., staff hours, equipment usage, budget distribution).",
+      "Industry benchmarks for risk stratification and resource allocation metrics."
+    ],
+    "improve": [
+      "Implement predictive analytics tools to refine risk stratification and identify high-risk patients early.",
+      "Allocate additional resources, such as care coordinators or case managers, to high-risk groups to reduce hospitalizations and ED visits.",
+      "Develop tailored care plans for each risk group, focusing on preventive care and chronic disease management for high-risk patients.",
+      "Collaborate with community organizations to address SDOH challenges affecting high-risk populations.",
+      "",
+      "Regularly train staff on risk assessment protocols and effective resource allocation strategies.",
+      "Monitor the impact of resource allocation on patient outcomes to continuously refine strategies.",
+      "Introduce telehealth services to expand access to care for high-risk patients in underserved areas.",
+      "Benchmark risk management strategies against industry best practices to ensure alignment with organizational goals and standards.",
+      "H. Specialty Services and Market Expansion"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "healthcare-provider-36",
+    "archetype": "healthcare-provider",
+    "title": "Ambulatory Care Center Performance and Utilization Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [
+      "NO_SHOW_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/36 - Ambulatory Care Center Performance and Utilization Analysis.md",
+    "goal": "To evaluate the performance and utilization of ambulatory care centers (ACCs), identify areas of inefficiency, and optimize resource allocation to enhance patient access, care delivery, and financial performance.",
+    "dataRequired": [
+      "Patient demographics (e.g., age, gender, insurance type, location).",
+      "Visit data (e.g., appointment volume, no-show rates, walk-in rates).",
+      "Clinical outcomes data (e.g., patient satisfaction scores, treatment success rates).",
+      "Financial data (e.g., revenue, operating costs, cost per visit).",
+      "Resource utilization metrics (e.g., provider hours, equipment use).",
+      "Wait times and appointment lead times.",
+      "Industry benchmarks for ACC utilization and performance."
+    ],
+    "improve": [
+      "Optimize scheduling systems to reduce no-shows and cancellations by offering patient-friendly booking options.",
+      "Expand operating hours or services to address unmet demand and improve utilization.",
+      "Train staff to enhance patient engagement and ensure smooth workflows.",
+      "",
+      "Implement real-time analytics tools to monitor utilization and operational efficiency continuously.",
+      "Introduce targeted marketing or community outreach to attract patients and increase visit volumes.",
+      "Streamline administrative workflows to reduce wait times and enhance patient satisfaction.",
+      "Use predictive analytics to forecast demand and align resources with patient needs.",
+      "Regularly benchmark performance metrics against peers to identify best practices and maintain competitiveness.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Visits",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Visits / Maximum Capacity) x 100.",
+        "step": null
+      },
+      {
+        "output": "No-Show Rate (%)",
+        "variables": [
+          "Number of No-Show Appointments",
+          "Total Scheduled Appointments"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "No-Show Rate (%) = (Number of No-Show Appointments / Total Scheduled Appointments) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per Visit",
+        "variables": [
+          "Total Operating Costs",
+          "Total Visits"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per Visit = Total Operating Costs / Total Visits.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-37",
+    "archetype": "healthcare-provider",
+    "title": "Specialty Care Utilization Patterns and Optimization Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/37 - Specialty Care Utilization Patterns and Optimization Analysis.md",
+    "goal": "To analyze utilization patterns of specialty care services, identify inefficiencies, and develop strategies to optimize access, resource allocation, and patient outcomes.",
+    "dataRequired": [
+      "Patient demographics (e.g., age, gender, insurance type, location).",
+      "Specialty care referral and visit data (e.g., volume, referral completion rates, no-show rates).",
+      "Wait times and appointment lead times for specialty care.",
+      "Provider availability and workload data.",
+      "Clinical outcomes linked to specialty care (e.g., recovery rates, treatment success).",
+      "Financial data (e.g., revenue, operating costs, cost per visit).",
+      "Industry benchmarks for specialty care utilization and performance metrics."
+    ],
+    "improve": [
+      "Streamline referral processes to ensure timely and seamless transitions to specialty care.",
+      "Optimize scheduling workflows to reduce wait times and align appointments with patient availability.",
+      "",
+      "Expand provider capacity in high-demand specialties through hiring or telehealth services.",
+      "Implement patient reminders and engagement strategies to reduce no-shows and cancellations.",
+      "Leverage data analytics to identify patterns in underutilization or overuse and adjust resource allocation accordingly.",
+      "Benchmark performance regularly to identify gaps and adopt best practices in specialty care delivery.",
+      "Provide targeted training for specialty care providers to enhance efficiency and patient outcomes.",
+      "Collaborate with referring providers to align expectations and improve referral quality and follow-through.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Referral Completion Rate (%)",
+        "variables": [
+          "Completed Referrals",
+          "Total Referrals"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Referral Completion Rate (%) = (Completed Referrals / Total Referrals) x 100.",
+        "step": null
+      },
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Visits",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Visits / Maximum Capacity) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-38",
+    "archetype": "healthcare-provider",
+    "title": "Specialized Service Line Development and Growth Potential Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "SERVICE_LINE_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/38 - Specialized Service Line Development and Growth Potential.md",
+    "goal": "To evaluate the performance and growth potential of specialized service lines (e.g., oncology, orthopedics, cardiology) and identify opportunities for development, market expansion, and competitive positioning.",
+    "dataRequired": [
+      "Patient demographics and market demand data for specialized services.",
+      "Volume and utilization metrics (e.g., number of procedures, visits).",
+      "Clinical outcomes and patient satisfaction scores for each service line.",
+      "Financial performance data (e.g., revenue, cost per service, profitability).",
+      "Provider and resource availability (e.g., staff, equipment, facilities).",
+      "Referral and retention rates for specialized services.",
+      "Market competition and regional demand data.",
+      "Industry benchmarks for service line performance and growth metrics."
+    ],
+    "improve": [
+      "Invest in high-demand service lines by recruiting specialized providers or acquiring advanced equipment.",
+      "Expand geographic reach through new locations or telehealth options to capture untapped markets.",
+      "Develop targeted marketing campaigns to increase awareness and referrals for specialized services.",
+      "",
+      "Optimize workflows and resource allocation to improve efficiency and reduce costs in underperforming service lines.",
+      "Collaborate with referring providers to increase referral volumes for targeted service lines.",
+      "Monitor patient feedback and clinical outcomes to enhance service quality and satisfaction.",
+      "Benchmark performance regularly to ensure competitive positioning and adopt industry best practices.",
+      "Use predictive analytics to identify emerging trends and adapt service line strategies accordingly.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Service Line Profitability (%)",
+        "variables": [
+          "Revenue",
+          "Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v0 ) * 100",
+        "percentOutput": true,
+        "source": "Service Line Profitability (%) = ((Revenue - Costs) / Revenue) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-39",
+    "archetype": "healthcare-provider",
+    "title": "Outpatient Service Expansion and Market Demand Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "VOLUME_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "SERVICE_LINE_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/39 - Outpatient Service Expansion and Market Demand Analysis.md",
+    "goal": "To assess the feasibility and potential benefits of expanding outpatient services, evaluating market demand, patient access needs, and financial viability to enhance the organization’s reach and profitability.",
+    "dataRequired": [
+      "Patient demographics and market data (e.g., age, income, insurance type, location).",
+      "Utilization metrics for current outpatient services (e.g., volume, no-show rates, appointment lead times).",
+      "Financial data (e.g., revenue, operating costs, cost per visit).",
+      "Referral and retention data for outpatient services.",
+      "Competitor analysis (e.g., nearby providers offering similar services).",
+      "Industry benchmarks for outpatient service utilization and profitability.",
+      "Community health needs assessment (CHNA) data to identify unmet demand."
+    ],
+    "improve": [
+      "Expand outpatient services in underserved areas or regions with high demand for specific care types.",
+      "Introduce new service lines or specialties aligned with community health needs and market demand.",
+      "Optimize operational workflows and resource allocation to improve current outpatient service efficiency.",
+      "",
+      "Develop partnerships with community organizations to enhance referrals and market reach.",
+      "Use targeted marketing campaigns to increase awareness and attract new patients to outpatient services.",
+      "Implement telehealth options to complement physical outpatient facilities and improve accessibility.",
+      "Monitor and analyze patient feedback to ensure high satisfaction and retention in expanded services.",
+      "Benchmark performance regularly to adjust strategies and maintain competitiveness.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Actual Visits",
+          "Maximum Capacity"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Actual Visits / Maximum Capacity) x 100.",
+        "step": null
+      },
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Projected Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Projected Revenue - Projected Costs) / Projected Costs) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-40",
+    "archetype": "healthcare-provider",
+    "title": "Clinical Trial Participation and Research Revenue Potential Assessment",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL",
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/40 - Clinical Trial Participation and Research Revenue Potential.md",
+    "goal": "To evaluate the organization’s participation in clinical trials, assess financial and operational performance, and identify opportunities to expand research activities and revenue potential.",
+    "dataRequired": [
+      "Current clinical trial portfolio (e.g., number of trials, phase, therapeutic area).",
+      "Patient recruitment metrics (e.g., enrollment rates, drop-out rates).",
+      "Clinical trial revenue data (e.g., funding, reimbursements).",
+      "Operational costs associated with trial participation (e.g., staff, equipment, facilities).",
+      "Patient demographics and eligibility data.",
+      "Industry benchmarks for clinical trial performance metrics (e.g., enrollment time, revenue per trial).",
+      "Feedback from investigators, staff, and participants."
+    ],
+    "improve": [
+      "Strengthen patient recruitment strategies by collaborating with community organizations and leveraging patient databases.",
+      "Optimize trial operations by streamlining workflows and reducing protocol deviations.",
+      "Expand partnerships with pharmaceutical companies and research institutions to attract more trials.",
+      "Invest in training programs for clinical staff to improve trial management and compliance.",
+      "Use predictive analytics to identify eligible patients quickly and efficiently.",
+      "",
+      "Diversify trial portfolios by targeting high-growth therapeutic areas or unmet needs.",
+      "Enhance participant engagement through personalized communication and support services to improve retention.",
+      "Regularly monitor trial performance metrics and benchmark them against industry standards to identify areas for improvement.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Enrollment Rate (%)",
+        "variables": [
+          "Number of Enrolled Patients",
+          "Target Enrollment"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Enrollment Rate (%) = (Number of Enrolled Patients / Target Enrollment) x 100.",
+        "step": null
+      },
+      {
+        "output": "Net Revenue",
+        "variables": [
+          "Total Revenue",
+          "Total Costs"
+        ],
+        "expression": "v0 - v1",
+        "percentOutput": false,
+        "source": "Net Revenue = Total Revenue - Total Costs.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-41",
+    "archetype": "healthcare-provider",
+    "title": "Disease-Specific Center of Excellence Development Feasibility Analysis",
+    "part": "H",
+    "partLabel": "Specialty Services and Market Expansion",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "ORGANIZATIONAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/41 - Disease-Specific Center of Excellence Development.md",
+    "goal": "To evaluate the feasibility of developing a disease-specific Center of Excellence (COE) by analyzing market demand, organizational capabilities, financial viability, and potential impact on patient outcomes and institutional reputation.",
+    "dataRequired": [
+      "Patient demographics and disease prevalence data (e.g., cancer, diabetes, cardiology).",
+      "Current service offerings related to the targeted disease area.",
+      "Clinical outcomes and patient satisfaction metrics for relevant services.",
+      "Financial data (e.g., cost of establishing and operating the COE, potential revenue, ROI projections).",
+      "Competitive analysis (e.g., existing COEs in the region and their performance).",
+      "Resource availability (e.g., staffing, equipment, facilities).",
+      "Industry benchmarks for COE success factors (e.g., volume thresholds, outcomes, profitability)."
+    ],
+    "improve": [
+      "Conduct targeted outreach to community stakeholders to confirm demand and gather support for the COE.",
+      "Invest in recruiting or training specialized providers to build expertise in the targeted disease area.",
+      "Secure funding through grants, partnerships, or institutional budgets to support COE development.",
+      "Develop strategic partnerships with academic institutions, research organizations, or pharmaceutical companies.",
+      "",
+      "Design care pathways and protocols based on best practices for COEs in the targeted disease area.",
+      "Optimize infrastructure and technology to support high-quality care delivery and research activities.",
+      "Market the COE to patients and referring providers, emphasizing its unique capabilities and outcomes.",
+      "Monitor and continuously evaluate COE performance post-launch to ensure alignment with goals and benchmarks.",
+      "I. Staffing and Workforce Optimization"
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Revenue",
+          "Projected Costs"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Projected Revenue - Projected Costs) / Projected Costs) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-42",
+    "archetype": "healthcare-provider",
+    "title": "Physician and Nursing Staff Productivity and Workforce Optimization",
+    "part": "I",
+    "partLabel": "Staffing and Workforce Optimization",
+    "relatedMetricCodes": [
+      "LABOR_COST_RATE",
+      "STAFF_TURNOVER_RATE"
+    ],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL",
+      "LABOR"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WORKFORCE_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/42 - Physician and Nursing Staff Productivity and Workforce.md",
+    "goal": "To evaluate physician and nursing staff productivity, identify inefficiencies, and optimize workforce allocation to improve care delivery, reduce burnout, and maximize organizational efficiency.",
+    "dataRequired": [
+      "Workload metrics (e.g., patient encounters, procedures performed, hours worked).",
+      "Patient outcomes and satisfaction data.",
+      "Staff scheduling and shift patterns.",
+      "Financial data (e.g., labor costs, revenue per staff member).",
+      "Turnover and retention rates for physicians and nurses.",
+      "Feedback from staff on workload, job satisfaction, and organizational support.",
+      "Industry benchmarks for productivity and staffing ratios."
+    ],
+    "improve": [
+      "Reevaluate staffing models to align with patient demand and reduce overstaffing or understaffing.",
+      "Implement scheduling software to optimize shift planning and ensure even workload distribution.",
+      "",
+      "Enhance staff engagement by offering professional development opportunities and improving workplace culture.",
+      "Introduce productivity tracking tools to monitor real-time metrics and adjust resource allocation proactively.",
+      "Provide wellness programs and mental health support to mitigate burnout and improve retention.",
+      "Regularly collect and act on staff feedback to address workload concerns and improve job satisfaction.",
+      "Benchmark productivity and staffing metrics against peer organizations to identify best practices.",
+      "Utilize cross-training programs to create a more flexible workforce capable of adapting to changing patient needs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Productivity Rate",
+        "variables": [
+          "Total Patient Encounters or Procedures",
+          "Total Hours Worked"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Productivity Rate = Total Patient Encounters or Procedures / Total Hours Worked.",
+        "step": null
+      },
+      {
+        "output": "Revenue per Staff Member",
+        "variables": [
+          "Total Revenue",
+          "Total Staff Members"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Revenue per Staff Member = Total Revenue / Total Staff Members.",
+        "step": null
+      },
+      {
+        "output": "Turnover Rate (%)",
+        "variables": [
+          "Number of Departures",
+          "Total Staff"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Turnover Rate (%) = (Number of Departures / Total Staff) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-43",
+    "archetype": "healthcare-provider",
+    "title": "Staff Burnout and Retention Risk Assessment in Clinical Settings",
+    "part": "I",
+    "partLabel": "Staffing and Workforce Optimization",
+    "relatedMetricCodes": [
+      "STAFF_TURNOVER_RATE"
+    ],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL",
+      "LABOR"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS",
+      "WORKFORCE_PRODUCTIVITY"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/43 - Staff Burnout and Retention Risk Assessment in Clinical.md",
+    "goal": "To evaluate the prevalence of staff burnout and identify factors contributing to retention risks, enabling the development of strategies to enhance staff well-being, job satisfaction, and organizational stability.",
+    "dataRequired": [
+      "Staff turnover rates (overall and by department).",
+      "Employee engagement and satisfaction survey results.",
+      "Workload metrics (e.g., hours worked, patient loads, overtime hours).",
+      "Absenteeism rates and patterns.",
+      "Exit interview data for insights on reasons for leaving.",
+      "Patient satisfaction and care quality metrics (as indicators of staff well-being impact).",
+      "Industry benchmarks for burnout and retention rates."
+    ],
+    "improve": [
+      "Implement wellness programs, including mental health support, stress management, and resilience training.",
+      "Reassess staffing levels to ensure equitable workload distribution and reduce overtime demands.",
+      "Provide opportunities for professional growth and career development to increase job satisfaction.",
+      "Regularly collect and act on staff feedback through surveys, focus groups, and open communication channels.",
+      "Introduce flexible work schedules or shift rotations to accommodate staff needs and reduce burnout.",
+      "",
+      "Recognize and reward staff contributions to enhance morale and engagement.",
+      "Establish peer support programs or mentorship opportunities to build a supportive work culture.",
+      "Monitor burnout and retention metrics continuously to identify trends and adapt strategies proactively.",
+      "J. Community Impact and Health Equity"
+    ],
+    "formulas": [
+      {
+        "output": "Turnover Rate (%)",
+        "variables": [
+          "Number of Departures",
+          "Total Staff"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Turnover Rate (%) = (Number of Departures / Total Staff) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-44",
+    "archetype": "healthcare-provider",
+    "title": "Health Equity and Community Impact Evaluation",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/44 - Health Equity and Community Impact Evaluation.md",
+    "goal": "To assess the organization’s performance in promoting health equity and its impact on community health outcomes, identifying gaps in service delivery and opportunities for addressing disparities in care.",
+    "dataRequired": [
+      "Community demographics (e.g., age, gender, race, income, education level).",
+      "Healthcare access metrics (e.g., appointment availability, insurance coverage rates).",
+      "Utilization data segmented by demographic groups (e.g., ED visits, preventive care use).",
+      "Clinical outcomes data (e.g., disease prevalence, mortality rates, chronic condition management).",
+      "Social determinants of health (SDOH) metrics (e.g., housing stability, food security, transportation access).",
+      "Patient satisfaction and engagement data by demographic group.",
+      "Community health needs assessment (CHNA) results.",
+      "Industry benchmarks for health equity metrics and community health outcomes."
+    ],
+    "improve": [
+      "Partner with community organizations to address SDOH barriers such as housing, nutrition, and transportation.",
+      "Expand outreach and education programs targeting underserved populations to improve health literacy and engagement.",
+      "Increase diversity in the workforce to better reflect and serve the community’s demographics.",
+      "",
+      "Implement cultural competency training for providers and staff to enhance care delivery and reduce implicit biases.",
+      "Monitor equity metrics continuously to identify emerging disparities and adjust strategies proactively.",
+      "Enhance access to care through initiatives like mobile clinics, telehealth, and extended clinic hours.",
+      "Leverage data analytics to identify high-risk populations and prioritize resources effectively.",
+      "Advocate for policy changes or funding opportunities to support health equity and community health initiatives.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "healthcare-provider-45",
+    "archetype": "healthcare-provider",
+    "title": "Capital Investment and Facility Modernization Feasibility Analysis",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [
+      "CAPEX"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "CAPEX_DISCIPLINE"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/45 - Capital Investment and Facility Modernization Feasibility.md",
+    "goal": "To evaluate the feasibility and potential benefits of capital investments in facility modernization, focusing on improving patient care, operational efficiency, and financial returns.",
+    "dataRequired": [
+      "Current facility performance metrics (e.g., capacity utilization, maintenance costs, operational inefficiencies).",
+      "Patient demographics and service demand projections.",
+      "Financial data (e.g., capital costs, operational savings, potential revenue growth).",
+      "Facility condition assessment reports.",
+      "Competitor facility capabilities and market positioning.",
+      "Patient satisfaction and experience metrics related to facility conditions.",
+      "Industry benchmarks for modernized facility performance and ROI."
+    ],
+    "improve": [
+      "Conduct detailed cost-benefit analyses for specific modernization projects to ensure financial viability.",
+      "Prioritize upgrades that align with high-demand services or critical operational inefficiencies.",
+      "Seek funding opportunities, such as grants, public-private partnerships, or low-interest loans, to reduce financial risk.",
+      "Involve stakeholders, including staff and patients, in the planning process to ensure upgrades address key needs.",
+      "",
+      "Leverage energy-efficient technologies to reduce long-term operational costs and support sustainability goals.",
+      "Develop phased implementation plans to minimize disruption to ongoing operations during modernization efforts.",
+      "Regularly monitor post-modernization performance metrics to ensure projected benefits are realized.",
+      "Benchmark results against similar investments in the industry to refine future capital planning strategies.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "ROI (%)",
+        "variables": [
+          "Projected Savings",
+          "Projected Revenue Increase",
+          "Capital Costs"
+        ],
+        "expression": "( ( v0 + v1 - v2 ) / v2 ) * 100",
+        "percentOutput": true,
+        "source": "ROI (%) = ((Projected Savings + Projected Revenue Increase - Capital Costs) / Capital Costs) x 100.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-46",
+    "archetype": "healthcare-provider",
+    "title": "Critical Care Resource Allocation and ICU Performance Analysis",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [
+      "BED_OCCUPANCY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "LOS_OPTIMIZATION"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/46 - Critical Care Resource Allocation and ICU Performance.md",
+    "goal": "To evaluate the allocation of resources in critical care units (e.g., ICUs), assess performance metrics, and identify opportunities to optimize resource utilization, improve patient outcomes, and enhance operational efficiency.",
+    "dataRequired": [
+      "ICU capacity and utilization metrics (e.g., bed occupancy rates, length of stay).",
+      "Patient demographics and case severity data.",
+      "Staffing ratios (e.g., nurse-to-patient, physician-to-patient).",
+      "Clinical outcomes data (e.g., mortality rates, recovery rates, readmission rates).",
+      "Equipment usage metrics (e.g., ventilator hours, monitoring devices).",
+      "Financial data (e.g., cost per ICU stay, revenue per bed).",
+      "Patient transfer data (e.g., from other units or facilities).",
+      "Industry benchmarks for ICU performance metrics."
+    ],
+    "improve": [
+      "Implement predictive analytics to forecast ICU demand and adjust resource allocation proactively.",
+      "Optimize discharge planning to reduce LOS and free up capacity for new patients.",
+      "",
+      "Invest in staff training and recruitment to maintain appropriate nurse-to-patient and physician-to-patient ratios.",
+      "Introduce advanced monitoring technologies to enhance care delivery and improve outcomes.",
+      "Regularly audit equipment utilization to ensure critical devices are available when needed and avoid underuse.",
+      "Strengthen patient transfer protocols to minimize delays and streamline ICU admissions and discharges.",
+      "Monitor and act on infection control metrics to reduce hospital-acquired conditions in the ICU.",
+      "Benchmark performance continuously to identify emerging trends and adopt best practices from top-performing ICUs.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Bed Occupancy Rate (%)",
+        "variables": [
+          "Occupied Bed Days",
+          "Total Available Bed Days"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Bed Occupancy Rate (%) = (Occupied Bed Days / Total Available Bed Days) x 100.",
+        "step": null
+      },
+      {
+        "output": "Cost per ICU Stay",
+        "variables": [
+          "Total ICU Costs",
+          "Number of ICU Patients"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Cost per ICU Stay = Total ICU Costs / Number of ICU Patients.",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "healthcare-provider-47",
+    "archetype": "healthcare-provider",
+    "title": "Social Determinants of Health (SDOH) Integration and Impact Assessment",
+    "part": "J",
+    "partLabel": "Community Impact and Health Equity",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "ORGANIZATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/healthcare-provider/47 - Social Determinants of Health (SDOH) Integration and Impact.md",
+    "goal": "To evaluate how effectively the organization integrates social determinants of health (SDOH) into care delivery, assess their impact on patient outcomes and healthcare utilization, and identify areas for improvement to address disparities in health equity.",
+    "dataRequired": [
+      "Patient demographics and socioeconomic data (e.g., income, education, housing stability, employment).",
+      "Healthcare utilization metrics (e.g., ED visits, hospitalizations, preventive care usage).",
+      "Clinical outcomes data (e.g., chronic disease management, readmission rates, mortality rates).",
+      "Social service intervention data (e.g., housing assistance, transportation services, food security programs).",
+      "Patient satisfaction and engagement data related to SDOH interventions.",
+      "Costs associated with SDOH initiatives and related savings in healthcare spending.",
+      "Industry benchmarks for SDOH-related health outcomes and care integration."
+    ],
+    "improve": [
+      "Collaborate with community organizations to provide comprehensive social support services addressing housing, food security, and transportation.",
+      "Integrate SDOH screening into routine patient assessments to proactively identify and address social barriers.",
+      "",
+      "Develop a centralized referral system for connecting patients with social services and tracking outcomes.",
+      "Train care teams on the importance of SDOH in clinical practice and equip them with tools to address related challenges.",
+      "Use data analytics to monitor the effectiveness of SDOH initiatives and refine strategies based on insights.",
+      "Secure funding from grants, partnerships, or public programs to support SDOH-focused efforts.",
+      "Expand telehealth services and mobile clinics to reach populations with geographic or transportation barriers.",
+      "Benchmark regularly against leading organizations to adopt innovative approaches and remain competitive in addressing SDOH challenges.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Intervention Impact (%)",
+        "variables": [
+          "Post-Intervention Outcome",
+          "Pre-Intervention Outcome"
+        ],
+        "expression": "( ( v0 - v1 ) / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Intervention Impact (%) = ((Post-Intervention Outcome - Pre-Intervention Outcome) / Pre-Intervention Outcome) x 100.",
+        "step": null
+      }
+    ]
+  }
+]

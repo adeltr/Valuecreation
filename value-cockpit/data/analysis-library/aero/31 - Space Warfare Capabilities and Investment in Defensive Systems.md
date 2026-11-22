@@ -2,6 +2,13 @@
 tags:
   - aerospace-defense
   - part/D
+kind: analysis
+id: aero-31
+part: D
+partLabel: Technology & Cybersecurity
+quant: [RD_INTENSITY]
+causes: [MARKET, REGULATORY]
+levers: [RD_PORTFOLIO]
 ---
 # 31 · Space Warfare Capabilities and Investment in Defensive Systems
 

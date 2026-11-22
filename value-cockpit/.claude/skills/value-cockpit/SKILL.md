@@ -26,7 +26,8 @@ if all tests pass.
 - Adding a term = add it to the extension AND its IRI to `context.jsonld` in
   the same commit. Never hardcode a term elsewhere.
 - `EXIT_MULTIPLE` is a scenario ASSUMPTION; `MULTIPLE_EXPANSION` is never a
-  proposable lever category.
+  proposable lever category, and no lever may target a `NON_LEVER_CODES`
+  metric (ENTRY/EXIT_MULTIPLE, HOLD_YEARS, NET_DEBT_ENTRY).
 
 ## 4. Analyst gate before simulation
 - A scenario may only reference levers with `status='validated'`.
@@ -44,5 +45,12 @@ if all tests pass.
 - Deltas: `deltaKind='absolute'` in the target metric's unit;
   `'percent'` is relative to the current value.
 - Money unrounded mid-calc; round only at the display boundary.
-- Documented limitation: lever deltas on the same metric are additive (no
-  interactions — phase 3). Any synthesis must mention it.
+- Stacked deltas on one metric compose order-independently:
+  (base + Σ absolute) × Π(1 + percent). Interactions between drivers exist
+  ONLY as template-declared rules (`InteractionRule`, coefficient set by the
+  analyst, e.g. PRICE_ELASTICITY — never a lever target). Any synthesis must
+  say which rules applied and that other interactions are not modelled.
+- A lever is simulated only on a MODEL INPUT (`modelTargets`): a computed metric is
+  never a target; a vocabulary metric outside the model makes a qualitative lever.
+- Every scenario runs with `SCENARIO_OPTIONS`: a lever landing after the holding
+  period does not move the exit; `implementationCost` is analyst-set only.

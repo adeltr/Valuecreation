@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "hospitality-01",
+    "archetype": "hospitality",
+    "title": "Occupancy Rate and ADR Evaluation",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "ROOMS",
+      "OCCUPANCY_RATE",
+      "ADR"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/01 - Occupancy Rate and ADR Evaluation.md",
+    "goal": "Determine how effectively the hotel fills rooms and how its average daily rate influences overall revenue, allowing you to gauge demand, pricing strategy, and market competitiveness.",
+    "dataRequired": [
+      "Total number of rooms available for the analysis period.",
+      "Total number of rooms occupied/sold during that period.",
+      "Total room revenue for the same period."
+    ],
+    "improve": [
+      "Implement dynamic pricing strategies to optimize room rates.",
+      "Offer targeted promotions or packages during low-demand periods to boost occupancy without sacrificing rate integrity.",
+      "Monitor booking pace and adjust rates in real time as needed.",
+      "Diversify distribution channels to reduce reliance on a single channel and tap into broader market segments.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Occupancy Rate",
+        "variables": [
+          "Total Number of Rooms Occupied",
+          "Total Number of Rooms Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Occupancy Rate = (Total Number of Rooms Occupied / Total Number of Rooms Available) x 100",
+        "step": null
+      },
+      {
+        "output": "ADR",
+        "variables": [
+          "Total Room Revenue",
+          "Total Number of Rooms Occupied"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "ADR = (Total Room Revenue / Total Number of Rooms Occupied)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "hospitality-02",
+    "archetype": "hospitality",
+    "title": "RevPAR Trend Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "OCCUPANCY_RATE",
+      "ADR"
+    ],
+    "relatedCauseCategories": [
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/02 - RevPAR Trend Analysis.md",
+    "goal": "Track revenue per available room over time to understand how well your combined occupancy and rate strategies are performing and to identify long-term trends and growth opportunities.",
+    "dataRequired": [
+      "Total room revenue for each selected period.",
+      "Total number of available rooms for the same period.",
+      "Occupancy Rate and ADR (if available), to provide additional insight into RevPAR components."
+    ],
+    "improve": [
+      "Use dynamic pricing strategies to balance ADR and occupancy, optimizing total revenue.",
+      "Identify off-peak periods and create promotions or targeted campaigns to boost demand.",
+      "Monitor competitive set pricing and market demand signals to adjust strategies proactively.",
+      "Implement effective yield management tactics, including overbooking strategies where appropriate, to maximize occupancy during high-demand periods.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "RevPAR",
+        "variables": [
+          "Total Room Revenue",
+          "Total Number of Available Rooms"
+        ],
+        "expression": "( v0 / v1 )",
+        "percentOutput": false,
+        "source": "RevPAR = (Total Room Revenue / Total Number of Available Rooms)",
+        "step": null
+      },
+      {
+        "output": "RevPAR",
+        "variables": [
+          "Occupancy Rate",
+          "ADR"
+        ],
+        "expression": "( v0 * v1 )",
+        "percentOutput": false,
+        "source": "RevPAR = (Occupancy Rate x ADR)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "hospitality-03",
+    "archetype": "hospitality",
+    "title": "Distribution Channel Mix and Booking Source Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "UNDISTRIBUTED_COST_RATE",
+      "DIRECT_BOOKING_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "MIX",
+      "CHANNEL_MIX"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/03 - Distribution Channel Mix and Booking Source Analysis.md",
+    "goal": "Examine which booking channels generate the most reservations and revenue, helping you optimize channel usage, reduce acquisition costs, and improve profitability.",
+    "dataRequired": [
+      "Total bookings by channel for the selected period.",
+      "Revenue and cost of acquisition (commissions, fees) by channel.",
+      "Customer demographics, if available, for each channel.",
+      "Historical channel performance data for comparison."
+    ],
+    "improve": [
+      "Negotiate lower commission rates or fees with distribution partners.",
+      "Invest in marketing efforts for profitable channels to increase direct bookings.",
+      "Optimize channel mix by shifting focus toward lower-cost distribution sources without sacrificing volume.",
+      "Segment marketing campaigns based on the booking window and demographics of each channel’s audience.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-04",
+    "archetype": "hospitality",
+    "title": "Group vs. Transient Business Mix Evaluation",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "OCCUPANCY_RATE",
+      "GROUP_MIX_SHARE"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "MIX",
+      "OCCUPANCY_DRIVE"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/04 - Group vs. Transient Business Mix Evaluation.md",
+    "goal": "Compare the revenue contributions of group and transient segments, helping you balance occupancy, rate strategies, and business risk across these different guest types.",
+    "dataRequired": [
+      "Number of room nights sold to group vs. transient segments for a given period.",
+      "Revenue associated with each segment, including ADR or net revenue per room.",
+      "Channel costs or sales expenses (if available) that differ between group and transient segments.",
+      "Historical data for comparison and trend analysis."
+    ],
+    "improve": [
+      "Adjust sales strategies to target high-margin group business during shoulder or low-demand seasons.",
+      "Focus on attracting higher-paying transient guests during peak periods to optimize rate.",
+      "Diversify promotional activities to balance the mix, ensuring stability and maximizing revenue potential.",
+      "Collaborate with local convention and tourism bureaus to secure group bookings or citywide events.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-05",
+    "archetype": "hospitality",
+    "title": "Length‐of‐Stay Patterns and Rate Optimization Review",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "ADR",
+      "AVERAGE_LENGTH_OF_STAY"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/05 - Length#U2010of#U2010Stay Patterns and Rate Optimization Review.md",
+    "goal": "Understand how the duration of guest stays affects profitability and rate structures, so you can adjust offerings and promotions to drive optimal revenue.",
+    "dataRequired": [
+      "Historical reservation data showing arrival date, departure date, and rate paid.",
+      "Occupancy data by day.",
+      "ADR and RevPAR metrics by length-of-stay segment.",
+      "Booking window information (if available) to see how far in advance guests with different lengths of stay book."
+    ],
+    "improve": [
+      "Implement targeted promotions for guests booking multiple nights (e.g., third night free, discounted extended stay).",
+      "Introduce minimum stay requirements during peak periods to maximize occupancy and rate potential.",
+      "Monitor booking windows by length-of-stay to adjust pricing in real time.",
+      "Utilize upsell strategies during the reservation process to encourage guests to extend their stay.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-06",
+    "archetype": "hospitality",
+    "title": "Booking Window Patterns Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "DIO",
+      "OCCUPANCY_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/06 - Booking Window Patterns Analysis.md",
+    "goal": "Examine how far in advance guests typically book, allowing you to refine pricing strategies, marketing campaigns, and inventory management.",
+    "dataRequired": [
+      "Historical booking data indicating the date each reservation was made and the arrival date.",
+      "Occupancy data by date.",
+      "Pricing or rate information over the same period.",
+      "Segment data (if available) to differentiate between business, leisure, group, etc."
+    ],
+    "improve": [
+      "Adjust rate strategies to capitalize on last-minute bookings (e.g., yield premium rates for short lead times).",
+      "Launch early-bird promotions or discounts to secure bookings far in advance.",
+      "Monitor booking window trends weekly or monthly to quickly adapt pricing and marketing.",
+      "Segment offers by lead time, tailoring promotions to suit both short- and long-lead travelers.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-07",
+    "archetype": "hospitality",
+    "title": "Look‐to‐Book Ratios and Online Booking Abandonment Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "DIRECT_BOOKING_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "CHANNEL_MIX"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/07 - Look#U2010to#U2010Book Ratios and Online Booking Abandonment.md",
+    "goal": "Evaluate how many website visitors convert into confirmed reservations and identify drop-off points, optimizing the online booking process to boost conversion rates.",
+    "dataRequired": [
+      "Website analytics data (visits, page views, referral sources).",
+      "Booking engine data (start of booking process, completion rates).",
+      "Abandonment metrics at each step of the booking funnel.",
+      "Segmented data by device type (mobile, desktop), if available."
+    ],
+    "improve": [
+      "Simplify the booking process (reduce number of steps, offer guest checkout).",
+      "Optimize site speed and mobile responsiveness to enhance user experience.",
+      "Provide transparent pricing and clear room/package information upfront.",
+      "Implement remarketing strategies for visitors who abandon bookings (email reminders, retargeting ads).",
+      "Continuously A/B test changes to the booking flow and user interface to measure impact on conversion rates.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Calculate the Look‐to‐Book ratio. Look‐to‐Book Ratio",
+        "variables": [
+          "Number of Bookings",
+          "Number of Website Visits"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Calculate the Look‐to‐Book ratio. Look‐to‐Book Ratio = (Number of Bookings / Number of Website Visits) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "hospitality-08",
+    "archetype": "hospitality",
+    "title": "Concierge and Activity Booking Revenue Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "ANCILLARY_REVENUE_RATIO"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "MIX",
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/08 - Concierge and Activity Booking Revenue Analysis.md",
+    "goal": "Measure revenue generated through concierge services and activity bookings, identifying ways to enhance or expand offerings that appeal to guests.",
+    "dataRequired": [
+      "Records of all concierge‐booked activities (type of activity, date, rate/revenue).",
+      "Commission structures or fees earned per booking.",
+      "Guest demographic or segmentation data (if available).",
+      "Operational costs associated with concierge or third‐party service providers (if any)."
+    ],
+    "improve": [
+      "Form strategic partnerships with local businesses to offer exclusive or higher‐margin packages through the concierge.",
+      "Train concierge staff to identify guest preferences and upsell relevant activities.",
+      "Use guest satisfaction feedback to refine the portfolio of activities and remove underperforming options.",
+      "Incorporate technology (e.g., mobile apps, pre‐arrival emails) to showcase available activities and drive early bookings.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-09",
+    "archetype": "hospitality",
+    "title": "In‐Room Amenities Cost‐Benefit Analysis",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/09 - In#U2010Room Amenities Cost#U2010Benefit Analysis.md",
+    "goal": "Weigh the costs of providing in-room amenities against their impact on guest satisfaction and room revenue, ensuring a profitable and appealing amenity selection.",
+    "dataRequired": [
+      "List of all in‐room amenities provided, with associated costs (purchase, restocking, maintenance).",
+      "Usage data or estimates (e.g., average consumption of toiletries, mini‐bar usage).",
+      "Guest satisfaction or feedback ratings regarding in‐room amenities.",
+      "Room rates or relevant operational revenue figures for comparison."
+    ],
+    "improve": [
+      "Conduct regular reviews of amenity offerings, removing or replacing underutilized items.",
+      "Negotiate supplier contracts or bulk purchasing agreements to lower procurement costs.",
+      "Consider “by request” or “on‐demand” models for low‐usage amenities to reduce waste.",
+      "Communicate the value of upgraded amenities (e.g., premium coffee, eco‐friendly toiletries) to enhance perceived quality and support premium pricing.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-10",
+    "archetype": "hospitality",
+    "title": "Children’s Programs and Family Amenity ROI",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/10 - Children#U2019s Programs and Family Amenity ROI.md",
+    "goal": "Determine the financial return and guest value of children’s programs and family amenities, guiding you on how to best cater to family travelers.",
+    "dataRequired": [
+      "Records of participation in children’s programs (e.g., number of kids enrolled, frequency of use).",
+      "Revenue generated from family‐related services (e.g., program fees, extended stay packages).",
+      "Costs associated with running each program (labor, materials, licensing, etc.).",
+      "Guest satisfaction scores or feedback specific to family amenities.",
+      "Room and ancillary revenue comparisons between family travelers and other segments."
+    ],
+    "improve": [
+      "Tailor programs to different age groups to appeal to a broader range of families.",
+      "Introduce family packages or bundles that include program fees, meals, and activities.",
+      "Train staff to deliver a high‐quality, engaging experience for children, improving guest satisfaction.",
+      "Consider partnering with local attractions or children’s entertainment providers to expand offerings.",
+      "Leverage marketing channels focusing on family‐centric travel segments to drive awareness and bookings.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-11",
+    "archetype": "hospitality",
+    "title": "Extended Stay Packaging and Rate Strategies",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "AVERAGE_LENGTH_OF_STAY"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "OCCUPANCY_DRIVE"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/11 - Extended Stay Packaging and Rate Strategies.md",
+    "goal": "Assess the revenue contribution and occupancy benefits of extended-stay guests, enabling you to refine packages and pricing structures that encourage longer visits.",
+    "dataRequired": [
+      "Historical reservation data indicating length of stay.",
+      "Extended‐stay package details (discounted rates, included amenities or services).",
+      "Occupancy and revenue metrics segmented by stay length (e.g., 7+ nights, 14+ nights).",
+      "Guest feedback or satisfaction ratings from extended‐stay guests.",
+      "Competitive set data on extended‐stay pricing (if available)."
+    ],
+    "improve": [
+      "Develop tiered extended‐stay packages with added amenities or services at different length thresholds.",
+      "Offer tailored perks (e.g., laundry credits, meal plans) to enhance the value proposition for long‐stay guests.",
+      "Adjust marketing efforts to highlight extended‐stay benefits on direct channels.",
+      "Refine pricing to balance occupancy gains with satisfactory margins, evaluating competitor rates as a reference.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-12",
+    "archetype": "hospitality",
+    "title": "Vacation Package and Bundled Rate Plan Efficacy",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "ANCILLARY_REVENUE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "ANCILLARY_UPSELL"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/12 - Vacation Package and Bundled Rate Plan Efficacy.md",
+    "goal": "Determine how bundled packages impact occupancy, revenue, and guest satisfaction, so you can optimize combined offerings to drive bookings and profitability.",
+    "dataRequired": [
+      "Number of packages sold versus standard room‐only bookings within a specific time frame.",
+      "Breakdown of package components (e.g., room rate, F&B inclusions, activities).",
+      "Revenue and cost data for each package component.",
+      "Guest feedback or satisfaction scores related to bundled offerings.",
+      "Comparative data on ancillary revenue from guests not purchasing packages."
+    ],
+    "improve": [
+      "Refine package components based on guest feedback and profitability analysis (e.g., swap low‐value inclusions for more desirable perks).",
+      "Test segmented offers (e.g., couples’ getaways, family packages) to appeal to specific customer groups.",
+      "Continuously adjust pricing to balance perceived value with profitability.",
+      "Use targeted digital marketing to promote packages to relevant segments (e.g., repeat guests, loyalty members, holiday travelers).",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Package Profit",
+        "variables": [
+          "Package Revenue",
+          "Cost of Inclusions",
+          "Marketing",
+          "Distribution Costs"
+        ],
+        "expression": "v0 - ( v1 + v2 / v3 )",
+        "percentOutput": false,
+        "source": "Package Profit = Package Revenue – (Cost of Inclusions + Marketing/Distribution Costs)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "hospitality-13",
+    "archetype": "hospitality",
+    "title": "Revenue Management Integration with Local-Seasonal Event Calendars",
+    "part": "A",
+    "partLabel": "Revenue & Pricing Management",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH",
+      "DIO",
+      "ADR"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "SEASONALITY"
+    ],
+    "relatedLeverCategories": [
+      "REVENUE_MANAGEMENT"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/13 - Revenue Management Integration with Local-Seasonal Event.md",
+    "goal": "Align pricing and inventory strategies with demand peaks around local events and seasons to capitalize on high-demand periods and minimize low-occupancy times.",
+    "dataRequired": [
+      "A detailed calendar of local events, holidays, and conferences.",
+      "Historical occupancy and revenue data correlated with past events.",
+      "Competitor pricing and availability (if accessible).",
+      "Forecasted event attendance, if available, or historical attendance trends."
+    ],
+    "improve": [
+      "Collaborate with local tourism boards or event organizers for insight on projected attendee counts and demographic data.",
+      "Create event‐specific room packages (e.g., discounted parking for concertgoers, special welcome amenities).",
+      "Monitor booking pace closely during lead‐up to major events and adjust rates in real time.",
+      "Conduct a post‐event audit to refine forecasting accuracy and enhance strategies for subsequent events.",
+      "B. Guest Experience"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-14",
+    "archetype": "hospitality",
+    "title": "Guest Satisfaction and Online Reputation Management Review",
+    "part": "B",
+    "partLabel": "Guest Experience",
+    "relatedMetricCodes": [
+      "GUEST_SATISFACTION_SCORE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/14 - Guest Satisfaction and Online Reputation Management.md",
+    "goal": "Evaluate guest feedback and online reviews to identify service strengths and weaknesses, guiding improvements that elevate satisfaction and brand reputation.",
+    "dataRequired": [
+      "Guest satisfaction surveys and Net Promoter Score (NPS) data.",
+      "Online review data from platforms like TripAdvisor, Google, Booking.com, etc.",
+      "Social media mentions or sentiment analysis (Twitter, Facebook, Instagram).",
+      "Internal feedback forms or emails received from guests.",
+      "Competitor or benchmark data (if available) to compare reputation scores."
+    ],
+    "improve": [
+      "Address recurring complaints promptly by coordinating with relevant departments (e.g., housekeeping, front desk).",
+      "Implement staff training programs focused on hospitality, communication, and problem resolution.",
+      "Encourage satisfied guests to share positive reviews online, possibly through post‐stay emails or loyalty programs.",
+      "Monitor and respond to online reviews regularly, thanking positive reviewers and offering solutions to dissatisfied guests.",
+      "Continuously update facilities and amenities based on feedback to meet or exceed guest expectations.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-15",
+    "archetype": "hospitality",
+    "title": "Guest Segmentation by Purpose of Travel",
+    "part": "B",
+    "partLabel": "Guest Experience",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "OCCUPANCY_DRIVE"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/15 - Guest Segmentation by Purpose of Travel.md",
+    "goal": "Classify guests by reason for travel to tailor pricing, marketing, and services that meet each segment’s unique needs and behaviors.",
+    "dataRequired": [
+      "Reservation data indicating the stated purpose of travel (if collected during booking).",
+      "Ancillary spending records (e.g., F&B, spa, activities) tied to guest profiles.",
+      "Demographic or firmographic data (company name for business travelers, home city for leisure travelers).",
+      "Guest feedback or satisfaction scores, if segmented by travel purpose."
+    ],
+    "improve": [
+      "Develop targeted marketing campaigns for each segment, focusing on their distinct preferences (e.g., business amenities vs. family‐friendly packages).",
+      "Adjust distribution channels and rate strategies based on the booking patterns of different segments.",
+      "Enhance service offerings that are most valued by each group (e.g., faster check‐in for business travelers, activity planning for leisure guests).",
+      "Monitor shifts in segmentation over time to stay ahead of changing travel trends and refine strategies accordingly.",
+      "C. Technology"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-16",
+    "archetype": "hospitality",
+    "title": "In‐Room Technology Adoption and Guest Satisfaction Correlation",
+    "part": "C",
+    "partLabel": "Technology",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/16 - In#U2010Room Technology Adoption and Guest Satisfaction.md",
+    "goal": "Assess how technological amenities in guestrooms affect satisfaction and loyalty, enabling you to invest in features that enhance the stay experience.",
+    "dataRequired": [
+      "List of in‐room technology offerings by room type or property segment (e.g., upgraded executive floors vs. standard rooms).",
+      "Usage metrics for each technology feature (e.g., Wi‐Fi login rates, streaming service usage, app downloads).",
+      "Guest satisfaction scores or survey feedback, segmented by guests who used or had access to specific in‐room technologies.",
+      "Maintenance and upgrade costs associated with implementing these technologies.",
+      "Historical occupancy and ADR data (if relevant to evaluate premium pricing or technology‐enabled room categories)."
+    ],
+    "improve": [
+      "Focus on high‐impact technologies that demonstrate a clear positive effect on guest satisfaction and/or incremental revenue.",
+      "Provide clear instructions and user‐friendly interfaces for in‐room tech to encourage adoption and reduce service calls.",
+      "Periodically update or upgrade systems to keep pace with evolving guest expectations (e.g., faster Wi‐Fi, newer streaming platforms).",
+      "Train staff to handle basic troubleshooting, ensuring a quick resolution to tech issues that could otherwise diminish satisfaction.",
+      "Consider tiered rooms or packages that highlight premium technology features, with appropriate pricing for those who value them.",
+      "D. Operations & Hospitality Services"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-17",
+    "archetype": "hospitality",
+    "title": "Housekeeping Efficiency and Turnaround Analysis",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS",
+      "DEPARTMENTAL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/17 - Housekeeping Efficiency and Turnaround Analysis.md",
+    "goal": "Measure the speed and quality of room cleaning processes, identifying ways to reduce costs, improve room readiness, and maintain hygiene standards.",
+    "dataRequired": [
+      "Daily occupancy data and room turnover rates (check‐outs vs. check‐ins).",
+      "Housekeeping labor hours by shift or day.",
+      "Average cleaning time per room and room type (standard, suite, etc.).",
+      "Quality control data (e.g., inspection scores, guest complaints related to room cleanliness).",
+      "Any existing productivity metrics or benchmarks for housekeeping staff."
+    ],
+    "improve": [
+      "Implement a room assignment system that balances workload across housekeeping staff more evenly.",
+      "Provide regular training and standardized cleaning protocols to ensure consistent, high‐quality results.",
+      "Invest in technology (e.g., housekeeping apps or real‐time room status tracking) to optimize scheduling and reduce idle time.",
+      "Introduce incentives or recognition programs to reward staff who consistently meet quality and efficiency standards.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-18",
+    "archetype": "hospitality",
+    "title": "Stay Extension and Early-Late Check‐In-Out Utilization",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "AVERAGE_LENGTH_OF_STAY"
+    ],
+    "relatedCauseCategories": [],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/18 - Stay Extension and Early-Late Check#U2010In-Out Utilization.md",
+    "goal": "Assess how guests use flexible arrival and departure options and stay extensions, helping you optimize policies, revenue generation, and guest convenience.",
+    "dataRequired": [
+      "Historical records of check‐in and check‐out times, including requests for early arrival or late departure.",
+      "Stay extension data (number of guests who extend their stay, additional nights booked, reasons cited if tracked).",
+      "Associated revenue from fees (if charged) for early check‐in, late check‐out, or extended stays.",
+      "Occupancy data by day to understand availability and constraints.",
+      "Guest feedback or satisfaction scores related to check‐in/out flexibility."
+    ],
+    "improve": [
+      "Offer structured fees or packages for early check‐in and late check‐out when occupancy allows, balancing revenue and guest goodwill.",
+      "Train front desk and reservation staff to proactively offer extensions or flexible check‐in/out, especially when occupancy is low.",
+      "Leverage technology (e.g., mobile apps) to notify guests about availability of extended stay or flexible check‐out options in real time.",
+      "Monitor housekeeping and staffing needs to ensure that granting additional requests does not compromise operational efficiency.",
+      "Track guest satisfaction scores for those who receive flexible stay options to refine policies and pricing strategies.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-19",
+    "archetype": "hospitality",
+    "title": "Food & Beverage Outlet Performance and Profitability Assessment",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "ANCILLARY_REVENUE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO",
+      "ANCILLARY_UPSELL"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/19 - Food & Beverage Outlet Performance and Profitability.md",
+    "goal": "Examine each F&B outlet’s financial results and operational metrics to identify underperforming areas, maximize profit, and enhance guest dining experiences.",
+    "dataRequired": [
+      "Sales data for each F&B outlet (e.g., restaurant, bar, lounge, room service, banquet operations).",
+      "Cost of goods sold (COGS) for each outlet (food and beverage expenses, packaging, etc.).",
+      "Labor costs allocated to each outlet, including wages, benefits, and related overheads.",
+      "Overhead costs (utilities, rent allocation, marketing expenses), if relevant to each outlet.",
+      "Operational metrics (average check, covers served, seat turnover, menu mix)."
+    ],
+    "improve": [
+      "Optimize menu offerings by promoting high‐margin, popular dishes and discontinuing low‐margin, low‐demand items.",
+      "Negotiate supplier contracts to reduce cost of goods or explore alternative supply chain options.",
+      "Streamline labor through effective scheduling, cross‐training staff, and implementing productivity monitoring.",
+      "Control waste by refining inventory management, portion sizes, and forecasting demand more accurately.",
+      "Enhance marketing and upselling strategies to boost check averages, highlight seasonal specials, or create bundled F&B packages.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-20",
+    "archetype": "hospitality",
+    "title": "F&B Menu Engineering and Cost Control",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "DEPARTMENTAL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/20 - F&B Menu Engineering and Cost Control.md",
+    "goal": "Determine which menu items drive the most profit and how to strategically price or redesign the menu to increase revenue and minimize waste.",
+    "dataRequired": [
+      "Itemized sales data (quantity sold, revenue) for each menu item over a specific period.",
+      "Food cost data for each item (ingredient costs, portion sizes).",
+      "Menu item pricing information.",
+      "Kitchen production times, if relevant, to understand operational impact.",
+      "Guest feedback or survey data regarding menu preferences (if available)."
+    ],
+    "improve": [
+      "Redesign the menu layout to highlight Star items and upsell them.",
+      "Adjust recipe costs by negotiating supplier contracts or substituting ingredients to improve margins on Plow Horses.",
+      "Promote Puzzle items with specials, staff recommendations, or new plating concepts.",
+      "Remove or replace Dog items unless they are essential to the brand identity or guest experience.",
+      "Continuously monitor food costs and sales data to refine the menu engineering process over time.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Determine contribution margin (CM) of each item. Contribution Margin",
+        "variables": [
+          "Menu Price",
+          "Food Cost"
+        ],
+        "expression": "( v0 - v1 )",
+        "percentOutput": false,
+        "source": "Determine contribution margin (CM) of each item. Contribution Margin = (Menu Price - Food Cost)",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "hospitality-21",
+    "archetype": "hospitality",
+    "title": "Hotel Retail-Gift Shop Product Mix Optimization",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "DIO"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/21 - Hotel Retail-Gift Shop Product Mix Optimization.md",
+    "goal": "Discover which products are most popular and profitable in the hotel’s retail outlets, enabling you to refine product selection and inventory levels.",
+    "dataRequired": [
+      "Historical sales data by product category (quantity sold, revenue, margins).",
+      "Cost of goods sold (COGS) for each product.",
+      "Inventory records (on‐hand inventory, turnover rates).",
+      "Guest demographic information or feedback about retail preferences (if available).",
+      "Seasonal or event‐based sales patterns (e.g., peak seasons, holiday items)."
+    ],
+    "improve": [
+      "Negotiate better supplier terms or bulk discounts for popular items with high turnover.",
+      "Introduce new products based on guest demographics (e.g., family‐friendly items, local artisanal goods).",
+      "Optimize pricing and adjust displays or marketing efforts to promote high‐margin items.",
+      "Monitor real‐time sales data to quickly identify shifts in demand and reallocate inventory accordingly.",
+      "Continuously gather feedback from guests and staff to stay attuned to changing preferences.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Inventory Turnover",
+        "variables": [
+          "Cost of Goods Sold",
+          "Average Inventory Value"
+        ],
+        "expression": "v0 / v1",
+        "percentOutput": false,
+        "source": "Inventory Turnover = Cost of Goods Sold / Average Inventory Value",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "hospitality-22",
+    "archetype": "hospitality",
+    "title": "In‐Room Dining Profitability and Utilization",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "ANCILLARY_REVENUE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/22 - In#U2010Room Dining Profitability and Utilization.md",
+    "goal": "Assess the cost, revenue, and usage patterns of room service, finding ways to boost orders, control expenses, and maintain service quality.",
+    "dataRequired": [
+      "Historical in‐room dining orders by daypart (breakfast, lunch, dinner, late‐night).",
+      "Revenue figures tied to each order, including any service or delivery fees.",
+      "Direct costs (food, beverage) associated with in‐room dining items.",
+      "Labor costs and overhead (staffing, equipment, delivery logistics).",
+      "Guest feedback regarding food quality, delivery time, and overall satisfaction."
+    ],
+    "improve": [
+      "Streamline operations by adjusting staffing to match peak order times and minimize wait times.",
+      "Introduce high‐margin menu items or bundles that appeal to guests at various dayparts (e.g., quick breakfast, late‐night snack).",
+      "Enhance communication with guests (e.g., estimated delivery time) to improve satisfaction and reduce complaints.",
+      "Offer promotions or loyalty incentives for in‐room dining to encourage trial and repeat orders.",
+      "Periodically review and update the in‐room dining menu to keep it fresh, relevant, and profitable.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-23",
+    "archetype": "hospitality",
+    "title": "Signature Restaurant or Specialty Dining Concept Evaluation",
+    "part": "D",
+    "partLabel": "Operations & Hospitality Services",
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS",
+      "DEPARTMENTAL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/23 - Signature Restaurant or Specialty Dining Concept Evaluation.md",
+    "goal": "Review the financial performance and market appeal of a distinct dining concept, ensuring it aligns with brand image and maximizes revenue potential.",
+    "dataRequired": [
+      "Historical sales and revenue data for the specialty restaurant (broken down by daypart, season, or event).",
+      "Cost of goods sold (food, beverage) and labor costs specific to the restaurant.",
+      "Customer demographics and reservation data (local walk‐in vs. hotel guest, special occasion, repeat diners).",
+      "Guest feedback, online reviews, or satisfaction surveys focused on the specialty dining concept.",
+      "Marketing and promotional spend attributed to the restaurant.",
+      "Competitive set or benchmark data from similar specialty dining venues (if available)."
+    ],
+    "improve": [
+      "Refine the menu based on profitability, popularity, and guest feedback, potentially highlighting signature dishes or local specialties.",
+      "Train and develop staff to deliver consistent, high‐quality service that aligns with the specialty concept and brand promise.",
+      "Enhance marketing and partnerships to attract local diners (e.g., collaborations with local influencers, targeted ads, or joint promotions with event spaces).",
+      "Optimize labor scheduling to align staffing levels with peak and off‐peak times.",
+      "Invest in ambiance and design updates if needed, ensuring the restaurant’s environment matches its specialty concept and pricing.",
+      "",
+      "Track the impact of changes by regularly reviewing financial performance, guest feedback, and competitive positioning.",
+      "E. Marketing & Competitive Positioning"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-24",
+    "archetype": "hospitality",
+    "title": "Destination Marketing and Local Partnership Effectiveness",
+    "part": "E",
+    "partLabel": "Marketing & Competitive Positioning",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "OCCUPANCY_DRIVE"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/24 - Destination Marketing and Local Partnership Effectiveness.md",
+    "goal": "Determine how local collaborations and tourism promotions contribute to bookings and revenue, guiding refinements to maximize mutual benefits.",
+    "dataRequired": [
+      "Records of joint marketing campaigns, co‐branded promotions, and partnership agreements.",
+      "Booking and revenue data attributed to destination marketing channels (tourism board referrals, local event collaborations).",
+      "Visitor or guest surveys indicating the influence of local marketing on their decision to book.",
+      "Marketing costs and ROI metrics for partnerships and co‐promotions (e.g., cost‐sharing with local businesses).",
+      "Occupancy and ADR trends during local events or tourism board initiatives."
+    ],
+    "improve": [
+      "Negotiate co‐branding opportunities that align with the hotel’s target demographics (e.g., adventure tours for families, cultural events for older travelers).",
+      "Use data tracking methods (unique codes or digital links) to precisely measure the impact of each partnership on bookings.",
+      "Collaborate with local businesses to create exclusive packages (dining, tours, entertainment) that appeal to the hotel’s guest segments.",
+      "Allocate marketing budgets toward the most successful partnerships and phase out or refine underperforming collaborations.",
+      "Request and share post‐event feedback with partners to continuously improve offerings and promotional strategies.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-25",
+    "archetype": "hospitality",
+    "title": "Impact of Alternative Accommodation Competitors",
+    "part": "E",
+    "partLabel": "Marketing & Competitive Positioning",
+    "relatedMetricCodes": [
+      "REVENUE_GROWTH"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "MARKET",
+      "ALTERNATIVE_ACCOMMODATION"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "WC_DIO"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/25 - Impact of Alternative Accommodation Competitors.md",
+    "goal": "Understand how short-term rentals and similar competitors affect your market share, demand, and pricing, informing strategies that protect and grow your business.",
+    "dataRequired": [
+      "Local market data on short‐term rental supply and demand (listings, occupancy, average nightly rates).",
+      "Hotel’s historical performance metrics (occupancy, ADR, RevPAR) and any notable changes that may coincide with alternative accommodation trends.",
+      "Guest feedback or survey data related to reasons for choosing the hotel over alternative options.",
+      "Rate comparisons between the hotel and popular alternative listings in the same area.",
+      "Local regulatory environment details impacting short‐term rentals (e.g., taxes, zoning)."
+    ],
+    "improve": [
+      "Emphasize unique value propositions, such as consistent service standards, on‐site amenities, or loyalty program benefits.",
+      "Adjust pricing or create special offers that appeal to segments likely to consider alternative accommodations (e.g., families, extended stays).",
+      "Collaborate with local partners to curate authentic experiences that rival the “local feel” often associated with alternative rentals.",
+      "Explore flexible inventory or distribution strategies (e.g., limited‐service apartments within the hotel) if feasible.",
+      "Monitor regulatory changes and adapt marketing messages to reassure guests of the safety, compliance, and professional standards of a hotel stay.",
+      "F. Ownership & Financial Structures"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-26",
+    "archetype": "hospitality",
+    "title": "Franchise vs. Management Contract Profitability Study",
+    "part": "F",
+    "partLabel": "Ownership & Financial Structures",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "VOLUME",
+      "PORTFOLIO_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/26 - Franchise vs. Management Contract Profitability Study.md",
+    "goal": "Compare the financial returns and operational implications of running the hotel under a franchise agreement versus a management contract, guiding ownership decisions.",
+    "dataRequired": [
+      "Detailed financials for hotels operating under franchise agreements (franchise fees, marketing fees, reservation fees, etc.).",
+      "Detailed financials for hotels operating under management contracts (base management fees, incentive fees, owner costs).",
+      "Revenue, occupancy, ADR, and RevPAR data for each model.",
+      "Operational costs, including payroll, training, and any brand‐mandated expenses.",
+      "Length and terms of both franchise and management agreements.",
+      "Market performance data and competitive benchmarking."
+    ],
+    "improve": [
+      "Negotiate favorable contract terms. Whether franchise or management contract, reduce fees, secure performance clauses, or limit brand‐mandated costs where possible.",
+      "Optimize brand support utilization. Leverage marketing, loyalty programs, and training resources included in the agreement to boost revenue.",
+      "Monitor property‐level performance closely. Compare fee structures and brand support benefits quarterly or annually to ensure ongoing value.",
+      "Maintain flexibility. If possible, include exit or renegotiation clauses to switch models or rebrand should market conditions or brand performance change.",
+      "",
+      "Consider hybrid approaches. In some cases, partial management assistance or a soft brand affiliation may offer a balance between full franchise and management contract models.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-27",
+    "archetype": "hospitality",
+    "title": "USALI Departmental Benchmarking",
+    "part": "F",
+    "partLabel": "Ownership & Financial Structures",
+    "relatedMetricCodes": [
+      "DEPARTMENTAL_COST_RATE",
+      "UNDISTRIBUTED_COST_RATE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS",
+      "WC_DIO",
+      "DEPARTMENTAL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/27 - USALI Departmental Benchmarking.md",
+    "goal": "Use standardized financial reporting to compare each department’s performance against industry norms, revealing cost-saving and revenue-boosting possibilities.",
+    "dataRequired": [
+      "Departmental income statements prepared according to USALI guidelines (Rooms, F&B, Other Operated Departments, Miscellaneous Income).",
+      "Department‐level revenue, cost of goods sold, payroll and related expenses, and other operating expenses.",
+      "Key performance indicators (occupancy, ADR, RevPAR, covers served, average check) to link financial results with operational metrics.",
+      "Industry or competitive benchmarks from sources like STR, AHLA, or hotel brand standards, segmented by comparable property type or market."
+    ],
+    "improve": [
+      "Refine cost controls. Implement tighter controls on labor scheduling, inventory, and purchasing to align expenses with guest volumes.",
+      "Standardize operational procedures. Use USALI guidelines to create uniform, transparent financial reporting and identify areas of improvement.",
+      "Enhance revenue strategies. Leverage price optimization, upselling, and targeted marketing to improve departmental revenue streams.",
+      "Monitor continuously. Regularly update departmental P&Ls, compare them against benchmarks, and adjust strategies as needed.",
+      "Share best practices across departments and properties. If one department outperforms benchmarks significantly, replicate successful tactics in other areas.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-28",
+    "archetype": "hospitality",
+    "title": "Timeshare or Vacation Ownership Program Performance Analysis",
+    "part": "F",
+    "partLabel": "Ownership & Financial Structures",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "PORTFOLIO_GROWTH"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/28 - Timeshare or Vacation Ownership Program Performance.md",
+    "goal": "Evaluate sales, usage, and profitability of timeshare or vacation ownership offerings, helping you refine pricing and marketing or decide on future expansions.",
+    "dataRequired": [
+      "Sales figures for timeshare or vacation ownership units (number of units sold, average sale price, financing terms if applicable).",
+      "Marketing and lead generation costs tied specifically to timeshare/vacation ownership promotions.",
+      "Occupancy or usage data for timeshare owners, exchange guests, and rental guests (if units are rented out when not used by owners).",
+      "Maintenance fee collections, delinquency rates, and operating costs.",
+      "Owner satisfaction scores or feedback, including resale and exit requests.",
+      "Benchmark data from industry reports or comparable programs, if available."
+    ],
+    "improve": [
+      "Refine marketing and sales strategies by targeting prospects more likely to become satisfied owners and reducing costly lead sources.",
+      "Enhance owner experiences with flexible usage options, streamlined booking, and additional property perks.",
+      "Review pricing and financing models to ensure they are competitive and attractive to potential buyers.",
+      "Strengthen communication and engagement with owners through personalized touchpoints, clear explanations of rules/fees, and regular updates on improvements.",
+      "Monitor delinquency and resale trends to intervene early, offer solutions, and maintain a healthy community of owners.",
+      "G. Events & Alternative Offerings"
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-29",
+    "archetype": "hospitality",
+    "title": "Meeting and Event Space Utilization",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [
+      "ANCILLARY_REVENUE_RATIO",
+      "MEETING_SPACE_UTILIZATION"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/29 - Meeting and Event Space Utilization.md",
+    "goal": "Measure how well your meeting and event facilities are used, highlighting ways to adjust pricing, marketing, or space configuration to increase bookings and revenue.",
+    "dataRequired": [
+      "Historical booking data for meeting rooms and event spaces (number of events, type of events, attendee count, revenue).",
+      "Occupancy or utilization metrics for each space (how many days/hours used vs. available).",
+      "Rate structures and any associated costs (room rental fees, packages, F&B minimums).",
+      "Ancillary revenue generated from events (F&B sales, AV equipment, parking).",
+      "Booking pace and lead times (how far in advance events are booked).",
+      "Client feedback or satisfaction ratings related to event execution and facilities."
+    ],
+    "improve": [
+      "Refine pricing strategies based on demand. Implement variable pricing for prime dates/times or offer discounts and packages for off‐peak periods.",
+      "Enhance marketing efforts targeting event planners and organizers for spaces with low utilization, highlighting unique features or bundling deals (e.g., room blocks, F&B credits).",
+      "Optimize room configurations to allow flexible setups and cater to multiple event types, making the space more adaptable and marketable.",
+      "Leverage technology (e.g., online booking portals, virtual tours) to reach a broader audience of event planners and simplify the booking process.",
+      "Improve service standards through staff training and updated equipment to deliver a seamless event experience, boosting word‐of‐mouth and repeat business.",
+      "Solicit and act on feedback from clients to continually refine offerings, address pain points, and stay competitive in the local events market.",
+      ""
+    ],
+    "formulas": [
+      {
+        "output": "Utilization Rate (%)",
+        "variables": [
+          "Total Hours Booked",
+          "Total Hours Available"
+        ],
+        "expression": "( v0 / v1 ) * 100",
+        "percentOutput": true,
+        "source": "Utilization Rate (%) = (Total Hours Booked / Total Hours Available) x 100",
+        "step": null
+      }
+    ]
+  },
+  {
+    "id": "hospitality-30",
+    "archetype": "hospitality",
+    "title": "MICE Profitability Review",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN",
+      "REVENUE_GROWTH",
+      "ANCILLARY_REVENUE_RATIO",
+      "GROUP_MIX_SHARE"
+    ],
+    "relatedCauseCategories": [
+      "FINANCIAL",
+      "MARKET"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "COST_PROCUREMENT",
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/30 - MICE Profitability Review.md",
+    "goal": "Examine revenue, costs, and booking patterns within the Meetings, Incentives, Conferences, and Exhibitions segment to enhance overall profitability and market share.",
+    "dataRequired": [
+      "Historical MICE booking data (types of events, attendance, room nights associated, F&B revenue).",
+      "Revenue breakdown from MICE events (room revenue, banquet/catering, audiovisual, other ancillary services).",
+      "Cost of sales (labor, F&B costs, event setup, equipment rentals).",
+      "Occupancy data during MICE events compared to non‐MICE periods.",
+      "Booking window and lead time for different types of MICE events.",
+      "Feedback from event organizers and attendees (satisfaction scores, repeat business, referrals)."
+    ],
+    "improve": [
+      "Optimize pricing for meeting spaces and packages based on demand patterns, offering peak‐ vs. off‐peak event rates.",
+      "Refine labor scheduling to align with event needs and reduce idle staff hours.",
+      "Enhance service offerings (e.g., advanced AV, hybrid event technology, tailored F&B menus) to justify higher margins.",
+      "Negotiate favorable supplier or vendor contracts for AV equipment, décor, or outsourced event services.",
+      "Focus on relationship building with corporate clients and event planners to encourage repeat business and referrals.",
+      "",
+      "Monitor pickup and post‐event data to refine future contracts, reduce attrition risk, and forecast revenue more accurately.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-31",
+    "archetype": "hospitality",
+    "title": "Wellness and Spa Services Utilization",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [
+      "ANCILLARY_REVENUE_RATIO"
+    ],
+    "relatedCauseCategories": [
+      "COMMERCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "VOLUME",
+      "COST_OPS",
+      "ANCILLARY_UPSELL"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/31 - Wellness and Spa Services Utilization.md",
+    "goal": "Assess how spa and wellness offerings drive usage, revenue, and guest satisfaction, enabling you to optimize treatments and pricing for maximum returns.",
+    "dataRequired": [
+      "Historical spa and wellness appointment bookings (date, time, type of service, duration).",
+      "Revenue and cost data (treatment prices, therapist wages, product costs).",
+      "Guest feedback or satisfaction ratings related to spa experiences.",
+      "Occupancy data or guest segmentation details (to see if spa usage correlates with certain guest types or stays).",
+      "Marketing and promotional efforts tied to spa and wellness services."
+    ],
+    "improve": [
+      "Optimize scheduling and staffing. Align therapist schedules with peak booking times to minimize wait times and labor costs.",
+      "Bundle services with accommodations or F&B to incentivize guests who might not otherwise book spa treatments.",
+      "Introduce targeted promotions for off‐peak times or under‐utilized services, possibly using dynamic pricing strategies.",
+      "Invest in staff training to enhance service quality and consistency, thereby boosting guest satisfaction and repeat business.",
+      "Solicit and act on guest feedback regarding new treatments, product preferences, and overall spa ambiance.",
+      "Collaborate with marketing to feature wellness and spa offerings in loyalty programs, seasonal campaigns, or special events.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-32",
+    "archetype": "hospitality",
+    "title": "Spa and Wellness Outsourcing vs. In‐House Management Assessment",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [
+      "EBITDA_MARGIN"
+    ],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "PRICING",
+      "DEPARTMENTAL_EFFICIENCY"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/32 - Spa and Wellness Outsourcing vs. In#U2010House Management.md",
+    "goal": "Compare the financial, operational, and branding implications of running spa services in-house or partnering with a third party, guiding decisions on the most profitable and consistent model.",
+    "dataRequired": [
+      "Current spa operational data (revenue, direct costs, labor, overhead, profit margins).",
+      "Potential or existing outsourcing proposals (financial terms, revenue splits, brand alignment, service level agreements).",
+      "Guest feedback scores related to spa services (satisfaction, complaints, repeat usage).",
+      "Benchmark data from comparable properties (outsourced vs. in‐house spa management performance).",
+      "Legal and contractual considerations (duration of outsourcing agreements, intellectual property, branding rights)."
+    ],
+    "improve": [
+      "Negotiate favorable terms if outsourcing—ensure fair revenue splits, clear performance metrics, and strict service level agreements.",
+      "Strengthen internal capabilities if remaining in‐house—invest in employee training, modernize facilities, and optimize marketing efforts for wellness services.",
+      "Monitor guest feedback continuously to catch any downturn in satisfaction if responsibilities shift to an external party.",
+      "Revisit the arrangement periodically (annually or bi‐annually) to ensure the chosen model continues to align with market conditions and strategic goals.",
+      "Leverage cross‐promotions between spa services and other hotel amenities (F&B, rooms) regardless of management model to drive additional revenue.",
+      ""
+    ],
+    "formulas": []
+  },
+  {
+    "id": "hospitality-33",
+    "archetype": "hospitality",
+    "title": "Transportation and Shuttle Service Utilization Analysis",
+    "part": "G",
+    "partLabel": "Events & Alternative Offerings",
+    "relatedMetricCodes": [],
+    "relatedCauseCategories": [
+      "OPERATIONAL",
+      "FINANCIAL"
+    ],
+    "relatedLeverCategories": [
+      "COST_OPS"
+    ],
+    "sourcePath": "data/analysis-library/hospitality/33 - Transportation and Shuttle Service Utilization Analysis.md",
+    "goal": "Understand guest usage and operational costs of shuttle or transportation services, helping you refine schedules, vehicle allocations, and any applicable fees to optimize efficiency.",
+    "dataRequired": [
+      "Records of shuttle or transportation service usage (passenger counts, routes, times, frequency).",
+      "Operating costs for the service (fuel, maintenance, driver wages, vehicle lease or depreciation).",
+      "Revenue or fees collected from guests (if applicable).",
+      "Guest feedback related to shuttle services (survey responses, online reviews).",
+      "Local transportation options and competitor service offerings for comparison."
+    ],
+    "improve": [
+      "Refine schedules to match peak demand periods (arrival/departure times, local event schedules).",
+      "Consider a reservation or on‐demand system to improve efficiency and reduce wasted trips.",
+      "Introduce or adjust fees (e.g., per‐person charge, group rate) to offset operational costs if the market supports it.",
+      "Enhance guest communication about shuttle availability, routes, and wait times (via mobile apps, SMS alerts, or lobby screens).",
+      "Explore partnerships with ride‐sharing services or local transportation companies for overflow demand or specialized routes.",
+      ""
+    ],
+    "formulas": []
+  }
+]
