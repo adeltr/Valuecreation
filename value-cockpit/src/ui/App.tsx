@@ -24,6 +24,7 @@ import { connectRepository, type DossierLocation } from './state/httpRepository'
 import { hasUnsavedWork } from './state/unsaved';
 import { formatValue } from './model/format';
 import { Icon } from './components/Icon';
+import { ModelContext } from './components/MetricName';
 import { authFetch, loadSession, saveAnalyst, savePassword, type Session } from './state/session';
 
 type StepId = 'data' | 'diagnostic' | 'levers' | 'value' | 'plan';
@@ -105,7 +106,7 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
     diagnostic: state.observations.length ? plural(state.observations.length, 'mesure') : 'aucune mesure',
     levers: state.levers.length === 0 ? 'aucun levier'
       : [validated && plural(validated, 'validé'), pending && `${pending} à décider`].filter(Boolean).join(' · ') || plural(state.levers.length, 'rejeté'),
-    value: engineError ? 'calcul refusé' : `MOIC ${formatValue(scenarioMoic, 'ratio')}`,
+    value: engineError ? 'calcul refusé' : `scénario : MOIC ${formatValue(scenarioMoic, 'ratio')}`,
     plan: !plan ? 'indisponible' : plan.workstreams.length ? plural(plan.workstreams.length, 'chantier') : 'aucun chantier',
   };
   const family = getBridgeFamily(state.archetype);
@@ -154,10 +155,11 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         <EmpiricalPanel archetype={state.archetype} trajectory={trajectory} fetchImpl={api} />
       </>
     ),
-    plan: <PlanPanel dispatch={dispatch} plan={plan} engineError={engineError} onExportSlide={exportSlide} />,
+    plan: <PlanPanel dispatch={dispatch} plan={plan} engineError={engineError} onExportSlide={exportSlide} archetype={state.archetype} />,
   };
 
   return (
+    <ModelContext.Provider value={metrics}>
     <div className="app">
       <aside className="rail">
         <h1 className="brand">Value Creation Cockpit</h1>
@@ -245,5 +247,6 @@ export function App({ connect = defaultConnect }: { connect?: Connect } = {}) {
         </main>
       </div>
     </div>
+    </ModelContext.Provider>
   );
 }

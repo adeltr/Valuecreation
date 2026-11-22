@@ -5,6 +5,7 @@ import type { HundredDayPlan, Milestone, Phase, Quadrant } from '../model/plan';
 import { formatValue } from '../model/format';
 import { Panel } from './Panel';
 import { Icon } from './Icon';
+import { describeMetric } from '../../ontology/labels';
 
 const STATUS_LABEL: Record<PlanStatus, string> = { todo: 'À lancer', in_progress: 'En cours', done: 'Fait', blocked: 'Bloqué' };
 const PHASE_LABEL: Record<Phase, string> = { diagnose: 'Diagnostic', design: 'Conception', execute: 'Exécution' };
@@ -39,9 +40,91 @@ const Milestones = ({ items }: { items: Milestone[] }) => (
   <>{items.map((m) => <span key={`${m.day}-${m.label}`} className="milestone" style={{ left: pct(m.day) }} title={`J${m.day} — ${m.label}`} />)}</>
 );
 
+
+const PERF_ROWS: { code: string | 'ANCHOR'; unit: 'ratio' | 'percent' | 'currency' }[] = [
+  { code: 'MOIC', unit: 'ratio' }, { code: 'IRR', unit: 'percent' }, { code: 'ANCHOR', unit: 'currency' }, { code: 'EQUITY_EXIT', unit: 'currency' },
+];
+const gap = (v: number, unit: 'ratio' | 'percent' | 'currency') =>
+  unit === 'percent' ? `${v > 0 ? '+' : ''}${(v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 })} pts` : signed(v, unit);
+
+/** What the plan does to the deal (engine): a comparison table, then the MOIC bridge workstream by workstream. */
+function Performance({ plan, archetype }: { plan: HundredDayPlan; archetype: string }) {
+  const { performance: p, totals } = plan;
+  const rows = PERF_ROWS.map((r) => ({ ...r, code: r.code === 'ANCHOR' ? totals.anchorCode : r.code }))
+    .filter((r) => r.code in p.base && !(r.code === 'EQUITY_EXIT' && totals.anchorCode === 'EQUITY_EXIT'));
+  const steps = [
+    { label: 'MOIC sans levier', value: p.base.MOIC, kind: 'total' as const },
+    ...plan.workstreams.filter((w) => w.value).map((w) => ({ label: w.title, value: w.value!.moic, kind: 'step' as const })),
+    ...(Math.abs(p.combinedMoic) >= 0.005 ? [{ label: 'Effet combiné des leviers', value: p.combinedMoic, kind: 'step' as const }] : []),
+    { label: 'MOIC du plan', value: p.plan.MOIC, kind: 'total' as const },
+  ];
+  // Running position of each bar on a zero-based axis.
+  let at = 0;
+  const bars = steps.map((st) => {
+    const from = st.kind === 'total' ? 0 : at;
+    const to = st.kind === 'total' ? st.value : at + st.value;
+    at = to;
+    return { ...st, lo: Math.min(from, to), hi: Math.max(from, to) };
+  });
+  const max = Math.max(...bars.map((b) => b.hi), 0.01) * 1.08;
+  const pct = (v: number) => `${(100 * v) / max}%`;
+  const status = plan.workstreams.reduce<Record<string, number>>((n, w) => ({ ...n, [w.status]: (n[w.status] ?? 0) + 1 }), {});
+
+  return (
+    <div className="sheet perf">
+      <h4>Performance du plan <span className="mark mark-engine">moteur</span></h4>
+      <div className="perf-grid">
+        <table className="bridge compact" aria-label="Performance du plan">
+          <thead><tr><th>Indicateur</th><th>Sans levier</th><th>À J100</th><th>Plan complet</th><th>Écart</th></tr></thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.code} className={r.code === 'MOIC' ? 'moic-row' : ''}>
+                <th>{describeMetric(r.code, archetype).label}</th>
+                <td className="num">{formatValue(p.base[r.code], r.unit)}</td>
+                <td className="num">{formatValue(p.by100[r.code], r.unit)}</td>
+                <td className="num strong">{formatValue(p.plan[r.code], r.unit)}</td>
+                <td className={`num ${p.plan[r.code] - p.base[r.code] < 0 ? 'neg' : 'pos'}`}>{gap(p.plan[r.code] - p.base[r.code], r.unit)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div>
+          {plan.workstreams.length === 0
+            ? <p className="empty">Aucun chantier validé : le plan reprend le cas sans levier. Validez des leviers à l'étape Leviers pour voir leur effet ici.</p>
+            : (
+              <>
+                <h5>Du MOIC sans levier au MOIC du plan</h5>
+                <ul className="waterfall" aria-label="Du MOIC sans levier au MOIC du plan">
+                  {bars.map((b) => (
+                    <li key={b.label} className={`wf-${b.kind}`}>
+                      <span className="wf-label">{b.label}</span>
+                      <span className="wf-track">
+                        <span className={`wf-bar ${b.kind === 'step' && b.value < 0 ? 'wf-neg' : ''}`}
+                          style={{ left: pct(b.lo), width: `max(2px, ${pct(b.hi - b.lo)})` }}
+                          title={`${b.label} : ${b.kind === 'total' ? formatValue(b.value, 'ratio') : signed(b.value, 'ratio')}`} />
+                      </span>
+                      <span className="wf-value">{b.kind === 'total' ? formatValue(b.value, 'ratio') : signed(b.value, 'ratio')}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+        </div>
+      </div>
+      {plan.workstreams.length > 0 && (
+        <p className="muted perf-progress">
+          {`Avancement sur ${plan.workstreams.length} chantier${plan.workstreams.length > 1 ? 's' : ''} : `}
+          {(['done', 'in_progress', 'todo', 'blocked'] as PlanStatus[]).filter((k) => status[k]).map((k) => `${status[k]} ${STATUS_LABEL[k].toLowerCase()}`).join(', ')}
+          {'. Dans le pont, chaque chantier est chiffré seul ; l\'effet combiné apparaît quand les leviers se composent.'}
+        </p>
+      )}
+    </div>
+  );
+}
+
 /** 100-day plan: diagnose J0–30, design J30–60, execute J60–100. Values come from the engine. */
-export function PlanPanel({ plan, engineError, dispatch, onExportSlide }: {
-  plan: HundredDayPlan | null; engineError: string | null; dispatch: Dispatch<Action>; onExportSlide: () => void;
+export function PlanPanel({ plan, engineError, dispatch, onExportSlide, archetype }: {
+  plan: HundredDayPlan | null; engineError: string | null; dispatch: Dispatch<Action>; onExportSlide: () => void; archetype: string;
 }) {
   if (!plan) {
     return (
@@ -63,7 +146,7 @@ export function PlanPanel({ plan, engineError, dispatch, onExportSlide }: {
           <Icon name="download" /> Exporter le slide de restitution (.pptx)
         </button>
       </div>
-      {plan.workstreams.length === 0 && <p className="empty">Aucun chantier de valeur : validez des leviers à l'étape Leviers, chacun devient un chantier phasé ici.</p>}
+      <Performance plan={plan} archetype={archetype} />
 
       <div className="sheet">
       <div className="gantt" role="table" aria-label="Calendrier">

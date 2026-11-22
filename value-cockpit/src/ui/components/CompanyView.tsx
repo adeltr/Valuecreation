@@ -122,7 +122,7 @@ export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInpu
                 <tbody>
                   {rows.map((m) => (
                     <tr key={m.code} className={provenance[m.code] ? 'is-sourced' : 'is-demo'}>
-                      <th><label htmlFor={`in-${m.code}`}><MetricName code={m.code} archetype={archetype} /></label></th>
+                      <th><MetricName code={m.code} archetype={archetype} htmlFor={`in-${m.code}`} /></th>
                       <td className="value">
                         <input
                           id={`in-${m.code}`} type="number" step="any" value={m.currentValue ?? ''}
@@ -159,7 +159,7 @@ export function CompanyView({ metrics, baseline, dispatch, archetype, bridgeInpu
             <tbody>
               {calculated.map((m) => (
                 <tr key={m.code}>
-                  <th title={m.formula ?? ''}><MetricName code={m.code} archetype={archetype} /></th>
+                  <th><MetricName code={m.code} archetype={archetype} /></th>
                   <td className="num">{formatValue(baseline.get(m.code), m.unit)}</td>
                 </tr>
               ))}

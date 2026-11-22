@@ -70,6 +70,44 @@ describe('App', () => {
     expect(screen.getByRole('region', { name: 'Arbre de valeur' })).toBeTruthy();
   });
 
+  it('every factor has an explanation bubble: definition, unit, formula or what it feeds', () => {
+    render(<App />);
+    const company = region('Entreprise');
+    fireEvent.click(within(company).getByRole('button', { name: 'Explication : Coût par siège-km hors carburant' }));
+    let bubble = screen.getByRole('dialog', { name: 'Coût par siège-km hors carburant' });
+    expect(within(bubble).getByText(/hors amortissements/)).toBeTruthy();
+    expect(within(bubble).getByText(/Saisi par l'analyste/)).toBeTruthy();
+    expect(within(bubble).getByText(/Coûts d'exploitation de sortie/)).toBeTruthy(); // what the driver feeds
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).toBeNull();
+
+    // A computed figure shows its formula, from the template itself.
+    fireEvent.click(within(company).getByRole('button', { name: 'Explication : EBITDA de sortie' }));
+    bubble = screen.getByRole('dialog', { name: 'EBITDA de sortie' });
+    expect(within(bubble).getByText(/Calculé par le moteur/)).toBeTruthy();
+    expect(within(bubble).getByText('REVENUE_EXIT - OPERATING_COSTS_EXIT')).toBeTruthy();
+    // The input keeps a clean name: the bubble button sits outside its label.
+    expect(within(company).getByLabelText(byCode('CASK_EX_FUEL'))).toBeTruthy();
+  });
+
+  it('the 100-day plan shows its performance: MOIC, IRR, EBITDA and equity, and a bridge from the base MOIC', () => {
+    render(<App />);
+    const perf = () => within(region('Plan 100 jours')).getByRole('table', { name: 'Performance du plan' });
+    expect(within(perf()).getByRole('row', { name: /MOIC.*1,79x.*1,79x.*1,79x/ })).toBeTruthy();
+    expect(within(region('Plan 100 jours')).getByText(/Aucun chantier validé/)).toBeTruthy();
+
+    fireEvent.change(within(region('Copilote')).getByLabelText(/Réponse JSON/), { target: { value: proposal } });
+    fireEvent.click(within(region('Copilote')).getByRole('button', { name: 'Ingérer' }));
+    fireEvent.click(within(region('Copilote')).getByRole('button', { name: /Valider/ }));
+    const row = within(perf()).getByRole('row', { name: /^TRI/ });
+    expect(row.textContent).toMatch(/12,4\s%.*16,7\s%.*\+4,3 pts/);
+    const bridge = within(region('Plan 100 jours')).getByRole('list', { name: 'Du MOIC sans levier au MOIC du plan' });
+    expect(within(bridge).getAllByRole('listitem').map((li) => li.textContent)).toEqual([
+      expect.stringMatching(/^MOIC sans levier.*1,79x/), expect.stringMatching(/^Renouvellement de flotte.*\+0,37x/),
+      expect.stringMatching(/^MOIC du plan.*2,16x/),
+    ]);
+  });
+
   it('the step rail shows where the case stands, from the engine and the analyst decisions', () => {
     render(<App />);
     const step = (name: string) => steps().getByRole('button', { name: new RegExp(`^${name}`) }).textContent;
@@ -283,8 +321,14 @@ describe('App', () => {
     const company = () => region('Entreprise');
     expect(within(company()).getByRole('heading', { name: 'Drivers du secteur' })).toBeTruthy();
     expect(within(company()).getByRole('heading', { name: 'Deal et cash' })).toBeTruthy();
-    expect(within(company()).getByText('EBITDA d\'entrée').getAttribute('title')).toMatch(/prix d'entrée/);
-    expect(within(company()).getByText('Load Factor').getAttribute('title')).toMatch(/seating capacity/);
+    const explain = (name: string) => {
+      fireEvent.click(within(company()).getByRole('button', { name: `Explication : ${name}` }));
+      const text = screen.getByRole('dialog', { name }).textContent;
+      fireEvent.keyDown(document, { key: 'Escape' });
+      return text;
+    };
+    expect(explain('EBITDA d\'entrée')).toMatch(/prix d'entrée/);
+    expect(explain('Load Factor')).toMatch(/seating capacity.*glossaire sectoriel Umbrex/);
     expect(within(company()).getByLabelText(byCode('LOAD_FACTOR'))).toBeTruthy();
     const sim = () => region('Simulation');
     expect(within(sim()).getAllByText('TRI').length).toBeGreaterThan(0);

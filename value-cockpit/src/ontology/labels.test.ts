@@ -3,6 +3,7 @@ import { describeMetric, humanize } from './labels';
 import { BASE_METRIC_CODES } from './base';
 import { BRIDGE_FAMILIES, FAMILY_VOCAB } from './families';
 import { SECTOR_ARCHETYPES, getActiveVocabulary } from './registry';
+import { TEMPLATES } from '../templates';
 
 describe('metric labels and definitions', () => {
   it('the backbone of the model (base, bridge and family codes) has a French label and a definition', () => {
@@ -22,8 +23,19 @@ describe('metric labels and definitions', () => {
     expect(describeMetric('LOAD_FACTOR').source).toBeNull(); // never the glossary of another sector
   });
 
+  it('every factor of every company model is explained: a definition the analyst can read in the bubble', () => {
+    for (const [a, t] of Object.entries(TEMPLATES)) {
+      for (const m of t!.instantiate('x', t!.demoInputs)) {
+        const d = describeMetric(m.code, a);
+        expect(d.definition?.length ?? 0, `${a} ${m.code}`).toBeGreaterThan(15);
+        expect(d.label, `${a} ${m.code}`).not.toBe('');
+      }
+    }
+    expect(describeMetric('CASK_EX_FUEL', 'airline')).toMatchObject({ label: 'Coût par siège-km hors carburant', source: 'cockpit' });
+  });
+
   it('any other code falls back to a readable name, without inventing a definition', () => {
-    expect(describeMetric('CASK_EX_FUEL', 'airline')).toEqual({ label: 'Cask ex fuel', definition: null, source: null });
+    expect(describeMetric('SOME_UNKNOWN_CODE', 'airline')).toEqual({ label: 'Some unknown code', definition: null, source: null });
     expect(humanize('WC_DSO')).toBe('Wc dso');
   });
 

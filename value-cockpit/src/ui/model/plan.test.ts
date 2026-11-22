@@ -63,6 +63,19 @@ describe('100-day plan (PE best practice: diagnose J0–30, design J30–60, exe
     expect(plan.totals.moicBy100).toBeGreaterThan(plan.totals.moicBase);
   });
 
+  it('plan performance from the engine: base, all validated levers and day 100 for MOIC, IRR, anchor and exit equity', () => {
+    const { performance: perf } = plan;
+    expect(perf.base.MOIC).toBe(plan.totals.moicBase);
+    expect(perf.plan.MOIC).toBe(plan.totals.moicAll);
+    expect(perf.by100.MOIC).toBe(plan.totals.moicBy100);
+    expect(perf.plan.IRR).toBeGreaterThan(perf.base.IRR);
+    expect(perf.plan.EBITDA_EXIT).toBeGreaterThan(perf.base.EBITDA_EXIT);
+    expect(perf.plan.EQUITY_EXIT).toBeGreaterThan(perf.base.EQUITY_EXIT);
+    // Waterfall: base + each workstream alone + combined effect = plan, to the cent.
+    const steps = plan.workstreams.reduce((sum, w) => sum + (w.value?.moic ?? 0), 0);
+    expect(perf.base.MOIC + steps + perf.combinedMoic).toBeCloseTo(perf.plan.MOIC, 10);
+  });
+
   it('prioritisation: value × ease, and a quick win must land within the 100 days', () => {
     expect(ws('fuel').quadrant).toBe('strategic');   // high value, high effort
     expect(ws('lf').quadrant).toBe('strategic');     // high value, low effort, but impact at J+150

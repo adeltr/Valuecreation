@@ -154,8 +154,27 @@ meter { width: 100%; height: 6px; }
 .badge-validated { background: var(--ok-soft); color: var(--ok); }
 .badge-rejected { background: var(--bad-soft); color: var(--bad); }
 
+
 .metric-name { color: var(--ink); }
-.metric-name.has-def { text-decoration: underline dotted #98a1ad; text-underline-offset: 3px; cursor: help; }
+.metric { display: inline; }
+.metric > label, .metric > span { margin-right: 2px; }
+.metric label { font-size: inherit; color: inherit; cursor: pointer; }
+button.info-button { display: inline-flex; vertical-align: -4px; min-height: 0; padding: 3px; border: 0; border-radius: 50%; background: transparent; color: var(--ink-3); }
+button.info-button:hover:not(:disabled), button.info-button[aria-expanded='true'] { background: var(--accent-soft); color: var(--accent); }
+.bubble { position: fixed; z-index: 50; width: 340px; max-width: calc(100vw - 16px); padding: 14px 16px 12px; background: #fff; color: var(--ink);
+  border: 1px solid var(--line-strong); border-radius: var(--radius); box-shadow: 0 8px 24px rgba(24, 32, 43, .14), 0 2px 6px rgba(24, 32, 43, .08);
+  font-size: 0.875rem; line-height: 1.45; text-align: left; font-weight: 400; white-space: normal; }
+.bubble-title { font-weight: 700; font-size: 0.9375rem; margin: 0 28px 0 0; }
+.bubble > .metric-code { display: block; margin-bottom: 8px; }
+.bubble p { margin: 0 0 8px; }
+.bubble-note { font-size: 0.75rem; color: var(--ink-2); }
+.bubble dl { margin: 8px 0 0; padding-top: 8px; border-top: 1px solid var(--line-soft); display: grid; gap: 2px; }
+.bubble dt { font-size: 0.75rem; font-weight: 700; color: var(--ink-2); margin-top: 4px; }
+.bubble dd { margin: 0; }
+.bubble dd code { font-size: 0.75rem; overflow-wrap: anywhere; color: var(--accent-ink); }
+.bubble-close { position: absolute; top: 6px; right: 6px; }
+.rail { color-scheme: dark; }
+.rail select option, .rail select optgroup { background: var(--rail-2); color: var(--rail-ink); }
 .metric-code { font-family: var(--sans); font-size: 0.75rem; font-weight: 600; color: var(--ink-3); letter-spacing: .03em; }
 
 .list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s2); }
@@ -362,3 +381,22 @@ button.chip.chip-on { background: var(--accent-soft); border-color: var(--accent
 .scenario-save { flex-wrap: wrap; }
 .scenario-save input { min-width: 160px; }
 .card p, .card li { font-size: 0.9375rem; }
+/* Plan performance: comparison table + MOIC bridge (waterfall) */
+.perf-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--s6); align-items: start; }
+.perf-grid > * { min-width: 0; }
+.perf h5 { margin-top: 0; }
+.perf .strong { font-weight: 700; }
+.perf .pos { color: var(--ok); font-weight: 600; }
+.perf .neg { color: var(--bad); font-weight: 600; }
+.perf tr.moic-row th, .perf tr.moic-row td { font-size: 1rem; }
+.perf-progress { margin: var(--s4) 0 0; font-size: 0.8125rem; }
+.waterfall { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.waterfall li { display: grid; grid-template-columns: minmax(120px, 34%) 1fr 64px; align-items: center; gap: var(--s3); font-size: 0.8125rem; }
+.wf-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wf-total .wf-label, .wf-total .wf-value { font-weight: 700; }
+.wf-track { position: relative; height: 18px; border-left: 1px solid var(--line-strong); }
+.wf-bar { position: absolute; top: 3px; height: 12px; border-radius: 0 4px 4px 0; background: var(--accent); }
+.wf-total .wf-bar { background: #8a94a3; }
+.wf-bar.wf-neg { background: #b4562a; border-radius: 4px 0 0 4px; }
+.wf-value { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 1180px) { .perf-grid { grid-template-columns: 1fr; } }

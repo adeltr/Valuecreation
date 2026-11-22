@@ -52,6 +52,7 @@ Chaque chiffre porte sa marque d'origine, avec la même grammaire partout :
 
 ## Composants
 
+- Bulles d'explication : bouton « i » après chaque facteur ; définition, unité, formule (calculé) ou ce que le facteur alimente (saisi).
 - Panneaux : surface claire, filet 1 px, rayon 10 px, pas d'ombre ; jamais de panneau dans un panneau.
 - Boutons : primaire plein (accent), secondaire en contour, lien texte pour les actions de ligne.
 - Champs : 32 px de haut, filet, focus en anneau accent de 2 px.

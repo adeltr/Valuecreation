@@ -36,8 +36,18 @@ export interface HundredDayPlan {
   workstreams: Workstream[];
   foundations: Foundation[];
   totals: { anchorCode: string; moicBase: number; moicAll: number; moicBy100: number };
+  /**
+   * What the plan does to the deal, from the engine: without lever, with every validated lever,
+   * and with those landing by day 100. `combinedMoic`: the gap between the sum of the workstreams
+   * taken one by one and all of them together (compounding, interactions).
+   */
+  performance: { base: Snapshot; plan: Snapshot; by100: Snapshot; combinedMoic: number };
   risks: string[];
 }
+
+/** MOIC, IRR, the family anchor and exit equity, keyed by code. */
+export type Snapshot = Record<string, number>;
+const SNAPSHOT_CODES = ['MOIC', 'IRR', 'EQUITY_EXIT'];
 
 export interface PlanInput {
   levers: Lever[]; rootCauses: RootCause[]; metrics: Metric[]; catalog: AnalysisRef[];
@@ -134,7 +144,16 @@ export function buildPlan({ levers, rootCauses, metrics, catalog, rules, family,
 
   const movable = validated.filter((l) => byCode.get(l.impactMetricCode) && !byCode.get(l.impactMetricCode)!.isCalculated);
   const moicOf = (ls: Lever[]) => (ls.length ? run(ls).get('MOIC')! : base.get('MOIC')!);
+  const snapshot = (values: Map<string, number>): Snapshot =>
+    Object.fromEntries([...SNAPSHOT_CODES, anchorCode].filter((c) => values.has(c)).map((c) => [c, values.get(c)!]));
+  const atDay100 = movable.filter((l) => l.timeToImpactDays <= HORIZON);
+  const planValues = movable.length ? run(movable) : base;
+  const performance = {
+    base: snapshot(base), plan: snapshot(planValues), by100: snapshot(atDay100.length ? run(atDay100) : base),
+    combinedMoic: planValues.get('MOIC')! - base.get('MOIC')! - workstreams.reduce((s, w) => s + (w.value?.moic ?? 0), 0),
+  };
   return {
+    performance,
     workstreams,
     foundations: foundations(family, overrides),
     totals: {

@@ -1,4 +1,5 @@
 import kpiDefinitions from './kpi-definitions.json';
+import { SECTOR_LABELS } from './sector-labels';
 
 export interface MetricDescription {
   label: string;
@@ -71,5 +72,7 @@ export function describeMetric(code: string, archetype?: string): MetricDescript
   if (core) return { label: core[0], definition: core[1], source: 'cockpit' };
   const kpi = archetype ? KPI[archetype]?.[code] : undefined;
   if (kpi) return { label: kpi.label, definition: kpi.definition, source: 'umbrex' };
+  const sector = SECTOR_LABELS[code];
+  if (sector) return { label: sector[0], definition: sector[1], source: 'cockpit' };
   return { label: humanize(code), definition: null, source: null };
 }

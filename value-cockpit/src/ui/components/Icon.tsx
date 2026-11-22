@@ -9,6 +9,7 @@ const PATHS = {
   open: 'M4 7a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z',
   trash: 'M5 7h14M10 7V5h4v2m-7 0 1 12h8l1-12',
   lock: 'M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z',
+  info: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zm0-10v6m0-9.5v.01',
 } as const;
 
 export type IconName = keyof typeof PATHS;
